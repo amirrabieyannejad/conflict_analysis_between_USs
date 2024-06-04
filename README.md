@@ -1,2 +1,1 @@
-# USs_Annotation
-Analysing of conflicts and dependancy zweischen user stories
+# conflict_analysis_between_USs
