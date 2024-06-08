@@ -1,0 +1,2495 @@
+[
+    {
+        "US_Nr": "user_story_01",
+        "Benefit": {
+            "Entity": ["new software"],
+            "Action": ["deposit"],
+            "Contains": [],
+            "Text": "I don't need to install and learn new software to deposit.",
+            "Targets": []
+        },
+        "Text": "#G24# As a depositor, I want to deposit and maintain datasets through a simple web interface, so that I don't need to install and learn new software to deposit.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "datasets",
+                "simple web interface"
+            ],
+            "Action": [
+                "deposit",
+                "maintain"
+            ],
+            "Persona": ["depositor"],
+            "Contains": [[
+                "simple web interface",
+                "datasets"
+            ]],
+            "Text": "#G24# As a depositor, I want to deposit and maintain datasets through a simple web interface, ",
+            "Triggers": [
+                [
+                    "depositor",
+                    "deposit"
+                ],
+                [
+                    "depositor",
+                    "maintain"
+                ]
+            ],
+            "Targets": [
+                [
+                    "deposit",
+                    "datasets"
+                ],
+                [
+                    "maintain",
+                    "datasets"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_02",
+        "Benefit": {
+            "Entity": ["University systems"],
+            "Action": ["joined"],
+            "Contains": [],
+            "Text": "I feel like all the University systems are joined up.",
+            "Targets": [[
+                "joined",
+                "University systems"
+            ]]
+        },
+        "Text": "#G24# As a depositor, I want to have a user interface that is familiar to me, so that I feel like all the University systems are joined up.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": ["user interface"],
+            "Action": ["have"],
+            "Persona": ["depositor"],
+            "Contains": [],
+            "Text": "#G24# As a depositor, I want to have a user interface that is familiar to me, ",
+            "Triggers": [[
+                "depositor",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "user interface"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_03",
+        "Benefit": {
+            "Entity": [
+                "single onestop shop",
+                "research outputs"
+            ],
+            "Action": [
+                "have",
+                "managing"
+            ],
+            "Contains": [[
+                "single onestop shop",
+                "research outputs"
+            ]],
+            "Text": "I have a single onestop shop for managing my research outputs",
+            "Targets": [
+                [
+                    "have",
+                    "single onestop shop"
+                ],
+                [
+                    "managing",
+                    "research outputs"
+                ]
+            ]
+        },
+        "Text": "#G24# As a depositor, I want to deposit and maintain datasets through Pure, so that I have a single onestop shop for managing my research outputs.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "datasets",
+                "Pure"
+            ],
+            "Action": [
+                "deposit",
+                "maintain"
+            ],
+            "Persona": ["depositor"],
+            "Contains": [[
+                "Pure",
+                "datasets"
+            ]],
+            "Text": "#G24# As a depositor, I want to deposit and maintain datasets through Pure, ",
+            "Triggers": [
+                [
+                    "depositor",
+                    "deposit"
+                ],
+                [
+                    "depositor",
+                    "maintain"
+                ]
+            ],
+            "Targets": [
+                [
+                    "deposit",
+                    "datasets"
+                ],
+                [
+                    "maintain",
+                    "datasets"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_04",
+        "Benefit": {
+            "Entity": ["tools"],
+            "Action": ["work"],
+            "Contains": [],
+            "Text": "I can continue to work with tools with which I'm familiar.",
+            "Targets": [[
+                "work",
+                "tools"
+            ]]
+        },
+        "Text": "#G24# As a depositor, I want to deposit and maintain datasets through Virtual Research Environments and other workflow tools, so that I can continue to work with tools with which I'm familiar.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "datasets",
+                "Virtual Research Environments",
+                "other workflow tools"
+            ],
+            "Action": [
+                "deposit",
+                "maintain"
+            ],
+            "Persona": ["depositor"],
+            "Contains": [
+                [
+                    "Virtual Research Environments",
+                    "datasets"
+                ],
+                [
+                    "other workflow tools",
+                    "datasets"
+                ]
+            ],
+            "Text": "#G24# As a depositor, I want to deposit and maintain datasets through Virtual Research Environments and other workflow tools, ",
+            "Triggers": [
+                [
+                    "depositor",
+                    "deposit"
+                ],
+                [
+                    "depositor",
+                    "maintain"
+                ]
+            ],
+            "Targets": [
+                [
+                    "maintain",
+                    "datasets"
+                ],
+                [
+                    "deposit",
+                    "datasets"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_05",
+        "Benefit": {
+            "Entity": [
+                "right version",
+                "right format"
+            ],
+            "Action": [
+                "finding",
+                "converting"
+            ],
+            "Contains": [],
+            "Text": "I don't have to spend a lot of time finding the right version and converting to the right format.",
+            "Targets": [
+                [
+                    "finding",
+                    "right version"
+                ],
+                [
+                    "converting",
+                    "right format"
+                ]
+            ]
+        },
+        "Text": "#G24# As a depositor, I want to deposit the files that I have, so that I don't have to spend a lot of time finding the right version and converting to the right format.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": ["files"],
+            "Action": ["deposit"],
+            "Persona": ["depositor"],
+            "Contains": [],
+            "Text": "#G24# As a depositor, I want to deposit the files that I have, ",
+            "Triggers": [[
+                "depositor",
+                "deposit"
+            ]],
+            "Targets": [[
+                "deposit",
+                "files"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_06",
+        "Benefit": {
+            "Entity": [
+                "right of first use",
+                "confidentiality responsibilities"
+            ],
+            "Action": [
+                "fulfil",
+                "protected"
+            ],
+            "Contains": [[
+                "data",
+                "right of first use"
+            ]],
+            "Text": "my right of first use is protected, and I can fulfil my confidentiality responsibilities.",
+            "Targets": [
+                [
+                    "fulfil",
+                    "confidentiality responsibilities"
+                ],
+                [
+                    "protected",
+                    "right of first use"
+                ]
+            ]
+        },
+        "Text": "#G24# As a depositor, I want to place data under an embargo, so that my right of first use is protected, and I can fulfil my confidentiality responsibilities.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "data",
+                "embargo"
+            ],
+            "Action": ["place"],
+            "Persona": ["depositor"],
+            "Contains": [[
+                "data",
+                "embargo"
+            ]],
+            "Text": "#G24# As a depositor, I want to place data under an embargo, ",
+            "Triggers": [[
+                "depositor",
+                "place"
+            ]],
+            "Targets": [[
+                "place",
+                "data"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_07",
+        "Benefit": {
+            "Entity": ["IP rights"],
+            "Action": ["protected appropriately"],
+            "Contains": [],
+            "Text": "my IP rights are protected appropriately.",
+            "Targets": [[
+                "protected appropriately",
+                "IP rights"
+            ]]
+        },
+        "Text": "#G24# As a depositor, I want to apply licenses to datasets, so that my IP rights are protected appropriately.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "licenses",
+                "datasets"
+            ],
+            "Action": ["apply"],
+            "Persona": ["depositor"],
+            "Contains": [[
+                "datasets",
+                "licenses"
+            ]],
+            "Text": "#G24# As a depositor, I want to apply licenses to datasets, ",
+            "Triggers": [[
+                "depositor",
+                "apply"
+            ]],
+            "Targets": [[
+                "apply",
+                "licenses"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_08",
+        "Benefit": {
+            "Entity": ["productive relationship"],
+            "Action": ["have"],
+            "Contains": [],
+            "Text": "we continue to have a productive relationship.",
+            "Targets": [[
+                "have",
+                "productive relationship"
+            ]]
+        },
+        "Text": "#G24# As a depositor, I want to allow my collaborators privileged access to datasets, so that we continue to have a productive relationship.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "collaborators",
+                "privileged access",
+                "datasets"
+            ],
+            "Action": ["allow"],
+            "Persona": ["depositor"],
+            "Contains": [
+                [
+                    "datasets",
+                    "privileged access"
+                ],
+                [
+                    "collaborators",
+                    "privileged access"
+                ]
+            ],
+            "Text": "#G24# As a depositor, I want to allow my collaborators privileged access to datasets, ",
+            "Triggers": [[
+                "depositor",
+                "allow"
+            ]],
+            "Targets": [[
+                "allow",
+                "privileged access"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_09",
+        "Benefit": {
+            "Entity": ["files"],
+            "Action": ["deposit"],
+            "Contains": [],
+            "Text": "I am not limited in what files I can and cannot deposit.",
+            "Targets": [[
+                "deposit",
+                "files"
+            ]]
+        },
+        "Text": "#G24# As a depositor, I want to deposit arbitrarily large files, so that I am not limited in what files I can and cannot deposit.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": ["arbitrarily large files"],
+            "Action": ["deposit"],
+            "Persona": ["depositor"],
+            "Contains": [],
+            "Text": "#G24# As a depositor, I want to deposit arbitrarily large files, ",
+            "Triggers": [[
+                "depositor",
+                "deposit"
+            ]],
+            "Targets": [[
+                "deposit",
+                "arbitrarily large files"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_10",
+        "Benefit": {
+            "Entity": [
+                "data",
+                "publications"
+            ],
+            "Action": ["more easily discovered"],
+            "Contains": [],
+            "Text": "both my data and publications are more easily discovered.",
+            "Targets": [
+                [
+                    "more easily discovered",
+                    "data"
+                ],
+                [
+                    "more easily discovered",
+                    "publications"
+                ]
+            ]
+        },
+        "Text": "#G24# As a depositor, I want to link datasets to publications in Opus, so that both my data and publications are more easily discovered.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "datasets",
+                "publications",
+                "Opus"
+            ],
+            "Action": ["link"],
+            "Persona": ["depositor"],
+            "Contains": [
+                [
+                    "publications",
+                    "datasets"
+                ],
+                [
+                    "Opus",
+                    "publications"
+                ]
+            ],
+            "Text": "#G24# As a depositor, I want to link datasets to publications in Opus, ",
+            "Triggers": [[
+                "depositor",
+                "link"
+            ]],
+            "Targets": [[
+                "link",
+                "datasets"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_11",
+        "Benefit": {
+            "Entity": [
+                "citations",
+                "credit"
+            ],
+            "Action": [
+                "cited more easily",
+                "tracked",
+                "discovered"
+            ],
+            "Contains": [],
+            "Text": "it can be discovered and cited more easily and citations can be tracked so that I can receive credit.",
+            "Targets": [
+                [
+                    "cited more easily",
+                    "data"
+                ],
+                [
+                    "tracked",
+                    "citations"
+                ],
+                [
+                    "discovered",
+                    "data"
+                ]
+            ]
+        },
+        "Text": "#G24# As a depositor, I want to mint DOIs for my data, so that it can be discovered and cited more easily and citations can be tracked so that I can receive credit.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "DOIs",
+                "data"
+            ],
+            "Action": ["mint"],
+            "Persona": ["depositor"],
+            "Contains": [[
+                "data",
+                "DOIs"
+            ]],
+            "Text": "#G24# As a depositor, I want to mint DOIs for my data, ",
+            "Triggers": [[
+                "depositor",
+                "mint"
+            ]],
+            "Targets": [[
+                "mint",
+                "DOIs"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_12",
+        "Benefit": {
+            "Entity": ["same information"],
+            "Action": ["reentering"],
+            "Contains": [],
+            "Text": "I don't have to waste time reentering the same information.",
+            "Targets": [[
+                "reentering",
+                "same information"
+            ]]
+        },
+        "Text": "#G24# As a depositor, I want to have metadata automatically filled from other University systems and remembered from previous deposits, so that I don't have to waste time reentering the same information.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "metadata",
+                "other University systems",
+                "previous deposits"
+            ],
+            "Action": [
+                "have",
+                "automatically filled"
+            ],
+            "Persona": ["depositor"],
+            "Contains": [
+                [
+                    "other University systems",
+                    "metadata"
+                ],
+                [
+                    "previous deposits",
+                    "metadata"
+                ]
+            ],
+            "Text": "#G24# As a depositor, I want to have metadata automatically filled from other University systems and remembered from previous deposits, ",
+            "Triggers": [[
+                "depositor",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "metadata"
+                ],
+                [
+                    "automatically filled",
+                    "metadata"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_13",
+        "Benefit": {
+            "Entity": [
+                "data",
+                "appropriate repository",
+                "University",
+                "data",
+                "multiple places"
+            ],
+            "Action": [
+                "store",
+                "still register"
+            ],
+            "Contains": [
+                [
+                    "appropriate repository",
+                    "data"
+                ],
+                [
+                    "University",
+                    "data"
+                ]
+            ],
+            "Text": "I can store my data in an appropriate repository but still register it with the University and I don't have to deposit my data in multiple places.",
+            "Targets": [
+                [
+                    "store",
+                    "data"
+                ],
+                [
+                    "still register",
+                    "data"
+                ]
+            ]
+        },
+        "Text": "#G24# As a depositor, I want to link to data stored in external repositories, so that I can store my data in an appropriate repository but still register it with the University and I don't have to deposit my data in multiple places.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "external repositories",
+                "data"
+            ],
+            "Action": [
+                "link",
+                "stored"
+            ],
+            "Persona": ["depositor"],
+            "Contains": [[
+                "external repositories",
+                "data"
+            ]],
+            "Text": "#G24# As a depositor, I want to link to data stored in external repositories, ",
+            "Triggers": [[
+                "depositor",
+                "link"
+            ]],
+            "Targets": [
+                [
+                    "link",
+                    "data"
+                ],
+                [
+                    "stored",
+                    "data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_14",
+        "Benefit": {
+            "Entity": [
+                "laws",
+                "collaboration agreements"
+            ],
+            "Action": [],
+            "Contains": [],
+            "Text": "I do not accidentally breach laws or collaboration agreements.",
+            "Targets": []
+        },
+        "Text": "#G24# As a depositor, I want to specify a disposal policy for my data, so that I do not accidentally breach laws or collaboration agreements.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "disposal policy",
+                "data"
+            ],
+            "Action": ["specify"],
+            "Persona": ["depositor"],
+            "Contains": [[
+                "data",
+                "disposal policy"
+            ]],
+            "Text": "#G24# As a depositor, I want to specify a disposal policy for my data, ",
+            "Triggers": [[
+                "depositor",
+                "specify"
+            ]],
+            "Targets": [[
+                "specify",
+                "disposal policy"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_15",
+        "Benefit": {
+            "Entity": [
+                "impact",
+                "work"
+            ],
+            "Action": ["demonstrate"],
+            "Contains": [[
+                "work",
+                "impact"
+            ]],
+            "Text": "I can demonstrate the impact of my work.",
+            "Targets": [[
+                "demonstrate",
+                "impact"
+            ]]
+        },
+        "Text": "#G24# As a depositor, I want to track downloads of my data, so that I can demonstrate the impact of my work.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "downloads",
+                "data"
+            ],
+            "Action": ["track"],
+            "Persona": ["depositor"],
+            "Contains": [[
+                "data",
+                "downloads"
+            ]],
+            "Text": "#G24# As a depositor, I want to track downloads of my data, ",
+            "Triggers": [[
+                "depositor",
+                "track"
+            ]],
+            "Targets": [[
+                "track",
+                "downloads"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_16",
+        "Benefit": {
+            "Entity": [
+                "impact",
+                "work"
+            ],
+            "Action": ["demonstrate"],
+            "Contains": [[
+                "work",
+                "impact"
+            ]],
+            "Text": "I can demonstrate the impact of my work",
+            "Targets": [[
+                "demonstrate",
+                "impact"
+            ]]
+        },
+        "Text": "#G24# As a depositor, I want to track citations of my data, so that I can demonstrate the impact of my work",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "citations",
+                "data"
+            ],
+            "Action": ["track"],
+            "Persona": ["depositor"],
+            "Contains": [[
+                "data",
+                "citations"
+            ]],
+            "Text": "#G24# As a depositor, I want to track citations of my data, ",
+            "Triggers": [[
+                "depositor",
+                "track"
+            ]],
+            "Targets": [[
+                "track",
+                "citations"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_17",
+        "Benefit": {
+            "Entity": [
+                "data",
+                "funder requirements",
+                "archival"
+            ],
+            "Action": [
+                "use",
+                "fulfil"
+            ],
+            "Contains": [[
+                "archival",
+                "funder requirements"
+            ]],
+            "Text": "I can use my data in the future and I can fulfil funder requirements for archival.",
+            "Targets": [
+                [
+                    "use",
+                    "data"
+                ],
+                [
+                    "fulfil",
+                    "funder requirements"
+                ]
+            ]
+        },
+        "Text": "#G24# As a depositor, I want to have guarantees about data integrity, so that I can use my data in the future and I can fulfil funder requirements for archival.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "guarantees",
+                "data integrity"
+            ],
+            "Action": ["have"],
+            "Persona": ["depositor"],
+            "Contains": [[
+                "data integrity",
+                "guarantees"
+            ]],
+            "Text": "#G24# As a depositor, I want to have guarantees about data integrity, ",
+            "Triggers": [[
+                "depositor",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "guarantees"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_18",
+        "Benefit": {
+            "Entity": [
+                "researchers",
+                "discipline",
+                "data"
+            ],
+            "Action": ["find"],
+            "Contains": [[
+                "discipline",
+                "researchers"
+            ]],
+            "Text": "researchers in my discipline can find my data more easily.",
+            "Targets": [[
+                "find",
+                "data"
+            ]]
+        },
+        "Text": "#G24# As a depositor, I want to attach subject specific discoverability metadata to records, so that researchers in my discipline can find my data more easily.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "subject specific discoverability metadata",
+                "records"
+            ],
+            "Action": ["attach"],
+            "Persona": ["depositor"],
+            "Contains": [[
+                "records",
+                "subject specific discoverability metadata"
+            ]],
+            "Text": "#G24# As a depositor, I want to attach subject specific discoverability metadata to records, ",
+            "Triggers": [[
+                "depositor",
+                "attach"
+            ]],
+            "Targets": [[
+                "attach",
+                "subject specific discoverability metadata"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_19",
+        "Benefit": {
+            "Entity": [
+                "compliance",
+                "DMP",
+                "whole project workflow"
+            ],
+            "Action": [
+                "demonstrated",
+                "linked together"
+            ],
+            "Contains": [[
+                "DMP",
+                "compliance"
+            ]],
+            "Text": "compliance with DMP can be demonstrated and whole project workflow is linked together.",
+            "Targets": [
+                [
+                    "demonstrated",
+                    "compliance"
+                ],
+                [
+                    "linked together",
+                    "whole project workflow"
+                ]
+            ]
+        },
+        "Text": "#G24# As a depositor, I want to link datasets with the project DMP, so that compliance with DMP can be demonstrated and whole project workflow is linked together.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "datasets",
+                "project DMP"
+            ],
+            "Action": ["link"],
+            "Persona": ["depositor"],
+            "Contains": [[
+                "project DMP",
+                "datasets"
+            ]],
+            "Text": "#G24# As a depositor, I want to link datasets with the project DMP, ",
+            "Triggers": [[
+                "depositor",
+                "link"
+            ]],
+            "Targets": [[
+                "link",
+                "datasets"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_20",
+        "Benefit": {
+            "Entity": ["whole project workflow"],
+            "Action": ["linked together"],
+            "Contains": [],
+            "Text": "whole project workflow is linked together.",
+            "Targets": [[
+                "linked together",
+                "whole project workflow"
+            ]]
+        },
+        "Text": "#G24# As a depositor, I want to manage and share 'live' research data, so that whole project workflow is linked together.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": ["'live' research data"],
+            "Action": [
+                "manage",
+                "share"
+            ],
+            "Persona": ["depositor"],
+            "Contains": [],
+            "Text": "#G24# As a depositor, I want to manage and share 'live' research data, ",
+            "Triggers": [
+                [
+                    "depositor",
+                    "manage"
+                ],
+                [
+                    "depositor",
+                    "share"
+                ]
+            ],
+            "Targets": [
+                [
+                    "manage",
+                    "'live' research data"
+                ],
+                [
+                    "share",
+                    "'live' research data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_21",
+        "Benefit": {
+            "Entity": [
+                "changes",
+                "dataset",
+                "research integrity"
+            ],
+            "Action": [],
+            "Contains": [[
+                "dataset",
+                "changes"
+            ]],
+            "Text": "changes to the dataset are transparent and do not compromise research integrity.",
+            "Targets": []
+        },
+        "Text": "#G24# As a depositor, I want to manage multiple versions of the same dataset, so that changes to the dataset are transparent and do not compromise research integrity.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "multiple versions",
+                "same dataset"
+            ],
+            "Action": ["manage"],
+            "Persona": ["depositor"],
+            "Contains": [[
+                "same dataset",
+                "multiple versions"
+            ]],
+            "Text": "#G24# As a depositor, I want to manage multiple versions of the same dataset, ",
+            "Triggers": [[
+                "depositor",
+                "manage"
+            ]],
+            "Targets": [[
+                "manage",
+                "multiple versions"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_22",
+        "Benefit": {
+            "Entity": ["research data management tasks"],
+            "Action": ["delegate"],
+            "Contains": [],
+            "Text": "I can delegate research data management tasks appropriately.",
+            "Targets": [[
+                "delegate",
+                "research data management tasks"
+            ]]
+        },
+        "Text": "#G24# As a depositor, I want to allow others to deposit on my behalf, so that I can delegate research data management tasks appropriately.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": ["others"],
+            "Action": [
+                "allow",
+                "deposit"
+            ],
+            "Persona": ["depositor"],
+            "Contains": [],
+            "Text": "#G24# As a depositor, I want to allow others to deposit on my behalf, ",
+            "Triggers": [[
+                "depositor",
+                "allow"
+            ]],
+            "Targets": [[
+                "allow",
+                "others"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_23",
+        "Benefit": {
+            "Entity": [
+                "data",
+                "needs"
+            ],
+            "Action": ["easily find"],
+            "Contains": [],
+            "Text": "I can easily find data relevant to my needs.",
+            "Targets": [[
+                "easily find",
+                "data"
+            ]]
+        },
+        "Text": "#G24# As a data reuser, I want to search the archive through the web, so that I can easily find data relevant to my needs.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "archive",
+                "web"
+            ],
+            "Action": ["search"],
+            "Persona": ["data reuser"],
+            "Contains": [[
+                "web",
+                "archive"
+            ]],
+            "Text": "#G24# As a data reuser, I want to search the archive through the web, ",
+            "Triggers": [[
+                "data reuser",
+                "search"
+            ]],
+            "Targets": [[
+                "search",
+                "archive"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_24",
+        "Benefit": {
+            "Entity": [
+                "University of Bath data",
+                "language barriers"
+            ],
+            "Action": ["reusing"],
+            "Contains": [[
+                "University of Bath data",
+                "language barriers"
+            ]],
+            "Text": "I am not put off reusing University of Bath data by language barriers.",
+            "Targets": [[
+                "reusing",
+                "University of Bath data"
+            ]]
+        },
+        "Text": "#G24# As a data reuser, I want to access the system in my native language, so that I am not put off reusing University of Bath data by language barriers.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "system",
+                "native language"
+            ],
+            "Action": ["access"],
+            "Persona": ["data reuser"],
+            "Contains": [[
+                "system",
+                "native language"
+            ]],
+            "Text": "#G24# As a data reuser, I want to access the system in my native language, ",
+            "Triggers": [[
+                "data reuser",
+                "access"
+            ]],
+            "Targets": [[
+                "access",
+                "system"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_25",
+        "Benefit": {
+            "Entity": [
+                "preliminary assessment",
+                "whole dataset"
+            ],
+            "Action": ["make"],
+            "Contains": [],
+            "Text": "I can make a preliminary assessment of usefulness without downloading the whole dataset.",
+            "Targets": [[
+                "make",
+                "preliminary assessment"
+            ]]
+        },
+        "Text": "#G24# As a data reuser, I want to examine and identify deposited files, so that I can make a preliminary assessment of usefulness without downloading the whole dataset.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": ["deposited files"],
+            "Action": [
+                "examine",
+                "identify"
+            ],
+            "Persona": ["data reuser"],
+            "Contains": [],
+            "Text": "#G24# As a data reuser, I want to examine and identify deposited files, ",
+            "Triggers": [
+                [
+                    "data reuser",
+                    "examine"
+                ],
+                [
+                    "data reuser",
+                    "identify"
+                ]
+            ],
+            "Targets": [
+                [
+                    "examine",
+                    "deposited files"
+                ],
+                [
+                    "identify",
+                    "deposited files"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_26",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["reference"],
+            "Contains": [],
+            "Text": "I can reference it correctly.",
+            "Targets": [[
+                "reference",
+                "dataset"
+            ]]
+        },
+        "Text": "#G24# As a data reuser, I want to view an example citation for a dataset, so that I can reference it correctly.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "example citation",
+                "dataset"
+            ],
+            "Action": ["view"],
+            "Persona": ["data reuser"],
+            "Contains": [[
+                "dataset",
+                "example citation"
+            ]],
+            "Text": "#G24# As a data reuser, I want to view an example citation for a dataset, ",
+            "Triggers": [[
+                "data reuser",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "example citation"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_27",
+        "Benefit": {
+            "Entity": [
+                "data",
+                "dataset",
+                "referencemanagement software"
+            ],
+            "Action": [
+                "get back",
+                "import"
+            ],
+            "Contains": [[
+                "referencemanagement software",
+                "dataset"
+            ]],
+            "Text": "I can get back to the data in future and I can import the dataset into my referencemanagement software automatically.",
+            "Targets": [
+                [
+                    "get back",
+                    "data"
+                ],
+                [
+                    "import",
+                    "dataset"
+                ]
+            ]
+        },
+        "Text": "#G24# As a data reuser, I want to view a DOI for a dataset, so that I can get back to the data in future and I can import the dataset into my referencemanagement software automatically.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "DOI",
+                "dataset"
+            ],
+            "Action": ["view"],
+            "Persona": ["data reuser"],
+            "Contains": [[
+                "dataset",
+                "DOI"
+            ]],
+            "Text": "#G24# As a data reuser, I want to view a DOI for a dataset, ",
+            "Triggers": [[
+                "data reuser",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "DOI"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_28",
+        "Benefit": {
+            "Entity": ["data"],
+            "Action": ["get back"],
+            "Contains": [],
+            "Text": "I can get back to the data in future.",
+            "Targets": [[
+                "get back",
+                "data"
+            ]]
+        },
+        "Text": "#G24# As a data reuser, I want to get a persistent URL for a dataset, so that I can get back to the data in future.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "persistent URL",
+                "dataset"
+            ],
+            "Action": ["get"],
+            "Persona": ["data reuser"],
+            "Contains": [[
+                "dataset",
+                "persistent URL"
+            ]],
+            "Text": "#G24# As a data reuser, I want to get a persistent URL for a dataset, ",
+            "Triggers": [[
+                "data reuser",
+                "get"
+            ]],
+            "Targets": [[
+                "get",
+                "persistent URL"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_29",
+        "Benefit": {
+            "Entity": [
+                "books",
+                "articles",
+                "data",
+                "one place"
+            ],
+            "Action": ["search"],
+            "Contains": [
+                [
+                    "one place",
+                    "books"
+                ],
+                [
+                    "one place",
+                    "articles"
+                ],
+                [
+                    "one place",
+                    "data"
+                ]
+            ],
+            "Text": "I can search books, articles and data all in one place.",
+            "Targets": [
+                [
+                    "search",
+                    "books"
+                ],
+                [
+                    "search",
+                    "articles"
+                ],
+                [
+                    "search",
+                    "data"
+                ]
+            ]
+        },
+        "Text": "#G24# As a data reuser, I want to search the archive through Primo , so that I can search books, articles and data all in one place.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "archive",
+                "Primo"
+            ],
+            "Action": ["search"],
+            "Persona": ["data reuser"],
+            "Contains": [[
+                "Primo",
+                "archive"
+            ]],
+            "Text": "#G24# As a data reuser, I want to search the archive through Primo , ",
+            "Triggers": [[
+                "data reuser",
+                "search"
+            ]],
+            "Targets": [[
+                "search",
+                "archive"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_30",
+        "Benefit": {
+            "Entity": [
+                "right version",
+                "dataset"
+            ],
+            "Action": [
+                "be sure",
+                "using"
+            ],
+            "Contains": [[
+                "dataset",
+                "right version"
+            ]],
+            "Text": "I can be sure I'm using the right version of the dataset.",
+            "Targets": [[
+                "using",
+                "right version"
+            ]]
+        },
+        "Text": "#G24# As a data reuser, I want to see different versions of a dataset at a glance, so that I can be sure I'm using the right version of the dataset.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "different versions",
+                "dataset"
+            ],
+            "Action": ["see"],
+            "Persona": ["data reuser"],
+            "Contains": [[
+                "dataset",
+                "different versions"
+            ]],
+            "Text": "#G24# As a data reuser, I want to see different versions of a dataset at a glance, ",
+            "Triggers": [[
+                "data reuser",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "different versions"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_31",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["collaborate effectively"],
+            "Contains": [],
+            "Text": "I can collaborate effectively.",
+            "Targets": []
+        },
+        "Text": "#G24# As an externalcollaborator, I want to gain privileged access to data for projects in which I am involved, so that I can collaborate effectively.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "privileged access",
+                "data",
+                "projects"
+            ],
+            "Action": [
+                "gain",
+                "involved"
+            ],
+            "Persona": ["externalcollaborator"],
+            "Contains": [
+                [
+                    "projects",
+                    "data"
+                ],
+                [
+                    "data",
+                    "privileged access"
+                ]
+            ],
+            "Text": "#G24# As an externalcollaborator, I want to gain privileged access to data for projects in which I am involved, ",
+            "Triggers": [[
+                "externalcollaborator",
+                "gain"
+            ]],
+            "Targets": [
+                [
+                    "gain",
+                    "privileged access"
+                ],
+                [
+                    "involved",
+                    "projects"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_32",
+        "Benefit": {
+            "Entity": [
+                "risk",
+                "Bath"
+            ],
+            "Action": ["collaborating"],
+            "Contains": [[
+                "Bath",
+                "risk"
+            ]],
+            "Text": "the risk of collaborating with Bath is acceptable to me.",
+            "Targets": [[
+                "collaborating",
+                "Bath"
+            ]]
+        },
+        "Text": "#G24# As an externalcoordinator, I want to have guarantees that my IP rights will not be breached, so that the risk of collaborating with Bath is acceptable to me.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "guarantees",
+                "IP rights"
+            ],
+            "Action": ["have"],
+            "Persona": ["externalcoordinator"],
+            "Contains": [[
+                "guarantees",
+                "IP rights"
+            ]],
+            "Text": "#G24# As an externalcoordinator, I want to have guarantees that my IP rights will not be breached, ",
+            "Triggers": [[
+                "externalcoordinator",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "guarantees"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_33",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["collaborate effectively"],
+            "Contains": [],
+            "Text": "I can collaborate effectively.",
+            "Targets": []
+        },
+        "Text": "#G24# AS an externalcoordinator, I want to access data from Bath collaborators off campus, so that I can collaborate effectively.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "data",
+                "Bath collaborators",
+                "off campus"
+            ],
+            "Action": ["access"],
+            "Persona": ["externalcoordinator"],
+            "Contains": [
+                [
+                    "Bath collaborators",
+                    "data"
+                ],
+                [
+                    "off campus",
+                    "data"
+                ]
+            ],
+            "Text": "#G24# AS an externalcoordinator, I want to access data from Bath collaborators off campus, ",
+            "Triggers": [[
+                "externalcoordinator",
+                "access"
+            ]],
+            "Targets": [[
+                "access",
+                "data"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_34",
+        "Benefit": {
+            "Entity": [
+                "facility data",
+                "researchers",
+                "own data",
+                "own archive"
+            ],
+            "Action": ["access"],
+            "Contains": [[
+                "own archive",
+                "facility data"
+            ]],
+            "Text": "I am no longer required to maintain my own archive of facility data and researchers can access their own data as needed.",
+            "Targets": [[
+                "access",
+                "own data"
+            ]]
+        },
+        "Text": "#G24# As a research facility manager, I want to deposit data from my facility directly into the archive on behalf of researchers, so that I am no longer required to maintain my own archive of facility data and researchers can access their own data as needed.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "data",
+                "facility",
+                "archive",
+                "researchers"
+            ],
+            "Action": ["deposit"],
+            "Persona": ["research facility manager"],
+            "Contains": [
+                [
+                    "facility",
+                    "data"
+                ],
+                [
+                    "archive",
+                    "data"
+                ]
+            ],
+            "Text": "#G24# As a research facility manager, I want to deposit data from my facility directly into the archive on behalf of researchers, ",
+            "Triggers": [[
+                "research facility manager",
+                "deposit"
+            ]],
+            "Targets": [[
+                "deposit",
+                "data"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_35",
+        "Benefit": {
+            "Entity": [
+                "metadata",
+                "compliance",
+                "policies",
+                "details",
+                "licensing",
+                "consistent quality"
+            ],
+            "Action": [
+                "maintained",
+                "checked",
+                "checked"
+            ],
+            "Contains": [
+                [
+                    "policies",
+                    "compliance"
+                ],
+                [
+                    "licensing",
+                    "details"
+                ],
+                [
+                    "metadata",
+                    "consistent quality"
+                ]
+            ],
+            "Text": "consistent quality of metadata is maintained, compliance with policies can be checked and details of licensing can be checked.",
+            "Targets": [
+                [
+                    "checked",
+                    "compliance"
+                ],
+                [
+                    "checked",
+                    "details"
+                ],
+                [
+                    "maintained",
+                    "consistent quality"
+                ]
+            ]
+        },
+        "Text": "#G24# As a Bath Data Archive administrator, I want to make some checks on deposited datasets before they are made public, so that consistent quality of metadata is maintained, compliance with policies can be checked and details of licensing can be checked.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "some checks",
+                "deposited datasets"
+            ],
+            "Action": ["make"],
+            "Persona": ["Bath Data Archive administrator"],
+            "Contains": [[
+                "deposited datasets",
+                "some checks"
+            ]],
+            "Text": "#G24# As a Bath Data Archive administrator, I want to make some checks on deposited datasets before they are made public, ",
+            "Triggers": [[
+                "Bath Data Archive administrator",
+                "make"
+            ]],
+            "Targets": [[
+                "make",
+                "some checks"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_36",
+        "Benefit": {
+            "Entity": [
+                "metadata",
+                "consistent quality"
+            ],
+            "Action": ["maintained"],
+            "Contains": [[
+                "metadata",
+                "consistent quality"
+            ]],
+            "Text": "consistent quality of metadata is maintained.",
+            "Targets": [[
+                "maintained",
+                "consistent quality"
+            ]]
+        },
+        "Text": "#G24# As a Bath Data Archive administrator, I want to require a minimum set of metadata, so that consistent quality of metadata is maintained.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "minimum set",
+                "metadata"
+            ],
+            "Action": ["require"],
+            "Persona": ["Bath Data Archive administrator"],
+            "Contains": [[
+                "minimum set",
+                "metadata"
+            ]],
+            "Text": "#G24# As a Bath Data Archive administrator, I want to require a minimum set of metadata, ",
+            "Triggers": [[
+                "Bath Data Archive administrator",
+                "require"
+            ]],
+            "Targets": [[
+                "require",
+                "minimum set"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_37",
+        "Benefit": {
+            "Entity": ["data"],
+            "Action": [],
+            "Contains": [],
+            "Text": "data which is still required is not destroyed.",
+            "Targets": []
+        },
+        "Text": "#G24# As a Bath Data Archive administrator, I want to approve scheduled disposal of data, so that data which is still required is not destroyed.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "scheduled disposal",
+                "data"
+            ],
+            "Action": ["approve"],
+            "Persona": ["Bath Data Archive administrator"],
+            "Contains": [[
+                "data",
+                "scheduled disposal"
+            ]],
+            "Text": "#G24# As a Bath Data Archive administrator, I want to approve scheduled disposal of data, ",
+            "Triggers": [[
+                "Bath Data Archive administrator",
+                "approve"
+            ]],
+            "Targets": [[
+                "approve",
+                "scheduled disposal"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_38",
+        "Benefit": {
+            "Entity": [
+                "particular aspects",
+                "archive holdings"
+            ],
+            "Action": ["report"],
+            "Contains": [[
+                "archive holdings",
+                "particular aspects"
+            ]],
+            "Text": "I can report on particular aspects of the archive holdings.",
+            "Targets": [[
+                "report",
+                "particular aspects"
+            ]]
+        },
+        "Text": "#G24# As a Bath Data Archive administrator, I want to query the entire archive , so that I can report on particular aspects of the archive holdings.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": ["entire archive"],
+            "Action": ["query"],
+            "Persona": ["Bath Data Archive administrator"],
+            "Contains": [],
+            "Text": "#G24# As a Bath Data Archive administrator, I want to query the entire archive , ",
+            "Triggers": [[
+                "Bath Data Archive administrator",
+                "query"
+            ]],
+            "Targets": [[
+                "query",
+                "entire archive"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_39",
+        "Benefit": {
+            "Entity": [
+                "Bath data holdings",
+                "external archives"
+            ],
+            "Action": ["close"],
+            "Contains": [[
+                "external archives",
+                "Bath data holdings"
+            ]],
+            "Text": "Bath data holdings in external archives are not lost if they close down.",
+            "Targets": [[
+                "close",
+                "external archives"
+            ]]
+        },
+        "Text": "#G24# As a Bath Data Archive administrator, I want to import Bath data from an external data centre wholesale, so that Bath data holdings in external archives are not lost if they close down.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "Bath data",
+                "external data centre wholesale"
+            ],
+            "Action": ["import"],
+            "Persona": ["Bath Data Archive administrator"],
+            "Contains": [[
+                "external data centre wholesale",
+                "Bath data"
+            ]],
+            "Text": "#G24# As a Bath Data Archive administrator, I want to import Bath data from an external data centre wholesale, ",
+            "Triggers": [[
+                "Bath Data Archive administrator",
+                "import"
+            ]],
+            "Targets": [[
+                "import",
+                "Bath data"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_40",
+        "Benefit": {
+            "Entity": ["data"],
+            "Action": [],
+            "Contains": [],
+            "Text": "data is as reusable as possible.",
+            "Targets": []
+        },
+        "Text": "#G24# As a Bath Data Archive administrator, I want to encourage and promote the use of open standards for deposit, so that data is as reusable as possible.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "deposit",
+                "open standards"
+            ],
+            "Action": [
+                "encourage",
+                "promote"
+            ],
+            "Persona": ["Bath Data Archive administrator"],
+            "Contains": [[
+                "deposit",
+                "open standards"
+            ]],
+            "Text": "#G24# As a Bath Data Archive administrator, I want to encourage and promote the use of open standards for deposit, ",
+            "Triggers": [
+                [
+                    "Bath Data Archive administrator",
+                    "encourage"
+                ],
+                [
+                    "Bath Data Archive administrator",
+                    "promote"
+                ]
+            ],
+            "Targets": [
+                [
+                    "promote",
+                    "open standards"
+                ],
+                [
+                    "encourage",
+                    "open standards"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_41",
+        "Benefit": {
+            "Entity": [
+                "impact",
+                "research data publication",
+                "funding",
+                "outputs"
+            ],
+            "Action": [
+                "analyse",
+                "link",
+                "produces"
+            ],
+            "Contains": [
+                [
+                    "research data publication",
+                    "impact"
+                ],
+                [
+                    "outputs",
+                    "funding"
+                ]
+            ],
+            "Text": "I can analyse impact of research data publication I can link funding to all of the outputs it produces.",
+            "Targets": [
+                [
+                    "analyse",
+                    "impact"
+                ],
+                [
+                    "link",
+                    "funding"
+                ]
+            ]
+        },
+        "Text": "#G24# As a Research Information manager, I want to integrate the archive with CRIS, so that I can analyse impact of research data publication I can link funding to all of the outputs it produces.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "archive",
+                "CRIS"
+            ],
+            "Action": ["integrate"],
+            "Persona": ["Research Information manager"],
+            "Contains": [[
+                "CRIS",
+                "archive"
+            ]],
+            "Text": "#G24# As a Research Information manager, I want to integrate the archive with CRIS, ",
+            "Triggers": [[
+                "Research Information manager",
+                "integrate"
+            ]],
+            "Targets": [[
+                "integrate",
+                "archive"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_42",
+        "Benefit": {
+            "Entity": [
+                "university's record",
+                "data holdings"
+            ],
+            "Action": [],
+            "Contains": [[
+                "university's record",
+                "data holdings"
+            ]],
+            "Text": "the university's record of data holdings is complete.",
+            "Targets": []
+        },
+        "Text": "#G24# As a Research Information manager, I want to include records for externally held data complete, so that the university's record of data holdings is complete.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "records",
+                "externally held data"
+            ],
+            "Action": ["include"],
+            "Persona": ["Research Information manager"],
+            "Contains": [[
+                "records",
+                "externally held data"
+            ]],
+            "Text": "#G24# As a Research Information manager, I want to include records for externally held data complete, ",
+            "Triggers": [[
+                "Research Information manager",
+                "include"
+            ]],
+            "Targets": [[
+                "include",
+                "records"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_43",
+        "Benefit": {
+            "Entity": [
+                "impact",
+                "datasets",
+                "academia"
+            ],
+            "Action": ["demonstrated"],
+            "Contains": [
+                [
+                    "datasets",
+                    "impact"
+                ],
+                [
+                    "academia",
+                    "datasets"
+                ]
+            ],
+            "Text": "impact of datasets within academia can be demonstrated.",
+            "Targets": [[
+                "demonstrated",
+                "impact"
+            ]]
+        },
+        "Text": "#G24# As a Research Information manager, I want to track citation counts for published datasets, so that impact of datasets within academia can be demonstrated.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "citation counts",
+                "published datasets"
+            ],
+            "Action": ["track"],
+            "Persona": ["Research Information manager"],
+            "Contains": [[
+                "published datasets",
+                "citation counts"
+            ]],
+            "Text": "#G24# As a Research Information manager, I want to track citation counts for published datasets, ",
+            "Triggers": [[
+                "Research Information manager",
+                "track"
+            ]],
+            "Targets": [[
+                "track",
+                "citation counts"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_44",
+        "Benefit": {
+            "Entity": [
+                "impact",
+                "datasets",
+                "outside academia"
+            ],
+            "Action": ["demonstrated"],
+            "Contains": [
+                [
+                    "datasets",
+                    "impact"
+                ],
+                [
+                    "outside academia",
+                    "datasets"
+                ]
+            ],
+            "Text": "impact of datasets outside academia can be demonstrated.",
+            "Targets": [[
+                "demonstrated",
+                "impact"
+            ]]
+        },
+        "Text": "#G24# As a Research Information manager, I want to segment the view and download statistics by country and sector so that impact of datasets outside academia can be demonstrated.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "view",
+                "statistics",
+                "country",
+                "sector"
+            ],
+            "Action": [
+                "segment",
+                "download"
+            ],
+            "Persona": ["Research Information manager"],
+            "Contains": [
+                [
+                    "country",
+                    "statistics"
+                ],
+                [
+                    "sector",
+                    "statistics"
+                ]
+            ],
+            "Text": "#G24# As a Research Information manager, I want to segment the view and download statistics by country and sector ",
+            "Triggers": [
+                [
+                    "Research Information manager",
+                    "segment"
+                ],
+                [
+                    "Research Information manager",
+                    "download"
+                ]
+            ],
+            "Targets": [
+                [
+                    "segment",
+                    "view"
+                ],
+                [
+                    "download",
+                    "statistics"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_45",
+        "Benefit": {
+            "Entity": [
+                "funder requirements",
+                "projects",
+                "datasets"
+            ],
+            "Action": [
+                "report",
+                "depositing"
+            ],
+            "Contains": [[
+                "projects",
+                "datasets"
+            ]],
+            "Text": "I can report on projects depositing datasets in relation to funder requirements.",
+            "Targets": [
+                [
+                    "report",
+                    "funder requirements"
+                ],
+                [
+                    "report",
+                    "projects"
+                ],
+                [
+                    "depositing",
+                    "datasets"
+                ]
+            ]
+        },
+        "Text": "#G24# As a Research Information manager, I want to have datasets linked to metadata about projects, so that I can report on projects depositing datasets in relation to funder requirements.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "datasets",
+                "metadata",
+                "projects"
+            ],
+            "Action": [
+                "have",
+                "linked"
+            ],
+            "Persona": ["Research Information manager"],
+            "Contains": [
+                [
+                    "projects",
+                    "metadata"
+                ],
+                [
+                    "metadata",
+                    "datasets"
+                ]
+            ],
+            "Text": "#G24# As a Research Information manager, I want to have datasets linked to metadata about projects, ",
+            "Triggers": [[
+                "Research Information manager",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "datasets"
+                ],
+                [
+                    "linked",
+                    "datasets"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_46",
+        "Benefit": {
+            "Entity": [
+                "university data storage",
+                "data"
+            ],
+            "Action": [],
+            "Contains": [],
+            "Text": "university data storage is consistent and maintainable and future availability of data can be guaranteed.",
+            "Targets": []
+        },
+        "Text": "#G24# As an UnivITservice, I want to store archived data on existing storage systems, so that university data storage is consistent and maintainable and future availability of data can be guaranteed.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "archived data",
+                "existing storage systems"
+            ],
+            "Action": ["store"],
+            "Persona": ["UnivITservice"],
+            "Contains": [[
+                "existing storage systems",
+                "archived data"
+            ]],
+            "Text": "#G24# As an UnivITservice, I want to store archived data on existing storage systems, ",
+            "Triggers": [[
+                "UnivITservice",
+                "store"
+            ]],
+            "Targets": [[
+                "store",
+                "archived data"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_47",
+        "Benefit": {
+            "Entity": [
+                "cost",
+                "system"
+            ],
+            "Action": ["administering"],
+            "Contains": [[
+                "system",
+                "cost"
+            ]],
+            "Text": "the cost of administering the system can be kept low.",
+            "Targets": [[
+                "administering",
+                "system"
+            ]]
+        },
+        "Text": "#G24# As an UnivITservice, I want to integrate the archive with existing university systems such as LDAP, so that the cost of administering the system can be kept low.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "archive",
+                "existing university systems",
+                "LDAP"
+            ],
+            "Action": ["integrate"],
+            "Persona": ["UnivITservice"],
+            "Contains": [
+                [
+                    "existing university systems",
+                    "archive"
+                ],
+                [
+                    "existing university systems",
+                    "LDAP"
+                ]
+            ],
+            "Text": "#G24# As an UnivITservice, I want to integrate the archive with existing university systems such as LDAP, ",
+            "Triggers": [[
+                "UnivITservice",
+                "integrate"
+            ]],
+            "Targets": [[
+                "integrate",
+                "archive"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_48",
+        "Benefit": {
+            "Entity": ["features"],
+            "Action": ["made"],
+            "Contains": [],
+            "Text": "features can be made.",
+            "Targets": [[
+                "made",
+                "features"
+            ]]
+        },
+        "Text": "#G24# As an UnivITservice, I want to store archived data directly on the HCP object store, so that  features can be made.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "archived data",
+                "HCP object store"
+            ],
+            "Action": ["store"],
+            "Persona": ["UnivITservice"],
+            "Contains": [[
+                "HCP object store",
+                "archived data"
+            ]],
+            "Text": "#G24# As an UnivITservice, I want to store archived data directly on the HCP object store,  ",
+            "Triggers": [[
+                "UnivITservice",
+                "store"
+            ]],
+            "Targets": [[
+                "store",
+                "archived data"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_49",
+        "Benefit": {
+            "Entity": ["one system"],
+            "Action": [],
+            "Contains": [],
+            "Text": "I am not tied into one system which may not be the most appropriate at some point in the future.",
+            "Targets": []
+        },
+        "Text": "#G24# As an UnivITservice, I want to be able to export all data to a different system, so that I am not tied into one system which may not be the most appropriate at some point in the future.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "all data",
+                "different system"
+            ],
+            "Action": ["export"],
+            "Persona": ["UnivITservice"],
+            "Contains": [[
+                "different system",
+                "all data"
+            ]],
+            "Text": "#G24# As an UnivITservice, I want to be able to export all data to a different system, ",
+            "Triggers": [[
+                "UnivITservice",
+                "export"
+            ]],
+            "Targets": [[
+                "export",
+                "all data"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_50",
+        "Benefit": {
+            "Entity": [
+                "service",
+                "archive"
+            ],
+            "Action": ["interact"],
+            "Contains": [],
+            "Text": "my service can interact with the archive.",
+            "Targets": [[
+                "interact",
+                "archive"
+            ]]
+        },
+        "Text": "#G24# As a developer, I want to deposit and maintain datasets via an API such as SWORD2, so that my service can interact with the archive.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "datasets",
+                "API",
+                "SWORD2"
+            ],
+            "Action": [
+                "deposit",
+                "maintain"
+            ],
+            "Persona": ["developer"],
+            "Contains": [
+                [
+                    "API",
+                    "SWORD2"
+                ],
+                [
+                    "API",
+                    "datasets"
+                ]
+            ],
+            "Text": "#G24# As a developer, I want to deposit and maintain datasets via an API such as SWORD2, ",
+            "Triggers": [
+                [
+                    "developer",
+                    "deposit"
+                ],
+                [
+                    "developer",
+                    "maintain"
+                ]
+            ],
+            "Targets": [
+                [
+                    "deposit",
+                    "datasets"
+                ],
+                [
+                    "maintain",
+                    "datasets"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_51",
+        "Benefit": {
+            "Entity": [
+                "journals",
+                "robust, high quality research"
+            ],
+            "Action": ["filled"],
+            "Contains": [[
+                "journals",
+                "robust, high quality research"
+            ]],
+            "Text": "my journals can be seen to be filled with robust, high quality research.",
+            "Targets": [[
+                "filled",
+                "journals"
+            ]]
+        },
+        "Text": "#G24# As an academicpublisher, I want to make persistent web links between my articles and underlying datasets, so that my journals can be seen to be filled with robust, high quality research.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "persistent web links",
+                "articles ",
+                "underlying datasets"
+            ],
+            "Action": ["make"],
+            "Persona": ["academicpublisher"],
+            "Contains": [
+                [
+                    "articles ",
+                    "persistent web links"
+                ],
+                [
+                    "underlying datasets",
+                    "persistent web links"
+                ]
+            ],
+            "Text": "#G24# As an academicpublisher, I want to make persistent web links between my articles and underlying datasets, ",
+            "Triggers": [[
+                "academicpublisher",
+                "make"
+            ]],
+            "Targets": [[
+                "make",
+                "persistent web links"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_52",
+        "Benefit": {
+            "Entity": ["worthwhile investment"],
+            "Action": [
+                "be sure",
+                "funding"
+            ],
+            "Contains": [],
+            "Text": "I can be sure that funding them is a worthwhile investment.",
+            "Targets": [[
+                "funding",
+                "researchers I fund"
+            ]]
+        },
+        "Text": "#G24# As a fundingbody, I want to be reassured that researchers I fund have robust archival plans for their data, so that I can be sure that funding them is a worthwhile investment.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "researchers I fund",
+                "data",
+                "robust archival plans"
+            ],
+            "Action": ["be reassured"],
+            "Persona": ["fundingbody"],
+            "Contains": [
+                [
+                    "researchers I fund",
+                    "robust archival plans"
+                ],
+                [
+                    "data",
+                    "robust archival plans"
+                ],
+                [
+                    "researchers I fund",
+                    "data"
+                ]
+            ],
+            "Text": "#G24# As a fundingbody, I want to be reassured that researchers I fund have robust archival plans for their data, ",
+            "Triggers": [[
+                "fundingbody",
+                "be reassured"
+            ]],
+            "Targets": []
+        }
+    },
+    {
+        "US_Nr": "user_story_53",
+        "Benefit": {
+            "Entity": [
+                "funding strategy",
+                "cross fertilisation",
+                "research outputs"
+            ],
+            "Action": [
+                "analyse",
+                "encourage"
+            ],
+            "Contains": [[
+                "research outputs",
+                "cross fertilisation"
+            ]],
+            "Text": "I can analyse effectiveness of funding strategy and I can encourage cross fertilisation of research outputs.",
+            "Targets": [
+                [
+                    "analyse",
+                    "funding strategy"
+                ],
+                [
+                    "encourage",
+                    "cross fertilisation"
+                ]
+            ]
+        },
+        "Text": "#G24# As a fundingbody, I want to harvest metadata on outputs from research I fund, so that I can analyse effectiveness of funding strategy and I can encourage cross fertilisation of research outputs.",
+        "PID": "#G24#",
+        "Main": {
+            "Entity": [
+                "metadata",
+                "outputs",
+                "research I fund"
+            ],
+            "Action": ["harvest"],
+            "Persona": ["fundingbody"],
+            "Contains": [
+                [
+                    "outputs",
+                    "metadata"
+                ],
+                [
+                    "research I fund",
+                    "outputs"
+                ]
+            ],
+            "Text": "#G24# As a fundingbody, I want to harvest metadata on outputs from research I fund, ",
+            "Triggers": [[
+                "fundingbody",
+                "harvest"
+            ]],
+            "Targets": [[
+                "harvest",
+                "metadata"
+            ]]
+        }
+    }
+]

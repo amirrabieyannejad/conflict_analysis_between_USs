@@ -58,8 +58,9 @@ public class ActionsRulesCreator {
 			} else {
 				if(!setTargets.contains(verb.toLowerCase())) {
 				targetPair.put(verb.toLowerCase());
+				targetPair.put(entity.toLowerCase());
 				targetPair.put(actionRule);
-				setTargets.add(verb.toLowerCase());
+				setTargets.add(verb.toLowerCase()+entity.toLowerCase());
 				targetActionRules.put(targetPair);
 				}
 				for (int j = 0; j < contains.length(); j++) {
@@ -74,7 +75,7 @@ public class ActionsRulesCreator {
 						containPair.put(entity2);
 						containPair.put(actionRule);
 						containActionRules.put(containPair);
-						setContains.add(entity2.toLowerCase());
+						setContains.add(entity2.toLowerCase()+entity.toLowerCase());
 						}
 					}
 					if (entity2.equalsIgnoreCase(entity)) {
@@ -84,7 +85,7 @@ public class ActionsRulesCreator {
 						containPair.put(entity1);
 						containPair.put(actionRule);
 						containActionRules.put(containPair);
-						setContains.add(entity1.toLowerCase());
+						setContains.add(entity1.toLowerCase()+entity.toLowerCase());
 						}
 					}
 				}

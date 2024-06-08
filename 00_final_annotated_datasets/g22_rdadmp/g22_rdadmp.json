@@ -1,0 +1,3852 @@
+[
+    {
+        "US_Nr": "user_story_01",
+        "Benefit": {
+            "Entity": [
+                "project",
+                "proper running",
+                "staff"
+            ],
+            "Action": [
+                "ensure",
+                "changes"
+            ],
+            "Contains": [],
+            "Text": "I can ensure proper running of the project in case of staff changes.",
+            "Targets": [
+                [
+                    "ensure",
+                    "proper running"
+                ],
+                [
+                    "changes",
+                    "staff"
+                ]
+            ]
+        },
+        "Text": "#G22# As a PI, I want to properly record all metadata, so that I can ensure proper running of the project in case of staff changes.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": ["all metadata"],
+            "Action": ["properly record"],
+            "Persona": ["PI"],
+            "Contains": [],
+            "Text": "#G22# As a PI, I want to properly record all metadata, ",
+            "Triggers": [[
+                "PI",
+                "properly record"
+            ]],
+            "Targets": [[
+                "properly record",
+                "all metadata"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_02",
+        "Benefit": {
+            "Entity": [
+                "all stages",
+                "data lifecycle"
+            ],
+            "Action": [],
+            "Contains": [[
+                "data lifecycle",
+                "all stages"
+            ]],
+            "Text": "it remains accessible during all stages of the data lifecycle.",
+            "Targets": []
+        },
+        "Text": "#G22# As a researcher, I want to indicate where my data will be stored during the project and where after the project, so that it remains accessible during all stages of the data lifecycle.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "where",
+                "data",
+                "project",
+                "where",
+                "project"
+            ],
+            "Action": [
+                "indicate",
+                "stored"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [
+                [
+                    "where",
+                    "data"
+                ],
+                [
+                    "project",
+                    "data"
+                ],
+                [
+                    "project",
+                    "data"
+                ]
+            ],
+            "Text": "#G22# As a researcher, I want to indicate where my data will be stored during the project and where after the project, ",
+            "Triggers": [[
+                "researcher",
+                "indicate"
+            ]],
+            "Targets": [
+                [
+                    "indicate",
+                    "where"
+                ],
+                [
+                    "indicate",
+                    "where"
+                ],
+                [
+                    "stored",
+                    "data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_03",
+        "Benefit": {
+            "Entity": ["DMP"],
+            "Action": [],
+            "Contains": [[
+                "DMP",
+                "metadata"
+            ]],
+            "Text": "I do not have to capture it again in a DMP.",
+            "Targets": []
+        },
+        "Text": "#G22# As a researcher, I want to import metadata that I captured with a metadata tool, so that I do not have to capture it again in a DMP.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "metadata",
+                "metadata tool"
+            ],
+            "Action": ["import"],
+            "Persona": ["researcher"],
+            "Contains": [],
+            "Text": "#G22# As a researcher, I want to import metadata that I captured with a metadata tool, ",
+            "Triggers": [[
+                "researcher",
+                "import"
+            ]],
+            "Targets": [[
+                "import",
+                "metadata"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_04",
+        "Benefit": {
+            "Entity": [
+                "more detailed usage",
+                "researchers",
+                "scenarios"
+            ],
+            "Action": [
+                "develop",
+                "support"
+            ],
+            "Contains": [],
+            "Text": "I can develop more detailed usage and support scenarios with researchers.",
+            "Targets": [
+                [
+                    "develop",
+                    "more detailed usage"
+                ],
+                [
+                    "support",
+                    "scenarios"
+                ]
+            ]
+        },
+        "Text": "#G22# As a data manager, I want to know how the data is used, so that I can develop more detailed usage and support scenarios with researchers.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "how",
+                "data"
+            ],
+            "Action": [
+                "know",
+                "used"
+            ],
+            "Persona": ["data manager"],
+            "Contains": [],
+            "Text": "#G22# As a data manager, I want to know how the data is used, ",
+            "Triggers": [[
+                "data manager",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "how"
+                ],
+                [
+                    "used",
+                    "data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_05",
+        "Benefit": {
+            "Entity": [
+                "necessary submission fees",
+                "target group"
+            ],
+            "Action": [
+                "calculate",
+                "check"
+            ],
+            "Contains": [[
+                "target group",
+                "data"
+            ]],
+            "Text": "I can calculate necessary submission fees and check whether it belongs to our target group.",
+            "Targets": [[
+                "calculate",
+                "necessary submission fees"
+            ]]
+        },
+        "Text": "#G22# As a repository owner, I want to be able to check the planned provenance of the data that will be submitted at the end of a project, so that I can calculate necessary submission fees and check whether it belongs to our target group.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "planned provenance",
+                "data",
+                "project"
+            ],
+            "Action": ["check"],
+            "Persona": ["repository owner"],
+            "Contains": [
+                [
+                    "data",
+                    "planned provenance"
+                ],
+                [
+                    "project",
+                    "data"
+                ]
+            ],
+            "Text": "#G22# As a repository owner, I want to be able to check the planned provenance of the data that will be submitted at the end of a project, ",
+            "Triggers": [[
+                "repository owner",
+                "check"
+            ]],
+            "Targets": [[
+                "check",
+                "planned provenance"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_06",
+        "Benefit": {
+            "Entity": ["resource acquisition planning"],
+            "Action": ["enable"],
+            "Contains": [],
+            "Text": "I can enable resource acquisition planning.",
+            "Targets": [[
+                "enable",
+                "resource acquisition planning"
+            ]]
+        },
+        "Text": "#G22# As an IT manager, I want to know about IT resource requirements early in the project lifecycle, so that I can enable resource acquisition planning.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "IT resource requirements",
+                "project lifecycle"
+            ],
+            "Action": ["know"],
+            "Persona": ["IT manager"],
+            "Contains": [[
+                "project lifecycle",
+                "IT resource requirements"
+            ]],
+            "Text": "#G22# As an IT manager, I want to know about IT resource requirements early in the project lifecycle, ",
+            "Triggers": [[
+                "IT manager",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "IT resource requirements"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_07",
+        "Benefit": {
+            "Entity": [],
+            "Action": [
+                "ensure",
+                "store"
+            ],
+            "Contains": [],
+            "Text": "I can ensure it will possible to store it.",
+            "Targets": [[
+                "store",
+                "kind of data I want to record/store"
+            ]]
+        },
+        "Text": "#G22# As a PI, I want to plan what kind of data I want to record/store, so that I can ensure it will possible to store it.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": ["kind of data I want to record/store"],
+            "Action": ["plan"],
+            "Persona": ["PI"],
+            "Contains": [],
+            "Text": "#G22# As a PI, I want to plan what kind of data I want to record/store, ",
+            "Triggers": [[
+                "PI",
+                "plan"
+            ]],
+            "Targets": [[
+                "plan",
+                "kind of data I want to record/store"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_08",
+        "Benefit": {
+            "Entity": [" kind of security measures"],
+            "Action": [
+                "know",
+                "apply"
+            ],
+            "Contains": [],
+            "Text": "I know which kind of security measures to apply.",
+            "Targets": [
+                [
+                    "know",
+                    " kind of security measures"
+                ],
+                [
+                    "apply",
+                    " kind of security measures"
+                ]
+            ]
+        },
+        "Text": "#G22# As an IT staff member, I want to know the security requirements of the data, so that I know which kind of security measures to apply.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "security requirements",
+                "data"
+            ],
+            "Action": ["know"],
+            "Persona": ["IT staff member"],
+            "Contains": [[
+                "data",
+                "security requirements"
+            ]],
+            "Text": "#G22# As an IT staff member, I want to know the security requirements of the data, ",
+            "Triggers": [[
+                "IT staff member",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "security requirements"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_09",
+        "Benefit": {
+            "Entity": [
+                "descriptions",
+                "detail",
+                "study"
+            ],
+            "Action": [
+                "ensure",
+                "add"
+            ],
+            "Contains": [[
+                "descriptions",
+                "detail"
+            ]],
+            "Text": "I can ensure the descriptions are current and add detail as the study proceeds.",
+            "Targets": [[
+                "add",
+                "detail"
+            ]]
+        },
+        "Text": "#G22# As a data manager, I want to have the description of collected data sets that are used or updated throughout the project lifecycle, so that I can ensure the descriptions are current and add detail as the study proceeds.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "description",
+                "collected data sets",
+                "project lifecycle"
+            ],
+            "Action": ["have"],
+            "Persona": ["data manager"],
+            "Contains": [
+                [
+                    "collected data sets",
+                    "description"
+                ],
+                [
+                    "project lifecycle",
+                    "description"
+                ]
+            ],
+            "Text": "#G22# As a data manager, I want to have the description of collected data sets that are used or updated throughout the project lifecycle, ",
+            "Triggers": [[
+                "data manager",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "description"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_10",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["quickly writing"],
+            "Contains": [],
+            "Text": "I can save time through quickly writing it.",
+            "Targets": [[
+                "quickly writing",
+                "topics"
+            ]]
+        },
+        "Text": "#G22# As a researcher, I want to know which topics are mandatory and similar in all DMPs, so that I can save time through quickly writing it.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "topics",
+                "all DMPs"
+            ],
+            "Action": ["know"],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "all DMPs",
+                "topics"
+            ]],
+            "Text": "#G22# As a researcher, I want to know which topics are mandatory and similar in all DMPs, ",
+            "Triggers": [[
+                "researcher",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "topics"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_11",
+        "Benefit": {
+            "Entity": [
+                "collection",
+                "repository",
+                "data"
+            ],
+            "Action": ["decide"],
+            "Contains": [
+                [
+                    "repository",
+                    "data"
+                ],
+                [
+                    "collection",
+                    "data"
+                ]
+            ],
+            "Text": "I can decide to which collection or repository the data fits.",
+            "Targets": [
+                [
+                    "decide",
+                    "collection"
+                ],
+                [
+                    "decide",
+                    "repository"
+                ]
+            ]
+        },
+        "Text": "#G22# As a data manager, I want to know what the content of the data is, so that I can decide to which collection or repository the data fits.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "content",
+                "data"
+            ],
+            "Action": ["know"],
+            "Persona": ["data manager"],
+            "Contains": [[
+                "data",
+                "content"
+            ]],
+            "Text": "#G22# As a data manager, I want to know what the content of the data is, ",
+            "Triggers": [[
+                "data manager",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "content"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_12",
+        "Benefit": {
+            "Entity": [
+                "Ethics Committee",
+                "compliance",
+                "ethical standards"
+            ],
+            "Action": ["review"],
+            "Contains": [[
+                "information",
+                "ethical standards"
+            ]],
+            "Text": "an Ethics Committee can review this for compliance with ethical standards.",
+            "Targets": [[
+                "review",
+                "information"
+            ]]
+        },
+        "Text": "#G22# As a PI, I want to record information about my DMP, so that an Ethics Committee can review this for compliance with ethical standards.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "information",
+                "DMP"
+            ],
+            "Action": ["record"],
+            "Persona": ["PI"],
+            "Contains": [[
+                "DMP",
+                "information"
+            ]],
+            "Text": "#G22# As a PI, I want to record information about my DMP, ",
+            "Triggers": [[
+                "PI",
+                "record"
+            ]],
+            "Targets": [[
+                "record",
+                "information"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_13",
+        "Benefit": {
+            "Entity": ["sharing options"],
+            "Action": ["establish"],
+            "Contains": [],
+            "Text": "I can establish sharing options.",
+            "Targets": [[
+                "establish",
+                "sharing options"
+            ]]
+        },
+        "Text": "#G22# As a legalofficer, I want to know about data sensitivity, so that I can establish sharing options.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": ["data sensitivity"],
+            "Action": ["know"],
+            "Persona": ["legalofficer"],
+            "Contains": [],
+            "Text": "#G22# As a legalofficer, I want to know about data sensitivity, ",
+            "Triggers": [[
+                "legalofficer",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "data sensitivity"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_14",
+        "Benefit": {
+            "Entity": [
+                "metadata",
+                "data catalogue"
+            ],
+            "Action": ["import"],
+            "Contains": [[
+                "data catalogue",
+                "metadata"
+            ]],
+            "Text": "I can import this metadata into a data catalogue.",
+            "Targets": [[
+                "import",
+                "metadata"
+            ]]
+        },
+        "Text": "#G22# As a data librarian, I want to extract pointers from the DMP to metadata held in other systems, so that I can import this metadata into a data catalogue.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "pointers",
+                "DMP",
+                "metadata",
+                "other systems"
+            ],
+            "Action": ["extract"],
+            "Persona": ["data librarian"],
+            "Contains": [
+                [
+                    "DMP",
+                    "pointers"
+                ],
+                [
+                    "other systems",
+                    "metadata"
+                ],
+                [
+                    "metadata",
+                    "pointers"
+                ]
+            ],
+            "Text": "#G22# As a data librarian, I want to extract pointers from the DMP to metadata held in other systems, ",
+            "Triggers": [[
+                "data librarian",
+                "extract"
+            ]],
+            "Targets": [[
+                "extract",
+                "pointers"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_15",
+        "Benefit": {
+            "Entity": ["overall storage consumption"],
+            "Action": ["plan"],
+            "Contains": [],
+            "Text": "I can plan the overall storage consumption.",
+            "Targets": [[
+                "plan",
+                "overall storage consumption"
+            ]]
+        },
+        "Text": "#G22# As an IT staff member, I want to have an estimate of the produced data volume, so that I can plan the overall storage consumption.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "estimate",
+                "produced data volume"
+            ],
+            "Action": ["have"],
+            "Persona": ["IT staff member"],
+            "Contains": [[
+                "produced data volume",
+                "estimate"
+            ]],
+            "Text": "#G22# As an IT staff member, I want to have an estimate of the produced data volume, ",
+            "Triggers": [[
+                "IT staff member",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "estimate"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_16",
+        "Benefit": {
+            "Entity": ["funder specific obligations"],
+            "Action": ["track"],
+            "Contains": [],
+            "Text": "I can track the funder specific obligations.",
+            "Targets": [[
+                "track",
+                "funder specific obligations"
+            ]]
+        },
+        "Text": "#G22# As an administrator, I want to know who funded the project and their requirements, so that I can track the funder specific obligations.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "who",
+                "project",
+                "requirements"
+            ],
+            "Action": [
+                "know",
+                "funded"
+            ],
+            "Persona": ["administrator"],
+            "Contains": [[
+                "who",
+                "requirements"
+            ]],
+            "Text": "#G22# As an administrator, I want to know who funded the project and their requirements, ",
+            "Triggers": [[
+                "administrator",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "who"
+                ],
+                [
+                    "funded",
+                    "project"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_17",
+        "Benefit": {
+            "Entity": ["legal requirements"],
+            "Action": ["apply"],
+            "Contains": [],
+            "Text": "I can apply the legal requirements accordingly.",
+            "Targets": [[
+                "apply",
+                "legal requirements"
+            ]]
+        },
+        "Text": "#G22# As an archivemanager, I want to know the legal status of data, so that I can apply the legal requirements accordingly.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "legal status",
+                "data"
+            ],
+            "Action": ["know"],
+            "Persona": ["archivemanager"],
+            "Contains": [[
+                "data",
+                "legal status"
+            ]],
+            "Text": "#G22# As an archivemanager, I want to know the legal status of data, ",
+            "Triggers": [[
+                "archivemanager",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "legal status"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_18",
+        "Benefit": {
+            "Entity": [
+                "basic support services",
+                "functionalities"
+            ],
+            "Action": ["determine"],
+            "Contains": [],
+            "Text": "I can determine what basic support services and functionalities are required.",
+            "Targets": [
+                [
+                    "determine",
+                    "basic support services"
+                ],
+                [
+                    "determine",
+                    "functionalities"
+                ]
+            ]
+        },
+        "Text": "#G22# As a data manager, I want to know which kind of data types will be produced or collected, so that I can determine what basic support services and functionalities are required.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": ["kind of data types"],
+            "Action": [
+                "know",
+                "produced",
+                "collected"
+            ],
+            "Persona": ["data manager"],
+            "Contains": [],
+            "Text": "#G22# As a data manager, I want to know which kind of data types will be produced or collected, ",
+            "Triggers": [[
+                "data manager",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "kind of data types"
+                ],
+                [
+                    "produced",
+                    "kind of data types"
+                ],
+                [
+                    "collected",
+                    "kind of data types"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_19",
+        "Benefit": {
+            "Entity": [
+                "basic support services",
+                "functionalities"
+            ],
+            "Action": ["determine"],
+            "Contains": [],
+            "Text": "I can determine what basic support services and functionalities are required.",
+            "Targets": [
+                [
+                    "determine",
+                    "basic support services"
+                ],
+                [
+                    "determine",
+                    "functionalities"
+                ]
+            ]
+        },
+        "Text": "#G22# As an IT staff member, I want to know which kind of data types will be produced or collected, so that I can determine what basic support services and functionalities are required.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": ["kind of data types"],
+            "Action": [
+                "know",
+                "produced",
+                "collected"
+            ],
+            "Persona": ["IT staff member"],
+            "Contains": [],
+            "Text": "#G22# As an IT staff member, I want to know which kind of data types will be produced or collected, ",
+            "Triggers": [[
+                "IT staff member",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "kind of data types"
+                ],
+                [
+                    "produced",
+                    "kind of data types"
+                ],
+                [
+                    "collected",
+                    "kind of data types"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_20",
+        "Benefit": {
+            "Entity": [
+                "service",
+                "preservation actions"
+            ],
+            "Action": [
+                "better organize",
+                "adapting"
+            ],
+            "Contains": [],
+            "Text": "I can better organize the service by adapting the preservation actions.",
+            "Targets": [
+                [
+                    "better organize",
+                    "service"
+                ],
+                [
+                    "adapting",
+                    "preservation actions"
+                ]
+            ]
+        },
+        "Text": "#G22# As an archivemanager, I want to know in advance the conservation period of data, so that I can better organize the service by adapting the preservation actions.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "conservation period",
+                "data"
+            ],
+            "Action": ["know in advance"],
+            "Persona": ["archivemanager"],
+            "Contains": [[
+                "data",
+                "conservation period"
+            ]],
+            "Text": "#G22# As an archivemanager, I want to know in advance the conservation period of data, ",
+            "Triggers": [[
+                "archivemanager",
+                "know in advance"
+            ]],
+            "Targets": [[
+                "know in advance",
+                "conservation period"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_21",
+        "Benefit": {
+            "Entity": ["data"],
+            "Action": [
+                "curate",
+                "preserve"
+            ],
+            "Contains": [],
+            "Text": "I can curate and preserve the data.",
+            "Targets": [
+                [
+                    "curate",
+                    "data"
+                ],
+                [
+                    "preserve",
+                    "data"
+                ]
+            ]
+        },
+        "Text": "#G22# As a data manager, I want to document all rights necessary for managing the data, so that I can curate and preserve the data.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "all rights",
+                "data"
+            ],
+            "Action": [
+                "document",
+                "managing"
+            ],
+            "Persona": ["data manager"],
+            "Contains": [[
+                "data",
+                "all rights"
+            ]],
+            "Text": "#G22# As a data manager, I want to document all rights necessary for managing the data, ",
+            "Triggers": [[
+                "data manager",
+                "document"
+            ]],
+            "Targets": [
+                [
+                    "document",
+                    "all rights"
+                ],
+                [
+                    "managing",
+                    "data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_22",
+        "Benefit": {
+            "Entity": [
+                "necessary expertise",
+                "intellectual reusability"
+            ],
+            "Action": [
+                "check",
+                "maintaining"
+            ],
+            "Contains": [],
+            "Text": "I can check whether the necessary expertise for maintaining intellectual reusability is available.",
+            "Targets": [
+                [
+                    "maintaining",
+                    "intellectual reusability"
+                ],
+                [
+                    "check",
+                    "necessary expertise"
+                ]
+            ]
+        },
+        "Text": "#G22# As a data manager, I want to know what the content of the data is, so that I can check whether the necessary expertise for maintaining intellectual reusability is available.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "content",
+                "data"
+            ],
+            "Action": ["know"],
+            "Persona": ["data manager"],
+            "Contains": [[
+                "data",
+                "content"
+            ]],
+            "Text": "#G22# As a data manager, I want to know what the content of the data is, ",
+            "Triggers": [[
+                "data manager",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "content"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_23",
+        "Benefit": {
+            "Entity": ["DMP"],
+            "Action": [
+                "check",
+                "implemented"
+            ],
+            "Contains": [],
+            "Text": "I can check that the DMP has been implemented.",
+            "Targets": [
+                [
+                    "check",
+                    "DMP"
+                ],
+                [
+                    "implemented",
+                    "DMP"
+                ]
+            ]
+        },
+        "Text": "#G22# As a research head, I want to access to the persistent identifiers of datasets provided in the DMP, so that I can check that the DMP has been implemented.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "persistent identifiers",
+                "datasets",
+                "DMP"
+            ],
+            "Action": ["access"],
+            "Persona": ["research head"],
+            "Contains": [
+                [
+                    "datasets",
+                    "persistent identifiers"
+                ],
+                [
+                    "DMP",
+                    "persistent identifiers"
+                ]
+            ],
+            "Text": "#G22# As a research head, I want to access to the persistent identifiers of datasets provided in the DMP, ",
+            "Triggers": [[
+                "research head",
+                "access"
+            ]],
+            "Targets": [[
+                "access",
+                "persistent identifiers"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_24",
+        "Benefit": {
+            "Entity": ["policies"],
+            "Action": [
+                "check",
+                "work"
+            ],
+            "Contains": [],
+            "Text": "I can check whether our policies work as intended.",
+            "Targets": [[
+                "check",
+                "policies"
+            ]]
+        },
+        "Text": "#G22# As a funder, I want to be able to read the costs for data management from the DMP, so that I can check whether our policies work as intended.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "costs",
+                "data management",
+                "DMP"
+            ],
+            "Action": ["read"],
+            "Persona": ["funder"],
+            "Contains": [
+                [
+                    "data management",
+                    "costs"
+                ],
+                [
+                    "DMP",
+                    "data management"
+                ]
+            ],
+            "Text": "#G22# As a funder, I want to be able to read the costs for data management from the DMP, ",
+            "Triggers": [[
+                "funder",
+                "read"
+            ]],
+            "Targets": [[
+                "read",
+                "costs"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_25",
+        "Benefit": {
+            "Entity": [
+                "information",
+                "DMP",
+                "accurate and standardized information"
+            ],
+            "Action": ["ensuring"],
+            "Contains": [[
+                "DMP",
+                "accurate and standardized information"
+            ]],
+            "Text": "I do not have to re-enter information ensuring the DMP contains accurate and standardized information.",
+            "Targets": []
+        },
+        "Text": "#G22# As a researcher, I want the DMP to prepopulate information that I have already entered in other institutional systems, so that I do not have to re-enter information ensuring the DMP contains accurate and standardized information.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "DMP",
+                "information",
+                "institutional systems"
+            ],
+            "Action": [
+                "want",
+                "prepopulate"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "institutional systems",
+                "information"
+            ]],
+            "Text": "#G22# As a researcher, I want the DMP to prepopulate information that I have already entered in other institutional systems, ",
+            "Triggers": [[
+                "researcher",
+                "want"
+            ]],
+            "Targets": [
+                [
+                    "want",
+                    "DMP"
+                ],
+                [
+                    "prepopulate",
+                    "information"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_26",
+        "Benefit": {
+            "Entity": [
+                "how up-to-date",
+                "plan"
+            ],
+            "Action": [
+                "know",
+                "updated"
+            ],
+            "Contains": [],
+            "Text": "I know how up-to-date the plan is or whether it needs to be updated.",
+            "Targets": [
+                [
+                    "know",
+                    "how up-to-date"
+                ],
+                [
+                    "updated",
+                    "data management plan"
+                ]
+            ]
+        },
+        "Text": "#G22# As a stakeholder, I want to know when the data management plan was created or updated, so that I know how up-to-date the plan is or whether it needs to be updated.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "data management plan",
+                "when"
+            ],
+            "Action": [
+                "know",
+                "created",
+                "updated"
+            ],
+            "Persona": ["stakeholder"],
+            "Contains": [],
+            "Text": "#G22# As a stakeholder, I want to know when the data management plan was created or updated, ",
+            "Triggers": [[
+                "stakeholder",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "when"
+                ],
+                [
+                    "created",
+                    "data management plan"
+                ],
+                [
+                    "updated",
+                    "data management plan"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_27",
+        "Benefit": {
+            "Entity": ["further details"],
+            "Action": ["ask"],
+            "Contains": [],
+            "Text": "I can ask them about further details.",
+            "Targets": [[
+                "ask",
+                "further details"
+            ]]
+        },
+        "Text": "#G22# As a stakeholder, I want to know who is responsible for the DMP, so that I can ask them about further details.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "DMP",
+                "who is responsible"
+            ],
+            "Action": ["know"],
+            "Persona": ["stakeholder"],
+            "Contains": [],
+            "Text": "#G22# As a stakeholder, I want to know who is responsible for the DMP, ",
+            "Triggers": [[
+                "stakeholder",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "who is responsible"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_28",
+        "Benefit": {
+            "Entity": ["further general information"],
+            "Action": ["look up"],
+            "Contains": [[
+                "references",
+                "further general information"
+            ]],
+            "Text": "I can look up further general information.",
+            "Targets": [[
+                "look up",
+                "further general information"
+            ]]
+        },
+        "Text": "#G22# As a stakeholder, I want to have references to the project proposal, so that I can look up further general information.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "references",
+                "project proposal"
+            ],
+            "Action": ["have"],
+            "Persona": ["stakeholder"],
+            "Contains": [[
+                "project proposal",
+                "references"
+            ]],
+            "Text": "#G22# As a stakeholder, I want to have references to the project proposal, ",
+            "Triggers": [[
+                "stakeholder",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "references"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_29",
+        "Benefit": {
+            "Entity": ["metadata description"],
+            "Action": [],
+            "Contains": [],
+            "Text": "I can be informed about the metadata description.",
+            "Targets": []
+        },
+        "Text": "#G22# As a metadata manager, I want to have a short description of project, so that I can be informed about the metadata description.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "short description",
+                "project"
+            ],
+            "Action": ["have"],
+            "Persona": ["metadata manager"],
+            "Contains": [[
+                "project",
+                "short description"
+            ]],
+            "Text": "#G22# As a metadata manager, I want to have a short description of project, ",
+            "Triggers": [[
+                "metadata manager",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "short description"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_30",
+        "Benefit": {
+            "Entity": ["long term resources"],
+            "Action": ["plan"],
+            "Contains": [],
+            "Text": "I can plan long term resources.",
+            "Targets": [[
+                "plan",
+                "long term resources"
+            ]]
+        },
+        "Text": "#G22# As a rector, I want to know how many data will be stored, so that I can plan long term resources.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "how many",
+                "data"
+            ],
+            "Action": [
+                "know",
+                "stored"
+            ],
+            "Persona": ["rector"],
+            "Contains": [],
+            "Text": "#G22# As a rector, I want to know how many data will be stored, ",
+            "Triggers": [[
+                "rector",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "how many"
+                ],
+                [
+                    "stored",
+                    "data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_31",
+        "Benefit": {
+            "Entity": ["data management"],
+            "Action": ["plan"],
+            "Contains": [],
+            "Text": "I can plan the data management.",
+            "Targets": [[
+                "plan",
+                "data management"
+            ]]
+        },
+        "Text": "#G22# As a data manager, I want to know the time plan for collecting data, so that I can plan the data management.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "time plan",
+                "data"
+            ],
+            "Action": [
+                "know",
+                "collecting"
+            ],
+            "Persona": ["data manager"],
+            "Contains": [[
+                "data",
+                "time plan"
+            ]],
+            "Text": "#G22# As a data manager, I want to know the time plan for collecting data, ",
+            "Triggers": [[
+                "data manager",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "time plan"
+                ],
+                [
+                    "collecting",
+                    "data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_32",
+        "Benefit": {
+            "Entity": ["DMP"],
+            "Action": ["prepopulate"],
+            "Contains": [],
+            "Text": "I can prepopulate the DMP.",
+            "Targets": [[
+                "prepopulate",
+                "DMP"
+            ]]
+        },
+        "Text": "#G22# As a data librarian, I want to import administrative information regarding a project into DMP, so that I can prepopulate the DMP.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "administrative information",
+                "project",
+                "DMP"
+            ],
+            "Action": ["import"],
+            "Persona": ["data librarian"],
+            "Contains": [
+                [
+                    "DMP",
+                    "administrative information"
+                ],
+                [
+                    "project",
+                    "administrative information"
+                ]
+            ],
+            "Text": "#G22# As a data librarian, I want to import administrative information regarding a project into DMP, ",
+            "Triggers": [[
+                "data librarian",
+                "import"
+            ]],
+            "Targets": [[
+                "import",
+                "administrative information"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_33",
+        "Benefit": {
+            "Entity": [
+                "true cost",
+                "project"
+            ],
+            "Action": ["estimate"],
+            "Contains": [[
+                "project",
+                "true cost"
+            ]],
+            "Text": "I can estimate the true cost of the project.",
+            "Targets": [[
+                "estimate",
+                "true cost"
+            ]]
+        },
+        "Text": "#G22# As a manager, I want to know about all resources and services used for the data, so that I can estimate the true cost of the project.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "all resources",
+                "data",
+                "services used"
+            ],
+            "Action": ["know"],
+            "Persona": ["manager"],
+            "Contains": [],
+            "Text": "#G22# As a manager, I want to know about all resources and services used for the data, ",
+            "Triggers": [[
+                "manager",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "all resources"
+                ],
+                [
+                    "know",
+                    "services used"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_34",
+        "Benefit": {
+            "Entity": [
+                "automated checks",
+                "file validation"
+            ],
+            "Action": ["apply"],
+            "Contains": [[
+                "file validation",
+                "automated checks"
+            ]],
+            "Text": "I can apply automated checks for the file validation.",
+            "Targets": [[
+                "apply",
+                "automated checks"
+            ]]
+        },
+        "Text": "#G22# As an archivemanager, I want to reuse the information regarding file format, so that I can apply automated checks for the file validation.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "information",
+                "file format"
+            ],
+            "Action": ["reuse"],
+            "Persona": ["archivemanager"],
+            "Contains": [[
+                "file format",
+                "information"
+            ]],
+            "Text": "#G22# As an archivemanager, I want to reuse the information regarding file format, ",
+            "Triggers": [[
+                "archivemanager",
+                "reuse"
+            ]],
+            "Targets": [[
+                "reuse",
+                "information"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_35",
+        "Benefit": {
+            "Entity": ["costs"],
+            "Action": ["calculate"],
+            "Contains": [],
+            "Text": "I can calculate costs.",
+            "Targets": [[
+                "calculate",
+                "costs"
+            ]]
+        },
+        "Text": "#G22# As a researcher, I want to know how many resources are needed during the project, so that I can calculate costs.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "how many",
+                "resources",
+                "project"
+            ],
+            "Action": ["know"],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "project",
+                "resources"
+            ]],
+            "Text": "#G22# As a researcher, I want to know how many resources are needed during the project, ",
+            "Triggers": [[
+                "researcher",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "how many"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_36",
+        "Benefit": {
+            "Entity": ["data paper"],
+            "Action": [
+                "reuse",
+                "writing"
+            ],
+            "Contains": [],
+            "Text": "I can reuse it for the writing of a data paper.",
+            "Targets": [
+                [
+                    "reuse",
+                    "description"
+                ],
+                [
+                    "writing",
+                    "data paper"
+                ]
+            ]
+        },
+        "Text": "#G22# As a researcher, I want to extract the description of the data collected, so that I can reuse it for the writing of a data paper.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "description",
+                "data collected"
+            ],
+            "Action": ["extract"],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "data collected",
+                "description"
+            ]],
+            "Text": "#G22# As a researcher, I want to extract the description of the data collected, ",
+            "Triggers": [[
+                "researcher",
+                "extract"
+            ]],
+            "Targets": [[
+                "extract",
+                "description"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_37",
+        "Benefit": {
+            "Entity": [
+                "reports",
+                "research output",
+                "project"
+            ],
+            "Action": ["generate"],
+            "Contains": [
+                [
+                    "project",
+                    "research output"
+                ],
+                [
+                    "reports",
+                    "research output"
+                ]
+            ],
+            "Text": "I can generate reports of research output resulting from a project.",
+            "Targets": [[
+                "generate",
+                "reports"
+            ]]
+        },
+        "Text": "#G22# As a researcher, I want to record research publications in the institutional repository or CRIS with DMP records, so that I can generate reports of research output resulting from a project.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "research publications",
+                "institutional repository",
+                "CRIS",
+                "DMP records"
+            ],
+            "Action": ["record"],
+            "Persona": ["researcher"],
+            "Contains": [
+                [
+                    "institutional repository",
+                    "research publications"
+                ],
+                [
+                    "CRIS",
+                    "research publications"
+                ],
+                [
+                    "institutional repository",
+                    "DMP records"
+                ],
+                [
+                    "CRIS",
+                    "DMP records"
+                ]
+            ],
+            "Text": "#G22# As a researcher, I want to record research publications in the institutional repository or CRIS with DMP records, ",
+            "Triggers": [[
+                "researcher",
+                "record"
+            ]],
+            "Targets": [[
+                "record",
+                "research publications"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_38",
+        "Benefit": {
+            "Entity": [
+                "reports",
+                "research output",
+                "project"
+            ],
+            "Action": ["generate"],
+            "Contains": [
+                [
+                    "project",
+                    "research output"
+                ],
+                [
+                    "reports",
+                    "research output"
+                ]
+            ],
+            "Text": "I can generate reports of research output resulting from a project.",
+            "Targets": [[
+                "generate",
+                "reports"
+            ]]
+        },
+        "Text": "#G22# As a researcher, I want to link research publications in the institutional repository or CRIS with DMP records, so that I can generate reports of research output resulting from a project.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "research publications",
+                "institutional repository",
+                "CRIS",
+                "DMP records"
+            ],
+            "Action": ["link"],
+            "Persona": ["researcher"],
+            "Contains": [
+                [
+                    "institutional repository",
+                    "research publications"
+                ],
+                [
+                    "CRIS",
+                    "research publications"
+                ],
+                [
+                    "institutional repository",
+                    "DMP records"
+                ],
+                [
+                    "CRIS",
+                    "DMP records"
+                ]
+            ],
+            "Text": "#G22# As a researcher, I want to link research publications in the institutional repository or CRIS with DMP records, ",
+            "Triggers": [[
+                "researcher",
+                "link"
+            ]],
+            "Targets": [[
+                "link",
+                "research publications"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_39",
+        "Benefit": {
+            "Entity": ["data"],
+            "Action": [
+                "cited",
+                "attributed",
+                "used correctly"
+            ],
+            "Contains": [],
+            "Text": "the data can be cited, attributed and used correctly.",
+            "Targets": [
+                [
+                    "cited",
+                    "data"
+                ],
+                [
+                    "attributed",
+                    "data"
+                ],
+                [
+                    "used correctly",
+                    "data"
+                ]
+            ]
+        },
+        "Text": "#G22# As a researcher, I want to store agreements relating to third party data used in a project, so that the data can be cited, attributed and used correctly.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "agreements",
+                "third party data",
+                "project"
+            ],
+            "Action": ["store"],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "project",
+                "third party data"
+            ]],
+            "Text": "#G22# As a researcher, I want to store agreements relating to third party data used in a project, ",
+            "Triggers": [[
+                "researcher",
+                "store"
+            ]],
+            "Targets": [[
+                "store",
+                "agreements"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_40",
+        "Benefit": {
+            "Entity": [
+                "sensitivity",
+                "data"
+            ],
+            "Action": ["check"],
+            "Contains": [[
+                "data",
+                "sensitivity"
+            ]],
+            "Text": "I can check for sensitivity of data.",
+            "Targets": [[
+                "check",
+                "sensitivity"
+            ]]
+        },
+        "Text": "#G22# As an ethics manager, I want to be informed about the data, so that I can check for sensitivity of data.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": ["data"],
+            "Action": ["be informed"],
+            "Persona": ["ethics manager"],
+            "Contains": [],
+            "Text": "#G22# As an ethics manager, I want to be informed about the data, ",
+            "Triggers": [[
+                "ethics manager",
+                "be informed"
+            ]],
+            "Targets": [[
+                "be informed",
+                "data"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_41",
+        "Benefit": {
+            "Entity": [
+                "storage size",
+                "system"
+            ],
+            "Action": ["evaluate"],
+            "Contains": [],
+            "Text": "I can evaluate the storage size and system.",
+            "Targets": [
+                [
+                    "evaluate",
+                    "storage size"
+                ],
+                [
+                    "evaluate",
+                    "system"
+                ]
+            ]
+        },
+        "Text": "#G22# As a repository operator, I want to know about the kind of data, so that I can evaluate the storage size and system.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": ["kind of data"],
+            "Action": ["know"],
+            "Persona": ["repository operator"],
+            "Contains": [],
+            "Text": "#G22# As a repository operator, I want to know about the kind of data, ",
+            "Triggers": [[
+                "repository operator",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "kind of data"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_42",
+        "Benefit": {
+            "Entity": ["research"],
+            "Action": ["plan"],
+            "Contains": [],
+            "Text": "I can plan my research.",
+            "Targets": [[
+                "plan",
+                "research"
+            ]]
+        },
+        "Text": "#G22# As a researcher, I want to know about costs, so that I can plan my research.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": ["costs"],
+            "Action": ["know"],
+            "Persona": ["researcher"],
+            "Contains": [],
+            "Text": "#G22# As a researcher, I want to know about costs, ",
+            "Triggers": [[
+                "researcher",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "costs"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_43",
+        "Benefit": {
+            "Entity": ["archiving"],
+            "Action": [
+                "check",
+                "arranged"
+            ],
+            "Contains": [],
+            "Text": "I can check if the archiving can be arranged.",
+            "Targets": [
+                [
+                    "check",
+                    "archiving"
+                ],
+                [
+                    "arranged",
+                    "archiving"
+                ]
+            ]
+        },
+        "Text": "#G22# As a repository manager, I need details on the type of data, so that I can check if the archiving can be arranged.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "details",
+                "type of data"
+            ],
+            "Action": ["need"],
+            "Persona": ["repository manager"],
+            "Contains": [[
+                "type of data",
+                "details"
+            ]],
+            "Text": "#G22# As a repository manager, I need details on the type of data, ",
+            "Triggers": [[
+                "repository manager",
+                "need"
+            ]],
+            "Targets": [[
+                "need",
+                "details"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_44",
+        "Benefit": {
+            "Entity": ["legal compliance"],
+            "Action": ["ensure"],
+            "Contains": [],
+            "Text": "I can ensure legal compliance.",
+            "Targets": [[
+                "ensure",
+                "legal compliance"
+            ]]
+        },
+        "Text": "#G22# As an IT officer, I want to know how secure data is, so that I can ensure legal compliance.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "how secure",
+                "data"
+            ],
+            "Action": ["know"],
+            "Persona": ["IT officer"],
+            "Contains": [],
+            "Text": "#G22# As an IT officer, I want to know how secure data is, ",
+            "Triggers": [[
+                "IT officer",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "how secure"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_45",
+        "Benefit": {
+            "Entity": ["legal compliance"],
+            "Action": ["ensure"],
+            "Contains": [],
+            "Text": "I can ensure legal compliance.",
+            "Targets": [[
+                "ensure",
+                "legal compliance"
+            ]]
+        },
+        "Text": "#G22# As a funder, I want to know how secure data is, so that I can ensure legal compliance.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "how secure",
+                "data"
+            ],
+            "Action": ["know"],
+            "Persona": ["funder"],
+            "Contains": [],
+            "Text": "#G22# As a funder, I want to know how secure data is, ",
+            "Triggers": [[
+                "funder",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "how secure"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_46",
+        "Benefit": {
+            "Entity": [
+                "trends",
+                "data use",
+                "staff",
+                "postgraduate students"
+            ],
+            "Action": ["understand"],
+            "Contains": [[
+                "data use",
+                "trends"
+            ]],
+            "Text": "I understand trends in data use among staff and postgraduate students.",
+            "Targets": [[
+                "understand",
+                "trends"
+            ]]
+        },
+        "Text": "#G22# As a Research Centre Director, I want to receive regular summary reports of research data, so that I understand trends in data use among staff and postgraduate students.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "regular summary reports",
+                "research data"
+            ],
+            "Action": ["receive"],
+            "Persona": ["Research Centre Director"],
+            "Contains": [[
+                "regular summary reports",
+                "research data"
+            ]],
+            "Text": "#G22# As a Research Centre Director, I want to receive regular summary reports of research data, ",
+            "Triggers": [[
+                "Research Centre Director",
+                "receive"
+            ]],
+            "Targets": [[
+                "receive",
+                "regular summary reports"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_47",
+        "Benefit": {
+            "Entity": [
+                "trends",
+                "data use",
+                "staff",
+                "postgraduate students"
+            ],
+            "Action": ["understand"],
+            "Contains": [[
+                "data use",
+                "trends"
+            ]],
+            "Text": "I understand trends in data use among staff and postgraduate students.",
+            "Targets": [[
+                "understand",
+                "trends"
+            ]]
+        },
+        "Text": "#G22# As a Postgraduate Convenor, I want to receive regular summary reports of research data, so that I understand trends in data use among staff and postgraduate students.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "regular summary reports",
+                "research data"
+            ],
+            "Action": ["receive"],
+            "Persona": ["Postgraduate Convenor"],
+            "Contains": [[
+                "research data",
+                "regular summary reports"
+            ]],
+            "Text": "#G22# As a Postgraduate Convenor, I want to receive regular summary reports of research data, ",
+            "Triggers": [[
+                "Postgraduate Convenor",
+                "receive"
+            ]],
+            "Targets": [[
+                "receive",
+                "regular summary reports"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_48",
+        "Benefit": {
+            "Entity": ["all costs"],
+            "Action": [
+                "ensure",
+                "accepted"
+            ],
+            "Contains": [],
+            "Text": "I can ensure all costs will be accepted.",
+            "Targets": [[
+                "accepted",
+                "all costs"
+            ]]
+        },
+        "Text": "#G22# As a research support officer, I want to ensure compliance to the funders\u2019 rules, so that I can ensure all costs will be accepted.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "compliance ",
+                "funders\u2019 rules"
+            ],
+            "Action": ["ensure"],
+            "Persona": ["research support officer"],
+            "Contains": [],
+            "Text": "#G22# As a research support officer, I want to ensure compliance to the funders\u2019 rules, ",
+            "Triggers": [[
+                "research support officer",
+                "ensure"
+            ]],
+            "Targets": [[
+                "ensure",
+                "compliance "
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_49",
+        "Benefit": {
+            "Entity": [
+                "project",
+                "funding rules"
+            ],
+            "Action": [
+                "verify",
+                "followed"
+            ],
+            "Contains": [[
+                "project",
+                "funding rules"
+            ]],
+            "Text": "I can verify whether the project has followed our funding rules.",
+            "Targets": [
+                [
+                    "followed",
+                    "funding rules"
+                ],
+                [
+                    "verify",
+                    "project"
+                ]
+            ]
+        },
+        "Text": "#G22# As a funder, I want to be able to check all the repositories mentioned in a DMP, so that I can verify whether the project has followed our funding rules.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "repositories mentioned",
+                "DMP"
+            ],
+            "Action": ["check"],
+            "Persona": ["funder"],
+            "Contains": [[
+                "DMP",
+                "repositories mentioned"
+            ]],
+            "Text": "#G22# As a funder, I want to be able to check all the repositories mentioned in a DMP, ",
+            "Triggers": [[
+                "funder",
+                "check"
+            ]],
+            "Targets": [[
+                "check",
+                "repositories mentioned"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_50",
+        "Benefit": {
+            "Entity": [],
+            "Action": [
+                "ensure",
+                "store"
+            ],
+            "Contains": [],
+            "Text": "I can ensure it will be possible to store it.",
+            "Targets": [[
+                "store",
+                "kind of data I want to store"
+            ]]
+        },
+        "Text": "#G22# As a PI, I want to plan what kind of data I want to store, so that I can ensure it will be possible to store it.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": ["kind of data I want to store"],
+            "Action": ["plan"],
+            "Persona": ["PI"],
+            "Contains": [],
+            "Text": "#G22# As a PI, I want to plan what kind of data I want to store, ",
+            "Triggers": [[
+                "PI",
+                "plan"
+            ]],
+            "Targets": [[
+                "plan",
+                "kind of data I want to store"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_51",
+        "Benefit": {
+            "Entity": ["legal compliance"],
+            "Action": ["ensure"],
+            "Contains": [],
+            "Text": "I can ensure legal compliance.",
+            "Targets": [[
+                "ensure",
+                "legal compliance"
+            ]]
+        },
+        "Text": "#G22# As a PI, I want to know how secure data is, so that I can ensure legal compliance.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "how secure",
+                "data"
+            ],
+            "Action": ["know"],
+            "Persona": ["PI"],
+            "Contains": [],
+            "Text": "#G22# As a PI, I want to know how secure data is, ",
+            "Triggers": [[
+                "PI",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "how secure"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_52",
+        "Benefit": {
+            "Entity": [
+                "security protocols",
+                "data"
+            ],
+            "Action": [
+                "confirm",
+                "applied"
+            ],
+            "Contains": [[
+                "data",
+                "security protocols"
+            ]],
+            "Text": "I can confirm security protocols are applied to these data.",
+            "Targets": [
+                [
+                    "confirm",
+                    "security protocols"
+                ],
+                [
+                    "applied",
+                    "security protocols"
+                ]
+            ]
+        },
+        "Text": "#G22# As a Director of Research Integrity, I want to access reports containing details of research projects in which data are classified as sensitive or highly sensitive, so that I can confirm security protocols are applied to these data.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "reports",
+                "details",
+                "research projects",
+                "data"
+            ],
+            "Action": [
+                "access",
+                "classified"
+            ],
+            "Persona": ["Director of Research Integrity"],
+            "Contains": [
+                [
+                    "reports",
+                    "details"
+                ],
+                [
+                    "research projects",
+                    "details"
+                ]
+            ],
+            "Text": "#G22# As a Director of Research Integrity, I want to access reports containing details of research projects in which data are classified as sensitive or highly sensitive, ",
+            "Triggers": [[
+                "Director of Research Integrity",
+                "access"
+            ]],
+            "Targets": [
+                [
+                    "access",
+                    "reports"
+                ],
+                [
+                    "classified",
+                    "data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_53",
+        "Benefit": {
+            "Entity": ["adequate storage infrastructure"],
+            "Action": ["provide"],
+            "Contains": [],
+            "Text": "I can provide the adequate storage infrastructure.",
+            "Targets": [[
+                "provide",
+                "adequate storage infrastructure"
+            ]]
+        },
+        "Text": "#G22# As an archive, I want to get information about the volume of data to preserve at an early stage, so that I can provide the adequate storage infrastructure.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "information",
+                "volume",
+                "early stage",
+                "data to preserve"
+            ],
+            "Action": ["get"],
+            "Persona": ["archive"],
+            "Contains": [
+                [
+                    "volume",
+                    "information"
+                ],
+                [
+                    "data to preserve",
+                    "volume"
+                ]
+            ],
+            "Text": "#G22# As an archive, I want to get information about the volume of data to preserve at an early stage, ",
+            "Triggers": [[
+                "archive",
+                "get"
+            ]],
+            "Targets": [[
+                "get",
+                "information"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_54",
+        "Benefit": {
+            "Entity": ["further steps"],
+            "Action": ["plan"],
+            "Contains": [],
+            "Text": "I can plan further steps.",
+            "Targets": [[
+                "plan",
+                "further steps"
+            ]]
+        },
+        "Text": "#G22# As a researcher, I want to know how long it will take to archive, so that I can plan further steps.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": ["how long"],
+            "Action": [
+                "know",
+                "archive"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [],
+            "Text": "#G22# As a researcher, I want to know how long it will take to archive, ",
+            "Triggers": [[
+                "researcher",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "how long"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_55",
+        "Benefit": {
+            "Entity": ["what"],
+            "Action": ["know"],
+            "Contains": [],
+            "Text": "I know what I am allowed to do with it.",
+            "Targets": [[
+                "know",
+                "what"
+            ]]
+        },
+        "Text": "#G22# As a PI, I want to know who owns the data, so that I know what I am allowed to do with it.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "who",
+                "data"
+            ],
+            "Action": ["know"],
+            "Persona": ["PI"],
+            "Contains": [[
+                "who",
+                "data"
+            ]],
+            "Text": "#G22# As a PI, I want to know who owns the data, ",
+            "Triggers": [[
+                "PI",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "who"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_56",
+        "Benefit": {
+            "Entity": ["data"],
+            "Action": [
+                "re-used",
+                "managed"
+            ],
+            "Contains": [],
+            "Text": "the data can be re-used and managed.",
+            "Targets": [
+                [
+                    "re-used",
+                    "data"
+                ],
+                [
+                    "managed",
+                    "data"
+                ]
+            ]
+        },
+        "Text": "#G22# As a data manager, I want to have references to documentation of the data and its creation process, so that the data can be re-used and managed.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "references",
+                "documentation",
+                "data",
+                "creation process"
+            ],
+            "Action": ["have"],
+            "Persona": ["data manager"],
+            "Contains": [
+                [
+                    "documentation",
+                    "references"
+                ],
+                [
+                    "data",
+                    "documentation"
+                ],
+                [
+                    "documentation",
+                    "creation process"
+                ]
+            ],
+            "Text": "#G22# As a data manager, I want to have references to documentation of the data and its creation process, ",
+            "Triggers": [[
+                "data manager",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "references"
+                ],
+                [
+                    "have",
+                    "creation process"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_57",
+        "Benefit": {
+            "Entity": ["future users"],
+            "Action": [],
+            "Contains": [],
+            "Text": "it will be understandable by future users.",
+            "Targets": []
+        },
+        "Text": "#G22# As an archivemanager, I want to make sure that detailed metadata are associated to data so that it will be understandable by future users.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "detailed metadata",
+                "data"
+            ],
+            "Action": [
+                "make sure",
+                "associated"
+            ],
+            "Persona": ["archivemanager"],
+            "Contains": [[
+                "data",
+                "detailed metadata"
+            ]],
+            "Text": "#G22# As an archivemanager, I want to make sure that detailed metadata are associated to data ",
+            "Triggers": [[
+                "archivemanager",
+                "make sure"
+            ]],
+            "Targets": [[
+                "associated",
+                "detailed metadata"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_58",
+        "Benefit": {
+            "Entity": [
+                "necessary technical resources",
+                "technical know-how"
+            ],
+            "Action": ["ensure"],
+            "Contains": [],
+            "Text": "I can ensure that the necessary technical resources and technical know-how is available.",
+            "Targets": []
+        },
+        "Text": "#G22# As a data manager, I want to know which kind of data types will be produced or collected, so that I can ensure that the necessary technical resources and technical know-how is available.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": ["kind of data types"],
+            "Action": [
+                "know",
+                "produced",
+                "collected"
+            ],
+            "Persona": ["data manager"],
+            "Contains": [],
+            "Text": "#G22# As a data manager, I want to know which kind of data types will be produced or collected, ",
+            "Triggers": [[
+                "data manager",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "kind of data types"
+                ],
+                [
+                    "produced",
+                    "kind of data types"
+                ],
+                [
+                    "collected",
+                    "kind of data types"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_59",
+        "Benefit": {
+            "Entity": [
+                "necessary technical resources",
+                "technical know-how"
+            ],
+            "Action": ["ensure"],
+            "Contains": [],
+            "Text": "I can ensure that the necessary technical resources and technical know-how is available.",
+            "Targets": []
+        },
+        "Text": "#G22# As an IT staff member, I want to know which kind of data types will be produced or collected, so that I can ensure that the necessary technical resources and technical know-how is available.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": ["kind of data types"],
+            "Action": [
+                "know",
+                "produced",
+                "collected"
+            ],
+            "Persona": ["IT staff member"],
+            "Contains": [],
+            "Text": "#G22# As an IT staff member, I want to know which kind of data types will be produced or collected, ",
+            "Triggers": [[
+                "IT staff member",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "kind of data types"
+                ],
+                [
+                    "produced",
+                    "kind of data types"
+                ],
+                [
+                    "collected",
+                    "kind of data types"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_60",
+        "Benefit": {
+            "Entity": [
+                "kind of basic services",
+                "functionalities"
+            ],
+            "Action": ["determine"],
+            "Contains": [],
+            "Text": "I can determine what kind of basic services and functionalities are required.",
+            "Targets": [
+                [
+                    "determine",
+                    "kind of basic services"
+                ],
+                [
+                    "determine",
+                    "functionalities"
+                ]
+            ]
+        },
+        "Text": "#G22# As an IT staff member, I want to know how the data is used, so that I can determine what kind of basic services and functionalities are required.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "how",
+                "data"
+            ],
+            "Action": [
+                "know",
+                "used"
+            ],
+            "Persona": ["IT staff member"],
+            "Contains": [],
+            "Text": "#G22# As an IT staff member, I want to know how the data is used, ",
+            "Triggers": [[
+                "IT staff member",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "how"
+                ],
+                [
+                    "used",
+                    "data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_61",
+        "Benefit": {
+            "Entity": ["dependencies"],
+            "Action": [
+                "ensure",
+                "maintained"
+            ],
+            "Contains": [],
+            "Text": "I can ensure that these dependencies are maintained.",
+            "Targets": [[
+                "maintained",
+                "dependencies"
+            ]]
+        },
+        "Text": "#G22# As a data manager, I want to know whether the collected data depends on other data sets from my own or other institutions, so that I can ensure that these dependencies are maintained.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "collected data",
+                "other data sets",
+                "own or other institutions"
+            ],
+            "Action": ["know"],
+            "Persona": ["data manager"],
+            "Contains": [[
+                "own or other institutions",
+                "other data sets"
+            ]],
+            "Text": "#G22# As a data manager, I want to know whether the collected data depends on other data sets from my own or other institutions, ",
+            "Triggers": [[
+                "data manager",
+                "know"
+            ]],
+            "Targets": []
+        }
+    },
+    {
+        "US_Nr": "user_story_62",
+        "Benefit": {
+            "Entity": [
+                "kind of technical services",
+                "functionalities"
+            ],
+            "Action": ["determine"],
+            "Contains": [],
+            "Text": "I can determine what kind of technical services and functionalities are required.",
+            "Targets": [
+                [
+                    "determine",
+                    "kind of technical services"
+                ],
+                [
+                    "determine",
+                    "functionalities"
+                ]
+            ]
+        },
+        "Text": "#G22# As an IT staff member, I want to know which formats are used, so that I can determine what kind of technical services and functionalities are required.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": ["formats"],
+            "Action": [
+                "know",
+                "used"
+            ],
+            "Persona": ["IT staff member"],
+            "Contains": [],
+            "Text": "#G22# As an IT staff member, I want to know which formats are used, ",
+            "Triggers": [[
+                "IT staff member",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "formats"
+                ],
+                [
+                    "used",
+                    "formats"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_63",
+        "Benefit": {
+            "Entity": [
+                "kind of technical services",
+                "functionalities"
+            ],
+            "Action": ["determine"],
+            "Contains": [],
+            "Text": "I can determine what kind of technical services and functionalities are required.",
+            "Targets": [
+                [
+                    "determine",
+                    "kind of technical services"
+                ],
+                [
+                    "determine",
+                    "functionalities"
+                ]
+            ]
+        },
+        "Text": "#G22# As an IT staff member, I want to know with which software or technology the data is produced or used, so that I can determine what kind of technical services and functionalities are required.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "software",
+                "technology",
+                "data"
+            ],
+            "Action": [
+                "know",
+                "produced",
+                "used"
+            ],
+            "Persona": ["IT staff member"],
+            "Contains": [
+                [
+                    "software",
+                    "data"
+                ],
+                [
+                    "technology",
+                    "data"
+                ]
+            ],
+            "Text": "#G22# As an IT staff member, I want to know with which software or technology the data is produced or used, ",
+            "Triggers": [[
+                "IT staff member",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "software"
+                ],
+                [
+                    "produced",
+                    "data"
+                ],
+                [
+                    "used",
+                    "data"
+                ],
+                [
+                    "know",
+                    "technology"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_64",
+        "Benefit": {
+            "Entity": [
+                "all necessary information",
+                "researchers",
+                "data"
+            ],
+            "Action": [
+                "checked",
+                "re-using"
+            ],
+            "Contains": [[
+                "researchers",
+                "all necessary information"
+            ]],
+            "Text": "it can be checked whether all necessary information is available for researchers interested in re-using the data.",
+            "Targets": [
+                [
+                    "re-using",
+                    "data"
+                ],
+                [
+                    "checked",
+                    "information"
+                ]
+            ]
+        },
+        "Text": "#G22# As a data manager, I want to know which information is necessary to re-use the data, so that it can be checked whether all necessary information is available for researchers interested in re-using the data.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "data",
+                "information"
+            ],
+            "Action": [
+                "know",
+                "re-use"
+            ],
+            "Persona": ["data manager"],
+            "Contains": [],
+            "Text": "#G22# As a data manager, I want to know which information is necessary to re-use the data, ",
+            "Triggers": [[
+                "data manager",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "information"
+                ],
+                [
+                    "re-use",
+                    "data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_65",
+        "Benefit": {
+            "Entity": [
+                "technology",
+                "background information",
+                "data"
+            ],
+            "Action": [
+                "know",
+                "use"
+            ],
+            "Contains": [],
+            "Text": "I know what technology or background information might be necessary to use the data.",
+            "Targets": [
+                [
+                    "know",
+                    "technology"
+                ],
+                [
+                    "know",
+                    "background information"
+                ],
+                [
+                    "use",
+                    "data"
+                ]
+            ]
+        },
+        "Text": "#G22# As a data manager, I want to know which formats are used, so that I know what technology or background information might be necessary to use the data.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": ["formats"],
+            "Action": [
+                "know",
+                "used"
+            ],
+            "Persona": ["data manager"],
+            "Contains": [],
+            "Text": "#G22# As a data manager, I want to know which formats are used, ",
+            "Triggers": [[
+                "data manager",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "formats"
+                ],
+                [
+                    "used",
+                    "formats"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_66",
+        "Benefit": {
+            "Entity": [
+                "how",
+                "data"
+            ],
+            "Action": [
+                "determine",
+                "stored"
+            ],
+            "Contains": [],
+            "Text": "I can determine whether and how the data has to be stored.",
+            "Targets": [
+                [
+                    "determine",
+                    "how"
+                ],
+                [
+                    "stored",
+                    "data"
+                ]
+            ]
+        },
+        "Text": "#G22# As a data manager, I want to know whether the data can be reproduced efficiently, so that I can determine whether and how the data has to be stored.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": ["data"],
+            "Action": [
+                "know",
+                "reproduced efficiently"
+            ],
+            "Persona": ["data manager"],
+            "Contains": [],
+            "Text": "#G22# As a data manager, I want to know whether the data can be reproduced efficiently, ",
+            "Triggers": [[
+                "data manager",
+                "know"
+            ]],
+            "Targets": [[
+                "reproduced efficiently",
+                "data"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_67",
+        "Benefit": {
+            "Entity": [
+                "technology",
+                "background information",
+                "data"
+            ],
+            "Action": [
+                "know",
+                "(re-)use"
+            ],
+            "Contains": [],
+            "Text": "I know what technology or background information might be necessary to (re-)use the data.",
+            "Targets": [
+                [
+                    "know",
+                    "technology"
+                ],
+                [
+                    "know",
+                    "background information"
+                ],
+                [
+                    "(re-)use",
+                    "data"
+                ]
+            ]
+        },
+        "Text": "#G22# As a data manager, I want to know with which software or technology the data is produced or used, so that I know what technology or background information might be necessary to (re-)use the data.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "software",
+                "technology",
+                "data"
+            ],
+            "Action": [
+                "know",
+                "produced",
+                "used"
+            ],
+            "Persona": ["data manager"],
+            "Contains": [
+                [
+                    "technology",
+                    "data"
+                ],
+                [
+                    "software",
+                    "data"
+                ]
+            ],
+            "Text": "#G22# As a data manager, I want to know with which software or technology the data is produced or used, ",
+            "Triggers": [[
+                "data manager",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "software"
+                ],
+                [
+                    "know",
+                    "technology"
+                ],
+                [
+                    "produced",
+                    "data"
+                ],
+                [
+                    "used",
+                    "data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_68",
+        "Benefit": {
+            "Entity": ["citation counts"],
+            "Action": [],
+            "Contains": [],
+            "Text": "they are counted towards our citation counts.",
+            "Targets": []
+        },
+        "Text": "#G22# As a research evaluation manager, I want to ensure all data are quoted correctly with our affiliation, so that they are counted towards our citation counts.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "all data",
+                "affiliation"
+            ],
+            "Action": [
+                "ensure",
+                "quoted correctly"
+            ],
+            "Persona": ["research evaluation manager"],
+            "Contains": [[
+                "all data",
+                "affiliation"
+            ]],
+            "Text": "#G22# As a research evaluation manager, I want to ensure all data are quoted correctly with our affiliation, ",
+            "Triggers": [[
+                "research evaluation manager",
+                "ensure"
+            ]],
+            "Targets": [[
+                "quoted correctly",
+                "all data"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_69",
+        "Benefit": {
+            "Entity": ["compliance"],
+            "Action": ["demonstrate"],
+            "Contains": [],
+            "Text": "I can demonstrate compliance.",
+            "Targets": [[
+                "demonstrate",
+                "compliance"
+            ]]
+        },
+        "Text": "#G22# As an administrator, I want to check that all data has the appropriate security level, so that I can demonstrate compliance.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "all data",
+                "appropriate security level"
+            ],
+            "Action": ["check"],
+            "Persona": ["administrator"],
+            "Contains": [[
+                "all data",
+                "appropriate security level"
+            ]],
+            "Text": "#G22# As an administrator, I want to check that all data has the appropriate security level, ",
+            "Triggers": [[
+                "administrator",
+                "check"
+            ]],
+            "Targets": [[
+                "check",
+                "all data"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_70",
+        "Benefit": {
+            "Entity": ["data"],
+            "Action": [
+                "check",
+                "kept secure"
+            ],
+            "Contains": [],
+            "Text": "I can check whether the data can be kept secure.",
+            "Targets": [[
+                "kept secure",
+                "data"
+            ]]
+        },
+        "Text": "#G22# As a data manager, I want to know the security requirements of the data, so that I can check whether the data can be kept secure.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "security requirements",
+                "data"
+            ],
+            "Action": ["know"],
+            "Persona": ["data manager"],
+            "Contains": [[
+                "data",
+                "security requirements"
+            ]],
+            "Text": "#G22# As a data manager, I want to know the security requirements of the data, ",
+            "Triggers": [[
+                "data manager",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "security requirements"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_71",
+        "Benefit": {
+            "Entity": ["institutional data catalogue"],
+            "Action": ["add"],
+            "Contains": [[
+                "institutional data catalogue",
+                "data sets"
+            ]],
+            "Text": "I can add them to an institutional data catalogue.",
+            "Targets": [[
+                "add",
+                "data sets"
+            ]]
+        },
+        "Text": "#G22# As a institutional data steward, I want to be able to extract the data sets that are submitted to external repositories, so that I can add them to an institutional data catalogue.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "data sets",
+                "external repositories"
+            ],
+            "Action": ["extract"],
+            "Persona": ["institutional data steward"],
+            "Contains": [[
+                "external repositories",
+                "data sets"
+            ]],
+            "Text": "#G22# As a institutional data steward, I want to be able to extract the data sets that are submitted to external repositories, ",
+            "Triggers": [[
+                "institutional data steward",
+                "extract"
+            ]],
+            "Targets": [[
+                "extract",
+                "data sets"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_72",
+        "Benefit": {
+            "Entity": [
+                "right storage system",
+                "sharing permissions"
+            ],
+            "Action": ["plan"],
+            "Contains": [],
+            "Text": "I can plan the right storage system and sharing permissions.",
+            "Targets": [
+                [
+                    "plan",
+                    "right storage system"
+                ],
+                [
+                    "plan",
+                    "sharing permissions"
+                ]
+            ]
+        },
+        "Text": "#G22# As an institutional data manager, I want to know about the privacy and security requirements of the data, so that I can plan the right storage system and sharing permissions.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "data",
+                "privacy",
+                "security requirements"
+            ],
+            "Action": ["know"],
+            "Persona": ["institutional data manager"],
+            "Contains": [
+                [
+                    "data",
+                    "privacy"
+                ],
+                [
+                    "data",
+                    "security requirements"
+                ]
+            ],
+            "Text": "#G22# As an institutional data manager, I want to know about the privacy and security requirements of the data, ",
+            "Triggers": [[
+                "institutional data manager",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "privacy"
+                ],
+                [
+                    "know",
+                    "security requirements"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_73",
+        "Benefit": {
+            "Entity": ["data manager posts"],
+            "Action": [
+                "see",
+                "share"
+            ],
+            "Contains": [],
+            "Text": "I can see if we could share data manager posts.",
+            "Targets": [[
+                "share",
+                "data manager posts"
+            ]]
+        },
+        "Text": "#G22# As a researcher, I want to see the sections on costing by other researchers in my department, so that I can see if we could share data manager posts.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "sections",
+                "costing",
+                "other researchers",
+                "department"
+            ],
+            "Action": ["see"],
+            "Persona": ["researcher"],
+            "Contains": [
+                [
+                    "sections",
+                    "costing"
+                ],
+                [
+                    "department",
+                    "other researchers"
+                ],
+                [
+                    "other researchers",
+                    "costing"
+                ]
+            ],
+            "Text": "#G22# As a researcher, I want to see the sections on costing by other researchers in my department, ",
+            "Triggers": [[
+                "researcher",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "sections"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_74",
+        "Benefit": {
+            "Entity": ["data manager posts"],
+            "Action": [
+                "see",
+                "share"
+            ],
+            "Contains": [],
+            "Text": "I can see if we could share data manager posts.",
+            "Targets": [[
+                "share",
+                "data manager posts"
+            ]]
+        },
+        "Text": "#G22# As a researcher, I want to see the sections on roles submitted by other researchers in my department, so that I can see if we could share data manager posts.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "sections",
+                "other researchers",
+                "department",
+                "roles"
+            ],
+            "Action": [
+                "see",
+                "submitted"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [
+                [
+                    "department",
+                    "other researchers"
+                ],
+                [
+                    "sections",
+                    "roles"
+                ],
+                [
+                    "other researchers",
+                    "roles"
+                ]
+            ],
+            "Text": "#G22# As a researcher, I want to see the sections on roles submitted by other researchers in my department, ",
+            "Triggers": [[
+                "researcher",
+                "see"
+            ]],
+            "Targets": [
+                [
+                    "see",
+                    "sections"
+                ],
+                [
+                    "submitted",
+                    "roles"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_75",
+        "Benefit": {
+            "Entity": ["data manager posts"],
+            "Action": [
+                "see",
+                "share"
+            ],
+            "Contains": [],
+            "Text": "I can see if we could share data manager posts.",
+            "Targets": [[
+                "share",
+                "data manager posts"
+            ]]
+        },
+        "Text": "#G22# As a researcher, I want to see the sections on responsibilities submitted by other researchers in my department, so that I can see if we could share data manager posts.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "sections",
+                "other researchers",
+                "department",
+                "responsibilities"
+            ],
+            "Action": [
+                "see",
+                "submitted"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [
+                [
+                    "department",
+                    "other researchers"
+                ],
+                [
+                    "sections",
+                    "responsibilities"
+                ],
+                [
+                    "other researchers",
+                    "responsibilities"
+                ]
+            ],
+            "Text": "#G22# As a researcher, I want to see the sections on responsibilities submitted by other researchers in my department, ",
+            "Triggers": [[
+                "researcher",
+                "see"
+            ]],
+            "Targets": [
+                [
+                    "see",
+                    "sections"
+                ],
+                [
+                    "submitted",
+                    "responsibilities"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_76",
+        "Benefit": {
+            "Entity": [
+                "sufficient expertise",
+                "data management",
+                "project"
+            ],
+            "Action": [
+                "ensure",
+                "support"
+            ],
+            "Contains": [
+                [
+                    "data management",
+                    "sufficient expertise"
+                ],
+                [
+                    "project",
+                    "data management"
+                ]
+            ],
+            "Text": "I can ensure sufficient expertise on data management to support the project.",
+            "Targets": [
+                [
+                    "ensure",
+                    "sufficient expertise"
+                ],
+                [
+                    "support",
+                    "project"
+                ]
+            ]
+        },
+        "Text": "#G22# As a faculty data steward, I want to see the sections on costing, so that I can ensure sufficient expertise on data management to support the project.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "sections",
+                "costing"
+            ],
+            "Action": ["see"],
+            "Persona": ["faculty data steward"],
+            "Contains": [[
+                "sections",
+                "costing"
+            ]],
+            "Text": "#G22# As a faculty data steward, I want to see the sections on costing, ",
+            "Triggers": [[
+                "faculty data steward",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "sections"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_77",
+        "Benefit": {
+            "Entity": [
+                "sufficient expertise",
+                "data management",
+                "project"
+            ],
+            "Action": [
+                "ensure",
+                "support"
+            ],
+            "Contains": [
+                [
+                    "data management",
+                    "sufficient expertise"
+                ],
+                [
+                    "project",
+                    "data management"
+                ]
+            ],
+            "Text": "I can ensure sufficient expertise on data management to support the project.",
+            "Targets": [
+                [
+                    "ensure",
+                    "sufficient expertise"
+                ],
+                [
+                    "support",
+                    "project"
+                ]
+            ]
+        },
+        "Text": "#G22# As a faculty data steward, I want to see the sections on roles, so that I can ensure sufficient expertise on data management to support the project.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "sections",
+                "roles"
+            ],
+            "Action": ["see"],
+            "Persona": ["faculty data steward"],
+            "Contains": [[
+                "sections",
+                "roles"
+            ]],
+            "Text": "#G22# As a faculty data steward, I want to see the sections on roles, ",
+            "Triggers": [[
+                "faculty data steward",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "sections"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_78",
+        "Benefit": {
+            "Entity": [
+                "sufficient expertise",
+                "data management",
+                "project"
+            ],
+            "Action": [
+                "ensure",
+                "support"
+            ],
+            "Contains": [
+                [
+                    "data management",
+                    "sufficient expertise"
+                ],
+                [
+                    "project",
+                    "data management"
+                ]
+            ],
+            "Text": "I can ensure sufficient expertise on data management to support the project.",
+            "Targets": [
+                [
+                    "support",
+                    "project"
+                ],
+                [
+                    "ensure",
+                    "sufficient expertise"
+                ]
+            ]
+        },
+        "Text": "#G22# As a faculty data steward, I want to see the sections on responsibilities, so that I can ensure sufficient expertise on data management to support the project.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "sections",
+                "responsibilities"
+            ],
+            "Action": ["see"],
+            "Persona": ["faculty data steward,"],
+            "Contains": [[
+                "sections",
+                "responsibilities"
+            ]],
+            "Text": "#G22# As a faculty data steward, I want to see the sections on responsibilities, ",
+            "Triggers": [[
+                "faculty data steward,",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "sections"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_79",
+        "Benefit": {
+            "Entity": ["data"],
+            "Action": ["reuse"],
+            "Contains": [],
+            "Text": "it is legal to reuse the data.",
+            "Targets": [[
+                "reuse",
+                "data"
+            ]]
+        },
+        "Text": "#G22# As a data manager, I want to clarify the necessary rights for re-using the data, so that it is legal to reuse the data.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "necessary rights",
+                "data"
+            ],
+            "Action": [
+                "clarify",
+                "re-using"
+            ],
+            "Persona": ["data manager"],
+            "Contains": [[
+                "data",
+                "necessary rights"
+            ]],
+            "Text": "#G22# As a data manager, I want to clarify the necessary rights for re-using the data, ",
+            "Triggers": [[
+                "data manager",
+                "clarify"
+            ]],
+            "Targets": [
+                [
+                    "clarify",
+                    "necessary rights"
+                ],
+                [
+                    "re-using",
+                    "data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_80",
+        "Benefit": {
+            "Entity": [
+                "other researchers",
+                "data",
+                "rights of use"
+            ],
+            "Action": [
+                "use",
+                "understand"
+            ],
+            "Contains": [[
+                "data",
+                "rights of use"
+            ]],
+            "Text": "other researchers who use the data understand the rights of use.",
+            "Targets": [
+                [
+                    "use",
+                    "data"
+                ],
+                [
+                    "understand",
+                    "rights of use"
+                ]
+            ]
+        },
+        "Text": "#G22# As a researcher, I want to record my intention to share data I have collected under terms of a particular licence, so that other researchers who use the data understand the rights of use.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "intention",
+                "data I have collected",
+                "particular licence",
+                "terms"
+            ],
+            "Action": [
+                "record",
+                "share"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "particular licence",
+                "terms"
+            ]],
+            "Text": "#G22# As a researcher, I want to record my intention to share data I have collected under terms of a particular licence, ",
+            "Triggers": [[
+                "researcher",
+                "record"
+            ]],
+            "Targets": [
+                [
+                    "record",
+                    "intention"
+                ],
+                [
+                    "share",
+                    "data I have collected"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_81",
+        "Benefit": {
+            "Entity": [
+                "research",
+                "reusability of data",
+                "privacy",
+                "people"
+            ],
+            "Action": [
+                "protect",
+                "participating",
+                "still ensure"
+            ],
+            "Contains": [[
+                "people",
+                "privacy"
+            ]],
+            "Text": "we protect the privacy of the people participating in the research as good as possible and still ensure reusability of data.",
+            "Targets": [
+                [
+                    "participating",
+                    "research"
+                ],
+                [
+                    "still ensure",
+                    "reusability of data"
+                ],
+                [
+                    "protect",
+                    "privacy"
+                ]
+            ]
+        },
+        "Text": "#G22# As a data manager, I want to plan the anonymization of data, so that we protect the privacy of the people participating in the research as good as possible and still ensure reusability of data.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": ["anonymization of data"],
+            "Action": ["plan"],
+            "Persona": ["data manager"],
+            "Contains": [],
+            "Text": "#G22# As a data manager, I want to plan the anonymization of data, ",
+            "Triggers": [[
+                "data manager",
+                "plan"
+            ]],
+            "Targets": [[
+                "plan",
+                "anonymization of data"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_82",
+        "Benefit": {
+            "Entity": ["multilingual data archive"],
+            "Action": ["allow"],
+            "Contains": [],
+            "Text": "I can allow for multilingual data archive.",
+            "Targets": [[
+                "allow",
+                "multilingual data archive"
+            ]]
+        },
+        "Text": "#G22# As a repository manager, I want to have metadata in additional languages, so that I can allow for multilingual data archive.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": [
+                "metadata",
+                "additional languages"
+            ],
+            "Action": ["have"],
+            "Persona": ["repository manager"],
+            "Contains": [[
+                "metadata",
+                "additional languages"
+            ]],
+            "Text": "#G22# As a repository manager, I want to have metadata in additional languages, ",
+            "Triggers": [[
+                "repository manager",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "metadata"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_83",
+        "Benefit": {
+            "Entity": ["required next steps"],
+            "Action": ["proceed"],
+            "Contains": [],
+            "Text": "I can proceed with the required next steps.",
+            "Targets": [[
+                "proceed",
+                "required next steps"
+            ]]
+        },
+        "Text": "#G22# As a data manager, I want to know whether the DMP was approved, so that I can proceed with the required next steps.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": ["DMP"],
+            "Action": [
+                "know",
+                "approved"
+            ],
+            "Persona": ["data manager"],
+            "Contains": [],
+            "Text": "#G22# As a data manager, I want to know whether the DMP was approved, ",
+            "Triggers": [[
+                "data manager",
+                "know"
+            ]],
+            "Targets": [[
+                "approved",
+                "DMP"
+            ]]
+        }
+    }
+]

@@ -71,11 +71,19 @@
         "Persona": ["Public User"],
         "Benefit": "I can obtain publicly available information concerning properties, County services, processes and other general information",
         "Action Rules": {
-            "Contain Aciton Rules": [
+            "Target Action Rules": [
                 [
-                    "publicly available information",
+                    "search",
+                    "information",
                     "preserve"
                 ],
+                [
+                    "obtain",
+                    "publicly available information",
+                    "create"
+                ]
+            ],
+            "Contain Action Rules": [
                 [
                     "properties",
                     "create"
@@ -90,20 +98,6 @@
                 ],
                 [
                     "other general information",
-                    "create"
-                ],
-                [
-                    "Information",
-                    "create"
-                ]
-            ],
-            "Target Aciton Rules": [
-                [
-                    "search",
-                    "preserve"
-                ],
-                [
-                    "obtain",
                     "create"
                 ]
             ]
@@ -151,10 +145,6 @@
             [
                 "publicly available information",
                 "other general information"
-            ],
-            [
-                "Information",
-                "publicly available information"
             ]
         ]
     },
@@ -229,25 +219,53 @@
         "Persona": ["ProspectiveApplicant"],
         "Benefit": "I can find the relevant service and/or application type to initiate via the online portal",
         "Action Rules": {
-            "Contain Aciton Rules": [[
-                "online portal",
-                "create"
-            ]],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "research",
+                    "requirements",
                     "preserve"
                 ],
                 [
                     "select",
+                    "service",
                     "create"
                 ],
                 [
                     "find",
+                    "application type",
+                    "create"
+                ],
+                [
+                    "find",
+                    "relevant service",
                     "create"
                 ],
                 [
                     "initiate",
+                    "application type",
+                    "create"
+                ],
+                [
+                    "initiate",
+                    "relevant service",
+                    "create"
+                ]
+            ],
+            "Contain Action Rules": [
+                [
+                    "online portal",
+                    "create"
+                ],
+                [
+                    "online portal",
+                    "create"
+                ],
+                [
+                    "online portal",
+                    "create"
+                ],
+                [
+                    "online portal",
                     "create"
                 ]
             ]
@@ -390,23 +408,30 @@
         "Persona": ["Applicant"],
         "Benefit": "I can receive a response to a request for a meeting or information that is a result of the preapplication assistance",
         "Action Rules": {
-            "Contain Aciton Rules": [
+            "Target Action Rules": [
+                [
+                    "request",
+                    "preapplication assistance",
+                    "create"
+                ],
+                [
+                    "receive",
+                    "response",
+                    "create"
+                ],
+                [
+                    "receive",
+                    "information",
+                    "create"
+                ]
+            ],
+            "Contain Action Rules": [
                 [
                     "result",
                     "create"
                 ],
                 [
                     "request for a meeting",
-                    "create"
-                ]
-            ],
-            "Target Aciton Rules": [
-                [
-                    "request",
-                    "create"
-                ],
-                [
-                    "receive",
                     "create"
                 ]
             ]
@@ -516,7 +541,24 @@
         "Persona": ["Customer"],
         "Benefit": "I can log on to the Customer Portal and perform transactions that first require user authentication",
         "Action Rules": {
-            "Contain Aciton Rules": [
+            "Target Action Rules": [
+                [
+                    "create",
+                    "customer portal user account",
+                    "create"
+                ],
+                [
+                    "log",
+                    "customer portal",
+                    "create"
+                ],
+                [
+                    "perform",
+                    "transactions",
+                    "create"
+                ]
+            ],
+            "Contain Action Rules": [
                 [
                     "Customer Portal",
                     "create"
@@ -527,20 +569,6 @@
                 ],
                 [
                     "user authentication",
-                    "create"
-                ]
-            ],
-            "Target Aciton Rules": [
-                [
-                    "create",
-                    "create"
-                ],
-                [
-                    "log",
-                    "create"
-                ],
-                [
-                    "perform",
                     "create"
                 ]
             ]
@@ -640,7 +668,34 @@
         "Persona": ["Applicant"],
         "Benefit": "I can provide my information, plans and/or documents to initiate a transaction with the County",
         "Action Rules": {
-            "Contain Aciton Rules": [
+            "Target Action Rules": [
+                [
+                    "submit",
+                    "application",
+                    "create"
+                ],
+                [
+                    "provide",
+                    "information",
+                    "preserve"
+                ],
+                [
+                    "provide",
+                    "plans",
+                    "preserve"
+                ],
+                [
+                    "provide",
+                    "documents",
+                    "preserve"
+                ],
+                [
+                    "initiate",
+                    "transaction",
+                    "create"
+                ]
+            ],
+            "Contain Action Rules": [
                 [
                     "information",
                     "create"
@@ -656,20 +711,14 @@
                 [
                     "Application",
                     "preserve"
-                ]
-            ],
-            "Target Aciton Rules": [
-                [
-                    "submit",
-                    "create"
                 ],
                 [
-                    "provide",
+                    "Application",
                     "preserve"
                 ],
                 [
-                    "initiate",
-                    "create"
+                    "Application",
+                    "preserve"
                 ]
             ]
         },
@@ -780,7 +829,19 @@
         "Persona": ["Applicant"],
         "Benefit": "I can satisfy documentation requirements for my application",
         "Action Rules": {
-            "Contain Aciton Rules": [
+            "Target Action Rules": [
+                [
+                    "submit",
+                    "supporting documentation",
+                    "create"
+                ],
+                [
+                    "satisfy",
+                    "documentation requirements",
+                    "preserve"
+                ]
+            ],
+            "Contain Action Rules": [
                 [
                     "documentation requirements",
                     "create"
@@ -791,16 +852,6 @@
                 ],
                 [
                     "application",
-                    "preserve"
-                ]
-            ],
-            "Target Aciton Rules": [
-                [
-                    "submit",
-                    "create"
-                ],
-                [
-                    "satisfy",
                     "preserve"
                 ]
             ]
@@ -896,24 +947,27 @@
         "Persona": ["Applicant"],
         "Benefit": "I can satisfy outstanding charge associated with the service requested or received from the County",
         "Action Rules": {
-            "Contain Aciton Rules": [[
-                "service requested",
-                "create"
-            ]],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "satisfy",
+                    "outstanding charge",
                     "preserve"
                 ],
                 [
                     "pay",
+                    "fee",
                     "create"
                 ],
                 [
                     "received from",
+                    "county",
                     "preserve"
                 ]
-            ]
+            ],
+            "Contain Action Rules": [[
+                "service requested",
+                "create"
+            ]]
         },
         "PID": "#G03#",
         "Targets": [
@@ -1034,23 +1088,25 @@
         "Persona": ["Applicant"],
         "Benefit": "I can understand where the provisioning of my service is in the process, such as information related to service levels, fees, plan review, permit, or inspection results",
         "Action Rules": {
-            "Contain Aciton Rules": [
+            "Target Action Rules": [
+                [
+                    "check",
+                    "status",
+                    "create"
+                ],
+                [
+                    "understand",
+                    "service",
+                    "create"
+                ]
+            ],
+            "Contain Action Rules": [
                 [
                     "transaction",
                     "create"
                 ],
                 [
                     "information",
-                    "create"
-                ]
-            ],
-            "Target Aciton Rules": [
-                [
-                    "check",
-                    "create"
-                ],
-                [
-                    "understand",
                     "create"
                 ]
             ]
@@ -1148,23 +1204,25 @@
         "Persona": ["Applicant"],
         "Benefit": "I can successfully change information on an application",
         "Action Rules": {
-            "Contain Aciton Rules": [
+            "Target Action Rules": [
+                [
+                    "modify",
+                    "application",
+                    "create"
+                ],
+                [
+                    "successfully change",
+                    "information",
+                    "create"
+                ]
+            ],
+            "Contain Action Rules": [
                 [
                     "information",
                     "create"
                 ],
                 [
                     "application",
-                    "create"
-                ]
-            ],
-            "Target Aciton Rules": [
-                [
-                    "modify",
-                    "create"
-                ],
-                [
-                    "successfully change",
                     "create"
                 ]
             ]
@@ -1266,17 +1324,24 @@
         "Persona": ["Staff member"],
         "Benefit": "I can validate when an application is complete and eligible for further technical review",
         "Action Rules": {
-            "Contain Aciton Rules": [],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "validate",
+                    "eligible for further technical review",
                     "create"
                 ],
                 [
                     "perform",
+                    "completeness review",
+                    "create"
+                ],
+                [
+                    "validate",
+                    "application",
                     "create"
                 ]
-            ]
+            ],
+            "Contain Action Rules": []
         },
         "PID": "#G03#",
         "Targets": [
@@ -1361,17 +1426,19 @@
         "Persona": ["Staff member"],
         "Benefit": "I can share information with other Staff collaborating on the record",
         "Action Rules": {
-            "Contain Aciton Rules": [],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "record",
+                    "internal note",
                     "create"
                 ],
                 [
                     "share",
+                    "information",
                     "create"
                 ]
-            ]
+            ],
+            "Contain Action Rules": []
         },
         "PID": "#G03#",
         "Targets": [
@@ -1453,28 +1520,32 @@
         "Persona": ["Staff member"],
         "Benefit": "I can review the for compliance and subsequently approved or denied",
         "Action Rules": {
-            "Contain Aciton Rules": [[
-                "Detailed Review",
-                "create"
-            ]],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "assign",
+                    "application",
                     "create"
                 ],
                 [
                     "review",
+                    "compliance",
                     "preserve"
                 ],
                 [
                     "subsequently approved",
+                    "compliance",
                     "preserve"
                 ],
                 [
                     "denied",
+                    "compliance",
                     "forbid"
                 ]
-            ]
+            ],
+            "Contain Action Rules": [[
+                "Detailed Review",
+                "create"
+            ]]
         },
         "PID": "#G03#",
         "Targets": [
@@ -1586,23 +1657,30 @@
         "Persona": ["Staff member"],
         "Benefit": "I can prevent progression through the workflow or other actions in the system until the issue is resolved",
         "Action Rules": {
-            "Contain Aciton Rules": [
+            "Target Action Rules": [
+                [
+                    "apply",
+                    "hold",
+                    "preserve"
+                ],
+                [
+                    "prevent",
+                    "progression",
+                    "preserve"
+                ],
+                [
+                    "prevent",
+                    "other actions",
+                    "preserve"
+                ]
+            ],
+            "Contain Action Rules": [
                 [
                     "workflow",
                     "preserve"
                 ],
                 [
                     "system",
-                    "preserve"
-                ]
-            ],
-            "Target Aciton Rules": [
-                [
-                    "apply",
-                    "preserve"
-                ],
-                [
-                    "prevent",
                     "preserve"
                 ]
             ]
@@ -1708,7 +1786,24 @@
         "Persona": ["Staff member"],
         "Benefit": "I can allow progression through the workflow or other actions in the system now that the issue has been resolved",
         "Action Rules": {
-            "Contain Aciton Rules": [
+            "Target Action Rules": [
+                [
+                    "remove",
+                    "hold",
+                    "delete"
+                ],
+                [
+                    "allow",
+                    "progression",
+                    "create"
+                ],
+                [
+                    "resolved",
+                    "issue",
+                    "preserve"
+                ]
+            ],
+            "Contain Action Rules": [
                 [
                     "workflow",
                     "create"
@@ -1716,20 +1811,6 @@
                 [
                     "other actions",
                     "create"
-                ]
-            ],
-            "Target Aciton Rules": [
-                [
-                    "remove",
-                    "delete"
-                ],
-                [
-                    "allow",
-                    "create"
-                ],
-                [
-                    "resolved",
-                    "preserve"
                 ]
             ]
         },
@@ -1841,17 +1922,24 @@
         "Persona": ["Staff member"],
         "Benefit": "I can satisfy communication and records responsibilities",
         "Action Rules": {
-            "Contain Aciton Rules": [],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "send",
+                    "formal response",
                     "create"
                 ],
                 [
                     "satisfy",
+                    "communication",
+                    "preserve"
+                ],
+                [
+                    "satisfy",
+                    "records responsibilities",
                     "preserve"
                 ]
-            ]
+            ],
+            "Contain Action Rules": []
         },
         "PID": "#G03#",
         "Targets": [
@@ -1945,20 +2033,22 @@
         "Persona": ["Staff member"],
         "Benefit": "I can preserve the history of draft proffer statements submitted by the Applicant",
         "Action Rules": {
-            "Contain Aciton Rules": [[
-                "Applicant",
-                "preserve"
-            ]],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "track",
+                    "draft proffers",
                     "preserve"
                 ],
                 [
                     "preserve",
+                    "history of draft proffer statements",
                     "preserve"
                 ]
-            ]
+            ],
+            "Contain Action Rules": [[
+                "Applicant",
+                "preserve"
+            ]]
         },
         "PID": "#G03#",
         "Targets": [
@@ -2042,17 +2132,30 @@
         "Persona": ["Staff member"],
         "Benefit": "I can ensure compliance with and satisfaction of the proffer in the future",
         "Action Rules": {
-            "Contain Aciton Rules": [[
-                "proffer",
-                "preserve"
-            ]],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "manage",
+                    "approved proffers",
                     "create"
                 ],
                 [
                     "ensure",
+                    "compliance",
+                    "preserve"
+                ],
+                [
+                    "ensure",
+                    "satisfaction",
+                    "preserve"
+                ]
+            ],
+            "Contain Action Rules": [
+                [
+                    "proffer",
+                    "preserve"
+                ],
+                [
+                    "proffer",
                     "preserve"
                 ]
             ]
@@ -2148,20 +2251,22 @@
         "Persona": ["Staff member"],
         "Benefit": "I can maintain accurate ordinance information in the System",
         "Action Rules": {
-            "Contain Aciton Rules": [[
-                "System",
-                "create"
-            ]],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "manage",
+                    "ordinances",
                     "create"
                 ],
                 [
                     "maintain",
+                    "accurate ordinance information",
                     "create"
                 ]
-            ]
+            ],
+            "Contain Action Rules": [[
+                "System",
+                "create"
+            ]]
         },
         "PID": "#G03#",
         "Targets": [
@@ -2258,7 +2363,24 @@
         "Persona": ["Staff member"],
         "Benefit": "I can bring the required parties together at a specific date/time to address an issue",
         "Action Rules": {
-            "Contain Aciton Rules": [
+            "Target Action Rules": [
+                [
+                    "schedule",
+                    "meeting",
+                    "create"
+                ],
+                [
+                    "bring",
+                    "required parties",
+                    "create"
+                ],
+                [
+                    "address",
+                    "issue",
+                    "create"
+                ]
+            ],
+            "Contain Action Rules": [
                 [
                     "required parties",
                     "create"
@@ -2269,20 +2391,6 @@
                 ],
                 [
                     "Meeting",
-                    "create"
-                ]
-            ],
-            "Target Aciton Rules": [
-                [
-                    "schedule",
-                    "create"
-                ],
-                [
-                    "bring",
-                    "create"
-                ],
-                [
-                    "address",
                     "create"
                 ]
             ]
@@ -2375,17 +2483,25 @@
         "Persona": ["staff member"],
         "Benefit": "I can finish it",
         "Action Rules": {
-            "Contain Aciton Rules": [[
-                "Final Action status",
-                "create"
-            ]],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "denote",
+                    "application",
                     "create"
                 ],
                 [
                     "finish",
+                    "application",
+                    "create"
+                ]
+            ],
+            "Contain Action Rules": [
+                [
+                    "Final Action status",
+                    "create"
+                ],
+                [
+                    "Final Action status",
                     "create"
                 ]
             ]
@@ -2519,21 +2635,54 @@
         "Persona": ["Planning Staff member"],
         "Benefit": "I can record work in process, outcome, and location-based information related to the Plan(s)",
         "Action Rules": {
-            "Contain Aciton Rules": [[
-                "Plan(s)",
-                "create"
-            ]],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "track",
+                    "plan amendments",
+                    "preserve"
+                ],
+                [
+                    "track",
+                    "planning studies",
                     "preserve"
                 ],
                 [
                     "conduct",
+                    "plan amendments",
+                    "create"
+                ],
+                [
+                    "conduct",
+                    "planning studies",
                     "create"
                 ],
                 [
                     "record",
+                    "work in process",
+                    "create"
+                ],
+                [
+                    "record",
+                    "outcome",
+                    "create"
+                ],
+                [
+                    "record",
+                    "location-based information",
+                    "create"
+                ]
+            ],
+            "Contain Action Rules": [
+                [
+                    "Plan(s)",
+                    "create"
+                ],
+                [
+                    "Plan(s)",
+                    "create"
+                ],
+                [
+                    "Plan(s)",
                     "create"
                 ]
             ]
@@ -2675,25 +2824,39 @@
         "Persona": ["Planning Staff member"],
         "Benefit": "I can access, analyze and/or export the needed information in the format I requested",
         "Action Rules": {
-            "Contain Aciton Rules": [[
-                "format",
-                "create"
-            ]],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "generate",
+                    "planning-related reports",
                     "create"
                 ],
                 [
                     "access",
+                    "needed information",
                     "create"
                 ],
                 [
                     "analyze",
+                    "needed information",
                     "preserve"
                 ],
                 [
                     "export",
+                    "needed information",
+                    "create"
+                ]
+            ],
+            "Contain Action Rules": [
+                [
+                    "format",
+                    "create"
+                ],
+                [
+                    "format",
+                    "preserve"
+                ],
+                [
+                    "format",
                     "create"
                 ]
             ]
@@ -2813,7 +2976,19 @@
         "Persona": ["Planning Staff member"],
         "Benefit": "I can complete my required review of a plan set and/or application",
         "Action Rules": {
-            "Contain Aciton Rules": [
+            "Target Action Rules": [
+                [
+                    "evaluate",
+                    "consistency",
+                    "preserve"
+                ],
+                [
+                    "complete",
+                    "required review",
+                    "create"
+                ]
+            ],
+            "Contain Action Rules": [
                 [
                     "Comprehensive Plan",
                     "preserve"
@@ -2824,16 +2999,6 @@
                 ],
                 [
                     "application",
-                    "create"
-                ]
-            ],
-            "Target Aciton Rules": [
-                [
-                    "evaluate",
-                    "preserve"
-                ],
-                [
-                    "complete",
                     "create"
                 ]
             ]
@@ -2951,21 +3116,39 @@
         "Persona": ["Staff member"],
         "Benefit": "I can validate compliance of an application with the Zoning Ordinance and impact approval/denial of the application accordingly",
         "Action Rules": {
-            "Contain Aciton Rules": [[
-                "application",
-                "create"
-            ]],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "perform",
+                    "staff review",
                     "create"
                 ],
                 [
                     "validate",
+                    "compliance",
                     "create"
                 ],
                 [
                     "impact",
+                    "approval",
+                    "preserve"
+                ],
+                [
+                    "impact",
+                    "denial",
+                    "preserve"
+                ]
+            ],
+            "Contain Action Rules": [
+                [
+                    "application",
+                    "create"
+                ],
+                [
+                    "application",
+                    "preserve"
+                ],
+                [
+                    "application",
                     "preserve"
                 ]
             ]
@@ -3087,24 +3270,27 @@
         "Persona": ["Zoning Staff member"],
         "Benefit": "I can capture my response to the request in the system and also send a communication from the system to the Applicant",
         "Action Rules": {
-            "Contain Aciton Rules": [[
-                "Zoning Information",
-                "create"
-            ]],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "process",
+                    "requests",
                     "create"
                 ],
                 [
                     "capture",
+                    "response",
                     "create"
                 ],
                 [
                     "send",
+                    "communication",
                     "create"
                 ]
-            ]
+            ],
+            "Contain Action Rules": [[
+                "Zoning Information",
+                "create"
+            ]]
         },
         "PID": "#G03#",
         "Targets": [
@@ -3227,20 +3413,22 @@
         "Persona": ["Zoning Staff member"],
         "Benefit": "I can satisfy an Applicant's request for service that has proven to be eligible and in compliance with the Zoning Ordinance",
         "Action Rules": {
-            "Contain Aciton Rules": [[
-                "service",
-                "preserve"
-            ]],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "issue",
+                    "zoning-related permits",
                     "create"
                 ],
                 [
                     "satisfy",
+                    "applicant's request",
                     "preserve"
                 ]
-            ]
+            ],
+            "Contain Action Rules": [[
+                "service",
+                "preserve"
+            ]]
         },
         "PID": "#G03#",
         "Targets": [
@@ -3336,21 +3524,24 @@
         "Persona": ["Staff member"],
         "Benefit": "I can publish and distribute the report according to business rules",
         "Action Rules": {
-            "Contain Aciton Rules": [],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "develop",
+                    "staff report",
                     "create"
                 ],
                 [
                     "publish",
+                    "report",
                     "create"
                 ],
                 [
                     "distribute",
+                    "report",
                     "create"
                 ]
-            ]
+            ],
+            "Contain Action Rules": []
         },
         "PID": "#G03#",
         "Targets": [
@@ -3454,7 +3645,24 @@
         "Persona": ["Staff member"],
         "Benefit": "I can track hearing-related activities and due dates",
         "Action Rules": {
-            "Contain Aciton Rules": [
+            "Target Action Rules": [
+                [
+                    "manage",
+                    "hearing calendars",
+                    "create"
+                ],
+                [
+                    "track",
+                    "hearing-related activities",
+                    "preserve"
+                ],
+                [
+                    "track",
+                    "due dates",
+                    "preserve"
+                ]
+            ],
+            "Contain Action Rules": [
                 [
                     "hearing-related activities",
                     "create"
@@ -3466,15 +3674,9 @@
                 [
                     "Hearing Calendars",
                     "preserve"
-                ]
-            ],
-            "Target Aciton Rules": [
-                [
-                    "manage",
-                    "create"
                 ],
                 [
-                    "track",
+                    "Hearing Calendars",
                     "preserve"
                 ]
             ]
@@ -3594,17 +3796,19 @@
         "Persona": ["Staff member"],
         "Benefit": "I can present the application to the appropriate governing body within the timelines dictated by the relevant County rules and procedures",
         "Action Rules": {
-            "Contain Aciton Rules": [],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "assign",
+                    "hearing date",
                     "create"
                 ],
                 [
                     "present",
+                    "application",
                     "create"
                 ]
-            ]
+            ],
+            "Contain Action Rules": []
         },
         "PID": "#G03#",
         "Targets": [
@@ -3682,23 +3886,25 @@
         "Persona": ["Staff member"],
         "Benefit": "I can ensure compliance with the requirements prior to the hearing",
         "Action Rules": {
-            "Contain Aciton Rules": [
+            "Target Action Rules": [
+                [
+                    "manage",
+                    "affidavits",
+                    "create"
+                ],
+                [
+                    "ensure",
+                    "compliance",
+                    "preserve"
+                ]
+            ],
+            "Contain Action Rules": [
                 [
                     "compliance",
                     "create"
                 ],
                 [
                     "Affidavits",
-                    "preserve"
-                ]
-            ],
-            "Target Aciton Rules": [
-                [
-                    "manage",
-                    "create"
-                ],
-                [
-                    "ensure",
                     "preserve"
                 ]
             ]
@@ -3784,12 +3990,13 @@
         "Persona": ["Applicant"],
         "Benefit": "I can ensure all pre-hearing requirements are satisfied in time for the hearing",
         "Action Rules": {
-            "Contain Aciton Rules": [[
-                "hearing",
+            "Target Action Rules": [[
+                "satisfy",
+                "hearing requirements",
                 "preserve"
             ]],
-            "Target Aciton Rules": [[
-                "satisfy",
+            "Contain Action Rules": [[
+                "hearing",
                 "preserve"
             ]]
         },
@@ -3883,17 +4090,19 @@
         "Persona": ["Staff member"],
         "Benefit": "I can ensure all pre-hearing requirements are satisfied and staff and Applicant are ready for the hearing",
         "Action Rules": {
-            "Contain Aciton Rules": [],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "support",
+                    "hearing execution",
                     "create"
                 ],
                 [
                     "prepare",
+                    "hearing execution",
                     "create"
                 ]
-            ]
+            ],
+            "Contain Action Rules": []
         },
         "PID": "#G03#",
         "Targets": [
@@ -3974,17 +4183,19 @@
         "Persona": ["Staff member"],
         "Benefit": "I can enforce the system",
         "Action Rules": {
-            "Contain Aciton Rules": [],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "capture",
+                    "hearing decision",
                     "create"
                 ],
                 [
                     "enforce",
+                    "system",
                     "create"
                 ]
-            ]
+            ],
+            "Contain Action Rules": []
         },
         "PID": "#G03#",
         "Targets": [
@@ -4068,24 +4279,27 @@
         "Persona": ["Staff member"],
         "Benefit": "I can track the outcome and record the impact on the relevant records",
         "Action Rules": {
-            "Contain Aciton Rules": [[
-                "relevant records",
-                "create"
-            ]],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "process",
+                    "appeals",
                     "create"
                 ],
                 [
                     "track",
+                    "outcome",
                     "preserve"
                 ],
                 [
                     "record",
+                    "impact",
                     "create"
                 ]
-            ]
+            ],
+            "Contain Action Rules": [[
+                "relevant records",
+                "create"
+            ]]
         },
         "PID": "#G03#",
         "Targets": [
@@ -4188,7 +4402,19 @@
         "Persona": ["Plan Review Staff member"],
         "Benefit": "I can ensure plans have been assigned to the appropriate Plan Reviewer",
         "Action Rules": {
-            "Contain Aciton Rules": [
+            "Target Action Rules": [
+                [
+                    "assign",
+                    "plans",
+                    "create"
+                ],
+                [
+                    "assigned",
+                    "plans",
+                    "create"
+                ]
+            ],
+            "Contain Action Rules": [
                 [
                     "Review",
                     "create"
@@ -4196,15 +4422,13 @@
                 [
                     "appropriate Plan Reviewer",
                     "create"
-                ]
-            ],
-            "Target Aciton Rules": [
+                ],
                 [
-                    "assign",
+                    "Review",
                     "create"
                 ],
                 [
-                    "assigned",
+                    "appropriate Plan Reviewer",
                     "create"
                 ]
             ]
@@ -4317,25 +4541,29 @@
         "Persona": ["Plan Review Staff Supervisor"],
         "Benefit": "I can monitor and effectively adjust workload as necessary and ensure service levels are met",
         "Action Rules": {
-            "Contain Aciton Rules": [],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "manage",
+                    "plan reviewer workload",
                     "create"
                 ],
                 [
                     "monitor",
+                    "workload",
                     "preserve"
                 ],
                 [
                     "effectively adjust",
+                    "workload",
                     "preserve"
                 ],
                 [
                     "met",
+                    "service levels",
                     "preserve"
                 ]
-            ]
+            ],
+            "Contain Action Rules": []
         },
         "PID": "#G03#",
         "Targets": [
@@ -4447,7 +4675,19 @@
         "Persona": ["Applicant"],
         "Benefit": "I can meet with the Plan Review Staff regarding the plan review",
         "Action Rules": {
-            "Contain Aciton Rules": [
+            "Target Action Rules": [
+                [
+                    "request",
+                    "plan review meeting",
+                    "create"
+                ],
+                [
+                    "meet",
+                    "plan review staff",
+                    "preserve"
+                ]
+            ],
+            "Contain Action Rules": [
                 [
                     "plan review",
                     "create"
@@ -4458,16 +4698,6 @@
                 ],
                 [
                     "Plan Review Meeting",
-                    "preserve"
-                ]
-            ],
-            "Target Aciton Rules": [
-                [
-                    "request",
-                    "create"
-                ],
-                [
-                    "meet",
                     "preserve"
                 ]
             ]
@@ -4566,24 +4796,27 @@
         "Persona": ["Plan Review Staff member"],
         "Benefit": "I can listen to it again",
         "Action Rules": {
-            "Contain Aciton Rules": [[
-                "Applicant",
-                "preserve"
-            ]],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "successfully conduct",
+                    "plan review meeting",
                     "preserve"
                 ],
                 [
                     "record",
+                    "outcome",
                     "create"
                 ],
                 [
                     "listen",
+                    "outcome",
                     "preserve"
                 ]
-            ]
+            ],
+            "Contain Action Rules": [[
+                "Applicant",
+                "preserve"
+            ]]
         },
         "PID": "#G03#",
         "Targets": [
@@ -4708,7 +4941,49 @@
         "Persona": ["Plan Review Staff member"],
         "Benefit": "so that I can review them for compliance and either approve, or fail or deny the plans and record any conditions, clearances, or corrections needed from the Applicant",
         "Action Rules": {
-            "Contain Aciton Rules": [
+            "Target Action Rules": [
+                [
+                    "review",
+                    "plans",
+                    "preserve"
+                ],
+                [
+                    "review",
+                    "compliance",
+                    "preserve"
+                ],
+                [
+                    "approve",
+                    "plans",
+                    "preserve"
+                ],
+                [
+                    "fail",
+                    "plans",
+                    "preserve"
+                ],
+                [
+                    "deny",
+                    "plans",
+                    "create"
+                ],
+                [
+                    "record",
+                    "clearances",
+                    "create"
+                ],
+                [
+                    "record",
+                    "corrections",
+                    "create"
+                ],
+                [
+                    "record",
+                    "any conditions",
+                    "create"
+                ]
+            ],
+            "Contain Action Rules": [
                 [
                     "Applicant",
                     "preserve"
@@ -4726,29 +5001,63 @@
                     "preserve"
                 ],
                 [
+                    "Applicant",
+                    "preserve"
+                ],
+                [
+                    "clearances",
+                    "preserve"
+                ],
+                [
+                    "corrections",
+                    "preserve"
+                ],
+                [
+                    "any conditions",
+                    "preserve"
+                ],
+                [
+                    "Applicant",
+                    "preserve"
+                ],
+                [
+                    "clearances",
+                    "preserve"
+                ],
+                [
+                    "corrections",
+                    "preserve"
+                ],
+                [
+                    "any conditions",
+                    "preserve"
+                ],
+                [
+                    "Applicant",
+                    "create"
+                ],
+                [
+                    "clearances",
+                    "create"
+                ],
+                [
+                    "corrections",
+                    "create"
+                ],
+                [
+                    "any conditions",
+                    "create"
+                ],
+                [
                     "plans",
                     "create"
-                ]
-            ],
-            "Target Aciton Rules": [
-                [
-                    "review",
-                    "preserve"
                 ],
                 [
-                    "approve",
-                    "preserve"
-                ],
-                [
-                    "fail",
-                    "preserve"
-                ],
-                [
-                    "deny",
+                    "plans",
                     "create"
                 ],
                 [
-                    "record",
+                    "plans",
                     "create"
                 ]
             ]
@@ -4867,23 +5176,25 @@
         "Persona": ["Applicant"],
         "Benefit": "I can review revised plans",
         "Action Rules": {
-            "Contain Aciton Rules": [
+            "Target Action Rules": [
+                [
+                    "resubmit",
+                    "plans",
+                    "preserve"
+                ],
+                [
+                    "review",
+                    "revised plans",
+                    "preserve"
+                ]
+            ],
+            "Contain Action Rules": [
                 [
                     "revised plans",
                     "preserve"
                 ],
                 [
                     "Plans",
-                    "preserve"
-                ]
-            ],
-            "Target Aciton Rules": [
-                [
-                    "resubmit",
-                    "preserve"
-                ],
-                [
-                    "review",
                     "preserve"
                 ]
             ]
@@ -4983,20 +5294,32 @@
         "Persona": ["Plan Review Staff Member"],
         "Benefit": "I can review the request and if approved, associate it with the appropriate project",
         "Action Rules": {
-            "Contain Aciton Rules": [[
-                "Applicant",
-                "preserve"
-            ]],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "review",
+                    "code modifications",
+                    "preserve"
+                ],
+                [
+                    "review",
+                    "request",
                     "preserve"
                 ],
                 [
                     "associate",
+                    "request",
+                    "create"
+                ],
+                [
+                    "associate",
+                    "appropriate project",
                     "create"
                 ]
-            ]
+            ],
+            "Contain Action Rules": [[
+                "Applicant",
+                "preserve"
+            ]]
         },
         "PID": "#G03#",
         "Targets": [
@@ -5149,7 +5472,29 @@
         "Persona": ["Plan Review Staff member"],
         "Benefit": "that I can ensure all plan review tasks are completed, results have been sent to the Applicant and any downstream steps are initiated such has a final review or payment for permit issuance",
         "Action Rules": {
-            "Contain Aciton Rules": [
+            "Target Action Rules": [
+                [
+                    "completed",
+                    "plan review tasks",
+                    "create"
+                ],
+                [
+                    "track",
+                    "completion of required plan reviews",
+                    "preserve"
+                ],
+                [
+                    "sent",
+                    "results",
+                    "create"
+                ],
+                [
+                    "initiated",
+                    "any downstream steps",
+                    "create"
+                ]
+            ],
+            "Contain Action Rules": [
                 [
                     "Applicant",
                     "create"
@@ -5160,24 +5505,6 @@
                 ],
                 [
                     "payment",
-                    "create"
-                ]
-            ],
-            "Target Aciton Rules": [
-                [
-                    "completed",
-                    "create"
-                ],
-                [
-                    "track",
-                    "preserve"
-                ],
-                [
-                    "sent",
-                    "create"
-                ],
-                [
-                    "initiated",
                     "create"
                 ]
             ]
@@ -5305,21 +5632,30 @@
         "Persona": ["Development Staff member"],
         "Benefit": "I can grant the request to the Applicant to begin work",
         "Action Rules": {
-            "Contain Aciton Rules": [[
-                "Applicant",
-                "create"
-            ]],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "issue",
+                    "development-related permit",
                     "create"
                 ],
                 [
                     "grant",
+                    "request",
                     "create"
                 ],
                 [
                     "begin",
+                    "work",
+                    "create"
+                ]
+            ],
+            "Contain Action Rules": [
+                [
+                    "Applicant",
+                    "create"
+                ],
+                [
+                    "Applicant",
                     "create"
                 ]
             ]
@@ -5419,17 +5755,19 @@
         "Persona": ["Staff member"],
         "Benefit": "I can track and manage bonds throughout the lifecycle of the project until release",
         "Action Rules": {
-            "Contain Aciton Rules": [],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "manage",
+                    "bonds",
                     "create"
                 ],
                 [
                     "track",
+                    "bonds",
                     "preserve"
                 ]
-            ]
+            ],
+            "Contain Action Rules": []
         },
         "PID": "#G03#",
         "Targets": [
@@ -5523,21 +5861,24 @@
         "Persona": ["Applicant"],
         "Benefit": "I can receive any posted bond and/or obtain occupancy",
         "Action Rules": {
-            "Contain Aciton Rules": [],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "complete",
+                    "building development project",
                     "create"
                 ],
                 [
                     "receive",
+                    "any posted bond",
                     "create"
                 ],
                 [
                     "obtain",
+                    "occupancy",
                     "create"
                 ]
-            ]
+            ],
+            "Contain Action Rules": []
         },
         "PID": "#G03#",
         "Targets": [
@@ -5625,21 +5966,24 @@
         "Persona": ["Customer"],
         "Benefit": "a County inspector is assigned to perform an inspection of my project",
         "Action Rules": {
-            "Contain Aciton Rules": [],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "request",
+                    "inspection",
                     "create"
                 ],
                 [
                     "perform",
+                    "inspection",
                     "create"
                 ],
                 [
                     "assigned",
+                    "county inspector",
                     "create"
                 ]
-            ]
+            ],
+            "Contain Action Rules": []
         },
         "PID": "#G03#",
         "Targets": [
@@ -5717,21 +6061,24 @@
         "Persona": ["Inspection Staff member"],
         "Benefit": "I can schedule and assign the inspection",
         "Action Rules": {
-            "Contain Aciton Rules": [],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "create",
+                    "inspection",
                     "create"
                 ],
                 [
                     "schedule",
+                    "inspection",
                     "create"
                 ],
                 [
                     "assign",
+                    "inspection",
                     "create"
                 ]
-            ]
+            ],
+            "Contain Action Rules": []
         },
         "PID": "#G03#",
         "Targets": [
@@ -5821,11 +6168,12 @@
         "Persona": ["Inspection Staff Supervisor"],
         "Benefit": "I can make sure the appropriate Inspector receives the work",
         "Action Rules": {
-            "Contain Aciton Rules": [],
-            "Target Aciton Rules": [[
+            "Target Action Rules": [[
                 "assign",
+                "inspections",
                 "create"
-            ]]
+            ]],
+            "Contain Action Rules": []
         },
         "PID": "#G03#",
         "Targets": [[
@@ -5918,17 +6266,24 @@
         "Persona": ["Inspection Supervisor"],
         "Benefit": "I can meet service level and quality requirements",
         "Action Rules": {
-            "Contain Aciton Rules": [],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "manage",
+                    "inspector workload",
                     "create"
                 ],
                 [
                     "meet",
+                    "quality requirements",
+                    "preserve"
+                ],
+                [
+                    "meet",
+                    "service level ",
                     "preserve"
                 ]
-            ]
+            ],
+            "Contain Action Rules": []
         },
         "PID": "#G03#",
         "Targets": [
@@ -6019,24 +6374,27 @@
         "Persona": ["Inspector"],
         "Benefit": "I can validate Customer compliance with code and regulations and provide results of the inspection to the Customer",
         "Action Rules": {
-            "Contain Aciton Rules": [[
-                "inspection",
-                "preserve"
-            ]],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "conduct",
+                    "inspections",
                     "create"
                 ],
                 [
                     "validate",
+                    "customer compliance",
                     "create"
                 ],
                 [
                     "provide",
+                    "results",
                     "preserve"
                 ]
-            ]
+            ],
+            "Contain Action Rules": [[
+                "inspection",
+                "preserve"
+            ]]
         },
         "PID": "#G03#",
         "Targets": [
@@ -6143,17 +6501,19 @@
         "Persona": ["Enforcement Staff member"],
         "Benefit": "I can provide formal communication to the responsible party",
         "Action Rules": {
-            "Contain Aciton Rules": [],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "issue",
+                    "notice of violation",
                     "create"
                 ],
                 [
                     "provide",
+                    "formal communication",
                     "preserve"
                 ]
-            ]
+            ],
+            "Contain Action Rules": []
         },
         "PID": "#G03#",
         "Targets": [
@@ -6246,17 +6606,29 @@
         "Persona": ["Staff member"],
         "Benefit": "I can obtain all associated current and historic owners, permits, and applications",
         "Action Rules": {
-            "Contain Aciton Rules": [],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "search",
+                    "property information",
                     "preserve"
                 ],
                 [
                     "obtain",
+                    "associated current and historic owners",
+                    "create"
+                ],
+                [
+                    "obtain",
+                    "permits",
+                    "create"
+                ],
+                [
+                    "obtain",
+                    "applications",
                     "create"
                 ]
-            ]
+            ],
+            "Contain Action Rules": []
         },
         "PID": "#G03#",
         "Targets": [
@@ -6369,7 +6741,24 @@
         "Persona": ["Staff member"],
         "Benefit": "I can ensure that I am reviewing the permit/application to the most current data and appropriate standards",
         "Action Rules": {
-            "Contain Aciton Rules": [
+            "Target Action Rules": [
+                [
+                    "reviewing",
+                    "permit",
+                    "preserve"
+                ],
+                [
+                    "reviewing",
+                    "application",
+                    "preserve"
+                ],
+                [
+                    "be notified",
+                    "when",
+                    "create"
+                ]
+            ],
+            "Contain Action Rules": [
                 [
                     "appropriate standards",
                     "preserve"
@@ -6377,16 +6766,14 @@
                 [
                     "most current data",
                     "preserve"
-                ]
-            ],
-            "Target Aciton Rules": [
+                ],
                 [
-                    "reviewing",
+                    "appropriate standards",
                     "preserve"
                 ],
                 [
-                    "be notified",
-                    "create"
+                    "most current data",
+                    "preserve"
                 ]
             ]
         },
@@ -6519,17 +6906,19 @@
         "Persona": ["County Staff Member"],
         "Benefit": "I can fulfill a request",
         "Action Rules": {
-            "Contain Aciton Rules": [],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "create",
+                    "custom query/report",
                     "create"
                 ],
                 [
                     "fulfill",
+                    "request",
                     "preserve"
                 ]
-            ]
+            ],
+            "Contain Action Rules": []
         },
         "PID": "#G03#",
         "Targets": [
@@ -6621,24 +7010,32 @@
         "Persona": ["Staff member"],
         "Benefit": "I can associate it to the child parcel and address after the condominiums are recorded in the system",
         "Action Rules": {
-            "Contain Aciton Rules": [[
-                "system",
-                "create"
-            ]],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "associate",
+                    "child parcel",
                     "create"
                 ],
                 [
                     "address",
+                    "condominiums",
                     "create"
                 ],
                 [
                     "create",
+                    "each condo unit",
+                    "create"
+                ],
+                [
+                    "associate",
+                    "each condo unit",
                     "create"
                 ]
-            ]
+            ],
+            "Contain Action Rules": [[
+                "system",
+                "create"
+            ]]
         },
         "PID": "#G03#",
         "Targets": [
@@ -6769,7 +7166,24 @@
         "Persona": ["Technical Staff member"],
         "Benefit": "I can successfully update the transactional Parcel Pin to reference the GIS layer where the Split or Merged Parcel Pin exists",
         "Action Rules": {
-            "Contain Aciton Rules": [
+            "Target Action Rules": [
+                [
+                    "update",
+                    "gis property management",
+                    "create"
+                ],
+                [
+                    "successfully update",
+                    "transactional parcel pin",
+                    "create"
+                ],
+                [
+                    "reference",
+                    "gis layer",
+                    "create"
+                ]
+            ],
+            "Contain Action Rules": [
                 [
                     "GIS layer",
                     "create"
@@ -6780,20 +7194,6 @@
                 ],
                 [
                     "GIS Property Management",
-                    "create"
-                ]
-            ],
-            "Target Aciton Rules": [
-                [
-                    "update",
-                    "create"
-                ],
-                [
-                    "successfully update",
-                    "create"
-                ],
-                [
-                    "reference",
                     "create"
                 ]
             ]
@@ -6930,28 +7330,42 @@
         "Persona": ["Staff member"],
         "Benefit": "I can successfully send the Notice Of Violation document to the property owner and log information about the action",
         "Action Rules": {
-            "Contain Aciton Rules": [[
-                "property owner",
-                "create"
-            ]],
-            "Target Aciton Rules": [
+            "Target Action Rules": [
                 [
                     "send",
+                    "citations",
                     "create"
                 ],
                 [
                     "post",
+                    "citations",
+                    "create"
+                ],
+                [
+                    "post",
+                    "fines",
+                    "create"
+                ],
+                [
+                    "send",
+                    "fines",
                     "create"
                 ],
                 [
                     "successfully send",
+                    "notice of violation document",
                     "create"
                 ],
                 [
                     "log",
+                    "information",
                     "create"
                 ]
-            ]
+            ],
+            "Contain Action Rules": [[
+                "property owner",
+                "create"
+            ]]
         },
         "PID": "#G03#",
         "Targets": [

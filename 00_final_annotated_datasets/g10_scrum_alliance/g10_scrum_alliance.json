@@ -1,0 +1,4296 @@
+[
+    {
+        "US_Nr": "user_story_01",
+        "Benefit": {
+            "Entity": ["others"],
+            "Action": ["learn"],
+            "Contains": [],
+            "Text": "others can learn about me.",
+            "Targets": [[
+                "learn",
+                "myself"
+            ]]
+        },
+        "Text": "#G10# As a site member, I want to describe myself on my own page in a semi-structured way, so that others can learn about me.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "myself",
+                "own page",
+                "semi-structured way"
+            ],
+            "Action": ["describe"],
+            "Persona": ["site member"],
+            "Contains": [[
+                "own page",
+                "semi-structured way"
+            ]],
+            "Text": "#G10# As a site member, I want to describe myself on my own page in a semi-structured way, ",
+            "Triggers": [[
+                "site member",
+                "describe"
+            ]],
+            "Targets": [[
+                "describe",
+                "myself"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_02",
+        "Benefit": {
+            "Entity": ["designation"],
+            "Action": ["earn"],
+            "Contains": [],
+            "Text": "I can earn that designation.",
+            "Targets": [[
+                "earn",
+                "designation"
+            ]]
+        },
+        "Text": "#G10# As a site member, I want to fill out an application to become a Certified Scrum Practitioner, so that I can earn that designation.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "application",
+                "Certified Scrum Practitioner"
+            ],
+            "Action": ["fill out"],
+            "Persona": ["site member"],
+            "Contains": [[
+                "Certified Scrum Practitioner",
+                "application"
+            ]],
+            "Text": "#G10# As a site member, I want to fill out an application to become a Certified Scrum Practitioner, ",
+            "Triggers": [[
+                "site member",
+                "fill out"
+            ]],
+            "Targets": [[
+                "fill out",
+                "application"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_03",
+        "Benefit": {
+            "Entity": ["experience"],
+            "Action": ["showcase"],
+            "Contains": [],
+            "Text": "I can showcase my experience.",
+            "Targets": [[
+                "showcase",
+                "experience"
+            ]]
+        },
+        "Text": "#G10# As a Practitioner, I want to include additional details about me in my profile page, so that I can showcase my experience.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "profile page",
+                "additional details about me"
+            ],
+            "Action": ["include"],
+            "Persona": ["Practitioner"],
+            "Contains": [[
+                "profile page",
+                "additional details about me"
+            ]],
+            "Text": "#G10# As a Practitioner, I want to include additional details about me in my profile page, ",
+            "Triggers": [[
+                "Practitioner",
+                "include"
+            ]],
+            "Targets": [[
+                "include",
+                "additional details about me"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_04",
+        "Benefit": {
+            "Entity": [
+                "CSM",
+                "CSPO courses",
+                "others"
+            ],
+            "Action": [
+                "teach",
+                "certify"
+            ],
+            "Contains": [],
+            "Text": "I can teach CSM and CSPO courses and certify others.",
+            "Targets": [
+                [
+                    "teach",
+                    "CSM"
+                ],
+                [
+                    "teach",
+                    "CSPO courses"
+                ],
+                [
+                    "certify",
+                    "others"
+                ]
+            ]
+        },
+        "Text": "#G10# As a site member, I want to fill out an application to become a Certified Scrum Trainer, so that I can teach CSM and CSPO courses and certify others.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "application",
+                "Certified Scrum Trainer"
+            ],
+            "Action": ["fill out"],
+            "Persona": ["site member"],
+            "Contains": [[
+                "Certified Scrum Trainer",
+                "application"
+            ]],
+            "Text": "#G10# As a site member, I want to fill out an application to become a Certified Scrum Trainer, ",
+            "Triggers": [[
+                "site member",
+                "fill out"
+            ]],
+            "Targets": [[
+                "fill out",
+                "application"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_05",
+        "Benefit": {
+            "Entity": [
+                "others",
+                "right trainer"
+            ],
+            "Action": [
+                "learn",
+                "decide"
+            ],
+            "Contains": [],
+            "Text": "others can learn about me and decide if I am the right trainer for them.",
+            "Targets": [
+                [
+                    "learn",
+                    "additional details"
+                ],
+                [
+                    "decide",
+                    "right trainer"
+                ]
+            ]
+        },
+        "Text": "#G10# As a Trainer, I want to include additional details in my profile page about me, so that others can learn about me and decide if I am the right trainer for them.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "additional details",
+                "profile page about me"
+            ],
+            "Action": ["include"],
+            "Persona": ["Trainer"],
+            "Contains": [[
+                "profile page about me",
+                "additional details"
+            ]],
+            "Text": "#G10# As a Trainer, I want to include additional details in my profile page about me, ",
+            "Triggers": [[
+                "Trainer",
+                "include"
+            ]],
+            "Targets": [[
+                "include",
+                "additional details"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_06",
+        "Benefit": {
+            "Entity": [
+                "others",
+                "certifications"
+            ],
+            "Action": ["know"],
+            "Contains": [],
+            "Text": "others know my certifications when reading.",
+            "Targets": [[
+                "know",
+                "certifications"
+            ]]
+        },
+        "Text": "#G10# As a Practitioner, I want to write an article for the site with a small graphic shown with the article showing my CSP or CST status, so that others know my certifications when reading.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "article",
+                "site",
+                "small graphic",
+                "CSP",
+                "CST status",
+                "article"
+            ],
+            "Action": ["write"],
+            "Persona": ["Practitioner"],
+            "Contains": [
+                [
+                    "site",
+                    "article"
+                ],
+                [
+                    "article",
+                    "small graphic"
+                ],
+                [
+                    "small graphic",
+                    "CSP"
+                ],
+                [
+                    "small graphic",
+                    "CST status"
+                ]
+            ],
+            "Text": "#G10# As a Practitioner, I want to write an article for the site with a small graphic shown with the article showing my CSP or CST status, ",
+            "Triggers": [[
+                "Practitioner",
+                "write"
+            ]],
+            "Targets": [[
+                "write",
+                "article"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_07",
+        "Benefit": {
+            "Entity": [
+                "prospective attendees",
+                "courses"
+            ],
+            "Action": ["find"],
+            "Contains": [[
+                "upcoming classes",
+                "prospective attendees"
+            ]],
+            "Text": "prospective attendees can find my courses.",
+            "Targets": [[
+                "find",
+                "courses"
+            ]]
+        },
+        "Text": "#G10# As a trainer, I want to list my upcoming classes in my profile and include a link to a detailed page about each, so that prospective attendees can find my courses.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "upcoming classes",
+                "profile",
+                "link",
+                "detailed page"
+            ],
+            "Action": [
+                "list",
+                "include"
+            ],
+            "Persona": ["trainer"],
+            "Contains": [
+                [
+                    "profile",
+                    "upcoming classes"
+                ],
+                [
+                    "detailed page",
+                    "link"
+                ]
+            ],
+            "Text": "#G10# As a trainer, I want to list my upcoming classes in my profile and include a link to a detailed page about each, ",
+            "Triggers": [
+                [
+                    "trainer",
+                    "list"
+                ],
+                [
+                    "trainer",
+                    "include"
+                ]
+            ],
+            "Targets": [
+                [
+                    "list",
+                    "upcoming classes"
+                ],
+                [
+                    "include",
+                    "link"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_08",
+        "Benefit": {
+            "Entity": ["others"],
+            "Action": [
+                "find",
+                "connect"
+            ],
+            "Contains": [],
+            "Text": "I can find others I might want to connect with.",
+            "Targets": [
+                [
+                    "find",
+                    "others"
+                ],
+                [
+                    "connect",
+                    "others"
+                ]
+            ]
+        },
+        "Text": "#G10# As a site member, I want to view the profiles of other members, so that I can find others I might want to connect with.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "profiles",
+                "other members"
+            ],
+            "Action": ["view"],
+            "Persona": ["site member"],
+            "Contains": [[
+                "other members",
+                "profiles"
+            ]],
+            "Text": "#G10# As a site member, I want to view the profiles of other members, ",
+            "Triggers": [[
+                "site member",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "profiles"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_09",
+        "Benefit": {
+            "Entity": ["others"],
+            "Action": [
+                "find",
+                "connect"
+            ],
+            "Contains": [],
+            "Text": "I can find others I might want to connect with.",
+            "Targets": [
+                [
+                    "find",
+                    "others"
+                ],
+                [
+                    "connect",
+                    "others"
+                ]
+            ]
+        },
+        "Text": "#G10# As a site member, I want to search for profiles based on a few fields, so that I can find others I might want to connect with.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "profiles",
+                "few fields"
+            ],
+            "Action": ["search"],
+            "Persona": ["site member"],
+            "Contains": [[
+                "profiles",
+                "few fields"
+            ]],
+            "Text": "#G10# As a site member, I want to search for profiles based on a few fields, ",
+            "Triggers": [[
+                "site member",
+                "search"
+            ]],
+            "Targets": [[
+                "search",
+                "profiles"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_10",
+        "Benefit": {
+            "Entity": ["things about me I don't want shared"],
+            "Action": [],
+            "Contains": [],
+            "Text": "no one can learn things about me I don't want shared.",
+            "Targets": []
+        },
+        "Text": "#G10# As a site member, I want to mark my profile as private in which case only my name will appear, so that no one can learn things about me I don't want shared.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "name",
+                "profile"
+            ],
+            "Action": [
+                "mark",
+                "appear"
+            ],
+            "Persona": ["site member"],
+            "Contains": [[
+                "profile",
+                "name"
+            ]],
+            "Text": "#G10# As a site member, I want to mark my profile as private in which case only my name will appear, ",
+            "Triggers": [[
+                "site member",
+                "mark"
+            ]],
+            "Targets": [
+                [
+                    "appear",
+                    "name"
+                ],
+                [
+                    "mark",
+                    "profile"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_11",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["no one can contact"],
+            "Contains": [],
+            "Text": "no one can contact me.",
+            "Targets": []
+        },
+        "Text": "#G10# As a site member, I want to mark my email address as private even if the rest of my profile is not, so that no one can contact me.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "email address as private",
+                "rest of my profile"
+            ],
+            "Action": ["mark"],
+            "Persona": ["site member"],
+            "Contains": [],
+            "Text": "#G10# As a site member, I want to mark my email address as private even if the rest of my profile is not, ",
+            "Triggers": [[
+                "site member",
+                "mark"
+            ]],
+            "Targets": [[
+                "mark",
+                "email address as private"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_12",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["connect"],
+            "Contains": [],
+            "Text": "we can connect",
+            "Targets": [[
+                "connect",
+                "any member"
+            ]]
+        },
+        "Text": "#G10# As a site member, I want to send an email to any member via a form, so that we can connect.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "email",
+                "any member",
+                "form"
+            ],
+            "Action": ["send"],
+            "Persona": ["site member"],
+            "Contains": [
+                [
+                    "any member",
+                    "email"
+                ],
+                [
+                    "form",
+                    "email"
+                ]
+            ],
+            "Text": "#G10# As a site member, I want to send an email to any member via a form, ",
+            "Triggers": [[
+                "site member",
+                "send"
+            ]],
+            "Targets": [[
+                "send",
+                "email"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_13",
+        "Benefit": {
+            "Entity": [
+                "only applicants who qualify",
+                "CSPs",
+                "CSTs"
+            ],
+            "Action": [],
+            "Contains": [],
+            "Text": "only applicants who qualify can become CSPs or CSTs.",
+            "Targets": []
+        },
+        "Text": "#G10# As a site administrator, I want to read practicing and training applications and approve or reject them, so that only applicants who qualify can become CSPs or CSTs.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": ["practicing and training applications"],
+            "Action": [
+                "read",
+                "approve",
+                "reject "
+            ],
+            "Persona": ["site administrator"],
+            "Contains": [],
+            "Text": "#G10# As a site administrator, I want to read practicing and training applications and approve or reject them, ",
+            "Triggers": [
+                [
+                    "site administrator",
+                    "read"
+                ],
+                [
+                    "site administrator",
+                    "approve"
+                ],
+                [
+                    "site administrator",
+                    "reject "
+                ]
+            ],
+            "Targets": [
+                [
+                    "read",
+                    "practicing and training applications"
+                ],
+                [
+                    "reject ",
+                    "practicing and training applications"
+                ],
+                [
+                    "approve",
+                    "practicing and training applications"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_14",
+        "Benefit": {
+            "Entity": [
+                "problems",
+                "members"
+            ],
+            "Action": ["correct"],
+            "Contains": [[
+                "members",
+                "problems"
+            ]],
+            "Text": "I can correct problems for members.",
+            "Targets": [[
+                "correct",
+                "problems"
+            ]]
+        },
+        "Text": "#G10# As a site administrator, I want to edit any site member profile, so that I can correct problems for members.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": ["any site member profile"],
+            "Action": ["edit"],
+            "Persona": ["site administrator"],
+            "Contains": [],
+            "Text": "#G10# As a site administrator, I want to edit any site member profile, ",
+            "Triggers": [[
+                "site administrator",
+                "edit"
+            ]],
+            "Targets": [[
+                "edit",
+                "any site member profile"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_15",
+        "Benefit": {
+            "Entity": ["agile news"],
+            "Action": ["stay current"],
+            "Contains": [[
+                "current news",
+                "agile news"
+            ]],
+            "Text": "I stay current on agile news.",
+            "Targets": [[
+                "stay current",
+                "agile news"
+            ]]
+        },
+        "Text": "#G10# As a site visitor, I want to read current news on the home page, so that I stay current on agile news.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "current news",
+                "home page"
+            ],
+            "Action": ["read"],
+            "Persona": ["site visitor"],
+            "Contains": [[
+                "home page",
+                "current news"
+            ]],
+            "Text": "#G10# As a site visitor, I want to read current news on the home page, ",
+            "Triggers": [[
+                "site visitor",
+                "read"
+            ]],
+            "Targets": [[
+                "read",
+                "current news"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_16",
+        "Benefit": {
+            "Entity": [
+                "others",
+                "things I remember"
+            ],
+            "Action": [
+                "access",
+                "mention"
+            ],
+            "Contains": [],
+            "Text": "I can access things I remember from the past or that others mention to me.",
+            "Targets": [[
+                "access",
+                "things I remember"
+            ]]
+        },
+        "Text": "#G10# As a site visitor, I want to access old news that is no longer on the home page, so that I can access things I remember from the past or that others mention to me.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "old news",
+                "home page"
+            ],
+            "Action": ["access"],
+            "Persona": ["site visitor"],
+            "Contains": [],
+            "Text": "#G10# As a site visitor, I want to access old news that is no longer on the home page, ",
+            "Triggers": [[
+                "site visitor",
+                "access"
+            ]],
+            "Targets": [[
+                "access",
+                "old news"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_17",
+        "Benefit": {
+            "Entity": ["publication"],
+            "Action": [],
+            "Contains": [[
+                "publication",
+                "news items"
+            ]],
+            "Text": "they can be considered for publication.",
+            "Targets": []
+        },
+        "Text": "#G10# As a site visitor, I want to email news items to the editor, so that they can be considered for publication.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "news items",
+                "editor"
+            ],
+            "Action": ["email"],
+            "Persona": ["site visitor"],
+            "Contains": [[
+                "editor",
+                "news items"
+            ]],
+            "Text": "#G10# As a site visitor, I want to email news items to the editor, ",
+            "Triggers": [[
+                "site visitor",
+                "email"
+            ]],
+            "Targets": [[
+                "email",
+                "news items"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_18",
+        "Benefit": {
+            "Entity": [
+                "articles",
+                "appropriate dates"
+            ],
+            "Action": ["are published"],
+            "Contains": [[
+                "articles",
+                "appropriate dates"
+            ]],
+            "Text": "articles are published on and through appropriate dates.",
+            "Targets": [[
+                "are published",
+                "articles"
+            ]]
+        },
+        "Text": "#G10# As a site editor, I want to set the following dates on a news item: Start Publishing Date, Old News Date, Stop Publishing Date, so that articles are published on and through appropriate dates.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "following dates",
+                "news item",
+                "Start Publishing Date",
+                "Old News Date",
+                "Stop Publishing Date"
+            ],
+            "Action": ["set"],
+            "Persona": ["site editor"],
+            "Contains": [
+                [
+                    "news item",
+                    "following dates"
+                ],
+                [
+                    "following dates",
+                    "Old News Date"
+                ],
+                [
+                    "following dates",
+                    "Stop Publishing Date"
+                ],
+                [
+                    "following dates",
+                    "Start Publishing Date"
+                ]
+            ],
+            "Text": "#G10# As a site editor, I want to set the following dates on a news item: Start Publishing Date, Old News Date, Stop Publishing Date, ",
+            "Triggers": [[
+                "site editor",
+                "set"
+            ]],
+            "Targets": [[
+                "set",
+                "following dates"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_19",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["remain sufficiently and easily informed"],
+            "Contains": [],
+            "Text": "I remain sufficiently and easily informed.",
+            "Targets": []
+        },
+        "Text": "#G10# As a site member, I want to subscribe to an RSS feed of news, so that I remain sufficiently and easily informed.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": ["RSS feed of news"],
+            "Action": ["subscribe"],
+            "Persona": ["site member"],
+            "Contains": [],
+            "Text": "#G10# As a site member, I want to subscribe to an RSS feed of news, ",
+            "Triggers": [[
+                "site member",
+                "subscribe"
+            ]],
+            "Targets": [[
+                "subscribe",
+                "RSS feed of news"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_20",
+        "Benefit": {
+            "Entity": [
+                "articles",
+                "site"
+            ],
+            "Action": [
+                "indicate",
+                "featured most prominently"
+            ],
+            "Contains": [[
+                "site",
+                "articles"
+            ]],
+            "Text": "I can indicate which articles I want featured most prominently on the site.",
+            "Targets": [
+                [
+                    "indicate",
+                    "articles"
+                ],
+                [
+                    "featured most prominently",
+                    "articles"
+                ]
+            ]
+        },
+        "Text": "#G10# As a site editor, I want to assign priority numbers to news items, so that I can indicate which articles I want featured most prominently on the site.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "priority numbers",
+                "news items"
+            ],
+            "Action": ["assign"],
+            "Persona": ["site editor"],
+            "Contains": [[
+                "news items",
+                "priority numbers"
+            ]],
+            "Text": "#G10# As a site editor, I want to assign priority numbers to news items, ",
+            "Triggers": [[
+                "site editor",
+                "assign"
+            ]],
+            "Targets": [[
+                "assign",
+                "priority numbers"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_21",
+        "Benefit": {
+            "Entity": ["best course"],
+            "Action": ["choose"],
+            "Contains": [],
+            "Text": "I can choose the best course for me.",
+            "Targets": [[
+                "choose",
+                "best course"
+            ]]
+        },
+        "Text": "#G10# As a site visitor, I want to see a list of all upcoming Certification Courses and can page through them if there are a lot, so that I can choose the best course for me.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "list",
+                "all upcoming Certification Courses"
+            ],
+            "Action": [
+                "see",
+                "page through"
+            ],
+            "Persona": ["site visitor"],
+            "Contains": [[
+                "list",
+                "all upcoming Certification Courses"
+            ]],
+            "Text": "#G10# As a site visitor, I want to see a list of all upcoming Certification Courses and can page through them if there are a lot, ",
+            "Triggers": [[
+                "site visitor",
+                "see"
+            ]],
+            "Targets": [
+                [
+                    "see",
+                    "list"
+                ],
+                [
+                    "page through",
+                    "all upcoming Certification Courses"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_22",
+        "Benefit": {
+            "Entity": ["best course"],
+            "Action": ["choose"],
+            "Contains": [],
+            "Text": "I can choose the best course for me.",
+            "Targets": [[
+                "choose",
+                "best course"
+            ]]
+        },
+        "Text": "#G10# As a site visitor, I want to see a list of all upcoming Other Courses and can page through them if necessary, so that I can choose the best course for me.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "list",
+                "all upcoming Other Courses"
+            ],
+            "Action": [
+                "see",
+                "page through"
+            ],
+            "Persona": ["site visitor"],
+            "Contains": [[
+                "list",
+                "all upcoming Other Courses"
+            ]],
+            "Text": "#G10# As a site visitor, I want to see a list of all upcoming Other Courses and can page through them if necessary, ",
+            "Triggers": [[
+                "site visitor",
+                "see"
+            ]],
+            "Targets": [
+                [
+                    "see",
+                    "list"
+                ],
+                [
+                    "page through",
+                    "all upcoming Other Courses"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_23",
+        "Benefit": {
+            "Entity": [],
+            "Action": [
+                "decide",
+                "want to attend"
+            ],
+            "Contains": [],
+            "Text": "I can decide if I want to attend any.",
+            "Targets": []
+        },
+        "Text": "#G10# As a site visitor, I want to see a list of all upcoming Events, so that I can decide if I want to attend any.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "list",
+                "all upcoming Events"
+            ],
+            "Action": ["see"],
+            "Persona": ["site visitor"],
+            "Contains": [[
+                "list",
+                "all upcoming Events"
+            ]],
+            "Text": "#G10# As a site visitor, I want to see a list of all upcoming Events, ",
+            "Triggers": [[
+                "site visitor",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "list"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_24",
+        "Benefit": {
+            "Entity": ["site visitors"],
+            "Action": ["see"],
+            "Contains": [],
+            "Text": "site visitors can see it.",
+            "Targets": [
+                [
+                    "see",
+                    "event"
+                ],
+                [
+                    "see",
+                    "new course"
+                ]
+            ]
+        },
+        "Text": "#G10# As a trainer, I want to create a new course or event, so that site visitors can see it.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "new course",
+                "event"
+            ],
+            "Action": ["create"],
+            "Persona": ["trainer"],
+            "Contains": [],
+            "Text": "#G10# As a trainer, I want to create a new course or event, ",
+            "Triggers": [[
+                "trainer",
+                "create"
+            ]],
+            "Targets": [
+                [
+                    "create",
+                    "event"
+                ],
+                [
+                    "create",
+                    "new course"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_25",
+        "Benefit": {
+            "Entity": ["events"],
+            "Action": [],
+            "Contains": [],
+            "Text": "I don't list events I don't really intend to hold.",
+            "Targets": []
+        },
+        "Text": "#G10# As a trainer, I want to create an Other Course or Event I am charged a listing fee for that activity, so that I don't list events I don't really intend to hold.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "Other Course",
+                "Event",
+                "listing fee",
+                "activity"
+            ],
+            "Action": [
+                "create",
+                "charged"
+            ],
+            "Persona": ["trainer"],
+            "Contains": [[
+                "activity",
+                "listing fee"
+            ]],
+            "Text": "#G10# As a trainer, I want to create an Other Course or Event I am charged a listing fee for that activity, ",
+            "Triggers": [[
+                "trainer",
+                "create"
+            ]],
+            "Targets": [
+                [
+                    "create",
+                    "Other Course"
+                ],
+                [
+                    "create",
+                    "Event"
+                ],
+                [
+                    "charged",
+                    "listing fee"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_26",
+        "Benefit": {
+            "Entity": [
+                "Scrum Alliance",
+                "Scrum Gatherings"
+            ],
+            "Action": [],
+            "Contains": [[
+                "Scrum Alliance",
+                "Scrum Gatherings"
+            ]],
+            "Text": "the Scrum Alliance doesn't charge itself for Scrum Gatherings that it puts on.",
+            "Targets": []
+        },
+        "Text": "#G10# As a site administrator, I want to create an Other Course or Event that is not charged a listing fee, so that the Scrum Alliance doesn't charge itself for Scrum Gatherings that it puts on.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "Other Course",
+                "Event",
+                "listing fee"
+            ],
+            "Action": ["create"],
+            "Persona": ["site administrator"],
+            "Contains": [],
+            "Text": "#G10# As a site administrator, I want to create an Other Course or Event that is not charged a listing fee, ",
+            "Triggers": [[
+                "site administrator",
+                "create"
+            ]],
+            "Targets": [
+                [
+                    "create",
+                    "Other Course"
+                ],
+                [
+                    "create",
+                    "Event"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_27",
+        "Benefit": {
+            "Entity": ["flexibility"],
+            "Action": [
+                "have",
+                "charge"
+            ],
+            "Contains": [],
+            "Text": "we have flexibility on what to charge in the future.",
+            "Targets": [
+                [
+                    "have",
+                    "flexibility"
+                ],
+                [
+                    "charge",
+                    "Other Course"
+                ],
+                [
+                    "charge",
+                    "Event"
+                ]
+            ]
+        },
+        "Text": "#G10# As a site administrator, I want to set the listing fee per Other Course or Event, so that we have flexibility on what to charge in the future.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "listing fee",
+                "Event",
+                "Other Course"
+            ],
+            "Action": ["set"],
+            "Persona": ["site administrator"],
+            "Contains": [
+                [
+                    "Event",
+                    "listing fee"
+                ],
+                [
+                    "Other Course",
+                    "listing fee"
+                ]
+            ],
+            "Text": "#G10# As a site administrator, I want to set the listing fee per Other Course or Event, ",
+            "Triggers": [[
+                "site administrator",
+                "set"
+            ]],
+            "Targets": [[
+                "set",
+                "listing fee"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_28",
+        "Benefit": {
+            "Entity": ["accurate information"],
+            "Action": ["reflects"],
+            "Contains": [],
+            "Text": "it reflects accurate information.",
+            "Targets": [[
+                "reflects",
+                "accurate information"
+            ]]
+        },
+        "Text": "#G10# As a trainer, I want to update one of my existing courses or events, so that it reflects accurate information.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "one of my existing courses",
+                "events"
+            ],
+            "Action": ["update"],
+            "Persona": ["trainer"],
+            "Contains": [],
+            "Text": "#G10# As a trainer, I want to update one of my existing courses or events, ",
+            "Triggers": [[
+                "trainer",
+                "update"
+            ]],
+            "Targets": [
+                [
+                    "update",
+                    "one of my existing courses"
+                ],
+                [
+                    "update",
+                    "events"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_29",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["cancel"],
+            "Contains": [],
+            "Text": "it's no longer listed if I cancel for some reason.",
+            "Targets": [
+                [
+                    "cancel",
+                    "one of my courses"
+                ],
+                [
+                    "cancel",
+                    "events"
+                ]
+            ]
+        },
+        "Text": "#G10# As a trainer, I want to delete one of my courses or events, so that it's no longer listed if I cancel for some reason.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "one of my courses",
+                "events"
+            ],
+            "Action": ["delete"],
+            "Persona": ["trainer"],
+            "Contains": [],
+            "Text": "#G10# As a trainer, I want to delete one of my courses or events, ",
+            "Triggers": [[
+                "trainer",
+                "delete"
+            ]],
+            "Targets": [
+                [
+                    "delete",
+                    "one of my courses"
+                ],
+                [
+                    "delete",
+                    "events"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_30",
+        "Benefit": {
+            "Entity": ["new one"],
+            "Action": ["create"],
+            "Contains": [],
+            "Text": "I can create a new one",
+            "Targets": [[
+                "create",
+                "new one"
+            ]]
+        },
+        "Text": "#G10# As a trainer, I want to copy one of my courses or events, so that I can create a new one.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "one of my courses",
+                "events"
+            ],
+            "Action": ["copy"],
+            "Persona": ["trainer"],
+            "Contains": [],
+            "Text": "#G10# As a trainer, I want to copy one of my courses or events, ",
+            "Triggers": [[
+                "trainer",
+                "copy"
+            ]],
+            "Targets": [
+                [
+                    "copy",
+                    "one of my courses"
+                ],
+                [
+                    "copy",
+                    "events"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_31",
+        "Benefit": {
+            "Entity": ["things"],
+            "Action": ["remove"],
+            "Contains": [],
+            "Text": "I can remove things that will no longer occur.",
+            "Targets": [[
+                "remove",
+                "things"
+            ]]
+        },
+        "Text": "#G10# As a site admin, I want to delete any course or event, so that I can remove things that will no longer occur.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "any course",
+                "event"
+            ],
+            "Action": ["delete"],
+            "Persona": ["site admin"],
+            "Contains": [],
+            "Text": "#G10# As a site admin, I want to delete any course or event, ",
+            "Triggers": [[
+                "site admin",
+                "delete"
+            ]],
+            "Targets": [
+                [
+                    "delete",
+                    "any course"
+                ],
+                [
+                    "delete",
+                    "event"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_32",
+        "Benefit": {
+            "Entity": [
+                "things",
+                "original author"
+            ],
+            "Action": ["fix"],
+            "Contains": [
+                [
+                    "any course",
+                    "things"
+                ],
+                [
+                    "event",
+                    "things"
+                ]
+            ],
+            "Text": "I can fix things the original author hasn't.",
+            "Targets": [[
+                "fix",
+                "things"
+            ]]
+        },
+        "Text": "#G10# As a site editor, I want to update any course or event, so that I can fix things the original author hasn't.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "any course",
+                "event"
+            ],
+            "Action": ["update"],
+            "Persona": ["site editor"],
+            "Contains": [],
+            "Text": "#G10# As a site editor, I want to update any course or event, ",
+            "Triggers": [[
+                "site editor",
+                "update"
+            ]],
+            "Targets": [
+                [
+                    "update",
+                    "any course"
+                ],
+                [
+                    "update",
+                    "event"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_33",
+        "Benefit": {
+            "Entity": ["anything that was entered incorrectly"],
+            "Action": ["correctly classify"],
+            "Contains": [],
+            "Text": "I can correctly classify anything that was entered incorrectly.",
+            "Targets": [[
+                "correctly classify",
+                "anything that was entered incorrectly"
+            ]]
+        },
+        "Text": "#G10# As a trainer, I want to turn a course into an event or an event into a course, so that I can correctly classify anything that was entered incorrectly.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "event",
+                "course",
+                "event",
+                "course"
+            ],
+            "Action": ["turn"],
+            "Persona": ["trainer"],
+            "Contains": [],
+            "Text": "#G10# As a trainer, I want to turn a course into an event or an event into a course, ",
+            "Triggers": [[
+                "trainer",
+                "turn"
+            ]],
+            "Targets": [
+                [
+                    "turn",
+                    "event"
+                ],
+                [
+                    "turn",
+                    "course"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_34",
+        "Benefit": {
+            "Entity": ["what I am looking for"],
+            "Action": ["quickly find"],
+            "Contains": [],
+            "Text": "I can quickly find what I am looking for.",
+            "Targets": [[
+                "quickly find",
+                "what I am looking for"
+            ]]
+        },
+        "Text": "#G10# As a site visitor, I want to have an advanced search option that lets me fill in a form of search criteria, so that I can quickly find what I am looking for.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "form",
+                "search criteria",
+                "advanced search option"
+            ],
+            "Action": [
+                "have",
+                "fill"
+            ],
+            "Persona": ["site visitor"],
+            "Contains": [
+                [
+                    "form",
+                    "search criteria"
+                ],
+                [
+                    "advanced search option",
+                    "form"
+                ]
+            ],
+            "Text": "#G10# As a site visitor, I want to have an advanced search option that lets me fill in a form of search criteria, ",
+            "Triggers": [[
+                "site visitor",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "advanced search option"
+                ],
+                [
+                    "fill",
+                    "form"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_35",
+        "Benefit": {
+            "Entity": [
+                "trainer",
+                "course"
+            ],
+            "Action": [
+                "read more",
+                "before registering"
+            ],
+            "Contains": [
+                [
+                    "course",
+                    "trainer"
+                ],
+                [
+                    "trainer",
+                    "trainer's profile"
+                ]
+            ],
+            "Text": "I can read more about a trainer before registering for a course.",
+            "Targets": [
+                [
+                    "read more",
+                    "trainer"
+                ],
+                [
+                    "before registering",
+                    "course"
+                ]
+            ]
+        },
+        "Text": "#G10# As a site visitor, I want to view a course I can click on the trainer's name and be taken to the trainer's profile, so that I can read more about a trainer before registering for a course.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "course",
+                "trainer's name",
+                "trainer's profile"
+            ],
+            "Action": [
+                "view",
+                "click",
+                "be taken to"
+            ],
+            "Persona": ["site visitor"],
+            "Contains": [[
+                "trainer's profile",
+                "trainer's name"
+            ]],
+            "Text": "#G10# As a site visitor, I want to view a course I can click on the trainer's name and be taken to the trainer's profile, ",
+            "Triggers": [[
+                "site visitor",
+                "view"
+            ]],
+            "Targets": [
+                [
+                    "view",
+                    "course"
+                ],
+                [
+                    "click",
+                    "trainer's name"
+                ],
+                [
+                    "be taken to",
+                    "trainer's profile"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_36",
+        "Benefit": {
+            "Entity": ["site"],
+            "Action": ["without having to visit"],
+            "Contains": [[
+                "site",
+                "RSS feed"
+            ]],
+            "Text": "I am up to day without having to visit the site.",
+            "Targets": [[
+                "without having to visit",
+                "site"
+            ]]
+        },
+        "Text": "#G10# As a site visitor, I want to subscribe to an RSS feed of upcoming courses and events, so that I am up to day without having to visit the site.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "RSS feed",
+                "upcoming courses",
+                "events"
+            ],
+            "Action": ["subscribe"],
+            "Persona": ["site visitor"],
+            "Contains": [
+                [
+                    "RSS feed",
+                    "upcoming courses"
+                ],
+                [
+                    "RSS feed",
+                    "events"
+                ]
+            ],
+            "Text": "#G10# As a site visitor, I want to subscribe to an RSS feed of upcoming courses and events, ",
+            "Triggers": [[
+                "site visitor",
+                "subscribe"
+            ]],
+            "Targets": [[
+                "subscribe",
+                "RSS feed"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_37",
+        "Benefit": {
+            "Entity": ["quick answers"],
+            "Action": ["get"],
+            "Contains": [[
+                "FAQs",
+                "quick answers"
+            ]],
+            "Text": "I can get quick answers.",
+            "Targets": [[
+                "get",
+                "quick answers"
+            ]]
+        },
+        "Text": "#G10# As a site visitor, I want to read FAQs, so that I can get quick answers.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": ["FAQs"],
+            "Action": ["read"],
+            "Persona": ["site visitor"],
+            "Contains": [],
+            "Text": "#G10# As a site visitor, I want to read FAQs, ",
+            "Triggers": [[
+                "site visitor",
+                "read"
+            ]],
+            "Targets": [[
+                "read",
+                "FAQs"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_38",
+        "Benefit": {
+            "Entity": [
+                "support",
+                "easily answered questions"
+            ],
+            "Action": ["gets fewer"],
+            "Contains": [[
+                "FAQ section",
+                "easily answered questions"
+            ]],
+            "Text": "support gets fewer easily answered questions.",
+            "Targets": [[
+                "gets fewer",
+                "easily answered questions"
+            ]]
+        },
+        "Text": "#G10# As a site editor, I want to maintain a FAQ section, so that support gets fewer easily answered questions.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": ["FAQ section"],
+            "Action": ["maintain"],
+            "Persona": ["site editor"],
+            "Contains": [],
+            "Text": "#G10# As a site editor, I want to maintain a FAQ section, ",
+            "Triggers": [[
+                "site editor",
+                "maintain"
+            ]],
+            "Targets": [[
+                "maintain",
+                "FAQ section"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_39",
+        "Benefit": {
+            "Entity": ["answer"],
+            "Action": ["find"],
+            "Contains": [],
+            "Text": "I can find an answer quickly.",
+            "Targets": [[
+                "find",
+                "answer"
+            ]]
+        },
+        "Text": "#G10# As a site visitor, I want to do a full-text search of the FAQs, so that I can find an answer quickly.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "full-text search",
+                "FAQs"
+            ],
+            "Action": ["do"],
+            "Persona": ["site visitor"],
+            "Contains": [[
+                "FAQs",
+                "full-text search"
+            ]],
+            "Text": "#G10# As a site visitor, I want to do a full-text search of the FAQs, ",
+            "Triggers": [[
+                "site visitor",
+                "do"
+            ]],
+            "Targets": [[
+                "do",
+                "full-text search"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_40",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["have"],
+            "Contains": [],
+            "Text": "I have them",
+            "Targets": [
+                [
+                    "have",
+                    "latest training material"
+                ],
+                [
+                    "have",
+                    "methodology PDFs"
+                ]
+            ]
+        },
+        "Text": "#G10# As a site member, I want to download the latest training material and methodology PDFs, so that I have them.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "latest training material",
+                "methodology PDFs"
+            ],
+            "Action": ["download"],
+            "Persona": ["site member"],
+            "Contains": [],
+            "Text": "#G10# As a site member, I want to download the latest training material and methodology PDFs, ",
+            "Triggers": [[
+                "site member",
+                "download"
+            ]],
+            "Targets": [
+                [
+                    "download",
+                    "latest training material"
+                ],
+                [
+                    "download",
+                    "methodology PDFs"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_41",
+        "Benefit": {
+            "Entity": [],
+            "Action": [
+                "learn",
+                "use"
+            ],
+            "Contains": [],
+            "Text": "I can learn from them or use them.",
+            "Targets": [
+                [
+                    "learn",
+                    "presentations"
+                ],
+                [
+                    "learn",
+                    "PDFs"
+                ],
+                [
+                    "learn",
+                    "etc."
+                ],
+                [
+                    "use",
+                    "presentations"
+                ],
+                [
+                    "use",
+                    "PDFs"
+                ],
+                [
+                    "use",
+                    "etc."
+                ]
+            ]
+        },
+        "Text": "#G10# As a visitor, I want to download presentations, PDFs, etc. on Scrum, so that I can learn from them or use them.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "PDFs",
+                "Scrum",
+                "presentations",
+                "etc."
+            ],
+            "Action": ["download"],
+            "Persona": ["visitor"],
+            "Contains": [
+                [
+                    "Scrum",
+                    "etc."
+                ],
+                [
+                    "Scrum",
+                    "PDFs"
+                ],
+                [
+                    "Scrum",
+                    "presentations"
+                ]
+            ],
+            "Text": "#G10# As a visitor, I want to download presentations, PDFs, etc. on Scrum, ",
+            "Triggers": [[
+                "visitor",
+                "download"
+            ]],
+            "Targets": [
+                [
+                    "download",
+                    "presentations"
+                ],
+                [
+                    "download",
+                    "PDFs"
+                ],
+                [
+                    "download",
+                    "etc."
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_42",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["see"],
+            "Contains": [],
+            "Text": "I can see if there any I am interested in.",
+            "Targets": [[
+                "see",
+                "jobs"
+            ]]
+        },
+        "Text": "#G10# As a site member, I want to scroll through a listing of jobs, so that I can see if there any I am interested in.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "listing",
+                "jobs"
+            ],
+            "Action": ["scroll through"],
+            "Persona": ["site member"],
+            "Contains": [[
+                "listing",
+                "jobs"
+            ]],
+            "Text": "#G10# As a site member, I want to scroll through a listing of jobs, ",
+            "Triggers": [[
+                "site member",
+                "scroll through"
+            ]],
+            "Targets": [[
+                "scroll through",
+                "listing"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_43",
+        "Benefit": {
+            "Entity": ["candidates"],
+            "Action": ["attract"],
+            "Contains": [],
+            "Text": "I can attract candidates.",
+            "Targets": [[
+                "attract",
+                "candidates"
+            ]]
+        },
+        "Text": "#G10# As a recruiter, I want to post a help wanted ad, so that I can attract candidates.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": ["help wanted ad"],
+            "Action": ["post"],
+            "Persona": ["recruiter"],
+            "Contains": [],
+            "Text": "#G10# As a recruiter, I want to post a help wanted ad, ",
+            "Triggers": [[
+                "recruiter",
+                "post"
+            ]],
+            "Targets": [[
+                "post",
+                "help wanted ad"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_44",
+        "Benefit": {
+            "Entity": [
+                "quality",
+                "jobs being listed"
+            ],
+            "Action": [],
+            "Contains": [
+                [
+                    "jobs being listed",
+                    "quality"
+                ],
+                [
+                    "jobs being listed",
+                    "help wanted ad"
+                ]
+            ],
+            "Text": "we're sure of the quality of jobs being listed.",
+            "Targets": []
+        },
+        "Text": "#G10# As a site admin, I want to approve each help wanted ad before it gets to the site, so that we're sure of the quality of jobs being listed.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "help wanted ad",
+                "site"
+            ],
+            "Action": ["approve"],
+            "Persona": ["site admin"],
+            "Contains": [[
+                "site",
+                "help wanted ad"
+            ]],
+            "Text": "#G10# As a site admin, I want to approve each help wanted ad before it gets to the site, ",
+            "Triggers": [[
+                "site admin",
+                "approve"
+            ]],
+            "Targets": [[
+                "approve",
+                "help wanted ad"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_45",
+        "Benefit": {
+            "Entity": [],
+            "Action": [
+                "aware",
+                "decide",
+                "post"
+            ],
+            "Contains": [],
+            "Text": "I am aware of it and can decide if I want to post it.",
+            "Targets": [
+                [
+                    "aware",
+                    "job is submitted"
+                ],
+                [
+                    "post",
+                    "job is submitted"
+                ]
+            ]
+        },
+        "Text": "#G10# As a site admin, I want to be emailed whenever a job is submitted, so that I am aware of it and can decide if I want to post it.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": ["job is submitted"],
+            "Action": ["be emailed"],
+            "Persona": ["site admin"],
+            "Contains": [],
+            "Text": "#G10# As a site admin, I want to be emailed whenever a job is submitted, ",
+            "Triggers": [[
+                "site admin",
+                "be emailed"
+            ]],
+            "Targets": [[
+                "be emailed",
+                "job is submitted"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_46",
+        "Benefit": {
+            "Entity": ["site"],
+            "Action": [
+                "read",
+                "without visiting"
+            ],
+            "Contains": [[
+                "site",
+                "RSS feed of jobs available"
+            ]],
+            "Text": "I can read them without visiting the site.",
+            "Targets": [
+                [
+                    "read",
+                    "RSS feed of jobs available"
+                ],
+                [
+                    "without visiting",
+                    "site"
+                ]
+            ]
+        },
+        "Text": "#G10# As a site member, I want to subscribe to an RSS feed of jobs available, so that I can read them without visiting the site.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": ["RSS feed of jobs available"],
+            "Action": ["subscribe"],
+            "Persona": ["site member"],
+            "Contains": [],
+            "Text": "#G10# As a site member, I want to subscribe to an RSS feed of jobs available, ",
+            "Triggers": [[
+                "site member",
+                "subscribe"
+            ]],
+            "Targets": [[
+                "subscribe",
+                "RSS feed of jobs available"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_47",
+        "Benefit": {
+            "Entity": [
+                "small problems",
+                "site guidelines",
+                "each ad"
+            ],
+            "Action": [
+                "correct",
+                "make sure",
+                "complies"
+            ],
+            "Contains": [],
+            "Text": "I can correct small problems or make sure each ad complies with site guidelines.",
+            "Targets": [
+                [
+                    "correct",
+                    "small problems"
+                ],
+                [
+                    "complies",
+                    "site guidelines"
+                ]
+            ]
+        },
+        "Text": "#G10# As a site admin, I want to edit and delete help wanted ads, so that I can correct small problems or make sure each ad complies with site guidelines.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": ["help wanted ads"],
+            "Action": [
+                "edit",
+                "delete"
+            ],
+            "Persona": ["site admin"],
+            "Contains": [],
+            "Text": "#G10# As a site admin, I want to edit and delete help wanted ads, ",
+            "Triggers": [
+                [
+                    "site admin",
+                    "edit"
+                ],
+                [
+                    "site admin",
+                    "delete"
+                ]
+            ],
+            "Targets": [
+                [
+                    "edit",
+                    "help wanted ads"
+                ],
+                [
+                    "delete",
+                    "help wanted ads"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_48",
+        "Benefit": {
+            "Entity": [
+                "hiring party",
+                "ad",
+                "jobs"
+            ],
+            "Action": ["delete"],
+            "Contains": [],
+            "Text": "jobs that may have been filled aren't still listed when the hiring party forgets to come back and delete the ad.",
+            "Targets": [[
+                "delete",
+                "ad"
+            ]]
+        },
+        "Text": "#G10# As a site admin, I want to stop publishing jobs on the site 30 days after being posted, so that jobs that may have been filled aren't still listed when the hiring party forgets to come back and delete the ad.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "site",
+                "jobs",
+                "30 days"
+            ],
+            "Action": ["stop publishing"],
+            "Persona": ["site admin"],
+            "Contains": [[
+                "site",
+                "jobs"
+            ]],
+            "Text": "#G10# As a site admin, I want to stop publishing jobs on the site 30 days after being posted, ",
+            "Triggers": [[
+                "site admin",
+                "stop publishing"
+            ]],
+            "Targets": [[
+                "stop publishing",
+                "jobs"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_49",
+        "Benefit": {
+            "Entity": ["ad"],
+            "Action": ["remains active"],
+            "Contains": [],
+            "Text": "my ad remains active.",
+            "Targets": [[
+                "remains active",
+                "ad"
+            ]]
+        },
+        "Text": "#G10# As a recruiter, I want to be able to extend an ad for another 30 days by visiting the site and updating the posting, so that my ad remains active.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "30 days",
+                "posting",
+                "ad",
+                "site"
+            ],
+            "Action": [
+                "extend",
+                "visiting",
+                "updating"
+            ],
+            "Persona": ["recruiter"],
+            "Contains": [
+                [
+                    "site",
+                    "posting"
+                ],
+                [
+                    "site",
+                    "ad"
+                ]
+            ],
+            "Text": "#G10# As a recruiter, I want to be able to extend an ad for another 30 days by visiting the site and updating the posting, ",
+            "Triggers": [[
+                "recruiter",
+                "extend"
+            ]],
+            "Targets": [
+                [
+                    "extend",
+                    "ad"
+                ],
+                [
+                    "visiting",
+                    "site"
+                ],
+                [
+                    "updating",
+                    "posting"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_50",
+        "Benefit": {
+            "Entity": ["ad"],
+            "Action": ["extend"],
+            "Contains": [],
+            "Text": "I can go extend the ad.",
+            "Targets": [[
+                "extend",
+                "ad"
+            ]]
+        },
+        "Text": "#G10# As an advertiser, I want to be emailed a reminder seven day before an ad is about to expire, so that I can go extend the ad.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "reminder",
+                "ad",
+                "seven day"
+            ],
+            "Action": [
+                "be emailed",
+                "expire"
+            ],
+            "Persona": ["advertiser"],
+            "Contains": [[
+                "ad",
+                "reminder"
+            ]],
+            "Text": "#G10# As an advertiser, I want to be emailed a reminder seven day before an ad is about to expire, ",
+            "Triggers": [[
+                "advertiser",
+                "be emailed"
+            ]],
+            "Targets": [[
+                "be emailed",
+                "reminder"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_51",
+        "Benefit": {
+            "Entity": ["latest happenings"],
+            "Action": ["am up"],
+            "Contains": [[
+                "new article",
+                "latest happenings"
+            ]],
+            "Text": "I am up on all the latest happenings.",
+            "Targets": [[
+                "am up",
+                "latest happenings"
+            ]]
+        },
+        "Text": "#G10# As a site visitor, I want to read a new article on the front page about once a week, so that I am up on all the latest happenings.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "new article",
+                "front page",
+                "once a week"
+            ],
+            "Action": ["read"],
+            "Persona": ["site visitor"],
+            "Contains": [[
+                "front page",
+                "new article"
+            ]],
+            "Text": "#G10# As a site visitor, I want to read a new article on the front page about once a week, ",
+            "Triggers": [[
+                "site visitor",
+                "read"
+            ]],
+            "Targets": [[
+                "read",
+                "new article"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_52",
+        "Benefit": {
+            "Entity": [
+                "site visitors",
+                "rest"
+            ],
+            "Action": [
+                "decide",
+                "read"
+            ],
+            "Contains": [],
+            "Text": "site visitors can decide if they want to read the rest.",
+            "Targets": [[
+                "read",
+                "rest"
+            ]]
+        },
+        "Text": "#G10# As the site editor, I want to include a teaser with each article, so that site visitors can decide if they want to read the rest.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "teaser",
+                "each article"
+            ],
+            "Action": ["include"],
+            "Persona": ["site editor"],
+            "Contains": [[
+                "each article",
+                "teaser"
+            ]],
+            "Text": "#G10# As the site editor, I want to include a teaser with each article, ",
+            "Triggers": [[
+                "site editor",
+                "include"
+            ]],
+            "Targets": [[
+                "include",
+                "teaser"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_53",
+        "Benefit": {
+            "Entity": ["articles"],
+            "Action": ["finish"],
+            "Contains": [],
+            "Text": "I can finish articles that appeal to me.",
+            "Targets": [[
+                "finish",
+                "articles"
+            ]]
+        },
+        "Text": "#G10# As a site member who has read a teaser on the front page, I want to read the entire article so that I can finish articles that appeal to me.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "teaser",
+                "front page",
+                "entire article"
+            ],
+            "Action": ["read"],
+            "Persona": ["site member"],
+            "Contains": [[
+                "front page",
+                "teaser"
+            ]],
+            "Text": "#G10# As a site member who has read a teaser on the front page, I want to read the entire article ",
+            "Triggers": [[
+                "site member",
+                "read"
+            ]],
+            "Targets": [[
+                "read",
+                "entire article"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_54",
+        "Benefit": {
+            "Entity": [
+                "site",
+                "plenty of content"
+            ],
+            "Action": ["has"],
+            "Contains": [[
+                "site",
+                "plenty of content"
+            ]],
+            "Text": "the site has plenty of content.",
+            "Targets": [[
+                "has",
+                "plenty of content"
+            ]]
+        },
+        "Text": "#G10# As the site editor, I want to add an article to the site, so that the site has plenty of content.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "article",
+                "site"
+            ],
+            "Action": ["add"],
+            "Persona": ["site editor"],
+            "Contains": [[
+                "site",
+                "article"
+            ]],
+            "Text": "#G10# As the site editor, I want to add an article to the site, ",
+            "Triggers": [[
+                "site editor",
+                "add"
+            ]],
+            "Targets": [[
+                "add",
+                "article"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_55",
+        "Benefit": {
+            "Entity": [
+                "articles",
+                "appropriate periods"
+            ],
+            "Action": ["appear only"],
+            "Contains": [],
+            "Text": "articles appear only during appropriate periods.",
+            "Targets": [[
+                "appear only",
+                "appropriate periods"
+            ]]
+        },
+        "Text": "#G10# As a site editor, I want to set start publishing dates, old article date, and stop publishing dates for articles, so that articles appear only during appropriate periods.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "start publishing dates",
+                "old article date",
+                "stop publishing dates",
+                " articles"
+            ],
+            "Action": ["set"],
+            "Persona": ["site editor"],
+            "Contains": [
+                [
+                    " articles",
+                    "stop publishing dates"
+                ],
+                [
+                    " articles",
+                    "old article date"
+                ],
+                [
+                    " articles",
+                    "start publishing dates"
+                ]
+            ],
+            "Text": "#G10# As a site editor, I want to set start publishing dates, old article date, and stop publishing dates for articles, ",
+            "Triggers": [[
+                "site editor",
+                "set"
+            ]],
+            "Targets": [
+                [
+                    "set",
+                    "start publishing dates"
+                ],
+                [
+                    "set",
+                    "old article date"
+                ],
+                [
+                    "set",
+                    "stop publishing dates"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_56",
+        "Benefit": {
+            "Entity": ["best content"],
+            "Action": [],
+            "Contains": [],
+            "Text": "the best content is featured most prominently.",
+            "Targets": []
+        },
+        "Text": "#G10# As a site editor, I want to be able to designate whether or not an ever makes the home page, so that the best content is featured most prominently.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": ["home page"],
+            "Action": ["designate"],
+            "Persona": ["site editor"],
+            "Contains": [],
+            "Text": "#G10# As a site editor, I want to be able to designate whether or not an ever makes the home page, ",
+            "Triggers": [[
+                "site editor",
+                "designate"
+            ]],
+            "Targets": []
+        }
+    },
+    {
+        "US_Nr": "user_story_57",
+        "Benefit": {
+            "Entity": ["articles"],
+            "Action": [],
+            "Contains": [],
+            "Text": "articles are visually appealing.",
+            "Targets": []
+        },
+        "Text": "#G10# As the site editor, I want to have pretty good control over how the article, so that articles are visually appealing.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "pretty good control",
+                "article"
+            ],
+            "Action": ["have"],
+            "Persona": ["site editor"],
+            "Contains": [],
+            "Text": "#G10# As the site editor, I want to have pretty good control over how the article, ",
+            "Triggers": [[
+                "site editor",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "pretty good control"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_58",
+        "Benefit": {
+            "Entity": ["article"],
+            "Action": ["easily finish"],
+            "Contains": [[
+                "article",
+                "body of the article"
+            ]],
+            "Text": "I can easily finish the article.",
+            "Targets": [[
+                "easily finish",
+                "article"
+            ]]
+        },
+        "Text": "#G10# As a site visitor, I want to click the link from the article teaser to take me directly to the body of the article. not to another teaser setup, so that I can easily finish the article.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "article teaser",
+                "link",
+                "body of the article",
+                "teaser setup"
+            ],
+            "Action": [
+                "click",
+                "take me directly"
+            ],
+            "Persona": ["site visitor"],
+            "Contains": [[
+                "article teaser",
+                "link"
+            ]],
+            "Text": "#G10# As a site visitor, I want to click the link from the article teaser to take me directly to the body of the article. not to another teaser setup, ",
+            "Triggers": [[
+                "site visitor",
+                "click"
+            ]],
+            "Targets": [
+                [
+                    "take me directly",
+                    "body of the article"
+                ],
+                [
+                    "click",
+                    "link"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_59",
+        "Benefit": {
+            "Entity": [
+                "visitors",
+                "members"
+            ],
+            "Action": [],
+            "Contains": [],
+            "Text": "visitors are incentivized to become members.",
+            "Targets": []
+        },
+        "Text": "#G10# As a site editor, I want to be able to indicate whether an article is publicly available or for members only, so that visitors are incentivized to become members.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "article",
+                "members only"
+            ],
+            "Action": ["indicate"],
+            "Persona": ["site editor"],
+            "Contains": [[
+                "members only",
+                "article"
+            ]],
+            "Text": "#G10# As a site editor, I want to be able to indicate whether an article is publicly available or for members only, ",
+            "Triggers": [[
+                "site editor",
+                "indicate"
+            ]],
+            "Targets": [[
+                "indicate",
+                "members only"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_60",
+        "Benefit": {
+            "Entity": ["site"],
+            "Action": [
+                "learn",
+                "without first joining"
+            ],
+            "Contains": [[
+                "site",
+                "your articles"
+            ]],
+            "Text": "I can learn without first joining the site.",
+            "Targets": [
+                [
+                    "learn",
+                    "your articles"
+                ],
+                [
+                    "without first joining",
+                    "site"
+                ]
+            ]
+        },
+        "Text": "#G10# As a site visitor, I want to be able to read some of your articles, so that I can learn without first joining the site.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": ["your articles"],
+            "Action": ["read"],
+            "Persona": ["site visitor"],
+            "Contains": [],
+            "Text": "#G10# As a site visitor, I want to be able to read some of your articles, ",
+            "Triggers": [[
+                "site visitor",
+                "read"
+            ]],
+            "Targets": [[
+                "read",
+                "your articles"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_61",
+        "Benefit": {
+            "Entity": [
+                "benefit",
+                "member"
+            ],
+            "Action": [],
+            "Contains": [[
+                "member",
+                "benefit"
+            ]],
+            "Text": "there is a benefit to being a member.",
+            "Targets": []
+        },
+        "Text": "#G10# As a site member, I want to have full access to all articles, so that there is a benefit to being a member.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "full access",
+                "all articles"
+            ],
+            "Action": ["have"],
+            "Persona": ["site member"],
+            "Contains": [[
+                "all articles",
+                "full access"
+            ]],
+            "Text": "#G10# As a site member, I want to have full access to all articles, ",
+            "Triggers": [[
+                "site member",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "full access"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_62",
+        "Benefit": {
+            "Entity": ["what I want"],
+            "Action": ["find"],
+            "Contains": [],
+            "Text": "I can find what I want.",
+            "Targets": [[
+                "find",
+                "what I want"
+            ]]
+        },
+        "Text": "#G10# As a site visitor, I want to do a full-text search of article body, title, and author name, so that I can find what I want.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "full-text search",
+                "article body",
+                "title",
+                "author name"
+            ],
+            "Action": ["do"],
+            "Persona": ["site visitor"],
+            "Contains": [
+                [
+                    "full-text search",
+                    "article body"
+                ],
+                [
+                    "full-text search",
+                    "title"
+                ],
+                [
+                    "full-text search",
+                    "author name"
+                ]
+            ],
+            "Text": "#G10# As a site visitor, I want to do a full-text search of article body, title, and author name, ",
+            "Triggers": [[
+                "site visitor",
+                "do"
+            ]],
+            "Targets": [[
+                "do",
+                "full-text search"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_63",
+        "Benefit": {
+            "Entity": ["site"],
+            "Action": ["read"],
+            "Contains": [[
+                "site",
+                "articles"
+            ]],
+            "Text": "I can read them without visiting the site.",
+            "Targets": [[
+                "read",
+                "articles"
+            ]]
+        },
+        "Text": "#G10# As a site visitor, I want to subscribe to an RSS feed of articles, so that I can read them without visiting the site.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "RSS feed",
+                "articles"
+            ],
+            "Action": ["subscribe"],
+            "Persona": ["site visitor"],
+            "Contains": [[
+                "articles",
+                "RSS feed"
+            ]],
+            "Text": "#G10# As a site visitor, I want to subscribe to an RSS feed of articles, ",
+            "Triggers": [[
+                "site visitor",
+                "subscribe"
+            ]],
+            "Targets": [[
+                "subscribe",
+                "RSS feed"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_64",
+        "Benefit": {
+            "Entity": ["others"],
+            "Action": ["read"],
+            "Contains": [],
+            "Text": "others can read them.",
+            "Targets": [[
+                "read",
+                "comments"
+            ]]
+        },
+        "Text": "#G10# As a site visitor, I want to post comments about articles, so that others can read them.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "comments",
+                "articles"
+            ],
+            "Action": ["post"],
+            "Persona": ["site visitor"],
+            "Contains": [[
+                "articles",
+                "comments"
+            ]],
+            "Text": "#G10# As a site visitor, I want to post comments about articles, ",
+            "Triggers": [[
+                "site visitor",
+                "post"
+            ]],
+            "Targets": [[
+                "post",
+                "comments"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_65",
+        "Benefit": {
+            "Entity": ["additional exposure"],
+            "Action": ["give"],
+            "Contains": [],
+            "Text": "I can give them additional exposure.",
+            "Targets": [[
+                "give",
+                "additional exposure"
+            ]]
+        },
+        "Text": "#G10# As a site editor, I want to have a prominent area on the home page where I can put special announcements not necessarily news or articles, so that I can give them additional exposure.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "prominent area",
+                "home page",
+                "special announcements",
+                "news",
+                "articles"
+            ],
+            "Action": [
+                "have",
+                "put"
+            ],
+            "Persona": ["site editor"],
+            "Contains": [[
+                "home page",
+                "prominent area"
+            ]],
+            "Text": "#G10# As a site editor, I want to have a prominent area on the home page where I can put special announcements not necessarily news or articles, ",
+            "Triggers": [[
+                "site editor",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "prominent area"
+                ],
+                [
+                    "put",
+                    "special announcements"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_66",
+        "Benefit": {
+            "Entity": ["different types of content"],
+            "Action": ["accommodate"],
+            "Contains": [],
+            "Text": "I can accommodate different types of content.",
+            "Targets": [[
+                "accommodate",
+                "different types of content"
+            ]]
+        },
+        "Text": "#G10# As a site editor, I want to have some flexibility as to where things appear, so that I can accommodate different types of content.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "some flexibility",
+                "where things appear"
+            ],
+            "Action": ["have"],
+            "Persona": ["site editor"],
+            "Contains": [[
+                "where things appear",
+                "some flexibility"
+            ]],
+            "Text": "#G10# As a site editor, I want to have some flexibility as to where things appear, ",
+            "Triggers": [[
+                "site editor",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "some flexibility"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_67",
+        "Benefit": {
+            "Entity": [
+                "benefit",
+                "membership"
+            ],
+            "Action": ["register"],
+            "Contains": [[
+                "membership",
+                "benefit"
+            ]],
+            "Text": "they register and there's a benefit to my membership.",
+            "Targets": [[
+                "register",
+                "upcoming courses"
+            ]]
+        },
+        "Text": "#G10# As a trainer, I want to see the upcoming courses are what I want visitors to notice, so that they register and there's a benefit to my membership.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "upcoming courses",
+                "visitors"
+            ],
+            "Action": [
+                "see",
+                "notice"
+            ],
+            "Persona": ["trainer"],
+            "Contains": [],
+            "Text": "#G10# As a trainer, I want to see the upcoming courses are what I want visitors to notice, ",
+            "Triggers": [[
+                "trainer",
+                "see"
+            ]],
+            "Targets": [
+                [
+                    "notice",
+                    "upcoming courses"
+                ],
+                [
+                    "see",
+                    "upcoming courses"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_68",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["come back more often"],
+            "Contains": [],
+            "Text": "I come back more often.",
+            "Targets": [[
+                "come back more often",
+                "site"
+            ]]
+        },
+        "Text": "#G10# As a site visitor, I want to see new content when I come to the site, so that I come back more often.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "new content",
+                "site"
+            ],
+            "Action": [
+                "see",
+                "come"
+            ],
+            "Persona": ["site visitor"],
+            "Contains": [[
+                "site",
+                "new content"
+            ]],
+            "Text": "#G10# As a site visitor, I want to see new content when I come to the site, ",
+            "Triggers": [[
+                "site visitor",
+                "see"
+            ]],
+            "Targets": [
+                [
+                    "see",
+                    "new content"
+                ],
+                [
+                    "come",
+                    "site"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_69",
+        "Benefit": {
+            "Entity": [
+                "site",
+                "agile news",
+                "learning"
+            ],
+            "Action": ["come"],
+            "Contains": [
+                [
+                    "site",
+                    "agile news"
+                ],
+                [
+                    "site",
+                    "learning"
+                ]
+            ],
+            "Text": "I come to the site for my agile news and learning.",
+            "Targets": [[
+                "come",
+                "site"
+            ]]
+        },
+        "Text": "#G10# As a site visitor, I want to have articles that interest me and are easy to get to, so that I come to the site for my agile news and learning.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": ["articles that interest me"],
+            "Action": ["have"],
+            "Persona": ["site visitor"],
+            "Contains": [],
+            "Text": "#G10# As a site visitor, I want to have articles that interest me and are easy to get to, ",
+            "Triggers": [[
+                "site visitor",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "articles that interest me"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_70",
+        "Benefit": {
+            "Entity": ["page"],
+            "Action": [],
+            "Contains": [],
+            "Text": "I don't bounce immediately o? the page.",
+            "Targets": [[
+                "visit",
+                "page"
+            ]]
+        },
+        "Text": "#G10# As a site visitor, I want to know as soon as I visit what on earth Scrum is and why it needs an alliance, so that I don't bounce immediately o? the page.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "Scrum",
+                "alliance",
+                "why"
+            ],
+            "Action": [
+                "know",
+                "visit"
+            ],
+            "Persona": ["site visitor"],
+            "Contains": [[
+                "Scrum",
+                "alliance"
+            ]],
+            "Text": "#G10# As a site visitor, I want to know as soon as I visit what on earth Scrum is and why it needs an alliance, ",
+            "Triggers": [[
+                "site visitor",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "Scrum"
+                ],
+                [
+                    "know",
+                    "why"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_71",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["read more"],
+            "Contains": [],
+            "Text": "I read more.",
+            "Targets": []
+        },
+        "Text": "#G10# As a site visitor, I want to know as I glance around the home page what on earth a CSM is and why I'd want to be one, so that I read more.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "home page",
+                "CSM",
+                "why"
+            ],
+            "Action": [
+                "know",
+                "glance around"
+            ],
+            "Persona": ["site visitor"],
+            "Contains": [[
+                "home page",
+                "CSM"
+            ]],
+            "Text": "#G10# As a site visitor, I want to know as I glance around the home page what on earth a CSM is and why I'd want to be one, ",
+            "Triggers": [[
+                "site visitor",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "CSM"
+                ],
+                [
+                    "glance around",
+                    "home page"
+                ],
+                [
+                    "know",
+                    "why"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_72",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["navigating"],
+            "Contains": [],
+            "Text": "I don't get lost navigating.",
+            "Targets": []
+        },
+        "Text": "#G10# As a site visitor, I want to be able to get back to the home page quickly and easily, so that I don't get lost navigating.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": ["home page"],
+            "Action": ["get back"],
+            "Persona": ["site visitor"],
+            "Contains": [],
+            "Text": "#G10# As a site visitor, I want to be able to get back to the home page quickly and easily, ",
+            "Triggers": [[
+                "site visitor",
+                "get back"
+            ]],
+            "Targets": [[
+                "get back",
+                "home page"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_73",
+        "Benefit": {
+            "Entity": ["most important or best content"],
+            "Action": ["read"],
+            "Contains": [],
+            "Text": "I am most likely to read the most important or best content.",
+            "Targets": [[
+                "read",
+                "most important or best content"
+            ]]
+        },
+        "Text": "#G10# As a site visitor, I want to see a list of the most popular items on the site, so that I am most likely to read the most important or best content.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "list",
+                "most popular items",
+                "site"
+            ],
+            "Action": ["see"],
+            "Persona": ["site visitor"],
+            "Contains": [
+                [
+                    "site",
+                    "most popular items"
+                ],
+                [
+                    "list",
+                    "most popular items"
+                ]
+            ],
+            "Text": "#G10# As a site visitor, I want to see a list of the most popular items on the site, ",
+            "Triggers": [[
+                "site visitor",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "list"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_74",
+        "Benefit": {
+            "Entity": ["ratings"],
+            "Action": [],
+            "Contains": [],
+            "Text": "my ratings are accurate.",
+            "Targets": []
+        },
+        "Text": "#G10# As a trainer, I want to be assured that no one can submit the same answers multiple time and skew my results, so that my ratings are accurate.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "same answers",
+                "results",
+                "no one"
+            ],
+            "Action": [
+                "be assured",
+                "skew",
+                "submit"
+            ],
+            "Persona": ["trainer"],
+            "Contains": [],
+            "Text": "#G10# As a trainer, I want to be assured that no one can submit the same answers multiple time and skew my results, ",
+            "Triggers": [[
+                "trainer",
+                "be assured"
+            ]],
+            "Targets": [
+                [
+                    "skew",
+                    "results"
+                ],
+                [
+                    "submit",
+                    "same answers"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_75",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["read"],
+            "Contains": [],
+            "Text": "I can read them.",
+            "Targets": [[
+                "read",
+                "results"
+            ]]
+        },
+        "Text": "#G10# As a trainer, I want to be notified about the results of surveys about my classes, so that I can read them.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "results",
+                "surveys about my classes"
+            ],
+            "Action": ["be notified"],
+            "Persona": ["trainer"],
+            "Contains": [[
+                "surveys about my classes",
+                "results"
+            ]],
+            "Text": "#G10# As a trainer, I want to be notified about the results of surveys about my classes, ",
+            "Triggers": [[
+                "trainer",
+                "be notified"
+            ]],
+            "Targets": [[
+                "be notified",
+                "results"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_76",
+        "Benefit": {
+            "Entity": [
+                "possible problems",
+                "any outliers"
+            ],
+            "Action": ["identify"],
+            "Contains": [],
+            "Text": "I can identify any outliers or possible problems.",
+            "Targets": [
+                [
+                    "identify",
+                    "possible problems"
+                ],
+                [
+                    "identify",
+                    "any outliers"
+                ]
+            ]
+        },
+        "Text": "#G10# As a site admin, I want to see the results for each trainer and averages for the class, so that I can identify any outliers or possible problems.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "results",
+                "each trainer",
+                "averages",
+                "class"
+            ],
+            "Action": ["see"],
+            "Persona": ["site admin"],
+            "Contains": [
+                [
+                    "class",
+                    "averages"
+                ],
+                [
+                    "each trainer",
+                    "results"
+                ]
+            ],
+            "Text": "#G10# As a site admin, I want to see the results for each trainer and averages for the class, ",
+            "Triggers": [[
+                "site admin",
+                "see"
+            ]],
+            "Targets": [
+                [
+                    "see",
+                    "results"
+                ],
+                [
+                    "see",
+                    "averages"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_77",
+        "Benefit": {
+            "Entity": [
+                "course",
+                "appropriate trainer"
+            ],
+            "Action": ["choose"],
+            "Contains": [[
+                "appropriate trainer",
+                "course"
+            ]],
+            "Text": "I choose a course from an appropriate trainer.",
+            "Targets": [[
+                "choose",
+                "course"
+            ]]
+        },
+        "Text": "#G10# As a site visitor, I want to see a trainer's rating, so that I choose a course from an appropriate trainer.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": ["trainer's rating"],
+            "Action": ["see"],
+            "Persona": ["site visitor"],
+            "Contains": [],
+            "Text": "#G10# As a site visitor, I want to see a trainer's rating, ",
+            "Triggers": [[
+                "site visitor",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "trainer's rating"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_78",
+        "Benefit": {
+            "Entity": ["site visitors"],
+            "Action": ["choose wisely"],
+            "Contains": [],
+            "Text": "site visitors can choose wisely.",
+            "Targets": []
+        },
+        "Text": "#G10# As a trainer, I want to show my rating up on my profile page, so that site visitors can choose wisely.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "rating",
+                "profile page"
+            ],
+            "Action": ["show"],
+            "Persona": ["trainer"],
+            "Contains": [[
+                "profile page",
+                "rating"
+            ]],
+            "Text": "#G10# As a trainer, I want to show my rating up on my profile page, ",
+            "Triggers": [[
+                "trainer",
+                "show"
+            ]],
+            "Targets": [[
+                "show",
+                "rating"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_79",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["learn"],
+            "Contains": [],
+            "Text": "I can learn that quickly.",
+            "Targets": [[
+                "learn",
+                "basics"
+            ]]
+        },
+        "Text": "#G10# As a site visitor, I want to view a section of the website that teaches me the basics of what Scrum is, so that I can learn that quickly.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "section",
+                "website",
+                "basics",
+                "Scrum"
+            ],
+            "Action": [
+                "view",
+                "teaches"
+            ],
+            "Persona": ["site visitor"],
+            "Contains": [
+                [
+                    "website",
+                    "section"
+                ],
+                [
+                    "Scrum",
+                    "basics"
+                ],
+                [
+                    "section",
+                    "basics"
+                ]
+            ],
+            "Text": "#G10# As a site visitor, I want to view a section of the website that teaches me the basics of what Scrum is, ",
+            "Triggers": [[
+                "site visitor",
+                "view"
+            ]],
+            "Targets": [
+                [
+                    "view",
+                    "section"
+                ],
+                [
+                    "teaches",
+                    "basics"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_80",
+        "Benefit": {
+            "Entity": ["visitors"],
+            "Action": [],
+            "Contains": [[
+                "What Is Scrum section",
+                "visitors"
+            ]],
+            "Text": "it's there for visitors.",
+            "Targets": []
+        },
+        "Text": "#G10# As a site editor, I want to create the content of the What Is Scrum section, so that it's there for visitors.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "content",
+                "What Is Scrum section"
+            ],
+            "Action": ["create"],
+            "Persona": ["site editor"],
+            "Contains": [[
+                "What Is Scrum section",
+                "content"
+            ]],
+            "Text": "#G10# As a site editor, I want to create the content of the What Is Scrum section, ",
+            "Triggers": [[
+                "site editor",
+                "create"
+            ]],
+            "Targets": [[
+                "create",
+                "content"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_81",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G10# As a site visitor, I want to view lists on the site of all Certified Scrum Masters, Practitioners, Trainers, and Certified Scrum Product Owners.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "lists",
+                "site",
+                "all Certified Scrum Masters",
+                "Practitioners",
+                "Trainers",
+                "Certified Scrum Product Owners"
+            ],
+            "Action": ["view"],
+            "Persona": ["site visitor"],
+            "Contains": [
+                [
+                    "site",
+                    "lists"
+                ],
+                [
+                    "lists",
+                    "all Certified Scrum Masters"
+                ],
+                [
+                    "lists",
+                    "Practitioners"
+                ],
+                [
+                    "lists",
+                    "Trainers"
+                ],
+                [
+                    "lists",
+                    "Certified Scrum Product Owners"
+                ]
+            ],
+            "Triggers": [[
+                "site visitor",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "lists"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_82",
+        "Benefit": {
+            "Entity": [
+                "employers",
+                "others",
+                "certification"
+            ],
+            "Action": ["verify"],
+            "Contains": [],
+            "Text": "employers or others can verify my certification",
+            "Targets": [[
+                "verify",
+                "certification"
+            ]]
+        },
+        "Text": "#G10# As a CSM, I want to have my name listed in the registry without becoming a member of the site, so that employers or others can verify my certification.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "name",
+                "registry",
+                "member",
+                "site"
+            ],
+            "Action": [
+                "listed",
+                "without becoming",
+                "have"
+            ],
+            "Persona": ["CSM"],
+            "Contains": [
+                [
+                    "registry",
+                    "name"
+                ],
+                [
+                    "site",
+                    "member"
+                ]
+            ],
+            "Text": "#G10# As a CSM, I want to have my name listed in the registry without becoming a member of the site, ",
+            "Triggers": [[
+                "CSM",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "listed",
+                    "name"
+                ],
+                [
+                    "without becoming",
+                    "member"
+                ],
+                [
+                    "have",
+                    "name"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_83",
+        "Benefit": {
+            "Entity": [
+                "course participants",
+                "Scrum Alliance records"
+            ],
+            "Action": ["added"],
+            "Contains": [[
+                "Scrum Alliance records",
+                "course participants"
+            ]],
+            "Text": "the course participants are added to the Scrum Alliance records.",
+            "Targets": [[
+                "added",
+                "course participants"
+            ]]
+        },
+        "Text": "#G10# As a trainer, I want to load an Excel file into the site, so that the course participants are added to the Scrum Alliance records.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "Excel file",
+                "site"
+            ],
+            "Action": ["load"],
+            "Persona": ["trainer"],
+            "Contains": [[
+                "site",
+                "Excel file"
+            ]],
+            "Text": "#G10# As a trainer, I want to load an Excel file into the site, ",
+            "Triggers": [[
+                "trainer",
+                "load"
+            ]],
+            "Targets": [[
+                "load",
+                "Excel file"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_84",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["approve"],
+            "Contains": [],
+            "Text": "I can approve any that need to be approved.",
+            "Targets": [[
+                "approve",
+                "all classes"
+            ]]
+        },
+        "Text": "#G10# As a site admin, I want to view all classes in a pending state, so that I can approve any that need to be approved.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "all classes",
+                "pending state"
+            ],
+            "Action": ["view"],
+            "Persona": ["site admin"],
+            "Contains": [[
+                "all classes",
+                "pending state"
+            ]],
+            "Text": "#G10# As a site admin, I want to view all classes in a pending state, ",
+            "Triggers": [[
+                "site admin",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "all classes"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_85",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G10# As a site admin, I want to move people in a trainer's class from a pending state to the registry once I have received proof of payment from the trainer.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "people",
+                "trainer's class",
+                "pending state",
+                "registry",
+                "proof of payment",
+                "trainer"
+            ],
+            "Action": [
+                "move",
+                "received"
+            ],
+            "Persona": ["site admin"],
+            "Contains": [
+                [
+                    "trainer's class",
+                    "people"
+                ],
+                [
+                    "trainer",
+                    "proof of payment"
+                ],
+                [
+                    "people",
+                    "pending state"
+                ],
+                [
+                    "registry",
+                    "people"
+                ]
+            ],
+            "Triggers": [[
+                "site admin",
+                "move"
+            ]],
+            "Targets": [
+                [
+                    "move",
+                    "people"
+                ],
+                [
+                    "received",
+                    "proof of payment"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_86",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G10# As a CSM, I want to be sent an email welcoming me to the Scrum Alliance and with instructions to register or activate my membership once my name has been loaded to the registry.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "email",
+                "Scrum Alliance",
+                "membership",
+                "name",
+                "registry",
+                "instructions"
+            ],
+            "Action": [
+                "be sent",
+                "activate",
+                "loaded",
+                "register"
+            ],
+            "Persona": ["CSM"],
+            "Contains": [
+                [
+                    "registry",
+                    "name"
+                ],
+                [
+                    "Scrum Alliance",
+                    "membership"
+                ],
+                [
+                    "email",
+                    "instructions"
+                ]
+            ],
+            "Triggers": [[
+                "CSM",
+                "be sent"
+            ]],
+            "Targets": [
+                [
+                    "be sent",
+                    "email"
+                ],
+                [
+                    "activate",
+                    "membership"
+                ],
+                [
+                    "loaded",
+                    "name"
+                ],
+                [
+                    "register",
+                    "membership"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_87",
+        "Benefit": {
+            "Entity": [
+                "programmer",
+                "simple email edits"
+            ],
+            "Action": [],
+            "Contains": [[
+                "content",
+                "simple email edits"
+            ]],
+            "Text": "I don't need to involve a programmer on simple email edits.",
+            "Targets": []
+        },
+        "Text": "#G10# As a site editor, I want to edit the content of the email automatically sent to new Certified Scrum Masters and Product Owners, so that I don't need to involve a programmer on simple email edits.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "content",
+                "email automatically sent",
+                "new Certified Scrum Masters",
+                "Product Owners"
+            ],
+            "Action": ["edit"],
+            "Persona": ["site editor"],
+            "Contains": [
+                [
+                    "Product Owners",
+                    "email automatically sent"
+                ],
+                [
+                    "new Certified Scrum Masters",
+                    "email automatically sent"
+                ],
+                [
+                    "email automatically sent",
+                    "content"
+                ]
+            ],
+            "Text": "#G10# As a site editor, I want to edit the content of the email automatically sent to new Certified Scrum Masters and Product Owners, ",
+            "Triggers": [[
+                "site editor",
+                "edit"
+            ]],
+            "Targets": [[
+                "edit",
+                "content"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_88",
+        "Benefit": {
+            "Entity": [
+                "company's support",
+                "Scrum"
+            ],
+            "Action": ["show"],
+            "Contains": [[
+                "Scrum",
+                "company's support"
+            ]],
+            "Text": "I can show the company's support of Scrum.",
+            "Targets": [[
+                "show",
+                "company's support"
+            ]]
+        },
+        "Text": "#G10# As a company, I want to join the Scrum Alliance by paying a corporate membership fee, so that I can show the company's support of Scrum.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "Scrum Alliance",
+                "corporate membership fee"
+            ],
+            "Action": [
+                "join",
+                "paying"
+            ],
+            "Persona": ["company"],
+            "Contains": [[
+                "Scrum Alliance",
+                "corporate membership fee"
+            ]],
+            "Text": "#G10# As a company, I want to join the Scrum Alliance by paying a corporate membership fee, ",
+            "Triggers": [[
+                "company",
+                "join"
+            ]],
+            "Targets": [
+                [
+                    "join",
+                    "Scrum Alliance"
+                ],
+                [
+                    "paying",
+                    "corporate membership fee"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_89",
+        "Benefit": {
+            "Entity": [
+                "others",
+                "company's support",
+                "Scrum"
+            ],
+            "Action": ["see"],
+            "Contains": [[
+                "Scrum",
+                "company's support"
+            ]],
+            "Text": "others see the company's support of Scrum.",
+            "Targets": [[
+                "see",
+                "company's support"
+            ]]
+        },
+        "Text": "#G10# As a corporatesponsor, I want to display my logo on a corporate sponsors page, so that others see the company's support of Scrum.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "logo",
+                "corporate sponsors page"
+            ],
+            "Action": ["display"],
+            "Persona": ["corporatesponsor"],
+            "Contains": [[
+                "corporate sponsors page",
+                "logo"
+            ]],
+            "Text": "#G10# As a corporatesponsor, I want to display my logo on a corporate sponsors page, ",
+            "Triggers": [[
+                "corporatesponsor",
+                "display"
+            ]],
+            "Targets": [[
+                "display",
+                "logo"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_90",
+        "Benefit": {
+            "Entity": [
+                "others",
+                "company's support",
+                "Scrum"
+            ],
+            "Action": ["see"],
+            "Contains": [[
+                "Scrum",
+                "company's support"
+            ]],
+            "Text": "others see the company's support of Scrum.",
+            "Targets": [[
+                "see",
+                "company's support"
+            ]]
+        },
+        "Text": "#G10# As a corporatesponsor, I want to make my logo randomly appear on the home page, so that others see the company's support of Scrum.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "logo",
+                "home page"
+            ],
+            "Action": [
+                "randomly appear",
+                "make"
+            ],
+            "Persona": ["corporatesponsor"],
+            "Contains": [[
+                "home page",
+                "logo"
+            ]],
+            "Text": "#G10# As a corporatesponsor, I want to make my logo randomly appear on the home page, ",
+            "Triggers": [[
+                "corporatesponsor",
+                "make"
+            ]],
+            "Targets": [[
+                "make",
+                "logo"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_91",
+        "Benefit": {
+            "Entity": ["certification status"],
+            "Action": ["activated"],
+            "Contains": [],
+            "Text": "my certification status can be activated.",
+            "Targets": [[
+                "activated",
+                "certification status"
+            ]]
+        },
+        "Text": "#G10# As a CSM, I want to be charged a fee once I am approved for Practitioner status, so that my certification status can be activated.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "fee",
+                "Practitioner status"
+            ],
+            "Action": [
+                "be charged",
+                "approved"
+            ],
+            "Persona": ["CSM"],
+            "Contains": [[
+                "Practitioner status",
+                "fee"
+            ]],
+            "Text": "#G10# As a CSM, I want to be charged a fee once I am approved for Practitioner status, ",
+            "Triggers": [[
+                "CSM",
+                "be charged"
+            ]],
+            "Targets": [
+                [
+                    "be charged",
+                    "fee"
+                ],
+                [
+                    "approved",
+                    "Practitioner status"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_92",
+        "Benefit": {
+            "Entity": ["CST status"],
+            "Action": [],
+            "Contains": [[
+                "CST status",
+                "annual fee"
+            ]],
+            "Text": "my CST status is active.",
+            "Targets": []
+        },
+        "Text": "#G10# As a CST, I want to pay an annual fee, so that my CST status is active.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": ["annual fee"],
+            "Action": ["pay"],
+            "Persona": ["CST"],
+            "Contains": [],
+            "Text": "#G10# As a CST, I want to pay an annual fee, ",
+            "Triggers": [[
+                "CST",
+                "pay"
+            ]],
+            "Targets": [[
+                "pay",
+                "annual fee"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_93",
+        "Benefit": {
+            "Entity": [
+                "fees",
+                "programmer"
+            ],
+            "Action": ["set"],
+            "Contains": [],
+            "Text": "fees can be set without involving a programmer.",
+            "Targets": [[
+                "set",
+                "fees"
+            ]]
+        },
+        "Text": "#G10# As a site administrator, I want to set the annual fees for members, Practitioners and Trainers, so that fees can be set without involving a programmer.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "annual fees",
+                "members",
+                "Practitioners",
+                "Trainers"
+            ],
+            "Action": ["set"],
+            "Persona": ["site administrator"],
+            "Contains": [
+                [
+                    "members",
+                    "annual fees"
+                ],
+                [
+                    "Practitioners",
+                    "annual fees"
+                ],
+                [
+                    "Trainers",
+                    "annual fees"
+                ]
+            ],
+            "Text": "#G10# As a site administrator, I want to set the annual fees for members, Practitioners and Trainers, ",
+            "Triggers": [[
+                "site administrator",
+                "set"
+            ]],
+            "Targets": [[
+                "set",
+                "annual fees"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_94",
+        "Benefit": {
+            "Entity": ["membership"],
+            "Action": ["renew"],
+            "Contains": [],
+            "Text": "I can renew my membership.",
+            "Targets": [[
+                "renew",
+                "membership"
+            ]]
+        },
+        "Text": "#G10# As a member, I want to receive a reminder and a link, so that I can renew my membership.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "reminder",
+                "link"
+            ],
+            "Action": ["receive"],
+            "Persona": ["member"],
+            "Contains": [],
+            "Text": "#G10# As a member, I want to receive a reminder and a link, ",
+            "Triggers": [[
+                "member",
+                "receive"
+            ]],
+            "Targets": [
+                [
+                    "receive",
+                    "reminder"
+                ],
+                [
+                    "receive",
+                    "link"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_95",
+        "Benefit": {
+            "Entity": ["short-term memory problems"],
+            "Action": ["have"],
+            "Contains": [],
+            "Text": "i have short-term memory problems.",
+            "Targets": [[
+                "have",
+                "short-term memory problems"
+            ]]
+        },
+        "Text": "#G10# As a member, I want to have the system email me a new password or a password reminder since i have short-term memory problems.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "system",
+                "new password",
+                "password reminder"
+            ],
+            "Action": [
+                "have",
+                "email"
+            ],
+            "Persona": ["member"],
+            "Contains": [
+                [
+                    "system",
+                    "new password"
+                ],
+                [
+                    "system",
+                    "password reminder"
+                ]
+            ],
+            "Text": "#G10# As a member, I want to have the system email me a new password or a password reminder since",
+            "Triggers": [[
+                "member",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "system"
+                ],
+                [
+                    "email",
+                    "new password"
+                ],
+                [
+                    "email",
+                    "password reminder"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_96",
+        "Benefit": {
+            "Entity": [
+                "Scrum Alliance",
+                "information"
+            ],
+            "Action": ["share"],
+            "Contains": [[
+                "Scrum Alliance",
+                "information"
+            ]],
+            "Text": "the Scrum Alliance can share information with me easily.",
+            "Targets": [[
+                "share",
+                "information"
+            ]]
+        },
+        "Text": "#G10# As a trainer, I want to read information of relevance only to trainers, so that the Scrum Alliance can share information with me easily.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": ["information of relevance only to trainers"],
+            "Action": ["read"],
+            "Persona": ["trainer"],
+            "Contains": [],
+            "Text": "#G10# As a trainer, I want to read information of relevance only to trainers, ",
+            "Triggers": [[
+                "trainer",
+                "read"
+            ]],
+            "Targets": [[
+                "read",
+                "information of relevance only to trainers"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_97",
+        "Benefit": {
+            "Entity": ["only trainers"],
+            "Action": ["see"],
+            "Contains": [[
+                "only trainers",
+                "trainers-only section"
+            ]],
+            "Text": "only trainers see it.",
+            "Targets": [[
+                "see",
+                "information"
+            ]]
+        },
+        "Text": "#G10# As a site editor, I want to post information in a trainers-only section, so that only trainers see it.",
+        "PID": "#G10#",
+        "Main": {
+            "Entity": [
+                "information",
+                "trainers-only section"
+            ],
+            "Action": ["post"],
+            "Persona": ["site editor"],
+            "Contains": [[
+                "trainers-only section",
+                "information"
+            ]],
+            "Text": "#G10# As a site editor, I want to post information in a trainers-only section, ",
+            "Triggers": [[
+                "site editor",
+                "post"
+            ]],
+            "Targets": [[
+                "post",
+                "information"
+            ]]
+        }
+    }
+]

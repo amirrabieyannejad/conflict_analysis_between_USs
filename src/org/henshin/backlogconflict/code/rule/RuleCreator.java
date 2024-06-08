@@ -7,6 +7,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.Path;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 import org.eclipse.emf.henshin.model.compact.CModule;
 import org.eclipse.emf.henshin.model.compact.CNode;
@@ -17,6 +18,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 import com.opencsv.exceptions.CsvValidationException;
+
 /*  Delete Annotation for Attributes actions and entities
  *  plus their edges which have target edges or triggers edge
  *  This version is include US's Text
@@ -25,13 +27,13 @@ public class RuleCreator {
 	private String jsonFile;
 	private String henshinFile;
 	private String eCoreFile;
-	private VerbFinder verbFinder;
-	public RuleCreator(String JsonFileName, String henshinFileName, String eCoreFileName, String csvFilePath) 
+
+	public RuleCreator(String JsonFileName, String henshinFileName, String eCoreFileName)
 			throws IOException, CsvValidationException {
 		jsonFile = JsonFileName;
 		henshinFile = henshinFileName;
 		eCoreFile = eCoreFileName;
-		this.verbFinder = new VerbFinder(csvFilePath);
+
 	}
 
 	public String getJsonFile() {
@@ -39,7 +41,8 @@ public class RuleCreator {
 	}
 
 	public String getJsonFileAbsolutePath() throws EmptyOrNotExistJsonFile {
-		Path path = Paths.get("C:\\Users\\amirr\\eclipse-workspace_new\\" + "org.henshin.backlogconflict\\" + getJsonFile());
+		Path path = Paths
+				.get("C:\\Users\\amirr\\eclipse-workspace_new\\" + "org.henshin.backlogconflict\\" + getJsonFile());
 		if (Files.exists(path)) {
 			return path.toString();
 
@@ -50,7 +53,8 @@ public class RuleCreator {
 	}
 
 	public String getEcoreFileAbsolutePath() {
-		Path path = Paths.get("C:\\Users\\amirr\\eclipse-workspace_new\\" + "org.henshin.backlogconflict\\" + getEcoreFile());
+		Path path = Paths
+				.get("C:\\Users\\amirr\\eclipse-workspace_new\\" + "org.henshin.backlogconflict\\" + getEcoreFile());
 		if (Files.exists(path)) {
 			return path.toString();
 
@@ -73,17 +77,15 @@ public class RuleCreator {
 	public static void main(String[] args) throws IOException, EcoreFileNotFound, EmptyOrNotExistJsonFile,
 			PersonaInJsonFileNotFound, UsNrInJsonFileNotFound, ActionInJsonFileNotFound, EntityInJsonFileNotFound,
 			TargetsInJsonFileNotFound, ContainsInJsonFileNotFound, TextInJsonFileNotFound, TriggersInJsonFileNotFound,
-			EdgeWithSameSourceAndTarget,CsvValidationException {
+			EdgeWithSameSourceAndTarget, CsvValidationException {
 		long startTime = System.nanoTime();
 		String version = "03";
 		createRules(version);
 		long endTime = System.nanoTime();
-		double elapsedTimeInSeconds= (endTime-startTime)/ 1_000_000_000.0;
-        System.out.println("Processing time: " + elapsedTimeInSeconds + " seconds");
+		double elapsedTimeInSeconds = (endTime - startTime) / 1_000_000_000.0;
+		System.out.println("Processing time: " + elapsedTimeInSeconds + " seconds");
 	}
-	public String findRuleAction(String verb) {
-		return verbFinder.getActionRule(verb);
-	}
+
 	public static void createRules(String version) throws IOException, EcoreFileNotFound, EmptyOrNotExistJsonFile,
 			PersonaInJsonFileNotFound, UsNrInJsonFileNotFound, ActionInJsonFileNotFound, EntityInJsonFileNotFound,
 			TargetsInJsonFileNotFound, ContainsInJsonFileNotFound, TextInJsonFileNotFound, TriggersInJsonFileNotFound,
@@ -91,15 +93,16 @@ public class RuleCreator {
 
 		RuleCreator ruleCreator = new RuleCreator(
 				"Final_Reports\\Textual_Report_g" + version + "\\g" + version + "_baseline_pos.json",
-				"Henshin_backlog_g" + version, "Backlog_v2.3.ecore","rules_actions.csv");
-		ReadJsonFile readJsonFile =new ReadJsonFile();
+				"Henshin_backlog_g" + version, "Backlog_v2.3.ecore");
+		ActionsRulesCreator actionsRulesCreator = new ActionsRulesCreator();
+		actionsRulesCreator
+				.addActionsRules("Final_Reports\\Textual_Report_g" + version + "\\g" + version + "_baseline_pos.json");
+		ReadJsonFile readJsonFile = new ReadJsonFile();
 		JSONArray jsonArray = readJsonFile.readJsonArrayFromFile(ruleCreator.getJsonFileAbsolutePath());
 		CModule cModule = ruleCreator.processJsonFile(jsonArray);
 		cModule.save();
 	}
 
-
-	
 //	This method assign a CModule to a Ecore meta-model. 
 //	It creates a new CModule object with the provided Henshin-file name,
 //	adds imports from the Ecore file, and returns the module. 
@@ -117,10 +120,10 @@ public class RuleCreator {
 //	such as persona, actions/entities, entities, text and their edges, such
 //	as targets, triggers. Corresponding elements are created as output in a 
 //	the Henshin transformation module (CModule).
-	public CModule processJsonFile(JSONArray json)
-			throws EcoreFileNotFound, PersonaInJsonFileNotFound, UsNrInJsonFileNotFound, ActionInJsonFileNotFound,
-			EntityInJsonFileNotFound, TargetsInJsonFileNotFound, ContainsInJsonFileNotFound, TextInJsonFileNotFound,
-			TriggersInJsonFileNotFound, EdgeWithSameSourceAndTarget, EmptyOrNotExistJsonFile, CsvValidationException, IOException {
+	public CModule processJsonFile(JSONArray json) throws EcoreFileNotFound, PersonaInJsonFileNotFound,
+			UsNrInJsonFileNotFound, ActionInJsonFileNotFound, EntityInJsonFileNotFound, TargetsInJsonFileNotFound,
+			ContainsInJsonFileNotFound, TextInJsonFileNotFound, TriggersInJsonFileNotFound, EdgeWithSameSourceAndTarget,
+			EmptyOrNotExistJsonFile, CsvValidationException, IOException {
 		CModule cModule = assignCmodule();
 		String usNrM = null;
 		CRule userStoryM = null;
@@ -181,7 +184,7 @@ public class RuleCreator {
 			} else {
 				throw new TextInJsonFileNotFound();
 			}
-			
+
 			CNode personaNode = processPersona(jsonObject, personaM, userStoryM, usNrM);
 			// store all entities in one map which the string is the name of entities and
 			// CNode correspond to their CNode Object
@@ -193,8 +196,7 @@ public class RuleCreator {
 			processActions(jsonObject, userStoryM, actionM, personaNode, actionMap, usNrM);
 			processEntities(jsonObject, userStoryM, entityM, targetsArrayM, entityMap, usNrM);
 			processTargetsEdges(jsonObject, targetsArrayM, entityMap, actionMap, usNrM);
-			processContainsEdges(jsonObject, containsArrayM, targetsArrayM, entityMap, usNrM,cModule);
-			
+			processContainsEdges(jsonObject, containsArrayM, targetsArrayM, entityMap, usNrM, cModule);
 
 		}
 		return cModule;
@@ -231,7 +233,8 @@ public class RuleCreator {
 	}
 
 	private void processActions(JSONObject jsonObject, CRule userStory, JSONObject action, CNode nodePersona,
-			Map<String, CNode> actionMap, String usNrM) throws ActionInJsonFileNotFound, EdgeWithSameSourceAndTarget, EmptyOrNotExistJsonFile {
+			Map<String, CNode> actionMap, String usNrM)
+			throws ActionInJsonFileNotFound, EdgeWithSameSourceAndTarget, EmptyOrNotExistJsonFile {
 
 		if (action.has("Primary Action")) {
 
@@ -247,7 +250,7 @@ public class RuleCreator {
 				// primary actions
 
 //				try {
-					nodePersona.createEdge(cNode, "triggers");
+				nodePersona.createEdge(cNode, "triggers");
 //				} catch (RuntimeException e) {
 //
 //					throw new EdgeWithSameSourceAndTarget(
@@ -265,18 +268,18 @@ public class RuleCreator {
 			JSONArray secondaryAction = action.getJSONArray("Secondary Action");
 			for (int i = 0; i < secondaryAction.length(); i++) {
 				String secAction = secondaryAction.getString(i).replaceAll(" $", "").replaceAll("^ ", "").toLowerCase();
-				//System.out.println("secAction: " + secAction +" path: " + getJsonFileAbsolutePath());
+				// System.out.println("secAction: " + secAction +" path: " +
+				// getJsonFileAbsolutePath());
 				CNode cNode = userStory.createNode("Secondary Action");
-				
+
 				cNode.createAttribute("name", "\"" + secAction + "\"");
 
 				actionMap.put(secAction, cNode);
 			}
 		} else {
-			System.out.println("Secondary Action not found!" );
+			System.out.println("Secondary Action not found!");
 			throw new ActionInJsonFileNotFound("Secondary Action in JOSNObject not found!");
 		}
-
 	}
 
 //	It receives as parameters the JSON-object with information about the entities,
@@ -288,6 +291,9 @@ public class RuleCreator {
 //	is annotated for deletion.
 	private void processEntities(JSONObject jsonObject, CRule userStory, JSONObject entity, JSONArray targetsArray,
 			Map<String, CNode> entityMap, String usNrM) throws EntityInJsonFileNotFound {
+		JSONObject actionRules = jsonObject.getJSONObject("Action Rules");
+		JSONArray targetActionRules = actionRules.getJSONArray("Target Action Rules");
+		JSONArray containActionRules = actionRules.getJSONArray("Contain Action Rules");
 
 		if (entity.has("Primary Entity")) {
 			JSONArray primaryEntity = entity.getJSONArray("Primary Entity");
@@ -297,23 +303,40 @@ public class RuleCreator {
 				CNode cNode = null;
 				String priEntity = primaryEntity.getString(i).replaceAll(" $", "").replaceAll("^ ", "").toLowerCase();
 				// check if entity exist in entityMap
-				if (checkEntityIsTarget(priEntity, targetsArray)) {
-					String ruleAction = findRuleAction(priEntity);
-					cNode = userStory.createNode("Primary Entity",ruleAction
-							);
-					//TODO: this should be change
-					cNode.createAttribute("name", "\"" + priEntity + "\"");
-					
-					entityMap.put(priEntity, cNode);
-//					String containTain= checkEntityIsInContains(priEntity,containsArrayM);
-//					if(containsArrayM!=null) {
-//						cNode =
-//					}
-				} else {
+				String actionRule;
+				String verb;
+				String noun;
+				for (int j = 0; j < targetActionRules.length(); j++) {
+					JSONArray current = targetActionRules.getJSONArray(j);
+					verb = current.getString(0).toLowerCase();
+					noun = current.getString(1).toLowerCase();
+					actionRule = current.getString(2);
+					if (noun.equalsIgnoreCase(priEntity) && entityMap.get(priEntity) == null) {
+//						System.out.println("Primary noun is:" + noun);
+//						System.out.println("Primary verb is:" + verb);
+						cNode = userStory.createNode("Primary Entity", actionRule);
+						cNode.createAttribute("name", "\"" + priEntity + "\"");
+						entityMap.put(priEntity, cNode);
+						break;
+					}
+				}
+				for (int j = 0; j < containActionRules.length(); j++) {
+					JSONArray current = containActionRules.getJSONArray(j);
+					noun = current.getString(0).toLowerCase();
+					actionRule = current.getString(1).toLowerCase();
+					if (noun.equalsIgnoreCase(priEntity) && entityMap.get(priEntity) == null) {
+//						System.out.println("Primary noun is:" + noun);
+//						System.out.println("Primary verb is:" + verb);
+						cNode = userStory.createNode("Primary Entity", actionRule);
+						cNode.createAttribute("name", "\"" + priEntity + "\"");
+						entityMap.put(priEntity, cNode);
+						break;
+					}
+				}
+				if (entityMap.get(priEntity.toLowerCase()) == null) {
 					cNode = userStory.createNode("Primary Entity");
 					cNode.createAttribute("name", "\"" + priEntity + "\"");
 					entityMap.put(priEntity, cNode);
-					
 				}
 			}
 		} else {
@@ -324,25 +347,50 @@ public class RuleCreator {
 			JSONArray secondaryEntity = entity.getJSONArray("Secondary Entity");
 			// Creating Nodes for Primary Entity/s
 			for (int i = 0; i < secondaryEntity.length(); i++) {
-				String secEntity = secondaryEntity.getString(i).toLowerCase().replaceAll(" $", "").replaceAll("^ ", "");
 				CNode cNode = null;
-				// check if entity exist in enttiyMap
-				if (checkEntityIsTarget(secEntity, targetsArray)) {
+				String secEntity = secondaryEntity.getString(i).toLowerCase().replaceAll(" $", "").replaceAll("^ ", "");
 
+				String actionRule;
+				String verb;
+				String noun;
+				for (int j = 0; j < targetActionRules.length(); j++) {
+					JSONArray current = targetActionRules.getJSONArray(j);
+					verb = current.getString(0).toLowerCase();
+					noun = current.getString(1).toLowerCase();
+					actionRule = current.getString(2);
+					if (noun.equalsIgnoreCase(secEntity) && entityMap.get(secEntity) == null) {
+						System.out.println("Secondary noun is:Here " + noun);
+						System.out.println("Secondary verb is:Here " + verb);
+						cNode = userStory.createNode("Secondary Entity", actionRule);
+						cNode.createAttribute("name", "\"" + secEntity + "\"");
+						entityMap.put(secEntity, cNode);
+						break;
+					}
+				}
+				for (int j = 0; j < containActionRules.length(); j++) {
+					JSONArray current = containActionRules.getJSONArray(j);
+					noun = current.getString(0).toLowerCase();
+					actionRule = current.getString(1).toLowerCase();
+					if (noun.equalsIgnoreCase(secEntity) && entityMap.get(secEntity.toLowerCase()) == null) {
+//						System.out.println("Secondary noun is:" + noun);
+//						System.out.println("Secondary verb is:" + verb);
+						cNode = userStory.createNode("Secondary Entity", actionRule);
+						cNode.createAttribute("name", "\"" + secEntity + "\"");
+						entityMap.put(secEntity.toLowerCase(), cNode);
+						break;
+					}
+
+				}
+				if (entityMap.get(secEntity) == null) {
 					cNode = userStory.createNode("Secondary Entity");
-					cNode.createAttribute("name", "\"" + secEntity + "\"", "delete");
-					entityMap.put(secEntity, cNode);
-				} else {
-
-					cNode = userStory.createNode("Secondary Entity");
-
 					cNode.createAttribute("name", "\"" + secEntity + "\"");
 					entityMap.put(secEntity, cNode);
 
 				}
-
 			}
-		} else {
+		}
+
+		else {
 
 			throw new EntityInJsonFileNotFound("Secondary Entity in JSON file not found!");
 		}
@@ -366,30 +414,40 @@ public class RuleCreator {
 			CNode nodeEntity = null;
 			CNode nodeAction = null;
 			// check if action and entity are exist in corresponding JSON Object in file
-			if ((actionMap.get(action) != null)) {
-				nodeAction = actionMap.get(action);
+			if ((actionMap.get(action.toLowerCase()) != null)) {
+				nodeAction = actionMap.get(action.toLowerCase());
+//				System.out.println("node Action is found and not added to map: " + action);
 			} else {
 				throw new ActionInJsonFileNotFound(
 						"In \"Targets\" of " + usNrM + ", Action: \"" + action.toString() + "\" is not found!");
 			}
 
-			if ((entityMap.get(entity) != null)) {
+			if ((entityMap.get(entity.toLowerCase()) != null)) {
 
-				nodeEntity = entityMap.get(entity);
+				nodeEntity = entityMap.get(entity.toLowerCase());
 			} else {
 
 				throw new EntityInJsonFileNotFound(
 						"In \"Targets\" of " + usNrM + ", Entity: \"" + entity.toString() + "\" is not found!");
 			}
 
-			// throw exception if Failed to create Edge
-//			try {
-				nodeAction.createEdge(nodeEntity, "targets", "delete");
-//			} catch (RuntimeException e) {
-//
-//				throw new EdgeWithSameSourceAndTarget("In \"Targets\" of " + usNrM + ", Edge with Action: \""
-//						+ action.toString() + "\" and with Entity: \"" + entity.toString() + "\" is already created!");
-//			}
+			JSONObject actionRules = jsonObject.getJSONObject("Action Rules");
+			JSONArray targetActionRules = actionRules.getJSONArray("Target Action Rules");
+			String actionRule;
+			String verb;
+
+			for (int j = 0; j < targetActionRules.length(); j++) {
+				JSONArray current = targetActionRules.getJSONArray(j);
+				verb = current.getString(0).toLowerCase();
+//				System.out.println("Target verb: " + verb);
+				actionRule = current.getString(2).toLowerCase();
+//				System.out.println("Target Action-rule: " + actionRule);
+				if (verb.equalsIgnoreCase(action)) {
+//					System.out.println("verb found create try to create node!");
+					nodeAction.createEdge(nodeEntity, "targets", actionRule);
+					break;
+				}
+			}
 
 		}
 	}
@@ -403,7 +461,8 @@ public class RuleCreator {
 //	edge is annotated for deletion. If none of the entities is a target,
 //	the edge is annotated as \enquote{preserve}.
 	private void processContainsEdges(JSONObject jsonObject, JSONArray containsArray, JSONArray targetsArray,
-			Map<String, CNode> entityMap, String usNrM, CModule cModule) throws EntityInJsonFileNotFound, EdgeWithSameSourceAndTarget {
+			Map<String, CNode> entityMap, String usNrM, CModule cModule)
+			throws EntityInJsonFileNotFound, EdgeWithSameSourceAndTarget {
 
 		// iterate through contains JSONArray
 		for (int i = 0; i < containsArray.length(); i++) {
@@ -418,6 +477,7 @@ public class RuleCreator {
 
 			// make sure that both entity is already listed in entityMap
 			if ((entityMap.get(firstEntity) != null) && (entityMap.get(secondEntity) != null)) {
+				System.out.println("cntains entity map first: " + firstEntity + " second : " + secondEntity);
 				CNode nodefirstEntity = entityMap.get(firstEntity);
 				CNode nodeSecondEntity = entityMap.get(secondEntity);
 
@@ -427,11 +487,25 @@ public class RuleCreator {
 				if (checkEntityIsTarget(firstEntity, targetsArray) || checkEntityIsTarget(secondEntity, targetsArray)) {
 
 //					try {
-						// add an edge from first Entity to second Entity and annotated it as<delete>
+					// add an edge from first Entity to second Entity and annotated it as<delete>
 //					System.out.println("contains is in targets: " + firstEntity);	
-					nodefirstEntity.createEdge(nodeSecondEntity, "contains", "delete");
+					JSONObject actionRules = jsonObject.getJSONObject("Action Rules");
+					JSONArray targetActionRules = actionRules.getJSONArray("Contain Action Rules");
+					String actionRule;
+					String noun;
+					for (int j = 0; j < targetActionRules.length(); j++) {
+						JSONArray current = targetActionRules.getJSONArray(j);
+						noun = current.getString(0).toLowerCase();
+						actionRule = current.getString(1).toLowerCase();
+						if (noun.equalsIgnoreCase(firstEntity) || noun.equalsIgnoreCase(secondEntity)) {
+							System.out.println("contains found:" + noun);
+							nodefirstEntity.createEdge(nodeSecondEntity, "contains", actionRule);
 
-					//					} catch (RuntimeException e) {
+							break;
+						}
+					}
+
+					// } catch (RuntimeException e) {
 
 //						throw new EdgeWithSameSourceAndTarget("In \"Contains\" of " + usNrM + ", Edge with Entity: \""
 //								+ firstEntity.toLowerCase().toString() + "\" and Entity \"" + secondEntity.toString()
@@ -445,11 +519,11 @@ public class RuleCreator {
 //						}
 //						}		
 //					}
-					
+
 				} else {
 //					try {
-						// add an edge from first Entity to second Entity and annotated it as<preserve>
-						nodefirstEntity.createEdge(nodeSecondEntity, "contains");
+					// add an edge from first Entity to second Entity and annotated it as<preserve>
+					nodefirstEntity.createEdge(nodeSecondEntity, "contains");
 //					} catch (RuntimeException e) {
 
 //						throw new EdgeWithSameSourceAndTarget("In \"Contains\" of " + usNrM + ", Edge with Entity: \""

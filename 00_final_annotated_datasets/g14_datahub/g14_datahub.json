@@ -1,0 +1,2897 @@
+[
+    {
+        "US_Nr": "user_story_01",
+        "Benefit": {
+            "Entity": [
+                "dataset",
+                "few people"
+            ],
+            "Action": ["view"],
+            "Contains": [],
+            "Text": "I can view just the dataset with a few people.",
+            "Targets": [[
+                "view",
+                "dataset"
+            ]]
+        },
+        "Text": "#G14# As a Publisher, I want to publish a dataset, so that I can view just the dataset with a few people.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": ["dataset"],
+            "Action": ["publish"],
+            "Persona": ["Publisher"],
+            "Contains": [],
+            "Text": "#G14# As a Publisher, I want to publish a dataset, ",
+            "Triggers": [[
+                "Publisher",
+                "publish"
+            ]],
+            "Targets": [[
+                "publish",
+                "dataset"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_02",
+        "Benefit": {
+            "Entity": [
+                "dataset",
+                "everyone"
+            ],
+            "Action": ["share"],
+            "Contains": [[
+                "everyone",
+                "dataset"
+            ]],
+            "Text": "I can share the dataset publicly with everyone.",
+            "Targets": [[
+                "share",
+                "dataset"
+            ]]
+        },
+        "Text": "#G14# As a Publisher, I want to publish a dataset, so that I can share the dataset publicly with everyone.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": ["dataset"],
+            "Action": ["publish"],
+            "Persona": ["Publisher"],
+            "Contains": [],
+            "Text": "#G14# As a Publisher, I want to publish a dataset, ",
+            "Triggers": [[
+                "Publisher",
+                "publish"
+            ]],
+            "Targets": [[
+                "publish",
+                "dataset"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_03",
+        "Benefit": {
+            "Entity": [
+                "data package",
+                "registry",
+                "publisher account",
+                "data package"
+            ],
+            "Action": [
+                "publish",
+                "have",
+                "publish"
+            ],
+            "Contains": [[
+                "registry",
+                "data package"
+            ]],
+            "Text": "I can publish my data package to the registry and to have a publisher account to publish my data package under.",
+            "Targets": [
+                [
+                    "publish",
+                    "data package"
+                ],
+                [
+                    "have",
+                    "publisher account"
+                ],
+                [
+                    "publish",
+                    "data package"
+                ]
+            ]
+        },
+        "Text": "#G14# As a Publisher, I want to sign up for an account, so that that I can publish my data package to the registry and to have a publisher account to publish my data package under.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": ["account"],
+            "Action": ["sign up"],
+            "Persona": ["Publisher"],
+            "Contains": [],
+            "Text": "#G14# As a Publisher, I want to sign up for an account,  that",
+            "Triggers": [[
+                "Publisher",
+                "sign up"
+            ]],
+            "Targets": [[
+                "sign up",
+                "account"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_04",
+        "Benefit": {
+            "Entity": [
+                "lots of information",
+                "password",
+                "another website"
+            ],
+            "Action": [],
+            "Contains": [[
+                "another website",
+                "password"
+            ]],
+            "Text": "I don't have to enter lots of information and remember my password for yet another website.",
+            "Targets": []
+        },
+        "Text": "#G14# As a Visitor, I want to sign up via github or google, so that that I don't have to enter lots of information and remember my password for yet another website.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "github",
+                "google"
+            ],
+            "Action": ["sign up via"],
+            "Persona": ["Visitor"],
+            "Contains": [],
+            "Text": "#G14# As a Visitor, I want to sign up via github or google,  that",
+            "Triggers": [[
+                "Visitor",
+                "sign up via"
+            ]],
+            "Targets": [
+                [
+                    "sign up via",
+                    "github"
+                ],
+                [
+                    "sign up via",
+                    "google"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_05",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["get going quickly"],
+            "Contains": [],
+            "Text": "I can get going quickly.",
+            "Targets": []
+        },
+        "Text": "#G14# As a Publisher, I want to know what do next after signing up, so that that I can get going quickly.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": ["what"],
+            "Action": [
+                "know",
+                "do next",
+                "signing up"
+            ],
+            "Persona": ["Publisher"],
+            "Contains": [],
+            "Text": "#G14# As a Publisher, I want to know what do next after signing up,  that",
+            "Triggers": [[
+                "Publisher",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "what"
+                ],
+                [
+                    "do next",
+                    "what"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_06",
+        "Benefit": {
+            "Entity": ["data"],
+            "Action": [
+                "start contributing",
+                "using"
+            ],
+            "Contains": [[
+                "platform",
+                "data"
+            ]],
+            "Text": "they can start contributing or using data.",
+            "Targets": [
+                [
+                    "using",
+                    "data"
+                ],
+                [
+                    "start contributing",
+                    "data"
+                ]
+            ]
+        },
+        "Text": "#G14# As an Admin, I want to invite someone to join the platform, so that that they can start contributing or using data.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "someone",
+                "platform"
+            ],
+            "Action": [
+                "invite",
+                "join"
+            ],
+            "Persona": ["Admin"],
+            "Contains": [],
+            "Text": "#G14# As an Admin, I want to invite someone to join the platform,  that",
+            "Triggers": [[
+                "Admin",
+                "invite"
+            ]],
+            "Targets": [
+                [
+                    "invite",
+                    "someone"
+                ],
+                [
+                    "join",
+                    "platform"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_07",
+        "Benefit": {
+            "Entity": [
+                "data",
+                "permanent online home"
+            ],
+            "Action": [
+                "has",
+                "access"
+            ],
+            "Contains": [[
+                "permanent online home",
+                "data"
+            ]],
+            "Text": "my data has a permanent online home to access.",
+            "Targets": [
+                [
+                    "has",
+                    "permanent online home"
+                ],
+                [
+                    "access",
+                    "permanent online home"
+                ]
+            ]
+        },
+        "Text": "#G14# As a Publisher, I want to import my data package into the registry, so that my data has a permanent online home to access.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "data package",
+                "registry"
+            ],
+            "Action": ["import"],
+            "Persona": ["Publisher"],
+            "Contains": [[
+                "registry",
+                "data package"
+            ]],
+            "Text": "#G14# As a Publisher, I want to import my data package into the registry, ",
+            "Triggers": [[
+                "Publisher",
+                "import"
+            ]],
+            "Targets": [[
+                "import",
+                "data package"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_08",
+        "Benefit": {
+            "Entity": ["data packages"],
+            "Action": ["start publishing"],
+            "Contains": [],
+            "Text": "I can start publishing data packages.",
+            "Targets": [[
+                "start publishing",
+                "data packages"
+            ]]
+        },
+        "Text": "#G14# As a Publisher, I want to configure my client, so that I can start publishing data packages.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": ["client"],
+            "Action": ["configure"],
+            "Persona": ["Publisher"],
+            "Contains": [],
+            "Text": "#G14# As a Publisher, I want to configure my client, ",
+            "Triggers": [[
+                "Publisher",
+                "configure"
+            ]],
+            "Targets": [[
+                "configure",
+                "client"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_09",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Text": "it appears there",
+            "Targets": []
+        },
+        "Text": "#G14# As a Publisher, I want to use a publish command to update a data package that is already in the registry, so that it appears there.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "publish command",
+                "data package",
+                "registry"
+            ],
+            "Action": [
+                "use",
+                "update"
+            ],
+            "Persona": ["Publisher"],
+            "Contains": [[
+                "registry",
+                "data package"
+            ]],
+            "Text": "#G14# As a Publisher, I want to use a publish command to update a data package that is already in the registry, ",
+            "Triggers": [[
+                "Publisher",
+                "use"
+            ]],
+            "Targets": [
+                [
+                    "use",
+                    "publish command"
+                ],
+                [
+                    "update",
+                    "data package"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_10",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Text": "it is no longer visible to anyone.",
+            "Targets": []
+        },
+        "Text": "#G14# As a Publisher, I want to unpublish a data package, so that it is no longer visible to anyone.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": ["data package"],
+            "Action": ["unpublish"],
+            "Persona": ["Publisher"],
+            "Contains": [],
+            "Text": "#G14# As a Publisher, I want to unpublish a data package, ",
+            "Triggers": [[
+                "Publisher",
+                "unpublish"
+            ]],
+            "Targets": [[
+                "unpublish",
+                "data package"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_11",
+        "Benefit": {
+            "Entity": ["storage space"],
+            "Action": [],
+            "Contains": [],
+            "Text": "it no longer takes up storage space.",
+            "Targets": []
+        },
+        "Text": "#G14# As a Publisher, I want to permanently delete a data package, so that that it no longer takes up storage space.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": ["data package"],
+            "Action": ["permanently delete"],
+            "Persona": ["Publisher"],
+            "Contains": [],
+            "Text": "#G14# As a Publisher, I want to permanently delete a data package,  that",
+            "Triggers": [[
+                "Publisher",
+                "permanently delete"
+            ]],
+            "Targets": [[
+                "permanently delete",
+                "data package"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_12",
+        "Benefit": {
+            "Entity": ["good data"],
+            "Action": [
+                "publish",
+                "know"
+            ],
+            "Contains": [],
+            "Text": "I publish good data and know that I am doing.",
+            "Targets": [[
+                "publish",
+                "good data"
+            ]]
+        },
+        "Text": "#G14# As a Publisher, I want to validate the data I am about to publish to the registry, so that that I publish good data and know that I am doing.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "registry",
+                "data I am about to publish"
+            ],
+            "Action": ["validate"],
+            "Persona": ["Publisher"],
+            "Contains": [[
+                "registry",
+                "data I am about to publish"
+            ]],
+            "Text": "#G14# As a Publisher, I want to validate the data I am about to publish to the registry,  that",
+            "Triggers": [[
+                "Publisher",
+                "validate"
+            ]],
+            "Targets": [[
+                "validate",
+                "data I am about to publish"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_13",
+        "Benefit": {
+            "Entity": [
+                "data",
+                "bugs"
+            ],
+            "Action": [
+                "know immediately",
+                "accidentally broken",
+                "have",
+                "correct"
+            ],
+            "Contains": [[
+                "data",
+                "bugs"
+            ]],
+            "Text": "I know immediately if I have accidentally broken my data or have bugs and can take action to correct.",
+            "Targets": [
+                [
+                    "accidentally broken",
+                    "data"
+                ],
+                [
+                    "have",
+                    "bugs"
+                ],
+                [
+                    "correct",
+                    "bugs"
+                ],
+                [
+                    "correct",
+                    "data"
+                ]
+            ]
+        },
+        "Text": "#G14# As a Publisher, I want to data to be validated when I publish it, so that that I know immediately if I have accidentally broken my data or have bugs and can take action to correct.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": ["data"],
+            "Action": [
+                "want",
+                "validated",
+                "publish"
+            ],
+            "Persona": ["Publisher"],
+            "Contains": [],
+            "Text": "#G14# As a Publisher, I want to data to be validated when I publish it,  that",
+            "Triggers": [[
+                "Publisher",
+                "want"
+            ]],
+            "Targets": [
+                [
+                    "validated",
+                    "data"
+                ],
+                [
+                    "publish",
+                    "data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_14",
+        "Benefit": {
+            "Entity": ["annoying bugs"],
+            "Action": [],
+            "Contains": [],
+            "Text": "I don't have to check it myself or run into annoying bugs later on.",
+            "Targets": []
+        },
+        "Text": "#G14# As a Consumer, I want to know that the data I am downloading is good and can be relied on, so that that I don't have to check it myself or run into annoying bugs later on.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": ["data I am downloading"],
+            "Action": ["know"],
+            "Persona": ["Consumer"],
+            "Contains": [],
+            "Text": "#G14# As a Consumer, I want to know that the data I am downloading is good and can be relied on,  that",
+            "Triggers": [[
+                "Consumer",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "data I am downloading"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_15",
+        "Benefit": {
+            "Entity": [
+                "data",
+                "copy",
+                "people"
+            ],
+            "Action": [
+                "lost",
+                "gets broken",
+                "still have",
+                "use"
+            ],
+            "Contains": [],
+            "Text": "if my data is lost or gets broken I still have a copy people can use.",
+            "Targets": [
+                [
+                    "gets broken",
+                    "data"
+                ],
+                [
+                    "still have",
+                    "copy"
+                ],
+                [
+                    "use",
+                    "copy"
+                ],
+                [
+                    "lost",
+                    "data"
+                ]
+            ]
+        },
+        "Text": "#G14# As a Publisher, I want to publish a data package where its resource data is stored on my servers but the registry caches a copy of that data, so that that if my data is lost or gets broken I still have a copy people can use.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "data package",
+                "resource data",
+                "servers",
+                "registry",
+                "copy",
+                "data"
+            ],
+            "Action": [
+                "publish",
+                "stored",
+                "caches"
+            ],
+            "Persona": ["Publisher"],
+            "Contains": [
+                [
+                    "servers",
+                    "resource data"
+                ],
+                [
+                    "data package",
+                    "resource data"
+                ],
+                [
+                    "registry",
+                    "copy"
+                ],
+                [
+                    "copy",
+                    "data"
+                ]
+            ],
+            "Text": "#G14# As a Publisher, I want to publish a data package where its resource data is stored on my servers but the registry caches a copy of that data,  that",
+            "Triggers": [[
+                "Publisher",
+                "publish"
+            ]],
+            "Targets": [
+                [
+                    "publish",
+                    "data package"
+                ],
+                [
+                    "caches",
+                    "copy"
+                ],
+                [
+                    "stored",
+                    "resource data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_16",
+        "Benefit": {
+            "Entity": [
+                "app",
+                "analysis"
+            ],
+            "Action": [
+                "still use",
+                "keeps working"
+            ],
+            "Contains": [],
+            "Text": "I can still use is and my app or analysis keeps working.",
+            "Targets": [[
+                "still use",
+                "original data"
+            ]]
+        },
+        "Text": "#G14# As a Consumer, I want to be able to get the data for a data package even if the original data has been moved or removed, so that that I can still use is and my app or analysis keeps working.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "data",
+                "data package",
+                "original data"
+            ],
+            "Action": [
+                "get",
+                "moved",
+                "removed"
+            ],
+            "Persona": ["Consumer"],
+            "Contains": [[
+                "data package",
+                "data"
+            ]],
+            "Text": "#G14# As a Consumer, I want to be able to get the data for a data package even if the original data has been moved or removed,  that",
+            "Triggers": [[
+                "Consumer",
+                "get"
+            ]],
+            "Targets": [
+                [
+                    "get",
+                    "data"
+                ],
+                [
+                    "moved",
+                    "original data"
+                ],
+                [
+                    "removed",
+                    "original data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_17",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Text": "it is available and published.",
+            "Targets": []
+        },
+        "Text": "#G14# As a Publisher, I want to publish a data package in the UI, so that that it is available and published.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "data package",
+                "UI"
+            ],
+            "Action": ["publish"],
+            "Persona": ["Publisher"],
+            "Contains": [[
+                "UI",
+                "data package"
+            ]],
+            "Text": "#G14# As a Publisher, I want to publish a data package in the UI,  that",
+            "Triggers": [[
+                "Publisher",
+                "publish"
+            ]],
+            "Targets": [[
+                "publish",
+                "data package"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_18",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["published"],
+            "Contains": [],
+            "Text": "it is available and published.",
+            "Targets": [[
+                "published",
+                "data package"
+            ]]
+        },
+        "Text": "#G14# As a Publisher, I want to create a data package in the UI so that it is available and published.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "data package",
+                "UI"
+            ],
+            "Action": ["create"],
+            "Persona": ["Publisher"],
+            "Contains": [[
+                "UI",
+                "data package"
+            ]],
+            "Text": "#G14# As a Publisher, I want to create a data package in the UI ",
+            "Triggers": [[
+                "Publisher",
+                "create"
+            ]],
+            "Targets": [[
+                "create",
+                "data package"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_19",
+        "Benefit": {
+            "Entity": [],
+            "Action": [
+                "available to view",
+                "download"
+            ],
+            "Contains": [],
+            "Text": "it is back visible and available to view, download.",
+            "Targets": [
+                [
+                    "download",
+                    "deleted data package"
+                ],
+                [
+                    "available to view",
+                    "deleted data package"
+                ]
+            ]
+        },
+        "Text": "#G14# As a Publisher, I want to be able to restore the deleted data package via cli, so that that it is back visible and available to view, download.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "deleted data package",
+                "cli"
+            ],
+            "Action": ["restore"],
+            "Persona": ["Publisher"],
+            "Contains": [[
+                "cli",
+                "deleted data package"
+            ]],
+            "Text": "#G14# As a Publisher, I want to be able to restore the deleted data package via cli,  that",
+            "Triggers": [[
+                "Publisher",
+                "restore"
+            ]],
+            "Targets": [[
+                "restore",
+                "deleted data package"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_20",
+        "Benefit": {
+            "Entity": ["deleted data packages"],
+            "Action": [],
+            "Contains": [],
+            "Text": "the deleted data packages is now visible again.",
+            "Targets": []
+        },
+        "Text": "#G14# As a Publisher, I want to undelete the deleted data packages, so that that the deleted data packages is now visible again.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": ["deleted data packages"],
+            "Action": ["undelete"],
+            "Persona": ["Publisher"],
+            "Contains": [],
+            "Text": "#G14# As a Publisher, I want to undelete the deleted data packages,  that",
+            "Triggers": [[
+                "Publisher",
+                "undelete"
+            ]],
+            "Targets": [[
+                "undelete",
+                "deleted data packages"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_21",
+        "Benefit": {
+            "Entity": [
+                "json declarations",
+                "datapackage view section",
+                "great looking result"
+            ],
+            "Action": [
+                "refine",
+                "achieve"
+            ],
+            "Contains": [[
+                "datapackage view section",
+                "json declarations"
+            ]],
+            "Text": "I can refine the json declarations of datapackage view section to achieve a great looking result.",
+            "Targets": [
+                [
+                    "refine",
+                    "json declarations"
+                ],
+                [
+                    "achieve",
+                    "great looking result"
+                ]
+            ]
+        },
+        "Text": "#G14# As a Publisher, I want to be able to preview the views of the current data package using cli prior to publishing, so that that I can refine the json declarations of datapackage view section to achieve a great looking result.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "views",
+                "current data package",
+                "cli"
+            ],
+            "Action": [
+                "preview",
+                "publishing",
+                "using"
+            ],
+            "Persona": ["Publisher"],
+            "Contains": [[
+                "current data package",
+                "views"
+            ]],
+            "Text": "#G14# As a Publisher, I want to be able to preview the views of the current data package using cli prior to publishing,  that",
+            "Triggers": [[
+                "Publisher",
+                "preview"
+            ]],
+            "Targets": [
+                [
+                    "preview",
+                    "views"
+                ],
+                [
+                    "publishing",
+                    "current data package"
+                ],
+                [
+                    "using",
+                    "cli"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_22",
+        "Benefit": {
+            "Entity": [
+                "sense",
+                "dataset I want"
+            ],
+            "Action": ["get"],
+            "Contains": [],
+            "Text": "I can get a sense of whether this is the dataset I want.",
+            "Targets": [[
+                "get",
+                "sense"
+            ]]
+        },
+        "Text": "#G14# As a Consumer, I want to view a data package online, so that I can get a sense of whether this is the dataset I want.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": ["data package"],
+            "Action": ["view"],
+            "Persona": ["Consumer"],
+            "Contains": [],
+            "Text": "#G14# As a Consumer, I want to view a data package online, ",
+            "Triggers": [[
+                "Consumer",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "data package"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_23",
+        "Benefit": {
+            "Entity": ["consumer's attention"],
+            "Action": ["immediately catches"],
+            "Contains": [],
+            "Text": "it immediately catches consumer's attention.",
+            "Targets": [[
+                "immediately catches",
+                "consumer's attention"
+            ]]
+        },
+        "Text": "#G14# As a publisher, I want to show the world how my published data is, so that that it immediately catches consumer's attention.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "world",
+                "published data"
+            ],
+            "Action": ["show"],
+            "Persona": ["publisher"],
+            "Contains": [],
+            "Text": "#G14# As a publisher, I want to show the world how my published data is,  that",
+            "Triggers": [[
+                "publisher",
+                "show"
+            ]],
+            "Targets": [
+                [
+                    "show",
+                    "world"
+                ],
+                [
+                    "show",
+                    "published data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_24",
+        "Benefit": {
+            "Entity": [
+                "sense",
+                "dataset"
+            ],
+            "Action": [
+                "get",
+                "want"
+            ],
+            "Contains": [],
+            "Text": "I can get a sense of whether I want this dataset or not.",
+            "Targets": [
+                [
+                    "get",
+                    "sense"
+                ],
+                [
+                    "want",
+                    "dataset"
+                ]
+            ]
+        },
+        "Text": "#G14# As a consumer, I want to view the data package, so that that I can get a sense of whether I want this dataset or not.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": ["data package"],
+            "Action": ["view"],
+            "Persona": ["consumer"],
+            "Contains": [],
+            "Text": "#G14# As a consumer, I want to view the data package,  that",
+            "Triggers": [[
+                "consumer",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "data package"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_25",
+        "Benefit": {
+            "Entity": ["results"],
+            "Action": [
+                "check",
+                "works",
+                "share"
+            ],
+            "Contains": [],
+            "Text": "I can check it works and share the results.",
+            "Targets": [
+                [
+                    "share",
+                    "results"
+                ],
+                [
+                    "check",
+                    "datapackage I have prepared"
+                ]
+            ]
+        },
+        "Text": "#G14# As a Publisher, I want to preview a datapackage I have prepared, so that that I can check it works and share the results.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": ["datapackage I have prepared"],
+            "Action": ["preview"],
+            "Persona": ["Publisher"],
+            "Contains": [],
+            "Text": "#G14# As a Publisher, I want to preview a datapackage I have prepared,  that",
+            "Triggers": [[
+                "Publisher",
+                "preview"
+            ]],
+            "Targets": [[
+                "preview",
+                "datapackage I have prepared"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_26",
+        "Benefit": {
+            "Entity": [
+                "several alternatives",
+                "use case"
+            ],
+            "Action": ["choose"],
+            "Contains": [[
+                "use case",
+                "several alternatives"
+            ]],
+            "Text": "I can choose most popular in the case when there are several alternatives for my use case.",
+            "Targets": [[
+                "choose",
+                "data"
+            ]]
+        },
+        "Text": "#G14# As a Consumer, I want to see how much the data has been downloaded, so that that I can choose most popular in the case when there are several alternatives for my use case.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "how much",
+                "data"
+            ],
+            "Action": [
+                "see",
+                "downloaded"
+            ],
+            "Persona": ["Consumer"],
+            "Contains": [],
+            "Text": "#G14# As a Consumer, I want to see how much the data has been downloaded,  that",
+            "Triggers": [[
+                "Consumer",
+                "see"
+            ]],
+            "Targets": [
+                [
+                    "see",
+                    "how much"
+                ],
+                [
+                    "downloaded",
+                    "data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_27",
+        "Benefit": {
+            "Entity": [
+                "how useful and simple",
+                "datapackage format",
+                "registry"
+            ],
+            "Action": ["understand"],
+            "Contains": [],
+            "Text": "I can understand how useful and simple the datapackage format and the registry is.",
+            "Targets": [[
+                "understand",
+                "how useful and simple"
+            ]]
+        },
+        "Text": "#G14# As a Publisher, I want to see real examples of published packages so that I can understand how useful and simple the datapackage format and the registry is.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "real examples",
+                "published packages"
+            ],
+            "Action": ["see"],
+            "Persona": ["Publisher"],
+            "Contains": [[
+                "published packages",
+                "real examples"
+            ]],
+            "Text": "#G14# As a Publisher, I want to see real examples of published packages ",
+            "Triggers": [[
+                "Publisher",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "real examples"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_28",
+        "Benefit": {
+            "Entity": [
+                "site",
+                "sense",
+                "what"
+            ],
+            "Action": [
+                "get",
+                "look further"
+            ],
+            "Contains": [[
+                "site",
+                "what"
+            ]],
+            "Text": "I get a sense of what is on this site and if it is useful to look further.",
+            "Targets": [
+                [
+                    "get",
+                    "sense"
+                ],
+                [
+                    "look further",
+                    "site"
+                ]
+            ]
+        },
+        "Text": "#G14# As a Consumer, I want to see some example data packages quickly, so that I get a sense of what is on this site and if it is useful to look further.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": ["some example data packages"],
+            "Action": ["see"],
+            "Persona": ["Consumer"],
+            "Contains": [],
+            "Text": "#G14# As a Consumer, I want to see some example data packages quickly, ",
+            "Triggers": [[
+                "Consumer",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "some example data packages"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_29",
+        "Benefit": {
+            "Entity": ["ones I want"],
+            "Action": ["find"],
+            "Contains": [],
+            "Text": "I can find the ones I want.",
+            "Targets": [[
+                "find",
+                "ones I want"
+            ]]
+        },
+        "Text": "#G14# As a Consumer, I want to search data packages, so that that I can find the ones I want.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": ["data packages"],
+            "Action": ["search"],
+            "Persona": ["Consumer"],
+            "Contains": [],
+            "Text": "#G14# As a Consumer, I want to search data packages,  that",
+            "Triggers": [[
+                "Consumer",
+                "search"
+            ]],
+            "Targets": [[
+                "search",
+                "data packages"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_30",
+        "Benefit": {
+            "Entity": [
+                "package",
+                "some key words"
+            ],
+            "Action": ["find"],
+            "Contains": [[
+                "package",
+                "some key words"
+            ]],
+            "Text": "I can find package which related to some key words.",
+            "Targets": [[
+                "find",
+                "package"
+            ]]
+        },
+        "Text": "#G14# As a Consumer, I want to search based on description of data package, so that that I can find package which related to some key words.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "description",
+                "data package"
+            ],
+            "Action": ["search"],
+            "Persona": ["Consumer"],
+            "Contains": [[
+                "data package",
+                "description"
+            ]],
+            "Text": "#G14# As a Consumer, I want to search based on description of data package,  that",
+            "Triggers": [[
+                "Consumer",
+                "search"
+            ]],
+            "Targets": [[
+                "search",
+                "description"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_31",
+        "Benefit": {
+            "Entity": [
+                "descriptor",
+                "each resource"
+            ],
+            "Action": [],
+            "Contains": [],
+            "Text": "I don't have to download descriptor and each resource by hand.",
+            "Targets": []
+        },
+        "Text": "#G14# As a Consumer, I want to download the data package in one file, so that that I don't have to download descriptor and each resource by hand.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "data package",
+                "one file"
+            ],
+            "Action": ["download"],
+            "Persona": ["Consumer"],
+            "Contains": [[
+                "one file",
+                "data package"
+            ]],
+            "Text": "#G14# As a Consumer, I want to download the data package in one file,  that",
+            "Triggers": [[
+                "Consumer",
+                "download"
+            ]],
+            "Targets": [[
+                "download",
+                "data package"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_32",
+        "Benefit": {
+            "Entity": ["normal dependency framework"],
+            "Action": [
+                "depend",
+                "using"
+            ],
+            "Contains": [],
+            "Text": "I can depend on it using my normal dependency framework.",
+            "Targets": [
+                [
+                    "using",
+                    "normal dependency framework"
+                ],
+                [
+                    "depend",
+                    "data package"
+                ]
+            ]
+        },
+        "Text": "#G14# As a Developer, I want to use data package as a node lib in my project, so that that I can depend on it using my normal dependency framework.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "data package",
+                "node lib",
+                "project"
+            ],
+            "Action": ["use"],
+            "Persona": ["Developer"],
+            "Contains": [[
+                "project",
+                "node lib"
+            ]],
+            "Text": "#G14# As a Developer, I want to use data package as a node lib in my project,  that",
+            "Triggers": [[
+                "Developer",
+                "use"
+            ]],
+            "Targets": [[
+                "use",
+                "data package"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_33",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["immediately start playing"],
+            "Contains": [],
+            "Text": "I can immediately start playing with it.",
+            "Targets": [[
+                "immediately start playing",
+                "Data Package"
+            ]]
+        },
+        "Text": "#G14# As a Consumer, I want to load a Data Package from R, so that that I can immediately start playing with it.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "Data Package",
+                "R"
+            ],
+            "Action": ["load"],
+            "Persona": ["Consumer"],
+            "Contains": [[
+                "R",
+                "Data Package"
+            ]],
+            "Text": "#G14# As a Consumer, I want to load a Data Package from R,  that",
+            "Triggers": [[
+                "Consumer",
+                "load"
+            ]],
+            "Targets": [[
+                "load",
+                "Data Package"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_34",
+        "Benefit": {
+            "Entity": [
+                "new data",
+                "new insights"
+            ],
+            "Action": [
+                "study",
+                "wrangle",
+                "infer",
+                "generate"
+            ],
+            "Contains": [],
+            "Text": "I can study it and wrangle with it to infer new data or generate new insights.",
+            "Targets": [
+                [
+                    "study",
+                    "data package"
+                ],
+                [
+                    "wrangle",
+                    "data package"
+                ],
+                [
+                    "infer",
+                    "new data"
+                ],
+                [
+                    "generate",
+                    "new insights"
+                ]
+            ]
+        },
+        "Text": "#G14# As a Data Analyst I want to download a data package, so that that I can study it and wrangle with it to infer new data or generate new insights.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": ["data package"],
+            "Action": ["download"],
+            "Persona": ["Data Analyst"],
+            "Contains": [],
+            "Text": "#G14# As a Data Analyst I want to download a data package,  that",
+            "Triggers": [[
+                "Data Analyst",
+                "download"
+            ]],
+            "Targets": [[
+                "download",
+                "data package"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_35",
+        "Benefit": {
+            "Entity": ["most recent data."],
+            "Action": ["work with"],
+            "Contains": [],
+            "Text": "I can work with the most recent data.",
+            "Targets": [[
+                "work with",
+                "most recent data."
+            ]]
+        },
+        "Text": "#G14# As a Data Analyst, I want to update previously downloaded data package, so that that I can work with the most recent data.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": ["previously downloaded data package"],
+            "Action": ["update"],
+            "Persona": ["Data Analyst"],
+            "Contains": [],
+            "Text": "#G14# As a Data Analyst, I want to update previously downloaded data package,  that",
+            "Triggers": [[
+                "Data Analyst",
+                "update"
+            ]],
+            "Targets": [[
+                "update",
+                "previously downloaded data package"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_36",
+        "Benefit": {
+            "Entity": ["one form"],
+            "Action": ["get"],
+            "Contains": [[
+                "DataPackage's data",
+                "one form"
+            ]],
+            "Text": "I can get it easily in one form.",
+            "Targets": [[
+                "get",
+                "DataPackage's data"
+            ]]
+        },
+        "Text": "#G14# As a Consumer, I want to download a DataPackage's data one coherent SQLite database, so that that I can get it easily in one form.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "DataPackage's data",
+                "coherent SQLite database"
+            ],
+            "Action": ["download"],
+            "Persona": ["Consumer"],
+            "Contains": [[
+                "coherent SQLite database",
+                "DataPackage's data"
+            ]],
+            "Text": "#G14# As a Consumer, I want to download a DataPackage's data one coherent SQLite database,  that",
+            "Triggers": [[
+                "Consumer",
+                "download"
+            ]],
+            "Targets": [[
+                "download",
+                "DataPackage's data"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_37",
+        "Benefit": {
+            "Entity": [
+                "schema changes",
+                "analytics code",
+                "desired schema version"
+            ],
+            "Action": [
+                "see",
+                "adjust"
+            ],
+            "Contains": [],
+            "Text": "I can see schema changes clearly and adjust my analytics code to the desired schema version.",
+            "Targets": [
+                [
+                    "see",
+                    "schema changes"
+                ],
+                [
+                    "adjust",
+                    "analytics code"
+                ]
+            ]
+        },
+        "Text": "#G14# As a Data Analyst, I want to compare different versions of some datapackage locally, so that that I can see schema changes clearly and adjust my analytics code to the desired schema version.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "different versions",
+                "some datapackage"
+            ],
+            "Action": ["compare"],
+            "Persona": ["Data Analyst"],
+            "Contains": [[
+                "some datapackage",
+                "different versions"
+            ]],
+            "Text": "#G14# As a Data Analyst, I want to compare different versions of some datapackage locally,  that",
+            "Triggers": [[
+                "Data Analyst",
+                "compare"
+            ]],
+            "Targets": [[
+                "compare",
+                "different versions"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_38",
+        "Benefit": {
+            "Entity": ["projects"],
+            "Action": [
+                "developed independently",
+                "deployed locally"
+            ],
+            "Contains": [],
+            "Text": "all my projects could be developed independently and deployed locally.",
+            "Targets": [
+                [
+                    "deployed locally",
+                    "projects"
+                ],
+                [
+                    "developed independently",
+                    "projects"
+                ]
+            ]
+        },
+        "Text": "#G14# As a Web Developer, I want to be able to install multiple versions of the same datapackage separately, so that that all my projects could be developed independently and deployed locally.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "multiple versions",
+                "same datapackage"
+            ],
+            "Action": ["install"],
+            "Persona": ["Web Developer"],
+            "Contains": [[
+                "same datapackage",
+                "multiple versions"
+            ]],
+            "Text": "#G14# As a Web Developer, I want to be able to install multiple versions of the same datapackage separately,  that",
+            "Triggers": [[
+                "Web Developer",
+                "install"
+            ]],
+            "Targets": [[
+                "install",
+                "multiple versions"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_39",
+        "Benefit": {
+            "Entity": [
+                "project",
+                "DataPackage schema changes"
+            ],
+            "Action": ["deterministically deployed locally"],
+            "Contains": [],
+            "Text": "the project can be deterministically deployed locally and won't break because of the DataPackage schema changes.",
+            "Targets": [[
+                "deterministically deployed locally",
+                "project"
+            ]]
+        },
+        "Text": "#G14# As a Developer, I want to list all DataPackages requirements for my project in the file and pin the exact versions of any DataPackage that my project depends on, so that that the project can be deterministically deployed locally and won't break because of the DataPackage schema changes.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "all DataPackages requirements",
+                "project",
+                "file",
+                "exact versions",
+                "project",
+                "DataPackage"
+            ],
+            "Action": [
+                "list",
+                "pin",
+                "depends"
+            ],
+            "Persona": ["Developer"],
+            "Contains": [
+                [
+                    "project",
+                    "all DataPackages requirements"
+                ],
+                [
+                    "file",
+                    "all DataPackages requirements"
+                ],
+                [
+                    "DataPackage",
+                    "exact versions"
+                ]
+            ],
+            "Text": "#G14# As a Developer, I want to list all DataPackages requirements for my project in the file and pin the exact versions of any DataPackage that my project depends on,  that",
+            "Triggers": [
+                [
+                    "Developer",
+                    "list"
+                ],
+                [
+                    "Developer",
+                    "pin"
+                ]
+            ],
+            "Targets": [
+                [
+                    "list",
+                    "all DataPackages requirements"
+                ],
+                [
+                    "pin",
+                    "exact versions"
+                ],
+                [
+                    "depends",
+                    "DataPackage"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_40",
+        "Benefit": {
+            "Entity": ["consumers"],
+            "Action": ["refer"],
+            "Contains": [],
+            "Text": "consumers can refer to it.",
+            "Targets": [[
+                "refer",
+                "datapackage"
+            ]]
+        },
+        "Text": "#G14# As a Publisher, I want to tag datapackage to create a snapshot of data on the registry server, so that that consumers can refer to it.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "datapackage",
+                "snapshot",
+                "data",
+                "registry server"
+            ],
+            "Action": [
+                "tag",
+                "create"
+            ],
+            "Persona": ["Publisher"],
+            "Contains": [
+                [
+                    "data",
+                    "snapshot"
+                ],
+                [
+                    "registry server",
+                    "data"
+                ]
+            ],
+            "Text": "#G14# As a Publisher, I want to tag datapackage to create a snapshot of data on the registry server,  that",
+            "Triggers": [[
+                "Publisher",
+                "tag"
+            ]],
+            "Targets": [
+                [
+                    "tag",
+                    "datapackage"
+                ],
+                [
+                    "create",
+                    "snapshot"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_41",
+        "Benefit": {
+            "Entity": [
+                "stable tagged data",
+                "consumers"
+            ],
+            "Action": [],
+            "Contains": [],
+            "Text": "I don't accidentally overwrite stable tagged data which is relied on by consumers.",
+            "Targets": []
+        },
+        "Text": "#G14# As a Publisher, I want to be warned that a tag exists when I try to overwrite it, so that that I don't accidentally overwrite stable tagged data which is relied on by consumers.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": ["tag"],
+            "Action": [
+                "exists",
+                "try to overwrite",
+                "be warned"
+            ],
+            "Persona": ["Publisher"],
+            "Contains": [],
+            "Text": "#G14# As a Publisher, I want to be warned that a tag exists when I try to overwrite it,  that",
+            "Triggers": [[
+                "Publisher",
+                "be warned"
+            ]],
+            "Targets": [[
+                "try to overwrite",
+                "tag"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_42",
+        "Benefit": {
+            "Entity": [],
+            "Action": [
+                "fix",
+                "mess up"
+            ],
+            "Contains": [],
+            "Text": "I can fix it if I mess up.",
+            "Targets": [
+                [
+                    "fix",
+                    "previously tagged datapackage"
+                ],
+                [
+                    "mess up",
+                    "previously tagged datapackage"
+                ]
+            ]
+        },
+        "Text": "#G14# As a Publisher, I want to be able to overwrite the previously tagged datapackage, so that that I can fix it if I mess up.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": ["previously tagged datapackage"],
+            "Action": ["overwrite"],
+            "Persona": ["Publisher"],
+            "Contains": [],
+            "Text": "#G14# As a Publisher, I want to be able to overwrite the previously tagged datapackage,  that",
+            "Triggers": [[
+                "Publisher",
+                "overwrite"
+            ]],
+            "Targets": [[
+                "overwrite",
+                "previously tagged datapackage"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_43",
+        "Benefit": {
+            "Entity": [
+                "consumer systems",
+                "datapackage"
+            ],
+            "Action": ["change"],
+            "Contains": [],
+            "Text": "I do not break consumer systems when I change my datapackage.",
+            "Targets": [[
+                "change",
+                "datapackage"
+            ]]
+        },
+        "Text": "#G14# As a Publisher, I want to version my Data Package and keep multiple versions around including older versions, so that that I do not break consumer systems when I change my datapackage.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "Data Package",
+                "multiple versions",
+                "older versions"
+            ],
+            "Action": [
+                "version",
+                "keep"
+            ],
+            "Persona": ["Publisher"],
+            "Contains": [[
+                "multiple versions",
+                "older versions"
+            ]],
+            "Text": "#G14# As a Publisher, I want to version my Data Package and keep multiple versions around including older versions,  that",
+            "Triggers": [[
+                "Publisher",
+                "version"
+            ]],
+            "Targets": [
+                [
+                    "version",
+                    "Data Package"
+                ],
+                [
+                    "keep",
+                    "multiple versions"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_44",
+        "Benefit": {
+            "Entity": [],
+            "Action": [
+                "review",
+                "return to"
+            ],
+            "Contains": [],
+            "Text": "I can return to it and review it.",
+            "Targets": [
+                [
+                    "review",
+                    "previous version I tagged"
+                ],
+                [
+                    "return to",
+                    "previous version I tagged"
+                ]
+            ]
+        },
+        "Text": "#G14# As a Publisher, I want to be able to get access to a previous version I tagged, so that that I can return to it and review it.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "access",
+                "previous version I tagged"
+            ],
+            "Action": ["get"],
+            "Persona": ["Publisher"],
+            "Contains": [[
+                "previous version I tagged",
+                "access"
+            ]],
+            "Text": "#G14# As a Publisher, I want to be able to get access to a previous version I tagged,  that",
+            "Triggers": [[
+                "Publisher",
+                "get"
+            ]],
+            "Targets": [[
+                "get",
+                "access"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_45",
+        "Benefit": {
+            "Entity": ["scripts"],
+            "Action": [
+                "adjust",
+                "handle"
+            ],
+            "Contains": [],
+            "Text": "I can adjust my scripts to handle it.",
+            "Targets": [
+                [
+                    "adjust",
+                    "scripts"
+                ],
+                [
+                    "handle",
+                    "data package schema"
+                ]
+            ]
+        },
+        "Text": "#G14# As a Consumer, I want to know full details of how the data package schema has changed, so that that I can adjust my scripts to handle it.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "full details",
+                "data package schema"
+            ],
+            "Action": [
+                "know",
+                "changed"
+            ],
+            "Persona": ["Consumer"],
+            "Contains": [[
+                "data package schema",
+                "full details"
+            ]],
+            "Text": "#G14# As a Consumer, I want to know full details of how the data package schema has changed,  that",
+            "Triggers": [[
+                "Consumer",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "full details"
+                ],
+                [
+                    "changed",
+                    "data package schema"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_46",
+        "Benefit": {
+            "Entity": [],
+            "Action": [
+                "decide",
+                "update"
+            ],
+            "Contains": [],
+            "Text": "I can decide if I should update or not.",
+            "Targets": [[
+                "update",
+                "datapackage"
+            ]]
+        },
+        "Text": "#G14# As a Consumer, I want to get a sense of the age of the datapackage that I have downloaded before, so that that I can decide if I should update or not.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "sense",
+                "age",
+                "datapackage"
+            ],
+            "Action": ["get"],
+            "Persona": ["Consumer"],
+            "Contains": [[
+                "datapackage",
+                "age"
+            ]],
+            "Text": "#G14# As a Consumer, I want to get a sense of the age of the datapackage that I have downloaded before,  that",
+            "Triggers": [[
+                "Consumer",
+                "get"
+            ]],
+            "Targets": [[
+                "get",
+                "sense"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_47",
+        "Benefit": {
+            "Entity": [
+                "particular data timeslice of interest",
+                "other people"
+            ],
+            "Action": [
+                "present",
+                "discuss"
+            ],
+            "Contains": [],
+            "Text": "I can present/discuss the particular data timeslice of interest with other people.",
+            "Targets": [
+                [
+                    "present",
+                    "particular data timeslice of interest"
+                ],
+                [
+                    "discuss",
+                    "particular data timeslice of interest"
+                ]
+            ]
+        },
+        "Text": "#G14# As a Consumer, I want to view a Datapackage at a particular version online, so that that I can present/discuss the particular data timeslice of interest with other people.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "Datapackage",
+                "particular version"
+            ],
+            "Action": ["view"],
+            "Persona": ["Consumer"],
+            "Contains": [[
+                "Datapackage",
+                "particular version"
+            ]],
+            "Text": "#G14# As a Consumer, I want to view a Datapackage at a particular version online,  that",
+            "Triggers": [[
+                "Consumer",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "Datapackage"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_48",
+        "Benefit": {
+            "Entity": [
+                "scripts",
+                "system"
+            ],
+            "Action": ["know"],
+            "Contains": [],
+            "Text": "I know it is compatible with my scripts and system.",
+            "Targets": [[
+                "know",
+                "Data package"
+            ]]
+        },
+        "Text": "#G14# As a Consumer, I want to download a Data package at a particular version, so that that I know it is compatible with my scripts and system.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "Data package",
+                "particular version"
+            ],
+            "Action": ["download"],
+            "Persona": ["Consumer"],
+            "Contains": [[
+                "Data package",
+                "particular version"
+            ]],
+            "Text": "#G14# As a Consumer, I want to download a Data package at a particular version,  that",
+            "Triggers": [[
+                "Consumer",
+                "download"
+            ]],
+            "Targets": [[
+                "download",
+                "Data package"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_49",
+        "Benefit": {
+            "Entity": ["what has changed"],
+            "Action": [
+                "check out",
+                "take action"
+            ],
+            "Contains": [],
+            "Text": "I can check out what has changed and take action.",
+            "Targets": [[
+                "check out",
+                "what has changed"
+            ]]
+        },
+        "Text": "#G14# As a Consumer, I want to be notified of changes to a package I care about, so that that I can check out what has changed and take action.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "changes",
+                "package I care about"
+            ],
+            "Action": ["be notified"],
+            "Persona": ["Consumer"],
+            "Contains": [[
+                "package I care about",
+                "changes"
+            ]],
+            "Text": "#G14# As a Consumer, I want to be notified of changes to a package I care about,  that",
+            "Triggers": [[
+                "Consumer",
+                "be notified"
+            ]],
+            "Targets": [[
+                "be notified",
+                "changes"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_50",
+        "Benefit": {
+            "Entity": [],
+            "Action": [
+                "decide",
+                "get involved"
+            ],
+            "Contains": [],
+            "Text": "I can decide if I should get involved.",
+            "Targets": []
+        },
+        "Text": "#G14# As a Consumer, I want to see how active the site is, so that I can decide if I should get involved.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "how active",
+                "site"
+            ],
+            "Action": ["see"],
+            "Persona": ["Consumer"],
+            "Contains": [],
+            "Text": "#G14# As a Consumer, I want to see how active the site is, ",
+            "Triggers": [[
+                "Consumer",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "how active"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_51",
+        "Benefit": {
+            "Entity": [
+                "interesting publishers",
+                "packages"
+            ],
+            "Action": ["find"],
+            "Contains": [[
+                "interesting publishers",
+                "packages"
+            ]],
+            "Text": "I can find interesting publishers and their packages.",
+            "Targets": [
+                [
+                    "find",
+                    "interesting publishers"
+                ],
+                [
+                    "find",
+                    "packages"
+                ]
+            ]
+        },
+        "Text": "#G14# As a Consumer, I want to browse and find publishers, so that that I can find interesting publishers and their packages.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": ["publishers"],
+            "Action": [
+                "browse",
+                "find"
+            ],
+            "Persona": ["Consumer"],
+            "Contains": [],
+            "Text": "#G14# As a Consumer, I want to browse and find publishers,  that",
+            "Triggers": [
+                [
+                    "Consumer",
+                    "browse"
+                ],
+                [
+                    "Consumer",
+                    "find"
+                ]
+            ],
+            "Targets": [
+                [
+                    "browse",
+                    "publishers"
+                ],
+                [
+                    "find",
+                    "publishers"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_52",
+        "Benefit": {
+            "Entity": [
+                "packages",
+                "sense",
+                "how active and good"
+            ],
+            "Action": [
+                "discover",
+                "get"
+            ],
+            "Contains": [],
+            "Text": "I can discover their packages and get a sense of how active and good they are.",
+            "Targets": [
+                [
+                    "discover",
+                    "packages"
+                ],
+                [
+                    "get",
+                    "sense"
+                ]
+            ]
+        },
+        "Text": "#G14# As a Consumer, I want to see a publisher's profile, so that that I can discover their packages and get a sense of how active and good they are.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": ["publisher's profile"],
+            "Action": ["see"],
+            "Persona": ["Consumer"],
+            "Contains": [],
+            "Text": "#G14# As a Consumer, I want to see a publisher's profile,  that",
+            "Triggers": [[
+                "Consumer",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "publisher's profile"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_53",
+        "Benefit": {
+            "Entity": [
+                "who",
+                "particular package",
+                "other packages"
+            ],
+            "Action": [
+                "see",
+                "see",
+                "produce"
+            ],
+            "Contains": [[
+                "who",
+                "particular package"
+            ]],
+            "Text": "I can see who is behind a particular package or to see what other packages they produce.",
+            "Targets": [
+                [
+                    "see",
+                    "who"
+                ],
+                [
+                    "see",
+                    "other packages"
+                ],
+                [
+                    "produce",
+                    "other packages"
+                ]
+            ]
+        },
+        "Text": "#G14# As a Consumer, I want to view a publisher's profile, so that that I can see who is behind a particular package or to see what other packages they produce.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": ["publisher's profile"],
+            "Action": ["view"],
+            "Persona": ["Consumer"],
+            "Contains": [],
+            "Text": "#G14# As a Consumer, I want to view a publisher's profile,  that",
+            "Triggers": [[
+                "Consumer",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "publisher's profile"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_54",
+        "Benefit": {
+            "Entity": [
+                "one data package",
+                "all the data packages",
+                "publisher"
+            ],
+            "Action": ["easily find"],
+            "Contains": [
+                [
+                    "publisher",
+                    "all the data packages"
+                ],
+                [
+                    "all the data packages",
+                    "one data package"
+                ]
+            ],
+            "Text": "I can easily find one data package amongst all the data packages by this publisher.",
+            "Targets": [[
+                "easily find",
+                "one data package"
+            ]]
+        },
+        "Text": "#G14# As a Consumer, I want to search among all data packages owned by a publisher, so that that I can easily find one data package amongst all the data packages by this publisher.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "all data packages",
+                "publisher"
+            ],
+            "Action": ["search"],
+            "Persona": ["Consumer"],
+            "Contains": [[
+                "publisher",
+                "all data packages"
+            ]],
+            "Text": "#G14# As a Consumer, I want to search among all data packages owned by a publisher,  that",
+            "Triggers": [[
+                "Consumer",
+                "search"
+            ]],
+            "Targets": [[
+                "search",
+                "all data packages"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_55",
+        "Benefit": {
+            "Entity": ["new information"],
+            "Action": ["updated"],
+            "Contains": [[
+                "profile",
+                "new information"
+            ]],
+            "Text": "it is updated with new information.",
+            "Targets": [[
+                "updated",
+                "profile"
+            ]]
+        },
+        "Text": "#G14# As an Owner, I want to edit my profile, so that that it is updated with new information.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": ["profile"],
+            "Action": ["edit"],
+            "Persona": ["Owner"],
+            "Contains": [],
+            "Text": "#G14# As an Owner, I want to edit my profile,  that",
+            "Triggers": [[
+                "Owner",
+                "edit"
+            ]],
+            "Targets": [[
+                "edit",
+                "profile"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_56",
+        "Benefit": {
+            "Entity": [
+                "user",
+                "member",
+                "publisher"
+            ],
+            "Action": [],
+            "Contains": [[
+                "publisher",
+                "member"
+            ]],
+            "Text": "the user can become a member of my publisher.",
+            "Targets": []
+        },
+        "Text": "#G14# As an Owner, I want to invite an existing user, so that the user can become a member of my publisher.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": ["existing user"],
+            "Action": ["invite"],
+            "Persona": ["Owner"],
+            "Contains": [],
+            "Text": "#G14# As an Owner, I want to invite an existing user, ",
+            "Triggers": [[
+                "Owner",
+                "invite"
+            ]],
+            "Targets": [[
+                "invite",
+                "existing user"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_57",
+        "Benefit": {
+            "Entity": [
+                "data packages",
+                "Publisher"
+            ],
+            "Action": ["publish"],
+            "Contains": [],
+            "Text": "they are authorized to publish data packages under my Publisher.",
+            "Targets": [[
+                "publish",
+                "data packages"
+            ]]
+        },
+        "Text": "#G14# As an owner, I want to invite someone using their email to sign up and become a member of my Publisher, so that that they are authorized to publish data packages under my Publisher.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "someone",
+                "email",
+                "member",
+                "Publisher"
+            ],
+            "Action": [
+                "invite",
+                "using",
+                "sign up"
+            ],
+            "Persona": ["owner"],
+            "Contains": [
+                [
+                    "someone",
+                    "email"
+                ],
+                [
+                    "Publisher",
+                    "member"
+                ]
+            ],
+            "Text": "#G14# As an owner, I want to invite someone using their email to sign up and become a member of my Publisher,  that",
+            "Triggers": [[
+                "owner",
+                "invite"
+            ]],
+            "Targets": [
+                [
+                    "invite",
+                    "someone"
+                ],
+                [
+                    "using",
+                    "email"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_58",
+        "Benefit": {
+            "Entity": [
+                "ability",
+                "data packages"
+            ],
+            "Action": [
+                "publish",
+                "modify"
+            ],
+            "Contains": [],
+            "Text": "they no longer have ability to publish or modify my data packages.",
+            "Targets": [
+                [
+                    "publish",
+                    "data packages"
+                ],
+                [
+                    "modify",
+                    "data packages"
+                ]
+            ]
+        },
+        "Text": "#G14# As an owner, I want to remove someone from membership in my publisher, so that they no longer have ability to publish or modify my data packages.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "someone",
+                "membership",
+                "publisher"
+            ],
+            "Action": ["remove"],
+            "Persona": ["owner"],
+            "Contains": [
+                [
+                    "publisher",
+                    "membership"
+                ],
+                [
+                    "someone",
+                    "membership"
+                ]
+            ],
+            "Text": "#G14# As an owner, I want to remove someone from membership in my publisher, ",
+            "Triggers": [[
+                "owner",
+                "remove"
+            ]],
+            "Targets": [[
+                "remove",
+                "someone"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_59",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["change"],
+            "Contains": [],
+            "Text": "I can change these if I want.",
+            "Targets": [[
+                "change",
+                "roles"
+            ]]
+        },
+        "Text": "#G14# As an owner, I want to view all the people in my organization and what roles they have, so that that I can change these if I want.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "roles",
+                "all the people",
+                "organization"
+            ],
+            "Action": ["view"],
+            "Persona": ["owner"],
+            "Contains": [
+                [
+                    "organization",
+                    "all the people"
+                ],
+                [
+                    "all the people",
+                    "roles"
+                ]
+            ],
+            "Text": "#G14# As an owner, I want to view all the people in my organization and what roles they have,  that",
+            "Triggers": [[
+                "owner",
+                "view"
+            ]],
+            "Targets": [
+                [
+                    "view",
+                    "all the people"
+                ],
+                [
+                    "view",
+                    "roles"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_60",
+        "Benefit": {
+            "Entity": ["full control"],
+            "Action": ["have"],
+            "Contains": [[
+                "owner",
+                "full control"
+            ]],
+            "Text": "they have full control.",
+            "Targets": [[
+                "have",
+                "full control"
+            ]]
+        },
+        "Text": "#G14# As an owner, I want to make a user an owner, so that they have full control.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "user",
+                "owner"
+            ],
+            "Action": ["make"],
+            "Persona": ["owner"],
+            "Contains": [],
+            "Text": "#G14# As an owner, I want to make a user an owner, ",
+            "Triggers": [[
+                "owner",
+                "make"
+            ]],
+            "Targets": [[
+                "make",
+                "user"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_61",
+        "Benefit": {
+            "Entity": [
+                "member",
+                "full control"
+            ],
+            "Action": [],
+            "Contains": [],
+            "Text": "they are just a member and no longer have full control.",
+            "Targets": []
+        },
+        "Text": "#G14# As an owner, I want to remove a user as an owner, so that they are just a member and no longer have full control.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "user",
+                "owner"
+            ],
+            "Action": ["remove"],
+            "Persona": ["owner"],
+            "Contains": [],
+            "Text": "#G14# As an owner, I want to remove a user as an owner, ",
+            "Triggers": [[
+                "owner",
+                "remove"
+            ]],
+            "Targets": [[
+                "remove",
+                "user"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_62",
+        "Benefit": {
+            "Entity": [
+                "key information",
+                "site title"
+            ],
+            "Action": ["change"],
+            "Contains": [[
+                "key information",
+                "site title"
+            ]],
+            "Text": "I can change key information like the site title.",
+            "Targets": [[
+                "change",
+                "key information"
+            ]]
+        },
+        "Text": "#G14# As an Admin, I want to set key configuration parameters for my site deployment, so that that I can change key information like the site title.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "key configuration parameters",
+                "site deployment"
+            ],
+            "Action": ["set"],
+            "Persona": ["Admin"],
+            "Contains": [[
+                "site deployment",
+                "key configuration parameters"
+            ]],
+            "Text": "#G14# As an Admin, I want to set key configuration parameters for my site deployment,  that",
+            "Triggers": [[
+                "Admin",
+                "set"
+            ]],
+            "Targets": [[
+                "set",
+                "key configuration parameters"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_63",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["know"],
+            "Contains": [],
+            "Text": "I know how things are going.",
+            "Targets": []
+        },
+        "Text": "#G14# As an Admin, I want to see key metrics about usage such as users, API usage, downloads, so that that I know how things are going.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "key metrics",
+                "usage",
+                "users",
+                "API usage",
+                "downloads"
+            ],
+            "Action": ["see"],
+            "Persona": ["Admin"],
+            "Contains": [[
+                "usage",
+                "key metrics"
+            ]],
+            "Text": "#G14# As an Admin, I want to see key metrics about usage such as users, API usage, downloads,  that",
+            "Triggers": [[
+                "Admin",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "key metrics"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_64",
+        "Benefit": {
+            "Entity": [
+                "users",
+                "platform sustainable"
+            ],
+            "Action": [
+                "charge",
+                "make"
+            ],
+            "Contains": [],
+            "Text": "I can charge users and make my platform sustainable.",
+            "Targets": [
+                [
+                    "charge",
+                    "users"
+                ],
+                [
+                    "make",
+                    "platform sustainable"
+                ]
+            ]
+        },
+        "Text": "#G14# As an Admin, I want to have a pricing plan and billing system, so that that I can charge users and make my platform sustainable.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "pricing plan",
+                "billing system"
+            ],
+            "Action": ["have"],
+            "Persona": ["Admin"],
+            "Contains": [],
+            "Text": "#G14# As an Admin, I want to have a pricing plan and billing system,  that",
+            "Triggers": [[
+                "Admin",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "pricing plan"
+                ],
+                [
+                    "have",
+                    "billing system"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_65",
+        "Benefit": {
+            "Entity": [
+                "cost",
+                "sense",
+                "guys"
+            ],
+            "Action": [
+                "work out",
+                "have"
+            ],
+            "Contains": [],
+            "Text": "I can work out what this will cost me in the future and have a sense that these guys are sustainable.",
+            "Targets": [
+                [
+                    "work out",
+                    "cost"
+                ],
+                [
+                    "have",
+                    "sense"
+                ]
+            ]
+        },
+        "Text": "#G14# As a Publisher, I want to know if this site has a pricing plan and what the prices are, so that that I can work out what this will cost me in the future and have a sense that these guys are sustainable.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": [
+                "site",
+                "pricing plan",
+                "prices"
+            ],
+            "Action": ["know"],
+            "Persona": ["Publisher"],
+            "Contains": [[
+                "site",
+                "pricing plan"
+            ]],
+            "Text": "#G14# As a Publisher, I want to know if this site has a pricing plan and what the prices are,  that",
+            "Triggers": [[
+                "Publisher",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "prices"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_66",
+        "Benefit": {
+            "Entity": ["what"],
+            "Action": ["allows"],
+            "Contains": [],
+            "Text": "I am entitled to what it allows.",
+            "Targets": []
+        },
+        "Text": "#G14# As a Publisher, I want to sign up for a given pricing plan, so that that I am entitled to what it allows.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": ["given pricing plan"],
+            "Action": ["sign up"],
+            "Persona": ["Publisher"],
+            "Contains": [],
+            "Text": "#G14# As a Publisher, I want to sign up for a given pricing plan,  that",
+            "Triggers": [[
+                "Publisher",
+                "sign up"
+            ]],
+            "Targets": [[
+                "sign up",
+                "given pricing plan"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_67",
+        "Benefit": {
+            "Entity": ["team"],
+            "Action": ["share"],
+            "Contains": [[
+                "team",
+                "private data packages"
+            ]],
+            "Text": "I can share just with my team.",
+            "Targets": [[
+                "share",
+                "private data packages"
+            ]]
+        },
+        "Text": "#G14# As a Publisher, I want to have private data packages, so that I can share just with my team.",
+        "PID": "#G14#",
+        "Main": {
+            "Entity": ["private data packages"],
+            "Action": ["have"],
+            "Persona": ["Publisher"],
+            "Contains": [],
+            "Text": "#G14# As a Publisher, I want to have private data packages, ",
+            "Triggers": [[
+                "Publisher",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "private data packages"
+            ]]
+        }
+    }
+]

@@ -1,0 +1,3222 @@
+[
+    {
+        "US_Nr": "user_story_01",
+        "Benefit": {
+            "Entity": [
+                "data",
+                "analysis",
+                "visualizations"
+            ],
+            "Action": [
+                "start using",
+                "doing"
+            ],
+            "Contains": [[
+                "Data Package",
+                "data"
+            ]],
+            "Text": "I can start using the data for doing analysis and visualizations.",
+            "Targets": [
+                [
+                    "doing",
+                    "analysis"
+                ],
+                [
+                    "doing",
+                    "visualizations"
+                ],
+                [
+                    "start using",
+                    "data"
+                ]
+            ]
+        },
+        "Text": "#G08# As a Developer, I want to get a Data Package into Node, so that I can start using the data for doing analysis and visualizations.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "Data Package",
+                "Node"
+            ],
+            "Action": ["get"],
+            "Persona": ["Developer"],
+            "Contains": [[
+                "Node",
+                "Data Package"
+            ]],
+            "Text": "#G08# As a Developer, I want to get a Data Package into Node, ",
+            "Triggers": [[
+                "Developer",
+                "get"
+            ]],
+            "Targets": [[
+                "get",
+                "Data Package"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_02",
+        "Benefit": {
+            "Entity": [
+                "analysis",
+                "visualizations",
+                "data"
+            ],
+            "Action": [
+                "start using",
+                "doing"
+            ],
+            "Contains": [[
+                "Data Package",
+                "data"
+            ]],
+            "Text": "I can start using the data for doing analysis and visualizations.",
+            "Targets": [
+                [
+                    "start using",
+                    "data"
+                ],
+                [
+                    "doing",
+                    "analysis"
+                ],
+                [
+                    "doing",
+                    "visualizations"
+                ]
+            ]
+        },
+        "Text": "#G08# As a Researcher, I want to get a Data Package into Julia in seconds, so that I can start using the data for doing analysis and visualizations.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "Julia",
+                "Data Package"
+            ],
+            "Action": ["get"],
+            "Persona": ["Researcher"],
+            "Contains": [[
+                "Julia",
+                "Data Package"
+            ]],
+            "Text": "#G08# As a Researcher, I want to get a Data Package into Julia in seconds, ",
+            "Triggers": [[
+                "Researcher",
+                "get"
+            ]],
+            "Targets": [[
+                "get",
+                "Data Package"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_03",
+        "Benefit": {
+            "Entity": [
+                "others",
+                "visualization programs",
+                "tools"
+            ],
+            "Action": ["used better"],
+            "Contains": [[
+                "tools",
+                "visualization programs"
+            ]],
+            "Text": "it is more useful to others and can be used better with tools like visualization programs.",
+            "Targets": [[
+                "used better",
+                "tools"
+            ]]
+        },
+        "Text": "#G08# As a Publisher, I want to add type information to my data, so that it is more useful to others and can be used better with tools like visualization programs.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "data",
+                "type information"
+            ],
+            "Action": ["add"],
+            "Persona": ["Publisher"],
+            "Contains": [[
+                "data",
+                "type information"
+            ]],
+            "Text": "#G08# As a Publisher, I want to add type information to my data, ",
+            "Triggers": [[
+                "Publisher",
+                "add"
+            ]],
+            "Targets": [[
+                "add",
+                "type information"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_04",
+        "Benefit": {
+            "Entity": [
+                "users of the data",
+                "analysis",
+                "work"
+            ],
+            "Action": [
+                "provide",
+                "show"
+            ],
+            "Contains": [],
+            "Text": "I can provide my analysis and show my work to users of the data.",
+            "Targets": [
+                [
+                    "provide",
+                    "analysis"
+                ],
+                [
+                    "show",
+                    "work"
+                ]
+            ]
+        },
+        "Text": "#G08# As a Publisher, I want to be able to provide a visualization of data in the Data Package, so that I can provide my analysis and show my work to users of the data.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "Data Package",
+                "visualization",
+                "data"
+            ],
+            "Action": ["provide"],
+            "Persona": ["Publisher"],
+            "Contains": [
+                [
+                    "visualization",
+                    "data"
+                ],
+                [
+                    "Data Package",
+                    "data"
+                ]
+            ],
+            "Text": "#G08# As a Publisher, I want to be able to provide a visualization of data in the Data Package, ",
+            "Triggers": [[
+                "Publisher",
+                "provide"
+            ]],
+            "Targets": [[
+                "provide",
+                "visualization"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_05",
+        "Benefit": {
+            "Entity": [
+                "others",
+                "Data Package"
+            ],
+            "Action": [
+                "share",
+                "include"
+            ],
+            "Contains": [
+                [
+                    "Data Package",
+                    "new visualizations"
+                ],
+                [
+                    "others",
+                    "new visualizations"
+                ]
+            ],
+            "Text": "I can share them with others or include them in the Data Package.",
+            "Targets": [
+                [
+                    "include",
+                    "new visualizations"
+                ],
+                [
+                    "share",
+                    "new visualizations"
+                ]
+            ]
+        },
+        "Text": "#G08# As a Researcher, I want to be able to save new visualizations, so that I can share them with others or include them in the Data Package.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": ["new visualizations"],
+            "Action": ["save"],
+            "Persona": ["Researcher"],
+            "Contains": [],
+            "Text": "#G08# As a Researcher, I want to be able to save new visualizations, ",
+            "Triggers": [[
+                "Researcher",
+                "save"
+            ]],
+            "Targets": [[
+                "save",
+                "new visualizations"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_06",
+        "Benefit": {
+            "Entity": [
+                "trust",
+                "usefulness",
+                "data.",
+                "validity"
+            ],
+            "Action": ["feel"],
+            "Contains": [
+                [
+                    "data.",
+                    "usefulness"
+                ],
+                [
+                    "validity",
+                    "trust"
+                ]
+            ],
+            "Text": "I can feel trust in the validity and usefulness of the data.",
+            "Targets": [
+                [
+                    "feel",
+                    "usefulness"
+                ],
+                [
+                    "feel",
+                    "trust"
+                ]
+            ]
+        },
+        "Text": "#G08# As a ResearcherPublisher, I want to know that my data conforms to its Data Package profile, so that I can feel trust in the validity and usefulness of the data.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "data",
+                "Data Package profile"
+            ],
+            "Action": ["know"],
+            "Persona": ["ResearcherPublisher"],
+            "Contains": [],
+            "Text": "#G08# As a ResearcherPublisher, I want to know that my data conforms to its Data Package profile, ",
+            "Triggers": [[
+                "ResearcherPublisher",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "data"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_07",
+        "Benefit": {
+            "Entity": ["how"],
+            "Action": [
+                "fix",
+                "know"
+            ],
+            "Contains": [],
+            "Text": "I can know how to fix it.",
+            "Targets": [
+                [
+                    "know",
+                    "how"
+                ],
+                [
+                    "fix",
+                    "data"
+                ]
+            ]
+        },
+        "Text": "#G08# As a ResearcherPublisher, I want to understand the ways in which my data is invalid, so that I can know how to fix it.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "ways",
+                "data"
+            ],
+            "Action": ["understand"],
+            "Persona": ["ResearcherPublisher"],
+            "Contains": [],
+            "Text": "#G08# As a ResearcherPublisher, I want to understand the ways in which my data is invalid, ",
+            "Triggers": [[
+                "ResearcherPublisher",
+                "understand"
+            ]],
+            "Targets": [[
+                "understand",
+                "ways"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_08",
+        "Benefit": {
+            "Entity": [
+                "analysis",
+                "visualizations",
+                "data"
+            ],
+            "Action": [
+                "doing",
+                "start using"
+            ],
+            "Contains": [[
+                "Data Package",
+                "data"
+            ]],
+            "Text": "I can start using the data for doing analysis and visualizations.",
+            "Targets": [
+                [
+                    "start using",
+                    "data"
+                ],
+                [
+                    "doing",
+                    "analysis"
+                ],
+                [
+                    "doing",
+                    "visualizations"
+                ]
+            ]
+        },
+        "Text": "#G08# As a Researcher, I want to get a Data Package into R in seconds, so that I can start using the data for doing analysis and visualizations.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "Data Package",
+                "R"
+            ],
+            "Action": ["get"],
+            "Persona": ["Researcher"],
+            "Contains": [[
+                "R",
+                "Data Package"
+            ]],
+            "Text": "#G08# As a Researcher, I want to get a Data Package into R in seconds, ",
+            "Triggers": [[
+                "Researcher",
+                "get"
+            ]],
+            "Targets": [[
+                "get",
+                "Data Package"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_09",
+        "Benefit": {
+            "Entity": [
+                "data",
+                "analysis",
+                "visualizations"
+            ],
+            "Action": [
+                "doing",
+                "start using"
+            ],
+            "Contains": [[
+                "Data Package",
+                "data"
+            ]],
+            "Text": "I can start using the data for doing analysis and visualizations.",
+            "Targets": [
+                [
+                    "doing",
+                    "analysis"
+                ],
+                [
+                    "doing",
+                    "visualizations"
+                ],
+                [
+                    "start using",
+                    "data"
+                ]
+            ]
+        },
+        "Text": "#G08# As a Researcher, I want to get a Data Package into Excel in seconds, so that I can start using the data for doing analysis and visualizations.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "Data Package",
+                "Excel"
+            ],
+            "Action": ["get"],
+            "Persona": ["Researcher"],
+            "Contains": [[
+                "Excel",
+                "Data Package"
+            ]],
+            "Text": "#G08# As a Researcher, I want to get a Data Package into Excel in seconds, ",
+            "Triggers": [[
+                "Researcher",
+                "get"
+            ]],
+            "Targets": [[
+                "get",
+                "Data Package"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_10",
+        "Benefit": {
+            "Entity": [
+                "data",
+                "visualizations",
+                "analysis"
+            ],
+            "Action": [
+                "start using",
+                "doing"
+            ],
+            "Contains": [[
+                "Data Package",
+                "data"
+            ]],
+            "Text": "I can start using the data for doing analysis and visualizations.",
+            "Targets": [
+                [
+                    "start using",
+                    "data"
+                ],
+                [
+                    "doing",
+                    "visualizations"
+                ],
+                [
+                    "doing",
+                    "analysis"
+                ]
+            ]
+        },
+        "Text": "#G08# As a Researcher, I want to get a Data Package into SPSS in seconds, so that I can start using the data for doing analysis and visualizations.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "SPSS",
+                "Data Package"
+            ],
+            "Action": ["get"],
+            "Persona": ["Researcher"],
+            "Contains": [[
+                "SPSS",
+                "Data Package"
+            ]],
+            "Text": "#G08# As a Researcher, I want to get a Data Package into SPSS in seconds, ",
+            "Triggers": [[
+                "Researcher",
+                "get"
+            ]],
+            "Targets": [[
+                "get",
+                "Data Package"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_11",
+        "Benefit": {
+            "Entity": [
+                "data",
+                "analysis",
+                "visualizations"
+            ],
+            "Action": [
+                "start using",
+                "doing"
+            ],
+            "Contains": [[
+                "Data Package",
+                "data"
+            ]],
+            "Text": "I can start using the data for doing analysis and visualizations.",
+            "Targets": [
+                [
+                    "start using",
+                    "data"
+                ],
+                [
+                    "doing",
+                    "analysis"
+                ],
+                [
+                    "doing",
+                    "visualizations"
+                ]
+            ]
+        },
+        "Text": "#G08# As a Researcher, I want to get a Data Package into STATA in seconds, so that I can start using the data for doing analysis and visualizations.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "Data Package",
+                "STATA"
+            ],
+            "Action": ["get"],
+            "Persona": ["Researcher"],
+            "Contains": [[
+                "STATA",
+                "Data Package"
+            ]],
+            "Text": "#G08# As a Researcher, I want to get a Data Package into STATA in seconds, ",
+            "Triggers": [[
+                "Researcher",
+                "get"
+            ]],
+            "Targets": [[
+                "get",
+                "Data Package"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_12",
+        "Benefit": {
+            "Entity": [
+                "wide array of tools available",
+                "Data Packages"
+            ],
+            "Action": ["benefit"],
+            "Contains": [[
+                "Data Packages",
+                "wide array of tools available"
+            ]],
+            "Text": "I can benefit from the wide array of tools available for Data Packages.",
+            "Targets": [[
+                "benefit",
+                "wide array of tools available"
+            ]]
+        },
+        "Text": "#G08# As a Researcher, I want to be able to translate my EML dataset to a Data Package, so that I can benefit from the wide array of tools available for Data Packages.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "EML dataset",
+                "Data Package"
+            ],
+            "Action": ["translate"],
+            "Persona": ["Researcher"],
+            "Contains": [],
+            "Text": "#G08# As a Researcher, I want to be able to translate my EML dataset to a Data Package, ",
+            "Triggers": [[
+                "Researcher",
+                "translate"
+            ]],
+            "Targets": [[
+                "translate",
+                "EML dataset"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_13",
+        "Benefit": {
+            "Entity": [
+                "data",
+                "analysis",
+                "visualizations"
+            ],
+            "Action": [
+                "start using",
+                "doing"
+            ],
+            "Contains": [[
+                "Data Package",
+                "data"
+            ]],
+            "Text": "I can start using the data for doing analysis and visualizations.",
+            "Targets": [
+                [
+                    "start using",
+                    "data"
+                ],
+                [
+                    "doing",
+                    "analysis"
+                ],
+                [
+                    "doing",
+                    "visualizations"
+                ]
+            ]
+        },
+        "Text": "#G08# As a Researcher, I want to get a Data Package into LibreOffice/OpenOffice in seconds, so that I can start using the data for doing analysis and visualizations.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "LibreOffice",
+                "OpenOffice",
+                "Data Package"
+            ],
+            "Action": ["get"],
+            "Persona": ["Researcher"],
+            "Contains": [
+                [
+                    "LibreOffice",
+                    "Data Package"
+                ],
+                [
+                    "OpenOffice",
+                    "Data Package"
+                ]
+            ],
+            "Text": "#G08# As a Researcher, I want to get a Data Package into LibreOffice/OpenOffice in seconds, ",
+            "Triggers": [[
+                "Researcher",
+                "get"
+            ]],
+            "Targets": [[
+                "get",
+                "Data Package"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_14",
+        "Benefit": {
+            "Entity": [
+                "data",
+                "analysis",
+                "visualizations"
+            ],
+            "Action": [
+                "doing",
+                "start using"
+            ],
+            "Contains": [[
+                "Data Package",
+                "data"
+            ]],
+            "Text": "I can start using the data for doing analysis and visualizations.",
+            "Targets": [
+                [
+                    "doing",
+                    "analysis"
+                ],
+                [
+                    "start using",
+                    "data"
+                ],
+                [
+                    "doing",
+                    "visualizations"
+                ]
+            ]
+        },
+        "Text": "#G08# As a Developer, I want to get a Data Package into Python in seconds, so that I can start using the data for doing analysis and visualizations.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "Data Package",
+                "Python"
+            ],
+            "Action": ["get"],
+            "Persona": ["Developer"],
+            "Contains": [[
+                "Python",
+                "Data Package"
+            ]],
+            "Text": "#G08# As a Developer, I want to get a Data Package into Python in seconds, ",
+            "Triggers": [[
+                "Developer",
+                "get"
+            ]],
+            "Targets": [[
+                "get",
+                "Data Package"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_15",
+        "Benefit": {
+            "Entity": [
+                "control",
+                "core dataset",
+                "autocompletion"
+            ],
+            "Action": [
+                "form",
+                "use"
+            ],
+            "Contains": [[
+                "autocompletion",
+                "core dataset"
+            ]],
+            "Text": "I can use it to apply to form control that uses a core dataset for autocompletion.",
+            "Targets": [
+                [
+                    "form",
+                    "control"
+                ],
+                [
+                    "use",
+                    "jQuery plugin"
+                ]
+            ]
+        },
+        "Text": "#G08# As a Developer, I want a jQuery plugin for Core Data Packages, so that I can use it to apply to form control that uses a core dataset for autocompletion.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "jQuery plugin",
+                "Core Data Packages"
+            ],
+            "Action": ["want"],
+            "Persona": ["Developer"],
+            "Contains": [[
+                "Core Data Packages",
+                "jQuery plugin"
+            ]],
+            "Text": "#G08# As a Developer, I want a jQuery plugin for Core Data Packages, ",
+            "Triggers": [[
+                "Developer",
+                "want"
+            ]],
+            "Targets": [[
+                "want",
+                "jQuery plugin"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_16",
+        "Benefit": {
+            "Entity": [
+                "better tooling",
+                "standardization"
+            ],
+            "Action": ["benefit from"],
+            "Contains": [],
+            "Text": "I can benefit from better tooling and standardization.",
+            "Targets": [
+                [
+                    "benefit from",
+                    "better tooling"
+                ],
+                [
+                    "benefit from",
+                    "standardization"
+                ]
+            ]
+        },
+        "Text": "#G08# As a Researcher, I want to get my Excel spreadsheet into a Data Package, so that I can benefit from better tooling and standardization.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "Excel spreadsheet",
+                "Data Package"
+            ],
+            "Action": ["get"],
+            "Persona": ["Researcher"],
+            "Contains": [[
+                "Data Package",
+                "Excel spreadsheet"
+            ]],
+            "Text": "#G08# As a Researcher, I want to get my Excel spreadsheet into a Data Package, ",
+            "Triggers": [[
+                "Researcher",
+                "get"
+            ]],
+            "Targets": [[
+                "get",
+                "Excel spreadsheet"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_17",
+        "Benefit": {
+            "Entity": [
+                "best tool",
+                "job"
+            ],
+            "Action": ["use"],
+            "Contains": [[
+                "job",
+                "best tool"
+            ]],
+            "Text": "I can use the best tool for the job.",
+            "Targets": [[
+                "use",
+                "best tool"
+            ]]
+        },
+        "Text": "#G08# As a Developer, I want to do exploratory data analysis in R and operationalize that analysis in Python, so that I can use the best tool for the job.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "analysis",
+                "Python",
+                "exploratory data analysis",
+                "R"
+            ],
+            "Action": [
+                "do",
+                "operationalize"
+            ],
+            "Persona": ["Developer"],
+            "Contains": [
+                [
+                    "R",
+                    "exploratory data analysis"
+                ],
+                [
+                    "Python",
+                    "analysis"
+                ]
+            ],
+            "Text": "#G08# As a Developer, I want to do exploratory data analysis in R and operationalize that analysis in Python, ",
+            "Triggers": [
+                [
+                    "Developer",
+                    "operationalize"
+                ],
+                [
+                    "Developer",
+                    "do"
+                ]
+            ],
+            "Targets": [
+                [
+                    "do",
+                    "exploratory data analysis"
+                ],
+                [
+                    "operationalize",
+                    "analysis"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_18",
+        "Benefit": {
+            "Entity": [
+                "analysis",
+                "data",
+                "visualizations"
+            ],
+            "Action": [
+                "start using",
+                "doing"
+            ],
+            "Contains": [[
+                "Data Package",
+                "data"
+            ]],
+            "Text": "I can start using the data in doing analysis and visualizations.",
+            "Targets": [
+                [
+                    "start using",
+                    "data"
+                ],
+                [
+                    "doing",
+                    "visualizations"
+                ],
+                [
+                    "doing",
+                    "analysis"
+                ]
+            ]
+        },
+        "Text": "#G08# As a Developer, I want to get a Data Package into Clojure in seconds, so that I can start using the data in doing analysis and visualizations.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "Data Package",
+                "Clojure"
+            ],
+            "Action": ["get"],
+            "Persona": ["Developer"],
+            "Contains": [[
+                "Clojure",
+                "Data Package"
+            ]],
+            "Text": "#G08# As a Developer, I want to get a Data Package into Clojure in seconds, ",
+            "Triggers": [[
+                "Developer",
+                "get"
+            ]],
+            "Targets": [[
+                "get",
+                "Data Package"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_19",
+        "Benefit": {
+            "Entity": [
+                "analysis",
+                "data",
+                "visualizations"
+            ],
+            "Action": [
+                "start using",
+                "doing"
+            ],
+            "Contains": [[
+                "Data Package",
+                "data"
+            ]],
+            "Text": "I can start using the data in doing analysis and visualizations.",
+            "Targets": [
+                [
+                    "start using",
+                    "data"
+                ],
+                [
+                    "doing",
+                    "analysis"
+                ],
+                [
+                    "doing",
+                    "visualizations"
+                ]
+            ]
+        },
+        "Text": "#G08# As a Developer, I want to get a Data Package into Julia in seconds, so that I can start using the data in doing analysis and visualizations.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "Data Package",
+                "Julia"
+            ],
+            "Action": ["get"],
+            "Persona": ["Developer"],
+            "Contains": [[
+                "Julia",
+                "Data Package"
+            ]],
+            "Text": "#G08# As a Developer, I want to get a Data Package into Julia in seconds, ",
+            "Triggers": [[
+                "Developer",
+                "get"
+            ]],
+            "Targets": [[
+                "get",
+                "Data Package"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_20",
+        "Benefit": {
+            "Entity": [
+                "data",
+                "analysis",
+                "visualizations"
+            ],
+            "Action": [
+                "start using",
+                "doing"
+            ],
+            "Contains": [[
+                "Data Package",
+                "data"
+            ]],
+            "Text": "I can start using the data in doing analysis and visualizations.",
+            "Targets": [
+                [
+                    "start using",
+                    "data"
+                ],
+                [
+                    "doing",
+                    "visualizations"
+                ],
+                [
+                    "doing",
+                    "analysis"
+                ]
+            ]
+        },
+        "Text": "#G08# As a Developer, I want to get a Data Package into C++ in seconds, so that I can start using the data in doing analysis and visualizations.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "Data Package",
+                "C++"
+            ],
+            "Action": ["get"],
+            "Persona": ["Developer"],
+            "Contains": [[
+                "C++",
+                "Data Package"
+            ]],
+            "Text": "#G08# As a Developer, I want to get a Data Package into C++ in seconds, ",
+            "Triggers": [[
+                "Developer",
+                "get"
+            ]],
+            "Targets": [[
+                "get",
+                "Data Package"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_21",
+        "Benefit": {
+            "Entity": [
+                "data",
+                "analysis"
+            ],
+            "Action": [
+                "start using",
+                "doing"
+            ],
+            "Contains": [
+                [
+                    "ML datasets",
+                    "data"
+                ],
+                [
+                    "data",
+                    "analysis"
+                ]
+            ],
+            "Text": "I can easily import them into my ML platform",
+            "Targets": [
+                [
+                    "start using",
+                    "data"
+                ],
+                [
+                    "doing",
+                    "analysis"
+                ]
+            ]
+        },
+        "Text": "#G08# As a Machine Learning expert, I would like to package ML datasets as data packages, so that I can easily import them into my ML platform, so that I can start using the data in doing analysis.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "ML datasets",
+                "data packages",
+                "ML platform"
+            ],
+            "Action": [
+                "package",
+                "easily import"
+            ],
+            "Persona": ["Machine Learning expert"],
+            "Contains": [
+                [
+                    "data packages",
+                    "ML datasets"
+                ],
+                [
+                    "ML platform",
+                    "data packages"
+                ]
+            ],
+            "Text": "#G08# As a Machine Learning expert, I would like to package ML datasets as data packages, ",
+            "Triggers": [[
+                "Machine Learning expert",
+                "package"
+            ]],
+            "Targets": [
+                [
+                    "package",
+                    "ML datasets"
+                ],
+                [
+                    "easily import",
+                    "ML datasets"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_22",
+        "Benefit": {
+            "Entity": [
+                "data-packaged data",
+                "pipelines",
+                "Elasticsearch"
+            ],
+            "Action": ["integrate"],
+            "Contains": [],
+            "Text": "I can integrate data-packaged data with pipelines that use Elasticsearch.",
+            "Targets": [[
+                "integrate",
+                "data-packaged data"
+            ]]
+        },
+        "Text": "#G08# As a Developer, I want an Elasticsearch integration, so that I can integrate data-packaged data with pipelines that use Elasticsearch.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": ["Elasticsearch integration"],
+            "Action": ["want"],
+            "Persona": ["Developer"],
+            "Contains": [],
+            "Text": "#G08# As a Developer, I want an Elasticsearch integration, ",
+            "Triggers": [[
+                "Developer",
+                "want"
+            ]],
+            "Targets": [[
+                "want",
+                "Elasticsearch integration"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_23",
+        "Benefit": {
+            "Entity": [
+                "pipelines",
+                "SPSS",
+                "data-packaged data"
+            ],
+            "Action": ["integrate"],
+            "Contains": [],
+            "Text": "I can integrate data-packaged data with pipelines that use SPSS.",
+            "Targets": [[
+                "integrate",
+                "data-packaged data"
+            ]]
+        },
+        "Text": "#G08# As a Developer, I want an SPSS integration, so that I can integrate data-packaged data with pipelines that use SPSS.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": ["SPSS integration"],
+            "Action": ["want"],
+            "Persona": ["Developer"],
+            "Contains": [],
+            "Text": "#G08# As a Developer, I want an SPSS integration, ",
+            "Triggers": [[
+                "Developer",
+                "want"
+            ]],
+            "Targets": [[
+                "want",
+                "SPSS integration"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_24",
+        "Benefit": {
+            "Entity": [
+                "data-packaged data",
+                "pipelines",
+                "EPrints"
+            ],
+            "Action": ["integrate"],
+            "Contains": [],
+            "Text": "I can integrate data-packaged data with pipelines that use EPrints.",
+            "Targets": [[
+                "integrate",
+                "data-packaged data"
+            ]]
+        },
+        "Text": "#G08# As a Developer, I want an EPrints integration, so that I can integrate data-packaged data with pipelines that use EPrints.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": ["EPrints integration"],
+            "Action": ["want"],
+            "Persona": ["Developer"],
+            "Contains": [],
+            "Text": "#G08# As a Developer, I want an EPrints integration, ",
+            "Triggers": [[
+                "Developer",
+                "want"
+            ]],
+            "Targets": [[
+                "want",
+                "EPrints integration"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_25",
+        "Benefit": {
+            "Entity": [
+                "data-packaged data",
+                "pipelines",
+                "Mongo"
+            ],
+            "Action": ["integrate"],
+            "Contains": [],
+            "Text": "I can integrate data-packaged data with pipelines that use Mongo.",
+            "Targets": [[
+                "integrate",
+                "data-packaged data"
+            ]]
+        },
+        "Text": "#G08# As a Developer, I want a Mongo integration, so that I can integrate data-packaged data with pipelines that use Mongo.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": ["Mongo integration"],
+            "Action": ["want"],
+            "Persona": ["Developer"],
+            "Contains": [],
+            "Text": "#G08# As a Developer, I want a Mongo integration, ",
+            "Triggers": [[
+                "Developer",
+                "want"
+            ]],
+            "Targets": [[
+                "want",
+                "Mongo integration"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_26",
+        "Benefit": {
+            "Entity": [
+                "data-packaged data",
+                "pipelines",
+                "DAT"
+            ],
+            "Action": ["integrate"],
+            "Contains": [],
+            "Text": "I can integrate data-packaged data with pipelines that use DAT.",
+            "Targets": [[
+                "integrate",
+                "data-packaged data"
+            ]]
+        },
+        "Text": "#G08# As a Developer, I want a DAT integration, so that I can integrate data-packaged data with pipelines that use DAT.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": ["DAT integration"],
+            "Action": ["want"],
+            "Persona": ["Developer"],
+            "Contains": [],
+            "Text": "#G08# As a Developer, I want a DAT integration, ",
+            "Triggers": [[
+                "Developer",
+                "want"
+            ]],
+            "Targets": [[
+                "want",
+                "DAT integration"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_27",
+        "Benefit": {
+            "Entity": ["dataset"],
+            "Action": [],
+            "Contains": [],
+            "Text": "my dataset is more useful.",
+            "Targets": []
+        },
+        "Text": "#G08# As a ResearcherGovernment Publisher, I want to add general reference data to my narrow dataset, so that my dataset is more useful.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "general reference data",
+                "narrow dataset"
+            ],
+            "Action": ["add"],
+            "Persona": ["ResearcherGovernment Publisher"],
+            "Contains": [[
+                "narrow dataset",
+                "general reference data"
+            ]],
+            "Text": "#G08# As a ResearcherGovernment Publisher, I want to add general reference data to my narrow dataset, ",
+            "Triggers": [[
+                "ResearcherGovernment Publisher",
+                "add"
+            ]],
+            "Targets": [[
+                "add",
+                "general reference data"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_28",
+        "Benefit": {
+            "Entity": ["dataset"],
+            "Action": [],
+            "Contains": [],
+            "Text": "my dataset is more readable.",
+            "Targets": []
+        },
+        "Text": "#G08# As a ResearcherGovernment Publisher, I want to add general country names to my dataset that only contains country codes, so that my dataset is more readable.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "dataset",
+                "general country names",
+                "country codes"
+            ],
+            "Action": ["add"],
+            "Persona": ["ResearcherGovernment Publisher"],
+            "Contains": [
+                [
+                    "general country names",
+                    "country codes"
+                ],
+                [
+                    "dataset",
+                    "general country names"
+                ]
+            ],
+            "Text": "#G08# As a ResearcherGovernment Publisher, I want to add general country names to my dataset that only contains country codes, ",
+            "Triggers": [[
+                "ResearcherGovernment Publisher",
+                "add"
+            ]],
+            "Targets": [[
+                "add",
+                "general country names"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_29",
+        "Benefit": {
+            "Entity": [
+                "dataset",
+                "spending lines"
+            ],
+            "Action": [],
+            "Contains": [[
+                "dataset",
+                "spending lines"
+            ]],
+            "Text": "the spending lines in my dataset is more understandable.",
+            "Targets": []
+        },
+        "Text": "#G08# As a ResearcherGovernment Publisher, I want to add reference data on inflation to my spending dataset, so that the spending lines in my dataset is more understandable.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "reference data on inflation",
+                "spending dataset"
+            ],
+            "Action": ["add"],
+            "Persona": ["ResearcherGovernment Publisher"],
+            "Contains": [[
+                "spending dataset",
+                "reference data on inflation"
+            ]],
+            "Text": "#G08# As a ResearcherGovernment Publisher, I want to add reference data on inflation to my spending dataset, ",
+            "Triggers": [[
+                "ResearcherGovernment Publisher",
+                "add"
+            ]],
+            "Targets": [[
+                "add",
+                "reference data on inflation"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_30",
+        "Benefit": {
+            "Entity": [
+                "dataset",
+                "non-technical users"
+            ],
+            "Action": [],
+            "Contains": [],
+            "Text": "my dataset is more engaging for non-technical users.",
+            "Targets": []
+        },
+        "Text": "#G08# As a ResearcherGovernment Publisher, I want to map lines in my dataset using geographic data in my dataset, so that my dataset is more engaging for non-technical users.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "lines",
+                "dataset",
+                "geographic data",
+                "dataset"
+            ],
+            "Action": [
+                "map",
+                "using"
+            ],
+            "Persona": ["ResearcherGovernment Publisher"],
+            "Contains": [
+                [
+                    "dataset",
+                    "lines"
+                ],
+                [
+                    "dataset",
+                    "geographic data"
+                ]
+            ],
+            "Text": "#G08# As a ResearcherGovernment Publisher, I want to map lines in my dataset using geographic data in my dataset, ",
+            "Triggers": [[
+                "ResearcherGovernment Publisher",
+                "map"
+            ]],
+            "Targets": [
+                [
+                    "map",
+                    "lines"
+                ],
+                [
+                    "using",
+                    "geographic data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_31",
+        "Benefit": {
+            "Entity": [
+                "single shard list of terms",
+                "column",
+                "dataset"
+            ],
+            "Action": ["be sure"],
+            "Contains": [[
+                "dataset",
+                "column"
+            ]],
+            "Text": "I can be sure that column of my dataset are valid against a single shard list of terms.",
+            "Targets": []
+        },
+        "Text": "#G08# As a Researcher, I want to be able to reference a remote-controlled vocabulary for my dataset, so that I can be sure that column of my dataset are valid against a single shard list of terms.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "remote-controlled vocabulary",
+                "dataset"
+            ],
+            "Action": ["reference"],
+            "Persona": ["Researcher"],
+            "Contains": [[
+                "dataset",
+                "remote-controlled vocabulary"
+            ]],
+            "Text": "#G08# As a Researcher, I want to be able to reference a remote-controlled vocabulary for my dataset, ",
+            "Triggers": [[
+                "Researcher",
+                "reference"
+            ]],
+            "Targets": [[
+                "reference",
+                "remote-controlled vocabulary"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_32",
+        "Benefit": {
+            "Entity": [
+                "Dspace",
+                "data-packaged data",
+                "pipelines"
+            ],
+            "Action": ["integrate"],
+            "Contains": [],
+            "Text": "I can integrate data-packaged data with pipelines that use Dspace.",
+            "Targets": [[
+                "integrate",
+                "data-packaged data"
+            ]]
+        },
+        "Text": "#G08# As a developer, I want an DSpace integration, so that I can integrate data-packaged data with pipelines that use Dspace.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": ["DSpace integration"],
+            "Action": ["want"],
+            "Persona": ["developer"],
+            "Contains": [],
+            "Text": "#G08# As a developer, I want an DSpace integration, ",
+            "Triggers": [[
+                "developer",
+                "want"
+            ]],
+            "Targets": [[
+                "want",
+                "DSpace integration"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_33",
+        "Benefit": {
+            "Entity": [
+                "data-packaged data",
+                "pipelines",
+                "Feather"
+            ],
+            "Action": ["integrate"],
+            "Contains": [],
+            "Text": "I can integrate data-packaged data with pipelines that use Feather.",
+            "Targets": [[
+                "integrate",
+                "data-packaged data"
+            ]]
+        },
+        "Text": "#G08# As a Developer, I want Feather integration, so that I can integrate data-packaged data with pipelines that use Feather.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": ["Feather integration"],
+            "Action": ["want"],
+            "Persona": ["Developer"],
+            "Contains": [],
+            "Text": "#G08# As a Developer, I want Feather integration, ",
+            "Triggers": [[
+                "Developer",
+                "want"
+            ]],
+            "Targets": [[
+                "want",
+                "Feather integration"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_34",
+        "Benefit": {
+            "Entity": [
+                "data-packaged data",
+                "pipelines",
+                "HDF5"
+            ],
+            "Action": ["integrate"],
+            "Contains": [],
+            "Text": "I can integrate data-packaged data with pipelines that use HDF5.",
+            "Targets": [[
+                "integrate",
+                "data-packaged data"
+            ]]
+        },
+        "Text": "#G08# As a Developer, I want HDF5 integration, so that I can integrate data-packaged data with pipelines that use HDF5.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": ["HDF5 integration"],
+            "Action": ["want"],
+            "Persona": ["Developer"],
+            "Contains": [],
+            "Text": "#G08# As a Developer, I want HDF5 integration, ",
+            "Triggers": [[
+                "Developer",
+                "want"
+            ]],
+            "Targets": [[
+                "want",
+                "HDF5 integration"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_35",
+        "Benefit": {
+            "Entity": ["datasets"],
+            "Action": [
+                "import",
+                "without downloading"
+            ],
+            "Contains": [],
+            "Text": "I can import datasets without downloading them locally.",
+            "Targets": [
+                [
+                    "import",
+                    "datasets"
+                ],
+                [
+                    "without downloading",
+                    "datasets"
+                ]
+            ]
+        },
+        "Text": "#G08# As a Researcher, working with data, I want an Microsoft Power BI integration, so that I can import datasets without downloading them locally.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "data",
+                "Microsoft Power BI integration"
+            ],
+            "Action": [
+                "working with",
+                "want"
+            ],
+            "Persona": ["Researcher"],
+            "Contains": [],
+            "Text": "#G08# As a Researcher, working with data, I want an Microsoft Power BI integration, ",
+            "Triggers": [[
+                "Researcher",
+                "want"
+            ]],
+            "Targets": [
+                [
+                    "working with",
+                    "data"
+                ],
+                [
+                    "want",
+                    "Microsoft Power BI integration"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_36",
+        "Benefit": {
+            "Entity": [
+                "dataset",
+                "GitHub",
+                "descriptive information",
+                "dataset"
+            ],
+            "Action": [
+                "store",
+                "don\u2019t have to retype"
+            ],
+            "Contains": [
+                [
+                    "GitHub",
+                    "dataset"
+                ],
+                [
+                    "dataset",
+                    "descriptive information"
+                ]
+            ],
+            "Text": "when I store my dataset in GitHub, I don\u2019t have to retype descriptive information about my dataset.",
+            "Targets": [
+                [
+                    "don\u2019t have to retype",
+                    "descriptive information"
+                ],
+                [
+                    "store",
+                    "dataset"
+                ]
+            ]
+        },
+        "Text": "#G08# As a ResearcherPublisher, I want an integration with Zenodo, so that when I store my dataset in GitHub, I don\u2019t have to retype descriptive information about my dataset.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "Zenodo",
+                "integration"
+            ],
+            "Action": ["want"],
+            "Persona": ["ResearcherPublisher"],
+            "Contains": [[
+                "Zenodo",
+                "integration"
+            ]],
+            "Text": "#G08# As a ResearcherPublisher, I want an integration with Zenodo, ",
+            "Triggers": [[
+                "ResearcherPublisher",
+                "want"
+            ]],
+            "Targets": [[
+                "want",
+                "integration"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_37",
+        "Benefit": {
+            "Entity": ["cleaned Data Packages"],
+            "Action": ["output"],
+            "Contains": [],
+            "Text": "I can output cleaned Data Packages.",
+            "Targets": [[
+                "output",
+                "cleaned Data Packages"
+            ]]
+        },
+        "Text": "#G08# As a Publisher, I would like an integration with Open Refine, so that I can output cleaned Data Packages.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "integration",
+                "Open Refine"
+            ],
+            "Action": ["would like"],
+            "Persona": ["Publisher"],
+            "Contains": [[
+                "Open Refine",
+                "integration"
+            ]],
+            "Text": "#G08# As a Publisher, I would like an integration with Open Refine, ",
+            "Triggers": [[
+                "Publisher",
+                "would like"
+            ]],
+            "Targets": [[
+                "would like",
+                "integration"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_38",
+        "Benefit": {
+            "Entity": [
+                "data",
+                "data API"
+            ],
+            "Action": ["have"],
+            "Contains": [[
+                "Data Packages",
+                "data"
+            ]],
+            "Text": "my data is findable, and I can have a data API.",
+            "Targets": [[
+                "have",
+                "data API"
+            ]]
+        },
+        "Text": "#G08# As a ResearcherPublisher, I want to publish Data Packages to CKAN, so that my data is findable, and I can have a data API.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "Data Packages",
+                "CKAN"
+            ],
+            "Action": ["publish"],
+            "Persona": ["ResearcherPublisher"],
+            "Contains": [[
+                "CKAN",
+                "Data Packages"
+            ]],
+            "Text": "#G08# As a ResearcherPublisher, I want to publish Data Packages to CKAN, ",
+            "Triggers": [[
+                "ResearcherPublisher",
+                "publish"
+            ]],
+            "Targets": [[
+                "publish",
+                "Data Packages"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_39",
+        "Benefit": {
+            "Entity": [
+                "Data Packages",
+                "MS-SQL",
+                "workflows"
+            ],
+            "Action": ["use "],
+            "Contains": [
+                [
+                    "workflows",
+                    "Data Packages"
+                ],
+                [
+                    "workflows",
+                    "MS-SQL"
+                ]
+            ],
+            "Text": "I can use Data Packages in workflows that involve MS-SQL.",
+            "Targets": [[
+                "use ",
+                "Data Packages"
+            ]]
+        },
+        "Text": "#G08# As a ResearcherDeveloper, would like the ability import/export from MS-SQL, so that I can use Data Packages in workflows that involve MS-SQL.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "MS-SQL",
+                "ability"
+            ],
+            "Action": [
+                "import",
+                "export"
+            ],
+            "Persona": ["ResearcherDeveloper"],
+            "Contains": [],
+            "Text": "#G08# As a ResearcherDeveloper, would like the ability import/export from MS-SQL, ",
+            "Triggers": [
+                [
+                    "ResearcherDeveloper",
+                    "import"
+                ],
+                [
+                    "ResearcherDeveloper",
+                    "export"
+                ]
+            ],
+            "Targets": []
+        }
+    },
+    {
+        "US_Nr": "user_story_40",
+        "Benefit": {
+            "Entity": [
+                "data",
+                "plaintext",
+                "metadata"
+            ],
+            "Action": [
+                "store",
+                "still retaining"
+            ],
+            "Contains": [[
+                "plaintext",
+                "data"
+            ]],
+            "Text": "I can store my data in plaintext while still retaining its metadata.",
+            "Targets": [
+                [
+                    "still retaining",
+                    "metadata"
+                ],
+                [
+                    "store",
+                    "data"
+                ]
+            ]
+        },
+        "Text": "#G08# As a Researcher, working with data in NetCDF, I want NetCDF integration, so that I can store my data in plaintext while still retaining its metadata.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "NetCDF",
+                "NetCDF integration",
+                "data"
+            ],
+            "Action": ["want"],
+            "Persona": ["Researcher"],
+            "Contains": [[
+                "NetCDF",
+                "data"
+            ]],
+            "Text": "#G08# As a Researcher, working with data in NetCDF, I want NetCDF integration, ",
+            "Triggers": [[
+                "Researcher",
+                "want"
+            ]],
+            "Targets": [[
+                "want",
+                "NetCDF integration"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_41",
+        "Benefit": {
+            "Entity": [
+                " data",
+                "service"
+            ],
+            "Action": [
+                "validate",
+                "ingest"
+            ],
+            "Contains": [],
+            "Text": "I can validate my data upon ingest to the service.",
+            "Targets": [
+                [
+                    "ingest",
+                    "service"
+                ],
+                [
+                    "validate",
+                    " data"
+                ]
+            ]
+        },
+        "Text": "#G08# As a Researcher, I want an integration with https://data.mendeley.com/, so that I can validate my data upon ingest to the service.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "integration ",
+                "https://data.mendeley.com/"
+            ],
+            "Action": ["want"],
+            "Persona": ["Researcher"],
+            "Contains": [[
+                "https://data.mendeley.com/",
+                "integration "
+            ]],
+            "Text": "#G08# As a Researcher, I want an integration with https://data.mendeley.com/, ",
+            "Triggers": [[
+                "Researcher",
+                "want"
+            ]],
+            "Targets": [[
+                "want",
+                "integration "
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_42",
+        "Benefit": {
+            "Entity": ["cleaned Data Packages"],
+            "Action": ["output"],
+            "Contains": [],
+            "Text": "I can output cleaned Data Packages.",
+            "Targets": [[
+                "output",
+                "cleaned Data Packages"
+            ]]
+        },
+        "Text": "#G08# As a Publisher, I would like an integration with Excel, so that I can output cleaned Data Packages.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "integration",
+                "Excel"
+            ],
+            "Action": ["would like"],
+            "Persona": ["Publisher"],
+            "Contains": [[
+                "Excel",
+                "integration"
+            ]],
+            "Text": "#G08# As a Publisher, I would like an integration with Excel, ",
+            "Triggers": [[
+                "Publisher",
+                "would like"
+            ]],
+            "Targets": [[
+                "would like",
+                "integration"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_43",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G08# As a Publisher, I want to store my data quickly and easily online.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": ["data"],
+            "Action": ["store"],
+            "Persona": ["Publisher"],
+            "Contains": [],
+            "Triggers": [[
+                "Publisher",
+                "store"
+            ]],
+            "Targets": [[
+                "store",
+                "data"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_44",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Text": "it is more findable and therefore useful.",
+            "Targets": []
+        },
+        "Text": "#G08# As a Repository Manager, I want a tool that makes it easy for researchers/ users to add basic metadata to their research data, so that it is more findable and therefore useful.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "tool",
+                "users",
+                "researchers",
+                "basic metadata ",
+                "research data"
+            ],
+            "Action": [
+                "want",
+                "add"
+            ],
+            "Persona": ["Repository Manager"],
+            "Contains": [
+                [
+                    "research data",
+                    "basic metadata "
+                ],
+                [
+                    "users",
+                    "research data"
+                ],
+                [
+                    "researchers",
+                    "research data"
+                ]
+            ],
+            "Text": "#G08# As a Repository Manager, I want a tool that makes it easy for researchers/ users to add basic metadata to their research data, ",
+            "Triggers": [[
+                "Repository Manager",
+                "want"
+            ]],
+            "Targets": [
+                [
+                    "want",
+                    "tool"
+                ],
+                [
+                    "add",
+                    "basic metadata "
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_45",
+        "Benefit": {
+            "Entity": [
+                "validity",
+                "trust",
+                "data",
+                "usefulness"
+            ],
+            "Action": ["feel"],
+            "Contains": [
+                [
+                    "data",
+                    "usefulness"
+                ],
+                [
+                    "validity",
+                    "trust"
+                ]
+            ],
+            "Text": "I can feel trust in the validity and usefulness of the data.",
+            "Targets": [
+                [
+                    "feel",
+                    "usefulness"
+                ],
+                [
+                    "feel",
+                    "trust"
+                ]
+            ]
+        },
+        "Text": "#G08# As a ResearcherPublisher, I want validate my data with a minimum of clicks, so that I can feel trust in the validity and usefulness of the data.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "minimum of clicks",
+                "data"
+            ],
+            "Action": ["validate"],
+            "Persona": ["ResearcherPublisher"],
+            "Contains": [],
+            "Text": "#G08# As a ResearcherPublisher, I want validate my data with a minimum of clicks, ",
+            "Triggers": [[
+                "ResearcherPublisher",
+                "validate"
+            ]],
+            "Targets": [[
+                "validate",
+                "data"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_46",
+        "Benefit": {
+            "Entity": [
+                "errors",
+                "reliable data"
+            ],
+            "Action": [
+                "catch",
+                "store"
+            ],
+            "Contains": [[
+                "data",
+                "errors"
+            ]],
+            "Text": "I can catch errors early and store reliable data.",
+            "Targets": [
+                [
+                    "catch",
+                    "errors"
+                ],
+                [
+                    "store",
+                    "reliable data"
+                ]
+            ]
+        },
+        "Text": "#G08# As a publisher, I want to be able to check that every time I update my data it is still good, so that I can catch errors early and store reliable data.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": ["data"],
+            "Action": [
+                "update",
+                "check"
+            ],
+            "Persona": ["publisher"],
+            "Contains": [],
+            "Text": "#G08# As a publisher, I want to be able to check that every time I update my data it is still good, ",
+            "Triggers": [[
+                "publisher",
+                "check"
+            ]],
+            "Targets": [
+                [
+                    "check",
+                    "data"
+                ],
+                [
+                    "update",
+                    "data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_47",
+        "Benefit": {
+            "Entity": [
+                "trust",
+                "validity",
+                "usefulness",
+                "data",
+                "command line workflow"
+            ],
+            "Action": ["feel"],
+            "Contains": [
+                [
+                    "validity",
+                    "trust"
+                ],
+                [
+                    "command line workflow",
+                    "usefulness"
+                ],
+                [
+                    "data",
+                    "usefulness"
+                ]
+            ],
+            "Text": "I can feel trust in the validity and usefulness of the data quickly and in the context of my command line workflow.",
+            "Targets": [
+                [
+                    "feel",
+                    "trust"
+                ],
+                [
+                    "feel",
+                    "usefulness"
+                ]
+            ]
+        },
+        "Text": "#G08# As a DeveloperWrangler, I want to use a command line tool that allows met to validate data, so that I can feel trust in the validity and usefulness of the data quickly and in the context of my command line workflow.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "command line tool",
+                "data"
+            ],
+            "Action": [
+                "use",
+                "validate"
+            ],
+            "Persona": ["DeveloperWrangler"],
+            "Contains": [],
+            "Text": "#G08# As a DeveloperWrangler, I want to use a command line tool that allows met to validate data, ",
+            "Triggers": [[
+                "DeveloperWrangler",
+                "use"
+            ]],
+            "Targets": [
+                [
+                    "validate",
+                    "data"
+                ],
+                [
+                    "use",
+                    "command line tool"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_48",
+        "Benefit": {
+            "Entity": [
+                "data validation",
+                "third party"
+            ],
+            "Action": ["delegate"],
+            "Contains": [[
+                "third party",
+                "data validation"
+            ]],
+            "Text": "I can delegate data validation to a third party.",
+            "Targets": [[
+                "delegate",
+                "data validation"
+            ]]
+        },
+        "Text": "#G08# As a developer, I want an online service that is connected to my data repository that validates data on update, so that I can delegate data validation to a third party.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "update",
+                "online service",
+                "data repository",
+                "data"
+            ],
+            "Action": [
+                "want",
+                "validates"
+            ],
+            "Persona": ["developer"],
+            "Contains": [],
+            "Text": "#G08# As a developer, I want an online service that is connected to my data repository that validates data on update, ",
+            "Triggers": [[
+                "developer",
+                "want"
+            ]],
+            "Targets": [
+                [
+                    "want",
+                    "online service"
+                ],
+                [
+                    "validates",
+                    "data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_49",
+        "Benefit": {
+            "Entity": ["transparency commitments"],
+            "Action": [
+                "claim",
+                "living up to"
+            ],
+            "Contains": [],
+            "Text": "I can claim that we are living up to our transparency commitments.",
+            "Targets": [
+                [
+                    "claim",
+                    "transparency commitments"
+                ],
+                [
+                    "living up to",
+                    "transparency commitments"
+                ]
+            ]
+        },
+        "Text": "#G08# As a government Publisher, I want to make it easy to prove that our published data is valid, so that I can claim that we are living up to our transparency commitments.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": ["published data"],
+            "Action": [
+                "prove",
+                "make it easy"
+            ],
+            "Persona": ["government Publisher"],
+            "Contains": [],
+            "Text": "#G08# As a government Publisher, I want to make it easy to prove that our published data is valid, ",
+            "Triggers": [[
+                "government Publisher",
+                "make it easy"
+            ]],
+            "Targets": [[
+                "prove",
+                "published data"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_50",
+        "Benefit": {
+            "Entity": [
+                "government",
+                "transparency commitments"
+            ],
+            "Action": [
+                "make sure",
+                "living up to"
+            ],
+            "Contains": [],
+            "Text": "I can make sure that government is living up to its transparency commitments.",
+            "Targets": [[
+                "living up to",
+                "transparency commitments"
+            ]]
+        },
+        "Text": "#G08# As a Civic Tech Activist, I want to make it easy to assess the quality of data stored by the government, so that I can make sure that government is living up to its transparency commitments.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "quality of data",
+                "government"
+            ],
+            "Action": ["make it easy to assess"],
+            "Persona": ["Civic Tech Activist"],
+            "Contains": [[
+                "government",
+                "quality of data"
+            ]],
+            "Text": "#G08# As a Civic Tech Activist, I want to make it easy to assess the quality of data stored by the government, ",
+            "Triggers": [[
+                "Civic Tech Activist",
+                "make it easy to assess"
+            ]],
+            "Targets": [[
+                "make it easy to assess",
+                "quality of data"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_51",
+        "Benefit": {
+            "Entity": [
+                "users",
+                "correct data"
+            ],
+            "Action": ["encouraged"],
+            "Contains": [
+                [
+                    "site",
+                    "users"
+                ],
+                [
+                    "data",
+                    "correct data"
+                ]
+            ],
+            "Text": "users can be encouraged that this is the correct data for them.",
+            "Targets": [[
+                "encouraged",
+                "correct data"
+            ]]
+        },
+        "Text": "#G08# As a publisher, I want to embed an interactive preview of my data on my site, so that users can be encouraged that this is the correct data for them.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "interactive preview",
+                "data",
+                "site"
+            ],
+            "Action": ["embed"],
+            "Persona": ["publisher"],
+            "Contains": [
+                [
+                    "interactive preview",
+                    "data"
+                ],
+                [
+                    "site",
+                    "interactive preview"
+                ]
+            ],
+            "Text": "#G08# As a publisher, I want to embed an interactive preview of my data on my site, ",
+            "Triggers": [[
+                "publisher",
+                "embed"
+            ]],
+            "Targets": [[
+                "embed",
+                "interactive preview"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_52",
+        "Benefit": {
+            "Entity": [
+                "users",
+                "data",
+                "correct data"
+            ],
+            "Action": [
+                "preview",
+                "encouraged"
+            ],
+            "Contains": [
+                [
+                    "data",
+                    "correct data"
+                ],
+                [
+                    "preview button",
+                    "data"
+                ],
+                [
+                    "site",
+                    "users"
+                ]
+            ],
+            "Text": "users can preview the data and be encouraged that this is the correct data for them.",
+            "Targets": [
+                [
+                    "preview",
+                    "data"
+                ],
+                [
+                    "encouraged",
+                    "correct data"
+                ]
+            ]
+        },
+        "Text": "#G08# As a publisher, I want to embed a preview button on my site, so that users can preview the data and be encouraged that this is the correct data for them.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "preview button",
+                "site"
+            ],
+            "Action": ["embed"],
+            "Persona": ["publisher"],
+            "Contains": [[
+                "site",
+                "preview button"
+            ]],
+            "Text": "#G08# As a publisher, I want to embed a preview button on my site, ",
+            "Triggers": [[
+                "publisher",
+                "embed"
+            ]],
+            "Targets": [[
+                "embed",
+                "preview button"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_53",
+        "Benefit": {
+            "Entity": [
+                "actual download numbers",
+                "interest",
+                "dataset",
+                "how"
+            ],
+            "Action": [
+                "know",
+                "relates"
+            ],
+            "Contains": [[
+                "dataset",
+                "interest"
+            ]],
+            "Text": "I know how interest in a dataset relates to its actual download numbers.",
+            "Targets": [
+                [
+                    "relates",
+                    "actual download numbers"
+                ],
+                [
+                    "know",
+                    "how"
+                ]
+            ]
+        },
+        "Text": "#G08# As a Publisher, I want to know how many users have previewed a dataset, so that I know how interest in a dataset relates to its actual download numbers.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "how many users",
+                "dataset"
+            ],
+            "Action": [
+                "know",
+                "previewed"
+            ],
+            "Persona": ["Publisher"],
+            "Contains": [],
+            "Text": "#G08# As a Publisher, I want to know how many users have previewed a dataset, ",
+            "Triggers": [[
+                "Publisher",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "how many users"
+                ],
+                [
+                    "previewed",
+                    "dataset"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_54",
+        "Benefit": {
+            "Entity": [
+                "users",
+                "great user experience"
+            ],
+            "Action": ["give"],
+            "Contains": [[
+                "users",
+                "great user experience"
+            ]],
+            "Text": "I can give my users a great user experience.",
+            "Targets": [[
+                "give",
+                "users"
+            ]]
+        },
+        "Text": "#G08# As a Developer, I want to customize an existing wizard for my specific type of data, so that I can give my users a great user experience.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "existing wizard",
+                "specific type of data"
+            ],
+            "Action": ["customize"],
+            "Persona": ["Developer"],
+            "Contains": [[
+                "specific type of data",
+                "existing wizard"
+            ]],
+            "Text": "#G08# As a Developer, I want to customize an existing wizard for my specific type of data, ",
+            "Triggers": [[
+                "Developer",
+                "customize"
+            ]],
+            "Targets": [[
+                "customize",
+                "existing wizard"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_55",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G08# As a Publisher, I want to add useful metadata or add in new data columns to make the dataset more useful.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "useful metadata",
+                "new data columns",
+                "dataset"
+            ],
+            "Action": [
+                "add",
+                "add"
+            ],
+            "Persona": ["Publisher"],
+            "Contains": [
+                [
+                    "dataset",
+                    "new data columns"
+                ],
+                [
+                    "dataset",
+                    "useful metadata"
+                ]
+            ],
+            "Triggers": [
+                [
+                    "Publisher",
+                    "add"
+                ],
+                [
+                    "Publisher",
+                    "add"
+                ]
+            ],
+            "Targets": [
+                [
+                    "add",
+                    "useful metadata"
+                ],
+                [
+                    "add",
+                    "new data columns"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_56",
+        "Benefit": {
+            "Entity": [
+                "methodology",
+                "others"
+            ],
+            "Action": ["rerun"],
+            "Contains": [],
+            "Text": "my methodology is transparent and can be rerun by others.",
+            "Targets": [[
+                "rerun",
+                "methodology"
+            ]]
+        },
+        "Text": "#G08# As a publisher, I want to package reproducible steps to get a certain data state, so my methodology is transparent and can be rerun by others.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "reproducible steps",
+                "certain data state"
+            ],
+            "Action": [
+                "package",
+                "get"
+            ],
+            "Persona": ["publisher"],
+            "Contains": [[
+                "reproducible steps",
+                "certain data state"
+            ]],
+            "Text": "#G08# As a publisher, I want to package reproducible steps to get a certain data state, so",
+            "Triggers": [[
+                "publisher",
+                "package"
+            ]],
+            "Targets": [
+                [
+                    "get",
+                    "certain data state"
+                ],
+                [
+                    "package",
+                    "reproducible steps"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_57",
+        "Benefit": {
+            "Entity": [
+                "relevant catalog",
+                "data API",
+                "dataset"
+            ],
+            "Action": [
+                "get",
+                "listed"
+            ],
+            "Contains": [[
+                "relevant catalog",
+                "dataset"
+            ]],
+            "Text": "I get a data API and my dataset is listed in a relevant catalog.",
+            "Targets": [
+                [
+                    "get",
+                    "data API"
+                ],
+                [
+                    "listed",
+                    "dataset"
+                ]
+            ]
+        },
+        "Text": "#G08# As a DeveloperDataWrangler, I want to store my Data Package in GitHub and have it automatically stored into CKAN, so that I get a data API and my dataset is listed in a relevant catalog.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "Data Package",
+                "GitHub",
+                "CKAN"
+            ],
+            "Action": [
+                "store",
+                "automatically stored"
+            ],
+            "Persona": ["DeveloperDataWrangler"],
+            "Contains": [
+                [
+                    "GitHub",
+                    "Data Package"
+                ],
+                [
+                    "CKAN",
+                    "Data Package"
+                ]
+            ],
+            "Text": "#G08# As a DeveloperDataWrangler, I want to store my Data Package in GitHub and have it automatically stored into CKAN, ",
+            "Triggers": [[
+                "DeveloperDataWrangler",
+                "store"
+            ]],
+            "Targets": [
+                [
+                    "automatically stored",
+                    "CKAN"
+                ],
+                [
+                    "store",
+                    "Data Package"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_58",
+        "Benefit": {
+            "Entity": [
+                "data",
+                "quick preview"
+            ],
+            "Action": ["get"],
+            "Contains": [[
+                "data",
+                "quick preview"
+            ]],
+            "Text": "I can get a quick preview of the data.",
+            "Targets": [[
+                "get",
+                "quick preview"
+            ]]
+        },
+        "Text": "#G08# As a Researcher, I want a tool that can generate basic statistics about a dataset, so that I can get a quick preview of the data.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "tool",
+                "basic statistics",
+                "dataset"
+            ],
+            "Action": ["want"],
+            "Persona": ["Researcher"],
+            "Contains": [[
+                "dataset",
+                "basic statistics"
+            ]],
+            "Text": "#G08# As a Researcher, I want a tool that can generate basic statistics about a dataset, ",
+            "Triggers": [[
+                "Researcher",
+                "want"
+            ]],
+            "Targets": [[
+                "want",
+                "tool"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_59",
+        "Benefit": {
+            "Entity": [
+                "data summaries",
+                "sites"
+            ],
+            "Action": ["embed"],
+            "Contains": [[
+                "sites",
+                "data summaries"
+            ]],
+            "Text": "I can embed data summaries across sites.",
+            "Targets": [[
+                "embed",
+                "data summaries"
+            ]]
+        },
+        "Text": "#G08# As a DeveloperPublisher, I want a tool to create an embeddable data summary via iframe, so that I can embed data summaries across sites.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "tool",
+                "embeddable data summary",
+                "iframe"
+            ],
+            "Action": [
+                "want",
+                "create"
+            ],
+            "Persona": ["DeveloperPublisher"],
+            "Contains": [[
+                "iframe",
+                "embeddable data summary"
+            ]],
+            "Text": "#G08# As a DeveloperPublisher, I want a tool to create an embeddable data summary via iframe, ",
+            "Triggers": [[
+                "DeveloperPublisher",
+                "want"
+            ]],
+            "Targets": [
+                [
+                    "want",
+                    "tool"
+                ],
+                [
+                    "create",
+                    "embeddable data summary"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_60",
+        "Benefit": {
+            "Entity": ["messy data"],
+            "Action": [
+                "use",
+                "clean"
+            ],
+            "Contains": [],
+            "Text": "I can use it to clean messy data.",
+            "Targets": [
+                [
+                    "use",
+                    "app"
+                ],
+                [
+                    "clean",
+                    "messy data"
+                ]
+            ]
+        },
+        "Text": "#G08# As a Researcher, I want an app that generates an OpenRefine reconciliation API endpoint from a Tabular Data Package, so that I can use it to clean messy data.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "OpenRefine reconciliation API endpoint",
+                "app",
+                "Tabular Data Package"
+            ],
+            "Action": [
+                "want",
+                "generates"
+            ],
+            "Persona": ["Researcher"],
+            "Contains": [],
+            "Text": "#G08# As a Researcher, I want an app that generates an OpenRefine reconciliation API endpoint from a Tabular Data Package, ",
+            "Triggers": [[
+                "Researcher",
+                "want"
+            ]],
+            "Targets": [
+                [
+                    "want",
+                    "app"
+                ],
+                [
+                    "generates",
+                    "OpenRefine reconciliation API endpoint"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_61",
+        "Benefit": {
+            "Entity": [
+                "high quality data",
+                "Data Package tooling"
+            ],
+            "Action": [
+                "load",
+                "using"
+            ],
+            "Contains": [],
+            "Text": "I can load high quality data using Data Package tooling.",
+            "Targets": [
+                [
+                    "load",
+                    "high quality data"
+                ],
+                [
+                    "using",
+                    "Data Package tooling"
+                ]
+            ]
+        },
+        "Text": "#G08# As a Researcher, I want an app that create proxy Data Packages for well know and reliable data, sources, so that I can load high quality data using Data Package tooling.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "app",
+                "proxy Data Packages",
+                "well know and reliable data",
+                "sources"
+            ],
+            "Action": [
+                "want",
+                "create"
+            ],
+            "Persona": ["Researcher"],
+            "Contains": [
+                [
+                    "sources",
+                    "proxy Data Packages"
+                ],
+                [
+                    "app",
+                    "proxy Data Packages"
+                ],
+                [
+                    "well know and reliable data",
+                    "proxy Data Packages"
+                ]
+            ],
+            "Text": "#G08# As a Researcher, I want an app that create proxy Data Packages for well know and reliable data, sources, ",
+            "Triggers": [[
+                "Researcher",
+                "want"
+            ]],
+            "Targets": [
+                [
+                    "want",
+                    "app"
+                ],
+                [
+                    "create",
+                    "proxy Data Packages"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_62",
+        "Benefit": {
+            "Entity": [
+                "owners",
+                "data packagers"
+            ],
+            "Action": ["paired"],
+            "Contains": [],
+            "Text": "owners are paired with data packagers.",
+            "Targets": [
+                [
+                    "paired",
+                    "data packagers"
+                ],
+                [
+                    "paired",
+                    "owners"
+                ]
+            ]
+        },
+        "Text": "#G08# As a RepositoryManagerResearcher, I want an app that acts as a match-making service for packaging data, so that owners are paired with data packagers.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "app",
+                "match-making service",
+                "packaging data"
+            ],
+            "Action": [
+                "want",
+                "acts as"
+            ],
+            "Persona": ["RepositoryManagerResearcher"],
+            "Contains": [[
+                "packaging data",
+                "match-making service"
+            ]],
+            "Text": "#G08# As a RepositoryManagerResearcher, I want an app that acts as a match-making service for packaging data, ",
+            "Triggers": [[
+                "RepositoryManagerResearcher",
+                "want"
+            ]],
+            "Targets": [
+                [
+                    "want",
+                    "app"
+                ],
+                [
+                    "acts as",
+                    "match-making service"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_63",
+        "Benefit": {
+            "Entity": [
+                "data packages",
+                "additional data analysis tools"
+            ],
+            "Action": ["easily use"],
+            "Contains": [[
+                "Frictionless data tools",
+                "additional data analysis tools"
+            ]],
+            "Text": "I can easily use data packages with additional data analysis tools.",
+            "Targets": [[
+                "easily use",
+                "data packages"
+            ]]
+        },
+        "Text": "#G08# As a developer, I would like to create a web socket protocol for Frictionless data tools, so that I can easily use data packages with additional data analysis tools.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "Frictionless data tools",
+                "web socket protocol"
+            ],
+            "Action": ["create"],
+            "Persona": ["developer"],
+            "Contains": [[
+                "Frictionless data tools",
+                "web socket protocol"
+            ]],
+            "Text": "#G08# As a developer, I would like to create a web socket protocol for Frictionless data tools, ",
+            "Triggers": [[
+                "developer",
+                "create"
+            ]],
+            "Targets": [[
+                "create",
+                "web socket protocol"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_64",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G08# As a Publisher, I would like a tool to check data availability persistence after publication.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "publication",
+                "tool",
+                "data availability persistence"
+            ],
+            "Action": [
+                "would like ",
+                "check"
+            ],
+            "Persona": ["Publisher"],
+            "Contains": [],
+            "Triggers": [[
+                "Publisher",
+                "would like "
+            ]],
+            "Targets": [
+                [
+                    "would like ",
+                    "tool"
+                ],
+                [
+                    "check",
+                    "data availability persistence"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_65",
+        "Benefit": {
+            "Entity": [
+                "funding agencies",
+                "funding",
+                "given dataset",
+                "source"
+            ],
+            "Action": ["identify"],
+            "Contains": [
+                [
+                    "given dataset",
+                    "source"
+                ],
+                [
+                    "given dataset",
+                    "funding"
+                ]
+            ],
+            "Text": "funding agencies can identify the funding, source for a given dataset.",
+            "Targets": [
+                [
+                    "identify",
+                    "funding"
+                ],
+                [
+                    "identify",
+                    "source"
+                ]
+            ]
+        },
+        "Text": "#G08# As a ResearcherPublisher, I want to specify the funding that contributed to the creation of a given dataset, so that funding agencies can identify the funding, source for a given dataset.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "funding",
+                "creation of a given dataset"
+            ],
+            "Action": ["specify"],
+            "Persona": ["ResearcherPublisher"],
+            "Contains": [[
+                "creation of a given dataset",
+                "funding"
+            ]],
+            "Text": "#G08# As a ResearcherPublisher, I want to specify the funding that contributed to the creation of a given dataset, ",
+            "Triggers": [[
+                "ResearcherPublisher",
+                "specify"
+            ]],
+            "Targets": [[
+                "specify",
+                "funding"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_66",
+        "Benefit": {
+            "Entity": [
+                "papers",
+                "data"
+            ],
+            "Action": ["cite"],
+            "Contains": [[
+                "data",
+                "papers"
+            ]],
+            "Text": "I can cite it in papers stored  with the data.",
+            "Targets": [[
+                "cite",
+                "dataset"
+            ]]
+        },
+        "Text": "#G08# As a ResearcherPublisher, I want to add a DOI to a dataset, so that I can cite it in papers stored  with the data.",
+        "PID": "#G08#",
+        "Main": {
+            "Entity": [
+                "DOI",
+                "dataset"
+            ],
+            "Action": ["add"],
+            "Persona": ["ResearcherPublisher"],
+            "Contains": [[
+                "dataset",
+                "DOI"
+            ]],
+            "Text": "#G08# As a ResearcherPublisher, I want to add a DOI to a dataset, ",
+            "Triggers": [[
+                "ResearcherPublisher",
+                "add"
+            ]],
+            "Targets": [[
+                "add",
+                "DOI"
+            ]]
+        }
+    }
+]
