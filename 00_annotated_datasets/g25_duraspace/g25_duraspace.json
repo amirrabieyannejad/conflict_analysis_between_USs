@@ -1,0 +1,4376 @@
+[
+    {
+        "US_Nr": "user_story_01",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to know all the collections and objects in the DAMS for which I have custodial responsibility.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "collections",
+                "objects",
+                "DAMS",
+                "custodial responsibility"
+            ],
+            "Action": ["know"],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "DAMS",
+                    "objects"
+                ],
+                [
+                    "DAMS",
+                    "collections"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "collections"
+                ],
+                [
+                    "know",
+                    "objects"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_02",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to be able to update repository information in one place and be assured updates will be propagated to all relevant places.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "repository information",
+                "one place",
+                "updates",
+                "all relevant places"
+            ],
+            "Action": [
+                "update",
+                "be assured",
+                "propagated"
+            ],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "one place",
+                    "repository information"
+                ],
+                [
+                    "all relevant places",
+                    "updates"
+                ]
+            ],
+            "Triggers": [
+                [
+                    "repository manager",
+                    "update"
+                ],
+                [
+                    "repository manager",
+                    "be assured"
+                ]
+            ],
+            "Targets": [
+                [
+                    "update",
+                    "repository information"
+                ],
+                [
+                    "propagated",
+                    "updates"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_03",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to constrain curatorial access to my units assets to staff members of my unit and to DAMS managers having universal access.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "curatorial access",
+                "units assets",
+                "staff members",
+                "unit",
+                "DAMS managers",
+                "universal access"
+            ],
+            "Action": ["constrain"],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "units assets",
+                    "curatorial access"
+                ],
+                [
+                    "unit",
+                    "staff members"
+                ],
+                [
+                    "DAMS managers",
+                    "universal access"
+                ],
+                [
+                    "staff members",
+                    "curatorial access"
+                ],
+                [
+                    "units assets",
+                    "universal access"
+                ],
+                [
+                    "staff members",
+                    "units assets"
+                ],
+                [
+                    "DAMS managers",
+                    "units assets"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "constrain"
+            ]],
+            "Targets": [[
+                "constrain",
+                "curatorial access"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_04",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a user, I want to list all the collections and objects in the DAMS that belong to a library unit.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "collections",
+                "objects",
+                "DAMS",
+                "library unit"
+            ],
+            "Action": ["list"],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "DAMS",
+                    "objects"
+                ],
+                [
+                    "DAMS",
+                    "collections"
+                ],
+                [
+                    "library unit",
+                    "objects"
+                ],
+                [
+                    "library unit",
+                    "collections"
+                ]
+            ],
+            "Triggers": [[
+                "user",
+                "list"
+            ]],
+            "Targets": [
+                [
+                    "list",
+                    "collections"
+                ],
+                [
+                    "list",
+                    "objects"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_05",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a user, I want to be able to contact repositories.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": ["repositories"],
+            "Action": ["contact"],
+            "Persona": ["user"],
+            "Contains": [],
+            "Triggers": [[
+                "user",
+                "contact"
+            ]],
+            "Targets": [[
+                "contact",
+                "repositories"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_06",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As the DAMS manager, I want to be able to list for browsing all formal collections represented in the DAMS along with the appropriate relationships.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "all formal collections",
+                "DAMS",
+                "appropriate relationships"
+            ],
+            "Action": [
+                "list",
+                "browsing"
+            ],
+            "Persona": ["DAMS manager"],
+            "Contains": [[
+                "DAMS",
+                "all formal collections"
+            ]],
+            "Triggers": [[
+                "DAMS manager",
+                "list"
+            ]],
+            "Targets": [
+                [
+                    "browsing",
+                    "all formal collections"
+                ],
+                [
+                    "list",
+                    "all formal collections"
+                ],
+                [
+                    "list",
+                    "appropriate relationships"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_07",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to know all the collections for which I have curatorial responsibility.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "collections",
+                "curatorial responsibility"
+            ],
+            "Action": ["know"],
+            "Persona": ["repository manager"],
+            "Contains": [],
+            "Triggers": [[
+                "repository manager",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "collections"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_08",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to compose collections, limiting the collection to the items sharing the same provenance, limiting the collection to represent a part of a collection have a singular provenance, or assembly a collection from other collections and objects.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "collections",
+                "collection",
+                "items",
+                "same provenance",
+                "collection",
+                "part of a collection",
+                "singular provenance",
+                "collection",
+                "other collections",
+                "objects"
+            ],
+            "Action": [
+                "compose",
+                "limiting",
+                "limiting",
+                "represent",
+                "assembly"
+            ],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "items",
+                    "same provenance"
+                ],
+                [
+                    "part of a collection",
+                    "singular provenance"
+                ],
+                [
+                    "collection",
+                    "items"
+                ],
+                [
+                    "collection",
+                    "other collections"
+                ],
+                [
+                    "collection",
+                    "objects"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "compose"
+            ]],
+            "Targets": [
+                [
+                    "compose",
+                    "collections"
+                ],
+                [
+                    "limiting",
+                    "collection"
+                ],
+                [
+                    "limiting",
+                    "collection"
+                ],
+                [
+                    "represent",
+                    "part of a collection"
+                ],
+                [
+                    "assembly",
+                    "collection"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_09",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to say one collection is related to another collection.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "one collection",
+                "another collection"
+            ],
+            "Action": ["say"],
+            "Persona": ["repository manager"],
+            "Contains": [],
+            "Triggers": [[
+                "repository manager",
+                "say"
+            ]],
+            "Targets": [[
+                "say",
+                "one collection"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_10",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to describe a collection, including its title, it's inclusive / bulk dates, its language(s), and many other aspects.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "collection",
+                "title",
+                "inclusive / bulk dates",
+                "language(s)",
+                "many other aspects"
+            ],
+            "Action": ["describe"],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "collection",
+                    "title"
+                ],
+                [
+                    "collection",
+                    "inclusive / bulk dates"
+                ],
+                [
+                    "collection",
+                    "language(s)"
+                ],
+                [
+                    "collection",
+                    "many other aspects"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "describe"
+            ]],
+            "Targets": [[
+                "describe",
+                "collection"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_11",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to indicate names related to the collection either as creator, source, or subject.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "names",
+                "collection",
+                "creator",
+                "source",
+                "subject"
+            ],
+            "Action": ["indicate"],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "collection",
+                    "names"
+                ],
+                [
+                    "names",
+                    "creator"
+                ],
+                [
+                    "names",
+                    "source"
+                ],
+                [
+                    "names",
+                    "subject"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "indicate"
+            ]],
+            "Targets": [[
+                "indicate",
+                "names"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_12",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to indicate subjects related to the collection.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "subjects",
+                "collection"
+            ],
+            "Action": ["indicate"],
+            "Persona": ["repository manager"],
+            "Contains": [[
+                "collection",
+                "subjects"
+            ]],
+            "Triggers": [[
+                "repository manager",
+                "indicate"
+            ]],
+            "Targets": [[
+                "indicate",
+                "subjects"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_13",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to indicate other descriptions of the collection that are outside the DAMS and of probable importance to users.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "other descriptions",
+                "collection",
+                "DAMS",
+                "users",
+                "probable importance"
+            ],
+            "Action": ["indicate"],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "collection",
+                    "other descriptions"
+                ],
+                [
+                    "collection",
+                    "probable importance"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "indicate"
+            ]],
+            "Targets": [[
+                "indicate",
+                "other descriptions"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_14",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to know all events occurring to a collection.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "all events",
+                "collection"
+            ],
+            "Action": [
+                "know",
+                "occurring"
+            ],
+            "Persona": ["repository manager"],
+            "Contains": [[
+                "collection",
+                "all events"
+            ]],
+            "Triggers": [[
+                "repository manager",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "all events"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_15",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a user, I want to be able to browse by collections in the DAMS.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "collections",
+                "DAMS"
+            ],
+            "Action": ["browse"],
+            "Persona": ["user"],
+            "Contains": [[
+                "DAMS",
+                "collections"
+            ]],
+            "Triggers": [[
+                "user",
+                "browse"
+            ]],
+            "Targets": [[
+                "browse",
+                "collections"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_16",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a user, I want to be able to limit my search to specified collection(s).",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "search",
+                "specified collection(s)"
+            ],
+            "Action": ["limit"],
+            "Persona": ["user"],
+            "Contains": [[
+                "search",
+                "specified collection(s)"
+            ]],
+            "Triggers": [[
+                "user",
+                "limit"
+            ]],
+            "Targets": [[
+                "limit",
+                "search"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_17",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want know all the components belonging to an object.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "components",
+                "object"
+            ],
+            "Action": ["know"],
+            "Persona": ["repository manager"],
+            "Contains": [[
+                "object",
+                "components"
+            ]],
+            "Triggers": [[
+                "repository manager",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "components"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_18",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As repository manager, I want to know all the files belonging to an object.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "files",
+                "object"
+            ],
+            "Action": ["know"],
+            "Persona": ["repository manager"],
+            "Contains": [[
+                "object",
+                "files"
+            ]],
+            "Triggers": [[
+                "repository manager",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "files"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_19",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to describe an object, including its title, date(s), language(s), and other aspects.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "object",
+                "title",
+                "date(s)",
+                "language(s)",
+                "other aspects"
+            ],
+            "Action": ["describe"],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "object",
+                    "title"
+                ],
+                [
+                    "object",
+                    "date(s)"
+                ],
+                [
+                    "object",
+                    "language(s)"
+                ],
+                [
+                    "object",
+                    "other aspects"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "describe"
+            ]],
+            "Targets": [[
+                "describe",
+                "object"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_20",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to indicate names related to an object.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "names",
+                "object"
+            ],
+            "Action": ["indicate"],
+            "Persona": ["repository manager"],
+            "Contains": [[
+                "object",
+                "names"
+            ]],
+            "Triggers": [[
+                "repository manager",
+                "indicate"
+            ]],
+            "Targets": [[
+                "indicate",
+                "names"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_21",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to indicate subjects that are related to an object.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "subjects",
+                "object"
+            ],
+            "Action": ["indicate"],
+            "Persona": ["repository manager"],
+            "Contains": [[
+                "object",
+                "subjects"
+            ]],
+            "Triggers": [[
+                "repository manager",
+                "indicate"
+            ]],
+            "Targets": [[
+                "indicate",
+                "subjects"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_22",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to indicate the copyright status of an object.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "copyright status",
+                "object"
+            ],
+            "Action": ["indicate"],
+            "Persona": ["repository manager"],
+            "Contains": [[
+                "object",
+                "copyright status"
+            ]],
+            "Triggers": [[
+                "repository manager",
+                "indicate"
+            ]],
+            "Targets": [[
+                "indicate",
+                "copyright status"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_23",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to indicate any statutes pertinent to an object.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "any statutes",
+                "object"
+            ],
+            "Action": ["indicate"],
+            "Persona": ["repository manager"],
+            "Contains": [[
+                "object",
+                "any statutes"
+            ]],
+            "Triggers": [[
+                "repository manager",
+                "indicate"
+            ]],
+            "Targets": [[
+                "indicate",
+                "any statutes"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_24",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to indicate any license pertinent to an object.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "any license",
+                "object"
+            ],
+            "Action": ["indicate"],
+            "Persona": ["repository manager"],
+            "Contains": [[
+                "object",
+                "any license"
+            ]],
+            "Triggers": [[
+                "repository manager",
+                "indicate"
+            ]],
+            "Targets": [[
+                "indicate",
+                "any license"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_25",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to indicate any other rights pertinent to an object.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "any other rights",
+                "object"
+            ],
+            "Action": ["indicate"],
+            "Persona": ["repository manager"],
+            "Contains": [[
+                "object",
+                "any other rights"
+            ]],
+            "Triggers": [[
+                "repository manager",
+                "indicate"
+            ]],
+            "Targets": [[
+                "indicate",
+                "any other rights"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_26",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to indicate any external versions or descriptions of an object that may be of probable importance to an user.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "any external versions",
+                "descriptions",
+                "object",
+                "probable importance",
+                "user"
+            ],
+            "Action": ["indicate"],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "object",
+                    "descriptions"
+                ],
+                [
+                    "object",
+                    "any external versions"
+                ],
+                [
+                    "object",
+                    "probable importance"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "indicate"
+            ]],
+            "Targets": [
+                [
+                    "indicate",
+                    "any external versions"
+                ],
+                [
+                    "indicate",
+                    "descriptions"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_27",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to know all events done to an object over the object's life cycle.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "object",
+                "object's life cycle",
+                "all events"
+            ],
+            "Action": ["know"],
+            "Persona": ["repository manager"],
+            "Contains": [[
+                "object",
+                "all events"
+            ]],
+            "Triggers": [[
+                "repository manager",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "all events"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_28",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a DAMS manager, I want to know what repository an object belongs to.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "repository",
+                "object"
+            ],
+            "Action": ["know"],
+            "Persona": ["DAMS manager"],
+            "Contains": [[
+                "repository",
+                "object"
+            ]],
+            "Triggers": [[
+                "DAMS manager",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "repository"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_29",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a DAMS manager I want to know what collection(s) an object belongs to.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "collection(s)",
+                "object"
+            ],
+            "Action": ["know"],
+            "Persona": ["DAMS manager"],
+            "Contains": [[
+                "collection(s)",
+                "object"
+            ]],
+            "Triggers": [[
+                "DAMS manager",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "collection(s)"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_30",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a user, I want to know what repository an object belongs to.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "repository",
+                "object"
+            ],
+            "Action": ["know"],
+            "Persona": ["user"],
+            "Contains": [[
+                "repository",
+                "object"
+            ]],
+            "Triggers": [[
+                "user",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "repository"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_31",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a user, I want to know what collection(s) an object belongs to.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "collection(s)",
+                "object"
+            ],
+            "Action": ["know"],
+            "Persona": ["user"],
+            "Contains": [[
+                "collection(s)",
+                "object"
+            ]],
+            "Triggers": [[
+                "user",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "collection(s)"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_32",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a user, I want to see all the component parts of an object.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "component parts",
+                "object."
+            ],
+            "Action": ["see"],
+            "Persona": ["user"],
+            "Contains": [[
+                "object.",
+                "component parts"
+            ]],
+            "Triggers": [[
+                "user",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "component parts"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_33",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a user, I want to have access to the content files for an object.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "access",
+                "content files",
+                "object"
+            ],
+            "Action": ["have"],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "content files",
+                    "access"
+                ],
+                [
+                    "object",
+                    "content files"
+                ]
+            ],
+            "Triggers": [[
+                "user",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "access"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_34",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a user, I want to know the rights status of an object.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "rights status",
+                "object"
+            ],
+            "Action": ["know"],
+            "Persona": ["user"],
+            "Contains": [[
+                "object",
+                "rights status"
+            ]],
+            "Triggers": [[
+                "user",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "rights status"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_35",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a user, I want to know about other versions of the object or its metadata that might be of use to me.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "other versions",
+                "object",
+                "metadata"
+            ],
+            "Action": ["know"],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "object",
+                    "other versions"
+                ],
+                [
+                    "object",
+                    "metadata"
+                ]
+            ],
+            "Triggers": [[
+                "user",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "other versions"
+                ],
+                [
+                    "know",
+                    "metadata"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_36",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to represent the physical and/or logical structure of an object.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "physical and/or logical structure",
+                "object"
+            ],
+            "Action": ["represent"],
+            "Persona": ["repository manager"],
+            "Contains": [[
+                "object",
+                "physical and/or logical structure"
+            ]],
+            "Triggers": [[
+                "repository manager",
+                "represent"
+            ]],
+            "Targets": [[
+                "represent",
+                "physical and/or logical structure"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_37",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to list all the components, in their appropriate order, for an object.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "components",
+                "appropriate order",
+                "object"
+            ],
+            "Action": ["list"],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "components",
+                    "appropriate order"
+                ],
+                [
+                    "object",
+                    "components"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "list"
+            ]],
+            "Targets": [[
+                "list",
+                "components"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_38",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to link, when appropriate, a component to another component or to a file.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "component",
+                "another component",
+                "file"
+            ],
+            "Action": ["link"],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "another component",
+                    "component"
+                ],
+                [
+                    "file",
+                    "component"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "link"
+            ]],
+            "Targets": [[
+                "link",
+                "component"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_39",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to describe each component as necessary, including title, date(s), language(s), and other facets.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "each component",
+                "title",
+                "date(s)",
+                "language(s)",
+                "other facets"
+            ],
+            "Action": ["describe"],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "each component",
+                    "title"
+                ],
+                [
+                    "each component",
+                    "date(s)"
+                ],
+                [
+                    "each component",
+                    "language(s)"
+                ],
+                [
+                    "each component",
+                    "other facets"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "describe"
+            ]],
+            "Targets": [[
+                "describe",
+                "each component"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_40",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to indicate any name that is pertinent to the component.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "any name",
+                "component"
+            ],
+            "Action": ["indicate"],
+            "Persona": ["repository manager"],
+            "Contains": [[
+                "component",
+                "any name"
+            ]],
+            "Triggers": [[
+                "repository manager",
+                "indicate"
+            ]],
+            "Targets": [[
+                "indicate",
+                "any name"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_41",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to indicate any subject that is pertinent to the component.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "any subject",
+                "component"
+            ],
+            "Action": ["indicate"],
+            "Persona": ["repository manager"],
+            "Contains": [[
+                "component",
+                "any subject"
+            ]],
+            "Triggers": [[
+                "repository manager",
+                "indicate"
+            ]],
+            "Targets": [[
+                "indicate",
+                "any subject"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_42",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to indicate if the component has a copyright status different than that of of the object as a whole.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "component",
+                "copyright status",
+                "object"
+            ],
+            "Action": ["indicate"],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "component",
+                    "copyright status"
+                ],
+                [
+                    "object",
+                    "copyright status"
+                ],
+                [
+                    "object",
+                    "component"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "indicate"
+            ]],
+            "Targets": []
+        }
+    },
+    {
+        "US_Nr": "user_story_43",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to indicate if a statute pertains to the component, apart from the object as a whole.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "statute",
+                "component",
+                "object"
+            ],
+            "Action": ["indicate"],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "object",
+                    "component"
+                ],
+                [
+                    "object",
+                    "statute"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "indicate"
+            ]],
+            "Targets": []
+        }
+    },
+    {
+        "US_Nr": "user_story_44",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to indicate if a license pertains to the component, apart from the object as a whole.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "license",
+                "component",
+                "object"
+            ],
+            "Action": ["indicate"],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "object",
+                    "license"
+                ],
+                [
+                    "object",
+                    "component"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "indicate"
+            ]],
+            "Targets": []
+        }
+    },
+    {
+        "US_Nr": "user_story_45",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to indicate if other rights pertain to the component, apart from the object as a whole.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "other rights",
+                "component",
+                "object"
+            ],
+            "Action": ["indicate"],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "object",
+                    "other rights"
+                ],
+                [
+                    "object",
+                    "component"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "indicate"
+            ]],
+            "Targets": []
+        }
+    },
+    {
+        "US_Nr": "user_story_46",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to know all events occurring to a component over its life cycle.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "component",
+                "life cycle",
+                "all events"
+            ],
+            "Action": [
+                "know",
+                "occurring"
+            ],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "component",
+                    "life cycle"
+                ],
+                [
+                    "component",
+                    "all events"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "all events"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_47",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a DAMS manager, I want to present in their assigned order all components comprising an object.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "all components",
+                "object",
+                "assigned order"
+            ],
+            "Action": ["present"],
+            "Persona": ["DAMS manager"],
+            "Contains": [
+                [
+                    "all components",
+                    "assigned order"
+                ],
+                [
+                    "all components",
+                    "object"
+                ]
+            ],
+            "Triggers": [[
+                "DAMS manager",
+                "present"
+            ]],
+            "Targets": [[
+                "present",
+                "all components"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_48",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a user, I want to be able to see and navigate the component hierarchy of an object.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "component hierarchy",
+                "object"
+            ],
+            "Action": [
+                "see",
+                "navigate"
+            ],
+            "Persona": ["user"],
+            "Contains": [[
+                "object",
+                "component hierarchy"
+            ]],
+            "Triggers": [
+                [
+                    "user",
+                    "see"
+                ],
+                [
+                    "user",
+                    "navigate"
+                ]
+            ],
+            "Targets": [
+                [
+                    "see",
+                    "component hierarchy"
+                ],
+                [
+                    "navigate",
+                    "component hierarchy"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_49",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to know all the content files in the DAMS for my repository's objects.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "content files",
+                "DAMS",
+                "repository's objects"
+            ],
+            "Action": ["know"],
+            "Persona": ["repository manager"],
+            "Contains": [[
+                "DAMS",
+                "content files"
+            ]],
+            "Triggers": [[
+                "repository manager",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "content files"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_50",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to associate a content file with either an object or an object component.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "content file",
+                "object",
+                "object component"
+            ],
+            "Action": ["associate"],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "object",
+                    "content file"
+                ],
+                [
+                    "object component",
+                    "content file"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "associate"
+            ]],
+            "Targets": [[
+                "associate",
+                "content file"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_51",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to know any event that occurred to a content file for any of my repository's objects.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "any event",
+                "content file",
+                "repository's objects"
+            ],
+            "Action": ["know"],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "content file",
+                    "any event"
+                ],
+                [
+                    "repository's objects",
+                    "content file"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "any event"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_52",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a DAMS manager, I want to indicate to preservation managers aspects of a master file useful for monitoring its integrity, and impending obsolescence, including file size, creation date, file format and format version.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "preservation managers",
+                "aspects",
+                "master file",
+                "integrity",
+                "impending obsolescence",
+                "file size",
+                "creation date",
+                "file format",
+                "format version"
+            ],
+            "Action": [
+                "indicate",
+                "monitoring"
+            ],
+            "Persona": ["DAMS manager"],
+            "Contains": [
+                [
+                    "master file",
+                    "aspects"
+                ],
+                [
+                    "master file",
+                    "integrity"
+                ],
+                [
+                    "impending obsolescence",
+                    "file size"
+                ],
+                [
+                    "impending obsolescence",
+                    "creation date"
+                ],
+                [
+                    "impending obsolescence",
+                    "file format"
+                ],
+                [
+                    "impending obsolescence",
+                    "format version"
+                ]
+            ],
+            "Triggers": [[
+                "DAMS manager",
+                "indicate"
+            ]],
+            "Targets": [
+                [
+                    "indicate",
+                    "aspects"
+                ],
+                [
+                    "monitoring",
+                    "integrity"
+                ],
+                [
+                    "monitoring",
+                    "impending obsolescence"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_53",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a DAMS manager, I want to indicate to preservation managers the checksum and checksum method for each master file for a given object.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "preservation managers",
+                "checksum",
+                "checksum method",
+                "each master file",
+                "given object"
+            ],
+            "Action": ["indicate"],
+            "Persona": ["DAMS manager"],
+            "Contains": [
+                [
+                    "each master file",
+                    "checksum method"
+                ],
+                [
+                    "each master file",
+                    "checksum"
+                ],
+                [
+                    "given object",
+                    "each master file"
+                ]
+            ],
+            "Triggers": [[
+                "DAMS manager",
+                "indicate"
+            ]],
+            "Targets": [
+                [
+                    "indicate",
+                    "checksum"
+                ],
+                [
+                    "indicate",
+                    "checksum method"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_54",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a DAMS manager, I want to indicate the source-capture information for a file where it is useful to do so.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "source-capture information",
+                "file"
+            ],
+            "Action": ["indicate"],
+            "Persona": ["DAMS manager"],
+            "Contains": [[
+                "file",
+                "source-capture information"
+            ]],
+            "Triggers": [[
+                "DAMS manager",
+                "indicate"
+            ]],
+            "Targets": [[
+                "indicate",
+                "source-capture information"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_55",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a DAMS manager, I want to know, via preservation managers, of any object for which integrity or authenticity is in question or that has been updated to a more current file format.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "preservation managers",
+                "any object",
+                "integrity",
+                "authenticity",
+                "more current file format"
+            ],
+            "Action": ["know"],
+            "Persona": ["DAMS manager"],
+            "Contains": [[
+                "any object",
+                "more current file format"
+            ]],
+            "Triggers": [[
+                "DAMS manager",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "any object"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_56",
+        "Benefit": {
+            "Entity": ["file"],
+            "Action": [
+                "decide",
+                "download"
+            ],
+            "Contains": [],
+            "Text": "I can decide whether a file is too large to download.",
+            "Targets": [[
+                "download",
+                "file"
+            ]]
+        },
+        "Text": "#G25# As a user, I want access to content files that comprise an object, so that I can decide whether a file is too large to download.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "content files",
+                "object"
+            ],
+            "Action": ["access"],
+            "Persona": ["user"],
+            "Contains": [[
+                "content files",
+                "object"
+            ]],
+            "Text": "#G25# As a user, I want access to content files that comprise an object, ",
+            "Triggers": [[
+                "user",
+                "access"
+            ]],
+            "Targets": [[
+                "access",
+                "content files"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_57",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to provide a title, in all useful forms, for my repository's collections, objects, and object components.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "title",
+                "repository's collections",
+                "objects",
+                "object components"
+            ],
+            "Action": ["provide"],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "repository's collections",
+                    "title"
+                ],
+                [
+                    "objects",
+                    "title"
+                ],
+                [
+                    "object components",
+                    "title"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "provide"
+            ]],
+            "Targets": [[
+                "provide",
+                "title"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_58",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to know any changes occurring to titles for repository's collections, objects, and object components.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "any changes",
+                "titles",
+                "repository's collections",
+                "objects",
+                "object components"
+            ],
+            "Action": [
+                "know",
+                "occurring"
+            ],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "titles",
+                    "any changes"
+                ],
+                [
+                    "repository's collections",
+                    "titles"
+                ],
+                [
+                    "objects",
+                    "titles"
+                ],
+                [
+                    "object components",
+                    "titles"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "any changes"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_59",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a DAMS manager, I want to present collections, objects, and object components by title.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "collections",
+                "objects",
+                "object components",
+                "title"
+            ],
+            "Action": ["present"],
+            "Persona": ["DAMS manager"],
+            "Contains": [
+                [
+                    "object components",
+                    "title"
+                ],
+                [
+                    "objects",
+                    "title"
+                ],
+                [
+                    "collections",
+                    "title"
+                ]
+            ],
+            "Triggers": [[
+                "DAMS manager",
+                "present"
+            ]],
+            "Targets": [
+                [
+                    "present",
+                    "collections"
+                ],
+                [
+                    "present",
+                    "objects"
+                ],
+                [
+                    "present",
+                    "object components"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_60",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a user, I want to search collections, objects, and object components by title.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "collections",
+                "objects",
+                "object components",
+                "title"
+            ],
+            "Action": ["search"],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "collections",
+                    "title"
+                ],
+                [
+                    "objects",
+                    "title"
+                ],
+                [
+                    "object components",
+                    "title"
+                ]
+            ],
+            "Triggers": [[
+                "user",
+                "search"
+            ]],
+            "Targets": [
+                [
+                    "search",
+                    "collections"
+                ],
+                [
+                    "search",
+                    "objects"
+                ],
+                [
+                    "search",
+                    "object components"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_61",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to indicate for an object or object component the place of publication, the publisher, edition, etc., when pertinent.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "object",
+                "object component",
+                "publisher",
+                "edition",
+                "place of publication"
+            ],
+            "Action": ["indicate"],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "object",
+                    "place of publication"
+                ],
+                [
+                    "object",
+                    "publisher"
+                ],
+                [
+                    "object",
+                    "edition"
+                ],
+                [
+                    "object component",
+                    "place of publication"
+                ],
+                [
+                    "object component",
+                    "publisher"
+                ],
+                [
+                    "object component",
+                    "edition"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "indicate"
+            ]],
+            "Targets": [
+                [
+                    "indicate",
+                    "publisher"
+                ],
+                [
+                    "indicate",
+                    "edition"
+                ],
+                [
+                    "indicate",
+                    "place of publication"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_62",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to know of any changes made to the origin Info for an object, including its component parts.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "any changes",
+                "origin Info",
+                "object",
+                "component parts"
+            ],
+            "Action": [
+                "know",
+                "made"
+            ],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "origin Info",
+                    "any changes"
+                ],
+                [
+                    "object",
+                    "origin Info"
+                ],
+                [
+                    "object",
+                    "component parts"
+                ],
+                [
+                    "component parts",
+                    "origin Info"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "any changes"
+                ],
+                [
+                    "made",
+                    "any changes"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_63",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a user, I want to know for an object or its component parts the place of publication, the publisher, etc.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "object",
+                "component parts",
+                "place of publication",
+                "publisher"
+            ],
+            "Action": ["know"],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "object",
+                    "place of publication"
+                ],
+                [
+                    "component parts",
+                    "place of publication"
+                ],
+                [
+                    "object",
+                    "publisher"
+                ],
+                [
+                    "component parts",
+                    "publisher"
+                ],
+                [
+                    "object",
+                    "component parts"
+                ]
+            ],
+            "Triggers": [[
+                "user",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "place of publication"
+                ],
+                [
+                    "know",
+                    "publisher"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_64",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to describe various facets of a collection, object, or object component that are not addressable via title, date, name, and subject entities.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "various facets",
+                "collection",
+                "object",
+                "object component",
+                "title",
+                "date",
+                "name",
+                "subject entities"
+            ],
+            "Action": ["describe"],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "collection",
+                    "various facets"
+                ],
+                [
+                    "object",
+                    "various facets"
+                ],
+                [
+                    "object component",
+                    "various facets"
+                ],
+                [
+                    "collection",
+                    "title"
+                ],
+                [
+                    "collection",
+                    "date"
+                ],
+                [
+                    "collection",
+                    "name"
+                ],
+                [
+                    "collection",
+                    "subject entities"
+                ],
+                [
+                    "object",
+                    "title"
+                ],
+                [
+                    "object",
+                    "date"
+                ],
+                [
+                    "object",
+                    "name"
+                ],
+                [
+                    "object",
+                    "subject entities"
+                ],
+                [
+                    "object component",
+                    "title"
+                ],
+                [
+                    "object component",
+                    "date"
+                ],
+                [
+                    "object component",
+                    "name"
+                ],
+                [
+                    "object component",
+                    "subject entities"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "describe"
+            ]],
+            "Targets": [[
+                "describe",
+                "various facets"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_65",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to know of all modifications made to notes for my repository's collections, objects, or object components.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "all modifications",
+                "notes",
+                "repository's collections",
+                "objects",
+                "object components"
+            ],
+            "Action": [
+                "know",
+                "made"
+            ],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "notes",
+                    "all modifications"
+                ],
+                [
+                    "repository's collections",
+                    "notes"
+                ],
+                [
+                    "objects",
+                    "notes"
+                ],
+                [
+                    "object components",
+                    "notes"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "all modifications"
+                ],
+                [
+                    "made",
+                    "notes"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_66",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a user, I want to know about various facets of a collection, object, or object component, such as scope and content, various identifiers, conditions governing use/access, etc.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "various facets",
+                "collection",
+                "object",
+                "object component",
+                "scope",
+                "content",
+                "various identifiers",
+                "conditions governing use/access"
+            ],
+            "Action": ["know"],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "collection",
+                    "various facets"
+                ],
+                [
+                    "object",
+                    "various facets"
+                ],
+                [
+                    "object component",
+                    "various facets"
+                ],
+                [
+                    "various facets",
+                    "scope"
+                ],
+                [
+                    "various facets",
+                    "content"
+                ],
+                [
+                    "various facets",
+                    "various identifiers"
+                ],
+                [
+                    "various facets",
+                    "conditions governing use/access"
+                ]
+            ],
+            "Triggers": [[
+                "user",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "various facets"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_67",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to indicate the language(s) for present in a collection, object, or object component.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "language(s)",
+                "collection",
+                "object",
+                "object component"
+            ],
+            "Action": ["indicate"],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "collection",
+                    "language(s)"
+                ],
+                [
+                    "object",
+                    "language(s)"
+                ],
+                [
+                    "object component",
+                    "language(s)"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "indicate"
+            ]],
+            "Targets": [[
+                "indicate",
+                "language(s)"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_68",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to know of any changes made to language(s) indicated for a collection, object, or object component.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "any changes",
+                "language(s)",
+                "collection",
+                "object",
+                "object component"
+            ],
+            "Action": [
+                "know",
+                "made"
+            ],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "language(s)",
+                    "any changes"
+                ],
+                [
+                    "collection",
+                    "language(s)"
+                ],
+                [
+                    "object",
+                    "language(s)"
+                ],
+                [
+                    "object component",
+                    "language(s)"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "any changes"
+                ],
+                [
+                    "made",
+                    "any changes"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_69",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a user, I want to scope my searches for collections, objects, or object components to a specific language.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "searches",
+                "collections",
+                "objects",
+                "object components",
+                "specific language"
+            ],
+            "Action": ["scope"],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "searches",
+                    "collections"
+                ],
+                [
+                    "searches",
+                    "objects"
+                ],
+                [
+                    "searches",
+                    "object components"
+                ],
+                [
+                    "collections",
+                    "specific language"
+                ],
+                [
+                    "objects",
+                    "specific language"
+                ],
+                [
+                    "object components",
+                    "specific language"
+                ]
+            ],
+            "Triggers": [[
+                "user",
+                "scope"
+            ]],
+            "Targets": [[
+                "scope",
+                "searches"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_70",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to register a name record for each unique identity associated with my repository's collections and objects.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "name record",
+                "each unique identity",
+                "repository's collections",
+                "objects"
+            ],
+            "Action": ["register"],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "each unique identity",
+                    "name record"
+                ],
+                [
+                    "repository's collections",
+                    "each unique identity"
+                ],
+                [
+                    "objects",
+                    "each unique identity"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "register"
+            ]],
+            "Targets": [[
+                "register",
+                "name record"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_71",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a user, I want to search by for collections and objects by name.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "collections",
+                "objects",
+                "name"
+            ],
+            "Action": ["search"],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "objects",
+                    "name"
+                ],
+                [
+                    "collections",
+                    "name"
+                ]
+            ],
+            "Triggers": [[
+                "user",
+                "search"
+            ]],
+            "Targets": [
+                [
+                    "search",
+                    "collections"
+                ],
+                [
+                    "search",
+                    "objects"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_72",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to indicate that a name pertinent to a collection, object, or object component has a specific role, such as illustrator, photographer, etc.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "name",
+                "collection",
+                "object",
+                "object component",
+                "specific role",
+                "illustrator",
+                "photographer"
+            ],
+            "Action": ["indicate"],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "name",
+                    "specific role"
+                ],
+                [
+                    "specific role",
+                    "illustrator"
+                ],
+                [
+                    "specific role",
+                    "photographer"
+                ],
+                [
+                    "collection",
+                    "name"
+                ],
+                [
+                    "object",
+                    "name"
+                ],
+                [
+                    "object component",
+                    "name"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "indicate"
+            ]],
+            "Targets": [[
+                "indicate",
+                "name"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_73",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a user, I want to scope by searches by name to a specific role such as illustrator, photographer, etc.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "searches",
+                "name",
+                "specific role",
+                "illustrator",
+                "photographer"
+            ],
+            "Action": ["scope"],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "specific role",
+                    "name"
+                ],
+                [
+                    "specific role",
+                    "illustrator"
+                ],
+                [
+                    "specific role",
+                    "photographer"
+                ],
+                [
+                    "searches",
+                    "name"
+                ]
+            ],
+            "Triggers": [[
+                "user",
+                "scope"
+            ]],
+            "Targets": [[
+                "scope",
+                "searches"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_74",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to indicate all subjects that are pertinent to a collection, object, or object component.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "all subjects",
+                "collection",
+                "object",
+                "object component"
+            ],
+            "Action": ["indicate"],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "collection",
+                    "all subjects"
+                ],
+                [
+                    "object",
+                    "all subjects"
+                ],
+                [
+                    "object component",
+                    "all subjects"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "indicate"
+            ]],
+            "Targets": [[
+                "indicate",
+                "all subjects"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_75",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a user, I want to search for collections, objects, and object components by pertinent such headings, including title, topic, genre/form, geographical name, function, occupation, name, cartographics, etc.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "collections",
+                "objects",
+                "object components",
+                "headings",
+                "title",
+                "topic",
+                "genre",
+                "form",
+                "geographical name",
+                "function",
+                "occupation",
+                "name",
+                "cartographics"
+            ],
+            "Action": ["search"],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "collections",
+                    "headings"
+                ],
+                [
+                    "collections",
+                    "title"
+                ],
+                [
+                    "collections",
+                    "topic"
+                ],
+                [
+                    "collections",
+                    "genre"
+                ],
+                [
+                    "collections",
+                    "form"
+                ],
+                [
+                    "collections",
+                    "geographical name"
+                ],
+                [
+                    "collections",
+                    "function"
+                ],
+                [
+                    "collections",
+                    "occupation"
+                ],
+                [
+                    "collections",
+                    "name"
+                ],
+                [
+                    "collections",
+                    "cartographics"
+                ],
+                [
+                    "objects",
+                    "headings"
+                ],
+                [
+                    "objects",
+                    "title"
+                ],
+                [
+                    "objects",
+                    "topic"
+                ],
+                [
+                    "objects",
+                    "genre"
+                ],
+                [
+                    "objects",
+                    "form"
+                ],
+                [
+                    "objects",
+                    "geographical name"
+                ],
+                [
+                    "objects",
+                    "function"
+                ],
+                [
+                    "objects",
+                    "occupation"
+                ],
+                [
+                    "objects",
+                    "name"
+                ],
+                [
+                    "objects",
+                    "cartographics"
+                ],
+                [
+                    "object components",
+                    "headings"
+                ],
+                [
+                    "object components",
+                    "title"
+                ],
+                [
+                    "object components",
+                    "topic"
+                ],
+                [
+                    "object components",
+                    "genre"
+                ],
+                [
+                    "object components",
+                    "form"
+                ],
+                [
+                    "object components",
+                    "geographical name"
+                ],
+                [
+                    "object components",
+                    "function"
+                ],
+                [
+                    "object components",
+                    "occupation"
+                ],
+                [
+                    "object components",
+                    "name"
+                ],
+                [
+                    "object components",
+                    "cartographics"
+                ]
+            ],
+            "Triggers": [[
+                "user",
+                "search"
+            ]],
+            "Targets": [
+                [
+                    "search",
+                    "collections"
+                ],
+                [
+                    "search",
+                    "objects"
+                ],
+                [
+                    "search",
+                    "object components"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_76",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to indicate the geo-coordinates for any resource that believe useful to an end user.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "geo-coordinates",
+                "any resource",
+                "end user"
+            ],
+            "Action": ["indicate"],
+            "Persona": ["repository manager"],
+            "Contains": [[
+                "any resource",
+                "geo-coordinates"
+            ]],
+            "Triggers": [[
+                "repository manager",
+                "indicate"
+            ]],
+            "Targets": [[
+                "indicate",
+                "geo-coordinates"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_77",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a user, I want to see the geographical context of a collection, object, or object component, where pertinent.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "geographical context",
+                "collection",
+                "object",
+                "object component"
+            ],
+            "Action": ["see"],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "collection",
+                    "geographical context"
+                ],
+                [
+                    "object",
+                    "geographical context"
+                ],
+                [
+                    "object component",
+                    "geographical context"
+                ]
+            ],
+            "Triggers": [[
+                "user",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "geographical context"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_78",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to indicate all other pertinent versions or descriptions of a resource that are external to the DAMS.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "all other pertinent versions",
+                "descriptions",
+                "resource",
+                "DAMS"
+            ],
+            "Action": ["indicate"],
+            "Persona": ["repository manager"],
+            "Contains": [
+                [
+                    "resource",
+                    "all other pertinent versions"
+                ],
+                [
+                    "resource",
+                    "descriptions"
+                ]
+            ],
+            "Triggers": [[
+                "repository manager",
+                "indicate"
+            ]],
+            "Targets": [
+                [
+                    "indicate",
+                    "all other pertinent versions"
+                ],
+                [
+                    "indicate",
+                    "descriptions"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_79",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a user, I want to know of all other pertinent versions or descriptions of the resource.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "all other pertinent versions",
+                "descriptions",
+                "resource"
+            ],
+            "Action": ["know"],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "resource",
+                    "descriptions"
+                ],
+                [
+                    "resource",
+                    "all other pertinent versions"
+                ]
+            ],
+            "Triggers": [[
+                "user",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "all other pertinent versions"
+                ],
+                [
+                    "know",
+                    "descriptions"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_80",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to know if the checksum for any of my repository's content files that have changed.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "checksum",
+                "repository's content files"
+            ],
+            "Action": [
+                "know",
+                "changed"
+            ],
+            "Persona": ["repository manager"],
+            "Contains": [[
+                "repository's content files",
+                "checksum"
+            ]],
+            "Triggers": [[
+                "repository manager",
+                "know"
+            ]],
+            "Targets": [[
+                "changed",
+                "checksum"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_81",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a DAMS manager, I want to know, via the preservation manager, of all files for which the checksum has changed since last registered.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "preservation manager",
+                "all files",
+                "checksum"
+            ],
+            "Action": [
+                "know",
+                "changed",
+                "last registered"
+            ],
+            "Persona": ["DAMS manager"],
+            "Contains": [[
+                "all files",
+                "checksum"
+            ]],
+            "Triggers": [[
+                "DAMS manager",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "all files"
+                ],
+                [
+                    "changed",
+                    "checksum"
+                ],
+                [
+                    "last registered",
+                    "checksum"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_82",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a repository manager, I want to know, where pertinent, the hardware and software used to generate a content file.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "hardware",
+                "content file",
+                "software"
+            ],
+            "Action": [
+                "know",
+                "generate",
+                "used"
+            ],
+            "Persona": ["repository manager"],
+            "Contains": [],
+            "Triggers": [[
+                "repository manager",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "hardware"
+                ],
+                [
+                    "generate",
+                    "content file"
+                ],
+                [
+                    "know",
+                    "software"
+                ],
+                [
+                    "used",
+                    "software"
+                ],
+                [
+                    "used",
+                    "hardware"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_83",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a DAMS manager, I want to know what objects or object components are still under copyright and cannot be displayed without either a license or incurring risk.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "objects",
+                "object components",
+                "copyright",
+                "license",
+                "risk"
+            ],
+            "Action": ["know"],
+            "Persona": ["DAMS manager"],
+            "Contains": [
+                [
+                    "object components",
+                    "copyright"
+                ],
+                [
+                    "objects",
+                    "copyright"
+                ]
+            ],
+            "Triggers": [[
+                "DAMS manager",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "objects"
+                ],
+                [
+                    "know",
+                    "object components"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_84",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a DAMS manager, I want to know when copyright for an object or object component is likely to expire per jurisdictional copyright statute.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "when",
+                "copyright",
+                "object",
+                "object component",
+                "jurisdictional copyright statute"
+            ],
+            "Action": [
+                "know",
+                "expire"
+            ],
+            "Persona": ["DAMS manager"],
+            "Contains": [
+                [
+                    "object",
+                    "copyright"
+                ],
+                [
+                    "object component",
+                    "copyright"
+                ]
+            ],
+            "Triggers": [[
+                "DAMS manager",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "when"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_85",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a DAMS manager, I want to know when the copyright status for an object or object component is modified, either manually or automatically.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "when",
+                "copyright status",
+                "object",
+                "object component"
+            ],
+            "Action": [
+                "know",
+                "modified"
+            ],
+            "Persona": ["DAMS manager"],
+            "Contains": [
+                [
+                    "object",
+                    "copyright status"
+                ],
+                [
+                    "object component",
+                    "copyright status"
+                ]
+            ],
+            "Triggers": [[
+                "DAMS manager",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "when"
+                ],
+                [
+                    "modified",
+                    "copyright status"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_86",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a user, I want to know if an object or object component is under copyright and, where possible, who the rights holder is.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "object",
+                "object component",
+                "copyright",
+                "who",
+                "rights holder"
+            ],
+            "Action": ["know"],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "object",
+                    "copyright"
+                ],
+                [
+                    "object component",
+                    "copyright"
+                ],
+                [
+                    "rights holder",
+                    "copyright"
+                ],
+                [
+                    "who",
+                    "copyright"
+                ]
+            ],
+            "Triggers": [[
+                "user",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "who"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_87",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a DAMS manager, I want to know all the statutes pertinent to an object or object component.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "statutes",
+                "object",
+                "object component"
+            ],
+            "Action": ["know"],
+            "Persona": ["DAMS manager"],
+            "Contains": [
+                [
+                    "object",
+                    "statutes"
+                ],
+                [
+                    "object component",
+                    "statutes"
+                ]
+            ],
+            "Triggers": [[
+                "DAMS manager",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "statutes"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_88",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a DAMS manager, I want to know when the pertinence of a statute to a object or object component is scheduled to expire.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "when",
+                "object",
+                "object component",
+                "pertinence",
+                "statute"
+            ],
+            "Action": [
+                "know",
+                "scheduled",
+                "expire"
+            ],
+            "Persona": ["DAMS manager"],
+            "Contains": [
+                [
+                    "statute",
+                    "pertinence"
+                ],
+                [
+                    "object",
+                    "statute"
+                ],
+                [
+                    "object component",
+                    "statute"
+                ]
+            ],
+            "Triggers": [[
+                "DAMS manager",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "when"
+                ],
+                [
+                    "scheduled",
+                    "pertinence"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_89",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a DAMS manager, I want to know when the application of a statute to an object or object component has been modified, either manually or automatically.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "when",
+                "application",
+                "statute",
+                "object",
+                "object component"
+            ],
+            "Action": [
+                "know",
+                "modified"
+            ],
+            "Persona": ["DAMS manager"],
+            "Contains": [
+                [
+                    "statute",
+                    "application"
+                ],
+                [
+                    "object",
+                    "statute"
+                ],
+                [
+                    "object component",
+                    "statute"
+                ]
+            ],
+            "Triggers": [[
+                "DAMS manager",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "when"
+                ],
+                [
+                    "modified",
+                    "application"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_90",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a DAMS manager, I want to know if copyrighted content has an applicable license.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "copyrighted content",
+                "applicable license"
+            ],
+            "Action": ["know"],
+            "Persona": ["DAMS manager"],
+            "Contains": [[
+                "copyrighted content",
+                "applicable license"
+            ]],
+            "Triggers": [[
+                "DAMS manager",
+                "know"
+            ]],
+            "Targets": []
+        }
+    },
+    {
+        "US_Nr": "user_story_91",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a DAMS manager, I want to know if an object or object component is subject to a library policy that restricts access in any way.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "object",
+                "object component",
+                "library policy",
+                "access"
+            ],
+            "Action": [
+                "know",
+                "restricts"
+            ],
+            "Persona": ["DAMS manager"],
+            "Contains": [
+                [
+                    "object",
+                    "library policy"
+                ],
+                [
+                    "object component",
+                    "library policy"
+                ]
+            ],
+            "Triggers": [[
+                "DAMS manager",
+                "know"
+            ]],
+            "Targets": [[
+                "restricts",
+                "access"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_92",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a DAMS manager, I want to know when application of a library policy to an object or object component is scheduled to expire.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "when",
+                "application",
+                "library policy",
+                "object",
+                "object component"
+            ],
+            "Action": [
+                "know",
+                "expire",
+                "scheduled"
+            ],
+            "Persona": ["DAMS manager"],
+            "Contains": [
+                [
+                    "library policy",
+                    "application"
+                ],
+                [
+                    "object",
+                    "library policy"
+                ],
+                [
+                    "object component",
+                    "library policy"
+                ]
+            ],
+            "Triggers": [[
+                "DAMS manager",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "when"
+                ],
+                [
+                    "scheduled",
+                    "application"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_93",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a DAMS manager, I want to know if application of a library policy to an object or object component has been modified, either manually or automatically.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "application",
+                "library policy",
+                "object",
+                "object component"
+            ],
+            "Action": [
+                "know",
+                "modified"
+            ],
+            "Persona": ["DAMS manager"],
+            "Contains": [
+                [
+                    "library policy",
+                    "application"
+                ],
+                [
+                    "object",
+                    "library policy"
+                ],
+                [
+                    "object component",
+                    "library policy"
+                ]
+            ],
+            "Triggers": [[
+                "DAMS manager",
+                "know"
+            ]],
+            "Targets": [[
+                "modified",
+                "application"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_94",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a DAMS manager, I want to know all the uses for an object or object component that are permitted or restricted per the rights status of the object or object component.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "uses",
+                "object",
+                "object componen",
+                "rights status",
+                "object",
+                "object component"
+            ],
+            "Action": ["know"],
+            "Persona": ["DAMS manager"],
+            "Contains": [
+                [
+                    "object",
+                    "uses"
+                ],
+                [
+                    "object componen",
+                    "uses"
+                ],
+                [
+                    "object",
+                    "rights status"
+                ],
+                [
+                    "object component",
+                    "rights status"
+                ]
+            ],
+            "Triggers": [[
+                "DAMS manager",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "uses"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_95",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a DAMS manager, I want know the dates for when a permission or restriction is active.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "dates",
+                "permission",
+                "restriction"
+            ],
+            "Action": ["know"],
+            "Persona": ["DAMS manager"],
+            "Contains": [
+                [
+                    "permission",
+                    "dates"
+                ],
+                [
+                    "restriction",
+                    "dates"
+                ]
+            ],
+            "Triggers": [[
+                "DAMS manager",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "dates"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_96",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a DAMS manager, I want to know when permitted and restricted acts and/or their active dates are modified.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "when",
+                "permitted and restricted acts",
+                "active dates"
+            ],
+            "Action": [
+                "know",
+                "modified"
+            ],
+            "Persona": ["DAMS manager"],
+            "Contains": [[
+                "permitted and restricted acts",
+                "active dates"
+            ]],
+            "Triggers": [[
+                "DAMS manager",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "when"
+                ],
+                [
+                    "modified",
+                    "active dates"
+                ],
+                [
+                    "modified",
+                    "permitted and restricted acts"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_97",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a DAMS manager, I want to track all events scheduled for recording in the DAMS.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "DAMS",
+                "all events scheduled for recording"
+            ],
+            "Action": ["track"],
+            "Persona": ["DAMS manager"],
+            "Contains": [[
+                "DAMS",
+                "all events scheduled for recording"
+            ]],
+            "Triggers": [[
+                "DAMS manager",
+                "track"
+            ]],
+            "Targets": [[
+                "track",
+                "all events scheduled for recording"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_98",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a DAMS manager, I want to know the agent(s) responsible for carrying out an event.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "event",
+                "agent(s) responsible"
+            ],
+            "Action": [
+                "know",
+                "carrying out"
+            ],
+            "Persona": ["DAMS manager"],
+            "Contains": [],
+            "Triggers": [[
+                "DAMS manager",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "carrying out",
+                    "event"
+                ],
+                [
+                    "know",
+                    "agent(s) responsible"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_99",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a DAMS manager, I want to know when the event occurred.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "when",
+                "event"
+            ],
+            "Action": [
+                "know",
+                "occurred"
+            ],
+            "Persona": ["DAMS manager"],
+            "Contains": [],
+            "Triggers": [[
+                "DAMS manager",
+                "know"
+            ]],
+            "Targets": [[
+                "know",
+                "when"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_100",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G25# As a DAMS manager, I want to know the outcome of the event, e.g., object NN was deleted.",
+        "PID": "#G25#",
+        "Main": {
+            "Entity": [
+                "outcome",
+                "event",
+                "object NN"
+            ],
+            "Action": [
+                "know",
+                "deleted"
+            ],
+            "Persona": ["DAMS manager"],
+            "Contains": [[
+                "event",
+                "outcome"
+            ]],
+            "Triggers": [[
+                "DAMS manager",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "outcome"
+                ],
+                [
+                    "deleted",
+                    "object NN"
+                ]
+            ]
+        }
+    }
+]

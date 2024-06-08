@@ -1,0 +1,2199 @@
+[
+    {
+        "US_Nr": "user_story_01",
+        "Benefit": {
+            "Entity": [
+                "new tab",
+                "Google Maps"
+            ],
+            "Action": [],
+            "Contains": [
+                [
+                    "Google Maps",
+                    "address"
+                ],
+                [
+                    "new tab",
+                    "Google Maps"
+                ]
+            ],
+            "Text": " it takes me to a new tab with Google Maps",
+            "Targets": []
+        },
+        "Text": "#G04# As a user, I want to click on the address, so that it takes me to a new tab with Google Maps.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": ["address"],
+            "Action": ["click"],
+            "Persona": ["user"],
+            "Contains": [],
+            "Text": "#G04# As a user, I want to click on the address, so tha",
+            "Triggers": [[
+                "user",
+                "click"
+            ]],
+            "Targets": [[
+                "click",
+                "address"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_02",
+        "Benefit": {
+            "Entity": [
+                "recycling centers",
+                "account"
+            ],
+            "Action": [
+                "know",
+                "creating"
+            ],
+            "Contains": [[
+                "public information",
+                "recycling centers"
+            ]],
+            "Text": "I know about recycling centers near me before creating an account.",
+            "Targets": [
+                [
+                    "know",
+                    "recycling centers"
+                ],
+                [
+                    "creating",
+                    "account"
+                ]
+            ]
+        },
+        "Text": "#G04# As a user, I want to be able to anonymously view public information, so that I know about recycling centers near me before creating an account.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": ["public information"],
+            "Action": ["anonymously view"],
+            "Persona": ["user"],
+            "Contains": [],
+            "Text": "#G04# As a user, I want to be able to anonymously view public information, ",
+            "Triggers": [[
+                "user",
+                "anonymously view"
+            ]],
+            "Targets": [[
+                "anonymously view",
+                "public information"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_03",
+        "Benefit": {
+            "Entity": [],
+            "Action": [
+                "determine",
+                "consider"
+            ],
+            "Contains": [],
+            "Text": "I can determine which ones I should consider.",
+            "Targets": [[
+                "determine",
+                "nearby recycling facilities"
+            ]]
+        },
+        "Text": "#G04# As a user, I want to be able to enter my zip code and get a list of nearby recycling facilities, so that I can determine which ones I should consider.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "zip code",
+                "list",
+                "nearby recycling facilities"
+            ],
+            "Action": [
+                "enter",
+                "get"
+            ],
+            "Persona": ["user"],
+            "Contains": [[
+                "list",
+                "nearby recycling facilities"
+            ]],
+            "Text": "#G04# As a user, I want to be able to enter my zip code and get a list of nearby recycling facilities, ",
+            "Triggers": [
+                [
+                    "user",
+                    "enter"
+                ],
+                [
+                    "user",
+                    "get"
+                ]
+            ],
+            "Targets": [
+                [
+                    "enter",
+                    "zip code"
+                ],
+                [
+                    "get",
+                    "list"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_04",
+        "Benefit": {
+            "Entity": [
+                "drop-offs",
+                "off days",
+                "after-work hours"
+            ],
+            "Action": ["arrange"],
+            "Contains": [],
+            "Text": "I can arrange drop-offs on my off days or during after-work hours.",
+            "Targets": [[
+                "arrange",
+                "drop-offs"
+            ]]
+        },
+        "Text": "#G04# As a user, I want to be able to get the hours of each recycling facility, so that I can arrange drop-offs on my off days or during after-work hours.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "hours",
+                "each recycling facility"
+            ],
+            "Action": ["get"],
+            "Persona": ["user"],
+            "Contains": [[
+                "each recycling facility",
+                "hours"
+            ]],
+            "Text": "#G04# As a user, I want to be able to get the hours of each recycling facility, ",
+            "Triggers": [[
+                "user",
+                "get"
+            ]],
+            "Targets": [[
+                "get",
+                "hours"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_05",
+        "Benefit": {
+            "Entity": ["website"],
+            "Action": ["conveniently use"],
+            "Contains": [],
+            "Text": "I can more conveniently use the website.",
+            "Targets": [[
+                "conveniently use",
+                "website"
+            ]]
+        },
+        "Text": "#G04# As a user, I want to have a flexible pick up time, so that I can more conveniently use the website.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": ["flexible pick up time"],
+            "Action": ["have"],
+            "Persona": ["user"],
+            "Contains": [],
+            "Text": "#G04# As a user, I want to have a flexible pick up time, ",
+            "Triggers": [[
+                "user",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "flexible pick up time"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_06",
+        "Benefit": {
+            "Entity": [
+                "list",
+                "facilities",
+                "opening hours",
+                "optimal route",
+                "schedule"
+            ],
+            "Action": [
+                "have",
+                "get",
+                "find"
+            ],
+            "Contains": [
+                [
+                    "list",
+                    "facilities"
+                ],
+                [
+                    "list",
+                    "opening hours"
+                ]
+            ],
+            "Text": "I have and get a list of facilities that accept each type and their opening hours, so that I can find an optimal route and schedule.",
+            "Targets": [
+                [
+                    "have",
+                    "list"
+                ],
+                [
+                    "get",
+                    "list"
+                ],
+                [
+                    "find",
+                    "optimal route"
+                ],
+                [
+                    "find",
+                    "schedule"
+                ]
+            ]
+        },
+        "Text": "#G04# As a user, I want to be able to select different types of recyclable waste, so I have and get a list of facilities that accept each type and their opening hours, so that I can find an optimal route and schedule.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": ["different types of recyclable waste"],
+            "Action": ["select"],
+            "Persona": ["user"],
+            "Contains": [],
+            "Text": "#G04# As a user, I want to be able to select different types of recyclable waste, so",
+            "Triggers": [[
+                "user",
+                "select"
+            ]],
+            "Targets": [[
+                "select",
+                "different types of recyclable waste"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_07",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["view"],
+            "Contains": [],
+            "Text": "I can view them later.",
+            "Targets": [[
+                "view",
+                "donation centers"
+            ]]
+        },
+        "Text": "#G04# As a user, I want to add donation centers as favorites on my profile, so that I can view them later.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "donation centers",
+                "favorites",
+                "profile"
+            ],
+            "Action": ["add"],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "profile",
+                    "favorites"
+                ],
+                [
+                    "favorites",
+                    "donation centers"
+                ]
+            ],
+            "Text": "#G04# As a user, I want to add donation centers as favorites on my profile, ",
+            "Triggers": [[
+                "user",
+                "add"
+            ]],
+            "Targets": [[
+                "add",
+                "donation centers"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_08",
+        "Benefit": {
+            "Entity": [
+                "notifications",
+                "new events"
+            ],
+            "Action": [
+                "receive",
+                "posted"
+            ],
+            "Contains": [[
+                "notifications",
+                "new events"
+            ]],
+            "Text": "I can receive notifications for new events as they are posted.",
+            "Targets": [
+                [
+                    "receive",
+                    "notifications"
+                ],
+                [
+                    "posted",
+                    "new events"
+                ]
+            ]
+        },
+        "Text": "#G04# As a user, I want to be able to give my email ID, so that I can receive notifications for new events as they are posted.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": ["email ID"],
+            "Action": ["give"],
+            "Persona": ["user"],
+            "Contains": [],
+            "Text": "#G04# As a user, I want to be able to give my email ID, ",
+            "Triggers": [[
+                "user",
+                "give"
+            ]],
+            "Targets": [[
+                "give",
+                "email ID"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_09",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G04# As a user, I want to be able to view a map display of the public recycling bins around my area.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "map display",
+                "public recycling bins",
+                "area"
+            ],
+            "Action": ["view"],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "map display",
+                    "public recycling bins"
+                ],
+                [
+                    "map display",
+                    "area"
+                ]
+            ],
+            "Triggers": [[
+                "user",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "map display"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_10",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G04# As a user, I want to be able to view a map display of the special waste drop off sites around my area.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "map display",
+                "special waste drop off sites",
+                "area"
+            ],
+            "Action": ["view"],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "map display",
+                    "special waste drop off sites"
+                ],
+                [
+                    "map display",
+                    "area"
+                ]
+            ],
+            "Triggers": [[
+                "user",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "map display"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_11",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G04# As a user, I want to be able to view the safe disposal events currently being organised around my area.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "safe disposal events",
+                "area"
+            ],
+            "Action": [
+                "view",
+                "currently being organised"
+            ],
+            "Persona": ["user"],
+            "Contains": [[
+                "area",
+                "safe disposal events"
+            ]],
+            "Triggers": [[
+                "user",
+                "view"
+            ]],
+            "Targets": [
+                [
+                    "view",
+                    "safe disposal events"
+                ],
+                [
+                    "currently being organised",
+                    "safe disposal events"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_12",
+        "Benefit": {
+            "Entity": ["website"],
+            "Action": ["conveniently use"],
+            "Contains": [],
+            "Text": "I can more conveniently use the website.",
+            "Targets": [[
+                "conveniently use",
+                "website"
+            ]]
+        },
+        "Text": "#G04# As a user, I want to choose a flexible pick up time, so that I can more conveniently use the website.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": ["flexible pick up time"],
+            "Action": ["choose"],
+            "Persona": ["user"],
+            "Contains": [],
+            "Text": "#G04# As a user, I want to choose a flexible pick up time, ",
+            "Triggers": [[
+                "user",
+                "choose"
+            ]],
+            "Targets": [[
+                "choose",
+                "flexible pick up time"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_13",
+        "Benefit": {
+            "Entity": [
+                "web app",
+                "how"
+            ],
+            "Action": [
+                "know",
+                "use"
+            ],
+            "Contains": [],
+            "Text": "I know how to use the web app.",
+            "Targets": [
+                [
+                    "know",
+                    "how"
+                ],
+                [
+                    "use",
+                    "web app"
+                ]
+            ]
+        },
+        "Text": "#G04# As a user, I want to view user documentation for the website, so that I know how to use the web app.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "user documentation",
+                "website"
+            ],
+            "Action": ["view"],
+            "Persona": ["user"],
+            "Contains": [[
+                "website",
+                "user documentation"
+            ]],
+            "Text": "#G04# As a user, I want to view user documentation for the website, ",
+            "Triggers": [[
+                "user",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "user documentation"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_14",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G04# As a user, I want to get feedback when I enter an invalid zip code.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "feedback",
+                "invalid zip code"
+            ],
+            "Action": [
+                "get",
+                "enter"
+            ],
+            "Persona": ["user"],
+            "Contains": [],
+            "Triggers": [[
+                "user",
+                "get"
+            ]],
+            "Targets": [
+                [
+                    "get",
+                    "feedback"
+                ],
+                [
+                    "enter",
+                    "invalid zip code"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_15",
+        "Benefit": {
+            "Entity": ["own profile"],
+            "Action": ["create"],
+            "Contains": [],
+            "Text": "I can create my own profile.",
+            "Targets": [[
+                "create",
+                "own profile"
+            ]]
+        },
+        "Text": "#G04# As a user, I want to be able to create an acocunt, so that I can create my own profile.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": ["acocunt"],
+            "Action": ["create"],
+            "Persona": ["user"],
+            "Contains": [],
+            "Text": "#G04# As a user, I want to be able to create an acocunt, ",
+            "Triggers": [[
+                "user",
+                "create"
+            ]],
+            "Targets": [[
+                "create",
+                "acocunt"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_16",
+        "Benefit": {
+            "Entity": [
+                "users",
+                "recent information"
+            ],
+            "Action": ["get"],
+            "Contains": [[
+                "recycling facilities' information",
+                "recent information"
+            ]],
+            "Text": "users get the most recent information.",
+            "Targets": [[
+                "get",
+                "recent information"
+            ]]
+        },
+        "Text": "#G04# As an admin, I want to be able to add or remove recycling facilities' information, so that users get the most recent information.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": ["recycling facilities' information"],
+            "Action": [
+                "add",
+                "remove"
+            ],
+            "Persona": ["admin"],
+            "Contains": [],
+            "Text": "#G04# As an admin, I want to be able to add or remove recycling facilities' information, ",
+            "Triggers": [
+                [
+                    "admin",
+                    "add"
+                ],
+                [
+                    "admin",
+                    "remove"
+                ]
+            ],
+            "Targets": [
+                [
+                    "add",
+                    "recycling facilities' information"
+                ],
+                [
+                    "remove",
+                    "recycling facilities' information"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_17",
+        "Benefit": {
+            "Entity": [
+                "features",
+                "service"
+            ],
+            "Action": [
+                "add",
+                "provide",
+                "improving"
+            ],
+            "Contains": [[
+                "users' feedback",
+                "features"
+            ]],
+            "Text": "we can add more features and keep improving the service we provide to them.",
+            "Targets": [
+                [
+                    "add",
+                    "features"
+                ],
+                [
+                    "improving",
+                    "service"
+                ],
+                [
+                    "provide",
+                    "service"
+                ]
+            ]
+        },
+        "Text": "#G04# As an admin, I want to be able to read users' feedback and complaints, so that we can add more features and keep improving the service we provide to them.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "complaints",
+                "users' feedback"
+            ],
+            "Action": ["read"],
+            "Persona": ["admin"],
+            "Contains": [],
+            "Text": "#G04# As an admin, I want to be able to read users' feedback and complaints, ",
+            "Triggers": [[
+                "admin",
+                "read"
+            ]],
+            "Targets": [
+                [
+                    "read",
+                    "complaints"
+                ],
+                [
+                    "read",
+                    "users' feedback"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_18",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["go back"],
+            "Contains": [],
+            "Text": "I can go back when needed.",
+            "Targets": []
+        },
+        "Text": "#G04# As a user, I want to be able to check transaction history and keep a record of it, so that I can go back when needed.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "transaction history",
+                "record"
+            ],
+            "Action": [
+                "check",
+                "keep"
+            ],
+            "Persona": ["user"],
+            "Contains": [[
+                "record",
+                "transaction history"
+            ]],
+            "Text": "#G04# As a user, I want to be able to check transaction history and keep a record of it, ",
+            "Triggers": [
+                [
+                    "user",
+                    "check"
+                ],
+                [
+                    "user",
+                    "keep"
+                ]
+            ],
+            "Targets": [
+                [
+                    "check",
+                    "transaction history"
+                ],
+                [
+                    "keep",
+                    "record"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_19",
+        "Benefit": {
+            "Entity": ["pleasant experience"],
+            "Action": [
+                "navigating",
+                "have"
+            ],
+            "Contains": [],
+            "Text": "I have a pleasant experience when navigating through them.",
+            "Targets": [
+                [
+                    "navigating",
+                    "sites"
+                ],
+                [
+                    "have",
+                    "pleasant experience"
+                ]
+            ]
+        },
+        "Text": "#G04# As a user, I want to have a great UI and UX from the sites, so that I have a pleasant experience when navigating through them.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "great UI",
+                "UX",
+                "sites"
+            ],
+            "Action": ["have"],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "sites",
+                    "UX"
+                ],
+                [
+                    "sites",
+                    "great UI"
+                ]
+            ],
+            "Text": "#G04# As a user, I want to have a great UI and UX from the sites, ",
+            "Triggers": [[
+                "user",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "great UI"
+                ],
+                [
+                    "have",
+                    "UX"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_20",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G04# As a user, I want to be able to access the site and do all the other stuffs on all of my electronic devices.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "site",
+                "electronic devices",
+                "other stuffs"
+            ],
+            "Action": [
+                "access",
+                "do"
+            ],
+            "Persona": ["user"],
+            "Contains": [[
+                "electronic devices",
+                "other stuffs"
+            ]],
+            "Triggers": [
+                [
+                    "user",
+                    "access"
+                ],
+                [
+                    "user",
+                    "do"
+                ]
+            ],
+            "Targets": [
+                [
+                    "access",
+                    "site"
+                ],
+                [
+                    "do",
+                    "other stuffs"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_21",
+        "Benefit": {
+            "Entity": ["websites"],
+            "Action": ["prevent spamming"],
+            "Contains": [],
+            "Text": "I can prevent spamming on the websites.",
+            "Targets": [[
+                "prevent spamming",
+                "websites"
+            ]]
+        },
+        "Text": "#G04# As an admin, I want to be able to block specific users based on IP address, so that I can prevent spamming on the websites.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "specific users",
+                "IP address"
+            ],
+            "Action": ["block"],
+            "Persona": ["admin"],
+            "Contains": [[
+                "specific users",
+                "IP address"
+            ]],
+            "Text": "#G04# As an admin, I want to be able to block specific users based on IP address, ",
+            "Triggers": [[
+                "admin",
+                "block"
+            ]],
+            "Targets": [[
+                "block",
+                "specific users"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_22",
+        "Benefit": {
+            "Entity": [
+                "service status",
+                "sense",
+                "sites",
+                "people"
+            ],
+            "Action": [
+                "know",
+                "have"
+            ],
+            "Contains": [],
+            "Text": "I can have a sense of what people are doing on our sites and know the service status.",
+            "Targets": [
+                [
+                    "have",
+                    "sense"
+                ],
+                [
+                    "know",
+                    "service status"
+                ]
+            ]
+        },
+        "Text": "#G04# As an admin, I want to view a dashboard that monitors all the sites' statuses, so that I can have a sense of what people are doing on our sites and know the service status.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "dashboard",
+                "sites' statuses"
+            ],
+            "Action": [
+                "view",
+                "monitors"
+            ],
+            "Persona": ["admin"],
+            "Contains": [[
+                "dashboard",
+                "sites' statuses"
+            ]],
+            "Text": "#G04# As an admin, I want to view a dashboard that monitors all the sites' statuses, ",
+            "Triggers": [[
+                "admin",
+                "view"
+            ]],
+            "Targets": [
+                [
+                    "view",
+                    "dashboard"
+                ],
+                [
+                    "monitors",
+                    "sites' statuses"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_23",
+        "Benefit": {
+            "Entity": [
+                "important information",
+                "server breach",
+                "attack"
+            ],
+            "Action": [],
+            "Contains": [[
+                "data encrypted",
+                "important information"
+            ]],
+            "Text": "important information will not be stolen during a server breach or an attack.",
+            "Targets": []
+        },
+        "Text": "#G04# As an admin, I want to have all data encrypted, so that important information will not be stolen during a server breach or an attack.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": ["data encrypted"],
+            "Action": ["have"],
+            "Persona": ["admin"],
+            "Contains": [],
+            "Text": "#G04# As an admin, I want to have all data encrypted, ",
+            "Triggers": [[
+                "admin",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "data encrypted"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_24",
+        "Benefit": {
+            "Entity": [
+                "company's performance",
+                "sense"
+            ],
+            "Action": ["have"],
+            "Contains": [],
+            "Text": "I can have a sense of my company's performance.",
+            "Targets": [[
+                "have",
+                "sense"
+            ]]
+        },
+        "Text": "#G04# As an executive, I want to have full access to data related to my company, so that I can have a sense of my company's performance.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "full access",
+                "data related to my company"
+            ],
+            "Action": ["have"],
+            "Persona": ["executive"],
+            "Contains": [[
+                "data related to my company",
+                "full access"
+            ]],
+            "Text": "#G04# As an executive, I want to have full access to data related to my company, ",
+            "Triggers": [[
+                "executive",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "full access"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_25",
+        "Benefit": {
+            "Entity": ["neighbourhood"],
+            "Action": ["guided through"],
+            "Contains": [],
+            "Text": "I can be guided through the neighbourhood.",
+            "Targets": [[
+                "guided through",
+                "neighbourhood"
+            ]]
+        },
+        "Text": "#G04# As an employee, I want to access the route planning system during work, so that I can be guided through the neighbourhood.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "route planning system",
+                "work"
+            ],
+            "Action": ["access"],
+            "Persona": ["employee"],
+            "Contains": [],
+            "Text": "#G04# As an employee, I want to access the route planning system during work, ",
+            "Triggers": [[
+                "employee",
+                "access"
+            ]],
+            "Targets": [[
+                "access",
+                "route planning system"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_26",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G04# As an employee from the HR department, I want to have access to the full information of all employees working for this business.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "employees",
+                "business",
+                "access",
+                "full information"
+            ],
+            "Action": ["have"],
+            "Persona": ["employee from the HR department"],
+            "Contains": [
+                [
+                    "business",
+                    "employees"
+                ],
+                [
+                    "full information",
+                    "access"
+                ],
+                [
+                    "employees",
+                    "full information"
+                ]
+            ],
+            "Triggers": [[
+                "employee from the HR department",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "access"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_27",
+        "Benefit": {
+            "Entity": [
+                "implement",
+                "certain features",
+                "iOS application"
+            ],
+            "Action": ["integrate"],
+            "Contains": [[
+                "iOS application",
+                "certain features"
+            ]],
+            "Text": "I can integrate it and implement certain features in my own iOS application.",
+            "Targets": [
+                [
+                    "integrate",
+                    "API"
+                ],
+                [
+                    "implement",
+                    "certain features"
+                ]
+            ]
+        },
+        "Text": "#G04# As a developer, I want to access an API from the website, so that I can integrate it and implement certain features in my own iOS application.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "API",
+                "website"
+            ],
+            "Action": ["access"],
+            "Persona": ["developer"],
+            "Contains": [[
+                "website",
+                "API"
+            ]],
+            "Text": "#G04# As a developer, I want to access an API from the website, ",
+            "Triggers": [[
+                "developer",
+                "access"
+            ]],
+            "Targets": [[
+                "access",
+                "API"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_28",
+        "Benefit": {
+            "Entity": [
+                "website",
+                "reason"
+            ],
+            "Action": [
+                "use",
+                "have"
+            ],
+            "Contains": [],
+            "Text": "I have a reason to use the website.",
+            "Targets": [
+                [
+                    "use",
+                    "website"
+                ],
+                [
+                    "have",
+                    "reason"
+                ]
+            ]
+        },
+        "Text": "#G04# As a user, I want to be able to receive tempting rewards, so that I have a reason to use the website.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": ["tempting rewards"],
+            "Action": ["receive"],
+            "Persona": ["user"],
+            "Contains": [],
+            "Text": "#G04# As a user, I want to be able to receive tempting rewards, ",
+            "Triggers": [[
+                "user",
+                "receive"
+            ]],
+            "Targets": [[
+                "receive",
+                "tempting rewards"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_29",
+        "Benefit": {
+            "Entity": [
+                "identity theft",
+                "telephone harassment"
+            ],
+            "Action": [],
+            "Contains": [],
+            "Text": "I will not suffer from identity theft or telephone harassment.",
+            "Targets": []
+        },
+        "Text": "#G04# As a user, I want to have my personal information kept securely in the database of the website, so that I will not suffer from identity theft or telephone harassment.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "personal information",
+                "database",
+                "website"
+            ],
+            "Action": ["have"],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "website",
+                    "database"
+                ],
+                [
+                    "database",
+                    "personal information"
+                ]
+            ],
+            "Text": "#G04# As a user, I want to have my personal information kept securely in the database of the website, ",
+            "Triggers": [[
+                "user",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "personal information"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_30",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["manage more efficiently"],
+            "Contains": [],
+            "Text": "I can manage more efficiently.",
+            "Targets": []
+        },
+        "Text": "#G04# As an admin, I want to handle all users' activities, so that I can manage more efficiently.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": ["users' activities"],
+            "Action": ["handle"],
+            "Persona": ["admin"],
+            "Contains": [],
+            "Text": "#G04# As an admin, I want to handle all users' activities, ",
+            "Triggers": [[
+                "admin",
+                "handle"
+            ]],
+            "Targets": [[
+                "handle",
+                "users' activities"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_31",
+        "Benefit": {
+            "Entity": ["stuff"],
+            "Action": [
+                "upload",
+                "delete"
+            ],
+            "Contains": [[
+                "website",
+                "stuff"
+            ]],
+            "Text": "I can upload or delete stuff step by step.",
+            "Targets": [
+                [
+                    "upload",
+                    "stuff"
+                ],
+                [
+                    "delete",
+                    "stuff"
+                ]
+            ]
+        },
+        "Text": "#G04# As a company, I want to have a website that is easy to use, so that I can upload or delete stuff step by step.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": ["website"],
+            "Action": ["have"],
+            "Persona": ["company"],
+            "Contains": [],
+            "Text": "#G04# As a company, I want to have a website that is easy to use, ",
+            "Triggers": [[
+                "company",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "website"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_32",
+        "Benefit": {
+            "Entity": ["cases"],
+            "Action": ["process"],
+            "Contains": [],
+            "Text": "I can process cases the first time.",
+            "Targets": [[
+                "process",
+                "cases"
+            ]]
+        },
+        "Text": "#G04# As an employee, I want to get quick notifications, so that I can process cases the first time.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": ["quick notifications"],
+            "Action": ["get"],
+            "Persona": ["employee"],
+            "Contains": [],
+            "Text": "#G04# As an employee, I want to get quick notifications, ",
+            "Triggers": [[
+                "employee",
+                "get"
+            ]],
+            "Targets": [[
+                "get",
+                "quick notifications"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_33",
+        "Benefit": {
+            "Entity": ["bill statement"],
+            "Action": ["easily create"],
+            "Contains": [],
+            "Text": "I can easily create a bill statement.",
+            "Targets": [[
+                "easily create",
+                "bill statement"
+            ]]
+        },
+        "Text": "#G04# As a company accountant, I want to view all available activity fees online, so that I can easily create a bill statement.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": ["available activity fees"],
+            "Action": ["view"],
+            "Persona": ["company accountant"],
+            "Contains": [],
+            "Text": "#G04# As a company accountant, I want to view all available activity fees online, ",
+            "Triggers": [[
+                "company accountant",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "available activity fees"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_34",
+        "Benefit": {
+            "Entity": ["website"],
+            "Action": ["design"],
+            "Contains": [[
+                "website",
+                "bootstrap"
+            ]],
+            "Text": "I can easily design my website.",
+            "Targets": [[
+                "design",
+                "website"
+            ]]
+        },
+        "Text": "#G04# As a developer, I want to use bootstrap in the process of developing, so that I can easily design my website.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "bootstrap",
+                "process of developing"
+            ],
+            "Action": ["use"],
+            "Persona": ["developer"],
+            "Contains": [],
+            "Text": "#G04# As a developer, I want to use bootstrap in the process of developing, ",
+            "Triggers": [[
+                "developer",
+                "use"
+            ]],
+            "Targets": [[
+                "use",
+                "bootstrap"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_35",
+        "Benefit": {
+            "Entity": ["awesome and beautiful features website"],
+            "Action": ["develop"],
+            "Contains": [],
+            "Text": "I can develop an awesome and beautiful features website.",
+            "Targets": [[
+                "develop",
+                "awesome and beautiful features website"
+            ]]
+        },
+        "Text": "#G04# As a developer, I want to attend some UI/UX lessons, so that I can develop an awesome and beautiful features website.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": ["UI/UX lessons"],
+            "Action": ["attend"],
+            "Persona": ["developer"],
+            "Contains": [],
+            "Text": "#G04# As a developer, I want to attend some UI/UX lessons, ",
+            "Triggers": [[
+                "developer",
+                "attend"
+            ]],
+            "Targets": [[
+                "attend",
+                "UI/UX lessons"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_36",
+        "Benefit": {
+            "Entity": [
+                "routes",
+                "drop off waste"
+            ],
+            "Action": ["check"],
+            "Contains": [
+                [
+                    "locations of recycling centers",
+                    "drop off waste"
+                ],
+                [
+                    "map",
+                    "routes"
+                ]
+            ],
+            "Text": "I can check which routes to take to drop off waste.",
+            "Targets": [[
+                "check",
+                "routes"
+            ]]
+        },
+        "Text": "#G04# As a user, I want to view all locations of recycling centers on a map, so that I can check which routes to take to drop off waste.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "locations of recycling centers",
+                "map"
+            ],
+            "Action": ["view"],
+            "Persona": ["user"],
+            "Contains": [[
+                "map",
+                "locations of recycling centers"
+            ]],
+            "Text": "#G04# As a user, I want to view all locations of recycling centers on a map, ",
+            "Triggers": [[
+                "user",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "locations of recycling centers"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_37",
+        "Benefit": {
+            "Entity": [
+                "recommendations",
+                "recycling centers",
+                "availability"
+            ],
+            "Action": ["get"],
+            "Contains": [[
+                "week's schedule",
+                "availability"
+            ]],
+            "Text": "I can get recommendations for recycling centers that best fit my availability.",
+            "Targets": [[
+                "get",
+                "recommendations"
+            ]]
+        },
+        "Text": "#G04# As a user, I want to upload my week's schedule, so that I can get recommendations for recycling centers that best fit my availability.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": ["week's schedule"],
+            "Action": ["upload"],
+            "Persona": ["user"],
+            "Contains": [],
+            "Text": "#G04# As a user, I want to upload my week's schedule, ",
+            "Triggers": [[
+                "user",
+                "upload"
+            ]],
+            "Targets": [[
+                "upload",
+                "week's schedule"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_38",
+        "Benefit": {
+            "Entity": [
+                "temporary password",
+                "password"
+            ],
+            "Action": [
+                "get",
+                "forget"
+            ],
+            "Contains": [],
+            "Text": "I can get a temporary password in case I forget my own one.",
+            "Targets": [
+                [
+                    "get",
+                    "temporary password"
+                ],
+                [
+                    "forget",
+                    "password"
+                ]
+            ]
+        },
+        "Text": "#G04# As a user, I want to link my email account to my profile, so that I can get a temporary password in case I forget my own one.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "email account",
+                "profile"
+            ],
+            "Action": ["link"],
+            "Persona": ["user"],
+            "Contains": [[
+                "profile",
+                "email account"
+            ]],
+            "Text": "#G04# As a user, I want to link my email account to my profile, ",
+            "Triggers": [[
+                "user",
+                "link"
+            ]],
+            "Targets": [[
+                "link",
+                "email account"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_39",
+        "Benefit": {
+            "Entity": [
+                "feedback",
+                "help"
+            ],
+            "Action": [
+                "give",
+                "ask"
+            ],
+            "Contains": [],
+            "Text": "I can give feedback or ask for help.",
+            "Targets": [
+                [
+                    "give",
+                    "feedback"
+                ],
+                [
+                    "ask",
+                    "help"
+                ]
+            ]
+        },
+        "Text": "#G04# As a user, I want to contact the administrators, so that I can give feedback or ask for help.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": ["administrators"],
+            "Action": ["contact"],
+            "Persona": ["user"],
+            "Contains": [],
+            "Text": "#G04# As a user, I want to contact the administrators, ",
+            "Triggers": [[
+                "user",
+                "contact"
+            ]],
+            "Targets": [[
+                "contact",
+                "administrators"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_40",
+        "Benefit": {
+            "Entity": ["database up-to-date"],
+            "Action": ["keep"],
+            "Contains": [],
+            "Text": "I can keep the database up-to-date over time.",
+            "Targets": [[
+                "keep",
+                "database up-to-date"
+            ]]
+        },
+        "Text": "#G04# As an admin, I want to add recycling center information, so that I can keep the database up-to-date over time.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": ["recycling center information"],
+            "Action": ["add"],
+            "Persona": ["admin"],
+            "Contains": [],
+            "Text": "#G04# As an admin, I want to add recycling center information, ",
+            "Triggers": [[
+                "admin",
+                "add"
+            ]],
+            "Targets": [[
+                "add",
+                "recycling center information"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_41",
+        "Benefit": {
+            "Entity": [
+                "users",
+                "system",
+                "any issues"
+            ],
+            "Action": [
+                "fix",
+                "review"
+            ],
+            "Contains": [
+                [
+                    "system",
+                    "users"
+                ],
+                [
+                    "user error logs",
+                    "any issues"
+                ],
+                [
+                    "users",
+                    "any issues"
+                ]
+            ],
+            "Text": "I can fix or review any issues that are being faced by users of the system.",
+            "Targets": [
+                [
+                    "review",
+                    "any issues"
+                ],
+                [
+                    "fix",
+                    "any issues"
+                ]
+            ]
+        },
+        "Text": "#G04# As an admin, I want to view user error logs, so that I can fix or review any issues that are being faced by users of the system.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": ["user error logs"],
+            "Action": ["view"],
+            "Persona": ["admin"],
+            "Contains": [],
+            "Text": "#G04# As an admin, I want to view user error logs, ",
+            "Triggers": [[
+                "admin",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "user error logs"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_42",
+        "Benefit": {
+            "Entity": ["information accuracy"],
+            "Action": ["increase"],
+            "Contains": [],
+            "Text": "I can increase information accuracy.",
+            "Targets": [[
+                "increase",
+                "information accuracy"
+            ]]
+        },
+        "Text": "#G04# As an admin, I want to onboard recycling centers on the platform, so that I can increase information accuracy.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "recycling centers",
+                "platform"
+            ],
+            "Action": ["onboard"],
+            "Persona": ["admin"],
+            "Contains": [[
+                "platform",
+                "recycling centers"
+            ]],
+            "Text": "#G04# As an admin, I want to onboard recycling centers on the platform, ",
+            "Triggers": [[
+                "admin",
+                "onboard"
+            ]],
+            "Targets": [[
+                "onboard",
+                "recycling centers"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_43",
+        "Benefit": {
+            "Entity": [
+                "latest information",
+                "recycling center"
+            ],
+            "Action": ["provide"],
+            "Contains": [[
+                "recycling center information",
+                "latest information"
+            ]],
+            "Text": "I can provide the latest information about the recycling center.",
+            "Targets": [[
+                "provide",
+                "latest information"
+            ]]
+        },
+        "Text": "#G04# As a superuser, I want to update the recycling center information, so that I can provide the latest information about the recycling center.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": ["recycling center information"],
+            "Action": ["update"],
+            "Persona": ["superuser"],
+            "Contains": [],
+            "Text": "#G04# As a superuser, I want to update the recycling center information, ",
+            "Triggers": [[
+                "superuser",
+                "update"
+            ]],
+            "Targets": [[
+                "update",
+                "recycling center information"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_44",
+        "Benefit": {
+            "Entity": [
+                "recycling center information",
+                "recyclable waste.",
+                "how many users"
+            ],
+            "Action": [
+                "view in real-time",
+                "visited"
+            ],
+            "Contains": [],
+            "Text": "I can view in real-time how many users have visited my recycling center information and their recyclable waste.",
+            "Targets": [
+                [
+                    "view in real-time",
+                    "recyclable waste."
+                ],
+                [
+                    "view in real-time",
+                    "how many users"
+                ],
+                [
+                    "visited",
+                    "recycling center information"
+                ]
+            ]
+        },
+        "Text": "#G04# As a superuser, I want to view users' stats, so that I can view in real-time how many users have visited my recycling center information and their recyclable waste.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": ["users' stats"],
+            "Action": ["view"],
+            "Persona": ["superuser"],
+            "Contains": [],
+            "Text": "#G04# As a superuser, I want to view users' stats, ",
+            "Triggers": [[
+                "superuser",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "users' stats"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_45",
+        "Benefit": {
+            "Entity": [
+                "recycling center",
+                "any questions"
+            ],
+            "Action": ["answer"],
+            "Contains": [],
+            "Text": "I can answer any questions about my recycling center.",
+            "Targets": [[
+                "answer",
+                "any questions"
+            ]]
+        },
+        "Text": "#G04# As a superuser, I want to reply to user questions, so that I can answer any questions about my recycling center.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": ["user questions"],
+            "Action": ["reply"],
+            "Persona": ["superuser"],
+            "Contains": [],
+            "Text": "#G04# As a superuser, I want to reply to user questions, ",
+            "Triggers": [[
+                "superuser",
+                "reply"
+            ]],
+            "Targets": [[
+                "reply",
+                "user questions"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_46",
+        "Benefit": {
+            "Entity": [
+                "neighbourhoods",
+                "facilities",
+                "largest number of drop-offs"
+            ],
+            "Action": [
+                "identify",
+                "getting"
+            ],
+            "Contains": [],
+            "Text": "I can identify the neighbourhoods with the largest number of drop-offs and to try getting more facilities involved.",
+            "Targets": [
+                [
+                    "identify",
+                    "neighbourhoods"
+                ],
+                [
+                    "getting",
+                    "facilities"
+                ]
+            ]
+        },
+        "Text": "#G04# As an admin, I want to be able to have a dashboard that shows usage stats and locations, so that I can identify the neighbourhoods with the largest number of drop-offs and to try getting more facilities involved.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "dashboard",
+                "usage stats",
+                "locations"
+            ],
+            "Action": [
+                "have",
+                "shows"
+            ],
+            "Persona": ["admin"],
+            "Contains": [
+                [
+                    "dashboard",
+                    "usage stats"
+                ],
+                [
+                    "dashboard",
+                    "locations"
+                ]
+            ],
+            "Text": "#G04# As an admin, I want to be able to have a dashboard that shows usage stats and locations, ",
+            "Triggers": [[
+                "admin",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "dashboard"
+                ],
+                [
+                    "shows",
+                    "usage stats"
+                ],
+                [
+                    "shows",
+                    "locations"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_47",
+        "Benefit": {
+            "Entity": [
+                "features",
+                "website"
+            ],
+            "Action": ["keep them updated"],
+            "Contains": [[
+                "website",
+                "features"
+            ]],
+            "Text": "I can keep them updated about features we have on our website.",
+            "Targets": [[
+                "keep them updated",
+                "features"
+            ]]
+        },
+        "Text": "#G04# As an admin, I want to be able to communicate directly with facilities, so that I can keep them updated about features we have on our website.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": ["facilities"],
+            "Action": ["communicate directly"],
+            "Persona": ["admin"],
+            "Contains": [],
+            "Text": "#G04# As an admin, I want to be able to communicate directly with facilities, ",
+            "Triggers": [[
+                "admin",
+                "communicate directly"
+            ]],
+            "Targets": [[
+                "communicate directly",
+                "facilities"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_48",
+        "Benefit": {
+            "Entity": [
+                "waste",
+                "negative ecological footprint"
+            ],
+            "Action": ["know"],
+            "Contains": [],
+            "Text": "I can know for sure my waste is not going to leave a negative ecological footprint.",
+            "Targets": []
+        },
+        "Text": "#G04# As a user, I want to be able to browse through the list of facolities and see which ones are environment-friendly, so that I can know for sure my waste is not going to leave a negative ecological footprint.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "list",
+                "facolities"
+            ],
+            "Action": [
+                "browse",
+                "see"
+            ],
+            "Persona": ["user"],
+            "Contains": [[
+                "list",
+                "facolities"
+            ]],
+            "Text": "#G04# As a user, I want to be able to browse through the list of facolities and see which ones are environment-friendly, ",
+            "Triggers": [
+                [
+                    "user",
+                    "browse"
+                ],
+                [
+                    "user",
+                    "see"
+                ]
+            ],
+            "Targets": [
+                [
+                    "browse",
+                    "list"
+                ],
+                [
+                    "see",
+                    "facolities"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_49",
+        "Benefit": {
+            "Entity": [
+                "users",
+                "any miscommunication"
+            ],
+            "Action": ["avoid"],
+            "Contains": [],
+            "Text": "I can avoid any miscommunication with users.",
+            "Targets": [[
+                "avoid",
+                "any miscommunication"
+            ]]
+        },
+        "Text": "#G04# As a recyclingfacility representative, I want to be able to update my information and the type of material I accept, so that I can avoid any miscommunication with users.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "information",
+                "type of material"
+            ],
+            "Action": [
+                "update",
+                "accept"
+            ],
+            "Persona": ["recyclingfacility representative"],
+            "Contains": [],
+            "Text": "#G04# As a recyclingfacility representative, I want to be able to update my information and the type of material I accept, ",
+            "Triggers": [[
+                "recyclingfacility representative",
+                "update"
+            ]],
+            "Targets": [
+                [
+                    "update",
+                    "information"
+                ],
+                [
+                    "update",
+                    "type of material"
+                ],
+                [
+                    "accept",
+                    "type of material"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_50",
+        "Benefit": {
+            "Entity": [
+                "hours",
+                "equipment",
+                "capacity",
+                "larger amounts of recyclable materials"
+            ],
+            "Action": [
+                "adjust",
+                "upgrade",
+                "accomodate"
+            ],
+            "Contains": [[
+                "schedules",
+                "hours"
+            ]],
+            "Text": "I can adjust my hours and/or upgrade equipment and capacity in order to be able to accomodate larger amounts of recyclable materials.",
+            "Targets": [
+                [
+                    "adjust",
+                    "hours"
+                ],
+                [
+                    "upgrade",
+                    "capacity"
+                ],
+                [
+                    "upgrade",
+                    "equipment"
+                ],
+                [
+                    "accomodate",
+                    "larger amounts of recyclable materials"
+                ]
+            ]
+        },
+        "Text": "#G04# As a recyclingfacility representative, I want to have access to user stats and schedules, so that I can adjust my hours and/or upgrade equipment and capacity in order to be able to accomodate larger amounts of recyclable materials.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "user stats",
+                "schedules",
+                "access"
+            ],
+            "Action": ["have"],
+            "Persona": ["recyclingfacility representative"],
+            "Contains": [[
+                "user stats",
+                "access"
+            ]],
+            "Text": "#G04# As a recyclingfacility representative, I want to have access to user stats and schedules, ",
+            "Triggers": [[
+                "recyclingfacility representative",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "access"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_51",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["fix"],
+            "Contains": [],
+            "Text": "they fix them",
+            "Targets": [
+                [
+                    "fix",
+                    "any issues"
+                ],
+                [
+                    "fix",
+                    "concerns I have"
+                ]
+            ]
+        },
+        "Text": "#G04# As a recyclingfacility, I want to be able to communicate directly with the site admin and convey any issues or concerns I have, so that they fix them.",
+        "PID": "#G04#",
+        "Main": {
+            "Entity": [
+                "site admin",
+                "any issues",
+                "concerns I have"
+            ],
+            "Action": [
+                "convey",
+                "communicate directly"
+            ],
+            "Persona": ["recyclingfacility"],
+            "Contains": [],
+            "Text": "#G04# As a recyclingfacility, I want to be able to communicate directly with the site admin and convey any issues or concerns I have, ",
+            "Triggers": [
+                [
+                    "recyclingfacility",
+                    "communicate directly"
+                ],
+                [
+                    "recyclingfacility",
+                    "convey"
+                ]
+            ],
+            "Targets": [
+                [
+                    "communicate directly",
+                    "site admin"
+                ],
+                [
+                    "convey",
+                    "any issues"
+                ],
+                [
+                    "convey",
+                    "concerns I have"
+                ]
+            ]
+        }
+    }
+]

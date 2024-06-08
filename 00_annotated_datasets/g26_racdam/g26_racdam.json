@@ -1,0 +1,4032 @@
+[
+    {
+        "US_Nr": "user_story_01",
+        "Benefit": {
+            "Entity": [
+                "what",
+                "file"
+            ],
+            "Action": [
+                "know",
+                "do"
+            ],
+            "Contains": [],
+            "Text": "I know what I can do with a file.",
+            "Targets": [
+                [
+                    "know",
+                    "what"
+                ],
+                [
+                    "do",
+                    "file"
+                ]
+            ]
+        },
+        "Text": "#G26# As an archivist, I want to apply a license or rights statement, so that I know what I can do with a file.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "license",
+                "rights statement"
+            ],
+            "Action": ["apply"],
+            "Persona": ["archivist"],
+            "Contains": [],
+            "Text": "#G26# As an archivist, I want to apply a license or rights statement, ",
+            "Triggers": [[
+                "archivist",
+                "apply"
+            ]],
+            "Targets": [
+                [
+                    "apply",
+                    "license"
+                ],
+                [
+                    "apply",
+                    "rights statement"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_02",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Text": "they don't get shared by mistake.",
+            "Targets": []
+        },
+        "Text": "#G26# As an archivist, I want to mark individual files as restricted, so that they don't get shared by mistake.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": ["individual files"],
+            "Action": ["mark"],
+            "Persona": ["archivist"],
+            "Contains": [],
+            "Text": "#G26# As an archivist, I want to mark individual files as restricted, ",
+            "Triggers": [[
+                "archivist",
+                "mark"
+            ]],
+            "Targets": [[
+                "mark",
+                "individual files"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_03",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Text": "they don't get shared by mistake.",
+            "Targets": []
+        },
+        "Text": "#G26# As an archivist, I want to mark groups of files as restricted, so that they don't get shared by mistake.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "groups",
+                "files"
+            ],
+            "Action": ["mark"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "groups",
+                "files"
+            ]],
+            "Text": "#G26# As an archivist, I want to mark groups of files as restricted, ",
+            "Triggers": [[
+                "archivist",
+                "mark"
+            ]],
+            "Targets": [[
+                "mark",
+                "groups"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_04",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G26# As an archivist, I want to restrict a file from view.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "file",
+                "view"
+            ],
+            "Action": ["restrict"],
+            "Persona": ["archivist"],
+            "Contains": [],
+            "Triggers": [[
+                "archivist",
+                "restrict"
+            ]],
+            "Targets": [[
+                "restrict",
+                "file"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_05",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G26# As an archivist, I want to restrict a group of files from view.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "group",
+                "files",
+                "view"
+            ],
+            "Action": ["restrict"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "group",
+                "files"
+            ]],
+            "Triggers": [[
+                "archivist",
+                "restrict"
+            ]],
+            "Targets": [[
+                "restrict",
+                "group"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_06",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Text": "I don't have to update this by hand.",
+            "Targets": []
+        },
+        "Text": "#G26# As an archivist, I want to set a date on which restrictions will be removed from a file, so that that I don't have to update this by hand.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "date",
+                "restrictions",
+                "file"
+            ],
+            "Action": [
+                "set",
+                "removed"
+            ],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "file",
+                "restrictions"
+            ]],
+            "Text": "#G26# As an archivist, I want to set a date on which restrictions will be removed from a file,  that",
+            "Triggers": [[
+                "archivist",
+                "set"
+            ]],
+            "Targets": [
+                [
+                    "set",
+                    "date"
+                ],
+                [
+                    "removed",
+                    "restrictions"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_07",
+        "Benefit": {
+            "Entity": ["files"],
+            "Action": ["share"],
+            "Contains": [],
+            "Text": "I can share files when they become open.",
+            "Targets": [[
+                "share",
+                "files"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to add restriction end date information to files, so that I can share files when they become open.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "restriction end date information",
+                "files"
+            ],
+            "Action": ["add"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "files",
+                "restriction end date information"
+            ]],
+            "Text": "#G26# As an archivist, I want to add restriction end date information to files, ",
+            "Triggers": [[
+                "archivist",
+                "add"
+            ]],
+            "Targets": [[
+                "add",
+                "restriction end date information"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_08",
+        "Benefit": {
+            "Entity": ["how"],
+            "Action": [
+                "know",
+                "shared"
+            ],
+            "Contains": [],
+            "Text": "I know if and how they can be shared.",
+            "Targets": [
+                [
+                    "know",
+                    "how"
+                ],
+                [
+                    "shared",
+                    "groups"
+                ]
+            ]
+        },
+        "Text": "#G26# As an archivist, I want to add detailed restrictions to groups of files, so that I know if and how they can be shared.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "detailed restrictions",
+                "groups",
+                "files"
+            ],
+            "Action": ["add"],
+            "Persona": ["archivist"],
+            "Contains": [
+                [
+                    "groups",
+                    "detailed restrictions"
+                ],
+                [
+                    "groups",
+                    "files"
+                ]
+            ],
+            "Text": "#G26# As an archivist, I want to add detailed restrictions to groups of files, ",
+            "Triggers": [[
+                "archivist",
+                "add"
+            ]],
+            "Targets": [[
+                "add",
+                "detailed restrictions"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_09",
+        "Benefit": {
+            "Entity": [
+                "reading room access",
+                "certain digital files"
+            ],
+            "Action": ["give"],
+            "Contains": [[
+                "certain digital files",
+                "reading room access"
+            ]],
+            "Text": "I can give reading room access only to certain digital files.",
+            "Targets": [[
+                "give",
+                "reading room access"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to restrict access to some files by IP address, so that I can give reading room access only to certain digital files.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "access",
+                "some files",
+                "IP address"
+            ],
+            "Action": ["restrict"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "some files",
+                "access"
+            ]],
+            "Text": "#G26# As an archivist, I want to restrict access to some files by IP address, ",
+            "Triggers": [[
+                "archivist",
+                "restrict"
+            ]],
+            "Targets": [[
+                "restrict",
+                "access"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_10",
+        "Benefit": {
+            "Entity": [
+                "donor representatives",
+                "certain files"
+            ],
+            "Action": [
+                "allow",
+                "see"
+            ],
+            "Contains": [[
+                "donor representatives",
+                "certain files"
+            ]],
+            "Text": "I can allow donor representatives to see certain files.",
+            "Targets": [
+                [
+                    "allow",
+                    "donor representatives"
+                ],
+                [
+                    "see",
+                    "certain files"
+                ]
+            ]
+        },
+        "Text": "#G26# As an archivist, I want to restrict access to certain files by user, so that I can allow donor representatives to see certain files.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "access",
+                "certain files",
+                "user"
+            ],
+            "Action": ["restrict"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "certain files",
+                "access"
+            ]],
+            "Text": "#G26# As an archivist, I want to restrict access to certain files by user, ",
+            "Triggers": [[
+                "archivist",
+                "restrict"
+            ]],
+            "Targets": [[
+                "restrict",
+                "access"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_11",
+        "Benefit": {
+            "Entity": ["researcher"],
+            "Action": ["license"],
+            "Contains": [[
+                "researcher",
+                "photo"
+            ]],
+            "Text": "I can license it to a researcher.",
+            "Targets": [[
+                "license",
+                "photo"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to know if a photo has already been scanned, so that I can license it to a researcher.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": ["photo"],
+            "Action": [
+                "know",
+                "scanned"
+            ],
+            "Persona": ["archivist"],
+            "Contains": [],
+            "Text": "#G26# As an archivist, I want to know if a photo has already been scanned, ",
+            "Triggers": [[
+                "archivist",
+                "know"
+            ]],
+            "Targets": [[
+                "scanned",
+                "photo"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_12",
+        "Benefit": {
+            "Entity": ["uniform rights statements"],
+            "Action": ["easily create"],
+            "Contains": [],
+            "Text": "I can easily create uniform rights statements.",
+            "Targets": [[
+                "easily create",
+                "uniform rights statements"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to select existing rights statuses and statements, so that I can easily create uniform rights statements.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "existing rights statuses",
+                "statements"
+            ],
+            "Action": ["select"],
+            "Persona": ["archivist"],
+            "Contains": [],
+            "Text": "#G26# As an archivist, I want to select existing rights statuses and statements, ",
+            "Triggers": [[
+                "archivist",
+                "select"
+            ]],
+            "Targets": [
+                [
+                    "select",
+                    "existing rights statuses"
+                ],
+                [
+                    "select",
+                    "statements"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_13",
+        "Benefit": {
+            "Entity": [
+                "access",
+                "non-sensitive portions",
+                "record"
+            ],
+            "Action": ["provide"],
+            "Contains": [
+                [
+                    "non-sensitive portions",
+                    "access"
+                ],
+                [
+                    "record",
+                    "non-sensitive portions"
+                ]
+            ],
+            "Text": "I can provide access to non-sensitive portions of a record.",
+            "Targets": [[
+                "provide",
+                "access"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to redact information in digital files for a period of time, so that I can provide access to non-sensitive portions of a record.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "information",
+                "digital files"
+            ],
+            "Action": ["redact"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "digital files",
+                "information"
+            ]],
+            "Text": "#G26# As an archivist, I want to redact information in digital files for a period of time, ",
+            "Triggers": [[
+                "archivist",
+                "redact"
+            ]],
+            "Targets": [[
+                "redact",
+                "information"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_14",
+        "Benefit": {
+            "Entity": [
+                "process",
+                "back and forth"
+            ],
+            "Action": ["eliminated"],
+            "Contains": [
+                [
+                    "process",
+                    "online form"
+                ],
+                [
+                    "licensing archival material",
+                    "process"
+                ]
+            ],
+            "Text": "the process is more transparent and some of the back and forth can be eliminated.",
+            "Targets": [[
+                "eliminated",
+                "back and forth"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to have an online form for licensing archival material, so that the process is more transparent and some of the back and forth can be eliminated.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "online form",
+                "licensing archival material"
+            ],
+            "Action": ["have"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "licensing archival material",
+                "online form"
+            ]],
+            "Text": "#G26# As an archivist, I want to have an online form for licensing archival material, ",
+            "Triggers": [[
+                "archivist",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "online form"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_15",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G26# As an archivist, I want to batch edit metadata about files.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "metadata",
+                "files"
+            ],
+            "Action": ["batch edit"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "files",
+                "metadata"
+            ]],
+            "Triggers": [[
+                "archivist",
+                "batch edit"
+            ]],
+            "Targets": [[
+                "batch edit",
+                "metadata"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_16",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G26# As an archivist, I want to upload a single file.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": ["single file"],
+            "Action": ["upload"],
+            "Persona": ["archivist"],
+            "Contains": [],
+            "Triggers": [[
+                "archivist",
+                "upload"
+            ]],
+            "Targets": [[
+                "upload",
+                "single file"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_17",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Text": "I can save time.",
+            "Targets": []
+        },
+        "Text": "#G26# As an archivist, I want to upload groups of files, so that I can save time.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "groups",
+                "files"
+            ],
+            "Action": ["upload"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "groups",
+                "files"
+            ]],
+            "Text": "#G26# As an archivist, I want to upload groups of files, ",
+            "Triggers": [[
+                "archivist",
+                "upload"
+            ]],
+            "Targets": [[
+                "upload",
+                "groups"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_18",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Text": "I don't have to do this manually.",
+            "Targets": []
+        },
+        "Text": "#G26# As an archivist, I want to automatically create access copies of files, so that I don't have to do this manually.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "access copies",
+                "files"
+            ],
+            "Action": ["automatically create"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "files",
+                "access copies"
+            ]],
+            "Text": "#G26# As an archivist, I want to automatically create access copies of files, ",
+            "Triggers": [[
+                "archivist",
+                "automatically create"
+            ]],
+            "Targets": [[
+                "automatically create",
+                "access copies"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_19",
+        "Benefit": {
+            "Entity": ["file size"],
+            "Action": ["know"],
+            "Contains": [],
+            "Text": "I know the file size.",
+            "Targets": [[
+                "know",
+                "file size"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to automatically generate technical metadata, so that I know the file size.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": ["technical metadata"],
+            "Action": ["automatically generate"],
+            "Persona": ["archivist"],
+            "Contains": [],
+            "Text": "#G26# As an archivist, I want to automatically generate technical metadata, ",
+            "Triggers": [[
+                "archivist",
+                "automatically generate"
+            ]],
+            "Targets": [[
+                "automatically generate",
+                "technical metadata"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_20",
+        "Benefit": {
+            "Entity": [
+                "staff",
+                "researchers"
+            ],
+            "Action": ["easily access"],
+            "Contains": [],
+            "Text": "staff and researchers are able to easily access them.",
+            "Targets": [[
+                "easily access",
+                "staff generated working papers"
+            ]]
+        },
+        "Text": "#G26# As an assistant archivist, I want to upload and tag staff generated working papers, so that staff and researchers are able to easily access them.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": ["staff generated working papers"],
+            "Action": [
+                "upload",
+                "tag"
+            ],
+            "Persona": ["assistant archivist"],
+            "Contains": [],
+            "Text": "#G26# As an assistant archivist, I want to upload and tag staff generated working papers, ",
+            "Triggers": [
+                [
+                    "assistant archivist",
+                    "upload"
+                ],
+                [
+                    "assistant archivist",
+                    "tag"
+                ]
+            ],
+            "Targets": [
+                [
+                    "upload",
+                    "staff generated working papers"
+                ],
+                [
+                    "tag",
+                    "staff generated working papers"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_21",
+        "Benefit": {
+            "Entity": ["preservation actions"],
+            "Action": [
+                "know",
+                "apply"
+            ],
+            "Contains": [],
+            "Text": "I know whether I should apply preservation actions.",
+            "Targets": [[
+                "apply",
+                "preservation actions"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to distinguish between digital objects digitized to preservation standards and those created for access purposes only, so that I know whether I should apply preservation actions.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "access purposes",
+                "preservation standards",
+                "digital objects"
+            ],
+            "Action": ["distinguish"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "digital objects",
+                "preservation standards"
+            ]],
+            "Text": "#G26# As an archivist, I want to distinguish between digital objects digitized to preservation standards and those created for access purposes only, ",
+            "Triggers": [[
+                "archivist",
+                "distinguish"
+            ]],
+            "Targets": [[
+                "distinguish",
+                "digital objects"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_22",
+        "Benefit": {
+            "Entity": ["other researchers"],
+            "Action": ["share"],
+            "Contains": [[
+                "other researchers",
+                "electronic versions"
+            ]],
+            "Text": "I can share them with other researchers.",
+            "Targets": [[
+                "share",
+                "electronic versions"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to link electronic versions of researchers' publications to citations, so that I can share them with other researchers.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "electronic versions",
+                "researchers' publications",
+                "citations"
+            ],
+            "Action": ["link"],
+            "Persona": ["archivist"],
+            "Contains": [
+                [
+                    "researchers' publications",
+                    "electronic versions"
+                ],
+                [
+                    "citations",
+                    "electronic versions"
+                ]
+            ],
+            "Text": "#G26# As an archivist, I want to link electronic versions of researchers' publications to citations, ",
+            "Triggers": [[
+                "archivist",
+                "link"
+            ]],
+            "Targets": [[
+                "link",
+                "electronic versions"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_23",
+        "Benefit": {
+            "Entity": ["other research requests"],
+            "Action": ["used again"],
+            "Contains": [],
+            "Text": "they can be used again for other research requests.",
+            "Targets": [[
+                "used again",
+                "images created while answering research requests"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to upload scans of images created while answering research requests, so that they can be used again for other research requests.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "scans",
+                "images created while answering research requests"
+            ],
+            "Action": ["upload"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "scans",
+                "images created while answering research requests"
+            ]],
+            "Text": "#G26# As an archivist, I want to upload scans of images created while answering research requests, ",
+            "Triggers": [[
+                "archivist",
+                "upload"
+            ]],
+            "Targets": [[
+                "upload",
+                "scans"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_24",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["reused"],
+            "Contains": [],
+            "Text": "they can be reused.",
+            "Targets": [
+                [
+                    "reused",
+                    "images"
+                ],
+                [
+                    "reused",
+                    "documents"
+                ]
+            ]
+        },
+        "Text": "#G26# As an archivist, I want to create quality scans of images and documents, so that they can be reused.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "quality scans",
+                "images",
+                "documents"
+            ],
+            "Action": ["create"],
+            "Persona": ["archivist"],
+            "Contains": [
+                [
+                    "images",
+                    "quality scans"
+                ],
+                [
+                    "documents",
+                    "quality scans"
+                ]
+            ],
+            "Text": "#G26# As an archivist, I want to create quality scans of images and documents, ",
+            "Triggers": [[
+                "archivist",
+                "create"
+            ]],
+            "Targets": [[
+                "create",
+                "quality scans"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_25",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Text": "I don't have to do this manually.",
+            "Targets": []
+        },
+        "Text": "#G26# As an archivist, I want to automatically create access derivatives of digital objects, so that I don't have to do this manually.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "access derivatives",
+                "digital objects"
+            ],
+            "Action": ["automatically create"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "digital objects",
+                "access derivatives"
+            ]],
+            "Text": "#G26# As an archivist, I want to automatically create access derivatives of digital objects, ",
+            "Triggers": [[
+                "archivist",
+                "automatically create"
+            ]],
+            "Targets": [[
+                "automatically create",
+                "access derivatives"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_26",
+        "Benefit": {
+            "Entity": ["potential errors"],
+            "Action": ["avoid"],
+            "Contains": [],
+            "Text": "I avoid potential errors.",
+            "Targets": [[
+                "avoid",
+                "potential errors"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to automatically assign unique identifiers to material I scan, so that I avoid potential errors.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "unique identifiers",
+                "material I scan"
+            ],
+            "Action": ["automatically assign"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "material I scan",
+                "unique identifiers"
+            ]],
+            "Text": "#G26# As an archivist, I want to automatically assign unique identifiers to material I scan, ",
+            "Triggers": [[
+                "archivist",
+                "automatically assign"
+            ]],
+            "Targets": [[
+                "automatically assign",
+                "unique identifiers"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_27",
+        "Benefit": {
+            "Entity": ["repetitive and easily-forgotten tasks"],
+            "Action": ["avoid"],
+            "Contains": [],
+            "Text": "I avoid repetitive and easily-forgotten tasks.",
+            "Targets": [[
+                "avoid",
+                "repetitive and easily-forgotten tasks"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to automatically embed metadata in file headers, so that I avoid repetitive and easily-forgotten tasks.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "metadata",
+                "file headers"
+            ],
+            "Action": ["automatically embed"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "file headers",
+                "metadata"
+            ]],
+            "Text": "#G26# As an archivist, I want to automatically embed metadata in file headers, ",
+            "Triggers": [[
+                "archivist",
+                "automatically embed"
+            ]],
+            "Targets": [[
+                "automatically embed",
+                "metadata"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_28",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["orient"],
+            "Contains": [],
+            "Text": "I can orient them correctly.",
+            "Targets": [[
+                "orient",
+                "images"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to rotate images, so that I can orient them correctly.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": ["images"],
+            "Action": ["rotate"],
+            "Persona": ["archivist"],
+            "Contains": [],
+            "Text": "#G26# As an archivist, I want to rotate images, ",
+            "Triggers": [[
+                "archivist",
+                "rotate"
+            ]],
+            "Targets": [[
+                "rotate",
+                "images"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_29",
+        "Benefit": {
+            "Entity": ["unnecessary work"],
+            "Action": ["eliminate"],
+            "Contains": [],
+            "Text": "I can eliminate unnecessary work.",
+            "Targets": [[
+                "eliminate",
+                "unnecessary work"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to apply automatic contrast and level operations to a scanned file, so that I can eliminate unnecessary work.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "automatic contrast",
+                "level operations",
+                "scanned file"
+            ],
+            "Action": ["apply"],
+            "Persona": ["archivist"],
+            "Contains": [
+                [
+                    "scanned file",
+                    "automatic contrast"
+                ],
+                [
+                    "scanned file",
+                    "level operations"
+                ]
+            ],
+            "Text": "#G26# As an archivist, I want to apply automatic contrast and level operations to a scanned file, ",
+            "Triggers": [[
+                "archivist",
+                "apply"
+            ]],
+            "Targets": [
+                [
+                    "apply",
+                    "automatic contrast"
+                ],
+                [
+                    "apply",
+                    "level operations"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_30",
+        "Benefit": {
+            "Entity": [
+                "results",
+                "automated tools"
+            ],
+            "Action": ["improve"],
+            "Contains": [
+                [
+                    "automated tools",
+                    "contrast"
+                ],
+                [
+                    "automated tools",
+                    "level"
+                ],
+                [
+                    "automated tools",
+                    "other manipulations"
+                ],
+                [
+                    "automated tools",
+                    "results"
+                ]
+            ],
+            "Text": "I can improve on results from automated tools.",
+            "Targets": [[
+                "improve",
+                "results"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to perform contrast, level and other manipulations manually, so that I can improve on results from automated tools.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "contrast",
+                "level",
+                "other manipulations"
+            ],
+            "Action": ["perform"],
+            "Persona": ["archivist"],
+            "Contains": [],
+            "Text": "#G26# As an archivist, I want to perform contrast, level and other manipulations manually, ",
+            "Triggers": [[
+                "archivist",
+                "perform"
+            ]],
+            "Targets": [
+                [
+                    "perform",
+                    "contrast"
+                ],
+                [
+                    "perform",
+                    "level"
+                ],
+                [
+                    "perform",
+                    "other manipulations"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_31",
+        "Benefit": {
+            "Entity": ["material"],
+            "Action": ["transferred"],
+            "Contains": [],
+            "Text": "material can be transferred on an ongoing basis.",
+            "Targets": [[
+                "transferred",
+                "material"
+            ]]
+        },
+        "Text": "#G26# As a donor representative, I want to supply incremental accruals to new and existing collections, so that material can be transferred on an ongoing basis.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "incremental accruals",
+                "new and existing collections"
+            ],
+            "Action": ["supply"],
+            "Persona": ["donor representative"],
+            "Contains": [[
+                "new and existing collections",
+                "incremental accruals"
+            ]],
+            "Text": "#G26# As a donor representative, I want to supply incremental accruals to new and existing collections, ",
+            "Triggers": [[
+                "donor representative",
+                "supply"
+            ]],
+            "Targets": [[
+                "supply",
+                "incremental accruals"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_32",
+        "Benefit": {
+            "Entity": ["another visit"],
+            "Action": [
+                "find",
+                "refer"
+            ],
+            "Contains": [[
+                "another visit",
+                "archival material created for educational visits"
+            ]],
+            "Text": "find and refer to them for another visit.",
+            "Targets": [
+                [
+                    "find",
+                    "archival material created for educational visits"
+                ],
+                [
+                    "refer",
+                    "archival material created for educational visits"
+                ]
+            ]
+        },
+        "Text": "#G26# As an archivist, I want to manage scans of archival material created for educational visits, so that find and refer to them for another visit.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "scans",
+                "archival material created for educational visits"
+            ],
+            "Action": ["manage"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "archival material created for educational visits",
+                "scans"
+            ]],
+            "Text": "#G26# As an archivist, I want to manage scans of archival material created for educational visits, ",
+            "Triggers": [[
+                "archivist",
+                "manage"
+            ]],
+            "Targets": [[
+                "manage",
+                "scans"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_33",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["find"],
+            "Contains": [],
+            "Text": "I can find it easily later.",
+            "Targets": [[
+                "find",
+                "loan documentation"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to manage loan documentation, including preservation photos, forms and correspondence, so that I can find it easily later.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "loan documentation",
+                "preservation photos",
+                "forms",
+                "correspondence"
+            ],
+            "Action": ["manage"],
+            "Persona": ["archivist"],
+            "Contains": [
+                [
+                    "loan documentation",
+                    "preservation photos"
+                ],
+                [
+                    "loan documentation",
+                    "forms"
+                ],
+                [
+                    "loan documentation",
+                    "correspondence"
+                ]
+            ],
+            "Text": "#G26# As an archivist, I want to manage loan documentation, including preservation photos, forms and correspondence, ",
+            "Triggers": [[
+                "archivist",
+                "manage"
+            ]],
+            "Targets": [[
+                "manage",
+                "loan documentation"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_34",
+        "Benefit": {
+            "Entity": [
+                "file",
+                "publication"
+            ],
+            "Action": ["cite"],
+            "Contains": [[
+                "publication",
+                "file"
+            ]],
+            "Text": "so I can cite a file in a publication.",
+            "Targets": [[
+                "cite",
+                "file"
+            ]]
+        },
+        "Text": "#G26# As a researcher, I want to generate structured citation data, so that so I can cite a file in a publication.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": ["structured citation data"],
+            "Action": ["generate"],
+            "Persona": ["researcher"],
+            "Contains": [],
+            "Text": "#G26# As a researcher, I want to generate structured citation data, ",
+            "Triggers": [[
+                "researcher",
+                "generate"
+            ]],
+            "Targets": [[
+                "generate",
+                "structured citation data"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_35",
+        "Benefit": {
+            "Entity": [
+                "other people",
+                "interesting thing I found"
+            ],
+            "Action": ["show"],
+            "Contains": [[
+                "other people",
+                "interesting thing I found"
+            ]],
+            "Text": "so I can show other people an interesting thing I found.",
+            "Targets": [[
+                "show",
+                "interesting thing I found"
+            ]]
+        },
+        "Text": "#G26# As a researcher, I want to share a link to a file on social media, so that so I can show other people an interesting thing I found.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "link",
+                "file",
+                "social media"
+            ],
+            "Action": ["share"],
+            "Persona": ["researcher"],
+            "Contains": [
+                [
+                    "file",
+                    "link"
+                ],
+                [
+                    "social media",
+                    "link"
+                ]
+            ],
+            "Text": "#G26# As a researcher, I want to share a link to a file on social media, ",
+            "Triggers": [[
+                "researcher",
+                "share"
+            ]],
+            "Targets": [[
+                "share",
+                "link"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_36",
+        "Benefit": {
+            "Entity": [],
+            "Action": [
+                "know",
+                "use"
+            ],
+            "Contains": [],
+            "Text": "I know if I can use it.",
+            "Targets": [[
+                "use",
+                "image"
+            ]]
+        },
+        "Text": "#G26# As a researcher, I want to understand the copyright status of the image, so that I know if I can use it.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "copyright status",
+                "image"
+            ],
+            "Action": ["understand"],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "image",
+                "copyright status"
+            ]],
+            "Text": "#G26# As a researcher, I want to understand the copyright status of the image, ",
+            "Triggers": [[
+                "researcher",
+                "understand"
+            ]],
+            "Targets": [[
+                "understand",
+                "copyright status"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_37",
+        "Benefit": {
+            "Entity": ["publication"],
+            "Action": ["cite accurately"],
+            "Contains": [[
+                "publication",
+                "each document"
+            ]],
+            "Text": "I can cite accurately in a publication.",
+            "Targets": [[
+                "cite accurately",
+                "each document"
+            ]]
+        },
+        "Text": "#G26# As a researcher I want clear citation information on each document, so that I can cite accurately in a publication.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "clear citation information",
+                "each document"
+            ],
+            "Action": ["want"],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "each document",
+                "clear citation information"
+            ]],
+            "Text": "#G26# As a researcher I want clear citation information on each document, ",
+            "Triggers": [[
+                "researcher",
+                "want"
+            ]],
+            "Targets": [[
+                "want",
+                "clear citation information"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_38",
+        "Benefit": {
+            "Entity": [
+                "staff",
+                "researchers"
+            ],
+            "Action": [],
+            "Contains": [
+                [
+                    "staff",
+                    "reports I've written"
+                ],
+                [
+                    "researchers",
+                    "reports I've written"
+                ]
+            ],
+            "Text": "it is available to staff and researchers.",
+            "Targets": []
+        },
+        "Text": "#G26# As a researcher, I want to share reports I've written, so that it is available to staff and researchers.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": ["reports I've written"],
+            "Action": ["share"],
+            "Persona": ["researcher"],
+            "Contains": [],
+            "Text": "#G26# As a researcher, I want to share reports I've written, ",
+            "Triggers": [[
+                "researcher",
+                "share"
+            ]],
+            "Targets": [[
+                "share",
+                "reports I've written"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_39",
+        "Benefit": {
+            "Entity": [
+                "research",
+                "reading room"
+            ],
+            "Action": ["use"],
+            "Contains": [[
+                "research",
+                "file"
+            ]],
+            "Text": "I can use it for research without having to come to the reading room.",
+            "Targets": [[
+                "use",
+                "file"
+            ]]
+        },
+        "Text": "#G26# As a researcher, I want to download a file, so that I can use it for research without having to come to the reading room.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": ["file"],
+            "Action": ["download"],
+            "Persona": ["researcher"],
+            "Contains": [],
+            "Text": "#G26# As a researcher, I want to download a file, ",
+            "Triggers": [[
+                "researcher",
+                "download"
+            ]],
+            "Targets": [[
+                "download",
+                "file"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_40",
+        "Benefit": {
+            "Entity": [
+                "immediate and future in talks",
+                "articles"
+            ],
+            "Action": ["use"],
+            "Contains": [
+                [
+                    "immediate and future in talks",
+                    "reports"
+                ],
+                [
+                    "articles",
+                    "reports"
+                ]
+            ],
+            "Text": "I can use them in immediate and future in talks and articles.",
+            "Targets": [[
+                "use",
+                "reports"
+            ]]
+        },
+        "Text": "#G26# As a researcher, I want to download reports, so that I can use them in immediate and future in talks and articles.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": ["reports"],
+            "Action": ["download"],
+            "Persona": ["researcher"],
+            "Contains": [],
+            "Text": "#G26# As a researcher, I want to download reports, ",
+            "Triggers": [[
+                "researcher",
+                "download"
+            ]],
+            "Targets": [[
+                "download",
+                "reports"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_41",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G26# As a researcher, I want to locate photographs and documents that I can share on social media.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "photographs",
+                "documents",
+                "social media"
+            ],
+            "Action": ["locate"],
+            "Persona": ["researcher"],
+            "Contains": [
+                [
+                    "social media",
+                    "documents"
+                ],
+                [
+                    "social media",
+                    "photographs"
+                ]
+            ],
+            "Triggers": [[
+                "researcher",
+                "locate"
+            ]],
+            "Targets": [
+                [
+                    "locate",
+                    "photographs"
+                ],
+                [
+                    "locate",
+                    "documents"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_42",
+        "Benefit": {
+            "Entity": ["reading room"],
+            "Action": ["view"],
+            "Contains": [[
+                "reading room",
+                "analog versions"
+            ]],
+            "Text": "I can view them in the reading room.",
+            "Targets": [[
+                "view",
+                "analog versions"
+            ]]
+        },
+        "Text": "#G26# As a researcher, I want to request analog versions of digital objects, so that I can view them in the reading room.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "analog versions",
+                "digital objects"
+            ],
+            "Action": ["request"],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "digital objects",
+                "analog versions"
+            ]],
+            "Text": "#G26# As a researcher, I want to request analog versions of digital objects, ",
+            "Triggers": [[
+                "researcher",
+                "request"
+            ]],
+            "Targets": [[
+                "request",
+                "analog versions"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_43",
+        "Benefit": {
+            "Entity": ["publication"],
+            "Action": ["use"],
+            "Contains": [[
+                "publication",
+                "copies"
+            ]],
+            "Text": "I can use them in a publication.",
+            "Targets": [[
+                "use",
+                "copies"
+            ]]
+        },
+        "Text": "#G26# As a researcher, I want to order copies of photos, so that I can use them in a publication.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "copies",
+                "photos"
+            ],
+            "Action": ["order"],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "photos",
+                "copies"
+            ]],
+            "Text": "#G26# As a researcher, I want to order copies of photos, ",
+            "Triggers": [[
+                "researcher",
+                "order"
+            ]],
+            "Targets": [[
+                "order",
+                "copies"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_44",
+        "Benefit": {
+            "Entity": ["request"],
+            "Action": [],
+            "Contains": [],
+            "Text": "I don't have to put in that request.",
+            "Targets": []
+        },
+        "Text": "#G26# As a researcher, I want to receive a notification if something I request in the reading room or for duplication is already digitized, so that I don't have to put in that request.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "notification",
+                "something I request",
+                "reading room",
+                "duplication"
+            ],
+            "Action": [
+                "receive",
+                "digitized"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [
+                [
+                    "reading room",
+                    "something I request"
+                ],
+                [
+                    "duplication",
+                    "something I request"
+                ]
+            ],
+            "Text": "#G26# As a researcher, I want to receive a notification if something I request in the reading room or for duplication is already digitized, ",
+            "Triggers": [[
+                "researcher",
+                "receive"
+            ]],
+            "Targets": [
+                [
+                    "receive",
+                    "notification"
+                ],
+                [
+                    "digitized",
+                    "something I request"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_45",
+        "Benefit": {
+            "Entity": [
+                "what",
+                "images"
+            ],
+            "Action": ["know"],
+            "Contains": [[
+                "images",
+                "rights"
+            ]],
+            "Text": "they know what they can do with images.",
+            "Targets": [[
+                "know",
+                "what"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to make information about rights available to researchers and donors, so that they know what they can do with images.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "information",
+                "rights",
+                "researchers",
+                "donors"
+            ],
+            "Action": ["make"],
+            "Persona": ["archivist"],
+            "Contains": [
+                [
+                    "researchers",
+                    "information"
+                ],
+                [
+                    "donors",
+                    "information"
+                ],
+                [
+                    "rights",
+                    "information"
+                ]
+            ],
+            "Text": "#G26# As an archivist, I want to make information about rights available to researchers and donors, ",
+            "Triggers": [[
+                "archivist",
+                "make"
+            ]],
+            "Targets": [[
+                "make",
+                "information"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_46",
+        "Benefit": {
+            "Entity": ["object"],
+            "Action": [
+                "confirm",
+                "referred"
+            ],
+            "Contains": [],
+            "Text": "I can confirm which object is being referred to.",
+            "Targets": [[
+                "referred",
+                "object"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to ensure that emails sent about specific objects contain accurate citation information, so that I can confirm which object is being referred to.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "emails sent",
+                "specific objects",
+                "accurate citation information"
+            ],
+            "Action": ["ensure"],
+            "Persona": ["archivist"],
+            "Contains": [
+                [
+                    "emails sent",
+                    "specific objects"
+                ],
+                [
+                    "emails sent",
+                    "accurate citation information"
+                ]
+            ],
+            "Text": "#G26# As an archivist, I want to ensure that emails sent about specific objects contain accurate citation information, ",
+            "Triggers": [[
+                "archivist",
+                "ensure"
+            ]],
+            "Targets": [[
+                "ensure",
+                "emails sent"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_47",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G26# As a researcher, I want to stream audio and video files in my web browser.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "audio",
+                "video files",
+                "web browser"
+            ],
+            "Action": ["stream"],
+            "Persona": ["researcher"],
+            "Contains": [
+                [
+                    "web browser",
+                    "video files"
+                ],
+                [
+                    "web browser",
+                    "audio"
+                ]
+            ],
+            "Triggers": [[
+                "researcher",
+                "stream"
+            ]],
+            "Targets": [
+                [
+                    "stream",
+                    "audio"
+                ],
+                [
+                    "stream",
+                    "video files"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_48",
+        "Benefit": {
+            "Entity": ["text mining tools"],
+            "Action": ["use"],
+            "Contains": [[
+                "text mining tools",
+                "descriptive data"
+            ]],
+            "Text": "I can use text mining tools on it.",
+            "Targets": [[
+                "use",
+                "text mining tools"
+            ]]
+        },
+        "Text": "#G26# As a researcher, I want to export descriptive data in a common format, so that I can use text mining tools on it.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "descriptive data",
+                "common format"
+            ],
+            "Action": ["export"],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "descriptive data",
+                "common format"
+            ]],
+            "Text": "#G26# As a researcher, I want to export descriptive data in a common format, ",
+            "Triggers": [[
+                "researcher",
+                "export"
+            ]],
+            "Targets": [[
+                "export",
+                "descriptive data"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_49",
+        "Benefit": {
+            "Entity": ["researcher"],
+            "Action": [
+                "know",
+                "sent"
+            ],
+            "Contains": [[
+                "researcher",
+                "photo"
+            ]],
+            "Text": "I know if I've sent it to a researcher before.",
+            "Targets": [[
+                "sent",
+                "photo"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to track use of a photo, so that I know if I've sent it to a researcher before.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "use",
+                "photo"
+            ],
+            "Action": ["track"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "photo",
+                "use"
+            ]],
+            "Text": "#G26# As an archivist, I want to track use of a photo, ",
+            "Triggers": [[
+                "archivist",
+                "track"
+            ]],
+            "Targets": [[
+                "track",
+                "use"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_50",
+        "Benefit": {
+            "Entity": [
+                "use",
+                "assets"
+            ],
+            "Action": ["track"],
+            "Contains": [[
+                "assets",
+                "use"
+            ]],
+            "Text": "I can track use of assets.",
+            "Targets": [[
+                "track",
+                "use"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to see what a particular user has downloaded, so that I can track use of assets.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "what",
+                "particular user"
+            ],
+            "Action": [
+                "see",
+                "downloaded"
+            ],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "particular user",
+                "what"
+            ]],
+            "Text": "#G26# As an archivist, I want to see what a particular user has downloaded, ",
+            "Triggers": [[
+                "archivist",
+                "see"
+            ]],
+            "Targets": [
+                [
+                    "see",
+                    "what"
+                ],
+                [
+                    "downloaded",
+                    "what"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_51",
+        "Benefit": {
+            "Entity": [
+                "donors",
+                "things they have given us"
+            ],
+            "Action": ["access"],
+            "Contains": [[
+                "donors",
+                "things they have given us"
+            ]],
+            "Text": "donors can access things they have given us.",
+            "Targets": [[
+                "access",
+                "things they have given us"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to provide access to digital copies of unprocessed material, so that donors can access things they have given us.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "access",
+                "digital copies",
+                "unprocessed material"
+            ],
+            "Action": ["provide"],
+            "Persona": ["archivist"],
+            "Contains": [
+                [
+                    "digital copies",
+                    "access"
+                ],
+                [
+                    "unprocessed material",
+                    "digital copies"
+                ]
+            ],
+            "Text": "#G26# As an archivist, I want to provide access to digital copies of unprocessed material, ",
+            "Triggers": [[
+                "archivist",
+                "provide"
+            ]],
+            "Targets": [[
+                "provide",
+                "access"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_52",
+        "Benefit": {
+            "Entity": ["RAC's mission"],
+            "Action": ["fulfill"],
+            "Contains": [],
+            "Text": "I can fulfill the RAC's mission.",
+            "Targets": [[
+                "fulfill",
+                "RAC's mission"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to make as much archival material as possible available for use, so that I can fulfill the RAC's mission.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "use",
+                "as much archival material as possible"
+            ],
+            "Action": ["make"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "as much archival material as possible",
+                "use"
+            ]],
+            "Text": "#G26# As an archivist, I want to make as much archival material as possible available for use, ",
+            "Triggers": [[
+                "archivist",
+                "make"
+            ]],
+            "Targets": [[
+                "make",
+                "as much archival material as possible"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_53",
+        "Benefit": {
+            "Entity": [
+                "collections",
+                "web presence"
+            ],
+            "Action": ["integrate"],
+            "Contains": [[
+                "web presence",
+                "collections"
+            ]],
+            "Text": "I can integrate our collections into our web presence.",
+            "Targets": [[
+                "integrate",
+                "collections"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to use archival content on the RAC website, so that I can integrate our collections into our web presence.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "archival content",
+                "RAC website"
+            ],
+            "Action": ["use"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "RAC website",
+                "archival content"
+            ]],
+            "Text": "#G26# As an archivist, I want to use archival content on the RAC website, ",
+            "Triggers": [[
+                "archivist",
+                "use"
+            ]],
+            "Targets": [[
+                "use",
+                "archival content"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_54",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G26# As a donor representative, I want to access the descriptive information about the images scanned for my institutions needs.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "descriptive information",
+                "images scanned for my institutions needs"
+            ],
+            "Action": ["access"],
+            "Persona": ["donor representative"],
+            "Contains": [[
+                "images scanned for my institutions needs",
+                "descriptive information"
+            ]],
+            "Triggers": [[
+                "donor representative",
+                "access"
+            ]],
+            "Targets": [[
+                "access",
+                "descriptive information"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_55",
+        "Benefit": {
+            "Entity": [
+                "institutions exhibits",
+                "reports"
+            ],
+            "Action": ["use"],
+            "Contains": [
+                [
+                    "institutions exhibits",
+                    "images"
+                ],
+                [
+                    "reports",
+                    "images"
+                ]
+            ],
+            "Text": "I can use them in my institutions exhibits, reports etc.",
+            "Targets": [[
+                "use",
+                "images"
+            ]]
+        },
+        "Text": "#G26# As a donor representative, I want to look at images that have been scanned from my collection, so that so that I can use them in my institutions exhibits, reports etc.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "images",
+                "collection"
+            ],
+            "Action": ["look"],
+            "Persona": ["donor representative"],
+            "Contains": [[
+                "collection",
+                "images"
+            ]],
+            "Text": "#G26# As a donor representative, I want to look at images that have been scanned from my collection,  ",
+            "Triggers": [[
+                "donor representative",
+                "look"
+            ]],
+            "Targets": [[
+                "look",
+                "images"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_56",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G26# As a researcher, I want to search all files by keyword.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "all files",
+                "keyword"
+            ],
+            "Action": ["search"],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "all files",
+                "keyword"
+            ]],
+            "Triggers": [[
+                "researcher",
+                "search"
+            ]],
+            "Targets": [[
+                "search",
+                "all files"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_57",
+        "Benefit": {
+            "Entity": [
+                "what already exists digitally",
+                "additional duplication requests"
+            ],
+            "Action": [
+                "learn",
+                "avoid placing"
+            ],
+            "Contains": [],
+            "Text": "I can learn what already exists digitally and avoid placing additional duplication requests.",
+            "Targets": [
+                [
+                    "learn",
+                    "what already exists digitally"
+                ],
+                [
+                    "avoid placing",
+                    "additional duplication requests"
+                ]
+            ]
+        },
+        "Text": "#G26# As a researcher, I want to search by keyword, so that I can learn what already exists digitally and avoid placing additional duplication requests.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": ["keyword"],
+            "Action": ["search"],
+            "Persona": ["researcher"],
+            "Contains": [],
+            "Text": "#G26# As a researcher, I want to search by keyword, ",
+            "Triggers": [[
+                "researcher",
+                "search"
+            ]],
+            "Targets": [[
+                "search",
+                "keyword"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_58",
+        "Benefit": {
+            "Entity": ["comprehensive analysis"],
+            "Action": ["prepare"],
+            "Contains": [],
+            "Text": "so I can prepare a comprehensive analysis.",
+            "Targets": [[
+                "prepare",
+                "comprehensive analysis"
+            ]]
+        },
+        "Text": "#G26# As a researcher, I want to see common material across collections, so that so I can prepare a comprehensive analysis.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "common material",
+                "collections"
+            ],
+            "Action": ["see"],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "collections",
+                "common material"
+            ]],
+            "Text": "#G26# As a researcher, I want to see common material across collections, ",
+            "Triggers": [[
+                "researcher",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "common material"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_59",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G26# As a researcher, I want to browse through files in a collection.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "files",
+                "collection"
+            ],
+            "Action": ["browse through"],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "collection",
+                "files"
+            ]],
+            "Triggers": [[
+                "researcher",
+                "browse through"
+            ]],
+            "Targets": [[
+                "browse through",
+                "files"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_60",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G26# As an archivist, I want to browse through files in a collection.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "files",
+                "collection"
+            ],
+            "Action": ["browse through"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "collection",
+                "files"
+            ]],
+            "Triggers": [[
+                "archivist",
+                "browse through"
+            ]],
+            "Targets": [[
+                "browse through",
+                "files"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_61",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G26# As an archivist, I want to search all files by keyword.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "all files",
+                "keyword"
+            ],
+            "Action": ["search"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "all files",
+                "keyword"
+            ]],
+            "Triggers": [[
+                "archivist",
+                "search"
+            ]],
+            "Targets": [[
+                "search",
+                "all files"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_62",
+        "Benefit": {
+            "Entity": [
+                "donor representatives",
+                "material"
+            ],
+            "Action": ["requesting"],
+            "Contains": [[
+                "donor representatives",
+                "material"
+            ]],
+            "Text": "our donor representatives have an easier time requesting their material.",
+            "Targets": [[
+                "requesting",
+                "material"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to upload inventories, so that our donor representatives have an easier time requesting their material.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": ["inventories"],
+            "Action": ["upload"],
+            "Persona": ["archivist"],
+            "Contains": [],
+            "Text": "#G26# As an archivist, I want to upload inventories, ",
+            "Triggers": [[
+                "archivist",
+                "upload"
+            ]],
+            "Targets": [[
+                "upload",
+                "inventories"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_63",
+        "Benefit": {
+            "Entity": ["particular photographs"],
+            "Action": ["finding"],
+            "Contains": [],
+            "Text": "it makes finding particular photographs easier.",
+            "Targets": [[
+                "finding",
+                "particular photographs"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to search by tag, so that it makes finding particular photographs easier.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": ["tag"],
+            "Action": ["search"],
+            "Persona": ["archivist"],
+            "Contains": [],
+            "Text": "#G26# As an archivist, I want to search by tag, ",
+            "Triggers": [[
+                "archivist",
+                "search"
+            ]],
+            "Targets": [[
+                "search",
+                "tag"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_64",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["use"],
+            "Contains": [],
+            "Text": "I can use them.",
+            "Targets": [[
+                "use",
+                "digital files"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to access the digital files on the X-drive, so that I can use them.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "digital files",
+                "X-drive"
+            ],
+            "Action": ["access"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "X-drive",
+                "digital files"
+            ]],
+            "Text": "#G26# As an archivist, I want to access the digital files on the X-drive, ",
+            "Triggers": [[
+                "archivist",
+                "access"
+            ]],
+            "Targets": [[
+                "access",
+                "digital files"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_65",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G26# As an assistant archivist, I want to easily access interdepartmental forms.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": ["interdepartmental forms"],
+            "Action": ["easily access"],
+            "Persona": ["assistant archivist"],
+            "Contains": [],
+            "Triggers": [[
+                "assistant archivist",
+                "easily access"
+            ]],
+            "Targets": [[
+                "easily access",
+                "interdepartmental forms"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_66",
+        "Benefit": {
+            "Entity": [
+                "accessibility",
+                "original files"
+            ],
+            "Action": ["increase"],
+            "Contains": [],
+            "Text": "I increase accessibility and I do not lose the original files.",
+            "Targets": [[
+                "increase",
+                "accessibility"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to have electronic versions of the collection files available for staff use, so that I increase accessibility and I do not lose the original files.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "electronic versions",
+                "collection files",
+                "staff use"
+            ],
+            "Action": ["have"],
+            "Persona": ["archivist"],
+            "Contains": [
+                [
+                    "collection files",
+                    "electronic versions"
+                ],
+                [
+                    "electronic versions",
+                    "staff use"
+                ]
+            ],
+            "Text": "#G26# As an archivist, I want to have electronic versions of the collection files available for staff use, ",
+            "Triggers": [[
+                "archivist",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "electronic versions"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_67",
+        "Benefit": {
+            "Entity": ["presentations"],
+            "Action": ["prepare"],
+            "Contains": [],
+            "Text": "I can prepare presentations.",
+            "Targets": [[
+                "prepare",
+                "presentations"
+            ]]
+        },
+        "Text": "#G26# As a researcher, I want to be able to search across photo collection images, so that I can prepare presentations.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": ["photo collection images"],
+            "Action": ["search across"],
+            "Persona": ["researcher"],
+            "Contains": [],
+            "Text": "#G26# As a researcher, I want to be able to search across photo collection images, ",
+            "Triggers": [[
+                "researcher",
+                "search across"
+            ]],
+            "Targets": [[
+                "search across",
+                "photo collection images"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_68",
+        "Benefit": {
+            "Entity": [
+                "everything",
+                "inquiry",
+                "collections"
+            ],
+            "Action": ["find"],
+            "Contains": [[
+                "collections",
+                "inquiry"
+            ]],
+            "Text": "I can find everything relevant to my inquiry across collections.",
+            "Targets": [[
+                "find",
+                "everything"
+            ]]
+        },
+        "Text": "#G26# As a researcher, I want to search using structured data, so that I can find everything relevant to my inquiry across collections.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": ["structured data"],
+            "Action": [
+                "search",
+                "using"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [],
+            "Text": "#G26# As a researcher, I want to search using structured data, ",
+            "Triggers": [[
+                "researcher",
+                "search"
+            ]],
+            "Targets": [[
+                "using",
+                "structured data"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_69",
+        "Benefit": {
+            "Entity": ["research process"],
+            "Action": [],
+            "Contains": [],
+            "Text": "my research process is better informed.",
+            "Targets": []
+        },
+        "Text": "#G26# As a researcher, I want to access tagged working papers, so that my research process is better informed.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": ["tagged working papers"],
+            "Action": ["access"],
+            "Persona": ["researcher"],
+            "Contains": [],
+            "Text": "#G26# As a researcher, I want to access tagged working papers, ",
+            "Triggers": [[
+                "researcher",
+                "access"
+            ]],
+            "Targets": [[
+                "access",
+                "tagged working papers"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_70",
+        "Benefit": {
+            "Entity": [
+                "connections",
+                "institutions"
+            ],
+            "Action": ["make"],
+            "Contains": [[
+                "institutions",
+                "connections"
+            ]],
+            "Text": "I can make connections with institutions.",
+            "Targets": [[
+                "make",
+                "connections"
+            ]]
+        },
+        "Text": "#G26# As a researcher, I want to access educational outreach materials, so that I can make connections with institutions.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": ["educational outreach materials"],
+            "Action": ["access"],
+            "Persona": ["researcher"],
+            "Contains": [],
+            "Text": "#G26# As a researcher, I want to access educational outreach materials, ",
+            "Triggers": [[
+                "researcher",
+                "access"
+            ]],
+            "Targets": [[
+                "access",
+                "educational outreach materials"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_71",
+        "Benefit": {
+            "Entity": ["materials"],
+            "Action": ["find"],
+            "Contains": [],
+            "Text": "I can find materials again.",
+            "Targets": [[
+                "find",
+                "materials"
+            ]]
+        },
+        "Text": "#G26# As a researcher, I want to have accurate cross-collection citation information, so that I can find materials again.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": ["accurate cross-collection citation information"],
+            "Action": ["have"],
+            "Persona": ["researcher"],
+            "Contains": [],
+            "Text": "#G26# As a researcher, I want to have accurate cross-collection citation information, ",
+            "Triggers": [[
+                "researcher",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "accurate cross-collection citation information"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_72",
+        "Benefit": {
+            "Entity": ["what"],
+            "Action": [
+                "decide",
+                "look"
+            ],
+            "Contains": [],
+            "Text": "I can decide what, I want to look at.",
+            "Targets": [
+                [
+                    "decide",
+                    "what"
+                ],
+                [
+                    "look",
+                    "what"
+                ]
+            ]
+        },
+        "Text": "#G26# As a researcher, I want to access digitized archival materials without mediation, so that I can decide what, I want to look at.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "digitized archival materials",
+                "mediation"
+            ],
+            "Action": ["access"],
+            "Persona": ["researcher"],
+            "Contains": [],
+            "Text": "#G26# As a researcher, I want to access digitized archival materials without mediation, ",
+            "Triggers": [[
+                "researcher",
+                "access"
+            ]],
+            "Targets": [[
+                "access",
+                "digitized archival materials"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_73",
+        "Benefit": {
+            "Entity": [
+                "images",
+                "publication requirements"
+            ],
+            "Action": [
+                "know",
+                "meet"
+            ],
+            "Contains": [[
+                "images",
+                "publication requirements"
+            ]],
+            "Text": "I know whether or not these images meet publication requirements.",
+            "Targets": [[
+                "meet",
+                "publication requirements"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to distinguish between images scanned in color or black and white, so that I know whether or not these images meet publication requirements.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "color",
+                "black and white",
+                "images scanned"
+            ],
+            "Action": ["distinguish"],
+            "Persona": ["archivist"],
+            "Contains": [
+                [
+                    "images scanned",
+                    "color"
+                ],
+                [
+                    "images scanned",
+                    "black and white"
+                ]
+            ],
+            "Text": "#G26# As an archivist, I want to distinguish between images scanned in color or black and white, ",
+            "Triggers": [[
+                "archivist",
+                "distinguish"
+            ]],
+            "Targets": [[
+                "distinguish",
+                "images scanned"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_74",
+        "Benefit": {
+            "Entity": ["more information"],
+            "Action": ["find"],
+            "Contains": [],
+            "Text": "I can find out more information.",
+            "Targets": [[
+                "find",
+                "more information"
+            ]]
+        },
+        "Text": "#G26# As a researcher, I want to ask a question about a specific file, so that I can find out more information.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "question",
+                "specific file"
+            ],
+            "Action": ["ask"],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "specific file",
+                "question"
+            ]],
+            "Text": "#G26# As a researcher, I want to ask a question about a specific file, ",
+            "Triggers": [[
+                "researcher",
+                "ask"
+            ]],
+            "Targets": [[
+                "ask",
+                "question"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_75",
+        "Benefit": {
+            "Entity": [
+                "digitized documents",
+                "research"
+            ],
+            "Action": ["more efficiently locate"],
+            "Contains": [[
+                "research",
+                "digitized documents"
+            ]],
+            "Text": "I can more efficiently locate digitized documents relevant to my research.",
+            "Targets": [[
+                "more efficiently locate",
+                "digitized documents"
+            ]]
+        },
+        "Text": "#G26# As a researcher, I want to search OCRed text in all available digitized textual documents, so that I can more efficiently locate digitized documents relevant to my research.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "OCRed text",
+                "all available digitized textual documents"
+            ],
+            "Action": ["search"],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "all available digitized textual documents",
+                "OCRed text"
+            ]],
+            "Text": "#G26# As a researcher, I want to search OCRed text in all available digitized textual documents, ",
+            "Triggers": [[
+                "researcher",
+                "search"
+            ]],
+            "Targets": [[
+                "search",
+                "OCRed text"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_76",
+        "Benefit": {
+            "Entity": [],
+            "Action": [
+                "know",
+                "last looked",
+                "digitized"
+            ],
+            "Contains": [],
+            "Text": "I know if it's been digitized since I last looked.",
+            "Targets": [
+                [
+                    "digitized",
+                    "something"
+                ],
+                [
+                    "last looked",
+                    "something"
+                ]
+            ]
+        },
+        "Text": "#G26# As a researcher, I want to know the date on which something was digitized, so that I know if it's been digitized since I last looked.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "date",
+                "something"
+            ],
+            "Action": [
+                "know",
+                "digitized"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [],
+            "Text": "#G26# As a researcher, I want to know the date on which something was digitized, ",
+            "Triggers": [[
+                "researcher",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "date"
+                ],
+                [
+                    "digitized",
+                    "something"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_77",
+        "Benefit": {
+            "Entity": [
+                "diary entries",
+                "research"
+            ],
+            "Action": ["more efficiently locate"],
+            "Contains": [[
+                "research",
+                "diary entries"
+            ]],
+            "Text": "I can more efficiently locate diary entries relevant to my research.",
+            "Targets": [[
+                "more efficiently locate",
+                "diary entries"
+            ]]
+        },
+        "Text": "#G26# As a researcher, I want to keyword search across all of an RF program officer's scanned diaries, rather than having to search each scanned diary segment separately, so that I can more efficiently locate diary entries relevant to my research.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "RF program officer's scanned diaries",
+                "each scanned diary segment"
+            ],
+            "Action": [
+                "search",
+                "keyword search across"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [],
+            "Text": "#G26# As a researcher, I want to keyword search across all of an RF program officer's scanned diaries, rather than having to search each scanned diary segment separately, ",
+            "Triggers": [[
+                "researcher",
+                "keyword search across"
+            ]],
+            "Targets": [
+                [
+                    "search",
+                    "each scanned diary segment"
+                ],
+                [
+                    "keyword search across",
+                    "RF program officer's scanned diaries"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_78",
+        "Benefit": {
+            "Entity": [
+                "reference services",
+                "donors"
+            ],
+            "Action": ["provide"],
+            "Contains": [[
+                "donors",
+                "reference services"
+            ]],
+            "Text": "I can provide reference services to donors.",
+            "Targets": [[
+                "provide",
+                "reference services"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to access inventories for unprocessed collections, so that I can provide reference services to donors.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "inventories",
+                "unprocessed collections"
+            ],
+            "Action": ["access"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "inventories",
+                "unprocessed collections"
+            ]],
+            "Text": "#G26# As an archivist, I want to access inventories for unprocessed collections, ",
+            "Triggers": [[
+                "archivist",
+                "access"
+            ]],
+            "Targets": [[
+                "access",
+                "inventories"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_79",
+        "Benefit": {
+            "Entity": ["selection"],
+            "Action": [
+                "make",
+                "license"
+            ],
+            "Contains": [[
+                "selection",
+                "photos"
+            ]],
+            "Text": "I can make a selection of which one I want to license.",
+            "Targets": [
+                [
+                    "make",
+                    "selection"
+                ],
+                [
+                    "license",
+                    "photos"
+                ]
+            ]
+        },
+        "Text": "#G26# As a researcher, I want to view thumbnails of photos, so that I can make a selection of which one I want to license.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "thumbnails",
+                "photos"
+            ],
+            "Action": ["view"],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "photos",
+                "thumbnails"
+            ]],
+            "Text": "#G26# As a researcher, I want to view thumbnails of photos, ",
+            "Triggers": [[
+                "researcher",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "thumbnails"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_80",
+        "Benefit": {
+            "Entity": [
+                "everything",
+                "portion"
+            ],
+            "Action": [
+                "know",
+                "seeing"
+            ],
+            "Contains": [],
+            "Text": "I know if I am seeing everything or only a portion.",
+            "Targets": [
+                [
+                    "seeing",
+                    "everything"
+                ],
+                [
+                    "seeing",
+                    "portion"
+                ]
+            ]
+        },
+        "Text": "#G26# As a researcher, I want to know when only part of a folder has been digitized, so that I know if I am seeing everything or only a portion.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "when",
+                "part",
+                "folder"
+            ],
+            "Action": [
+                "know",
+                "digitized"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "folder",
+                "part"
+            ]],
+            "Text": "#G26# As a researcher, I want to know when only part of a folder has been digitized, ",
+            "Triggers": [[
+                "researcher",
+                "know"
+            ]],
+            "Targets": [
+                [
+                    "know",
+                    "when"
+                ],
+                [
+                    "digitized",
+                    "part"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_81",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["select"],
+            "Contains": [],
+            "Text": "I can select which one I want.",
+            "Targets": [[
+                "select",
+                "images"
+            ]]
+        },
+        "Text": "#G26# As a donor representative, I want to see thumbnails of images, so that I can select which one I want.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "thumbnails",
+                "images"
+            ],
+            "Action": ["see"],
+            "Persona": ["donor representative"],
+            "Contains": [[
+                "images",
+                "thumbnails"
+            ]],
+            "Text": "#G26# As a donor representative, I want to see thumbnails of images, ",
+            "Triggers": [[
+                "donor representative",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "thumbnails"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_82",
+        "Benefit": {
+            "Entity": [
+                "excerpts",
+                "films"
+            ],
+            "Action": ["see"],
+            "Contains": [[
+                "films",
+                "excerpts"
+            ]],
+            "Text": "I can see excerpts of films.",
+            "Targets": [[
+                "see",
+                "excerpts"
+            ]]
+        },
+        "Text": "#G26# As an researcher, I want to view film clips, so that I can see excerpts of films.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": ["film clips"],
+            "Action": ["view"],
+            "Persona": ["researcher"],
+            "Contains": [],
+            "Text": "#G26# As an researcher, I want to view film clips, ",
+            "Triggers": [[
+                "researcher",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "film clips"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_83",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G26# As an archivist, I want to search images by photographer.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "images",
+                "photographer"
+            ],
+            "Action": ["search"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "images",
+                "photographer"
+            ]],
+            "Triggers": [[
+                "archivist",
+                "search"
+            ]],
+            "Targets": [[
+                "search",
+                "images"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_84",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G26# As an archivist, I want to search images by people represented in them.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "images",
+                "people"
+            ],
+            "Action": ["search"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "images",
+                "people"
+            ]],
+            "Triggers": [[
+                "archivist",
+                "search"
+            ]],
+            "Targets": [[
+                "search",
+                "images"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_85",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G26# As an archivist, I want to search images by place the photo was taken.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "images",
+                "place",
+                "photo"
+            ],
+            "Action": [
+                "search",
+                "taken"
+            ],
+            "Persona": ["archivist"],
+            "Contains": [
+                [
+                    "photo",
+                    "place"
+                ],
+                [
+                    "images",
+                    "place"
+                ]
+            ],
+            "Triggers": [[
+                "archivist",
+                "search"
+            ]],
+            "Targets": [
+                [
+                    "search",
+                    "images"
+                ],
+                [
+                    "taken",
+                    "photo"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_86",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G26# As an archivist, I want to search images by rights.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "images",
+                "rights"
+            ],
+            "Action": ["search"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "images",
+                "rights"
+            ]],
+            "Triggers": [[
+                "archivist",
+                "search"
+            ]],
+            "Targets": [[
+                "search",
+                "images"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_87",
+        "Benefit": {
+            "Entity": ["better research assistance"],
+            "Action": ["provide"],
+            "Contains": [],
+            "Text": "I can provide better research assistance.",
+            "Targets": [[
+                "provide",
+                "better research assistance"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to search index cards and other non-public finding aids, so that I can provide better research assistance.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "index cards",
+                "other non-public finding aids"
+            ],
+            "Action": ["search"],
+            "Persona": ["archivist"],
+            "Contains": [],
+            "Text": "#G26# As an archivist, I want to search index cards and other non-public finding aids, ",
+            "Triggers": [[
+                "archivist",
+                "search"
+            ]],
+            "Targets": [
+                [
+                    "search",
+                    "index cards"
+                ],
+                [
+                    "search",
+                    "other non-public finding aids"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_88",
+        "Benefit": {
+            "Entity": [
+                "background information",
+                "collection"
+            ],
+            "Action": [
+                "gain",
+                "processing"
+            ],
+            "Contains": [[
+                "collection files",
+                "background information"
+            ]],
+            "Text": "I can gain background information for processing a collection.",
+            "Targets": [
+                [
+                    "gain",
+                    "background information"
+                ],
+                [
+                    "processing",
+                    "collection"
+                ]
+            ]
+        },
+        "Text": "#G26# As an archivist, I want to view collection files, so that I can gain background information for processing a collection.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": ["collection files"],
+            "Action": ["view"],
+            "Persona": ["archivist"],
+            "Contains": [],
+            "Text": "#G26# As an archivist, I want to view collection files, ",
+            "Triggers": [[
+                "archivist",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "collection files"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_89",
+        "Benefit": {
+            "Entity": [
+                "research services",
+                "donors"
+            ],
+            "Action": ["provide"],
+            "Contains": [[
+                "donors",
+                "research services"
+            ]],
+            "Text": "I can provide research services to donors.",
+            "Targets": [[
+                "provide",
+                "research services"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to view physical locations for non-archival material, so that I can provide research services to donors.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "physical locations",
+                "non-archival material"
+            ],
+            "Action": ["view"],
+            "Persona": ["archivist"],
+            "Contains": [[
+                "physical locations",
+                "non-archival material"
+            ]],
+            "Text": "#G26# As an archivist, I want to view physical locations for non-archival material, ",
+            "Triggers": [[
+                "archivist",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "physical locations"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_90",
+        "Benefit": {
+            "Entity": ["everything"],
+            "Action": ["easily access"],
+            "Contains": [],
+            "Text": " can easily access everything that's been digitized.",
+            "Targets": [[
+                "easily access",
+                "everything"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to find files that cannot be made publicly available, so that I can easily access everything that's been digitized.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": ["files"],
+            "Action": ["find"],
+            "Persona": ["archivist"],
+            "Contains": [],
+            "Text": "#G26# As an archivist, I want to find files that cannot be made publicly available,  ",
+            "Triggers": [[
+                "archivist",
+                "find"
+            ]],
+            "Targets": [[
+                "find",
+                "files"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_91",
+        "Benefit": {
+            "Entity": [
+                "information",
+                "researchers"
+            ],
+            "Action": [
+                "use",
+                "assist"
+            ],
+            "Contains": [
+                [
+                    "metadata",
+                    "information"
+                ],
+                [
+                    "visual representations",
+                    "information"
+                ]
+            ],
+            "Text": "I can use that information to assist researchers.",
+            "Targets": [
+                [
+                    "use",
+                    "information"
+                ],
+                [
+                    "assist",
+                    "researchers"
+                ]
+            ]
+        },
+        "Text": "#G26# As an archivist, I want to access metadata and visual representations of index cards, so that I can use that information to assist researchers.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "metadata",
+                "visual representations",
+                "index cards"
+            ],
+            "Action": ["access"],
+            "Persona": ["archivist"],
+            "Contains": [
+                [
+                    "index cards",
+                    "visual representations"
+                ],
+                [
+                    "index cards",
+                    "metadata"
+                ]
+            ],
+            "Text": "#G26# As an archivist, I want to access metadata and visual representations of index cards, ",
+            "Triggers": [[
+                "archivist",
+                "access"
+            ]],
+            "Targets": [
+                [
+                    "access",
+                    "metadata"
+                ],
+                [
+                    "access",
+                    "visual representations"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_92",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G26# As an archivist, I want to search individual material types.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": ["individual material types"],
+            "Action": ["search"],
+            "Persona": ["archivist"],
+            "Contains": [],
+            "Triggers": [[
+                "archivist",
+                "search"
+            ]],
+            "Targets": [[
+                "search",
+                "individual material types"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_93",
+        "Benefit": {
+            "Entity": [
+                "images",
+                "any metadata"
+            ],
+            "Action": ["find"],
+            "Contains": [],
+            "Text": "so I can find images when i don't have any metadata.",
+            "Targets": [[
+                "find",
+                "images"
+            ]]
+        },
+        "Text": "#G26# As an archivist, I want to search images by uploading an image, so that so I can find images when i don't have any metadata.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "images",
+                "image"
+            ],
+            "Action": [
+                "search",
+                "uploading"
+            ],
+            "Persona": ["archivist"],
+            "Contains": [],
+            "Text": "#G26# As an archivist, I want to search images by uploading an image, ",
+            "Triggers": [[
+                "archivist",
+                "search"
+            ]],
+            "Targets": [
+                [
+                    "search",
+                    "images"
+                ],
+                [
+                    "uploading",
+                    "image"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_94",
+        "Benefit": {
+            "Entity": ["user permissions"],
+            "Action": ["control"],
+            "Contains": [[
+                "user groups",
+                "user permissions"
+            ]],
+            "Text": "I can control user permissions.",
+            "Targets": [[
+                "control",
+                "user permissions"
+            ]]
+        },
+        "Text": "#G26# As an administrator, I want to create user groups, so that I can control user permissions.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": ["user groups"],
+            "Action": ["create"],
+            "Persona": ["administrator"],
+            "Contains": [],
+            "Text": "#G26# As an administrator, I want to create user groups, ",
+            "Triggers": [[
+                "administrator",
+                "create"
+            ]],
+            "Targets": [[
+                "create",
+                "user groups"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_95",
+        "Benefit": {
+            "Entity": [
+                "users",
+                "role"
+            ],
+            "Action": ["group"],
+            "Contains": [[
+                "users",
+                "role"
+            ]],
+            "Text": "I can group users by role.",
+            "Targets": [[
+                "group",
+                "users"
+            ]]
+        },
+        "Text": "#G26# As an administrator, I want to create user roles, so that I can group users by role.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": ["user roles"],
+            "Action": ["create"],
+            "Persona": ["administrator"],
+            "Contains": [],
+            "Text": "#G26# As an administrator, I want to create user roles, ",
+            "Triggers": [[
+                "administrator",
+                "create"
+            ]],
+            "Targets": [[
+                "create",
+                "user roles"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_96",
+        "Benefit": {
+            "Entity": ["read/write access"],
+            "Action": ["control"],
+            "Contains": [],
+            "Text": "I can control read/write access.",
+            "Targets": [[
+                "control",
+                "read/write access"
+            ]]
+        },
+        "Text": "#G26# As an administrator, I want to assign RAC staff to different user groups, so that I can control read/write access.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "RAC staff",
+                "different user groups"
+            ],
+            "Action": ["assign"],
+            "Persona": ["administrator"],
+            "Contains": [[
+                "different user groups",
+                "RAC staff"
+            ]],
+            "Text": "#G26# As an administrator, I want to assign RAC staff to different user groups, ",
+            "Triggers": [[
+                "administrator",
+                "assign"
+            ]],
+            "Targets": [[
+                "assign",
+                "RAC staff"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_97",
+        "Benefit": {
+            "Entity": [
+                "what",
+                "users"
+            ],
+            "Action": ["control"],
+            "Contains": [],
+            "Text": "I can control what users can and can't do.",
+            "Targets": [[
+                "control",
+                "what"
+            ]]
+        },
+        "Text": "#G26# As an administrator, I want to assign rights to user groups or roles, so that I can control what users can and can't do.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "rights",
+                "user groups",
+                "roles"
+            ],
+            "Action": ["assign"],
+            "Persona": ["administrator"],
+            "Contains": [
+                [
+                    "user groups",
+                    "rights"
+                ],
+                [
+                    "roles",
+                    "rights"
+                ]
+            ],
+            "Text": "#G26# As an administrator, I want to assign rights to user groups or roles, ",
+            "Triggers": [[
+                "administrator",
+                "assign"
+            ]],
+            "Targets": [[
+                "assign",
+                "rights"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_98",
+        "Benefit": {
+            "Entity": [
+                "usernames",
+                "passwords",
+                "another set"
+            ],
+            "Action": [],
+            "Contains": [
+                [
+                    "another set",
+                    "usernames"
+                ],
+                [
+                    "another set",
+                    "passwords"
+                ]
+            ],
+            "Text": "I don't have to manage another set of usernames and passwords.",
+            "Targets": []
+        },
+        "Text": "#G26# As an administrator, I want to allow users to log in using Active Directory credentials, so that I don't have to manage another set of usernames and passwords.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "users",
+                "Active Directory credentials"
+            ],
+            "Action": [
+                "allow",
+                "log in",
+                "using"
+            ],
+            "Persona": ["administrator"],
+            "Contains": [],
+            "Text": "#G26# As an administrator, I want to allow users to log in using Active Directory credentials, ",
+            "Triggers": [[
+                "administrator",
+                "allow"
+            ]],
+            "Targets": [
+                [
+                    "allow",
+                    "users"
+                ],
+                [
+                    "using",
+                    "Active Directory credentials"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_99",
+        "Benefit": {
+            "Entity": [
+                "passwords",
+                "cleartext"
+            ],
+            "Action": [],
+            "Contains": [[
+                "cleartext",
+                "passwords"
+            ]],
+            "Text": "I don't have to send passwords in cleartext.",
+            "Targets": []
+        },
+        "Text": "#G26# As an administrator, I want to have researchers reset their own passwords, so that I don't have to send passwords in cleartext.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "researchers",
+                "passwords"
+            ],
+            "Action": [
+                "have",
+                "reset"
+            ],
+            "Persona": ["administrator"],
+            "Contains": [[
+                "researchers",
+                "passwords"
+            ]],
+            "Text": "#G26# As an administrator, I want to have researchers reset their own passwords, ",
+            "Triggers": [[
+                "administrator",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "researchers"
+                ],
+                [
+                    "reset",
+                    "passwords"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_100",
+        "Benefit": {
+            "Entity": [
+                "things",
+                "display",
+                "user groups"
+            ],
+            "Action": [
+                "show",
+                "hide"
+            ],
+            "Contains": [[
+                "display",
+                "things"
+            ]],
+            "Text": "I can show or hide things from display based on user groups.",
+            "Targets": [
+                [
+                    "show",
+                    "things"
+                ],
+                [
+                    "hide",
+                    "things"
+                ]
+            ]
+        },
+        "Text": "#G26# As an administrator, I want to limit who can see certain metadata fields, so that I can show or hide things from display based on user groups.",
+        "PID": "#G26#",
+        "Main": {
+            "Entity": [
+                "who",
+                "certain metadata fields"
+            ],
+            "Action": [
+                "limit",
+                "see"
+            ],
+            "Persona": ["administrator"],
+            "Contains": [],
+            "Text": "#G26# As an administrator, I want to limit who can see certain metadata fields, ",
+            "Triggers": [[
+                "administrator",
+                "limit"
+            ]],
+            "Targets": [
+                [
+                    "limit",
+                    "who"
+                ],
+                [
+                    "see",
+                    "certain metadata fields"
+                ]
+            ]
+        }
+    }
+]

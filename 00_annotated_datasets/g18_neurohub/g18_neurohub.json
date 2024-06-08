@@ -1,0 +1,4382 @@
+[
+    {
+        "US_Nr": "user_story_01",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a system administrator, I want to run a script that installs the Neurohub node onto a virgin Ubuntu operating system.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "script",
+                "Neurohub node",
+                "virgin Ubuntu operating system"
+            ],
+            "Action": [
+                "run",
+                "installs"
+            ],
+            "Persona": ["system administrator,"],
+            "Contains": [[
+                "virgin Ubuntu operating system",
+                "Neurohub node"
+            ]],
+            "Triggers": [[
+                "system administrator,",
+                "run"
+            ]],
+            "Targets": [
+                [
+                    "run",
+                    "script"
+                ],
+                [
+                    "installs",
+                    "Neurohub node"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_02",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a system administrator, I want to run a script that tests to see if a Neurohub installation is functioning correctly.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "script",
+                "Neurohub installation"
+            ],
+            "Action": [
+                "run",
+                "tests",
+                "functioning correctly"
+            ],
+            "Persona": ["system administrator"],
+            "Contains": [],
+            "Triggers": [[
+                "system administrator",
+                "run"
+            ]],
+            "Targets": [
+                [
+                    "run",
+                    "script"
+                ],
+                [
+                    "tests",
+                    "Neurohub installation"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_03",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a release engineer, I want to call a script to execute acceptance tests against a Neurohub installation and report back the results.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "script",
+                "acceptance tests",
+                "Neurohub installation",
+                "results"
+            ],
+            "Action": [
+                "call",
+                "execute",
+                "report back"
+            ],
+            "Persona": ["release engineer"],
+            "Contains": [],
+            "Triggers": [
+                [
+                    "release engineer",
+                    "call"
+                ],
+                [
+                    "release engineer",
+                    "report back"
+                ]
+            ],
+            "Targets": [
+                [
+                    "call",
+                    "script"
+                ],
+                [
+                    "execute",
+                    "acceptance tests"
+                ],
+                [
+                    "report back",
+                    "results"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_04",
+        "Benefit": {
+            "Entity": [
+                "Neurohub node",
+                "how feature-complete"
+            ],
+            "Action": ["understand"],
+            "Contains": [],
+            "Text": "I can understand how feature-complete the Neurohub node currently is.",
+            "Targets": [[
+                "understand",
+                "how feature-complete"
+            ]]
+        },
+        "Text": "#G18# As an investigator, I want to view the acceptance test results, so that I can understand how feature-complete the Neurohub node currently is.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": ["acceptance test results"],
+            "Action": ["view"],
+            "Persona": ["investigator"],
+            "Contains": [],
+            "Text": "#G18# As an investigator, I want to view the acceptance test results, ",
+            "Triggers": [[
+                "investigator",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "acceptance test results"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_05",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As an MRI operator, I want to digitally record the responses that subjects make when completing paper-based forms.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "responses",
+                "subjects",
+                "paper-based forms"
+            ],
+            "Action": [
+                "digitally record",
+                "completing"
+            ],
+            "Persona": ["MRI operator"],
+            "Contains": [[
+                "subjects",
+                "responses"
+            ]],
+            "Triggers": [[
+                "MRI operator",
+                "digitally record"
+            ]],
+            "Targets": [
+                [
+                    "digitally record",
+                    "responses"
+                ],
+                [
+                    "completing",
+                    "paper-based forms"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_06",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to navigate forwards and backwards between log books and log book pages without having to use my browser's back button.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "log books",
+                "log book pages",
+                "browser's back button"
+            ],
+            "Action": ["navigate forwards and backwards"],
+            "Persona": ["user"],
+            "Contains": [],
+            "Triggers": [[
+                "user",
+                "navigate forwards and backwards"
+            ]],
+            "Targets": [
+                [
+                    "navigate forwards and backwards",
+                    "log books"
+                ],
+                [
+                    "navigate forwards and backwards",
+                    "log book pages"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_07",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a lab administrator, I want to theme the Web interface graphics/colours.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "Web interface graphics",
+                "colours"
+            ],
+            "Action": ["theme"],
+            "Persona": ["lab administrator"],
+            "Contains": [],
+            "Triggers": [[
+                "lab administrator",
+                "theme"
+            ]],
+            "Targets": [
+                [
+                    "theme",
+                    "Web interface graphics"
+                ],
+                [
+                    "theme",
+                    "colours"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_08",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a systems administrator, I want  to install Neurohub dependencies into an Ubuntu 10.04 LTS machine using the normal Ubuntu package management tools.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "Neurohub dependencies",
+                "Ubuntu 10.04 LTS machine",
+                "normal Ubuntu package management tools"
+            ],
+            "Action": [
+                "install",
+                "using"
+            ],
+            "Persona": ["systems administrator"],
+            "Contains": [[
+                "Ubuntu 10.04 LTS machine",
+                "Neurohub dependencies"
+            ]],
+            "Triggers": [[
+                "systems administrator",
+                "install"
+            ]],
+            "Targets": [
+                [
+                    "install",
+                    "Neurohub dependencies"
+                ],
+                [
+                    "using",
+                    "normal Ubuntu package management tools"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_09",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher, I want to create a log book page for an experiment and attach a file to this page.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "log book page",
+                "experiment",
+                "file",
+                "page"
+            ],
+            "Action": [
+                "create",
+                "attach"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [
+                [
+                    "experiment",
+                    "log book page"
+                ],
+                [
+                    "page",
+                    "file"
+                ]
+            ],
+            "Triggers": [
+                [
+                    "researcher",
+                    "create"
+                ],
+                [
+                    "researcher",
+                    "attach"
+                ]
+            ],
+            "Targets": [
+                [
+                    "create",
+                    "log book page"
+                ],
+                [
+                    "attach",
+                    "file"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_10",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher, I want to create a log book page for an experiment and attach a directory that contains multiple files.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "log book page",
+                "experiment",
+                "directory",
+                "multiple files"
+            ],
+            "Action": [
+                "create",
+                "attach"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [
+                [
+                    "experiment",
+                    "log book page"
+                ],
+                [
+                    "directory",
+                    "multiple files"
+                ],
+                [
+                    "log book page",
+                    "directory"
+                ]
+            ],
+            "Triggers": [
+                [
+                    "researcher",
+                    "create"
+                ],
+                [
+                    "researcher",
+                    "attach"
+                ]
+            ],
+            "Targets": [
+                [
+                    "create",
+                    "log book page"
+                ],
+                [
+                    "attach",
+                    "directory"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_11",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher, I want to upload files prior to having them attached to a log book page.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "files",
+                "log book page"
+            ],
+            "Action": [
+                "upload",
+                "attached"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "log book page",
+                "files"
+            ]],
+            "Triggers": [[
+                "researcher",
+                "upload"
+            ]],
+            "Targets": [
+                [
+                    "upload",
+                    "files"
+                ],
+                [
+                    "attached",
+                    "files"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_12",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher, I want to upload files prior to having them attached to a log book page using the web interface.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "files",
+                "log book page",
+                "web interface"
+            ],
+            "Action": [
+                "upload",
+                "attached",
+                "using"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "log book page",
+                "files"
+            ]],
+            "Triggers": [[
+                "researcher",
+                "upload"
+            ]],
+            "Targets": [
+                [
+                    "upload",
+                    "files"
+                ],
+                [
+                    "using",
+                    "web interface"
+                ],
+                [
+                    "attached",
+                    "files"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_13",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher, I want to upload files prior to having them attached to a log book page using a mapped network drive.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "files",
+                "log book page",
+                "mapped network drive"
+            ],
+            "Action": [
+                "upload",
+                "attached",
+                "using"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "log book page",
+                "files"
+            ]],
+            "Triggers": [[
+                "researcher",
+                "upload"
+            ]],
+            "Targets": [
+                [
+                    "upload",
+                    "files"
+                ],
+                [
+                    "attached",
+                    "files"
+                ],
+                [
+                    "using",
+                    "mapped network drive"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_14",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher, I want to attach currently non-attached files to a log book page.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "currently non-attached files",
+                "log book page"
+            ],
+            "Action": ["attach"],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "log book page",
+                "currently non-attached files"
+            ]],
+            "Triggers": [[
+                "researcher",
+                "attach"
+            ]],
+            "Targets": [[
+                "attach",
+                "currently non-attached files"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_15",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher, I want to receive an alert of any unattached files that are in my workspace.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "alert",
+                "any unattached files",
+                "workspace"
+            ],
+            "Action": ["receive"],
+            "Persona": ["researcher"],
+            "Contains": [
+                [
+                    "any unattached files",
+                    "alert"
+                ],
+                [
+                    "workspace",
+                    "any unattached files"
+                ]
+            ],
+            "Triggers": [[
+                "researcher",
+                "receive"
+            ]],
+            "Targets": [[
+                "receive",
+                "alert"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_16",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher, I want to download files attached to an experiment using my Web browser.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "files",
+                "experiment",
+                "Web browser"
+            ],
+            "Action": [
+                "download",
+                "using"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "experiment",
+                "files"
+            ]],
+            "Triggers": [[
+                "researcher",
+                "download"
+            ]],
+            "Targets": [
+                [
+                    "download",
+                    "files"
+                ],
+                [
+                    "using",
+                    "Web browser"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_17",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher, I want to access files stored in my Neurohub workspace, using a network drive attached to my workstation.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "files",
+                "Neurohub workspace",
+                "network drive",
+                "workstation"
+            ],
+            "Action": [
+                "access",
+                "using"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [
+                [
+                    "Neurohub workspace",
+                    "files"
+                ],
+                [
+                    "workstation",
+                    "network drive"
+                ]
+            ],
+            "Triggers": [[
+                "researcher",
+                "access"
+            ]],
+            "Targets": [
+                [
+                    "access",
+                    "files"
+                ],
+                [
+                    "using",
+                    "network drive"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_18",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher, I want to create a log book page.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": ["log book page"],
+            "Action": ["create"],
+            "Persona": ["researcher"],
+            "Contains": [],
+            "Triggers": [[
+                "researcher",
+                "create"
+            ]],
+            "Targets": [[
+                "create",
+                "log book page"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_19",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a release engineer, I want to configure nightly builds that automatically perform a Neurohub installation on a virgin operating system, execute tests and report back results, without requiring any manual input/interaction.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "nightly builds",
+                "Neurohub installation",
+                "virgin operating system",
+                "tests",
+                "results",
+                "manual input",
+                "interaction"
+            ],
+            "Action": [
+                "configure",
+                "automatically perform",
+                "execute",
+                "report"
+            ],
+            "Persona": ["release engineer"],
+            "Contains": [
+                [
+                    "virgin operating system",
+                    "Neurohub installation"
+                ],
+                [
+                    "execute",
+                    "tests"
+                ],
+                [
+                    "report",
+                    "results"
+                ]
+            ],
+            "Triggers": [[
+                "release engineer",
+                "configure"
+            ]],
+            "Targets": [
+                [
+                    "configure",
+                    "nightly builds"
+                ],
+                [
+                    "automatically perform",
+                    "Neurohub installation"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_20",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a supervisor, I want to view what my researchers were doing on a given date or period of time.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "what",
+                "researchers",
+                "given date"
+            ],
+            "Action": ["view"],
+            "Persona": ["supervisor"],
+            "Contains": [],
+            "Triggers": [[
+                "supervisor",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "what"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_21",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to upload large files of over 1GB in size.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "large files",
+                "over 1GB"
+            ],
+            "Action": ["upload"],
+            "Persona": ["user"],
+            "Contains": [[
+                "large files",
+                "over 1GB"
+            ]],
+            "Triggers": [[
+                "user",
+                "upload"
+            ]],
+            "Targets": [[
+                "upload",
+                "large files"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_22",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to assign tags to files that I have uploaded.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "tags",
+                "files"
+            ],
+            "Action": ["assign"],
+            "Persona": ["user"],
+            "Contains": [[
+                "files",
+                "tags"
+            ]],
+            "Triggers": [[
+                "user",
+                "assign"
+            ]],
+            "Targets": [[
+                "assign",
+                "tags"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_23",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to assign bespoke information to a file dependent on its type.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "bespoke information",
+                "file",
+                "type"
+            ],
+            "Action": ["assign"],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "file",
+                    "bespoke information"
+                ],
+                [
+                    "bespoke information",
+                    "type"
+                ]
+            ],
+            "Triggers": [[
+                "user",
+                "assign"
+            ]],
+            "Targets": [[
+                "assign",
+                "bespoke information"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_24",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to filter the files I get from search results based on their  type.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "search results",
+                "type",
+                "files I get"
+            ],
+            "Action": ["filter"],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "search results",
+                    "files I get"
+                ],
+                [
+                    "files I get",
+                    "type"
+                ]
+            ],
+            "Triggers": [[
+                "user",
+                "filter"
+            ]],
+            "Targets": [[
+                "filter",
+                "files I get"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_25",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to use the tags that I use are part of a controlled vocabulary.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "tags",
+                "controlled vocabulary"
+            ],
+            "Action": ["use"],
+            "Persona": ["user"],
+            "Contains": [],
+            "Triggers": [[
+                "user",
+                "use"
+            ]],
+            "Targets": [[
+                "use",
+                "tags"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_26",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to make uploaded data files to be non-modifiable.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": ["uploaded data files"],
+            "Action": ["make"],
+            "Persona": ["user"],
+            "Contains": [],
+            "Triggers": [[
+                "user",
+                "make"
+            ]],
+            "Targets": [[
+                "make",
+                "uploaded data files"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_27",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to make predicated links between files.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "predicated links",
+                "files"
+            ],
+            "Action": ["make"],
+            "Persona": ["user"],
+            "Contains": [[
+                "files",
+                "predicated links"
+            ]],
+            "Triggers": [[
+                "user",
+                "make"
+            ]],
+            "Targets": [[
+                "make",
+                "predicated links"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_28",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to restrict what can be entered to a metadata field.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "metadata field",
+                "what can be entered"
+            ],
+            "Action": ["restrict"],
+            "Persona": ["user"],
+            "Contains": [],
+            "Triggers": [[
+                "user",
+                "restrict"
+            ]],
+            "Targets": [[
+                "restrict",
+                "what can be entered"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_29",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to have files I might accidentally delete to be restorable.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": ["files I might accidentally delete"],
+            "Action": ["have"],
+            "Persona": ["user"],
+            "Contains": [],
+            "Triggers": [[
+                "user",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "files I might accidentally delete"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_30",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to revert to an older version of an uploaded file.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "older version",
+                "uploaded file"
+            ],
+            "Action": ["revert to"],
+            "Persona": ["user"],
+            "Contains": [[
+                "uploaded file",
+                "older version"
+            ]],
+            "Triggers": [[
+                "user",
+                "revert to"
+            ]],
+            "Targets": [[
+                "revert to",
+                "older version"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_31",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to have a visual way of viewing particular files uploaded over a time period.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "visual way",
+                "particular files"
+            ],
+            "Action": [
+                "have",
+                "viewing"
+            ],
+            "Persona": ["user"],
+            "Contains": [],
+            "Triggers": [[
+                "user",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "visual way"
+                ],
+                [
+                    "viewing",
+                    "particular files"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_32",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to associate together files involved in a experiment.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "files",
+                "experiment"
+            ],
+            "Action": ["associate together"],
+            "Persona": ["user"],
+            "Contains": [[
+                "experiment",
+                "files"
+            ]],
+            "Triggers": [[
+                "user",
+                "associate together"
+            ]],
+            "Targets": [[
+                "associate together",
+                "files"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_33",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a system administrator, I want to have a managed backup protocol for the system.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "managed backup protocol",
+                "system"
+            ],
+            "Action": ["have"],
+            "Persona": ["system administrator"],
+            "Contains": [[
+                "system",
+                "managed backup protocol"
+            ]],
+            "Triggers": [[
+                "system administrator",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "managed backup protocol"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_34",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to enter metadata / describe an experiment protocol before a file is even created.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "metadata",
+                "experiment protocol",
+                "file"
+            ],
+            "Action": [
+                "enter",
+                "describe",
+                "created"
+            ],
+            "Persona": ["user"],
+            "Contains": [],
+            "Triggers": [
+                [
+                    "user",
+                    "enter"
+                ],
+                [
+                    "user",
+                    "describe"
+                ]
+            ],
+            "Targets": [
+                [
+                    "enter",
+                    "metadata"
+                ],
+                [
+                    "describe",
+                    "experiment protocol"
+                ],
+                [
+                    "created",
+                    "file"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_35",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As lab administrator, I want to have increased access to the system to support regular users.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "increased access",
+                "system",
+                "regular users"
+            ],
+            "Action": [
+                "have",
+                "support"
+            ],
+            "Persona": ["lab administrator"],
+            "Contains": [[
+                "system",
+                "increased access"
+            ]],
+            "Triggers": [[
+                "lab administrator",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "increased access"
+                ],
+                [
+                    "support",
+                    "regular users"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_36",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to link together experimental runs to build an experiment.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "experimental runs",
+                "experiment"
+            ],
+            "Action": [
+                "link together",
+                "build"
+            ],
+            "Persona": ["user"],
+            "Contains": [],
+            "Triggers": [[
+                "user",
+                "link together"
+            ]],
+            "Targets": [
+                [
+                    "link together",
+                    "experimental runs"
+                ],
+                [
+                    "build",
+                    "experiment"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_37",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a lab administrator, I want to create page templates with bespoke metadata fields.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "page templates",
+                "bespoke metadata fields"
+            ],
+            "Action": ["create"],
+            "Persona": ["lab administrator"],
+            "Contains": [[
+                "page templates",
+                "bespoke metadata fields"
+            ]],
+            "Triggers": [[
+                "lab administrator",
+                "create"
+            ]],
+            "Targets": [[
+                "create",
+                "page templates"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_38",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to capture the same metadata for each file created in an experimental run.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "same metadata",
+                "each file created in an experimental run"
+            ],
+            "Action": ["capture"],
+            "Persona": ["user"],
+            "Contains": [[
+                "each file created in an experimental run",
+                "same metadata"
+            ]],
+            "Triggers": [[
+                "user",
+                "capture"
+            ]],
+            "Targets": [[
+                "capture",
+                "same metadata"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_39",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a lab administrator, I want a way of managing worm strain stocks that is integrated with Wormbase.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "way",
+                "worm strain stocks",
+                "Wormbase"
+            ],
+            "Action": [
+                "want",
+                "managing"
+            ],
+            "Persona": ["lab administrator"],
+            "Contains": [],
+            "Triggers": [[
+                "lab administrator",
+                "want"
+            ]],
+            "Targets": [
+                [
+                    "want",
+                    "way"
+                ],
+                [
+                    "managing",
+                    "worm strain stocks"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_40",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to search for and download human-readable experimental protocols.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": ["human-readable experimental protocols"],
+            "Action": [
+                "search",
+                "download"
+            ],
+            "Persona": ["user"],
+            "Contains": [],
+            "Triggers": [
+                [
+                    "user",
+                    "search"
+                ],
+                [
+                    "user",
+                    "download"
+                ]
+            ],
+            "Targets": [
+                [
+                    "search",
+                    "human-readable experimental protocols"
+                ],
+                [
+                    "download",
+                    "human-readable experimental protocols"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_41",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to modify or branch an experimental protocol, whilst retaining the original.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "experimental protocol",
+                "original"
+            ],
+            "Action": [
+                "modify",
+                "branch",
+                "retaining"
+            ],
+            "Persona": ["user"],
+            "Contains": [],
+            "Triggers": [
+                [
+                    "user",
+                    "modify"
+                ],
+                [
+                    "user",
+                    "branch"
+                ]
+            ],
+            "Targets": [
+                [
+                    "branch",
+                    "experimental protocol"
+                ],
+                [
+                    "modify",
+                    "experimental protocol"
+                ],
+                [
+                    "retaining",
+                    "original"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_42",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to view how an experimental protocol has evolved over time.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "how",
+                "experimental protocol"
+            ],
+            "Action": [
+                "view",
+                "evolved"
+            ],
+            "Persona": ["user"],
+            "Contains": [],
+            "Triggers": [[
+                "user",
+                "view"
+            ]],
+            "Targets": [
+                [
+                    "view",
+                    "how"
+                ],
+                [
+                    "evolved",
+                    "experimental protocol"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_43",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to create a protocol and assign metadata to any stag.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "protocol",
+                "metadata",
+                "any stag"
+            ],
+            "Action": [
+                "create",
+                "assign"
+            ],
+            "Persona": ["user"],
+            "Contains": [[
+                "any stag",
+                "metadata"
+            ]],
+            "Triggers": [
+                [
+                    "user",
+                    "create"
+                ],
+                [
+                    "user",
+                    "assign"
+                ]
+            ],
+            "Targets": [
+                [
+                    "create",
+                    "protocol"
+                ],
+                [
+                    "assign",
+                    "metadata"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_44",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to prove definitively that I created a page on a certain date.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "page",
+                "certain date"
+            ],
+            "Action": [
+                "prove definitively",
+                "created"
+            ],
+            "Persona": ["user"],
+            "Contains": [],
+            "Triggers": [[
+                "user",
+                "prove definitively"
+            ]],
+            "Targets": [[
+                "created",
+                "page"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_45",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to manage the references / papers I have investigated.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "references",
+                "papers I have investigated"
+            ],
+            "Action": ["manage"],
+            "Persona": ["user"],
+            "Contains": [],
+            "Triggers": [[
+                "user",
+                "manage"
+            ]],
+            "Targets": [
+                [
+                    "manage",
+                    "references"
+                ],
+                [
+                    "manage",
+                    "papers I have investigated"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_46",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to search specifically for files rather than log book pages.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "files",
+                "log book pages"
+            ],
+            "Action": ["search specifically"],
+            "Persona": ["user"],
+            "Contains": [],
+            "Triggers": [[
+                "user",
+                "search specifically"
+            ]],
+            "Targets": [[
+                "search specifically",
+                "files"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_47",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to limit my search to a particular set of log books.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "search",
+                "particular set",
+                "log books"
+            ],
+            "Action": ["limit"],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "particular set",
+                    "log books"
+                ],
+                [
+                    "search",
+                    "particular set"
+                ]
+            ],
+            "Triggers": [[
+                "user",
+                "limit"
+            ]],
+            "Targets": [[
+                "limit",
+                "search"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_48",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to limit my search results to one or more log book sections from one or more log books.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "search results",
+                "one or more log book sections",
+                "one or more log books"
+            ],
+            "Action": ["limit"],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "search results",
+                    "one or more log book sections"
+                ],
+                [
+                    "search results",
+                    "one or more log books"
+                ]
+            ],
+            "Triggers": [[
+                "user",
+                "limit"
+            ]],
+            "Targets": [[
+                "limit",
+                "search results"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_49",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to download files directly from the search results page.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "files",
+                "search results page"
+            ],
+            "Action": ["download"],
+            "Persona": ["user"],
+            "Contains": [[
+                "search results page",
+                "files"
+            ]],
+            "Triggers": [[
+                "user",
+                "download"
+            ]],
+            "Targets": [[
+                "download",
+                "files"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_50",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to see the provenance of the page as part of the search results.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "search results",
+                "provenance",
+                "page"
+            ],
+            "Action": ["see"],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "page",
+                    "provenance"
+                ],
+                [
+                    "search results",
+                    "provenance"
+                ]
+            ],
+            "Triggers": [[
+                "user",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "provenance"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_51",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to attach multiple files at once to a log book page.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "multiple files",
+                "log book page"
+            ],
+            "Action": ["attach"],
+            "Persona": ["user"],
+            "Contains": [[
+                "log book page",
+                "multiple files"
+            ]],
+            "Triggers": [[
+                "user",
+                "attach"
+            ]],
+            "Targets": [[
+                "attach",
+                "multiple files"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_52",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to download multiple files from the search results in one go.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "multiple files",
+                "search results"
+            ],
+            "Action": ["download"],
+            "Persona": ["user"],
+            "Contains": [[
+                "search results",
+                "multiple files"
+            ]],
+            "Triggers": [[
+                "user",
+                "download"
+            ]],
+            "Targets": [[
+                "download",
+                "multiple files"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_53",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to draw tables using HTML tags as part of the content of a log book page.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "tables",
+                "HTML tags",
+                "content",
+                "log book page"
+            ],
+            "Action": [
+                "draw",
+                "using"
+            ],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "log book page",
+                    "content"
+                ],
+                [
+                    "content",
+                    "tables"
+                ]
+            ],
+            "Triggers": [[
+                "user",
+                "draw"
+            ]],
+            "Targets": [
+                [
+                    "draw",
+                    "tables"
+                ],
+                [
+                    "using",
+                    "HTML tags"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_54",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a lab member, I want to view events and equipment bookings within the group.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "events",
+                "equipment bookings",
+                "group"
+            ],
+            "Action": ["view"],
+            "Persona": ["lab member"],
+            "Contains": [
+                [
+                    "group",
+                    "equipment bookings"
+                ],
+                [
+                    "group",
+                    "events"
+                ]
+            ],
+            "Triggers": [[
+                "lab member",
+                "view"
+            ]],
+            "Targets": [
+                [
+                    "view",
+                    "events"
+                ],
+                [
+                    "view",
+                    "equipment bookings"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_55",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to store worm behaviour videos with an encoding that can be analysed by the worm analysis software written by Christopher James.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "worm behaviour videos",
+                "encoding",
+                "worm analysis software",
+                "Christopher James"
+            ],
+            "Action": ["store"],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "worm behaviour videos",
+                    "encoding"
+                ],
+                [
+                    "Christopher James",
+                    "worm analysis software"
+                ]
+            ],
+            "Triggers": [[
+                "user",
+                "store"
+            ]],
+            "Targets": [[
+                "store",
+                "worm behaviour videos"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_56",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a system administrator, I want to migrate data from an older version of NeuroHub to the current version.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "data",
+                "older version",
+                "NeuroHub",
+                "current version"
+            ],
+            "Action": ["migrate"],
+            "Persona": ["system administrator"],
+            "Contains": [
+                [
+                    "NeuroHub",
+                    "older version"
+                ],
+                [
+                    "older version",
+                    "data"
+                ],
+                [
+                    "NeuroHub",
+                    "current version"
+                ],
+                [
+                    "current version",
+                    "data"
+                ]
+            ],
+            "Triggers": [[
+                "system administrator",
+                "migrate"
+            ]],
+            "Targets": [[
+                "migrate",
+                "data"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_57",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to have the system to also forward important news items to an external mailing list.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "system",
+                "important news items",
+                "external mailing list"
+            ],
+            "Action": [
+                "have",
+                "forward"
+            ],
+            "Persona": ["user"],
+            "Contains": [],
+            "Triggers": [[
+                "user",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "system"
+                ],
+                [
+                    "forward",
+                    "important news items"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_58",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to view and update an inventory of of the equipment and consumables that are present in the centre.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "inventory",
+                "equipment",
+                "consumables",
+                "centre"
+            ],
+            "Action": [
+                "view",
+                "update"
+            ],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "equipment",
+                    "inventory"
+                ],
+                [
+                    "centre",
+                    "consumables"
+                ]
+            ],
+            "Triggers": [
+                [
+                    "user",
+                    "view"
+                ],
+                [
+                    "user",
+                    "update"
+                ]
+            ],
+            "Targets": [
+                [
+                    "view",
+                    "inventory"
+                ],
+                [
+                    "update",
+                    "inventory"
+                ],
+                [
+                    "update",
+                    "consumables"
+                ],
+                [
+                    "view",
+                    "consumables"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_59",
+        "Benefit": {
+            "Entity": [
+                "costs",
+                "others",
+                "proposal"
+            ],
+            "Action": [
+                "edit",
+                "calculate",
+                "working"
+            ],
+            "Contains": [],
+            "Text": "I can edit and calculate costs collaboratively with others while working on the proposal.",
+            "Targets": [
+                [
+                    "edit",
+                    "costs"
+                ],
+                [
+                    "calculate",
+                    "costs"
+                ],
+                [
+                    "working",
+                    "proposal"
+                ]
+            ]
+        },
+        "Text": "#G18# As a user, I want to have a spreadsheet hosted within the Neurohub Web page, so that I can edit and calculate costs collaboratively with others while working on the proposal.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "spreadsheet",
+                "Neurohub Web page"
+            ],
+            "Action": ["have"],
+            "Persona": ["user"],
+            "Contains": [[
+                "Neurohub Web page",
+                "spreadsheet"
+            ]],
+            "Text": "#G18# As a user, I want to have a spreadsheet hosted within the Neurohub Web page, ",
+            "Triggers": [[
+                "user",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "spreadsheet"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_60",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a supervisor, I want to create feedback forms within Neurohub, that my students can fill in and submit, in order to provide me with feedback about the course that they attended.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "feedback forms",
+                "Neurohub",
+                "students",
+                "feedback",
+                "course"
+            ],
+            "Action": [
+                "create",
+                "fill",
+                "submit",
+                "provide"
+            ],
+            "Persona": ["supervisor"],
+            "Contains": [
+                [
+                    "Neurohub",
+                    "feedback forms"
+                ],
+                [
+                    "course",
+                    "feedback"
+                ]
+            ],
+            "Triggers": [[
+                "supervisor",
+                "create"
+            ]],
+            "Targets": [
+                [
+                    "create",
+                    "feedback forms"
+                ],
+                [
+                    "fill",
+                    "feedback forms"
+                ],
+                [
+                    "submit",
+                    "feedback forms"
+                ],
+                [
+                    "provide",
+                    "feedback"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_61",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to have the option to tell Neurohub to push posted content to my Twitter feed at the same time.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "option",
+                "Neurohub",
+                "posted content",
+                "Twitter feed"
+            ],
+            "Action": [
+                "have",
+                "tell",
+                "push"
+            ],
+            "Persona": ["user"],
+            "Contains": [[
+                "Twitter feed",
+                "posted content"
+            ]],
+            "Triggers": [[
+                "user",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "option"
+                ],
+                [
+                    "tell",
+                    "Neurohub"
+                ],
+                [
+                    "push",
+                    "posted content"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_62",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to either keep a logbook entry private or share it with individuals rather than groups.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "logbook entry",
+                "individuals",
+                "groups"
+            ],
+            "Action": [
+                "either keep",
+                "share"
+            ],
+            "Persona": ["user"],
+            "Contains": [[
+                "individuals",
+                "logbook entry"
+            ]],
+            "Triggers": [[
+                "user",
+                "either keep"
+            ]],
+            "Targets": [
+                [
+                    "either keep",
+                    "logbook entry"
+                ],
+                [
+                    "share",
+                    "logbook entry"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_63",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to have the details of the workflow execution to be recorded in a neurohub log book while executing a workflow.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "details",
+                "workflow execution",
+                "neurohub log book",
+                "workflow"
+            ],
+            "Action": [
+                "have",
+                "recorded",
+                "executing"
+            ],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "workflow execution",
+                    "details"
+                ],
+                [
+                    "neurohub log book",
+                    "details"
+                ]
+            ],
+            "Triggers": [[
+                "user",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "details"
+                ],
+                [
+                    "recorded",
+                    "details"
+                ],
+                [
+                    "executing",
+                    "workflow"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_64",
+        "Benefit": {
+            "Entity": [
+                "what",
+                "other researchers",
+                "centre"
+            ],
+            "Action": ["see"],
+            "Contains": [[
+                "centre",
+                "other researchers"
+            ]],
+            "Text": "other researchers in the centre can see what I am up to.",
+            "Targets": [[
+                "see",
+                "what"
+            ]]
+        },
+        "Text": "#G18# As a user, I want to have that my Twitter Tweets to appear in Neurohub, so that other researchers in the centre can see what I am up to.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "Twitter Tweets",
+                "Neurohub"
+            ],
+            "Action": ["have"],
+            "Persona": ["user"],
+            "Contains": [[
+                "Neurohub",
+                "Twitter Tweets"
+            ]],
+            "Text": "#G18# As a user, I want to have that my Twitter Tweets to appear in Neurohub, ",
+            "Triggers": [[
+                "user",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "Twitter Tweets"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_65",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to view the group's shared calendars via the Neurohub Nodes' Web page as well as on my mobile device.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "group's shared calendars",
+                "Neurohub Nodes' Web page",
+                "mobile device"
+            ],
+            "Action": ["view"],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "mobile device",
+                    "group's shared calendars"
+                ],
+                [
+                    "Neurohub Nodes' Web page",
+                    "group's shared calendars"
+                ]
+            ],
+            "Triggers": [[
+                "user",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "group's shared calendars"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_66",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to sync events created in NeuroHub with a web-based Calendar such as Google Calendar.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "events created in NeuroHub",
+                "web-based Calendar",
+                "Google Calendar"
+            ],
+            "Action": ["sync"],
+            "Persona": ["user"],
+            "Contains": [[
+                "web-based Calendar",
+                "Google Calendar"
+            ]],
+            "Triggers": [[
+                "user",
+                "sync"
+            ]],
+            "Targets": [[
+                "sync",
+                "events created in NeuroHub"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_67",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher, I want to have the ability to insert Greek symbols into my logbook entries.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "ability",
+                "Greek symbols",
+                "logbook entries"
+            ],
+            "Action": [
+                "have",
+                "insert"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "logbook entries",
+                "Greek symbols"
+            ]],
+            "Triggers": [[
+                "researcher",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "ability"
+                ],
+                [
+                    "insert",
+                    "Greek symbols"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_68",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to have the ability to move multiple files around and rearrange them using the Neurohub file browser while processing data.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "ability",
+                "multiple files",
+                "Neurohub file browser",
+                "data"
+            ],
+            "Action": [
+                "have",
+                "move",
+                "rearrange",
+                "using",
+                "processing"
+            ],
+            "Persona": ["user"],
+            "Contains": [],
+            "Triggers": [[
+                "user",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "ability"
+                ],
+                [
+                    "move",
+                    "multiple files"
+                ],
+                [
+                    "rearrange",
+                    "multiple files"
+                ],
+                [
+                    "using",
+                    "Neurohub file browser"
+                ],
+                [
+                    "processing",
+                    "data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_69",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher, I want to point my Mendeley client at a group-wide shared repository of research papers and get notifications via Mendeley when new content is added.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "Mendeley client",
+                "group-wide shared repository",
+                "research papers",
+                "notifications",
+                "Mendeley",
+                "new content"
+            ],
+            "Action": [
+                "point",
+                "get",
+                "added"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [
+                [
+                    "group-wide shared repository",
+                    "research papers"
+                ],
+                [
+                    "Mendeley",
+                    "notifications"
+                ]
+            ],
+            "Triggers": [
+                [
+                    "researcher",
+                    "point"
+                ],
+                [
+                    "researcher",
+                    "get"
+                ]
+            ],
+            "Targets": [
+                [
+                    "point",
+                    "Mendeley client"
+                ],
+                [
+                    "get",
+                    "notifications"
+                ],
+                [
+                    "added",
+                    "new content"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_70",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher, I want to have electronic support for keeping track of which data sets were used/output/modified as part of a particular experiment.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "electronic support",
+                "data sets",
+                "particular experiment"
+            ],
+            "Action": [
+                "have",
+                "keeping track"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "particular experiment",
+                "data sets"
+            ]],
+            "Triggers": [[
+                "researcher",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "electronic support"
+                ],
+                [
+                    "keeping track",
+                    "data sets"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_71",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["collaborate effectively"],
+            "Contains": [],
+            "Text": "we can collaborate effectively.",
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want a mechanism for electronically sharing papers and notes with other researchers, so that we can collaborate effectively.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "mechanism",
+                "papers",
+                "notes",
+                "other researchers"
+            ],
+            "Action": [
+                "want",
+                "electronically sharing"
+            ],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "other researchers",
+                    "notes"
+                ],
+                [
+                    "other researchers",
+                    "papers"
+                ]
+            ],
+            "Text": "#G18# As a user, I want a mechanism for electronically sharing papers and notes with other researchers, ",
+            "Triggers": [[
+                "user",
+                "want"
+            ]],
+            "Targets": [
+                [
+                    "want",
+                    "mechanism"
+                ],
+                [
+                    "electronically sharing",
+                    "papers"
+                ],
+                [
+                    "electronically sharing",
+                    "notes"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_72",
+        "Benefit": {
+            "Entity": ["data"],
+            "Action": [],
+            "Contains": [],
+            "Text": "I can be sure that data will not get 'lost' with the passage of time.",
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher, I want to have services to support the long term curation of data, so that I can be sure that data will not get 'lost' with the passage of time.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "services",
+                "long term curation",
+                "data"
+            ],
+            "Action": [
+                "have",
+                "support"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "data",
+                "long term curation"
+            ]],
+            "Text": "#G18# As a researcher, I want to have services to support the long term curation of data, ",
+            "Triggers": [[
+                "researcher",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "services"
+                ],
+                [
+                    "support",
+                    "long term curation"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_73",
+        "Benefit": {
+            "Entity": [
+                "data",
+                "experiments",
+                "particular dates"
+            ],
+            "Action": ["compare"],
+            "Contains": [[
+                "experiments",
+                "data"
+            ]],
+            "Text": "I can compare the data taken from experiments on particular dates.",
+            "Targets": [[
+                "compare",
+                "data"
+            ]]
+        },
+        "Text": "#G18# As a researcher, I want to have a timeline display of multiple data files and their associated images, so that I can compare the data taken from experiments on particular dates.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "timeline display",
+                "multiple data files",
+                "associated images"
+            ],
+            "Action": ["have"],
+            "Persona": ["researcher"],
+            "Contains": [
+                [
+                    "multiple data files",
+                    "timeline display"
+                ],
+                [
+                    "multiple data files",
+                    "associated images"
+                ],
+                [
+                    "associated images",
+                    "timeline display"
+                ]
+            ],
+            "Text": "#G18# As a researcher, I want to have a timeline display of multiple data files and their associated images, ",
+            "Triggers": [[
+                "researcher",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "timeline display"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_74",
+        "Benefit": {
+            "Entity": ["lab"],
+            "Action": ["still work effectively"],
+            "Contains": [],
+            "Text": "I can still work effectively while away from the lab.",
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher, I want to have remote access to my data for off-site working , so that I can still work effectively while away from the lab.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "remote access",
+                "data"
+            ],
+            "Action": ["have"],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "data",
+                "remote access"
+            ]],
+            "Text": "#G18# As a researcher, I want to have remote access to my data for off-site working , ",
+            "Triggers": [[
+                "researcher",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "remote access"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_75",
+        "Benefit": {
+            "Entity": [
+                "others",
+                "work"
+            ],
+            "Action": ["more easily replicate"],
+            "Contains": [],
+            "Text": "others can more easily replicate my work.",
+            "Targets": [[
+                "more easily replicate",
+                "work"
+            ]]
+        },
+        "Text": "#G18# As a researcher, I want to share post-experiment write-ups with other researchers, so that others can more easily replicate my work.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "post-experiment write-ups",
+                "other researchers"
+            ],
+            "Action": ["share"],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "other researchers",
+                "post-experiment write-ups"
+            ]],
+            "Text": "#G18# As a researcher, I want to share post-experiment write-ups with other researchers, ",
+            "Triggers": [[
+                "researcher",
+                "share"
+            ]],
+            "Targets": [[
+                "share",
+                "post-experiment write-ups"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_76",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher, I want to collect data as a library of data, which can then be used by one or multiple experiments that are defined at a later stage.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "data",
+                "library",
+                "data",
+                "one or multiple experiments"
+            ],
+            "Action": [
+                "collect",
+                "used"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "library",
+                "data"
+            ]],
+            "Triggers": [[
+                "researcher",
+                "collect"
+            ]],
+            "Targets": [
+                [
+                    "collect",
+                    "data"
+                ],
+                [
+                    "used",
+                    "library"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_77",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher, I want to indicate within my electronic log book which experimental data is good/bad, hide the bad data, but still keep it in the system just in case it is useful in the future.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "electronic log book",
+                "experimental data",
+                "bad data",
+                "system"
+            ],
+            "Action": [
+                "indicate",
+                "hide"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [
+                [
+                    "system",
+                    "bad data"
+                ],
+                [
+                    "electronic log book",
+                    "experimental data"
+                ]
+            ],
+            "Triggers": [[
+                "researcher",
+                "indicate"
+            ]],
+            "Targets": [
+                [
+                    "indicate",
+                    "experimental data"
+                ],
+                [
+                    "hide",
+                    "bad data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_78",
+        "Benefit": {
+            "Entity": ["others' data"],
+            "Action": ["better understand"],
+            "Contains": [],
+            "Text": "we can better understand each others' data.",
+            "Targets": [[
+                "better understand",
+                "others' data"
+            ]]
+        },
+        "Text": "#G18# As a researcher, I want to have the system to provide standard metadata, that all researchers in the centre (and beyond) can use, so that we can better understand each others' data.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "system",
+                "standard metadata",
+                "all researchers",
+                "centre"
+            ],
+            "Action": [
+                "have",
+                "provide",
+                "use"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [
+                [
+                    "centre",
+                    "all researchers"
+                ],
+                [
+                    "system",
+                    "standard metadata"
+                ]
+            ],
+            "Text": "#G18# As a researcher, I want to have the system to provide standard metadata, that all researchers in the centre (and beyond) can use, ",
+            "Triggers": [[
+                "researcher",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "system"
+                ],
+                [
+                    "provide",
+                    "standard metadata"
+                ],
+                [
+                    "use",
+                    "standard metadata"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_79",
+        "Benefit": {
+            "Entity": ["data"],
+            "Action": [
+                "searched",
+                "understood"
+            ],
+            "Contains": [],
+            "Text": "my data can later be searched for and understood",
+            "Targets": [
+                [
+                    "searched",
+                    "data"
+                ],
+                [
+                    "understood",
+                    "data"
+                ]
+            ]
+        },
+        "Text": "#G18# As a researcher, I want to have physiology images to be annotated with standard meta data, so that my data can later be searched for and understood.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "physiology images",
+                "standard meta data"
+            ],
+            "Action": [
+                "have",
+                "annotated"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "physiology images",
+                "standard meta data"
+            ]],
+            "Text": "#G18# As a researcher, I want to have physiology images to be annotated with standard meta data, ",
+            "Triggers": [[
+                "researcher",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "physiology images"
+                ],
+                [
+                    "annotated",
+                    "physiology images"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_80",
+        "Benefit": {
+            "Entity": ["data"],
+            "Action": [
+                "searched",
+                "understood"
+            ],
+            "Contains": [],
+            "Text": "my data can later be searched for and understood.",
+            "Targets": [
+                [
+                    "searched",
+                    "data"
+                ],
+                [
+                    "understood",
+                    "data"
+                ]
+            ]
+        },
+        "Text": "#G18# As a researcher, I want to have the ability to attach standard meta data for behavioural observations (and video), so that my data can later be searched for and understood.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "ability",
+                "standard meta data",
+                "behavioural observations",
+                "video"
+            ],
+            "Action": [
+                "have",
+                "attach"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [
+                [
+                    "behavioural observations",
+                    "standard meta data"
+                ],
+                [
+                    "video",
+                    "standard meta data"
+                ]
+            ],
+            "Text": "#G18# As a researcher, I want to have the ability to attach standard meta data for behavioural observations (and video), ",
+            "Triggers": [[
+                "researcher",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "ability"
+                ],
+                [
+                    "attach",
+                    "standard meta data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_81",
+        "Benefit": {
+            "Entity": ["data"],
+            "Action": [
+                "searched",
+                "understood"
+            ],
+            "Contains": [],
+            "Text": "my data can later be searched for and understood.",
+            "Targets": [
+                [
+                    "understood",
+                    "data"
+                ],
+                [
+                    "searched",
+                    "data"
+                ]
+            ]
+        },
+        "Text": "#G18# As a researcher,  I want to have the ability to attach standard meta data for drug responses, so that my data can later be searched for and understood.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "ability",
+                "standard meta data",
+                "drug responses"
+            ],
+            "Action": [
+                "have",
+                "attach"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "drug responses",
+                "standard meta data"
+            ]],
+            "Text": "#G18# As a researcher,  I want to have the ability to attach standard meta data for drug responses, ",
+            "Triggers": [[
+                "researcher",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "ability"
+                ],
+                [
+                    "attach",
+                    "standard meta data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_82",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher, I want to have the ability to search for images of cells using standard meta data.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "ability",
+                "images",
+                "cells",
+                "standard meta data"
+            ],
+            "Action": [
+                "have",
+                "search",
+                "using"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "images",
+                "cells"
+            ]],
+            "Triggers": [[
+                "researcher",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "ability"
+                ],
+                [
+                    "search",
+                    "images"
+                ],
+                [
+                    "using",
+                    "standard meta data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_83",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher, I want to have at least some meta data to be automatically inserted when new data is added to the system.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "some meta data",
+                "new data",
+                "system"
+            ],
+            "Action": [
+                "have",
+                "automatically inserted",
+                "added"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "system",
+                "new data"
+            ]],
+            "Triggers": [[
+                "researcher",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "some meta data"
+                ],
+                [
+                    "automatically inserted",
+                    "some meta data"
+                ],
+                [
+                    "added",
+                    "new data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_84",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher,  I want to have the ability to attach detailed meta data to the data and entries that I create.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "ability",
+                "detailed meta data",
+                "data",
+                "entries"
+            ],
+            "Action": [
+                "have",
+                "attach"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [
+                [
+                    "data",
+                    "detailed meta data"
+                ],
+                [
+                    "entries",
+                    "detailed meta data"
+                ]
+            ],
+            "Triggers": [[
+                "researcher",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "ability"
+                ],
+                [
+                    "attach",
+                    "detailed meta data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_85",
+        "Benefit": {
+            "Entity": [
+                "same meta data",
+                "log book entry",
+                "each individual file"
+            ],
+            "Action": ["repeatedly inserting"],
+            "Contains": [
+                [
+                    "each individual file",
+                    "same meta data"
+                ],
+                [
+                    "log book entry",
+                    "same meta data"
+                ]
+            ],
+            "Text": "I do not waste time repeatedly inserting the same meta data over and over again for each individual file or log book entry.",
+            "Targets": [[
+                "repeatedly inserting",
+                "same meta data"
+            ]]
+        },
+        "Text": "#G18# As a researcher, I want to have the ability to select a partially pre-populated template that already contains commonly entered meta data while adding new data to the system, so that I do not waste time repeatedly inserting the same meta data over and over again for each individual file or log book entry.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "ability",
+                "partially pre-populated template",
+                "commonly entered meta data",
+                "new data",
+                "system"
+            ],
+            "Action": [
+                "have",
+                "select",
+                "adding"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [
+                [
+                    "partially pre-populated template",
+                    "commonly entered meta data"
+                ],
+                [
+                    "system",
+                    "new data"
+                ]
+            ],
+            "Text": "#G18# As a researcher, I want to have the ability to select a partially pre-populated template that already contains commonly entered meta data while adding new data to the system, ",
+            "Triggers": [[
+                "researcher",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "ability"
+                ],
+                [
+                    "select",
+                    "partially pre-populated template"
+                ],
+                [
+                    "adding",
+                    "new data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_86",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user, I want to be sure that existing metadata corresponding to the file is not lost when moving a file to a new location.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "existing metadata",
+                "file",
+                "file",
+                "new location"
+            ],
+            "Action": [
+                "be sure",
+                "moving"
+            ],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "file",
+                    "existing metadata"
+                ],
+                [
+                    "new location",
+                    "file"
+                ]
+            ],
+            "Triggers": [[
+                "user",
+                "be sure"
+            ]],
+            "Targets": [[
+                "moving",
+                "file"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_87",
+        "Benefit": {
+            "Entity": [
+                "data",
+                "type",
+                "association"
+            ],
+            "Action": ["searched"],
+            "Contains": [
+                [
+                    "data",
+                    "type"
+                ],
+                [
+                    "data",
+                    "association"
+                ]
+            ],
+            "Text": "data can be searched by type and by association.",
+            "Targets": [[
+                "searched",
+                "data"
+            ]]
+        },
+        "Text": "#G18# As a researcher, I want to have the ability to form links between objects, for example File A is an analysis of File B, so that data can be searched by type and by association.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "ability",
+                "links",
+                "objects",
+                "File A",
+                "analysis",
+                "File B"
+            ],
+            "Action": [
+                "have",
+                "form"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [
+                [
+                    "objects",
+                    "links"
+                ],
+                [
+                    "File B",
+                    "analysis"
+                ]
+            ],
+            "Text": "#G18# As a researcher, I want to have the ability to form links between objects, for example File A is an analysis of File B, ",
+            "Triggers": [[
+                "researcher",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "ability"
+                ],
+                [
+                    "form",
+                    "links"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_88",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher, I want to have the ability to locate experiment files using meta data, regardless of where those files are located.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "ability",
+                "experiment files",
+                "meta data",
+                "files"
+            ],
+            "Action": [
+                "have",
+                "locate",
+                "using"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [],
+            "Triggers": [[
+                "researcher",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "ability"
+                ],
+                [
+                    "locate",
+                    "experiment files"
+                ],
+                [
+                    "using",
+                    "meta data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_89",
+        "Benefit": {
+            "Entity": [
+                "original data",
+                "experiment"
+            ],
+            "Action": ["traced back"],
+            "Contains": [[
+                "experiment",
+                "original data"
+            ]],
+            "Text": "original data can always be traced back to an experiment and a point in time.",
+            "Targets": [[
+                "traced back",
+                "original data"
+            ]]
+        },
+        "Text": "#G18# As a researcher, I want to have any data that I have written to the VRE to be protected from modification or deletion, so that original data can always be traced back to an experiment and a point in time.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "any data",
+                "VRE",
+                "modification",
+                "deletion"
+            ],
+            "Action": [
+                "have",
+                "protected"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "VRE",
+                "any data"
+            ]],
+            "Text": "#G18# As a researcher, I want to have any data that I have written to the VRE to be protected from modification or deletion, ",
+            "Triggers": [[
+                "researcher",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "any data"
+                ],
+                [
+                    "protected",
+                    "any data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_90",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user,  I want to have the ability to keep my data private on the system, and only share data that I deem should be shared.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "ability",
+                "system",
+                "data",
+                "data"
+            ],
+            "Action": [
+                "have",
+                "keep",
+                "only share"
+            ],
+            "Persona": ["user"],
+            "Contains": [[
+                "system",
+                "data"
+            ]],
+            "Triggers": [[
+                "user",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "ability"
+                ],
+                [
+                    "only share",
+                    "data"
+                ],
+                [
+                    "keep",
+                    "data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_91",
+        "Benefit": {
+            "Entity": [
+                "provenance",
+                "results"
+            ],
+            "Action": ["verified"],
+            "Contains": [[
+                "results",
+                "provenance"
+            ]],
+            "Text": "the provenance of the results can be verified.",
+            "Targets": [[
+                "verified",
+                "provenance"
+            ]]
+        },
+        "Text": "#G18# As a researcher,  I want to have the ability to store all the inputs for an experiment so that the provenance of the results can be verified.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "ability",
+                "inputs",
+                "experiment"
+            ],
+            "Action": [
+                "have",
+                "store"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "experiment",
+                "inputs"
+            ]],
+            "Text": "#G18# As a researcher,  I want to have the ability to store all the inputs for an experiment ",
+            "Triggers": [[
+                "researcher",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "ability"
+                ],
+                [
+                    "store",
+                    "inputs"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_92",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher, I want to have the ability to search for files by file type and format.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "ability",
+                "files",
+                "file type",
+                "format"
+            ],
+            "Action": [
+                "have",
+                "search"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [
+                [
+                    "files",
+                    "file type"
+                ],
+                [
+                    "files",
+                    "format"
+                ]
+            ],
+            "Triggers": [[
+                "researcher",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "ability"
+                ],
+                [
+                    "search",
+                    "files"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_93",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher,  I want to have the ability to bulk upload directories and files with minimal effort.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "ability",
+                "directories",
+                "files"
+            ],
+            "Action": [
+                "have",
+                "bulk upload"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [],
+            "Triggers": [[
+                "researcher",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "ability"
+                ],
+                [
+                    "bulk upload",
+                    "directories"
+                ],
+                [
+                    "bulk upload",
+                    "files"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_94",
+        "Benefit": {
+            "Entity": [
+                "period of time",
+                "suitable values",
+                "meta data"
+            ],
+            "Action": [
+                "have",
+                "reflect"
+            ],
+            "Contains": [[
+                "meta data",
+                "suitable values"
+            ]],
+            "Text": "I have a period of time to reflect on suitable values for the meta data.",
+            "Targets": [
+                [
+                    "have",
+                    "period of time"
+                ],
+                [
+                    "reflect",
+                    "suitable values"
+                ]
+            ]
+        },
+        "Text": "#G18# As a researcher, I want to associate meta data to the group as a whole at some point in time after the bulk upload has completed, so that I have a period of time to reflect on suitable values for the meta data.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "meta data",
+                "group",
+                "bulk upload"
+            ],
+            "Action": [
+                "associate",
+                "completed"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [],
+            "Text": "#G18# As a researcher, I want to associate meta data to the group as a whole at some point in time after the bulk upload has completed, ",
+            "Triggers": [[
+                "researcher",
+                "associate"
+            ]],
+            "Targets": [
+                [
+                    "associate",
+                    "meta data"
+                ],
+                [
+                    "completed",
+                    "bulk upload"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_95",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a user,  I want to have the ability to change the sharing and ownership of multiple files.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "ability",
+                "sharing",
+                "ownership",
+                "multiple files"
+            ],
+            "Action": [
+                "have",
+                "change"
+            ],
+            "Persona": ["user"],
+            "Contains": [
+                [
+                    "multiple files",
+                    "ownership"
+                ],
+                [
+                    "multiple files",
+                    "sharing"
+                ]
+            ],
+            "Triggers": [[
+                "user",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "ability"
+                ],
+                [
+                    "change",
+                    "sharing"
+                ],
+                [
+                    "change",
+                    "ownership"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_96",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher,  I want to have the ability to restrict the data I share to certain researchers or groups of researchers.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "ability",
+                "data I share",
+                "certain researchers",
+                "groups",
+                "researchers"
+            ],
+            "Action": [
+                "have",
+                "restrict"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "groups",
+                "researchers"
+            ]],
+            "Triggers": [[
+                "researcher",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "ability"
+                ],
+                [
+                    "restrict",
+                    "data I share"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_97",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher,  I want to have the ability to locate and access data that colleagues want to share.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "ability",
+                "data",
+                "colleagues"
+            ],
+            "Action": [
+                "have",
+                "locate",
+                "access"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "colleagues",
+                "data"
+            ]],
+            "Triggers": [[
+                "researcher",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "ability"
+                ],
+                [
+                    "locate",
+                    "data"
+                ],
+                [
+                    "access",
+                    "data"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_98",
+        "Benefit": {
+            "Entity": [
+                "changes",
+                "files"
+            ],
+            "Action": ["keep track"],
+            "Contains": [[
+                "files",
+                "changes"
+            ]],
+            "Text": "I can keep track of changes to files over time.",
+            "Targets": [[
+                "keep track",
+                "changes"
+            ]]
+        },
+        "Text": "#G18# As a researcher,  I want to have the ability to interact with a revision control system so that I can keep track of changes to files over time.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "ability",
+                "revision control system"
+            ],
+            "Action": [
+                "have",
+                "interact"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [],
+            "Text": "#G18# As a researcher,  I want to have the ability to interact with a revision control system ",
+            "Triggers": [[
+                "researcher",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "ability"
+                ],
+                [
+                    "interact",
+                    "revision control system"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_99",
+        "Benefit": {
+            "Entity": ["more experienced researchers"],
+            "Action": ["learn"],
+            "Contains": [],
+            "Text": "I can learn from more experienced researchers.",
+            "Targets": []
+        },
+        "Text": "#G18# As a JuniorResearcher,  I want to have the ability to harvest knowledge from within the group, so that I can learn from more experienced researchers.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "ability",
+                "knowledge",
+                "group"
+            ],
+            "Action": [
+                "have",
+                "harvest"
+            ],
+            "Persona": ["JuniorResearcher"],
+            "Contains": [[
+                "group",
+                "knowledge"
+            ]],
+            "Text": "#G18# As a JuniorResearcher,  I want to have the ability to harvest knowledge from within the group, ",
+            "Triggers": [[
+                "JuniorResearcher",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "ability"
+                ],
+                [
+                    "harvest",
+                    "knowledge"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_100",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher, I want to secure remote access to the Neurohub node when working away from the laboratory",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "remote access",
+                "Neurohub node",
+                "laboratory"
+            ],
+            "Action": [
+                "secure",
+                "working away"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [[
+                "Neurohub node",
+                "remote access"
+            ]],
+            "Triggers": [[
+                "researcher",
+                "secure"
+            ]],
+            "Targets": [[
+                "secure",
+                "remote access"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_101",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher, I want to have a group-level repository for sharing papers/reviews/comments with other researchers.",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "group-level repository",
+                "papers",
+                "reviews",
+                "comments",
+                "other researchers"
+            ],
+            "Action": [
+                "have",
+                "sharing"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [
+                [
+                    "group-level repository",
+                    "papers"
+                ],
+                [
+                    "group-level repository",
+                    "reviews"
+                ],
+                [
+                    "group-level repository",
+                    "comments"
+                ],
+                [
+                    "other researchers",
+                    "papers"
+                ],
+                [
+                    "other researchers",
+                    "reviews"
+                ],
+                [
+                    "other researchers",
+                    "comments"
+                ]
+            ],
+            "Triggers": [[
+                "researcher",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "group-level repository"
+                ],
+                [
+                    "sharing",
+                    "papers"
+                ],
+                [
+                    "sharing",
+                    "reviews"
+                ],
+                [
+                    "sharing",
+                    "comments"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_102",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Targets": []
+        },
+        "Text": "#G18# As a researcher, I want to have the details of the workflow plan as well as the execution history and results recorded in Neurohub while executing a workflow",
+        "PID": "#G18#",
+        "Main": {
+            "Entity": [
+                "details",
+                "workflow plan",
+                "execution history",
+                "results",
+                "Neurohub",
+                "workflow"
+            ],
+            "Action": [
+                "have",
+                "executing"
+            ],
+            "Persona": ["researcher"],
+            "Contains": [
+                [
+                    "workflow plan",
+                    "details"
+                ],
+                [
+                    "Neurohub",
+                    "results"
+                ]
+            ],
+            "Triggers": [[
+                "researcher",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "details"
+                ],
+                [
+                    "have",
+                    "execution history"
+                ],
+                [
+                    "have",
+                    "results"
+                ],
+                [
+                    "executing",
+                    "workflow"
+                ]
+            ]
+        }
+    }
+]

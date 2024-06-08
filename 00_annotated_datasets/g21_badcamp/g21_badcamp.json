@@ -1,0 +1,3219 @@
+[
+    {
+        "US_Nr": "user_story_01",
+        "Benefit": {
+            "Entity": ["awesome sponsors."],
+            "Action": ["thank"],
+            "Contains": [],
+            "Text": "I can thank all the awesome sponsors.",
+            "Targets": [[
+                "thank",
+                "awesome sponsors."
+            ]]
+        },
+        "Text": "#G21# As a anonymoususer, I want to view a list of sponsors, so that I can thank all the awesome sponsors.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "list",
+                "sponsors"
+            ],
+            "Action": ["view"],
+            "Persona": ["anonymoususer"],
+            "Contains": [[
+                "list",
+                "sponsors"
+            ]],
+            "Text": "#G21# As a anonymoususer, I want to view a list of sponsors, ",
+            "Triggers": [[
+                "anonymoususer",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "list"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_02",
+        "Benefit": {
+            "Entity": [
+                "who",
+                "conference"
+            ],
+            "Action": [
+                "know",
+                "attending"
+            ],
+            "Contains": [],
+            "Text": "I know who is attending the conference.",
+            "Targets": [
+                [
+                    "know",
+                    "who"
+                ],
+                [
+                    "attending",
+                    "conference"
+                ]
+            ]
+        },
+        "Text": "#G21# As a anonymoususer, I want to view a list of user profiles, so that I know who is attending the conference.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "list",
+                "user profiles"
+            ],
+            "Action": ["view"],
+            "Persona": ["anonymoususer"],
+            "Contains": [[
+                "list",
+                "user profiles"
+            ]],
+            "Text": "#G21# As a anonymoususer, I want to view a list of user profiles, ",
+            "Triggers": [[
+                "anonymoususer",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "list"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_03",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["use"],
+            "Contains": [],
+            "Text": "It is easier to use.",
+            "Targets": [[
+                "use",
+                "website"
+            ]]
+        },
+        "Text": "#G21# As a trainingcoordinator, I want to email all the trainers at once from the website for info and updates, so that It is easier to use.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "trainers",
+                "website",
+                "info",
+                "updates"
+            ],
+            "Action": ["email"],
+            "Persona": ["trainingcoordinator"],
+            "Contains": [],
+            "Text": "#G21# As a trainingcoordinator, I want to email all the trainers at once from the website for info and updates, ",
+            "Triggers": [[
+                "trainingcoordinator",
+                "email"
+            ]],
+            "Targets": [[
+                "email",
+                "trainers"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_04",
+        "Benefit": {
+            "Entity": ["class"],
+            "Action": ["make it to"],
+            "Contains": [],
+            "Text": "I can make it to class on time.",
+            "Targets": [[
+                "make it to",
+                "class"
+            ]]
+        },
+        "Text": "#G21# As a attendee, I want to have a very clear map where the buildings and rooms are, so that I can make it to class on time.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "very clear map",
+                "buildings",
+                "rooms"
+            ],
+            "Action": ["have"],
+            "Persona": ["attendee"],
+            "Contains": [
+                [
+                    "very clear map",
+                    "buildings"
+                ],
+                [
+                    "very clear map",
+                    "rooms"
+                ]
+            ],
+            "Text": "#G21# As a attendee, I want to have a very clear map where the buildings and rooms are, ",
+            "Triggers": [[
+                "attendee",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "very clear map"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_05",
+        "Benefit": {
+            "Entity": [
+                "training coordinators",
+                "slides"
+            ],
+            "Action": ["links"],
+            "Contains": [],
+            "Text": "the training coordinators don't have to and links to slides",
+            "Targets": [[
+                "links",
+                "slides"
+            ]]
+        },
+        "Text": "#G21# As a trainer, I want to edit my training node myself, so that the training coordinators don't have to and links to slides.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": ["training node"],
+            "Action": ["edit"],
+            "Persona": ["trainer"],
+            "Contains": [],
+            "Text": "#G21# As a trainer, I want to edit my training node myself, ",
+            "Triggers": [[
+                "trainer",
+                "edit"
+            ]],
+            "Targets": [[
+                "edit",
+                "training node"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_06",
+        "Benefit": {
+            "Entity": ["duplicate spaces"],
+            "Action": [],
+            "Contains": [],
+            "Text": "we don't have duplicate spaces.",
+            "Targets": []
+        },
+        "Text": "#G21# As a trainee, I want to limit to one registration per day per authenticated user, so that we don't have duplicate spaces.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "one registration",
+                "authenticated user",
+                "day"
+            ],
+            "Action": ["limit"],
+            "Persona": ["trainee"],
+            "Contains": [
+                [
+                    "day",
+                    "one registration"
+                ],
+                [
+                    "authenticated user",
+                    "one registration"
+                ]
+            ],
+            "Text": "#G21# As a trainee, I want to limit to one registration per day per authenticated user, ",
+            "Triggers": [[
+                "trainee",
+                "limit"
+            ]],
+            "Targets": [[
+                "limit",
+                "one registration"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_07",
+        "Benefit": {
+            "Entity": [],
+            "Action": [
+                "see",
+                "attendend",
+                "refunded"
+            ],
+            "Contains": [],
+            "Text": "we can see if attendend, refunded, no show",
+            "Targets": []
+        },
+        "Text": "#G21# As a trainingcoordinator, I want to have an admin view that helps track registration status for each attendee so that, so that we can see if attendend, refunded, no show.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "admin view",
+                "registration status",
+                "each attendee"
+            ],
+            "Action": [
+                "have",
+                "helps track"
+            ],
+            "Persona": ["trainingcoordinator"],
+            "Contains": [[
+                "each attendee",
+                "registration status"
+            ]],
+            "Text": "#G21# As a trainingcoordinator, I want to have an admin view that helps track registration status for each attendee , ",
+            "Triggers": [[
+                "trainingcoordinator",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "admin view"
+                ],
+                [
+                    "helps track",
+                    "registration status"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_08",
+        "Benefit": {
+            "Entity": ["class"],
+            "Action": [],
+            "Contains": [[
+                "class",
+                "training waitlist"
+            ]],
+            "Text": "they can be considered for a class.",
+            "Targets": []
+        },
+        "Text": "#G21# As a attendee, I want to be added to a training waitlist, so that so they can be considered for a class.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": ["training waitlist"],
+            "Action": ["be added"],
+            "Persona": ["attendee"],
+            "Contains": [],
+            "Text": "#G21# As a attendee, I want to be added to a training waitlist,  so",
+            "Triggers": [[
+                "attendee",
+                "be added"
+            ]],
+            "Targets": [[
+                "be added",
+                "training waitlist"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_09",
+        "Benefit": {
+            "Entity": [],
+            "Action": [],
+            "Contains": [],
+            "Text": "they can be accountable.",
+            "Targets": []
+        },
+        "Text": "#G21# As a trainee, I want to must accept the cancellation terms with a checkbox, so that they can be accountable..",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "cancellation terms",
+                "checkbox"
+            ],
+            "Action": ["accept"],
+            "Persona": ["trainee"],
+            "Contains": [],
+            "Text": "#G21# As a trainee, I want to must accept the cancellation terms with a checkbox, ",
+            "Triggers": [[
+                "trainee",
+                "accept"
+            ]],
+            "Targets": [[
+                "accept",
+                "cancellation terms"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_10",
+        "Benefit": {
+            "Entity": [
+                "money",
+                "spots"
+            ],
+            "Action": [],
+            "Contains": [],
+            "Text": "we don't loose money or spots.",
+            "Targets": []
+        },
+        "Text": "#G21# As a trainingcoordinator, I want to tie in a cancellation deadline to whatever registration / cancellation workflow exists, so that so we don't loose money or spots.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "cancellation deadline",
+                "registration",
+                "cancellation workflow"
+            ],
+            "Action": ["tie in"],
+            "Persona": ["trainingcoordinator"],
+            "Contains": [
+                [
+                    "registration",
+                    "cancellation deadline"
+                ],
+                [
+                    "cancellation workflow",
+                    "cancellation deadline"
+                ]
+            ],
+            "Text": "#G21# As a trainingcoordinator, I want to tie in a cancellation deadline to whatever registration / cancellation workflow exists,  so",
+            "Triggers": [[
+                "trainingcoordinator",
+                "tie in"
+            ]],
+            "Targets": [[
+                "tie in",
+                "cancellation deadline"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_11",
+        "Benefit": {
+            "Entity": ["event experience"],
+            "Action": ["schedule"],
+            "Contains": [],
+            "Text": "they can schedule their event experience.",
+            "Targets": [[
+                "schedule",
+                "event experience"
+            ]]
+        },
+        "Text": "#G21# As a trainee, I want to add to \"my schedule\" if there is a schedule feature on the site, so that they can schedule their event experience.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "\"my schedule\"",
+                "schedule feature",
+                "site"
+            ],
+            "Action": ["add"],
+            "Persona": ["trainee"],
+            "Contains": [[
+                "site",
+                "schedule feature"
+            ]],
+            "Text": "#G21# As a trainee, I want to add to \"my schedule\" if there is a schedule feature on the site, ",
+            "Triggers": [[
+                "trainee",
+                "add"
+            ]],
+            "Targets": []
+        }
+    },
+    {
+        "US_Nr": "user_story_12",
+        "Benefit": {
+            "Entity": ["event experience"],
+            "Action": ["schedule"],
+            "Contains": [],
+            "Text": "they can schedule their event experience.",
+            "Targets": [[
+                "schedule",
+                "event experience"
+            ]]
+        },
+        "Text": "#G21# As a trainee, I want to see which trainings I have signed up for, so that they can schedule their event experience.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": ["trainings I have signed up"],
+            "Action": ["see"],
+            "Persona": ["trainee"],
+            "Contains": [],
+            "Text": "#G21# As a trainee, I want to see which trainings I have signed up for, ",
+            "Triggers": [[
+                "trainee",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "trainings I have signed up"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_13",
+        "Benefit": {
+            "Entity": [
+                "training coordinator",
+                "login info",
+                "environment setup",
+                "work"
+            ],
+            "Action": ["get"],
+            "Contains": [[
+                "environment setup",
+                "login info"
+            ]],
+            "Text": "the training coordinator doesn't have to do all the work to get login info for environment setup.",
+            "Targets": [[
+                "get",
+                "login info"
+            ]]
+        },
+        "Text": "#G21# As a trainer, I want to have a view that is attached to their training node that shows all attendee information Trainers can see all class attendance at first because there are so little trainers and they are trusted with privacy, so that the training coordinator doesn't have to do all the work to get login info for environment setup.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "view",
+                "training node",
+                "all attendee information",
+                "Trainers",
+                "all class attendance",
+                "trainers"
+            ],
+            "Action": [
+                "have",
+                "shows",
+                "see"
+            ],
+            "Persona": ["trainer"],
+            "Contains": [[
+                "training node",
+                "view"
+            ]],
+            "Text": "#G21# As a trainer, I want to have a view that is attached to their training node that shows all attendee information Trainers can see all class attendance at first because there are so little trainers and they are trusted with privacy, ",
+            "Triggers": [[
+                "trainer",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "view"
+                ],
+                [
+                    "shows",
+                    "all attendee information"
+                ],
+                [
+                    "see",
+                    "all class attendance"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_14",
+        "Benefit": {
+            "Entity": ["WTF"],
+            "Action": [
+                "see",
+                "happening"
+            ],
+            "Contains": [],
+            "Text": "I can see WTF is happening.",
+            "Targets": [[
+                "see",
+                "WTF"
+            ]]
+        },
+        "Text": "#G21# As a trainingcoordinator, I want to have an admin view where all trainee information is shown and can be filtered to show a single training session, so that I can see WTF is happening.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "admin view",
+                "all trainee information",
+                "single training session"
+            ],
+            "Action": [
+                "have",
+                "filtered",
+                "show"
+            ],
+            "Persona": ["trainingcoordinator"],
+            "Contains": [[
+                "admin view",
+                "all trainee information"
+            ]],
+            "Text": "#G21# As a trainingcoordinator, I want to have an admin view where all trainee information is shown and can be filtered to show a single training session, ",
+            "Triggers": [[
+                "trainingcoordinator",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "admin view"
+                ],
+                [
+                    "show",
+                    "single training session"
+                ],
+                [
+                    "filtered",
+                    "all trainee information"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_15",
+        "Benefit": {
+            "Entity": [
+                "right class",
+                "trainer",
+                "class"
+            ],
+            "Action": [
+                "choose",
+                "tweet",
+                "promote"
+            ],
+            "Contains": [],
+            "Text": "I can choose the right class, AND the trainer can tweet and promote their class.",
+            "Targets": [
+                [
+                    "choose",
+                    "right class"
+                ],
+                [
+                    "tweet",
+                    "class"
+                ],
+                [
+                    "promote",
+                    "class"
+                ]
+            ]
+        },
+        "Text": "#G21# As a anonymoususer, I want to have a dedicated page for each class to learn more about the offering The following information must be shown: Logo, title, trainers, location, possibly a map view, datetime, skill level, registrations remaining, link to register for class. The URL path should be SEO friendly /training/training-title, so that I can choose the right class, AND the trainer can tweet and promote their class.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "dedicated page",
+                "each class",
+                "offering",
+                "information",
+                "Logo",
+                "title",
+                "trainers",
+                "location",
+                "map view",
+                "datetime",
+                "skill level",
+                "registrations remaining",
+                "URL path",
+                "SEO friendly /training/training-title",
+                "link to register for class"
+            ],
+            "Action": [
+                "have",
+                "learn more"
+            ],
+            "Persona": ["anonymoususer"],
+            "Contains": [
+                [
+                    "each class",
+                    "dedicated page"
+                ],
+                [
+                    "dedicated page",
+                    "information"
+                ],
+                [
+                    "information",
+                    "Logo"
+                ],
+                [
+                    "information",
+                    "title"
+                ],
+                [
+                    "information",
+                    "trainers"
+                ],
+                [
+                    "information",
+                    "location"
+                ],
+                [
+                    "information",
+                    "map view"
+                ],
+                [
+                    "information",
+                    "datetime"
+                ],
+                [
+                    "information",
+                    "skill level"
+                ],
+                [
+                    "information",
+                    "registrations remaining"
+                ],
+                [
+                    "information",
+                    "link to register for class"
+                ],
+                [
+                    "dedicated page",
+                    "URL path"
+                ]
+            ],
+            "Text": "#G21# As a anonymoususer, I want to have a dedicated page for each class to learn more about the offering The following information must be shown: Logo, title, trainers, location, possibly a map view, datetime, skill level, registrations remaining, link to register for class. The URL path should be SEO friendly /training/training-title, ",
+            "Triggers": [[
+                "anonymoususer",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "dedicated page"
+                ],
+                [
+                    "learn more",
+                    "offering"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_16",
+        "Benefit": {
+            "Entity": [
+                "training",
+                "one page",
+                "class",
+                "one page"
+            ],
+            "Action": [
+                "shop",
+                "find"
+            ],
+            "Contains": [
+                [
+                    "one page",
+                    "training"
+                ],
+                [
+                    "one page",
+                    "class"
+                ],
+                [
+                    "training",
+                    "class"
+                ]
+            ],
+            "Text": "I can shop for training all with one page AND find their class on on one page.",
+            "Targets": [
+                [
+                    "shop",
+                    "training"
+                ],
+                [
+                    "find",
+                    "class"
+                ]
+            ]
+        },
+        "Text": "#G21# As a anonymoususer, I want to have the training options clearly marked for the following information: day and time of training, title, short summary, trainers, level, number of registrations, remaining registrations, location of training, link to full details of the training, register now link, so that I can shop for training all with one page AND find their class on on one page.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "training options",
+                "information",
+                "day and time of training",
+                "title",
+                "short summary",
+                "trainers",
+                "level",
+                "number of registrations",
+                "remaining registrations",
+                "register now link",
+                "training",
+                "location",
+                "training",
+                "link",
+                "full details"
+            ],
+            "Action": [
+                "have",
+                "clearly marked"
+            ],
+            "Persona": ["anonymoususer"],
+            "Contains": [
+                [
+                    "information",
+                    "day and time of training"
+                ],
+                [
+                    "information",
+                    "title"
+                ],
+                [
+                    "information",
+                    "short summary"
+                ],
+                [
+                    "information",
+                    "trainers"
+                ],
+                [
+                    "information",
+                    "level"
+                ],
+                [
+                    "information",
+                    "number of registrations"
+                ],
+                [
+                    "information",
+                    "remaining registrations"
+                ],
+                [
+                    "information",
+                    "location"
+                ],
+                [
+                    "training",
+                    "location"
+                ],
+                [
+                    "information",
+                    "register now link"
+                ],
+                [
+                    "training options",
+                    "information"
+                ],
+                [
+                    "information",
+                    "link"
+                ],
+                [
+                    "link",
+                    "full details"
+                ],
+                [
+                    "training",
+                    "full details"
+                ]
+            ],
+            "Text": "#G21# As a anonymoususer, I want to have the training options clearly marked for the following information: day and time of training, title, short summary, trainers, level, number of registrations, remaining registrations, location of training, link to full details of the training, register now link, ",
+            "Triggers": [[
+                "anonymoususer",
+                "have"
+            ]],
+            "Targets": [
+                [
+                    "have",
+                    "training options"
+                ],
+                [
+                    "clearly marked",
+                    "training options"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_17",
+        "Benefit": {
+            "Entity": [
+                "training",
+                "one page",
+                "call for trainings",
+                "selection"
+            ],
+            "Action": [
+                "shop",
+                "have"
+            ],
+            "Contains": [[
+                "one page",
+                "training"
+            ]],
+            "Text": "I can shop for training all with one page and we can have a call for trainings for selection.",
+            "Targets": [
+                [
+                    "shop",
+                    "training"
+                ],
+                [
+                    "have",
+                    "call for trainings"
+                ]
+            ]
+        },
+        "Text": "#G21# As a anonymoususer, I want to have a training landing page with an intro section and a list of all training offerings and promote call for trainings, so that I can shop for training all with one page and we can have a call for trainings for selection.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "training landing page",
+                "intro section",
+                "list",
+                "all training offerings",
+                "call for trainings"
+            ],
+            "Action": [
+                "have",
+                "promote"
+            ],
+            "Persona": ["anonymoususer"],
+            "Contains": [
+                [
+                    "training landing page",
+                    "intro section"
+                ],
+                [
+                    "training landing page",
+                    "list"
+                ],
+                [
+                    "list",
+                    "all training offerings"
+                ]
+            ],
+            "Text": "#G21# As a anonymoususer, I want to have a training landing page with an intro section and a list of all training offerings and promote call for trainings, ",
+            "Triggers": [
+                [
+                    "anonymoususer",
+                    "have"
+                ],
+                [
+                    "anonymoususer",
+                    "promote"
+                ]
+            ],
+            "Targets": [
+                [
+                    "have",
+                    "training landing page"
+                ],
+                [
+                    "promote",
+                    "call for trainings"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_18",
+        "Benefit": {
+            "Entity": ["training"],
+            "Action": ["take"],
+            "Contains": [],
+            "Text": "I can take training.",
+            "Targets": [[
+                "take",
+                "training"
+            ]]
+        },
+        "Text": "#G21# As a anonymoususer, I want to have a link on the home page to a list of training options, so that I can take training.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "link",
+                "home page",
+                "list",
+                "training options"
+            ],
+            "Action": ["have"],
+            "Persona": ["anonymoususer"],
+            "Contains": [
+                [
+                    "home page",
+                    "link"
+                ],
+                [
+                    "list",
+                    "training options"
+                ],
+                [
+                    "list",
+                    "link"
+                ]
+            ],
+            "Text": "#G21# As a anonymoususer, I want to have a link on the home page to a list of training options, ",
+            "Triggers": [[
+                "anonymoususer",
+                "have"
+            ]],
+            "Targets": [[
+                "have",
+                "link"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_19",
+        "Benefit": {
+            "Entity": ["friends"],
+            "Action": ["code"],
+            "Contains": [],
+            "Text": "I can code with my friends.",
+            "Targets": []
+        },
+        "Text": "#G21# As a anonymoususer, I want to find out where the coding lounge is and what time it is open, so that I can code with my friends.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "where",
+                "coding lounge",
+                "what time"
+            ],
+            "Action": ["find out"],
+            "Persona": ["anonymoususer"],
+            "Contains": [],
+            "Text": "#G21# As a anonymoususer, I want to find out where the coding lounge is and what time it is open, ",
+            "Triggers": [[
+                "anonymoususer",
+                "find out"
+            ]],
+            "Targets": [
+                [
+                    "find out",
+                    "where"
+                ],
+                [
+                    "find out",
+                    "what time"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_20",
+        "Benefit": {
+            "Entity": [
+                "people",
+                "monies"
+            ],
+            "Action": ["get"],
+            "Contains": [[
+                "people",
+                "monies"
+            ]],
+            "Text": "people get their monies back.",
+            "Targets": [[
+                "get",
+                "monies"
+            ]]
+        },
+        "Text": "#G21# As a administrator, I want to refund sponsorship money that was processed via stripe, so that people get their monies back.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "sponsorship money",
+                "stripe"
+            ],
+            "Action": ["refund"],
+            "Persona": ["administrator"],
+            "Contains": [[
+                "stripe",
+                "sponsorship money"
+            ]],
+            "Text": "#G21# As a administrator, I want to refund sponsorship money that was processed via stripe, ",
+            "Triggers": [[
+                "administrator",
+                "refund"
+            ]],
+            "Targets": [[
+                "refund",
+                "sponsorship money"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_21",
+        "Benefit": {
+            "Entity": ["sponsor role"],
+            "Action": ["pay"],
+            "Contains": [],
+            "Text": "I can pay for and become a sponsor role.",
+            "Targets": [[
+                "pay",
+                "sponsor role"
+            ]]
+        },
+        "Text": "#G21# As a authenticateduser, I want to find a link on the sponsorships page to become a $350 level sponsor, so that I can pay for and become a sponsor role.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "link",
+                "sponsorships page",
+                "$350 level sponsor"
+            ],
+            "Action": ["find"],
+            "Persona": ["authenticateduser"],
+            "Contains": [[
+                "sponsorships page",
+                "link"
+            ]],
+            "Text": "#G21# As a authenticateduser, I want to find a link on the sponsorships page to become a $350 level sponsor, ",
+            "Triggers": [[
+                "authenticateduser",
+                "find"
+            ]],
+            "Targets": [[
+                "find",
+                "link"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_22",
+        "Benefit": {
+            "Entity": [
+                "who",
+                "sponsor organization"
+            ],
+            "Action": [
+                "know",
+                "attending"
+            ],
+            "Contains": [[
+                "sponsor organization",
+                "who"
+            ]],
+            "Text": "I know who from this sponsor organization is attending.",
+            "Targets": [[
+                "know",
+                "who"
+            ]]
+        },
+        "Text": "#G21# As a anonymoususer, I want to See a list of attendees associated with this company, so that I know who from this sponsor organization is attending.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "list",
+                "attendees",
+                "company"
+            ],
+            "Action": ["See"],
+            "Persona": ["anonymoususer"],
+            "Contains": [
+                [
+                    "list",
+                    "attendees"
+                ],
+                [
+                    "company",
+                    "attendees"
+                ]
+            ],
+            "Text": "#G21# As a anonymoususer, I want to See a list of attendees associated with this company, ",
+            "Triggers": [[
+                "anonymoususer",
+                "See"
+            ]],
+            "Targets": [[
+                "See",
+                "list"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_23",
+        "Benefit": {
+            "Entity": [
+                "sponsor",
+                "badcamp personnel",
+                "sponsorship"
+            ],
+            "Action": ["get"],
+            "Contains": [],
+            "Text": "I can easily become a sponsor at this level without having to interface with badcamp personnel to get a sponsorship.",
+            "Targets": [[
+                "get",
+                "sponsorship"
+            ]]
+        },
+        "Text": "#G21# As a authenticateduser, I want to identify myself as and pay for a $350 company sponsorship, so that I can easily become a sponsor at this level without having to interface with badcamp personnel to get a sponsorship.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "myself",
+                "$350 company sponsorship"
+            ],
+            "Action": [
+                "identify",
+                "pay"
+            ],
+            "Persona": ["authenticateduser"],
+            "Contains": [],
+            "Text": "#G21# As a authenticateduser, I want to identify myself as and pay for a $350 company sponsorship, ",
+            "Triggers": [
+                [
+                    "authenticateduser",
+                    "identify"
+                ],
+                [
+                    "authenticateduser",
+                    "pay"
+                ]
+            ],
+            "Targets": [
+                [
+                    "identify",
+                    "myself"
+                ],
+                [
+                    "pay",
+                    "$350 company sponsorship"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_24",
+        "Benefit": {
+            "Entity": [
+                "location details",
+                "users",
+                "what they're looking for"
+            ],
+            "Action": [
+                "provide",
+                "help",
+                "find"
+            ],
+            "Contains": [[
+                "what they're looking for",
+                "location details"
+            ]],
+            "Text": "I can provide location details to help users find what they're looking for.",
+            "Targets": [
+                [
+                    "provide",
+                    "location details"
+                ],
+                [
+                    "help",
+                    "users"
+                ],
+                [
+                    "find",
+                    "what they're looking for"
+                ]
+            ]
+        },
+        "Text": "#G21# As a administrator, I want to create and maintain venues, so that I can provide location details to help users find what they're looking for.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": ["venues"],
+            "Action": [
+                "create",
+                "maintain"
+            ],
+            "Persona": ["administrator"],
+            "Contains": [],
+            "Text": "#G21# As a administrator, I want to create and maintain venues, ",
+            "Triggers": [
+                [
+                    "administrator",
+                    "create"
+                ],
+                [
+                    "administrator",
+                    "maintain"
+                ]
+            ],
+            "Targets": [
+                [
+                    "create",
+                    "venues"
+                ],
+                [
+                    "maintain",
+                    "venues"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_25",
+        "Benefit": {
+            "Entity": [
+                "sense",
+                "location",
+                "events"
+            ],
+            "Action": [
+                "get",
+                "see",
+                "happening"
+            ],
+            "Contains": [],
+            "Text": "I can get a sense of the location and see the events happening there.",
+            "Targets": [
+                [
+                    "get",
+                    "sense"
+                ],
+                [
+                    "see",
+                    "events"
+                ]
+            ]
+        },
+        "Text": "#G21# As a anonymoususer, I want to view venue details, so that I can get a sense of the location and see the events happening there.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": ["venue details"],
+            "Action": ["view"],
+            "Persona": ["anonymoususer"],
+            "Contains": [],
+            "Text": "#G21# As a anonymoususer, I want to view venue details, ",
+            "Triggers": [[
+                "anonymoususer",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "venue details"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_26",
+        "Benefit": {
+            "Entity": [
+                "where",
+                "sponsor",
+                "thought leaders",
+                "where"
+            ],
+            "Action": [
+                "know",
+                "engage"
+            ],
+            "Contains": [],
+            "Text": "I know where I can engage with this sponsor and where they are thought leaders.",
+            "Targets": [
+                [
+                    "know",
+                    "where"
+                ],
+                [
+                    "engage",
+                    "sponsor"
+                ],
+                [
+                    "know",
+                    "where"
+                ]
+            ]
+        },
+        "Text": "#G21# As a anonymoususer, I want to see a list of the sessions associated with sponsor attendees, so that I know where I can engage with this sponsor and where they are thought leaders.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "list",
+                "sessions",
+                "sponsor attendees"
+            ],
+            "Action": ["see"],
+            "Persona": ["anonymoususer"],
+            "Contains": [
+                [
+                    "list",
+                    "sessions"
+                ],
+                [
+                    "list",
+                    "sponsor attendees"
+                ]
+            ],
+            "Text": "#G21# As a anonymoususer, I want to see a list of the sessions associated with sponsor attendees, ",
+            "Triggers": [[
+                "anonymoususer",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "list"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_27",
+        "Benefit": {
+            "Entity": ["sponsorship"],
+            "Action": ["pay"],
+            "Contains": [],
+            "Text": "pay for my sponsorship.",
+            "Targets": [[
+                "pay",
+                "sponsorship"
+            ]]
+        },
+        "Text": "#G21# As a authenticateduser, I want to See a payment page to pay for my individual sponsorships as the third step of the registration process so that pay for my sponsorship.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "payment page",
+                "individual sponsorships",
+                "third step",
+                "registration process"
+            ],
+            "Action": [
+                "See",
+                "pay"
+            ],
+            "Persona": ["authenticateduser"],
+            "Contains": [[
+                "registration process",
+                "third step"
+            ]],
+            "Text": "#G21# As a authenticateduser, I want to See a payment page to pay for my individual sponsorships as the third step of the registration process ",
+            "Triggers": [[
+                "authenticateduser",
+                "See"
+            ]],
+            "Targets": [
+                [
+                    "See",
+                    "payment page"
+                ],
+                [
+                    "pay",
+                    "individual sponsorships"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_28",
+        "Benefit": {
+            "Entity": ["sponsor detail page"],
+            "Action": [],
+            "Contains": [[
+                "sponsor detail page",
+                "sponsors"
+            ]],
+            "Text": "They will be featured on the sponsor detail page.",
+            "Targets": []
+        },
+        "Text": "#G21# As a administrator, I want to assign sponsors to events, trainings and summits so that They will be featured on the sponsor detail page.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "sponsors",
+                "events",
+                "trainings",
+                "summits"
+            ],
+            "Action": ["assign"],
+            "Persona": ["administrator"],
+            "Contains": [
+                [
+                    "events",
+                    "sponsors"
+                ],
+                [
+                    "trainings",
+                    "sponsors"
+                ],
+                [
+                    "summits",
+                    "sponsors"
+                ]
+            ],
+            "Text": "#G21# As a administrator, I want to assign sponsors to events, trainings and summits ",
+            "Triggers": [[
+                "administrator",
+                "assign"
+            ]],
+            "Targets": [[
+                "assign",
+                "sponsors"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_29",
+        "Benefit": {
+            "Entity": [
+                "where",
+                "sponsor",
+                "where",
+                "thought leaders"
+            ],
+            "Action": [
+                "know",
+                "engage"
+            ],
+            "Contains": [],
+            "Text": "I know where I can engage with this sponsor and where they are thought leaders.",
+            "Targets": [
+                [
+                    "know",
+                    "where"
+                ],
+                [
+                    "engage",
+                    "sponsor"
+                ],
+                [
+                    "know",
+                    "where"
+                ]
+            ]
+        },
+        "Text": "#G21# As a anonymoususer, I want to see all events, trainings and summits that a sponsor is sponsoring so that I know where I can engage with this sponsor and where they are thought leaders.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "all events",
+                "trainings",
+                "summits",
+                "sponsor"
+            ],
+            "Action": [
+                "see",
+                "sponsoring"
+            ],
+            "Persona": ["anonymoususer"],
+            "Contains": [],
+            "Text": "#G21# As a anonymoususer, I want to see all events, trainings and summits that a sponsor is sponsoring ",
+            "Triggers": [[
+                "anonymoususer",
+                "see"
+            ]],
+            "Targets": [
+                [
+                    "see",
+                    "all events"
+                ],
+                [
+                    "see",
+                    "trainings"
+                ],
+                [
+                    "see",
+                    "summits"
+                ],
+                [
+                    "sponsoring",
+                    "all events"
+                ],
+                [
+                    "sponsoring",
+                    "trainings"
+                ],
+                [
+                    "sponsoring",
+                    "summits"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_30",
+        "Benefit": {
+            "Entity": ["individual sponsorship"],
+            "Action": ["pay"],
+            "Contains": [],
+            "Text": "I can pay for an individual sponsorship.",
+            "Targets": [[
+                "pay",
+                "individual sponsorship"
+            ]]
+        },
+        "Text": "#G21# As a authenticateduser, I want to Enter payment information and have my card charged for an individual sponsorship, so that I can pay for an individual sponsorship.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "payment information",
+                "card",
+                "individual sponsorship"
+            ],
+            "Action": [
+                "Enter",
+                "have",
+                "charged"
+            ],
+            "Persona": ["authenticateduser"],
+            "Contains": [],
+            "Text": "#G21# As a authenticateduser, I want to Enter payment information and have my card charged for an individual sponsorship, ",
+            "Triggers": [
+                [
+                    "authenticateduser",
+                    "Enter"
+                ],
+                [
+                    "authenticateduser",
+                    "have"
+                ]
+            ],
+            "Targets": [
+                [
+                    "Enter",
+                    "payment information"
+                ],
+                [
+                    "have",
+                    "card"
+                ],
+                [
+                    "charged",
+                    "card"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_31",
+        "Benefit": {
+            "Entity": ["level of attendance"],
+            "Action": ["show off"],
+            "Contains": [[
+                "sponsorship page",
+                "level of attendance"
+            ]],
+            "Text": "I can show off our level of attendance.",
+            "Targets": [[
+                "show off",
+                "level of attendance"
+            ]]
+        },
+        "Text": "#G21# As a sponsor, I want to link BADCamp attendees to my sponsorship page, so that I can show off our level of attendance.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "BADCamp attendees",
+                "sponsorship page"
+            ],
+            "Action": ["link"],
+            "Persona": ["sponsor"],
+            "Contains": [],
+            "Text": "#G21# As a sponsor, I want to link BADCamp attendees to my sponsorship page, ",
+            "Triggers": [[
+                "sponsor",
+                "link"
+            ]],
+            "Targets": [[
+                "link",
+                "BADCamp attendees"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_32",
+        "Benefit": {
+            "Entity": [
+                "other Drupalists",
+                "BADCamp"
+            ],
+            "Action": ["connect"],
+            "Contains": [[
+                "BADCamp",
+                "other Drupalists"
+            ]],
+            "Text": "I can connect with other Drupalists at BADCamp.",
+            "Targets": [[
+                "connect",
+                "other Drupalists"
+            ]]
+        },
+        "Text": "#G21# As a authenticateduser, I want to update my user profile, so that I can connect with other Drupalists at BADCamp.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": ["user profile"],
+            "Action": ["update"],
+            "Persona": ["authenticateduser"],
+            "Contains": [],
+            "Text": "#G21# As a authenticateduser, I want to update my user profile, ",
+            "Triggers": [[
+                "authenticateduser",
+                "update"
+            ]],
+            "Targets": [[
+                "update",
+                "user profile"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_33",
+        "Benefit": {
+            "Entity": [
+                "latest communications",
+                "BADCamp"
+            ],
+            "Action": ["stay up to date"],
+            "Contains": [[
+                "BADCamp",
+                "latest communications"
+            ]],
+            "Text": " can stay up to date with the latest communications about BADCamp.",
+            "Targets": [[
+                "stay up to date",
+                "latest communications"
+            ]]
+        },
+        "Text": "#G21# As a anonymoususer, I want to sign up for the BADCamp newsletter, so that I can stay up to date with the latest communications about BADCamp.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": ["BADCamp newsletter"],
+            "Action": ["sign up"],
+            "Persona": ["anonymoususer"],
+            "Contains": [],
+            "Text": "#G21# As a anonymoususer, I want to sign up for the BADCamp newsletter,  ",
+            "Triggers": [[
+                "anonymoususer",
+                "sign up"
+            ]],
+            "Targets": [[
+                "sign up",
+                "BADCamp newsletter"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_34",
+        "Benefit": {
+            "Entity": ["Drupal Planet blog"],
+            "Action": ["listed"],
+            "Contains": [[
+                "Drupal Planet blog",
+                "blog posts"
+            ]],
+            "Text": "they will be listed on the Drupal Planet blog.",
+            "Targets": [[
+                "listed",
+                "blog posts"
+            ]]
+        },
+        "Text": "#G21# As a administrator, I want to tag my blog posts for consumption by Drupal Planet, so that they will be listed on the Drupal Planet blog.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "blog posts",
+                "Drupal Planet"
+            ],
+            "Action": ["tag"],
+            "Persona": ["administrator"],
+            "Contains": [],
+            "Text": "#G21# As a administrator, I want to tag my blog posts for consumption by Drupal Planet, ",
+            "Triggers": [[
+                "administrator",
+                "tag"
+            ]],
+            "Targets": [[
+                "tag",
+                "blog posts"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_35",
+        "Benefit": {
+            "Entity": [
+                "latest information",
+                "BADCamp",
+                "public"
+            ],
+            "Action": ["share"],
+            "Contains": [
+                [
+                    "BADCamp",
+                    "latest information"
+                ],
+                [
+                    "blog posts",
+                    "latest information"
+                ],
+                [
+                    "public",
+                    "latest information"
+                ]
+            ],
+            "Text": "I can share the latest information about BADCamp with the public.",
+            "Targets": [[
+                "share",
+                "latest information"
+            ]]
+        },
+        "Text": "#G21# As a administrator, I want to create blog posts, so that I can share the latest information about BADCamp with the public.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": ["blog posts"],
+            "Action": ["create"],
+            "Persona": ["administrator"],
+            "Contains": [],
+            "Text": "#G21# As a administrator, I want to create blog posts, ",
+            "Triggers": [[
+                "administrator",
+                "create"
+            ]],
+            "Targets": [[
+                "create",
+                "blog posts"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_36",
+        "Benefit": {
+            "Entity": [
+                "latest happenings",
+                "BADCamp"
+            ],
+            "Action": [],
+            "Contains": [
+                [
+                    "blog",
+                    "latest happenings"
+                ],
+                [
+                    "BADCamp",
+                    "latest happenings"
+                ]
+            ],
+            "Text": "I can stay informed about all the latest happenings with BADCamp.",
+            "Targets": []
+        },
+        "Text": "#G21# As a anonymoususer, I want to read the blog, so that I can stay informed about all the latest happenings with BADCamp.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": ["blog"],
+            "Action": ["read"],
+            "Persona": ["anonymoususer"],
+            "Contains": [],
+            "Text": "#G21# As a anonymoususer, I want to read the blog, ",
+            "Triggers": [[
+                "anonymoususer",
+                "read"
+            ]],
+            "Targets": [[
+                "read",
+                "blog"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_37",
+        "Benefit": {
+            "Entity": [
+                "exposure",
+                "potential customers",
+                "Drupal credentials"
+            ],
+            "Action": [
+                "get",
+                "tout"
+            ],
+            "Contains": [[
+                "exposure",
+                "potential customers"
+            ]],
+            "Text": "I can get exposure to potential customers and otherwise tout my Drupal credentials.",
+            "Targets": [
+                [
+                    "get",
+                    "exposure"
+                ],
+                [
+                    "tout",
+                    "Drupal credentials"
+                ]
+            ]
+        },
+        "Text": "#G21# As a sponsor, I want to sponsor a summit that matches my brand, so that I can get exposure to potential customers and otherwise tout my Drupal credentials.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "summit",
+                "brand"
+            ],
+            "Action": ["sponsor"],
+            "Persona": ["sponsor"],
+            "Contains": [],
+            "Text": "#G21# As a sponsor, I want to sponsor a summit that matches my brand, ",
+            "Triggers": [[
+                "sponsor",
+                "sponsor"
+            ]],
+            "Targets": [[
+                "sponsor",
+                "summit"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_38",
+        "Benefit": {
+            "Entity": [
+                "seat",
+                "summit"
+            ],
+            "Action": ["reserve"],
+            "Contains": [[
+                "summit",
+                "seat"
+            ]],
+            "Text": "I can reserve my seat at the summit.",
+            "Targets": [[
+                "reserve",
+                "seat"
+            ]]
+        },
+        "Text": "#G21# As a attendee, I want to register for a summit, so that I can reserve my seat at the summit.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": ["summit"],
+            "Action": ["register for"],
+            "Persona": ["attendee"],
+            "Contains": [],
+            "Text": "#G21# As a attendee, I want to register for a summit, ",
+            "Triggers": [[
+                "attendee",
+                "register for"
+            ]],
+            "Targets": [[
+                "register for",
+                "summit"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_39",
+        "Benefit": {
+            "Entity": [
+                "summit",
+                "event"
+            ],
+            "Action": ["get to"],
+            "Contains": [[
+                "summit",
+                "event"
+            ]],
+            "Text": "I can get to the summit easily on the day of the event.",
+            "Targets": [[
+                "get to",
+                "summit"
+            ]]
+        },
+        "Text": "#G21# As a attendee, I want to get detailed directions to the summit venue, so that I can get to the summit easily on the day of the event.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "detailed directions",
+                "summit venue"
+            ],
+            "Action": ["get"],
+            "Persona": ["attendee"],
+            "Contains": [],
+            "Text": "#G21# As a attendee, I want to get detailed directions to the summit venue, ",
+            "Triggers": [[
+                "attendee",
+                "get"
+            ]],
+            "Targets": [[
+                "get",
+                "detailed directions"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_40",
+        "Benefit": {
+            "Entity": [
+                "attendence",
+                "double-booking",
+                "training",
+                "another summit"
+            ],
+            "Action": [
+                "confirm",
+                "prevent"
+            ],
+            "Contains": [
+                [
+                    "training",
+                    "double-booking"
+                ],
+                [
+                    "another summit",
+                    "double-booking"
+                ]
+            ],
+            "Text": "I can confirm my attendence and prevent myself from accidentally double-booking with a training or another summit.",
+            "Targets": [
+                [
+                    "confirm",
+                    "attendence"
+                ],
+                [
+                    "prevent",
+                    "double-booking"
+                ]
+            ]
+        },
+        "Text": "#G21# As a attendee, I want to see what summits I'm signed up for, so that I can confirm my attendence and prevent myself from accidentally double-booking with a training or another summit.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": ["summits"],
+            "Action": [
+                "see",
+                "signed up"
+            ],
+            "Persona": ["attendee"],
+            "Contains": [],
+            "Text": "#G21# As a attendee, I want to see what summits I'm signed up for, ",
+            "Triggers": [[
+                "attendee",
+                "see"
+            ]],
+            "Targets": [
+                [
+                    "see",
+                    "summits"
+                ],
+                [
+                    "signed up",
+                    "summits"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_41",
+        "Benefit": {
+            "Entity": [
+                "attendees",
+                "email",
+                "event"
+            ],
+            "Action": ["communicate"],
+            "Contains": [[
+                "attendees",
+                "email"
+            ]],
+            "Text": "I can communicate with my attendees by email prior to the event.",
+            "Targets": [[
+                "communicate",
+                "attendees"
+            ]]
+        },
+        "Text": "#G21# As a summit coordinator, I want to see a list of attendees signed up for my summit, so that I can communicate with my attendees by email prior to the event.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "list",
+                "summit",
+                "attendees signed up"
+            ],
+            "Action": ["see"],
+            "Persona": ["summit coordinator"],
+            "Contains": [
+                [
+                    "list",
+                    "attendees signed up"
+                ],
+                [
+                    "summit",
+                    "attendees signed up"
+                ]
+            ],
+            "Text": "#G21# As a summit coordinator, I want to see a list of attendees signed up for my summit, ",
+            "Triggers": [[
+                "summit coordinator",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "list"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_42",
+        "Benefit": {
+            "Entity": [
+                "potential attendees",
+                "summit"
+            ],
+            "Action": [
+                "inform",
+                "attend"
+            ],
+            "Contains": [],
+            "Text": "I can inform potential attendees on why they should attend my summit.",
+            "Targets": [
+                [
+                    "inform",
+                    "potential attendees"
+                ],
+                [
+                    "attend",
+                    "summit"
+                ]
+            ]
+        },
+        "Text": "#G21# As a summit coordinator, I want to list basic information about my summit, so that I can inform potential attendees on why they should attend my summit.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "basic information",
+                "summit"
+            ],
+            "Action": ["list"],
+            "Persona": ["summit coordinator"],
+            "Contains": [[
+                "summit",
+                "basic information"
+            ]],
+            "Text": "#G21# As a summit coordinator, I want to list basic information about my summit, ",
+            "Triggers": [[
+                "summit coordinator",
+                "list"
+            ]],
+            "Targets": [[
+                "list",
+                "basic information"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_43",
+        "Benefit": {
+            "Entity": [
+                "sponsors",
+                "future years"
+            ],
+            "Action": [
+                "make sure",
+                "sponsoring"
+            ],
+            "Contains": [],
+            "Text": "I can make sure sponsors feel rewarded and will be interested in sponsoring in future years.",
+            "Targets": [[
+                "sponsoring",
+                "future years"
+            ]]
+        },
+        "Text": "#G21# As a summit coordinator, I want to list sponsors for my summit, so that I can make sure sponsors feel rewarded and will be interested in sponsoring in future years.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "sponsors",
+                "summit"
+            ],
+            "Action": ["list"],
+            "Persona": ["summit coordinator"],
+            "Contains": [[
+                "summit",
+                "sponsors"
+            ]],
+            "Text": "#G21# As a summit coordinator, I want to list sponsors for my summit, ",
+            "Triggers": [[
+                "summit coordinator",
+                "list"
+            ]],
+            "Targets": [[
+                "list",
+                "sponsors"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_44",
+        "Benefit": {
+            "Entity": [
+                "attendees",
+                "positive feedback",
+                "presenters",
+                "participation"
+            ],
+            "Action": [
+                "entice",
+                "give",
+                "encourage"
+            ],
+            "Contains": [[
+                "presenters",
+                "positive feedback"
+            ]],
+            "Text": "I can entice attendees and give positive feedback to presenters to encourage participation.",
+            "Targets": [
+                [
+                    "entice",
+                    "attendees"
+                ],
+                [
+                    "give",
+                    "positive feedback"
+                ],
+                [
+                    "encourage",
+                    "participation"
+                ]
+            ]
+        },
+        "Text": "#G21# As a summit coordinator, I want to list an agenda for my summit, so that I can entice attendees and give positive feedback to presenters to encourage participation.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "agenda",
+                "summit"
+            ],
+            "Action": ["list"],
+            "Persona": ["summit coordinator"],
+            "Contains": [[
+                "summit",
+                "agenda"
+            ]],
+            "Text": "#G21# As a summit coordinator, I want to list an agenda for my summit, ",
+            "Triggers": [[
+                "summit coordinator",
+                "list"
+            ]],
+            "Targets": [[
+                "list",
+                "agenda"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_45",
+        "Benefit": {
+            "Entity": ["spot"],
+            "Action": [
+                "register in-time",
+                "reserve",
+                "make sure"
+            ],
+            "Contains": [],
+            "Text": "I can make sure to register in-time to reserve my spot.",
+            "Targets": [[
+                "reserve",
+                "spot"
+            ]]
+        },
+        "Text": "#G21# As a anonymoususer, I want to see how many seats are left for the summit, so that I can make sure to register in-time to reserve my spot.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "summit",
+                "how many",
+                "seats"
+            ],
+            "Action": ["see"],
+            "Persona": ["anonymoususer"],
+            "Contains": [[
+                "summit",
+                "seats"
+            ]],
+            "Text": "#G21# As a anonymoususer, I want to see how many seats are left for the summit, ",
+            "Triggers": [[
+                "anonymoususer",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "how many"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_46",
+        "Benefit": {
+            "Entity": [
+                "summit I'm interested",
+                "interests",
+                "event",
+                "day-of knowledge",
+                "me",
+                "location"
+            ],
+            "Action": [
+                "learn more",
+                "help",
+                "get to",
+                "register for"
+            ],
+            "Contains": [],
+            "Text": "I can learn more about the summit I'm interested in to see if it matches my interests, register for the event, and get day-of knowledge to help me get to the location.",
+            "Targets": [
+                [
+                    "learn more",
+                    "summit I'm interested"
+                ],
+                [
+                    "help",
+                    "me"
+                ],
+                [
+                    "get to",
+                    "location"
+                ],
+                [
+                    "register for",
+                    "event"
+                ]
+            ]
+        },
+        "Text": "#G21# As a anonymoususer, I want to see specific details on summits, so that I can learn more about the summit I'm interested in to see if it matches my interests, register for the event, and get day-of knowledge to help me get to the location.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "specific details",
+                "summits"
+            ],
+            "Action": ["see"],
+            "Persona": ["anonymoususer"],
+            "Contains": [[
+                "summits",
+                "specific details"
+            ]],
+            "Text": "#G21# As a anonymoususer, I want to see specific details on summits, ",
+            "Triggers": [[
+                "anonymoususer",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "specific details"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_47",
+        "Benefit": {
+            "Entity": ["summit I might be interested"],
+            "Action": [
+                "determine",
+                "attend"
+            ],
+            "Contains": [],
+            "Text": "I can determine which summit I might be interested and able to attend.",
+            "Targets": [
+                [
+                    "determine",
+                    "summit I might be interested"
+                ],
+                [
+                    "attend",
+                    "summit I might be interested"
+                ]
+            ]
+        },
+        "Text": "#G21# As a anonymoususer, I want to see a list of all the summits, so that I can determine which summit I might be interested and able to attend.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "list",
+                "summits"
+            ],
+            "Action": ["see"],
+            "Persona": ["anonymoususer"],
+            "Contains": [[
+                "list",
+                "summits"
+            ]],
+            "Text": "#G21# As a anonymoususer, I want to see a list of all the summits, ",
+            "Triggers": [[
+                "anonymoususer",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "list"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_48",
+        "Benefit": {
+            "Entity": [
+                "right level",
+                "sponsorship",
+                "organization"
+            ],
+            "Action": ["determine"],
+            "Contains": [
+                [
+                    "sponsorship",
+                    "right level"
+                ],
+                [
+                    "organization",
+                    "sponsorship"
+                ]
+            ],
+            "Text": "I can determine the right level of sponsorship for my organization.",
+            "Targets": [[
+                "determine",
+                "right level"
+            ]]
+        },
+        "Text": "#G21# As a anonymoususer, I want to learn about sponsorship levels, so that I can determine the right level of sponsorship for my organization.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": ["sponsorship levels"],
+            "Action": ["learn"],
+            "Persona": ["anonymoususer"],
+            "Contains": [],
+            "Text": "#G21# As a anonymoususer, I want to learn about sponsorship levels, ",
+            "Triggers": [[
+                "anonymoususer",
+                "learn"
+            ]],
+            "Targets": [[
+                "learn",
+                "sponsorship levels"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_49",
+        "Benefit": {
+            "Entity": [
+                "HTML",
+                "content"
+            ],
+            "Action": ["update"],
+            "Contains": [],
+            "Text": "I don't have to know HTML to update my content.",
+            "Targets": [[
+                "update",
+                "content"
+            ]]
+        },
+        "Text": "#G21# As a authenticateduser, I want to use a WYSIWYG editor for all long-form content, so that I don't have to know HTML to update my content.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "WYSIWYG editor",
+                "all long-form content"
+            ],
+            "Action": ["use"],
+            "Persona": ["authenticateduser"],
+            "Contains": [[
+                "WYSIWYG editor",
+                "all long-form content"
+            ]],
+            "Text": "#G21# As a authenticateduser, I want to use a WYSIWYG editor for all long-form content, ",
+            "Triggers": [[
+                "authenticateduser",
+                "use"
+            ]],
+            "Targets": [[
+                "use",
+                "WYSIWYG editor"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_50",
+        "Benefit": {
+            "Entity": [
+                "recruits",
+                "organization"
+            ],
+            "Action": ["learn more"],
+            "Contains": [],
+            "Text": "recruits can learn more about my organization.",
+            "Targets": [[
+                "learn more",
+                "organization"
+            ]]
+        },
+        "Text": "#G21# As a sponsor, I want to Link to my sponsorship profile from my job listings, so that recruits can learn more about my organization.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "sponsorship profile",
+                "job listings"
+            ],
+            "Action": ["Link"],
+            "Persona": ["sponsor"],
+            "Contains": [[
+                "job listings",
+                "sponsorship profile"
+            ]],
+            "Text": "#G21# As a sponsor, I want to Link to my sponsorship profile from my job listings, ",
+            "Triggers": [[
+                "sponsor",
+                "Link"
+            ]],
+            "Targets": [[
+                "Link",
+                "sponsorship profile"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_51",
+        "Benefit": {
+            "Entity": [
+                "opportunty",
+                "job listing",
+                "BADCamp site"
+            ],
+            "Action": [
+                "have",
+                "post"
+            ],
+            "Contains": [[
+                "BADCamp site",
+                "job listing"
+            ]],
+            "Text": "I have the opportunty to post my job listing on the BADCamp site.",
+            "Targets": [
+                [
+                    "have",
+                    "opportunty"
+                ],
+                [
+                    "post",
+                    "job listing"
+                ]
+            ]
+        },
+        "Text": "#G21# As a anonymoususer, I want to learn about posting jobs as a sponsor and contact the sponsorship person, so that I have the opportunty to post my job listing on the BADCamp site.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "posting jobs",
+                "sponsor",
+                "sponsorship person"
+            ],
+            "Action": [
+                "learn",
+                "contact"
+            ],
+            "Persona": ["anonymoususer"],
+            "Contains": [],
+            "Text": "#G21# As a anonymoususer, I want to learn about posting jobs as a sponsor and contact the sponsorship person, ",
+            "Triggers": [
+                [
+                    "anonymoususer",
+                    "learn"
+                ],
+                [
+                    "anonymoususer",
+                    "contact"
+                ]
+            ],
+            "Targets": [
+                [
+                    "learn",
+                    "posting jobs"
+                ],
+                [
+                    "contact",
+                    "sponsorship person"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_52",
+        "Benefit": {
+            "Entity": ["top-tier Drupal talent"],
+            "Action": ["hire"],
+            "Contains": [],
+            "Text": "I can hire top-tier Drupal talent.",
+            "Targets": [[
+                "hire",
+                "top-tier Drupal talent"
+            ]]
+        },
+        "Text": "#G21# As a sponsor, I want to post a job, so that I can hire top-tier Drupal talent.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": ["job"],
+            "Action": ["post"],
+            "Persona": ["sponsor"],
+            "Contains": [],
+            "Text": "#G21# As a sponsor, I want to post a job, ",
+            "Triggers": [[
+                "sponsor",
+                "post"
+            ]],
+            "Targets": [[
+                "post",
+                "job"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_53",
+        "Benefit": {
+            "Entity": ["interesting Drupal gig"],
+            "Action": ["look for"],
+            "Contains": [[
+                "job board",
+                "interesting Drupal gig"
+            ]],
+            "Text": "I can look for an interesting Drupal gig!.",
+            "Targets": [[
+                "look for",
+                "interesting Drupal gig"
+            ]]
+        },
+        "Text": "#G21# As a authenticateduser, I want to view the job board, so that I can look for an interesting Drupal gig!.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": ["job board"],
+            "Action": ["view"],
+            "Persona": ["authenticateduser"],
+            "Contains": [],
+            "Text": "#G21# As a authenticateduser, I want to view the job board, ",
+            "Triggers": [[
+                "authenticateduser",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "job board"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_54",
+        "Benefit": {
+            "Entity": ["schedule"],
+            "Action": ["populate"],
+            "Contains": [],
+            "Text": "I can populate the schedule",
+            "Targets": [[
+                "populate",
+                "schedule"
+            ]]
+        },
+        "Text": "#G21# As a administrator, I want to assign a room to a time slot and a location, so that I can populate the schedule .",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "room",
+                "time slot",
+                "location"
+            ],
+            "Action": ["assign"],
+            "Persona": ["administrator"],
+            "Contains": [[
+                "location",
+                "room"
+            ]],
+            "Text": "#G21# As a administrator, I want to assign a room to a time slot and a location, ",
+            "Triggers": [[
+                "administrator",
+                "assign"
+            ]],
+            "Targets": [[
+                "assign",
+                "room"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_55",
+        "Benefit": {
+            "Entity": [
+                "day",
+                "where"
+            ],
+            "Action": [
+                "plan",
+                "figure",
+                "go"
+            ],
+            "Contains": [],
+            "Text": "I can plan my day and figure out where to go!.",
+            "Targets": [
+                [
+                    "plan",
+                    "day"
+                ],
+                [
+                    "figure",
+                    "where"
+                ],
+                [
+                    "go",
+                    "where"
+                ]
+            ]
+        },
+        "Text": "#G21# As a anonymoususer, I want to see the schedule, so that I can plan my day and figure out where to go!.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": ["schedule"],
+            "Action": ["see"],
+            "Persona": ["anonymoususer"],
+            "Contains": [],
+            "Text": "#G21# As a anonymoususer, I want to see the schedule, ",
+            "Triggers": [[
+                "anonymoususer",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "schedule"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_56",
+        "Benefit": {
+            "Entity": [
+                "what's going on",
+                "BADCamp"
+            ],
+            "Action": ["see"],
+            "Contains": [[
+                "BADCamp",
+                "what's going on"
+            ]],
+            "Text": "I can see what's going on at BADCamp .",
+            "Targets": [[
+                "see",
+                "what's going on"
+            ]]
+        },
+        "Text": "#G21# As a anonymoususer, I want to see the final list of sessions approved, so that I can see what's going on at BADCamp .",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "final list",
+                "sessions approved"
+            ],
+            "Action": ["see"],
+            "Persona": ["anonymoususer"],
+            "Contains": [[
+                "final list",
+                "sessions approved"
+            ]],
+            "Text": "#G21# As a anonymoususer, I want to see the final list of sessions approved, ",
+            "Triggers": [[
+                "anonymoususer",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "final list"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_57",
+        "Benefit": {
+            "Entity": ["time"],
+            "Action": ["save"],
+            "Contains": [],
+            "Text": "I can save time.",
+            "Targets": [[
+                "save",
+                "time"
+            ]]
+        },
+        "Text": "#G21# As a administrator, I want to bulk approve sessions as accepted, so that I can save time.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": ["sessions"],
+            "Action": ["bulk approve"],
+            "Persona": ["administrator"],
+            "Contains": [],
+            "Text": "#G21# As a administrator, I want to bulk approve sessions as accepted, ",
+            "Triggers": [[
+                "administrator",
+                "bulk approve"
+            ]],
+            "Targets": [[
+                "bulk approve",
+                "sessions"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_58",
+        "Benefit": {
+            "Entity": ["schedule"],
+            "Action": ["populate"],
+            "Contains": [[
+                "session",
+                "schedule"
+            ]],
+            "Text": "I can populate the schedule",
+            "Targets": [[
+                "populate",
+                "schedule"
+            ]]
+        },
+        "Text": "#G21# As a administrator, I want to mark a session as accepted, so that I can populate the schedule .",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": ["session"],
+            "Action": ["mark"],
+            "Persona": ["administrator"],
+            "Contains": [],
+            "Text": "#G21# As a administrator, I want to mark a session as accepted, ",
+            "Triggers": [[
+                "administrator",
+                "mark"
+            ]],
+            "Targets": [[
+                "mark",
+                "session"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_59",
+        "Benefit": {
+            "Entity": [],
+            "Action": [
+                "know",
+                "accepted",
+                "rejected"
+            ],
+            "Contains": [],
+            "Text": "I know whether I've been accepted or rejected",
+            "Targets": []
+        },
+        "Text": "#G21# As a anonymoususer, I want to receive a notification when sessions have been evaluated, so that I know whether I've been accepted or rejected.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "notification",
+                "sessions"
+            ],
+            "Action": [
+                "receive",
+                "evaluated"
+            ],
+            "Persona": ["anonymoususer"],
+            "Contains": [],
+            "Text": "#G21# As a anonymoususer, I want to receive a notification when sessions have been evaluated, ",
+            "Triggers": [[
+                "anonymoususer",
+                "receive"
+            ]],
+            "Targets": [
+                [
+                    "receive",
+                    "notification"
+                ],
+                [
+                    "evaluated",
+                    "sessions"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_60",
+        "Benefit": {
+            "Entity": ["session"],
+            "Action": [
+                "know",
+                "went through"
+            ],
+            "Contains": [],
+            "Text": "know that my session went through ok.",
+            "Targets": [[
+                "know",
+                "session"
+            ]]
+        },
+        "Text": "#G21# As a anonymoususer, I want to receive a notification when I submit a session, so that know that my session went through ok.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "notification",
+                "session"
+            ],
+            "Action": [
+                "receive",
+                "submit"
+            ],
+            "Persona": ["anonymoususer"],
+            "Contains": [],
+            "Text": "#G21# As a anonymoususer, I want to receive a notification when I submit a session, ",
+            "Triggers": [[
+                "anonymoususer",
+                "receive"
+            ]],
+            "Targets": [
+                [
+                    "receive",
+                    "notification"
+                ],
+                [
+                    "submit",
+                    "session"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_61",
+        "Benefit": {
+            "Entity": ["mistake"],
+            "Action": [
+                "make",
+                "correct"
+            ],
+            "Contains": [],
+            "Text": "if I make a mistake, I can correct it.",
+            "Targets": [
+                [
+                    "make",
+                    "mistake"
+                ],
+                [
+                    "correct",
+                    "mistake"
+                ]
+            ]
+        },
+        "Text": "#G21# As a authenticateduser, I want to edit my session, so that if I make a mistake, I can correct it.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": ["session"],
+            "Action": ["edit"],
+            "Persona": ["authenticateduser"],
+            "Contains": [],
+            "Text": "#G21# As a authenticateduser, I want to edit my session, ",
+            "Triggers": [[
+                "authenticateduser",
+                "edit"
+            ]],
+            "Targets": [[
+                "edit",
+                "session"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_62",
+        "Benefit": {
+            "Entity": ["session"],
+            "Action": ["submit"],
+            "Contains": [[
+                "BADCamp",
+                "session"
+            ]],
+            "Text": "I submit a session",
+            "Targets": [[
+                "submit",
+                "session"
+            ]]
+        },
+        "Text": "#G21# As a anonymoususer, I want to register to speak at BADCamp, so that I submit a session.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": ["BADCamp"],
+            "Action": [
+                "register",
+                "speak"
+            ],
+            "Persona": ["anonymoususer"],
+            "Contains": [],
+            "Text": "#G21# As a anonymoususer, I want to register to speak at BADCamp, ",
+            "Triggers": [[
+                "anonymoususer",
+                "register"
+            ]],
+            "Targets": []
+        }
+    },
+    {
+        "US_Nr": "user_story_63",
+        "Benefit": {
+            "Entity": ["session"],
+            "Action": ["evaluated"],
+            "Contains": [],
+            "Text": "I can get my session evaluated.",
+            "Targets": [[
+                "evaluated",
+                "session"
+            ]]
+        },
+        "Text": "#G21# As a authenticateduser, I want to submit a session at BADCAMP, so that I can get my session evaluated.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "session",
+                "BADCAMP"
+            ],
+            "Action": ["submit"],
+            "Persona": ["authenticateduser"],
+            "Contains": [[
+                "BADCAMP",
+                "session"
+            ]],
+            "Text": "#G21# As a authenticateduser, I want to submit a session at BADCAMP, ",
+            "Triggers": [[
+                "authenticateduser",
+                "submit"
+            ]],
+            "Targets": [[
+                "submit",
+                "session"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_64",
+        "Benefit": {
+            "Entity": ["brand"],
+            "Action": ["promote"],
+            "Contains": [[
+                "sponsorship page",
+                "brand"
+            ]],
+            "Text": "I can promote my brand",
+            "Targets": [[
+                "promote",
+                "brand"
+            ]]
+        },
+        "Text": "#G21# As a sponsor, I want to personalize my sponsorship page, so that I can promote my brand.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": ["sponsorship page"],
+            "Action": ["personalize"],
+            "Persona": ["sponsor"],
+            "Contains": [],
+            "Text": "#G21# As a sponsor, I want to personalize my sponsorship page, ",
+            "Triggers": [[
+                "sponsor",
+                "personalize"
+            ]],
+            "Targets": [[
+                "personalize",
+                "sponsorship page"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_65",
+        "Benefit": {
+            "Entity": ["summit I want to attend"],
+            "Action": ["determine"],
+            "Contains": [],
+            "Text": "I can determine which summit I want to attend.",
+            "Targets": [[
+                "determine",
+                "summit I want to attend"
+            ]]
+        },
+        "Text": "#G21# As a anonymoususer, I want to see a list of all the summits that include when they are, so that I can determine which summit I want to attend.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "list",
+                "summits"
+            ],
+            "Action": ["see"],
+            "Persona": ["anonymoususer"],
+            "Contains": [[
+                "list",
+                "summits"
+            ]],
+            "Text": "#G21# As a anonymoususer, I want to see a list of all the summits that include when they are, ",
+            "Triggers": [[
+                "anonymoususer",
+                "see"
+            ]],
+            "Targets": [[
+                "see",
+                "list"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_66",
+        "Benefit": {
+            "Entity": ["camp"],
+            "Action": ["financially support"],
+            "Contains": [],
+            "Text": "I can be awesome and financially support the camp.",
+            "Targets": [[
+                "financially support",
+                "camp"
+            ]]
+        },
+        "Text": "#G21# As a authenticateduser, I want to Be offered several choices of idividual sponsorship on the second page of registration, so that I can be awesome and financially support the camp.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "several choices",
+                "idividual sponsorship",
+                "second page",
+                "registration"
+            ],
+            "Action": ["Be offered"],
+            "Persona": ["authenticateduser"],
+            "Contains": [
+                [
+                    "idividual sponsorship",
+                    "several choices"
+                ],
+                [
+                    "registration",
+                    "second page"
+                ],
+                [
+                    "second page",
+                    "several choices"
+                ]
+            ],
+            "Text": "#G21# As a authenticateduser, I want to Be offered several choices of idividual sponsorship on the second page of registration, ",
+            "Triggers": [[
+                "authenticateduser",
+                "Be offered"
+            ]],
+            "Targets": [[
+                "Be offered",
+                "several choices"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_67",
+        "Benefit": {
+            "Entity": ["camp"],
+            "Action": ["easily register for"],
+            "Contains": [[
+                "camp",
+                "registration form"
+            ]],
+            "Text": "I can easily register for the camp.",
+            "Targets": [[
+                "easily register for",
+                "camp"
+            ]]
+        },
+        "Text": "#G21# As a anonymoususer, I want to easily find a link in the menu that links to the registration form, so that I can easily register for the camp.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": [
+                "link",
+                "menu",
+                "registration form"
+            ],
+            "Action": [
+                "easily find",
+                "links"
+            ],
+            "Persona": ["anonymoususer"],
+            "Contains": [[
+                "menu",
+                "link"
+            ]],
+            "Text": "#G21# As a anonymoususer, I want to easily find a link in the menu that links to the registration form, ",
+            "Triggers": [[
+                "anonymoususer",
+                "easily find"
+            ]],
+            "Targets": [
+                [
+                    "easily find",
+                    "link"
+                ],
+                [
+                    "links",
+                    "registration form"
+                ]
+            ]
+        }
+    },
+    {
+        "US_Nr": "user_story_68",
+        "Benefit": {
+            "Entity": [
+                "camp",
+                "account",
+                "website"
+            ],
+            "Action": [
+                "get",
+                "register for"
+            ],
+            "Contains": [
+                [
+                    "camp",
+                    "user registration form"
+                ],
+                [
+                    "website",
+                    "account"
+                ]
+            ],
+            "Text": "I can register for the camp and get an account on the website.",
+            "Targets": [
+                [
+                    "get",
+                    "account"
+                ],
+                [
+                    "register for",
+                    "camp"
+                ]
+            ]
+        },
+        "Text": "#G21# As a anonymoususer, I want to fill out a user registration form, so that I can register for the camp and get an account on the website.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": ["user registration form"],
+            "Action": ["fill"],
+            "Persona": ["anonymoususer"],
+            "Contains": [],
+            "Text": "#G21# As a anonymoususer, I want to fill out a user registration form, ",
+            "Triggers": [[
+                "anonymoususer",
+                "fill"
+            ]],
+            "Targets": [[
+                "fill",
+                "user registration form"
+            ]]
+        }
+    },
+    {
+        "US_Nr": "user_story_69",
+        "Benefit": {
+            "Entity": ["session"],
+            "Action": ["go"],
+            "Contains": [],
+            "Text": "I can go to a session.",
+            "Targets": [[
+                "go",
+                "session"
+            ]]
+        },
+        "Text": "#G21# As a anonymoususer, I want to find session information, so that I can go to a session.",
+        "PID": "#G21#",
+        "Main": {
+            "Entity": ["session information"],
+            "Action": ["find"],
+            "Persona": ["anonymoususer"],
+            "Contains": [],
+            "Text": "#G21# As a anonymoususer, I want to find session information, ",
+            "Triggers": [[
+                "anonymoususer",
+                "find"
+            ]],
+            "Targets": [[
+                "find",
+                "session information"
+            ]]
+        }
+    }
+]
