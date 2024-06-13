@@ -10,6 +10,35 @@
                 "other general information"
             ],
             "Action": ["obtain"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "obtain",
+                    "publicly available information",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "publicly available information",
+                        "properties",
+                        "create"
+                    ],
+                    [
+                        "publicly available information",
+                        "County services",
+                        "create"
+                    ],
+                    [
+                        "publicly available information",
+                        "processes",
+                        "create"
+                    ],
+                    [
+                        "publicly available information",
+                        "other general information",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "publicly available information",
@@ -26,10 +55,6 @@
                 [
                     "publicly available information",
                     "other general information"
-                ],
-                [
-                    "Information",
-                    "publicly available information"
                 ]
             ],
             "Text": "I can obtain publicly available information concerning properties, County services, processes and other general information.",
@@ -44,6 +69,14 @@
             "Entity": ["Information"],
             "Action": ["Search"],
             "Persona": ["Public User"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "search",
+                    "information",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Public User, I want to Search for Information, ",
             "Triggers": [[
@@ -54,7 +87,11 @@
                 "Search",
                 "Information"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "Information",
+            "publicly available information"
+        ]}
     },
     {
         "US_Nr": "user_story_02",
@@ -68,6 +105,42 @@
                 "initiate",
                 "find"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "find",
+                        "application type",
+                        "create"
+                    ],
+                    [
+                        "find",
+                        "relevant service",
+                        "create"
+                    ],
+                    [
+                        "initiate",
+                        "application type",
+                        "create"
+                    ],
+                    [
+                        "initiate",
+                        "relevant service",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "online portal",
+                        "application type",
+                        "create"
+                    ],
+                    [
+                        "online portal",
+                        "relevant service",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "online portal",
@@ -110,6 +183,21 @@
                 "research"
             ],
             "Persona": ["ProspectiveApplicant"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "research",
+                        "requirements",
+                        "preserve"
+                    ],
+                    [
+                        "select",
+                        "service",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a ProspectiveApplicant, I want to research requirements and to select a service, ",
             "Triggers": [
@@ -132,7 +220,8 @@
                     "service"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_03",
@@ -145,6 +234,25 @@
                 "result"
             ],
             "Action": ["receive"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "receive",
+                        "response",
+                        "create"
+                    ],
+                    [
+                        "receive",
+                        "information",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "request for a meeting",
+                    "response",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "request for a meeting",
@@ -173,6 +281,14 @@
             "Entity": ["PreApplication Assistance"],
             "Action": ["Request"],
             "Persona": ["Applicant"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "request",
+                    "preapplication assistance",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As an Applicant, I want to Request PreApplication Assistance, ",
             "Triggers": [[
@@ -183,7 +299,8 @@
                 "Request",
                 "PreApplication Assistance"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_04",
@@ -197,16 +314,29 @@
                 "log",
                 "perform"
             ],
-            "Contains": [
-                [
-                    "transactions",
-                    "user authentication"
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "log",
+                        "customer portal",
+                        "create"
+                    ],
+                    [
+                        "perform",
+                        "transactions",
+                        "create"
+                    ]
                 ],
-                [
-                    "Customer Portal",
-                    "Customer Portal User Account"
-                ]
-            ],
+                "Contain Action Rules": [[
+                    "transactions",
+                    "user authentication",
+                    "create"
+                ]]
+            },
+            "Contains": [[
+                "transactions",
+                "user authentication"
+            ]],
             "Text": "I can log on to the Customer Portal and perform transactions that first require user authentication.",
             "Targets": [
                 [
@@ -225,6 +355,14 @@
             "Entity": ["Customer Portal User Account"],
             "Action": ["Create"],
             "Persona": ["Customer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "create",
+                    "customer portal user account",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Customer, I want to Create a Customer Portal User Account, ",
             "Triggers": [[
@@ -235,7 +373,11 @@
                 "Create",
                 "Customer Portal User Account"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "Customer Portal",
+            "Customer Portal User Account"
+        ]}
     },
     {
         "US_Nr": "user_story_05",
@@ -251,20 +393,32 @@
                 "provide",
                 "initiate"
             ],
-            "Contains": [
-                [
-                    "Application",
-                    "information"
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "provide",
+                        "information",
+                        "preserve"
+                    ],
+                    [
+                        "provide",
+                        "plans",
+                        "preserve"
+                    ],
+                    [
+                        "provide",
+                        "documents",
+                        "preserve"
+                    ],
+                    [
+                        "initiate",
+                        "transaction",
+                        "create"
+                    ]
                 ],
-                [
-                    "Application",
-                    "plans"
-                ],
-                [
-                    "Application",
-                    "documents"
-                ]
-            ],
+                "Contain Action Rules": []
+            },
+            "Contains": [],
             "Text": "I can provide my information, plans and/or documents to initiate a transaction with the County.",
             "Targets": [
                 [
@@ -291,6 +445,14 @@
             "Entity": ["Application"],
             "Action": ["Submit"],
             "Persona": ["Applicant"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "submit",
+                    "application",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As an Applicant, I want to Submit Application, ",
             "Triggers": [[
@@ -301,7 +463,11 @@
                 "Submit",
                 "Application"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "Application",
+            "documents"
+        ]}
     },
     {
         "US_Nr": "user_story_06",
@@ -311,16 +477,22 @@
                 "application"
             ],
             "Action": ["satisfy"],
-            "Contains": [
-                [
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "satisfy",
                     "documentation requirements",
-                    "Supporting Documentation"
-                ],
-                [
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
                     "application",
-                    "documentation requirements"
-                ]
-            ],
+                    "documentation requirements",
+                    "preserve"
+                ]]
+            },
+            "Contains": [[
+                "application",
+                "documentation requirements"
+            ]],
             "Text": "I can satisfy documentation requirements for my application.",
             "Targets": [[
                 "satisfy",
@@ -333,6 +505,14 @@
             "Entity": ["Supporting Documentation"],
             "Action": ["Submit"],
             "Persona": ["Applicant"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "submit",
+                    "supporting documentation",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As an Applicant, I want to Submit Supporting Documentation, ",
             "Triggers": [[
@@ -343,7 +523,11 @@
                 "Submit",
                 "Supporting Documentation"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "documentation requirements",
+            "Supporting Documentation"
+        ]}
     },
     {
         "US_Nr": "user_story_07",
@@ -357,10 +541,22 @@
                 "satisfy",
                 "received from"
             ],
-            "Contains": [[
-                "service requested",
-                "Fee"
-            ]],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "satisfy",
+                        "outstanding charge",
+                        "preserve"
+                    ],
+                    [
+                        "received from",
+                        "county",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
+            "Contains": [],
             "Text": "I can satisfy outstanding charge associated with the service requested or received from the County.",
             "Targets": [
                 [
@@ -379,6 +575,14 @@
             "Entity": ["Fee"],
             "Action": ["Pay"],
             "Persona": ["Applicant"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "pay",
+                    "fee",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As an Applicant, I want to Pay Fee, ",
             "Triggers": [[
@@ -389,7 +593,11 @@
                 "Pay",
                 "Fee"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "service requested",
+            "Fee"
+        ]}
     },
     {
         "US_Nr": "user_story_08",
@@ -404,6 +612,18 @@
                 "permit"
             ],
             "Action": ["understand"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "understand",
+                    "service",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "service",
+                    "information",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "information",
@@ -445,6 +665,18 @@
             ],
             "Action": ["Check"],
             "Persona": ["Applicant"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "check",
+                    "status",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "transaction",
+                    "status",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "transaction",
                 "Status"
@@ -458,7 +690,8 @@
                 "Check",
                 "Status"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_09",
@@ -468,6 +701,18 @@
                 "application"
             ],
             "Action": ["successfully change"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "successfully change",
+                    "information",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "application",
+                    "information",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "application",
                 "information"
@@ -484,6 +729,14 @@
             "Entity": ["Application"],
             "Action": ["Modify"],
             "Persona": ["Applicant"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "modify",
+                    "application",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As an Applicant, I want to Modify my Application, ",
             "Triggers": [[
@@ -494,7 +747,8 @@
                 "Modify",
                 "Application"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_10",
@@ -504,6 +758,21 @@
                 "eligible for further technical review"
             ],
             "Action": ["validate"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "validate",
+                        "eligible for further technical review",
+                        "create"
+                    ],
+                    [
+                        "validate",
+                        "application",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can validate when an application is complete and eligible for further technical review.",
             "Targets": [
@@ -523,6 +792,14 @@
             "Entity": ["Completeness Review"],
             "Action": ["Perform"],
             "Persona": ["Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "perform",
+                    "completeness review",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Staff member, I want to Perform a Completeness Review, ",
             "Triggers": [[
@@ -533,7 +810,8 @@
                 "Perform",
                 "Completeness Review"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_11",
@@ -544,6 +822,14 @@
                 "information"
             ],
             "Action": ["share"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "share",
+                    "information",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can share information with other Staff collaborating on the record.",
             "Targets": [[
@@ -557,6 +843,14 @@
             "Entity": ["Internal Note"],
             "Action": ["Record"],
             "Persona": ["Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "record",
+                    "internal note",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Staff member, I want to Record an Internal Note, ",
             "Triggers": [[
@@ -567,7 +861,8 @@
                 "Record",
                 "Internal Note"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_12",
@@ -578,6 +873,26 @@
                 "denied",
                 "review"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "review",
+                        "compliance",
+                        "preserve"
+                    ],
+                    [
+                        "subsequently approved",
+                        "compliance",
+                        "preserve"
+                    ],
+                    [
+                        "denied",
+                        "compliance",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can review the for compliance and subsequently approved or denied.",
             "Targets": [
@@ -604,6 +919,18 @@
             ],
             "Action": ["Assign"],
             "Persona": ["Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "assign",
+                    "application",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "application",
+                    "detailed review",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "Application",
                 "Detailed Review"
@@ -617,7 +944,8 @@
                 "Assign",
                 "Application"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_13",
@@ -630,6 +958,32 @@
                 "system"
             ],
             "Action": ["prevent"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "prevent",
+                        "progression",
+                        "forbid"
+                    ],
+                    [
+                        "prevent",
+                        "other actions",
+                        "forbid"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "workflow",
+                        "progression",
+                        "forbid"
+                    ],
+                    [
+                        "system",
+                        "other actions",
+                        "forbid"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "workflow",
@@ -658,6 +1012,14 @@
             "Entity": ["Hold"],
             "Action": ["Apply"],
             "Persona": ["Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "apply",
+                    "hold",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Staff member, I want to Apply a Hold, ",
             "Triggers": [[
@@ -668,7 +1030,8 @@
                 "Apply",
                 "Hold"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_14",
@@ -684,6 +1047,32 @@
                 "allow",
                 "resolved"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "allow",
+                        "progression",
+                        "create"
+                    ],
+                    [
+                        "resolved",
+                        "issue",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "workflow",
+                        "progression",
+                        "create"
+                    ],
+                    [
+                        "other actions",
+                        "progression",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "workflow",
@@ -716,6 +1105,14 @@
             "Entity": ["Hold"],
             "Action": ["Remove"],
             "Persona": ["Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "remove",
+                    "hold",
+                    "delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Staff member, I want to Remove a Hold, ",
             "Triggers": [[
@@ -726,7 +1123,8 @@
                 "Remove",
                 "Hold"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_15",
@@ -736,6 +1134,21 @@
                 "records responsibilities"
             ],
             "Action": ["satisfy"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "satisfy",
+                        "communication",
+                        "preserve"
+                    ],
+                    [
+                        "satisfy",
+                        "records responsibilities",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can satisfy communication and records responsibilities.",
             "Targets": [
@@ -758,6 +1171,14 @@
             ],
             "Action": ["Send"],
             "Persona": ["Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "send",
+                    "formal response",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Staff member, I want to Send a Formal Response to Applicant, ",
             "Triggers": [[
@@ -768,7 +1189,8 @@
                 "Send",
                 "Formal Response"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_16",
@@ -778,6 +1200,18 @@
                 "Applicant"
             ],
             "Action": ["preserve"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "preserve",
+                    "history of draft proffer statements",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "Applicant",
+                    "history of draft proffer statements",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "Applicant",
                 "history of draft proffer statements"
@@ -794,6 +1228,14 @@
             "Entity": ["Draft Proffers"],
             "Action": ["Track"],
             "Persona": ["Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "track",
+                    "draft proffers",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Staff member, I want to Track  the Draft Proffers, ",
             "Triggers": [[
@@ -804,7 +1246,8 @@
                 "Track",
                 "Draft Proffers"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_17",
@@ -815,6 +1258,32 @@
                 "satisfaction"
             ],
             "Action": ["ensure"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "ensure",
+                        "compliance",
+                        "preserve"
+                    ],
+                    [
+                        "ensure",
+                        "satisfaction",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "proffer",
+                        "compliance",
+                        "preserve"
+                    ],
+                    [
+                        "proffer",
+                        "satisfaction",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "proffer",
@@ -843,6 +1312,14 @@
             "Entity": ["Approved Proffers"],
             "Action": ["Manage"],
             "Persona": ["Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "manage",
+                    "approved proffers",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Staff member, I want to Manage Approved Proffers, ",
             "Triggers": [[
@@ -853,7 +1330,8 @@
                 "Manage",
                 "Approved Proffers"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_18",
@@ -863,6 +1341,18 @@
                 "System"
             ],
             "Action": ["maintain"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "maintain",
+                    "accurate ordinance information",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "System",
+                    "accurate ordinance information",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "System",
                 "accurate ordinance information"
@@ -879,6 +1369,14 @@
             "Entity": ["Ordinances"],
             "Action": ["Manage"],
             "Persona": ["Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "manage",
+                    "ordinances",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Staff member, I want to Manage Ordinances, ",
             "Triggers": [[
@@ -889,7 +1387,8 @@
                 "Manage",
                 "Ordinances"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_19",
@@ -903,16 +1402,22 @@
                 "address",
                 "bring"
             ],
-            "Contains": [
-                [
-                    "Meeting",
-                    "required parties"
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "bring",
+                        "required parties",
+                        "create"
+                    ],
+                    [
+                        "address",
+                        "issue",
+                        "create"
+                    ]
                 ],
-                [
-                    "Meeting",
-                    "specific date/time"
-                ]
-            ],
+                "Contain Action Rules": []
+            },
+            "Contains": [],
             "Text": "I can bring the required parties together at a specific date/time to address an issue.",
             "Targets": [
                 [
@@ -931,6 +1436,14 @@
             "Entity": ["Meeting"],
             "Action": ["Schedule"],
             "Persona": ["Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "schedule",
+                    "meeting",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Staff member, I want to Schedule a Meeting, ",
             "Triggers": [[
@@ -941,19 +1454,24 @@
                 "Schedule",
                 "Meeting"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "Meeting",
+            "specific date/time"
+        ]}
     },
     {
         "US_Nr": "user_story_20",
         "Benefit": {
             "Entity": [],
             "Action": ["finish"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can finish it.",
-            "Targets": [[
-                "finish",
-                "application"
-            ]]
+            "Targets": []
         },
         "Text": "#G03# As a staff member, I want to denote an application with a Final Action status. So that I can finish it.",
         "PID": "#G03#",
@@ -964,6 +1482,18 @@
             ],
             "Action": ["denote"],
             "Persona": ["staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "denote",
+                    "application",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "application",
+                    "final action status",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "application",
                 "Final Action status"
@@ -977,7 +1507,11 @@
                 "denote",
                 "application"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "finish",
+            "application"
+        ]}
     },
     {
         "US_Nr": "user_story_21",
@@ -989,6 +1523,42 @@
                 "location-based information"
             ],
             "Action": ["record"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "record",
+                        "work in process",
+                        "create"
+                    ],
+                    [
+                        "record",
+                        "outcome",
+                        "create"
+                    ],
+                    [
+                        "record",
+                        "location-based information",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "Plan(s)",
+                        "work in process",
+                        "create"
+                    ],
+                    [
+                        "Plan(s)",
+                        "outcome",
+                        "create"
+                    ],
+                    [
+                        "Plan(s)",
+                        "location-based information",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "Plan(s)",
@@ -1031,6 +1601,31 @@
                 "Conduct"
             ],
             "Persona": ["Planning Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "track",
+                        "plan amendments",
+                        "preserve"
+                    ],
+                    [
+                        "track",
+                        "planning studies",
+                        "preserve"
+                    ],
+                    [
+                        "conduct",
+                        "plan amendments",
+                        "create"
+                    ],
+                    [
+                        "conduct",
+                        "planning studies",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Planning Staff member, I want to Conduct and Track Plan Amendments and Planning Studies, ",
             "Triggers": [
@@ -1061,7 +1656,8 @@
                     "Planning Studies"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_22",
@@ -1075,6 +1671,30 @@
                 "export",
                 "access"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "access",
+                        "needed information",
+                        "create"
+                    ],
+                    [
+                        "analyze",
+                        "needed information",
+                        "preserve"
+                    ],
+                    [
+                        "export",
+                        "needed information",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "needed information",
+                    "format",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "needed information",
                 "format"
@@ -1101,6 +1721,14 @@
             "Entity": ["Planning-related Reports"],
             "Action": ["Generate"],
             "Persona": ["Planning Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "generate",
+                    "planning-related reports",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Planning Staff member, I want to Generate Planning-related Reports, ",
             "Triggers": [[
@@ -1111,7 +1739,8 @@
                 "Generate",
                 "Planning-related Reports"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_23",
@@ -1122,6 +1751,25 @@
                 "application"
             ],
             "Action": ["complete"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "complete",
+                    "required review",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "plan set",
+                        "required review",
+                        "create"
+                    ],
+                    [
+                        "application",
+                        "required review",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "plan set",
@@ -1147,6 +1795,18 @@
             ],
             "Action": ["Evaluate"],
             "Persona": ["Planning Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "evaluate",
+                    "consistency",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "comprehensive plan",
+                    "consistency",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "Comprehensive Plan",
                 "Consistency"
@@ -1160,7 +1820,8 @@
                 "Evaluate",
                 "Consistency"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_24",
@@ -1171,10 +1832,48 @@
                 "approval",
                 "application",
                 "application",
-                "impact",
                 "denial"
             ],
-            "Action": ["validate"],
+            "Action": [
+                "validate",
+                "impact"
+            ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "validate",
+                        "compliance",
+                        "create"
+                    ],
+                    [
+                        "impact",
+                        "approval",
+                        "preserve"
+                    ],
+                    [
+                        "impact",
+                        "denial",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "application",
+                        "compliance",
+                        "create"
+                    ],
+                    [
+                        "application",
+                        "approval",
+                        "preserve"
+                    ],
+                    [
+                        "application",
+                        "denial",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "application",
@@ -1211,6 +1910,14 @@
             "Entity": ["Staff Review"],
             "Action": ["Perform"],
             "Persona": ["Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "perform",
+                    "staff review",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Staff member, I want to Perform a Staff Review, ",
             "Triggers": [[
@@ -1221,7 +1928,8 @@
                 "Perform",
                 "Staff Review"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_25",
@@ -1238,6 +1946,21 @@
                 "capture",
                 "send"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "capture",
+                        "response",
+                        "create"
+                    ],
+                    [
+                        "send",
+                        "communication",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "system",
                 "request"
@@ -1263,6 +1986,18 @@
             ],
             "Action": ["Process"],
             "Persona": ["Zoning Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "process",
+                    "requests",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "zoning information",
+                    "requests",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "Zoning Information",
                 "Requests"
@@ -1276,7 +2011,8 @@
                 "Process",
                 "Requests"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_26",
@@ -1288,6 +2024,18 @@
                 "Zoning Ordinance"
             ],
             "Action": ["satisfy"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "satisfy",
+                    "applicant's request",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "service",
+                    "Applicant's request",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "service",
@@ -1310,6 +2058,14 @@
             "Entity": ["Zoning-Related Permits"],
             "Action": ["Issue"],
             "Persona": ["Zoning Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "issue",
+                    "zoning-related permits",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Zoning Staff member, I want to Issue the Zoning-Related Permits, ",
             "Triggers": [[
@@ -1320,7 +2076,8 @@
                 "Issue",
                 "Zoning-Related Permits"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_27",
@@ -1333,6 +2090,21 @@
                 "distribute",
                 "publish"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "publish",
+                        "report",
+                        "create"
+                    ],
+                    [
+                        "distribute",
+                        "report",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can publish and distribute the report according to business rules.",
             "Targets": [
@@ -1352,6 +2124,14 @@
             "Entity": ["Staff Report"],
             "Action": ["Develop"],
             "Persona": ["Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "develop",
+                    "staff report",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Staff member, I want to Develop a Staff Report, ",
             "Triggers": [[
@@ -1362,7 +2142,8 @@
                 "Develop",
                 "Staff Report"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_28",
@@ -1372,16 +2153,22 @@
                 "hearing-related activities"
             ],
             "Action": ["track"],
-            "Contains": [
-                [
-                    "Hearing Calendars",
-                    "hearing-related activities"
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "track",
+                        "hearing-related activities",
+                        "preserve"
+                    ],
+                    [
+                        "track",
+                        "due dates",
+                        "preserve"
+                    ]
                 ],
-                [
-                    "Hearing Calendars",
-                    "due dates"
-                ]
-            ],
+                "Contain Action Rules": []
+            },
+            "Contains": [],
             "Text": "I can track hearing-related activities and due dates.",
             "Targets": [
                 [
@@ -1400,6 +2187,14 @@
             "Entity": ["Hearing Calendars"],
             "Action": ["Manage"],
             "Persona": ["Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "manage",
+                    "hearing calendars",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Staff member, I want to Manage Hearing Calendars, ",
             "Triggers": [[
@@ -1410,7 +2205,11 @@
                 "Manage",
                 "Hearing Calendars"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "Hearing Calendars",
+            "due dates"
+        ]}
     },
     {
         "US_Nr": "user_story_29",
@@ -1422,6 +2221,14 @@
                 "relevant County rules and procedures"
             ],
             "Action": ["present"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "present",
+                    "application",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "relevant County rules and procedures",
                 "timelines"
@@ -1438,6 +2245,14 @@
             "Entity": ["Hearing Date"],
             "Action": ["Assign"],
             "Persona": ["Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "assign",
+                    "hearing date",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Staff member, I want to Assign a Hearing Date, ",
             "Triggers": [[
@@ -1448,7 +2263,8 @@
                 "Assign",
                 "Hearing Date"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_30",
@@ -1459,10 +2275,15 @@
                 "hearing"
             ],
             "Action": ["ensure"],
-            "Contains": [[
-                "Affidavits",
-                "compliance"
-            ]],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "ensure",
+                    "compliance",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
+            "Contains": [],
             "Text": "I can ensure compliance with the requirements prior to the hearing.",
             "Targets": [[
                 "ensure",
@@ -1475,6 +2296,14 @@
             "Entity": ["Affidavits"],
             "Action": ["Manage"],
             "Persona": ["Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "manage",
+                    "affidavits",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Staff member, I want to Manage Affidavits, ",
             "Triggers": [[
@@ -1485,7 +2314,11 @@
                 "Manage",
                 "Affidavits"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "Affidavits",
+            "compliance"
+        ]}
     },
     {
         "US_Nr": "user_story_31",
@@ -1495,10 +2328,11 @@
                 "all pre-hearing requirements"
             ],
             "Action": ["ensure"],
-            "Contains": [[
-                "hearing",
-                "Hearing Requirements"
-            ]],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
+            "Contains": [],
             "Text": "I can ensure all pre-hearing requirements are satisfied in time for the hearing.",
             "Targets": []
         },
@@ -1508,6 +2342,14 @@
             "Entity": ["Hearing Requirements"],
             "Action": ["Satisfy"],
             "Persona": ["Applicant"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "satisfy",
+                    "hearing requirements",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As an Applicant, I want to Satisfy Hearing Requirements, ",
             "Triggers": [[
@@ -1518,7 +2360,11 @@
                 "Satisfy",
                 "Hearing Requirements"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "hearing",
+            "Hearing Requirements"
+        ]}
     },
     {
         "US_Nr": "user_story_32",
@@ -1530,6 +2376,10 @@
                 "all pre-hearing requirements"
             ],
             "Action": ["ensure"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can ensure all pre-hearing requirements are satisfied and staff and Applicant are ready for the hearing.",
             "Targets": []
@@ -1543,6 +2393,21 @@
                 "Prepare"
             ],
             "Persona": ["Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "support",
+                        "hearing execution",
+                        "create"
+                    ],
+                    [
+                        "prepare",
+                        "hearing execution",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Staff member, I want to Prepare for and Support Hearing Execution, ",
             "Triggers": [
@@ -1565,13 +2430,22 @@
                     "Hearing Execution"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_33",
         "Benefit": {
             "Entity": ["system"],
             "Action": ["enforce"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "enforce",
+                    "system",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can enforce the system.",
             "Targets": [[
@@ -1585,6 +2459,14 @@
             "Entity": ["Hearing Decision"],
             "Action": ["Capture"],
             "Persona": ["Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "capture",
+                    "hearing decision",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Staff member, I want to Capture a Hearing Decision, ",
             "Triggers": [[
@@ -1595,7 +2477,8 @@
                 "Capture",
                 "Hearing Decision"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_34",
@@ -1609,6 +2492,25 @@
                 "track",
                 "record"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "track",
+                        "outcome",
+                        "preserve"
+                    ],
+                    [
+                        "record",
+                        "impact",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "relevant records",
+                    "impact",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "relevant records",
                 "impact"
@@ -1631,6 +2533,14 @@
             "Entity": ["Appeals"],
             "Action": ["Process"],
             "Persona": ["Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "process",
+                    "appeals",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Staff member, I want to Process the Appeals, ",
             "Triggers": [[
@@ -1641,7 +2551,8 @@
                 "Process",
                 "Appeals"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_35",
@@ -1654,6 +2565,18 @@
                 "ensure",
                 "assigned"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "assigned",
+                    "plans",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "appropriate Plan Reviewer",
+                    "plans",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "appropriate Plan Reviewer",
                 "plans"
@@ -1673,6 +2596,18 @@
             ],
             "Action": ["Assign"],
             "Persona": ["Plan Review Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "assign",
+                    "plans",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "review",
+                    "plans",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "Review",
                 "Plans"
@@ -1686,7 +2621,8 @@
                 "Assign",
                 "Plans"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_36",
@@ -1701,6 +2637,26 @@
                 "ensure",
                 "met"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "monitor",
+                        "workload",
+                        "preserve"
+                    ],
+                    [
+                        "effectively adjust",
+                        "workload",
+                        "preserve"
+                    ],
+                    [
+                        "met",
+                        "service levels",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can monitor and effectively adjust workload as necessary and ensure service levels are met",
             "Targets": [
@@ -1724,6 +2680,14 @@
             "Entity": ["Plan Reviewer Workload"],
             "Action": ["Manage"],
             "Persona": ["Plan Review Staff Supervisor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "manage",
+                    "plan reviewer workload",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Plan Review Staff Supervisor, I want to Manage Plan Reviewer Workload, ",
             "Triggers": [[
@@ -1734,7 +2698,8 @@
                 "Manage",
                 "Plan Reviewer Workload"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_37",
@@ -1744,16 +2709,15 @@
                 "plan review"
             ],
             "Action": ["meet"],
-            "Contains": [
-                [
-                    "Plan Review Meeting",
-                    "plan review"
-                ],
-                [
-                    "Plan Review Meeting",
-                    "Plan Review Staff"
-                ]
-            ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "meet",
+                    "plan review staff",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
+            "Contains": [],
             "Text": "I can meet with the Plan Review Staff regarding the plan review.",
             "Targets": [[
                 "meet",
@@ -1766,6 +2730,14 @@
             "Entity": ["Plan Review Meeting"],
             "Action": ["Request"],
             "Persona": ["Applicant"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "request",
+                    "plan review meeting",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As an Applicant, I want to Request a Plan Review Meeting, ",
             "Triggers": [[
@@ -1776,19 +2748,24 @@
                 "Request",
                 "Plan Review Meeting"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "Plan Review Meeting",
+            "Plan Review Staff"
+        ]}
     },
     {
         "US_Nr": "user_story_38",
         "Benefit": {
             "Entity": [],
             "Action": ["listen"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can listen to it again.",
-            "Targets": [[
-                "listen",
-                "outcome"
-            ]]
+            "Targets": []
         },
         "Text": "#G03# As a Plan Review Staff member, I want to successfully Conduct a Plan Review Meeting with the Applicant and record the outcome, so that I can listen to it again.",
         "PID": "#G03#",
@@ -1803,6 +2780,25 @@
                 "record"
             ],
             "Persona": ["Plan Review Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "successfully conduct",
+                        "plan review meeting",
+                        "preserve"
+                    ],
+                    [
+                        "record",
+                        "outcome",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "plan review meeting",
+                    "applicant",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "Plan Review Meeting",
                 "Applicant"
@@ -1828,7 +2824,11 @@
                     "outcome"
                 ]
             ]
-        }
+        },
+        "Mix": {"Targets": [
+            "listen",
+            "outcome"
+        ]}
     },
     {
         "US_Nr": "user_story_39",
@@ -1848,6 +2848,67 @@
                 "fail",
                 "record"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "review",
+                        "compliance",
+                        "preserve"
+                    ],
+                    [
+                        "approve",
+                        "plans",
+                        "preserve"
+                    ],
+                    [
+                        "fail",
+                        "plans",
+                        "preserve"
+                    ],
+                    [
+                        "deny",
+                        "plans",
+                        "create"
+                    ],
+                    [
+                        "record",
+                        "clearances",
+                        "create"
+                    ],
+                    [
+                        "record",
+                        "corrections",
+                        "create"
+                    ],
+                    [
+                        "record",
+                        "any conditions",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "Applicant",
+                        "plans",
+                        "preserve"
+                    ],
+                    [
+                        "plans",
+                        "clearances",
+                        "preserve"
+                    ],
+                    [
+                        "plans",
+                        "corrections",
+                        "preserve"
+                    ],
+                    [
+                        "plans",
+                        "any conditions",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "Applicant",
@@ -1904,6 +2965,14 @@
             "Entity": ["Plans"],
             "Action": ["Review"],
             "Persona": ["Plan Review Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "review",
+                    "plans",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Plan Review Staff member, I want to Review Plans,",
             "Triggers": [[
@@ -1914,17 +2983,23 @@
                 "Review",
                 "Plans"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_40",
         "Benefit": {
             "Entity": ["revised plans"],
             "Action": ["review"],
-            "Contains": [[
-                "Plans",
-                "revised plans"
-            ]],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "review",
+                    "revised plans",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
+            "Contains": [],
             "Text": "I can review revised plans.",
             "Targets": [[
                 "review",
@@ -1937,6 +3012,14 @@
             "Entity": ["Plans"],
             "Action": ["Resubmit"],
             "Persona": ["Applicant"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "resubmit",
+                    "plans",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As an Applicant, I want to Resubmit Plans, ",
             "Triggers": [[
@@ -1947,7 +3030,11 @@
                 "Resubmit",
                 "Plans"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "Plans",
+            "revised plans"
+        ]}
     },
     {
         "US_Nr": "user_story_41",
@@ -1960,6 +3047,26 @@
                 "review",
                 "associate"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "review",
+                        "request",
+                        "preserve"
+                    ],
+                    [
+                        "associate",
+                        "request",
+                        "create"
+                    ],
+                    [
+                        "associate",
+                        "appropriate project",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can review the request and if approved, associate it with the appropriate project.",
             "Targets": [
@@ -1986,6 +3093,18 @@
             ],
             "Action": ["Review"],
             "Persona": ["Plan Review Staff Member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "review",
+                    "code modifications",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "applicant",
+                    "code modifications",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "Applicant",
                 "Code Modifications"
@@ -1999,7 +3118,8 @@
                 "Review",
                 "Code Modifications"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_42",
@@ -2019,6 +3139,42 @@
                 "ensure",
                 "completed"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "completed",
+                        "plan review tasks",
+                        "create"
+                    ],
+                    [
+                        "sent",
+                        "results",
+                        "create"
+                    ],
+                    [
+                        "initiated",
+                        "any downstream steps",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "Applicant",
+                        "results",
+                        "create"
+                    ],
+                    [
+                        "any downstream steps",
+                        "final review",
+                        "create"
+                    ],
+                    [
+                        "any downstream steps",
+                        "payment",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "Applicant",
@@ -2059,6 +3215,14 @@
             "Entity": ["Completion of Required Plan Reviews"],
             "Action": ["Track"],
             "Persona": ["Plan Review Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "track",
+                    "completion of required plan reviews",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Plan Review Staff member, I want to Track the Completion of Required Plan Reviews, so",
             "Triggers": [[
@@ -2069,7 +3233,8 @@
                 "Track",
                 "Completion of Required Plan Reviews"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_43",
@@ -2083,6 +3248,32 @@
                 "grant",
                 "begin"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "grant",
+                        "request",
+                        "create"
+                    ],
+                    [
+                        "begin",
+                        "work",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "Applicant",
+                        "request",
+                        "create"
+                    ],
+                    [
+                        "Applicant",
+                        "work",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "Applicant",
@@ -2111,6 +3302,14 @@
             "Entity": ["Development-related Permit"],
             "Action": ["Issue"],
             "Persona": ["Development Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "issue",
+                    "development-related permit",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Development Staff member, I want to Issue a Development-related Permit, ",
             "Triggers": [[
@@ -2121,7 +3320,8 @@
                 "Issue",
                 "Development-related Permit"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_44",
@@ -2135,6 +3335,21 @@
                 "track",
                 "manage"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "track",
+                        "bonds",
+                        "preserve"
+                    ],
+                    [
+                        "manage",
+                        "bonds",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "project",
                 "lifecycle"
@@ -2157,6 +3372,14 @@
             "Entity": ["Bonds"],
             "Action": ["Manage"],
             "Persona": ["Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "manage",
+                    "bonds",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Staff member, I want to Manage Bonds, ",
             "Triggers": [[
@@ -2167,7 +3390,8 @@
                 "Manage",
                 "Bonds"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_45",
@@ -2180,6 +3404,21 @@
                 "receive",
                 "obtain"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "receive",
+                        "any posted bond",
+                        "create"
+                    ],
+                    [
+                        "obtain",
+                        "occupancy",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can receive any posted bond and/or obtain occupancy.",
             "Targets": [
@@ -2199,6 +3438,14 @@
             "Entity": ["Building Development Project"],
             "Action": ["Complete"],
             "Persona": ["Applicant"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "complete",
+                    "building development project",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As an Applicant, I want to Complete Building Development Project, ",
             "Triggers": [[
@@ -2209,7 +3456,8 @@
                 "Complete",
                 "Building Development Project"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_46",
@@ -2223,6 +3471,21 @@
                 "perform",
                 "assigned"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "perform",
+                        "inspection",
+                        "create"
+                    ],
+                    [
+                        "assigned",
+                        "county inspector",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "a County inspector is assigned to perform an inspection of my project.",
             "Targets": [
@@ -2242,6 +3505,14 @@
             "Entity": ["Inspection"],
             "Action": ["Request"],
             "Persona": ["Customer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "request",
+                    "inspection",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Customer, I want to Request Inspection, ",
             "Triggers": [[
@@ -2252,7 +3523,8 @@
                 "Request",
                 "Inspection"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_47",
@@ -2262,6 +3534,21 @@
                 "schedule",
                 "assign"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "schedule",
+                        "inspection",
+                        "create"
+                    ],
+                    [
+                        "assign",
+                        "inspection",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can schedule and assign the inspection.",
             "Targets": [
@@ -2281,6 +3568,14 @@
             "Entity": ["Inspection"],
             "Action": ["Create"],
             "Persona": ["Inspection Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "create",
+                    "inspection",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As an Inspection Staff member, I want to Create an Inspection, ",
             "Triggers": [[
@@ -2291,7 +3586,8 @@
                 "Create",
                 "Inspection"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_48",
@@ -2301,6 +3597,10 @@
                 "appropriate Inspector"
             ],
             "Action": ["make sure"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "work",
                 "appropriate Inspector"
@@ -2314,6 +3614,14 @@
             "Entity": ["Inspections"],
             "Action": ["Assign"],
             "Persona": ["Inspection Staff Supervisor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "assign",
+                    "inspections",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As an Inspection Staff Supervisor, I want to Assign Inspections, ",
             "Triggers": [[
@@ -2324,7 +3632,8 @@
                 "Assign",
                 "Inspections"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_49",
@@ -2334,6 +3643,21 @@
                 "quality requirements"
             ],
             "Action": ["meet"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "meet",
+                        "quality requirements",
+                        "preserve"
+                    ],
+                    [
+                        "meet",
+                        "service level ",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can meet service level and quality requirements.",
             "Targets": [
@@ -2353,6 +3677,14 @@
             "Entity": ["Inspector Workload"],
             "Action": ["Manage"],
             "Persona": ["Inspection Supervisor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "manage",
+                    "inspector workload",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As an Inspection Supervisor, I want to Manage Inspector Workload, ",
             "Triggers": [[
@@ -2363,7 +3695,8 @@
                 "Manage",
                 "Inspector Workload"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_50",
@@ -2380,6 +3713,25 @@
                 "validate",
                 "provide"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "validate",
+                        "customer compliance",
+                        "create"
+                    ],
+                    [
+                        "provide",
+                        "results",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "inspection",
+                    "results",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "inspection",
                 "results"
@@ -2402,6 +3754,14 @@
             "Entity": ["Inspections"],
             "Action": ["Conduct"],
             "Persona": ["Inspector"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "conduct",
+                    "inspections",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As an Inspector, I want to Conduct Inspections, ",
             "Triggers": [[
@@ -2412,7 +3772,8 @@
                 "Conduct",
                 "Inspections"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_51",
@@ -2422,6 +3783,14 @@
                 "responsible party"
             ],
             "Action": ["provide"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "provide",
+                    "formal communication",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can provide formal communication to the responsible party.",
             "Targets": [[
@@ -2435,6 +3804,14 @@
             "Entity": ["Notice of Violation"],
             "Action": ["Issue"],
             "Persona": ["Enforcement Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "issue",
+                    "notice of violation",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As an Enforcement Staff member, I want to Issue a Notice of Violation, ",
             "Triggers": [[
@@ -2445,7 +3822,8 @@
                 "Issue",
                 "Notice of Violation"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_52",
@@ -2456,6 +3834,26 @@
                 "applications"
             ],
             "Action": ["obtain"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "obtain",
+                        "associated current and historic owners",
+                        "create"
+                    ],
+                    [
+                        "obtain",
+                        "permits",
+                        "create"
+                    ],
+                    [
+                        "obtain",
+                        "applications",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can obtain all associated current and historic owners, permits, and applications.",
             "Targets": [
@@ -2479,6 +3877,14 @@
             "Entity": ["Property information"],
             "Action": ["search"],
             "Persona": ["Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "search",
+                    "property information",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a l Staff member, I want to search for Property information, ",
             "Triggers": [[
@@ -2489,7 +3895,8 @@
                 "search",
                 "Property information"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_53",
@@ -2504,6 +3911,42 @@
                 "reviewing",
                 "ensure"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "reviewing",
+                        "permit",
+                        "preserve"
+                    ],
+                    [
+                        "reviewing",
+                        "application",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "permit",
+                        "appropriate standards",
+                        "preserve"
+                    ],
+                    [
+                        "permit",
+                        "most current data",
+                        "preserve"
+                    ],
+                    [
+                        "application",
+                        "appropriate standards",
+                        "preserve"
+                    ],
+                    [
+                        "application",
+                        "most current data",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "application",
@@ -2546,6 +3989,14 @@
                 "be notified"
             ],
             "Persona": ["Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "be notified",
+                    "when",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Staff member, I need to be notified when Geospatial attributes change, ",
             "Triggers": [[
@@ -2556,13 +4007,22 @@
                 "be notified",
                 "when"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_54",
         "Benefit": {
             "Entity": ["request"],
             "Action": ["fulfill"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "fulfill",
+                    "request",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can fulfill a request.",
             "Targets": [[
@@ -2579,6 +4039,14 @@
             ],
             "Action": ["create"],
             "Persona": ["County Staff Member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "create",
+                    "custom query/report",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a County Staff Member, I want to create a custom query/report outside of the common querying/reporting functionality, ",
             "Triggers": [[
@@ -2589,7 +4057,8 @@
                 "create",
                 "custom query/report"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_55",
@@ -2603,6 +4072,25 @@
                 "associate",
                 "address"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "associate",
+                        "child parcel",
+                        "create"
+                    ],
+                    [
+                        "address",
+                        "condominiums",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "system",
+                    "condominiums",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "system",
                 "condominiums"
@@ -2616,10 +4104,6 @@
                 [
                     "address",
                     "condominiums"
-                ],
-                [
-                    "associate",
-                    "each condo unit"
                 ]
             ]
         },
@@ -2629,6 +4113,14 @@
             "Entity": ["each condo unit"],
             "Action": ["create"],
             "Persona": ["Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "create",
+                    "each condo unit",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Staff member, I want to create each condo unit, ",
             "Triggers": [[
@@ -2639,7 +4131,11 @@
                 "create",
                 "each condo unit"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "associate",
+            "each condo unit"
+        ]}
     },
     {
         "US_Nr": "user_story_56",
@@ -2653,16 +4149,29 @@
                 "successfully update",
                 "reference"
             ],
-            "Contains": [
-                [
-                    "transactional Parcel Pin",
-                    "Split or Merged Parcel Pin"
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "successfully update",
+                        "transactional parcel pin",
+                        "create"
+                    ],
+                    [
+                        "reference",
+                        "gis layer",
+                        "create"
+                    ]
                 ],
-                [
-                    "GIS Property Management",
-                    "GIS layer"
-                ]
-            ],
+                "Contain Action Rules": [[
+                    "transactional Parcel Pin",
+                    "Split or Merged Parcel Pin",
+                    "create"
+                ]]
+            },
+            "Contains": [[
+                "transactional Parcel Pin",
+                "Split or Merged Parcel Pin"
+            ]],
             "Text": "I can successfully update the transactional Parcel Pin to reference the GIS layer where the Split or Merged Parcel Pin exists.",
             "Targets": [
                 [
@@ -2681,6 +4190,14 @@
             "Entity": ["GIS Property Management"],
             "Action": ["update"],
             "Persona": ["Technical Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "update",
+                    "gis property management",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Technical Staff member, I want to update the GIS Property Management, ",
             "Triggers": [[
@@ -2691,7 +4208,11 @@
                 "update",
                 "GIS Property Management"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "GIS Property Management",
+            "GIS layer"
+        ]}
     },
     {
         "US_Nr": "user_story_57",
@@ -2706,6 +4227,25 @@
                 "log",
                 "successfully send"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "successfully send",
+                        "notice of violation document",
+                        "create"
+                    ],
+                    [
+                        "log",
+                        "information",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "property owner",
+                    "Notice Of Violation document",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "property owner",
                 "Notice Of Violation document"
@@ -2734,6 +4274,31 @@
                 "Send"
             ],
             "Persona": ["Staff member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "send",
+                        "citations",
+                        "create"
+                    ],
+                    [
+                        "post",
+                        "citations",
+                        "create"
+                    ],
+                    [
+                        "post",
+                        "fines",
+                        "create"
+                    ],
+                    [
+                        "send",
+                        "fines",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G03# As a Staff member, I want to Send or Post Citations and Fines, ",
             "Triggers": [
@@ -2764,6 +4329,7 @@
                     "Fines"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     }
 ]

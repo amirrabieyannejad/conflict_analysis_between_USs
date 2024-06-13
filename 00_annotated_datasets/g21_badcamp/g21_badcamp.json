@@ -33,7 +33,8 @@
                 "view",
                 "list"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_02",
@@ -81,7 +82,8 @@
                 "view",
                 "list"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_03",
@@ -90,10 +92,7 @@
             "Action": ["use"],
             "Contains": [],
             "Text": "It is easier to use.",
-            "Targets": [[
-                "use",
-                "website"
-            ]]
+            "Targets": []
         },
         "Text": "#G21# As a trainingcoordinator, I want to email all the trainers at once from the website for info and updates, so that It is easier to use.",
         "PID": "#G21#",
@@ -116,7 +115,11 @@
                 "email",
                 "trainers"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "use",
+            "website"
+        ]}
     },
     {
         "US_Nr": "user_story_04",
@@ -159,7 +162,8 @@
                 "have",
                 "very clear map"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_05",
@@ -192,7 +196,8 @@
                 "edit",
                 "training node"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_06",
@@ -232,7 +237,8 @@
                 "limit",
                 "one registration"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_07",
@@ -279,17 +285,15 @@
                     "registration status"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_08",
         "Benefit": {
             "Entity": ["class"],
             "Action": [],
-            "Contains": [[
-                "class",
-                "training waitlist"
-            ]],
+            "Contains": [],
             "Text": "they can be considered for a class.",
             "Targets": []
         },
@@ -309,7 +313,11 @@
                 "be added",
                 "training waitlist"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "class",
+            "training waitlist"
+        ]}
     },
     {
         "US_Nr": "user_story_09",
@@ -339,7 +347,8 @@
                 "accept",
                 "cancellation terms"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_10",
@@ -382,7 +391,8 @@
                 "tie in",
                 "cancellation deadline"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_11",
@@ -416,7 +426,8 @@
                 "add"
             ]],
             "Targets": []
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_12",
@@ -446,7 +457,8 @@
                 "see",
                 "trainings I have signed up"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_13",
@@ -508,7 +520,8 @@
                     "all class attendance"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_14",
@@ -562,7 +575,8 @@
                     "all trainee information"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_15",
@@ -684,7 +698,8 @@
                     "offering"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_16",
@@ -823,7 +838,8 @@
                     "training options"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_17",
@@ -904,7 +920,8 @@
                     "call for trainings"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_18",
@@ -952,7 +969,8 @@
                 "have",
                 "link"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_19",
@@ -989,7 +1007,8 @@
                     "what time"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_20",
@@ -1031,7 +1050,8 @@
                 "refund",
                 "sponsorship money"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_21",
@@ -1068,7 +1088,8 @@
                 "find",
                 "link"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_22",
@@ -1120,7 +1141,8 @@
                 "See",
                 "list"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_23",
@@ -1172,7 +1194,8 @@
                     "$350 company sponsorship"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_24",
@@ -1238,7 +1261,8 @@
                     "venues"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_25",
@@ -1282,7 +1306,8 @@
                 "view",
                 "venue details"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_26",
@@ -1343,7 +1368,8 @@
                 "see",
                 "list"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_27",
@@ -1390,17 +1416,15 @@
                     "individual sponsorships"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_28",
         "Benefit": {
             "Entity": ["sponsor detail page"],
             "Action": [],
-            "Contains": [[
-                "sponsor detail page",
-                "sponsors"
-            ]],
+            "Contains": [],
             "Text": "They will be featured on the sponsor detail page.",
             "Targets": []
         },
@@ -1438,7 +1462,11 @@
                 "assign",
                 "sponsors"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "sponsor detail page",
+            "sponsors"
+        ]}
     },
     {
         "US_Nr": "user_story_29",
@@ -1516,7 +1544,8 @@
                     "summits"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_30",
@@ -1570,17 +1599,15 @@
                     "card"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_31",
         "Benefit": {
             "Entity": ["level of attendance"],
             "Action": ["show off"],
-            "Contains": [[
-                "sponsorship page",
-                "level of attendance"
-            ]],
+            "Contains": [],
             "Text": "I can show off our level of attendance.",
             "Targets": [[
                 "show off",
@@ -1606,7 +1633,11 @@
                 "link",
                 "BADCamp attendees"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "sponsorship page",
+            "level of attendance"
+        ]}
     },
     {
         "US_Nr": "user_story_32",
@@ -1642,7 +1673,8 @@
                 "update",
                 "user profile"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_33",
@@ -1678,22 +1710,17 @@
                 "sign up",
                 "BADCamp newsletter"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_34",
         "Benefit": {
             "Entity": ["Drupal Planet blog"],
             "Action": ["listed"],
-            "Contains": [[
-                "Drupal Planet blog",
-                "blog posts"
-            ]],
+            "Contains": [],
             "Text": "they will be listed on the Drupal Planet blog.",
-            "Targets": [[
-                "listed",
-                "blog posts"
-            ]]
+            "Targets": []
         },
         "Text": "#G21# As a administrator, I want to tag my blog posts for consumption by Drupal Planet, so that they will be listed on the Drupal Planet blog.",
         "PID": "#G21#",
@@ -1714,6 +1741,16 @@
                 "tag",
                 "blog posts"
             ]]
+        },
+        "Mix": {
+            "Contains": [
+                "Drupal Planet blog",
+                "blog posts"
+            ],
+            "Targets": [
+                "listed",
+                "blog posts"
+            ]
         }
     },
     {
@@ -1728,10 +1765,6 @@
             "Contains": [
                 [
                     "BADCamp",
-                    "latest information"
-                ],
-                [
-                    "blog posts",
                     "latest information"
                 ],
                 [
@@ -1761,7 +1794,11 @@
                 "create",
                 "blog posts"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "blog posts",
+            "latest information"
+        ]}
     },
     {
         "US_Nr": "user_story_36",
@@ -1771,16 +1808,10 @@
                 "BADCamp"
             ],
             "Action": [],
-            "Contains": [
-                [
-                    "blog",
-                    "latest happenings"
-                ],
-                [
-                    "BADCamp",
-                    "latest happenings"
-                ]
-            ],
+            "Contains": [[
+                "BADCamp",
+                "latest happenings"
+            ]],
             "Text": "I can stay informed about all the latest happenings with BADCamp.",
             "Targets": []
         },
@@ -1800,7 +1831,11 @@
                 "read",
                 "blog"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "blog",
+            "latest happenings"
+        ]}
     },
     {
         "US_Nr": "user_story_37",
@@ -1849,7 +1884,8 @@
                 "sponsor",
                 "summit"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_38",
@@ -1885,7 +1921,8 @@
                 "register for",
                 "summit"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_39",
@@ -1924,7 +1961,8 @@
                 "get",
                 "detailed directions"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_40",
@@ -1986,7 +2024,8 @@
                     "summits"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_41",
@@ -2036,7 +2075,8 @@
                 "see",
                 "list"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_42",
@@ -2084,7 +2124,8 @@
                 "list",
                 "basic information"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_43",
@@ -2126,7 +2167,8 @@
                 "list",
                 "sponsors"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_44",
@@ -2184,7 +2226,8 @@
                 "list",
                 "agenda"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_45",
@@ -2225,7 +2268,8 @@
                 "see",
                 "how many"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_46",
@@ -2287,7 +2331,8 @@
                 "see",
                 "specific details"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_47",
@@ -2332,7 +2377,8 @@
                 "see",
                 "list"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_48",
@@ -2375,7 +2421,8 @@
                 "learn",
                 "sponsorship levels"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_49",
@@ -2414,7 +2461,8 @@
                 "use",
                 "WYSIWYG editor"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_50",
@@ -2453,7 +2501,8 @@
                 "Link",
                 "sponsorship profile"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_51",
@@ -2518,7 +2567,8 @@
                     "sponsorship person"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_52",
@@ -2548,17 +2598,15 @@
                 "post",
                 "job"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_53",
         "Benefit": {
             "Entity": ["interesting Drupal gig"],
             "Action": ["look for"],
-            "Contains": [[
-                "job board",
-                "interesting Drupal gig"
-            ]],
+            "Contains": [],
             "Text": "I can look for an interesting Drupal gig!.",
             "Targets": [[
                 "look for",
@@ -2581,7 +2629,11 @@
                 "view",
                 "job board"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "job board",
+            "interesting Drupal gig"
+        ]}
     },
     {
         "US_Nr": "user_story_54",
@@ -2618,7 +2670,8 @@
                 "assign",
                 "room"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_55",
@@ -2665,7 +2718,8 @@
                 "see",
                 "schedule"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_56",
@@ -2707,7 +2761,8 @@
                 "see",
                 "final list"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_57",
@@ -2737,17 +2792,15 @@
                 "bulk approve",
                 "sessions"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_58",
         "Benefit": {
             "Entity": ["schedule"],
             "Action": ["populate"],
-            "Contains": [[
-                "session",
-                "schedule"
-            ]],
+            "Contains": [],
             "Text": "I can populate the schedule",
             "Targets": [[
                 "populate",
@@ -2770,7 +2823,11 @@
                 "mark",
                 "session"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "session",
+            "schedule"
+        ]}
     },
     {
         "US_Nr": "user_story_59",
@@ -2813,7 +2870,8 @@
                     "sessions"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_60",
@@ -2858,7 +2916,8 @@
                     "session"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_61",
@@ -2897,17 +2956,15 @@
                 "edit",
                 "session"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_62",
         "Benefit": {
             "Entity": ["session"],
             "Action": ["submit"],
-            "Contains": [[
-                "BADCamp",
-                "session"
-            ]],
+            "Contains": [],
             "Text": "I submit a session",
             "Targets": [[
                 "submit",
@@ -2930,7 +2987,11 @@
                 "register"
             ]],
             "Targets": []
-        }
+        },
+        "Mix": {"Contains": [
+            "BADCamp",
+            "session"
+        ]}
     },
     {
         "US_Nr": "user_story_63",
@@ -2966,17 +3027,15 @@
                 "submit",
                 "session"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_64",
         "Benefit": {
             "Entity": ["brand"],
             "Action": ["promote"],
-            "Contains": [[
-                "sponsorship page",
-                "brand"
-            ]],
+            "Contains": [],
             "Text": "I can promote my brand",
             "Targets": [[
                 "promote",
@@ -2999,7 +3058,11 @@
                 "personalize",
                 "sponsorship page"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "sponsorship page",
+            "brand"
+        ]}
     },
     {
         "US_Nr": "user_story_65",
@@ -3035,7 +3098,8 @@
                 "see",
                 "list"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_66",
@@ -3083,17 +3147,15 @@
                 "Be offered",
                 "several choices"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_67",
         "Benefit": {
             "Entity": ["camp"],
             "Action": ["easily register for"],
-            "Contains": [[
-                "camp",
-                "registration form"
-            ]],
+            "Contains": [],
             "Text": "I can easily register for the camp.",
             "Targets": [[
                 "easily register for",
@@ -3132,7 +3194,11 @@
                     "registration form"
                 ]
             ]
-        }
+        },
+        "Mix": {"Contains": [
+            "camp",
+            "registration form"
+        ]}
     },
     {
         "US_Nr": "user_story_68",
@@ -3146,16 +3212,10 @@
                 "get",
                 "register for"
             ],
-            "Contains": [
-                [
-                    "camp",
-                    "user registration form"
-                ],
-                [
-                    "website",
-                    "account"
-                ]
-            ],
+            "Contains": [[
+                "website",
+                "account"
+            ]],
             "Text": "I can register for the camp and get an account on the website.",
             "Targets": [
                 [
@@ -3184,7 +3244,11 @@
                 "fill",
                 "user registration form"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "camp",
+            "user registration form"
+        ]}
     },
     {
         "US_Nr": "user_story_69",
@@ -3214,6 +3278,7 @@
                 "find",
                 "session information"
             ]]
-        }
+        },
+        "Mix": {}
     }
 ]

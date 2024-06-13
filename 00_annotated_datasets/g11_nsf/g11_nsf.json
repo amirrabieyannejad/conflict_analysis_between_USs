@@ -35,17 +35,15 @@
                 "see",
                 "first iteration"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_02",
         "Benefit": {
             "Entity": ["beta site"],
             "Action": ["deploy"],
-            "Contains": [[
-                "subdomain beta.nsf.gov",
-                "beta site"
-            ]],
+            "Contains": [],
             "Text": "I can deploy a beta site to it.",
             "Targets": [[
                 "deploy",
@@ -77,7 +75,11 @@
                     "subdomain beta.nsf.gov"
                 ]
             ]
-        }
+        },
+        "Mix": {"Contains": [
+            "subdomain beta.nsf.gov",
+            "beta site"
+        ]}
     },
     {
         "US_Nr": "user_story_03",
@@ -113,7 +115,8 @@
                 "have",
                 "decision"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_04",
@@ -161,7 +164,8 @@
                     "cloud.gov hosting plan"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_05",
@@ -197,17 +201,15 @@
                 "see",
                 "results"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_06",
         "Benefit": {
             "Entity": ["design"],
             "Action": ["begin implementing"],
-            "Contains": [[
-                "new social media wireframe",
-                "design"
-            ]],
+            "Contains": [],
             "Text": "I can begin implementing design.",
             "Targets": [[
                 "begin implementing",
@@ -230,7 +232,11 @@
                 "have",
                 "new social media wireframe"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "new social media wireframe",
+            "design"
+        ]}
     },
     {
         "US_Nr": "user_story_07",
@@ -267,10 +273,16 @@
             ],
             "Action": ["have"],
             "Persona": ["team member"],
-            "Contains": [[
-                "prioritized list",
-                "features"
-            ]],
+            "Contains": [
+                [
+                    "prioritized list",
+                    "features"
+                ],
+                [
+                    "future social element page",
+                    "elements"
+                ]
+            ],
             "Text": "#G11# As a team member, I want to have a prioritized list of features and elements of a future social element page, ",
             "Triggers": [[
                 "team member",
@@ -284,13 +296,10 @@
                 [
                     "have",
                     "elements"
-                ],
-                [
-                    "future social element page",
-                    "elements"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_08",
@@ -300,10 +309,7 @@
                 "established brand guidelines"
             ],
             "Action": ["implement"],
-            "Contains": [[
-                "beta social page",
-                "beta site"
-            ]],
+            "Contains": [],
             "Text": "we can implement a beta site quickly without established brand guidelines.",
             "Targets": [[
                 "implement",
@@ -332,7 +338,11 @@
                 "determine",
                 "design direction"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "beta social page",
+            "beta site"
+        ]}
     },
     {
         "US_Nr": "user_story_09",
@@ -368,7 +378,8 @@
                 "test",
                 "user research plan"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_10",
@@ -398,7 +409,8 @@
                 "have",
                 "finalized OLPA task script"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_11",
@@ -407,10 +419,7 @@
             "Action": ["edit"],
             "Contains": [],
             "Text": "I can edit it.",
-            "Targets": [[
-                "edit",
-                "content"
-            ]]
+            "Targets": []
         },
         "Text": "#G11# As a content editor, I want to be able to easily find content, so that I can edit it.",
         "PID": "#G11#",
@@ -428,7 +437,11 @@
                 "easily find",
                 "content"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "edit",
+            "content"
+        ]}
     },
     {
         "US_Nr": "user_story_12",
@@ -462,7 +475,8 @@
                 "make sure"
             ]],
             "Targets": []
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_13",
@@ -492,7 +506,8 @@
                 "have",
                 "WIG prototype"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_14",
@@ -523,7 +538,8 @@
                 "add",
                 "video"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_15",
@@ -559,7 +575,8 @@
                 "meet",
                 "DIS / cloud.gov"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_16",
@@ -607,7 +624,8 @@
                     "priority workflow candidates"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_17",
@@ -640,7 +658,8 @@
                 "understand",
                 "MVP"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_18",
@@ -652,16 +671,10 @@
             ],
             "Contains": [],
             "Text": "I can learn as the prototype is developed further.",
-            "Targets": [
-                [
-                    "developed further",
-                    "prototype"
-                ],
-                [
-                    "learn",
-                    "CMS implementation"
-                ]
-            ]
+            "Targets": [[
+                "developed further",
+                "prototype"
+            ]]
         },
         "Text": "#G11# As an NSF administrator, I want to shadow the CMS implementation, so that I can learn as the prototype is developed further.",
         "PID": "#G11#",
@@ -679,7 +692,11 @@
                 "shadow",
                 "CMS implementation"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "learn",
+            "CMS implementation"
+        ]}
     },
     {
         "US_Nr": "user_story_19",
@@ -706,7 +723,8 @@
                 "have",
                 "updated acquisitions roadmap"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_20",
@@ -719,10 +737,7 @@
                 "see",
                 "focus"
             ],
-            "Contains": [[
-                "updated roadmap document",
-                "prioritized areas"
-            ]],
+            "Contains": [],
             "Text": "I can see prioritized areas to focus on for the next few months and beyond.",
             "Targets": [
                 [
@@ -751,7 +766,11 @@
                 "have",
                 "updated roadmap document"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "updated roadmap document",
+            "prioritized areas"
+        ]}
     },
     {
         "US_Nr": "user_story_21",
@@ -793,7 +812,8 @@
                     "how"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_22",
@@ -829,7 +849,8 @@
                 "develop",
                 "user research protocol"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_23",
@@ -839,15 +860,9 @@
                 "assign",
                 "users"
             ],
-            "Contains": [[
-                "users",
-                "roles"
-            ]],
+            "Contains": [],
             "Text": "I can assign them to my users.",
-            "Targets": [[
-                "assign",
-                "roles"
-            ]]
+            "Targets": []
         },
         "Text": "#G11# As a CMS administrator, I want to have roles, so that I can assign them to my users.",
         "PID": "#G11#",
@@ -865,6 +880,16 @@
                 "have",
                 "roles"
             ]]
+        },
+        "Mix": {
+            "Contains": [
+                "users",
+                "roles"
+            ],
+            "Targets": [
+                "assign",
+                "roles"
+            ]
         }
     },
     {
@@ -923,7 +948,8 @@
                     "universe of CMS options"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_25",
@@ -983,7 +1009,8 @@
                     "features"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_26",
@@ -1025,7 +1052,8 @@
                 "see",
                 "webmaster workflow report"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_27",
@@ -1071,7 +1099,8 @@
                 "understand",
                 "work performed"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_28",
@@ -1084,16 +1113,7 @@
                 "summarize",
                 "synthesize"
             ],
-            "Contains": [
-                [
-                    "user research",
-                    "findings"
-                ],
-                [
-                    "user research",
-                    "results"
-                ]
-            ],
+            "Contains": [],
             "Text": "we can summarize our findings and synthesize results.",
             "Targets": [
                 [
@@ -1128,7 +1148,11 @@
                 "recruit",
                 "last round"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "user research",
+            "results"
+        ]}
     },
     {
         "US_Nr": "user_story_29",
@@ -1164,7 +1188,8 @@
                 "continue scheduling",
                 "interviews"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_30",
@@ -1201,7 +1226,8 @@
                     "new CMS"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_31",
@@ -1248,22 +1274,17 @@
                 "have",
                 "editorial-planning recommendations"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_32",
         "Benefit": {
             "Entity": ["project"],
             "Action": ["incorporate"],
-            "Contains": [[
-                "project",
-                "brand guidelines"
-            ]],
+            "Contains": [],
             "Text": "I can incorporate them throughout the project.",
-            "Targets": [[
-                "incorporate",
-                "brand guidelines"
-            ]]
+            "Targets": []
         },
         "Text": "#G11# As an NSF employee, I want to know how brand guidelines are developed and maintained, so that I can incorporate them throughout the project.",
         "PID": "#G11#",
@@ -1297,6 +1318,16 @@
                     "developed",
                     "brand guidelines"
                 ]
+            ]
+        },
+        "Mix": {
+            "Contains": [
+                "project",
+                "brand guidelines"
+            ],
+            "Targets": [
+                "incorporate",
+                "brand guidelines"
             ]
         }
     },
@@ -1336,7 +1367,8 @@
                     "recruiter"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_34",
@@ -1378,7 +1410,8 @@
                     "how"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_35",
@@ -1417,7 +1450,8 @@
                 "know",
                 "first hypothesis"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_36",
@@ -1451,7 +1485,8 @@
                 "develop",
                 "better understanding"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_37",
@@ -1500,7 +1535,8 @@
                 "have",
                 "prototype strategy"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_38",
@@ -1510,16 +1546,10 @@
                 "recommendations"
             ],
             "Action": ["ensure"],
-            "Contains": [
-                [
-                    "recommendations",
-                    "integral part"
-                ],
-                [
-                    "recommendations",
-                    "user-centered content design"
-                ]
-            ],
+            "Contains": [[
+                "recommendations",
+                "integral part"
+            ]],
             "Text": "to ensure it's an integral part of our recommendations.",
             "Targets": []
         },
@@ -1545,7 +1575,11 @@
                 "demonstrate",
                 "value"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "recommendations",
+            "user-centered content design"
+        ]}
     },
     {
         "US_Nr": "user_story_39",
@@ -1588,7 +1622,8 @@
                 "know",
                 "outreach to lists"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_40",
@@ -1631,7 +1666,8 @@
                 "schedule",
                 "regular in-person check-ins"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_41",
@@ -1667,7 +1703,8 @@
                 "know",
                 "three initial hypotheses"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_42",
@@ -1715,7 +1752,8 @@
                 "have",
                 "summary"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_43",
@@ -1751,7 +1789,8 @@
                 "know",
                 "early indications"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_44",
@@ -1790,7 +1829,8 @@
                 "have",
                 "schedule"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_45",
@@ -1831,7 +1871,8 @@
                     "type of user"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_46",
@@ -1840,16 +1881,7 @@
             "Action": ["refer"],
             "Contains": [],
             "Text": "I can refer to it easily now and in the future.",
-            "Targets": [
-                [
-                    "refer",
-                    "documentation"
-                ],
-                [
-                    "refer",
-                    "all the related reports"
-                ]
-            ]
+            "Targets": []
         },
         "Text": "#G11# As an NSF member of the team, I want to have a place where I can access all the related reports and documentation, so that I can refer to it easily now and in the future.",
         "PID": "#G11#",
@@ -1893,7 +1925,11 @@
                     "documentation"
                 ]
             ]
-        }
+        },
+        "Mix": {"Targets": [
+            "refer",
+            "all the related reports"
+        ]}
     },
     {
         "US_Nr": "user_story_47",
@@ -1929,7 +1965,8 @@
                     "what will be covered"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_48",
@@ -1959,7 +1996,8 @@
                 "join",
                 "Github"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_49",
@@ -1989,7 +2027,8 @@
                 "learn",
                 "Github"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_50",
@@ -2029,7 +2068,8 @@
                 "begin identifying",
                 "interview participants"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_51",
@@ -2068,7 +2108,8 @@
                 "concept",
                 "different styles"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_52",
@@ -2108,22 +2149,17 @@
                 "set up",
                 "website recruitment test"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_53",
         "Benefit": {
             "Entity": ["more pages"],
             "Action": ["deploy"],
-            "Contains": [[
-                "more pages",
-                "recruiter"
-            ]],
+            "Contains": [],
             "Text": "I can deploy it on more pages.",
-            "Targets": [[
-                "deploy",
-                "recruiter"
-            ]]
+            "Targets": []
         },
         "Text": "#G11# As a web recruiter manager, I want to confirm the recruiter is set up and working properly, so that I can deploy it on more pages.",
         "PID": "#G11#",
@@ -2154,6 +2190,16 @@
                     "confirm",
                     "recruiter"
                 ]
+            ]
+        },
+        "Mix": {
+            "Contains": [
+                "more pages",
+                "recruiter"
+            ],
+            "Targets": [
+                "deploy",
+                "recruiter"
             ]
         }
     },
@@ -2204,7 +2250,8 @@
                     "visual design concepts"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_55",
@@ -2242,7 +2289,8 @@
                 "see",
                 "summary"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_56",
@@ -2293,7 +2341,8 @@
                 "invited",
                 "correct NSF people"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_57",
@@ -2323,7 +2372,8 @@
                 "begin drafting",
                 "research plan"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_58",
@@ -2354,7 +2404,8 @@
                 "add",
                 "videos"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_59",
@@ -2394,7 +2445,8 @@
                     "content"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_60",
@@ -2441,7 +2493,8 @@
                 "demonstrate",
                 "value"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_61",
@@ -2488,7 +2541,8 @@
                     "visual design related tasks"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_62",
@@ -2518,7 +2572,8 @@
                 "have",
                 " recruiting-email templates ready"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_63",
@@ -2561,7 +2616,8 @@
                 "see",
                 " user recruitment form"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_64",
@@ -2604,7 +2660,8 @@
                     "contact information"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_65",
@@ -2640,7 +2697,8 @@
                 "have",
                 "high-level sense"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_66",
@@ -2683,7 +2741,8 @@
                     "how"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_67",
@@ -2723,7 +2782,8 @@
                     "HTML ideas"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_68",
@@ -2773,7 +2833,8 @@
                     "how"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_69",
@@ -2788,16 +2849,10 @@
                 "future research work"
             ]],
             "Text": "I can better prepare them and the team for future research work.",
-            "Targets": [
-                [
-                    "better prepare",
-                    "NSF"
-                ],
-                [
-                    "better prepare",
-                    "team"
-                ]
-            ]
+            "Targets": [[
+                "better prepare",
+                "team"
+            ]]
         },
         "Text": "#G11# As a user researcher, I want to conduct a user definition workshop with NSF, so that I can better prepare them and the team for future research work.",
         "PID": "#G11#",
@@ -2821,7 +2876,11 @@
                 "conduct",
                 "user definition workshop"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "better prepare",
+            "NSF"
+        ]}
     },
     {
         "US_Nr": "user_story_70",
@@ -2830,10 +2889,7 @@
             "Action": ["plan on attending"],
             "Contains": [],
             "Text": "I can plan on attending.",
-            "Targets": [[
-                "plan on attending",
-                "initial in-person meeting"
-            ]]
+            "Targets": []
         },
         "Text": "#G11# As an NSF employee, I want to know where the initial in-person meeting will be, so that I can plan on attending.",
         "PID": "#G11#",
@@ -2851,7 +2907,11 @@
                 "know",
                 "initial in-person meeting"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "plan on attending",
+            "initial in-person meeting"
+        ]}
     },
     {
         "US_Nr": "user_story_71",
@@ -2907,7 +2967,8 @@
                     "content guide"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_72",
@@ -2934,7 +2995,8 @@
                 "know",
                 "meetings"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_73",
@@ -2994,6 +3056,7 @@
                 "understand",
                 "how"
             ]]
-        }
+        },
+        "Mix": {}
     }
 ]

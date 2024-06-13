@@ -30,7 +30,8 @@
                 "publish",
                 "dataset"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_02",
@@ -66,7 +67,8 @@
                 "publish",
                 "dataset"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_03",
@@ -118,7 +120,8 @@
                 "sign up",
                 "account"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_04",
@@ -161,7 +164,8 @@
                     "google"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_05",
@@ -198,7 +202,8 @@
                     "what"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_06",
@@ -208,10 +213,7 @@
                 "start contributing",
                 "using"
             ],
-            "Contains": [[
-                "platform",
-                "data"
-            ]],
+            "Contains": [],
             "Text": "they can start contributing or using data.",
             "Targets": [
                 [
@@ -252,7 +254,11 @@
                     "platform"
                 ]
             ]
-        }
+        },
+        "Mix": {"Contains": [
+            "platform",
+            "data"
+        ]}
     },
     {
         "US_Nr": "user_story_07",
@@ -303,7 +309,8 @@
                 "import",
                 "data package"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_08",
@@ -333,7 +340,8 @@
                 "configure",
                 "client"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_09",
@@ -376,7 +384,8 @@
                     "data package"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_10",
@@ -403,7 +412,8 @@
                 "unpublish",
                 "data package"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_11",
@@ -430,7 +440,8 @@
                 "permanently delete",
                 "data package"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_12",
@@ -469,7 +480,8 @@
                 "validate",
                 "data I am about to publish"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_13",
@@ -484,10 +496,7 @@
                 "have",
                 "correct"
             ],
-            "Contains": [[
-                "data",
-                "bugs"
-            ]],
+            "Contains": [],
             "Text": "I know immediately if I have accidentally broken my data or have bugs and can take action to correct.",
             "Targets": [
                 [
@@ -534,7 +543,11 @@
                     "data"
                 ]
             ]
-        }
+        },
+        "Mix": {"Contains": [
+            "data",
+            "bugs"
+        ]}
     },
     {
         "US_Nr": "user_story_14",
@@ -561,7 +574,8 @@
                 "know",
                 "data I am downloading"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_15",
@@ -652,7 +666,8 @@
                     "resource data"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_16",
@@ -667,10 +682,7 @@
             ],
             "Contains": [],
             "Text": "I can still use is and my app or analysis keeps working.",
-            "Targets": [[
-                "still use",
-                "original data"
-            ]]
+            "Targets": []
         },
         "Text": "#G14# As a Consumer, I want to be able to get the data for a data package even if the original data has been moved or removed, so that that I can still use is and my app or analysis keeps working.",
         "PID": "#G14#",
@@ -709,7 +721,11 @@
                     "original data"
                 ]
             ]
-        }
+        },
+        "Mix": {"Targets": [
+            "still use",
+            "original data"
+        ]}
     },
     {
         "US_Nr": "user_story_17",
@@ -742,7 +758,8 @@
                 "publish",
                 "data package"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_18",
@@ -751,10 +768,7 @@
             "Action": ["published"],
             "Contains": [],
             "Text": "it is available and published.",
-            "Targets": [[
-                "published",
-                "data package"
-            ]]
+            "Targets": []
         },
         "Text": "#G14# As a Publisher, I want to create a data package in the UI so that it is available and published.",
         "PID": "#G14#",
@@ -778,7 +792,11 @@
                 "create",
                 "data package"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "published",
+            "data package"
+        ]}
     },
     {
         "US_Nr": "user_story_19",
@@ -790,16 +808,7 @@
             ],
             "Contains": [],
             "Text": "it is back visible and available to view, download.",
-            "Targets": [
-                [
-                    "download",
-                    "deleted data package"
-                ],
-                [
-                    "available to view",
-                    "deleted data package"
-                ]
-            ]
+            "Targets": []
         },
         "Text": "#G14# As a Publisher, I want to be able to restore the deleted data package via cli, so that that it is back visible and available to view, download.",
         "PID": "#G14#",
@@ -823,7 +832,11 @@
                 "restore",
                 "deleted data package"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "available to view",
+            "deleted data package"
+        ]}
     },
     {
         "US_Nr": "user_story_20",
@@ -850,7 +863,8 @@
                 "undelete",
                 "deleted data packages"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_21",
@@ -917,7 +931,8 @@
                     "cli"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_22",
@@ -950,7 +965,8 @@
                 "view",
                 "data package"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_23",
@@ -989,7 +1005,8 @@
                     "published data"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_24",
@@ -1031,7 +1048,8 @@
                 "view",
                 "data package"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_25",
@@ -1044,16 +1062,10 @@
             ],
             "Contains": [],
             "Text": "I can check it works and share the results.",
-            "Targets": [
-                [
-                    "share",
-                    "results"
-                ],
-                [
-                    "check",
-                    "datapackage I have prepared"
-                ]
-            ]
+            "Targets": [[
+                "share",
+                "results"
+            ]]
         },
         "Text": "#G14# As a Publisher, I want to preview a datapackage I have prepared, so that that I can check it works and share the results.",
         "PID": "#G14#",
@@ -1071,7 +1083,11 @@
                 "preview",
                 "datapackage I have prepared"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "check",
+            "datapackage I have prepared"
+        ]}
     },
     {
         "US_Nr": "user_story_26",
@@ -1086,10 +1102,7 @@
                 "several alternatives"
             ]],
             "Text": "I can choose most popular in the case when there are several alternatives for my use case.",
-            "Targets": [[
-                "choose",
-                "data"
-            ]]
+            "Targets": []
         },
         "Text": "#G14# As a Consumer, I want to see how much the data has been downloaded, so that that I can choose most popular in the case when there are several alternatives for my use case.",
         "PID": "#G14#",
@@ -1119,7 +1132,11 @@
                     "data"
                 ]
             ]
-        }
+        },
+        "Mix": {"Targets": [
+            "choose",
+            "data"
+        ]}
     },
     {
         "US_Nr": "user_story_27",
@@ -1159,7 +1176,8 @@
                 "see",
                 "real examples"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_28",
@@ -1205,7 +1223,8 @@
                 "see",
                 "some example data packages"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_29",
@@ -1235,7 +1254,8 @@
                 "search",
                 "data packages"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_30",
@@ -1277,7 +1297,8 @@
                 "search",
                 "description"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_31",
@@ -1313,7 +1334,8 @@
                 "download",
                 "data package"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_32",
@@ -1325,16 +1347,10 @@
             ],
             "Contains": [],
             "Text": "I can depend on it using my normal dependency framework.",
-            "Targets": [
-                [
-                    "using",
-                    "normal dependency framework"
-                ],
-                [
-                    "depend",
-                    "data package"
-                ]
-            ]
+            "Targets": [[
+                "using",
+                "normal dependency framework"
+            ]]
         },
         "Text": "#G14# As a Developer, I want to use data package as a node lib in my project, so that that I can depend on it using my normal dependency framework.",
         "PID": "#G14#",
@@ -1359,7 +1375,11 @@
                 "use",
                 "data package"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "depend",
+            "data package"
+        ]}
     },
     {
         "US_Nr": "user_story_33",
@@ -1368,10 +1388,7 @@
             "Action": ["immediately start playing"],
             "Contains": [],
             "Text": "I can immediately start playing with it.",
-            "Targets": [[
-                "immediately start playing",
-                "Data Package"
-            ]]
+            "Targets": []
         },
         "Text": "#G14# As a Consumer, I want to load a Data Package from R, so that that I can immediately start playing with it.",
         "PID": "#G14#",
@@ -1395,7 +1412,11 @@
                 "load",
                 "Data Package"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "immediately start playing",
+            "Data Package"
+        ]}
     },
     {
         "US_Nr": "user_story_34",
@@ -1413,14 +1434,6 @@
             "Contains": [],
             "Text": "I can study it and wrangle with it to infer new data or generate new insights.",
             "Targets": [
-                [
-                    "study",
-                    "data package"
-                ],
-                [
-                    "wrangle",
-                    "data package"
-                ],
                 [
                     "infer",
                     "new data"
@@ -1447,7 +1460,11 @@
                 "download",
                 "data package"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "wrangle",
+            "data package"
+        ]}
     },
     {
         "US_Nr": "user_story_35",
@@ -1477,22 +1494,17 @@
                 "update",
                 "previously downloaded data package"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_36",
         "Benefit": {
             "Entity": ["one form"],
             "Action": ["get"],
-            "Contains": [[
-                "DataPackage's data",
-                "one form"
-            ]],
+            "Contains": [],
             "Text": "I can get it easily in one form.",
-            "Targets": [[
-                "get",
-                "DataPackage's data"
-            ]]
+            "Targets": []
         },
         "Text": "#G14# As a Consumer, I want to download a DataPackage's data one coherent SQLite database, so that that I can get it easily in one form.",
         "PID": "#G14#",
@@ -1516,6 +1528,16 @@
                 "download",
                 "DataPackage's data"
             ]]
+        },
+        "Mix": {
+            "Contains": [
+                "DataPackage's data",
+                "one form"
+            ],
+            "Targets": [
+                "get",
+                "DataPackage's data"
+            ]
         }
     },
     {
@@ -1565,7 +1587,8 @@
                 "compare",
                 "different versions"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_38",
@@ -1610,7 +1633,8 @@
                 "install",
                 "multiple versions"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_39",
@@ -1683,7 +1707,8 @@
                     "DataPackage"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_40",
@@ -1692,10 +1717,7 @@
             "Action": ["refer"],
             "Contains": [],
             "Text": "consumers can refer to it.",
-            "Targets": [[
-                "refer",
-                "datapackage"
-            ]]
+            "Targets": []
         },
         "Text": "#G14# As a Publisher, I want to tag datapackage to create a snapshot of data on the registry server, so that that consumers can refer to it.",
         "PID": "#G14#",
@@ -1736,7 +1758,11 @@
                     "snapshot"
                 ]
             ]
-        }
+        },
+        "Mix": {"Targets": [
+            "refer",
+            "datapackage"
+        ]}
     },
     {
         "US_Nr": "user_story_41",
@@ -1770,7 +1796,8 @@
                 "try to overwrite",
                 "tag"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_42",
@@ -1782,16 +1809,7 @@
             ],
             "Contains": [],
             "Text": "I can fix it if I mess up.",
-            "Targets": [
-                [
-                    "fix",
-                    "previously tagged datapackage"
-                ],
-                [
-                    "mess up",
-                    "previously tagged datapackage"
-                ]
-            ]
+            "Targets": []
         },
         "Text": "#G14# As a Publisher, I want to be able to overwrite the previously tagged datapackage, so that that I can fix it if I mess up.",
         "PID": "#G14#",
@@ -1809,7 +1827,11 @@
                 "overwrite",
                 "previously tagged datapackage"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "mess up",
+            "previously tagged datapackage"
+        ]}
     },
     {
         "US_Nr": "user_story_43",
@@ -1858,7 +1880,8 @@
                     "multiple versions"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_44",
@@ -1870,16 +1893,7 @@
             ],
             "Contains": [],
             "Text": "I can return to it and review it.",
-            "Targets": [
-                [
-                    "review",
-                    "previous version I tagged"
-                ],
-                [
-                    "return to",
-                    "previous version I tagged"
-                ]
-            ]
+            "Targets": []
         },
         "Text": "#G14# As a Publisher, I want to be able to get access to a previous version I tagged, so that that I can return to it and review it.",
         "PID": "#G14#",
@@ -1903,7 +1917,11 @@
                 "get",
                 "access"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "return to",
+            "previous version I tagged"
+        ]}
     },
     {
         "US_Nr": "user_story_45",
@@ -1915,16 +1933,10 @@
             ],
             "Contains": [],
             "Text": "I can adjust my scripts to handle it.",
-            "Targets": [
-                [
-                    "adjust",
-                    "scripts"
-                ],
-                [
-                    "handle",
-                    "data package schema"
-                ]
-            ]
+            "Targets": [[
+                "adjust",
+                "scripts"
+            ]]
         },
         "Text": "#G14# As a Consumer, I want to know full details of how the data package schema has changed, so that that I can adjust my scripts to handle it.",
         "PID": "#G14#",
@@ -1957,7 +1969,11 @@
                     "data package schema"
                 ]
             ]
-        }
+        },
+        "Mix": {"Targets": [
+            "handle",
+            "data package schema"
+        ]}
     },
     {
         "US_Nr": "user_story_46",
@@ -1969,10 +1985,7 @@
             ],
             "Contains": [],
             "Text": "I can decide if I should update or not.",
-            "Targets": [[
-                "update",
-                "datapackage"
-            ]]
+            "Targets": []
         },
         "Text": "#G14# As a Consumer, I want to get a sense of the age of the datapackage that I have downloaded before, so that that I can decide if I should update or not.",
         "PID": "#G14#",
@@ -1997,7 +2010,11 @@
                 "get",
                 "sense"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "update",
+            "datapackage"
+        ]}
     },
     {
         "US_Nr": "user_story_47",
@@ -2045,7 +2062,8 @@
                 "view",
                 "Datapackage"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_48",
@@ -2057,10 +2075,7 @@
             "Action": ["know"],
             "Contains": [],
             "Text": "I know it is compatible with my scripts and system.",
-            "Targets": [[
-                "know",
-                "Data package"
-            ]]
+            "Targets": []
         },
         "Text": "#G14# As a Consumer, I want to download a Data package at a particular version, so that that I know it is compatible with my scripts and system.",
         "PID": "#G14#",
@@ -2084,7 +2099,11 @@
                 "download",
                 "Data package"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "know",
+            "Data package"
+        ]}
     },
     {
         "US_Nr": "user_story_49",
@@ -2123,7 +2142,8 @@
                 "be notified",
                 "changes"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_50",
@@ -2156,7 +2176,8 @@
                 "see",
                 "how active"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_51",
@@ -2213,7 +2234,8 @@
                     "publishers"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_52",
@@ -2256,7 +2278,8 @@
                 "see",
                 "publisher's profile"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_53",
@@ -2307,7 +2330,8 @@
                 "view",
                 "publisher's profile"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_54",
@@ -2356,22 +2380,17 @@
                 "search",
                 "all data packages"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_55",
         "Benefit": {
             "Entity": ["new information"],
             "Action": ["updated"],
-            "Contains": [[
-                "profile",
-                "new information"
-            ]],
+            "Contains": [],
             "Text": "it is updated with new information.",
-            "Targets": [[
-                "updated",
-                "profile"
-            ]]
+            "Targets": []
         },
         "Text": "#G14# As an Owner, I want to edit my profile, so that that it is updated with new information.",
         "PID": "#G14#",
@@ -2389,6 +2408,16 @@
                 "edit",
                 "profile"
             ]]
+        },
+        "Mix": {
+            "Contains": [
+                "profile",
+                "new information"
+            ],
+            "Targets": [
+                "updated",
+                "profile"
+            ]
         }
     },
     {
@@ -2423,7 +2452,8 @@
                 "invite",
                 "existing user"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_57",
@@ -2480,7 +2510,8 @@
                     "email"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_58",
@@ -2535,7 +2566,8 @@
                 "remove",
                 "someone"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_59",
@@ -2544,10 +2576,7 @@
             "Action": ["change"],
             "Contains": [],
             "Text": "I can change these if I want.",
-            "Targets": [[
-                "change",
-                "roles"
-            ]]
+            "Targets": []
         },
         "Text": "#G14# As an owner, I want to view all the people in my organization and what roles they have, so that that I can change these if I want.",
         "PID": "#G14#",
@@ -2584,17 +2613,18 @@
                     "roles"
                 ]
             ]
-        }
+        },
+        "Mix": {"Targets": [
+            "change",
+            "roles"
+        ]}
     },
     {
         "US_Nr": "user_story_60",
         "Benefit": {
             "Entity": ["full control"],
             "Action": ["have"],
-            "Contains": [[
-                "owner",
-                "full control"
-            ]],
+            "Contains": [],
             "Text": "they have full control.",
             "Targets": [[
                 "have",
@@ -2620,7 +2650,11 @@
                 "make",
                 "user"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "owner",
+            "full control"
+        ]}
     },
     {
         "US_Nr": "user_story_61",
@@ -2653,7 +2687,8 @@
                 "remove",
                 "user"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_62",
@@ -2695,7 +2730,8 @@
                 "set",
                 "key configuration parameters"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_63",
@@ -2731,7 +2767,8 @@
                 "see",
                 "key metrics"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_64",
@@ -2782,7 +2819,8 @@
                     "billing system"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_65",
@@ -2832,7 +2870,8 @@
                 "know",
                 "prices"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_66",
@@ -2859,22 +2898,17 @@
                 "sign up",
                 "given pricing plan"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_67",
         "Benefit": {
             "Entity": ["team"],
             "Action": ["share"],
-            "Contains": [[
-                "team",
-                "private data packages"
-            ]],
+            "Contains": [],
             "Text": "I can share just with my team.",
-            "Targets": [[
-                "share",
-                "private data packages"
-            ]]
+            "Targets": []
         },
         "Text": "#G14# As a Publisher, I want to have private data packages, so that I can share just with my team.",
         "PID": "#G14#",
@@ -2892,6 +2926,16 @@
                 "have",
                 "private data packages"
             ]]
+        },
+        "Mix": {
+            "Contains": [
+                "team",
+                "private data packages"
+            ],
+            "Targets": [
+                "share",
+                "private data packages"
+            ]
         }
     }
 ]

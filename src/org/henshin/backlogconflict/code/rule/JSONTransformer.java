@@ -23,8 +23,8 @@ public class JSONTransformer {
 				"g26_racdam", "g27_culrepo", "g28_zooniverse" };
 		for (int j = 0; j < dataSets.length; j++) {
 
-			String inputFilePath = "00_final_annotated_datasets\\" + dataSets[j] + "\\admin.jsonl";
-			String outputFilePath = "00_final_annotated_datasets\\" + dataSets[j] + "\\" + dataSets[j] + ".json";
+			String inputFilePath = "00_annotated_datasets\\" + dataSets[j] + "\\admin.jsonl";
+			String outputFilePath = "00_annotated_datasets\\" + dataSets[j] + "\\" + dataSets[j] + ".json";
 			int i = 1;
 			try {
 				List<String> jsonLines = Files.readAllLines(Paths.get(inputFilePath));
@@ -70,11 +70,11 @@ public class JSONTransformer {
 		JSONArray mainTargetsArray = new JSONArray();
 		JSONObject mainContains = new JSONObject();
 		JSONArray mainContainsArray = new JSONArray();
-//		JSONObject mainActionRules = new JSONObject();
-//		JSONObject mainTargetActionRules = new JSONObject();
-//		JSONObject mainContainActionRules = new JSONObject();
-//		JSONArray mainTargetActionRulesArray = new JSONArray();
-//		JSONArray mainContainActionRulesArray = new JSONArray();
+		JSONObject mainActionRules = new JSONObject();
+		JSONObject mainTargetActionRules = new JSONObject();
+		JSONObject mainContainActionRules = new JSONObject();
+		JSONArray mainTargetActionRulesArray = new JSONArray();
+		JSONArray mainContainActionRulesArray = new JSONArray();
 
 		// Benefit
 		JSONObject benefit = new JSONObject();
@@ -87,14 +87,14 @@ public class JSONTransformer {
 		JSONArray triggersArray = new JSONArray();
 		JSONArray benefitActionArray = new JSONArray();
 		JSONArray benefitEntityArray = new JSONArray();
-//		JSONObject benefitActionRules = new JSONObject();
-//		JSONObject benefitTargetActionRules = new JSONObject();
-//		JSONObject benefitContainActionRules = new JSONObject();
-//		JSONArray benefitTargetActionRulesArray = new JSONArray();
-//		JSONArray benefitContainActionRulesArray = new JSONArray();
+		JSONObject benefitActionRules = new JSONObject();
+		JSONObject benefitTargetActionRules = new JSONObject();
+		JSONObject benefitContainActionRules = new JSONObject();
+		JSONArray benefitTargetActionRulesArray = new JSONArray();
+		JSONArray benefitContainActionRulesArray = new JSONArray();
 
 		// Mix
-		// JSONObject mix = new JSONObject();
+		 JSONObject mix = new JSONObject();
 
 		// Add text
 		String usText = input.getString("text");
@@ -211,8 +211,8 @@ public class JSONTransformer {
 
 				} else {
 					// Otherwise add all mixed relations into benefit
-					// mix.put("Targets", targetPair);
-					benefitTargetsArray.put(targetPair);
+					 mix.put("Targets", targetPair);
+					//benefitTargetsArray.put(targetPair);
 				}
 
 				break;
@@ -231,8 +231,8 @@ public class JSONTransformer {
 
 				} else {
 					// Otherwise add all mixed relations into benefit
-					// mix.put("Contains", containPair);
-					benefitContainsArray.put(containPair);
+					 mix.put("Contains", containPair);
+					//benefitContainsArray.put(containPair);
 				}
 				break;
 			}
@@ -255,7 +255,7 @@ public class JSONTransformer {
 
 		result.put("Main", main);
 		result.put("Benefit", benefit);
-		// result.put("Mix", mix);
+		result.put("Mix", mix);
 		return result;
 	}
 

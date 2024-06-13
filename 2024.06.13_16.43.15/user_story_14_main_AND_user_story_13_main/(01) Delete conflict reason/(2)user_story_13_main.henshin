@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Rule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_RB8tgCmTEe-TgogR_kioeg" name="user_story_13_main">
+  <lhs xmi:id="_RB8tgSmTEe-TgogR_kioeg" name="Lhs">
+    <nodes xmi:id="_RB8tgimTEe-TgogR_kioeg" name="|4|" outgoing="_RB8tiimTEe-TgogR_kioeg">
+      <type href="../../../Backlog_v2.4.ecore#//Persona"/>
+      <attributes xmi:id="_RB8tgymTEe-TgogR_kioeg" value="&quot;staff member&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_RB8thCmTEe-TgogR_kioeg" name="|5|">
+      <type href="../../../Backlog_v2.4.ecore#//Story"/>
+      <attributes xmi:id="_RB8thSmTEe-TgogR_kioeg" value="&quot;#g03# as a staff member, i want to apply a hold,&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//Story/text"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_RB8thimTEe-TgogR_kioeg" name="|6|" incoming="_RB8tiimTEe-TgogR_kioeg" outgoing="_RB8tiymTEe-TgogR_kioeg">
+      <type href="../../../Backlog_v2.4.ecore#//Action"/>
+      <attributes xmi:id="_RB8thymTEe-TgogR_kioeg" value="&quot;apply&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_RB8tiCmTEe-TgogR_kioeg" name="|7|" incoming="_RB8tiymTEe-TgogR_kioeg">
+      <type href="../../../Backlog_v2.4.ecore#//Entity"/>
+      <attributes xmi:id="_RB8tiSmTEe-TgogR_kioeg" value="&quot;hold&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <edges xmi:id="_RB8tiimTEe-TgogR_kioeg" source="_RB8tgimTEe-TgogR_kioeg" target="_RB8thimTEe-TgogR_kioeg">
+      <type href="../../../Backlog_v2.4.ecore#//Persona/triggers"/>
+    </edges>
+    <edges xmi:id="_RB8tiymTEe-TgogR_kioeg" source="_RB8thimTEe-TgogR_kioeg" target="_RB8tiCmTEe-TgogR_kioeg">
+      <type href="../../../Backlog_v2.4.ecore#//Action/targets"/>
+    </edges>
+  </lhs>
+  <rhs xmi:id="_RB8tjCmTEe-TgogR_kioeg" name="Rhs">
+    <nodes xmi:id="_RB8tjSmTEe-TgogR_kioeg" name="|4|" outgoing="_RB8tlSmTEe-TgogR_kioeg">
+      <type href="../../../Backlog_v2.4.ecore#//Persona"/>
+      <attributes xmi:id="_RB8tjimTEe-TgogR_kioeg" value="&quot;staff member&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_RB8tjymTEe-TgogR_kioeg" name="|5|">
+      <type href="../../../Backlog_v2.4.ecore#//Story"/>
+      <attributes xmi:id="_RB8tkCmTEe-TgogR_kioeg" value="&quot;#g03# as a staff member, i want to apply a hold,&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//Story/text"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_RB8tkSmTEe-TgogR_kioeg" name="|6|" incoming="_RB8tlSmTEe-TgogR_kioeg" outgoing="_RB8tlimTEe-TgogR_kioeg">
+      <type href="../../../Backlog_v2.4.ecore#//Action"/>
+      <attributes xmi:id="_RB8tkimTEe-TgogR_kioeg" value="&quot;apply&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_RB8tkymTEe-TgogR_kioeg" name="|7|" incoming="_RB8tlimTEe-TgogR_kioeg">
+      <type href="../../../Backlog_v2.4.ecore#//Entity"/>
+      <attributes xmi:id="_RB8tlCmTEe-TgogR_kioeg" value="&quot;hold&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <edges xmi:id="_RB8tlSmTEe-TgogR_kioeg" source="_RB8tjSmTEe-TgogR_kioeg" target="_RB8tkSmTEe-TgogR_kioeg">
+      <type href="../../../Backlog_v2.4.ecore#//Persona/triggers"/>
+    </edges>
+    <edges xmi:id="_RB8tlimTEe-TgogR_kioeg" source="_RB8tkSmTEe-TgogR_kioeg" target="_RB8tkymTEe-TgogR_kioeg">
+      <type href="../../../Backlog_v2.4.ecore#//Action/targets"/>
+    </edges>
+  </rhs>
+  <mappings xmi:id="_RB8tlymTEe-TgogR_kioeg" origin="_RB8tgimTEe-TgogR_kioeg" image="_RB8tjSmTEe-TgogR_kioeg"/>
+  <mappings xmi:id="_RB8tmCmTEe-TgogR_kioeg" origin="_RB8thCmTEe-TgogR_kioeg" image="_RB8tjymTEe-TgogR_kioeg"/>
+  <mappings xmi:id="_RB8tmSmTEe-TgogR_kioeg" origin="_RB8thimTEe-TgogR_kioeg" image="_RB8tkSmTEe-TgogR_kioeg"/>
+  <mappings xmi:id="_RB8tmimTEe-TgogR_kioeg" origin="_RB8tiCmTEe-TgogR_kioeg" image="_RB8tkymTEe-TgogR_kioeg"/>
+</henshin:Rule>

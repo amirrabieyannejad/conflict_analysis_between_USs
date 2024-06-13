@@ -7,16 +7,10 @@
                 "Google Maps"
             ],
             "Action": [],
-            "Contains": [
-                [
-                    "Google Maps",
-                    "address"
-                ],
-                [
-                    "new tab",
-                    "Google Maps"
-                ]
-            ],
+            "Contains": [[
+                "new tab",
+                "Google Maps"
+            ]],
             "Text": " it takes me to a new tab with Google Maps",
             "Targets": []
         },
@@ -36,7 +30,11 @@
                 "click",
                 "address"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "Google Maps",
+            "address"
+        ]}
     },
     {
         "US_Nr": "user_story_02",
@@ -49,10 +47,7 @@
                 "know",
                 "creating"
             ],
-            "Contains": [[
-                "public information",
-                "recycling centers"
-            ]],
+            "Contains": [],
             "Text": "I know about recycling centers near me before creating an account.",
             "Targets": [
                 [
@@ -81,7 +76,11 @@
                 "anonymously view",
                 "public information"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "public information",
+            "recycling centers"
+        ]}
     },
     {
         "US_Nr": "user_story_03",
@@ -93,10 +92,7 @@
             ],
             "Contains": [],
             "Text": "I can determine which ones I should consider.",
-            "Targets": [[
-                "determine",
-                "nearby recycling facilities"
-            ]]
+            "Targets": []
         },
         "Text": "#G04# As a user, I want to be able to enter my zip code and get a list of nearby recycling facilities, so that I can determine which ones I should consider.",
         "PID": "#G04#",
@@ -136,7 +132,11 @@
                     "list"
                 ]
             ]
-        }
+        },
+        "Mix": {"Targets": [
+            "determine",
+            "nearby recycling facilities"
+        ]}
     },
     {
         "US_Nr": "user_story_04",
@@ -176,7 +176,8 @@
                 "get",
                 "hours"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_05",
@@ -206,7 +207,8 @@
                 "have",
                 "flexible pick up time"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_06",
@@ -269,7 +271,8 @@
                 "select",
                 "different types of recyclable waste"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_07",
@@ -278,10 +281,7 @@
             "Action": ["view"],
             "Contains": [],
             "Text": "I can view them later.",
-            "Targets": [[
-                "view",
-                "donation centers"
-            ]]
+            "Targets": []
         },
         "Text": "#G04# As a user, I want to add donation centers as favorites on my profile, so that I can view them later.",
         "PID": "#G04#",
@@ -312,7 +312,11 @@
                 "add",
                 "donation centers"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "view",
+            "donation centers"
+        ]}
     },
     {
         "US_Nr": "user_story_08",
@@ -357,7 +361,8 @@
                 "give",
                 "email ID"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_09",
@@ -395,7 +400,8 @@
                 "view",
                 "map display"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_10",
@@ -433,7 +439,8 @@
                 "view",
                 "map display"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_11",
@@ -473,7 +480,8 @@
                     "safe disposal events"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_12",
@@ -503,7 +511,8 @@
                 "choose",
                 "flexible pick up time"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_13",
@@ -551,7 +560,8 @@
                 "view",
                 "user documentation"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_14",
@@ -588,7 +598,8 @@
                     "invalid zip code"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_15",
@@ -618,7 +629,8 @@
                 "create",
                 "acocunt"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_16",
@@ -628,10 +640,7 @@
                 "recent information"
             ],
             "Action": ["get"],
-            "Contains": [[
-                "recycling facilities' information",
-                "recent information"
-            ]],
+            "Contains": [],
             "Text": "users get the most recent information.",
             "Targets": [[
                 "get",
@@ -669,7 +678,11 @@
                     "recycling facilities' information"
                 ]
             ]
-        }
+        },
+        "Mix": {"Contains": [
+            "recycling facilities' information",
+            "recent information"
+        ]}
     },
     {
         "US_Nr": "user_story_17",
@@ -683,10 +696,7 @@
                 "provide",
                 "improving"
             ],
-            "Contains": [[
-                "users' feedback",
-                "features"
-            ]],
+            "Contains": [],
             "Text": "we can add more features and keep improving the service we provide to them.",
             "Targets": [
                 [
@@ -728,7 +738,11 @@
                     "users' feedback"
                 ]
             ]
-        }
+        },
+        "Mix": {"Contains": [
+            "users' feedback",
+            "features"
+        ]}
     },
     {
         "US_Nr": "user_story_18",
@@ -776,7 +790,8 @@
                     "record"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_19",
@@ -788,16 +803,10 @@
             ],
             "Contains": [],
             "Text": "I have a pleasant experience when navigating through them.",
-            "Targets": [
-                [
-                    "navigating",
-                    "sites"
-                ],
-                [
-                    "have",
-                    "pleasant experience"
-                ]
-            ]
+            "Targets": [[
+                "have",
+                "pleasant experience"
+            ]]
         },
         "Text": "#G04# As a user, I want to have a great UI and UX from the sites, so that I have a pleasant experience when navigating through them.",
         "PID": "#G04#",
@@ -834,7 +843,11 @@
                     "UX"
                 ]
             ]
-        }
+        },
+        "Mix": {"Targets": [
+            "navigating",
+            "sites"
+        ]}
     },
     {
         "US_Nr": "user_story_20",
@@ -881,7 +894,8 @@
                     "other stuffs"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_21",
@@ -917,7 +931,8 @@
                 "block",
                 "specific users"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_22",
@@ -976,7 +991,8 @@
                     "sites' statuses"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_23",
@@ -987,10 +1003,7 @@
                 "attack"
             ],
             "Action": [],
-            "Contains": [[
-                "data encrypted",
-                "important information"
-            ]],
+            "Contains": [],
             "Text": "important information will not be stolen during a server breach or an attack.",
             "Targets": []
         },
@@ -1010,7 +1023,11 @@
                 "have",
                 "data encrypted"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "data encrypted",
+            "important information"
+        ]}
     },
     {
         "US_Nr": "user_story_24",
@@ -1049,7 +1066,8 @@
                 "have",
                 "full access"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_25",
@@ -1082,7 +1100,8 @@
                 "access",
                 "route planning system"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_26",
@@ -1125,7 +1144,8 @@
                 "have",
                 "access"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_27",
@@ -1141,16 +1161,10 @@
                 "certain features"
             ]],
             "Text": "I can integrate it and implement certain features in my own iOS application.",
-            "Targets": [
-                [
-                    "integrate",
-                    "API"
-                ],
-                [
-                    "implement",
-                    "certain features"
-                ]
-            ]
+            "Targets": [[
+                "implement",
+                "certain features"
+            ]]
         },
         "Text": "#G04# As a developer, I want to access an API from the website, so that I can integrate it and implement certain features in my own iOS application.",
         "PID": "#G04#",
@@ -1174,7 +1188,11 @@
                 "access",
                 "API"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "integrate",
+            "API"
+        ]}
     },
     {
         "US_Nr": "user_story_28",
@@ -1216,7 +1234,8 @@
                 "receive",
                 "tempting rewards"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_29",
@@ -1259,7 +1278,8 @@
                 "have",
                 "personal information"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_30",
@@ -1286,7 +1306,8 @@
                 "handle",
                 "users' activities"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_31",
@@ -1296,10 +1317,7 @@
                 "upload",
                 "delete"
             ],
-            "Contains": [[
-                "website",
-                "stuff"
-            ]],
+            "Contains": [],
             "Text": "I can upload or delete stuff step by step.",
             "Targets": [
                 [
@@ -1328,7 +1346,11 @@
                 "have",
                 "website"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "website",
+            "stuff"
+        ]}
     },
     {
         "US_Nr": "user_story_32",
@@ -1358,7 +1380,8 @@
                 "get",
                 "quick notifications"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_33",
@@ -1388,17 +1411,15 @@
                 "view",
                 "available activity fees"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_34",
         "Benefit": {
             "Entity": ["website"],
             "Action": ["design"],
-            "Contains": [[
-                "website",
-                "bootstrap"
-            ]],
+            "Contains": [],
             "Text": "I can easily design my website.",
             "Targets": [[
                 "design",
@@ -1424,7 +1445,11 @@
                 "use",
                 "bootstrap"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "website",
+            "bootstrap"
+        ]}
     },
     {
         "US_Nr": "user_story_35",
@@ -1454,7 +1479,8 @@
                 "attend",
                 "UI/UX lessons"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_36",
@@ -1464,16 +1490,7 @@
                 "drop off waste"
             ],
             "Action": ["check"],
-            "Contains": [
-                [
-                    "locations of recycling centers",
-                    "drop off waste"
-                ],
-                [
-                    "map",
-                    "routes"
-                ]
-            ],
+            "Contains": [],
             "Text": "I can check which routes to take to drop off waste.",
             "Targets": [[
                 "check",
@@ -1502,7 +1519,11 @@
                 "view",
                 "locations of recycling centers"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "map",
+            "routes"
+        ]}
     },
     {
         "US_Nr": "user_story_37",
@@ -1513,10 +1534,7 @@
                 "availability"
             ],
             "Action": ["get"],
-            "Contains": [[
-                "week's schedule",
-                "availability"
-            ]],
+            "Contains": [],
             "Text": "I can get recommendations for recycling centers that best fit my availability.",
             "Targets": [[
                 "get",
@@ -1539,7 +1557,11 @@
                 "upload",
                 "week's schedule"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "week's schedule",
+            "availability"
+        ]}
     },
     {
         "US_Nr": "user_story_38",
@@ -1587,7 +1609,8 @@
                 "link",
                 "email account"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_39",
@@ -1629,7 +1652,8 @@
                 "contact",
                 "administrators"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_40",
@@ -1659,7 +1683,8 @@
                 "add",
                 "recycling center information"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_41",
@@ -1677,10 +1702,6 @@
                 [
                     "system",
                     "users"
-                ],
-                [
-                    "user error logs",
-                    "any issues"
                 ],
                 [
                     "users",
@@ -1715,7 +1736,11 @@
                 "view",
                 "user error logs"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "user error logs",
+            "any issues"
+        ]}
     },
     {
         "US_Nr": "user_story_42",
@@ -1751,7 +1776,8 @@
                 "onboard",
                 "recycling centers"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_43",
@@ -1761,10 +1787,7 @@
                 "recycling center"
             ],
             "Action": ["provide"],
-            "Contains": [[
-                "recycling center information",
-                "latest information"
-            ]],
+            "Contains": [],
             "Text": "I can provide the latest information about the recycling center.",
             "Targets": [[
                 "provide",
@@ -1787,7 +1810,11 @@
                 "update",
                 "recycling center information"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "recycling center information",
+            "latest information"
+        ]}
     },
     {
         "US_Nr": "user_story_44",
@@ -1834,7 +1861,8 @@
                 "view",
                 "users' stats"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_45",
@@ -1867,7 +1895,8 @@
                 "reply",
                 "user questions"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_46",
@@ -1936,7 +1965,8 @@
                     "locations"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_47",
@@ -1972,7 +2002,8 @@
                 "communicate directly",
                 "facilities"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_48",
@@ -2023,7 +2054,8 @@
                     "facolities"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_49",
@@ -2072,7 +2104,8 @@
                     "type of material"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_50",
@@ -2088,10 +2121,7 @@
                 "upgrade",
                 "accomodate"
             ],
-            "Contains": [[
-                "schedules",
-                "hours"
-            ]],
+            "Contains": [],
             "Text": "I can adjust my hours and/or upgrade equipment and capacity in order to be able to accomodate larger amounts of recyclable materials.",
             "Targets": [
                 [
@@ -2135,7 +2165,11 @@
                 "have",
                 "access"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "schedules",
+            "hours"
+        ]}
     },
     {
         "US_Nr": "user_story_51",
@@ -2144,16 +2178,7 @@
             "Action": ["fix"],
             "Contains": [],
             "Text": "they fix them",
-            "Targets": [
-                [
-                    "fix",
-                    "any issues"
-                ],
-                [
-                    "fix",
-                    "concerns I have"
-                ]
-            ]
+            "Targets": []
         },
         "Text": "#G04# As a recyclingfacility, I want to be able to communicate directly with the site admin and convey any issues or concerns I have, so that they fix them.",
         "PID": "#G04#",
@@ -2194,6 +2219,10 @@
                     "concerns I have"
                 ]
             ]
-        }
+        },
+        "Mix": {"Targets": [
+            "fix",
+            "concerns I have"
+        ]}
     }
 ]

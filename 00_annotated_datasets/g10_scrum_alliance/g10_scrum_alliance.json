@@ -6,10 +6,7 @@
             "Action": ["learn"],
             "Contains": [],
             "Text": "others can learn about me.",
-            "Targets": [[
-                "learn",
-                "myself"
-            ]]
+            "Targets": []
         },
         "Text": "#G10# As a site member, I want to describe myself on my own page in a semi-structured way, so that others can learn about me.",
         "PID": "#G10#",
@@ -34,7 +31,11 @@
                 "describe",
                 "myself"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "learn",
+            "myself"
+        ]}
     },
     {
         "US_Nr": "user_story_02",
@@ -70,7 +71,8 @@
                 "fill out",
                 "application"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_03",
@@ -106,7 +108,8 @@
                 "include",
                 "additional details about me"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_04",
@@ -159,7 +162,8 @@
                 "fill out",
                 "application"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_05",
@@ -174,16 +178,10 @@
             ],
             "Contains": [],
             "Text": "others can learn about me and decide if I am the right trainer for them.",
-            "Targets": [
-                [
-                    "learn",
-                    "additional details"
-                ],
-                [
-                    "decide",
-                    "right trainer"
-                ]
-            ]
+            "Targets": [[
+                "decide",
+                "right trainer"
+            ]]
         },
         "Text": "#G10# As a Trainer, I want to include additional details in my profile page about me, so that others can learn about me and decide if I am the right trainer for them.",
         "PID": "#G10#",
@@ -207,7 +205,11 @@
                 "include",
                 "additional details"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "learn",
+            "additional details"
+        ]}
     },
     {
         "US_Nr": "user_story_06",
@@ -264,7 +266,8 @@
                 "write",
                 "article"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_07",
@@ -274,10 +277,7 @@
                 "courses"
             ],
             "Action": ["find"],
-            "Contains": [[
-                "upcoming classes",
-                "prospective attendees"
-            ]],
+            "Contains": [],
             "Text": "prospective attendees can find my courses.",
             "Targets": [[
                 "find",
@@ -329,7 +329,11 @@
                     "link"
                 ]
             ]
-        }
+        },
+        "Mix": {"Contains": [
+            "upcoming classes",
+            "prospective attendees"
+        ]}
     },
     {
         "US_Nr": "user_story_08",
@@ -374,7 +378,8 @@
                 "view",
                 "profiles"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_09",
@@ -419,7 +424,8 @@
                 "search",
                 "profiles"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_10",
@@ -461,7 +467,8 @@
                     "profile"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_11",
@@ -491,7 +498,8 @@
                 "mark",
                 "email address as private"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_12",
@@ -500,10 +508,7 @@
             "Action": ["connect"],
             "Contains": [],
             "Text": "we can connect",
-            "Targets": [[
-                "connect",
-                "any member"
-            ]]
+            "Targets": []
         },
         "Text": "#G10# As a site member, I want to send an email to any member via a form, so that we can connect.",
         "PID": "#G10#",
@@ -534,7 +539,11 @@
                 "send",
                 "email"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "connect",
+            "any member"
+        ]}
     },
     {
         "US_Nr": "user_story_13",
@@ -589,7 +598,8 @@
                     "practicing and training applications"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_14",
@@ -625,17 +635,15 @@
                 "edit",
                 "any site member profile"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_15",
         "Benefit": {
             "Entity": ["agile news"],
             "Action": ["stay current"],
-            "Contains": [[
-                "current news",
-                "agile news"
-            ]],
+            "Contains": [],
             "Text": "I stay current on agile news.",
             "Targets": [[
                 "stay current",
@@ -664,7 +672,11 @@
                 "read",
                 "current news"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "current news",
+            "agile news"
+        ]}
     },
     {
         "US_Nr": "user_story_16",
@@ -703,17 +715,15 @@
                 "access",
                 "old news"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_17",
         "Benefit": {
             "Entity": ["publication"],
             "Action": [],
-            "Contains": [[
-                "publication",
-                "news items"
-            ]],
+            "Contains": [],
             "Text": "they can be considered for publication.",
             "Targets": []
         },
@@ -739,7 +749,11 @@
                 "email",
                 "news items"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "publication",
+            "news items"
+        ]}
     },
     {
         "US_Nr": "user_story_18",
@@ -798,7 +812,8 @@
                 "set",
                 "following dates"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_19",
@@ -825,7 +840,8 @@
                 "subscribe",
                 "RSS feed of news"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_20",
@@ -876,7 +892,8 @@
                 "assign",
                 "priority numbers"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_21",
@@ -921,7 +938,8 @@
                     "all upcoming Certification Courses"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_22",
@@ -966,7 +984,8 @@
                     "all upcoming Other Courses"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_23",
@@ -1002,7 +1021,8 @@
                 "see",
                 "list"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_24",
@@ -1011,16 +1031,7 @@
             "Action": ["see"],
             "Contains": [],
             "Text": "site visitors can see it.",
-            "Targets": [
-                [
-                    "see",
-                    "event"
-                ],
-                [
-                    "see",
-                    "new course"
-                ]
-            ]
+            "Targets": []
         },
         "Text": "#G10# As a trainer, I want to create a new course or event, so that site visitors can see it.",
         "PID": "#G10#",
@@ -1047,7 +1058,11 @@
                     "new course"
                 ]
             ]
-        }
+        },
+        "Mix": {"Targets": [
+            "see",
+            "new course"
+        ]}
     },
     {
         "US_Nr": "user_story_25",
@@ -1095,7 +1110,8 @@
                     "listing fee"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_26",
@@ -1138,7 +1154,8 @@
                     "Event"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_27",
@@ -1150,20 +1167,10 @@
             ],
             "Contains": [],
             "Text": "we have flexibility on what to charge in the future.",
-            "Targets": [
-                [
-                    "have",
-                    "flexibility"
-                ],
-                [
-                    "charge",
-                    "Other Course"
-                ],
-                [
-                    "charge",
-                    "Event"
-                ]
-            ]
+            "Targets": [[
+                "have",
+                "flexibility"
+            ]]
         },
         "Text": "#G10# As a site administrator, I want to set the listing fee per Other Course or Event, so that we have flexibility on what to charge in the future.",
         "PID": "#G10#",
@@ -1194,7 +1201,11 @@
                 "set",
                 "listing fee"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "charge",
+            "Event"
+        ]}
     },
     {
         "US_Nr": "user_story_28",
@@ -1233,7 +1244,8 @@
                     "events"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_29",
@@ -1242,16 +1254,7 @@
             "Action": ["cancel"],
             "Contains": [],
             "Text": "it's no longer listed if I cancel for some reason.",
-            "Targets": [
-                [
-                    "cancel",
-                    "one of my courses"
-                ],
-                [
-                    "cancel",
-                    "events"
-                ]
-            ]
+            "Targets": []
         },
         "Text": "#G10# As a trainer, I want to delete one of my courses or events, so that it's no longer listed if I cancel for some reason.",
         "PID": "#G10#",
@@ -1278,7 +1281,11 @@
                     "events"
                 ]
             ]
-        }
+        },
+        "Mix": {"Targets": [
+            "cancel",
+            "events"
+        ]}
     },
     {
         "US_Nr": "user_story_30",
@@ -1317,7 +1324,8 @@
                     "events"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_31",
@@ -1356,7 +1364,8 @@
                     "event"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_32",
@@ -1366,16 +1375,7 @@
                 "original author"
             ],
             "Action": ["fix"],
-            "Contains": [
-                [
-                    "any course",
-                    "things"
-                ],
-                [
-                    "event",
-                    "things"
-                ]
-            ],
+            "Contains": [],
             "Text": "I can fix things the original author hasn't.",
             "Targets": [[
                 "fix",
@@ -1407,7 +1407,11 @@
                     "event"
                 ]
             ]
-        }
+        },
+        "Mix": {"Contains": [
+            "event",
+            "things"
+        ]}
     },
     {
         "US_Nr": "user_story_33",
@@ -1448,7 +1452,8 @@
                     "course"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_34",
@@ -1500,7 +1505,8 @@
                     "form"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_35",
@@ -1513,16 +1519,10 @@
                 "read more",
                 "before registering"
             ],
-            "Contains": [
-                [
-                    "course",
-                    "trainer"
-                ],
-                [
-                    "trainer",
-                    "trainer's profile"
-                ]
-            ],
+            "Contains": [[
+                "course",
+                "trainer"
+            ]],
             "Text": "I can read more about a trainer before registering for a course.",
             "Targets": [
                 [
@@ -1572,17 +1572,18 @@
                     "trainer's profile"
                 ]
             ]
-        }
+        },
+        "Mix": {"Contains": [
+            "trainer",
+            "trainer's profile"
+        ]}
     },
     {
         "US_Nr": "user_story_36",
         "Benefit": {
             "Entity": ["site"],
             "Action": ["without having to visit"],
-            "Contains": [[
-                "site",
-                "RSS feed"
-            ]],
+            "Contains": [],
             "Text": "I am up to day without having to visit the site.",
             "Targets": [[
                 "without having to visit",
@@ -1618,17 +1619,18 @@
                 "subscribe",
                 "RSS feed"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "site",
+            "RSS feed"
+        ]}
     },
     {
         "US_Nr": "user_story_37",
         "Benefit": {
             "Entity": ["quick answers"],
             "Action": ["get"],
-            "Contains": [[
-                "FAQs",
-                "quick answers"
-            ]],
+            "Contains": [],
             "Text": "I can get quick answers.",
             "Targets": [[
                 "get",
@@ -1651,7 +1653,11 @@
                 "read",
                 "FAQs"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "FAQs",
+            "quick answers"
+        ]}
     },
     {
         "US_Nr": "user_story_38",
@@ -1661,10 +1667,7 @@
                 "easily answered questions"
             ],
             "Action": ["gets fewer"],
-            "Contains": [[
-                "FAQ section",
-                "easily answered questions"
-            ]],
+            "Contains": [],
             "Text": "support gets fewer easily answered questions.",
             "Targets": [[
                 "gets fewer",
@@ -1687,7 +1690,11 @@
                 "maintain",
                 "FAQ section"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "FAQ section",
+            "easily answered questions"
+        ]}
     },
     {
         "US_Nr": "user_story_39",
@@ -1723,7 +1730,8 @@
                 "do",
                 "full-text search"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_40",
@@ -1732,16 +1740,7 @@
             "Action": ["have"],
             "Contains": [],
             "Text": "I have them",
-            "Targets": [
-                [
-                    "have",
-                    "latest training material"
-                ],
-                [
-                    "have",
-                    "methodology PDFs"
-                ]
-            ]
+            "Targets": []
         },
         "Text": "#G10# As a site member, I want to download the latest training material and methodology PDFs, so that I have them.",
         "PID": "#G10#",
@@ -1768,7 +1767,11 @@
                     "methodology PDFs"
                 ]
             ]
-        }
+        },
+        "Mix": {"Targets": [
+            "have",
+            "methodology PDFs"
+        ]}
     },
     {
         "US_Nr": "user_story_41",
@@ -1780,32 +1783,7 @@
             ],
             "Contains": [],
             "Text": "I can learn from them or use them.",
-            "Targets": [
-                [
-                    "learn",
-                    "presentations"
-                ],
-                [
-                    "learn",
-                    "PDFs"
-                ],
-                [
-                    "learn",
-                    "etc."
-                ],
-                [
-                    "use",
-                    "presentations"
-                ],
-                [
-                    "use",
-                    "PDFs"
-                ],
-                [
-                    "use",
-                    "etc."
-                ]
-            ]
+            "Targets": []
         },
         "Text": "#G10# As a visitor, I want to download presentations, PDFs, etc. on Scrum, so that I can learn from them or use them.",
         "PID": "#G10#",
@@ -1851,7 +1829,11 @@
                     "etc."
                 ]
             ]
-        }
+        },
+        "Mix": {"Targets": [
+            "use",
+            "etc."
+        ]}
     },
     {
         "US_Nr": "user_story_42",
@@ -1860,10 +1842,7 @@
             "Action": ["see"],
             "Contains": [],
             "Text": "I can see if there any I am interested in.",
-            "Targets": [[
-                "see",
-                "jobs"
-            ]]
+            "Targets": []
         },
         "Text": "#G10# As a site member, I want to scroll through a listing of jobs, so that I can see if there any I am interested in.",
         "PID": "#G10#",
@@ -1887,7 +1866,11 @@
                 "scroll through",
                 "listing"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "see",
+            "jobs"
+        ]}
     },
     {
         "US_Nr": "user_story_43",
@@ -1917,7 +1900,8 @@
                 "post",
                 "help wanted ad"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_44",
@@ -1927,16 +1911,10 @@
                 "jobs being listed"
             ],
             "Action": [],
-            "Contains": [
-                [
-                    "jobs being listed",
-                    "quality"
-                ],
-                [
-                    "jobs being listed",
-                    "help wanted ad"
-                ]
-            ],
+            "Contains": [[
+                "jobs being listed",
+                "quality"
+            ]],
             "Text": "we're sure of the quality of jobs being listed.",
             "Targets": []
         },
@@ -1962,7 +1940,11 @@
                 "approve",
                 "help wanted ad"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "jobs being listed",
+            "help wanted ad"
+        ]}
     },
     {
         "US_Nr": "user_story_45",
@@ -1975,16 +1957,7 @@
             ],
             "Contains": [],
             "Text": "I am aware of it and can decide if I want to post it.",
-            "Targets": [
-                [
-                    "aware",
-                    "job is submitted"
-                ],
-                [
-                    "post",
-                    "job is submitted"
-                ]
-            ]
+            "Targets": []
         },
         "Text": "#G10# As a site admin, I want to be emailed whenever a job is submitted, so that I am aware of it and can decide if I want to post it.",
         "PID": "#G10#",
@@ -2002,7 +1975,11 @@
                 "be emailed",
                 "job is submitted"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "post",
+            "job is submitted"
+        ]}
     },
     {
         "US_Nr": "user_story_46",
@@ -2012,21 +1989,12 @@
                 "read",
                 "without visiting"
             ],
-            "Contains": [[
-                "site",
-                "RSS feed of jobs available"
-            ]],
+            "Contains": [],
             "Text": "I can read them without visiting the site.",
-            "Targets": [
-                [
-                    "read",
-                    "RSS feed of jobs available"
-                ],
-                [
-                    "without visiting",
-                    "site"
-                ]
-            ]
+            "Targets": [[
+                "without visiting",
+                "site"
+            ]]
         },
         "Text": "#G10# As a site member, I want to subscribe to an RSS feed of jobs available, so that I can read them without visiting the site.",
         "PID": "#G10#",
@@ -2044,6 +2012,16 @@
                 "subscribe",
                 "RSS feed of jobs available"
             ]]
+        },
+        "Mix": {
+            "Contains": [
+                "site",
+                "RSS feed of jobs available"
+            ],
+            "Targets": [
+                "read",
+                "RSS feed of jobs available"
+            ]
         }
     },
     {
@@ -2103,7 +2081,8 @@
                     "help wanted ads"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_48",
@@ -2144,7 +2123,8 @@
                 "stop publishing",
                 "jobs"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_49",
@@ -2202,7 +2182,8 @@
                     "posting"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_50",
@@ -2242,17 +2223,15 @@
                 "be emailed",
                 "reminder"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_51",
         "Benefit": {
             "Entity": ["latest happenings"],
             "Action": ["am up"],
-            "Contains": [[
-                "new article",
-                "latest happenings"
-            ]],
+            "Contains": [],
             "Text": "I am up on all the latest happenings.",
             "Targets": [[
                 "am up",
@@ -2282,7 +2261,11 @@
                 "read",
                 "new article"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "new article",
+            "latest happenings"
+        ]}
     },
     {
         "US_Nr": "user_story_52",
@@ -2324,7 +2307,8 @@
                 "include",
                 "teaser"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_53",
@@ -2361,7 +2345,8 @@
                 "read",
                 "entire article"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_54",
@@ -2403,7 +2388,8 @@
                 "add",
                 "article"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_55",
@@ -2464,7 +2450,8 @@
                     "stop publishing dates"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_56",
@@ -2488,7 +2475,8 @@
                 "designate"
             ]],
             "Targets": []
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_57",
@@ -2518,17 +2506,15 @@
                 "have",
                 "pretty good control"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_58",
         "Benefit": {
             "Entity": ["article"],
             "Action": ["easily finish"],
-            "Contains": [[
-                "article",
-                "body of the article"
-            ]],
+            "Contains": [],
             "Text": "I can easily finish the article.",
             "Targets": [[
                 "easily finish",
@@ -2568,7 +2554,11 @@
                     "link"
                 ]
             ]
-        }
+        },
+        "Mix": {"Contains": [
+            "article",
+            "body of the article"
+        ]}
     },
     {
         "US_Nr": "user_story_59",
@@ -2604,7 +2594,8 @@
                 "indicate",
                 "members only"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_60",
@@ -2614,21 +2605,12 @@
                 "learn",
                 "without first joining"
             ],
-            "Contains": [[
-                "site",
-                "your articles"
-            ]],
+            "Contains": [],
             "Text": "I can learn without first joining the site.",
-            "Targets": [
-                [
-                    "learn",
-                    "your articles"
-                ],
-                [
-                    "without first joining",
-                    "site"
-                ]
-            ]
+            "Targets": [[
+                "without first joining",
+                "site"
+            ]]
         },
         "Text": "#G10# As a site visitor, I want to be able to read some of your articles, so that I can learn without first joining the site.",
         "PID": "#G10#",
@@ -2646,6 +2628,16 @@
                 "read",
                 "your articles"
             ]]
+        },
+        "Mix": {
+            "Contains": [
+                "site",
+                "your articles"
+            ],
+            "Targets": [
+                "learn",
+                "your articles"
+            ]
         }
     },
     {
@@ -2685,7 +2677,8 @@
                 "have",
                 "full access"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_62",
@@ -2733,22 +2726,17 @@
                 "do",
                 "full-text search"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_63",
         "Benefit": {
             "Entity": ["site"],
             "Action": ["read"],
-            "Contains": [[
-                "site",
-                "articles"
-            ]],
+            "Contains": [],
             "Text": "I can read them without visiting the site.",
-            "Targets": [[
-                "read",
-                "articles"
-            ]]
+            "Targets": []
         },
         "Text": "#G10# As a site visitor, I want to subscribe to an RSS feed of articles, so that I can read them without visiting the site.",
         "PID": "#G10#",
@@ -2772,6 +2760,16 @@
                 "subscribe",
                 "RSS feed"
             ]]
+        },
+        "Mix": {
+            "Contains": [
+                "site",
+                "articles"
+            ],
+            "Targets": [
+                "read",
+                "articles"
+            ]
         }
     },
     {
@@ -2781,10 +2779,7 @@
             "Action": ["read"],
             "Contains": [],
             "Text": "others can read them.",
-            "Targets": [[
-                "read",
-                "comments"
-            ]]
+            "Targets": []
         },
         "Text": "#G10# As a site visitor, I want to post comments about articles, so that others can read them.",
         "PID": "#G10#",
@@ -2808,7 +2803,11 @@
                 "post",
                 "comments"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "read",
+            "comments"
+        ]}
     },
     {
         "US_Nr": "user_story_65",
@@ -2856,7 +2855,8 @@
                     "special announcements"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_66",
@@ -2892,7 +2892,8 @@
                 "have",
                 "some flexibility"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_67",
@@ -2907,10 +2908,7 @@
                 "benefit"
             ]],
             "Text": "they register and there's a benefit to my membership.",
-            "Targets": [[
-                "register",
-                "upcoming courses"
-            ]]
+            "Targets": []
         },
         "Text": "#G10# As a trainer, I want to see the upcoming courses are what I want visitors to notice, so that they register and there's a benefit to my membership.",
         "PID": "#G10#",
@@ -2940,7 +2938,11 @@
                     "upcoming courses"
                 ]
             ]
-        }
+        },
+        "Mix": {"Targets": [
+            "register",
+            "upcoming courses"
+        ]}
     },
     {
         "US_Nr": "user_story_68",
@@ -2949,10 +2951,7 @@
             "Action": ["come back more often"],
             "Contains": [],
             "Text": "I come back more often.",
-            "Targets": [[
-                "come back more often",
-                "site"
-            ]]
+            "Targets": []
         },
         "Text": "#G10# As a site visitor, I want to see new content when I come to the site, so that I come back more often.",
         "PID": "#G10#",
@@ -2985,7 +2984,11 @@
                     "site"
                 ]
             ]
-        }
+        },
+        "Mix": {"Targets": [
+            "come back more often",
+            "site"
+        ]}
     },
     {
         "US_Nr": "user_story_69",
@@ -3028,7 +3031,8 @@
                 "have",
                 "articles that interest me"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_70",
@@ -3037,10 +3041,7 @@
             "Action": [],
             "Contains": [],
             "Text": "I don't bounce immediately o? the page.",
-            "Targets": [[
-                "visit",
-                "page"
-            ]]
+            "Targets": []
         },
         "Text": "#G10# As a site visitor, I want to know as soon as I visit what on earth Scrum is and why it needs an alliance, so that I don't bounce immediately o? the page.",
         "PID": "#G10#",
@@ -3074,7 +3075,11 @@
                     "why"
                 ]
             ]
-        }
+        },
+        "Mix": {"Targets": [
+            "visit",
+            "page"
+        ]}
     },
     {
         "US_Nr": "user_story_71",
@@ -3121,7 +3126,8 @@
                     "why"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_72",
@@ -3148,7 +3154,8 @@
                 "get back",
                 "home page"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_73",
@@ -3191,7 +3198,8 @@
                 "see",
                 "list"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_74",
@@ -3232,7 +3240,8 @@
                     "same answers"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_75",
@@ -3241,10 +3250,7 @@
             "Action": ["read"],
             "Contains": [],
             "Text": "I can read them.",
-            "Targets": [[
-                "read",
-                "results"
-            ]]
+            "Targets": []
         },
         "Text": "#G10# As a trainer, I want to be notified about the results of surveys about my classes, so that I can read them.",
         "PID": "#G10#",
@@ -3268,7 +3274,11 @@
                 "be notified",
                 "results"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "read",
+            "results"
+        ]}
     },
     {
         "US_Nr": "user_story_76",
@@ -3327,7 +3337,8 @@
                     "averages"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_77",
@@ -3363,7 +3374,8 @@
                 "see",
                 "trainer's rating"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_78",
@@ -3396,7 +3408,8 @@
                 "show",
                 "rating"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_79",
@@ -3405,10 +3418,7 @@
             "Action": ["learn"],
             "Contains": [],
             "Text": "I can learn that quickly.",
-            "Targets": [[
-                "learn",
-                "basics"
-            ]]
+            "Targets": []
         },
         "Text": "#G10# As a site visitor, I want to view a section of the website that teaches me the basics of what Scrum is, so that I can learn that quickly.",
         "PID": "#G10#",
@@ -3453,17 +3463,18 @@
                     "basics"
                 ]
             ]
-        }
+        },
+        "Mix": {"Targets": [
+            "learn",
+            "basics"
+        ]}
     },
     {
         "US_Nr": "user_story_80",
         "Benefit": {
             "Entity": ["visitors"],
             "Action": [],
-            "Contains": [[
-                "What Is Scrum section",
-                "visitors"
-            ]],
+            "Contains": [],
             "Text": "it's there for visitors.",
             "Targets": []
         },
@@ -3489,7 +3500,11 @@
                 "create",
                 "content"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "What Is Scrum section",
+            "visitors"
+        ]}
     },
     {
         "US_Nr": "user_story_81",
@@ -3542,7 +3557,8 @@
                 "view",
                 "lists"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_82",
@@ -3604,7 +3620,8 @@
                     "name"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_83",
@@ -3646,7 +3663,8 @@
                 "load",
                 "Excel file"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_84",
@@ -3655,10 +3673,7 @@
             "Action": ["approve"],
             "Contains": [],
             "Text": "I can approve any that need to be approved.",
-            "Targets": [[
-                "approve",
-                "all classes"
-            ]]
+            "Targets": []
         },
         "Text": "#G10# As a site admin, I want to view all classes in a pending state, so that I can approve any that need to be approved.",
         "PID": "#G10#",
@@ -3682,7 +3697,11 @@
                 "view",
                 "all classes"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "approve",
+            "all classes"
+        ]}
     },
     {
         "US_Nr": "user_story_85",
@@ -3740,7 +3759,8 @@
                     "proof of payment"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_86",
@@ -3804,7 +3824,8 @@
                     "membership"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_87",
@@ -3814,10 +3835,7 @@
                 "simple email edits"
             ],
             "Action": [],
-            "Contains": [[
-                "content",
-                "simple email edits"
-            ]],
+            "Contains": [],
             "Text": "I don't need to involve a programmer on simple email edits.",
             "Targets": []
         },
@@ -3855,7 +3873,11 @@
                 "edit",
                 "content"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "content",
+            "simple email edits"
+        ]}
     },
     {
         "US_Nr": "user_story_88",
@@ -3906,7 +3928,8 @@
                     "corporate membership fee"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_89",
@@ -3949,7 +3972,8 @@
                 "display",
                 "logo"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_90",
@@ -3995,7 +4019,8 @@
                 "make",
                 "logo"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_91",
@@ -4040,17 +4065,15 @@
                     "Practitioner status"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_92",
         "Benefit": {
             "Entity": ["CST status"],
             "Action": [],
-            "Contains": [[
-                "CST status",
-                "annual fee"
-            ]],
+            "Contains": [],
             "Text": "my CST status is active.",
             "Targets": []
         },
@@ -4070,7 +4093,11 @@
                 "pay",
                 "annual fee"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "CST status",
+            "annual fee"
+        ]}
     },
     {
         "US_Nr": "user_story_93",
@@ -4121,7 +4148,8 @@
                 "set",
                 "annual fees"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_94",
@@ -4160,7 +4188,8 @@
                     "link"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_95",
@@ -4216,7 +4245,8 @@
                     "password reminder"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_96",
@@ -4252,22 +4282,17 @@
                 "read",
                 "information of relevance only to trainers"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_97",
         "Benefit": {
             "Entity": ["only trainers"],
             "Action": ["see"],
-            "Contains": [[
-                "only trainers",
-                "trainers-only section"
-            ]],
+            "Contains": [],
             "Text": "only trainers see it.",
-            "Targets": [[
-                "see",
-                "information"
-            ]]
+            "Targets": []
         },
         "Text": "#G10# As a site editor, I want to post information in a trainers-only section, so that only trainers see it.",
         "PID": "#G10#",
@@ -4291,6 +4316,16 @@
                 "post",
                 "information"
             ]]
+        },
+        "Mix": {
+            "Contains": [
+                "only trainers",
+                "trainers-only section"
+            ],
+            "Targets": [
+                "see",
+                "information"
+            ]
         }
     }
 ]

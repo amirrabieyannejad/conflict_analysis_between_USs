@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Rule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_RB64UCmTEe-TgogR_kioeg" name="user_story_14_main">
+  <lhs xmi:id="_RB64USmTEe-TgogR_kioeg" name="Lhs">
+    <nodes xmi:id="_RB64UimTEe-TgogR_kioeg" name="|0|" outgoing="_RB64WimTEe-TgogR_kioeg">
+      <type href="../../../Backlog_v2.4.ecore#//Persona"/>
+      <attributes xmi:id="_RB64UymTEe-TgogR_kioeg" value="&quot;staff member&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_RB64VCmTEe-TgogR_kioeg" name="|1|">
+      <type href="../../../Backlog_v2.4.ecore#//Story"/>
+      <attributes xmi:id="_RB64VSmTEe-TgogR_kioeg" value="&quot;#g03# as a staff member, i want to remove a hold,&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//Story/text"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_RB64VimTEe-TgogR_kioeg" name="|2|" incoming="_RB64WimTEe-TgogR_kioeg" outgoing="_RB64WymTEe-TgogR_kioeg">
+      <type href="../../../Backlog_v2.4.ecore#//Action"/>
+      <attributes xmi:id="_RB64VymTEe-TgogR_kioeg" value="&quot;remove&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_RB64WCmTEe-TgogR_kioeg" name="|3|" incoming="_RB64WymTEe-TgogR_kioeg">
+      <type href="../../../Backlog_v2.4.ecore#//Entity"/>
+      <attributes xmi:id="_RB64WSmTEe-TgogR_kioeg" value="&quot;hold&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <edges xmi:id="_RB64WimTEe-TgogR_kioeg" source="_RB64UimTEe-TgogR_kioeg" target="_RB64VimTEe-TgogR_kioeg">
+      <type href="../../../Backlog_v2.4.ecore#//Persona/triggers"/>
+    </edges>
+    <edges xmi:id="_RB64WymTEe-TgogR_kioeg" source="_RB64VimTEe-TgogR_kioeg" target="_RB64WCmTEe-TgogR_kioeg">
+      <type href="../../../Backlog_v2.4.ecore#//Action/targets"/>
+    </edges>
+  </lhs>
+  <rhs xmi:id="_RB64XCmTEe-TgogR_kioeg" name="Rhs">
+    <nodes xmi:id="_RB64XSmTEe-TgogR_kioeg" name="|0|">
+      <type href="../../../Backlog_v2.4.ecore#//Persona"/>
+      <attributes xmi:id="_RB64XimTEe-TgogR_kioeg" value="&quot;staff member&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_RB64XymTEe-TgogR_kioeg" name="|1|">
+      <type href="../../../Backlog_v2.4.ecore#//Story"/>
+      <attributes xmi:id="_RB64YCmTEe-TgogR_kioeg" value="&quot;#g03# as a staff member, i want to remove a hold,&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//Story/text"/>
+      </attributes>
+    </nodes>
+  </rhs>
+  <mappings xmi:id="_RB64YSmTEe-TgogR_kioeg" origin="_RB64UimTEe-TgogR_kioeg" image="_RB64XSmTEe-TgogR_kioeg"/>
+  <mappings xmi:id="_RB64YimTEe-TgogR_kioeg" origin="_RB64VCmTEe-TgogR_kioeg" image="_RB64XymTEe-TgogR_kioeg"/>
+</henshin:Rule>

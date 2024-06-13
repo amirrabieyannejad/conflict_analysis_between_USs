@@ -40,7 +40,8 @@
                 "properly record",
                 "all metadata"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_02",
@@ -105,17 +106,15 @@
                     "data"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_03",
         "Benefit": {
             "Entity": ["DMP"],
             "Action": [],
-            "Contains": [[
-                "DMP",
-                "metadata"
-            ]],
+            "Contains": [],
             "Text": "I do not have to capture it again in a DMP.",
             "Targets": []
         },
@@ -138,7 +137,11 @@
                 "import",
                 "metadata"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "DMP",
+            "metadata"
+        ]}
     },
     {
         "US_Nr": "user_story_04",
@@ -193,7 +196,8 @@
                     "data"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_05",
@@ -206,10 +210,7 @@
                 "calculate",
                 "check"
             ],
-            "Contains": [[
-                "target group",
-                "data"
-            ]],
+            "Contains": [],
             "Text": "I can calculate necessary submission fees and check whether it belongs to our target group.",
             "Targets": [[
                 "calculate",
@@ -245,7 +246,11 @@
                 "check",
                 "planned provenance"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "target group",
+            "data"
+        ]}
     },
     {
         "US_Nr": "user_story_06",
@@ -281,7 +286,8 @@
                 "know",
                 "IT resource requirements"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_07",
@@ -293,10 +299,7 @@
             ],
             "Contains": [],
             "Text": "I can ensure it will possible to store it.",
-            "Targets": [[
-                "store",
-                "kind of data I want to record/store"
-            ]]
+            "Targets": []
         },
         "Text": "#G22# As a PI, I want to plan what kind of data I want to record/store, so that I can ensure it will possible to store it.",
         "PID": "#G22#",
@@ -314,7 +317,11 @@
                 "plan",
                 "kind of data I want to record/store"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "store",
+            "kind of data I want to record/store"
+        ]}
     },
     {
         "US_Nr": "user_story_08",
@@ -359,7 +366,8 @@
                 "know",
                 "security requirements"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_09",
@@ -412,7 +420,8 @@
                 "have",
                 "description"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_10",
@@ -421,10 +430,7 @@
             "Action": ["quickly writing"],
             "Contains": [],
             "Text": "I can save time through quickly writing it.",
-            "Targets": [[
-                "quickly writing",
-                "topics"
-            ]]
+            "Targets": []
         },
         "Text": "#G22# As a researcher, I want to know which topics are mandatory and similar in all DMPs, so that I can save time through quickly writing it.",
         "PID": "#G22#",
@@ -448,7 +454,11 @@
                 "know",
                 "topics"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "quickly writing",
+            "topics"
+        ]}
     },
     {
         "US_Nr": "user_story_11",
@@ -503,7 +513,8 @@
                 "know",
                 "content"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_12",
@@ -514,15 +525,9 @@
                 "ethical standards"
             ],
             "Action": ["review"],
-            "Contains": [[
-                "information",
-                "ethical standards"
-            ]],
+            "Contains": [],
             "Text": "an Ethics Committee can review this for compliance with ethical standards.",
-            "Targets": [[
-                "review",
-                "information"
-            ]]
+            "Targets": []
         },
         "Text": "#G22# As a PI, I want to record information about my DMP, so that an Ethics Committee can review this for compliance with ethical standards.",
         "PID": "#G22#",
@@ -546,6 +551,16 @@
                 "record",
                 "information"
             ]]
+        },
+        "Mix": {
+            "Contains": [
+                "information",
+                "ethical standards"
+            ],
+            "Targets": [
+                "review",
+                "information"
+            ]
         }
     },
     {
@@ -576,7 +591,8 @@
                 "know",
                 "data sensitivity"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_14",
@@ -630,7 +646,8 @@
                 "extract",
                 "pointers"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_15",
@@ -666,7 +683,8 @@
                 "have",
                 "estimate"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_16",
@@ -712,7 +730,8 @@
                     "project"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_17",
@@ -748,7 +767,8 @@
                 "know",
                 "legal status"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_18",
@@ -801,7 +821,8 @@
                     "kind of data types"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_19",
@@ -854,7 +875,8 @@
                     "kind of data types"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_20",
@@ -902,7 +924,8 @@
                 "know in advance",
                 "conservation period"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_21",
@@ -956,7 +979,8 @@
                     "data"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_22",
@@ -1004,7 +1028,8 @@
                 "know",
                 "content"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_23",
@@ -1056,7 +1081,8 @@
                 "access",
                 "persistent identifiers"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_24",
@@ -1102,7 +1128,8 @@
                 "read",
                 "costs"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_25",
@@ -1152,7 +1179,8 @@
                     "information"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_26",
@@ -1167,16 +1195,10 @@
             ],
             "Contains": [],
             "Text": "I know how up-to-date the plan is or whether it needs to be updated.",
-            "Targets": [
-                [
-                    "know",
-                    "how up-to-date"
-                ],
-                [
-                    "updated",
-                    "data management plan"
-                ]
-            ]
+            "Targets": [[
+                "know",
+                "how up-to-date"
+            ]]
         },
         "Text": "#G22# As a stakeholder, I want to know when the data management plan was created or updated, so that I know how up-to-date the plan is or whether it needs to be updated.",
         "PID": "#G22#",
@@ -1211,7 +1233,11 @@
                     "data management plan"
                 ]
             ]
-        }
+        },
+        "Mix": {"Targets": [
+            "updated",
+            "data management plan"
+        ]}
     },
     {
         "US_Nr": "user_story_27",
@@ -1244,17 +1270,15 @@
                 "know",
                 "who is responsible"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_28",
         "Benefit": {
             "Entity": ["further general information"],
             "Action": ["look up"],
-            "Contains": [[
-                "references",
-                "further general information"
-            ]],
+            "Contains": [],
             "Text": "I can look up further general information.",
             "Targets": [[
                 "look up",
@@ -1283,7 +1307,11 @@
                 "have",
                 "references"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "references",
+            "further general information"
+        ]}
     },
     {
         "US_Nr": "user_story_29",
@@ -1316,7 +1344,8 @@
                 "have",
                 "short description"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_30",
@@ -1358,7 +1387,8 @@
                     "data"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_31",
@@ -1403,7 +1433,8 @@
                     "data"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_32",
@@ -1446,7 +1477,8 @@
                 "import",
                 "administrative information"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_33",
@@ -1492,7 +1524,8 @@
                     "services used"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_34",
@@ -1534,7 +1567,8 @@
                 "reuse",
                 "information"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_35",
@@ -1571,7 +1605,8 @@
                 "know",
                 "how many"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_36",
@@ -1583,16 +1618,10 @@
             ],
             "Contains": [],
             "Text": "I can reuse it for the writing of a data paper.",
-            "Targets": [
-                [
-                    "reuse",
-                    "description"
-                ],
-                [
-                    "writing",
-                    "data paper"
-                ]
-            ]
+            "Targets": [[
+                "writing",
+                "data paper"
+            ]]
         },
         "Text": "#G22# As a researcher, I want to extract the description of the data collected, so that I can reuse it for the writing of a data paper.",
         "PID": "#G22#",
@@ -1616,7 +1645,11 @@
                 "extract",
                 "description"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "reuse",
+            "description"
+        ]}
     },
     {
         "US_Nr": "user_story_37",
@@ -1681,7 +1714,8 @@
                 "record",
                 "research publications"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_38",
@@ -1746,7 +1780,8 @@
                 "link",
                 "research publications"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_39",
@@ -1797,7 +1832,8 @@
                 "store",
                 "agreements"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_40",
@@ -1833,7 +1869,8 @@
                 "be informed",
                 "data"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_41",
@@ -1872,7 +1909,8 @@
                 "know",
                 "kind of data"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_42",
@@ -1902,7 +1940,8 @@
                 "know",
                 "costs"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_43",
@@ -1947,7 +1986,8 @@
                 "need",
                 "details"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_44",
@@ -1980,7 +2020,8 @@
                 "know",
                 "how secure"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_45",
@@ -2013,7 +2054,8 @@
                 "know",
                 "how secure"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_46",
@@ -2057,7 +2099,8 @@
                 "receive",
                 "regular summary reports"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_47",
@@ -2101,7 +2144,8 @@
                 "receive",
                 "regular summary reports"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_48",
@@ -2137,7 +2181,8 @@
                 "ensure",
                 "compliance "
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_49",
@@ -2188,7 +2233,8 @@
                 "check",
                 "repositories mentioned"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_50",
@@ -2200,10 +2246,7 @@
             ],
             "Contains": [],
             "Text": "I can ensure it will be possible to store it.",
-            "Targets": [[
-                "store",
-                "kind of data I want to store"
-            ]]
+            "Targets": []
         },
         "Text": "#G22# As a PI, I want to plan what kind of data I want to store, so that I can ensure it will be possible to store it.",
         "PID": "#G22#",
@@ -2221,7 +2264,11 @@
                 "plan",
                 "kind of data I want to store"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "store",
+            "kind of data I want to store"
+        ]}
     },
     {
         "US_Nr": "user_story_51",
@@ -2254,7 +2301,8 @@
                 "know",
                 "how secure"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_52",
@@ -2322,7 +2370,8 @@
                     "data"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_53",
@@ -2366,7 +2415,8 @@
                 "get",
                 "information"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_54",
@@ -2399,7 +2449,8 @@
                 "know",
                 "how long"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_55",
@@ -2435,7 +2486,8 @@
                 "know",
                 "who"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_56",
@@ -2498,7 +2550,8 @@
                     "creation process"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_57",
@@ -2534,7 +2587,8 @@
                 "associated",
                 "detailed metadata"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_58",
@@ -2578,7 +2632,8 @@
                     "kind of data types"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_59",
@@ -2622,7 +2677,8 @@
                     "kind of data types"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_60",
@@ -2673,7 +2729,8 @@
                     "data"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_61",
@@ -2710,7 +2767,8 @@
                 "know"
             ]],
             "Targets": []
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_62",
@@ -2758,7 +2816,8 @@
                     "formats"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_63",
@@ -2828,7 +2887,8 @@
                     "technology"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_64",
@@ -2847,16 +2907,10 @@
                 "all necessary information"
             ]],
             "Text": "it can be checked whether all necessary information is available for researchers interested in re-using the data.",
-            "Targets": [
-                [
-                    "re-using",
-                    "data"
-                ],
-                [
-                    "checked",
-                    "information"
-                ]
-            ]
+            "Targets": [[
+                "re-using",
+                "data"
+            ]]
         },
         "Text": "#G22# As a data manager, I want to know which information is necessary to re-use the data, so that it can be checked whether all necessary information is available for researchers interested in re-using the data.",
         "PID": "#G22#",
@@ -2886,7 +2940,11 @@
                     "data"
                 ]
             ]
-        }
+        },
+        "Mix": {"Targets": [
+            "checked",
+            "information"
+        ]}
     },
     {
         "US_Nr": "user_story_65",
@@ -2942,7 +3000,8 @@
                     "formats"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_66",
@@ -2987,7 +3046,8 @@
                 "reproduced efficiently",
                 "data"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_67",
@@ -3065,7 +3125,8 @@
                     "data"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_68",
@@ -3101,7 +3162,8 @@
                 "quoted correctly",
                 "all data"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_69",
@@ -3137,7 +3199,8 @@
                 "check",
                 "all data"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_70",
@@ -3176,22 +3239,17 @@
                 "know",
                 "security requirements"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_71",
         "Benefit": {
             "Entity": ["institutional data catalogue"],
             "Action": ["add"],
-            "Contains": [[
-                "institutional data catalogue",
-                "data sets"
-            ]],
+            "Contains": [],
             "Text": "I can add them to an institutional data catalogue.",
-            "Targets": [[
-                "add",
-                "data sets"
-            ]]
+            "Targets": []
         },
         "Text": "#G22# As a institutional data steward, I want to be able to extract the data sets that are submitted to external repositories, so that I can add them to an institutional data catalogue.",
         "PID": "#G22#",
@@ -3215,6 +3273,16 @@
                 "extract",
                 "data sets"
             ]]
+        },
+        "Mix": {
+            "Contains": [
+                "institutional data catalogue",
+                "data sets"
+            ],
+            "Targets": [
+                "add",
+                "data sets"
+            ]
         }
     },
     {
@@ -3273,7 +3341,8 @@
                     "security requirements"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_73",
@@ -3324,7 +3393,8 @@
                 "see",
                 "sections"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_74",
@@ -3384,7 +3454,8 @@
                     "roles"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_75",
@@ -3444,7 +3515,8 @@
                     "responsibilities"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_76",
@@ -3502,7 +3574,8 @@
                 "see",
                 "sections"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_77",
@@ -3560,7 +3633,8 @@
                 "see",
                 "sections"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_78",
@@ -3618,7 +3692,8 @@
                 "see",
                 "sections"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_79",
@@ -3663,7 +3738,8 @@
                     "data"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_80",
@@ -3726,7 +3802,8 @@
                     "data I have collected"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_81",
@@ -3778,7 +3855,8 @@
                 "plan",
                 "anonymization of data"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_82",
@@ -3814,7 +3892,8 @@
                 "have",
                 "metadata"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_83",
@@ -3847,6 +3926,7 @@
                 "approved",
                 "DMP"
             ]]
-        }
+        },
+        "Mix": {}
     }
 ]

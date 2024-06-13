@@ -36,68 +36,149 @@ public class ActionsRulesCreator {
 	}
 
 	private void addActionRule(JSONObject jsonObject) {
-		JSONArray targets = jsonObject.getJSONArray("Targets");
-		JSONArray contains = jsonObject.getJSONArray("Contains");
-		JSONArray targetActionRules = new JSONArray();
-		JSONArray containActionRules = new JSONArray();
-		Set<String> setTargets = new HashSet<>();
-		Set<String> setContains = new HashSet<>();
+		JSONObject main = jsonObject.getJSONObject("Main");
+		JSONObject benefit = jsonObject.getJSONObject("Benefit");
+
+		JSONArray mainTargets = main.getJSONArray("Targets");
+		JSONArray mainContains = main.getJSONArray("Contains");
+
+		JSONArray benefitTargets = benefit.getJSONArray("Targets");
+		JSONArray benefitContains = benefit.getJSONArray("Contains");
+
+		JSONArray mainTargetActionRules = new JSONArray();
+		JSONArray mainContainActionRules = new JSONArray();
+
+		JSONArray benefitTargetActionRules = new JSONArray();
+		JSONArray benefitContainActionRules = new JSONArray();
+
+		Set<String> setMainTargets = new HashSet<>();
+		Set<String> setMainContains = new HashSet<>();
+
+		Set<String> setBenefitTargets = new HashSet<>();
+		Set<String> setBenefitContains = new HashSet<>();
+
 		JSONArray targetPair;
 		JSONArray containPair;
-		for (int i = 0; i < targets.length(); i++) {
-			JSONArray target = targets.getJSONArray(i);
+
+		// Proceed Targets in Main part
+		for (int i = 0; i < mainTargets.length(); i++) {
+			JSONArray target = mainTargets.getJSONArray(i);
 			String verb = target.getString(0);
 			String entity = target.getString(1);
+			String key = verb.toLowerCase() + entity.toLowerCase();
 			String actionRule = findActionRule(verb.toLowerCase());
-//			System.out.println("action Rule is: " + actionRule + " verb is: " + verb);
+
+			// System.out.println("action Rule is: " + actionRule + " verb is: " + verb);
 			targetPair = new JSONArray();
 			if (actionRule == null) {
-				System.out.println("ERROR: Verb not found: " + verb);
-				
-			
+				System.out.println("ERROR: " + jsonObject.getString("US_Nr") + "Verb in Main part not found: " + verb);
 			} else {
-				if(!setTargets.contains(verb.toLowerCase())) {
-				targetPair.put(verb.toLowerCase());
-				targetPair.put(entity.toLowerCase());
-				targetPair.put(actionRule);
-				setTargets.add(verb.toLowerCase()+entity.toLowerCase());
-				targetActionRules.put(targetPair);
+				if (!setMainTargets.contains(key)) {
+					targetPair.put(verb.toLowerCase());
+					targetPair.put(entity.toLowerCase());
+					targetPair.put(actionRule);
+					setMainTargets.add(key);
+					mainTargetActionRules.put(targetPair);
 				}
-				for (int j = 0; j < contains.length(); j++) {
-					JSONArray contain = contains.getJSONArray(j);
-					String entity1 = contain.getString(0);
-					String entity2 = contain.getString(1);
-					
+				// Proceed Contains in Main part
+				for (int j = 0; j < mainContains.length(); j++) {
+					JSONArray contain = mainContains.getJSONArray(j);
+					String entity1 = contain.getString(0).toLowerCase();
+					String entity2 = contain.getString(1).toLowerCase();
+					String keyContain = entity1 + entity2;
 					if (entity1.equalsIgnoreCase(entity)) {
 //						System.out.println("entity is: " + entity);
 						containPair = new JSONArray();
-						if(!setContains.contains(entity2.toLowerCase())) {
-						containPair.put(entity2);
-						containPair.put(actionRule);
-						containActionRules.put(containPair);
-						setContains.add(entity2.toLowerCase()+entity.toLowerCase());
+						if (!setMainContains.contains(keyContain)) {
+							containPair.put(entity1);
+							containPair.put(entity2);
+							containPair.put(actionRule);
+							mainContainActionRules.put(containPair);
+							setMainContains.add(keyContain);
 						}
 					}
 					if (entity2.equalsIgnoreCase(entity)) {
 						containPair = new JSONArray();
 //						System.out.println("entity is if2: " + entity);
-						if(!setContains.contains(entity1.toLowerCase())) {
-						containPair.put(entity1);
-						containPair.put(actionRule);
-						containActionRules.put(containPair);
-						setContains.add(entity1.toLowerCase()+entity.toLowerCase());
+						if (!setMainContains.contains(keyContain)) {
+							containPair.put(entity1);
+							containPair.put(entity2);
+							containPair.put(actionRule);
+							mainContainActionRules.put(containPair);
+							setMainContains.add(keyContain);
 						}
 					}
 				}
 			}
 
-			
-			
 		}
-		JSONObject actionRules = new JSONObject();
-		actionRules.put("Target Action Rules", targetActionRules);
-		actionRules.put("Contain Action Rules", containActionRules);
-		jsonObject.put("Action Rules", actionRules);
+
+		// Proceed Targets in Benefit part
+		for (int i = 0; i < benefitTargets.length(); i++) {
+			JSONArray target = benefitTargets.getJSONArray(i);
+			String verb = target.getString(0);
+			String entity = target.getString(1);
+			String key = verb.toLowerCase()+entity.toLowerCase();
+			
+			String actionRule = findActionRule(verb.toLowerCase());
+
+			// System.out.println("action Rule is: " + actionRule + " verb is: " + verb);
+			targetPair = new JSONArray();
+			if (actionRule == null) {
+				System.out
+						.println("ERROR: " + jsonObject.getString("US_Nr") + "Verb in Benefit part not found: " + verb);
+			} else {
+				if (!setBenefitTargets.contains(key)) {
+					targetPair.put(verb.toLowerCase());
+					targetPair.put(entity.toLowerCase());
+					targetPair.put(actionRule);
+					setBenefitTargets.add(key);
+					benefitTargetActionRules.put(targetPair);
+				}
+				// Proceed Contains in Benefit part
+				for (int j = 0; j < benefitContains.length(); j++) {
+					JSONArray contain = benefitContains.getJSONArray(j);
+					String entity1 = contain.getString(0);
+					String entity2 = contain.getString(1);
+					String keyContain = entity1.toLowerCase()+ entity2.toLowerCase();
+					if (entity1.equalsIgnoreCase(entity)) {
+//								System.out.println("entity is: " + entity);
+						containPair = new JSONArray();
+						if (!setBenefitContains.contains(keyContain)) {
+							containPair.put(entity1);
+							containPair.put(entity2);
+							containPair.put(actionRule);
+							benefitContainActionRules.put(containPair);
+							setBenefitContains.add(keyContain);
+						}
+					}
+					if (entity2.equalsIgnoreCase(entity)) {
+						containPair = new JSONArray();
+//								System.out.println("entity is if2: " + entity);
+						if (!setBenefitContains.contains(keyContain)) {
+							containPair.put(entity1);
+							containPair.put(entity2);
+							containPair.put(actionRule);
+							benefitContainActionRules.put(containPair);
+							setBenefitContains.add(keyContain);
+						}
+					}
+				}
+			}
+
+		}
+
+		// Add Action Rules into Main and return the root jsonobject
+		JSONObject mainActionRules = new JSONObject();
+		mainActionRules.put("Target Action Rules", mainTargetActionRules);
+		mainActionRules.put("Contain Action Rules", mainContainActionRules);
+		main.put("Action Rules", mainActionRules);
+
+		// Add Action Rules into Main and return the root jsonobject
+		JSONObject benefitActionRules = new JSONObject();
+		benefitActionRules.put("Target Action Rules", benefitTargetActionRules);
+		benefitActionRules.put("Contain Action Rules", benefitContainActionRules);
+		benefit.put("Action Rules", benefitActionRules);
 
 	}
 

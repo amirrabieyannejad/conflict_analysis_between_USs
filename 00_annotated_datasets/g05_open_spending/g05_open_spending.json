@@ -36,7 +36,8 @@
                 "edit",
                 "dataset I have published"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_02",
@@ -95,7 +96,8 @@
                 "edit",
                 "model"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_03",
@@ -131,7 +133,8 @@
                 "delete",
                 "dataset I have published"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_04",
@@ -167,7 +170,8 @@
                 "Hide",
                 "any dataset already added"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_05",
@@ -210,7 +214,8 @@
                 "have",
                 "view"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_06",
@@ -252,7 +257,8 @@
                 "delete",
                 "any dataset published"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_07",
@@ -311,7 +317,8 @@
                 "edit",
                 "data source"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_08",
@@ -347,7 +354,8 @@
                 "have",
                 "Packager support Constants"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_09",
@@ -357,10 +365,7 @@
                 "data formats"
             ],
             "Action": ["use"],
-            "Contains": [[
-                "data",
-                "data formats"
-            ]],
+            "Contains": [],
             "Text": "I do not have to convert data formats in order to use the data packager.",
             "Targets": [[
                 "use",
@@ -389,22 +394,20 @@
                 "import",
                 "data"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "data",
+            "data formats"
+        ]}
     },
     {
         "US_Nr": "user_story_10",
         "Benefit": {
             "Entity": ["map"],
             "Action": ["visualise"],
-            "Contains": [[
-                "map",
-                "data"
-            ]],
+            "Contains": [],
             "Text": "I can visualise it on a map.",
-            "Targets": [[
-                "visualise",
-                "data"
-            ]]
+            "Targets": []
         },
         "Text": "#G05# As a Data Publishing User, I want to know what my data needs to be able to be visualised on a map, So that I can visualise it on a map.",
         "PID": "#G05#",
@@ -438,6 +441,16 @@
                     "what"
                 ]
             ]
+        },
+        "Mix": {
+            "Contains": [
+                "map",
+                "data"
+            ],
+            "Targets": [
+                "visualise",
+                "data"
+            ]
         }
     },
     {
@@ -448,10 +461,7 @@
                 "data packager"
             ],
             "Action": ["use"],
-            "Contains": [[
-                "data",
-                "data formats"
-            ]],
+            "Contains": [],
             "Text": "I do not have to convert data formats in order to use the data packager.",
             "Targets": [[
                 "use",
@@ -480,7 +490,11 @@
                 "import",
                 "data"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "data",
+            "data formats"
+        ]}
     },
     {
         "US_Nr": "user_story_12",
@@ -490,10 +504,7 @@
                 "data packager"
             ],
             "Action": ["use"],
-            "Contains": [[
-                "data",
-                "data formats"
-            ]],
+            "Contains": [],
             "Text": "I do not have to convert data formats in order to use the data packager.",
             "Targets": [[
                 "use",
@@ -522,7 +533,11 @@
                 "import",
                 "data"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "data",
+            "data formats"
+        ]}
     },
     {
         "US_Nr": "user_story_13",
@@ -532,10 +547,7 @@
                 "data packager"
             ],
             "Action": ["use"],
-            "Contains": [[
-                "data",
-                "data formats"
-            ]],
+            "Contains": [],
             "Text": "I do not have to convert data formats in order to use the data packager.",
             "Targets": [[
                 "use",
@@ -564,7 +576,11 @@
                 "import",
                 "data"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "data",
+            "data formats"
+        ]}
     },
     {
         "US_Nr": "user_story_14",
@@ -606,7 +622,8 @@
                 "provide",
                 "Platform Administrator"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_15",
@@ -679,7 +696,8 @@
                     "data"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_16",
@@ -728,7 +746,8 @@
                 "download",
                 "CSV"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_17",
@@ -777,7 +796,8 @@
                 "change",
                 "display"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_18",
@@ -786,10 +806,7 @@
             "Action": ["easily understand"],
             "Contains": [],
             "Text": "I can more easily understand what I am viewing.",
-            "Targets": [[
-                "easily understand",
-                "embedded visualisations"
-            ]]
+            "Targets": []
         },
         "Text": "#G05# As a Data Consuming User, I want to see textual descriptions that accompany embedded visualisations, So that I can more easily understand what I am viewing.",
         "PID": "#G05#",
@@ -813,7 +830,11 @@
                 "see",
                 "textual descriptions"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "easily understand",
+            "embedded visualisations"
+        ]}
     },
     {
         "US_Nr": "user_story_19",
@@ -859,7 +880,8 @@
                 "share",
                 "view state"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_20",
@@ -868,10 +890,7 @@
             "Action": ["use"],
             "Contains": [],
             "Text": "I can use it offline.",
-            "Targets": [[
-                "use",
-                "image"
-            ]]
+            "Targets": []
         },
         "Text": "#G05# As a Data Consuming User, I want to be able to download an image ofa particular view state, So that I can use it offline.",
         "PID": "#G05#",
@@ -895,7 +914,11 @@
                 "download",
                 "image"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "use",
+            "image"
+        ]}
     },
     {
         "US_Nr": "user_story_21",
@@ -960,7 +983,8 @@
                     "image"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_22",
@@ -1009,7 +1033,8 @@
                 "have",
                 "stepped zoom"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_23",
@@ -1052,7 +1077,8 @@
                 "have",
                 "consistent use"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_24",
@@ -1113,7 +1139,8 @@
                     "Primary Color"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_25",
@@ -1149,7 +1176,8 @@
                 "understand",
                 "user"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_26",
@@ -1185,7 +1213,8 @@
                 "understand",
                 "user"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_27",
@@ -1243,7 +1272,8 @@
                     "region"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_28",
@@ -1279,7 +1309,8 @@
                 "dynamically request",
                 "polygons"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_29",
@@ -1347,7 +1378,8 @@
                     "HASC codes"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_30",
@@ -1399,7 +1431,8 @@
                 "get",
                 "CSV output"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_31",
@@ -1412,21 +1445,12 @@
                 "use",
                 "enable"
             ],
-            "Contains": [[
-                "scenarios",
-                "different currencies"
-            ]],
+            "Contains": [],
             "Text": "I can use this in scenarios that might enable comparison by normalisation.",
-            "Targets": [
-                [
-                    "use",
-                    "different currencies"
-                ],
-                [
-                    "enable",
-                    "comparison by normalisation"
-                ]
-            ]
+            "Targets": [[
+                "enable",
+                "comparison by normalisation"
+            ]]
         },
         "Text": "#G05# As an API User, I want to be able to get a set of monetary measures transferred to different currencies, So that I can use this in scenarios that might enable comparison by normalisation.",
         "PID": "#G05#",
@@ -1455,6 +1479,16 @@
                     "transferred",
                     "different currencies"
                 ]
+            ]
+        },
+        "Mix": {
+            "Contains": [
+                "scenarios",
+                "different currencies"
+            ],
+            "Targets": [
+                "use",
+                "different currencies"
             ]
         }
     },
@@ -1505,7 +1539,8 @@
                     "results"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_33",
@@ -1554,7 +1589,8 @@
                     "data"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_34",
@@ -1596,7 +1632,8 @@
                 "normalise",
                 "measures"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_35",
@@ -1638,7 +1675,8 @@
                 "normalise",
                 "measures"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_36",
@@ -1680,7 +1718,8 @@
                 "normalise",
                 "measures"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_37",
@@ -1729,7 +1768,8 @@
                 "normalise",
                 "measures"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_38",
@@ -1778,7 +1818,8 @@
                 "get",
                 "relative percentage"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_39",
@@ -1790,16 +1831,10 @@
             ],
             "Contains": [],
             "Text": "such can be shared more easily and contribute to a visualisation gallery.",
-            "Targets": [
-                [
-                    "shared more easily",
-                    "visualisation state"
-                ],
-                [
-                    "contribute",
-                    "visualisation gallery"
-                ]
-            ]
+            "Targets": [[
+                "contribute",
+                "visualisation gallery"
+            ]]
         },
         "Text": "#G05# As an API User, I want to be able to persistently store visualisation state in the database, So that such can be shared more easily and contribute to a visualisation gallery.",
         "PID": "#G05#",
@@ -1823,7 +1858,11 @@
                 "persistently store",
                 "visualisation state"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "shared more easily",
+            "visualisation state"
+        ]}
     },
     {
         "US_Nr": "user_story_40",
@@ -1833,16 +1872,7 @@
                 "current data"
             ],
             "Action": ["always shows"],
-            "Contains": [
-                [
-                    "OpenSpending",
-                    "dataset"
-                ],
-                [
-                    "dataset",
-                    "current data"
-                ]
-            ],
+            "Contains": [],
             "Text": "OpenSpending always shows current data.",
             "Targets": [[
                 "always shows",
@@ -1877,7 +1907,11 @@
                     "dataset"
                 ]
             ]
-        }
+        },
+        "Mix": {"Contains": [
+            "dataset",
+            "current data"
+        ]}
     },
     {
         "US_Nr": "user_story_41",
@@ -1936,17 +1970,15 @@
                     "any and all projects"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_42",
         "Benefit": {
             "Entity": ["data"],
             "Action": [],
-            "Contains": [[
-                "own username",
-                "data"
-            ]],
+            "Contains": [],
             "Text": "my data is more easily discoverable.",
             "Targets": []
         },
@@ -1966,7 +1998,11 @@
                 "set",
                 "own username"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "own username",
+            "data"
+        ]}
     },
     {
         "US_Nr": "user_story_43",
@@ -2008,7 +2044,8 @@
                 "add",
                 "dataset"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_44",
@@ -2050,7 +2087,8 @@
                 "Hide",
                 "dataset"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_45",
@@ -2092,7 +2130,8 @@
                 "have",
                 "view"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_46",
@@ -2130,7 +2169,8 @@
                 "have",
                 "functioning Python Client"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_47",
@@ -2143,21 +2183,12 @@
                 "find",
                 "creating"
             ],
-            "Contains": [[
-                "Open Spending",
-                "fiscal data visualisations"
-            ]],
+            "Contains": [],
             "Text": "I can find guidance in creating my own with Open Spending.",
-            "Targets": [
-                [
-                    "find",
-                    "guidance"
-                ],
-                [
-                    "creating",
-                    "fiscal data visualisations"
-                ]
-            ]
+            "Targets": [[
+                "find",
+                "guidance"
+            ]]
         },
         "Text": "#G05# As an OpenSpending Community Member, I want to have an app where I can find examples of use of fiscal data visualisations, So that I can find guidance in creating my own with Open Spending.",
         "PID": "#G05#",
@@ -2198,6 +2229,16 @@
                     "examples"
                 ]
             ]
+        },
+        "Mix": {
+            "Contains": [
+                "Open Spending",
+                "fiscal data visualisations"
+            ],
+            "Targets": [
+                "creating",
+                "fiscal data visualisations"
+            ]
         }
     },
     {
@@ -2211,21 +2252,12 @@
                 "fix",
                 "publishing"
             ],
-            "Contains": [[
-                "Open Spending",
-                "CSV file"
-            ]],
+            "Contains": [],
             "Text": "I can fix possible data issues before publishing it on Open Spending.",
-            "Targets": [
-                [
-                    "publishing",
-                    "CSV file"
-                ],
-                [
-                    "fix",
-                    "possible data issues"
-                ]
-            ]
+            "Targets": [[
+                "fix",
+                "possible data issues"
+            ]]
         },
         "Text": "#G05# As a Data Publishing User, I want to know if my CSV file is valid, So that I can fix possible data issues before publishing it on Open Spending.",
         "PID": "#G05#",
@@ -2243,6 +2275,16 @@
                 "know",
                 "CSV file"
             ]]
+        },
+        "Mix": {
+            "Contains": [
+                "Open Spending",
+                "CSV file"
+            ],
+            "Targets": [
+                "publishing",
+                "CSV file"
+            ]
         }
     },
     {
@@ -2286,7 +2328,8 @@
                 "search",
                 "any dataset published and publicly accessible"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_50",
@@ -2360,7 +2403,8 @@
                     "pivot table"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_51",
@@ -2403,17 +2447,15 @@
                 "change",
                 "colors"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_52",
         "Benefit": {
             "Entity": ["own organisation's color scheme"],
             "Action": ["brand"],
-            "Contains": [[
-                "styling",
-                "own organisation's color scheme"
-            ]],
+            "Contains": [],
             "Text": "I can brand it to my own organisation's color scheme.",
             "Targets": [[
                 "brand",
@@ -2449,7 +2491,11 @@
                 "change",
                 "styling"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "styling",
+            "own organisation's color scheme"
+        ]}
     },
     {
         "US_Nr": "user_story_53",
@@ -2505,6 +2551,7 @@
                 "translate",
                 "data types hierarchies"
             ]]
-        }
+        },
+        "Mix": {}
     }
 ]

@@ -45,7 +45,8 @@
                     "datasets"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_02",
@@ -75,7 +76,8 @@
                 "have",
                 "user interface"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_03",
@@ -141,7 +143,8 @@
                     "datasets"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_04",
@@ -199,7 +202,8 @@
                     "datasets"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_05",
@@ -241,7 +245,8 @@
                 "deposit",
                 "files"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_06",
@@ -254,10 +259,7 @@
                 "fulfil",
                 "protected"
             ],
-            "Contains": [[
-                "data",
-                "right of first use"
-            ]],
+            "Contains": [],
             "Text": "my right of first use is protected, and I can fulfil my confidentiality responsibilities.",
             "Targets": [
                 [
@@ -292,7 +294,11 @@
                 "place",
                 "data"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "data",
+            "right of first use"
+        ]}
     },
     {
         "US_Nr": "user_story_07",
@@ -328,7 +334,8 @@
                 "apply",
                 "licenses"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_08",
@@ -371,7 +378,8 @@
                 "allow",
                 "privileged access"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_09",
@@ -401,7 +409,8 @@
                 "deposit",
                 "arbitrarily large files"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_10",
@@ -453,7 +462,8 @@
                 "link",
                 "datasets"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_11",
@@ -469,20 +479,10 @@
             ],
             "Contains": [],
             "Text": "it can be discovered and cited more easily and citations can be tracked so that I can receive credit.",
-            "Targets": [
-                [
-                    "cited more easily",
-                    "data"
-                ],
-                [
-                    "tracked",
-                    "citations"
-                ],
-                [
-                    "discovered",
-                    "data"
-                ]
-            ]
+            "Targets": [[
+                "tracked",
+                "citations"
+            ]]
         },
         "Text": "#G24# As a depositor, I want to mint DOIs for my data, so that it can be discovered and cited more easily and citations can be tracked so that I can receive credit.",
         "PID": "#G24#",
@@ -506,7 +506,11 @@
                 "mint",
                 "DOIs"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "discovered",
+            "data"
+        ]}
     },
     {
         "US_Nr": "user_story_12",
@@ -558,7 +562,8 @@
                     "metadata"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_13",
@@ -627,7 +632,8 @@
                     "data"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_14",
@@ -663,7 +669,8 @@
                 "specify",
                 "disposal policy"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_15",
@@ -705,7 +712,8 @@
                 "track",
                 "downloads"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_16",
@@ -747,7 +755,8 @@
                 "track",
                 "citations"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_17",
@@ -799,7 +808,8 @@
                 "have",
                 "guarantees"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_18",
@@ -842,7 +852,8 @@
                 "attach",
                 "subject specific discoverability metadata"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_19",
@@ -894,7 +905,8 @@
                 "link",
                 "datasets"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_20",
@@ -939,7 +951,8 @@
                     "'live' research data"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_21",
@@ -979,7 +992,8 @@
                 "manage",
                 "multiple versions"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_22",
@@ -1012,7 +1026,8 @@
                 "allow",
                 "others"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_23",
@@ -1051,7 +1066,8 @@
                 "search",
                 "archive"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_24",
@@ -1093,7 +1109,8 @@
                 "access",
                 "system"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_25",
@@ -1141,7 +1158,8 @@
                     "deposited files"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_26",
@@ -1150,10 +1168,7 @@
             "Action": ["reference"],
             "Contains": [],
             "Text": "I can reference it correctly.",
-            "Targets": [[
-                "reference",
-                "dataset"
-            ]]
+            "Targets": []
         },
         "Text": "#G24# As a data reuser, I want to view an example citation for a dataset, so that I can reference it correctly.",
         "PID": "#G24#",
@@ -1177,7 +1192,11 @@
                 "view",
                 "example citation"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "reference",
+            "dataset"
+        ]}
     },
     {
         "US_Nr": "user_story_27",
@@ -1229,7 +1248,8 @@
                 "view",
                 "DOI"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_28",
@@ -1265,7 +1285,8 @@
                 "get",
                 "persistent URL"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_29",
@@ -1329,7 +1350,8 @@
                 "search",
                 "archive"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_30",
@@ -1374,7 +1396,8 @@
                 "see",
                 "different versions"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_31",
@@ -1423,7 +1446,8 @@
                     "projects"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_32",
@@ -1465,7 +1489,8 @@
                 "have",
                 "guarantees"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_33",
@@ -1505,7 +1530,8 @@
                 "access",
                 "data"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_34",
@@ -1557,7 +1583,8 @@
                 "deposit",
                 "data"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_35",
@@ -1627,7 +1654,8 @@
                 "make",
                 "some checks"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_36",
@@ -1669,7 +1697,8 @@
                 "require",
                 "minimum set"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_37",
@@ -1702,7 +1731,8 @@
                 "approve",
                 "scheduled disposal"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_38",
@@ -1738,7 +1768,8 @@
                 "query",
                 "entire archive"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_39",
@@ -1780,7 +1811,8 @@
                 "import",
                 "Bath data"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_40",
@@ -1828,7 +1860,8 @@
                     "open standards"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_41",
@@ -1888,7 +1921,8 @@
                 "integrate",
                 "archive"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_42",
@@ -1927,7 +1961,8 @@
                 "include",
                 "records"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_43",
@@ -1976,7 +2011,8 @@
                 "track",
                 "citation counts"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_44",
@@ -2048,7 +2084,8 @@
                     "statistics"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_45",
@@ -2120,7 +2157,8 @@
                     "datasets"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_46",
@@ -2156,7 +2194,8 @@
                 "store",
                 "archived data"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_47",
@@ -2205,7 +2244,8 @@
                 "integrate",
                 "archive"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_48",
@@ -2241,7 +2281,8 @@
                 "store",
                 "archived data"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_49",
@@ -2274,7 +2315,8 @@
                 "export",
                 "all data"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_50",
@@ -2335,7 +2377,8 @@
                     "datasets"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_51",
@@ -2384,7 +2427,8 @@
                 "make",
                 "persistent web links"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_52",
@@ -2396,10 +2440,7 @@
             ],
             "Contains": [],
             "Text": "I can be sure that funding them is a worthwhile investment.",
-            "Targets": [[
-                "funding",
-                "researchers I fund"
-            ]]
+            "Targets": []
         },
         "Text": "#G24# As a fundingbody, I want to be reassured that researchers I fund have robust archival plans for their data, so that I can be sure that funding them is a worthwhile investment.",
         "PID": "#G24#",
@@ -2431,7 +2472,11 @@
                 "be reassured"
             ]],
             "Targets": []
-        }
+        },
+        "Mix": {"Targets": [
+            "funding",
+            "researchers I fund"
+        ]}
     },
     {
         "US_Nr": "user_story_53",
@@ -2490,6 +2535,7 @@
                 "harvest",
                 "metadata"
             ]]
-        }
+        },
+        "Mix": {}
     }
 ]

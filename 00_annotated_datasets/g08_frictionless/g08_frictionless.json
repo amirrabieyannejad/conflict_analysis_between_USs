@@ -11,10 +11,7 @@
                 "start using",
                 "doing"
             ],
-            "Contains": [[
-                "Data Package",
-                "data"
-            ]],
+            "Contains": [],
             "Text": "I can start using the data for doing analysis and visualizations.",
             "Targets": [
                 [
@@ -53,7 +50,11 @@
                 "get",
                 "Data Package"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "Data Package",
+            "data"
+        ]}
     },
     {
         "US_Nr": "user_story_02",
@@ -67,10 +68,7 @@
                 "start using",
                 "doing"
             ],
-            "Contains": [[
-                "Data Package",
-                "data"
-            ]],
+            "Contains": [],
             "Text": "I can start using the data for doing analysis and visualizations.",
             "Targets": [
                 [
@@ -109,7 +107,11 @@
                 "get",
                 "Data Package"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "Data Package",
+            "data"
+        ]}
     },
     {
         "US_Nr": "user_story_03",
@@ -152,7 +154,8 @@
                 "add",
                 "type information"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_04",
@@ -208,7 +211,8 @@
                 "provide",
                 "visualization"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_05",
@@ -221,27 +225,9 @@
                 "share",
                 "include"
             ],
-            "Contains": [
-                [
-                    "Data Package",
-                    "new visualizations"
-                ],
-                [
-                    "others",
-                    "new visualizations"
-                ]
-            ],
+            "Contains": [],
             "Text": "I can share them with others or include them in the Data Package.",
-            "Targets": [
-                [
-                    "include",
-                    "new visualizations"
-                ],
-                [
-                    "share",
-                    "new visualizations"
-                ]
-            ]
+            "Targets": []
         },
         "Text": "#G08# As a Researcher, I want to be able to save new visualizations, so that I can share them with others or include them in the Data Package.",
         "PID": "#G08#",
@@ -259,6 +245,16 @@
                 "save",
                 "new visualizations"
             ]]
+        },
+        "Mix": {
+            "Contains": [
+                "others",
+                "new visualizations"
+            ],
+            "Targets": [
+                "share",
+                "new visualizations"
+            ]
         }
     },
     {
@@ -312,7 +308,8 @@
                 "know",
                 "data"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_07",
@@ -324,16 +321,10 @@
             ],
             "Contains": [],
             "Text": "I can know how to fix it.",
-            "Targets": [
-                [
-                    "know",
-                    "how"
-                ],
-                [
-                    "fix",
-                    "data"
-                ]
-            ]
+            "Targets": [[
+                "know",
+                "how"
+            ]]
         },
         "Text": "#G08# As a ResearcherPublisher, I want to understand the ways in which my data is invalid, so that I can know how to fix it.",
         "PID": "#G08#",
@@ -354,7 +345,11 @@
                 "understand",
                 "ways"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "fix",
+            "data"
+        ]}
     },
     {
         "US_Nr": "user_story_08",
@@ -368,10 +363,7 @@
                 "doing",
                 "start using"
             ],
-            "Contains": [[
-                "Data Package",
-                "data"
-            ]],
+            "Contains": [],
             "Text": "I can start using the data for doing analysis and visualizations.",
             "Targets": [
                 [
@@ -410,7 +402,11 @@
                 "get",
                 "Data Package"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "Data Package",
+            "data"
+        ]}
     },
     {
         "US_Nr": "user_story_09",
@@ -424,10 +420,7 @@
                 "doing",
                 "start using"
             ],
-            "Contains": [[
-                "Data Package",
-                "data"
-            ]],
+            "Contains": [],
             "Text": "I can start using the data for doing analysis and visualizations.",
             "Targets": [
                 [
@@ -466,7 +459,11 @@
                 "get",
                 "Data Package"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "Data Package",
+            "data"
+        ]}
     },
     {
         "US_Nr": "user_story_10",
@@ -480,10 +477,7 @@
                 "start using",
                 "doing"
             ],
-            "Contains": [[
-                "Data Package",
-                "data"
-            ]],
+            "Contains": [],
             "Text": "I can start using the data for doing analysis and visualizations.",
             "Targets": [
                 [
@@ -522,7 +516,11 @@
                 "get",
                 "Data Package"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "Data Package",
+            "data"
+        ]}
     },
     {
         "US_Nr": "user_story_11",
@@ -536,10 +534,7 @@
                 "start using",
                 "doing"
             ],
-            "Contains": [[
-                "Data Package",
-                "data"
-            ]],
+            "Contains": [],
             "Text": "I can start using the data for doing analysis and visualizations.",
             "Targets": [
                 [
@@ -578,7 +573,11 @@
                 "get",
                 "Data Package"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "Data Package",
+            "data"
+        ]}
     },
     {
         "US_Nr": "user_story_12",
@@ -617,7 +616,8 @@
                 "translate",
                 "EML dataset"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_13",
@@ -631,10 +631,7 @@
                 "start using",
                 "doing"
             ],
-            "Contains": [[
-                "Data Package",
-                "data"
-            ]],
+            "Contains": [],
             "Text": "I can start using the data for doing analysis and visualizations.",
             "Targets": [
                 [
@@ -680,7 +677,11 @@
                 "get",
                 "Data Package"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "Data Package",
+            "data"
+        ]}
     },
     {
         "US_Nr": "user_story_14",
@@ -694,10 +695,7 @@
                 "doing",
                 "start using"
             ],
-            "Contains": [[
-                "Data Package",
-                "data"
-            ]],
+            "Contains": [],
             "Text": "I can start using the data for doing analysis and visualizations.",
             "Targets": [
                 [
@@ -736,7 +734,11 @@
                 "get",
                 "Data Package"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "Data Package",
+            "data"
+        ]}
     },
     {
         "US_Nr": "user_story_15",
@@ -755,16 +757,10 @@
                 "core dataset"
             ]],
             "Text": "I can use it to apply to form control that uses a core dataset for autocompletion.",
-            "Targets": [
-                [
-                    "form",
-                    "control"
-                ],
-                [
-                    "use",
-                    "jQuery plugin"
-                ]
-            ]
+            "Targets": [[
+                "form",
+                "control"
+            ]]
         },
         "Text": "#G08# As a Developer, I want a jQuery plugin for Core Data Packages, so that I can use it to apply to form control that uses a core dataset for autocompletion.",
         "PID": "#G08#",
@@ -788,7 +784,11 @@
                 "want",
                 "jQuery plugin"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "use",
+            "jQuery plugin"
+        ]}
     },
     {
         "US_Nr": "user_story_16",
@@ -833,7 +833,8 @@
                 "get",
                 "Excel spreadsheet"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_17",
@@ -898,7 +899,8 @@
                     "analysis"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_18",
@@ -912,10 +914,7 @@
                 "start using",
                 "doing"
             ],
-            "Contains": [[
-                "Data Package",
-                "data"
-            ]],
+            "Contains": [],
             "Text": "I can start using the data in doing analysis and visualizations.",
             "Targets": [
                 [
@@ -954,7 +953,11 @@
                 "get",
                 "Data Package"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "Data Package",
+            "data"
+        ]}
     },
     {
         "US_Nr": "user_story_19",
@@ -968,10 +971,7 @@
                 "start using",
                 "doing"
             ],
-            "Contains": [[
-                "Data Package",
-                "data"
-            ]],
+            "Contains": [],
             "Text": "I can start using the data in doing analysis and visualizations.",
             "Targets": [
                 [
@@ -1010,7 +1010,11 @@
                 "get",
                 "Data Package"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "Data Package",
+            "data"
+        ]}
     },
     {
         "US_Nr": "user_story_20",
@@ -1024,10 +1028,7 @@
                 "start using",
                 "doing"
             ],
-            "Contains": [[
-                "Data Package",
-                "data"
-            ]],
+            "Contains": [],
             "Text": "I can start using the data in doing analysis and visualizations.",
             "Targets": [
                 [
@@ -1066,7 +1067,11 @@
                 "get",
                 "Data Package"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "Data Package",
+            "data"
+        ]}
     },
     {
         "US_Nr": "user_story_21",
@@ -1079,16 +1084,10 @@
                 "start using",
                 "doing"
             ],
-            "Contains": [
-                [
-                    "ML datasets",
-                    "data"
-                ],
-                [
-                    "data",
-                    "analysis"
-                ]
-            ],
+            "Contains": [[
+                "data",
+                "analysis"
+            ]],
             "Text": "I can easily import them into my ML platform",
             "Targets": [
                 [
@@ -1139,7 +1138,11 @@
                     "ML datasets"
                 ]
             ]
-        }
+        },
+        "Mix": {"Contains": [
+            "ML datasets",
+            "data"
+        ]}
     },
     {
         "US_Nr": "user_story_22",
@@ -1173,7 +1176,8 @@
                 "want",
                 "Elasticsearch integration"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_23",
@@ -1207,7 +1211,8 @@
                 "want",
                 "SPSS integration"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_24",
@@ -1241,7 +1246,8 @@
                 "want",
                 "EPrints integration"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_25",
@@ -1275,7 +1281,8 @@
                 "want",
                 "Mongo integration"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_26",
@@ -1309,7 +1316,8 @@
                 "want",
                 "DAT integration"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_27",
@@ -1342,7 +1350,8 @@
                 "add",
                 "general reference data"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_28",
@@ -1382,7 +1391,8 @@
                 "add",
                 "general country names"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_29",
@@ -1421,7 +1431,8 @@
                 "add",
                 "reference data on inflation"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_30",
@@ -1474,7 +1485,8 @@
                     "geographic data"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_31",
@@ -1514,7 +1526,8 @@
                 "reference",
                 "remote-controlled vocabulary"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_32",
@@ -1548,7 +1561,8 @@
                 "want",
                 "DSpace integration"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_33",
@@ -1582,7 +1596,8 @@
                 "want",
                 "Feather integration"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_34",
@@ -1616,7 +1631,8 @@
                 "want",
                 "HDF5 integration"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_35",
@@ -1667,7 +1683,8 @@
                     "Microsoft Power BI integration"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_36",
@@ -1680,7 +1697,7 @@
             ],
             "Action": [
                 "store",
-                "don't have to retype"
+                "don\u2019t have to retype"
             ],
             "Contains": [
                 [
@@ -1692,10 +1709,10 @@
                     "descriptive information"
                 ]
             ],
-            "Text": "when I store my dataset in GitHub, I don't have to retype descriptive information about my dataset.",
+            "Text": "when I store my dataset in GitHub, I don\u2019t have to retype descriptive information about my dataset.",
             "Targets": [
                 [
-                    "don't have to retype",
+                    "don\u2019t have to retype",
                     "descriptive information"
                 ],
                 [
@@ -1704,7 +1721,7 @@
                 ]
             ]
         },
-        "Text": "#G08# As a ResearcherPublisher, I want an integration with Zenodo, so that when I store my dataset in GitHub, I don't have to retype descriptive information about my dataset.",
+        "Text": "#G08# As a ResearcherPublisher, I want an integration with Zenodo, so that when I store my dataset in GitHub, I don\u2019t have to retype descriptive information about my dataset.",
         "PID": "#G08#",
         "Main": {
             "Entity": [
@@ -1726,7 +1743,8 @@
                 "want",
                 "integration"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_37",
@@ -1762,7 +1780,8 @@
                 "would like",
                 "integration"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_38",
@@ -1772,10 +1791,7 @@
                 "data API"
             ],
             "Action": ["have"],
-            "Contains": [[
-                "Data Packages",
-                "data"
-            ]],
+            "Contains": [],
             "Text": "my data is findable, and I can have a data API.",
             "Targets": [[
                 "have",
@@ -1804,7 +1820,11 @@
                 "publish",
                 "Data Packages"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "Data Packages",
+            "data"
+        ]}
     },
     {
         "US_Nr": "user_story_39",
@@ -1856,7 +1876,8 @@
                 ]
             ],
             "Targets": []
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_40",
@@ -1909,7 +1930,8 @@
                 "want",
                 "NetCDF integration"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_41",
@@ -1957,7 +1979,8 @@
                 "want",
                 "integration "
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_42",
@@ -1993,7 +2016,8 @@
                 "would like",
                 "integration"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_43",
@@ -2018,7 +2042,8 @@
                 "store",
                 "data"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_44",
@@ -2073,7 +2098,8 @@
                     "basic metadata "
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_45",
@@ -2126,7 +2152,8 @@
                 "validate",
                 "data"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_46",
@@ -2139,10 +2166,7 @@
                 "catch",
                 "store"
             ],
-            "Contains": [[
-                "data",
-                "errors"
-            ]],
+            "Contains": [],
             "Text": "I can catch errors early and store reliable data.",
             "Targets": [
                 [
@@ -2180,7 +2204,11 @@
                     "data"
                 ]
             ]
-        }
+        },
+        "Mix": {"Contains": [
+            "data",
+            "errors"
+        ]}
     },
     {
         "US_Nr": "user_story_47",
@@ -2247,7 +2275,8 @@
                     "command line tool"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_48",
@@ -2297,7 +2326,8 @@
                     "data"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_49",
@@ -2339,7 +2369,8 @@
                 "prove",
                 "published data"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_50",
@@ -2381,7 +2412,8 @@
                 "make it easy to assess",
                 "quality of data"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_51",
@@ -2391,16 +2423,7 @@
                 "correct data"
             ],
             "Action": ["encouraged"],
-            "Contains": [
-                [
-                    "site",
-                    "users"
-                ],
-                [
-                    "data",
-                    "correct data"
-                ]
-            ],
+            "Contains": [],
             "Text": "users can be encouraged that this is the correct data for them.",
             "Targets": [[
                 "encouraged",
@@ -2436,7 +2459,11 @@
                 "embed",
                 "interactive preview"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "data",
+            "correct data"
+        ]}
     },
     {
         "US_Nr": "user_story_52",
@@ -2450,20 +2477,10 @@
                 "preview",
                 "encouraged"
             ],
-            "Contains": [
-                [
-                    "data",
-                    "correct data"
-                ],
-                [
-                    "preview button",
-                    "data"
-                ],
-                [
-                    "site",
-                    "users"
-                ]
-            ],
+            "Contains": [[
+                "data",
+                "correct data"
+            ]],
             "Text": "users can preview the data and be encouraged that this is the correct data for them.",
             "Targets": [
                 [
@@ -2498,7 +2515,11 @@
                 "embed",
                 "preview button"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "site",
+            "users"
+        ]}
     },
     {
         "US_Nr": "user_story_53",
@@ -2557,7 +2578,8 @@
                     "dataset"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_54",
@@ -2599,7 +2621,8 @@
                 "customize",
                 "existing wizard"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_55",
@@ -2652,7 +2675,8 @@
                     "new data columns"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_56",
@@ -2700,7 +2724,8 @@
                     "reproducible steps"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_57",
@@ -2768,7 +2793,8 @@
                     "Data Package"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_58",
@@ -2811,7 +2837,8 @@
                 "want",
                 "tool"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_59",
@@ -2863,7 +2890,8 @@
                     "embeddable data summary"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_60",
@@ -2875,16 +2903,10 @@
             ],
             "Contains": [],
             "Text": "I can use it to clean messy data.",
-            "Targets": [
-                [
-                    "use",
-                    "app"
-                ],
-                [
-                    "clean",
-                    "messy data"
-                ]
-            ]
+            "Targets": [[
+                "clean",
+                "messy data"
+            ]]
         },
         "Text": "#G08# As a Researcher, I want an app that generates an OpenRefine reconciliation API endpoint from a Tabular Data Package, so that I can use it to clean messy data.",
         "PID": "#G08#",
@@ -2915,7 +2937,11 @@
                     "OpenRefine reconciliation API endpoint"
                 ]
             ]
-        }
+        },
+        "Mix": {"Targets": [
+            "use",
+            "app"
+        ]}
     },
     {
         "US_Nr": "user_story_61",
@@ -2984,7 +3010,8 @@
                     "proxy Data Packages"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_62",
@@ -3039,7 +3066,8 @@
                     "match-making service"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_63",
@@ -3049,10 +3077,7 @@
                 "additional data analysis tools"
             ],
             "Action": ["easily use"],
-            "Contains": [[
-                "Frictionless data tools",
-                "additional data analysis tools"
-            ]],
+            "Contains": [],
             "Text": "I can easily use data packages with additional data analysis tools.",
             "Targets": [[
                 "easily use",
@@ -3081,7 +3106,11 @@
                 "create",
                 "web socket protocol"
             ]]
-        }
+        },
+        "Mix": {"Contains": [
+            "Frictionless data tools",
+            "additional data analysis tools"
+        ]}
     },
     {
         "US_Nr": "user_story_64",
@@ -3119,7 +3148,8 @@
                     "data availability persistence"
                 ]
             ]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_65",
@@ -3175,7 +3205,8 @@
                 "specify",
                 "funding"
             ]]
-        }
+        },
+        "Mix": {}
     },
     {
         "US_Nr": "user_story_66",
@@ -3190,10 +3221,7 @@
                 "papers"
             ]],
             "Text": "I can cite it in papers stored  with the data.",
-            "Targets": [[
-                "cite",
-                "dataset"
-            ]]
+            "Targets": []
         },
         "Text": "#G08# As a ResearcherPublisher, I want to add a DOI to a dataset, so that I can cite it in papers stored  with the data.",
         "PID": "#G08#",
@@ -3217,6 +3245,10 @@
                 "add",
                 "DOI"
             ]]
-        }
+        },
+        "Mix": {"Targets": [
+            "cite",
+            "dataset"
+        ]}
     }
 ]
