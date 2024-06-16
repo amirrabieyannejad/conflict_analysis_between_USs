@@ -79,8 +79,12 @@ public class RuleCreator {
 			TargetsInJsonFileNotFound, ContainsInJsonFileNotFound, TextInJsonFileNotFound, TriggersInJsonFileNotFound,
 			EdgeWithSameSourceAndTarget, CsvValidationException {
 		long startTime = System.nanoTime();
-		String version = "g03_loudoun";
-		createRules(version);
+//		String[] version = { "g03_loudoun", "g04_recycling", "g05_open_spending", "g08_frictionless",
+//				"g10_scrum_alliance", "g11_nsf", "g12_camperplus", "g14_datahub", "g16_mis", "g18_neurohub",
+//				"g19_alfred", "g21_badcamp", "g22_rdadmp", "g23_archives_space", "g24_unibath", "g25_duraspace",
+//				"g26_racdam", "g27_culrepo", "g28_zooniverse" };
+		String[] version = { "g03_loudoun" };
+		createRules(version[0]);
 		long endTime = System.nanoTime();
 		double elapsedTimeInSeconds = (endTime - startTime) / 1_000_000_000.0;
 		System.out.println("Processing time: " + elapsedTimeInSeconds + " seconds");
@@ -176,19 +180,24 @@ public class RuleCreator {
 					String verb;
 					String noun;
 					String strActinRules = targetActionRules.toString();
+					System.out.println("Step_1: Receive Aciton: " + strActinRules);
 					if (strActinRules.contains(";")) {
 						for (int j = 0; j < targetActionRules.length(); j++) {
 							JSONArray current = targetActionRules.getJSONArray(j);
 							verb = current.getString(0).toLowerCase();
 							noun = current.getString(1).toLowerCase();
-//						System.out.println("Target verb: " + verb);
+							System.out.println("Target verb is: " + verb);
+							System.out.println("Target noun is: " + noun);
 							actionRule = current.getString(2).toLowerCase();
-//						System.out.println("Target Action-rule: " + actionRule);
+							System.out.println("Target Action-rule: " + actionRule);
 							if (actionRule.contains(";")) {
 								System.out.println("handling ambiguity " + actionRule);
 								String[] items = actionRule.split(";");
+								int k = 1;
 								for (String actionRuleAmbiguity : items) {
-									mainRule = processRule(usNrM + "_main_" + actionRuleAmbiguity, cModule);
+									System.out.println(usNrM + " Loooooooop: " + k);
+									mainRule = processRule(usNrM + "_main_"+ verb+"_" + actionRuleAmbiguity, cModule);
+									System.out.println("Rule has been created with ActionRule: " + actionRuleAmbiguity);
 									if (jsonMain.has("Action")) {
 										actionMain = jsonMain.getJSONArray("Action");
 									} else {
@@ -241,19 +250,25 @@ public class RuleCreator {
 									//
 									processText(mainRule, textMain);
 
+									System.out.println("actionRuleAmbiguity  " + actionRuleAmbiguity);
 									processActions(mainRule, jsonMain, actionMain, triggersArrayMain, personaNode,
 											mapActionMain, actionRuleAmbiguity, verb, false);
+									System.out.println("process Entity");
 									processEntities(jsonMain, mainRule, entityMain, targetActionRules,
 											containActionRules, mapEntityMain, actionRuleAmbiguity, noun, false);
+									System.out.println("process Targets");
 									processTargetsEdges(jsonMain, targetActionRules, mapEntityMain, mapActionMain,
 											usNrM, actionRuleAmbiguity, verb, false);
+									System.out.println("process Contains");
 									processContainsEdges(jsonMain, containsArrayMain, targetsArrayMain, mapEntityMain,
 											usNrM, cModule, actionRuleAmbiguity, noun, false);
+									k++;
 								}
 							}
 						}
 
 					} else {
+
 						// here rule should create just once, but now a rule will be create
 						// for each Target Action Rule
 						mainRule = processRule(usNrM + "_main", cModule);
@@ -309,6 +324,7 @@ public class RuleCreator {
 						//
 						processText(mainRule, textMain);
 
+						System.out.println("Single Process: ");
 						processActions(mainRule, jsonMain, actionMain, triggersArrayMain, personaNode, mapActionMain,
 								null, null, true);
 						processEntities(jsonMain, mainRule, entityMain, targetsArrayMain, containActionRules,
@@ -324,66 +340,66 @@ public class RuleCreator {
 				// Proceed Benefit part
 
 			}
-
-			if (jsonObject.has("Benefit")) {
-				jsonBenefit = jsonObject.getJSONObject("Benefit");
-				JSONObject jsonActionRules = jsonBenefit.getJSONObject("Action Rules");
-				JSONArray targetActionRules = jsonActionRules.getJSONArray("Target Action Rules");
-				JSONArray containActionRules = jsonActionRules.getJSONArray("Contain Action Rules");
-				String actionRule = "preserve";
-				String verb;
-				String noun;
-				if (jsonBenefit.length() != 0) {
-					benefitRule = processRule(usNrM + "_benefit", cModule);
-
-					if (jsonBenefit.has("Action")) {
-						actionBenefit = jsonBenefit.getJSONArray("Action");
-					} else {
-						throw new ActionInJsonFileNotFound();
-					}
-					if (jsonBenefit.has("Entity")) {
-						entityBenefit = jsonBenefit.getJSONArray("Entity");
-
-					} else {
-						throw new EntityInJsonFileNotFound();
-					}
-
-					if (jsonBenefit.has("Targets")) {
-						targetsArrayBenefit = jsonBenefit.getJSONArray("Targets");
-					} else {
-						throw new TargetsInJsonFileNotFound();
-					}
-					if (jsonBenefit.has("Contains")) {
-						containsArrayBenefit = jsonBenefit.getJSONArray("Contains");
-					} else {
-						// it should be at least an empty array like "Contains":[]
-						throw new ContainsInJsonFileNotFound();
-					}
-					if (jsonBenefit.has("Text")) {
-						textBenefit = jsonBenefit.getString("Text");
-					} else {
-						throw new TextInJsonFileNotFound();
-					}
-
-				} // store all entities in one map which the string is the name of entities
-					// and // CNode correspond to their CNode Object
-				Map<String, CNode> mapEntityBenefit = new HashMap<>();
-
-				// store all actions in one map which the string is the name of actions and
-				// CNode correspond to their CNode Object
-				Map<String, CNode> mapActionBenefit = new HashMap<>();
-				// System.out.println("Benefit");
-
-				processText(benefitRule, textBenefit);
-				processActions(benefitRule, jsonBenefit, actionBenefit, null, null, mapActionBenefit, null, null, true);
-				processEntities(jsonBenefit, benefitRule, entityBenefit, targetsArrayBenefit, containActionRules,
-						mapEntityBenefit, null, null, true);
-				processTargetsEdges(jsonBenefit, targetActionRules, mapEntityBenefit, mapActionBenefit, usNrM, null,
-						null, true);
-				processContainsEdges(jsonBenefit, containActionRules, targetsArrayBenefit, mapEntityBenefit, usNrM,
-						cModule, null, null, true);
-
-			}
+			// TODO: Add Ambiguity for Benefit
+//			if (jsonObject.has("Benefit")) {
+//				jsonBenefit = jsonObject.getJSONObject("Benefit");
+//				JSONObject jsonActionRules = jsonBenefit.getJSONObject("Action Rules");
+//				JSONArray targetActionRules = jsonActionRules.getJSONArray("Target Action Rules");
+//				JSONArray containActionRules = jsonActionRules.getJSONArray("Contain Action Rules");
+//				String actionRule = "preserve";
+//				String verb;
+//				String noun;
+//				if (jsonBenefit.length() != 0) {
+//					benefitRule = processRule(usNrM + "_benefit", cModule);
+//
+//					if (jsonBenefit.has("Action")) {
+//						actionBenefit = jsonBenefit.getJSONArray("Action");
+//					} else {
+//						throw new ActionInJsonFileNotFound();
+//					}
+//					if (jsonBenefit.has("Entity")) {
+//						entityBenefit = jsonBenefit.getJSONArray("Entity");
+//
+//					} else {
+//						throw new EntityInJsonFileNotFound();
+//					}
+//
+//					if (jsonBenefit.has("Targets")) {
+//						targetsArrayBenefit = jsonBenefit.getJSONArray("Targets");
+//					} else {
+//						throw new TargetsInJsonFileNotFound();
+//					}
+//					if (jsonBenefit.has("Contains")) {
+//						containsArrayBenefit = jsonBenefit.getJSONArray("Contains");
+//					} else {
+//						// it should be at least an empty array like "Contains":[]
+//						throw new ContainsInJsonFileNotFound();
+//					}
+//					if (jsonBenefit.has("Text")) {
+//						textBenefit = jsonBenefit.getString("Text");
+//					} else {
+//						throw new TextInJsonFileNotFound();
+//					}
+//
+//				} // store all entities in one map which the string is the name of entities
+//					// and // CNode correspond to their CNode Object
+//				Map<String, CNode> mapEntityBenefit = new HashMap<>();
+//
+//				// store all actions in one map which the string is the name of actions and
+//				// CNode correspond to their CNode Object
+//				Map<String, CNode> mapActionBenefit = new HashMap<>();
+//				// System.out.println("Benefit");
+//				System.out.println("Single Process: ");
+//				processText(benefitRule, textBenefit);
+//				processActions(benefitRule, jsonBenefit, actionBenefit, null, null, mapActionBenefit, null, null, true);
+//				processEntities(jsonBenefit, benefitRule, entityBenefit, targetsArrayBenefit, containActionRules,
+//						mapEntityBenefit, null, null, true);
+//				processTargetsEdges(jsonBenefit, targetActionRules, mapEntityBenefit, mapActionBenefit, usNrM, null,
+//						null, true);
+//				processContainsEdges(jsonBenefit, containActionRules, targetsArrayBenefit, mapEntityBenefit, usNrM,
+//						cModule, null, null, true);
+//
+//			}
 
 		}
 		return cModule;
@@ -427,10 +443,13 @@ public class RuleCreator {
 		for (int i = 0; i < actions.length(); i++) {
 			String action = actions.getString(i).replaceAll(" $", "").replaceAll("^ ", "").toLowerCase();
 			CNode cNode = null;
+			System.out.println("(1)action Rule is: " + actionRule);
 			if (("preserve".equals(actionRule) || actionRule == null) && (atomicRule == false)
 					&& actionMap.get(action) == null) {
+				System.out.println("[Action]: actionRule: " + actionRule + " AtomicRule is false");
 				cNode = userStory.createNode("Action");
 				cNode.createAttribute("name", "\"" + action + "\"");
+				System.out.println("action Node " + action + " has been create!");
 				if (triggersArray != null) {
 					for (int j = 0; j < triggersArray.length(); j++) {
 						JSONArray trigger = triggersArray.getJSONArray(j);
@@ -442,7 +461,9 @@ public class RuleCreator {
 					}
 				}
 				actionMap.put(action, cNode);
+
 			} else if (atomicRule == true && actionMap.get(action) == null) {
+				System.out.println("Atomic rule is TRUE" + " Action is: " + action);
 				JSONObject jsonActionRules = jsonObject.getJSONObject("Action Rules");
 				JSONArray targetActionRules = jsonActionRules.getJSONArray("Target Action Rules");
 				String actionRuleCurrent;
@@ -454,8 +475,13 @@ public class RuleCreator {
 					verbCurrent = current.getString(0).toLowerCase();
 					noun = current.getString(1).toLowerCase();
 //					System.out.println("Target verb: " + verb);
-					actionRuleCurrent = current.getString(2).toLowerCase();
+					if (actionRule == null) {
+						actionRuleCurrent = current.getString(2).toLowerCase();
+					} else {
+						actionRuleCurrent = actionRule;
+					}
 					if (verbCurrent.equals(action) && actionMap.get(action) == null) {
+						System.out.println("Aciton " + action + " actionRule " + actionRuleCurrent);
 						cNode = userStory.createNode("Action", actionRuleCurrent);
 						cNode.createAttribute("name", "\"" + action + "\"", actionRuleCurrent);
 						if (triggersArray != null) {
@@ -506,7 +532,34 @@ public class RuleCreator {
 				System.out.println("action rule is :" + actionRule);
 				cNode = userStory.createNode("Entity", actionRule);
 				cNode.createAttribute("name", "\"" + entity + "\"", actionRule);
+				System.out.println("Node for Entity is Created: " + entity);
 				entityMap.put(entity, cNode);
+				for (int j = 0; j < containActionRules.length(); j++) {
+					JSONArray current = containActionRules.getJSONArray(j);
+					String noun1Current = current.getString(0).toLowerCase();
+					String noun2Current = current.getString(1).toLowerCase();
+					System.out.println("[ContainActionRule] noun1: " + noun1Current + " noun2: " + noun2Current);
+					String actionRuleCurrent = actionRule;
+					
+					if (entity.equalsIgnoreCase(noun2Current) && entityMap.get(noun1Current) == null) {
+						System.out
+								.println("Contains: anotate entity is " + noun1Current + " with " + actionRuleCurrent);
+						cNode = userStory.createNode("Entity", actionRuleCurrent);
+						cNode.createAttribute("name", "\"" + noun1Current + "\"", actionRuleCurrent);
+						entityMap.put(noun1Current, cNode);
+
+					} else if (entity.equalsIgnoreCase(noun1Current) && entityMap.get(noun2Current) == null) {
+						System.out
+								.println("Contains: anotate entity is " + noun2Current + " with " + actionRuleCurrent);
+						cNode = userStory.createNode("Entity", actionRuleCurrent);
+						cNode.createAttribute("name", "\"" + noun2Current + "\"", actionRuleCurrent);
+						entityMap.put(noun2Current, cNode);
+						break;
+
+					}
+
+				}
+				
 
 			} else if (atomicRule == true && entityMap.get(entity) == null) {
 				JSONObject jsonActionRules = jsonObject.getJSONObject("Action Rules");
@@ -534,19 +587,19 @@ public class RuleCreator {
 					String noun2Current = current.getString(1).toLowerCase();
 //					System.out.println("Target verb: " + verb);
 					String actionRuleCurrent = current.getString(2).toLowerCase();
-					if (entity.equalsIgnoreCase(noun2Current) && entityMap.get(noun2Current) == null) {
-						System.out
-								.println("Contains: anotate entity is " + noun2Current + " with " + actionRuleCurrent);
-						cNode = userStory.createNode("Entity", actionRuleCurrent);
-						cNode.createAttribute("name", "\"" + noun2Current + "\"", actionRuleCurrent);
-						entityMap.put(noun2Current, cNode);
-
-					} else if (entity.equalsIgnoreCase(noun1Current) && entityMap.get(noun1Current) == null) {
+					if (entity.equalsIgnoreCase(noun2Current) && entityMap.get(noun1Current) == null) {
 						System.out
 								.println("Contains: anotate entity is " + noun1Current + " with " + actionRuleCurrent);
 						cNode = userStory.createNode("Entity", actionRuleCurrent);
 						cNode.createAttribute("name", "\"" + noun1Current + "\"", actionRuleCurrent);
 						entityMap.put(noun1Current, cNode);
+
+					} else if (entity.equalsIgnoreCase(noun1Current) && entityMap.get(noun2Current) == null) {
+						System.out
+								.println("Contains: anotate entity is " + noun2Current + " with " + actionRuleCurrent);
+						cNode = userStory.createNode("Entity", actionRuleCurrent);
+						cNode.createAttribute("name", "\"" + noun2Current + "\"", actionRuleCurrent);
+						entityMap.put(noun2Current, cNode);
 						break;
 
 					}
@@ -614,6 +667,8 @@ public class RuleCreator {
 						"In \"Targets\" of " + usNrM + ", Entity: \"" + entity.toString() + "\" is not found!");
 			}
 			nodeAction.createEdge(nodeEntity, "targets", actionRuleCurrent);
+			System.out.println("targets edge has been created for action: " + action + " and entity: " + entity
+					+ " with actionRule " + actionRule);
 
 		}
 	}
@@ -732,13 +787,15 @@ public class RuleCreator {
 			String actionRule;
 			if (actionRules == null) {
 				actionRule = currentArray.getString(2).toLowerCase();
+				System.out.println("Action rule is null! get action from containArray");
 			} else {
 				actionRule = actionRules;
+				System.out.println("Action rule is " + actionRule);
 			}
 			// make sure that both entity is already listed in entityMap
 //			System.out.println(firstEntity +" and " + secondEntity);
 			if ((entityMap.get(firstEntity) != null) && (entityMap.get(secondEntity) != null)) {
-				System.out.println("contains entity map first: " + firstEntity + " second : " + secondEntity);
+				System.out.println("contains entity mapping first: " + firstEntity + " -- second : " + secondEntity);
 				CNode nodefirstEntity = entityMap.get(firstEntity);
 				CNode nodeSecondEntity = entityMap.get(secondEntity);
 				nodefirstEntity.createEdge(nodeSecondEntity, "contains", actionRule);

@@ -11,6 +11,26 @@
                 "start using",
                 "doing"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "doing",
+                        "analysis",
+                        "create"
+                    ],
+                    [
+                        "doing",
+                        "visualizations",
+                        "create"
+                    ],
+                    [
+                        "start using",
+                        "data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can start using the data for doing analysis and visualizations.",
             "Targets": [
@@ -37,6 +57,18 @@
             ],
             "Action": ["get"],
             "Persona": ["Developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "data package",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "node",
+                    "data package",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "Node",
                 "Data Package"
@@ -68,6 +100,26 @@
                 "start using",
                 "doing"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "start using",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "doing",
+                        "analysis",
+                        "create"
+                    ],
+                    [
+                        "doing",
+                        "visualizations",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can start using the data for doing analysis and visualizations.",
             "Targets": [
@@ -94,6 +146,18 @@
             ],
             "Action": ["get"],
             "Persona": ["Researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "data package",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "julia",
+                    "data package",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "Julia",
                 "Data Package"
@@ -122,6 +186,18 @@
                 "tools"
             ],
             "Action": ["used better"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "used better",
+                    "tools",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": [[
+                    "tools",
+                    "visualization programs",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "tools",
                 "visualization programs"
@@ -141,6 +217,18 @@
             ],
             "Action": ["add"],
             "Persona": ["Publisher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "add",
+                    "type information",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "data",
+                    "type information",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "data",
                 "type information"
@@ -169,6 +257,21 @@
                 "provide",
                 "show"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "provide",
+                        "analysis",
+                        "create"
+                    ],
+                    [
+                        "show",
+                        "work",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can provide my analysis and show my work to users of the data.",
             "Targets": [
@@ -192,6 +295,18 @@
             ],
             "Action": ["provide"],
             "Persona": ["Publisher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "provide",
+                    "visualization",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "visualization",
+                    "data",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "visualization",
@@ -225,6 +340,10 @@
                 "share",
                 "include"
             ],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can share them with others or include them in the Data Package.",
             "Targets": []
@@ -235,6 +354,14 @@
             "Entity": ["new visualizations"],
             "Action": ["save"],
             "Persona": ["Researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "save",
+                    "new visualizations",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G08# As a Researcher, I want to be able to save new visualizations, ",
             "Triggers": [[
@@ -267,6 +394,32 @@
                 "validity"
             ],
             "Action": ["feel"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "feel",
+                        "usefulness",
+                        "preserve"
+                    ],
+                    [
+                        "feel",
+                        "trust",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "data.",
+                        "usefulness",
+                        "preserve"
+                    ],
+                    [
+                        "validity",
+                        "trust",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "data.",
@@ -298,6 +451,14 @@
             ],
             "Action": ["know"],
             "Persona": ["ResearcherPublisher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "data",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G08# As a ResearcherPublisher, I want to know that my data conforms to its Data Package profile, ",
             "Triggers": [[
@@ -319,6 +480,14 @@
                 "fix",
                 "know"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "how",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can know how to fix it.",
             "Targets": [[
@@ -335,6 +504,14 @@
             ],
             "Action": ["understand"],
             "Persona": ["ResearcherPublisher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "understand",
+                    "ways",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G08# As a ResearcherPublisher, I want to understand the ways in which my data is invalid, ",
             "Triggers": [[
@@ -363,6 +540,26 @@
                 "doing",
                 "start using"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "start using",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "doing",
+                        "analysis",
+                        "create"
+                    ],
+                    [
+                        "doing",
+                        "visualizations",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can start using the data for doing analysis and visualizations.",
             "Targets": [
@@ -389,6 +586,18 @@
             ],
             "Action": ["get"],
             "Persona": ["Researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "data package",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "r",
+                    "data package",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "R",
                 "Data Package"
@@ -420,6 +629,26 @@
                 "doing",
                 "start using"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "doing",
+                        "analysis",
+                        "create"
+                    ],
+                    [
+                        "doing",
+                        "visualizations",
+                        "create"
+                    ],
+                    [
+                        "start using",
+                        "data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can start using the data for doing analysis and visualizations.",
             "Targets": [
@@ -446,6 +675,18 @@
             ],
             "Action": ["get"],
             "Persona": ["Researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "data package",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "excel",
+                    "data package",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "Excel",
                 "Data Package"
@@ -477,6 +718,26 @@
                 "start using",
                 "doing"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "start using",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "doing",
+                        "visualizations",
+                        "create"
+                    ],
+                    [
+                        "doing",
+                        "analysis",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can start using the data for doing analysis and visualizations.",
             "Targets": [
@@ -503,6 +764,18 @@
             ],
             "Action": ["get"],
             "Persona": ["Researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "data package",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "spss",
+                    "data package",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "SPSS",
                 "Data Package"
@@ -534,6 +807,26 @@
                 "start using",
                 "doing"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "start using",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "doing",
+                        "analysis",
+                        "create"
+                    ],
+                    [
+                        "doing",
+                        "visualizations",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can start using the data for doing analysis and visualizations.",
             "Targets": [
@@ -560,6 +853,18 @@
             ],
             "Action": ["get"],
             "Persona": ["Researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "data package",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "stata",
+                    "data package",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "STATA",
                 "Data Package"
@@ -587,6 +892,18 @@
                 "Data Packages"
             ],
             "Action": ["benefit"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "benefit",
+                    "wide array of tools available",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "Data Packages",
+                    "wide array of tools available",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "Data Packages",
                 "wide array of tools available"
@@ -606,6 +923,14 @@
             ],
             "Action": ["translate"],
             "Persona": ["Researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "translate",
+                    "eml dataset",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G08# As a Researcher, I want to be able to translate my EML dataset to a Data Package, ",
             "Triggers": [[
@@ -631,6 +956,26 @@
                 "start using",
                 "doing"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "start using",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "doing",
+                        "analysis",
+                        "create"
+                    ],
+                    [
+                        "doing",
+                        "visualizations",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can start using the data for doing analysis and visualizations.",
             "Targets": [
@@ -658,6 +1003,25 @@
             ],
             "Action": ["get"],
             "Persona": ["Researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "data package",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "libreoffice",
+                        "data package",
+                        "preserve;create"
+                    ],
+                    [
+                        "openoffice",
+                        "data package",
+                        "preserve;create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "LibreOffice",
@@ -695,6 +1059,26 @@
                 "doing",
                 "start using"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "doing",
+                        "analysis",
+                        "create"
+                    ],
+                    [
+                        "start using",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "doing",
+                        "visualizations",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can start using the data for doing analysis and visualizations.",
             "Targets": [
@@ -721,6 +1105,18 @@
             ],
             "Action": ["get"],
             "Persona": ["Developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "data package",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "python",
+                    "data package",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "Python",
                 "Data Package"
@@ -752,6 +1148,14 @@
                 "form",
                 "use"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "form",
+                    "control",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "autocompletion",
                 "core dataset"
@@ -771,6 +1175,18 @@
             ],
             "Action": ["want"],
             "Persona": ["Developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "want",
+                    "jquery plugin",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "core data packages",
+                    "jquery plugin",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "Core Data Packages",
                 "jQuery plugin"
@@ -798,6 +1214,21 @@
                 "standardization"
             ],
             "Action": ["benefit from"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "benefit from",
+                        "better tooling",
+                        "create"
+                    ],
+                    [
+                        "benefit from",
+                        "standardization",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can benefit from better tooling and standardization.",
             "Targets": [
@@ -820,6 +1251,18 @@
             ],
             "Action": ["get"],
             "Persona": ["Researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "excel spreadsheet",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "data package",
+                    "excel spreadsheet",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "Data Package",
                 "Excel spreadsheet"
@@ -844,6 +1287,18 @@
                 "job"
             ],
             "Action": ["use"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "use",
+                    "best tool",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "job",
+                    "best tool",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "job",
                 "best tool"
@@ -868,6 +1323,32 @@
                 "operationalize"
             ],
             "Persona": ["Developer"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "do",
+                        "exploratory data analysis",
+                        "preserve;delete;create"
+                    ],
+                    [
+                        "operationalize",
+                        "analysis",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "r",
+                        "exploratory data analysis",
+                        "preserve;delete;create"
+                    ],
+                    [
+                        "python",
+                        "analysis",
+                        "create;delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "R",
@@ -914,6 +1395,26 @@
                 "start using",
                 "doing"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "start using",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "doing",
+                        "visualizations",
+                        "create"
+                    ],
+                    [
+                        "doing",
+                        "analysis",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can start using the data in doing analysis and visualizations.",
             "Targets": [
@@ -940,6 +1441,18 @@
             ],
             "Action": ["get"],
             "Persona": ["Developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "data package",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "clojure",
+                    "data package",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "Clojure",
                 "Data Package"
@@ -971,6 +1484,26 @@
                 "start using",
                 "doing"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "start using",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "doing",
+                        "analysis",
+                        "create"
+                    ],
+                    [
+                        "doing",
+                        "visualizations",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can start using the data in doing analysis and visualizations.",
             "Targets": [
@@ -997,6 +1530,18 @@
             ],
             "Action": ["get"],
             "Persona": ["Developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "data package",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "julia",
+                    "data package",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "Julia",
                 "Data Package"
@@ -1028,6 +1573,26 @@
                 "start using",
                 "doing"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "start using",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "doing",
+                        "visualizations",
+                        "create"
+                    ],
+                    [
+                        "doing",
+                        "analysis",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can start using the data in doing analysis and visualizations.",
             "Targets": [
@@ -1054,6 +1619,18 @@
             ],
             "Action": ["get"],
             "Persona": ["Developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "data package",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "c++",
+                    "data package",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "C++",
                 "Data Package"
@@ -1084,6 +1661,25 @@
                 "start using",
                 "doing"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "start using",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "doing",
+                        "analysis",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "data",
+                    "analysis",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "data",
                 "analysis"
@@ -1113,6 +1709,25 @@
                 "easily import"
             ],
             "Persona": ["Machine Learning expert"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "package",
+                        "ml datasets",
+                        "create"
+                    ],
+                    [
+                        "easily import",
+                        "ml datasets",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "data packages",
+                    "ml datasets",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "data packages",
@@ -1153,6 +1768,14 @@
                 "Elasticsearch"
             ],
             "Action": ["integrate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "integrate",
+                    "data-packaged data",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can integrate data-packaged data with pipelines that use Elasticsearch.",
             "Targets": [[
@@ -1166,6 +1789,14 @@
             "Entity": ["Elasticsearch integration"],
             "Action": ["want"],
             "Persona": ["Developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "want",
+                    "elasticsearch integration",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G08# As a Developer, I want an Elasticsearch integration, ",
             "Triggers": [[
@@ -1188,6 +1819,14 @@
                 "data-packaged data"
             ],
             "Action": ["integrate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "integrate",
+                    "data-packaged data",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can integrate data-packaged data with pipelines that use SPSS.",
             "Targets": [[
@@ -1201,6 +1840,14 @@
             "Entity": ["SPSS integration"],
             "Action": ["want"],
             "Persona": ["Developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "want",
+                    "spss integration",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G08# As a Developer, I want an SPSS integration, ",
             "Triggers": [[
@@ -1223,6 +1870,14 @@
                 "EPrints"
             ],
             "Action": ["integrate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "integrate",
+                    "data-packaged data",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can integrate data-packaged data with pipelines that use EPrints.",
             "Targets": [[
@@ -1236,6 +1891,14 @@
             "Entity": ["EPrints integration"],
             "Action": ["want"],
             "Persona": ["Developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "want",
+                    "eprints integration",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G08# As a Developer, I want an EPrints integration, ",
             "Triggers": [[
@@ -1258,6 +1921,14 @@
                 "Mongo"
             ],
             "Action": ["integrate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "integrate",
+                    "data-packaged data",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can integrate data-packaged data with pipelines that use Mongo.",
             "Targets": [[
@@ -1271,6 +1942,14 @@
             "Entity": ["Mongo integration"],
             "Action": ["want"],
             "Persona": ["Developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "want",
+                    "mongo integration",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G08# As a Developer, I want a Mongo integration, ",
             "Triggers": [[
@@ -1293,6 +1972,14 @@
                 "DAT"
             ],
             "Action": ["integrate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "integrate",
+                    "data-packaged data",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can integrate data-packaged data with pipelines that use DAT.",
             "Targets": [[
@@ -1306,6 +1993,14 @@
             "Entity": ["DAT integration"],
             "Action": ["want"],
             "Persona": ["Developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "want",
+                    "dat integration",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G08# As a Developer, I want a DAT integration, ",
             "Triggers": [[
@@ -1324,6 +2019,10 @@
         "Benefit": {
             "Entity": ["dataset"],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "my dataset is more useful.",
             "Targets": []
@@ -1337,6 +2036,18 @@
             ],
             "Action": ["add"],
             "Persona": ["ResearcherGovernment Publisher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "add",
+                    "general reference data",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "narrow dataset",
+                    "general reference data",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "narrow dataset",
                 "general reference data"
@@ -1358,6 +2069,10 @@
         "Benefit": {
             "Entity": ["dataset"],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "my dataset is more readable.",
             "Targets": []
@@ -1372,6 +2087,25 @@
             ],
             "Action": ["add"],
             "Persona": ["ResearcherGovernment Publisher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "add",
+                    "general country names",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "general country names",
+                        "country codes",
+                        "create"
+                    ],
+                    [
+                        "dataset",
+                        "general country names",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "general country names",
@@ -1402,6 +2136,10 @@
                 "spending lines"
             ],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "dataset",
                 "spending lines"
@@ -1418,6 +2156,18 @@
             ],
             "Action": ["add"],
             "Persona": ["ResearcherGovernment Publisher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "add",
+                    "reference data on inflation",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "spending dataset",
+                    "reference data on inflation",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "spending dataset",
                 "reference data on inflation"
@@ -1442,6 +2192,10 @@
                 "non-technical users"
             ],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "my dataset is more engaging for non-technical users.",
             "Targets": []
@@ -1460,6 +2214,32 @@
                 "using"
             ],
             "Persona": ["ResearcherGovernment Publisher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "map",
+                        "lines",
+                        "create"
+                    ],
+                    [
+                        "using",
+                        "geographic data",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "dataset",
+                        "lines",
+                        "create"
+                    ],
+                    [
+                        "dataset",
+                        "geographic data",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "dataset",
@@ -1497,6 +2277,10 @@
                 "dataset"
             ],
             "Action": ["be sure"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "dataset",
                 "column"
@@ -1513,6 +2297,18 @@
             ],
             "Action": ["reference"],
             "Persona": ["Researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "reference",
+                    "remote-controlled vocabulary",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "dataset",
+                    "remote-controlled vocabulary",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "dataset",
                 "remote-controlled vocabulary"
@@ -1538,6 +2334,14 @@
                 "pipelines"
             ],
             "Action": ["integrate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "integrate",
+                    "data-packaged data",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can integrate data-packaged data with pipelines that use Dspace.",
             "Targets": [[
@@ -1551,6 +2355,14 @@
             "Entity": ["DSpace integration"],
             "Action": ["want"],
             "Persona": ["developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "want",
+                    "dspace integration",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G08# As a developer, I want an DSpace integration, ",
             "Triggers": [[
@@ -1573,6 +2385,14 @@
                 "Feather"
             ],
             "Action": ["integrate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "integrate",
+                    "data-packaged data",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can integrate data-packaged data with pipelines that use Feather.",
             "Targets": [[
@@ -1586,6 +2406,14 @@
             "Entity": ["Feather integration"],
             "Action": ["want"],
             "Persona": ["Developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "want",
+                    "feather integration",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G08# As a Developer, I want Feather integration, ",
             "Triggers": [[
@@ -1608,6 +2436,14 @@
                 "HDF5"
             ],
             "Action": ["integrate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "integrate",
+                    "data-packaged data",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can integrate data-packaged data with pipelines that use HDF5.",
             "Targets": [[
@@ -1621,6 +2457,14 @@
             "Entity": ["HDF5 integration"],
             "Action": ["want"],
             "Persona": ["Developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "want",
+                    "hdf5 integration",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G08# As a Developer, I want HDF5 integration, ",
             "Triggers": [[
@@ -1642,6 +2486,21 @@
                 "import",
                 "without downloading"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "import",
+                        "datasets",
+                        "create"
+                    ],
+                    [
+                        "without downloading",
+                        "datasets",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can import datasets without downloading them locally.",
             "Targets": [
@@ -1667,6 +2526,21 @@
                 "want"
             ],
             "Persona": ["Researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "working with",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "want",
+                        "microsoft power bi integration",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G08# As a Researcher, working with data, I want an Microsoft Power BI integration, ",
             "Triggers": [[
@@ -1697,8 +2571,27 @@
             ],
             "Action": [
                 "store",
-                "don\u2019t have to retype"
+                "don't have to retype"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "store",
+                    "dataset",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "GitHub",
+                        "dataset",
+                        "create"
+                    ],
+                    [
+                        "dataset",
+                        "descriptive information",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "GitHub",
@@ -1709,10 +2602,10 @@
                     "descriptive information"
                 ]
             ],
-            "Text": "when I store my dataset in GitHub, I don\u2019t have to retype descriptive information about my dataset.",
+            "Text": "when I store my dataset in GitHub, I don't have to retype descriptive information about my dataset.",
             "Targets": [
                 [
-                    "don\u2019t have to retype",
+                    "don't have to retype",
                     "descriptive information"
                 ],
                 [
@@ -1721,7 +2614,7 @@
                 ]
             ]
         },
-        "Text": "#G08# As a ResearcherPublisher, I want an integration with Zenodo, so that when I store my dataset in GitHub, I don\u2019t have to retype descriptive information about my dataset.",
+        "Text": "#G08# As a ResearcherPublisher, I want an integration with Zenodo, so that when I store my dataset in GitHub, I don't have to retype descriptive information about my dataset.",
         "PID": "#G08#",
         "Main": {
             "Entity": [
@@ -1730,6 +2623,18 @@
             ],
             "Action": ["want"],
             "Persona": ["ResearcherPublisher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "want",
+                    "integration",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "zenodo",
+                    "integration",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "Zenodo",
                 "integration"
@@ -1751,6 +2656,14 @@
         "Benefit": {
             "Entity": ["cleaned Data Packages"],
             "Action": ["output"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "output",
+                    "cleaned data packages",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can output cleaned Data Packages.",
             "Targets": [[
@@ -1767,6 +2680,18 @@
             ],
             "Action": ["would like"],
             "Persona": ["Publisher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "would like",
+                    "integration",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "open refine",
+                    "integration",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "Open Refine",
                 "integration"
@@ -1791,6 +2716,14 @@
                 "data API"
             ],
             "Action": ["have"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "data api",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "my data is findable, and I can have a data API.",
             "Targets": [[
@@ -1807,6 +2740,18 @@
             ],
             "Action": ["publish"],
             "Persona": ["ResearcherPublisher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "publish",
+                    "data packages",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "ckan",
+                    "data packages",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "CKAN",
                 "Data Packages"
@@ -1835,6 +2780,18 @@
                 "workflows"
             ],
             "Action": ["use"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "use",
+                    "data packages",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "workflows",
+                    "Data Packages",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "workflows",
@@ -1863,6 +2820,10 @@
                 "export"
             ],
             "Persona": ["ResearcherDeveloper"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G08# As a ResearcherDeveloper, would like the ability import/export from MS-SQL, ",
             "Triggers": [
@@ -1891,6 +2852,25 @@
                 "store",
                 "still retaining"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "still retaining",
+                        "metadata",
+                        "preserve;create"
+                    ],
+                    [
+                        "store",
+                        "data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "plaintext",
+                    "data",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "plaintext",
                 "data"
@@ -1917,6 +2897,14 @@
             ],
             "Action": ["want"],
             "Persona": ["Researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "want",
+                    "netcdf integration",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "NetCDF",
                 "data"
@@ -1944,6 +2932,21 @@
                 "validate",
                 "ingest"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "ingest",
+                        "service",
+                        "create"
+                    ],
+                    [
+                        "validate",
+                        " data",
+                        "preserve;forbid"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can validate my data upon ingest to the service.",
             "Targets": [
@@ -1966,6 +2969,18 @@
             ],
             "Action": ["want"],
             "Persona": ["Researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "want",
+                    "integration ",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "https://data.mendeley.com/",
+                    "integration ",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "https://data.mendeley.com/",
                 "integration "
@@ -1987,6 +3002,14 @@
         "Benefit": {
             "Entity": ["cleaned Data Packages"],
             "Action": ["output"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "output",
+                    "cleaned data packages",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can output cleaned Data Packages.",
             "Targets": [[
@@ -2003,6 +3026,18 @@
             ],
             "Action": ["would like"],
             "Persona": ["Publisher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "would like",
+                    "integration",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "excel",
+                    "integration",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "Excel",
                 "integration"
@@ -2024,6 +3059,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2033,6 +3072,14 @@
             "Entity": ["data"],
             "Action": ["store"],
             "Persona": ["Publisher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "store",
+                    "data",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "Publisher",
@@ -2050,6 +3097,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "it is more findable and therefore useful.",
             "Targets": []
@@ -2069,6 +3120,25 @@
                 "add"
             ],
             "Persona": ["Repository Manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "want",
+                        "tool",
+                        "create"
+                    ],
+                    [
+                        "add",
+                        "basic metadata ",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "research data",
+                    "basic metadata ",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "research data",
@@ -2111,6 +3181,32 @@
                 "usefulness"
             ],
             "Action": ["feel"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "feel",
+                        "usefulness",
+                        "preserve"
+                    ],
+                    [
+                        "feel",
+                        "trust",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "data",
+                        "usefulness",
+                        "preserve"
+                    ],
+                    [
+                        "validity",
+                        "trust",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "data",
@@ -2142,6 +3238,14 @@
             ],
             "Action": ["validate"],
             "Persona": ["ResearcherPublisher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "validate",
+                    "data",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G08# As a ResearcherPublisher, I want validate my data with a minimum of clicks, ",
             "Triggers": [[
@@ -2166,6 +3270,21 @@
                 "catch",
                 "store"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "catch",
+                        "errors",
+                        "create"
+                    ],
+                    [
+                        "store",
+                        "reliable data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can catch errors early and store reliable data.",
             "Targets": [
@@ -2188,6 +3307,21 @@
                 "check"
             ],
             "Persona": ["publisher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "check",
+                        "data",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "update",
+                        "data",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G08# As a publisher, I want to be able to check that every time I update my data it is still good, ",
             "Triggers": [[
@@ -2221,6 +3355,37 @@
                 "command line workflow"
             ],
             "Action": ["feel"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "feel",
+                        "trust",
+                        "preserve"
+                    ],
+                    [
+                        "feel",
+                        "usefulness",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "validity",
+                        "trust",
+                        "preserve"
+                    ],
+                    [
+                        "command line workflow",
+                        "usefulness",
+                        "preserve"
+                    ],
+                    [
+                        "data",
+                        "usefulness",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "validity",
@@ -2259,6 +3424,21 @@
                 "validate"
             ],
             "Persona": ["DeveloperWrangler"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "validate",
+                        "data",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "use",
+                        "command line tool",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G08# As a DeveloperWrangler, I want to use a command line tool that allows met to validate data, ",
             "Triggers": [[
@@ -2286,6 +3466,18 @@
                 "third party"
             ],
             "Action": ["delegate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "delegate",
+                    "data validation",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "third party",
+                    "data validation",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "third party",
                 "data validation"
@@ -2310,6 +3502,21 @@
                 "validates"
             ],
             "Persona": ["developer"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "want",
+                        "online service",
+                        "create"
+                    ],
+                    [
+                        "validates",
+                        "data",
+                        "preserve;forbid"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G08# As a developer, I want an online service that is connected to my data repository that validates data on update, ",
             "Triggers": [[
@@ -2337,6 +3544,21 @@
                 "claim",
                 "living up to"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "claim",
+                        "transparency commitments",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "living up to",
+                        "transparency commitments",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can claim that we are living up to our transparency commitments.",
             "Targets": [
@@ -2359,6 +3581,14 @@
                 "make it easy"
             ],
             "Persona": ["government Publisher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "prove",
+                    "published data",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G08# As a government Publisher, I want to make it easy to prove that our published data is valid, ",
             "Triggers": [[
@@ -2383,6 +3613,14 @@
                 "make sure",
                 "living up to"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "living up to",
+                    "transparency commitments",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can make sure that government is living up to its transparency commitments.",
             "Targets": [[
@@ -2399,6 +3637,18 @@
             ],
             "Action": ["make it easy to assess"],
             "Persona": ["Civic Tech Activist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "make it easy to assess",
+                    "quality of data",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "government",
+                    "quality of data",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "government",
                 "quality of data"
@@ -2423,6 +3673,14 @@
                 "correct data"
             ],
             "Action": ["encouraged"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "encouraged",
+                    "correct data",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "users can be encouraged that this is the correct data for them.",
             "Targets": [[
@@ -2440,6 +3698,25 @@
             ],
             "Action": ["embed"],
             "Persona": ["publisher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "embed",
+                    "interactive preview",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "interactive preview",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "site",
+                        "interactive preview",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "interactive preview",
@@ -2477,6 +3754,25 @@
                 "preview",
                 "encouraged"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "preview",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "encouraged",
+                        "correct data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "data",
+                    "correct data",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "data",
                 "correct data"
@@ -2502,6 +3798,18 @@
             ],
             "Action": ["embed"],
             "Persona": ["publisher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "embed",
+                    "preview button",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "site",
+                    "preview button",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "site",
                 "preview button"
@@ -2534,6 +3842,21 @@
                 "know",
                 "relates"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "relates",
+                        "actual download numbers",
+                        "preserve"
+                    ],
+                    [
+                        "know",
+                        "how",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "dataset",
                 "interest"
@@ -2562,6 +3885,21 @@
                 "previewed"
             ],
             "Persona": ["Publisher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "how many users",
+                        "preserve"
+                    ],
+                    [
+                        "previewed",
+                        "dataset",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G08# As a Publisher, I want to know how many users have previewed a dataset, ",
             "Triggers": [[
@@ -2589,6 +3927,18 @@
                 "great user experience"
             ],
             "Action": ["give"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "give",
+                    "users",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "users",
+                    "great user experience",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "users",
                 "great user experience"
@@ -2608,6 +3958,18 @@
             ],
             "Action": ["customize"],
             "Persona": ["Developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "customize",
+                    "existing wizard",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": [[
+                    "specific type of data",
+                    "existing wizard",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "specific type of data",
                 "existing wizard"
@@ -2629,6 +3991,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2645,6 +4011,32 @@
                 "add"
             ],
             "Persona": ["Publisher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "add",
+                        "useful metadata",
+                        "create"
+                    ],
+                    [
+                        "add",
+                        "new data columns",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "dataset",
+                        "useful metadata",
+                        "create"
+                    ],
+                    [
+                        "dataset",
+                        "new data columns",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "dataset",
@@ -2686,6 +4078,14 @@
                 "others"
             ],
             "Action": ["rerun"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "rerun",
+                    "methodology",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "my methodology is transparent and can be rerun by others.",
             "Targets": [[
@@ -2705,6 +4105,25 @@
                 "get"
             ],
             "Persona": ["publisher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "get",
+                        "certain data state",
+                        "preserve;create"
+                    ],
+                    [
+                        "package",
+                        "reproducible steps",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "reproducible steps",
+                    "certain data state",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "reproducible steps",
                 "certain data state"
@@ -2739,6 +4158,25 @@
                 "get",
                 "listed"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "get",
+                        "data api",
+                        "preserve;create"
+                    ],
+                    [
+                        "listed",
+                        "dataset",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "relevant catalog",
+                    "dataset",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "relevant catalog",
                 "dataset"
@@ -2768,6 +4206,32 @@
                 "automatically stored"
             ],
             "Persona": ["DeveloperDataWrangler"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "automatically stored",
+                        "ckan",
+                        "create"
+                    ],
+                    [
+                        "store",
+                        "data package",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "ckan",
+                        "data package",
+                        "create"
+                    ],
+                    [
+                        "github",
+                        "data package",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "GitHub",
@@ -2804,6 +4268,18 @@
                 "quick preview"
             ],
             "Action": ["get"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "quick preview",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "data",
+                    "quick preview",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "data",
                 "quick preview"
@@ -2824,6 +4300,14 @@
             ],
             "Action": ["want"],
             "Persona": ["Researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "want",
+                    "tool",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "dataset",
                 "basic statistics"
@@ -2848,6 +4332,18 @@
                 "sites"
             ],
             "Action": ["embed"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "embed",
+                    "data summaries",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "sites",
+                    "data summaries",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "sites",
                 "data summaries"
@@ -2871,6 +4367,25 @@
                 "create"
             ],
             "Persona": ["DeveloperPublisher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "want",
+                        "tool",
+                        "create"
+                    ],
+                    [
+                        "create",
+                        "embeddable data summary",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "iframe",
+                    "embeddable data summary",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "iframe",
                 "embeddable data summary"
@@ -2901,6 +4416,14 @@
                 "use",
                 "clean"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "clean",
+                    "messy data",
+                    "delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can use it to clean messy data.",
             "Targets": [[
@@ -2921,6 +4444,21 @@
                 "generates"
             ],
             "Persona": ["Researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "want",
+                        "app",
+                        "create"
+                    ],
+                    [
+                        "generates",
+                        "openrefine reconciliation api endpoint",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G08# As a Researcher, I want an app that generates an OpenRefine reconciliation API endpoint from a Tabular Data Package, ",
             "Triggers": [[
@@ -2954,6 +4492,21 @@
                 "load",
                 "using"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "load",
+                        "high quality data",
+                        "create"
+                    ],
+                    [
+                        "using",
+                        "data package tooling",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can load high quality data using Data Package tooling.",
             "Targets": [
@@ -2981,6 +4534,37 @@
                 "create"
             ],
             "Persona": ["Researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "want",
+                        "app",
+                        "create"
+                    ],
+                    [
+                        "create",
+                        "proxy data packages",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "app",
+                        "proxy data packages",
+                        "create"
+                    ],
+                    [
+                        "sources",
+                        "proxy data packages",
+                        "create"
+                    ],
+                    [
+                        "well know and reliable data",
+                        "proxy data packages",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "sources",
@@ -3021,6 +4605,21 @@
                 "data packagers"
             ],
             "Action": ["paired"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "paired",
+                        "data packagers",
+                        "create"
+                    ],
+                    [
+                        "paired",
+                        "owners",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "owners are paired with data packagers.",
             "Targets": [
@@ -3047,6 +4646,25 @@
                 "acts as"
             ],
             "Persona": ["RepositoryManagerResearcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "want",
+                        "app",
+                        "create"
+                    ],
+                    [
+                        "acts as",
+                        "match-making service",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "packaging data",
+                    "match-making service",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "packaging data",
                 "match-making service"
@@ -3077,6 +4695,14 @@
                 "additional data analysis tools"
             ],
             "Action": ["easily use"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "easily use",
+                    "data packages",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can easily use data packages with additional data analysis tools.",
             "Targets": [[
@@ -3093,6 +4719,18 @@
             ],
             "Action": ["create"],
             "Persona": ["developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "create",
+                    "web socket protocol",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "frictionless data tools",
+                    "web socket protocol",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "Frictionless data tools",
                 "web socket protocol"
@@ -3117,6 +4755,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3133,6 +4775,21 @@
                 "check"
             ],
             "Persona": ["Publisher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "would like",
+                        "tool",
+                        "preserve"
+                    ],
+                    [
+                        "check",
+                        "data availability persistence",
+                        "preserve;forbid"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "Publisher",
@@ -3161,6 +4818,32 @@
                 "source"
             ],
             "Action": ["identify"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "identify",
+                        "funding",
+                        "preserve"
+                    ],
+                    [
+                        "identify",
+                        "source",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "given dataset",
+                        "funding",
+                        "preserve"
+                    ],
+                    [
+                        "given dataset",
+                        "source",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "given dataset",
@@ -3192,6 +4875,18 @@
             ],
             "Action": ["specify"],
             "Persona": ["ResearcherPublisher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "specify",
+                    "funding",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "creation of a given dataset",
+                    "funding",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "creation of a given dataset",
                 "funding"
@@ -3216,6 +4911,10 @@
                 "data"
             ],
             "Action": ["cite"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "data",
                 "papers"
@@ -3232,6 +4931,18 @@
             ],
             "Action": ["add"],
             "Persona": ["ResearcherPublisher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "add",
+                    "doi",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "dataset",
+                    "doi",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "dataset",
                 "DOI"

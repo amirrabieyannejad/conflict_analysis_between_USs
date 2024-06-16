@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Rule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_Uq9ZoCtWEe-Z2c_YxgnDzQ" name="user_story_14_main">
+  <lhs xmi:id="_Uq9ZoStWEe-Z2c_YxgnDzQ" name="Lhs">
+    <nodes xmi:id="_Uq9ZoitWEe-Z2c_YxgnDzQ" name="|4|" outgoing="_Uq9ZqitWEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Persona"/>
+      <attributes xmi:id="_Uq9ZoytWEe-Z2c_YxgnDzQ" value="&quot;staff member&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_Uq9ZpCtWEe-Z2c_YxgnDzQ" name="|5|">
+      <type href="../../../Backlog_v2.4.ecore#//Story"/>
+      <attributes xmi:id="_Uq9ZpStWEe-Z2c_YxgnDzQ" value="&quot;#g03# as a staff member, i want to remove a hold,&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//Story/text"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_Uq9ZpitWEe-Z2c_YxgnDzQ" name="|7|" incoming="_Uq9ZqitWEe-Z2c_YxgnDzQ" outgoing="_Uq9ZqytWEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action"/>
+      <attributes xmi:id="_Uq9ZpytWEe-Z2c_YxgnDzQ" value="&quot;remove&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_Uq9ZqCtWEe-Z2c_YxgnDzQ" name="|6|" incoming="_Uq9ZqytWEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Entity"/>
+      <attributes xmi:id="_Uq9ZqStWEe-Z2c_YxgnDzQ" value="&quot;hold&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <edges xmi:id="_Uq9ZqitWEe-Z2c_YxgnDzQ" source="_Uq9ZoitWEe-Z2c_YxgnDzQ" target="_Uq9ZpitWEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Persona/triggers"/>
+    </edges>
+    <edges xmi:id="_Uq9ZqytWEe-Z2c_YxgnDzQ" source="_Uq9ZpitWEe-Z2c_YxgnDzQ" target="_Uq9ZqCtWEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action/targets"/>
+    </edges>
+  </lhs>
+  <rhs xmi:id="_Uq9ZrCtWEe-Z2c_YxgnDzQ" name="Rhs">
+    <nodes xmi:id="_Uq9ZrStWEe-Z2c_YxgnDzQ" name="|4|">
+      <type href="../../../Backlog_v2.4.ecore#//Persona"/>
+      <attributes xmi:id="_Uq9ZritWEe-Z2c_YxgnDzQ" value="&quot;staff member&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_Uq9ZrytWEe-Z2c_YxgnDzQ" name="|5|">
+      <type href="../../../Backlog_v2.4.ecore#//Story"/>
+      <attributes xmi:id="_Uq9ZsCtWEe-Z2c_YxgnDzQ" value="&quot;#g03# as a staff member, i want to remove a hold,&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//Story/text"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_Uq9ZsStWEe-Z2c_YxgnDzQ" name="|6|">
+      <type href="../../../Backlog_v2.4.ecore#//Entity"/>
+    </nodes>
+  </rhs>
+  <mappings xmi:id="_Uq9ZsitWEe-Z2c_YxgnDzQ" origin="_Uq9ZoitWEe-Z2c_YxgnDzQ" image="_Uq9ZrStWEe-Z2c_YxgnDzQ"/>
+  <mappings xmi:id="_Uq9ZsytWEe-Z2c_YxgnDzQ" origin="_Uq9ZpCtWEe-Z2c_YxgnDzQ" image="_Uq9ZrytWEe-Z2c_YxgnDzQ"/>
+  <mappings xmi:id="_Uq9ZtCtWEe-Z2c_YxgnDzQ" origin="_Uq9ZqCtWEe-Z2c_YxgnDzQ" image="_Uq9ZsStWEe-Z2c_YxgnDzQ"/>
+</henshin:Rule>

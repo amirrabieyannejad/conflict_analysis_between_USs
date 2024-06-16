@@ -7,6 +7,10 @@
                 "Google Maps"
             ],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "new tab",
                 "Google Maps"
@@ -20,6 +24,14 @@
             "Entity": ["address"],
             "Action": ["click"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "click",
+                    "address",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As a user, I want to click on the address, so tha",
             "Triggers": [[
@@ -47,6 +59,21 @@
                 "know",
                 "creating"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "recycling centers",
+                        "preserve"
+                    ],
+                    [
+                        "creating",
+                        "account",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I know about recycling centers near me before creating an account.",
             "Targets": [
@@ -66,6 +93,14 @@
             "Entity": ["public information"],
             "Action": ["anonymously view"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "anonymously view",
+                    "public information",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As a user, I want to be able to anonymously view public information, ",
             "Triggers": [[
@@ -90,6 +125,10 @@
                 "determine",
                 "consider"
             ],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can determine which ones I should consider.",
             "Targets": []
@@ -107,6 +146,25 @@
                 "get"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "enter",
+                        "zip code",
+                        "create"
+                    ],
+                    [
+                        "get",
+                        "list",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "list",
+                    "nearby recycling facilities",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "list",
                 "nearby recycling facilities"
@@ -147,6 +205,14 @@
                 "after-work hours"
             ],
             "Action": ["arrange"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "arrange",
+                    "drop-offs",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can arrange drop-offs on my off days or during after-work hours.",
             "Targets": [[
@@ -163,6 +229,18 @@
             ],
             "Action": ["get"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "hours",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "each recycling facility",
+                    "hours",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "each recycling facility",
                 "hours"
@@ -184,6 +262,14 @@
         "Benefit": {
             "Entity": ["website"],
             "Action": ["conveniently use"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "conveniently use",
+                    "website",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can more conveniently use the website.",
             "Targets": [[
@@ -197,6 +283,14 @@
             "Entity": ["flexible pick up time"],
             "Action": ["have"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "flexible pick up time",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As a user, I want to have a flexible pick up time, ",
             "Triggers": [[
@@ -225,6 +319,42 @@
                 "get",
                 "find"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "list",
+                        "preserve"
+                    ],
+                    [
+                        "get",
+                        "list",
+                        "preserve;create"
+                    ],
+                    [
+                        "find",
+                        "optimal route",
+                        "create"
+                    ],
+                    [
+                        "find",
+                        "schedule",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "list",
+                        "facilities",
+                        "preserve"
+                    ],
+                    [
+                        "list",
+                        "opening hours",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "list",
@@ -261,6 +391,14 @@
             "Entity": ["different types of recyclable waste"],
             "Action": ["select"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "select",
+                    "different types of recyclable waste",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As a user, I want to be able to select different types of recyclable waste, so",
             "Triggers": [[
@@ -279,6 +417,10 @@
         "Benefit": {
             "Entity": [],
             "Action": ["view"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can view them later.",
             "Targets": []
@@ -293,6 +435,18 @@
             ],
             "Action": ["add"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "add",
+                    "donation centers",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "favorites",
+                    "donation centers",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "profile",
@@ -329,6 +483,25 @@
                 "receive",
                 "posted"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "receive",
+                        "notifications",
+                        "create"
+                    ],
+                    [
+                        "posted",
+                        "new events",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "notifications",
+                    "new events",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "notifications",
                 "new events"
@@ -351,6 +524,14 @@
             "Entity": ["email ID"],
             "Action": ["give"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "give",
+                    "email id",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As a user, I want to be able to give my email ID, ",
             "Triggers": [[
@@ -369,6 +550,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -382,6 +567,25 @@
             ],
             "Action": ["view"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "view",
+                    "map display",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "map display",
+                        "public recycling bins",
+                        "preserve"
+                    ],
+                    [
+                        "map display",
+                        "area",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "map display",
@@ -408,6 +612,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -421,6 +629,25 @@
             ],
             "Action": ["view"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "view",
+                    "map display",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "map display",
+                        "special waste drop off sites",
+                        "preserve"
+                    ],
+                    [
+                        "map display",
+                        "area",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "map display",
@@ -447,6 +674,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -462,6 +693,25 @@
                 "currently being organised"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "view",
+                        "safe disposal events",
+                        "preserve"
+                    ],
+                    [
+                        "currently being organised",
+                        "safe disposal events",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "area",
+                    "safe disposal events",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "area",
                 "safe disposal events"
@@ -488,6 +738,14 @@
         "Benefit": {
             "Entity": ["website"],
             "Action": ["conveniently use"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "conveniently use",
+                    "website",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can more conveniently use the website.",
             "Targets": [[
@@ -501,6 +759,14 @@
             "Entity": ["flexible pick up time"],
             "Action": ["choose"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "choose",
+                    "flexible pick up time",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As a user, I want to choose a flexible pick up time, ",
             "Triggers": [[
@@ -525,6 +791,21 @@
                 "know",
                 "use"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "how",
+                        "preserve"
+                    ],
+                    [
+                        "use",
+                        "web app",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I know how to use the web app.",
             "Targets": [
@@ -547,6 +828,18 @@
             ],
             "Action": ["view"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "view",
+                    "user documentation",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "website",
+                    "user documentation",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "website",
                 "user documentation"
@@ -568,6 +861,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -583,6 +880,21 @@
                 "enter"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "get",
+                        "feedback",
+                        "preserve;create"
+                    ],
+                    [
+                        "enter",
+                        "invalid zip code",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "user",
@@ -606,6 +918,14 @@
         "Benefit": {
             "Entity": ["own profile"],
             "Action": ["create"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "create",
+                    "own profile",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can create my own profile.",
             "Targets": [[
@@ -619,6 +939,14 @@
             "Entity": ["acocunt"],
             "Action": ["create"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "create",
+                    "acocunt",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As a user, I want to be able to create an acocunt, ",
             "Triggers": [[
@@ -640,6 +968,14 @@
                 "recent information"
             ],
             "Action": ["get"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "recent information",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "users get the most recent information.",
             "Targets": [[
@@ -656,6 +992,21 @@
                 "remove"
             ],
             "Persona": ["admin"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "add",
+                        "recycling facilities' information",
+                        "create"
+                    ],
+                    [
+                        "remove",
+                        "recycling facilities' information",
+                        "delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As an admin, I want to be able to add or remove recycling facilities' information, ",
             "Triggers": [
@@ -696,6 +1047,26 @@
                 "provide",
                 "improving"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "add",
+                        "features",
+                        "create"
+                    ],
+                    [
+                        "improving",
+                        "service",
+                        "create"
+                    ],
+                    [
+                        "provide",
+                        "service",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "we can add more features and keep improving the service we provide to them.",
             "Targets": [
@@ -722,6 +1093,21 @@
             ],
             "Action": ["read"],
             "Persona": ["admin"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "read",
+                        "complaints",
+                        "preserve"
+                    ],
+                    [
+                        "read",
+                        "users' feedback",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As an admin, I want to be able to read users' feedback and complaints, ",
             "Triggers": [[
@@ -749,6 +1135,10 @@
         "Benefit": {
             "Entity": [],
             "Action": ["go back"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can go back when needed.",
             "Targets": []
@@ -765,6 +1155,25 @@
                 "keep"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "check",
+                        "transaction history",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "keep",
+                        "record",
+                        "preserve;forbid"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "record",
+                    "transaction history",
+                    "preserve;forbid"
+                ]]
+            },
             "Contains": [[
                 "record",
                 "transaction history"
@@ -801,6 +1210,14 @@
                 "navigating",
                 "have"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "pleasant experience",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I have a pleasant experience when navigating through them.",
             "Targets": [[
@@ -818,6 +1235,32 @@
             ],
             "Action": ["have"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "great ui",
+                        "preserve"
+                    ],
+                    [
+                        "have",
+                        "ux",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "sites",
+                        "great ui",
+                        "preserve"
+                    ],
+                    [
+                        "sites",
+                        "ux",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "sites",
@@ -854,6 +1297,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -870,6 +1317,25 @@
                 "do"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "access",
+                        "site",
+                        "preserve;create"
+                    ],
+                    [
+                        "do",
+                        "other stuffs",
+                        "preserve;delete;create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "electronic devices",
+                    "other stuffs",
+                    "preserve;delete;create"
+                ]]
+            },
             "Contains": [[
                 "electronic devices",
                 "other stuffs"
@@ -902,6 +1368,14 @@
         "Benefit": {
             "Entity": ["websites"],
             "Action": ["prevent spamming"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "prevent spamming",
+                    "websites",
+                    "forbid"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can prevent spamming on the websites.",
             "Targets": [[
@@ -918,6 +1392,18 @@
             ],
             "Action": ["block"],
             "Persona": ["admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "block",
+                    "specific users",
+                    "delete"
+                ]],
+                "Contain Action Rules": [[
+                    "specific users",
+                    "ip address",
+                    "delete"
+                ]]
+            },
             "Contains": [[
                 "specific users",
                 "IP address"
@@ -947,6 +1433,21 @@
                 "know",
                 "have"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "sense",
+                        "preserve"
+                    ],
+                    [
+                        "know",
+                        "service status",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can have a sense of what people are doing on our sites and know the service status.",
             "Targets": [
@@ -972,6 +1473,25 @@
                 "monitors"
             ],
             "Persona": ["admin"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "view",
+                        "dashboard",
+                        "preserve"
+                    ],
+                    [
+                        "monitors",
+                        "sites' statuses",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "dashboard",
+                    "sites' statuses",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "dashboard",
                 "sites' statuses"
@@ -1003,6 +1523,10 @@
                 "attack"
             ],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "important information will not be stolen during a server breach or an attack.",
             "Targets": []
@@ -1013,6 +1537,14 @@
             "Entity": ["data encrypted"],
             "Action": ["have"],
             "Persona": ["admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "data encrypted",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As an admin, I want to have all data encrypted, ",
             "Triggers": [[
@@ -1037,6 +1569,14 @@
                 "sense"
             ],
             "Action": ["have"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "sense",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can have a sense of my company's performance.",
             "Targets": [[
@@ -1053,6 +1593,18 @@
             ],
             "Action": ["have"],
             "Persona": ["executive"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "full access",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "data related to my company",
+                    "full access",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "data related to my company",
                 "full access"
@@ -1074,6 +1626,14 @@
         "Benefit": {
             "Entity": ["neighbourhood"],
             "Action": ["guided through"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "guided through",
+                    "neighbourhood",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can be guided through the neighbourhood.",
             "Targets": [[
@@ -1090,6 +1650,14 @@
             ],
             "Action": ["access"],
             "Persona": ["employee"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "access",
+                    "route planning system",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As an employee, I want to access the route planning system during work, ",
             "Triggers": [[
@@ -1108,6 +1676,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1122,6 +1694,18 @@
             ],
             "Action": ["have"],
             "Persona": ["employee from the HR department"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "access",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "full information",
+                    "access",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "business",
@@ -1156,6 +1740,18 @@
                 "iOS application"
             ],
             "Action": ["integrate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "implement",
+                    "certain features",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "iOS application",
+                    "certain features",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "iOS application",
                 "certain features"
@@ -1175,6 +1771,18 @@
             ],
             "Action": ["access"],
             "Persona": ["developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "access",
+                    "api",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "website",
+                    "api",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "website",
                 "API"
@@ -1205,6 +1813,21 @@
                 "use",
                 "have"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "website",
+                        "preserve"
+                    ],
+                    [
+                        "have",
+                        "reason",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I have a reason to use the website.",
             "Targets": [
@@ -1224,6 +1847,14 @@
             "Entity": ["tempting rewards"],
             "Action": ["receive"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "receive",
+                    "tempting rewards",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As a user, I want to be able to receive tempting rewards, ",
             "Triggers": [[
@@ -1245,6 +1876,10 @@
                 "telephone harassment"
             ],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I will not suffer from identity theft or telephone harassment.",
             "Targets": []
@@ -1259,6 +1894,18 @@
             ],
             "Action": ["have"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "personal information",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "database",
+                    "personal information",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "website",
@@ -1286,6 +1933,10 @@
         "Benefit": {
             "Entity": [],
             "Action": ["manage more efficiently"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can manage more efficiently.",
             "Targets": []
@@ -1296,6 +1947,14 @@
             "Entity": ["users' activities"],
             "Action": ["handle"],
             "Persona": ["admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "handle",
+                    "users' activities",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As an admin, I want to handle all users' activities, ",
             "Triggers": [[
@@ -1317,6 +1976,21 @@
                 "upload",
                 "delete"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "upload",
+                        "stuff",
+                        "create"
+                    ],
+                    [
+                        "delete",
+                        "stuff",
+                        "delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can upload or delete stuff step by step.",
             "Targets": [
@@ -1336,6 +2010,14 @@
             "Entity": ["website"],
             "Action": ["have"],
             "Persona": ["company"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "website",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As a company, I want to have a website that is easy to use, ",
             "Triggers": [[
@@ -1357,6 +2039,14 @@
         "Benefit": {
             "Entity": ["cases"],
             "Action": ["process"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "process",
+                    "cases",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can process cases the first time.",
             "Targets": [[
@@ -1370,6 +2060,14 @@
             "Entity": ["quick notifications"],
             "Action": ["get"],
             "Persona": ["employee"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "quick notifications",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As an employee, I want to get quick notifications, ",
             "Triggers": [[
@@ -1388,6 +2086,14 @@
         "Benefit": {
             "Entity": ["bill statement"],
             "Action": ["easily create"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "easily create",
+                    "bill statement",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can easily create a bill statement.",
             "Targets": [[
@@ -1401,6 +2107,14 @@
             "Entity": ["available activity fees"],
             "Action": ["view"],
             "Persona": ["company accountant"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "view",
+                    "available activity fees",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As a company accountant, I want to view all available activity fees online, ",
             "Triggers": [[
@@ -1419,6 +2133,14 @@
         "Benefit": {
             "Entity": ["website"],
             "Action": ["design"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "design",
+                    "website",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can easily design my website.",
             "Targets": [[
@@ -1435,6 +2157,14 @@
             ],
             "Action": ["use"],
             "Persona": ["developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "use",
+                    "bootstrap",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As a developer, I want to use bootstrap in the process of developing, ",
             "Triggers": [[
@@ -1456,6 +2186,14 @@
         "Benefit": {
             "Entity": ["awesome and beautiful features website"],
             "Action": ["develop"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "develop",
+                    "awesome and beautiful features website",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can develop an awesome and beautiful features website.",
             "Targets": [[
@@ -1469,6 +2207,14 @@
             "Entity": ["UI/UX lessons"],
             "Action": ["attend"],
             "Persona": ["developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "attend",
+                    "ui/ux lessons",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As a developer, I want to attend some UI/UX lessons, ",
             "Triggers": [[
@@ -1490,6 +2236,14 @@
                 "drop off waste"
             ],
             "Action": ["check"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "check",
+                    "routes",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can check which routes to take to drop off waste.",
             "Targets": [[
@@ -1506,6 +2260,18 @@
             ],
             "Action": ["view"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "view",
+                    "locations of recycling centers",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "map",
+                    "locations of recycling centers",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "map",
                 "locations of recycling centers"
@@ -1534,6 +2300,14 @@
                 "availability"
             ],
             "Action": ["get"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "recommendations",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can get recommendations for recycling centers that best fit my availability.",
             "Targets": [[
@@ -1547,6 +2321,14 @@
             "Entity": ["week's schedule"],
             "Action": ["upload"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "upload",
+                    "week's schedule",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As a user, I want to upload my week's schedule, ",
             "Triggers": [[
@@ -1574,6 +2356,21 @@
                 "get",
                 "forget"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "get",
+                        "temporary password",
+                        "preserve;create"
+                    ],
+                    [
+                        "forget",
+                        "password",
+                        "delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can get a temporary password in case I forget my own one.",
             "Targets": [
@@ -1596,6 +2393,18 @@
             ],
             "Action": ["link"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "link",
+                    "email account",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "profile",
+                    "email account",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "profile",
                 "email account"
@@ -1623,6 +2432,21 @@
                 "give",
                 "ask"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "give",
+                        "feedback",
+                        "create"
+                    ],
+                    [
+                        "ask",
+                        "help",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can give feedback or ask for help.",
             "Targets": [
@@ -1642,6 +2466,14 @@
             "Entity": ["administrators"],
             "Action": ["contact"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "contact",
+                    "administrators",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As a user, I want to contact the administrators, ",
             "Triggers": [[
@@ -1660,6 +2492,14 @@
         "Benefit": {
             "Entity": ["database up-to-date"],
             "Action": ["keep"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "keep",
+                    "database up-to-date",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can keep the database up-to-date over time.",
             "Targets": [[
@@ -1673,6 +2513,14 @@
             "Entity": ["recycling center information"],
             "Action": ["add"],
             "Persona": ["admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "add",
+                    "recycling center information",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As an admin, I want to add recycling center information, ",
             "Triggers": [[
@@ -1698,6 +2546,25 @@
                 "fix",
                 "review"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "review",
+                        "any issues",
+                        "preserve"
+                    ],
+                    [
+                        "fix",
+                        "any issues",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "users",
+                    "any issues",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "system",
@@ -1726,6 +2593,14 @@
             "Entity": ["user error logs"],
             "Action": ["view"],
             "Persona": ["admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "view",
+                    "user error logs",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As an admin, I want to view user error logs, ",
             "Triggers": [[
@@ -1747,6 +2622,14 @@
         "Benefit": {
             "Entity": ["information accuracy"],
             "Action": ["increase"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "increase",
+                    "information accuracy",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can increase information accuracy.",
             "Targets": [[
@@ -1763,6 +2646,18 @@
             ],
             "Action": ["onboard"],
             "Persona": ["admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "onboard",
+                    "recycling centers",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "platform",
+                    "recycling centers",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "platform",
                 "recycling centers"
@@ -1787,6 +2682,14 @@
                 "recycling center"
             ],
             "Action": ["provide"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "provide",
+                    "latest information",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can provide the latest information about the recycling center.",
             "Targets": [[
@@ -1800,6 +2703,14 @@
             "Entity": ["recycling center information"],
             "Action": ["update"],
             "Persona": ["superuser"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "update",
+                    "recycling center information",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As a superuser, I want to update the recycling center information, ",
             "Triggers": [[
@@ -1828,6 +2739,26 @@
                 "view in real-time",
                 "visited"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "view in real-time",
+                        "recyclable waste.",
+                        "create"
+                    ],
+                    [
+                        "view in real-time",
+                        "how many users",
+                        "create"
+                    ],
+                    [
+                        "visited",
+                        "recycling center information",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can view in real-time how many users have visited my recycling center information and their recyclable waste.",
             "Targets": [
@@ -1851,6 +2782,14 @@
             "Entity": ["users' stats"],
             "Action": ["view"],
             "Persona": ["superuser"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "view",
+                    "users' stats",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As a superuser, I want to view users' stats, ",
             "Triggers": [[
@@ -1872,6 +2811,14 @@
                 "any questions"
             ],
             "Action": ["answer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "answer",
+                    "any questions",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can answer any questions about my recycling center.",
             "Targets": [[
@@ -1885,6 +2832,14 @@
             "Entity": ["user questions"],
             "Action": ["reply"],
             "Persona": ["superuser"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "reply",
+                    "user questions",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As a superuser, I want to reply to user questions, ",
             "Triggers": [[
@@ -1910,6 +2865,21 @@
                 "identify",
                 "getting"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "identify",
+                        "neighbourhoods",
+                        "preserve"
+                    ],
+                    [
+                        "getting",
+                        "facilities",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can identify the neighbourhoods with the largest number of drop-offs and to try getting more facilities involved.",
             "Targets": [
@@ -1936,6 +2906,37 @@
                 "shows"
             ],
             "Persona": ["admin"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "dashboard",
+                        "preserve"
+                    ],
+                    [
+                        "shows",
+                        "usage stats",
+                        "create"
+                    ],
+                    [
+                        "shows",
+                        "locations",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "dashboard",
+                        "usage stats",
+                        "preserve"
+                    ],
+                    [
+                        "dashboard",
+                        "locations",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "dashboard",
@@ -1976,6 +2977,18 @@
                 "website"
             ],
             "Action": ["keep them updated"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "keep them updated",
+                    "features",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "website",
+                    "features",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "website",
                 "features"
@@ -1992,6 +3005,14 @@
             "Entity": ["facilities"],
             "Action": ["communicate directly"],
             "Persona": ["admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "communicate directly",
+                    "facilities",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As an admin, I want to be able to communicate directly with facilities, ",
             "Triggers": [[
@@ -2013,6 +3034,10 @@
                 "negative ecological footprint"
             ],
             "Action": ["know"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can know for sure my waste is not going to leave a negative ecological footprint.",
             "Targets": []
@@ -2029,6 +3054,25 @@
                 "see"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "browse",
+                        "list",
+                        "preserve"
+                    ],
+                    [
+                        "see",
+                        "facolities",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "list",
+                    "facolities",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "list",
                 "facolities"
@@ -2065,6 +3109,14 @@
                 "any miscommunication"
             ],
             "Action": ["avoid"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "avoid",
+                    "any miscommunication",
+                    "forbid"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can avoid any miscommunication with users.",
             "Targets": [[
@@ -2084,6 +3136,26 @@
                 "accept"
             ],
             "Persona": ["recyclingfacility representative"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "update",
+                        "information",
+                        "create;delete"
+                    ],
+                    [
+                        "update",
+                        "type of material",
+                        "create;delete"
+                    ],
+                    [
+                        "accept",
+                        "type of material",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As a recyclingfacility representative, I want to be able to update my information and the type of material I accept, ",
             "Triggers": [[
@@ -2121,6 +3193,31 @@
                 "upgrade",
                 "accomodate"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "adjust",
+                        "hours",
+                        "create;delete"
+                    ],
+                    [
+                        "upgrade",
+                        "capacity",
+                        "create"
+                    ],
+                    [
+                        "upgrade",
+                        "equipment",
+                        "create"
+                    ],
+                    [
+                        "accomodate",
+                        "larger amounts of recyclable materials",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can adjust my hours and/or upgrade equipment and capacity in order to be able to accomodate larger amounts of recyclable materials.",
             "Targets": [
@@ -2152,6 +3249,18 @@
             ],
             "Action": ["have"],
             "Persona": ["recyclingfacility representative"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "access",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "user stats",
+                    "access",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "user stats",
                 "access"
@@ -2176,6 +3285,10 @@
         "Benefit": {
             "Entity": [],
             "Action": ["fix"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "they fix them",
             "Targets": []
@@ -2193,6 +3306,26 @@
                 "communicate directly"
             ],
             "Persona": ["recyclingfacility"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "communicate directly",
+                        "site admin",
+                        "preserve"
+                    ],
+                    [
+                        "convey",
+                        "any issues",
+                        "create"
+                    ],
+                    [
+                        "convey",
+                        "concerns i have",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G04# As a recyclingfacility, I want to be able to communicate directly with the site admin and convey any issues or concerns I have, ",
             "Triggers": [

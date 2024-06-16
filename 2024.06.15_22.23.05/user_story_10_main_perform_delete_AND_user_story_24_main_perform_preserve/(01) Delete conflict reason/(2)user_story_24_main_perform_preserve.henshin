@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Rule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_EmK80CtVEe-Z2c_YxgnDzQ" name="user_story_24_main_perform_preserve">
+  <lhs xmi:id="_EmK80StVEe-Z2c_YxgnDzQ" name="Lhs">
+    <nodes xmi:id="_EmK80itVEe-Z2c_YxgnDzQ" name="|4|" outgoing="_EmK82itVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Persona"/>
+      <attributes xmi:id="_EmK80ytVEe-Z2c_YxgnDzQ" value="&quot;staff member&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_EmK81CtVEe-Z2c_YxgnDzQ" name="|5|">
+      <type href="../../../Backlog_v2.4.ecore#//Story"/>
+      <attributes xmi:id="_EmK81StVEe-Z2c_YxgnDzQ" value="&quot;#g03# as a staff member, i want to perform a staff review,&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//Story/text"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_EmK81itVEe-Z2c_YxgnDzQ" name="|6|" incoming="_EmK82itVEe-Z2c_YxgnDzQ" outgoing="_EmK82ytVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action"/>
+      <attributes xmi:id="_EmK81ytVEe-Z2c_YxgnDzQ" value="&quot;perform&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_EmK82CtVEe-Z2c_YxgnDzQ" name="|7|" incoming="_EmK82ytVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Entity"/>
+      <attributes xmi:id="_EmK82StVEe-Z2c_YxgnDzQ" value="&quot;staff review&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <edges xmi:id="_EmK82itVEe-Z2c_YxgnDzQ" source="_EmK80itVEe-Z2c_YxgnDzQ" target="_EmK81itVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Persona/triggers"/>
+    </edges>
+    <edges xmi:id="_EmK82ytVEe-Z2c_YxgnDzQ" source="_EmK81itVEe-Z2c_YxgnDzQ" target="_EmK82CtVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action/targets"/>
+    </edges>
+  </lhs>
+  <rhs xmi:id="_EmK83CtVEe-Z2c_YxgnDzQ" name="Rhs">
+    <nodes xmi:id="_EmK83StVEe-Z2c_YxgnDzQ" name="|4|" outgoing="_EmK85StVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Persona"/>
+      <attributes xmi:id="_EmK83itVEe-Z2c_YxgnDzQ" value="&quot;staff member&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_EmK83ytVEe-Z2c_YxgnDzQ" name="|5|">
+      <type href="../../../Backlog_v2.4.ecore#//Story"/>
+      <attributes xmi:id="_EmK84CtVEe-Z2c_YxgnDzQ" value="&quot;#g03# as a staff member, i want to perform a staff review,&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//Story/text"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_EmK84StVEe-Z2c_YxgnDzQ" name="|6|" incoming="_EmK85StVEe-Z2c_YxgnDzQ" outgoing="_EmK85itVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action"/>
+      <attributes xmi:id="_EmK84itVEe-Z2c_YxgnDzQ" value="&quot;perform&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_EmK84ytVEe-Z2c_YxgnDzQ" name="|7|" incoming="_EmK85itVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Entity"/>
+      <attributes xmi:id="_EmK85CtVEe-Z2c_YxgnDzQ" value="&quot;staff review&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <edges xmi:id="_EmK85StVEe-Z2c_YxgnDzQ" source="_EmK83StVEe-Z2c_YxgnDzQ" target="_EmK84StVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Persona/triggers"/>
+    </edges>
+    <edges xmi:id="_EmK85itVEe-Z2c_YxgnDzQ" source="_EmK84StVEe-Z2c_YxgnDzQ" target="_EmK84ytVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action/targets"/>
+    </edges>
+  </rhs>
+  <mappings xmi:id="_EmK85ytVEe-Z2c_YxgnDzQ" origin="_EmK80itVEe-Z2c_YxgnDzQ" image="_EmK83StVEe-Z2c_YxgnDzQ"/>
+  <mappings xmi:id="_EmK86CtVEe-Z2c_YxgnDzQ" origin="_EmK81CtVEe-Z2c_YxgnDzQ" image="_EmK83ytVEe-Z2c_YxgnDzQ"/>
+  <mappings xmi:id="_EmK86StVEe-Z2c_YxgnDzQ" origin="_EmK81itVEe-Z2c_YxgnDzQ" image="_EmK84StVEe-Z2c_YxgnDzQ"/>
+  <mappings xmi:id="_EmK86itVEe-Z2c_YxgnDzQ" origin="_EmK82CtVEe-Z2c_YxgnDzQ" image="_EmK84ytVEe-Z2c_YxgnDzQ"/>
+</henshin:Rule>

@@ -4,6 +4,14 @@
         "Benefit": {
             "Entity": ["awesome sponsors."],
             "Action": ["thank"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "thank",
+                    "awesome sponsors.",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can thank all the awesome sponsors.",
             "Targets": [[
@@ -20,6 +28,18 @@
             ],
             "Action": ["view"],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "view",
+                    "list",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "list",
+                    "sponsors",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "list",
                 "sponsors"
@@ -47,6 +67,21 @@
                 "know",
                 "attending"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "who",
+                        "preserve"
+                    ],
+                    [
+                        "attending",
+                        "conference",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I know who is attending the conference.",
             "Targets": [
@@ -69,6 +104,18 @@
             ],
             "Action": ["view"],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "view",
+                    "list",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "list",
+                    "user profiles",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "list",
                 "user profiles"
@@ -90,6 +137,10 @@
         "Benefit": {
             "Entity": [],
             "Action": ["use"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "It is easier to use.",
             "Targets": []
@@ -105,6 +156,14 @@
             ],
             "Action": ["email"],
             "Persona": ["trainingcoordinator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "email",
+                    "trainers",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a trainingcoordinator, I want to email all the trainers at once from the website for info and updates, ",
             "Triggers": [[
@@ -126,6 +185,14 @@
         "Benefit": {
             "Entity": ["class"],
             "Action": ["make it to"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "make it to",
+                    "class",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can make it to class on time.",
             "Targets": [[
@@ -143,6 +210,25 @@
             ],
             "Action": ["have"],
             "Persona": ["attendee"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "very clear map",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "very clear map",
+                        "buildings",
+                        "preserve"
+                    ],
+                    [
+                        "very clear map",
+                        "rooms",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "very clear map",
@@ -173,6 +259,14 @@
                 "slides"
             ],
             "Action": ["links"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "links",
+                    "slides",
+                    "preserve;delete;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "the training coordinators don't have to and links to slides",
             "Targets": [[
@@ -186,6 +280,14 @@
             "Entity": ["training node"],
             "Action": ["edit"],
             "Persona": ["trainer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "edit",
+                    "training node",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a trainer, I want to edit my training node myself, ",
             "Triggers": [[
@@ -204,6 +306,10 @@
         "Benefit": {
             "Entity": ["duplicate spaces"],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "we don't have duplicate spaces.",
             "Targets": []
@@ -218,6 +324,25 @@
             ],
             "Action": ["limit"],
             "Persona": ["trainee"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "limit",
+                    "one registration",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "day",
+                        "one registration",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "authenticated user",
+                        "one registration",
+                        "preserve;forbid"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "day",
@@ -249,6 +374,10 @@
                 "attendend",
                 "refunded"
             ],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "we can see if attendend, refunded, no show",
             "Targets": []
@@ -266,6 +395,25 @@
                 "helps track"
             ],
             "Persona": ["trainingcoordinator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "admin view",
+                        "preserve"
+                    ],
+                    [
+                        "helps track",
+                        "registration status",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "each attendee",
+                    "registration status",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "each attendee",
                 "registration status"
@@ -293,6 +441,10 @@
         "Benefit": {
             "Entity": ["class"],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "they can be considered for a class.",
             "Targets": []
@@ -303,6 +455,14 @@
             "Entity": ["training waitlist"],
             "Action": ["be added"],
             "Persona": ["attendee"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "be added",
+                    "training waitlist",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a attendee, I want to be added to a training waitlist,  so",
             "Triggers": [[
@@ -324,6 +484,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "they can be accountable.",
             "Targets": []
@@ -337,6 +501,14 @@
             ],
             "Action": ["accept"],
             "Persona": ["trainee"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "accept",
+                    "cancellation terms",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a trainee, I want to must accept the cancellation terms with a checkbox, ",
             "Triggers": [[
@@ -358,6 +530,10 @@
                 "spots"
             ],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "we don't loose money or spots.",
             "Targets": []
@@ -372,6 +548,25 @@
             ],
             "Action": ["tie in"],
             "Persona": ["trainingcoordinator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "tie in",
+                    "cancellation deadline",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "registration",
+                        "cancellation deadline",
+                        "create"
+                    ],
+                    [
+                        "cancellation workflow",
+                        "cancellation deadline",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "registration",
@@ -399,6 +594,14 @@
         "Benefit": {
             "Entity": ["event experience"],
             "Action": ["schedule"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "schedule",
+                    "event experience",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "they can schedule their event experience.",
             "Targets": [[
@@ -416,6 +619,10 @@
             ],
             "Action": ["add"],
             "Persona": ["trainee"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "site",
                 "schedule feature"
@@ -434,6 +641,14 @@
         "Benefit": {
             "Entity": ["event experience"],
             "Action": ["schedule"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "schedule",
+                    "event experience",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "they can schedule their event experience.",
             "Targets": [[
@@ -447,6 +662,14 @@
             "Entity": ["trainings I have signed up"],
             "Action": ["see"],
             "Persona": ["trainee"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "trainings i have signed up",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a trainee, I want to see which trainings I have signed up for, ",
             "Triggers": [[
@@ -470,6 +693,18 @@
                 "work"
             ],
             "Action": ["get"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "login info",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "environment setup",
+                    "login info",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "environment setup",
                 "login info"
@@ -497,6 +732,30 @@
                 "see"
             ],
             "Persona": ["trainer"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "view",
+                        "preserve"
+                    ],
+                    [
+                        "shows",
+                        "all attendee information",
+                        "create"
+                    ],
+                    [
+                        "see",
+                        "all class attendance",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "training node",
+                    "view",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "training node",
                 "view"
@@ -531,6 +790,14 @@
                 "see",
                 "happening"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "wtf",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can see WTF is happening.",
             "Targets": [[
@@ -552,6 +819,30 @@
                 "show"
             ],
             "Persona": ["trainingcoordinator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "admin view",
+                        "preserve"
+                    ],
+                    [
+                        "show",
+                        "single training session",
+                        "create"
+                    ],
+                    [
+                        "filtered",
+                        "all trainee information",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "admin view",
+                    "all trainee information",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "admin view",
                 "all trainee information"
@@ -591,6 +882,26 @@
                 "tweet",
                 "promote"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "choose",
+                        "right class",
+                        "create"
+                    ],
+                    [
+                        "tweet",
+                        "class",
+                        "create"
+                    ],
+                    [
+                        "promote",
+                        "class",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can choose the right class, AND the trainer can tweet and promote their class.",
             "Targets": [
@@ -633,6 +944,37 @@
                 "learn more"
             ],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "dedicated page",
+                        "preserve"
+                    ],
+                    [
+                        "learn more",
+                        "offering",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "each class",
+                        "dedicated page",
+                        "preserve"
+                    ],
+                    [
+                        "dedicated page",
+                        "information",
+                        "preserve"
+                    ],
+                    [
+                        "dedicated page",
+                        "url path",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "each class",
@@ -714,6 +1056,37 @@
                 "shop",
                 "find"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "shop",
+                        "training",
+                        "create"
+                    ],
+                    [
+                        "find",
+                        "class",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "one page",
+                        "training",
+                        "create"
+                    ],
+                    [
+                        "training",
+                        "class",
+                        "create"
+                    ],
+                    [
+                        "one page",
+                        "class",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "one page",
@@ -765,6 +1138,25 @@
                 "clearly marked"
             ],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "training options",
+                        "preserve"
+                    ],
+                    [
+                        "clearly marked",
+                        "training options",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "training options",
+                    "information",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "information",
@@ -854,6 +1246,25 @@
                 "shop",
                 "have"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "shop",
+                        "training",
+                        "create"
+                    ],
+                    [
+                        "have",
+                        "call for trainings",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "one page",
+                    "training",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "one page",
                 "training"
@@ -885,6 +1296,32 @@
                 "promote"
             ],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "training landing page",
+                        "preserve"
+                    ],
+                    [
+                        "promote",
+                        "call for trainings",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "training landing page",
+                        "intro section",
+                        "preserve"
+                    ],
+                    [
+                        "training landing page",
+                        "list",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "training landing page",
@@ -928,6 +1365,14 @@
         "Benefit": {
             "Entity": ["training"],
             "Action": ["take"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "take",
+                    "training",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can take training.",
             "Targets": [[
@@ -946,6 +1391,25 @@
             ],
             "Action": ["have"],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "link",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "home page",
+                        "link",
+                        "preserve"
+                    ],
+                    [
+                        "list",
+                        "link",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "home page",
@@ -977,6 +1441,10 @@
         "Benefit": {
             "Entity": ["friends"],
             "Action": ["code"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can code with my friends.",
             "Targets": []
@@ -991,6 +1459,21 @@
             ],
             "Action": ["find out"],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "find out",
+                        "where",
+                        "create"
+                    ],
+                    [
+                        "find out",
+                        "what time",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a anonymoususer, I want to find out where the coding lounge is and what time it is open, ",
             "Triggers": [[
@@ -1018,6 +1501,18 @@
                 "monies"
             ],
             "Action": ["get"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "monies",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "people",
+                    "monies",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "people",
                 "monies"
@@ -1037,6 +1532,18 @@
             ],
             "Action": ["refund"],
             "Persona": ["administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "refund",
+                    "sponsorship money",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "stripe",
+                    "sponsorship money",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "stripe",
                 "sponsorship money"
@@ -1058,6 +1565,14 @@
         "Benefit": {
             "Entity": ["sponsor role"],
             "Action": ["pay"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "pay",
+                    "sponsor role",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can pay for and become a sponsor role.",
             "Targets": [[
@@ -1075,6 +1590,18 @@
             ],
             "Action": ["find"],
             "Persona": ["authenticateduser"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "find",
+                    "link",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "sponsorships page",
+                    "link",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "sponsorships page",
                 "link"
@@ -1102,6 +1629,18 @@
                 "know",
                 "attending"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "who",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "sponsor organization",
+                    "who",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "sponsor organization",
                 "who"
@@ -1122,6 +1661,18 @@
             ],
             "Action": ["See"],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "list",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "list",
+                    "attendees",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "list",
@@ -1153,6 +1704,14 @@
                 "sponsorship"
             ],
             "Action": ["get"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "sponsorship",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can easily become a sponsor at this level without having to interface with badcamp personnel to get a sponsorship.",
             "Targets": [[
@@ -1172,6 +1731,21 @@
                 "pay"
             ],
             "Persona": ["authenticateduser"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "identify",
+                        "myself",
+                        "preserve"
+                    ],
+                    [
+                        "pay",
+                        "$350 company sponsorship",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a authenticateduser, I want to identify myself as and pay for a $350 company sponsorship, ",
             "Triggers": [
@@ -1210,6 +1784,30 @@
                 "help",
                 "find"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "provide",
+                        "location details",
+                        "create"
+                    ],
+                    [
+                        "help",
+                        "users",
+                        "preserve"
+                    ],
+                    [
+                        "find",
+                        "what they're looking for",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "what they're looking for",
+                    "location details",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "what they're looking for",
                 "location details"
@@ -1239,6 +1837,21 @@
                 "maintain"
             ],
             "Persona": ["administrator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "create",
+                        "venues",
+                        "create"
+                    ],
+                    [
+                        "maintain",
+                        "venues",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a administrator, I want to create and maintain venues, ",
             "Triggers": [
@@ -1277,6 +1890,21 @@
                 "see",
                 "happening"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "get",
+                        "sense",
+                        "preserve;create"
+                    ],
+                    [
+                        "see",
+                        "events",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can get a sense of the location and see the events happening there.",
             "Targets": [
@@ -1296,6 +1924,14 @@
             "Entity": ["venue details"],
             "Action": ["view"],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "view",
+                    "venue details",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a anonymoususer, I want to view venue details, ",
             "Triggers": [[
@@ -1322,6 +1958,21 @@
                 "know",
                 "engage"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "where",
+                        "preserve"
+                    ],
+                    [
+                        "engage",
+                        "sponsor",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I know where I can engage with this sponsor and where they are thought leaders.",
             "Targets": [
@@ -1349,6 +2000,25 @@
             ],
             "Action": ["see"],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "list",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "list",
+                        "sessions",
+                        "preserve"
+                    ],
+                    [
+                        "list",
+                        "sponsor attendees",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "list",
@@ -1376,6 +2046,14 @@
         "Benefit": {
             "Entity": ["sponsorship"],
             "Action": ["pay"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "pay",
+                    "sponsorship",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "pay for my sponsorship.",
             "Targets": [[
@@ -1397,6 +2075,21 @@
                 "pay"
             ],
             "Persona": ["authenticateduser"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "see",
+                        "payment page",
+                        "preserve"
+                    ],
+                    [
+                        "pay",
+                        "individual sponsorships",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "registration process",
                 "third step"
@@ -1424,6 +2117,10 @@
         "Benefit": {
             "Entity": ["sponsor detail page"],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "They will be featured on the sponsor detail page.",
             "Targets": []
@@ -1439,6 +2136,30 @@
             ],
             "Action": ["assign"],
             "Persona": ["administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "assign",
+                    "sponsors",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "events",
+                        "sponsors",
+                        "create"
+                    ],
+                    [
+                        "trainings",
+                        "sponsors",
+                        "create"
+                    ],
+                    [
+                        "summits",
+                        "sponsors",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "events",
@@ -1481,6 +2202,21 @@
                 "know",
                 "engage"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "where",
+                        "preserve"
+                    ],
+                    [
+                        "engage",
+                        "sponsor",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I know where I can engage with this sponsor and where they are thought leaders.",
             "Targets": [
@@ -1512,6 +2248,41 @@
                 "sponsoring"
             ],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "see",
+                        "all events",
+                        "preserve"
+                    ],
+                    [
+                        "see",
+                        "trainings",
+                        "preserve"
+                    ],
+                    [
+                        "see",
+                        "summits",
+                        "preserve"
+                    ],
+                    [
+                        "sponsoring",
+                        "all events",
+                        "create"
+                    ],
+                    [
+                        "sponsoring",
+                        "trainings",
+                        "create"
+                    ],
+                    [
+                        "sponsoring",
+                        "summits",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a anonymoususer, I want to see all events, trainings and summits that a sponsor is sponsoring ",
             "Triggers": [[
@@ -1552,6 +2323,14 @@
         "Benefit": {
             "Entity": ["individual sponsorship"],
             "Action": ["pay"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "pay",
+                    "individual sponsorship",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can pay for an individual sponsorship.",
             "Targets": [[
@@ -1573,6 +2352,26 @@
                 "charged"
             ],
             "Persona": ["authenticateduser"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "enter",
+                        "payment information",
+                        "create"
+                    ],
+                    [
+                        "have",
+                        "card",
+                        "preserve"
+                    ],
+                    [
+                        "charged",
+                        "card",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a authenticateduser, I want to Enter payment information and have my card charged for an individual sponsorship, ",
             "Triggers": [
@@ -1607,6 +2406,14 @@
         "Benefit": {
             "Entity": ["level of attendance"],
             "Action": ["show off"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "show off",
+                    "level of attendance",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can show off our level of attendance.",
             "Targets": [[
@@ -1623,6 +2430,14 @@
             ],
             "Action": ["link"],
             "Persona": ["sponsor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "link",
+                    "badcamp attendees",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a sponsor, I want to link BADCamp attendees to my sponsorship page, ",
             "Triggers": [[
@@ -1647,6 +2462,18 @@
                 "BADCamp"
             ],
             "Action": ["connect"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "connect",
+                    "other drupalists",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "BADCamp",
+                    "other Drupalists",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "BADCamp",
                 "other Drupalists"
@@ -1663,6 +2490,14 @@
             "Entity": ["user profile"],
             "Action": ["update"],
             "Persona": ["authenticateduser"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "update",
+                    "user profile",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a authenticateduser, I want to update my user profile, ",
             "Triggers": [[
@@ -1684,6 +2519,18 @@
                 "BADCamp"
             ],
             "Action": ["stay up to date"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "stay up to date",
+                    "latest communications",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "BADCamp",
+                    "latest communications",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "BADCamp",
                 "latest communications"
@@ -1700,6 +2547,14 @@
             "Entity": ["BADCamp newsletter"],
             "Action": ["sign up"],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "sign up",
+                    "badcamp newsletter",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a anonymoususer, I want to sign up for the BADCamp newsletter,  ",
             "Triggers": [[
@@ -1718,6 +2573,10 @@
         "Benefit": {
             "Entity": ["Drupal Planet blog"],
             "Action": ["listed"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "they will be listed on the Drupal Planet blog.",
             "Targets": []
@@ -1731,6 +2590,14 @@
             ],
             "Action": ["tag"],
             "Persona": ["administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "tag",
+                    "blog posts",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a administrator, I want to tag my blog posts for consumption by Drupal Planet, ",
             "Triggers": [[
@@ -1762,6 +2629,25 @@
                 "public"
             ],
             "Action": ["share"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "share",
+                    "latest information",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "BADCamp",
+                        "latest information",
+                        "create"
+                    ],
+                    [
+                        "public",
+                        "latest information",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "BADCamp",
@@ -1784,6 +2670,14 @@
             "Entity": ["blog posts"],
             "Action": ["create"],
             "Persona": ["administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "create",
+                    "blog posts",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a administrator, I want to create blog posts, ",
             "Triggers": [[
@@ -1808,6 +2702,10 @@
                 "BADCamp"
             ],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "BADCamp",
                 "latest happenings"
@@ -1821,6 +2719,14 @@
             "Entity": ["blog"],
             "Action": ["read"],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "read",
+                    "blog",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a anonymoususer, I want to read the blog, ",
             "Triggers": [[
@@ -1849,6 +2755,25 @@
                 "get",
                 "tout"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "get",
+                        "exposure",
+                        "preserve;create"
+                    ],
+                    [
+                        "tout",
+                        "drupal credentials",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "exposure",
+                    "potential customers",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "exposure",
                 "potential customers"
@@ -1874,6 +2799,14 @@
             ],
             "Action": ["sponsor"],
             "Persona": ["sponsor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "sponsor",
+                    "summit",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a sponsor, I want to sponsor a summit that matches my brand, ",
             "Triggers": [[
@@ -1895,6 +2828,18 @@
                 "summit"
             ],
             "Action": ["reserve"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "reserve",
+                    "seat",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "summit",
+                    "seat",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "summit",
                 "seat"
@@ -1911,6 +2856,14 @@
             "Entity": ["summit"],
             "Action": ["register for"],
             "Persona": ["attendee"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "register for",
+                    "summit",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a attendee, I want to register for a summit, ",
             "Triggers": [[
@@ -1932,6 +2885,18 @@
                 "event"
             ],
             "Action": ["get to"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get to",
+                    "summit",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "summit",
+                    "event",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "summit",
                 "event"
@@ -1951,6 +2916,14 @@
             ],
             "Action": ["get"],
             "Persona": ["attendee"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "detailed directions",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a attendee, I want to get detailed directions to the summit venue, ",
             "Triggers": [[
@@ -1977,6 +2950,32 @@
                 "confirm",
                 "prevent"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "confirm",
+                        "attendence",
+                        "create"
+                    ],
+                    [
+                        "prevent",
+                        "double-booking",
+                        "preserve;forbid"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "training",
+                        "double-booking",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "another summit",
+                        "double-booking",
+                        "preserve;forbid"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "training",
@@ -2008,6 +3007,21 @@
                 "signed up"
             ],
             "Persona": ["attendee"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "see",
+                        "summits",
+                        "preserve"
+                    ],
+                    [
+                        "signed up",
+                        "summits",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a attendee, I want to see what summits I'm signed up for, ",
             "Triggers": [[
@@ -2036,6 +3050,18 @@
                 "event"
             ],
             "Action": ["communicate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "communicate",
+                    "attendees",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "attendees",
+                    "email",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "attendees",
                 "email"
@@ -2056,6 +3082,18 @@
             ],
             "Action": ["see"],
             "Persona": ["summit coordinator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "list",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "list",
+                    "attendees signed up",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "list",
@@ -2089,6 +3127,21 @@
                 "inform",
                 "attend"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "inform",
+                        "potential attendees",
+                        "create"
+                    ],
+                    [
+                        "attend",
+                        "summit",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can inform potential attendees on why they should attend my summit.",
             "Targets": [
@@ -2111,6 +3164,18 @@
             ],
             "Action": ["list"],
             "Persona": ["summit coordinator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "list",
+                    "basic information",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "summit",
+                    "basic information",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "summit",
                 "basic information"
@@ -2138,6 +3203,14 @@
                 "make sure",
                 "sponsoring"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "sponsoring",
+                    "future years",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can make sure sponsors feel rewarded and will be interested in sponsoring in future years.",
             "Targets": [[
@@ -2154,6 +3227,18 @@
             ],
             "Action": ["list"],
             "Persona": ["summit coordinator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "list",
+                    "sponsors",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "summit",
+                    "sponsors",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "summit",
                 "sponsors"
@@ -2184,6 +3269,30 @@
                 "give",
                 "encourage"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "entice",
+                        "attendees",
+                        "create"
+                    ],
+                    [
+                        "give",
+                        "positive feedback",
+                        "create"
+                    ],
+                    [
+                        "encourage",
+                        "participation",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "presenters",
+                    "positive feedback",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "presenters",
                 "positive feedback"
@@ -2213,6 +3322,18 @@
             ],
             "Action": ["list"],
             "Persona": ["summit coordinator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "list",
+                    "agenda",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "summit",
+                    "agenda",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "summit",
                 "agenda"
@@ -2238,6 +3359,14 @@
                 "reserve",
                 "make sure"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "reserve",
+                    "spot",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can make sure to register in-time to reserve my spot.",
             "Targets": [[
@@ -2255,6 +3384,14 @@
             ],
             "Action": ["see"],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "how many",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "summit",
                 "seats"
@@ -2288,6 +3425,31 @@
                 "get to",
                 "register for"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "learn more",
+                        "summit i'm interested",
+                        "create"
+                    ],
+                    [
+                        "help",
+                        "me",
+                        "preserve"
+                    ],
+                    [
+                        "get to",
+                        "location",
+                        "preserve"
+                    ],
+                    [
+                        "register for",
+                        "event",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can learn more about the summit I'm interested in to see if it matches my interests, register for the event, and get day-of knowledge to help me get to the location.",
             "Targets": [
@@ -2318,6 +3480,18 @@
             ],
             "Action": ["see"],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "specific details",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "summits",
+                    "specific details",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "summits",
                 "specific details"
@@ -2342,6 +3516,21 @@
                 "determine",
                 "attend"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "determine",
+                        "summit i might be interested",
+                        "create"
+                    ],
+                    [
+                        "attend",
+                        "summit i might be interested",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can determine which summit I might be interested and able to attend.",
             "Targets": [
@@ -2364,6 +3553,18 @@
             ],
             "Action": ["see"],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "list",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "list",
+                    "summits",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "list",
                 "summits"
@@ -2389,6 +3590,18 @@
                 "organization"
             ],
             "Action": ["determine"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "determine",
+                    "right level",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "sponsorship",
+                    "right level",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "sponsorship",
@@ -2411,6 +3624,14 @@
             "Entity": ["sponsorship levels"],
             "Action": ["learn"],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "learn",
+                    "sponsorship levels",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a anonymoususer, I want to learn about sponsorship levels, ",
             "Triggers": [[
@@ -2432,6 +3653,14 @@
                 "content"
             ],
             "Action": ["update"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "update",
+                    "content",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I don't have to know HTML to update my content.",
             "Targets": [[
@@ -2448,6 +3677,18 @@
             ],
             "Action": ["use"],
             "Persona": ["authenticateduser"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "use",
+                    "wysiwyg editor",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "wysiwyg editor",
+                    "all long-form content",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "WYSIWYG editor",
                 "all long-form content"
@@ -2472,6 +3713,14 @@
                 "organization"
             ],
             "Action": ["learn more"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "learn more",
+                    "organization",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "recruits can learn more about my organization.",
             "Targets": [[
@@ -2488,6 +3737,18 @@
             ],
             "Action": ["Link"],
             "Persona": ["sponsor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "link",
+                    "sponsorship profile",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "job listings",
+                    "sponsorship profile",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "job listings",
                 "sponsorship profile"
@@ -2516,6 +3777,25 @@
                 "have",
                 "post"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "opportunty",
+                        "preserve"
+                    ],
+                    [
+                        "post",
+                        "job listing",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "BADCamp site",
+                    "job listing",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "BADCamp site",
                 "job listing"
@@ -2545,6 +3825,21 @@
                 "contact"
             ],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "learn",
+                        "posting jobs",
+                        "create"
+                    ],
+                    [
+                        "contact",
+                        "sponsorship person",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a anonymoususer, I want to learn about posting jobs as a sponsor and contact the sponsorship person, ",
             "Triggers": [
@@ -2575,6 +3870,14 @@
         "Benefit": {
             "Entity": ["top-tier Drupal talent"],
             "Action": ["hire"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "hire",
+                    "top-tier drupal talent",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can hire top-tier Drupal talent.",
             "Targets": [[
@@ -2588,6 +3891,14 @@
             "Entity": ["job"],
             "Action": ["post"],
             "Persona": ["sponsor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "post",
+                    "job",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a sponsor, I want to post a job, ",
             "Triggers": [[
@@ -2606,6 +3917,14 @@
         "Benefit": {
             "Entity": ["interesting Drupal gig"],
             "Action": ["look for"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "look for",
+                    "interesting drupal gig",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can look for an interesting Drupal gig!.",
             "Targets": [[
@@ -2619,6 +3938,14 @@
             "Entity": ["job board"],
             "Action": ["view"],
             "Persona": ["authenticateduser"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "view",
+                    "job board",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a authenticateduser, I want to view the job board, ",
             "Triggers": [[
@@ -2640,6 +3967,14 @@
         "Benefit": {
             "Entity": ["schedule"],
             "Action": ["populate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "populate",
+                    "schedule",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can populate the schedule",
             "Targets": [[
@@ -2657,6 +3992,18 @@
             ],
             "Action": ["assign"],
             "Persona": ["administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "assign",
+                    "room",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "location",
+                    "room",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "location",
                 "room"
@@ -2685,6 +4032,26 @@
                 "figure",
                 "go"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "plan",
+                        "day",
+                        "create"
+                    ],
+                    [
+                        "figure",
+                        "where",
+                        "preserve"
+                    ],
+                    [
+                        "go",
+                        "where",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can plan my day and figure out where to go!.",
             "Targets": [
@@ -2708,6 +4075,14 @@
             "Entity": ["schedule"],
             "Action": ["see"],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "schedule",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a anonymoususer, I want to see the schedule, ",
             "Triggers": [[
@@ -2729,6 +4104,18 @@
                 "BADCamp"
             ],
             "Action": ["see"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "what's going on",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "BADCamp",
+                    "what's going on",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "BADCamp",
                 "what's going on"
@@ -2748,6 +4135,18 @@
             ],
             "Action": ["see"],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "final list",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "final list",
+                    "sessions approved",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "final list",
                 "sessions approved"
@@ -2769,6 +4168,14 @@
         "Benefit": {
             "Entity": ["time"],
             "Action": ["save"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "save",
+                    "time",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can save time.",
             "Targets": [[
@@ -2782,6 +4189,14 @@
             "Entity": ["sessions"],
             "Action": ["bulk approve"],
             "Persona": ["administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "bulk approve",
+                    "sessions",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a administrator, I want to bulk approve sessions as accepted, ",
             "Triggers": [[
@@ -2800,6 +4215,14 @@
         "Benefit": {
             "Entity": ["schedule"],
             "Action": ["populate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "populate",
+                    "schedule",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can populate the schedule",
             "Targets": [[
@@ -2813,6 +4236,14 @@
             "Entity": ["session"],
             "Action": ["mark"],
             "Persona": ["administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "mark",
+                    "session",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a administrator, I want to mark a session as accepted, ",
             "Triggers": [[
@@ -2838,6 +4269,10 @@
                 "accepted",
                 "rejected"
             ],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I know whether I've been accepted or rejected",
             "Targets": []
@@ -2854,6 +4289,21 @@
                 "evaluated"
             ],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "receive",
+                        "notification",
+                        "create"
+                    ],
+                    [
+                        "evaluated",
+                        "sessions",
+                        "preserve;forbid"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a anonymoususer, I want to receive a notification when sessions have been evaluated, ",
             "Triggers": [[
@@ -2881,6 +4331,14 @@
                 "know",
                 "went through"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "session",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "know that my session went through ok.",
             "Targets": [[
@@ -2900,6 +4358,21 @@
                 "submit"
             ],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "receive",
+                        "notification",
+                        "create"
+                    ],
+                    [
+                        "submit",
+                        "session",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a anonymoususer, I want to receive a notification when I submit a session, ",
             "Triggers": [[
@@ -2927,6 +4400,21 @@
                 "make",
                 "correct"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "make",
+                        "mistake",
+                        "create"
+                    ],
+                    [
+                        "correct",
+                        "mistake",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "if I make a mistake, I can correct it.",
             "Targets": [
@@ -2946,6 +4434,14 @@
             "Entity": ["session"],
             "Action": ["edit"],
             "Persona": ["authenticateduser"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "edit",
+                    "session",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a authenticateduser, I want to edit my session, ",
             "Triggers": [[
@@ -2964,6 +4460,14 @@
         "Benefit": {
             "Entity": ["session"],
             "Action": ["submit"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "submit",
+                    "session",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I submit a session",
             "Targets": [[
@@ -2980,6 +4484,10 @@
                 "speak"
             ],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a anonymoususer, I want to register to speak at BADCamp, ",
             "Triggers": [[
@@ -2998,6 +4506,14 @@
         "Benefit": {
             "Entity": ["session"],
             "Action": ["evaluated"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "evaluated",
+                    "session",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can get my session evaluated.",
             "Targets": [[
@@ -3014,6 +4530,18 @@
             ],
             "Action": ["submit"],
             "Persona": ["authenticateduser"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "submit",
+                    "session",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "badcamp",
+                    "session",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "BADCAMP",
                 "session"
@@ -3035,6 +4563,14 @@
         "Benefit": {
             "Entity": ["brand"],
             "Action": ["promote"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "promote",
+                    "brand",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can promote my brand",
             "Targets": [[
@@ -3048,6 +4584,14 @@
             "Entity": ["sponsorship page"],
             "Action": ["personalize"],
             "Persona": ["sponsor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "personalize",
+                    "sponsorship page",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a sponsor, I want to personalize my sponsorship page, ",
             "Triggers": [[
@@ -3069,6 +4613,14 @@
         "Benefit": {
             "Entity": ["summit I want to attend"],
             "Action": ["determine"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "determine",
+                    "summit i want to attend",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can determine which summit I want to attend.",
             "Targets": [[
@@ -3085,6 +4637,18 @@
             ],
             "Action": ["see"],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "list",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "list",
+                    "summits",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "list",
                 "summits"
@@ -3106,6 +4670,14 @@
         "Benefit": {
             "Entity": ["camp"],
             "Action": ["financially support"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "financially support",
+                    "camp",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can be awesome and financially support the camp.",
             "Targets": [[
@@ -3124,6 +4696,25 @@
             ],
             "Action": ["Be offered"],
             "Persona": ["authenticateduser"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "be offered",
+                    "several choices",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "idividual sponsorship",
+                        "several choices",
+                        "create"
+                    ],
+                    [
+                        "second page",
+                        "several choices",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "idividual sponsorship",
@@ -3155,6 +4746,14 @@
         "Benefit": {
             "Entity": ["camp"],
             "Action": ["easily register for"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "easily register for",
+                    "camp",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can easily register for the camp.",
             "Targets": [[
@@ -3175,6 +4774,25 @@
                 "links"
             ],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "easily find",
+                        "link",
+                        "create"
+                    ],
+                    [
+                        "links",
+                        "registration form",
+                        "preserve;delete;create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "menu",
+                    "link",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "menu",
                 "link"
@@ -3212,6 +4830,25 @@
                 "get",
                 "register for"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "get",
+                        "account",
+                        "preserve;create"
+                    ],
+                    [
+                        "register for",
+                        "camp",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "website",
+                    "account",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "website",
                 "account"
@@ -3234,6 +4871,14 @@
             "Entity": ["user registration form"],
             "Action": ["fill"],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "fill",
+                    "user registration form",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a anonymoususer, I want to fill out a user registration form, ",
             "Triggers": [[
@@ -3255,6 +4900,14 @@
         "Benefit": {
             "Entity": ["session"],
             "Action": ["go"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "go",
+                    "session",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can go to a session.",
             "Targets": [[
@@ -3268,6 +4921,14 @@
             "Entity": ["session information"],
             "Action": ["find"],
             "Persona": ["anonymoususer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "find",
+                    "session information",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G21# As a anonymoususer, I want to find session information, ",
             "Triggers": [[

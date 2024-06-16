@@ -11,6 +11,21 @@
                 "ensure",
                 "changes"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "ensure",
+                        "proper running",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "changes",
+                        "staff",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can ensure proper running of the project in case of staff changes.",
             "Targets": [
@@ -30,6 +45,14 @@
             "Entity": ["all metadata"],
             "Action": ["properly record"],
             "Persona": ["PI"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "properly record",
+                    "all metadata",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As a PI, I want to properly record all metadata, ",
             "Triggers": [[
@@ -51,6 +74,10 @@
                 "data lifecycle"
             ],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "data lifecycle",
                 "all stages"
@@ -73,6 +100,32 @@
                 "stored"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "indicate",
+                        "where",
+                        "create"
+                    ],
+                    [
+                        "stored",
+                        "data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "where",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "project",
+                        "data",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "where",
@@ -114,6 +167,10 @@
         "Benefit": {
             "Entity": ["DMP"],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I do not have to capture it again in a DMP.",
             "Targets": []
@@ -127,6 +184,14 @@
             ],
             "Action": ["import"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "import",
+                    "metadata",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As a researcher, I want to import metadata that I captured with a metadata tool, ",
             "Triggers": [[
@@ -155,6 +220,21 @@
                 "develop",
                 "support"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "develop",
+                        "more detailed usage",
+                        "create"
+                    ],
+                    [
+                        "support",
+                        "scenarios",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can develop more detailed usage and support scenarios with researchers.",
             "Targets": [
@@ -180,6 +260,21 @@
                 "used"
             ],
             "Persona": ["data manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "how",
+                        "preserve"
+                    ],
+                    [
+                        "used",
+                        "data",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As a data manager, I want to know how the data is used, ",
             "Triggers": [[
@@ -210,6 +305,14 @@
                 "calculate",
                 "check"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "calculate",
+                    "necessary submission fees",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can calculate necessary submission fees and check whether it belongs to our target group.",
             "Targets": [[
@@ -227,6 +330,18 @@
             ],
             "Action": ["check"],
             "Persona": ["repository owner"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "check",
+                    "planned provenance",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": [[
+                    "data",
+                    "planned provenance",
+                    "preserve;forbid"
+                ]]
+            },
             "Contains": [
                 [
                     "data",
@@ -257,6 +372,14 @@
         "Benefit": {
             "Entity": ["resource acquisition planning"],
             "Action": ["enable"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "enable",
+                    "resource acquisition planning",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can enable resource acquisition planning.",
             "Targets": [[
@@ -273,6 +396,18 @@
             ],
             "Action": ["know"],
             "Persona": ["IT manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "it resource requirements",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "project lifecycle",
+                    "it resource requirements",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "project lifecycle",
                 "IT resource requirements"
@@ -297,6 +432,10 @@
                 "ensure",
                 "store"
             ],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can ensure it will possible to store it.",
             "Targets": []
@@ -307,6 +446,14 @@
             "Entity": ["kind of data I want to record/store"],
             "Action": ["plan"],
             "Persona": ["PI"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "plan",
+                    "kind of data i want to record/store",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As a PI, I want to plan what kind of data I want to record/store, ",
             "Triggers": [[
@@ -331,6 +478,21 @@
                 "know",
                 "apply"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        " kind of security measures",
+                        "preserve"
+                    ],
+                    [
+                        "apply",
+                        " kind of security measures",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I know which kind of security measures to apply.",
             "Targets": [
@@ -353,6 +515,18 @@
             ],
             "Action": ["know"],
             "Persona": ["IT staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "security requirements",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "data",
+                    "security requirements",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "data",
                 "security requirements"
@@ -381,6 +555,18 @@
                 "ensure",
                 "add"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "add",
+                    "detail",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "descriptions",
+                    "detail",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "descriptions",
                 "detail"
@@ -401,6 +587,25 @@
             ],
             "Action": ["have"],
             "Persona": ["data manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "description",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "collected data sets",
+                        "description",
+                        "preserve"
+                    ],
+                    [
+                        "project lifecycle",
+                        "description",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "collected data sets",
@@ -428,6 +633,10 @@
         "Benefit": {
             "Entity": [],
             "Action": ["quickly writing"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can save time through quickly writing it.",
             "Targets": []
@@ -441,6 +650,18 @@
             ],
             "Action": ["know"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "topics",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "all dmps",
+                    "topics",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "all DMPs",
                 "topics"
@@ -469,6 +690,32 @@
                 "data"
             ],
             "Action": ["decide"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "decide",
+                        "collection",
+                        "preserve"
+                    ],
+                    [
+                        "decide",
+                        "repository",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "collection",
+                        "data",
+                        "preserve"
+                    ],
+                    [
+                        "repository",
+                        "data",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "repository",
@@ -500,6 +747,18 @@
             ],
             "Action": ["know"],
             "Persona": ["data manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "content",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "data",
+                    "content",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "data",
                 "content"
@@ -525,6 +784,10 @@
                 "ethical standards"
             ],
             "Action": ["review"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "an Ethics Committee can review this for compliance with ethical standards.",
             "Targets": []
@@ -538,6 +801,18 @@
             ],
             "Action": ["record"],
             "Persona": ["PI"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "record",
+                    "information",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "dmp",
+                    "information",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "DMP",
                 "information"
@@ -568,6 +843,14 @@
         "Benefit": {
             "Entity": ["sharing options"],
             "Action": ["establish"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "establish",
+                    "sharing options",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can establish sharing options.",
             "Targets": [[
@@ -581,6 +864,14 @@
             "Entity": ["data sensitivity"],
             "Action": ["know"],
             "Persona": ["legalofficer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "data sensitivity",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As a legalofficer, I want to know about data sensitivity, ",
             "Triggers": [[
@@ -602,6 +893,18 @@
                 "data catalogue"
             ],
             "Action": ["import"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "import",
+                    "metadata",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "data catalogue",
+                    "metadata",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "data catalogue",
                 "metadata"
@@ -623,6 +926,25 @@
             ],
             "Action": ["extract"],
             "Persona": ["data librarian"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "extract",
+                    "pointers",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "dmp",
+                        "pointers",
+                        "create;delete"
+                    ],
+                    [
+                        "metadata",
+                        "pointers",
+                        "create;delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "DMP",
@@ -654,6 +976,14 @@
         "Benefit": {
             "Entity": ["overall storage consumption"],
             "Action": ["plan"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "plan",
+                    "overall storage consumption",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can plan the overall storage consumption.",
             "Targets": [[
@@ -670,6 +1000,18 @@
             ],
             "Action": ["have"],
             "Persona": ["IT staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "estimate",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "produced data volume",
+                    "estimate",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "produced data volume",
                 "estimate"
@@ -691,6 +1033,14 @@
         "Benefit": {
             "Entity": ["funder specific obligations"],
             "Action": ["track"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "track",
+                    "funder specific obligations",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can track the funder specific obligations.",
             "Targets": [[
@@ -711,6 +1061,25 @@
                 "funded"
             ],
             "Persona": ["administrator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "who",
+                        "preserve"
+                    ],
+                    [
+                        "funded",
+                        "project",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "who",
+                    "requirements",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "who",
                 "requirements"
@@ -738,6 +1107,14 @@
         "Benefit": {
             "Entity": ["legal requirements"],
             "Action": ["apply"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "apply",
+                    "legal requirements",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can apply the legal requirements accordingly.",
             "Targets": [[
@@ -754,6 +1131,18 @@
             ],
             "Action": ["know"],
             "Persona": ["archivemanager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "legal status",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "data",
+                    "legal status",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "data",
                 "legal status"
@@ -778,6 +1167,21 @@
                 "functionalities"
             ],
             "Action": ["determine"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "determine",
+                        "basic support services",
+                        "create"
+                    ],
+                    [
+                        "determine",
+                        "functionalities",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can determine what basic support services and functionalities are required.",
             "Targets": [
@@ -801,6 +1205,26 @@
                 "collected"
             ],
             "Persona": ["data manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "kind of data types",
+                        "preserve"
+                    ],
+                    [
+                        "produced",
+                        "kind of data types",
+                        "create"
+                    ],
+                    [
+                        "collected",
+                        "kind of data types",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As a data manager, I want to know which kind of data types will be produced or collected, ",
             "Triggers": [[
@@ -832,6 +1256,21 @@
                 "functionalities"
             ],
             "Action": ["determine"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "determine",
+                        "basic support services",
+                        "create"
+                    ],
+                    [
+                        "determine",
+                        "functionalities",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can determine what basic support services and functionalities are required.",
             "Targets": [
@@ -855,6 +1294,26 @@
                 "collected"
             ],
             "Persona": ["IT staff member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "kind of data types",
+                        "preserve"
+                    ],
+                    [
+                        "produced",
+                        "kind of data types",
+                        "create"
+                    ],
+                    [
+                        "collected",
+                        "kind of data types",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As an IT staff member, I want to know which kind of data types will be produced or collected, ",
             "Triggers": [[
@@ -889,6 +1348,21 @@
                 "better organize",
                 "adapting"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "better organize",
+                        "service",
+                        "create"
+                    ],
+                    [
+                        "adapting",
+                        "preservation actions",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can better organize the service by adapting the preservation actions.",
             "Targets": [
@@ -911,6 +1385,18 @@
             ],
             "Action": ["know in advance"],
             "Persona": ["archivemanager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know in advance",
+                    "conservation period",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "data",
+                    "conservation period",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "data",
                 "conservation period"
@@ -935,6 +1421,21 @@
                 "curate",
                 "preserve"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "curate",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "preserve",
+                        "data",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can curate and preserve the data.",
             "Targets": [
@@ -960,6 +1461,25 @@
                 "managing"
             ],
             "Persona": ["data manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "document",
+                        "all rights",
+                        "create"
+                    ],
+                    [
+                        "managing",
+                        "data",
+                        "preserve;delete;create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "data",
+                    "all rights",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "data",
                 "all rights"
@@ -993,6 +1513,21 @@
                 "check",
                 "maintaining"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "maintaining",
+                        "intellectual reusability",
+                        "preserve"
+                    ],
+                    [
+                        "check",
+                        "necessary expertise",
+                        "preserve;forbid"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can check whether the necessary expertise for maintaining intellectual reusability is available.",
             "Targets": [
@@ -1015,6 +1550,18 @@
             ],
             "Action": ["know"],
             "Persona": ["data manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "content",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "data",
+                    "content",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "data",
                 "content"
@@ -1039,6 +1586,21 @@
                 "check",
                 "implemented"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "check",
+                        "dmp",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "implemented",
+                        "dmp",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can check that the DMP has been implemented.",
             "Targets": [
@@ -1062,6 +1624,25 @@
             ],
             "Action": ["access"],
             "Persona": ["research head"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "access",
+                    "persistent identifiers",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "datasets",
+                        "persistent identifiers",
+                        "preserve;create"
+                    ],
+                    [
+                        "dmp",
+                        "persistent identifiers",
+                        "preserve;create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "datasets",
@@ -1092,6 +1673,14 @@
                 "check",
                 "work"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "check",
+                    "policies",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can check whether our policies work as intended.",
             "Targets": [[
@@ -1109,6 +1698,18 @@
             ],
             "Action": ["read"],
             "Persona": ["funder"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "read",
+                    "costs",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "data management",
+                    "costs",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "data management",
@@ -1140,6 +1741,10 @@
                 "accurate and standardized information"
             ],
             "Action": ["ensuring"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "DMP",
                 "accurate and standardized information"
@@ -1160,6 +1765,25 @@
                 "prepopulate"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "want",
+                        "dmp",
+                        "create"
+                    ],
+                    [
+                        "prepopulate",
+                        "information",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "institutional systems",
+                    "information",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "institutional systems",
                 "information"
@@ -1193,6 +1817,14 @@
                 "know",
                 "updated"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "how up-to-date",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I know how up-to-date the plan is or whether it needs to be updated.",
             "Targets": [[
@@ -1213,6 +1845,26 @@
                 "updated"
             ],
             "Persona": ["stakeholder"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "when",
+                        "preserve"
+                    ],
+                    [
+                        "created",
+                        "data management plan",
+                        "create"
+                    ],
+                    [
+                        "updated",
+                        "data management plan",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As a stakeholder, I want to know when the data management plan was created or updated, ",
             "Triggers": [[
@@ -1244,6 +1896,14 @@
         "Benefit": {
             "Entity": ["further details"],
             "Action": ["ask"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "ask",
+                    "further details",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can ask them about further details.",
             "Targets": [[
@@ -1260,6 +1920,14 @@
             ],
             "Action": ["know"],
             "Persona": ["stakeholder"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "who is responsible",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As a stakeholder, I want to know who is responsible for the DMP, ",
             "Triggers": [[
@@ -1278,6 +1946,14 @@
         "Benefit": {
             "Entity": ["further general information"],
             "Action": ["look up"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "look up",
+                    "further general information",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can look up further general information.",
             "Targets": [[
@@ -1294,6 +1970,18 @@
             ],
             "Action": ["have"],
             "Persona": ["stakeholder"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "references",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "project proposal",
+                    "references",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "project proposal",
                 "references"
@@ -1318,6 +2006,10 @@
         "Benefit": {
             "Entity": ["metadata description"],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can be informed about the metadata description.",
             "Targets": []
@@ -1331,6 +2023,18 @@
             ],
             "Action": ["have"],
             "Persona": ["metadata manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "short description",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "project",
+                    "short description",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "project",
                 "short description"
@@ -1352,6 +2056,14 @@
         "Benefit": {
             "Entity": ["long term resources"],
             "Action": ["plan"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "plan",
+                    "long term resources",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can plan long term resources.",
             "Targets": [[
@@ -1371,6 +2083,21 @@
                 "stored"
             ],
             "Persona": ["rector"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "how many",
+                        "preserve"
+                    ],
+                    [
+                        "stored",
+                        "data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As a rector, I want to know how many data will be stored, ",
             "Triggers": [[
@@ -1395,6 +2122,14 @@
         "Benefit": {
             "Entity": ["data management"],
             "Action": ["plan"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "plan",
+                    "data management",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can plan the data management.",
             "Targets": [[
@@ -1414,6 +2149,25 @@
                 "collecting"
             ],
             "Persona": ["data manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "time plan",
+                        "preserve"
+                    ],
+                    [
+                        "collecting",
+                        "data",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "data",
+                    "time plan",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "data",
                 "time plan"
@@ -1441,6 +2195,14 @@
         "Benefit": {
             "Entity": ["DMP"],
             "Action": ["prepopulate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "prepopulate",
+                    "dmp",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can prepopulate the DMP.",
             "Targets": [[
@@ -1458,6 +2220,25 @@
             ],
             "Action": ["import"],
             "Persona": ["data librarian"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "import",
+                    "administrative information",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "dmp",
+                        "administrative information",
+                        "create"
+                    ],
+                    [
+                        "project",
+                        "administrative information",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "DMP",
@@ -1488,6 +2269,18 @@
                 "project"
             ],
             "Action": ["estimate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "estimate",
+                    "true cost",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "project",
+                    "true cost",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "project",
                 "true cost"
@@ -1508,6 +2301,21 @@
             ],
             "Action": ["know"],
             "Persona": ["manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "all resources",
+                        "preserve"
+                    ],
+                    [
+                        "know",
+                        "services used",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As a manager, I want to know about all resources and services used for the data, ",
             "Triggers": [[
@@ -1535,6 +2343,18 @@
                 "file validation"
             ],
             "Action": ["apply"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "apply",
+                    "automated checks",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": [[
+                    "file validation",
+                    "automated checks",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "file validation",
                 "automated checks"
@@ -1554,6 +2374,18 @@
             ],
             "Action": ["reuse"],
             "Persona": ["archivemanager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "reuse",
+                    "information",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": [[
+                    "file format",
+                    "information",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "file format",
                 "information"
@@ -1575,6 +2407,14 @@
         "Benefit": {
             "Entity": ["costs"],
             "Action": ["calculate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "calculate",
+                    "costs",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can calculate costs.",
             "Targets": [[
@@ -1592,6 +2432,14 @@
             ],
             "Action": ["know"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "how many",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "project",
                 "resources"
@@ -1616,6 +2464,14 @@
                 "reuse",
                 "writing"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "writing",
+                    "data paper",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can reuse it for the writing of a data paper.",
             "Targets": [[
@@ -1632,6 +2488,18 @@
             ],
             "Action": ["extract"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "extract",
+                    "description",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": [[
+                    "data collected",
+                    "description",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "data collected",
                 "description"
@@ -1660,6 +2528,18 @@
                 "project"
             ],
             "Action": ["generate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "generate",
+                    "reports",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "reports",
+                    "research output",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "project",
@@ -1687,6 +2567,25 @@
             ],
             "Action": ["record"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "record",
+                    "research publications",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "institutional repository",
+                        "research publications",
+                        "create"
+                    ],
+                    [
+                        "cris",
+                        "research publications",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "institutional repository",
@@ -1726,6 +2625,18 @@
                 "project"
             ],
             "Action": ["generate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "generate",
+                    "reports",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "reports",
+                    "research output",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "project",
@@ -1753,6 +2664,25 @@
             ],
             "Action": ["link"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "link",
+                    "research publications",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "institutional repository",
+                        "research publications",
+                        "create"
+                    ],
+                    [
+                        "cris",
+                        "research publications",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "institutional repository",
@@ -1792,6 +2722,26 @@
                 "attributed",
                 "used correctly"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "cited",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "attributed",
+                        "data",
+                        "preserve"
+                    ],
+                    [
+                        "used correctly",
+                        "data",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "the data can be cited, attributed and used correctly.",
             "Targets": [
@@ -1819,6 +2769,14 @@
             ],
             "Action": ["store"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "store",
+                    "agreements",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "project",
                 "third party data"
@@ -1843,6 +2801,18 @@
                 "data"
             ],
             "Action": ["check"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "check",
+                    "sensitivity",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": [[
+                    "data",
+                    "sensitivity",
+                    "preserve;forbid"
+                ]]
+            },
             "Contains": [[
                 "data",
                 "sensitivity"
@@ -1859,6 +2829,14 @@
             "Entity": ["data"],
             "Action": ["be informed"],
             "Persona": ["ethics manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "be informed",
+                    "data",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As an ethics manager, I want to be informed about the data, ",
             "Triggers": [[
@@ -1880,6 +2858,21 @@
                 "system"
             ],
             "Action": ["evaluate"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "evaluate",
+                        "storage size",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "evaluate",
+                        "system",
+                        "preserve;forbid"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can evaluate the storage size and system.",
             "Targets": [
@@ -1899,6 +2892,14 @@
             "Entity": ["kind of data"],
             "Action": ["know"],
             "Persona": ["repository operator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "kind of data",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As a repository operator, I want to know about the kind of data, ",
             "Triggers": [[
@@ -1917,6 +2918,14 @@
         "Benefit": {
             "Entity": ["research"],
             "Action": ["plan"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "plan",
+                    "research",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can plan my research.",
             "Targets": [[
@@ -1930,6 +2939,14 @@
             "Entity": ["costs"],
             "Action": ["know"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "costs",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As a researcher, I want to know about costs, ",
             "Triggers": [[
@@ -1951,6 +2968,21 @@
                 "check",
                 "arranged"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "check",
+                        "archiving",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "arranged",
+                        "archiving",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can check if the archiving can be arranged.",
             "Targets": [
@@ -1973,6 +3005,18 @@
             ],
             "Action": ["need"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "need",
+                    "details",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "type of data",
+                    "details",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "type of data",
                 "details"
@@ -1994,6 +3038,14 @@
         "Benefit": {
             "Entity": ["legal compliance"],
             "Action": ["ensure"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "ensure",
+                    "legal compliance",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can ensure legal compliance.",
             "Targets": [[
@@ -2010,6 +3062,14 @@
             ],
             "Action": ["know"],
             "Persona": ["IT officer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "how secure",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As an IT officer, I want to know how secure data is, ",
             "Triggers": [[
@@ -2028,6 +3088,14 @@
         "Benefit": {
             "Entity": ["legal compliance"],
             "Action": ["ensure"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "ensure",
+                    "legal compliance",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can ensure legal compliance.",
             "Targets": [[
@@ -2044,6 +3112,14 @@
             ],
             "Action": ["know"],
             "Persona": ["funder"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "how secure",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As a funder, I want to know how secure data is, ",
             "Triggers": [[
@@ -2067,6 +3143,18 @@
                 "postgraduate students"
             ],
             "Action": ["understand"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "understand",
+                    "trends",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "data use",
+                    "trends",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "data use",
                 "trends"
@@ -2086,6 +3174,18 @@
             ],
             "Action": ["receive"],
             "Persona": ["Research Centre Director"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "receive",
+                    "regular summary reports",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "regular summary reports",
+                    "research data",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "regular summary reports",
                 "research data"
@@ -2112,6 +3212,18 @@
                 "postgraduate students"
             ],
             "Action": ["understand"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "understand",
+                    "trends",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "data use",
+                    "trends",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "data use",
                 "trends"
@@ -2131,6 +3243,18 @@
             ],
             "Action": ["receive"],
             "Persona": ["Postgraduate Convenor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "receive",
+                    "regular summary reports",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "research data",
+                    "regular summary reports",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "research data",
                 "regular summary reports"
@@ -2155,6 +3279,14 @@
                 "ensure",
                 "accepted"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "accepted",
+                    "all costs",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can ensure all costs will be accepted.",
             "Targets": [[
@@ -2171,6 +3303,14 @@
             ],
             "Action": ["ensure"],
             "Persona": ["research support officer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "ensure",
+                    "compliance ",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As a research support officer, I want to ensure compliance to the funders\u2019 rules, ",
             "Triggers": [[
@@ -2195,6 +3335,25 @@
                 "verify",
                 "followed"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "followed",
+                        "funding rules",
+                        "preserve"
+                    ],
+                    [
+                        "verify",
+                        "project",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "project",
+                    "funding rules",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "project",
                 "funding rules"
@@ -2220,6 +3379,18 @@
             ],
             "Action": ["check"],
             "Persona": ["funder"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "check",
+                    "repositories mentioned",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": [[
+                    "dmp",
+                    "repositories mentioned",
+                    "preserve;forbid"
+                ]]
+            },
             "Contains": [[
                 "DMP",
                 "repositories mentioned"
@@ -2244,6 +3415,10 @@
                 "ensure",
                 "store"
             ],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can ensure it will be possible to store it.",
             "Targets": []
@@ -2254,6 +3429,14 @@
             "Entity": ["kind of data I want to store"],
             "Action": ["plan"],
             "Persona": ["PI"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "plan",
+                    "kind of data i want to store",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As a PI, I want to plan what kind of data I want to store, ",
             "Triggers": [[
@@ -2275,6 +3458,14 @@
         "Benefit": {
             "Entity": ["legal compliance"],
             "Action": ["ensure"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "ensure",
+                    "legal compliance",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can ensure legal compliance.",
             "Targets": [[
@@ -2291,6 +3482,14 @@
             ],
             "Action": ["know"],
             "Persona": ["PI"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "how secure",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As a PI, I want to know how secure data is, ",
             "Triggers": [[
@@ -2315,6 +3514,25 @@
                 "confirm",
                 "applied"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "confirm",
+                        "security protocols",
+                        "create"
+                    ],
+                    [
+                        "applied",
+                        "security protocols",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "data",
+                    "security protocols",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "data",
                 "security protocols"
@@ -2345,6 +3563,25 @@
                 "classified"
             ],
             "Persona": ["Director of Research Integrity"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "access",
+                        "reports",
+                        "preserve;create"
+                    ],
+                    [
+                        "classified",
+                        "data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "reports",
+                    "details",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [
                 [
                     "reports",
@@ -2378,6 +3615,14 @@
         "Benefit": {
             "Entity": ["adequate storage infrastructure"],
             "Action": ["provide"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "provide",
+                    "adequate storage infrastructure",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can provide the adequate storage infrastructure.",
             "Targets": [[
@@ -2396,6 +3641,18 @@
             ],
             "Action": ["get"],
             "Persona": ["archive"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "information",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "volume",
+                    "information",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [
                 [
                     "volume",
@@ -2423,6 +3680,14 @@
         "Benefit": {
             "Entity": ["further steps"],
             "Action": ["plan"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "plan",
+                    "further steps",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can plan further steps.",
             "Targets": [[
@@ -2439,6 +3704,14 @@
                 "archive"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "how long",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As a researcher, I want to know how long it will take to archive, ",
             "Triggers": [[
@@ -2457,6 +3730,14 @@
         "Benefit": {
             "Entity": ["what"],
             "Action": ["know"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "what",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I know what I am allowed to do with it.",
             "Targets": [[
@@ -2473,6 +3754,18 @@
             ],
             "Action": ["know"],
             "Persona": ["PI"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "who",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "who",
+                    "data",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "who",
                 "data"
@@ -2497,6 +3790,21 @@
                 "re-used",
                 "managed"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "re-used",
+                        "data",
+                        "create;delete"
+                    ],
+                    [
+                        "managed",
+                        "data",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "the data can be re-used and managed.",
             "Targets": [
@@ -2521,6 +3829,32 @@
             ],
             "Action": ["have"],
             "Persona": ["data manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "references",
+                        "preserve"
+                    ],
+                    [
+                        "have",
+                        "creation process",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "documentation",
+                        "references",
+                        "preserve"
+                    ],
+                    [
+                        "documentation",
+                        "creation process",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "documentation",
@@ -2558,6 +3892,10 @@
         "Benefit": {
             "Entity": ["future users"],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "it will be understandable by future users.",
             "Targets": []
@@ -2574,6 +3912,18 @@
                 "associated"
             ],
             "Persona": ["archivemanager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "associated",
+                    "detailed metadata",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "data",
+                    "detailed metadata",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "data",
                 "detailed metadata"
@@ -2598,6 +3948,10 @@
                 "technical know-how"
             ],
             "Action": ["ensure"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can ensure that the necessary technical resources and technical know-how is available.",
             "Targets": []
@@ -2612,6 +3966,26 @@
                 "collected"
             ],
             "Persona": ["data manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "kind of data types",
+                        "preserve"
+                    ],
+                    [
+                        "produced",
+                        "kind of data types",
+                        "create"
+                    ],
+                    [
+                        "collected",
+                        "kind of data types",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As a data manager, I want to know which kind of data types will be produced or collected, ",
             "Triggers": [[
@@ -2643,6 +4017,10 @@
                 "technical know-how"
             ],
             "Action": ["ensure"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can ensure that the necessary technical resources and technical know-how is available.",
             "Targets": []
@@ -2657,6 +4035,26 @@
                 "collected"
             ],
             "Persona": ["IT staff member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "kind of data types",
+                        "preserve"
+                    ],
+                    [
+                        "produced",
+                        "kind of data types",
+                        "create"
+                    ],
+                    [
+                        "collected",
+                        "kind of data types",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As an IT staff member, I want to know which kind of data types will be produced or collected, ",
             "Triggers": [[
@@ -2688,6 +4086,21 @@
                 "functionalities"
             ],
             "Action": ["determine"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "determine",
+                        "kind of basic services",
+                        "create"
+                    ],
+                    [
+                        "determine",
+                        "functionalities",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can determine what kind of basic services and functionalities are required.",
             "Targets": [
@@ -2713,6 +4126,21 @@
                 "used"
             ],
             "Persona": ["IT staff member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "how",
+                        "preserve"
+                    ],
+                    [
+                        "used",
+                        "data",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As an IT staff member, I want to know how the data is used, ",
             "Triggers": [[
@@ -2740,6 +4168,14 @@
                 "ensure",
                 "maintained"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "maintained",
+                    "dependencies",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can ensure that these dependencies are maintained.",
             "Targets": [[
@@ -2757,6 +4193,10 @@
             ],
             "Action": ["know"],
             "Persona": ["data manager"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "own or other institutions",
                 "other data sets"
@@ -2778,6 +4218,21 @@
                 "functionalities"
             ],
             "Action": ["determine"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "determine",
+                        "kind of technical services",
+                        "create"
+                    ],
+                    [
+                        "determine",
+                        "functionalities",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can determine what kind of technical services and functionalities are required.",
             "Targets": [
@@ -2800,6 +4255,21 @@
                 "used"
             ],
             "Persona": ["IT staff member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "formats",
+                        "preserve"
+                    ],
+                    [
+                        "used",
+                        "formats",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As an IT staff member, I want to know which formats are used, ",
             "Triggers": [[
@@ -2827,6 +4297,21 @@
                 "functionalities"
             ],
             "Action": ["determine"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "determine",
+                        "kind of technical services",
+                        "create"
+                    ],
+                    [
+                        "determine",
+                        "functionalities",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can determine what kind of technical services and functionalities are required.",
             "Targets": [
@@ -2854,6 +4339,42 @@
                 "used"
             ],
             "Persona": ["IT staff member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "software",
+                        "preserve"
+                    ],
+                    [
+                        "produced",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "used",
+                        "data",
+                        "preserve"
+                    ],
+                    [
+                        "know",
+                        "technology",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "software",
+                        "data",
+                        "preserve"
+                    ],
+                    [
+                        "technology",
+                        "data",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "software",
@@ -2902,6 +4423,14 @@
                 "checked",
                 "re-using"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "re-using",
+                    "data",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "researchers",
                 "all necessary information"
@@ -2924,6 +4453,21 @@
                 "re-use"
             ],
             "Persona": ["data manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "information",
+                        "preserve"
+                    ],
+                    [
+                        "re-use",
+                        "data",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As a data manager, I want to know which information is necessary to re-use the data, ",
             "Triggers": [[
@@ -2958,6 +4502,26 @@
                 "know",
                 "use"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "technology",
+                        "preserve"
+                    ],
+                    [
+                        "know",
+                        "background information",
+                        "preserve"
+                    ],
+                    [
+                        "use",
+                        "data",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I know what technology or background information might be necessary to use the data.",
             "Targets": [
@@ -2984,6 +4548,21 @@
                 "used"
             ],
             "Persona": ["data manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "formats",
+                        "preserve"
+                    ],
+                    [
+                        "used",
+                        "formats",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As a data manager, I want to know which formats are used, ",
             "Triggers": [[
@@ -3014,6 +4593,21 @@
                 "determine",
                 "stored"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "determine",
+                        "how",
+                        "create"
+                    ],
+                    [
+                        "stored",
+                        "data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can determine whether and how the data has to be stored.",
             "Targets": [
@@ -3036,6 +4630,14 @@
                 "reproduced efficiently"
             ],
             "Persona": ["data manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "reproduced efficiently",
+                    "data",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As a data manager, I want to know whether the data can be reproduced efficiently, ",
             "Triggers": [[
@@ -3061,6 +4663,26 @@
                 "know",
                 "(re-)use"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "technology",
+                        "preserve"
+                    ],
+                    [
+                        "know",
+                        "background information",
+                        "preserve"
+                    ],
+                    [
+                        "(re-)use",
+                        "data",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I know what technology or background information might be necessary to (re-)use the data.",
             "Targets": [
@@ -3092,6 +4714,42 @@
                 "used"
             ],
             "Persona": ["data manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "software",
+                        "preserve"
+                    ],
+                    [
+                        "know",
+                        "technology",
+                        "preserve"
+                    ],
+                    [
+                        "produced",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "used",
+                        "data",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "software",
+                        "data",
+                        "preserve"
+                    ],
+                    [
+                        "technology",
+                        "data",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "technology",
@@ -3133,6 +4791,10 @@
         "Benefit": {
             "Entity": ["citation counts"],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "they are counted towards our citation counts.",
             "Targets": []
@@ -3149,6 +4811,18 @@
                 "quoted correctly"
             ],
             "Persona": ["research evaluation manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "quoted correctly",
+                    "all data",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": [[
+                    "all data",
+                    "affiliation",
+                    "preserve;forbid"
+                ]]
+            },
             "Contains": [[
                 "all data",
                 "affiliation"
@@ -3170,6 +4844,14 @@
         "Benefit": {
             "Entity": ["compliance"],
             "Action": ["demonstrate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "demonstrate",
+                    "compliance",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can demonstrate compliance.",
             "Targets": [[
@@ -3186,6 +4868,18 @@
             ],
             "Action": ["check"],
             "Persona": ["administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "check",
+                    "all data",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": [[
+                    "all data",
+                    "appropriate security level",
+                    "preserve;forbid"
+                ]]
+            },
             "Contains": [[
                 "all data",
                 "appropriate security level"
@@ -3210,6 +4904,14 @@
                 "check",
                 "kept secure"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "kept secure",
+                    "data",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can check whether the data can be kept secure.",
             "Targets": [[
@@ -3226,6 +4928,18 @@
             ],
             "Action": ["know"],
             "Persona": ["data manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "security requirements",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "data",
+                    "security requirements",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "data",
                 "security requirements"
@@ -3247,6 +4961,10 @@
         "Benefit": {
             "Entity": ["institutional data catalogue"],
             "Action": ["add"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can add them to an institutional data catalogue.",
             "Targets": []
@@ -3260,6 +4978,18 @@
             ],
             "Action": ["extract"],
             "Persona": ["institutional data steward"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "extract",
+                    "data sets",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": [[
+                    "external repositories",
+                    "data sets",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "external repositories",
                 "data sets"
@@ -3293,6 +5023,21 @@
                 "sharing permissions"
             ],
             "Action": ["plan"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "plan",
+                        "right storage system",
+                        "create"
+                    ],
+                    [
+                        "plan",
+                        "sharing permissions",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can plan the right storage system and sharing permissions.",
             "Targets": [
@@ -3316,6 +5061,32 @@
             ],
             "Action": ["know"],
             "Persona": ["institutional data manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "privacy",
+                        "preserve"
+                    ],
+                    [
+                        "know",
+                        "security requirements",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "data",
+                        "privacy",
+                        "preserve"
+                    ],
+                    [
+                        "data",
+                        "security requirements",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "data",
@@ -3352,6 +5123,14 @@
                 "see",
                 "share"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "share",
+                    "data manager posts",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can see if we could share data manager posts.",
             "Targets": [[
@@ -3370,6 +5149,18 @@
             ],
             "Action": ["see"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "sections",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "sections",
+                    "costing",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "sections",
@@ -3404,6 +5195,14 @@
                 "see",
                 "share"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "share",
+                    "data manager posts",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can see if we could share data manager posts.",
             "Targets": [[
@@ -3425,6 +5224,32 @@
                 "submitted"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "see",
+                        "sections",
+                        "preserve"
+                    ],
+                    [
+                        "submitted",
+                        "roles",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "sections",
+                        "roles",
+                        "preserve"
+                    ],
+                    [
+                        "other researchers",
+                        "roles",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "department",
@@ -3465,6 +5290,14 @@
                 "see",
                 "share"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "share",
+                    "data manager posts",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can see if we could share data manager posts.",
             "Targets": [[
@@ -3486,6 +5319,32 @@
                 "submitted"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "see",
+                        "sections",
+                        "preserve"
+                    ],
+                    [
+                        "submitted",
+                        "responsibilities",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "sections",
+                        "responsibilities",
+                        "preserve"
+                    ],
+                    [
+                        "other researchers",
+                        "responsibilities",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "department",
@@ -3530,6 +5389,32 @@
                 "ensure",
                 "support"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "ensure",
+                        "sufficient expertise",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "support",
+                        "project",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "data management",
+                        "sufficient expertise",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "project",
+                        "data management",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "data management",
@@ -3561,6 +5446,18 @@
             ],
             "Action": ["see"],
             "Persona": ["faculty data steward"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "sections",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "sections",
+                    "costing",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "sections",
                 "costing"
@@ -3589,6 +5486,32 @@
                 "ensure",
                 "support"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "ensure",
+                        "sufficient expertise",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "support",
+                        "project",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "data management",
+                        "sufficient expertise",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "project",
+                        "data management",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "data management",
@@ -3620,6 +5543,18 @@
             ],
             "Action": ["see"],
             "Persona": ["faculty data steward"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "sections",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "sections",
+                    "roles",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "sections",
                 "roles"
@@ -3648,6 +5583,32 @@
                 "ensure",
                 "support"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "support",
+                        "project",
+                        "preserve"
+                    ],
+                    [
+                        "ensure",
+                        "sufficient expertise",
+                        "preserve;forbid"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "project",
+                        "data management",
+                        "preserve"
+                    ],
+                    [
+                        "data management",
+                        "sufficient expertise",
+                        "preserve;forbid"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "data management",
@@ -3679,6 +5640,18 @@
             ],
             "Action": ["see"],
             "Persona": ["faculty data steward,"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "sections",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "sections",
+                    "responsibilities",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "sections",
                 "responsibilities"
@@ -3700,6 +5673,14 @@
         "Benefit": {
             "Entity": ["data"],
             "Action": ["reuse"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "reuse",
+                    "data",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "it is legal to reuse the data.",
             "Targets": [[
@@ -3719,6 +5700,25 @@
                 "re-using"
             ],
             "Persona": ["data manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "clarify",
+                        "necessary rights",
+                        "create;delete"
+                    ],
+                    [
+                        "re-using",
+                        "data",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "data",
+                    "necessary rights",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "data",
                 "necessary rights"
@@ -3753,6 +5753,25 @@
                 "use",
                 "understand"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "data",
+                        "preserve"
+                    ],
+                    [
+                        "understand",
+                        "rights of use",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "data",
+                    "rights of use",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "data",
                 "rights of use"
@@ -3783,6 +5802,21 @@
                 "share"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "record",
+                        "intention",
+                        "create"
+                    ],
+                    [
+                        "share",
+                        "data i have collected",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "particular licence",
                 "terms"
@@ -3819,6 +5853,30 @@
                 "participating",
                 "still ensure"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "participating",
+                        "research",
+                        "create"
+                    ],
+                    [
+                        "still ensure",
+                        "reusability of data",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "protect",
+                        "privacy",
+                        "create;preserve;forbid"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "people",
+                    "privacy",
+                    "create;preserve;forbid"
+                ]]
+            },
             "Contains": [[
                 "people",
                 "privacy"
@@ -3845,6 +5903,14 @@
             "Entity": ["anonymization of data"],
             "Action": ["plan"],
             "Persona": ["data manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "plan",
+                    "anonymization of data",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As a data manager, I want to plan the anonymization of data, ",
             "Triggers": [[
@@ -3863,6 +5929,14 @@
         "Benefit": {
             "Entity": ["multilingual data archive"],
             "Action": ["allow"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "allow",
+                    "multilingual data archive",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can allow for multilingual data archive.",
             "Targets": [[
@@ -3879,6 +5953,18 @@
             ],
             "Action": ["have"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "metadata",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "metadata",
+                    "additional languages",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "metadata",
                 "additional languages"
@@ -3900,6 +5986,14 @@
         "Benefit": {
             "Entity": ["required next steps"],
             "Action": ["proceed"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "proceed",
+                    "required next steps",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can proceed with the required next steps.",
             "Targets": [[
@@ -3916,6 +6010,14 @@
                 "approved"
             ],
             "Persona": ["data manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "approved",
+                    "dmp",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G22# As a data manager, I want to know whether the DMP was approved, ",
             "Triggers": [[

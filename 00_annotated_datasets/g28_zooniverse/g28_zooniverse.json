@@ -4,6 +4,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -21,6 +25,31 @@
                 "using"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "search",
+                        "music",
+                        "preserve;create"
+                    ],
+                    [
+                        "discover",
+                        "music",
+                        "create"
+                    ],
+                    [
+                        "using",
+                        "content identification",
+                        "preserve"
+                    ],
+                    [
+                        "using",
+                        "fingerprinting",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [
                 [
@@ -58,6 +87,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -73,6 +106,21 @@
                 "discover"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "search",
+                        "music",
+                        "preserve;create"
+                    ],
+                    [
+                        "discover",
+                        "music",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [
                 [
@@ -102,6 +150,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -117,6 +169,25 @@
                 "discover"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "discover",
+                        "music",
+                        "create"
+                    ],
+                    [
+                        "search",
+                        "music",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "other users similar to myself",
+                    "music",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "other users similar to myself",
                 "music"
@@ -149,6 +220,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -166,6 +241,31 @@
                 "discover"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "discover",
+                        "music",
+                        "create"
+                    ],
+                    [
+                        "discover",
+                        "ringback tones",
+                        "create"
+                    ],
+                    [
+                        "search",
+                        "ringback tones",
+                        "preserve;create"
+                    ],
+                    [
+                        "search",
+                        "music",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "given music video",
                 "content similarity"
@@ -210,6 +310,26 @@
                 "other relevant listening path"
             ],
             "Action": ["find"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "find",
+                        "related artists",
+                        "create"
+                    ],
+                    [
+                        "find",
+                        "new genre",
+                        "create"
+                    ],
+                    [
+                        "find",
+                        "other relevant listening path",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I find related artists, new genre, or other relevant listening path.",
             "Targets": [
@@ -241,6 +361,31 @@
                 "exploiting"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "search",
+                        "music",
+                        "preserve;create"
+                    ],
+                    [
+                        "discover",
+                        "music",
+                        "create"
+                    ],
+                    [
+                        "exploiting",
+                        "enriched metadata",
+                        "create;delete"
+                    ],
+                    [
+                        "exploiting",
+                        "image tags",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G28# As a user, I want to search and discover music by exploiting enriched metadata and image tags, ",
             "Triggers": [
@@ -279,6 +424,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -295,6 +444,32 @@
                 "have"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "upload",
+                        "tagged videos",
+                        "create"
+                    ],
+                    [
+                        "have",
+                        "tags",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "tagged videos",
+                        "tags",
+                        "create"
+                    ],
+                    [
+                        "all further processing steps",
+                        "tags",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "all further processing steps",
@@ -333,6 +508,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -345,6 +524,18 @@
             ],
             "Action": ["view"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "view",
+                    "thumbnail sequences",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "video segments",
+                    "thumbnail sequences",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "video segments",
                 "thumbnail sequences"
@@ -365,6 +556,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -378,6 +573,25 @@
             ],
             "Action": ["get"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "info",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "similar video items",
+                        "info",
+                        "preserve;create"
+                    ],
+                    [
+                        "segments",
+                        "info",
+                        "preserve;create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "similar video items",
@@ -404,6 +618,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -417,6 +635,25 @@
             ],
             "Action": ["get"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "info",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "perceptually similar video items",
+                        "info",
+                        "preserve;create"
+                    ],
+                    [
+                        "segments",
+                        "info",
+                        "preserve;create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "perceptually similar video items",
@@ -443,6 +680,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -455,6 +696,18 @@
             ],
             "Action": ["receive"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "receive",
+                    "content recommendations",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "similar profiles",
+                    "content recommendations",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "similar profiles",
                 "content recommendations"
@@ -475,6 +728,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -488,6 +745,14 @@
             ],
             "Action": ["receive"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "receive",
+                    "content recommendations",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "area",
                 "most relevant news events"
@@ -508,6 +773,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -524,6 +793,32 @@
                 "receive"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "identify",
+                        "persons",
+                        "preserve"
+                    ],
+                    [
+                        "receive",
+                        "related information",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "videos",
+                        "persons",
+                        "preserve"
+                    ],
+                    [
+                        "persons",
+                        "related information",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "videos",
@@ -562,6 +857,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -578,6 +877,32 @@
                 "receive"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "identify",
+                        "products",
+                        "preserve"
+                    ],
+                    [
+                        "receive",
+                        "related information",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "videos",
+                        "products",
+                        "preserve"
+                    ],
+                    [
+                        "products",
+                        "related information",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "videos",
@@ -616,6 +941,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -632,6 +961,25 @@
                 "receive"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "identify",
+                        "broadcaster logos",
+                        "preserve"
+                    ],
+                    [
+                        "receive",
+                        "related information",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "videos",
+                    "broadcaster logos",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "videos",
                 "broadcaster logos"
@@ -664,6 +1012,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -680,6 +1032,32 @@
                 "receive"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "identify",
+                        "brands",
+                        "preserve"
+                    ],
+                    [
+                        "receive",
+                        "related information",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "videos",
+                        "brands",
+                        "preserve"
+                    ],
+                    [
+                        "brands",
+                        "related information",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "videos",
@@ -722,6 +1100,14 @@
                 "image"
             ],
             "Action": ["recommended"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "recommended",
+                    "videos",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I am recommended with videos related to that picture or image.",
             "Targets": [[
@@ -741,6 +1127,21 @@
                 "upload"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "take",
+                        "picture",
+                        "create;delete"
+                    ],
+                    [
+                        "upload",
+                        "image",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G28# As a user, I want to take a picture or upload an image, ",
             "Triggers": [
@@ -771,6 +1172,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -793,6 +1198,57 @@
                 "covering"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "access",
+                        "content",
+                        "preserve;create"
+                    ],
+                    [
+                        "using",
+                        "geographical map",
+                        "preserve"
+                    ],
+                    [
+                        "covering",
+                        "area",
+                        "create"
+                    ],
+                    [
+                        "covering",
+                        "monuments",
+                        "create"
+                    ],
+                    [
+                        "covering",
+                        "any other relevant point of interest",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "geographical map",
+                        "content",
+                        "preserve;create"
+                    ],
+                    [
+                        "videos",
+                        "area",
+                        "create"
+                    ],
+                    [
+                        "videos",
+                        "monuments",
+                        "create"
+                    ],
+                    [
+                        "videos",
+                        "any other relevant point of interest",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "geographical map",
@@ -855,6 +1311,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -870,6 +1330,21 @@
                 "using"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "search",
+                        "content items",
+                        "preserve;create"
+                    ],
+                    [
+                        "using",
+                        "automatic speech recognition",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "user",
@@ -893,6 +1368,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -909,6 +1388,30 @@
                 "edit"
             ],
             "Persona": ["admin"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "see",
+                        "segmentation",
+                        "preserve"
+                    ],
+                    [
+                        "validate",
+                        "segmentation",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "edit",
+                        "segmentation",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "videos",
+                    "segmentation",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "videos",
                 "segmentation"
@@ -949,6 +1452,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -965,6 +1472,25 @@
                 "extract"
             ],
             "Persona": ["admin"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "annotate",
+                        "news video segments",
+                        "create"
+                    ],
+                    [
+                        "extract",
+                        "topic",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "each segment",
+                    "topic",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "each segment",
                 "topic"
@@ -997,6 +1523,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1012,6 +1542,25 @@
                 "rank"
             ],
             "Persona": ["admin"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "filter",
+                        "videos",
+                        "create;delete"
+                    ],
+                    [
+                        "rank",
+                        "videos",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "videos",
+                    "a/v quality aspects",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "videos",
                 "A/V quality aspects"
@@ -1044,6 +1593,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1060,6 +1613,32 @@
                 "edited before"
             ],
             "Persona": ["admin"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "get",
+                        "quick assessment",
+                        "preserve;create"
+                    ],
+                    [
+                        "edited before",
+                        "audio material",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "audio material",
+                        "quick assessment",
+                        "preserve;create"
+                    ],
+                    [
+                        "upload",
+                        "audio material",
+                        "create;delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "upload",
@@ -1092,6 +1671,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1101,6 +1684,14 @@
             "Entity": ["nudity content"],
             "Action": ["prefilter"],
             "Persona": ["admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "prefilter",
+                    "nudity content",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "admin",
@@ -1118,6 +1709,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1134,6 +1729,25 @@
                 "using"
             ],
             "Persona": ["admin"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "prefilter",
+                        "content",
+                        "create"
+                    ],
+                    [
+                        "using",
+                        "search",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "content",
+                    "low-level asset information",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "content",
                 "low-level asset information"
@@ -1160,6 +1774,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1172,6 +1790,18 @@
             ],
             "Action": ["automatically validated"],
             "Persona": ["admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "automatically validated",
+                    "ingested contents",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "ingested contents",
+                    "copyright infringement",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "ingested contents",
                 "copyright infringement"
@@ -1192,6 +1822,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1212,6 +1846,25 @@
                 "using"
             ],
             "Persona": ["admin"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "prefilter",
+                        "content",
+                        "create"
+                    ],
+                    [
+                        "using",
+                        "search",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "content",
+                    "high-level asset information",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "high-level asset information",
@@ -1252,6 +1905,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1268,6 +1925,14 @@
             ],
             "Action": ["assess"],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "assess",
+                    "how interesting or appealing or complex",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [
                 [
                     "picture",
@@ -1302,6 +1967,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1322,6 +1991,26 @@
                 "prompted"
             ],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "detect",
+                        "when",
+                        "create"
+                    ],
+                    [
+                        "prompted",
+                        "scientist",
+                        "preserve"
+                    ],
+                    [
+                        "look",
+                        "subject",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [
                 [
                     "Talk comments",
@@ -1358,6 +2047,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1367,6 +2060,14 @@
             "Entity": ["volunteer types"],
             "Action": ["identify"],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "identify",
+                    "volunteer types",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "Zooniverse admin",
@@ -1384,6 +2085,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1399,6 +2104,25 @@
                 "using"
             ],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "preclassify",
+                        "galaxy zoo images",
+                        "create"
+                    ],
+                    [
+                        "using",
+                        "simple low-level image features",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "galaxy zoo images",
+                    "simple low-level image features",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "Galaxy Zoo images",
                 "simple low-level image features"
@@ -1425,6 +2149,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1437,6 +2165,18 @@
             ],
             "Action": ["automatically detect"],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "automatically detect",
+                    "snapshot serengeti images",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "snapshot serengeti images",
+                    "no classifiable animals",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "Snapshot Serengeti images",
                 "no classifiable animals"
@@ -1457,6 +2197,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1471,6 +2215,18 @@
             ],
             "Action": ["perform"],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "perform",
+                    "automatic image series detection",
+                    "preserve;delete;create"
+                ]],
+                "Contain Action Rules": [[
+                    "snapshot serengeti images",
+                    "automatic image series detection",
+                    "preserve;delete;create"
+                ]]
+            },
             "Contains": [
                 [
                     "Snapshot Serengeti images",
@@ -1501,6 +2257,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1513,6 +2273,18 @@
             ],
             "Action": ["perform"],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "perform",
+                    "automatic animal species preclassification",
+                    "preserve;delete;create"
+                ]],
+                "Contain Action Rules": [[
+                    "snapshot serengeti",
+                    "automatic animal species preclassification",
+                    "preserve;delete;create"
+                ]]
+            },
             "Contains": [[
                 "Snapshot Serengeti",
                 "automatic animal species preclassification"
@@ -1533,6 +2305,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1545,6 +2321,18 @@
             ],
             "Action": ["perform"],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "perform",
+                    "automatic animal attribute preclassification",
+                    "preserve;delete;create"
+                ]],
+                "Contain Action Rules": [[
+                    "snapshot serengeti",
+                    "automatic animal attribute preclassification",
+                    "preserve;delete;create"
+                ]]
+            },
             "Contains": [[
                 "Snapshot Serengeti",
                 "automatic animal attribute preclassification"
@@ -1565,6 +2353,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1577,6 +2369,18 @@
             ],
             "Action": ["perform"],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "perform",
+                    "automatic animal number detection",
+                    "preserve;delete;create"
+                ]],
+                "Contain Action Rules": [[
+                    "snapshot serengeti",
+                    "automatic animal number detection",
+                    "preserve;delete;create"
+                ]]
+            },
             "Contains": [[
                 "Snapshot Serengeti",
                 "automatic animal number detection"
@@ -1597,6 +2401,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1611,6 +2419,42 @@
             ],
             "Action": ["perform"],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "perform",
+                        "automatic segmentation",
+                        "preserve;delete;create"
+                    ],
+                    [
+                        "perform",
+                        "localization",
+                        "preserve;delete;create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "plankton portal",
+                        "automatic segmentation",
+                        "preserve;delete;create"
+                    ],
+                    [
+                        "automatic segmentation",
+                        "plankton",
+                        "preserve;delete;create"
+                    ],
+                    [
+                        "plankton portal",
+                        "localization",
+                        "preserve;delete;create"
+                    ],
+                    [
+                        "localization",
+                        "plankton",
+                        "preserve;delete;create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "Plankton Portal",
@@ -1651,6 +2495,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1663,6 +2511,18 @@
             ],
             "Action": ["automatically detect"],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "automatically detect",
+                    "plankton portal images",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "plankton portal images",
+                    "no classifiable plankton",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "Plankton Portal images",
                 "no classifiable plankton"
@@ -1683,6 +2543,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1697,6 +2561,30 @@
             ],
             "Action": ["perform"],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "perform",
+                    "automatic detection",
+                    "preserve;delete;create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "plankton portal images",
+                        "automatic detection",
+                        "preserve;delete;create"
+                    ],
+                    [
+                        "automatic detection",
+                        "plankton size",
+                        "preserve;delete;create"
+                    ],
+                    [
+                        "automatic detection",
+                        "orientation",
+                        "preserve;delete;create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "Plankton Portal images",
@@ -1727,6 +2615,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1740,6 +2632,25 @@
             ],
             "Action": ["perform"],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "perform",
+                    "automatic preclassification",
+                    "preserve;delete;create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "plankton portal images",
+                        "automatic preclassification",
+                        "preserve;delete;create"
+                    ],
+                    [
+                        "automatic preclassification",
+                        "plankton species",
+                        "preserve;delete;create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "Plankton Portal images",
@@ -1766,6 +2677,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1782,6 +2697,25 @@
                 "reduce"
             ],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "perform",
+                        "automatic worm motion analysis",
+                        "preserve;delete;create"
+                    ],
+                    [
+                        "reduce",
+                        "video duration",
+                        "delete"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "worm watch lab",
+                    "automatic worm motion analysis",
+                    "preserve;delete;create"
+                ]]
+            },
             "Contains": [[
                 "Worm Watch Lab",
                 "automatic worm motion analysis"
@@ -1808,6 +2742,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1825,6 +2763,32 @@
                 "lays"
             ],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "automatically detect",
+                        "time",
+                        "create"
+                    ],
+                    [
+                        "lays",
+                        "egg",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "worm watch lab video",
+                        "time",
+                        "create"
+                    ],
+                    [
+                        "worm",
+                        "egg",
+                        "preserve;create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "Worm Watch Lab video",
@@ -1857,6 +2821,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1874,6 +2842,25 @@
             ],
             "Action": ["detect"],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "detect",
+                    "important features",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "important features",
+                        "areas",
+                        "create"
+                    ],
+                    [
+                        "satellite images",
+                        "important features",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "important features",
@@ -1916,6 +2903,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1930,6 +2921,32 @@
             ],
             "Action": ["assess"],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "assess",
+                        "probability",
+                        "create"
+                    ],
+                    [
+                        "assess",
+                        "weight",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "volunteer's classification",
+                        "probability",
+                        "create"
+                    ],
+                    [
+                        "volunteer's classification",
+                        "weight",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "volunteer's classification",
@@ -1966,6 +2983,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1984,6 +3005,32 @@
                 "remove"
             ],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "prefiltering",
+                        "images",
+                        "create;delete"
+                    ],
+                    [
+                        "remove",
+                        "artefacts",
+                        "delete"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "artefacts",
+                        "bright stars",
+                        "delete"
+                    ],
+                    [
+                        "artefacts",
+                        "camera read errors",
+                        "delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "artefacts",
@@ -2016,6 +3063,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2028,6 +3079,18 @@
             ],
             "Action": ["detect"],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "detect",
+                    "moving and transient objects",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "images",
+                    "moving and transient objects",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "images",
                 "moving and transient objects"
@@ -2048,6 +3111,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2061,6 +3128,32 @@
             ],
             "Action": ["remove"],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "remove",
+                        "background noise",
+                        "delete"
+                    ],
+                    [
+                        "remove",
+                        "distracting sounds",
+                        "delete"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "audio files",
+                        "background noise",
+                        "delete"
+                    ],
+                    [
+                        "audio files",
+                        "distracting sounds",
+                        "delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "audio files",
@@ -2093,6 +3186,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2102,6 +3199,14 @@
             "Entity": ["whale calls"],
             "Action": ["group"],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "group",
+                    "whale calls",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "Zooniverse admin",
@@ -2119,6 +3224,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2131,6 +3240,18 @@
             ],
             "Action": ["identify"],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "identify",
+                    "number of whales heard",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "single audio file",
+                    "number of whales heard",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "single audio file",
                 "number of whales heard"
@@ -2151,6 +3272,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2166,6 +3291,21 @@
                 "interrupt"
             ],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "when",
+                        "preserve"
+                    ],
+                    [
+                        "interrupt",
+                        "volunteer",
+                        "delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "Zooniverse admin",
@@ -2189,6 +3329,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2206,6 +3350,30 @@
                 "interrupt"
             ],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "interrupt",
+                    "volunteer",
+                    "delete"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "volunteer",
+                        "text",
+                        "delete"
+                    ],
+                    [
+                        "volunteer",
+                        "image",
+                        "delete"
+                    ],
+                    [
+                        "volunteer",
+                        "video",
+                        "delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "volunteer",
@@ -2236,6 +3404,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2251,6 +3423,21 @@
                 "educate"
             ],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "when",
+                        "preserve"
+                    ],
+                    [
+                        "educate",
+                        "volunteer",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "Zooniverse admin",
@@ -2274,6 +3461,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2291,6 +3482,30 @@
                 "educate"
             ],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "educate",
+                    "volunteer",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "volunteer",
+                        "text",
+                        "preserve"
+                    ],
+                    [
+                        "volunteer",
+                        "image",
+                        "preserve"
+                    ],
+                    [
+                        "volunteer",
+                        "video",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "volunteer",
@@ -2321,6 +3536,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2337,6 +3556,32 @@
                 "give"
             ],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "piece",
+                        "preserve"
+                    ],
+                    [
+                        "give",
+                        "piece",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "piece",
+                        "education",
+                        "preserve"
+                    ],
+                    [
+                        "volunteer",
+                        "piece",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "piece",
@@ -2369,6 +3614,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2386,6 +3635,32 @@
                 "made"
             ],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "when",
+                        "preserve"
+                    ],
+                    [
+                        "made",
+                        "interesting comment",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "volunteer",
+                        "interesting comment",
+                        "preserve;create"
+                    ],
+                    [
+                        "subject",
+                        "interesting comment",
+                        "preserve;create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "volunteer",
@@ -2418,6 +3693,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2434,6 +3713,21 @@
                 "comment"
             ],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "when",
+                        "preserve"
+                    ],
+                    [
+                        "comment",
+                        "subject",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "Zooniverse admin",
@@ -2457,6 +3751,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2473,6 +3771,25 @@
                 "give"
             ],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "when",
+                        "preserve"
+                    ],
+                    [
+                        "give",
+                        "explanation",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "zoonibot",
+                    "explanation",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "Zoonibot",
                 "explanation"
@@ -2499,6 +3816,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2515,6 +3836,21 @@
                 "say"
             ],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "what",
+                        "preserve"
+                    ],
+                    [
+                        "say",
+                        "what",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "Zooniverse admin",
@@ -2538,6 +3874,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2550,6 +3890,18 @@
             ],
             "Action": ["group"],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "group",
+                    "subjects",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "subjects",
+                    "similarity",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "subjects",
                 "similarity"
@@ -2570,6 +3922,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2583,6 +3939,18 @@
             ],
             "Action": ["recommend"],
             "Persona": ["Zooniverse admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "recommend",
+                    "different projects",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "volunteers",
+                    "different projects",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "volunteers",
@@ -2609,6 +3977,10 @@
         "Benefit": {
             "Entity": [],
             "Action": ["reuse"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I reuse them.",
             "Targets": []
@@ -2622,6 +3994,18 @@
             ],
             "Action": ["see"],
             "Persona": ["admin"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "summary",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "articles",
+                    "summary",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "articles",
                 "summary"

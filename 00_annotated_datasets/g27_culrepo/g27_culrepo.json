@@ -4,6 +4,14 @@
         "Benefit": {
             "Entity": ["research materials"],
             "Action": ["obtain"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "obtain",
+                    "research materials",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can obtain research materials.",
             "Targets": [[
@@ -20,6 +28,18 @@
             ],
             "Action": ["access"],
             "Persona": ["faculty member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "access",
+                    "collection",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "repository",
+                    "collection",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "repository",
                 "collection"
@@ -48,6 +68,21 @@
                 "facilitate",
                 "link"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "facilitate",
+                        "teaching",
+                        "preserve;create"
+                    ],
+                    [
+                        "link",
+                        "content",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can facilitate my teaching (i.e. desires ability to link to content).",
             "Targets": [
@@ -71,6 +106,18 @@
             ],
             "Action": ["direct"],
             "Persona": ["faculty member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "direct",
+                    "students",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "students",
+                    "item",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "students",
@@ -102,6 +149,25 @@
                 "publications"
             ],
             "Action": ["receive"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "receive",
+                    "attribution",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "data",
+                        "attribution",
+                        "create"
+                    ],
+                    [
+                        "publications",
+                        "attribution",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "data",
@@ -131,6 +197,32 @@
                 "associate"
             ],
             "Persona": ["Cornell faculty member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "upload",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "associate",
+                        "data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "repository",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "publication",
+                        "data",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "repository",
@@ -173,6 +265,21 @@
                 "dataset"
             ],
             "Action": ["access"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "access",
+                        "latest report",
+                        "preserve;create"
+                    ],
+                    [
+                        "access",
+                        "dataset",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can access latest report/dataset.",
             "Targets": [
@@ -199,6 +306,26 @@
                 "coming out"
             ],
             "Persona": ["patron"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "reports",
+                        "preserve"
+                    ],
+                    [
+                        "know",
+                        "datasets",
+                        "preserve"
+                    ],
+                    [
+                        "know",
+                        "when",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G27# As a patron, I want to know which reports/datasets are coming out when, ",
             "Triggers": [[
@@ -227,6 +354,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -243,6 +374,42 @@
                 "deselect"
             ],
             "Persona": ["patron"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "select",
+                        "reports",
+                        "preserve;create"
+                    ],
+                    [
+                        "select",
+                        "datasets to be emailed",
+                        "preserve;create"
+                    ],
+                    [
+                        "deselect",
+                        "reports",
+                        "preserve;delete"
+                    ],
+                    [
+                        "deselect",
+                        "datasets to be emailed",
+                        "preserve;delete"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "reports",
+                        "new versions",
+                        "preserve;create"
+                    ],
+                    [
+                        "datasets to be emailed",
+                        "new versions",
+                        "preserve;create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "reports",
@@ -289,6 +456,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -305,6 +476,37 @@
                 "discovered"
             ],
             "Persona": ["DB/IR administrator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "mark",
+                        "report",
+                        "create"
+                    ],
+                    [
+                        "mark",
+                        "dataset",
+                        "create"
+                    ],
+                    [
+                        "discovered",
+                        "error",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "report",
+                        "error",
+                        "create"
+                    ],
+                    [
+                        "dataset",
+                        "error",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "report",
@@ -346,6 +548,18 @@
                 "current report"
             ],
             "Action": ["find"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "find",
+                    "historic reports",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "historic reports",
+                    "different name",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "historic reports",
                 "different name"
@@ -366,6 +580,25 @@
             ],
             "Action": ["manage"],
             "Persona": ["DB/IR administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "manage",
+                    "name changes",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "dataset",
+                        "name changes",
+                        "create;delete"
+                    ],
+                    [
+                        "report",
+                        "name changes",
+                        "create;delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "dataset",
@@ -396,6 +629,14 @@
                 "know",
                 "reuse"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "how",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I know how I can reuse them.",
             "Targets": [[
@@ -413,6 +654,18 @@
             ],
             "Action": ["see clearly"],
             "Persona": ["Cornell faculty member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see clearly",
+                    "reuse rights i have",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": [[
+                    "files discovered",
+                    "reuse rights i have",
+                    "preserve;forbid"
+                ]]
+            },
             "Contains": [
                 [
                     "repository",
@@ -443,6 +696,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -460,6 +717,25 @@
                 "asked"
             ],
             "Persona": ["library staff member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "remove",
+                        "access embargo",
+                        "delete"
+                    ],
+                    [
+                        "apply",
+                        "access embargo",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "item",
+                    "access embargo",
+                    "delete"
+                ]]
+            },
             "Contains": [
                 [
                     "item",
@@ -498,6 +774,10 @@
         "Benefit": {
             "Entity": ["research"],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "my own research remains relevant and innovative.",
             "Targets": []
@@ -514,6 +794,18 @@
             ],
             "Action": ["stay up to date"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "stay up to date",
+                    "research",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "given topic",
+                    "research",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "Cornell",
@@ -552,6 +844,18 @@
                 "work"
             ],
             "Action": ["raise"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "raise",
+                    "profile",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "work",
+                    "profile",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "work",
                 "profile"
@@ -572,6 +876,25 @@
             ],
             "Action": ["easily collect"],
             "Persona": ["faculty member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "easily collect",
+                    "publications",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "repository",
+                        "publications",
+                        "create"
+                    ],
+                    [
+                        "single online access point",
+                        "publications",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "repository",
@@ -599,6 +922,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -623,6 +950,47 @@
                 "share"
             ],
             "Persona": ["crossdeptprojteammember"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "better place",
+                        "preserve"
+                    ],
+                    [
+                        "collect",
+                        "project materials",
+                        "create;delete"
+                    ],
+                    [
+                        "share",
+                        "project materials",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "better place",
+                        "project materials",
+                        "preserve"
+                    ],
+                    [
+                        "better place",
+                        "access options",
+                        "preserve"
+                    ],
+                    [
+                        "better place",
+                        "organization",
+                        "preserve"
+                    ],
+                    [
+                        "better place",
+                        "tagging",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "better place",
@@ -694,6 +1062,18 @@
                 "work"
             ],
             "Action": ["receive"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "receive",
+                    "proper attribution",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "work",
+                    "proper attribution",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "work",
                 "proper attribution"
@@ -717,6 +1097,32 @@
                 "provide"
             ],
             "Persona": ["Cornell faculty member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "upload",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "provide",
+                        "cut and paste formatted citation",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "data",
+                        "cut and paste formatted citation",
+                        "create"
+                    ],
+                    [
+                        "people who use it",
+                        "cut and paste formatted citation",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "data",
@@ -756,6 +1162,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -773,6 +1183,25 @@
                 "upload"
             ],
             "Persona": ["patron"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "view",
+                        "content",
+                        "preserve"
+                    ],
+                    [
+                        "upload",
+                        "content",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "content",
+                    "multiple formats",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "content",
@@ -815,6 +1244,14 @@
         "Benefit": {
             "Entity": ["things"],
             "Action": ["check"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "check",
+                    "things",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can check things on the go.",
             "Targets": [[
@@ -835,6 +1272,32 @@
                 "browse through"
             ],
             "Persona": ["Cornell faculty member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "search",
+                        "repository",
+                        "preserve;create"
+                    ],
+                    [
+                        "browse through",
+                        "contents",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "repository",
+                        "contents",
+                        "preserve;create"
+                    ],
+                    [
+                        "phone",
+                        "contents",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "repository",
@@ -877,6 +1340,18 @@
                 "Cornell campus-only content"
             ],
             "Action": ["get"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "remote access",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "Cornell campus-only content",
+                    "remote access",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "Cornell campus-only content",
                 "remote access"
@@ -899,6 +1374,21 @@
                 "using"
             ],
             "Persona": ["Cornell faculty member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "login remotely",
+                        "repository",
+                        "create"
+                    ],
+                    [
+                        "using",
+                        "shibboleth",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G27# As a Cornell faculty member, I want to login remotely to the repository using Shibboleth, ",
             "Triggers": [[
@@ -929,6 +1419,21 @@
                 "control",
                 "presented"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "control",
+                        "how",
+                        "create;delete"
+                    ],
+                    [
+                        "presented",
+                        "work",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can control how my work is presented.",
             "Targets": [
@@ -956,6 +1461,32 @@
                 "sort"
             ],
             "Persona": ["Cornell faculty member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "some control",
+                        "preserve"
+                    ],
+                    [
+                        "sort",
+                        "items",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "collection",
+                        "items",
+                        "create;delete"
+                    ],
+                    [
+                        "collection contents lists",
+                        "items",
+                        "create;delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "collection",
@@ -989,6 +1520,14 @@
         "Benefit": {
             "Entity": ["personnel decisions"],
             "Action": ["facilitate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "facilitate",
+                    "personnel decisions",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can facilitate personnel decisions.",
             "Targets": [[
@@ -1011,6 +1550,37 @@
                 "properly track"
             ],
             "Persona": ["administrator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "systems",
+                        "preserve"
+                    ],
+                    [
+                        "properly track",
+                        "faculty scholarly output",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "systems",
+                        "symplectic elements",
+                        "preserve"
+                    ],
+                    [
+                        "systems",
+                        "activity insight",
+                        "preserve"
+                    ],
+                    [
+                        "repositories",
+                        "faculty scholarly output",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "systems",
@@ -1051,6 +1621,18 @@
                 "service"
             ],
             "Action": ["assess"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "assess",
+                    "results",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "service",
+                    "results",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "service",
                 "results"
@@ -1075,6 +1657,67 @@
             ],
             "Action": ["access"],
             "Persona": ["library staff member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "access",
+                        "useful and comprehensive usage statistics",
+                        "preserve;create"
+                    ],
+                    [
+                        "access",
+                        "analytics",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "repository",
+                        "useful and comprehensive usage statistics",
+                        "preserve;create"
+                    ],
+                    [
+                        "collection",
+                        "useful and comprehensive usage statistics",
+                        "preserve;create"
+                    ],
+                    [
+                        "author",
+                        "useful and comprehensive usage statistics",
+                        "preserve;create"
+                    ],
+                    [
+                        "item level",
+                        "useful and comprehensive usage statistics",
+                        "preserve;create"
+                    ],
+                    [
+                        "analytics",
+                        "altmetrics",
+                        "preserve;create"
+                    ],
+                    [
+                        "repository",
+                        "analytics",
+                        "preserve;create"
+                    ],
+                    [
+                        "collection",
+                        "analytics",
+                        "preserve;create"
+                    ],
+                    [
+                        "author",
+                        "analytics",
+                        "preserve;create"
+                    ],
+                    [
+                        "item level",
+                        "analytics",
+                        "preserve;create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "analytics",
@@ -1142,6 +1785,21 @@
                 "increase",
                 "contributing"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "increase",
+                        "buy-in",
+                        "create"
+                    ],
+                    [
+                        "contributing",
+                        "work",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can increase buy-in for contributing their work.",
             "Targets": [
@@ -1165,6 +1823,25 @@
             ],
             "Action": ["see"],
             "Persona": ["administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "comprehensive tracking statistics",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "faculty",
+                        "comprehensive tracking statistics",
+                        "preserve"
+                    ],
+                    [
+                        "digestible way",
+                        "comprehensive tracking statistics",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "faculty",
@@ -1203,6 +1880,26 @@
                 "see",
                 "reading"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "follow",
+                        "usage",
+                        "create"
+                    ],
+                    [
+                        "see",
+                        "what",
+                        "preserve"
+                    ],
+                    [
+                        "reading",
+                        "what",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can follow usage and see what others are most interested in reading.",
             "Targets": [
@@ -1233,6 +1930,32 @@
                 "downloads"
             ],
             "Persona": ["Cornell faculty member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "downloads",
+                        "items",
+                        "create"
+                    ],
+                    [
+                        "downloads",
+                        "files",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "someone",
+                        "items",
+                        "create"
+                    ],
+                    [
+                        "someone",
+                        "files",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "someone",
@@ -1266,6 +1989,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1283,6 +2010,25 @@
                 "research"
             ],
             "Persona": ["DB/IR administrator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "see",
+                        "list",
+                        "preserve"
+                    ],
+                    [
+                        "research",
+                        "missing report complaints",
+                        "preserve;delete;create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "list",
+                    "subscribers",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "list",
@@ -1321,6 +2067,18 @@
                 "make sure",
                 "credited"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "credited",
+                    "school",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "school",
+                    "work",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "school",
                 "work"
@@ -1340,6 +2098,18 @@
             ],
             "Action": ["disseminate"],
             "Persona": ["administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "disseminate",
+                    "aforementioned works",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "digital space",
+                    "aforementioned works",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "digital space",
                 "aforementioned works"
@@ -1365,6 +2135,25 @@
                 "CV"
             ],
             "Action": ["have"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "persistent url",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "personal web page",
+                        "persistent URL",
+                        "preserve"
+                    ],
+                    [
+                        "CV",
+                        "persistent URL",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "personal web page",
@@ -1390,6 +2179,18 @@
             ],
             "Action": ["upload"],
             "Persona": ["faculty member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "upload",
+                    "scholarly work",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "repository",
+                    "scholarly work",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "repository",
                 "scholarly work"
@@ -1417,6 +2218,25 @@
                 "preserve",
                 "provide"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "preserve",
+                        "access",
+                        "preserve"
+                    ],
+                    [
+                        "provide",
+                        "access",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "material",
+                    "access",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "material",
                 "access"
@@ -1445,6 +2265,25 @@
                 "highlight"
             ],
             "Persona": ["library staff member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "create",
+                        "collections",
+                        "create"
+                    ],
+                    [
+                        "highlight",
+                        "rare, archival, or endangered material",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "collections",
+                    "rare, archival, or endangered material",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "collections",
                 "rare, archival, or endangered material"
@@ -1472,6 +2311,14 @@
         "Benefit": {
             "Entity": ["continuity"],
             "Action": ["maintained"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "maintained",
+                    "continuity",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "continuity can be maintained.",
             "Targets": [[
@@ -1493,6 +2340,25 @@
                 "retire"
             ],
             "Persona": ["Extension Administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "easy, well documented and supported workflows",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "others",
+                        "easy, well documented and supported workflows",
+                        "preserve"
+                    ],
+                    [
+                        "she",
+                        "easy, well documented and supported workflows",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "others",
@@ -1530,6 +2396,10 @@
                 "used",
                 "adapted"
             ],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "other CCE Educators",
                 "work"
@@ -1547,6 +2417,25 @@
             ],
             "Action": ["maintain"],
             "Persona": ["faculty member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "maintain",
+                    "versioning",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "extension brochures",
+                        "versioning",
+                        "create;delete"
+                    ],
+                    [
+                        "faqs",
+                        "versioning",
+                        "create;delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "Extension brochures",
@@ -1583,6 +2472,14 @@
         "Benefit": {
             "Entity": ["licensing desires"],
             "Action": ["clearly stated"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "clearly stated",
+                    "licensing desires",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "my licensing desires are clearly stated.",
             "Targets": [[
@@ -1603,6 +2500,37 @@
                 "put"
             ],
             "Persona": ["Cornell faculty member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "upload",
+                        "data file",
+                        "create"
+                    ],
+                    [
+                        "put",
+                        "cc-by",
+                        "create"
+                    ],
+                    [
+                        "put",
+                        "cc0 license",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "data file",
+                        "cc-by",
+                        "create"
+                    ],
+                    [
+                        "data file",
+                        "cc0 license",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "data file",
@@ -1649,6 +2577,18 @@
                 "funder DMP requirements"
             ],
             "Action": ["easily meet"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "easily meet",
+                    "needs",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "funder DMP requirements",
+                    "needs",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "funder DMP requirements",
                 "needs"
@@ -1675,6 +2615,37 @@
                 "sharing"
             ],
             "Persona": ["library staff member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "tell",
+                        "researchers i'm helping with dmps",
+                        "create"
+                    ],
+                    [
+                        "archiving",
+                        "results",
+                        "create"
+                    ],
+                    [
+                        "sharing",
+                        "results",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "researchers i'm helping with dmps",
+                        "research",
+                        "create"
+                    ],
+                    [
+                        "research",
+                        "results",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "Cornell",
@@ -1719,6 +2690,18 @@
                 "organization"
             ],
             "Action": ["promote"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "promote",
+                    "work",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "organization",
+                    "work",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "organization",
                 "work"
@@ -1744,6 +2727,37 @@
                 "apply"
             ],
             "Persona": ["Cornell faculty member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "create",
+                        "collection",
+                        "create"
+                    ],
+                    [
+                        "apply",
+                        "some distinctive branding",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "collection",
+                        "documents",
+                        "create"
+                    ],
+                    [
+                        "collection",
+                        "organization's documents",
+                        "create"
+                    ],
+                    [
+                        "collection",
+                        "some distinctive branding",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "collection",
@@ -1795,6 +2809,32 @@
                 "points",
                 "keeps"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "points",
+                        "repository",
+                        "create"
+                    ],
+                    [
+                        "keeps",
+                        "publications",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "repository",
+                        "publications",
+                        "create"
+                    ],
+                    [
+                        "people",
+                        "repository",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "repository",
@@ -1832,6 +2872,37 @@
                 "searching"
             ],
             "Persona": ["Cornell faculty member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "easily find",
+                        "items",
+                        "create"
+                    ],
+                    [
+                        "searching",
+                        "name",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "repository",
+                        "items",
+                        "create"
+                    ],
+                    [
+                        "name",
+                        "author name authority",
+                        "preserve"
+                    ],
+                    [
+                        "name",
+                        "identification issue",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "repository",
@@ -1869,6 +2940,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1887,6 +2962,25 @@
                 "appear high up"
             ],
             "Persona": ["Cornell faculty member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "items i have deposited",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "repository",
+                        "items i have deposited",
+                        "preserve"
+                    ],
+                    [
+                        "google search results",
+                        "items i have deposited",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "repository",
@@ -1921,6 +3015,10 @@
                 " collection owne"
             ],
             "Action": ["asked"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 " both collection",
                 "item"
@@ -1940,6 +3038,25 @@
                 "map"
             ],
             "Persona": ["epository support team member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "alias",
+                        "item",
+                        "create"
+                    ],
+                    [
+                        "map",
+                        "item",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "collection",
+                    "item",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "collection",
                 "item"
@@ -1976,6 +3093,18 @@
                 "content"
             ],
             "Action": ["facilitate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "facilitate",
+                    "easy use",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "content",
+                    "easy use",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "content",
                 "easy use"
@@ -1997,6 +3126,18 @@
             ],
             "Action": ["discover"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "discover",
+                    "items",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "repository",
+                    "items",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "repository",
@@ -2031,6 +3172,18 @@
                 "content"
             ],
             "Action": ["correctly identify"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "correctly identify",
+                    "source",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "content",
+                    "source",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "content",
                 "source"
@@ -2056,6 +3209,37 @@
                 "come"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "see",
+                        "descriptive metadata",
+                        "preserve"
+                    ],
+                    [
+                        "come",
+                        "item",
+                        "create"
+                    ],
+                    [
+                        "come",
+                        "pdf",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "item",
+                        "descriptive metadata",
+                        "preserve"
+                    ],
+                    [
+                        "repository",
+                        "item",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "item",
@@ -2093,6 +3277,14 @@
         "Benefit": {
             "Entity": ["research"],
             "Action": ["learn more"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "learn more",
+                    "research",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can learn more about my research.",
             "Targets": [[
@@ -2109,6 +3301,18 @@
             ],
             "Action": ["contact"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "contact",
+                    "author",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "author",
+                    "work",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "author",
                 "work"
@@ -2130,6 +3334,14 @@
         "Benefit": {
             "Entity": ["work"],
             "Action": ["discover more"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "discover more",
+                    "work",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can discover more of their work.",
             "Targets": [[
@@ -2151,6 +3363,37 @@
                 "published"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "receive",
+                        "updates",
+                        "create"
+                    ],
+                    [
+                        "published",
+                        "new works",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "new works",
+                        "updates",
+                        "create"
+                    ],
+                    [
+                        "given collection",
+                        "new works",
+                        "create"
+                    ],
+                    [
+                        "given author",
+                        "new works",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "new works",
@@ -2194,6 +3437,18 @@
                 "collection"
             ],
             "Action": ["facilitate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "facilitate",
+                    "use",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "collection",
+                    "use",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "collection",
                 "use"
@@ -2219,6 +3474,30 @@
                 "searching within"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "search within",
+                        "repository",
+                        "preserve"
+                    ],
+                    [
+                        "search within",
+                        "collection",
+                        "preserve"
+                    ],
+                    [
+                        "searching within",
+                        "subsets",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "given collection",
+                    "subsets",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "given collection",
                 "subsets"
@@ -2253,6 +3532,18 @@
                 "scholarship"
             ],
             "Action": ["see"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "evolution",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "scholarship",
+                    "evolution",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "scholarship",
                 "evolution"
@@ -2273,6 +3564,25 @@
             ],
             "Action": ["find"],
             "Persona": ["academicresearcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "find",
+                    "works",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "particular author",
+                        "works",
+                        "create"
+                    ],
+                    [
+                        "one easily sortable spot",
+                        "works",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "particular author",
@@ -2300,6 +3610,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2319,6 +3633,47 @@
                 "started"
             ],
             "Persona": ["academicresearcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "want",
+                        "thesis paper",
+                        "create"
+                    ],
+                    [
+                        "gain",
+                        "insight",
+                        "create"
+                    ],
+                    [
+                        "started",
+                        "initial scholarship",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "influential judge",
+                        "thesis paper",
+                        "create"
+                    ],
+                    [
+                        "legal thinker",
+                        "thesis paper",
+                        "create"
+                    ],
+                    [
+                        "influential judge",
+                        "initial scholarship",
+                        "preserve"
+                    ],
+                    [
+                        "legal thinker",
+                        "initial scholarship",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "influential judge",
@@ -2363,6 +3718,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2382,6 +3741,52 @@
                 "locate"
             ],
             "Persona": ["patron"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "search",
+                        "report",
+                        "preserve;create"
+                    ],
+                    [
+                        "search",
+                        "dataset",
+                        "preserve;create"
+                    ],
+                    [
+                        "locate",
+                        "needed report",
+                        "create"
+                    ],
+                    [
+                        "locate",
+                        "dataset",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "report",
+                        "keywords",
+                        "preserve;create"
+                    ],
+                    [
+                        "report",
+                        "partial or complete title",
+                        "preserve;create"
+                    ],
+                    [
+                        "dataset",
+                        "keywords",
+                        "preserve;create"
+                    ],
+                    [
+                        "dataset",
+                        "partial or complete title",
+                        "preserve;create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "dataset",
@@ -2430,6 +3835,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2447,6 +3856,32 @@
                 "locate"
             ],
             "Persona": ["patron"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "browse",
+                        "content",
+                        "preserve"
+                    ],
+                    [
+                        "locate",
+                        "needed resources",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "content",
+                        "author",
+                        "preserve"
+                    ],
+                    [
+                        "content",
+                        "subject area",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "content",
@@ -2479,6 +3914,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2495,6 +3934,26 @@
                 "searching"
             ],
             "Persona": ["DB/IR administrator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "manage",
+                        "subject classifications",
+                        "create;delete"
+                    ],
+                    [
+                        "browsing",
+                        "patron",
+                        "preserve"
+                    ],
+                    [
+                        "searching",
+                        "patron",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "DB/IR administrator",
@@ -2522,6 +3981,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2535,6 +3998,14 @@
             ],
             "Action": ["manage"],
             "Persona": ["DB/IR administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "manage",
+                    "customizable relationship groups",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "DB/IR administrator",
@@ -2552,6 +4023,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2570,6 +4045,32 @@
                 "quickly find"
             ],
             "Persona": ["Cornell faculty member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "search",
+                        "dissertations",
+                        "preserve;create"
+                    ],
+                    [
+                        "quickly find",
+                        "work",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "repository",
+                        "dissertations",
+                        "preserve;create"
+                    ],
+                    [
+                        "former student",
+                        "work",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "repository",
@@ -2609,6 +4110,18 @@
                 "disparate collections"
             ],
             "Action": ["provide"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "provide",
+                    "seamless access",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "disparate collections",
+                    "seamless access",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "disparate collections",
                 "seamless access"
@@ -2629,6 +4142,25 @@
             ],
             "Action": ["make"],
             "Persona": ["library staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "make",
+                    "digital items",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "trusted external system",
+                        "digital items",
+                        "create"
+                    ],
+                    [
+                        "system",
+                        "digital items",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "trusted external system",
@@ -2656,6 +4188,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2673,6 +4209,26 @@
                 "identify"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "information",
+                        "preserve"
+                    ],
+                    [
+                        "help",
+                        "me",
+                        "preserve"
+                    ],
+                    [
+                        "identify",
+                        "other faculty i might partner/collaborate",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "researcher",
@@ -2700,6 +4256,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2724,6 +4284,87 @@
                 "develop"
             ],
             "Persona": ["externaluser"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "easily find",
+                        "research",
+                        "create"
+                    ],
+                    [
+                        "access",
+                        "research",
+                        "preserve;create"
+                    ],
+                    [
+                        "easily find",
+                        "educational materials",
+                        "create"
+                    ],
+                    [
+                        "access",
+                        "educational materials",
+                        "preserve;create"
+                    ],
+                    [
+                        "use",
+                        "research",
+                        "preserve"
+                    ],
+                    [
+                        "use",
+                        "educational materials",
+                        "preserve"
+                    ],
+                    [
+                        "develop",
+                        "stronger research",
+                        "create"
+                    ],
+                    [
+                        "develop",
+                        "evidence based programming",
+                        "create"
+                    ],
+                    [
+                        "develop",
+                        "grant proposals",
+                        "create"
+                    ],
+                    [
+                        "develop",
+                        "community policy",
+                        "create"
+                    ],
+                    [
+                        "develop",
+                        "business practices",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "cornell faculty",
+                        "research",
+                        "create"
+                    ],
+                    [
+                        "research",
+                        "particular topic",
+                        "create"
+                    ],
+                    [
+                        "cornell faculty",
+                        "educational materials",
+                        "create"
+                    ],
+                    [
+                        "educational materials",
+                        "particular topic",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "Cornell faculty",
@@ -2813,6 +4454,32 @@
                 "decide",
                 "pursue"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "pursue",
+                        "studies",
+                        "create"
+                    ],
+                    [
+                        "pursue",
+                        "research",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "Cornell",
+                        "studies",
+                        "create"
+                    ],
+                    [
+                        "Cornell",
+                        "research",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "Cornell",
@@ -2849,6 +4516,37 @@
                 "engaged"
             ],
             "Persona": ["student"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "learn",
+                        "who",
+                        "create"
+                    ],
+                    [
+                        "engaged",
+                        "research",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "cornell",
+                        "who",
+                        "create"
+                    ],
+                    [
+                        "who",
+                        "research",
+                        "create"
+                    ],
+                    [
+                        "research",
+                        "particular topic",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "Cornell",
@@ -2895,6 +4593,31 @@
                 "enroll",
                 "identify"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "find",
+                        "appropriate advisor",
+                        "create"
+                    ],
+                    [
+                        "choose",
+                        "courses",
+                        "create"
+                    ],
+                    [
+                        "enroll",
+                        "courses",
+                        "create"
+                    ],
+                    [
+                        "identify",
+                        "work/internship opportunities",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can find an appropriate advisor, choose which courses to enroll in, and identify work/internship opportunities.",
             "Targets": [
@@ -2930,6 +4653,37 @@
                 "engaged"
             ],
             "Persona": ["student"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "learn",
+                        "who",
+                        "create"
+                    ],
+                    [
+                        "engaged",
+                        "research",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "cornell",
+                        "who",
+                        "create"
+                    ],
+                    [
+                        "who",
+                        "research",
+                        "create"
+                    ],
+                    [
+                        "research",
+                        "particular topic",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "Cornell",
@@ -2970,6 +4724,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2988,6 +4746,37 @@
                 "be notified"
             ],
             "Persona": ["teachingfacultymember"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "identify",
+                        "timely and relevant research",
+                        "preserve"
+                    ],
+                    [
+                        "be notified",
+                        "new research",
+                        "create"
+                    ],
+                    [
+                        "be notified",
+                        "content",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "curriculum",
+                        "timely and relevant research",
+                        "preserve"
+                    ],
+                    [
+                        "timely and relevant research",
+                        "use",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "curriculum",
@@ -3030,6 +4819,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3047,6 +4840,32 @@
                 "get"
             ],
             "Persona": ["patron"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "view",
+                        "multiple versions",
+                        "preserve"
+                    ],
+                    [
+                        "get",
+                        "timely and historical information",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "report",
+                        "multiple versions",
+                        "preserve"
+                    ],
+                    [
+                        "dataset",
+                        "multiple versions",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "report",
@@ -3088,6 +4907,25 @@
                 "use",
                 "teaching"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "reach",
+                        "non-academic audience",
+                        "create"
+                    ],
+                    [
+                        "expand",
+                        "influence",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "academic community",
+                    "influence",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "academic community",
                 "influence"
@@ -3113,6 +4951,18 @@
             ],
             "Action": ["upload"],
             "Persona": ["faculty member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "upload",
+                    "scholarly work",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "repository",
+                    "scholarly work",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "repository",
                 "scholarly work"
@@ -3143,6 +4993,14 @@
         "Benefit": {
             "Entity": ["service obligation"],
             "Action": ["fulfill"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "fulfill",
+                    "service obligation",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can fulfill a service obligation.",
             "Targets": [[
@@ -3159,6 +5017,18 @@
             ],
             "Action": ["upload"],
             "Persona": ["library staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "upload",
+                    "material",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "repository",
+                    "material",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "repository",
                 "material"
@@ -3180,6 +5050,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3206,6 +5080,82 @@
                 "searching"
             ],
             "Persona": ["library staff member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "create",
+                        "metadata",
+                        "create"
+                    ],
+                    [
+                        "searching",
+                        "items",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "items",
+                        "metadata",
+                        "create"
+                    ],
+                    [
+                        "metadata",
+                        "document title",
+                        "create"
+                    ],
+                    [
+                        "metadata",
+                        "description",
+                        "create"
+                    ],
+                    [
+                        "metadata",
+                        "author",
+                        "create"
+                    ],
+                    [
+                        "metadata",
+                        "document type",
+                        "create"
+                    ],
+                    [
+                        "metadata",
+                        "status",
+                        "create"
+                    ],
+                    [
+                        "metadata",
+                        "file locations",
+                        "create"
+                    ],
+                    [
+                        "metadata",
+                        "subscribable flag",
+                        "create"
+                    ],
+                    [
+                        "metadata",
+                        "subject area",
+                        "create"
+                    ],
+                    [
+                        "metadata",
+                        "release frequency",
+                        "create"
+                    ],
+                    [
+                        "metadata",
+                        "keywords",
+                        "create"
+                    ],
+                    [
+                        "repository",
+                        "items",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "items",
@@ -3281,6 +5231,18 @@
                 "authors"
             ],
             "Action": ["offer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "offer",
+                    "service",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "authors",
+                    "service",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "authors",
                 "service"
@@ -3301,6 +5263,25 @@
             ],
             "Action": ["upload"],
             "Persona": ["library staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "upload",
+                    "large batches",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "large batches",
+                        "items",
+                        "create"
+                    ],
+                    [
+                        "large batches",
+                        "descriptive metadata",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "large batches",
@@ -3335,6 +5316,21 @@
                 "publisher requirements"
             ],
             "Action": ["comply"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "comply",
+                        "author",
+                        "create"
+                    ],
+                    [
+                        "comply",
+                        "publisher requirements",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can comply with author or publisher requirements.",
             "Targets": [
@@ -3361,6 +5357,18 @@
                 "expired"
             ],
             "Persona": ["library staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "upload",
+                    "item",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "repository",
+                    "item",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "repository",
@@ -3391,6 +5399,18 @@
                 "work in question"
             ],
             "Action": ["provide"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "provide",
+                    "robust image",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "work in question",
+                    "robust image",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "work in question",
                 "robust image"
@@ -3416,6 +5436,42 @@
                 "uploading"
             ],
             "Persona": ["library staff member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "include",
+                        "supplementary files",
+                        "create"
+                    ],
+                    [
+                        "include",
+                        "dois",
+                        "create"
+                    ],
+                    [
+                        "uploading",
+                        "given work",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "supplementary files",
+                        "datasets",
+                        "create"
+                    ],
+                    [
+                        "supplementary files",
+                        "slideshows",
+                        "create"
+                    ],
+                    [
+                        "supplementary files",
+                        "dois",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "supplementary files",
@@ -3465,6 +5521,25 @@
                 "deliver",
                 "ensure"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "deliver",
+                        "content",
+                        "create"
+                    ],
+                    [
+                        "ensure",
+                        "continued access",
+                        "preserve;forbid"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "said content",
+                    "continued access",
+                    "preserve;forbid"
+                ]]
+            },
             "Contains": [[
                 "said content",
                 "continued access"
@@ -3490,6 +5565,18 @@
             ],
             "Action": ["deliver"],
             "Persona": ["library staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "deliver",
+                    "streaming media",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "repository",
+                    "streaming media",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "repository",
                 "streaming media"
@@ -3518,6 +5605,25 @@
                 "showcased",
                 "preserved"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "showcased",
+                        "intellectual output",
+                        "create"
+                    ],
+                    [
+                        "preserved",
+                        "intellectual output",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "school",
+                    "intellectual output",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "school",
                 "intellectual output"
@@ -3547,6 +5653,26 @@
                 "support"
             ],
             "Persona": ["administrator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "platform",
+                        "preserve"
+                    ],
+                    [
+                        "support",
+                        "variety of media file",
+                        "preserve"
+                    ],
+                    [
+                        "support",
+                        "text-based formats",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G27# As an administrator, I want to have a platform that can support a variety of media file and text-based formats, ",
             "Triggers": [[
@@ -3578,6 +5704,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3590,6 +5720,18 @@
             ],
             "Action": ["assign"],
             "Persona": ["library staff member,"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "assign",
+                    "item",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "more than one collection",
+                    "item",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "more than one collection",
                 "item"
@@ -3610,6 +5752,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3627,6 +5773,25 @@
                 "allow"
             ],
             "Persona": ["library staff member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "add",
+                        "custom metadata fields",
+                        "create"
+                    ],
+                    [
+                        "allow",
+                        "better search capabilities",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "deposits i make",
+                    "custom metadata fields",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "deposits I make",
                 "custom metadata fields"
@@ -3653,6 +5818,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3668,6 +5837,21 @@
             ],
             "Action": ["upload"],
             "Persona": ["DB/IR administrator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "upload",
+                        "revised report",
+                        "create"
+                    ],
+                    [
+                        "upload",
+                        "dataset",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [
                 [
                     "report",
@@ -3700,6 +5884,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3718,6 +5906,37 @@
                 "retaining"
             ],
             "Persona": ["DB/IR administrator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "upload",
+                        "new version",
+                        "create"
+                    ],
+                    [
+                        "retaining",
+                        "previous versions",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "report",
+                        "new version",
+                        "create"
+                    ],
+                    [
+                        "dataset",
+                        "new version",
+                        "create"
+                    ],
+                    [
+                        "previous versions",
+                        "patron use",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "report",
@@ -3760,6 +5979,31 @@
                 "processed",
                 "displayed properly"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "processed",
+                        "dataset",
+                        "create"
+                    ],
+                    [
+                        "processed",
+                        "report",
+                        "create"
+                    ],
+                    [
+                        "displayed properly",
+                        "dataset",
+                        "preserve"
+                    ],
+                    [
+                        "displayed properly",
+                        "report",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "report/dataset is processed and displayed properly.",
             "Targets": [
@@ -3801,6 +6045,57 @@
                 "categorize"
             ],
             "Persona": ["DB/IR administrator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "system",
+                        "preserve"
+                    ],
+                    [
+                        "recognize",
+                        "document type",
+                        "preserve"
+                    ],
+                    [
+                        "categorize",
+                        "document type",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "document type",
+                        "historical report still published",
+                        "preserve"
+                    ],
+                    [
+                        "document type",
+                        "expired historical report",
+                        "preserve"
+                    ],
+                    [
+                        "document type",
+                        "single topic dataset",
+                        "preserve"
+                    ],
+                    [
+                        "document type",
+                        "broad topic dataset",
+                        "preserve"
+                    ],
+                    [
+                        "document type",
+                        "report",
+                        "preserve"
+                    ],
+                    [
+                        "document type",
+                        "computer file",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "document type",
@@ -3865,6 +6160,21 @@
                 "know",
                 "used"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "how",
+                        "preserve"
+                    ],
+                    [
+                        "used",
+                        "materials",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "users know how the materials can be used.",
             "Targets": [
@@ -3887,6 +6197,18 @@
             ],
             "Action": ["easily assign"],
             "Persona": ["Cornell faculty member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "easily assign",
+                    "cc license",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "files i are depositing",
+                    "cc license",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "files I are depositing",
                 "CC license"
@@ -3908,6 +6230,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3929,6 +6255,42 @@
                 "reload"
             ],
             "Persona": ["repository support team member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "export",
+                        "set",
+                        "create"
+                    ],
+                    [
+                        "manipulate",
+                        "data set",
+                        "create;delete"
+                    ],
+                    [
+                        "reload",
+                        "data set",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "set",
+                        "records",
+                        "create"
+                    ],
+                    [
+                        "set",
+                        "associated files",
+                        "create"
+                    ],
+                    [
+                        "system",
+                        "data set",
+                        "create;delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "set",
@@ -3991,6 +6353,10 @@
                 "same name"
             ],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [
                 [
                     "someone else",
@@ -4014,6 +6380,32 @@
             ],
             "Action": ["associate"],
             "Persona": ["Cornell faculty member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "associate",
+                        "researcherid",
+                        "create"
+                    ],
+                    [
+                        "associate",
+                        "orcid",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "submission",
+                        "researcherid",
+                        "create"
+                    ],
+                    [
+                        "submission",
+                        "orcid",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "submission",
@@ -4047,6 +6439,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4066,6 +6462,37 @@
                 "meet"
             ],
             "Persona": ["student"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "upload",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "meet",
+                        "requirements",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "repository",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "embargoed dissertation",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "dmp i submitted",
+                        "requirements",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "repository",
@@ -4102,6 +6529,14 @@
         "Benefit": {
             "Entity": ["each project"],
             "Action": ["described"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "described",
+                    "each project",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "each project is described in the most accurate way possible.",
             "Targets": [[
@@ -4115,6 +6550,14 @@
             "Entity": ["customizable metadata fields"],
             "Action": ["have"],
             "Persona": ["library staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "customizable metadata fields",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G27# As a library staff member, I want to have customizable metadata fields, ",
             "Triggers": [[
@@ -4136,6 +6579,18 @@
                 "research"
             ],
             "Action": ["deliver"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "deliver",
+                    "fullest picture",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "research",
+                    "fullest picture",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "research",
                 "fullest picture"
@@ -4161,6 +6616,37 @@
                 "also receives"
             ],
             "Persona": ["faculty member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "associate",
+                        "files",
+                        "create"
+                    ],
+                    [
+                        "accessing",
+                        "scholarly works",
+                        "create"
+                    ],
+                    [
+                        "also receives",
+                        "access",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "scholarly works",
+                        "files",
+                        "create"
+                    ],
+                    [
+                        "files",
+                        "access",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "scholarly works",
@@ -4203,6 +6689,25 @@
                 "occasion"
             ],
             "Action": ["deliver"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "deliver",
+                    "content",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "audience",
+                        "content",
+                        "create"
+                    ],
+                    [
+                        "occasion",
+                        "content",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "audience",
@@ -4231,6 +6736,32 @@
             ],
             "Action": ["use"],
             "Persona": ["library staff member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "content",
+                        "preserve"
+                    ],
+                    [
+                        "use",
+                        "metadata ",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "repository",
+                        "content",
+                        "preserve"
+                    ],
+                    [
+                        "repository",
+                        "metadata ",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "repository",
@@ -4272,6 +6803,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4288,6 +6823,35 @@
             ],
             "Action": ["make"],
             "Persona": ["Extension Administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "make",
+                    "resources",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "specific projects",
+                        "resources",
+                        "create"
+                    ],
+                    [
+                        "geographic areas",
+                        "resources",
+                        "create"
+                    ],
+                    [
+                        "other faculty",
+                        "resources",
+                        "create"
+                    ],
+                    [
+                        "educators",
+                        "resources",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "specific projects",
@@ -4330,6 +6894,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4353,6 +6921,42 @@
                 "Extension Administrator",
                 "Staff Content Manager"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "get",
+                        "periodic ir reminders",
+                        "preserve;create"
+                    ],
+                    [
+                        "move",
+                        "something",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "something",
+                        "periodic ir reminders",
+                        "preserve;create"
+                    ],
+                    [
+                        "current knowledge collection",
+                        "something",
+                        "create;delete"
+                    ],
+                    [
+                        "historical",
+                        "something",
+                        "create;delete"
+                    ],
+                    [
+                        "something",
+                        "next ingestion/approval steps",
+                        "create;delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "current knowledge collection",
@@ -4407,6 +7011,32 @@
                 "work"
             ],
             "Action": ["display"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "display",
+                        "range",
+                        "preserve;create"
+                    ],
+                    [
+                        "display",
+                        "extent",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "work",
+                        "range",
+                        "preserve;create"
+                    ],
+                    [
+                        "work",
+                        "extent",
+                        "preserve;create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "work",
@@ -4441,6 +7071,25 @@
                 "share"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "promote",
+                        "work",
+                        "create"
+                    ],
+                    [
+                        "share",
+                        "work",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "interactive maps",
+                    "work",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "interactive maps",
                 "work"
@@ -4474,6 +7123,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4503,6 +7156,102 @@
                 "placed"
             ],
             "Persona": ["Extension Educator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "place",
+                        "preserve"
+                    ],
+                    [
+                        "store",
+                        "variety of documents",
+                        "create"
+                    ],
+                    [
+                        "store",
+                        "presentations",
+                        "create"
+                    ],
+                    [
+                        "store",
+                        "data sets i've created",
+                        "create"
+                    ],
+                    [
+                        "making available",
+                        "place",
+                        "create"
+                    ],
+                    [
+                        "automatically updated",
+                        "directory",
+                        "create;delete"
+                    ],
+                    [
+                        "automatically updated",
+                        "list",
+                        "create;delete"
+                    ],
+                    [
+                        "placed",
+                        "directory",
+                        "create"
+                    ],
+                    [
+                        "placed",
+                        "list",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "place",
+                        "variety of documents",
+                        "preserve"
+                    ],
+                    [
+                        "place",
+                        "presentations",
+                        "preserve"
+                    ],
+                    [
+                        "place",
+                        "data sets i've created",
+                        "preserve"
+                    ],
+                    [
+                        "county",
+                        "place",
+                        "preserve"
+                    ],
+                    [
+                        "region",
+                        "place",
+                        "preserve"
+                    ],
+                    [
+                        "project site",
+                        "place",
+                        "preserve"
+                    ],
+                    [
+                        "directory",
+                        "materials",
+                        "create;delete"
+                    ],
+                    [
+                        "repository",
+                        "directory",
+                        "create;delete"
+                    ],
+                    [
+                        "central archive",
+                        "list",
+                        "create;delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "place",
@@ -4591,6 +7340,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4609,6 +7362,37 @@
                 "finding"
             ],
             "Persona": ["patron"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "other reports",
+                        "preserve"
+                    ],
+                    [
+                        "know",
+                        "datasets",
+                        "preserve"
+                    ],
+                    [
+                        "finding",
+                        "other related information",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "other reports",
+                        "other related information",
+                        "preserve"
+                    ],
+                    [
+                        "datasets",
+                        "other related information",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "other reports",
@@ -4649,6 +7433,21 @@
                 "more recent version"
             ],
             "Action": ["know"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "historical versions",
+                        "preserve"
+                    ],
+                    [
+                        "know",
+                        "how current",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can know what historical versions are available and how current more recent version is.",
             "Targets": [
@@ -4674,6 +7473,47 @@
             ],
             "Action": ["know"],
             "Persona": ["patron"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "previous name(s)",
+                        "preserve"
+                    ],
+                    [
+                        "know",
+                        "publication date range",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "reports",
+                        "previous name(s)",
+                        "preserve"
+                    ],
+                    [
+                        "datasets",
+                        "previous name(s)",
+                        "preserve"
+                    ],
+                    [
+                        "reports",
+                        "publication date range",
+                        "preserve"
+                    ],
+                    [
+                        "datasets",
+                        "publication date range",
+                        "preserve"
+                    ],
+                    [
+                        "publication date range",
+                        "first version-last version",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "reports",
@@ -4722,6 +7562,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4740,6 +7584,21 @@
                 "request"
             ],
             "Persona": ["patron"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "create",
+                        "personal account",
+                        "create"
+                    ],
+                    [
+                        "request",
+                        "email notification",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [
                 [
                     "report",
@@ -4772,6 +7631,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4787,6 +7650,25 @@
                 "load"
             ],
             "Persona": ["patron"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "download",
+                        "report/dataset release calendar",
+                        "create"
+                    ],
+                    [
+                        "load",
+                        "report/dataset release calendar",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "own calendar",
+                    "report/dataset release calendar",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "own calendar",
                 "report/dataset release calendar"
@@ -4816,6 +7698,18 @@
                 "repository"
             ],
             "Action": ["make"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "make",
+                    "cornell publications",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "repository",
+                    "Cornell publications",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "repository",
                 "Cornell publications"
@@ -4836,6 +7730,25 @@
             ],
             "Action": ["harvest"],
             "Persona": ["librarydiscoveryoperator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "harvest",
+                    "useful metadata",
+                    "delete"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "repository",
+                        "useful metadata",
+                        "delete"
+                    ],
+                    [
+                        "oai",
+                        "useful metadata",
+                        "delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "repository",
@@ -4875,6 +7788,32 @@
                 "present",
                 "locate"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "present",
+                        "correct versions",
+                        "preserve"
+                    ],
+                    [
+                        "locate",
+                        "points",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "content",
+                        "correct versions",
+                        "preserve"
+                    ],
+                    [
+                        "points",
+                        "error",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "content",
@@ -4913,6 +7852,42 @@
                 "leaving"
             ],
             "Persona": ["library staff member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "quickly correct",
+                        "errors",
+                        "create;delete"
+                    ],
+                    [
+                        "leaving",
+                        "record",
+                        "delete"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "uploaded metadata",
+                        "errors",
+                        "create;delete"
+                    ],
+                    [
+                        "uploaded documents",
+                        "errors",
+                        "create;delete"
+                    ],
+                    [
+                        "record",
+                        "revisions",
+                        "delete"
+                    ],
+                    [
+                        "record",
+                        "reasons",
+                        "delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "uploaded metadata",
@@ -4961,6 +7936,18 @@
                 "minimal interruption"
             ],
             "Action": ["proceed"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "proceed",
+                    "service",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "service",
+                    "minimal interruption",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "service",
                 "minimal interruption"
@@ -4981,6 +7968,25 @@
             ],
             "Action": ["receive"],
             "Persona": ["library staff member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "receive",
+                        "quick response",
+                        "create"
+                    ],
+                    [
+                        "receive",
+                        "reasonable resolution",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "tech support issues",
+                    "reasonable resolution",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "tech support issues",
                 "reasonable resolution"
@@ -5008,6 +8014,14 @@
         "Benefit": {
             "Entity": ["funder requirements"],
             "Action": ["meet"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "meet",
+                    "funder requirements",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can meet funder requirements.",
             "Targets": [[
@@ -5031,6 +8045,42 @@
                 "use"
             ],
             "Persona": ["Cornell faculty member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "share",
+                        "repository files",
+                        "create"
+                    ],
+                    [
+                        "still allows",
+                        "users",
+                        "preserve"
+                    ],
+                    [
+                        "download",
+                        "repository files",
+                        "create"
+                    ],
+                    [
+                        "use",
+                        "repository files",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "repository files",
+                        "larger than 1gb",
+                        "create"
+                    ],
+                    [
+                        "users",
+                        "repository files",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "repository files",
@@ -5072,6 +8122,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -5085,6 +8139,25 @@
             ],
             "Action": ["login"],
             "Persona": ["DB/IR administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "login",
+                    "personal account",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "personal account",
+                        "access",
+                        "create"
+                    ],
+                    [
+                        "personal account",
+                        "authorized functions",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "personal account",
@@ -5111,6 +8184,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -5128,6 +8205,30 @@
                 "retrieve"
             ],
             "Persona": ["DB/IR administrator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "personal account",
+                        "preserve"
+                    ],
+                    [
+                        "change",
+                        "passwords",
+                        "create;delete"
+                    ],
+                    [
+                        "retrieve",
+                        "passwords",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "personal account",
+                    "ability",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "personal account",
                 "ability"
@@ -5158,6 +8259,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -5175,6 +8280,21 @@
                 "delete"
             ],
             "Persona": ["DB/IR administrator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "set up",
+                        "accounts",
+                        "create"
+                    ],
+                    [
+                        "delete",
+                        "accounts",
+                        "delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [
                 [
                     "other administrators",
@@ -5213,6 +8333,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -5229,6 +8353,25 @@
                 "administering"
             ],
             "Persona": ["DB/IR administrator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "see",
+                        "list",
+                        "preserve"
+                    ],
+                    [
+                        "administering",
+                        "accounts",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "list",
+                    "all administrators",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "list",
                 "all administrators"
@@ -5255,6 +8398,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -5267,6 +8414,14 @@
             ],
             "Action": ["have"],
             "Persona": ["DB/IR administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "robust searching and tracking features",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "DB/IR administrator",
@@ -5284,6 +8439,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -5300,6 +8459,21 @@
                 "requested"
             ],
             "Persona": ["DB/IR administrator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "unpublish",
+                        "report",
+                        "delete"
+                    ],
+                    [
+                        "unpublish",
+                        "dataset",
+                        "delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "DB/IR administrator",
@@ -5323,6 +8497,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -5338,6 +8516,30 @@
             ],
             "Action": ["add"],
             "Persona": ["DB/IR administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "add",
+                    "future release dates",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "reports",
+                        "future release dates",
+                        "create"
+                    ],
+                    [
+                        "datasets",
+                        "future release dates",
+                        "create"
+                    ],
+                    [
+                        "calendar",
+                        "future release dates",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "reports",
@@ -5372,6 +8574,14 @@
         "Benefit": {
             "Entity": ["research"],
             "Action": ["assist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "assist",
+                    "research",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can assist in my research.",
             "Targets": [[
@@ -5391,6 +8601,25 @@
                 "built"
             ],
             "Persona": ["faculty member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "recommend",
+                        "digital collection",
+                        "create"
+                    ],
+                    [
+                        "built",
+                        "digital collection",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "repository",
+                    "digital collection",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "repository",
                 "digital collection"
@@ -5418,6 +8647,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -5434,6 +8667,26 @@
                 "using"
             ],
             "Persona": ["DB/IR administrator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "search",
+                        "administrator accounts",
+                        "preserve;create"
+                    ],
+                    [
+                        "using",
+                        "full/partial email",
+                        "preserve"
+                    ],
+                    [
+                        "using",
+                        "name",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "DB/IR administrator",
@@ -5461,6 +8714,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -5484,6 +8741,57 @@
                 "changing"
             ],
             "Persona": ["DB/IR administrator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "administrate",
+                        "patron accounts",
+                        "create;delete"
+                    ],
+                    [
+                        "closing",
+                        "accounts",
+                        "delete"
+                    ],
+                    [
+                        "viewing",
+                        "subscriptions",
+                        "preserve;create"
+                    ],
+                    [
+                        "changing",
+                        "subscriptions",
+                        "create;delete"
+                    ],
+                    [
+                        "resetting",
+                        "passwords",
+                        "delete"
+                    ],
+                    [
+                        "changing",
+                        "email address",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "patron accounts",
+                        "passwords",
+                        "create;delete"
+                    ],
+                    [
+                        "patron accounts",
+                        "email address",
+                        "create;delete"
+                    ],
+                    [
+                        "patron accounts",
+                        "subscriptions",
+                        "create;delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "patron accounts",
@@ -5543,6 +8851,21 @@
                 "best reflect",
                 "deliver"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "best reflect",
+                        "diverse content",
+                        "preserve"
+                    ],
+                    [
+                        "deliver",
+                        "diverse content",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can best reflect and deliver diverse content.",
             "Targets": [
@@ -5570,6 +8893,32 @@
                 "searching"
             ],
             "Persona": ["library staff member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "create",
+                        "custom metadata fields",
+                        "create"
+                    ],
+                    [
+                        "searching",
+                        "fields",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "certain collections",
+                        "custom metadata fields",
+                        "create"
+                    ],
+                    [
+                        "certain collections",
+                        "fields",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "certain collections",
@@ -5603,6 +8952,14 @@
         "Benefit": {
             "Entity": ["collection owner's request"],
             "Action": ["fulfill"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "fulfill",
+                    "collection owner's request",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can fulfill the collection owner's request.",
             "Targets": [[
@@ -5616,6 +8973,14 @@
             "Entity": ["collection"],
             "Action": ["move"],
             "Persona": ["repository support team member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "move",
+                    "collection",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G27# As a repository support team member, I want to move a collection, ",
             "Triggers": [[
@@ -5634,6 +8999,14 @@
         "Benefit": {
             "Entity": ["collection owner's request"],
             "Action": ["fulfill"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "fulfill",
+                    "collection owner's request",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can fulfill the collection owner's request.",
             "Targets": [[
@@ -5647,6 +9020,14 @@
             "Entity": ["collection"],
             "Action": ["rename"],
             "Persona": ["repository support team member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "rename",
+                    "collection",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G27# As a repository support team member, I want to rename a collection, ",
             "Triggers": [[
@@ -5673,6 +9054,37 @@
                 "suffers",
                 "restore"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "suffers",
+                        "destruction",
+                        "forbid"
+                    ],
+                    [
+                        "suffers",
+                        "unwanted changes",
+                        "forbid"
+                    ],
+                    [
+                        "restore",
+                        "other good copies",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "one copy",
+                        "destruction",
+                        "forbid"
+                    ],
+                    [
+                        "one copy",
+                        "unwanted changes",
+                        "forbid"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "one copy",
@@ -5708,6 +9120,14 @@
                 "stored redundantly"
             ],
             "Persona": ["asset manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "stored redundantly",
+                    "digital copy i deposit",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G27# As an asset manager, I want to be assured that the digital copy I deposit is stored redundantly, ",
             "Triggers": [[
@@ -5726,6 +9146,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -5740,6 +9164,10 @@
             ],
             "Action": ["be assured"],
             "Persona": ["asset manager"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [
                 [
                     "one repository",
@@ -5763,6 +9191,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -5785,6 +9217,42 @@
                 "restore"
             ],
             "Persona": ["asset manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "continuously monitored",
+                        "redundant copies",
+                        "preserve;create"
+                    ],
+                    [
+                        "determine",
+                        "original object",
+                        "create"
+                    ],
+                    [
+                        "restore",
+                        "original object",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "redundant copies",
+                        "unwanted changes",
+                        "preserve;create"
+                    ],
+                    [
+                        "redundant copies",
+                        "changes",
+                        "preserve;create"
+                    ],
+                    [
+                        "all copies",
+                        "original object",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "redundant copies",
@@ -5825,6 +9293,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -5841,6 +9313,18 @@
                 "taken out"
             ],
             "Persona": ["asset manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "taken out",
+                    "assets",
+                    "delete"
+                ]],
+                "Contain Action Rules": [[
+                    "repository",
+                    "assets",
+                    "delete"
+                ]]
+            },
             "Contains": [[
                 "repository",
                 "assets"
@@ -5866,6 +9350,18 @@
                 "institution"
             ],
             "Action": ["obtain"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "obtain",
+                    "guidance",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "evaluation",
+                    "guidance",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "evaluation",
                 "guidance"
@@ -5887,6 +9383,18 @@
             ],
             "Action": ["know"],
             "Persona": ["asset manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "intellectual value",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "asset",
+                    "intellectual value",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "asset",
@@ -5917,6 +9425,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -5935,6 +9447,30 @@
                 "obtain"
             ],
             "Persona": ["asset manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "mechanism",
+                        "preserve"
+                    ],
+                    [
+                        "obtain",
+                        "listing",
+                        "create"
+                    ],
+                    [
+                        "obtain",
+                        "understanding",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "listing",
+                    "assets",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "assets",
@@ -5971,6 +9507,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -5989,6 +9529,10 @@
             ],
             "Action": ["be assured"],
             "Persona": ["asset manager"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [
                 [
                     "IR",
@@ -6032,6 +9576,10 @@
         "Benefit": {
             "Entity": ["contemporary operating environment"],
             "Action": ["successfully render"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can successfully render them in my contemporary operating environment.",
             "Targets": []
@@ -6045,6 +9593,21 @@
                 "adequately described"
             ],
             "Persona": ["stakeholder"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "files",
+                        "preserve"
+                    ],
+                    [
+                        "adequately described",
+                        "files",
+                        "preserve;forbid"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G27# As a stakeholder, I want to have files adequately described, ",
             "Triggers": [[
@@ -6081,6 +9644,18 @@
                 "material"
             ],
             "Action": ["provide"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "provide",
+                    "stable, long-term access",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "material",
+                    "stable, long-term access",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "material",
                 "stable, long-term access"
@@ -6102,6 +9677,32 @@
             ],
             "Action": ["preserve"],
             "Persona": ["library staff member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "preserve",
+                        "content",
+                        "preserve"
+                    ],
+                    [
+                        "preserve",
+                        "metadata",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "repository",
+                        "content",
+                        "preserve"
+                    ],
+                    [
+                        "repository",
+                        "metadata",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "repository",
@@ -6139,6 +9740,18 @@
                 "institution"
             ],
             "Action": ["create"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "create",
+                    "permanent digital archive",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "institution",
+                    "permanent digital archive",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "institution",
@@ -6169,6 +9782,25 @@
                 "using"
             ],
             "Persona": ["library staff member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "preserve",
+                        "scholarship",
+                        "preserve"
+                    ],
+                    [
+                        "using",
+                        "sustainable links",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "law school",
+                    "scholarship",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "law school",
                 "scholarship"
@@ -6199,6 +9831,18 @@
                 "wider distribution"
             ],
             "Action": ["house"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "house",
+                    "digital material",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "wider distribution",
+                    "digital material",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "wider distribution",
                 "digital material"
@@ -6218,6 +9862,18 @@
             ],
             "Action": ["create"],
             "Persona": ["library staff member"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "create",
+                    "collection",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "collection",
+                    "custom metadata fields",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "collection",
                 "custom metadata fields"
@@ -6242,6 +9898,21 @@
                 "confirm",
                 "followed"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "confirm",
+                        "proper procedures",
+                        "create"
+                    ],
+                    [
+                        "followed",
+                        "proper procedures",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can confirm that proper procedures were followed.",
             "Targets": [
@@ -6271,6 +9942,42 @@
                 "uploaded"
             ],
             "Persona": ["library staff member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "trace",
+                        "list",
+                        "create"
+                    ],
+                    [
+                        "determine",
+                        "who",
+                        "create"
+                    ],
+                    [
+                        "uploaded",
+                        "item",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "list",
+                        "revisors",
+                        "create"
+                    ],
+                    [
+                        "who",
+                        "item",
+                        "create"
+                    ],
+                    [
+                        "repository",
+                        "item",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "list",
@@ -6312,6 +10019,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -6329,6 +10040,10 @@
                 "cease"
             ],
             "Persona": ["asset manager"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [
                 [
                     "assets",
@@ -6352,6 +10067,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -6370,6 +10089,47 @@
                 "pass"
             ],
             "Persona": ["asset manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "mechanism",
+                        "preserve"
+                    ],
+                    [
+                        "pass",
+                        "ownership",
+                        "delete"
+                    ],
+                    [
+                        "pass",
+                        "management",
+                        "delete"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "assets",
+                        "ownership",
+                        "delete"
+                    ],
+                    [
+                        "successor",
+                        "ownership",
+                        "delete"
+                    ],
+                    [
+                        "assets",
+                        "management",
+                        "delete"
+                    ],
+                    [
+                        "successor",
+                        "management",
+                        "delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "assets",
@@ -6414,6 +10174,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -6431,6 +10195,26 @@
                 "ask"
             ],
             "Persona": ["patron"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "email",
+                        "system provider",
+                        "create"
+                    ],
+                    [
+                        "report",
+                        "issues",
+                        "preserve;create"
+                    ],
+                    [
+                        "ask",
+                        "questions",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "patron",
@@ -6458,6 +10242,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -6474,6 +10262,25 @@
                 "allow"
             ],
             "Persona": ["data curator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "mechanism",
+                        "preserve"
+                    ],
+                    [
+                        "allow",
+                        "records scheduling",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "items",
+                    "records scheduling",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "items",
                 "records scheduling"
@@ -6500,6 +10307,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -6517,6 +10328,32 @@
                 "accessed"
             ],
             "Persona": ["data curator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "upload",
+                        "new version",
+                        "create"
+                    ],
+                    [
+                        "accessed",
+                        "old versions",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "item",
+                        "new version",
+                        "create"
+                    ],
+                    [
+                        "item",
+                        "old versions",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "item",

@@ -10,6 +10,21 @@
                 "know",
                 "do"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "what",
+                        "preserve"
+                    ],
+                    [
+                        "do",
+                        "file",
+                        "preserve;delete;create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I know what I can do with a file.",
             "Targets": [
@@ -32,6 +47,21 @@
             ],
             "Action": ["apply"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "apply",
+                        "license",
+                        "create;delete"
+                    ],
+                    [
+                        "apply",
+                        "rights statement",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As an archivist, I want to apply a license or rights statement, ",
             "Triggers": [[
@@ -56,6 +86,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "they don't get shared by mistake.",
             "Targets": []
@@ -66,6 +100,14 @@
             "Entity": ["individual files"],
             "Action": ["mark"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "mark",
+                    "individual files",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As an archivist, I want to mark individual files as restricted, ",
             "Triggers": [[
@@ -84,6 +126,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "they don't get shared by mistake.",
             "Targets": []
@@ -97,6 +143,18 @@
             ],
             "Action": ["mark"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "mark",
+                    "groups",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "groups",
+                    "files",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "groups",
                 "files"
@@ -118,6 +176,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -130,6 +192,14 @@
             ],
             "Action": ["restrict"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "restrict",
+                    "file",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "archivist",
@@ -147,6 +217,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -160,6 +234,18 @@
             ],
             "Action": ["restrict"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "restrict",
+                    "group",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": [[
+                    "group",
+                    "files",
+                    "preserve;forbid"
+                ]]
+            },
             "Contains": [[
                 "group",
                 "files"
@@ -180,6 +266,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I don't have to update this by hand.",
             "Targets": []
@@ -197,6 +287,25 @@
                 "removed"
             ],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "set",
+                        "date",
+                        "create"
+                    ],
+                    [
+                        "removed",
+                        "restrictions",
+                        "delete"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "file",
+                    "restrictions",
+                    "delete"
+                ]]
+            },
             "Contains": [[
                 "file",
                 "restrictions"
@@ -224,6 +333,14 @@
         "Benefit": {
             "Entity": ["files"],
             "Action": ["share"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "share",
+                    "files",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can share files when they become open.",
             "Targets": [[
@@ -240,6 +357,18 @@
             ],
             "Action": ["add"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "add",
+                    "restriction end date information",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "files",
+                    "restriction end date information",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "files",
                 "restriction end date information"
@@ -264,6 +393,14 @@
                 "know",
                 "shared"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "how",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I know if and how they can be shared.",
             "Targets": [[
@@ -281,6 +418,18 @@
             ],
             "Action": ["add"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "add",
+                    "detailed restrictions",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "groups",
+                    "detailed restrictions",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "groups",
@@ -314,6 +463,18 @@
                 "certain digital files"
             ],
             "Action": ["give"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "give",
+                    "reading room access",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "certain digital files",
+                    "reading room access",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "certain digital files",
                 "reading room access"
@@ -334,6 +495,18 @@
             ],
             "Action": ["restrict"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "restrict",
+                    "access",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": [[
+                    "some files",
+                    "access",
+                    "preserve;forbid"
+                ]]
+            },
             "Contains": [[
                 "some files",
                 "access"
@@ -361,6 +534,25 @@
                 "allow",
                 "see"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "allow",
+                        "donor representatives",
+                        "create"
+                    ],
+                    [
+                        "see",
+                        "certain files",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "donor representatives",
+                    "certain files",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "donor representatives",
                 "certain files"
@@ -387,6 +579,18 @@
             ],
             "Action": ["restrict"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "restrict",
+                    "access",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": [[
+                    "certain files",
+                    "access",
+                    "preserve;forbid"
+                ]]
+            },
             "Contains": [[
                 "certain files",
                 "access"
@@ -408,6 +612,10 @@
         "Benefit": {
             "Entity": ["researcher"],
             "Action": ["license"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can license it to a researcher.",
             "Targets": []
@@ -421,6 +629,14 @@
                 "scanned"
             ],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "scanned",
+                    "photo",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As an archivist, I want to know if a photo has already been scanned, ",
             "Triggers": [[
@@ -448,6 +664,14 @@
         "Benefit": {
             "Entity": ["uniform rights statements"],
             "Action": ["easily create"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "easily create",
+                    "uniform rights statements",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can easily create uniform rights statements.",
             "Targets": [[
@@ -464,6 +688,21 @@
             ],
             "Action": ["select"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "select",
+                        "existing rights statuses",
+                        "preserve;create"
+                    ],
+                    [
+                        "select",
+                        "statements",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As an archivist, I want to select existing rights statuses and statements, ",
             "Triggers": [[
@@ -492,6 +731,18 @@
                 "record"
             ],
             "Action": ["provide"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "provide",
+                    "access",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "non-sensitive portions",
+                    "access",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "non-sensitive portions",
@@ -517,6 +768,18 @@
             ],
             "Action": ["redact"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "redact",
+                    "information",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": [[
+                    "digital files",
+                    "information",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "digital files",
                 "information"
@@ -541,6 +804,14 @@
                 "back and forth"
             ],
             "Action": ["eliminated"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "eliminated",
+                    "back and forth",
+                    "preserve;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "the process is more transparent and some of the back and forth can be eliminated.",
             "Targets": [[
@@ -557,6 +828,18 @@
             ],
             "Action": ["have"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "online form",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "licensing archival material",
+                    "online form",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "licensing archival material",
                 "online form"
@@ -581,6 +864,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -593,6 +880,18 @@
             ],
             "Action": ["batch edit"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "batch edit",
+                    "metadata",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": [[
+                    "files",
+                    "metadata",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "files",
                 "metadata"
@@ -613,6 +912,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -622,6 +925,14 @@
             "Entity": ["single file"],
             "Action": ["upload"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "upload",
+                    "single file",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "archivist",
@@ -639,6 +950,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can save time.",
             "Targets": []
@@ -652,6 +967,18 @@
             ],
             "Action": ["upload"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "upload",
+                    "groups",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "groups",
+                    "files",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "groups",
                 "files"
@@ -673,6 +1000,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I don't have to do this manually.",
             "Targets": []
@@ -686,6 +1017,18 @@
             ],
             "Action": ["automatically create"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "automatically create",
+                    "access copies",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "files",
+                    "access copies",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "files",
                 "access copies"
@@ -707,6 +1050,14 @@
         "Benefit": {
             "Entity": ["file size"],
             "Action": ["know"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "file size",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I know the file size.",
             "Targets": [[
@@ -720,6 +1071,14 @@
             "Entity": ["technical metadata"],
             "Action": ["automatically generate"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "automatically generate",
+                    "technical metadata",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As an archivist, I want to automatically generate technical metadata, ",
             "Triggers": [[
@@ -741,6 +1100,10 @@
                 "researchers"
             ],
             "Action": ["easily access"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "staff and researchers are able to easily access them.",
             "Targets": []
@@ -754,6 +1117,21 @@
                 "tag"
             ],
             "Persona": ["assistant archivist"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "upload",
+                        "staff generated working papers",
+                        "create"
+                    ],
+                    [
+                        "tag",
+                        "staff generated working papers",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As an assistant archivist, I want to upload and tag staff generated working papers, ",
             "Triggers": [
@@ -790,6 +1168,14 @@
                 "know",
                 "apply"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "apply",
+                    "preservation actions",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I know whether I should apply preservation actions.",
             "Targets": [[
@@ -807,6 +1193,18 @@
             ],
             "Action": ["distinguish"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "distinguish",
+                    "digital objects",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "digital objects",
+                    "preservation standards",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "digital objects",
                 "preservation standards"
@@ -828,6 +1226,10 @@
         "Benefit": {
             "Entity": ["other researchers"],
             "Action": ["share"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can share them with other researchers.",
             "Targets": []
@@ -842,6 +1244,25 @@
             ],
             "Action": ["link"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "link",
+                    "electronic versions",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "researchers' publications",
+                        "electronic versions",
+                        "create"
+                    ],
+                    [
+                        "citations",
+                        "electronic versions",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "researchers' publications",
@@ -878,6 +1299,10 @@
         "Benefit": {
             "Entity": ["other research requests"],
             "Action": ["used again"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "they can be used again for other research requests.",
             "Targets": []
@@ -891,6 +1316,18 @@
             ],
             "Action": ["upload"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "upload",
+                    "scans",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "scans",
+                    "images created while answering research requests",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "scans",
                 "images created while answering research requests"
@@ -915,6 +1352,10 @@
         "Benefit": {
             "Entity": [],
             "Action": ["reused"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "they can be reused.",
             "Targets": []
@@ -929,6 +1370,25 @@
             ],
             "Action": ["create"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "create",
+                    "quality scans",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "images",
+                        "quality scans",
+                        "create"
+                    ],
+                    [
+                        "documents",
+                        "quality scans",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "images",
@@ -959,6 +1419,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I don't have to do this manually.",
             "Targets": []
@@ -972,6 +1436,18 @@
             ],
             "Action": ["automatically create"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "automatically create",
+                    "access derivatives",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "digital objects",
+                    "access derivatives",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "digital objects",
                 "access derivatives"
@@ -993,6 +1469,14 @@
         "Benefit": {
             "Entity": ["potential errors"],
             "Action": ["avoid"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "avoid",
+                    "potential errors",
+                    "forbid"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I avoid potential errors.",
             "Targets": [[
@@ -1009,6 +1493,18 @@
             ],
             "Action": ["automatically assign"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "automatically assign",
+                    "unique identifiers",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "material i scan",
+                    "unique identifiers",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "material I scan",
                 "unique identifiers"
@@ -1030,6 +1526,14 @@
         "Benefit": {
             "Entity": ["repetitive and easily-forgotten tasks"],
             "Action": ["avoid"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "avoid",
+                    "repetitive and easily-forgotten tasks",
+                    "forbid"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I avoid repetitive and easily-forgotten tasks.",
             "Targets": [[
@@ -1046,6 +1550,18 @@
             ],
             "Action": ["automatically embed"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "automatically embed",
+                    "metadata",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "file headers",
+                    "metadata",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "file headers",
                 "metadata"
@@ -1067,6 +1583,10 @@
         "Benefit": {
             "Entity": [],
             "Action": ["orient"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can orient them correctly.",
             "Targets": []
@@ -1077,6 +1597,14 @@
             "Entity": ["images"],
             "Action": ["rotate"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "rotate",
+                    "images",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As an archivist, I want to rotate images, ",
             "Triggers": [[
@@ -1098,6 +1626,14 @@
         "Benefit": {
             "Entity": ["unnecessary work"],
             "Action": ["eliminate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "eliminate",
+                    "unnecessary work",
+                    "delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can eliminate unnecessary work.",
             "Targets": [[
@@ -1115,6 +1651,32 @@
             ],
             "Action": ["apply"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "apply",
+                        "automatic contrast",
+                        "create;delete"
+                    ],
+                    [
+                        "apply",
+                        "level operations",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "scanned file",
+                        "automatic contrast",
+                        "create;delete"
+                    ],
+                    [
+                        "scanned file",
+                        "level operations",
+                        "create;delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "scanned file",
@@ -1151,6 +1713,18 @@
                 "automated tools"
             ],
             "Action": ["improve"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "improve",
+                    "results",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": [[
+                    "automated tools",
+                    "results",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "automated tools",
                 "results"
@@ -1171,6 +1745,26 @@
             ],
             "Action": ["perform"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "perform",
+                        "contrast",
+                        "preserve;delete;create"
+                    ],
+                    [
+                        "perform",
+                        "level",
+                        "preserve;delete;create"
+                    ],
+                    [
+                        "perform",
+                        "other manipulations",
+                        "preserve;delete;create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As an archivist, I want to perform contrast, level and other manipulations manually, ",
             "Triggers": [[
@@ -1202,6 +1796,14 @@
         "Benefit": {
             "Entity": ["material"],
             "Action": ["transferred"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "transferred",
+                    "material",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "material can be transferred on an ongoing basis.",
             "Targets": [[
@@ -1218,6 +1820,18 @@
             ],
             "Action": ["supply"],
             "Persona": ["donor representative"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "supply",
+                    "incremental accruals",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "new and existing collections",
+                    "incremental accruals",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "new and existing collections",
                 "incremental accruals"
@@ -1242,6 +1856,10 @@
                 "find",
                 "refer"
             ],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "find and refer to them for another visit.",
             "Targets": []
@@ -1255,6 +1873,18 @@
             ],
             "Action": ["manage"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "manage",
+                    "scans",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": [[
+                    "archival material created for educational visits",
+                    "scans",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "archival material created for educational visits",
                 "scans"
@@ -1285,6 +1915,10 @@
         "Benefit": {
             "Entity": [],
             "Action": ["find"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can find it easily later.",
             "Targets": []
@@ -1300,6 +1934,30 @@
             ],
             "Action": ["manage"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "manage",
+                    "loan documentation",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "loan documentation",
+                        "preservation photos",
+                        "create;delete"
+                    ],
+                    [
+                        "loan documentation",
+                        "forms",
+                        "create;delete"
+                    ],
+                    [
+                        "loan documentation",
+                        "correspondence",
+                        "create;delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "loan documentation",
@@ -1337,6 +1995,18 @@
                 "publication"
             ],
             "Action": ["cite"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "cite",
+                    "file",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "publication",
+                    "file",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "publication",
                 "file"
@@ -1353,6 +2023,14 @@
             "Entity": ["structured citation data"],
             "Action": ["generate"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "generate",
+                    "structured citation data",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As a researcher, I want to generate structured citation data, ",
             "Triggers": [[
@@ -1374,6 +2052,18 @@
                 "interesting thing I found"
             ],
             "Action": ["show"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "show",
+                    "interesting thing i found",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "other people",
+                    "interesting thing I found",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "other people",
                 "interesting thing I found"
@@ -1394,6 +2084,25 @@
             ],
             "Action": ["share"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "share",
+                    "link",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "file",
+                        "link",
+                        "create"
+                    ],
+                    [
+                        "social media",
+                        "link",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "file",
@@ -1424,6 +2133,10 @@
                 "know",
                 "use"
             ],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I know if I can use it.",
             "Targets": []
@@ -1437,6 +2150,18 @@
             ],
             "Action": ["understand"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "understand",
+                    "copyright status",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "image",
+                    "copyright status",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "image",
                 "copyright status"
@@ -1461,6 +2186,10 @@
         "Benefit": {
             "Entity": ["publication"],
             "Action": ["cite accurately"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can cite accurately in a publication.",
             "Targets": []
@@ -1474,6 +2203,18 @@
             ],
             "Action": ["want"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "want",
+                    "clear citation information",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "each document",
+                    "clear citation information",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "each document",
                 "clear citation information"
@@ -1507,6 +2248,10 @@
                 "researchers"
             ],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "it is available to staff and researchers.",
             "Targets": []
@@ -1517,6 +2262,14 @@
             "Entity": ["reports I've written"],
             "Action": ["share"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "share",
+                    "reports i've written",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As a researcher, I want to share reports I've written, ",
             "Triggers": [[
@@ -1541,6 +2294,10 @@
                 "reading room"
             ],
             "Action": ["use"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can use it for research without having to come to the reading room.",
             "Targets": []
@@ -1551,6 +2308,14 @@
             "Entity": ["file"],
             "Action": ["download"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "download",
+                    "file",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As a researcher, I want to download a file, ",
             "Triggers": [[
@@ -1581,6 +2346,10 @@
                 "articles"
             ],
             "Action": ["use"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can use them in immediate and future in talks and articles.",
             "Targets": []
@@ -1591,6 +2360,14 @@
             "Entity": ["reports"],
             "Action": ["download"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "download",
+                    "reports",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As a researcher, I want to download reports, ",
             "Triggers": [[
@@ -1618,6 +2395,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1631,6 +2412,32 @@
             ],
             "Action": ["locate"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "locate",
+                        "photographs",
+                        "create"
+                    ],
+                    [
+                        "locate",
+                        "documents",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "social media",
+                        "photographs",
+                        "create"
+                    ],
+                    [
+                        "social media",
+                        "documents",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "social media",
@@ -1663,6 +2470,10 @@
         "Benefit": {
             "Entity": ["reading room"],
             "Action": ["view"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can view them in the reading room.",
             "Targets": []
@@ -1676,6 +2487,18 @@
             ],
             "Action": ["request"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "request",
+                    "analog versions",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "digital objects",
+                    "analog versions",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "digital objects",
                 "analog versions"
@@ -1706,6 +2529,10 @@
         "Benefit": {
             "Entity": ["publication"],
             "Action": ["use"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can use them in a publication.",
             "Targets": []
@@ -1719,6 +2546,18 @@
             ],
             "Action": ["order"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "order",
+                    "copies",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "photos",
+                    "copies",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "photos",
                 "copies"
@@ -1749,6 +2588,10 @@
         "Benefit": {
             "Entity": ["request"],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I don't have to put in that request.",
             "Targets": []
@@ -1767,6 +2610,32 @@
                 "digitized"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "receive",
+                        "notification",
+                        "create"
+                    ],
+                    [
+                        "digitized",
+                        "something i request",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "reading room",
+                        "something i request",
+                        "create"
+                    ],
+                    [
+                        "duplication",
+                        "something i request",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "reading room",
@@ -1803,6 +2672,14 @@
                 "images"
             ],
             "Action": ["know"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "what",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "they know what they can do with images.",
             "Targets": [[
@@ -1821,6 +2698,30 @@
             ],
             "Action": ["make"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "make",
+                    "information",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "researchers",
+                        "information",
+                        "create"
+                    ],
+                    [
+                        "donors",
+                        "information",
+                        "create"
+                    ],
+                    [
+                        "rights",
+                        "information",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "researchers",
@@ -1858,6 +2759,14 @@
                 "confirm",
                 "referred"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "referred",
+                    "object",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can confirm which object is being referred to.",
             "Targets": [[
@@ -1875,6 +2784,25 @@
             ],
             "Action": ["ensure"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "ensure",
+                    "emails sent",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "emails sent",
+                        "specific objects",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "emails sent",
+                        "accurate citation information",
+                        "preserve;forbid"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "emails sent",
@@ -1902,6 +2830,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1915,6 +2847,32 @@
             ],
             "Action": ["stream"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "stream",
+                        "audio",
+                        "create;delete"
+                    ],
+                    [
+                        "stream",
+                        "video files",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "web browser",
+                        "audio",
+                        "create;delete"
+                    ],
+                    [
+                        "web browser",
+                        "video files",
+                        "create;delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "web browser",
@@ -1947,6 +2905,14 @@
         "Benefit": {
             "Entity": ["text mining tools"],
             "Action": ["use"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "use",
+                    "text mining tools",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can use text mining tools on it.",
             "Targets": [[
@@ -1963,6 +2929,18 @@
             ],
             "Action": ["export"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "export",
+                    "descriptive data",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "descriptive data",
+                    "common format",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "descriptive data",
                 "common format"
@@ -1990,6 +2968,10 @@
                 "know",
                 "sent"
             ],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I know if I've sent it to a researcher before.",
             "Targets": []
@@ -2003,6 +2985,18 @@
             ],
             "Action": ["track"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "track",
+                    "use",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "photo",
+                    "use",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "photo",
                 "use"
@@ -2036,6 +3030,18 @@
                 "assets"
             ],
             "Action": ["track"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "track",
+                    "use",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "assets",
+                    "use",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "assets",
                 "use"
@@ -2058,6 +3064,25 @@
                 "downloaded"
             ],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "see",
+                        "what",
+                        "preserve"
+                    ],
+                    [
+                        "downloaded",
+                        "what",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "particular user",
+                    "what",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "particular user",
                 "what"
@@ -2088,6 +3113,18 @@
                 "things they have given us"
             ],
             "Action": ["access"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "access",
+                    "things they have given us",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "donors",
+                    "things they have given us",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "donors",
                 "things they have given us"
@@ -2108,6 +3145,18 @@
             ],
             "Action": ["provide"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "provide",
+                    "access",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "digital copies",
+                    "access",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "digital copies",
@@ -2135,6 +3184,14 @@
         "Benefit": {
             "Entity": ["RAC's mission"],
             "Action": ["fulfill"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "fulfill",
+                    "rac's mission",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can fulfill the RAC's mission.",
             "Targets": [[
@@ -2151,6 +3208,18 @@
             ],
             "Action": ["make"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "make",
+                    "as much archival material as possible",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "as much archival material as possible",
+                    "use",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "as much archival material as possible",
                 "use"
@@ -2175,6 +3244,18 @@
                 "web presence"
             ],
             "Action": ["integrate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "integrate",
+                    "collections",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "web presence",
+                    "collections",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "web presence",
                 "collections"
@@ -2194,6 +3275,18 @@
             ],
             "Action": ["use"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "use",
+                    "archival content",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "rac website",
+                    "archival content",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "RAC website",
                 "archival content"
@@ -2215,6 +3308,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2227,6 +3324,18 @@
             ],
             "Action": ["access"],
             "Persona": ["donor representative"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "access",
+                    "descriptive information",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "images scanned for my institutions needs",
+                    "descriptive information",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "images scanned for my institutions needs",
                 "descriptive information"
@@ -2250,6 +3359,10 @@
                 "reports"
             ],
             "Action": ["use"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can use them in my institutions exhibits, reports etc.",
             "Targets": []
@@ -2263,6 +3376,18 @@
             ],
             "Action": ["look"],
             "Persona": ["donor representative"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "look",
+                    "images",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "collection",
+                    "images",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "collection",
                 "images"
@@ -2293,6 +3418,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2305,6 +3434,18 @@
             ],
             "Action": ["search"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "search",
+                    "all files",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "all files",
+                    "keyword",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "all files",
                 "keyword"
@@ -2331,6 +3472,21 @@
                 "learn",
                 "avoid placing"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "learn",
+                        "what already exists digitally",
+                        "create"
+                    ],
+                    [
+                        "avoid placing",
+                        "additional duplication requests",
+                        "preserve;forbid"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can learn what already exists digitally and avoid placing additional duplication requests.",
             "Targets": [
@@ -2350,6 +3506,14 @@
             "Entity": ["keyword"],
             "Action": ["search"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "search",
+                    "keyword",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As a researcher, I want to search by keyword, ",
             "Triggers": [[
@@ -2368,6 +3532,14 @@
         "Benefit": {
             "Entity": ["comprehensive analysis"],
             "Action": ["prepare"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "prepare",
+                    "comprehensive analysis",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "so I can prepare a comprehensive analysis.",
             "Targets": [[
@@ -2384,6 +3556,18 @@
             ],
             "Action": ["see"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "common material",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "collections",
+                    "common material",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "collections",
                 "common material"
@@ -2405,6 +3589,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2417,6 +3605,18 @@
             ],
             "Action": ["browse through"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "browse through",
+                    "files",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "collection",
+                    "files",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "collection",
                 "files"
@@ -2437,6 +3637,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2449,6 +3653,18 @@
             ],
             "Action": ["browse through"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "browse through",
+                    "files",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "collection",
+                    "files",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "collection",
                 "files"
@@ -2469,6 +3685,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2481,6 +3701,18 @@
             ],
             "Action": ["search"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "search",
+                    "all files",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "all files",
+                    "keyword",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "all files",
                 "keyword"
@@ -2504,6 +3736,18 @@
                 "material"
             ],
             "Action": ["requesting"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "requesting",
+                    "material",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "donor representatives",
+                    "material",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "donor representatives",
                 "material"
@@ -2520,6 +3764,14 @@
             "Entity": ["inventories"],
             "Action": ["upload"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "upload",
+                    "inventories",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As an archivist, I want to upload inventories, ",
             "Triggers": [[
@@ -2538,6 +3790,14 @@
         "Benefit": {
             "Entity": ["particular photographs"],
             "Action": ["finding"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "finding",
+                    "particular photographs",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "it makes finding particular photographs easier.",
             "Targets": [[
@@ -2551,6 +3811,14 @@
             "Entity": ["tag"],
             "Action": ["search"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "search",
+                    "tag",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As an archivist, I want to search by tag, ",
             "Triggers": [[
@@ -2569,6 +3837,10 @@
         "Benefit": {
             "Entity": [],
             "Action": ["use"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can use them.",
             "Targets": []
@@ -2582,6 +3854,18 @@
             ],
             "Action": ["access"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "access",
+                    "digital files",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "x-drive",
+                    "digital files",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "X-drive",
                 "digital files"
@@ -2606,6 +3890,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2615,6 +3903,14 @@
             "Entity": ["interdepartmental forms"],
             "Action": ["easily access"],
             "Persona": ["assistant archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "easily access",
+                    "interdepartmental forms",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "assistant archivist",
@@ -2635,6 +3931,14 @@
                 "original files"
             ],
             "Action": ["increase"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "increase",
+                    "accessibility",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I increase accessibility and I do not lose the original files.",
             "Targets": [[
@@ -2652,6 +3956,25 @@
             ],
             "Action": ["have"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "electronic versions",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "collection files",
+                        "electronic versions",
+                        "preserve"
+                    ],
+                    [
+                        "electronic versions",
+                        "staff use",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "collection files",
@@ -2679,6 +4002,14 @@
         "Benefit": {
             "Entity": ["presentations"],
             "Action": ["prepare"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "prepare",
+                    "presentations",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can prepare presentations.",
             "Targets": [[
@@ -2692,6 +4023,14 @@
             "Entity": ["photo collection images"],
             "Action": ["search across"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "search across",
+                    "photo collection images",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As a researcher, I want to be able to search across photo collection images, ",
             "Triggers": [[
@@ -2714,6 +4053,14 @@
                 "collections"
             ],
             "Action": ["find"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "find",
+                    "everything",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "collections",
                 "inquiry"
@@ -2733,6 +4080,14 @@
                 "using"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "using",
+                    "structured data",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As a researcher, I want to search using structured data, ",
             "Triggers": [[
@@ -2751,6 +4106,10 @@
         "Benefit": {
             "Entity": ["research process"],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "my research process is better informed.",
             "Targets": []
@@ -2761,6 +4120,14 @@
             "Entity": ["tagged working papers"],
             "Action": ["access"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "access",
+                    "tagged working papers",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As a researcher, I want to access tagged working papers, ",
             "Triggers": [[
@@ -2782,6 +4149,18 @@
                 "institutions"
             ],
             "Action": ["make"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "make",
+                    "connections",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "institutions",
+                    "connections",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "institutions",
                 "connections"
@@ -2798,6 +4177,14 @@
             "Entity": ["educational outreach materials"],
             "Action": ["access"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "access",
+                    "educational outreach materials",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As a researcher, I want to access educational outreach materials, ",
             "Triggers": [[
@@ -2816,6 +4203,14 @@
         "Benefit": {
             "Entity": ["materials"],
             "Action": ["find"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "find",
+                    "materials",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can find materials again.",
             "Targets": [[
@@ -2829,6 +4224,14 @@
             "Entity": ["accurate cross-collection citation information"],
             "Action": ["have"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "accurate cross-collection citation information",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As a researcher, I want to have accurate cross-collection citation information, ",
             "Triggers": [[
@@ -2850,6 +4253,21 @@
                 "decide",
                 "look"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "decide",
+                        "what",
+                        "preserve"
+                    ],
+                    [
+                        "look",
+                        "what",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can decide what, I want to look at.",
             "Targets": [
@@ -2872,6 +4290,14 @@
             ],
             "Action": ["access"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "access",
+                    "digitized archival materials",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As a researcher, I want to access digitized archival materials without mediation, ",
             "Triggers": [[
@@ -2896,6 +4322,18 @@
                 "know",
                 "meet"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "meet",
+                    "publication requirements",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "images",
+                    "publication requirements",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "images",
                 "publication requirements"
@@ -2916,6 +4354,25 @@
             ],
             "Action": ["distinguish"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "distinguish",
+                    "images scanned",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "images scanned",
+                        "color",
+                        "preserve;create"
+                    ],
+                    [
+                        "images scanned",
+                        "black and white",
+                        "preserve;create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "images scanned",
@@ -2943,6 +4400,14 @@
         "Benefit": {
             "Entity": ["more information"],
             "Action": ["find"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "find",
+                    "more information",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can find out more information.",
             "Targets": [[
@@ -2959,6 +4424,18 @@
             ],
             "Action": ["ask"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "ask",
+                    "question",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "specific file",
+                    "question",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "specific file",
                 "question"
@@ -2983,6 +4460,18 @@
                 "research"
             ],
             "Action": ["more efficiently locate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "more efficiently locate",
+                    "digitized documents",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "research",
+                    "digitized documents",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "research",
                 "digitized documents"
@@ -3002,6 +4491,18 @@
             ],
             "Action": ["search"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "search",
+                    "ocred text",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "all available digitized textual documents",
+                    "ocred text",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "all available digitized textual documents",
                 "OCRed text"
@@ -3027,6 +4528,10 @@
                 "last looked",
                 "digitized"
             ],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I know if it's been digitized since I last looked.",
             "Targets": []
@@ -3043,6 +4548,21 @@
                 "digitized"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "date",
+                        "preserve"
+                    ],
+                    [
+                        "digitized",
+                        "something",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As a researcher, I want to know the date on which something was digitized, ",
             "Triggers": [[
@@ -3073,6 +4593,18 @@
                 "research"
             ],
             "Action": ["more efficiently locate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "more efficiently locate",
+                    "diary entries",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "research",
+                    "diary entries",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "research",
                 "diary entries"
@@ -3095,6 +4627,21 @@
                 "keyword search across"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "search",
+                        "each scanned diary segment",
+                        "preserve;create"
+                    ],
+                    [
+                        "keyword search across",
+                        "rf program officer's scanned diaries",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As a researcher, I want to keyword search across all of an RF program officer's scanned diaries, rather than having to search each scanned diary segment separately, ",
             "Triggers": [[
@@ -3122,6 +4669,18 @@
                 "donors"
             ],
             "Action": ["provide"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "provide",
+                    "reference services",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "donors",
+                    "reference services",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "donors",
                 "reference services"
@@ -3141,6 +4700,18 @@
             ],
             "Action": ["access"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "access",
+                    "inventories",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "inventories",
+                    "unprocessed collections",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "inventories",
                 "unprocessed collections"
@@ -3165,6 +4736,14 @@
                 "make",
                 "license"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "make",
+                    "selection",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can make a selection of which one I want to license.",
             "Targets": [[
@@ -3181,6 +4760,18 @@
             ],
             "Action": ["view"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "view",
+                    "thumbnails",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "photos",
+                    "thumbnails",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "photos",
                 "thumbnails"
@@ -3217,6 +4808,21 @@
                 "know",
                 "seeing"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "seeing",
+                        "everything",
+                        "preserve"
+                    ],
+                    [
+                        "seeing",
+                        "portion",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I know if I am seeing everything or only a portion.",
             "Targets": [
@@ -3243,6 +4849,25 @@
                 "digitized"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "when",
+                        "preserve"
+                    ],
+                    [
+                        "digitized",
+                        "part",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "folder",
+                    "part",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "folder",
                 "part"
@@ -3270,6 +4895,10 @@
         "Benefit": {
             "Entity": [],
             "Action": ["select"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can select which one I want.",
             "Targets": []
@@ -3283,6 +4912,18 @@
             ],
             "Action": ["see"],
             "Persona": ["donor representative"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "thumbnails",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "images",
+                    "thumbnails",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "images",
                 "thumbnails"
@@ -3310,6 +4951,18 @@
                 "films"
             ],
             "Action": ["see"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "excerpts",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "films",
+                    "excerpts",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "films",
                 "excerpts"
@@ -3326,6 +4979,14 @@
             "Entity": ["film clips"],
             "Action": ["view"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "view",
+                    "film clips",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As an researcher, I want to view film clips, ",
             "Triggers": [[
@@ -3344,6 +5005,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3356,6 +5021,18 @@
             ],
             "Action": ["search"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "search",
+                    "images",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "images",
+                    "photographer",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "images",
                 "photographer"
@@ -3376,6 +5053,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3388,6 +5069,18 @@
             ],
             "Action": ["search"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "search",
+                    "images",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "images",
+                    "people",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "images",
                 "people"
@@ -3408,6 +5101,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3424,6 +5121,32 @@
                 "taken"
             ],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "search",
+                        "images",
+                        "preserve;create"
+                    ],
+                    [
+                        "taken",
+                        "photo",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "images",
+                        "place",
+                        "preserve;create"
+                    ],
+                    [
+                        "photo",
+                        "place",
+                        "create;delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "photo",
@@ -3456,6 +5179,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3468,6 +5195,18 @@
             ],
             "Action": ["search"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "search",
+                    "images",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "images",
+                    "rights",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "images",
                 "rights"
@@ -3488,6 +5227,14 @@
         "Benefit": {
             "Entity": ["better research assistance"],
             "Action": ["provide"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "provide",
+                    "better research assistance",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can provide better research assistance.",
             "Targets": [[
@@ -3504,6 +5251,21 @@
             ],
             "Action": ["search"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "search",
+                        "index cards",
+                        "preserve;create"
+                    ],
+                    [
+                        "search",
+                        "other non-public finding aids",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As an archivist, I want to search index cards and other non-public finding aids, ",
             "Triggers": [[
@@ -3534,6 +5296,21 @@
                 "gain",
                 "processing"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "gain",
+                        "background information",
+                        "create"
+                    ],
+                    [
+                        "processing",
+                        "collection",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can gain background information for processing a collection.",
             "Targets": [
@@ -3553,6 +5330,14 @@
             "Entity": ["collection files"],
             "Action": ["view"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "view",
+                    "collection files",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As an archivist, I want to view collection files, ",
             "Triggers": [[
@@ -3577,6 +5362,18 @@
                 "donors"
             ],
             "Action": ["provide"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "provide",
+                    "research services",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "donors",
+                    "research services",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "donors",
                 "research services"
@@ -3596,6 +5393,18 @@
             ],
             "Action": ["view"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "view",
+                    "physical locations",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "physical locations",
+                    "non-archival material",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "physical locations",
                 "non-archival material"
@@ -3617,6 +5426,14 @@
         "Benefit": {
             "Entity": ["everything"],
             "Action": ["easily access"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "easily access",
+                    "everything",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": " can easily access everything that's been digitized.",
             "Targets": [[
@@ -3630,6 +5447,14 @@
             "Entity": ["files"],
             "Action": ["find"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "find",
+                    "files",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As an archivist, I want to find files that cannot be made publicly available,  ",
             "Triggers": [[
@@ -3654,6 +5479,21 @@
                 "use",
                 "assist"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "information",
+                        "preserve"
+                    ],
+                    [
+                        "assist",
+                        "researchers",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can use that information to assist researchers.",
             "Targets": [
@@ -3677,6 +5517,32 @@
             ],
             "Action": ["access"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "access",
+                        "metadata",
+                        "preserve;create"
+                    ],
+                    [
+                        "access",
+                        "visual representations",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "index cards",
+                        "metadata",
+                        "preserve;create"
+                    ],
+                    [
+                        "index cards",
+                        "visual representations",
+                        "preserve;create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "index cards",
@@ -3713,6 +5579,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3722,6 +5592,14 @@
             "Entity": ["individual material types"],
             "Action": ["search"],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "search",
+                    "individual material types",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "archivist",
@@ -3742,6 +5620,14 @@
                 "any metadata"
             ],
             "Action": ["find"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "find",
+                    "images",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "so I can find images when i don't have any metadata.",
             "Targets": [[
@@ -3761,6 +5647,21 @@
                 "uploading"
             ],
             "Persona": ["archivist"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "search",
+                        "images",
+                        "preserve;create"
+                    ],
+                    [
+                        "uploading",
+                        "image",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As an archivist, I want to search images by uploading an image, ",
             "Triggers": [[
@@ -3785,6 +5686,14 @@
         "Benefit": {
             "Entity": ["user permissions"],
             "Action": ["control"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "control",
+                    "user permissions",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can control user permissions.",
             "Targets": [[
@@ -3798,6 +5707,14 @@
             "Entity": ["user groups"],
             "Action": ["create"],
             "Persona": ["administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "create",
+                    "user groups",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As an administrator, I want to create user groups, ",
             "Triggers": [[
@@ -3822,6 +5739,18 @@
                 "role"
             ],
             "Action": ["group"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "group",
+                    "users",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "users",
+                    "role",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "users",
                 "role"
@@ -3838,6 +5767,14 @@
             "Entity": ["user roles"],
             "Action": ["create"],
             "Persona": ["administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "create",
+                    "user roles",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As an administrator, I want to create user roles, ",
             "Triggers": [[
@@ -3856,6 +5793,14 @@
         "Benefit": {
             "Entity": ["read/write access"],
             "Action": ["control"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "control",
+                    "read/write access",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can control read/write access.",
             "Targets": [[
@@ -3872,6 +5817,18 @@
             ],
             "Action": ["assign"],
             "Persona": ["administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "assign",
+                    "rac staff",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "different user groups",
+                    "rac staff",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "different user groups",
                 "RAC staff"
@@ -3896,6 +5853,14 @@
                 "users"
             ],
             "Action": ["control"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "control",
+                    "what",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can control what users can and can't do.",
             "Targets": [[
@@ -3913,6 +5878,25 @@
             ],
             "Action": ["assign"],
             "Persona": ["administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "assign",
+                    "rights",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "user groups",
+                        "rights",
+                        "create"
+                    ],
+                    [
+                        "roles",
+                        "rights",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "user groups",
@@ -3944,6 +5928,10 @@
                 "another set"
             ],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [
                 [
                     "another set",
@@ -3970,6 +5958,21 @@
                 "using"
             ],
             "Persona": ["administrator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "allow",
+                        "users",
+                        "create"
+                    ],
+                    [
+                        "using",
+                        "active directory credentials",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As an administrator, I want to allow users to log in using Active Directory credentials, ",
             "Triggers": [[
@@ -3997,6 +6000,10 @@
                 "cleartext"
             ],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "cleartext",
                 "passwords"
@@ -4016,6 +6023,25 @@
                 "reset"
             ],
             "Persona": ["administrator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "researchers",
+                        "preserve"
+                    ],
+                    [
+                        "reset",
+                        "passwords",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "researchers",
+                    "passwords",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "researchers",
                 "passwords"
@@ -4050,6 +6076,25 @@
                 "show",
                 "hide"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "show",
+                        "things",
+                        "create"
+                    ],
+                    [
+                        "hide",
+                        "things",
+                        "delete"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "display",
+                    "things",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "display",
                 "things"
@@ -4078,6 +6123,21 @@
                 "see"
             ],
             "Persona": ["administrator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "limit",
+                        "who",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "see",
+                        "certain metadata fields",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G26# As an administrator, I want to limit who can see certain metadata fields, ",
             "Triggers": [[

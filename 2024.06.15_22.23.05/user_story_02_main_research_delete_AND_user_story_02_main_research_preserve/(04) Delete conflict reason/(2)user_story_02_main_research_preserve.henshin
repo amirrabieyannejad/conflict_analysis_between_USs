@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Rule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_EmPOQCtVEe-Z2c_YxgnDzQ" name="user_story_02_main_research_preserve">
+  <lhs xmi:id="_EmPOQStVEe-Z2c_YxgnDzQ" name="Lhs">
+    <nodes xmi:id="_EmPOQitVEe-Z2c_YxgnDzQ" name="|6|" outgoing="_EmP1WitVEe-Z2c_YxgnDzQ _EmP1WytVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Persona"/>
+      <attributes xmi:id="_EmPOQytVEe-Z2c_YxgnDzQ" value="&quot;prospectiveapplicant&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_EmP1UCtVEe-Z2c_YxgnDzQ" name="|7|">
+      <type href="../../../Backlog_v2.4.ecore#//Story"/>
+      <attributes xmi:id="_EmP1UStVEe-Z2c_YxgnDzQ" value="&quot;#g03# as a prospectiveapplicant, i want to research requirements and to select a service,&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//Story/text"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_EmP1UitVEe-Z2c_YxgnDzQ" name="|8|" incoming="_EmP1WitVEe-Z2c_YxgnDzQ" outgoing="_EmP1XStVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action"/>
+      <attributes xmi:id="_EmP1UytVEe-Z2c_YxgnDzQ" value="&quot;select&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_EmP1VCtVEe-Z2c_YxgnDzQ" name="|9|" incoming="_EmP1WytVEe-Z2c_YxgnDzQ" outgoing="_EmP1XCtVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action"/>
+      <attributes xmi:id="_EmP1VStVEe-Z2c_YxgnDzQ" value="&quot;research&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_EmP1VitVEe-Z2c_YxgnDzQ" name="|10|" incoming="_EmP1XCtVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Entity"/>
+      <attributes xmi:id="_EmP1VytVEe-Z2c_YxgnDzQ" value="&quot;requirements&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_EmP1WCtVEe-Z2c_YxgnDzQ" name="|11|" incoming="_EmP1XStVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Entity"/>
+      <attributes xmi:id="_EmP1WStVEe-Z2c_YxgnDzQ" value="&quot;service&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <edges xmi:id="_EmP1WitVEe-Z2c_YxgnDzQ" source="_EmPOQitVEe-Z2c_YxgnDzQ" target="_EmP1UitVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Persona/triggers"/>
+    </edges>
+    <edges xmi:id="_EmP1WytVEe-Z2c_YxgnDzQ" source="_EmPOQitVEe-Z2c_YxgnDzQ" target="_EmP1VCtVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Persona/triggers"/>
+    </edges>
+    <edges xmi:id="_EmP1XCtVEe-Z2c_YxgnDzQ" source="_EmP1VCtVEe-Z2c_YxgnDzQ" target="_EmP1VitVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action/targets"/>
+    </edges>
+    <edges xmi:id="_EmP1XStVEe-Z2c_YxgnDzQ" source="_EmP1UitVEe-Z2c_YxgnDzQ" target="_EmP1WCtVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action/targets"/>
+    </edges>
+  </lhs>
+  <rhs xmi:id="_EmP1XitVEe-Z2c_YxgnDzQ" name="Rhs">
+    <nodes xmi:id="_EmP1XytVEe-Z2c_YxgnDzQ" name="|6|" outgoing="_EmP1aytVEe-Z2c_YxgnDzQ _EmP1bCtVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Persona"/>
+      <attributes xmi:id="_EmP1YCtVEe-Z2c_YxgnDzQ" value="&quot;prospectiveapplicant&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_EmP1YStVEe-Z2c_YxgnDzQ" name="|7|">
+      <type href="../../../Backlog_v2.4.ecore#//Story"/>
+      <attributes xmi:id="_EmP1YitVEe-Z2c_YxgnDzQ" value="&quot;#g03# as a prospectiveapplicant, i want to research requirements and to select a service,&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//Story/text"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_EmP1YytVEe-Z2c_YxgnDzQ" name="|8|" incoming="_EmP1aytVEe-Z2c_YxgnDzQ" outgoing="_EmP1bitVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action"/>
+      <attributes xmi:id="_EmP1ZCtVEe-Z2c_YxgnDzQ" value="&quot;select&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_EmP1ZStVEe-Z2c_YxgnDzQ" name="|9|" incoming="_EmP1bCtVEe-Z2c_YxgnDzQ" outgoing="_EmP1bStVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action"/>
+      <attributes xmi:id="_EmP1ZitVEe-Z2c_YxgnDzQ" value="&quot;research&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_EmP1ZytVEe-Z2c_YxgnDzQ" name="|10|" incoming="_EmP1bStVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Entity"/>
+      <attributes xmi:id="_EmP1aCtVEe-Z2c_YxgnDzQ" value="&quot;requirements&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_EmP1aStVEe-Z2c_YxgnDzQ" name="|11|" incoming="_EmP1bitVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Entity"/>
+      <attributes xmi:id="_EmP1aitVEe-Z2c_YxgnDzQ" value="&quot;service&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <edges xmi:id="_EmP1aytVEe-Z2c_YxgnDzQ" source="_EmP1XytVEe-Z2c_YxgnDzQ" target="_EmP1YytVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Persona/triggers"/>
+    </edges>
+    <edges xmi:id="_EmP1bCtVEe-Z2c_YxgnDzQ" source="_EmP1XytVEe-Z2c_YxgnDzQ" target="_EmP1ZStVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Persona/triggers"/>
+    </edges>
+    <edges xmi:id="_EmP1bStVEe-Z2c_YxgnDzQ" source="_EmP1ZStVEe-Z2c_YxgnDzQ" target="_EmP1ZytVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action/targets"/>
+    </edges>
+    <edges xmi:id="_EmP1bitVEe-Z2c_YxgnDzQ" source="_EmP1YytVEe-Z2c_YxgnDzQ" target="_EmP1aStVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action/targets"/>
+    </edges>
+  </rhs>
+  <mappings xmi:id="_EmP1bytVEe-Z2c_YxgnDzQ" origin="_EmPOQitVEe-Z2c_YxgnDzQ" image="_EmP1XytVEe-Z2c_YxgnDzQ"/>
+  <mappings xmi:id="_EmP1cCtVEe-Z2c_YxgnDzQ" origin="_EmP1UCtVEe-Z2c_YxgnDzQ" image="_EmP1YStVEe-Z2c_YxgnDzQ"/>
+  <mappings xmi:id="_EmP1cStVEe-Z2c_YxgnDzQ" origin="_EmP1UitVEe-Z2c_YxgnDzQ" image="_EmP1YytVEe-Z2c_YxgnDzQ"/>
+  <mappings xmi:id="_EmP1citVEe-Z2c_YxgnDzQ" origin="_EmP1VCtVEe-Z2c_YxgnDzQ" image="_EmP1ZStVEe-Z2c_YxgnDzQ"/>
+  <mappings xmi:id="_EmP1cytVEe-Z2c_YxgnDzQ" origin="_EmP1VitVEe-Z2c_YxgnDzQ" image="_EmP1ZytVEe-Z2c_YxgnDzQ"/>
+  <mappings xmi:id="_EmP1dCtVEe-Z2c_YxgnDzQ" origin="_EmP1WCtVEe-Z2c_YxgnDzQ" image="_EmP1aStVEe-Z2c_YxgnDzQ"/>
+</henshin:Rule>

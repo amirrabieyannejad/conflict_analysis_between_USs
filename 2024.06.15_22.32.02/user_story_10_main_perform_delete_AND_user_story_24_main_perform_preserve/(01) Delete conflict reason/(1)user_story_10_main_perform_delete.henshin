@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Rule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_UqmNQCtWEe-Z2c_YxgnDzQ" name="user_story_10_main_perform_delete">
+  <lhs xmi:id="_UqmNQStWEe-Z2c_YxgnDzQ" name="Lhs">
+    <nodes xmi:id="_UqmNQitWEe-Z2c_YxgnDzQ" name="|0|" outgoing="_UqmNSitWEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Persona"/>
+      <attributes xmi:id="_UqmNQytWEe-Z2c_YxgnDzQ" value="&quot;staff member&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_UqmNRCtWEe-Z2c_YxgnDzQ" name="|1|">
+      <type href="../../../Backlog_v2.4.ecore#//Story"/>
+      <attributes xmi:id="_UqmNRStWEe-Z2c_YxgnDzQ" value="&quot;#g03# as a staff member, i want to perform a completeness review,&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//Story/text"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_UqmNRitWEe-Z2c_YxgnDzQ" name="|3|" incoming="_UqmNSitWEe-Z2c_YxgnDzQ" outgoing="_UqmNSytWEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action"/>
+      <attributes xmi:id="_UqmNRytWEe-Z2c_YxgnDzQ" value="&quot;perform&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_UqmNSCtWEe-Z2c_YxgnDzQ" name="|2|" incoming="_UqmNSytWEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Entity"/>
+      <attributes xmi:id="_UqmNSStWEe-Z2c_YxgnDzQ" value="&quot;completeness review&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <edges xmi:id="_UqmNSitWEe-Z2c_YxgnDzQ" source="_UqmNQitWEe-Z2c_YxgnDzQ" target="_UqmNRitWEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Persona/triggers"/>
+    </edges>
+    <edges xmi:id="_UqmNSytWEe-Z2c_YxgnDzQ" source="_UqmNRitWEe-Z2c_YxgnDzQ" target="_UqmNSCtWEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action/targets"/>
+    </edges>
+  </lhs>
+  <rhs xmi:id="_UqmNTCtWEe-Z2c_YxgnDzQ" name="Rhs">
+    <nodes xmi:id="_UqmNTStWEe-Z2c_YxgnDzQ" name="|0|">
+      <type href="../../../Backlog_v2.4.ecore#//Persona"/>
+      <attributes xmi:id="_UqmNTitWEe-Z2c_YxgnDzQ" value="&quot;staff member&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_UqmNTytWEe-Z2c_YxgnDzQ" name="|1|">
+      <type href="../../../Backlog_v2.4.ecore#//Story"/>
+      <attributes xmi:id="_UqmNUCtWEe-Z2c_YxgnDzQ" value="&quot;#g03# as a staff member, i want to perform a completeness review,&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//Story/text"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_UqmNUStWEe-Z2c_YxgnDzQ" name="|2|">
+      <type href="../../../Backlog_v2.4.ecore#//Entity"/>
+    </nodes>
+  </rhs>
+  <mappings xmi:id="_UqmNUitWEe-Z2c_YxgnDzQ" origin="_UqmNQitWEe-Z2c_YxgnDzQ" image="_UqmNTStWEe-Z2c_YxgnDzQ"/>
+  <mappings xmi:id="_UqmNUytWEe-Z2c_YxgnDzQ" origin="_UqmNRCtWEe-Z2c_YxgnDzQ" image="_UqmNTytWEe-Z2c_YxgnDzQ"/>
+  <mappings xmi:id="_UqmNVCtWEe-Z2c_YxgnDzQ" origin="_UqmNSCtWEe-Z2c_YxgnDzQ" image="_UqmNUStWEe-Z2c_YxgnDzQ"/>
+</henshin:Rule>

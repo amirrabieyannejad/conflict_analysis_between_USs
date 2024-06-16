@@ -73,7 +73,7 @@
                 "Target Action Rules": [[
                     "search",
                     "information",
-                    "preserve"
+                    "preserve;create"
                 ]],
                 "Contain Action Rules": []
             },
@@ -188,12 +188,12 @@
                     [
                         "research",
                         "requirements",
-                        "preserve"
+                        "preserve;delete;create"
                     ],
                     [
                         "select",
                         "service",
-                        "create"
+                        "preserve;create"
                     ]
                 ],
                 "Contain Action Rules": []
@@ -324,13 +324,13 @@
                     [
                         "perform",
                         "transactions",
-                        "create"
+                        "preserve;delete;create"
                     ]
                 ],
                 "Contain Action Rules": [[
                     "transactions",
                     "user authentication",
-                    "create"
+                    "preserve;delete;create"
                 ]]
             },
             "Contains": [[
@@ -398,17 +398,17 @@
                     [
                         "provide",
                         "information",
-                        "preserve"
+                        "create"
                     ],
                     [
                         "provide",
                         "plans",
-                        "preserve"
+                        "create"
                     ],
                     [
                         "provide",
                         "documents",
-                        "preserve"
+                        "create"
                     ],
                     [
                         "initiate",
@@ -481,12 +481,12 @@
                 "Target Action Rules": [[
                     "satisfy",
                     "documentation requirements",
-                    "preserve"
+                    "preserve;forbid"
                 ]],
                 "Contain Action Rules": [[
                     "application",
                     "documentation requirements",
-                    "preserve"
+                    "preserve;forbid"
                 ]]
             },
             "Contains": [[
@@ -546,7 +546,7 @@
                     [
                         "satisfy",
                         "outstanding charge",
-                        "preserve"
+                        "preserve;forbid"
                     ],
                     [
                         "received from",
@@ -579,7 +579,7 @@
                 "Target Action Rules": [[
                     "pay",
                     "fee",
-                    "create"
+                    "create;delete"
                 ]],
                 "Contain Action Rules": []
             },
@@ -616,12 +616,12 @@
                 "Target Action Rules": [[
                     "understand",
                     "service",
-                    "create"
+                    "preserve;create"
                 ]],
                 "Contain Action Rules": [[
                     "service",
                     "information",
-                    "create"
+                    "preserve;create"
                 ]]
             },
             "Contains": [
@@ -669,12 +669,12 @@
                 "Target Action Rules": [[
                     "check",
                     "status",
-                    "create"
+                    "preserve;forbid"
                 ]],
                 "Contain Action Rules": [[
                     "transaction",
                     "status",
-                    "create"
+                    "preserve;forbid"
                 ]]
             },
             "Contains": [[
@@ -705,12 +705,12 @@
                 "Target Action Rules": [[
                     "successfully change",
                     "information",
-                    "create"
+                    "create;delete"
                 ]],
                 "Contain Action Rules": [[
                     "application",
                     "information",
-                    "create"
+                    "create;delete"
                 ]]
             },
             "Contains": [[
@@ -763,12 +763,12 @@
                     [
                         "validate",
                         "eligible for further technical review",
-                        "create"
+                        "preserve;forbid"
                     ],
                     [
                         "validate",
                         "application",
-                        "create"
+                        "preserve;forbid"
                     ]
                 ],
                 "Contain Action Rules": []
@@ -796,7 +796,7 @@
                 "Target Action Rules": [[
                     "perform",
                     "completeness review",
-                    "create"
+                    "preserve;delete;create"
                 ]],
                 "Contain Action Rules": []
             },
@@ -883,12 +883,12 @@
                     [
                         "subsequently approved",
                         "compliance",
-                        "preserve"
+                        "preserve;forbid"
                     ],
                     [
                         "denied",
                         "compliance",
-                        "preserve"
+                        "preserve;forbid"
                     ]
                 ],
                 "Contain Action Rules": []
@@ -963,24 +963,24 @@
                     [
                         "prevent",
                         "progression",
-                        "forbid"
+                        "preserve;forbid"
                     ],
                     [
                         "prevent",
                         "other actions",
-                        "forbid"
+                        "preserve;forbid"
                     ]
                 ],
                 "Contain Action Rules": [
                     [
                         "workflow",
                         "progression",
-                        "forbid"
+                        "preserve;forbid"
                     ],
                     [
                         "system",
                         "other actions",
-                        "forbid"
+                        "preserve;forbid"
                     ]
                 ]
             },
@@ -1016,7 +1016,7 @@
                 "Target Action Rules": [[
                     "apply",
                     "hold",
-                    "preserve"
+                    "create;delete"
                 ]],
                 "Contain Action Rules": []
             },
@@ -1057,7 +1057,7 @@
                     [
                         "resolved",
                         "issue",
-                        "preserve"
+                        "create;delete"
                     ]
                 ],
                 "Contain Action Rules": [
@@ -1139,12 +1139,12 @@
                     [
                         "satisfy",
                         "communication",
-                        "preserve"
+                        "preserve;forbid"
                     ],
                     [
                         "satisfy",
                         "records responsibilities",
-                        "preserve"
+                        "preserve;forbid"
                     ]
                 ],
                 "Contain Action Rules": []
@@ -1175,7 +1175,7 @@
                 "Target Action Rules": [[
                     "send",
                     "formal response",
-                    "create"
+                    "create;delete"
                 ]],
                 "Contain Action Rules": []
             },
@@ -1232,7 +1232,7 @@
                 "Target Action Rules": [[
                     "track",
                     "draft proffers",
-                    "preserve"
+                    "preserve;create"
                 ]],
                 "Contain Action Rules": []
             },
@@ -1263,24 +1263,24 @@
                     [
                         "ensure",
                         "compliance",
-                        "preserve"
+                        "preserve;forbid"
                     ],
                     [
                         "ensure",
                         "satisfaction",
-                        "preserve"
+                        "preserve;forbid"
                     ]
                 ],
                 "Contain Action Rules": [
                     [
                         "proffer",
                         "compliance",
-                        "preserve"
+                        "preserve;forbid"
                     ],
                     [
                         "proffer",
                         "satisfaction",
-                        "preserve"
+                        "preserve;forbid"
                     ]
                 ]
             },
@@ -1316,7 +1316,7 @@
                 "Target Action Rules": [[
                     "manage",
                     "approved proffers",
-                    "create"
+                    "create;delete"
                 ]],
                 "Contain Action Rules": []
             },
@@ -1345,12 +1345,12 @@
                 "Target Action Rules": [[
                     "maintain",
                     "accurate ordinance information",
-                    "create"
+                    "create;delete"
                 ]],
                 "Contain Action Rules": [[
                     "System",
                     "accurate ordinance information",
-                    "create"
+                    "create;delete"
                 ]]
             },
             "Contains": [[
@@ -1373,7 +1373,7 @@
                 "Target Action Rules": [[
                     "manage",
                     "ordinances",
-                    "create"
+                    "create;delete"
                 ]],
                 "Contain Action Rules": []
             },
@@ -1606,12 +1606,12 @@
                     [
                         "track",
                         "plan amendments",
-                        "preserve"
+                        "preserve;create"
                     ],
                     [
                         "track",
                         "planning studies",
-                        "preserve"
+                        "preserve;create"
                     ],
                     [
                         "conduct",
@@ -1676,12 +1676,12 @@
                     [
                         "access",
                         "needed information",
-                        "create"
+                        "preserve;create"
                     ],
                     [
                         "analyze",
                         "needed information",
-                        "preserve"
+                        "create"
                     ],
                     [
                         "export",
@@ -1692,7 +1692,7 @@
                 "Contain Action Rules": [[
                     "needed information",
                     "format",
-                    "create"
+                    "preserve;create"
                 ]]
             },
             "Contains": [[
@@ -1799,12 +1799,12 @@
                 "Target Action Rules": [[
                     "evaluate",
                     "consistency",
-                    "preserve"
+                    "preserve;forbid"
                 ]],
                 "Contain Action Rules": [[
                     "comprehensive plan",
                     "consistency",
-                    "preserve"
+                    "preserve;forbid"
                 ]]
             },
             "Contains": [[
@@ -1843,34 +1843,34 @@
                     [
                         "validate",
                         "compliance",
-                        "create"
+                        "preserve;forbid"
                     ],
                     [
                         "impact",
                         "approval",
-                        "preserve"
+                        "create"
                     ],
                     [
                         "impact",
                         "denial",
-                        "preserve"
+                        "create"
                     ]
                 ],
                 "Contain Action Rules": [
                     [
                         "application",
                         "compliance",
-                        "create"
+                        "preserve;forbid"
                     ],
                     [
                         "application",
                         "approval",
-                        "preserve"
+                        "create"
                     ],
                     [
                         "application",
                         "denial",
-                        "preserve"
+                        "create"
                     ]
                 ]
             },
@@ -1914,7 +1914,7 @@
                 "Target Action Rules": [[
                     "perform",
                     "staff review",
-                    "create"
+                    "preserve;delete;create"
                 ]],
                 "Contain Action Rules": []
             },
@@ -1956,7 +1956,7 @@
                     [
                         "send",
                         "communication",
-                        "create"
+                        "create;delete"
                     ]
                 ],
                 "Contain Action Rules": []
@@ -1990,12 +1990,12 @@
                 "Target Action Rules": [[
                     "process",
                     "requests",
-                    "create"
+                    "create;delete"
                 ]],
                 "Contain Action Rules": [[
                     "zoning information",
                     "requests",
-                    "create"
+                    "create;delete"
                 ]]
             },
             "Contains": [[
@@ -2028,12 +2028,12 @@
                 "Target Action Rules": [[
                     "satisfy",
                     "applicant's request",
-                    "preserve"
+                    "preserve;forbid"
                 ]],
                 "Contain Action Rules": [[
                     "service",
                     "Applicant's request",
-                    "preserve"
+                    "preserve;forbid"
                 ]]
             },
             "Contains": [
@@ -2158,12 +2158,12 @@
                     [
                         "track",
                         "hearing-related activities",
-                        "preserve"
+                        "preserve;create"
                     ],
                     [
                         "track",
                         "due dates",
-                        "preserve"
+                        "preserve;create"
                     ]
                 ],
                 "Contain Action Rules": []
@@ -2191,7 +2191,7 @@
                 "Target Action Rules": [[
                     "manage",
                     "hearing calendars",
-                    "create"
+                    "create;delete"
                 ]],
                 "Contain Action Rules": []
             },
@@ -2225,7 +2225,7 @@
                 "Target Action Rules": [[
                     "present",
                     "application",
-                    "create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": []
             },
@@ -2279,7 +2279,7 @@
                 "Target Action Rules": [[
                     "ensure",
                     "compliance",
-                    "preserve"
+                    "preserve;forbid"
                 ]],
                 "Contain Action Rules": []
             },
@@ -2300,7 +2300,7 @@
                 "Target Action Rules": [[
                     "manage",
                     "affidavits",
-                    "create"
+                    "create;delete"
                 ]],
                 "Contain Action Rules": []
             },
@@ -2346,7 +2346,7 @@
                 "Target Action Rules": [[
                     "satisfy",
                     "hearing requirements",
-                    "preserve"
+                    "preserve;forbid"
                 ]],
                 "Contain Action Rules": []
             },
@@ -2398,7 +2398,7 @@
                     [
                         "support",
                         "hearing execution",
-                        "create"
+                        "preserve"
                     ],
                     [
                         "prepare",
@@ -2442,7 +2442,7 @@
                 "Target Action Rules": [[
                     "enforce",
                     "system",
-                    "preserve"
+                    "create"
                 ]],
                 "Contain Action Rules": []
             },
@@ -2497,7 +2497,7 @@
                     [
                         "track",
                         "outcome",
-                        "preserve"
+                        "preserve;create"
                     ],
                     [
                         "record",
@@ -2537,7 +2537,7 @@
                 "Target Action Rules": [[
                     "process",
                     "appeals",
-                    "create"
+                    "create;delete"
                 ]],
                 "Contain Action Rules": []
             },
@@ -2642,12 +2642,12 @@
                     [
                         "monitor",
                         "workload",
-                        "preserve"
+                        "create;delete"
                     ],
                     [
                         "effectively adjust",
                         "workload",
-                        "preserve"
+                        "create;delete"
                     ],
                     [
                         "met",
@@ -2684,7 +2684,7 @@
                 "Target Action Rules": [[
                     "manage",
                     "plan reviewer workload",
-                    "create"
+                    "create;delete"
                 ]],
                 "Contain Action Rules": []
             },
@@ -2785,7 +2785,7 @@
                     [
                         "successfully conduct",
                         "plan review meeting",
-                        "preserve"
+                        "create"
                     ],
                     [
                         "record",
@@ -2796,7 +2796,7 @@
                 "Contain Action Rules": [[
                     "plan review meeting",
                     "applicant",
-                    "preserve"
+                    "create"
                 ]]
             },
             "Contains": [[
@@ -2858,17 +2858,17 @@
                     [
                         "approve",
                         "plans",
-                        "preserve"
+                        "preserve;create"
                     ],
                     [
                         "fail",
                         "plans",
-                        "preserve"
+                        "preserve;forbid"
                     ],
                     [
                         "deny",
                         "plans",
-                        "create"
+                        "delete"
                     ],
                     [
                         "record",
@@ -2890,22 +2890,22 @@
                     [
                         "Applicant",
                         "plans",
-                        "preserve"
+                        "preserve;create"
                     ],
                     [
                         "plans",
                         "clearances",
-                        "preserve"
+                        "preserve;create"
                     ],
                     [
                         "plans",
                         "corrections",
-                        "preserve"
+                        "preserve;create"
                     ],
                     [
                         "plans",
                         "any conditions",
-                        "preserve"
+                        "preserve;create"
                     ]
                 ]
             },
@@ -3016,7 +3016,7 @@
                 "Target Action Rules": [[
                     "resubmit",
                     "plans",
-                    "preserve"
+                    "create"
                 ]],
                 "Contain Action Rules": []
             },
@@ -3219,7 +3219,7 @@
                 "Target Action Rules": [[
                     "track",
                     "completion of required plan reviews",
-                    "preserve"
+                    "preserve;create"
                 ]],
                 "Contain Action Rules": []
             },
@@ -3340,12 +3340,12 @@
                     [
                         "track",
                         "bonds",
-                        "preserve"
+                        "preserve;create"
                     ],
                     [
                         "manage",
                         "bonds",
-                        "create"
+                        "create;delete"
                     ]
                 ],
                 "Contain Action Rules": []
@@ -3376,7 +3376,7 @@
                 "Target Action Rules": [[
                     "manage",
                     "bonds",
-                    "create"
+                    "create;delete"
                 ]],
                 "Contain Action Rules": []
             },
@@ -3476,7 +3476,7 @@
                     [
                         "perform",
                         "inspection",
-                        "create"
+                        "preserve;delete;create"
                     ],
                     [
                         "assigned",
@@ -3681,7 +3681,7 @@
                 "Target Action Rules": [[
                     "manage",
                     "inspector workload",
-                    "create"
+                    "create;delete"
                 ]],
                 "Contain Action Rules": []
             },
@@ -3718,18 +3718,18 @@
                     [
                         "validate",
                         "customer compliance",
-                        "create"
+                        "preserve;forbid"
                     ],
                     [
                         "provide",
                         "results",
-                        "preserve"
+                        "create"
                     ]
                 ],
                 "Contain Action Rules": [[
                     "inspection",
                     "results",
-                    "preserve"
+                    "create"
                 ]]
             },
             "Contains": [[
@@ -3787,7 +3787,7 @@
                 "Target Action Rules": [[
                     "provide",
                     "formal communication",
-                    "preserve"
+                    "create"
                 ]],
                 "Contain Action Rules": []
             },
@@ -3881,7 +3881,7 @@
                 "Target Action Rules": [[
                     "search",
                     "property information",
-                    "preserve"
+                    "preserve;create"
                 ]],
                 "Contain Action Rules": []
             },
@@ -3916,34 +3916,34 @@
                     [
                         "reviewing",
                         "permit",
-                        "preserve"
+                        "preserve;forbid"
                     ],
                     [
                         "reviewing",
                         "application",
-                        "preserve"
+                        "preserve;forbid"
                     ]
                 ],
                 "Contain Action Rules": [
                     [
                         "permit",
                         "appropriate standards",
-                        "preserve"
+                        "preserve;forbid"
                     ],
                     [
                         "permit",
                         "most current data",
-                        "preserve"
+                        "preserve;forbid"
                     ],
                     [
                         "application",
                         "appropriate standards",
-                        "preserve"
+                        "preserve;forbid"
                     ],
                     [
                         "application",
                         "most current data",
-                        "preserve"
+                        "preserve;forbid"
                     ]
                 ]
             },
@@ -4019,7 +4019,7 @@
                 "Target Action Rules": [[
                     "fulfill",
                     "request",
-                    "preserve"
+                    "preserve;forbid"
                 ]],
                 "Contain Action Rules": []
             },
@@ -4154,7 +4154,7 @@
                     [
                         "successfully update",
                         "transactional parcel pin",
-                        "create"
+                        "create;delete"
                     ],
                     [
                         "reference",
@@ -4165,7 +4165,7 @@
                 "Contain Action Rules": [[
                     "transactional Parcel Pin",
                     "Split or Merged Parcel Pin",
-                    "create"
+                    "create;delete"
                 ]]
             },
             "Contains": [[
@@ -4194,7 +4194,7 @@
                 "Target Action Rules": [[
                     "update",
                     "gis property management",
-                    "create"
+                    "create;delete"
                 ]],
                 "Contain Action Rules": []
             },
@@ -4279,7 +4279,7 @@
                     [
                         "send",
                         "citations",
-                        "create"
+                        "create;delete"
                     ],
                     [
                         "post",
@@ -4294,7 +4294,7 @@
                     [
                         "send",
                         "fines",
-                        "create"
+                        "create;delete"
                     ]
                 ],
                 "Contain Action Rules": []

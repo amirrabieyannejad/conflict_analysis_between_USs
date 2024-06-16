@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Rule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_Em25UCtVEe-Z2c_YxgnDzQ" name="user_story_13_main_apply_delete">
+  <lhs xmi:id="_Em25UStVEe-Z2c_YxgnDzQ" name="Lhs">
+    <nodes xmi:id="_Em25UitVEe-Z2c_YxgnDzQ" name="|4|" outgoing="_Em25WitVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Persona"/>
+      <attributes xmi:id="_Em25UytVEe-Z2c_YxgnDzQ" value="&quot;staff member&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_Em25VCtVEe-Z2c_YxgnDzQ" name="|5|">
+      <type href="../../../Backlog_v2.4.ecore#//Story"/>
+      <attributes xmi:id="_Em25VStVEe-Z2c_YxgnDzQ" value="&quot;#g03# as a staff member, i want to apply a hold,&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//Story/text"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_Em25VitVEe-Z2c_YxgnDzQ" name="|6|" incoming="_Em25WitVEe-Z2c_YxgnDzQ" outgoing="_Em25WytVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action"/>
+      <attributes xmi:id="_Em25VytVEe-Z2c_YxgnDzQ" value="&quot;apply&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_Em25WCtVEe-Z2c_YxgnDzQ" name="|7|" incoming="_Em25WytVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Entity"/>
+      <attributes xmi:id="_Em25WStVEe-Z2c_YxgnDzQ" value="&quot;hold&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <edges xmi:id="_Em25WitVEe-Z2c_YxgnDzQ" source="_Em25UitVEe-Z2c_YxgnDzQ" target="_Em25VitVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Persona/triggers"/>
+    </edges>
+    <edges xmi:id="_Em25WytVEe-Z2c_YxgnDzQ" source="_Em25VitVEe-Z2c_YxgnDzQ" target="_Em25WCtVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action/targets"/>
+    </edges>
+  </lhs>
+  <rhs xmi:id="_Em25XCtVEe-Z2c_YxgnDzQ" name="Rhs">
+    <nodes xmi:id="_Em25XStVEe-Z2c_YxgnDzQ" name="|4|">
+      <type href="../../../Backlog_v2.4.ecore#//Persona"/>
+      <attributes xmi:id="_Em25XitVEe-Z2c_YxgnDzQ" value="&quot;staff member&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_Em25XytVEe-Z2c_YxgnDzQ" name="|5|">
+      <type href="../../../Backlog_v2.4.ecore#//Story"/>
+      <attributes xmi:id="_Em25YCtVEe-Z2c_YxgnDzQ" value="&quot;#g03# as a staff member, i want to apply a hold,&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//Story/text"/>
+      </attributes>
+    </nodes>
+  </rhs>
+  <mappings xmi:id="_Em25YStVEe-Z2c_YxgnDzQ" origin="_Em25UitVEe-Z2c_YxgnDzQ" image="_Em25XStVEe-Z2c_YxgnDzQ"/>
+  <mappings xmi:id="_Em25YitVEe-Z2c_YxgnDzQ" origin="_Em25VCtVEe-Z2c_YxgnDzQ" image="_Em25XytVEe-Z2c_YxgnDzQ"/>
+</henshin:Rule>

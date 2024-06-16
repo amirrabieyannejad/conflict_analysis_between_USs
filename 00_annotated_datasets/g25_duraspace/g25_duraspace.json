@@ -4,6 +4,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -18,6 +22,32 @@
             ],
             "Action": ["know"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "collections",
+                        "preserve"
+                    ],
+                    [
+                        "know",
+                        "objects",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "dams",
+                        "collections",
+                        "preserve"
+                    ],
+                    [
+                        "dams",
+                        "objects",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "DAMS",
@@ -50,6 +80,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -68,6 +102,32 @@
                 "propagated"
             ],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "update",
+                        "repository information",
+                        "create;delete"
+                    ],
+                    [
+                        "propagated",
+                        "updates",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "one place",
+                        "repository information",
+                        "create;delete"
+                    ],
+                    [
+                        "all relevant places",
+                        "updates",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "one place",
@@ -106,6 +166,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -122,6 +186,25 @@
             ],
             "Action": ["constrain"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "constrain",
+                    "curatorial access",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "units assets",
+                        "curatorial access",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "staff members",
+                        "curatorial access",
+                        "preserve;forbid"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "units assets",
@@ -168,6 +251,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -182,6 +269,42 @@
             ],
             "Action": ["list"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "list",
+                        "collections",
+                        "create"
+                    ],
+                    [
+                        "list",
+                        "objects",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "dams",
+                        "collections",
+                        "create"
+                    ],
+                    [
+                        "library unit",
+                        "collections",
+                        "create"
+                    ],
+                    [
+                        "dams",
+                        "objects",
+                        "create"
+                    ],
+                    [
+                        "library unit",
+                        "objects",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "DAMS",
@@ -222,6 +345,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -231,6 +358,14 @@
             "Entity": ["repositories"],
             "Action": ["contact"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "contact",
+                    "repositories",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "user",
@@ -248,6 +383,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -264,6 +403,30 @@
                 "browsing"
             ],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "browsing",
+                        "all formal collections",
+                        "preserve"
+                    ],
+                    [
+                        "list",
+                        "all formal collections",
+                        "create"
+                    ],
+                    [
+                        "list",
+                        "appropriate relationships",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "dams",
+                    "all formal collections",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "DAMS",
                 "all formal collections"
@@ -294,6 +457,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -306,6 +473,14 @@
             ],
             "Action": ["know"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "collections",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "repository manager",
@@ -323,6 +498,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -349,6 +528,52 @@
                 "assembly"
             ],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "compose",
+                        "collections",
+                        "create"
+                    ],
+                    [
+                        "limiting",
+                        "collection",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "represent",
+                        "part of a collection",
+                        "create"
+                    ],
+                    [
+                        "assembly",
+                        "collection",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "collection",
+                        "items",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "collection",
+                        "other collections",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "collection",
+                        "objects",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "part of a collection",
+                        "singular provenance",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "items",
@@ -405,6 +630,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -417,6 +646,14 @@
             ],
             "Action": ["say"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "say",
+                    "one collection",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "repository manager",
@@ -434,6 +671,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -449,6 +690,35 @@
             ],
             "Action": ["describe"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "describe",
+                    "collection",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "collection",
+                        "title",
+                        "create"
+                    ],
+                    [
+                        "collection",
+                        "inclusive / bulk dates",
+                        "create"
+                    ],
+                    [
+                        "collection",
+                        "language(s)",
+                        "create"
+                    ],
+                    [
+                        "collection",
+                        "many other aspects",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "collection",
@@ -483,6 +753,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -498,6 +772,35 @@
             ],
             "Action": ["indicate"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "indicate",
+                    "names",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "collection",
+                        "names",
+                        "create"
+                    ],
+                    [
+                        "names",
+                        "creator",
+                        "create"
+                    ],
+                    [
+                        "names",
+                        "source",
+                        "create"
+                    ],
+                    [
+                        "names",
+                        "subject",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "collection",
@@ -532,6 +835,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -544,6 +851,18 @@
             ],
             "Action": ["indicate"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "indicate",
+                    "subjects",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "collection",
+                    "subjects",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "collection",
                 "subjects"
@@ -564,6 +883,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -579,6 +902,18 @@
             ],
             "Action": ["indicate"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "indicate",
+                    "other descriptions",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "collection",
+                    "other descriptions",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "collection",
@@ -605,6 +940,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -620,6 +959,18 @@
                 "occurring"
             ],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "all events",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "collection",
+                    "all events",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "collection",
                 "all events"
@@ -640,6 +991,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -652,6 +1007,18 @@
             ],
             "Action": ["browse"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "browse",
+                    "collections",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "dams",
+                    "collections",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "DAMS",
                 "collections"
@@ -672,6 +1039,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -684,6 +1055,18 @@
             ],
             "Action": ["limit"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "limit",
+                    "search",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": [[
+                    "search",
+                    "specified collection(s)",
+                    "preserve;forbid"
+                ]]
+            },
             "Contains": [[
                 "search",
                 "specified collection(s)"
@@ -704,6 +1087,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -716,6 +1103,18 @@
             ],
             "Action": ["know"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "components",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "object",
+                    "components",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "object",
                 "components"
@@ -736,6 +1135,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -748,6 +1151,18 @@
             ],
             "Action": ["know"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "files",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "object",
+                    "files",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "object",
                 "files"
@@ -768,6 +1183,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -783,6 +1202,35 @@
             ],
             "Action": ["describe"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "describe",
+                    "object",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "object",
+                        "title",
+                        "create"
+                    ],
+                    [
+                        "object",
+                        "date(s)",
+                        "create"
+                    ],
+                    [
+                        "object",
+                        "language(s)",
+                        "create"
+                    ],
+                    [
+                        "object",
+                        "other aspects",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "object",
@@ -817,6 +1265,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -829,6 +1281,18 @@
             ],
             "Action": ["indicate"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "indicate",
+                    "names",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "object",
+                    "names",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "object",
                 "names"
@@ -849,6 +1313,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -861,6 +1329,18 @@
             ],
             "Action": ["indicate"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "indicate",
+                    "subjects",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "object",
+                    "subjects",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "object",
                 "subjects"
@@ -881,6 +1361,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -893,6 +1377,18 @@
             ],
             "Action": ["indicate"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "indicate",
+                    "copyright status",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "object",
+                    "copyright status",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "object",
                 "copyright status"
@@ -913,6 +1409,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -925,6 +1425,18 @@
             ],
             "Action": ["indicate"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "indicate",
+                    "any statutes",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "object",
+                    "any statutes",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "object",
                 "any statutes"
@@ -945,6 +1457,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -957,6 +1473,18 @@
             ],
             "Action": ["indicate"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "indicate",
+                    "any license",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "object",
+                    "any license",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "object",
                 "any license"
@@ -977,6 +1505,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -989,6 +1521,18 @@
             ],
             "Action": ["indicate"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "indicate",
+                    "any other rights",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "object",
+                    "any other rights",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "object",
                 "any other rights"
@@ -1009,6 +1553,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1024,6 +1572,32 @@
             ],
             "Action": ["indicate"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "indicate",
+                        "any external versions",
+                        "create"
+                    ],
+                    [
+                        "indicate",
+                        "descriptions",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "object",
+                        "any external versions",
+                        "create"
+                    ],
+                    [
+                        "object",
+                        "descriptions",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "object",
@@ -1060,6 +1634,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1073,6 +1651,18 @@
             ],
             "Action": ["know"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "all events",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "object",
+                    "all events",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "object",
                 "all events"
@@ -1093,6 +1683,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1105,6 +1699,18 @@
             ],
             "Action": ["know"],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "repository",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "repository",
+                    "object",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "repository",
                 "object"
@@ -1125,6 +1731,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1137,6 +1747,18 @@
             ],
             "Action": ["know"],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "collection(s)",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "collection(s)",
+                    "object",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "collection(s)",
                 "object"
@@ -1157,6 +1779,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1169,6 +1795,18 @@
             ],
             "Action": ["know"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "repository",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "repository",
+                    "object",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "repository",
                 "object"
@@ -1189,6 +1827,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1201,6 +1843,18 @@
             ],
             "Action": ["know"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "collection(s)",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "collection(s)",
+                    "object",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "collection(s)",
                 "object"
@@ -1221,6 +1875,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1233,6 +1891,18 @@
             ],
             "Action": ["see"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "component parts",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "object.",
+                    "component parts",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "object.",
                 "component parts"
@@ -1253,6 +1923,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1266,6 +1940,18 @@
             ],
             "Action": ["have"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "access",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "content files",
+                    "access",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "content files",
@@ -1292,6 +1978,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1304,6 +1994,18 @@
             ],
             "Action": ["know"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "rights status",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "object",
+                    "rights status",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "object",
                 "rights status"
@@ -1324,6 +2026,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1337,6 +2043,32 @@
             ],
             "Action": ["know"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "other versions",
+                        "preserve"
+                    ],
+                    [
+                        "know",
+                        "metadata",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "object",
+                        "other versions",
+                        "preserve"
+                    ],
+                    [
+                        "object",
+                        "metadata",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "object",
@@ -1369,6 +2101,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1381,6 +2117,18 @@
             ],
             "Action": ["represent"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "represent",
+                    "physical and/or logical structure",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "object",
+                    "physical and/or logical structure",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "object",
                 "physical and/or logical structure"
@@ -1401,6 +2149,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1414,6 +2166,25 @@
             ],
             "Action": ["list"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "list",
+                    "components",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "components",
+                        "appropriate order",
+                        "create"
+                    ],
+                    [
+                        "object",
+                        "components",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "components",
@@ -1440,6 +2211,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1453,6 +2228,25 @@
             ],
             "Action": ["link"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "link",
+                    "component",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "another component",
+                        "component",
+                        "create"
+                    ],
+                    [
+                        "file",
+                        "component",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "another component",
@@ -1479,6 +2273,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1494,6 +2292,35 @@
             ],
             "Action": ["describe"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "describe",
+                    "each component",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "each component",
+                        "title",
+                        "create"
+                    ],
+                    [
+                        "each component",
+                        "date(s)",
+                        "create"
+                    ],
+                    [
+                        "each component",
+                        "language(s)",
+                        "create"
+                    ],
+                    [
+                        "each component",
+                        "other facets",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "each component",
@@ -1528,6 +2355,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1540,6 +2371,18 @@
             ],
             "Action": ["indicate"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "indicate",
+                    "any name",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "component",
+                    "any name",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "component",
                 "any name"
@@ -1560,6 +2403,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1572,6 +2419,18 @@
             ],
             "Action": ["indicate"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "indicate",
+                    "any subject",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "component",
+                    "any subject",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "component",
                 "any subject"
@@ -1592,6 +2451,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1605,6 +2468,10 @@
             ],
             "Action": ["indicate"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [
                 [
                     "component",
@@ -1632,6 +2499,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1645,6 +2516,10 @@
             ],
             "Action": ["indicate"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [
                 [
                     "object",
@@ -1668,6 +2543,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1681,6 +2560,10 @@
             ],
             "Action": ["indicate"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [
                 [
                     "object",
@@ -1704,6 +2587,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1717,6 +2604,10 @@
             ],
             "Action": ["indicate"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [
                 [
                     "object",
@@ -1740,6 +2631,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1756,6 +2651,18 @@
                 "occurring"
             ],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "all events",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "component",
+                    "all events",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "component",
@@ -1782,6 +2689,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1795,6 +2706,25 @@
             ],
             "Action": ["present"],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "present",
+                    "all components",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "all components",
+                        "assigned order",
+                        "preserve"
+                    ],
+                    [
+                        "all components",
+                        "object",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "all components",
@@ -1821,6 +2751,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1836,6 +2770,25 @@
                 "navigate"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "see",
+                        "component hierarchy",
+                        "preserve"
+                    ],
+                    [
+                        "navigate",
+                        "component hierarchy",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "object",
+                    "component hierarchy",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "object",
                 "component hierarchy"
@@ -1868,6 +2821,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1881,6 +2838,18 @@
             ],
             "Action": ["know"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "content files",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "dams",
+                    "content files",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "DAMS",
                 "content files"
@@ -1901,6 +2870,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1914,6 +2887,25 @@
             ],
             "Action": ["associate"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "associate",
+                    "content file",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "object",
+                        "content file",
+                        "create"
+                    ],
+                    [
+                        "object component",
+                        "content file",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "object",
@@ -1940,6 +2932,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1953,6 +2949,18 @@
             ],
             "Action": ["know"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "any event",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "content file",
+                    "any event",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "content file",
@@ -1979,6 +2987,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2001,6 +3013,57 @@
                 "monitoring"
             ],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "indicate",
+                        "aspects",
+                        "create"
+                    ],
+                    [
+                        "monitoring",
+                        "integrity",
+                        "preserve;create"
+                    ],
+                    [
+                        "monitoring",
+                        "impending obsolescence",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "master file",
+                        "aspects",
+                        "create"
+                    ],
+                    [
+                        "master file",
+                        "integrity",
+                        "preserve;create"
+                    ],
+                    [
+                        "impending obsolescence",
+                        "file size",
+                        "preserve;create"
+                    ],
+                    [
+                        "impending obsolescence",
+                        "creation date",
+                        "preserve;create"
+                    ],
+                    [
+                        "impending obsolescence",
+                        "file format",
+                        "preserve;create"
+                    ],
+                    [
+                        "impending obsolescence",
+                        "format version",
+                        "preserve;create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "master file",
@@ -2053,6 +3116,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2068,6 +3135,32 @@
             ],
             "Action": ["indicate"],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "indicate",
+                        "checksum",
+                        "create"
+                    ],
+                    [
+                        "indicate",
+                        "checksum method",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "each master file",
+                        "checksum",
+                        "create"
+                    ],
+                    [
+                        "each master file",
+                        "checksum method",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "each master file",
@@ -2104,6 +3197,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2116,6 +3213,18 @@
             ],
             "Action": ["indicate"],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "indicate",
+                    "source-capture information",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "file",
+                    "source-capture information",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "file",
                 "source-capture information"
@@ -2136,6 +3245,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2151,6 +3264,18 @@
             ],
             "Action": ["know"],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "any object",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "any object",
+                    "more current file format",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "any object",
                 "more current file format"
@@ -2174,6 +3299,14 @@
                 "decide",
                 "download"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "download",
+                    "file",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can decide whether a file is too large to download.",
             "Targets": [[
@@ -2190,6 +3323,18 @@
             ],
             "Action": ["access"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "access",
+                    "content files",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "content files",
+                    "object",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "content files",
                 "object"
@@ -2211,6 +3356,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2225,6 +3374,30 @@
             ],
             "Action": ["provide"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "provide",
+                    "title",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "repository's collections",
+                        "title",
+                        "create"
+                    ],
+                    [
+                        "objects",
+                        "title",
+                        "create"
+                    ],
+                    [
+                        "object components",
+                        "title",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "repository's collections",
@@ -2255,6 +3428,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2273,6 +3450,18 @@
                 "occurring"
             ],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "any changes",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "titles",
+                    "any changes",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "titles",
@@ -2307,6 +3496,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2321,6 +3514,42 @@
             ],
             "Action": ["present"],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "present",
+                        "collections",
+                        "preserve"
+                    ],
+                    [
+                        "present",
+                        "objects",
+                        "preserve"
+                    ],
+                    [
+                        "present",
+                        "object components",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "collections",
+                        "title",
+                        "preserve"
+                    ],
+                    [
+                        "objects",
+                        "title",
+                        "preserve"
+                    ],
+                    [
+                        "object components",
+                        "title",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "object components",
@@ -2361,6 +3590,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2375,6 +3608,42 @@
             ],
             "Action": ["search"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "search",
+                        "collections",
+                        "preserve;create"
+                    ],
+                    [
+                        "search",
+                        "objects",
+                        "preserve;create"
+                    ],
+                    [
+                        "search",
+                        "object components",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "collections",
+                        "title",
+                        "preserve;create"
+                    ],
+                    [
+                        "objects",
+                        "title",
+                        "preserve;create"
+                    ],
+                    [
+                        "object components",
+                        "title",
+                        "preserve;create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "collections",
@@ -2415,6 +3684,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2430,6 +3703,57 @@
             ],
             "Action": ["indicate"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "indicate",
+                        "publisher",
+                        "create"
+                    ],
+                    [
+                        "indicate",
+                        "edition",
+                        "create"
+                    ],
+                    [
+                        "indicate",
+                        "place of publication",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "object",
+                        "publisher",
+                        "create"
+                    ],
+                    [
+                        "object component",
+                        "publisher",
+                        "create"
+                    ],
+                    [
+                        "object",
+                        "edition",
+                        "create"
+                    ],
+                    [
+                        "object component",
+                        "edition",
+                        "create"
+                    ],
+                    [
+                        "object",
+                        "place of publication",
+                        "create"
+                    ],
+                    [
+                        "object component",
+                        "place of publication",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "object",
@@ -2482,6 +3806,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2499,6 +3827,25 @@
                 "made"
             ],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "any changes",
+                        "preserve"
+                    ],
+                    [
+                        "made",
+                        "any changes",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "origin info",
+                    "any changes",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "origin Info",
@@ -2539,6 +3886,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2553,6 +3904,42 @@
             ],
             "Action": ["know"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "place of publication",
+                        "preserve"
+                    ],
+                    [
+                        "know",
+                        "publisher",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "object",
+                        "place of publication",
+                        "preserve"
+                    ],
+                    [
+                        "component parts",
+                        "place of publication",
+                        "preserve"
+                    ],
+                    [
+                        "object",
+                        "publisher",
+                        "preserve"
+                    ],
+                    [
+                        "component parts",
+                        "publisher",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "object",
@@ -2597,6 +3984,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2615,6 +4006,30 @@
             ],
             "Action": ["describe"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "describe",
+                    "various facets",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "collection",
+                        "various facets",
+                        "create"
+                    ],
+                    [
+                        "object",
+                        "various facets",
+                        "create"
+                    ],
+                    [
+                        "object component",
+                        "various facets",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "collection",
@@ -2693,6 +4108,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2711,6 +4130,42 @@
                 "made"
             ],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "all modifications",
+                        "preserve"
+                    ],
+                    [
+                        "made",
+                        "notes",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "notes",
+                        "all modifications",
+                        "preserve"
+                    ],
+                    [
+                        "repository's collections",
+                        "notes",
+                        "preserve;create"
+                    ],
+                    [
+                        "objects",
+                        "notes",
+                        "preserve;create"
+                    ],
+                    [
+                        "object components",
+                        "notes",
+                        "preserve;create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "notes",
@@ -2751,6 +4206,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2769,6 +4228,50 @@
             ],
             "Action": ["know"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "various facets",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "collection",
+                        "various facets",
+                        "preserve"
+                    ],
+                    [
+                        "object",
+                        "various facets",
+                        "preserve"
+                    ],
+                    [
+                        "object component",
+                        "various facets",
+                        "preserve"
+                    ],
+                    [
+                        "various facets",
+                        "scope",
+                        "preserve"
+                    ],
+                    [
+                        "various facets",
+                        "content",
+                        "preserve"
+                    ],
+                    [
+                        "various facets",
+                        "various identifiers",
+                        "preserve"
+                    ],
+                    [
+                        "various facets",
+                        "conditions governing use/access",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "collection",
@@ -2815,6 +4318,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2829,6 +4336,30 @@
             ],
             "Action": ["indicate"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "indicate",
+                    "language(s)",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "collection",
+                        "language(s)",
+                        "create"
+                    ],
+                    [
+                        "object",
+                        "language(s)",
+                        "create"
+                    ],
+                    [
+                        "object component",
+                        "language(s)",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "collection",
@@ -2859,6 +4390,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2877,6 +4412,25 @@
                 "made"
             ],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "any changes",
+                        "preserve"
+                    ],
+                    [
+                        "made",
+                        "any changes",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "language(s)",
+                    "any changes",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "language(s)",
@@ -2917,6 +4471,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2932,6 +4490,30 @@
             ],
             "Action": ["scope"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "scope",
+                    "searches",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "searches",
+                        "collections",
+                        "create"
+                    ],
+                    [
+                        "searches",
+                        "objects",
+                        "create"
+                    ],
+                    [
+                        "searches",
+                        "object components",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "searches",
@@ -2974,6 +4556,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2988,6 +4574,18 @@
             ],
             "Action": ["register"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "register",
+                    "name record",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "each unique identity",
+                    "name record",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "each unique identity",
@@ -3018,6 +4616,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3031,6 +4633,32 @@
             ],
             "Action": ["search"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "search",
+                        "collections",
+                        "preserve;create"
+                    ],
+                    [
+                        "search",
+                        "objects",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "collections",
+                        "name",
+                        "preserve;create"
+                    ],
+                    [
+                        "objects",
+                        "name",
+                        "preserve;create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "objects",
@@ -3063,6 +4691,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3080,6 +4712,35 @@
             ],
             "Action": ["indicate"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "indicate",
+                    "name",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "name",
+                        "specific role",
+                        "create"
+                    ],
+                    [
+                        "collection",
+                        "name",
+                        "create"
+                    ],
+                    [
+                        "object",
+                        "name",
+                        "create"
+                    ],
+                    [
+                        "object component",
+                        "name",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "name",
@@ -3122,6 +4783,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3137,6 +4802,18 @@
             ],
             "Action": ["scope"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "scope",
+                    "searches",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "searches",
+                    "name",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "specific role",
@@ -3171,6 +4848,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3185,6 +4866,30 @@
             ],
             "Action": ["indicate"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "indicate",
+                    "all subjects",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "collection",
+                        "all subjects",
+                        "create"
+                    ],
+                    [
+                        "object",
+                        "all subjects",
+                        "create"
+                    ],
+                    [
+                        "object component",
+                        "all subjects",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "collection",
@@ -3215,6 +4920,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3238,6 +4947,177 @@
             ],
             "Action": ["search"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "search",
+                        "collections",
+                        "preserve;create"
+                    ],
+                    [
+                        "search",
+                        "objects",
+                        "preserve;create"
+                    ],
+                    [
+                        "search",
+                        "object components",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "collections",
+                        "headings",
+                        "preserve;create"
+                    ],
+                    [
+                        "collections",
+                        "title",
+                        "preserve;create"
+                    ],
+                    [
+                        "collections",
+                        "topic",
+                        "preserve;create"
+                    ],
+                    [
+                        "collections",
+                        "genre",
+                        "preserve;create"
+                    ],
+                    [
+                        "collections",
+                        "form",
+                        "preserve;create"
+                    ],
+                    [
+                        "collections",
+                        "geographical name",
+                        "preserve;create"
+                    ],
+                    [
+                        "collections",
+                        "function",
+                        "preserve;create"
+                    ],
+                    [
+                        "collections",
+                        "occupation",
+                        "preserve;create"
+                    ],
+                    [
+                        "collections",
+                        "name",
+                        "preserve;create"
+                    ],
+                    [
+                        "collections",
+                        "cartographics",
+                        "preserve;create"
+                    ],
+                    [
+                        "objects",
+                        "headings",
+                        "preserve;create"
+                    ],
+                    [
+                        "objects",
+                        "title",
+                        "preserve;create"
+                    ],
+                    [
+                        "objects",
+                        "topic",
+                        "preserve;create"
+                    ],
+                    [
+                        "objects",
+                        "genre",
+                        "preserve;create"
+                    ],
+                    [
+                        "objects",
+                        "form",
+                        "preserve;create"
+                    ],
+                    [
+                        "objects",
+                        "geographical name",
+                        "preserve;create"
+                    ],
+                    [
+                        "objects",
+                        "function",
+                        "preserve;create"
+                    ],
+                    [
+                        "objects",
+                        "occupation",
+                        "preserve;create"
+                    ],
+                    [
+                        "objects",
+                        "name",
+                        "preserve;create"
+                    ],
+                    [
+                        "objects",
+                        "cartographics",
+                        "preserve;create"
+                    ],
+                    [
+                        "object components",
+                        "headings",
+                        "preserve;create"
+                    ],
+                    [
+                        "object components",
+                        "title",
+                        "preserve;create"
+                    ],
+                    [
+                        "object components",
+                        "topic",
+                        "preserve;create"
+                    ],
+                    [
+                        "object components",
+                        "genre",
+                        "preserve;create"
+                    ],
+                    [
+                        "object components",
+                        "form",
+                        "preserve;create"
+                    ],
+                    [
+                        "object components",
+                        "geographical name",
+                        "preserve;create"
+                    ],
+                    [
+                        "object components",
+                        "function",
+                        "preserve;create"
+                    ],
+                    [
+                        "object components",
+                        "occupation",
+                        "preserve;create"
+                    ],
+                    [
+                        "object components",
+                        "name",
+                        "preserve;create"
+                    ],
+                    [
+                        "object components",
+                        "cartographics",
+                        "preserve;create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "collections",
@@ -3386,6 +5266,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3399,6 +5283,18 @@
             ],
             "Action": ["indicate"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "indicate",
+                    "geo-coordinates",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "any resource",
+                    "geo-coordinates",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "any resource",
                 "geo-coordinates"
@@ -3419,6 +5315,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3433,6 +5333,30 @@
             ],
             "Action": ["see"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "geographical context",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "collection",
+                        "geographical context",
+                        "preserve"
+                    ],
+                    [
+                        "object",
+                        "geographical context",
+                        "preserve"
+                    ],
+                    [
+                        "object component",
+                        "geographical context",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "collection",
@@ -3463,6 +5387,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3477,6 +5405,32 @@
             ],
             "Action": ["indicate"],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "indicate",
+                        "all other pertinent versions",
+                        "create"
+                    ],
+                    [
+                        "indicate",
+                        "descriptions",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "resource",
+                        "all other pertinent versions",
+                        "create"
+                    ],
+                    [
+                        "resource",
+                        "descriptions",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "resource",
@@ -3509,6 +5463,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3522,6 +5480,32 @@
             ],
             "Action": ["know"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "all other pertinent versions",
+                        "preserve"
+                    ],
+                    [
+                        "know",
+                        "descriptions",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "resource",
+                        "all other pertinent versions",
+                        "preserve"
+                    ],
+                    [
+                        "resource",
+                        "descriptions",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "resource",
@@ -3554,6 +5538,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3569,6 +5557,18 @@
                 "changed"
             ],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "changed",
+                    "checksum",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": [[
+                    "repository's content files",
+                    "checksum",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "repository's content files",
                 "checksum"
@@ -3589,6 +5589,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3606,6 +5610,30 @@
                 "last registered"
             ],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "all files",
+                        "preserve"
+                    ],
+                    [
+                        "changed",
+                        "checksum",
+                        "create;delete"
+                    ],
+                    [
+                        "last registered",
+                        "checksum",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "all files",
+                    "checksum",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "all files",
                 "checksum"
@@ -3636,6 +5664,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3653,6 +5685,36 @@
                 "used"
             ],
             "Persona": ["repository manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "hardware",
+                        "preserve"
+                    ],
+                    [
+                        "generate",
+                        "content file",
+                        "create"
+                    ],
+                    [
+                        "know",
+                        "software",
+                        "preserve"
+                    ],
+                    [
+                        "used",
+                        "software",
+                        "preserve"
+                    ],
+                    [
+                        "used",
+                        "hardware",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "repository manager",
@@ -3688,6 +5750,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3703,6 +5769,32 @@
             ],
             "Action": ["know"],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "objects",
+                        "preserve"
+                    ],
+                    [
+                        "know",
+                        "object components",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "objects",
+                        "copyright",
+                        "preserve"
+                    ],
+                    [
+                        "object components",
+                        "copyright",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "object components",
@@ -3735,6 +5827,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3753,6 +5849,14 @@
                 "expire"
             ],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "when",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [
                 [
                     "object",
@@ -3779,6 +5883,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3796,6 +5904,32 @@
                 "modified"
             ],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "when",
+                        "preserve"
+                    ],
+                    [
+                        "modified",
+                        "copyright status",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "object",
+                        "copyright status",
+                        "create;delete"
+                    ],
+                    [
+                        "object component",
+                        "copyright status",
+                        "create;delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "object",
@@ -3828,6 +5962,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3843,6 +5981,18 @@
             ],
             "Action": ["know"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "who",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "who",
+                    "copyright",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "object",
@@ -3877,6 +6027,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3890,6 +6044,25 @@
             ],
             "Action": ["know"],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "statutes",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "object",
+                        "statutes",
+                        "preserve"
+                    ],
+                    [
+                        "object component",
+                        "statutes",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "object",
@@ -3916,6 +6089,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3935,6 +6112,25 @@
                 "expire"
             ],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "when",
+                        "preserve"
+                    ],
+                    [
+                        "scheduled",
+                        "pertinence",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "statute",
+                    "pertinence",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "statute",
@@ -3971,6 +6167,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3989,6 +6189,25 @@
                 "modified"
             ],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "when",
+                        "preserve"
+                    ],
+                    [
+                        "modified",
+                        "application",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "statute",
+                    "application",
+                    "create;delete"
+                ]]
+            },
             "Contains": [
                 [
                     "statute",
@@ -4025,6 +6244,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4037,6 +6260,10 @@
             ],
             "Action": ["know"],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "copyrighted content",
                 "applicable license"
@@ -4054,6 +6281,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4071,6 +6302,14 @@
                 "restricts"
             ],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "restricts",
+                    "access",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [
                 [
                     "object",
@@ -4097,6 +6336,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4116,6 +6359,25 @@
                 "scheduled"
             ],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "when",
+                        "preserve"
+                    ],
+                    [
+                        "scheduled",
+                        "application",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "library policy",
+                    "application",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "library policy",
@@ -4152,6 +6414,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4169,6 +6435,18 @@
                 "modified"
             ],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "modified",
+                    "application",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": [[
+                    "library policy",
+                    "application",
+                    "create;delete"
+                ]]
+            },
             "Contains": [
                 [
                     "library policy",
@@ -4199,6 +6477,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4215,6 +6497,25 @@
             ],
             "Action": ["know"],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "uses",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "object",
+                        "uses",
+                        "preserve"
+                    ],
+                    [
+                        "object componen",
+                        "uses",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "object",
@@ -4249,6 +6550,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4262,6 +6567,25 @@
             ],
             "Action": ["know"],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "dates",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "permission",
+                        "dates",
+                        "preserve"
+                    ],
+                    [
+                        "restriction",
+                        "dates",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "permission",
@@ -4288,6 +6612,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4304,6 +6632,30 @@
                 "modified"
             ],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "when",
+                        "preserve"
+                    ],
+                    [
+                        "modified",
+                        "active dates",
+                        "create;delete"
+                    ],
+                    [
+                        "modified",
+                        "permitted and restricted acts",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "permitted and restricted acts",
+                    "active dates",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "permitted and restricted acts",
                 "active dates"
@@ -4334,6 +6686,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4346,6 +6702,18 @@
             ],
             "Action": ["track"],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "track",
+                    "all events scheduled for recording",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "dams",
+                    "all events scheduled for recording",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "DAMS",
                 "all events scheduled for recording"
@@ -4366,6 +6734,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4381,6 +6753,21 @@
                 "carrying out"
             ],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "carrying out",
+                        "event",
+                        "create;delete"
+                    ],
+                    [
+                        "know",
+                        "agent(s) responsible",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "DAMS manager",
@@ -4404,6 +6791,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4419,6 +6810,14 @@
                 "occurred"
             ],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "know",
+                    "when",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "DAMS manager",
@@ -4436,6 +6835,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4452,6 +6855,25 @@
                 "deleted"
             ],
             "Persona": ["DAMS manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "outcome",
+                        "preserve"
+                    ],
+                    [
+                        "deleted",
+                        "object nn",
+                        "delete"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "event",
+                    "outcome",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "event",
                 "outcome"

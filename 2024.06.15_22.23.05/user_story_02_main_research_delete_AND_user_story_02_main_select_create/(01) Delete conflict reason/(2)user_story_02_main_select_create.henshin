@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Rule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_Em8Y4CtVEe-Z2c_YxgnDzQ" name="user_story_02_main_select_create">
+  <lhs xmi:id="_Em8Y4StVEe-Z2c_YxgnDzQ" name="Lhs">
+    <nodes xmi:id="_Em8Y4itVEe-Z2c_YxgnDzQ" name="|6|">
+      <type href="../../../Backlog_v2.4.ecore#//Persona"/>
+      <attributes xmi:id="_Em8Y4ytVEe-Z2c_YxgnDzQ" value="&quot;prospectiveapplicant&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_Em8Y5CtVEe-Z2c_YxgnDzQ" name="|7|">
+      <type href="../../../Backlog_v2.4.ecore#//Story"/>
+      <attributes xmi:id="_Em8Y5StVEe-Z2c_YxgnDzQ" value="&quot;#g03# as a prospectiveapplicant, i want to research requirements and to select a service,&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//Story/text"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_Em8Y5itVEe-Z2c_YxgnDzQ" name="|10|">
+      <type href="../../../Backlog_v2.4.ecore#//Entity"/>
+      <attributes xmi:id="_Em8Y5ytVEe-Z2c_YxgnDzQ" value="&quot;requirements&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+  </lhs>
+  <rhs xmi:id="_Em8Y6CtVEe-Z2c_YxgnDzQ" name="Rhs">
+    <nodes xmi:id="_Em8Y6StVEe-Z2c_YxgnDzQ" name="|6|" outgoing="_Em8Y9StVEe-Z2c_YxgnDzQ _Em8Y9itVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Persona"/>
+      <attributes xmi:id="_Em8Y6itVEe-Z2c_YxgnDzQ" value="&quot;prospectiveapplicant&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_Em8Y6ytVEe-Z2c_YxgnDzQ" name="|7|">
+      <type href="../../../Backlog_v2.4.ecore#//Story"/>
+      <attributes xmi:id="_Em8Y7CtVEe-Z2c_YxgnDzQ" value="&quot;#g03# as a prospectiveapplicant, i want to research requirements and to select a service,&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//Story/text"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_Em8Y7StVEe-Z2c_YxgnDzQ" name="|8|" incoming="_Em8Y9StVEe-Z2c_YxgnDzQ" outgoing="_Em8Y-CtVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action"/>
+      <attributes xmi:id="_Em8Y7itVEe-Z2c_YxgnDzQ" value="&quot;select&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_Em8Y7ytVEe-Z2c_YxgnDzQ" name="|9|" incoming="_Em8Y9itVEe-Z2c_YxgnDzQ" outgoing="_Em8Y9ytVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action"/>
+      <attributes xmi:id="_Em8Y8CtVEe-Z2c_YxgnDzQ" value="&quot;research&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_Em8Y8StVEe-Z2c_YxgnDzQ" name="|10|" incoming="_Em8Y9ytVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Entity"/>
+      <attributes xmi:id="_Em8Y8itVEe-Z2c_YxgnDzQ" value="&quot;requirements&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_Em8Y8ytVEe-Z2c_YxgnDzQ" name="|11|" incoming="_Em8Y-CtVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Entity"/>
+      <attributes xmi:id="_Em8Y9CtVEe-Z2c_YxgnDzQ" value="&quot;service&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <edges xmi:id="_Em8Y9StVEe-Z2c_YxgnDzQ" source="_Em8Y6StVEe-Z2c_YxgnDzQ" target="_Em8Y7StVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Persona/triggers"/>
+    </edges>
+    <edges xmi:id="_Em8Y9itVEe-Z2c_YxgnDzQ" source="_Em8Y6StVEe-Z2c_YxgnDzQ" target="_Em8Y7ytVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Persona/triggers"/>
+    </edges>
+    <edges xmi:id="_Em8Y9ytVEe-Z2c_YxgnDzQ" source="_Em8Y7ytVEe-Z2c_YxgnDzQ" target="_Em8Y8StVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action/targets"/>
+    </edges>
+    <edges xmi:id="_Em8Y-CtVEe-Z2c_YxgnDzQ" source="_Em8Y7StVEe-Z2c_YxgnDzQ" target="_Em8Y8ytVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action/targets"/>
+    </edges>
+  </rhs>
+  <mappings xmi:id="_Em8Y-StVEe-Z2c_YxgnDzQ" origin="_Em8Y4itVEe-Z2c_YxgnDzQ" image="_Em8Y6StVEe-Z2c_YxgnDzQ"/>
+  <mappings xmi:id="_Em8Y-itVEe-Z2c_YxgnDzQ" origin="_Em8Y5CtVEe-Z2c_YxgnDzQ" image="_Em8Y6ytVEe-Z2c_YxgnDzQ"/>
+  <mappings xmi:id="_Em8Y-ytVEe-Z2c_YxgnDzQ" origin="_Em8Y5itVEe-Z2c_YxgnDzQ" image="_Em8Y8StVEe-Z2c_YxgnDzQ"/>
+</henshin:Rule>

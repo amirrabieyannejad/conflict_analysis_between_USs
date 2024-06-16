@@ -4,6 +4,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -20,6 +24,25 @@
                 "installs"
             ],
             "Persona": ["system administrator,"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "run",
+                        "script",
+                        "create"
+                    ],
+                    [
+                        "installs",
+                        "neurohub node",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "virgin ubuntu operating system",
+                    "neurohub node",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "virgin Ubuntu operating system",
                 "Neurohub node"
@@ -46,6 +69,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -62,6 +89,21 @@
                 "functioning correctly"
             ],
             "Persona": ["system administrator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "run",
+                        "script",
+                        "create"
+                    ],
+                    [
+                        "tests",
+                        "neurohub installation",
+                        "preserve;delete;create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "system administrator",
@@ -85,6 +127,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -103,6 +149,26 @@
                 "report back"
             ],
             "Persona": ["release engineer"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "call",
+                        "script",
+                        "preserve"
+                    ],
+                    [
+                        "execute",
+                        "acceptance tests",
+                        "create;delete"
+                    ],
+                    [
+                        "report back",
+                        "results",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [
                 [
@@ -139,6 +205,14 @@
                 "how feature-complete"
             ],
             "Action": ["understand"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "understand",
+                    "how feature-complete",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can understand how feature-complete the Neurohub node currently is.",
             "Targets": [[
@@ -152,6 +226,14 @@
             "Entity": ["acceptance test results"],
             "Action": ["view"],
             "Persona": ["investigator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "view",
+                    "acceptance test results",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G18# As an investigator, I want to view the acceptance test results, ",
             "Triggers": [[
@@ -170,6 +252,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -186,6 +272,25 @@
                 "completing"
             ],
             "Persona": ["MRI operator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "digitally record",
+                        "responses",
+                        "preserve"
+                    ],
+                    [
+                        "completing",
+                        "paper-based forms",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "subjects",
+                    "responses",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "subjects",
                 "responses"
@@ -212,6 +317,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -225,6 +334,21 @@
             ],
             "Action": ["navigate forwards and backwards"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "navigate forwards and backwards",
+                        "log books",
+                        "create;delete"
+                    ],
+                    [
+                        "navigate forwards and backwards",
+                        "log book pages",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "user",
@@ -248,6 +372,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -260,6 +388,21 @@
             ],
             "Action": ["theme"],
             "Persona": ["lab administrator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "theme",
+                        "web interface graphics",
+                        "preserve"
+                    ],
+                    [
+                        "theme",
+                        "colours",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "lab administrator",
@@ -283,6 +426,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -299,6 +446,25 @@
                 "using"
             ],
             "Persona": ["systems administrator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "install",
+                        "neurohub dependencies",
+                        "create"
+                    ],
+                    [
+                        "using",
+                        "normal ubuntu package management tools",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "ubuntu 10.04 lts machine",
+                    "neurohub dependencies",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "Ubuntu 10.04 LTS machine",
                 "Neurohub dependencies"
@@ -325,6 +491,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -342,6 +512,32 @@
                 "attach"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "create",
+                        "log book page",
+                        "create"
+                    ],
+                    [
+                        "attach",
+                        "file",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "experiment",
+                        "log book page",
+                        "create"
+                    ],
+                    [
+                        "page",
+                        "file",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "experiment",
@@ -380,6 +576,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -397,6 +597,37 @@
                 "attach"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "create",
+                        "log book page",
+                        "create"
+                    ],
+                    [
+                        "attach",
+                        "directory",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "experiment",
+                        "log book page",
+                        "create"
+                    ],
+                    [
+                        "log book page",
+                        "directory",
+                        "create"
+                    ],
+                    [
+                        "directory",
+                        "multiple files",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "experiment",
@@ -439,6 +670,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -454,6 +689,25 @@
                 "attached"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "upload",
+                        "files",
+                        "create"
+                    ],
+                    [
+                        "attached",
+                        "files",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "log book page",
+                    "files",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "log book page",
                 "files"
@@ -480,6 +734,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -497,6 +755,30 @@
                 "using"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "upload",
+                        "files",
+                        "create"
+                    ],
+                    [
+                        "using",
+                        "web interface",
+                        "preserve"
+                    ],
+                    [
+                        "attached",
+                        "files",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "log book page",
+                    "files",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "log book page",
                 "files"
@@ -527,6 +809,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -544,6 +830,30 @@
                 "using"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "upload",
+                        "files",
+                        "create"
+                    ],
+                    [
+                        "attached",
+                        "files",
+                        "create"
+                    ],
+                    [
+                        "using",
+                        "mapped network drive",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "log book page",
+                    "files",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "log book page",
                 "files"
@@ -574,6 +884,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -586,6 +900,18 @@
             ],
             "Action": ["attach"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "attach",
+                    "currently non-attached files",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "log book page",
+                    "currently non-attached files",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "log book page",
                 "currently non-attached files"
@@ -606,6 +932,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -619,6 +949,18 @@
             ],
             "Action": ["receive"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "receive",
+                    "alert",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "any unattached files",
+                    "alert",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "any unattached files",
@@ -645,6 +987,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -661,6 +1007,25 @@
                 "using"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "download",
+                        "files",
+                        "create"
+                    ],
+                    [
+                        "using",
+                        "web browser",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "experiment",
+                    "files",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "experiment",
                 "files"
@@ -687,6 +1052,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -704,6 +1073,32 @@
                 "using"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "access",
+                        "files",
+                        "preserve;create"
+                    ],
+                    [
+                        "using",
+                        "network drive",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "neurohub workspace",
+                        "files",
+                        "preserve;create"
+                    ],
+                    [
+                        "workstation",
+                        "network drive",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "Neurohub workspace",
@@ -736,6 +1131,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -745,6 +1144,14 @@
             "Entity": ["log book page"],
             "Action": ["create"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "create",
+                    "log book page",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "researcher",
@@ -762,6 +1169,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -784,6 +1195,25 @@
                 "report"
             ],
             "Persona": ["release engineer"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "configure",
+                        "nightly builds",
+                        "create;delete"
+                    ],
+                    [
+                        "automatically perform",
+                        "neurohub installation",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "virgin operating system",
+                    "neurohub installation",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "virgin operating system",
@@ -820,6 +1250,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -833,6 +1267,14 @@
             ],
             "Action": ["view"],
             "Persona": ["supervisor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "view",
+                    "what",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "supervisor",
@@ -850,6 +1292,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -862,6 +1308,18 @@
             ],
             "Action": ["upload"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "upload",
+                    "large files",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "large files",
+                    "over 1gb",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "large files",
                 "over 1GB"
@@ -882,6 +1340,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -894,6 +1356,18 @@
             ],
             "Action": ["assign"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "assign",
+                    "tags",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "files",
+                    "tags",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "files",
                 "tags"
@@ -914,6 +1388,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -927,6 +1405,25 @@
             ],
             "Action": ["assign"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "assign",
+                    "bespoke information",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "file",
+                        "bespoke information",
+                        "create"
+                    ],
+                    [
+                        "bespoke information",
+                        "type",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "file",
@@ -953,6 +1450,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -966,6 +1467,25 @@
             ],
             "Action": ["filter"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "filter",
+                    "files i get",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "search results",
+                        "files i get",
+                        "create;delete"
+                    ],
+                    [
+                        "files i get",
+                        "type",
+                        "create;delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "search results",
@@ -992,6 +1512,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1004,6 +1528,14 @@
             ],
             "Action": ["use"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "use",
+                    "tags",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "user",
@@ -1021,6 +1553,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1030,6 +1566,14 @@
             "Entity": ["uploaded data files"],
             "Action": ["make"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "make",
+                    "uploaded data files",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "user",
@@ -1047,6 +1591,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1059,6 +1607,18 @@
             ],
             "Action": ["make"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "make",
+                    "predicated links",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "files",
+                    "predicated links",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "files",
                 "predicated links"
@@ -1079,6 +1639,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1091,6 +1655,14 @@
             ],
             "Action": ["restrict"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "restrict",
+                    "what can be entered",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "user",
@@ -1108,6 +1680,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1117,6 +1693,14 @@
             "Entity": ["files I might accidentally delete"],
             "Action": ["have"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "files i might accidentally delete",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "user",
@@ -1134,6 +1718,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1146,6 +1734,18 @@
             ],
             "Action": ["revert to"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "revert to",
+                    "older version",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": [[
+                    "uploaded file",
+                    "older version",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "uploaded file",
                 "older version"
@@ -1166,6 +1766,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1181,6 +1785,21 @@
                 "viewing"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "visual way",
+                        "preserve"
+                    ],
+                    [
+                        "viewing",
+                        "particular files",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "user",
@@ -1204,6 +1823,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1216,6 +1839,18 @@
             ],
             "Action": ["associate together"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "associate together",
+                    "files",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "experiment",
+                    "files",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "experiment",
                 "files"
@@ -1236,6 +1871,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1248,6 +1887,18 @@
             ],
             "Action": ["have"],
             "Persona": ["system administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "managed backup protocol",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "system",
+                    "managed backup protocol",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "system",
                 "managed backup protocol"
@@ -1268,6 +1919,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1285,6 +1940,26 @@
                 "created"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "enter",
+                        "metadata",
+                        "create"
+                    ],
+                    [
+                        "describe",
+                        "experiment protocol",
+                        "create"
+                    ],
+                    [
+                        "created",
+                        "file",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [
                 [
@@ -1318,6 +1993,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1334,6 +2013,25 @@
                 "support"
             ],
             "Persona": ["lab administrator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "increased access",
+                        "preserve"
+                    ],
+                    [
+                        "support",
+                        "regular users",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "system",
+                    "increased access",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "system",
                 "increased access"
@@ -1360,6 +2058,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1375,6 +2077,21 @@
                 "build"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "link together",
+                        "experimental runs",
+                        "create"
+                    ],
+                    [
+                        "build",
+                        "experiment",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "user",
@@ -1398,6 +2115,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1410,6 +2131,18 @@
             ],
             "Action": ["create"],
             "Persona": ["lab administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "create",
+                    "page templates",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "page templates",
+                    "bespoke metadata fields",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "page templates",
                 "bespoke metadata fields"
@@ -1430,6 +2163,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1442,6 +2179,18 @@
             ],
             "Action": ["capture"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "capture",
+                    "same metadata",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "each file created in an experimental run",
+                    "same metadata",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "each file created in an experimental run",
                 "same metadata"
@@ -1462,6 +2211,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1478,6 +2231,21 @@
                 "managing"
             ],
             "Persona": ["lab administrator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "want",
+                        "way",
+                        "create"
+                    ],
+                    [
+                        "managing",
+                        "worm strain stocks",
+                        "preserve;delete;create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "lab administrator",
@@ -1501,6 +2269,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1513,6 +2285,21 @@
                 "download"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "search",
+                        "human-readable experimental protocols",
+                        "preserve;create"
+                    ],
+                    [
+                        "download",
+                        "human-readable experimental protocols",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [
                 [
@@ -1542,6 +2329,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1558,6 +2349,26 @@
                 "retaining"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "branch",
+                        "experimental protocol",
+                        "preserve;delete;create"
+                    ],
+                    [
+                        "modify",
+                        "experimental protocol",
+                        "create;delete"
+                    ],
+                    [
+                        "retaining",
+                        "original",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [
                 [
@@ -1591,6 +2402,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1606,6 +2421,21 @@
                 "evolved"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "view",
+                        "how",
+                        "preserve"
+                    ],
+                    [
+                        "evolved",
+                        "experimental protocol",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "user",
@@ -1629,6 +2459,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1645,6 +2479,25 @@
                 "assign"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "create",
+                        "protocol",
+                        "create"
+                    ],
+                    [
+                        "assign",
+                        "metadata",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "any stag",
+                    "metadata",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "any stag",
                 "metadata"
@@ -1677,6 +2530,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1692,6 +2549,14 @@
                 "created"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "created",
+                    "page",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "user",
@@ -1709,6 +2574,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1721,6 +2590,21 @@
             ],
             "Action": ["manage"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "manage",
+                        "references",
+                        "create;delete"
+                    ],
+                    [
+                        "manage",
+                        "papers i have investigated",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "user",
@@ -1744,6 +2628,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1756,6 +2644,14 @@
             ],
             "Action": ["search specifically"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "search specifically",
+                    "files",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "user",
@@ -1773,6 +2669,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1786,6 +2686,18 @@
             ],
             "Action": ["limit"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "limit",
+                    "search",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": [[
+                    "search",
+                    "particular set",
+                    "preserve;forbid"
+                ]]
+            },
             "Contains": [
                 [
                     "particular set",
@@ -1812,6 +2724,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1825,6 +2741,25 @@
             ],
             "Action": ["limit"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "limit",
+                    "search results",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "search results",
+                        "one or more log book sections",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "search results",
+                        "one or more log books",
+                        "preserve;forbid"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "search results",
@@ -1851,6 +2786,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1863,6 +2802,18 @@
             ],
             "Action": ["download"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "download",
+                    "files",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "search results page",
+                    "files",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "search results page",
                 "files"
@@ -1883,6 +2834,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1896,6 +2851,25 @@
             ],
             "Action": ["see"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "provenance",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "page",
+                        "provenance",
+                        "preserve"
+                    ],
+                    [
+                        "search results",
+                        "provenance",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "page",
@@ -1922,6 +2896,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1934,6 +2912,18 @@
             ],
             "Action": ["attach"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "attach",
+                    "multiple files",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "log book page",
+                    "multiple files",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "log book page",
                 "multiple files"
@@ -1954,6 +2944,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1966,6 +2960,18 @@
             ],
             "Action": ["download"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "download",
+                    "multiple files",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "search results",
+                    "multiple files",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "search results",
                 "multiple files"
@@ -1986,6 +2992,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2003,6 +3013,25 @@
                 "using"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "draw",
+                        "tables",
+                        "create;delete"
+                    ],
+                    [
+                        "using",
+                        "html tags",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "content",
+                    "tables",
+                    "create;delete"
+                ]]
+            },
             "Contains": [
                 [
                     "log book page",
@@ -2035,6 +3064,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2048,6 +3081,32 @@
             ],
             "Action": ["view"],
             "Persona": ["lab member"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "view",
+                        "events",
+                        "preserve"
+                    ],
+                    [
+                        "view",
+                        "equipment bookings",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "group",
+                        "events",
+                        "preserve"
+                    ],
+                    [
+                        "group",
+                        "equipment bookings",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "group",
@@ -2080,6 +3139,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2094,6 +3157,18 @@
             ],
             "Action": ["store"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "store",
+                    "worm behaviour videos",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "worm behaviour videos",
+                    "encoding",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "worm behaviour videos",
@@ -2120,6 +3195,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2134,6 +3213,25 @@
             ],
             "Action": ["migrate"],
             "Persona": ["system administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "migrate",
+                    "data",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "older version",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "current version",
+                        "data",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "NeuroHub",
@@ -2168,6 +3266,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2184,6 +3286,21 @@
                 "forward"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "system",
+                        "preserve"
+                    ],
+                    [
+                        "forward",
+                        "important news items",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "user",
@@ -2207,6 +3324,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2224,6 +3345,42 @@
                 "update"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "view",
+                        "inventory",
+                        "preserve"
+                    ],
+                    [
+                        "update",
+                        "inventory",
+                        "create;delete"
+                    ],
+                    [
+                        "update",
+                        "consumables",
+                        "create;delete"
+                    ],
+                    [
+                        "view",
+                        "consumables",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "equipment",
+                        "inventory",
+                        "preserve"
+                    ],
+                    [
+                        "centre",
+                        "consumables",
+                        "create;delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "equipment",
@@ -2278,6 +3435,26 @@
                 "calculate",
                 "working"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "edit",
+                        "costs",
+                        "create;delete"
+                    ],
+                    [
+                        "calculate",
+                        "costs",
+                        "create"
+                    ],
+                    [
+                        "working",
+                        "proposal",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can edit and calculate costs collaboratively with others while working on the proposal.",
             "Targets": [
@@ -2304,6 +3481,18 @@
             ],
             "Action": ["have"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "spreadsheet",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "neurohub web page",
+                    "spreadsheet",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "Neurohub Web page",
                 "spreadsheet"
@@ -2325,6 +3514,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2345,6 +3538,42 @@
                 "provide"
             ],
             "Persona": ["supervisor"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "create",
+                        "feedback forms",
+                        "create"
+                    ],
+                    [
+                        "fill",
+                        "feedback forms",
+                        "create"
+                    ],
+                    [
+                        "submit",
+                        "feedback forms",
+                        "create"
+                    ],
+                    [
+                        "provide",
+                        "feedback",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "neurohub",
+                        "feedback forms",
+                        "create"
+                    ],
+                    [
+                        "course",
+                        "feedback",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "Neurohub",
@@ -2385,6 +3614,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2403,6 +3636,30 @@
                 "push"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "option",
+                        "preserve"
+                    ],
+                    [
+                        "tell",
+                        "neurohub",
+                        "create"
+                    ],
+                    [
+                        "push",
+                        "posted content",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "twitter feed",
+                    "posted content",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "Twitter feed",
                 "posted content"
@@ -2433,6 +3690,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2449,6 +3710,25 @@
                 "share"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "either keep",
+                        "logbook entry",
+                        "create"
+                    ],
+                    [
+                        "share",
+                        "logbook entry",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "individuals",
+                    "logbook entry",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "individuals",
                 "logbook entry"
@@ -2475,6 +3755,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2493,6 +3777,37 @@
                 "executing"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "details",
+                        "preserve"
+                    ],
+                    [
+                        "recorded",
+                        "details",
+                        "create"
+                    ],
+                    [
+                        "executing",
+                        "workflow",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "workflow execution",
+                        "details",
+                        "preserve"
+                    ],
+                    [
+                        "neurohub log book",
+                        "details",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "workflow execution",
@@ -2533,6 +3848,14 @@
                 "centre"
             ],
             "Action": ["see"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "what",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "centre",
                 "other researchers"
@@ -2552,6 +3875,18 @@
             ],
             "Action": ["have"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "twitter tweets",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "neurohub",
+                    "twitter tweets",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "Neurohub",
                 "Twitter Tweets"
@@ -2573,6 +3908,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2586,6 +3925,25 @@
             ],
             "Action": ["view"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "view",
+                    "group's shared calendars",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "mobile device",
+                        "group's shared calendars",
+                        "preserve"
+                    ],
+                    [
+                        "neurohub nodes' web page",
+                        "group's shared calendars",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "mobile device",
@@ -2612,6 +3970,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2625,6 +3987,14 @@
             ],
             "Action": ["sync"],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "sync",
+                    "events created in neurohub",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "web-based Calendar",
                 "Google Calendar"
@@ -2645,6 +4015,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2661,6 +4035,25 @@
                 "insert"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "ability",
+                        "preserve"
+                    ],
+                    [
+                        "insert",
+                        "greek symbols",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "logbook entries",
+                    "greek symbols",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "logbook entries",
                 "Greek symbols"
@@ -2687,6 +4080,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2707,6 +4104,36 @@
                 "processing"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "ability",
+                        "preserve"
+                    ],
+                    [
+                        "move",
+                        "multiple files",
+                        "create;delete"
+                    ],
+                    [
+                        "rearrange",
+                        "multiple files",
+                        "create;delete"
+                    ],
+                    [
+                        "using",
+                        "neurohub file browser",
+                        "preserve"
+                    ],
+                    [
+                        "processing",
+                        "data",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "user",
@@ -2742,6 +4169,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2762,6 +4193,30 @@
                 "added"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "point",
+                        "mendeley client",
+                        "preserve;create"
+                    ],
+                    [
+                        "get",
+                        "notifications",
+                        "preserve;create"
+                    ],
+                    [
+                        "added",
+                        "new content",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "mendeley",
+                    "notifications",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [
                 [
                     "group-wide shared repository",
@@ -2804,6 +4259,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2820,6 +4279,25 @@
                 "keeping track"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "electronic support",
+                        "preserve"
+                    ],
+                    [
+                        "keeping track",
+                        "data sets",
+                        "preserve;forbid"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "particular experiment",
+                    "data sets",
+                    "preserve;forbid"
+                ]]
+            },
             "Contains": [[
                 "particular experiment",
                 "data sets"
@@ -2846,6 +4324,10 @@
         "Benefit": {
             "Entity": [],
             "Action": ["collaborate effectively"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "we can collaborate effectively.",
             "Targets": []
@@ -2864,6 +4346,37 @@
                 "electronically sharing"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "want",
+                        "mechanism",
+                        "create"
+                    ],
+                    [
+                        "electronically sharing",
+                        "papers",
+                        "create"
+                    ],
+                    [
+                        "electronically sharing",
+                        "notes",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "other researchers",
+                        "papers",
+                        "create"
+                    ],
+                    [
+                        "other researchers",
+                        "notes",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "other researchers",
@@ -2901,6 +4414,10 @@
         "Benefit": {
             "Entity": ["data"],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can be sure that data will not get 'lost' with the passage of time.",
             "Targets": []
@@ -2918,6 +4435,25 @@
                 "support"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "services",
+                        "preserve"
+                    ],
+                    [
+                        "support",
+                        "long term curation",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "data",
+                    "long term curation",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "data",
                 "long term curation"
@@ -2949,6 +4485,18 @@
                 "particular dates"
             ],
             "Action": ["compare"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "compare",
+                    "data",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "experiments",
+                    "data",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "experiments",
                 "data"
@@ -2969,6 +4517,25 @@
             ],
             "Action": ["have"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "timeline display",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "multiple data files",
+                        "timeline display",
+                        "preserve"
+                    ],
+                    [
+                        "associated images",
+                        "timeline display",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "multiple data files",
@@ -3000,6 +4567,10 @@
         "Benefit": {
             "Entity": ["lab"],
             "Action": ["still work effectively"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can still work effectively while away from the lab.",
             "Targets": []
@@ -3013,6 +4584,18 @@
             ],
             "Action": ["have"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "remote access",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "data",
+                    "remote access",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "data",
                 "remote access"
@@ -3037,6 +4620,14 @@
                 "work"
             ],
             "Action": ["more easily replicate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "more easily replicate",
+                    "work",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "others can more easily replicate my work.",
             "Targets": [[
@@ -3053,6 +4644,18 @@
             ],
             "Action": ["share"],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "share",
+                    "post-experiment write-ups",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "other researchers",
+                    "post-experiment write-ups",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "other researchers",
                 "post-experiment write-ups"
@@ -3074,6 +4677,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3091,6 +4698,25 @@
                 "used"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "collect",
+                        "data",
+                        "create;delete"
+                    ],
+                    [
+                        "used",
+                        "library",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "library",
+                    "data",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "library",
                 "data"
@@ -3117,6 +4743,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3134,6 +4764,32 @@
                 "hide"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "indicate",
+                        "experimental data",
+                        "create"
+                    ],
+                    [
+                        "hide",
+                        "bad data",
+                        "delete"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "electronic log book",
+                        "experimental data",
+                        "create"
+                    ],
+                    [
+                        "system",
+                        "bad data",
+                        "delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "system",
@@ -3166,6 +4822,14 @@
         "Benefit": {
             "Entity": ["others' data"],
             "Action": ["better understand"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "better understand",
+                    "others' data",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "we can better understand each others' data.",
             "Targets": [[
@@ -3188,6 +4852,30 @@
                 "use"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "system",
+                        "preserve"
+                    ],
+                    [
+                        "provide",
+                        "standard metadata",
+                        "create"
+                    ],
+                    [
+                        "use",
+                        "standard metadata",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "system",
+                    "standard metadata",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "centre",
@@ -3228,6 +4916,21 @@
                 "searched",
                 "understood"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "searched",
+                        "data",
+                        "preserve"
+                    ],
+                    [
+                        "understood",
+                        "data",
+                        "preserve;forbid"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "my data can later be searched for and understood",
             "Targets": [
@@ -3253,6 +4956,25 @@
                 "annotated"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "physiology images",
+                        "preserve"
+                    ],
+                    [
+                        "annotated",
+                        "physiology images",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "physiology images",
+                    "standard meta data",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "physiology images",
                 "standard meta data"
@@ -3283,6 +5005,21 @@
                 "searched",
                 "understood"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "searched",
+                        "data",
+                        "preserve"
+                    ],
+                    [
+                        "understood",
+                        "data",
+                        "preserve;forbid"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "my data can later be searched for and understood.",
             "Targets": [
@@ -3310,6 +5047,32 @@
                 "attach"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "ability",
+                        "preserve"
+                    ],
+                    [
+                        "attach",
+                        "standard meta data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "behavioural observations",
+                        "standard meta data",
+                        "create"
+                    ],
+                    [
+                        "video",
+                        "standard meta data",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "behavioural observations",
@@ -3346,6 +5109,21 @@
                 "searched",
                 "understood"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "understood",
+                        "data",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "searched",
+                        "data",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "my data can later be searched for and understood.",
             "Targets": [
@@ -3372,6 +5150,25 @@
                 "attach"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "ability",
+                        "preserve"
+                    ],
+                    [
+                        "attach",
+                        "standard meta data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "drug responses",
+                    "standard meta data",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "drug responses",
                 "standard meta data"
@@ -3399,6 +5196,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3417,6 +5218,30 @@
                 "using"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "ability",
+                        "preserve"
+                    ],
+                    [
+                        "search",
+                        "images",
+                        "preserve;create"
+                    ],
+                    [
+                        "using",
+                        "standard meta data",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "images",
+                    "cells",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "images",
                 "cells"
@@ -3447,6 +5272,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3464,6 +5293,30 @@
                 "added"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "some meta data",
+                        "preserve"
+                    ],
+                    [
+                        "automatically inserted",
+                        "some meta data",
+                        "preserve"
+                    ],
+                    [
+                        "added",
+                        "new data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "system",
+                    "new data",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "system",
                 "new data"
@@ -3494,6 +5347,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3511,6 +5368,32 @@
                 "attach"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "ability",
+                        "preserve"
+                    ],
+                    [
+                        "attach",
+                        "detailed meta data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "data",
+                        "detailed meta data",
+                        "create"
+                    ],
+                    [
+                        "entries",
+                        "detailed meta data",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "data",
@@ -3547,6 +5430,25 @@
                 "each individual file"
             ],
             "Action": ["repeatedly inserting"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "repeatedly inserting",
+                    "same meta data",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "each individual file",
+                        "same meta data",
+                        "create"
+                    ],
+                    [
+                        "log book entry",
+                        "same meta data",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "each individual file",
@@ -3579,6 +5481,37 @@
                 "adding"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "ability",
+                        "preserve"
+                    ],
+                    [
+                        "select",
+                        "partially pre-populated template",
+                        "preserve;create"
+                    ],
+                    [
+                        "adding",
+                        "new data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "partially pre-populated template",
+                        "commonly entered meta data",
+                        "preserve;create"
+                    ],
+                    [
+                        "system",
+                        "new data",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "partially pre-populated template",
@@ -3616,6 +5549,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3633,6 +5570,25 @@
                 "moving"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "moving",
+                    "file",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "file",
+                        "existing metadata",
+                        "create;delete"
+                    ],
+                    [
+                        "new location",
+                        "file",
+                        "create;delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "file",
@@ -3663,6 +5619,25 @@
                 "association"
             ],
             "Action": ["searched"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "searched",
+                    "data",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "data",
+                        "type",
+                        "preserve"
+                    ],
+                    [
+                        "data",
+                        "association",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "data",
@@ -3695,6 +5670,25 @@
                 "form"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "ability",
+                        "preserve"
+                    ],
+                    [
+                        "form",
+                        "links",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "objects",
+                    "links",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "objects",
@@ -3728,6 +5722,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3746,6 +5744,26 @@
                 "using"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "ability",
+                        "preserve"
+                    ],
+                    [
+                        "locate",
+                        "experiment files",
+                        "create"
+                    ],
+                    [
+                        "using",
+                        "meta data",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "researcher",
@@ -3776,6 +5794,18 @@
                 "experiment"
             ],
             "Action": ["traced back"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "traced back",
+                    "original data",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "experiment",
+                    "original data",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "experiment",
                 "original data"
@@ -3800,6 +5830,25 @@
                 "protected"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "any data",
+                        "preserve"
+                    ],
+                    [
+                        "protected",
+                        "any data",
+                        "preserve;forbid"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "vre",
+                    "any data",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "VRE",
                 "any data"
@@ -3827,6 +5876,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3845,6 +5898,30 @@
                 "only share"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "ability",
+                        "preserve"
+                    ],
+                    [
+                        "only share",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "keep",
+                        "data",
+                        "preserve;forbid"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "system",
+                    "data",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "system",
                 "data"
@@ -3878,6 +5955,18 @@
                 "results"
             ],
             "Action": ["verified"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "verified",
+                    "provenance",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "results",
+                    "provenance",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "results",
                 "provenance"
@@ -3901,6 +5990,25 @@
                 "store"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "ability",
+                        "preserve"
+                    ],
+                    [
+                        "store",
+                        "inputs",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "experiment",
+                    "inputs",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "experiment",
                 "inputs"
@@ -3928,6 +6036,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3945,6 +6057,32 @@
                 "search"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "ability",
+                        "preserve"
+                    ],
+                    [
+                        "search",
+                        "files",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "files",
+                        "file type",
+                        "preserve;create"
+                    ],
+                    [
+                        "files",
+                        "format",
+                        "preserve;create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "files",
@@ -3977,6 +6115,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3993,6 +6135,26 @@
                 "bulk upload"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "ability",
+                        "preserve"
+                    ],
+                    [
+                        "bulk upload",
+                        "directories",
+                        "create"
+                    ],
+                    [
+                        "bulk upload",
+                        "files",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "researcher",
@@ -4027,6 +6189,25 @@
                 "have",
                 "reflect"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "period of time",
+                        "preserve"
+                    ],
+                    [
+                        "reflect",
+                        "suitable values",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "meta data",
+                    "suitable values",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "meta data",
                 "suitable values"
@@ -4056,6 +6237,21 @@
                 "completed"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "associate",
+                        "meta data",
+                        "create"
+                    ],
+                    [
+                        "completed",
+                        "bulk upload",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G18# As a researcher, I want to associate meta data to the group as a whole at some point in time after the bulk upload has completed, ",
             "Triggers": [[
@@ -4080,6 +6276,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4097,6 +6297,37 @@
                 "change"
             ],
             "Persona": ["user"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "ability",
+                        "preserve"
+                    ],
+                    [
+                        "change",
+                        "sharing",
+                        "create;delete"
+                    ],
+                    [
+                        "change",
+                        "ownership",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "multiple files",
+                        "sharing",
+                        "create;delete"
+                    ],
+                    [
+                        "multiple files",
+                        "ownership",
+                        "create;delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "multiple files",
@@ -4133,6 +6364,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4151,6 +6386,21 @@
                 "restrict"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "ability",
+                        "preserve"
+                    ],
+                    [
+                        "restrict",
+                        "data i share",
+                        "preserve;forbid"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "groups",
                 "researchers"
@@ -4177,6 +6427,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4194,6 +6448,30 @@
                 "access"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "ability",
+                        "preserve"
+                    ],
+                    [
+                        "locate",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "access",
+                        "data",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "colleagues",
+                    "data",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "colleagues",
                 "data"
@@ -4227,6 +6505,18 @@
                 "files"
             ],
             "Action": ["keep track"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "keep track",
+                    "changes",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "files",
+                    "changes",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "files",
                 "changes"
@@ -4249,6 +6539,21 @@
                 "interact"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "ability",
+                        "preserve"
+                    ],
+                    [
+                        "interact",
+                        "revision control system",
+                        "preserve;delete;create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G18# As a researcher,  I want to have the ability to interact with a revision control system ",
             "Triggers": [[
@@ -4273,6 +6578,10 @@
         "Benefit": {
             "Entity": ["more experienced researchers"],
             "Action": ["learn"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can learn from more experienced researchers.",
             "Targets": []
@@ -4290,6 +6599,25 @@
                 "harvest"
             ],
             "Persona": ["JuniorResearcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "ability",
+                        "preserve"
+                    ],
+                    [
+                        "harvest",
+                        "knowledge",
+                        "delete"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "group",
+                    "knowledge",
+                    "delete"
+                ]]
+            },
             "Contains": [[
                 "group",
                 "knowledge"
@@ -4317,6 +6645,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4333,6 +6665,18 @@
                 "working away"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "secure",
+                    "remote access",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "neurohub node",
+                    "remote access",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "Neurohub node",
                 "remote access"
@@ -4353,6 +6697,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4371,6 +6719,62 @@
                 "sharing"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "group-level repository",
+                        "preserve"
+                    ],
+                    [
+                        "sharing",
+                        "papers",
+                        "create"
+                    ],
+                    [
+                        "sharing",
+                        "reviews",
+                        "create"
+                    ],
+                    [
+                        "sharing",
+                        "comments",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "group-level repository",
+                        "papers",
+                        "preserve"
+                    ],
+                    [
+                        "group-level repository",
+                        "reviews",
+                        "preserve"
+                    ],
+                    [
+                        "group-level repository",
+                        "comments",
+                        "preserve"
+                    ],
+                    [
+                        "other researchers",
+                        "papers",
+                        "create"
+                    ],
+                    [
+                        "other researchers",
+                        "reviews",
+                        "create"
+                    ],
+                    [
+                        "other researchers",
+                        "comments",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "group-level repository",
@@ -4427,6 +6831,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4446,6 +6854,42 @@
                 "executing"
             ],
             "Persona": ["researcher"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "details",
+                        "preserve"
+                    ],
+                    [
+                        "have",
+                        "execution history",
+                        "preserve"
+                    ],
+                    [
+                        "have",
+                        "results",
+                        "preserve"
+                    ],
+                    [
+                        "executing",
+                        "workflow",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "workflow plan",
+                        "details",
+                        "preserve"
+                    ],
+                    [
+                        "neurohub",
+                        "results",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "workflow plan",

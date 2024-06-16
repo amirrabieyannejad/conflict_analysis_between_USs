@@ -4,6 +4,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -22,6 +26,25 @@
                 "does"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know exactly",
+                        "what",
+                        "preserve"
+                    ],
+                    [
+                        "share",
+                        "personal data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "alfred",
+                    "personal data",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "ALFRED",
                 "personal data"
@@ -48,6 +71,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -61,6 +88,18 @@
             ],
             "Action": ["receive"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "receive",
+                    "information",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "alfred",
+                    "information",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "ALFRED",
                 "information"
@@ -81,6 +120,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -90,6 +133,14 @@
             "Entity": ["well-visible buttons"],
             "Action": ["use only"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "use only",
+                    "well-visible buttons",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -107,6 +158,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -119,6 +174,18 @@
             ],
             "Action": ["use"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "use",
+                    "alfred",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "alfred",
+                    "speech interaction",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "ALFRED",
                 "speech interaction"
@@ -139,6 +206,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -151,6 +222,18 @@
             ],
             "Action": ["always keep control"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "always keep control",
+                    "activities",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": [[
+                    "alfred",
+                    "activities",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "ALFRED",
                 "activities"
@@ -171,6 +254,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -183,6 +270,21 @@
             ],
             "Action": ["manage"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "manage",
+                        "privacy",
+                        "create;delete"
+                    ],
+                    [
+                        "manage",
+                        "data settings",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -206,6 +308,10 @@
         "Benefit": {
             "Entity": ["ALFRED"],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I do not have to set up ALFRED by myself.",
             "Targets": []
@@ -219,6 +325,21 @@
                 "preinstalled"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "preinstalled",
+                        "everything",
+                        "create"
+                    ],
+                    [
+                        "have",
+                        "everything",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G19# As an OlderPerson, I want to have everything preinstalled, ",
             "Triggers": [[
@@ -246,6 +367,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -255,6 +380,14 @@
             "Entity": ["small ALFRED device"],
             "Action": ["have"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "small alfred device",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -272,6 +405,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -286,6 +423,30 @@
             ],
             "Action": ["have"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "alfred",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "computers",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "tablets",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "phone",
+                        "alfred",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "computers",
@@ -316,6 +477,10 @@
         "Benefit": {
             "Entity": [],
             "Action": ["always wear"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can always wear him with me.",
             "Targets": []
@@ -330,6 +495,25 @@
             ],
             "Action": ["have"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "alfred",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "bracelet",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "necklace",
+                        "alfred",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "bracelet",
@@ -360,6 +544,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -381,6 +569,36 @@
                 "guide"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "clear instructions",
+                        "preserve"
+                    ],
+                    [
+                        "have",
+                        "service",
+                        "preserve"
+                    ],
+                    [
+                        "have",
+                        "trouble",
+                        "preserve"
+                    ],
+                    [
+                        "using",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "guide",
+                        "me",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -416,6 +634,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -428,6 +650,14 @@
                 "speaks very slowly and clearly"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "alfred device",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -445,6 +675,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -460,6 +694,21 @@
                 "reacts"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "alfred device",
+                        "preserve"
+                    ],
+                    [
+                        "reacts",
+                        "me",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -483,6 +732,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -499,6 +752,26 @@
                 "listens"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "alfred device",
+                        "preserve"
+                    ],
+                    [
+                        "ask",
+                        "alfred device",
+                        "preserve;create"
+                    ],
+                    [
+                        "listens",
+                        "me",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -526,6 +799,10 @@
         "Benefit": {
             "Entity": [],
             "Action": ["learn"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can learn everything about him and he about me.",
             "Targets": []
@@ -539,6 +816,18 @@
             ],
             "Action": ["have"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "introduction conversation",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "introduction conversation",
+                    "alfred",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "introduction conversation",
                 "ALFRED"
@@ -563,6 +852,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -576,6 +869,18 @@
             ],
             "Action": ["buy"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "buy",
+                    "alfred",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "senior shop",
+                    "alfred",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "senior shop",
@@ -602,6 +907,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -614,6 +923,18 @@
             ],
             "Action": ["buy"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "buy",
+                    "alfred",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "alfred",
+                    "low price",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "ALFRED",
                 "low price"
@@ -634,6 +955,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -651,6 +976,31 @@
                 "looking"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "receive",
+                        "visual support",
+                        "create"
+                    ],
+                    [
+                        "looking",
+                        "list",
+                        "preserve"
+                    ],
+                    [
+                        "looking",
+                        "map",
+                        "preserve"
+                    ],
+                    [
+                        "looking",
+                        "agenda",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -682,6 +1032,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -697,6 +1051,21 @@
                 "pay"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "pay",
+                        "small amounts",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -720,6 +1089,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -736,6 +1109,25 @@
                 "keep"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "very good battery",
+                        "preserve"
+                    ],
+                    [
+                        "keep",
+                        "alfred",
+                        "preserve;forbid"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "alfred",
+                    "very good battery",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "ALFRED",
                 "very good battery"
@@ -762,6 +1154,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -779,6 +1175,30 @@
                 "informs"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "alfred device",
+                        "preserve"
+                    ],
+                    [
+                        "leaving",
+                        "house",
+                        "delete"
+                    ],
+                    [
+                        "informs",
+                        "low battery",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "alfred device",
+                    "low battery",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "ALFRED device",
                 "low battery"
@@ -809,6 +1229,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -822,6 +1246,14 @@
             ],
             "Action": ["have"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "alfred device",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "user",
                 "visual or hearing troubles"
@@ -842,6 +1274,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -855,6 +1291,14 @@
             ],
             "Action": ["have"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "alfred device",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "user",
                 "visual troubles"
@@ -875,6 +1319,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -888,6 +1336,14 @@
             ],
             "Action": ["have"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "alfred device",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "user",
                 "hearing trouble"
@@ -908,6 +1364,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -923,6 +1383,21 @@
                 "repeats"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "alfred device",
+                        "preserve"
+                    ],
+                    [
+                        "repeats",
+                        "last phrase",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -946,6 +1421,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -955,6 +1434,14 @@
             "Entity": ["visual content"],
             "Action": ["zoom into"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "zoom into",
+                    "visual content",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -972,6 +1459,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -991,6 +1482,37 @@
                 "responds"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "offering",
+                        "new apps",
+                        "create"
+                    ],
+                    [
+                        "have",
+                        "alfred device",
+                        "preserve"
+                    ],
+                    [
+                        "responds",
+                        "changing demand",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "alfredo platform",
+                        "new apps",
+                        "create"
+                    ],
+                    [
+                        "users",
+                        "changing demand",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "ALFREDO platform",
@@ -1027,6 +1549,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1045,6 +1571,31 @@
                 "helps"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "alfred device",
+                        "preserve"
+                    ],
+                    [
+                        "communicate",
+                        "friends",
+                        "create"
+                    ],
+                    [
+                        "communicate",
+                        "family",
+                        "create"
+                    ],
+                    [
+                        "helps",
+                        "me",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -1076,6 +1627,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1088,6 +1643,18 @@
             ],
             "Action": ["have"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "video conversation",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "video conversation",
+                    "others",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "video conversation",
                 "others"
@@ -1108,6 +1675,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1117,6 +1688,14 @@
             "Entity": ["videophone"],
             "Action": ["have"],
             "Persona": ["MedicalCaregiver"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "videophone",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "MedicalCaregiver",
@@ -1134,6 +1713,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1152,6 +1735,25 @@
                 "encourages"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "aflred device",
+                        "preserve"
+                    ],
+                    [
+                        "encourages",
+                        "users",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "aflred device",
+                    "users",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "real interaction",
@@ -1184,6 +1786,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1201,6 +1807,25 @@
                 "provides"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "alfred device",
+                        "preserve"
+                    ],
+                    [
+                        "provides",
+                        "information",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "existing apps",
+                    "information",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "existing apps",
                 "information"
@@ -1227,6 +1852,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1240,6 +1869,14 @@
             ],
             "Action": ["customize"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "customize",
+                    "preferences",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "solution",
                 "different functionalities"
@@ -1260,6 +1897,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1272,6 +1913,18 @@
             ],
             "Action": ["have"],
             "Persona": ["MedicalCaregiver"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "simple alfred unit",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "simple alfred unit",
+                    "functions",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "simple ALFRED unit",
                 "functions"
@@ -1292,6 +1945,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1307,6 +1964,25 @@
                 "stored directly"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "data",
+                        "preserve"
+                    ],
+                    [
+                        "stored directly",
+                        "data",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "phone",
+                    "data",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "phone",
                 "data"
@@ -1333,6 +2009,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1349,6 +2029,25 @@
                 "checking"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "receive",
+                        "wake up call",
+                        "create"
+                    ],
+                    [
+                        "checking",
+                        "me",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "alfred",
+                    "wake up call",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "ALFRED",
                 "wake up call"
@@ -1375,6 +2074,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1387,6 +2090,18 @@
             ],
             "Action": ["receive"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "receive",
+                    "day and night rythm support",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "day and night rythm support",
+                    "agenda reminders",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "day and night rythm support",
                 "agenda reminders"
@@ -1407,6 +2122,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1422,6 +2141,21 @@
                 "use"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "receive",
+                        "support",
+                        "create"
+                    ],
+                    [
+                        "use",
+                        "public transport",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -1445,6 +2179,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1457,6 +2195,14 @@
             ],
             "Action": ["use"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "use",
+                    "alfred",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -1474,6 +2220,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1489,6 +2239,14 @@
             ],
             "Action": ["use"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "use",
+                    "alfred",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [
                 [
                     "indications",
@@ -1523,6 +2281,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1538,6 +2300,21 @@
                 "have"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "receive",
+                        "support",
+                        "create"
+                    ],
+                    [
+                        "have",
+                        "taxi",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -1561,6 +2338,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1579,6 +2360,26 @@
                 "open"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "open",
+                        "door",
+                        "create"
+                    ],
+                    [
+                        "see",
+                        "who is standing",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -1606,6 +2407,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1622,6 +2427,25 @@
                 "pick"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "pick",
+                        "phone",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "home",
+                    "phone",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "home",
                 "phone"
@@ -1648,6 +2472,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1663,6 +2491,21 @@
                 "turn on/off"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "turn on/off",
+                        "lights",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -1686,6 +2529,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1701,6 +2548,21 @@
                 "control"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "control",
+                        "heating",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -1724,6 +2586,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1740,6 +2606,26 @@
                 "control"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "control",
+                        "tv",
+                        "create;delete"
+                    ],
+                    [
+                        "control",
+                        "radio",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -1767,6 +2653,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1782,6 +2672,21 @@
                 "watch"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "watch",
+                        "movies",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -1805,6 +2710,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1820,6 +2729,21 @@
                 "hear"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "hear",
+                        "news",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -1843,6 +2767,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1859,6 +2787,21 @@
                 "contact"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "contact",
+                        "help",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -1882,6 +2825,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1894,6 +2841,14 @@
             ],
             "Action": ["use"],
             "Persona": ["MedicalCaregiver"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "use",
+                    "video calls",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "MedicalCaregiver",
@@ -1911,6 +2866,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1929,6 +2888,31 @@
                 "ask"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "contact",
+                        "nearest caregiver",
+                        "create"
+                    ],
+                    [
+                        "ask",
+                        "alfred",
+                        "preserve;create"
+                    ],
+                    [
+                        "ask",
+                        "urgent help",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -1960,6 +2944,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -1972,6 +2960,14 @@
             ],
             "Action": ["receive"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "receive",
+                    "message",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -1989,6 +2985,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2001,6 +3001,18 @@
             ],
             "Action": ["receive"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "receive",
+                    "medicine reminder",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "alfred",
+                    "medicine reminder",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "ALFRED",
                 "medicine reminder"
@@ -2021,6 +3033,14 @@
         "Benefit": {
             "Entity": ["overdose"],
             "Action": ["avoid"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "avoid",
+                    "overdose",
+                    "forbid"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can avoid an overdose.",
             "Targets": [[
@@ -2037,6 +3057,14 @@
                 "taken"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "taken",
+                    "pills",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G19# As an OlderPerson, I want to be able to see whether I already have taken my pills, ",
             "Triggers": [[
@@ -2055,6 +3083,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2070,6 +3102,18 @@
                 "taken"
             ],
             "Persona": ["MedicalCaregiver"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "taken",
+                    "medicine",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": [[
+                    "patient",
+                    "medicine",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "patient",
                 "medicine"
@@ -2090,6 +3134,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2105,6 +3153,21 @@
                 "do"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "do",
+                        "grocery shopping",
+                        "preserve;delete;create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -2128,6 +3191,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2143,6 +3210,21 @@
                 "send"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "send",
+                        "messages",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -2166,6 +3248,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2184,6 +3270,30 @@
                 "send"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "detect",
+                        "falls",
+                        "create"
+                    ],
+                    [
+                        "send",
+                        "emergency",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "specific contact",
+                    "emergency",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "specific contact",
                 "emergency"
@@ -2214,6 +3324,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2229,6 +3343,21 @@
                 "suggest"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "suggest",
+                        "healthy recipes",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -2252,6 +3381,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2269,6 +3402,26 @@
                 "programme"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "ask",
+                        "spontaneous questions",
+                        "preserve;create"
+                    ],
+                    [
+                        "programme",
+                        "spontaneous questions",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -2296,6 +3449,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2316,6 +3473,21 @@
                 "initiate"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "initiate",
+                        "questions",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [
                 [
                     "interest",
@@ -2356,6 +3528,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2368,6 +3544,14 @@
             ],
             "Action": ["call"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "call",
+                    "someone",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -2385,6 +3569,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2401,6 +3589,25 @@
                 "pushing"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "activate",
+                        "vocal interaction mode",
+                        "create"
+                    ],
+                    [
+                        "pushing",
+                        "specific button",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "alfred",
+                    "vocal interaction mode",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "ALFRED",
                 "vocal interaction mode"
@@ -2427,6 +3634,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2443,6 +3654,25 @@
                 "maintain"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "maintain",
+                        "contact list",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "phone",
+                    "contact list",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "phone",
                 "contact list"
@@ -2469,6 +3699,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2484,6 +3718,21 @@
                 "manage"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "manage",
+                        "agenda",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -2507,6 +3756,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2523,6 +3776,25 @@
                 "using"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "insert",
+                        "meetings",
+                        "create"
+                    ],
+                    [
+                        "using",
+                        "speech",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "alfred",
+                    "meetings",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "ALFRED",
                 "meetings"
@@ -2549,6 +3821,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2561,6 +3837,18 @@
             ],
             "Action": ["receive"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "receive",
+                    "reminders",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "appointments",
+                    "reminders",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "appointments",
                 "reminders"
@@ -2581,6 +3869,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2599,6 +3891,30 @@
                 "leave"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "receive",
+                        "reminder",
+                        "create"
+                    ],
+                    [
+                        "bring",
+                        "things",
+                        "create"
+                    ],
+                    [
+                        "leave",
+                        "house",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "alfred",
+                    "reminder",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "ALFRED",
                 "reminder"
@@ -2629,6 +3945,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2647,6 +3967,30 @@
                 "bring"
             ],
             "Persona": ["SocialCaregiver"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "want",
+                        "alfred",
+                        "create"
+                    ],
+                    [
+                        "bring",
+                        "things",
+                        "create"
+                    ],
+                    [
+                        "remind",
+                        "me",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "person i care",
+                    "things",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "person I care",
                 "things"
@@ -2677,6 +4021,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2693,6 +4041,25 @@
                 "set up"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "set up",
+                        "social groups",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "social groups",
+                    "people with similar diseases",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "social groups",
                 "people with similar diseases"
@@ -2719,6 +4086,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2735,6 +4106,25 @@
                 "contact"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "contact",
+                        "people",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "own circle",
+                    "people",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "own circle",
                 "people"
@@ -2761,6 +4151,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2777,6 +4171,26 @@
                 "learn"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "learn",
+                        "art expositions",
+                        "create"
+                    ],
+                    [
+                        "learn",
+                        "museum",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -2804,6 +4218,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2820,6 +4238,25 @@
                 "learn"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "learn",
+                        "social activities",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "neighborhood",
+                    "social activities",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "neighborhood",
                 "social activities"
@@ -2849,6 +4286,10 @@
                 "go",
                 "motivates more"
             ],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "it motivates more to go.",
             "Targets": []
@@ -2866,6 +4307,25 @@
                 "get"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "get",
+                        "personalized invitation",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "social event",
+                    "personalized invitation",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "social event",
                 "personalized invitation"
@@ -2896,6 +4356,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2914,6 +4378,31 @@
                 "help"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "navigate",
+                        "event",
+                        "create"
+                    ],
+                    [
+                        "navigate",
+                        "concert",
+                        "create"
+                    ],
+                    [
+                        "help",
+                        "me",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -2945,6 +4434,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2962,6 +4455,25 @@
                 "navigate"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "help",
+                        "me",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "me",
+                    "mild cognitive impairments",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "me",
                 "mild cognitive impairments"
@@ -2988,6 +4500,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -2997,6 +4513,14 @@
             "Entity": ["small amounts"],
             "Action": ["pay"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "pay",
+                    "small amounts",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -3014,6 +4538,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3032,6 +4560,32 @@
                 "organize"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "organize",
+                        "meeting",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "meeting",
+                        "group",
+                        "create;delete"
+                    ],
+                    [
+                        "certain place",
+                        "meeting",
+                        "create;delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "group",
@@ -3068,6 +4622,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3080,6 +4638,18 @@
             ],
             "Action": ["play"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "play",
+                    "online games",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": [[
+                    "online games",
+                    "other users",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "online games",
                 "other users"
@@ -3100,6 +4670,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3113,6 +4687,18 @@
             ],
             "Action": ["get"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "suggestions",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "suggestions",
+                    "sports classes",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [
                 [
                     "suggestions",
@@ -3142,6 +4728,10 @@
                 "ALFRED"
             ],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "ALFRED",
                 "virtual contacts"
@@ -3161,6 +4751,25 @@
                 "enable"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "enable",
+                        "face to face contacts",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "alfred",
+                    "face to face contacts",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "ALFRED",
                 "face to face contacts"
@@ -3188,6 +4797,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3197,6 +4810,14 @@
             "Entity": ["body weight"],
             "Action": ["control"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "control",
+                    "body weight",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -3214,6 +4835,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3229,6 +4854,21 @@
                 "call"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "press",
+                        "one button",
+                        "create"
+                    ],
+                    [
+                        "call",
+                        "caregiver",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -3252,6 +4892,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3265,6 +4909,18 @@
             ],
             "Action": ["decide"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "decide",
+                    "who",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "who",
+                    "access",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "vital data",
@@ -3291,6 +4947,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3308,6 +4968,18 @@
                 "decide"
             ],
             "Persona": ["MedicalCaregiver"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "decide",
+                    "who",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "who",
+                    "access",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "who",
@@ -3338,6 +5010,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3350,6 +5026,18 @@
             ],
             "Action": ["have"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "wearables",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "wearables",
+                    "integrated sensors",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "wearables",
                 "integrated sensors"
@@ -3370,6 +5058,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3382,6 +5074,18 @@
             ],
             "Action": ["see"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "vital parameters",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "phone",
+                    "vital parameters",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "phone",
                 "vital parameters"
@@ -3402,6 +5106,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3411,6 +5119,14 @@
             "Entity": ["ALFRED shirt"],
             "Action": ["have"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "alfred shirt",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -3428,6 +5144,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3437,6 +5157,14 @@
             "Entity": ["ALFRED shirt"],
             "Action": ["have"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "alfred shirt",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -3454,6 +5182,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3469,6 +5201,21 @@
                 "determine"
             ],
             "Persona": ["MedicalCaregiver"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "determine",
+                        "user's blood pressure",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "MedicalCaregiver",
@@ -3492,6 +5239,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3507,6 +5258,21 @@
                 "determine"
             ],
             "Persona": ["MedicalCaregiver"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "determine",
+                        "user's body temperature",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "MedicalCaregiver",
@@ -3530,6 +5296,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3545,6 +5315,21 @@
                 "determine"
             ],
             "Persona": ["MedicalCaregiver"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "determine",
+                        "user's heart rate",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "MedicalCaregiver",
@@ -3568,6 +5353,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3583,6 +5372,21 @@
                 "determine"
             ],
             "Persona": ["MedicalCaregiver"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "determine",
+                        "user's breathing frequency",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "MedicalCaregiver",
@@ -3606,6 +5410,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3619,6 +5427,18 @@
             ],
             "Action": ["have"],
             "Persona": ["MedicalCaregiver"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "feedback",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "activity level",
+                    "feedback",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "activity level",
@@ -3645,6 +5465,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3654,6 +5478,14 @@
             "Entity": ["ALFRED user"],
             "Action": ["locate"],
             "Persona": ["MedicalCaregiver"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "locate",
+                    "alfred user",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "MedicalCaregiver",
@@ -3671,6 +5503,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3689,6 +5525,31 @@
                 "using"
             ],
             "Persona": ["SocialCaregiver"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "recognize",
+                        "pain",
+                        "preserve"
+                    ],
+                    [
+                        "recognize",
+                        "stress",
+                        "preserve"
+                    ],
+                    [
+                        "using",
+                        "skin conduction sensors",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "SocialCaregiver",
@@ -3720,6 +5581,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3732,6 +5597,18 @@
             ],
             "Action": ["have"],
             "Persona": ["SocialCaregiver"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "step counter",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "alfred",
+                    "step counter",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "ALFRED",
                 "step counter"
@@ -3752,6 +5629,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3775,6 +5656,46 @@
                 "encourage"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "give",
+                        "goals",
+                        "create"
+                    ],
+                    [
+                        "give",
+                        "missions",
+                        "create"
+                    ],
+                    [
+                        "do",
+                        "new activities",
+                        "preserve;delete;create"
+                    ],
+                    [
+                        "do",
+                        "exercises",
+                        "preserve;delete;create"
+                    ],
+                    [
+                        "go",
+                        "out",
+                        "create"
+                    ],
+                    [
+                        "encourage",
+                        "me",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -3818,6 +5739,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3834,6 +5759,25 @@
                 "set"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "set",
+                        "limits",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "games duration",
+                    "limits",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "games duration",
                 "limits"
@@ -3860,6 +5804,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3875,6 +5823,21 @@
                 "use"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "play",
+                        "games",
+                        "create;delete"
+                    ],
+                    [
+                        "use",
+                        "imagination",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -3898,6 +5861,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3919,6 +5886,35 @@
                 "doing"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "do",
+                        "guided exercises",
+                        "preserve;delete;create"
+                    ],
+                    [
+                        "use",
+                        "sensors",
+                        "preserve"
+                    ],
+                    [
+                        "capture",
+                        "health data",
+                        "create"
+                    ],
+                    [
+                        "doing",
+                        "exercises",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "guided exercises",
+                    "alfred",
+                    "preserve;delete;create"
+                ]]
+            },
             "Contains": [[
                 "guided exercises",
                 "ALFRED"
@@ -3953,6 +5949,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3965,6 +5965,18 @@
             ],
             "Action": ["have"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "games",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "games",
+                    "favourite sports",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "games",
                 "favourite sports"
@@ -3985,6 +5997,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -3997,6 +6013,18 @@
             ],
             "Action": ["receive"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "receive",
+                    "suggestions",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "suggestions",
+                    "local sport classes",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "suggestions",
                 "local sport Classes"
@@ -4017,6 +6045,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4034,6 +6066,26 @@
                 "keep"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "remind",
+                        "me",
+                        "create"
+                    ],
+                    [
+                        "keep",
+                        "good body posture",
+                        "preserve;forbid"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -4061,6 +6113,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4077,6 +6133,21 @@
                 "exercise regularly"
             ],
             "Persona": ["MedicalCaregiver"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "remind",
+                        "people",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "MedicalCaregiver",
@@ -4100,6 +6171,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4116,6 +6191,21 @@
                 "reduce"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "receive",
+                        "specific tips",
+                        "create"
+                    ],
+                    [
+                        "reduce",
+                        "health impairments",
+                        "delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -4139,6 +6229,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4156,6 +6250,21 @@
                 "show"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "some games",
+                        "preserve"
+                    ],
+                    [
+                        "show",
+                        "how good",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -4179,6 +6288,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4191,6 +6304,18 @@
             ],
             "Action": ["have"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "training",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "specific muscle groups",
+                    "training",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "specific muscle Groups",
                 "training"
@@ -4211,6 +6336,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4227,6 +6356,25 @@
                 "offer"
             ],
             "Persona": ["MedicalCaregiver"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "offer",
+                        "training",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "specific muscle groups",
+                    "training",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "specific muscle groups",
                 "training"
@@ -4253,6 +6401,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4262,6 +6414,14 @@
             "Entity": ["training Performance"],
             "Action": ["see"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "training performance",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -4279,6 +6439,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4300,6 +6464,31 @@
                 "motivates"
             ],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "motivate",
+                        "me",
+                        "create"
+                    ],
+                    [
+                        "do",
+                        "exercise",
+                        "preserve;delete;create"
+                    ],
+                    [
+                        "motivates",
+                        "me",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "OlderPerson",
@@ -4331,6 +6520,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4350,6 +6543,25 @@
                 "propose"
             ],
             "Persona": ["MedicalCaregiver"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "propose",
+                        "games",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "games",
+                    "mental and physical exercise",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "mental and physical exercise",
@@ -4390,6 +6602,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4405,6 +6621,18 @@
             ],
             "Action": ["want"],
             "Persona": ["OlderPerson"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "want",
+                    "games",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "games",
+                    "mental and physical exercise",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "games",
@@ -4439,6 +6667,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4454,6 +6686,14 @@
                 "does"
             ],
             "Persona": ["MedicalCaregiver"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "does",
+                    "exercise",
+                    "preserve;delete;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "MedicalCaregiver",
@@ -4471,6 +6711,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4487,6 +6731,18 @@
                 "performed"
             ],
             "Persona": ["MedicalCaregiver"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "regular summary",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "regular summary",
+                    "how much exercise",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "regular summary",
                 "how much exercise"
@@ -4507,6 +6763,14 @@
         "Benefit": {
             "Entity": ["users\u2019 state of health"],
             "Action": ["monitor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "monitor",
+                    "users\u2019 state of health",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "it would enable to monitor the users\u2019 state of health but also have some fun time.",
             "Targets": [[
@@ -4527,6 +6791,32 @@
                 "play together"
             ],
             "Persona": ["InformalCaregiver"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "game",
+                        "preserve"
+                    ],
+                    [
+                        "play together",
+                        "game",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "game",
+                        "carer",
+                        "preserve"
+                    ],
+                    [
+                        "game",
+                        "user",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "game",
@@ -4560,6 +6850,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4577,6 +6871,30 @@
                 "promotes"
             ],
             "Persona": ["MedicalCaregiver"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "alfred",
+                        "preserve"
+                    ],
+                    [
+                        "propose",
+                        "training",
+                        "create"
+                    ],
+                    [
+                        "promotes",
+                        "complex thinking",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "training",
+                    "complex thinking",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "training",
                 "complex thinking"
@@ -4607,6 +6925,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4623,6 +6945,25 @@
                 "performed wrong"
             ],
             "Persona": ["MedicalCaregiver"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "give",
+                        "corrective feedback",
+                        "create"
+                    ],
+                    [
+                        "performed wrong",
+                        "exercises",
+                        "preserve;forbid"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "user",
+                    "corrective feedback",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "user",
                 "corrective feedback"
@@ -4649,6 +6990,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4661,6 +7006,14 @@
             ],
             "Action": ["present"],
             "Persona": ["developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "present",
+                    "app",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "developer",
@@ -4678,6 +7031,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4687,6 +7044,14 @@
             "Entity": ["accounting"],
             "Action": ["have"],
             "Persona": ["developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "accounting",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "developer",
@@ -4704,6 +7069,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4719,6 +7088,25 @@
                 "maintain"
             ],
             "Persona": ["developer"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "easily create",
+                        "apps",
+                        "create"
+                    ],
+                    [
+                        "maintain",
+                        "apps",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "market place",
+                    "apps",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "market place",
                 "apps"
@@ -4751,6 +7139,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4770,6 +7162,30 @@
                 "watch"
             ],
             "Persona": ["developer"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "enable",
+                        "customers",
+                        "preserve;create"
+                    ],
+                    [
+                        "provide",
+                        "feedback",
+                        "create"
+                    ],
+                    [
+                        "watch",
+                        "feedback",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "app",
+                    "feedback",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "App",
                 "feedback"
@@ -4800,6 +7216,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4816,6 +7236,25 @@
                 "manage"
             ],
             "Persona": ["developer"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "easy way",
+                        "preserve"
+                    ],
+                    [
+                        "manage",
+                        "pricing modality",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "apps",
+                    "pricing modality",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "Apps",
                 "pricing modality"
@@ -4842,6 +7281,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4851,6 +7294,14 @@
             "Entity": ["API"],
             "Action": ["have"],
             "Persona": ["developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "api",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "developer",
@@ -4868,6 +7319,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4877,6 +7332,14 @@
             "Entity": ["Apps development support"],
             "Action": ["obtain"],
             "Persona": ["developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "obtain",
+                    "apps development support",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "developer",
@@ -4894,6 +7357,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4912,6 +7379,30 @@
                 "using"
             ],
             "Persona": ["developer"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "know",
+                        "fees",
+                        "preserve"
+                    ],
+                    [
+                        "charges",
+                        "fees",
+                        "create"
+                    ],
+                    [
+                        "using",
+                        "platform",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "platform",
+                    "fees",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "market place",
@@ -4948,6 +7439,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -4964,6 +7459,14 @@
                 "changes"
             ],
             "Persona": ["developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "be notified",
+                    "when",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "Apps",
                 "state"
@@ -4984,6 +7487,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -5001,6 +7508,18 @@
                 "crashes"
             ],
             "Persona": ["developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "detailed information",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "what happened",
+                    "detailed information",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "what happened",
@@ -5027,6 +7546,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -5039,6 +7562,14 @@
             ],
             "Action": ["present"],
             "Persona": ["developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "present",
+                    "app",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "developer",
@@ -5056,6 +7587,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -5071,6 +7606,21 @@
                 "stand to"
             ],
             "Persona": ["developer"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "design",
+                        "app",
+                        "create"
+                    ],
+                    [
+                        "stand to",
+                        "few rules",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "developer",
@@ -5094,6 +7644,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -5112,6 +7666,25 @@
                 "perform"
             ],
             "Persona": ["developer"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "easy way",
+                        "preserve"
+                    ],
+                    [
+                        "define",
+                        "questions",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "user",
+                    "questions",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "user",
                 "questions"
@@ -5138,6 +7711,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -5154,6 +7731,32 @@
                 "granted"
             ],
             "Persona": ["developer"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "app",
+                        "preserve"
+                    ],
+                    [
+                        "granted",
+                        "access",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "app",
+                        "access",
+                        "preserve"
+                    ],
+                    [
+                        "several operating system features",
+                        "access",
+                        "preserve;create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "App",
@@ -5186,6 +7789,10 @@
         "Benefit": {
             "Entity": ["details"],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I don\u2019t have to deal with their details.",
             "Targets": []
@@ -5199,6 +7806,18 @@
             ],
             "Action": ["have"],
             "Persona": ["developer"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "api components",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "api components",
+                    "high level",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "API components",
                 "high level"
@@ -5223,6 +7842,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -5240,6 +7863,25 @@
                 "read"
             ],
             "Persona": ["developer"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "easy way",
+                        "preserve"
+                    ],
+                    [
+                        "read",
+                        "data",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "health sensors",
+                    "data",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "health sensors",
@@ -5272,6 +7914,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -5287,6 +7933,21 @@
                 "provide"
             ],
             "Persona": ["serious games developer"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "take control",
+                        "some functions",
+                        "create;delete;forbid"
+                    ],
+                    [
+                        "provide",
+                        "desired user experience",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "serious games developer",
@@ -5310,6 +7971,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -5325,6 +7990,21 @@
                 "manage"
             ],
             "Persona": ["developer"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "provide",
+                        "easy way",
+                        "create"
+                    ],
+                    [
+                        "manage",
+                        "user settings",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "developer",
@@ -5348,6 +8028,10 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Targets": []
         },
@@ -5365,6 +8049,26 @@
                 "achieve"
             ],
             "Persona": ["developer"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "alfred api",
+                        "preserve"
+                    ],
+                    [
+                        "reduce",
+                        "work",
+                        "delete"
+                    ],
+                    [
+                        "achieve",
+                        "goals",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Triggers": [[
                 "developer",

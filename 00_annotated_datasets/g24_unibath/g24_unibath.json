@@ -4,6 +4,10 @@
         "Benefit": {
             "Entity": ["new software"],
             "Action": ["deposit"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I don't need to install and learn new software to deposit.",
             "Targets": []
@@ -20,6 +24,25 @@
                 "maintain"
             ],
             "Persona": ["depositor"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "deposit",
+                        "datasets",
+                        "create"
+                    ],
+                    [
+                        "maintain",
+                        "datasets",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "simple web interface",
+                    "datasets",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "simple web interface",
                 "datasets"
@@ -53,6 +76,14 @@
         "Benefit": {
             "Entity": ["University systems"],
             "Action": ["joined"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "joined",
+                    "university systems",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I feel like all the University systems are joined up.",
             "Targets": [[
@@ -66,6 +97,14 @@
             "Entity": ["user interface"],
             "Action": ["have"],
             "Persona": ["depositor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "user interface",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G24# As a depositor, I want to have a user interface that is familiar to me, ",
             "Triggers": [[
@@ -90,6 +129,25 @@
                 "have",
                 "managing"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "single onestop shop",
+                        "preserve"
+                    ],
+                    [
+                        "managing",
+                        "research outputs",
+                        "preserve;delete;create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "single onestop shop",
+                    "research outputs",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "single onestop shop",
                 "research outputs"
@@ -118,6 +176,25 @@
                 "maintain"
             ],
             "Persona": ["depositor"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "deposit",
+                        "datasets",
+                        "create"
+                    ],
+                    [
+                        "maintain",
+                        "datasets",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "pure",
+                    "datasets",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "Pure",
                 "datasets"
@@ -151,6 +228,14 @@
         "Benefit": {
             "Entity": ["tools"],
             "Action": ["work"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "work",
+                    "tools",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can continue to work with tools with which I'm familiar.",
             "Targets": [[
@@ -171,6 +256,32 @@
                 "maintain"
             ],
             "Persona": ["depositor"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "maintain",
+                        "datasets",
+                        "create;delete"
+                    ],
+                    [
+                        "deposit",
+                        "datasets",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "virtual research environments",
+                        "datasets",
+                        "create;delete"
+                    ],
+                    [
+                        "other workflow tools",
+                        "datasets",
+                        "create;delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "Virtual Research Environments",
@@ -216,6 +327,21 @@
                 "finding",
                 "converting"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "finding",
+                        "right version",
+                        "preserve"
+                    ],
+                    [
+                        "converting",
+                        "right format",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I don't have to spend a lot of time finding the right version and converting to the right format.",
             "Targets": [
@@ -235,6 +361,14 @@
             "Entity": ["files"],
             "Action": ["deposit"],
             "Persona": ["depositor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "deposit",
+                    "files",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G24# As a depositor, I want to deposit the files that I have, ",
             "Triggers": [[
@@ -259,6 +393,21 @@
                 "fulfil",
                 "protected"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "fulfil",
+                        "confidentiality responsibilities",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "protected",
+                        "right of first use",
+                        "preserve;forbid"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "my right of first use is protected, and I can fulfil my confidentiality responsibilities.",
             "Targets": [
@@ -281,6 +430,18 @@
             ],
             "Action": ["place"],
             "Persona": ["depositor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "place",
+                    "data",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "data",
+                    "embargo",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "data",
                 "embargo"
@@ -305,6 +466,14 @@
         "Benefit": {
             "Entity": ["IP rights"],
             "Action": ["protected appropriately"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "protected appropriately",
+                    "ip rights",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "my IP rights are protected appropriately.",
             "Targets": [[
@@ -321,6 +490,18 @@
             ],
             "Action": ["apply"],
             "Persona": ["depositor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "apply",
+                    "licenses",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": [[
+                    "datasets",
+                    "licenses",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "datasets",
                 "licenses"
@@ -342,6 +523,14 @@
         "Benefit": {
             "Entity": ["productive relationship"],
             "Action": ["have"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "productive relationship",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "we continue to have a productive relationship.",
             "Targets": [[
@@ -359,6 +548,25 @@
             ],
             "Action": ["allow"],
             "Persona": ["depositor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "allow",
+                    "privileged access",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "datasets",
+                        "privileged access",
+                        "create"
+                    ],
+                    [
+                        "collaborators",
+                        "privileged access",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "datasets",
@@ -386,6 +594,14 @@
         "Benefit": {
             "Entity": ["files"],
             "Action": ["deposit"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "deposit",
+                    "files",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I am not limited in what files I can and cannot deposit.",
             "Targets": [[
@@ -399,6 +615,14 @@
             "Entity": ["arbitrarily large files"],
             "Action": ["deposit"],
             "Persona": ["depositor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "deposit",
+                    "arbitrarily large files",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G24# As a depositor, I want to deposit arbitrarily large files, ",
             "Triggers": [[
@@ -420,6 +644,21 @@
                 "publications"
             ],
             "Action": ["more easily discovered"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "more easily discovered",
+                        "data",
+                        "preserve;create"
+                    ],
+                    [
+                        "more easily discovered",
+                        "publications",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "both my data and publications are more easily discovered.",
             "Targets": [
@@ -443,6 +682,18 @@
             ],
             "Action": ["link"],
             "Persona": ["depositor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "link",
+                    "datasets",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "publications",
+                    "datasets",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "publications",
@@ -477,6 +728,14 @@
                 "tracked",
                 "discovered"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "tracked",
+                    "citations",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "it can be discovered and cited more easily and citations can be tracked so that I can receive credit.",
             "Targets": [[
@@ -493,6 +752,18 @@
             ],
             "Action": ["mint"],
             "Persona": ["depositor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "mint",
+                    "dois",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "data",
+                    "dois",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "data",
                 "DOIs"
@@ -517,6 +788,14 @@
         "Benefit": {
             "Entity": ["same information"],
             "Action": ["reentering"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "reentering",
+                    "same information",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I don't have to waste time reentering the same information.",
             "Targets": [[
@@ -537,6 +816,32 @@
                 "automatically filled"
             ],
             "Persona": ["depositor"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "metadata",
+                        "preserve"
+                    ],
+                    [
+                        "automatically filled",
+                        "metadata",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "other university systems",
+                        "metadata",
+                        "preserve"
+                    ],
+                    [
+                        "previous deposits",
+                        "metadata",
+                        "preserve"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "other University systems",
@@ -579,6 +884,32 @@
                 "store",
                 "still register"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "store",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "still register",
+                        "data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "appropriate repository",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "University",
+                        "data",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "appropriate repository",
@@ -613,6 +944,25 @@
                 "stored"
             ],
             "Persona": ["depositor"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "link",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "stored",
+                        "data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "external repositories",
+                    "data",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "external repositories",
                 "data"
@@ -643,6 +993,10 @@
                 "collaboration agreements"
             ],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I do not accidentally breach laws or collaboration agreements.",
             "Targets": []
@@ -656,6 +1010,18 @@
             ],
             "Action": ["specify"],
             "Persona": ["depositor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "specify",
+                    "disposal policy",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "data",
+                    "disposal policy",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "data",
                 "disposal policy"
@@ -680,6 +1046,18 @@
                 "work"
             ],
             "Action": ["demonstrate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "demonstrate",
+                    "impact",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "work",
+                    "impact",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "work",
                 "impact"
@@ -699,6 +1077,18 @@
             ],
             "Action": ["track"],
             "Persona": ["depositor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "track",
+                    "downloads",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "data",
+                    "downloads",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "data",
                 "downloads"
@@ -723,6 +1113,18 @@
                 "work"
             ],
             "Action": ["demonstrate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "demonstrate",
+                    "impact",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "work",
+                    "impact",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "work",
                 "impact"
@@ -742,6 +1144,18 @@
             ],
             "Action": ["track"],
             "Persona": ["depositor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "track",
+                    "citations",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "data",
+                    "citations",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "data",
                 "citations"
@@ -770,6 +1184,25 @@
                 "use",
                 "fulfil"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "use",
+                        "data",
+                        "preserve"
+                    ],
+                    [
+                        "fulfil",
+                        "funder requirements",
+                        "preserve;forbid"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "archival",
+                    "funder requirements",
+                    "preserve;forbid"
+                ]]
+            },
             "Contains": [[
                 "archival",
                 "funder requirements"
@@ -795,6 +1228,18 @@
             ],
             "Action": ["have"],
             "Persona": ["depositor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "guarantees",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "data integrity",
+                    "guarantees",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "data integrity",
                 "guarantees"
@@ -820,6 +1265,14 @@
                 "data"
             ],
             "Action": ["find"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "find",
+                    "data",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "discipline",
                 "researchers"
@@ -839,6 +1292,18 @@
             ],
             "Action": ["attach"],
             "Persona": ["depositor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "attach",
+                    "subject specific discoverability metadata",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "records",
+                    "subject specific discoverability metadata",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "records",
                 "subject specific discoverability metadata"
@@ -867,6 +1332,25 @@
                 "demonstrated",
                 "linked together"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "demonstrated",
+                        "compliance",
+                        "preserve;create"
+                    ],
+                    [
+                        "linked together",
+                        "whole project workflow",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "DMP",
+                    "compliance",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "DMP",
                 "compliance"
@@ -892,6 +1376,18 @@
             ],
             "Action": ["link"],
             "Persona": ["depositor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "link",
+                    "datasets",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "project dmp",
+                    "datasets",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "project DMP",
                 "datasets"
@@ -913,6 +1409,14 @@
         "Benefit": {
             "Entity": ["whole project workflow"],
             "Action": ["linked together"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "linked together",
+                    "whole project workflow",
+                    "preserve"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "whole project workflow is linked together.",
             "Targets": [[
@@ -929,6 +1433,21 @@
                 "share"
             ],
             "Persona": ["depositor"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "manage",
+                        "'live' research data",
+                        "create;delete"
+                    ],
+                    [
+                        "share",
+                        "'live' research data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G24# As a depositor, I want to manage and share 'live' research data, ",
             "Triggers": [
@@ -963,6 +1482,10 @@
                 "research integrity"
             ],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "dataset",
                 "changes"
@@ -979,6 +1502,18 @@
             ],
             "Action": ["manage"],
             "Persona": ["depositor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "manage",
+                    "multiple versions",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": [[
+                    "same dataset",
+                    "multiple versions",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "same dataset",
                 "multiple versions"
@@ -1000,6 +1535,14 @@
         "Benefit": {
             "Entity": ["research data management tasks"],
             "Action": ["delegate"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "delegate",
+                    "research data management tasks",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can delegate research data management tasks appropriately.",
             "Targets": [[
@@ -1016,6 +1559,14 @@
                 "deposit"
             ],
             "Persona": ["depositor"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "allow",
+                    "others",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G24# As a depositor, I want to allow others to deposit on my behalf, ",
             "Triggers": [[
@@ -1037,6 +1588,14 @@
                 "needs"
             ],
             "Action": ["easily find"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "easily find",
+                    "data",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can easily find data relevant to my needs.",
             "Targets": [[
@@ -1053,6 +1612,18 @@
             ],
             "Action": ["search"],
             "Persona": ["data reuser"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "search",
+                    "archive",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "web",
+                    "archive",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "web",
                 "archive"
@@ -1077,6 +1648,18 @@
                 "language barriers"
             ],
             "Action": ["reusing"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "reusing",
+                    "university of bath data",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "University of Bath data",
+                    "language barriers",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "University of Bath data",
                 "language barriers"
@@ -1096,6 +1679,18 @@
             ],
             "Action": ["access"],
             "Persona": ["data reuser"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "access",
+                    "system",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "system",
+                    "native language",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "system",
                 "native language"
@@ -1120,6 +1715,14 @@
                 "whole dataset"
             ],
             "Action": ["make"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "make",
+                    "preliminary assessment",
+                    "create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can make a preliminary assessment of usefulness without downloading the whole dataset.",
             "Targets": [[
@@ -1136,6 +1739,21 @@
                 "identify"
             ],
             "Persona": ["data reuser"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "examine",
+                        "deposited files",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "identify",
+                        "deposited files",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G24# As a data reuser, I want to examine and identify deposited files, ",
             "Triggers": [
@@ -1166,6 +1784,10 @@
         "Benefit": {
             "Entity": [],
             "Action": ["reference"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can reference it correctly.",
             "Targets": []
@@ -1179,6 +1801,18 @@
             ],
             "Action": ["view"],
             "Persona": ["data reuser"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "view",
+                    "example citation",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "dataset",
+                    "example citation",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "dataset",
                 "example citation"
@@ -1210,6 +1844,25 @@
                 "get back",
                 "import"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "get back",
+                        "data",
+                        "preserve;create"
+                    ],
+                    [
+                        "import",
+                        "dataset",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "referencemanagement software",
+                    "dataset",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "referencemanagement software",
                 "dataset"
@@ -1235,6 +1888,18 @@
             ],
             "Action": ["view"],
             "Persona": ["data reuser"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "view",
+                    "doi",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "dataset",
+                    "doi",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "dataset",
                 "DOI"
@@ -1256,6 +1921,14 @@
         "Benefit": {
             "Entity": ["data"],
             "Action": ["get back"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get back",
+                    "data",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can get back to the data in future.",
             "Targets": [[
@@ -1272,6 +1945,18 @@
             ],
             "Action": ["get"],
             "Persona": ["data reuser"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "get",
+                    "persistent url",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "dataset",
+                    "persistent url",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "dataset",
                 "persistent URL"
@@ -1298,6 +1983,42 @@
                 "one place"
             ],
             "Action": ["search"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "search",
+                        "books",
+                        "preserve;create"
+                    ],
+                    [
+                        "search",
+                        "articles",
+                        "preserve;create"
+                    ],
+                    [
+                        "search",
+                        "data",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "one place",
+                        "books",
+                        "preserve;create"
+                    ],
+                    [
+                        "one place",
+                        "articles",
+                        "preserve;create"
+                    ],
+                    [
+                        "one place",
+                        "data",
+                        "preserve;create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "one place",
@@ -1337,6 +2058,18 @@
             ],
             "Action": ["search"],
             "Persona": ["data reuser"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "search",
+                    "archive",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "primo",
+                    "archive",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "Primo",
                 "archive"
@@ -1364,6 +2097,18 @@
                 "be sure",
                 "using"
             ],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "using",
+                    "right version",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "dataset",
+                    "right version",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "dataset",
                 "right version"
@@ -1383,6 +2128,18 @@
             ],
             "Action": ["see"],
             "Persona": ["data reuser"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "see",
+                    "different versions",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "dataset",
+                    "different versions",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "dataset",
                 "different versions"
@@ -1404,6 +2161,10 @@
         "Benefit": {
             "Entity": [],
             "Action": ["collaborate effectively"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can collaborate effectively.",
             "Targets": []
@@ -1421,6 +2182,32 @@
                 "involved"
             ],
             "Persona": ["externalcollaborator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "gain",
+                        "privileged access",
+                        "create"
+                    ],
+                    [
+                        "involved",
+                        "projects",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "data",
+                        "privileged access",
+                        "create"
+                    ],
+                    [
+                        "projects",
+                        "data",
+                        "preserve;create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "projects",
@@ -1457,6 +2244,18 @@
                 "Bath"
             ],
             "Action": ["collaborating"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "collaborating",
+                    "bath",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "Bath",
+                    "risk",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "Bath",
                 "risk"
@@ -1476,6 +2275,18 @@
             ],
             "Action": ["have"],
             "Persona": ["externalcoordinator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "have",
+                    "guarantees",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "guarantees",
+                    "ip rights",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "guarantees",
                 "IP rights"
@@ -1497,6 +2308,10 @@
         "Benefit": {
             "Entity": [],
             "Action": ["collaborate effectively"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can collaborate effectively.",
             "Targets": []
@@ -1511,6 +2326,25 @@
             ],
             "Action": ["access"],
             "Persona": ["externalcoordinator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "access",
+                    "data",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "bath collaborators",
+                        "data",
+                        "preserve;create"
+                    ],
+                    [
+                        "off campus",
+                        "data",
+                        "preserve;create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "Bath collaborators",
@@ -1543,6 +2377,14 @@
                 "own archive"
             ],
             "Action": ["access"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "access",
+                    "own data",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "own archive",
                 "facility data"
@@ -1564,6 +2406,25 @@
             ],
             "Action": ["deposit"],
             "Persona": ["research facility manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "deposit",
+                    "data",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "facility",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "archive",
+                        "data",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "facility",
@@ -1602,6 +2463,42 @@
                 "checked",
                 "checked"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "checked",
+                        "compliance",
+                        "preserve"
+                    ],
+                    [
+                        "checked",
+                        "details",
+                        "preserve"
+                    ],
+                    [
+                        "maintained",
+                        "consistent quality",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "policies",
+                        "compliance",
+                        "preserve"
+                    ],
+                    [
+                        "licensing",
+                        "details",
+                        "preserve"
+                    ],
+                    [
+                        "metadata",
+                        "consistent quality",
+                        "create;delete"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "policies",
@@ -1641,6 +2538,18 @@
             ],
             "Action": ["make"],
             "Persona": ["Bath Data Archive administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "make",
+                    "some checks",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "deposited datasets",
+                    "some checks",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "deposited datasets",
                 "some checks"
@@ -1665,6 +2574,18 @@
                 "consistent quality"
             ],
             "Action": ["maintained"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "maintained",
+                    "consistent quality",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": [[
+                    "metadata",
+                    "consistent quality",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "metadata",
                 "consistent quality"
@@ -1684,6 +2605,18 @@
             ],
             "Action": ["require"],
             "Persona": ["Bath Data Archive administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "require",
+                    "minimum set",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": [[
+                    "minimum set",
+                    "metadata",
+                    "preserve;forbid"
+                ]]
+            },
             "Contains": [[
                 "minimum set",
                 "metadata"
@@ -1705,6 +2638,10 @@
         "Benefit": {
             "Entity": ["data"],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "data which is still required is not destroyed.",
             "Targets": []
@@ -1718,6 +2655,18 @@
             ],
             "Action": ["approve"],
             "Persona": ["Bath Data Archive administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "approve",
+                    "scheduled disposal",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "data",
+                    "scheduled disposal",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "data",
                 "scheduled disposal"
@@ -1742,6 +2691,18 @@
                 "archive holdings"
             ],
             "Action": ["report"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "report",
+                    "particular aspects",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "archive holdings",
+                    "particular aspects",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "archive holdings",
                 "particular aspects"
@@ -1758,6 +2719,14 @@
             "Entity": ["entire archive"],
             "Action": ["query"],
             "Persona": ["Bath Data Archive administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "query",
+                    "entire archive",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "#G24# As a Bath Data Archive administrator, I want to query the entire archive , ",
             "Triggers": [[
@@ -1779,6 +2748,18 @@
                 "external archives"
             ],
             "Action": ["close"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "close",
+                    "external archives",
+                    "delete"
+                ]],
+                "Contain Action Rules": [[
+                    "external archives",
+                    "Bath data holdings",
+                    "delete"
+                ]]
+            },
             "Contains": [[
                 "external archives",
                 "Bath data holdings"
@@ -1798,6 +2779,18 @@
             ],
             "Action": ["import"],
             "Persona": ["Bath Data Archive administrator"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "import",
+                    "bath data",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "external data centre wholesale",
+                    "bath data",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "external data centre wholesale",
                 "Bath data"
@@ -1819,6 +2812,10 @@
         "Benefit": {
             "Entity": ["data"],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "data is as reusable as possible.",
             "Targets": []
@@ -1835,6 +2832,25 @@
                 "promote"
             ],
             "Persona": ["Bath Data Archive administrator"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "promote",
+                        "open standards",
+                        "create"
+                    ],
+                    [
+                        "encourage",
+                        "open standards",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "deposit",
+                    "open standards",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "deposit",
                 "open standards"
@@ -1877,6 +2893,32 @@
                 "link",
                 "produces"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "analyse",
+                        "impact",
+                        "create;preserve;forbid"
+                    ],
+                    [
+                        "link",
+                        "funding",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "research data publication",
+                        "impact",
+                        "create;preserve;forbid"
+                    ],
+                    [
+                        "outputs",
+                        "funding",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "research data publication",
@@ -1908,6 +2950,18 @@
             ],
             "Action": ["integrate"],
             "Persona": ["Research Information manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "integrate",
+                    "archive",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "cris",
+                    "archive",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "CRIS",
                 "archive"
@@ -1932,6 +2986,10 @@
                 "data holdings"
             ],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [[
                 "university's record",
                 "data holdings"
@@ -1948,6 +3006,18 @@
             ],
             "Action": ["include"],
             "Persona": ["Research Information manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "include",
+                    "records",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "records",
+                    "externally held data",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "records",
                 "externally held data"
@@ -1973,6 +3043,18 @@
                 "academia"
             ],
             "Action": ["demonstrated"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "demonstrated",
+                    "impact",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "datasets",
+                    "impact",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [
                 [
                     "datasets",
@@ -1998,6 +3080,18 @@
             ],
             "Action": ["track"],
             "Persona": ["Research Information manager"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "track",
+                    "citation counts",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "published datasets",
+                    "citation counts",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "published datasets",
                 "citation counts"
@@ -2023,6 +3117,18 @@
                 "outside academia"
             ],
             "Action": ["demonstrated"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "demonstrated",
+                    "impact",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": [[
+                    "datasets",
+                    "impact",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [
                 [
                     "datasets",
@@ -2053,6 +3159,32 @@
                 "download"
             ],
             "Persona": ["Research Information manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "segment",
+                        "view",
+                        "create"
+                    ],
+                    [
+                        "download",
+                        "statistics",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [
+                    [
+                        "country",
+                        "statistics",
+                        "create"
+                    ],
+                    [
+                        "sector",
+                        "statistics",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "country",
@@ -2099,6 +3231,30 @@
                 "report",
                 "depositing"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "report",
+                        "funder requirements",
+                        "preserve;create"
+                    ],
+                    [
+                        "report",
+                        "projects",
+                        "preserve;create"
+                    ],
+                    [
+                        "depositing",
+                        "datasets",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "projects",
+                    "datasets",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "projects",
                 "datasets"
@@ -2132,6 +3288,25 @@
                 "linked"
             ],
             "Persona": ["Research Information manager"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "have",
+                        "datasets",
+                        "preserve"
+                    ],
+                    [
+                        "linked",
+                        "datasets",
+                        "create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "metadata",
+                    "datasets",
+                    "preserve"
+                ]]
+            },
             "Contains": [
                 [
                     "projects",
@@ -2168,6 +3343,10 @@
                 "data"
             ],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "university data storage is consistent and maintainable and future availability of data can be guaranteed.",
             "Targets": []
@@ -2181,6 +3360,18 @@
             ],
             "Action": ["store"],
             "Persona": ["UnivITservice"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "store",
+                    "archived data",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "existing storage systems",
+                    "archived data",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "existing storage systems",
                 "archived data"
@@ -2205,6 +3396,18 @@
                 "system"
             ],
             "Action": ["administering"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "administering",
+                    "system",
+                    "create;delete"
+                ]],
+                "Contain Action Rules": [[
+                    "system",
+                    "cost",
+                    "create;delete"
+                ]]
+            },
             "Contains": [[
                 "system",
                 "cost"
@@ -2225,6 +3428,18 @@
             ],
             "Action": ["integrate"],
             "Persona": ["UnivITservice"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "integrate",
+                    "archive",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "existing university systems",
+                    "archive",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "existing university systems",
@@ -2252,6 +3467,14 @@
         "Benefit": {
             "Entity": ["features"],
             "Action": ["made"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "made",
+                    "features",
+                    "preserve;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "features can be made.",
             "Targets": [[
@@ -2268,6 +3491,18 @@
             ],
             "Action": ["store"],
             "Persona": ["UnivITservice"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "store",
+                    "archived data",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "hcp object store",
+                    "archived data",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "HCP object store",
                 "archived data"
@@ -2289,6 +3524,10 @@
         "Benefit": {
             "Entity": ["one system"],
             "Action": [],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I am not tied into one system which may not be the most appropriate at some point in the future.",
             "Targets": []
@@ -2302,6 +3541,18 @@
             ],
             "Action": ["export"],
             "Persona": ["UnivITservice"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "export",
+                    "all data",
+                    "create"
+                ]],
+                "Contain Action Rules": [[
+                    "different system",
+                    "all data",
+                    "create"
+                ]]
+            },
             "Contains": [[
                 "different system",
                 "all data"
@@ -2326,6 +3577,14 @@
                 "archive"
             ],
             "Action": ["interact"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "interact",
+                    "archive",
+                    "preserve;delete;create"
+                ]],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "my service can interact with the archive.",
             "Targets": [[
@@ -2346,6 +3605,25 @@
                 "maintain"
             ],
             "Persona": ["developer"],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "deposit",
+                        "datasets",
+                        "create"
+                    ],
+                    [
+                        "maintain",
+                        "datasets",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "api",
+                    "datasets",
+                    "create"
+                ]]
+            },
             "Contains": [
                 [
                     "API",
@@ -2388,6 +3666,18 @@
                 "robust, high quality research"
             ],
             "Action": ["filled"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "filled",
+                    "journals",
+                    "preserve"
+                ]],
+                "Contain Action Rules": [[
+                    "journals",
+                    "robust, high quality research",
+                    "preserve"
+                ]]
+            },
             "Contains": [[
                 "journals",
                 "robust, high quality research"
@@ -2408,6 +3698,25 @@
             ],
             "Action": ["make"],
             "Persona": ["academicpublisher"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "make",
+                    "persistent web links",
+                    "create"
+                ]],
+                "Contain Action Rules": [
+                    [
+                        "articles ",
+                        "persistent web links",
+                        "create"
+                    ],
+                    [
+                        "underlying datasets",
+                        "persistent web links",
+                        "create"
+                    ]
+                ]
+            },
             "Contains": [
                 [
                     "articles ",
@@ -2438,6 +3747,10 @@
                 "be sure",
                 "funding"
             ],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [],
             "Text": "I can be sure that funding them is a worthwhile investment.",
             "Targets": []
@@ -2452,6 +3765,10 @@
             ],
             "Action": ["be reassured"],
             "Persona": ["fundingbody"],
+            "Action Rules": {
+                "Target Action Rules": [],
+                "Contain Action Rules": []
+            },
             "Contains": [
                 [
                     "researchers I fund",
@@ -2490,6 +3807,25 @@
                 "analyse",
                 "encourage"
             ],
+            "Action Rules": {
+                "Target Action Rules": [
+                    [
+                        "analyse",
+                        "funding strategy",
+                        "create;preserve;forbid"
+                    ],
+                    [
+                        "encourage",
+                        "cross fertilisation",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Rules": [[
+                    "research outputs",
+                    "cross fertilisation",
+                    "preserve;create"
+                ]]
+            },
             "Contains": [[
                 "research outputs",
                 "cross fertilisation"
@@ -2516,6 +3852,18 @@
             ],
             "Action": ["harvest"],
             "Persona": ["fundingbody"],
+            "Action Rules": {
+                "Target Action Rules": [[
+                    "harvest",
+                    "metadata",
+                    "delete"
+                ]],
+                "Contain Action Rules": [[
+                    "outputs",
+                    "metadata",
+                    "delete"
+                ]]
+            },
             "Contains": [
                 [
                     "outputs",

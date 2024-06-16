@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Rule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_EnAqUCtVEe-Z2c_YxgnDzQ" name="user_story_24_main_perform_delete">
+  <lhs xmi:id="_EnAqUStVEe-Z2c_YxgnDzQ" name="Lhs">
+    <nodes xmi:id="_EnAqUitVEe-Z2c_YxgnDzQ" name="|4|" outgoing="_EnAqWitVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Persona"/>
+      <attributes xmi:id="_EnAqUytVEe-Z2c_YxgnDzQ" value="&quot;staff member&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_EnAqVCtVEe-Z2c_YxgnDzQ" name="|5|">
+      <type href="../../../Backlog_v2.4.ecore#//Story"/>
+      <attributes xmi:id="_EnAqVStVEe-Z2c_YxgnDzQ" value="&quot;#g03# as a staff member, i want to perform a staff review,&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//Story/text"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_EnAqVitVEe-Z2c_YxgnDzQ" name="|6|" incoming="_EnAqWitVEe-Z2c_YxgnDzQ" outgoing="_EnAqWytVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action"/>
+      <attributes xmi:id="_EnAqVytVEe-Z2c_YxgnDzQ" value="&quot;perform&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_EnAqWCtVEe-Z2c_YxgnDzQ" name="|7|" incoming="_EnAqWytVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Entity"/>
+      <attributes xmi:id="_EnAqWStVEe-Z2c_YxgnDzQ" value="&quot;staff review&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <edges xmi:id="_EnAqWitVEe-Z2c_YxgnDzQ" source="_EnAqUitVEe-Z2c_YxgnDzQ" target="_EnAqVitVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Persona/triggers"/>
+    </edges>
+    <edges xmi:id="_EnAqWytVEe-Z2c_YxgnDzQ" source="_EnAqVitVEe-Z2c_YxgnDzQ" target="_EnAqWCtVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action/targets"/>
+    </edges>
+  </lhs>
+  <rhs xmi:id="_EnAqXCtVEe-Z2c_YxgnDzQ" name="Rhs">
+    <nodes xmi:id="_EnAqXStVEe-Z2c_YxgnDzQ" name="|4|">
+      <type href="../../../Backlog_v2.4.ecore#//Persona"/>
+      <attributes xmi:id="_EnAqXitVEe-Z2c_YxgnDzQ" value="&quot;staff member&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_EnAqXytVEe-Z2c_YxgnDzQ" name="|5|">
+      <type href="../../../Backlog_v2.4.ecore#//Story"/>
+      <attributes xmi:id="_EnAqYCtVEe-Z2c_YxgnDzQ" value="&quot;#g03# as a staff member, i want to perform a staff review,&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//Story/text"/>
+      </attributes>
+    </nodes>
+  </rhs>
+  <mappings xmi:id="_EnAqYStVEe-Z2c_YxgnDzQ" origin="_EnAqUitVEe-Z2c_YxgnDzQ" image="_EnAqXStVEe-Z2c_YxgnDzQ"/>
+  <mappings xmi:id="_EnAqYitVEe-Z2c_YxgnDzQ" origin="_EnAqVCtVEe-Z2c_YxgnDzQ" image="_EnAqXytVEe-Z2c_YxgnDzQ"/>
+</henshin:Rule>

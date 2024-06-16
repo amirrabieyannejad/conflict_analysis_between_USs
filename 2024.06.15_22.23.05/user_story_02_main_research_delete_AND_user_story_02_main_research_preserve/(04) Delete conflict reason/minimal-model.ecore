@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="user_story_02_main_research_delete_user_story_02_main_research_preserve"
+    nsURI="http://cdapackage/user_story_02_main_research_delete/user_story_02_main_research_preserve/DeleteConflictReason"
+    nsPrefix="CDAPackage">
+  <eClassifiers xsi:type="ecore:EClass" name="#|5|_|10|:Entity#">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name=&quot;requirements&quot; _ &quot;requirements&quot;"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="#|4|_|9|:Action#">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name=&quot;research&quot; _ &quot;research&quot;"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="#targets#" eType="#//%23|5|_|10|%3AEntity%23"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="|0|_|6|:Persona">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name=&quot;prospectiveapplicant&quot; _ &quot;prospectiveapplicant&quot;"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="#triggers#" eType="#//%23|4|_|9|%3AAction%23"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="#triggers#" eType="#//%23|3|_|8|%3AAction%23"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="#|3|_|8|:Action#">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name=&quot;select&quot; _ &quot;select&quot;"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="#targets#" eType="#//|2|_|11|%3AEntity"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="|2|_|11|:Entity">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name=&quot;service&quot; _ &quot;service&quot;"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

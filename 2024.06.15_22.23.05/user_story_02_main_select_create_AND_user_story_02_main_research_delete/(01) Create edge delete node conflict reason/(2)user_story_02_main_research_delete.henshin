@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Rule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_Emyn4CtVEe-Z2c_YxgnDzQ" name="user_story_02_main_research_delete">
+  <lhs xmi:id="_Emyn4StVEe-Z2c_YxgnDzQ" name="Lhs">
+    <nodes xmi:id="_Emyn4itVEe-Z2c_YxgnDzQ" name="|6|" outgoing="_Emyn7itVEe-Z2c_YxgnDzQ _Emyn7ytVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Persona"/>
+      <attributes xmi:id="_Emyn4ytVEe-Z2c_YxgnDzQ" value="&quot;prospectiveapplicant&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_Emyn5CtVEe-Z2c_YxgnDzQ" name="|7|">
+      <type href="../../../Backlog_v2.4.ecore#//Story"/>
+      <attributes xmi:id="_Emyn5StVEe-Z2c_YxgnDzQ" value="&quot;#g03# as a prospectiveapplicant, i want to research requirements and to select a service,&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//Story/text"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_Emyn5itVEe-Z2c_YxgnDzQ" name="|9|" incoming="_Emyn7itVEe-Z2c_YxgnDzQ" outgoing="_Emyn8StVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action"/>
+      <attributes xmi:id="_Emyn5ytVEe-Z2c_YxgnDzQ" value="&quot;select&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_Emyn6CtVEe-Z2c_YxgnDzQ" name="|10|" incoming="_Emyn7ytVEe-Z2c_YxgnDzQ" outgoing="_Emyn8CtVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action"/>
+      <attributes xmi:id="_Emyn6StVEe-Z2c_YxgnDzQ" value="&quot;research&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_Emyn6itVEe-Z2c_YxgnDzQ" name="|11|" incoming="_Emyn8CtVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Entity"/>
+      <attributes xmi:id="_Emyn6ytVEe-Z2c_YxgnDzQ" value="&quot;requirements&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_Emyn7CtVEe-Z2c_YxgnDzQ" name="|8|" incoming="_Emyn8StVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Entity"/>
+      <attributes xmi:id="_Emyn7StVEe-Z2c_YxgnDzQ" value="&quot;service&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <edges xmi:id="_Emyn7itVEe-Z2c_YxgnDzQ" source="_Emyn4itVEe-Z2c_YxgnDzQ" target="_Emyn5itVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Persona/triggers"/>
+    </edges>
+    <edges xmi:id="_Emyn7ytVEe-Z2c_YxgnDzQ" source="_Emyn4itVEe-Z2c_YxgnDzQ" target="_Emyn6CtVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Persona/triggers"/>
+    </edges>
+    <edges xmi:id="_Emyn8CtVEe-Z2c_YxgnDzQ" source="_Emyn6CtVEe-Z2c_YxgnDzQ" target="_Emyn6itVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action/targets"/>
+    </edges>
+    <edges xmi:id="_Emyn8StVEe-Z2c_YxgnDzQ" source="_Emyn5itVEe-Z2c_YxgnDzQ" target="_Emyn7CtVEe-Z2c_YxgnDzQ">
+      <type href="../../../Backlog_v2.4.ecore#//Action/targets"/>
+    </edges>
+  </lhs>
+  <rhs xmi:id="_Emyn8itVEe-Z2c_YxgnDzQ" name="Rhs">
+    <nodes xmi:id="_Emyn8ytVEe-Z2c_YxgnDzQ" name="|6|">
+      <type href="../../../Backlog_v2.4.ecore#//Persona"/>
+      <attributes xmi:id="_Emyn9CtVEe-Z2c_YxgnDzQ" value="&quot;prospectiveapplicant&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_Emyn9StVEe-Z2c_YxgnDzQ" name="|7|">
+      <type href="../../../Backlog_v2.4.ecore#//Story"/>
+      <attributes xmi:id="_Emyn9itVEe-Z2c_YxgnDzQ" value="&quot;#g03# as a prospectiveapplicant, i want to research requirements and to select a service,&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//Story/text"/>
+      </attributes>
+    </nodes>
+    <nodes xmi:id="_Emyn9ytVEe-Z2c_YxgnDzQ" name="|8|">
+      <type href="../../../Backlog_v2.4.ecore#//Entity"/>
+      <attributes xmi:id="_Emyn-CtVEe-Z2c_YxgnDzQ" value="&quot;service&quot;">
+        <type href="../../../Backlog_v2.4.ecore#//NamedElement/name"/>
+      </attributes>
+    </nodes>
+  </rhs>
+  <mappings xmi:id="_Emyn-StVEe-Z2c_YxgnDzQ" origin="_Emyn4itVEe-Z2c_YxgnDzQ" image="_Emyn8ytVEe-Z2c_YxgnDzQ"/>
+  <mappings xmi:id="_Emyn-itVEe-Z2c_YxgnDzQ" origin="_Emyn5CtVEe-Z2c_YxgnDzQ" image="_Emyn9StVEe-Z2c_YxgnDzQ"/>
+  <mappings xmi:id="_Emyn-ytVEe-Z2c_YxgnDzQ" origin="_Emyn7CtVEe-Z2c_YxgnDzQ" image="_Emyn9ytVEe-Z2c_YxgnDzQ"/>
+</henshin:Rule>
