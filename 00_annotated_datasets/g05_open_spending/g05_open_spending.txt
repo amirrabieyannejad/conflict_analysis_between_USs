@@ -1,0 +1,73 @@
+
+
+********************* << Dataset: g05_open_spending >> ***************
+* Table of potential conflict between user stories
+
+       us_40  us_44  us_01  us_03  us_15  us_33  
+us_40         x                                  
+us_44  x                                         
+us_01                       x                    
+us_03                x                           
+us_15                                     x      
+us_33                              x             
+
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_40_AND_user_story_44}
+  
+Affected Resource is: << dataset >>
+
+ Action of user_story_40 is: << update automatically >>  which is annotated with: << delete >>
+ Action of user_story_44 is: << hide >>  which is annotated with: << delete >>
+
+Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_40: #g05# as a data publishing user, i want to have my #dataset# #update automatically# as the source file/files changes, 
+
+   user_story_44: #g05# as a data publishing user, i want to be able to #hide# a #dataset# that i have already added as public, 
+
+Original texts of user stories are: 
+   user_story_40: #G05# As a Data Publishing User, I want to have my dataset update automatically as the source file/files changes, So that OpenSpending always shows current data.
+
+   user_story_44: #G05# As a Data Publishing User, I want to be able to Hide a dataset that I have already added as Public, So that I can fix my mistakes or have a dataset primarily for my own use.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_01_AND_user_story_03}
+  
+Affected Resource is: << dataset i have published >>
+
+ Action of user_story_01 is: << edit >>  which is annotated with: << delete >>
+ Action of user_story_03 is: << delete >>  which is annotated with: << delete >>
+
+Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_01: #g05# as a data publishing user, i want to be able to #edit# a #dataset i have published#, 
+
+   user_story_03: #g05# as a data publishing user, i want to be able to #delete# a #dataset i have published#, 
+
+Original texts of user stories are: 
+   user_story_01: #G05# As a Data Publishing User, I want to be able to edit a dataset I have published, So that I can correct or enhance existing data.
+
+   user_story_03: #G05# As a Data Publishing User, I want to be able to delete a dataset I have published, So that I can remove unwanted data from OpenSpending.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_15_AND_user_story_33}
+  
+Affected Resource is: << data >>
+
+ Action of user_story_15 is: << filter >>  which is annotated with: << delete >>
+ Action of user_story_33 is: << use >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_15: #g05# as a #data# consuming user, i want to be able to #filter#, sort and aggregate #data# by multiple dimensions and measures, 
+
+   user_story_33: #g05# as an api user, i want to be able to #use# #data# to get results from multiple datasets, 
+
+Original texts of user stories are: 
+   user_story_15: #G05# As a Data Consuming User, I want to be able to filter, sort and aggregate data by multiple dimensions and measures, So that I can get more granular views on the data.
+
+   user_story_33: #G05# As an API User, I want to be able to use data to get results from multiple datasets, So that I can build user experiences based on more than one dataset more easily.

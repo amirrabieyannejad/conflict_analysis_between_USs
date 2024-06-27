@@ -1,0 +1,500 @@
+
+
+********************* << Dataset: g22_rdadmp >> ***************
+* Table of potential conflict between user stories
+
+       us_63  us_79  us_31  us_60  us_64  us_40  us_67  us_21  us_34  us_53  us_04  us_09  us_36  
+us_63         x                    x                    x                                         
+us_79  x             x      x      x      x      x      x                    x                    
+us_31         x                    x                    x                                         
+us_60         x                    x                    x                                         
+us_64  x      x      x      x             x      x      x      x             x                    
+us_40         x                    x                    x                                         
+us_67         x                    x                    x                                         
+us_21  x      x      x      x      x      x      x                           x                    
+us_34                              x                                  x                           
+us_53                                                          x                                  
+us_04         x                    x                    x                                         
+us_09                                                                                      x      
+us_36                                                                               x             
+
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_63_AND_user_story_79}
+  
+Affected Resource is: << data >>
+
+ Action of user_story_63 is: << used >>  which is annotated with: << preserve >>
+ Action of user_story_79 is: << re-using >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_63: #g22# as an it staff member, i want to know with which software or technology the #data# is produced or #used#, 
+
+   user_story_79: #g22# as a #data# manager, i want to clarify the necessary rights for #re-using# the #data#, 
+
+Original texts of user stories are: 
+   user_story_63: #G22# As an IT staff member, I want to know with which software or technology the data is produced or used, so that I can determine what kind of technical services and functionalities are required.
+
+   user_story_79: #G22# As a data manager, I want to clarify the necessary rights for re-using the data, so that it is legal to reuse the data.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_31_AND_user_story_79}
+  
+Affected Resource is: << data >>
+
+ Action of user_story_31 is: << collecting >>  which is annotated with: << preserve >>
+ Action of user_story_79 is: << re-using >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_31: #g22# as a #data# manager, i want to know the time plan for #collecting# #data#, 
+
+   user_story_79: #g22# as a #data# manager, i want to clarify the necessary rights for #re-using# the #data#, 
+
+Original texts of user stories are: 
+   user_story_31: #G22# As a data manager, I want to know the time plan for collecting data, so that I can plan the data management.
+
+   user_story_79: #G22# As a data manager, I want to clarify the necessary rights for re-using the data, so that it is legal to reuse the data.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_60_AND_user_story_64}
+  
+Affected Resource is: << data >>
+
+ Action of user_story_60 is: << used >>  which is annotated with: << preserve >>
+ Action of user_story_64 is: << re-use >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_60: #g22# as an it staff member, i want to know how the #data# is #used#, 
+
+   user_story_64: #g22# as a #data# manager, i want to know which information is necessary to #re-use# the #data#, 
+
+Original texts of user stories are: 
+   user_story_60: #G22# As an IT staff member, I want to know how the data is used, so that I can determine what kind of basic services and functionalities are required.
+
+   user_story_64: #G22# As a data manager, I want to know which information is necessary to re-use the data, so that it can be checked whether all necessary information is available for researchers interested in re-using the data.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_64_AND_user_story_79}
+  
+Affected Resource is: << data >>
+
+ Action of user_story_64 is: << re-use >>  which is annotated with: << delete >>
+ Action of user_story_79 is: << re-using >>  which is annotated with: << delete >>
+
+Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_64: #g22# as a #data# manager, i want to know which information is necessary to #re-use# the #data#, 
+
+   user_story_79: #g22# as a #data# manager, i want to clarify the necessary rights for #re-using# the #data#, 
+
+Original texts of user stories are: 
+   user_story_64: #G22# As a data manager, I want to know which information is necessary to re-use the data, so that it can be checked whether all necessary information is available for researchers interested in re-using the data.
+
+   user_story_79: #G22# As a data manager, I want to clarify the necessary rights for re-using the data, so that it is legal to reuse the data.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_40_AND_user_story_79}
+  
+Affected Resource is: << data >>
+
+ Action of user_story_40 is: << be informed >>  which is annotated with: << preserve >>
+ Action of user_story_79 is: << re-using >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_40: #g22# as an ethics manager, i want to #be informed# about the #data#, 
+
+   user_story_79: #g22# as a #data# manager, i want to clarify the necessary rights for #re-using# the #data#, 
+
+Original texts of user stories are: 
+   user_story_40: #G22# As an ethics manager, I want to be informed about the data, so that I can check for sensitivity of data.
+
+   user_story_79: #G22# As a data manager, I want to clarify the necessary rights for re-using the data, so that it is legal to reuse the data.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_63_AND_user_story_64}
+  
+Affected Resource is: << data >>
+
+ Action of user_story_63 is: << used >>  which is annotated with: << preserve >>
+ Action of user_story_64 is: << re-use >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_63: #g22# as an it staff member, i want to know with which software or technology the #data# is produced or #used#, 
+
+   user_story_64: #g22# as a #data# manager, i want to know which information is necessary to #re-use# the #data#, 
+
+Original texts of user stories are: 
+   user_story_63: #G22# As an IT staff member, I want to know with which software or technology the data is produced or used, so that I can determine what kind of technical services and functionalities are required.
+
+   user_story_64: #G22# As a data manager, I want to know which information is necessary to re-use the data, so that it can be checked whether all necessary information is available for researchers interested in re-using the data.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_67_AND_user_story_79}
+  
+Affected Resource is: << data >>
+
+ Action of user_story_67 is: << used >>  which is annotated with: << preserve >>
+ Action of user_story_79 is: << re-using >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_67: #g22# as a #data# manager, i want to know with which software or technology the #data# is produced or #used#, 
+
+   user_story_79: #g22# as a #data# manager, i want to clarify the necessary rights for #re-using# the #data#, 
+
+Original texts of user stories are: 
+   user_story_67: #G22# As a data manager, I want to know with which software or technology the data is produced or used, so that I know what technology or background information might be necessary to (re-)use the data.
+
+   user_story_79: #G22# As a data manager, I want to clarify the necessary rights for re-using the data, so that it is legal to reuse the data.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_31_AND_user_story_64}
+  
+Affected Resource is: << data >>
+
+ Action of user_story_31 is: << collecting >>  which is annotated with: << preserve >>
+ Action of user_story_64 is: << re-use >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_31: #g22# as a #data# manager, i want to know the time plan for #collecting# #data#, 
+
+   user_story_64: #g22# as a #data# manager, i want to know which information is necessary to #re-use# the #data#, 
+
+Original texts of user stories are: 
+   user_story_31: #G22# As a data manager, I want to know the time plan for collecting data, so that I can plan the data management.
+
+   user_story_64: #G22# As a data manager, I want to know which information is necessary to re-use the data, so that it can be checked whether all necessary information is available for researchers interested in re-using the data.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_21_AND_user_story_79}
+  
+Affected Resource is: << data >>
+
+ Action of user_story_21 is: << managing >>  which is annotated with: << preserve >>
+ Action of user_story_79 is: << re-using >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_21: #g22# as a #data# manager, i want to document all rights necessary for #managing# the #data#, 
+
+   user_story_79: #g22# as a #data# manager, i want to clarify the necessary rights for #re-using# the #data#, 
+
+Original texts of user stories are: 
+   user_story_21: #G22# As a data manager, I want to document all rights necessary for managing the data, so that I can curate and preserve the data.
+
+   user_story_79: #G22# As a data manager, I want to clarify the necessary rights for re-using the data, so that it is legal to reuse the data.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_64_AND_user_story_67}
+  
+Affected Resource is: << data >>
+
+ Action of user_story_64 is: << re-use >>  which is annotated with: << delete >>
+ Action of user_story_67 is: << used >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_64: #g22# as a #data# manager, i want to know which information is necessary to #re-use# the #data#, 
+
+   user_story_67: #g22# as a #data# manager, i want to know with which software or technology the #data# is produced or #used#, 
+
+Original texts of user stories are: 
+   user_story_64: #G22# As a data manager, I want to know which information is necessary to re-use the data, so that it can be checked whether all necessary information is available for researchers interested in re-using the data.
+
+   user_story_67: #G22# As a data manager, I want to know with which software or technology the data is produced or used, so that I know what technology or background information might be necessary to (re-)use the data.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_21_AND_user_story_67}
+  
+Affected Resource is: << data >>
+
+ Action of user_story_21 is: << managing >>  which is annotated with: << delete >>
+ Action of user_story_67 is: << used >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_21: #g22# as a #data# manager, i want to document all rights necessary for #managing# the #data#, 
+
+   user_story_67: #g22# as a #data# manager, i want to know with which software or technology the #data# is produced or #used#, 
+
+Original texts of user stories are: 
+   user_story_21: #G22# As a data manager, I want to document all rights necessary for managing the data, so that I can curate and preserve the data.
+
+   user_story_67: #G22# As a data manager, I want to know with which software or technology the data is produced or used, so that I know what technology or background information might be necessary to (re-)use the data.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_40_AND_user_story_64}
+  
+Affected Resource is: << data >>
+
+ Action of user_story_40 is: << be informed >>  which is annotated with: << preserve >>
+ Action of user_story_64 is: << re-use >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_40: #g22# as an ethics manager, i want to #be informed# about the #data#, 
+
+   user_story_64: #g22# as a #data# manager, i want to know which information is necessary to #re-use# the #data#, 
+
+Original texts of user stories are: 
+   user_story_40: #G22# As an ethics manager, I want to be informed about the data, so that I can check for sensitivity of data.
+
+   user_story_64: #G22# As a data manager, I want to know which information is necessary to re-use the data, so that it can be checked whether all necessary information is available for researchers interested in re-using the data.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_60_AND_user_story_79}
+  
+Affected Resource is: << data >>
+
+ Action of user_story_60 is: << used >>  which is annotated with: << preserve >>
+ Action of user_story_79 is: << re-using >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_60: #g22# as an it staff member, i want to know how the #data# is #used#, 
+
+   user_story_79: #g22# as a #data# manager, i want to clarify the necessary rights for #re-using# the #data#, 
+
+Original texts of user stories are: 
+   user_story_60: #G22# As an IT staff member, I want to know how the data is used, so that I can determine what kind of basic services and functionalities are required.
+
+   user_story_79: #G22# As a data manager, I want to clarify the necessary rights for re-using the data, so that it is legal to reuse the data.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_21_AND_user_story_40}
+  
+Affected Resource is: << data >>
+
+ Action of user_story_21 is: << managing >>  which is annotated with: << delete >>
+ Action of user_story_40 is: << be informed >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_21: #g22# as a #data# manager, i want to document all rights necessary for #managing# the #data#, 
+
+   user_story_40: #g22# as an ethics manager, i want to #be informed# about the #data#, 
+
+Original texts of user stories are: 
+   user_story_21: #G22# As a data manager, I want to document all rights necessary for managing the data, so that I can curate and preserve the data.
+
+   user_story_40: #G22# As an ethics manager, I want to be informed about the data, so that I can check for sensitivity of data.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_34_AND_user_story_53}
+  
+Affected Resource is: << information >>
+
+ Action of user_story_34 is: << reuse >>  which is annotated with: << delete >>
+ Action of user_story_53 is: << get >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_34: #g22# as an archivemanager, i want to #reuse# the #information# regarding file format, 
+
+   user_story_53: #g22# as an archive, i want to #get# #information# about the volume of data to preserve at an early stage, 
+
+Original texts of user stories are: 
+   user_story_34: #G22# As an archivemanager, I want to reuse the information regarding file format, so that I can apply automated checks for the file validation.
+
+   user_story_53: #G22# As an archive, I want to get information about the volume of data to preserve at an early stage, so that I can provide the adequate storage infrastructure.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_34_AND_user_story_64}
+  
+Affected Resource is: << information >>
+
+ Action of user_story_34 is: << reuse >>  which is annotated with: << delete >>
+ Action of user_story_64 is: << know >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_34: #g22# as an archivemanager, i want to #reuse# the #information# regarding file format, 
+
+   user_story_64: #g22# as a data manager, i want to #know# which #information# is necessary to re-use the data, 
+
+Original texts of user stories are: 
+   user_story_34: #G22# As an archivemanager, I want to reuse the information regarding file format, so that I can apply automated checks for the file validation.
+
+   user_story_64: #G22# As a data manager, I want to know which information is necessary to re-use the data, so that it can be checked whether all necessary information is available for researchers interested in re-using the data.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_21_AND_user_story_64}
+  
+Affected Resource is: << data >>
+
+ Action of user_story_21 is: << managing >>  which is annotated with: << preserve >>
+ Action of user_story_64 is: << re-use >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_21: #g22# as a #data# manager, i want to document all rights necessary for #managing# the #data#, 
+
+   user_story_64: #g22# as a #data# manager, i want to know which information is necessary to #re-use# the #data#, 
+
+Original texts of user stories are: 
+   user_story_21: #G22# As a data manager, I want to document all rights necessary for managing the data, so that I can curate and preserve the data.
+
+   user_story_64: #G22# As a data manager, I want to know which information is necessary to re-use the data, so that it can be checked whether all necessary information is available for researchers interested in re-using the data.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_21_AND_user_story_31}
+  
+Affected Resource is: << data >>
+
+ Action of user_story_21 is: << managing >>  which is annotated with: << delete >>
+ Action of user_story_31 is: << collecting >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_21: #g22# as a #data# manager, i want to document all rights necessary for #managing# the #data#, 
+
+   user_story_31: #g22# as a #data# manager, i want to know the time plan for #collecting# #data#, 
+
+Original texts of user stories are: 
+   user_story_21: #G22# As a data manager, I want to document all rights necessary for managing the data, so that I can curate and preserve the data.
+
+   user_story_31: #G22# As a data manager, I want to know the time plan for collecting data, so that I can plan the data management.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_04_AND_user_story_79}
+  
+Affected Resource is: << data >>
+
+ Action of user_story_04 is: << used >>  which is annotated with: << preserve >>
+ Action of user_story_79 is: << re-using >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_04: #g22# as a #data# manager, i want to know how the #data# is #used#, 
+
+   user_story_79: #g22# as a #data# manager, i want to clarify the necessary rights for #re-using# the #data#, 
+
+Original texts of user stories are: 
+   user_story_04: #G22# As a data manager, I want to know how the data is used, so that I can develop more detailed usage and support scenarios with researchers.
+
+   user_story_79: #G22# As a data manager, I want to clarify the necessary rights for re-using the data, so that it is legal to reuse the data.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_21_AND_user_story_63}
+  
+Affected Resource is: << data >>
+
+ Action of user_story_21 is: << managing >>  which is annotated with: << delete >>
+ Action of user_story_63 is: << used >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_21: #g22# as a #data# manager, i want to document all rights necessary for #managing# the #data#, 
+
+   user_story_63: #g22# as an it staff member, i want to know with which software or technology the #data# is produced or #used#, 
+
+Original texts of user stories are: 
+   user_story_21: #G22# As a data manager, I want to document all rights necessary for managing the data, so that I can curate and preserve the data.
+
+   user_story_63: #G22# As an IT staff member, I want to know with which software or technology the data is produced or used, so that I can determine what kind of technical services and functionalities are required.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_04_AND_user_story_21}
+  
+Affected Resource is: << data >>
+
+ Action of user_story_04 is: << used >>  which is annotated with: << preserve >>
+ Action of user_story_21 is: << managing >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_04: #g22# as a #data# manager, i want to know how the #data# is #used#, 
+
+   user_story_21: #g22# as a #data# manager, i want to document all rights necessary for #managing# the #data#, 
+
+Original texts of user stories are: 
+   user_story_04: #G22# As a data manager, I want to know how the data is used, so that I can develop more detailed usage and support scenarios with researchers.
+
+   user_story_21: #G22# As a data manager, I want to document all rights necessary for managing the data, so that I can curate and preserve the data.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_21_AND_user_story_60}
+  
+Affected Resource is: << data >>
+
+ Action of user_story_21 is: << managing >>  which is annotated with: << delete >>
+ Action of user_story_60 is: << used >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_21: #g22# as a #data# manager, i want to document all rights necessary for #managing# the #data#, 
+
+   user_story_60: #g22# as an it staff member, i want to know how the #data# is #used#, 
+
+Original texts of user stories are: 
+   user_story_21: #G22# As a data manager, I want to document all rights necessary for managing the data, so that I can curate and preserve the data.
+
+   user_story_60: #G22# As an IT staff member, I want to know how the data is used, so that I can determine what kind of basic services and functionalities are required.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_04_AND_user_story_64}
+  
+Affected Resource is: << data >>
+
+ Action of user_story_04 is: << used >>  which is annotated with: << preserve >>
+ Action of user_story_64 is: << re-use >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_04: #g22# as a #data# manager, i want to know how the #data# is #used#, 
+
+   user_story_64: #g22# as a #data# manager, i want to know which information is necessary to #re-use# the #data#, 
+
+Original texts of user stories are: 
+   user_story_04: #G22# As a data manager, I want to know how the data is used, so that I can develop more detailed usage and support scenarios with researchers.
+
+   user_story_64: #G22# As a data manager, I want to know which information is necessary to re-use the data, so that it can be checked whether all necessary information is available for researchers interested in re-using the data.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_09_AND_user_story_36}
+  
+Affected Resource is: << description >>
+
+ Action of user_story_09 is: << have >>  which is annotated with: << preserve >>
+ Action of user_story_36 is: << extract >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_09: #g22# as a data manager, i want to #have# the #description# of collected data sets that are used or updated throughout the project lifecycle, 
+
+   user_story_36: #g22# as a researcher, i want to #extract# the #description# of the data collected, 
+
+Original texts of user stories are: 
+   user_story_09: #G22# As a data manager, I want to have the description of collected data sets that are used or updated throughout the project lifecycle, so that I can ensure the descriptions are current and add detail as the study proceeds.
+
+   user_story_36: #G22# As a researcher, I want to extract the description of the data collected, so that I can reuse it for the writing of a data paper.

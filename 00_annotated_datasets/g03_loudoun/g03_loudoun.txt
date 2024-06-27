@@ -1,0 +1,29 @@
+
+
+********************* << Dataset: g03_loudoun >> ***************
+* Table of potential conflict between user stories
+
+       us_13  us_14  
+us_13         x      
+us_14  x             
+
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_13_AND_user_story_14}
+  
+Affected Resource is: << hold >>
+
+ Action of user_story_13 is: << apply >>  which is annotated with: << delete >>
+ Action of user_story_14 is: << remove >>  which is annotated with: << delete >>
+
+Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_13: #g03# as a staff member, i want to #apply# a #hold#, 
+
+   user_story_14: #g03# as a staff member, i want to #remove# a #hold#, 
+
+Original texts of user stories are: 
+   user_story_13: #G03# As a Staff member, I want to Apply a Hold, so that I can prevent progression through the workflow or other actions in the system until the issue is resolved.
+
+   user_story_14: #G03# As a Staff member, I want to Remove a Hold, so that I can allow progression through the workflow or other actions in the system now that the issue has been resolved.

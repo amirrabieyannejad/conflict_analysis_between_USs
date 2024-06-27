@@ -1,0 +1,111 @@
+
+
+********************* << Dataset: g28_zooniverse >> ***************
+* Table of potential conflict between user stories
+
+       us_49  us_51  us_50  us_52  
+us_49         x      x      x      
+us_51  x             x             
+us_50  x      x             x      
+us_52  x             x             
+
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_49_AND_user_story_51}
+  
+Affected Resource is: << volunteer >>
+
+ Action of user_story_49 is: << interrupt >>  which is annotated with: << delete >>
+ Action of user_story_51 is: << educate >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_49: #g28# as a zooniverse admin, i want to know when i should #interrupt# a #volunteer#.
+
+   user_story_51: #g28# as a zooniverse admin, i want to know when i should #educate# a #volunteer#.
+
+Original texts of user stories are: 
+   user_story_49: #G28# As a Zooniverse admin, I want to know when I should interrupt a volunteer.
+
+   user_story_51: #G28# As a Zooniverse admin, I want to know when I should educate a volunteer.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_49_AND_user_story_50}
+  
+Affected Resource is: << volunteer >>
+
+ Action of user_story_49 is: << interrupt >>  which is annotated with: << delete >>
+ Action of user_story_50 is: << interrupt >>  which is annotated with: << delete >>
+
+Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_49: #g28# as a zooniverse admin, i want to know when i should #interrupt# a #volunteer#.
+
+   user_story_50: #g28# as a zooniverse admin, i want to know whether i should #interrupt# a #volunteer# with text, an image, or a video.
+
+Original texts of user stories are: 
+   user_story_49: #G28# As a Zooniverse admin, I want to know when I should interrupt a volunteer.
+
+   user_story_50: #G28# As a Zooniverse admin, I want to know whether I should interrupt a volunteer with text, an image, or a video.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_50_AND_user_story_51}
+  
+Affected Resource is: << volunteer >>
+
+ Action of user_story_50 is: << interrupt >>  which is annotated with: << delete >>
+ Action of user_story_51 is: << educate >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_50: #g28# as a zooniverse admin, i want to know whether i should #interrupt# a #volunteer# with text, an image, or a video.
+
+   user_story_51: #g28# as a zooniverse admin, i want to know when i should #educate# a #volunteer#.
+
+Original texts of user stories are: 
+   user_story_50: #G28# As a Zooniverse admin, I want to know whether I should interrupt a volunteer with text, an image, or a video.
+
+   user_story_51: #G28# As a Zooniverse admin, I want to know when I should educate a volunteer.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_50_AND_user_story_52}
+  
+Affected Resource is: << volunteer >>
+
+ Action of user_story_50 is: << interrupt >>  which is annotated with: << delete >>
+ Action of user_story_52 is: << educate >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_50: #g28# as a zooniverse admin, i want to know whether i should #interrupt# a #volunteer# with text, an image, or a video.
+
+   user_story_52: #g28# as a zooniverse admin, i want to know whether i should #educate# a #volunteer# with text, an image, or a video.
+
+Original texts of user stories are: 
+   user_story_50: #G28# As a Zooniverse admin, I want to know whether I should interrupt a volunteer with text, an image, or a video.
+
+   user_story_52: #G28# As a Zooniverse admin, I want to know whether I should educate a volunteer with text, an image, or a video.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_49_AND_user_story_52}
+  
+Affected Resource is: << volunteer >>
+
+ Action of user_story_49 is: << interrupt >>  which is annotated with: << delete >>
+ Action of user_story_52 is: << educate >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_49: #g28# as a zooniverse admin, i want to know when i should #interrupt# a #volunteer#.
+
+   user_story_52: #g28# as a zooniverse admin, i want to know whether i should #educate# a #volunteer# with text, an image, or a video.
+
+Original texts of user stories are: 
+   user_story_49: #G28# As a Zooniverse admin, I want to know when I should interrupt a volunteer.
+
+   user_story_52: #G28# As a Zooniverse admin, I want to know whether I should educate a volunteer with text, an image, or a video.

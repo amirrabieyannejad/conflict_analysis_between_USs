@@ -1,0 +1,3522 @@
+[
+    {
+        "Actions": {
+            "Action US2": "remove",
+            "Action US1": "apply"
+        },
+        "Common Entity": "hold",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G03#",
+        "Texts of Main Parts": {
+            "US1": "#g03# as a staff member, i want to #apply# a #hold#, ",
+            "US2": "#g03# as a staff member, i want to #remove# a #hold#, "
+        },
+        "Conflict Pair": "user_story_13_AND_user_story_14",
+        "Texts of USs": {
+            "US1": "#G03# As a Staff member, I want to Apply a Hold, so that I can prevent progression through the workflow or other actions in the system until the issue is resolved.",
+            "US2": "#G03# As a Staff member, I want to Remove a Hold, so that I can allow progression through the workflow or other actions in the system now that the issue has been resolved."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "hide",
+            "Action US1": "update automatically"
+        },
+        "Common Entity": "dataset",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G05#",
+        "Texts of Main Parts": {
+            "US1": "#g05# as a data publishing user, i want to have my #dataset# #update automatically# as the source file/files changes, ",
+            "US2": "#g05# as a data publishing user, i want to be able to #hide# a #dataset# that i have already added as public, "
+        },
+        "Conflict Pair": "user_story_40_AND_user_story_44",
+        "Texts of USs": {
+            "US1": "#G05# As a Data Publishing User, I want to have my dataset update automatically as the source file/files changes, So that OpenSpending always shows current data.",
+            "US2": "#G05# As a Data Publishing User, I want to be able to Hide a dataset that I have already added as Public, So that I can fix my mistakes or have a dataset primarily for my own use."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "delete",
+            "Action US1": "edit"
+        },
+        "Common Entity": "dataset i have published",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G05#",
+        "Texts of Main Parts": {
+            "US1": "#g05# as a data publishing user, i want to be able to #edit# a #dataset i have published#, ",
+            "US2": "#g05# as a data publishing user, i want to be able to #delete# a #dataset i have published#, "
+        },
+        "Conflict Pair": "user_story_01_AND_user_story_03",
+        "Texts of USs": {
+            "US1": "#G05# As a Data Publishing User, I want to be able to edit a dataset I have published, So that I can correct or enhance existing data.",
+            "US2": "#G05# As a Data Publishing User, I want to be able to delete a dataset I have published, So that I can remove unwanted data from OpenSpending."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "use",
+            "Action US1": "filter"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G05#",
+        "Texts of Main Parts": {
+            "US1": "#g05# as a #data# consuming user, i want to be able to #filter#, sort and aggregate #data# by multiple dimensions and measures, ",
+            "US2": "#g05# as an api user, i want to be able to #use# #data# to get results from multiple datasets, "
+        },
+        "Conflict Pair": "user_story_15_AND_user_story_33",
+        "Texts of USs": {
+            "US1": "#G05# As a Data Consuming User, I want to be able to filter, sort and aggregate data by multiple dimensions and measures, So that I can get more granular views on the data.",
+            "US2": "#G05# As an API User, I want to be able to use data to get results from multiple datasets, So that I can build user experiences based on more than one dataset more easily."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "validates",
+            "Action US1": "store"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "create",
+            "US2": "forbid"
+        },
+        "Conflict-Reason": "create-forbid-Conflict",
+        "PID": "#G08#",
+        "Texts of Main Parts": {
+            "US1": "#g08# as a publisher, i want to #store# my #data# quickly and easily online.",
+            "US2": "#g08# as a developer, i want an online service that is connected to my #data# repository that #validates# #data# on update, "
+        },
+        "Conflict Pair": "user_story_43_AND_user_story_48",
+        "Texts of USs": {
+            "US1": "#G08# As a Publisher, I want to store my data quickly and easily online.",
+            "US2": "#G08# As a developer, I want an online service that is connected to my data repository that validates data on update, so that I can delegate data validation to a third party."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "validate",
+            "Action US1": "store"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "create",
+            "US2": "forbid"
+        },
+        "Conflict-Reason": "create-forbid-Conflict",
+        "PID": "#G08#",
+        "Texts of Main Parts": {
+            "US1": "#g08# as a publisher, i want to #store# my #data# quickly and easily online.",
+            "US2": "#g08# as a developerwrangler, i want to use a command line tool that allows met to #validate# #data#, "
+        },
+        "Conflict Pair": "user_story_43_AND_user_story_47",
+        "Texts of USs": {
+            "US1": "#G08# As a Publisher, I want to store my data quickly and easily online.",
+            "US2": "#G08# As a DeveloperWrangler, I want to use a command line tool that allows met to validate data, so that I can feel trust in the validity and usefulness of the data quickly and in the context of my command line workflow."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "validate",
+            "Action US1": "working with"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "create",
+            "US2": "forbid"
+        },
+        "Conflict-Reason": "create-forbid-Conflict",
+        "PID": "#G08#",
+        "Texts of Main Parts": {
+            "US1": "#g08# as a researcher, #working with# #data#, i want an microsoft power bi integration, ",
+            "US2": "#g08# as a developerwrangler, i want to use a command line tool that allows met to #validate# #data#, "
+        },
+        "Conflict Pair": "user_story_35_AND_user_story_47",
+        "Texts of USs": {
+            "US1": "#G08# As a Researcher, working with data, I want an Microsoft Power BI integration, so that I can import datasets without downloading them locally.",
+            "US2": "#G08# As a DeveloperWrangler, I want to use a command line tool that allows met to validate data, so that I can feel trust in the validity and usefulness of the data quickly and in the context of my command line workflow."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "update",
+            "Action US1": "validate"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G08#",
+        "Texts of Main Parts": {
+            "US1": "#g08# as a researcherpublisher, i want #validate# my #data# with a minimum of clicks, ",
+            "US2": "#g08# as a publisher, i want to be able to check that every time i #update# my #data# it is still good, "
+        },
+        "Conflict Pair": "user_story_45_AND_user_story_46",
+        "Texts of USs": {
+            "US1": "#G08# As a ResearcherPublisher, I want validate my data with a minimum of clicks, so that I can feel trust in the validity and usefulness of the data.",
+            "US2": "#G08# As a publisher, I want to be able to check that every time I update my data it is still good, so that I can catch errors early and store reliable data."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "validate",
+            "Action US1": "update"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "create",
+            "US2": "forbid"
+        },
+        "Conflict-Reason": "create-forbid-Conflict",
+        "PID": "#G08#",
+        "Texts of Main Parts": {
+            "US1": "#g08# as a publisher, i want to be able to check that every time i #update# my #data# it is still good, ",
+            "US2": "#g08# as a developerwrangler, i want to use a command line tool that allows met to #validate# #data#, "
+        },
+        "Conflict Pair": "user_story_46_AND_user_story_47",
+        "Texts of USs": {
+            "US1": "#G08# As a publisher, I want to be able to check that every time I update my data it is still good, so that I can catch errors early and store reliable data.",
+            "US2": "#G08# As a DeveloperWrangler, I want to use a command line tool that allows met to validate data, so that I can feel trust in the validity and usefulness of the data quickly and in the context of my command line workflow."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "check",
+            "Action US1": "working with"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "create",
+            "US2": "forbid"
+        },
+        "Conflict-Reason": "create-forbid-Conflict",
+        "PID": "#G08#",
+        "Texts of Main Parts": {
+            "US1": "#g08# as a researcher, #working with# #data#, i want an microsoft power bi integration, ",
+            "US2": "#g08# as a publisher, i want to be able to #check# that every time i update my #data# it is still good, "
+        },
+        "Conflict Pair": "user_story_35_AND_user_story_46",
+        "Texts of USs": {
+            "US1": "#G08# As a Researcher, working with data, I want an Microsoft Power BI integration, so that I can import datasets without downloading them locally.",
+            "US2": "#G08# As a publisher, I want to be able to check that every time I update my data it is still good, so that I can catch errors early and store reliable data."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "check",
+            "Action US1": "store"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "create",
+            "US2": "forbid"
+        },
+        "Conflict-Reason": "create-forbid-Conflict",
+        "PID": "#G08#",
+        "Texts of Main Parts": {
+            "US1": "#g08# as a publisher, i want to #store# my #data# quickly and easily online.",
+            "US2": "#g08# as a publisher, i want to be able to #check# that every time i update my #data# it is still good, "
+        },
+        "Conflict Pair": "user_story_43_AND_user_story_46",
+        "Texts of USs": {
+            "US1": "#G08# As a Publisher, I want to store my data quickly and easily online.",
+            "US2": "#G08# As a publisher, I want to be able to check that every time I update my data it is still good, so that I can catch errors early and store reliable data."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "validates",
+            "Action US1": "working with"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "create",
+            "US2": "forbid"
+        },
+        "Conflict-Reason": "create-forbid-Conflict",
+        "PID": "#G08#",
+        "Texts of Main Parts": {
+            "US1": "#g08# as a researcher, #working with# #data#, i want an microsoft power bi integration, ",
+            "US2": "#g08# as a developer, i want an online service that is connected to my #data# repository that #validates# #data# on update, "
+        },
+        "Conflict Pair": "user_story_35_AND_user_story_48",
+        "Texts of USs": {
+            "US1": "#G08# As a Researcher, working with data, I want an Microsoft Power BI integration, so that I can import datasets without downloading them locally.",
+            "US2": "#G08# As a developer, I want an online service that is connected to my data repository that validates data on update, so that I can delegate data validation to a third party."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "validate",
+            "Action US1": "store"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "create",
+            "US2": "forbid"
+        },
+        "Conflict-Reason": "create-forbid-Conflict",
+        "PID": "#G08#",
+        "Texts of Main Parts": {
+            "US1": "#g08# as a publisher, i want to #store# my #data# quickly and easily online.",
+            "US2": "#g08# as a researcherpublisher, i want #validate# my #data# with a minimum of clicks, "
+        },
+        "Conflict Pair": "user_story_43_AND_user_story_45",
+        "Texts of USs": {
+            "US1": "#G08# As a Publisher, I want to store my data quickly and easily online.",
+            "US2": "#G08# As a ResearcherPublisher, I want validate my data with a minimum of clicks, so that I can feel trust in the validity and usefulness of the data."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "validates",
+            "Action US1": "update"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "create",
+            "US2": "forbid"
+        },
+        "Conflict-Reason": "create-forbid-Conflict",
+        "PID": "#G08#",
+        "Texts of Main Parts": {
+            "US1": "#g08# as a publisher, i want to be able to check that every time i #update# my #data# it is still good, ",
+            "US2": "#g08# as a developer, i want an online service that is connected to my #data# repository that #validates# #data# on update, "
+        },
+        "Conflict Pair": "user_story_46_AND_user_story_48",
+        "Texts of USs": {
+            "US1": "#G08# As a publisher, I want to be able to check that every time I update my data it is still good, so that I can catch errors early and store reliable data.",
+            "US2": "#G08# As a developer, I want an online service that is connected to my data repository that validates data on update, so that I can delegate data validation to a third party."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "update",
+            "Action US1": "know"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G08#",
+        "Texts of Main Parts": {
+            "US1": "#g08# as a researcherpublisher, i want to #know# that my #data# conforms to its #data# package profile, ",
+            "US2": "#g08# as a publisher, i want to be able to check that every time i #update# my #data# it is still good, "
+        },
+        "Conflict Pair": "user_story_06_AND_user_story_46",
+        "Texts of USs": {
+            "US1": "#G08# As a ResearcherPublisher, I want to know that my data conforms to its Data Package profile, so that I can feel trust in the validity and usefulness of the data.",
+            "US2": "#G08# As a publisher, I want to be able to check that every time I update my data it is still good, so that I can catch errors early and store reliable data."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "validate",
+            "Action US1": "working with"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "create",
+            "US2": "forbid"
+        },
+        "Conflict-Reason": "create-forbid-Conflict",
+        "PID": "#G08#",
+        "Texts of Main Parts": {
+            "US1": "#g08# as a researcher, #working with# #data#, i want an microsoft power bi integration, ",
+            "US2": "#g08# as a researcherpublisher, i want #validate# my #data# with a minimum of clicks, "
+        },
+        "Conflict Pair": "user_story_35_AND_user_story_45",
+        "Texts of USs": {
+            "US1": "#G08# As a Researcher, working with data, I want an Microsoft Power BI integration, so that I can import datasets without downloading them locally.",
+            "US2": "#G08# As a ResearcherPublisher, I want validate my data with a minimum of clicks, so that I can feel trust in the validity and usefulness of the data."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "do",
+            "Action US1": "do"
+        },
+        "Common Entity": "full-text search",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G10#",
+        "Texts of Main Parts": {
+            "US1": "#g10# as a site visitor, i want to #do# a #full-text search# of the faqs, ",
+            "US2": "#g10# as a site visitor, i want to #do# a #full-text search# of article body, title, and author name, "
+        },
+        "Conflict Pair": "user_story_39_AND_user_story_62",
+        "Texts of USs": {
+            "US1": "#G10# As a site visitor, I want to do a full-text search of the FAQs, so that I can find an answer quickly.",
+            "US2": "#G10# As a site visitor, I want to do a full-text search of article body, title, and author name, so that I can find what I want."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "delete",
+            "Action US1": "update"
+        },
+        "Common Entity": "events",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G10#",
+        "Texts of Main Parts": {
+            "US1": "#g10# as a trainer, i want to #update# one of my existing courses or #events#, ",
+            "US2": "#g10# as a trainer, i want to #delete# one of my courses or #events#, "
+        },
+        "Conflict Pair": "user_story_28_AND_user_story_29",
+        "Texts of USs": {
+            "US1": "#G10# As a trainer, I want to update one of my existing courses or events, so that it reflects accurate information.",
+            "US2": "#G10# As a trainer, I want to delete one of my courses or events, so that it's no longer listed if I cancel for some reason."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "update",
+            "Action US1": "delete"
+        },
+        "Common Entity": "any course",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G10#",
+        "Texts of Main Parts": {
+            "US1": "#g10# as a site admin, i want to #delete# #any course# or event, ",
+            "US2": "#g10# as a site editor, i want to #update# #any course# or event, "
+        },
+        "Conflict Pair": "user_story_31_AND_user_story_32",
+        "Texts of USs": {
+            "US1": "#G10# As a site admin, I want to delete any course or event, so that I can remove things that will no longer occur.",
+            "US2": "#G10# As a site editor, I want to update any course or event, so that I can fix things the original author hasn't."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "turn",
+            "Action US1": "update"
+        },
+        "Common Entity": "event",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G10#",
+        "Texts of Main Parts": {
+            "US1": "#g10# as a site editor, i want to #update# any course or #event#, ",
+            "US2": "#g10# as a trainer, i want to #turn# a course into an #event# or an #event# into a course, "
+        },
+        "Conflict Pair": "user_story_32_AND_user_story_33",
+        "Texts of USs": {
+            "US1": "#G10# As a site editor, I want to update any course or event, so that I can fix things the original author hasn't.",
+            "US2": "#G10# As a trainer, I want to turn a course into an event or an event into a course, so that I can correctly classify anything that was entered incorrectly."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "turn",
+            "Action US1": "delete"
+        },
+        "Common Entity": "event",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G10#",
+        "Texts of Main Parts": {
+            "US1": "#g10# as a site admin, i want to #delete# any course or #event#, ",
+            "US2": "#g10# as a trainer, i want to #turn# a course into an #event# or an #event# into a course, "
+        },
+        "Conflict Pair": "user_story_31_AND_user_story_33",
+        "Texts of USs": {
+            "US1": "#G10# As a site admin, I want to delete any course or event, so that I can remove things that will no longer occur.",
+            "US2": "#G10# As a trainer, I want to turn a course into an event or an event into a course, so that I can correctly classify anything that was entered incorrectly."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "working properly",
+            "Action US1": "set up"
+        },
+        "Common Entity": "recruiter",
+        "Action Rules": {
+            "US1": "create",
+            "US2": "forbid"
+        },
+        "Conflict-Reason": "create-forbid-Conflict",
+        "PID": "#G11#",
+        "Texts of Main Parts": {
+            "US1": "#g11# as a web #recruiter# manager, i want to confirm the #recruiter# is #set up# and working properly on science360.gov.",
+            "US2": "#g11# as a web #recruiter# manager, i want to confirm the #recruiter# is set up and #working properly#, "
+        },
+        "Conflict Pair": "user_story_33_AND_user_story_53",
+        "Texts of USs": {
+            "US1": "#G11# As a web recruiter manager, I want to confirm the recruiter is set up and working properly on Science360.gov.",
+            "US2": "#G11# As a web recruiter manager, I want to confirm the recruiter is set up and working properly, so that I can deploy it on more pages."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "report",
+            "Action US1": "suspend"
+        },
+        "Common Entity": "camper",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G12#",
+        "Texts of Main Parts": {
+            "US1": "#g12# as a camp administrator, i want to be able to #suspend# a #camper# who had behavioral problems.",
+            "US2": "#g12# as a camp worker, i'm able to #report# a #camper# to the manager with an inappropriate behavior."
+        },
+        "Conflict Pair": "user_story_08_AND_user_story_51",
+        "Texts of USs": {
+            "US1": "#G12# As a camp administrator, I want to be able to suspend a camper who had behavioral problems.",
+            "US2": "#G12# As a camp worker, I'm able to report a camper to the manager with an inappropriate behavior."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "modify",
+            "Action US1": "keep"
+        },
+        "Common Entity": "information",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G12#",
+        "Texts of Main Parts": {
+            "US1": "#g12# as a camp administrator, i want to be able to #keep# my #information# in one place, ",
+            "US2": "#g12# as a camp administrator, i want to be able to #modify# the #information# of added parents, "
+        },
+        "Conflict Pair": "user_story_20_AND_user_story_32",
+        "Texts of USs": {
+            "US1": "#G12# As a camp administrator, I want to be able to keep my information in one place, so that the admins next year can improve on the previous years.",
+            "US2": "#G12# As a camp administrator, I want to be able to modify the information of added parents, so that I can keep parent's information up to date."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "modify",
+            "Action US1": "delete"
+        },
+        "Common Entity": "tasks",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G12#",
+        "Texts of Main Parts": {
+            "US1": "#g12# as a camp administrator, i want to be able to #delete# #tasks#/activities i scheduled, ",
+            "US2": "#g12# as a camp administrator, i want to be able to #modify# #tasks#/events i scheduled in case there is a change, "
+        },
+        "Conflict Pair": "user_story_28_AND_user_story_29",
+        "Texts of USs": {
+            "US1": "#G12# As a camp administrator, I want to be able to delete tasks/activities I scheduled, so that I can keep the schedule clean of unneeded activities.",
+            "US2": "#G12# As a camp administrator, I want to be able to modify tasks/events I scheduled in case there is a change, so that I can always keep the schedule up to date."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "modify",
+            "Action US1": "modify"
+        },
+        "Common Entity": "information",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G12#",
+        "Texts of Main Parts": {
+            "US1": "#g12# as a camp administrator, i want to be able to #modify# the #information# of enrolled campers, ",
+            "US2": "#g12# as a camp administrator, i want to be able to #modify# the #information# of added parents, "
+        },
+        "Conflict Pair": "user_story_30_AND_user_story_32",
+        "Texts of USs": {
+            "US1": "#G12# As a camp administrator, I want to be able to modify the information of enrolled campers, so that I can keep the campers information up to date.",
+            "US2": "#G12# As a camp administrator, I want to be able to modify the information of added parents, so that I can keep parent's information up to date."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "delete",
+            "Action US1": "remove"
+        },
+        "Common Entity": "campers",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G12#",
+        "Texts of Main Parts": {
+            "US1": "#g12# as a camp administrator, i want to be able to #remove# #campers# if they don't attend the camp anymore, ",
+            "US2": "#g12# as a camp administrator, i want to be able to #delete# #campers# from the database, "
+        },
+        "Conflict Pair": "user_story_02_AND_user_story_31",
+        "Texts of USs": {
+            "US1": "#G12# As a camp administrator, I want to be able to remove campers if they don't attend the camp anymore, so that I can keep the records organized.",
+            "US2": "#G12# As a camp administrator, I want to be able to delete campers from the database, so that I can keep my pages free of clutter."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "modify",
+            "Action US1": "keep"
+        },
+        "Common Entity": "information",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G12#",
+        "Texts of Main Parts": {
+            "US1": "#g12# as a camp administrator, i want to be able to #keep# my #information# in one place, ",
+            "US2": "#g12# as a camp administrator, i want to be able to #modify# the #information# of enrolled campers, "
+        },
+        "Conflict Pair": "user_story_20_AND_user_story_30",
+        "Texts of USs": {
+            "US1": "#G12# As a camp administrator, I want to be able to keep my information in one place, so that the admins next year can improve on the previous years.",
+            "US2": "#G12# As a camp administrator, I want to be able to modify the information of enrolled campers, so that I can keep the campers information up to date."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "see only",
+            "Action US1": "modify"
+        },
+        "Common Entity": "events",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G12#",
+        "Texts of Main Parts": {
+            "US1": "#g12# as a camp administrator, i want to be able to #modify# tasks/#events# i scheduled in case there is a change, ",
+            "US2": "#g12# as a camp administrator, i want to be able to #see only# #events# for a specific group/groups on the event calendar, "
+        },
+        "Conflict Pair": "user_story_29_AND_user_story_35",
+        "Texts of USs": {
+            "US1": "#G12# As a camp administrator, I want to be able to modify tasks/events I scheduled in case there is a change, so that I can always keep the schedule up to date.",
+            "US2": "#G12# As a camp administrator, I want to be able to see only events for a specific group/groups on the event calendar, so that I can easily read the data on the calendar without too much clutter."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "view",
+            "Action US1": "unpublish"
+        },
+        "Common Entity": "data package",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G14#",
+        "Texts of Main Parts": {
+            "US1": "#g14# as a publisher, i want to #unpublish# a #data package#, ",
+            "US2": "#g14# as a consumer, i want to #view# a #data package# online, "
+        },
+        "Conflict Pair": "user_story_10_AND_user_story_22",
+        "Texts of USs": {
+            "US1": "#G14# As a Publisher, I want to unpublish a data package, so that it is no longer visible to anyone.",
+            "US2": "#G14# As a Consumer, I want to view a data package online, so that I can get a sense of whether this is the dataset I want."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "permanently delete",
+            "Action US1": "unpublish"
+        },
+        "Common Entity": "data package",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G14#",
+        "Texts of Main Parts": {
+            "US1": "#g14# as a publisher, i want to #unpublish# a #data package#, ",
+            "US2": "#g14# as a publisher, i want to #permanently delete# a #data package#,  that"
+        },
+        "Conflict Pair": "user_story_10_AND_user_story_11",
+        "Texts of USs": {
+            "US1": "#G14# As a Publisher, I want to unpublish a data package, so that it is no longer visible to anyone.",
+            "US2": "#G14# As a Publisher, I want to permanently delete a data package, so that that it no longer takes up storage space."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "use",
+            "Action US1": "unpublish"
+        },
+        "Common Entity": "data package",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G14#",
+        "Texts of Main Parts": {
+            "US1": "#g14# as a publisher, i want to #unpublish# a #data package#, ",
+            "US2": "#g14# as a developer, i want to #use# #data package# as a node lib in my project,  that"
+        },
+        "Conflict Pair": "user_story_10_AND_user_story_32",
+        "Texts of USs": {
+            "US1": "#G14# As a Publisher, I want to unpublish a data package, so that it is no longer visible to anyone.",
+            "US2": "#G14# As a Developer, I want to use data package as a node lib in my project, so that that I can depend on it using my normal dependency framework."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "version",
+            "Action US1": "unpublish"
+        },
+        "Common Entity": "data package",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G14#",
+        "Texts of Main Parts": {
+            "US1": "#g14# as a publisher, i want to #unpublish# a #data package#, ",
+            "US2": "#g14# as a publisher, i want to #version# my #data package# and keep multiple versions around including older versions,  that"
+        },
+        "Conflict Pair": "user_story_10_AND_user_story_43",
+        "Texts of USs": {
+            "US1": "#G14# As a Publisher, I want to unpublish a data package, so that it is no longer visible to anyone.",
+            "US2": "#G14# As a Publisher, I want to version my Data Package and keep multiple versions around including older versions, so that that I do not break consumer systems when I change my datapackage."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "view",
+            "Action US1": "permanently delete"
+        },
+        "Common Entity": "data package",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G14#",
+        "Texts of Main Parts": {
+            "US1": "#g14# as a publisher, i want to #permanently delete# a #data package#,  that",
+            "US2": "#g14# as a consumer, i want to #view# a #data package# online, "
+        },
+        "Conflict Pair": "user_story_11_AND_user_story_22",
+        "Texts of USs": {
+            "US1": "#G14# As a Publisher, I want to permanently delete a data package, so that that it no longer takes up storage space.",
+            "US2": "#G14# As a Consumer, I want to view a data package online, so that I can get a sense of whether this is the dataset I want."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "view",
+            "Action US1": "unpublish"
+        },
+        "Common Entity": "data package",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G14#",
+        "Texts of Main Parts": {
+            "US1": "#g14# as a publisher, i want to #unpublish# a #data package#, ",
+            "US2": "#g14# as a consumer, i want to #view# the #data package#,  that"
+        },
+        "Conflict Pair": "user_story_10_AND_user_story_24",
+        "Texts of USs": {
+            "US1": "#G14# As a Publisher, I want to unpublish a data package, so that it is no longer visible to anyone.",
+            "US2": "#G14# As a consumer, I want to view the data package, so that that I can get a sense of whether I want this dataset or not."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "get",
+            "Action US1": "validated"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "forbid",
+            "US2": "create"
+        },
+        "Conflict-Reason": "forbid-create-Conflict",
+        "PID": "#G14#",
+        "Texts of Main Parts": {
+            "US1": "#g14# as a publisher, i want to #data# to be #validated# when i publish it,  that",
+            "US2": "#g14# as a consumer, i want to be able to #get# the #data# for a #data# package even if the original #data# has been moved or removed,  that"
+        },
+        "Conflict Pair": "user_story_13_AND_user_story_16",
+        "Texts of USs": {
+            "US1": "#G14# As a Publisher, I want to data to be validated when I publish it, so that that I know immediately if I have accidentally broken my data or have bugs and can take action to correct.",
+            "US2": "#G14# As a Consumer, I want to be able to get the data for a data package even if the original data has been moved or removed, so that that I can still use is and my app or analysis keeps working."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "view",
+            "Action US1": "permanently delete"
+        },
+        "Common Entity": "data package",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G14#",
+        "Texts of Main Parts": {
+            "US1": "#g14# as a publisher, i want to #permanently delete# a #data package#,  that",
+            "US2": "#g14# as a consumer, i want to #view# the #data package#,  that"
+        },
+        "Conflict Pair": "user_story_11_AND_user_story_24",
+        "Texts of USs": {
+            "US1": "#G14# As a Publisher, I want to permanently delete a data package, so that that it no longer takes up storage space.",
+            "US2": "#G14# As a consumer, I want to view the data package, so that that I can get a sense of whether I want this dataset or not."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "downloaded",
+            "Action US1": "validated"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "forbid",
+            "US2": "create"
+        },
+        "Conflict-Reason": "forbid-create-Conflict",
+        "PID": "#G14#",
+        "Texts of Main Parts": {
+            "US1": "#g14# as a publisher, i want to #data# to be #validated# when i publish it,  that",
+            "US2": "#g14# as a consumer, i want to see how much the #data# has been #downloaded#,  that"
+        },
+        "Conflict Pair": "user_story_13_AND_user_story_26",
+        "Texts of USs": {
+            "US1": "#G14# As a Publisher, I want to data to be validated when I publish it, so that that I know immediately if I have accidentally broken my data or have bugs and can take action to correct.",
+            "US2": "#G14# As a Consumer, I want to see how much the data has been downloaded, so that that I can choose most popular in the case when there are several alternatives for my use case."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "view",
+            "Action US1": "update"
+        },
+        "Common Entity": "data package",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G14#",
+        "Texts of Main Parts": {
+            "US1": "#g14# as a publisher, i want to use a publish command to #update# a #data package# that is already in the registry, ",
+            "US2": "#g14# as a consumer, i want to #view# a #data package# online, "
+        },
+        "Conflict Pair": "user_story_09_AND_user_story_22",
+        "Texts of USs": {
+            "US1": "#G14# As a Publisher, I want to use a publish command to update a data package that is already in the registry, so that it appears there.",
+            "US2": "#G14# As a Consumer, I want to view a data package online, so that I can get a sense of whether this is the dataset I want."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "permanently delete",
+            "Action US1": "update"
+        },
+        "Common Entity": "data package",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G14#",
+        "Texts of Main Parts": {
+            "US1": "#g14# as a publisher, i want to use a publish command to #update# a #data package# that is already in the registry, ",
+            "US2": "#g14# as a publisher, i want to #permanently delete# a #data package#,  that"
+        },
+        "Conflict Pair": "user_story_09_AND_user_story_11",
+        "Texts of USs": {
+            "US1": "#G14# As a Publisher, I want to use a publish command to update a data package that is already in the registry, so that it appears there.",
+            "US2": "#G14# As a Publisher, I want to permanently delete a data package, so that that it no longer takes up storage space."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "use",
+            "Action US1": "update"
+        },
+        "Common Entity": "data package",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G14#",
+        "Texts of Main Parts": {
+            "US1": "#g14# as a publisher, i want to use a publish command to #update# a #data package# that is already in the registry, ",
+            "US2": "#g14# as a developer, i want to #use# #data package# as a node lib in my project,  that"
+        },
+        "Conflict Pair": "user_story_09_AND_user_story_32",
+        "Texts of USs": {
+            "US1": "#G14# As a Publisher, I want to use a publish command to update a data package that is already in the registry, so that it appears there.",
+            "US2": "#G14# As a Developer, I want to use data package as a node lib in my project, so that that I can depend on it using my normal dependency framework."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "version",
+            "Action US1": "update"
+        },
+        "Common Entity": "data package",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G14#",
+        "Texts of Main Parts": {
+            "US1": "#g14# as a publisher, i want to use a publish command to #update# a #data package# that is already in the registry, ",
+            "US2": "#g14# as a publisher, i want to #version# my #data package# and keep multiple versions around including older versions,  that"
+        },
+        "Conflict Pair": "user_story_09_AND_user_story_43",
+        "Texts of USs": {
+            "US1": "#G14# As a Publisher, I want to use a publish command to update a data package that is already in the registry, so that it appears there.",
+            "US2": "#G14# As a Publisher, I want to version my Data Package and keep multiple versions around including older versions, so that that I do not break consumer systems when I change my datapackage."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "unpublish",
+            "Action US1": "update"
+        },
+        "Common Entity": "data package",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G14#",
+        "Texts of Main Parts": {
+            "US1": "#g14# as a publisher, i want to use a publish command to #update# a #data package# that is already in the registry, ",
+            "US2": "#g14# as a publisher, i want to #unpublish# a #data package#, "
+        },
+        "Conflict Pair": "user_story_09_AND_user_story_10",
+        "Texts of USs": {
+            "US1": "#G14# As a Publisher, I want to use a publish command to update a data package that is already in the registry, so that it appears there.",
+            "US2": "#G14# As a Publisher, I want to unpublish a data package, so that it is no longer visible to anyone."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "tag",
+            "Action US1": "depends"
+        },
+        "Common Entity": "datapackage",
+        "Action Rules": {
+            "US1": "forbid",
+            "US2": "create"
+        },
+        "Conflict-Reason": "forbid-create-Conflict",
+        "PID": "#G14#",
+        "Texts of Main Parts": {
+            "US1": "#g14# as a developer, i want to list all datapackages requirements for my project in the file and pin the exact versions of any #datapackage# that my project #depends# on,  that",
+            "US2": "#g14# as a publisher, i want to #tag# #datapackage# to create a snapshot of data on the registry server,  that"
+        },
+        "Conflict Pair": "user_story_39_AND_user_story_40",
+        "Texts of USs": {
+            "US1": "#G14# As a Developer, I want to list all DataPackages requirements for my project in the file and pin the exact versions of any DataPackage that my project depends on, so that that the project can be deterministically deployed locally and won't break because of the DataPackage schema changes.",
+            "US2": "#G14# As a Publisher, I want to tag datapackage to create a snapshot of data on the registry server, so that that consumers can refer to it."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "use",
+            "Action US1": "permanently delete"
+        },
+        "Common Entity": "data package",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G14#",
+        "Texts of Main Parts": {
+            "US1": "#g14# as a publisher, i want to #permanently delete# a #data package#,  that",
+            "US2": "#g14# as a developer, i want to #use# #data package# as a node lib in my project,  that"
+        },
+        "Conflict Pair": "user_story_11_AND_user_story_32",
+        "Texts of USs": {
+            "US1": "#G14# As a Publisher, I want to permanently delete a data package, so that that it no longer takes up storage space.",
+            "US2": "#G14# As a Developer, I want to use data package as a node lib in my project, so that that I can depend on it using my normal dependency framework."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "version",
+            "Action US1": "permanently delete"
+        },
+        "Common Entity": "data package",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G14#",
+        "Texts of Main Parts": {
+            "US1": "#g14# as a publisher, i want to #permanently delete# a #data package#,  that",
+            "US2": "#g14# as a publisher, i want to #version# my #data package# and keep multiple versions around including older versions,  that"
+        },
+        "Conflict Pair": "user_story_11_AND_user_story_43",
+        "Texts of USs": {
+            "US1": "#G14# As a Publisher, I want to permanently delete a data package, so that that it no longer takes up storage space.",
+            "US2": "#G14# As a Publisher, I want to version my Data Package and keep multiple versions around including older versions, so that that I do not break consumer systems when I change my datapackage."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "view",
+            "Action US1": "update"
+        },
+        "Common Entity": "data package",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G14#",
+        "Texts of Main Parts": {
+            "US1": "#g14# as a publisher, i want to use a publish command to #update# a #data package# that is already in the registry, ",
+            "US2": "#g14# as a consumer, i want to #view# the #data package#,  that"
+        },
+        "Conflict Pair": "user_story_09_AND_user_story_24",
+        "Texts of USs": {
+            "US1": "#G14# As a Publisher, I want to use a publish command to update a data package that is already in the registry, so that it appears there.",
+            "US2": "#G14# As a consumer, I want to view the data package, so that that I can get a sense of whether I want this dataset or not."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "keep",
+            "Action US1": "install"
+        },
+        "Common Entity": "multiple versions",
+        "Action Rules": {
+            "US1": "create",
+            "US2": "forbid"
+        },
+        "Conflict-Reason": "create-forbid-Conflict",
+        "PID": "#G14#",
+        "Texts of Main Parts": {
+            "US1": "#g14# as a web developer, i want to be able to #install# #multiple versions# of the same datapackage separately,  that",
+            "US2": "#g14# as a publisher, i want to version my data package and #keep# #multiple versions# around including older versions,  that"
+        },
+        "Conflict Pair": "user_story_38_AND_user_story_43",
+        "Texts of USs": {
+            "US1": "#G14# As a Web Developer, I want to be able to install multiple versions of the same datapackage separately, so that that all my projects could be developed independently and deployed locally.",
+            "US2": "#G14# As a Publisher, I want to version my Data Package and keep multiple versions around including older versions, so that that I do not break consumer systems when I change my datapackage."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "manually remove",
+            "Action US1": "change"
+        },
+        "Common Entity": "permissions",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G16#",
+        "Texts of Main Parts": {
+            "US1": "#g16# as a collection curator i want to #change# #permissions# on one or more items simultaneously.",
+            "US2": "#g16# as a faculty member, i want to go to my repository dashboard to manage members of my classes, grant submit #permissions# by pasting in a list of netids, see confirmation that ddr recognizes the netids, ability to #manually remove# #permissions#, ability to set begin and end dates for a submission window, and a have a status screen to clearly illustrate who has and hasn't submitted."
+        },
+        "Conflict Pair": "user_story_61_AND_user_story_66",
+        "Texts of USs": {
+            "US1": "#G16# As a collection curator I want to change permissions on one or more items simultaneously.",
+            "US2": "#G16# As a faculty member, I want to go to my repository dashboard to manage members of my classes, grant submit permissions by pasting in a list of NetIDs, see confirmation that DDR recognizes the NetIDs, ability to manually remove permissions, ability to set begin and end dates for a submission window, and a have a status screen to clearly illustrate who has and hasn't submitted."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "restrict access",
+            "Action US1": "reach"
+        },
+        "Common Entity": "items",
+        "Action Rules": {
+            "US1": "create",
+            "US2": "forbid"
+        },
+        "Conflict-Reason": "create-forbid-Conflict",
+        "PID": "#G16#",
+        "Texts of Main Parts": {
+            "US1": "#g16# as a collection curator, i want to see the referers for visitors who use resolver-abstracted links to #reach# my #items#.",
+            "US2": "#g16# as a collection curator, i want to #restrict access# to my collection or #items# to duke ip addresses."
+        },
+        "Conflict Pair": "user_story_50_AND_user_story_57",
+        "Texts of USs": {
+            "US1": "#G16# As a collection curator, I want to see the referers for visitors who use resolver-abstracted links to reach my items.",
+            "US2": "#G16# As a collection curator, I want to restrict access to my collection or items to Duke IP addresses."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "lift",
+            "Action US1": "recognize"
+        },
+        "Common Entity": "embargoes",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G16#",
+        "Texts of Main Parts": {
+            "US1": "#g16# as a digitalrecords archivist, i want to have the batch ingest tool to #recognize# and set #embargoes#, permissions for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.",
+            "US2": "#g16# as a digitalrecords archivist, i want to have the repository to #lift# #embargoes# on the release date and set the access controls to the configuration set on item on that date."
+        },
+        "Conflict Pair": "user_story_24_AND_user_story_25",
+        "Texts of USs": {
+            "US1": "#G16# As a DigitalRecords Archivist, I want to have the batch ingest tool to recognize and set embargoes, permissions for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.",
+            "US2": "#G16# As a DigitalRecords Archivist, I want to have the repository to lift embargoes on the release date and set the access controls to the configuration set on item on that date."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "deposited",
+            "Action US1": "access"
+        },
+        "Common Entity": "objects",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G16#",
+        "Texts of Main Parts": {
+            "US1": "#g16# as a collection curator, i want to be able require authentication to #access# #objects# unless the request is coming from a whitelisted ip address, list of addresses.",
+            "US2": "#g16# as a non-duke researcher, i want to describe my team and mine's #objects# in the repository after they've been #deposited# if we've been assigned permission to edit metadata."
+        },
+        "Conflict Pair": "user_story_62_AND_user_story_65",
+        "Texts of USs": {
+            "US1": "#G16# As a collection curator, I want to be able require authentication to access objects unless the request is coming from a whitelisted IP address, list of addresses.",
+            "US2": "#G16# As a non-Duke researcher, I want to describe my team and mine's objects in the repository after they've been deposited if we've been assigned permission to edit metadata."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "restrict access",
+            "Action US1": "queue"
+        },
+        "Common Entity": "collection",
+        "Action Rules": {
+            "US1": "create",
+            "US2": "forbid"
+        },
+        "Conflict-Reason": "create-forbid-Conflict",
+        "PID": "#G16#",
+        "Texts of Main Parts": {
+            "US1": "#g16# as a #collection# curator, i want to have the repository #queue# my #collection# for replication upon ingest to our remote storage site and to display the remote replication status in each item and component page in the staff interface.",
+            "US2": "#g16# as a #collection# curator, i want to #restrict access# to my #collection# or items to duke ip addresses."
+        },
+        "Conflict Pair": "user_story_11_AND_user_story_57",
+        "Texts of USs": {
+            "US1": "#G16# As a collection curator, I want to have the repository queue my collection for replication upon ingest to our remote storage site and to display the remote replication status in each item and component page in the staff interface.",
+            "US2": "#G16# As a collection curator, I want to restrict access to my collection or items to Duke IP addresses."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "restrict access",
+            "Action US1": "move"
+        },
+        "Common Entity": "items",
+        "Action Rules": {
+            "US1": "create",
+            "US2": "forbid"
+        },
+        "Conflict-Reason": "create-forbid-Conflict",
+        "PID": "#G16#",
+        "Texts of Main Parts": {
+            "US1": "#g16# as a collection curator, i want to #move# #items# from one collection to another.",
+            "US2": "#g16# as a collection curator, i want to #restrict access# to my collection or #items# to duke ip addresses."
+        },
+        "Conflict Pair": "user_story_33_AND_user_story_57",
+        "Texts of USs": {
+            "US1": "#G16# As a collection curator, I want to move items from one collection to another.",
+            "US2": "#G16# As a collection curator, I want to restrict access to my collection or items to Duke IP addresses."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "change",
+            "Action US1": "have"
+        },
+        "Common Entity": "permissions",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G16#",
+        "Texts of Main Parts": {
+            "US1": "#g16# as a digitalrecords archivist, i want to #have# a method to add and remove multiple people to deposit groups in specific collections, to set a date that the deposit window closes, and to #have# these #permissions# conferred on these depositors should pick up on the collection's default permission.",
+            "US2": "#g16# as a collection curator i want to #change# #permissions# on one or more items simultaneously."
+        },
+        "Conflict Pair": "user_story_27_AND_user_story_61",
+        "Texts of USs": {
+            "US1": "#G16# As a DigitalRecords Archivist, I want to have a method to add and remove multiple people to deposit groups in specific collections, to set a date that the deposit window closes, and to have these permissions conferred on these depositors should pick up on the collection's default permission.",
+            "US2": "#G16# As a collection curator I want to change permissions on one or more items simultaneously."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "restrict access",
+            "Action US1": "map"
+        },
+        "Common Entity": "items",
+        "Action Rules": {
+            "US1": "create",
+            "US2": "forbid"
+        },
+        "Conflict-Reason": "create-forbid-Conflict",
+        "PID": "#G16#",
+        "Texts of Main Parts": {
+            "US1": "#g16# as a collection curator, i want to #map# an item or #items# from one collection to another, ",
+            "US2": "#g16# as a collection curator, i want to #restrict access# to my collection or #items# to duke ip addresses."
+        },
+        "Conflict Pair": "user_story_05_AND_user_story_57",
+        "Texts of USs": {
+            "US1": "#G16# As a collection curator, I want to map an item or items from one collection to another, so that an item may administratively belong to one collection but could appear in other collections.",
+            "US2": "#G16# As a collection curator, I want to restrict access to my collection or items to Duke IP addresses."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "restrict access",
+            "Action US1": "made available"
+        },
+        "Common Entity": "items",
+        "Action Rules": {
+            "US1": "create",
+            "US2": "forbid"
+        },
+        "Conflict-Reason": "create-forbid-Conflict",
+        "PID": "#G16#",
+        "Texts of Main Parts": {
+            "US1": "#g16# as a collection curator, i want to have #items# be #made available# under the permissions they were configured once the embargo date has been reached.",
+            "US2": "#g16# as a collection curator, i want to #restrict access# to my collection or #items# to duke ip addresses."
+        },
+        "Conflict Pair": "user_story_16_AND_user_story_57",
+        "Texts of USs": {
+            "US1": "#G16# As a collection curator, I want to have items be made available under the permissions they were configured once the embargo date has been reached.",
+            "US2": "#G16# As a collection curator, I want to restrict access to my collection or items to Duke IP addresses."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "edit",
+            "Action US1": "view"
+        },
+        "Common Entity": "metadata",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G16#",
+        "Texts of Main Parts": {
+            "US1": "#g16# as a digitalrecords archivist, i want to have the batch ingest tool to recognize and set embargoes, permissions for embargoed items should be allow everyone to #view# #metadata#, and collection curator and repository administrators to download the files.",
+            "US2": "#g16# as a non-duke researcher, i want to describe my team and mine's objects in the repository after they've been deposited if we've been assigned permission to #edit# #metadata#."
+        },
+        "Conflict Pair": "user_story_24_AND_user_story_65",
+        "Texts of USs": {
+            "US1": "#G16# As a DigitalRecords Archivist, I want to have the batch ingest tool to recognize and set embargoes, permissions for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.",
+            "US2": "#G16# As a non-Duke researcher, I want to describe my team and mine's objects in the repository after they've been deposited if we've been assigned permission to edit metadata."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "manage",
+            "Action US1": "have"
+        },
+        "Common Entity": "permissions",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G16#",
+        "Texts of Main Parts": {
+            "US1": "#g16# as a digitalrecords archivist, i want to #have# a method to add and remove multiple people to deposit groups in specific collections, to set a date that the deposit window closes, and to #have# these #permissions# conferred on these depositors should pick up on the collection's default permission.",
+            "US2": "#g16# as a collection curator, i want to create groups of users to #manage# #permissions# in the repository in an easy way."
+        },
+        "Conflict Pair": "user_story_27_AND_user_story_56",
+        "Texts of USs": {
+            "US1": "#G16# As a DigitalRecords Archivist, I want to have a method to add and remove multiple people to deposit groups in specific collections, to set a date that the deposit window closes, and to have these permissions conferred on these depositors should pick up on the collection's default permission.",
+            "US2": "#G16# As a collection curator, I want to create groups of users to manage permissions in the repository in an easy way."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "manage",
+            "Action US1": "have"
+        },
+        "Common Entity": "permissions",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G16#",
+        "Texts of Main Parts": {
+            "US1": "#g16# as a digitalrecords archivist, i want to #have# the batch ingest tool to recognize and set embargoes, #permissions# for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.",
+            "US2": "#g16# as a collection curator, i want to create groups of users to #manage# #permissions# in the repository in an easy way."
+        },
+        "Conflict Pair": "user_story_24_AND_user_story_56",
+        "Texts of USs": {
+            "US1": "#G16# As a DigitalRecords Archivist, I want to have the batch ingest tool to recognize and set embargoes, permissions for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.",
+            "US2": "#G16# As a collection curator, I want to create groups of users to manage permissions in the repository in an easy way."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "manually remove",
+            "Action US1": "manage"
+        },
+        "Common Entity": "permissions",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G16#",
+        "Texts of Main Parts": {
+            "US1": "#g16# as a collection curator, i want to create groups of users to #manage# #permissions# in the repository in an easy way.",
+            "US2": "#g16# as a faculty member, i want to go to my repository dashboard to manage members of my classes, grant submit #permissions# by pasting in a list of netids, see confirmation that ddr recognizes the netids, ability to #manually remove# #permissions#, ability to set begin and end dates for a submission window, and a have a status screen to clearly illustrate who has and hasn't submitted."
+        },
+        "Conflict Pair": "user_story_56_AND_user_story_66",
+        "Texts of USs": {
+            "US1": "#G16# As a collection curator, I want to create groups of users to manage permissions in the repository in an easy way.",
+            "US2": "#G16# As a faculty member, I want to go to my repository dashboard to manage members of my classes, grant submit permissions by pasting in a list of NetIDs, see confirmation that DDR recognizes the NetIDs, ability to manually remove permissions, ability to set begin and end dates for a submission window, and a have a status screen to clearly illustrate who has and hasn't submitted."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "manually remove",
+            "Action US1": "have"
+        },
+        "Common Entity": "permissions",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G16#",
+        "Texts of Main Parts": {
+            "US1": "#g16# as a digitalrecords archivist, i want to #have# the batch ingest tool to recognize and set embargoes, #permissions# for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.",
+            "US2": "#g16# as a faculty member, i want to go to my repository dashboard to manage members of my classes, grant submit #permissions# by pasting in a list of netids, see confirmation that ddr recognizes the netids, ability to #manually remove# #permissions#, ability to set begin and end dates for a submission window, and a have a status screen to clearly illustrate who has and hasn't submitted."
+        },
+        "Conflict Pair": "user_story_24_AND_user_story_66",
+        "Texts of USs": {
+            "US1": "#G16# As a DigitalRecords Archivist, I want to have the batch ingest tool to recognize and set embargoes, permissions for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.",
+            "US2": "#G16# As a faculty member, I want to go to my repository dashboard to manage members of my classes, grant submit permissions by pasting in a list of NetIDs, see confirmation that DDR recognizes the NetIDs, ability to manually remove permissions, ability to set begin and end dates for a submission window, and a have a status screen to clearly illustrate who has and hasn't submitted."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "change",
+            "Action US1": "have"
+        },
+        "Common Entity": "permissions",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G16#",
+        "Texts of Main Parts": {
+            "US1": "#g16# as a digitalrecords archivist, i want to #have# the batch ingest tool to recognize and set embargoes, #permissions# for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.",
+            "US2": "#g16# as a collection curator i want to #change# #permissions# on one or more items simultaneously."
+        },
+        "Conflict Pair": "user_story_24_AND_user_story_61",
+        "Texts of USs": {
+            "US1": "#G16# As a DigitalRecords Archivist, I want to have the batch ingest tool to recognize and set embargoes, permissions for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.",
+            "US2": "#G16# As a collection curator I want to change permissions on one or more items simultaneously."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "move",
+            "Action US1": "have"
+        },
+        "Common Entity": "items",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G16#",
+        "Texts of Main Parts": {
+            "US1": "#g16# as a collection curator, i want to #have# #items# be made available under the permissions they were configured once the embargo date has been reached.",
+            "US2": "#g16# as a collection curator, i want to #move# #items# from one collection to another."
+        },
+        "Conflict Pair": "user_story_16_AND_user_story_33",
+        "Texts of USs": {
+            "US1": "#G16# As a collection curator, I want to have items be made available under the permissions they were configured once the embargo date has been reached.",
+            "US2": "#G16# As a collection curator, I want to move items from one collection to another."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "manually remove",
+            "Action US1": "have"
+        },
+        "Common Entity": "permissions",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G16#",
+        "Texts of Main Parts": {
+            "US1": "#g16# as a digitalrecords archivist, i want to #have# a method to add and remove multiple people to deposit groups in specific collections, to set a date that the deposit window closes, and to #have# these #permissions# conferred on these depositors should pick up on the collection's default permission.",
+            "US2": "#g16# as a faculty member, i want to go to my repository dashboard to manage members of my classes, grant submit #permissions# by pasting in a list of netids, see confirmation that ddr recognizes the netids, ability to #manually remove# #permissions#, ability to set begin and end dates for a submission window, and a have a status screen to clearly illustrate who has and hasn't submitted."
+        },
+        "Conflict Pair": "user_story_27_AND_user_story_66",
+        "Texts of USs": {
+            "US1": "#G16# As a DigitalRecords Archivist, I want to have a method to add and remove multiple people to deposit groups in specific collections, to set a date that the deposit window closes, and to have these permissions conferred on these depositors should pick up on the collection's default permission.",
+            "US2": "#G16# As a faculty member, I want to go to my repository dashboard to manage members of my classes, grant submit permissions by pasting in a list of NetIDs, see confirmation that DDR recognizes the NetIDs, ability to manually remove permissions, ability to set begin and end dates for a submission window, and a have a status screen to clearly illustrate who has and hasn't submitted."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "change",
+            "Action US1": "manage"
+        },
+        "Common Entity": "permissions",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G16#",
+        "Texts of Main Parts": {
+            "US1": "#g16# as a collection curator, i want to create groups of users to #manage# #permissions# in the repository in an easy way.",
+            "US2": "#g16# as a collection curator i want to #change# #permissions# on one or more items simultaneously."
+        },
+        "Conflict Pair": "user_story_56_AND_user_story_61",
+        "Texts of USs": {
+            "US1": "#G16# As a collection curator, I want to create groups of users to manage permissions in the repository in an easy way.",
+            "US2": "#G16# As a collection curator I want to change permissions on one or more items simultaneously."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "keep",
+            "Action US1": "processing"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "create",
+            "US2": "forbid"
+        },
+        "Conflict-Reason": "create-forbid-Conflict",
+        "PID": "#G18#",
+        "Texts of Main Parts": {
+            "US1": "#g18# as a user, i want to have the ability to move multiple files around and rearrange them using the neurohub file browser while #processing# #data#.",
+            "US2": "#g18# as a user,  i want to have the ability to #keep# my #data# private on the system, and only share #data# that i deem should be shared."
+        },
+        "Conflict Pair": "user_story_68_AND_user_story_90",
+        "Texts of USs": {
+            "US1": "#G18# As a user, I want to have the ability to move multiple files around and rearrange them using the Neurohub file browser while processing data.",
+            "US2": "#G18# As a user,  I want to have the ability to keep my data private on the system, and only share data that I deem should be shared."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "locate",
+            "Action US1": "keep"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "forbid",
+            "US2": "create"
+        },
+        "Conflict-Reason": "forbid-create-Conflict",
+        "PID": "#G18#",
+        "Texts of Main Parts": {
+            "US1": "#g18# as a user,  i want to have the ability to #keep# my #data# private on the system, and only share #data# that i deem should be shared.",
+            "US2": "#g18# as a researcher,  i want to have the ability to #locate# and access #data# that colleagues want to share."
+        },
+        "Conflict Pair": "user_story_90_AND_user_story_97",
+        "Texts of USs": {
+            "US1": "#G18# As a user,  I want to have the ability to keep my data private on the system, and only share data that I deem should be shared.",
+            "US2": "#G18# As a researcher,  I want to have the ability to locate and access data that colleagues want to share."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "keep",
+            "Action US1": "migrate"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "create",
+            "US2": "forbid"
+        },
+        "Conflict-Reason": "create-forbid-Conflict",
+        "PID": "#G18#",
+        "Texts of Main Parts": {
+            "US1": "#g18# as a system administrator, i want to #migrate# #data# from an older version of neurohub to the current version.",
+            "US2": "#g18# as a user,  i want to have the ability to #keep# my #data# private on the system, and only share #data# that i deem should be shared."
+        },
+        "Conflict Pair": "user_story_56_AND_user_story_90",
+        "Texts of USs": {
+            "US1": "#G18# As a system administrator, I want to migrate data from an older version of NeuroHub to the current version.",
+            "US2": "#G18# As a user,  I want to have the ability to keep my data private on the system, and only share data that I deem should be shared."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "evolved",
+            "Action US1": "branch"
+        },
+        "Common Entity": "experimental protocol",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G18#",
+        "Texts of Main Parts": {
+            "US1": "#g18# as a user, i want to modify or #branch# an #experimental protocol#, whilst retaining the original.",
+            "US2": "#g18# as a user, i want to view how an #experimental protocol# has #evolved# over time."
+        },
+        "Conflict Pair": "user_story_41_AND_user_story_42",
+        "Texts of USs": {
+            "US1": "#G18# As a user, I want to modify or branch an experimental protocol, whilst retaining the original.",
+            "US2": "#G18# As a user, I want to view how an experimental protocol has evolved over time."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "executing",
+            "Action US1": "executing"
+        },
+        "Common Entity": "workflow",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G18#",
+        "Texts of Main Parts": {
+            "US1": "#g18# as a user, i want to have the details of the #workflow# execution to be recorded in a neurohub log book while #executing# a #workflow#.",
+            "US2": "#g18# as a researcher, i want to have the details of the #workflow# plan as well as the execution history and results recorded in neurohub while #executing# a #workflow#"
+        },
+        "Conflict Pair": "user_story_63_AND_user_story_102",
+        "Texts of USs": {
+            "US1": "#G18# As a user, I want to have the details of the workflow execution to be recorded in a neurohub log book while executing a workflow.",
+            "US2": "#G18# As a researcher, I want to have the details of the workflow plan as well as the execution history and results recorded in Neurohub while executing a workflow"
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "collect",
+            "Action US1": "processing"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G18#",
+        "Texts of Main Parts": {
+            "US1": "#g18# as a user, i want to have the ability to move multiple files around and rearrange them using the neurohub file browser while #processing# #data#.",
+            "US2": "#g18# as a researcher, i want to #collect# #data# as a library of #data#, which can then be used by one or multiple experiments that are defined at a later stage."
+        },
+        "Conflict Pair": "user_story_68_AND_user_story_76",
+        "Texts of USs": {
+            "US1": "#G18# As a user, I want to have the ability to move multiple files around and rearrange them using the Neurohub file browser while processing data.",
+            "US2": "#G18# As a researcher, I want to collect data as a library of data, which can then be used by one or multiple experiments that are defined at a later stage."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "access",
+            "Action US1": "processing"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G18#",
+        "Texts of Main Parts": {
+            "US1": "#g18# as a user, i want to have the ability to move multiple files around and rearrange them using the neurohub file browser while #processing# #data#.",
+            "US2": "#g18# as a researcher,  i want to have the ability to locate and #access# #data# that colleagues want to share."
+        },
+        "Conflict Pair": "user_story_68_AND_user_story_97",
+        "Texts of USs": {
+            "US1": "#G18# As a user, I want to have the ability to move multiple files around and rearrange them using the Neurohub file browser while processing data.",
+            "US2": "#G18# As a researcher,  I want to have the ability to locate and access data that colleagues want to share."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "access",
+            "Action US1": "collect"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G18#",
+        "Texts of Main Parts": {
+            "US1": "#g18# as a researcher, i want to #collect# #data# as a library of #data#, which can then be used by one or multiple experiments that are defined at a later stage.",
+            "US2": "#g18# as a researcher,  i want to have the ability to locate and #access# #data# that colleagues want to share."
+        },
+        "Conflict Pair": "user_story_76_AND_user_story_97",
+        "Texts of USs": {
+            "US1": "#G18# As a researcher, I want to collect data as a library of data, which can then be used by one or multiple experiments that are defined at a later stage.",
+            "US2": "#G18# As a researcher,  I want to have the ability to locate and access data that colleagues want to share."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "keep",
+            "Action US1": "collect"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "create",
+            "US2": "forbid"
+        },
+        "Conflict-Reason": "create-forbid-Conflict",
+        "PID": "#G18#",
+        "Texts of Main Parts": {
+            "US1": "#g18# as a researcher, i want to #collect# #data# as a library of #data#, which can then be used by one or multiple experiments that are defined at a later stage.",
+            "US2": "#g18# as a user,  i want to have the ability to #keep# my #data# private on the system, and only share #data# that i deem should be shared."
+        },
+        "Conflict Pair": "user_story_76_AND_user_story_90",
+        "Texts of USs": {
+            "US1": "#G18# As a researcher, I want to collect data as a library of data, which can then be used by one or multiple experiments that are defined at a later stage.",
+            "US2": "#G18# As a user,  I want to have the ability to keep my data private on the system, and only share data that I deem should be shared."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "want",
+            "Action US1": "keep"
+        },
+        "Common Entity": "alfred",
+        "Action Rules": {
+            "US1": "forbid",
+            "US2": "create"
+        },
+        "Conflict-Reason": "forbid-create-Conflict",
+        "PID": "#G19#",
+        "Texts of Main Parts": {
+            "US1": "#g19# as an olderperson, i want to have a very good battery for #alfred# so i can #keep# him on the whole day.",
+            "US2": "#g19# as a socialcaregiver, i #want# #alfred# to remind me of the things i need to bring to the person i care for."
+        },
+        "Conflict Pair": "user_story_20_AND_user_story_69",
+        "Texts of USs": {
+            "US1": "#G19# As an OlderPerson, I want to have a very good battery for ALFRED so I can keep him on the whole day.",
+            "US2": "#G19# As a SocialCaregiver, I want ALFRED to remind me of the things I need to bring to the person I care for."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "performed wrong",
+            "Action US1": "do"
+        },
+        "Common Entity": "exercises",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G19#",
+        "Texts of Main Parts": {
+            "US1": "#g19# as an olderperson, i want to have alfred to give me goals and missions that encourage me to #do# new activities and #exercises# and to go out.",
+            "US2": "#g19# as a medicalcaregiver, i want to give corrective feedback if #exercises# are #performed wrong#, too much or in any other way harmful to the user."
+        },
+        "Conflict Pair": "user_story_98_AND_user_story_118",
+        "Texts of USs": {
+            "US1": "#G19# As an OlderPerson, I want to have ALFRED to give me goals and missions that encourage me to do new activities and exercises and to go out.",
+            "US2": "#G19# As a MedicalCaregiver, I want to give corrective feedback if exercises are performed wrong, too much or in any other way harmful to the user."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "leave",
+            "Action US1": "leaving"
+        },
+        "Common Entity": "house",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G19#",
+        "Texts of Main Parts": {
+            "US1": "#g19# as an olderperson, i want to have an alfred device that informs me about a low battery when #leaving# the #house#.",
+            "US2": "#g19# as an olderperson, i want to receive a reminder from alfred on all the things i need to bring with me when i #leave# the #house#."
+        },
+        "Conflict Pair": "user_story_21_AND_user_story_68",
+        "Texts of USs": {
+            "US1": "#G19# As an OlderPerson, I want to have an ALFRED device that informs me about a low battery when leaving the house.",
+            "US2": "#G19# As an OlderPerson, I want to receive a reminder from ALFRED on all the things I need to bring with me when I leave the house."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "does",
+            "Action US1": "do"
+        },
+        "Common Entity": "exercise",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G19#",
+        "Texts of Main Parts": {
+            "US1": "#g19# as an olderperson, i want to have alfred to help to motivate me during the week to #do# #exercise# that should change daily, as the constant change motivates me.",
+            "US2": "#g19# as a medicalcaregiver, i want to control if the user #does# the #exercise# correct."
+        },
+        "Conflict Pair": "user_story_111_AND_user_story_114",
+        "Texts of USs": {
+            "US1": "#G19# As an OlderPerson, I want to have ALFRED to help to motivate me during the week to do exercise that should change daily, as the constant change motivates me.",
+            "US2": "#G19# As a MedicalCaregiver, I want to control if the user does the exercise correct."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "ask",
+            "Action US1": "keep"
+        },
+        "Common Entity": "alfred",
+        "Action Rules": {
+            "US1": "forbid",
+            "US2": "create"
+        },
+        "Conflict-Reason": "forbid-create-Conflict",
+        "PID": "#G19#",
+        "Texts of Main Parts": {
+            "US1": "#g19# as an olderperson, i want to have a very good battery for #alfred# so i can #keep# him on the whole day.",
+            "US2": "#g19# as an olderperson, i want to have #alfred# contact the nearest caregiver when i #ask# #alfred# for urgent help."
+        },
+        "Conflict Pair": "user_story_20_AND_user_story_51",
+        "Texts of USs": {
+            "US1": "#G19# As an OlderPerson, I want to have a very good battery for ALFRED so I can keep him on the whole day.",
+            "US2": "#G19# As an OlderPerson, I want to have ALFRED contact the nearest caregiver when I ask ALFRED for urgent help."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "have",
+            "Action US1": "play"
+        },
+        "Common Entity": "games",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G19#",
+        "Texts of Main Parts": {
+            "US1": "#g19# as an olderperson, i want to #play# #games# where i can use my imagination.",
+            "US2": "#g19# as an olderperson, i want to #have# #games# that include my favourite sports."
+        },
+        "Conflict Pair": "user_story_100_AND_user_story_102",
+        "Texts of USs": {
+            "US1": "#G19# As an OlderPerson, I want to play games where I can use my Imagination.",
+            "US2": "#G19# As an OlderPerson, I want to have games that include my favourite sports."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "keep",
+            "Action US1": "buy"
+        },
+        "Common Entity": "alfred",
+        "Action Rules": {
+            "US1": "create",
+            "US2": "forbid"
+        },
+        "Conflict-Reason": "create-forbid-Conflict",
+        "PID": "#G19#",
+        "Texts of Main Parts": {
+            "US1": "#g19# as an olderperson, i want to #buy# #alfred# in a senior shop with special client support.",
+            "US2": "#g19# as an olderperson, i want to have a very good battery for #alfred# so i can #keep# him on the whole day."
+        },
+        "Conflict Pair": "user_story_16_AND_user_story_20",
+        "Texts of USs": {
+            "US1": "#G19# As an OlderPerson, I want to buy ALFRED in a senior shop with special client support.",
+            "US2": "#G19# As an OlderPerson, I want to have a very good battery for ALFRED so I can keep him on the whole day."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "keep",
+            "Action US1": "buy"
+        },
+        "Common Entity": "alfred",
+        "Action Rules": {
+            "US1": "create",
+            "US2": "forbid"
+        },
+        "Conflict-Reason": "create-forbid-Conflict",
+        "PID": "#G19#",
+        "Texts of Main Parts": {
+            "US1": "#g19# as an olderperson, i want to #buy# #alfred# for a low price.",
+            "US2": "#g19# as an olderperson, i want to have a very good battery for #alfred# so i can #keep# him on the whole day."
+        },
+        "Conflict Pair": "user_story_17_AND_user_story_20",
+        "Texts of USs": {
+            "US1": "#G19# As an OlderPerson, I want to buy ALFRED for a low price.",
+            "US2": "#G19# As an OlderPerson, I want to have a very good battery for ALFRED so I can keep him on the whole day."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "manage",
+            "Action US1": "looking"
+        },
+        "Common Entity": "agenda",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G19#",
+        "Texts of Main Parts": {
+            "US1": "#g19# as an olderperson, i want to receive visual support, especially when #looking# at a list, map or #agenda#.",
+            "US2": "#g19# as an olderperson, i want to use alfred to #manage# my #agenda#."
+        },
+        "Conflict Pair": "user_story_18_AND_user_story_65",
+        "Texts of USs": {
+            "US1": "#G19# As an OlderPerson, I want to receive visual support, especially when looking at a list, map or agenda.",
+            "US2": "#G19# As an OlderPerson, I want to use ALFRED to manage my agenda."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "pay",
+            "Action US1": "pay"
+        },
+        "Common Entity": "small amounts",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G19#",
+        "Texts of Main Parts": {
+            "US1": "#g19# as an olderperson, i want to use alfred to #pay# for #small amounts#.",
+            "US2": "#g19# as an olderperson, i want to be able to #pay# for #small amounts#."
+        },
+        "Conflict Pair": "user_story_19_AND_user_story_77",
+        "Texts of USs": {
+            "US1": "#G19# As an OlderPerson, I want to use ALFRED to pay for small amounts.",
+            "US2": "#G19# As an OlderPerson, I want to be able to pay for small amounts."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "performed wrong",
+            "Action US1": "doing"
+        },
+        "Common Entity": "exercises",
+        "Action Rules": {
+            "US1": "create",
+            "US2": "forbid"
+        },
+        "Conflict-Reason": "create-forbid-Conflict",
+        "PID": "#G19#",
+        "Texts of Main Parts": {
+            "US1": "#g19# as an olderperson, i want to do guided #exercises# with alfred and alfred should also use sensors to capture health data while i am #doing# #exercises#.",
+            "US2": "#g19# as a medicalcaregiver, i want to give corrective feedback if #exercises# are #performed wrong#, too much or in any other way harmful to the user."
+        },
+        "Conflict Pair": "user_story_101_AND_user_story_118",
+        "Texts of USs": {
+            "US1": "#G19# As an OlderPerson, I want to do guided exercises with ALFRED and ALFRED should also use sensors to capture health data while I am doing exercises.",
+            "US2": "#G19# As a MedicalCaregiver, I want to give corrective feedback if exercises are performed wrong, too much or in any other way harmful to the user."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "evaluated",
+            "Action US1": "bulk approve"
+        },
+        "Common Entity": "sessions",
+        "Action Rules": {
+            "US1": "create",
+            "US2": "forbid"
+        },
+        "Conflict-Reason": "create-forbid-Conflict",
+        "PID": "#G21#",
+        "Texts of Main Parts": {
+            "US1": "#g21# as a administrator, i want to #bulk approve# #sessions# as accepted, ",
+            "US2": "#g21# as a anonymoususer, i want to receive a notification when #sessions# have been #evaluated#, "
+        },
+        "Conflict Pair": "user_story_57_AND_user_story_59",
+        "Texts of USs": {
+            "US1": "#G21# As a administrator, I want to bulk approve sessions as accepted, so that I can save time.",
+            "US2": "#G21# As a anonymoususer, I want to receive a notification when sessions have been evaluated, so that I know whether I've been accepted or rejected."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "re-using",
+            "Action US1": "used"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G22#",
+        "Texts of Main Parts": {
+            "US1": "#g22# as an it staff member, i want to know with which software or technology the #data# is produced or #used#, ",
+            "US2": "#g22# as a #data# manager, i want to clarify the necessary rights for #re-using# the #data#, "
+        },
+        "Conflict Pair": "user_story_63_AND_user_story_79",
+        "Texts of USs": {
+            "US1": "#G22# As an IT staff member, I want to know with which software or technology the data is produced or used, so that I can determine what kind of technical services and functionalities are required.",
+            "US2": "#G22# As a data manager, I want to clarify the necessary rights for re-using the data, so that it is legal to reuse the data."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "re-using",
+            "Action US1": "collecting"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G22#",
+        "Texts of Main Parts": {
+            "US1": "#g22# as a #data# manager, i want to know the time plan for #collecting# #data#, ",
+            "US2": "#g22# as a #data# manager, i want to clarify the necessary rights for #re-using# the #data#, "
+        },
+        "Conflict Pair": "user_story_31_AND_user_story_79",
+        "Texts of USs": {
+            "US1": "#G22# As a data manager, I want to know the time plan for collecting data, so that I can plan the data management.",
+            "US2": "#G22# As a data manager, I want to clarify the necessary rights for re-using the data, so that it is legal to reuse the data."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "re-use",
+            "Action US1": "used"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G22#",
+        "Texts of Main Parts": {
+            "US1": "#g22# as an it staff member, i want to know how the #data# is #used#, ",
+            "US2": "#g22# as a #data# manager, i want to know which information is necessary to #re-use# the #data#, "
+        },
+        "Conflict Pair": "user_story_60_AND_user_story_64",
+        "Texts of USs": {
+            "US1": "#G22# As an IT staff member, I want to know how the data is used, so that I can determine what kind of basic services and functionalities are required.",
+            "US2": "#G22# As a data manager, I want to know which information is necessary to re-use the data, so that it can be checked whether all necessary information is available for researchers interested in re-using the data."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "re-using",
+            "Action US1": "re-use"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G22#",
+        "Texts of Main Parts": {
+            "US1": "#g22# as a #data# manager, i want to know which information is necessary to #re-use# the #data#, ",
+            "US2": "#g22# as a #data# manager, i want to clarify the necessary rights for #re-using# the #data#, "
+        },
+        "Conflict Pair": "user_story_64_AND_user_story_79",
+        "Texts of USs": {
+            "US1": "#G22# As a data manager, I want to know which information is necessary to re-use the data, so that it can be checked whether all necessary information is available for researchers interested in re-using the data.",
+            "US2": "#G22# As a data manager, I want to clarify the necessary rights for re-using the data, so that it is legal to reuse the data."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "re-using",
+            "Action US1": "be informed"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G22#",
+        "Texts of Main Parts": {
+            "US1": "#g22# as an ethics manager, i want to #be informed# about the #data#, ",
+            "US2": "#g22# as a #data# manager, i want to clarify the necessary rights for #re-using# the #data#, "
+        },
+        "Conflict Pair": "user_story_40_AND_user_story_79",
+        "Texts of USs": {
+            "US1": "#G22# As an ethics manager, I want to be informed about the data, so that I can check for sensitivity of data.",
+            "US2": "#G22# As a data manager, I want to clarify the necessary rights for re-using the data, so that it is legal to reuse the data."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "re-use",
+            "Action US1": "used"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G22#",
+        "Texts of Main Parts": {
+            "US1": "#g22# as an it staff member, i want to know with which software or technology the #data# is produced or #used#, ",
+            "US2": "#g22# as a #data# manager, i want to know which information is necessary to #re-use# the #data#, "
+        },
+        "Conflict Pair": "user_story_63_AND_user_story_64",
+        "Texts of USs": {
+            "US1": "#G22# As an IT staff member, I want to know with which software or technology the data is produced or used, so that I can determine what kind of technical services and functionalities are required.",
+            "US2": "#G22# As a data manager, I want to know which information is necessary to re-use the data, so that it can be checked whether all necessary information is available for researchers interested in re-using the data."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "re-using",
+            "Action US1": "used"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G22#",
+        "Texts of Main Parts": {
+            "US1": "#g22# as a #data# manager, i want to know with which software or technology the #data# is produced or #used#, ",
+            "US2": "#g22# as a #data# manager, i want to clarify the necessary rights for #re-using# the #data#, "
+        },
+        "Conflict Pair": "user_story_67_AND_user_story_79",
+        "Texts of USs": {
+            "US1": "#G22# As a data manager, I want to know with which software or technology the data is produced or used, so that I know what technology or background information might be necessary to (re-)use the data.",
+            "US2": "#G22# As a data manager, I want to clarify the necessary rights for re-using the data, so that it is legal to reuse the data."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "re-use",
+            "Action US1": "collecting"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G22#",
+        "Texts of Main Parts": {
+            "US1": "#g22# as a #data# manager, i want to know the time plan for #collecting# #data#, ",
+            "US2": "#g22# as a #data# manager, i want to know which information is necessary to #re-use# the #data#, "
+        },
+        "Conflict Pair": "user_story_31_AND_user_story_64",
+        "Texts of USs": {
+            "US1": "#G22# As a data manager, I want to know the time plan for collecting data, so that I can plan the data management.",
+            "US2": "#G22# As a data manager, I want to know which information is necessary to re-use the data, so that it can be checked whether all necessary information is available for researchers interested in re-using the data."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "re-using",
+            "Action US1": "managing"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G22#",
+        "Texts of Main Parts": {
+            "US1": "#g22# as a #data# manager, i want to document all rights necessary for #managing# the #data#, ",
+            "US2": "#g22# as a #data# manager, i want to clarify the necessary rights for #re-using# the #data#, "
+        },
+        "Conflict Pair": "user_story_21_AND_user_story_79",
+        "Texts of USs": {
+            "US1": "#G22# As a data manager, I want to document all rights necessary for managing the data, so that I can curate and preserve the data.",
+            "US2": "#G22# As a data manager, I want to clarify the necessary rights for re-using the data, so that it is legal to reuse the data."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "used",
+            "Action US1": "re-use"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G22#",
+        "Texts of Main Parts": {
+            "US1": "#g22# as a #data# manager, i want to know which information is necessary to #re-use# the #data#, ",
+            "US2": "#g22# as a #data# manager, i want to know with which software or technology the #data# is produced or #used#, "
+        },
+        "Conflict Pair": "user_story_64_AND_user_story_67",
+        "Texts of USs": {
+            "US1": "#G22# As a data manager, I want to know which information is necessary to re-use the data, so that it can be checked whether all necessary information is available for researchers interested in re-using the data.",
+            "US2": "#G22# As a data manager, I want to know with which software or technology the data is produced or used, so that I know what technology or background information might be necessary to (re-)use the data."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "used",
+            "Action US1": "managing"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G22#",
+        "Texts of Main Parts": {
+            "US1": "#g22# as a #data# manager, i want to document all rights necessary for #managing# the #data#, ",
+            "US2": "#g22# as a #data# manager, i want to know with which software or technology the #data# is produced or #used#, "
+        },
+        "Conflict Pair": "user_story_21_AND_user_story_67",
+        "Texts of USs": {
+            "US1": "#G22# As a data manager, I want to document all rights necessary for managing the data, so that I can curate and preserve the data.",
+            "US2": "#G22# As a data manager, I want to know with which software or technology the data is produced or used, so that I know what technology or background information might be necessary to (re-)use the data."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "re-use",
+            "Action US1": "be informed"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G22#",
+        "Texts of Main Parts": {
+            "US1": "#g22# as an ethics manager, i want to #be informed# about the #data#, ",
+            "US2": "#g22# as a #data# manager, i want to know which information is necessary to #re-use# the #data#, "
+        },
+        "Conflict Pair": "user_story_40_AND_user_story_64",
+        "Texts of USs": {
+            "US1": "#G22# As an ethics manager, I want to be informed about the data, so that I can check for sensitivity of data.",
+            "US2": "#G22# As a data manager, I want to know which information is necessary to re-use the data, so that it can be checked whether all necessary information is available for researchers interested in re-using the data."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "re-using",
+            "Action US1": "used"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G22#",
+        "Texts of Main Parts": {
+            "US1": "#g22# as an it staff member, i want to know how the #data# is #used#, ",
+            "US2": "#g22# as a #data# manager, i want to clarify the necessary rights for #re-using# the #data#, "
+        },
+        "Conflict Pair": "user_story_60_AND_user_story_79",
+        "Texts of USs": {
+            "US1": "#G22# As an IT staff member, I want to know how the data is used, so that I can determine what kind of basic services and functionalities are required.",
+            "US2": "#G22# As a data manager, I want to clarify the necessary rights for re-using the data, so that it is legal to reuse the data."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "be informed",
+            "Action US1": "managing"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G22#",
+        "Texts of Main Parts": {
+            "US1": "#g22# as a #data# manager, i want to document all rights necessary for #managing# the #data#, ",
+            "US2": "#g22# as an ethics manager, i want to #be informed# about the #data#, "
+        },
+        "Conflict Pair": "user_story_21_AND_user_story_40",
+        "Texts of USs": {
+            "US1": "#G22# As a data manager, I want to document all rights necessary for managing the data, so that I can curate and preserve the data.",
+            "US2": "#G22# As an ethics manager, I want to be informed about the data, so that I can check for sensitivity of data."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "get",
+            "Action US1": "reuse"
+        },
+        "Common Entity": "information",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G22#",
+        "Texts of Main Parts": {
+            "US1": "#g22# as an archivemanager, i want to #reuse# the #information# regarding file format, ",
+            "US2": "#g22# as an archive, i want to #get# #information# about the volume of data to preserve at an early stage, "
+        },
+        "Conflict Pair": "user_story_34_AND_user_story_53",
+        "Texts of USs": {
+            "US1": "#G22# As an archivemanager, I want to reuse the information regarding file format, so that I can apply automated checks for the file validation.",
+            "US2": "#G22# As an archive, I want to get information about the volume of data to preserve at an early stage, so that I can provide the adequate storage infrastructure."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "know",
+            "Action US1": "reuse"
+        },
+        "Common Entity": "information",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G22#",
+        "Texts of Main Parts": {
+            "US1": "#g22# as an archivemanager, i want to #reuse# the #information# regarding file format, ",
+            "US2": "#g22# as a data manager, i want to #know# which #information# is necessary to re-use the data, "
+        },
+        "Conflict Pair": "user_story_34_AND_user_story_64",
+        "Texts of USs": {
+            "US1": "#G22# As an archivemanager, I want to reuse the information regarding file format, so that I can apply automated checks for the file validation.",
+            "US2": "#G22# As a data manager, I want to know which information is necessary to re-use the data, so that it can be checked whether all necessary information is available for researchers interested in re-using the data."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "re-use",
+            "Action US1": "managing"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G22#",
+        "Texts of Main Parts": {
+            "US1": "#g22# as a #data# manager, i want to document all rights necessary for #managing# the #data#, ",
+            "US2": "#g22# as a #data# manager, i want to know which information is necessary to #re-use# the #data#, "
+        },
+        "Conflict Pair": "user_story_21_AND_user_story_64",
+        "Texts of USs": {
+            "US1": "#G22# As a data manager, I want to document all rights necessary for managing the data, so that I can curate and preserve the data.",
+            "US2": "#G22# As a data manager, I want to know which information is necessary to re-use the data, so that it can be checked whether all necessary information is available for researchers interested in re-using the data."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "collecting",
+            "Action US1": "managing"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G22#",
+        "Texts of Main Parts": {
+            "US1": "#g22# as a #data# manager, i want to document all rights necessary for #managing# the #data#, ",
+            "US2": "#g22# as a #data# manager, i want to know the time plan for #collecting# #data#, "
+        },
+        "Conflict Pair": "user_story_21_AND_user_story_31",
+        "Texts of USs": {
+            "US1": "#G22# As a data manager, I want to document all rights necessary for managing the data, so that I can curate and preserve the data.",
+            "US2": "#G22# As a data manager, I want to know the time plan for collecting data, so that I can plan the data management."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "re-using",
+            "Action US1": "used"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G22#",
+        "Texts of Main Parts": {
+            "US1": "#g22# as a #data# manager, i want to know how the #data# is #used#, ",
+            "US2": "#g22# as a #data# manager, i want to clarify the necessary rights for #re-using# the #data#, "
+        },
+        "Conflict Pair": "user_story_04_AND_user_story_79",
+        "Texts of USs": {
+            "US1": "#G22# As a data manager, I want to know how the data is used, so that I can develop more detailed usage and support scenarios with researchers.",
+            "US2": "#G22# As a data manager, I want to clarify the necessary rights for re-using the data, so that it is legal to reuse the data."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "used",
+            "Action US1": "managing"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G22#",
+        "Texts of Main Parts": {
+            "US1": "#g22# as a #data# manager, i want to document all rights necessary for #managing# the #data#, ",
+            "US2": "#g22# as an it staff member, i want to know with which software or technology the #data# is produced or #used#, "
+        },
+        "Conflict Pair": "user_story_21_AND_user_story_63",
+        "Texts of USs": {
+            "US1": "#G22# As a data manager, I want to document all rights necessary for managing the data, so that I can curate and preserve the data.",
+            "US2": "#G22# As an IT staff member, I want to know with which software or technology the data is produced or used, so that I can determine what kind of technical services and functionalities are required."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "managing",
+            "Action US1": "used"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G22#",
+        "Texts of Main Parts": {
+            "US1": "#g22# as a #data# manager, i want to know how the #data# is #used#, ",
+            "US2": "#g22# as a #data# manager, i want to document all rights necessary for #managing# the #data#, "
+        },
+        "Conflict Pair": "user_story_04_AND_user_story_21",
+        "Texts of USs": {
+            "US1": "#G22# As a data manager, I want to know how the data is used, so that I can develop more detailed usage and support scenarios with researchers.",
+            "US2": "#G22# As a data manager, I want to document all rights necessary for managing the data, so that I can curate and preserve the data."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "used",
+            "Action US1": "managing"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G22#",
+        "Texts of Main Parts": {
+            "US1": "#g22# as a #data# manager, i want to document all rights necessary for #managing# the #data#, ",
+            "US2": "#g22# as an it staff member, i want to know how the #data# is #used#, "
+        },
+        "Conflict Pair": "user_story_21_AND_user_story_60",
+        "Texts of USs": {
+            "US1": "#G22# As a data manager, I want to document all rights necessary for managing the data, so that I can curate and preserve the data.",
+            "US2": "#G22# As an IT staff member, I want to know how the data is used, so that I can determine what kind of basic services and functionalities are required."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "re-use",
+            "Action US1": "used"
+        },
+        "Common Entity": "data",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G22#",
+        "Texts of Main Parts": {
+            "US1": "#g22# as a #data# manager, i want to know how the #data# is #used#, ",
+            "US2": "#g22# as a #data# manager, i want to know which information is necessary to #re-use# the #data#, "
+        },
+        "Conflict Pair": "user_story_04_AND_user_story_64",
+        "Texts of USs": {
+            "US1": "#G22# As a data manager, I want to know how the data is used, so that I can develop more detailed usage and support scenarios with researchers.",
+            "US2": "#G22# As a data manager, I want to know which information is necessary to re-use the data, so that it can be checked whether all necessary information is available for researchers interested in re-using the data."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "extract",
+            "Action US1": "have"
+        },
+        "Common Entity": "description",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G22#",
+        "Texts of Main Parts": {
+            "US1": "#g22# as a data manager, i want to #have# the #description# of collected data sets that are used or updated throughout the project lifecycle, ",
+            "US2": "#g22# as a researcher, i want to #extract# the #description# of the data collected, "
+        },
+        "Conflict Pair": "user_story_09_AND_user_story_36",
+        "Texts of USs": {
+            "US1": "#G22# As a data manager, I want to have the description of collected data sets that are used or updated throughout the project lifecycle, so that I can ensure the descriptions are current and add detail as the study proceeds.",
+            "US2": "#G22# As a researcher, I want to extract the description of the data collected, so that I can reuse it for the writing of a data paper."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "view",
+            "Action US1": "update"
+        },
+        "Common Entity": "archival descriptions",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G23#",
+        "Texts of Main Parts": {
+            "US1": "#g23# as a repository manager , i want to create, #update# and delete #archival descriptions# in my repository.",
+            "US2": "#g23# as a readonly user , i want to #view# #archival descriptions# in my repository."
+        },
+        "Conflict Pair": "user_story_43_AND_user_story_47",
+        "Texts of USs": {
+            "US1": "#G23# As a Repository Manager , I want to create, update and delete archival descriptions in my repository.",
+            "US2": "#G23# As a ReadOnly user , I want to view archival descriptions in my repository."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "rearrange",
+            "Action US1": "search"
+        },
+        "Common Entity": "resource",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G23#",
+        "Texts of Main Parts": {
+            "US1": "#g23# as an archivist, i want to #search# within a repository for #resource# and accession and digital object records.",
+            "US2": "#g23# as an archivist, i want to #rearrange# the #resource# and/or digital object hierarchy using keyboard-based navigation."
+        },
+        "Conflict Pair": "user_story_30_AND_user_story_32",
+        "Texts of USs": {
+            "US1": "#G23# As an archivist, I want to search within a repository for resource and accession and digital object records.",
+            "US2": "#G23# As an Archivist, I want to rearrange the Resource and/or Digital Object hierarchy using keyboard-based navigation."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "managing",
+            "Action US1": "managing"
+        },
+        "Common Entity": "enum lists",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G23#",
+        "Texts of Main Parts": {
+            "US1": "#g23# as a user, i want backend changes for #managing# #enum lists#.",
+            "US2": "#g23# as a user, i want frontend changes for #managing# #enum lists#."
+        },
+        "Conflict Pair": "user_story_03_AND_user_story_12",
+        "Texts of USs": {
+            "US1": "#G23# As a user, I want backend changes for managing enum lists.",
+            "US2": "#G23# As a user, I want frontend changes for managing enum lists."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "maintain",
+            "Action US1": "maintain"
+        },
+        "Common Entity": "datasets",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G24#",
+        "Texts of Main Parts": {
+            "US1": "#g24# as a depositor, i want to deposit and #maintain# #datasets# through virtual research environments and other workflow tools, ",
+            "US2": "#g24# as a developer, i want to deposit and #maintain# #datasets# via an api such as sword2, "
+        },
+        "Conflict Pair": "user_story_04_AND_user_story_50",
+        "Texts of USs": {
+            "US1": "#G24# As a depositor, I want to deposit and maintain datasets through Virtual Research Environments and other workflow tools, so that I can continue to work with tools with which I'm familiar.",
+            "US2": "#G24# As a developer, I want to deposit and maintain datasets via an API such as SWORD2, so that my service can interact with the archive."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "maintain",
+            "Action US1": "maintain"
+        },
+        "Common Entity": "datasets",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G24#",
+        "Texts of Main Parts": {
+            "US1": "#g24# as a depositor, i want to deposit and #maintain# #datasets# through pure, ",
+            "US2": "#g24# as a depositor, i want to deposit and #maintain# #datasets# through virtual research environments and other workflow tools, "
+        },
+        "Conflict Pair": "user_story_03_AND_user_story_04",
+        "Texts of USs": {
+            "US1": "#G24# As a depositor, I want to deposit and maintain datasets through Pure, so that I have a single onestop shop for managing my research outputs.",
+            "US2": "#G24# As a depositor, I want to deposit and maintain datasets through Virtual Research Environments and other workflow tools, so that I can continue to work with tools with which I'm familiar."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "have",
+            "Action US1": "maintain"
+        },
+        "Common Entity": "datasets",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G24#",
+        "Texts of Main Parts": {
+            "US1": "#g24# as a depositor, i want to deposit and #maintain# #datasets# through a simple web interface, ",
+            "US2": "#g24# as a research information manager, i want to #have# #datasets# linked to metadata about projects, "
+        },
+        "Conflict Pair": "user_story_01_AND_user_story_45",
+        "Texts of USs": {
+            "US1": "#G24# As a depositor, I want to deposit and maintain datasets through a simple web interface, so that I don't need to install and learn new software to deposit.",
+            "US2": "#G24# As a Research Information manager, I want to have datasets linked to metadata about projects, so that I can report on projects depositing datasets in relation to funder requirements."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "maintain",
+            "Action US1": "maintain"
+        },
+        "Common Entity": "datasets",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G24#",
+        "Texts of Main Parts": {
+            "US1": "#g24# as a depositor, i want to deposit and #maintain# #datasets# through a simple web interface, ",
+            "US2": "#g24# as a depositor, i want to deposit and #maintain# #datasets# through virtual research environments and other workflow tools, "
+        },
+        "Conflict Pair": "user_story_01_AND_user_story_04",
+        "Texts of USs": {
+            "US1": "#G24# As a depositor, I want to deposit and maintain datasets through a simple web interface, so that I don't need to install and learn new software to deposit.",
+            "US2": "#G24# As a depositor, I want to deposit and maintain datasets through Virtual Research Environments and other workflow tools, so that I can continue to work with tools with which I'm familiar."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "maintain",
+            "Action US1": "maintain"
+        },
+        "Common Entity": "datasets",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G24#",
+        "Texts of Main Parts": {
+            "US1": "#g24# as a depositor, i want to deposit and #maintain# #datasets# through a simple web interface, ",
+            "US2": "#g24# as a depositor, i want to deposit and #maintain# #datasets# through pure, "
+        },
+        "Conflict Pair": "user_story_01_AND_user_story_03",
+        "Texts of USs": {
+            "US1": "#G24# As a depositor, I want to deposit and maintain datasets through a simple web interface, so that I don't need to install and learn new software to deposit.",
+            "US2": "#G24# As a depositor, I want to deposit and maintain datasets through Pure, so that I have a single onestop shop for managing my research outputs."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "have",
+            "Action US1": "maintain"
+        },
+        "Common Entity": "datasets",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G24#",
+        "Texts of Main Parts": {
+            "US1": "#g24# as a depositor, i want to deposit and #maintain# #datasets# through virtual research environments and other workflow tools, ",
+            "US2": "#g24# as a research information manager, i want to #have# #datasets# linked to metadata about projects, "
+        },
+        "Conflict Pair": "user_story_04_AND_user_story_45",
+        "Texts of USs": {
+            "US1": "#G24# As a depositor, I want to deposit and maintain datasets through Virtual Research Environments and other workflow tools, so that I can continue to work with tools with which I'm familiar.",
+            "US2": "#G24# As a Research Information manager, I want to have datasets linked to metadata about projects, so that I can report on projects depositing datasets in relation to funder requirements."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "harvest",
+            "Action US1": "have"
+        },
+        "Common Entity": "metadata",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G24#",
+        "Texts of Main Parts": {
+            "US1": "#g24# as a depositor, i want to #have# #metadata# automatically filled from other university systems and remembered from previous deposits, ",
+            "US2": "#g24# as a fundingbody, i want to #harvest# #metadata# on outputs from research i fund, "
+        },
+        "Conflict Pair": "user_story_12_AND_user_story_53",
+        "Texts of USs": {
+            "US1": "#G24# As a depositor, I want to have metadata automatically filled from other University systems and remembered from previous deposits, so that I don't have to waste time reentering the same information.",
+            "US2": "#G24# As a fundingbody, I want to harvest metadata on outputs from research I fund, so that I can analyse effectiveness of funding strategy and I can encourage cross fertilisation of research outputs."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "have",
+            "Action US1": "maintain"
+        },
+        "Common Entity": "datasets",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G24#",
+        "Texts of Main Parts": {
+            "US1": "#g24# as a depositor, i want to deposit and #maintain# #datasets# through pure, ",
+            "US2": "#g24# as a research information manager, i want to #have# #datasets# linked to metadata about projects, "
+        },
+        "Conflict Pair": "user_story_03_AND_user_story_45",
+        "Texts of USs": {
+            "US1": "#G24# As a depositor, I want to deposit and maintain datasets through Pure, so that I have a single onestop shop for managing my research outputs.",
+            "US2": "#G24# As a Research Information manager, I want to have datasets linked to metadata about projects, so that I can report on projects depositing datasets in relation to funder requirements."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "maintain",
+            "Action US1": "maintain"
+        },
+        "Common Entity": "datasets",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G24#",
+        "Texts of Main Parts": {
+            "US1": "#g24# as a depositor, i want to deposit and #maintain# #datasets# through pure, ",
+            "US2": "#g24# as a developer, i want to deposit and #maintain# #datasets# via an api such as sword2, "
+        },
+        "Conflict Pair": "user_story_03_AND_user_story_50",
+        "Texts of USs": {
+            "US1": "#G24# As a depositor, I want to deposit and maintain datasets through Pure, so that I have a single onestop shop for managing my research outputs.",
+            "US2": "#G24# As a developer, I want to deposit and maintain datasets via an API such as SWORD2, so that my service can interact with the archive."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "maintain",
+            "Action US1": "maintain"
+        },
+        "Common Entity": "datasets",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G24#",
+        "Texts of Main Parts": {
+            "US1": "#g24# as a depositor, i want to deposit and #maintain# #datasets# through a simple web interface, ",
+            "US2": "#g24# as a developer, i want to deposit and #maintain# #datasets# via an api such as sword2, "
+        },
+        "Conflict Pair": "user_story_01_AND_user_story_50",
+        "Texts of USs": {
+            "US1": "#G24# As a depositor, I want to deposit and maintain datasets through a simple web interface, so that I don't need to install and learn new software to deposit.",
+            "US2": "#G24# As a developer, I want to deposit and maintain datasets via an API such as SWORD2, so that my service can interact with the archive."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "maintain",
+            "Action US1": "have"
+        },
+        "Common Entity": "datasets",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G24#",
+        "Texts of Main Parts": {
+            "US1": "#g24# as a research information manager, i want to #have# #datasets# linked to metadata about projects, ",
+            "US2": "#g24# as a developer, i want to deposit and #maintain# #datasets# via an api such as sword2, "
+        },
+        "Conflict Pair": "user_story_45_AND_user_story_50",
+        "Texts of USs": {
+            "US1": "#G24# As a Research Information manager, I want to have datasets linked to metadata about projects, so that I can report on projects depositing datasets in relation to funder requirements.",
+            "US2": "#G24# As a developer, I want to deposit and maintain datasets via an API such as SWORD2, so that my service can interact with the archive."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "describe",
+            "Action US1": "limiting"
+        },
+        "Common Entity": "collection",
+        "Action Rules": {
+            "US1": "forbid",
+            "US2": "create"
+        },
+        "Conflict-Reason": "forbid-create-Conflict",
+        "PID": "#G25#",
+        "Texts of Main Parts": {
+            "US1": "#g25# as a repository manager, i want to compose collections, #limiting# the #collection# to the items sharing the same provenance, #limiting# the #collection# to represent a part of a #collection# have a singular provenance, or assembly a #collection# from other collections and objects.",
+            "US2": "#g25# as a repository manager, i want to #describe# a #collection#, including its title, it's inclusive / bulk dates, its language(s), and many other aspects."
+        },
+        "Conflict Pair": "user_story_08_AND_user_story_10",
+        "Texts of USs": {
+            "US1": "#G25# As a repository manager, I want to compose collections, limiting the collection to the items sharing the same provenance, limiting the collection to represent a part of a collection have a singular provenance, or assembly a collection from other collections and objects.",
+            "US2": "#G25# As a repository manager, I want to describe a collection, including its title, it's inclusive / bulk dates, its language(s), and many other aspects."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "changed",
+            "Action US1": "changed"
+        },
+        "Common Entity": "checksum",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G25#",
+        "Texts of Main Parts": {
+            "US1": "#g25# as a repository manager, i want to know if the #checksum# for any of my repository's content files that have #changed#.",
+            "US2": "#g25# as a dams manager, i want to know, via the preservation manager, of all files for which the #checksum# has #changed# since last registered."
+        },
+        "Conflict Pair": "user_story_80_AND_user_story_81",
+        "Texts of USs": {
+            "US1": "#G25# As a repository manager, I want to know if the checksum for any of my repository's content files that have changed.",
+            "US2": "#G25# As a DAMS manager, I want to know, via the preservation manager, of all files for which the checksum has changed since last registered."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "modified",
+            "Action US1": "modified"
+        },
+        "Common Entity": "application",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G25#",
+        "Texts of Main Parts": {
+            "US1": "#g25# as a dams manager, i want to know when the #application# of a statute to an object or object component has been #modified#, either manually or automatically.",
+            "US2": "#g25# as a dams manager, i want to know if #application# of a library policy to an object or object component has been #modified#, either manually or automatically."
+        },
+        "Conflict Pair": "user_story_89_AND_user_story_93",
+        "Texts of USs": {
+            "US1": "#G25# As a DAMS manager, I want to know when the application of a statute to an object or object component has been modified, either manually or automatically.",
+            "US2": "#G25# As a DAMS manager, I want to know if application of a library policy to an object or object component has been modified, either manually or automatically."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "search",
+            "Action US1": "rotate"
+        },
+        "Common Entity": "images",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G26#",
+        "Texts of Main Parts": {
+            "US1": "#g26# as an archivist, i want to #rotate# #images#, ",
+            "US2": "#g26# as an archivist, i want to #search# #images# by photographer."
+        },
+        "Conflict Pair": "user_story_28_AND_user_story_83",
+        "Texts of USs": {
+            "US1": "#G26# As an archivist, I want to rotate images, so that I can orient them correctly.",
+            "US2": "#G26# As an archivist, I want to search images by photographer."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "access",
+            "Action US1": "batch edit"
+        },
+        "Common Entity": "metadata",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G26#",
+        "Texts of Main Parts": {
+            "US1": "#g26# as an archivist, i want to #batch edit# #metadata# about files.",
+            "US2": "#g26# as an archivist, i want to #access# #metadata# and visual representations of index cards, "
+        },
+        "Conflict Pair": "user_story_15_AND_user_story_91",
+        "Texts of USs": {
+            "US1": "#G26# As an archivist, I want to batch edit metadata about files.",
+            "US2": "#G26# As an archivist, I want to access metadata and visual representations of index cards, so that I can use that information to assist researchers."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "search",
+            "Action US1": "rotate"
+        },
+        "Common Entity": "images",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G26#",
+        "Texts of Main Parts": {
+            "US1": "#g26# as an archivist, i want to #rotate# #images#, ",
+            "US2": "#g26# as an archivist, i want to #search# #images# by uploading an image, "
+        },
+        "Conflict Pair": "user_story_28_AND_user_story_93",
+        "Texts of USs": {
+            "US1": "#G26# As an archivist, I want to rotate images, so that I can orient them correctly.",
+            "US2": "#G26# As an archivist, I want to search images by uploading an image, so that so I can find images when i don't have any metadata."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "search",
+            "Action US1": "rotate"
+        },
+        "Common Entity": "images",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G26#",
+        "Texts of Main Parts": {
+            "US1": "#g26# as an archivist, i want to #rotate# #images#, ",
+            "US2": "#g26# as an archivist, i want to #search# #images# by place the photo was taken."
+        },
+        "Conflict Pair": "user_story_28_AND_user_story_85",
+        "Texts of USs": {
+            "US1": "#G26# As an archivist, I want to rotate images, so that I can orient them correctly.",
+            "US2": "#G26# As an archivist, I want to search images by place the photo was taken."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "search",
+            "Action US1": "rotate"
+        },
+        "Common Entity": "images",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G26#",
+        "Texts of Main Parts": {
+            "US1": "#g26# as an archivist, i want to #rotate# #images#, ",
+            "US2": "#g26# as an archivist, i want to #search# #images# by people represented in them."
+        },
+        "Conflict Pair": "user_story_28_AND_user_story_84",
+        "Texts of USs": {
+            "US1": "#G26# As an archivist, I want to rotate images, so that I can orient them correctly.",
+            "US2": "#G26# As an archivist, I want to search images by people represented in them."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "provide",
+            "Action US1": "restrict"
+        },
+        "Common Entity": "access",
+        "Action Rules": {
+            "US1": "forbid",
+            "US2": "create"
+        },
+        "Conflict-Reason": "forbid-create-Conflict",
+        "PID": "#G26#",
+        "Texts of Main Parts": {
+            "US1": "#g26# as an archivist, i want to #restrict# #access# to some files by ip address, ",
+            "US2": "#g26# as an archivist, i want to #provide# #access# to digital copies of unprocessed material, "
+        },
+        "Conflict Pair": "user_story_09_AND_user_story_51",
+        "Texts of USs": {
+            "US1": "#G26# As an archivist, I want to restrict access to some files by IP address, so that I can give reading room access only to certain digital files.",
+            "US2": "#G26# As an archivist, I want to provide access to digital copies of unprocessed material, so that donors can access things they have given us."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "download",
+            "Action US1": "restrict"
+        },
+        "Common Entity": "file",
+        "Action Rules": {
+            "US1": "forbid",
+            "US2": "create"
+        },
+        "Conflict-Reason": "forbid-create-Conflict",
+        "PID": "#G26#",
+        "Texts of Main Parts": {
+            "US1": "#g26# as an archivist, i want to #restrict# a #file# from view.",
+            "US2": "#g26# as a researcher, i want to #download# a #file#, "
+        },
+        "Conflict Pair": "user_story_04_AND_user_story_39",
+        "Texts of USs": {
+            "US1": "#G26# As an archivist, I want to restrict a file from view.",
+            "US2": "#G26# As a researcher, I want to download a file, so that I can use it for research without having to come to the reading room."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "provide",
+            "Action US1": "restrict"
+        },
+        "Common Entity": "access",
+        "Action Rules": {
+            "US1": "forbid",
+            "US2": "create"
+        },
+        "Conflict-Reason": "forbid-create-Conflict",
+        "PID": "#G26#",
+        "Texts of Main Parts": {
+            "US1": "#g26# as an archivist, i want to #restrict# #access# to certain files by user, ",
+            "US2": "#g26# as an archivist, i want to #provide# #access# to digital copies of unprocessed material, "
+        },
+        "Conflict Pair": "user_story_10_AND_user_story_51",
+        "Texts of USs": {
+            "US1": "#G26# As an archivist, I want to restrict access to certain files by user, so that I can allow donor representatives to see certain files.",
+            "US2": "#G26# As an archivist, I want to provide access to digital copies of unprocessed material, so that donors can access things they have given us."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "taken",
+            "Action US1": "scanned"
+        },
+        "Common Entity": "photo",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G26#",
+        "Texts of Main Parts": {
+            "US1": "#g26# as an archivist, i want to know if a #photo# has already been #scanned#, ",
+            "US2": "#g26# as an archivist, i want to search images by place the #photo# was #taken#."
+        },
+        "Conflict Pair": "user_story_11_AND_user_story_85",
+        "Texts of USs": {
+            "US1": "#G26# As an archivist, I want to know if a photo has already been scanned, so that I can license it to a researcher.",
+            "US2": "#G26# As an archivist, I want to search images by place the photo was taken."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "search",
+            "Action US1": "rotate"
+        },
+        "Common Entity": "images",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G26#",
+        "Texts of Main Parts": {
+            "US1": "#g26# as an archivist, i want to #rotate# #images#, ",
+            "US2": "#g26# as an archivist, i want to #search# #images# by rights."
+        },
+        "Conflict Pair": "user_story_28_AND_user_story_86",
+        "Texts of USs": {
+            "US1": "#G26# As an archivist, I want to rotate images, so that I can orient them correctly.",
+            "US2": "#G26# As an archivist, I want to search images by rights."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "look",
+            "Action US1": "rotate"
+        },
+        "Common Entity": "images",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G26#",
+        "Texts of Main Parts": {
+            "US1": "#g26# as an archivist, i want to #rotate# #images#, ",
+            "US2": "#g26# as a donor representative, i want to #look# at #images# that have been scanned from my collection,  "
+        },
+        "Conflict Pair": "user_story_28_AND_user_story_55",
+        "Texts of USs": {
+            "US1": "#G26# As an archivist, I want to rotate images, so that I can orient them correctly.",
+            "US2": "#G26# As a donor representative, I want to look at images that have been scanned from my collection, so that so that I can use them in my institutions exhibits, reports etc."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "deselect",
+            "Action US1": "know"
+        },
+        "Common Entity": "reports",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G27#",
+        "Texts of Main Parts": {
+            "US1": "#g27# as a patron, i want to #know# which #reports#/datasets are coming out when, ",
+            "US2": "#g27# as a patron, i want to select/#deselect# #reports#/datasets to be emailed, possibly many at one time, when new versions are available."
+        },
+        "Conflict Pair": "user_story_04_AND_user_story_05",
+        "Texts of USs": {
+            "US1": "#G27# As a patron, I want to know which reports/datasets are coming out when, so that I can access latest report/dataset.",
+            "US2": "#G27# As a patron, I want to select/deselect reports/datasets to be emailed, possibly many at one time, when new versions are available."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "see",
+            "Action US1": "automatically updated"
+        },
+        "Common Entity": "list",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G27#",
+        "Texts of Main Parts": {
+            "US1": "#g27# as an extension educator, i want to have a place to store a variety of documents, presentations and data sets i've created, that doesn't require an extra step in making available on my own county/region/project site (i.e. a #list# or directory of materials there is #automatically updated# when placed in a central archive/repository).",
+            "US2": "#g27# as a db/ir administrator, i want to #see# a #list# of all administrators for ease of administering accounts."
+        },
+        "Conflict Pair": "user_story_76_AND_user_story_88",
+        "Texts of USs": {
+            "US1": "#G27# As an Extension Educator, I want to have a place to store a variety of documents, presentations and data sets I've created, that doesn't require an extra step in making available on my own County/Region/Project site (i.e. a list or directory of materials there is automatically updated when placed in a central archive/repository).",
+            "US2": "#G27# As a DB/IR administrator, I want to see a list of all administrators for ease of administering accounts."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "administering",
+            "Action US1": "delete"
+        },
+        "Common Entity": "accounts",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G27#",
+        "Texts of Main Parts": {
+            "US1": "#g27# as a db/ir administrator, i want to set up or #delete# #accounts# for other administrators with various levels of permission.",
+            "US2": "#g27# as a db/ir administrator, i want to see a list of all administrators for ease of #administering# #accounts#."
+        },
+        "Conflict Pair": "user_story_87_AND_user_story_88",
+        "Texts of USs": {
+            "US1": "#G27# As a DB/IR administrator, I want to set up or delete accounts for other administrators with various levels of permission.",
+            "US2": "#G27# As a DB/IR administrator, I want to see a list of all administrators for ease of administering accounts."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "rename",
+            "Action US1": "move"
+        },
+        "Common Entity": "collection",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G27#",
+        "Texts of Main Parts": {
+            "US1": "#g27# as a repository support team member, i want to #move# a #collection#, ",
+            "US2": "#g27# as a repository support team member, i want to #rename# a #collection#, "
+        },
+        "Conflict Pair": "user_story_96_AND_user_story_97",
+        "Texts of USs": {
+            "US1": "#G27# As a repository support team member, I want to move a collection, so that I can fulfill the collection owner's request.",
+            "US2": "#G27# As a repository support team member, I want to rename a collection, so that I can fulfill the collection owner's request."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "adequately described",
+            "Action US1": "downloads"
+        },
+        "Common Entity": "files",
+        "Action Rules": {
+            "US1": "create",
+            "US2": "forbid"
+        },
+        "Conflict-Reason": "create-forbid-Conflict",
+        "PID": "#G27#",
+        "Texts of Main Parts": {
+            "US1": "#g27# as a cornell faculty member, i want to be notified if someone #downloads# any of my items or #files#, ",
+            "US2": "#g27# as a stakeholder, i want to have #files# #adequately described#, "
+        },
+        "Conflict Pair": "user_story_21_AND_user_story_105",
+        "Texts of USs": {
+            "US1": "#G27# As a Cornell faculty member, I want to be notified if someone downloads any of my items or files, so that I can follow usage and see what others are most interested in reading.",
+            "US2": "#G27# As a stakeholder, I want to have files adequately described, so that I can successfully render them in my contemporary operating environment."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "rename",
+            "Action US1": "access"
+        },
+        "Common Entity": "collection",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G27#",
+        "Texts of Main Parts": {
+            "US1": "#g27# as a faculty member, i want to #access# a #collection# within the repository, ",
+            "US2": "#g27# as a repository support team member, i want to #rename# a #collection#, "
+        },
+        "Conflict Pair": "user_story_01_AND_user_story_97",
+        "Texts of USs": {
+            "US1": "#G27# As a faculty member, I want to access a collection within the repository, so that I can obtain research materials.",
+            "US2": "#G27# As a repository support team member, I want to rename a collection, so that I can fulfill the collection owner's request."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "resetting",
+            "Action US1": "change"
+        },
+        "Common Entity": "passwords",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G27#",
+        "Texts of Main Parts": {
+            "US1": "#g27# as a db/ir administrator, i want to have a personal account with the ability to #change# #passwords# to make them more secure or to retrieve forgotten ones.",
+            "US2": "#g27# as a db/ir administrator, i want to administrate patron accounts for purpose of closing accounts, viewing subscriptions, changing subscriptions, #resetting# #passwords#, changing email address, etc."
+        },
+        "Conflict Pair": "user_story_86_AND_user_story_94",
+        "Texts of USs": {
+            "US1": "#G27# As a DB/IR administrator, I want to have a personal account with the ability to change passwords to make them more secure or to retrieve forgotten ones.",
+            "US2": "#G27# As a DB/IR administrator, I want to administrate patron accounts for purpose of closing accounts, viewing subscriptions, changing subscriptions, resetting passwords, changing email address, etc."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "move",
+            "Action US1": "access"
+        },
+        "Common Entity": "collection",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G27#",
+        "Texts of Main Parts": {
+            "US1": "#g27# as a faculty member, i want to #access# a #collection# within the repository, ",
+            "US2": "#g27# as a repository support team member, i want to #move# a #collection#, "
+        },
+        "Conflict Pair": "user_story_01_AND_user_story_96",
+        "Texts of USs": {
+            "US1": "#G27# As a faculty member, I want to access a collection within the repository, so that I can obtain research materials.",
+            "US2": "#G27# As a repository support team member, I want to move a collection, so that I can fulfill the collection owner's request."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "closing",
+            "Action US1": "delete"
+        },
+        "Common Entity": "accounts",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G27#",
+        "Texts of Main Parts": {
+            "US1": "#g27# as a db/ir administrator, i want to set up or #delete# #accounts# for other administrators with various levels of permission.",
+            "US2": "#g27# as a db/ir administrator, i want to administrate patron #accounts# for purpose of #closing# #accounts#, viewing subscriptions, changing subscriptions, resetting passwords, changing email address, etc."
+        },
+        "Conflict Pair": "user_story_87_AND_user_story_94",
+        "Texts of USs": {
+            "US1": "#G27# As a DB/IR administrator, I want to set up or delete accounts for other administrators with various levels of permission.",
+            "US2": "#G27# As a DB/IR administrator, I want to administrate patron accounts for purpose of closing accounts, viewing subscriptions, changing subscriptions, resetting passwords, changing email address, etc."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "automatically updated",
+            "Action US1": "see"
+        },
+        "Common Entity": "list",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G27#",
+        "Texts of Main Parts": {
+            "US1": "#g27# as a db/ir administrator, i want to #see# #list# of subscribers for specified report in order research missing report complaints.",
+            "US2": "#g27# as an extension educator, i want to have a place to store a variety of documents, presentations and data sets i've created, that doesn't require an extra step in making available on my own county/region/project site (i.e. a #list# or directory of materials there is #automatically updated# when placed in a central archive/repository)."
+        },
+        "Conflict Pair": "user_story_22_AND_user_story_76",
+        "Texts of USs": {
+            "US1": "#G27# As a DB/IR administrator, I want to see list of subscribers for specified report in order research missing report complaints.",
+            "US2": "#G27# As an Extension Educator, I want to have a place to store a variety of documents, presentations and data sets I've created, that doesn't require an extra step in making available on my own County/Region/Project site (i.e. a list or directory of materials there is automatically updated when placed in a central archive/repository)."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "rename",
+            "Action US1": "search within"
+        },
+        "Common Entity": "collection",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G27#",
+        "Texts of Main Parts": {
+            "US1": "#g27# as a researcher, i want to #search within# a repository or #collection# in an effective manner, including searching within subsets of a given #collection#, ",
+            "US2": "#g27# as a repository support team member, i want to #rename# a #collection#, "
+        },
+        "Conflict Pair": "user_story_38_AND_user_story_97",
+        "Texts of USs": {
+            "US1": "#G27# As a researcher, I want to search within a repository or collection in an effective manner, including searching within subsets of a given collection, so that I can facilitate my use of the collection.",
+            "US2": "#G27# As a repository support team member, I want to rename a collection, so that I can fulfill the collection owner's request."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "move",
+            "Action US1": "search within"
+        },
+        "Common Entity": "collection",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G27#",
+        "Texts of Main Parts": {
+            "US1": "#g27# as a researcher, i want to #search within# a repository or #collection# in an effective manner, including searching within subsets of a given #collection#, ",
+            "US2": "#g27# as a repository support team member, i want to #move# a #collection#, "
+        },
+        "Conflict Pair": "user_story_38_AND_user_story_96",
+        "Texts of USs": {
+            "US1": "#G27# As a researcher, I want to search within a repository or collection in an effective manner, including searching within subsets of a given collection, so that I can facilitate my use of the collection.",
+            "US2": "#G27# As a repository support team member, I want to move a collection, so that I can fulfill the collection owner's request."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "adequately described",
+            "Action US1": "associate"
+        },
+        "Common Entity": "files",
+        "Action Rules": {
+            "US1": "create",
+            "US2": "forbid"
+        },
+        "Conflict-Reason": "create-forbid-Conflict",
+        "PID": "#G27#",
+        "Texts of Main Parts": {
+            "US1": "#g27# as a faculty member, i want to #associate# #files# with my scholarly works such that someone accessing the latter also receives access to the former, ",
+            "US2": "#g27# as a stakeholder, i want to have #files# #adequately described#, "
+        },
+        "Conflict Pair": "user_story_71_AND_user_story_105",
+        "Texts of USs": {
+            "US1": "#G27# As a faculty member, I want to associate files with my scholarly works such that someone accessing the latter also receives access to the former, so that I can deliver the fullest picture of my research.",
+            "US2": "#G27# As a stakeholder, I want to have files adequately described, so that I can successfully render them in my contemporary operating environment."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "closing",
+            "Action US1": "administering"
+        },
+        "Common Entity": "accounts",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G27#",
+        "Texts of Main Parts": {
+            "US1": "#g27# as a db/ir administrator, i want to see a list of all administrators for ease of #administering# #accounts#.",
+            "US2": "#g27# as a db/ir administrator, i want to administrate patron #accounts# for purpose of #closing# #accounts#, viewing subscriptions, changing subscriptions, resetting passwords, changing email address, etc."
+        },
+        "Conflict Pair": "user_story_88_AND_user_story_94",
+        "Texts of USs": {
+            "US1": "#G27# As a DB/IR administrator, I want to see a list of all administrators for ease of administering accounts.",
+            "US2": "#G27# As a DB/IR administrator, I want to administrate patron accounts for purpose of closing accounts, viewing subscriptions, changing subscriptions, resetting passwords, changing email address, etc."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "searching",
+            "Action US1": "sort"
+        },
+        "Common Entity": "items",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G27#",
+        "Texts of Main Parts": {
+            "US1": "#g27# as a cornell faculty member, i want to have some control over how #items# within my collection #sort# in collection contents lists, ",
+            "US2": "#g27# as a library staff member, i want to create metadata for #items# within the repository that includes document title, description, author, document type, status, file locations, subscribable flag, subject area, release frequency, and keywords for #searching#."
+        },
+        "Conflict Pair": "user_story_17_AND_user_story_55",
+        "Texts of USs": {
+            "US1": "#G27# As a Cornell faculty member, I want to have some control over how items within my collection sort in collection contents lists, so that I can control how my work is presented.",
+            "US2": "#G27# As a library staff member, I want to create metadata for items within the repository that includes document title, description, author, document type, status, file locations, subscribable flag, subject area, release frequency, and keywords for searching."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "unpublish",
+            "Action US1": "search"
+        },
+        "Common Entity": "report",
+        "Action Rules": {
+            "US1": "preserve",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "preserve-delete-Conflict",
+        "PID": "#G27#",
+        "Texts of Main Parts": {
+            "US1": "#g27# as a patron, i want to #search# for #report#/dataset with keywords or a partial or complete title to locate needed #report#/dataset.",
+            "US2": "#g27# as a db/ir administrator, i want to #unpublish# a #report#/dataset if requested to do so by usda agency."
+        },
+        "Conflict Pair": "user_story_41_AND_user_story_90",
+        "Texts of USs": {
+            "US1": "#G27# As a patron, I want to search for report/dataset with keywords or a partial or complete title to locate needed report/dataset.",
+            "US2": "#G27# As a DB/IR administrator, I want to unpublish a report/dataset if requested to do so by USDA agency."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "educate",
+            "Action US1": "interrupt"
+        },
+        "Common Entity": "volunteer",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G28#",
+        "Texts of Main Parts": {
+            "US1": "#g28# as a zooniverse admin, i want to know when i should #interrupt# a #volunteer#.",
+            "US2": "#g28# as a zooniverse admin, i want to know when i should #educate# a #volunteer#."
+        },
+        "Conflict Pair": "user_story_49_AND_user_story_51",
+        "Texts of USs": {
+            "US1": "#G28# As a Zooniverse admin, I want to know when I should interrupt a volunteer.",
+            "US2": "#G28# As a Zooniverse admin, I want to know when I should educate a volunteer."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "interrupt",
+            "Action US1": "interrupt"
+        },
+        "Common Entity": "volunteer",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "delete"
+        },
+        "Conflict-Reason": "delete-delete-Conflict",
+        "PID": "#G28#",
+        "Texts of Main Parts": {
+            "US1": "#g28# as a zooniverse admin, i want to know when i should #interrupt# a #volunteer#.",
+            "US2": "#g28# as a zooniverse admin, i want to know whether i should #interrupt# a #volunteer# with text, an image, or a video."
+        },
+        "Conflict Pair": "user_story_49_AND_user_story_50",
+        "Texts of USs": {
+            "US1": "#G28# As a Zooniverse admin, I want to know when I should interrupt a volunteer.",
+            "US2": "#G28# As a Zooniverse admin, I want to know whether I should interrupt a volunteer with text, an image, or a video."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "educate",
+            "Action US1": "interrupt"
+        },
+        "Common Entity": "volunteer",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G28#",
+        "Texts of Main Parts": {
+            "US1": "#g28# as a zooniverse admin, i want to know whether i should #interrupt# a #volunteer# with text, an image, or a video.",
+            "US2": "#g28# as a zooniverse admin, i want to know when i should #educate# a #volunteer#."
+        },
+        "Conflict Pair": "user_story_50_AND_user_story_51",
+        "Texts of USs": {
+            "US1": "#G28# As a Zooniverse admin, I want to know whether I should interrupt a volunteer with text, an image, or a video.",
+            "US2": "#G28# As a Zooniverse admin, I want to know when I should educate a volunteer."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "educate",
+            "Action US1": "interrupt"
+        },
+        "Common Entity": "volunteer",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G28#",
+        "Texts of Main Parts": {
+            "US1": "#g28# as a zooniverse admin, i want to know whether i should #interrupt# a #volunteer# with text, an image, or a video.",
+            "US2": "#g28# as a zooniverse admin, i want to know whether i should #educate# a #volunteer# with text, an image, or a video."
+        },
+        "Conflict Pair": "user_story_50_AND_user_story_52",
+        "Texts of USs": {
+            "US1": "#G28# As a Zooniverse admin, I want to know whether I should interrupt a volunteer with text, an image, or a video.",
+            "US2": "#G28# As a Zooniverse admin, I want to know whether I should educate a volunteer with text, an image, or a video."
+        }
+    },
+    {
+        "Actions": {
+            "Action US2": "educate",
+            "Action US1": "interrupt"
+        },
+        "Common Entity": "volunteer",
+        "Action Rules": {
+            "US1": "delete",
+            "US2": "preserve"
+        },
+        "Conflict-Reason": "delete-preserve-Conflict",
+        "PID": "#G28#",
+        "Texts of Main Parts": {
+            "US1": "#g28# as a zooniverse admin, i want to know when i should #interrupt# a #volunteer#.",
+            "US2": "#g28# as a zooniverse admin, i want to know whether i should #educate# a #volunteer# with text, an image, or a video."
+        },
+        "Conflict Pair": "user_story_49_AND_user_story_52",
+        "Texts of USs": {
+            "US1": "#G28# As a Zooniverse admin, I want to know when I should interrupt a volunteer.",
+            "US2": "#G28# As a Zooniverse admin, I want to know whether I should educate a volunteer with text, an image, or a video."
+        }
+    }
+]

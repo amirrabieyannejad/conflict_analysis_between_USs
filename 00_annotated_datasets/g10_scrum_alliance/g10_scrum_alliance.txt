@@ -1,0 +1,114 @@
+
+
+********************* << Dataset: g10_scrum_alliance >> ***************
+* Table of potential conflict between user stories
+
+       us_39  us_62  us_28  us_29  us_31  us_32  us_33  
+us_39         x                                         
+us_62  x                                                
+us_28                       x                           
+us_29                x                                  
+us_31                                     x      x      
+us_32                              x             x      
+us_33                              x      x             
+
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_39_AND_user_story_62}
+  
+Affected Resource is: << full-text search >>
+
+ Action of user_story_39 is: << do >>  which is annotated with: << preserve >>
+ Action of user_story_62 is: << do >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_39: #g10# as a site visitor, i want to #do# a #full-text search# of the faqs, 
+
+   user_story_62: #g10# as a site visitor, i want to #do# a #full-text search# of article body, title, and author name, 
+
+Original texts of user stories are: 
+   user_story_39: #G10# As a site visitor, I want to do a full-text search of the FAQs, so that I can find an answer quickly.
+
+   user_story_62: #G10# As a site visitor, I want to do a full-text search of article body, title, and author name, so that I can find what I want.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_28_AND_user_story_29}
+  
+Affected Resource is: << events >>
+
+ Action of user_story_28 is: << update >>  which is annotated with: << delete >>
+ Action of user_story_29 is: << delete >>  which is annotated with: << delete >>
+
+Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_28: #g10# as a trainer, i want to #update# one of my existing courses or #events#, 
+
+   user_story_29: #g10# as a trainer, i want to #delete# one of my courses or #events#, 
+
+Original texts of user stories are: 
+   user_story_28: #G10# As a trainer, I want to update one of my existing courses or events, so that it reflects accurate information.
+
+   user_story_29: #G10# As a trainer, I want to delete one of my courses or events, so that it's no longer listed if I cancel for some reason.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_31_AND_user_story_32}
+  
+Affected Resource is: << any course >>
+
+ Action of user_story_31 is: << delete >>  which is annotated with: << delete >>
+ Action of user_story_32 is: << update >>  which is annotated with: << delete >>
+
+Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_31: #g10# as a site admin, i want to #delete# #any course# or event, 
+
+   user_story_32: #g10# as a site editor, i want to #update# #any course# or event, 
+
+Original texts of user stories are: 
+   user_story_31: #G10# As a site admin, I want to delete any course or event, so that I can remove things that will no longer occur.
+
+   user_story_32: #G10# As a site editor, I want to update any course or event, so that I can fix things the original author hasn't.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_32_AND_user_story_33}
+  
+Affected Resource is: << event >>
+
+ Action of user_story_32 is: << update >>  which is annotated with: << delete >>
+ Action of user_story_33 is: << turn >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_32: #g10# as a site editor, i want to #update# any course or #event#, 
+
+   user_story_33: #g10# as a trainer, i want to #turn# a course into an #event# or an #event# into a course, 
+
+Original texts of user stories are: 
+   user_story_32: #G10# As a site editor, I want to update any course or event, so that I can fix things the original author hasn't.
+
+   user_story_33: #G10# As a trainer, I want to turn a course into an event or an event into a course, so that I can correctly classify anything that was entered incorrectly.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_31_AND_user_story_33}
+  
+Affected Resource is: << event >>
+
+ Action of user_story_31 is: << delete >>  which is annotated with: << delete >>
+ Action of user_story_33 is: << turn >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_31: #g10# as a site admin, i want to #delete# any course or #event#, 
+
+   user_story_33: #g10# as a trainer, i want to #turn# a course into an #event# or an #event# into a course, 
+
+Original texts of user stories are: 
+   user_story_31: #G10# As a site admin, I want to delete any course or event, so that I can remove things that will no longer occur.
+
+   user_story_33: #G10# As a trainer, I want to turn a course into an event or an event into a course, so that I can correctly classify anything that was entered incorrectly.

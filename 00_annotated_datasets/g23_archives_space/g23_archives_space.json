@@ -50,6 +50,7 @@
                     "finding aid"
                 ]
             ],
+            "Text": "#G23# As a researcher, I want to be able to view a finding aid for a particular collection/Resource.",
             "Triggers": [[
                 "researcher",
                 "view"
@@ -88,6 +89,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G23# As an Application Administrator, I want to be able to reset a User's password for them.",
             "Triggers": [[
                 "Application Administrator",
                 "reset"
@@ -139,6 +141,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G23# As a user, I want backend changes for managing enum lists.",
             "Triggers": [[
                 "user",
                 "want"
@@ -186,6 +189,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G23# As an Archivist, I want to import EAD files that were exported by Archon.",
             "Triggers": [[
                 "Archivist",
                 "import"
@@ -234,6 +238,7 @@
                 "Resource Component",
                 "component unique identifier"
             ]],
+            "Text": "#G23# As an Archivist, I want to assign a component unique identifier to a Resource Component.",
             "Triggers": [[
                 "Archivist",
                 "assign"
@@ -275,6 +280,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G23# As a User , I want to authenticate using LDAP.",
             "Triggers": [[
                 "User",
                 "authenticate"
@@ -344,6 +350,7 @@
                     "AT"
                 ]
             ],
+            "Text": "#G23# As a migration specialist, I want to store the AT or Archon source record ids in each ASpace record",
             "Triggers": [[
                 "migration specialist",
                 "store"
@@ -398,6 +405,7 @@
                 "Subject heading",
                 "standard identifier string"
             ]],
+            "Text": "#G23# As an Archivist, I want to associate a standard identifier string with a Subject heading.",
             "Triggers": [[
                 "Archivist",
                 "associate"
@@ -451,6 +459,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G23# As an Archivist, I want to be able to understand that an error occurred during import and why it might have occurred.",
             "Triggers": [[
                 "Archivist",
                 "understand"
@@ -505,6 +514,7 @@
                 "CSV",
                 "Accessions data"
             ]],
+            "Text": "#G23# As an Archivist, I want to import Accessions data in CSV.",
             "Triggers": [[
                 "Archivist",
                 "import"
@@ -553,6 +563,7 @@
                 "MARCXML records",
                 "Resources"
             ]],
+            "Text": "#G23# As an Archivist, I want to import Resources from MARCXML records.",
             "Triggers": [[
                 "Archivist",
                 "import"
@@ -604,6 +615,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G23# As a user, I want frontend changes for managing enum lists.",
             "Triggers": [[
                 "user",
                 "want"
@@ -665,6 +677,7 @@
                     "links"
                 ]
             ],
+            "Text": "#G23# As an Authenticated User, I want to get access to links to contextual help.",
             "Triggers": [[
                 "Authenticated User",
                 "get"
@@ -763,6 +776,7 @@
                     "read and edit views"
                 ]
             ],
+            "Text": "#G23# As an Archivist, I want to see Dates and Extents displayed in both the read and edit views for Accessions and/or Resources before the list of Subjects.",
             "Triggers": [[
                 "Archivist",
                 "see"
@@ -825,6 +839,7 @@
                 "EAC-CPF records",
                 "Agent information"
             ]],
+            "Text": "#G23# As an Archivist, I want to import Agent information from EAC-CPF records.",
             "Triggers": [[
                 "Archivist",
                 "import"
@@ -885,6 +900,7 @@
                 "database",
                 "enum value lists"
             ]],
+            "Text": "#G23# As a user, I want backend changes to support loading enum value lists from the database.",
             "Triggers": [[
                 "user",
                 "want"
@@ -942,6 +958,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G23# As a user, I want backend changes for bulk updating one enum value to another.",
             "Triggers": [[
                 "user",
                 "want"
@@ -996,6 +1013,7 @@
                 "EAC-CPF",
                 "agent records"
             ]],
+            "Text": "#G23# As an Archivist, I want to export agent records as EAC-CPF.",
             "Triggers": [[
                 "Archivist",
                 "export"
@@ -1065,6 +1083,7 @@
                     "Agent"
                 ]
             ],
+            "Text": "#G23# As an Archivist, I want to import only Agent and Subject information from MARCXML records.",
             "Triggers": [[
                 "Archivist",
                 "import only"
@@ -1131,6 +1150,7 @@
                 "Advanced Data Entry",
                 "Users"
             ]],
+            "Text": "#G23# As an Application Administrator, I want to assign Users to an Advanced Data Entry and ensure that the appropriate permissions are enforced.",
             "Triggers": [
                 [
                     "Application Administrator",
@@ -1191,6 +1211,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G23# As an Application Administrator , I want to be able to configure the help center URL and topic mappings.",
             "Triggers": [[
                 "Application Administrator",
                 "configure"
@@ -1245,6 +1266,7 @@
                 "repositories",
                 "additional properties"
             ]],
+            "Text": "#G23# As a user, I want to add additional properties for repositories.",
             "Triggers": [[
                 "user",
                 "add"
@@ -1293,6 +1315,7 @@
                 "other record types",
                 "Notes"
             ]],
+            "Text": "#G23# As an Archivist, I want to add Notes to other record types.",
             "Triggers": [[
                 "Archivist",
                 "add"
@@ -1341,6 +1364,7 @@
                 "someone else",
                 "new User account"
             ]],
+            "Text": "#G23# As an Administrator, I want to create a new User account for someone else.",
             "Triggers": [[
                 "Administrator",
                 "create"
@@ -1420,6 +1444,7 @@
                     "administrative data"
                 ]
             ],
+            "Text": "#G23# As an Archivist, I want to add administrative data about the archival description and finding aid-related data to a top-level Resource.",
             "Triggers": [[
                 "Archivist",
                 "add"
@@ -1511,6 +1536,7 @@
                     "Level"
                 ]
             ],
+            "Text": "#G23# As an Archivist, I want to assign a Level of description to a Resource or Resource Component and optionally specify another value if the Level is not in a predefined list.",
             "Triggers": [
                 [
                     "Archivist",
@@ -1568,6 +1594,7 @@
                 "application",
                 "built version"
             ]],
+            "Text": "#G23# As a developer, I want to use a configuration that is not prepackaged within a built version of application.",
             "Triggers": [[
                 "developer",
                 "use"
@@ -1609,6 +1636,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G23# As an Archivist, I want to import EAD files that were exported by the Archivists' Toolkit.",
             "Triggers": [[
                 "Archivist",
                 "import"
@@ -1667,6 +1695,7 @@
                 "location",
                 "demo database"
             ]],
+            "Text": "#G23# As a systems administrator, I want to be able to control the location of the demo database and I want it to be backed up.",
             "Triggers": [[
                 "systems administrator",
                 "control"
@@ -1757,6 +1786,7 @@
                     "digital object records"
                 ]
             ],
+            "Text": "#G23# As an archivist, I want to search within a repository for resource and accession and digital object records.",
             "Triggers": [[
                 "archivist",
                 "search"
@@ -1815,6 +1845,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G23# As an archivist, I want to create and edit a Collection Management subrecord.",
             "Triggers": [
                 [
                     "archivist",
@@ -1884,6 +1915,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G23# As an Archivist, I want to rearrange the Resource and/or Digital Object hierarchy using keyboard-based navigation.",
             "Triggers": [[
                 "Archivist",
                 "rearrange"
@@ -1960,6 +1992,7 @@
                     "archival object"
                 ]
             ],
+            "Text": "#G23# As an Archivist, I want to rearrange the resource description hierarchy by dragging an archival object to a different position in the hierarchy.",
             "Triggers": [[
                 "Archivist",
                 "rearrange"
@@ -2049,6 +2082,7 @@
                     "subject"
                 ]
             ],
+            "Text": "#G23# As an Archivist, I would like to indicate an Agent is either the creator or source or subject of an Accession or Resource or Resource Component.",
             "Triggers": [[
                 "Archivist",
                 "indicate"
@@ -2097,6 +2131,7 @@
                 "EAD",
                 "description"
             ]],
+            "Text": "#G23# As an Archivist, I want to export a description as EAD.",
             "Triggers": [[
                 "Archivist",
                 "export"
@@ -2145,6 +2180,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G23# As an Archivist, I want to create and edit Event records.",
             "Triggers": [
                 [
                     "Archivist",
@@ -2195,6 +2231,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G23# As an Archivist, I want to manage Digital Objects.",
             "Triggers": [[
                 "Archivist",
                 "manage"
@@ -2257,6 +2294,7 @@
                     "Instance"
                 ]
             ],
+            "Text": "#G23# As an Archivist, I want to associate an Instance with a Resource and/or Resource Component.",
             "Triggers": [[
                 "Archivist",
                 "associate"
@@ -2305,6 +2343,7 @@
                 "record",
                 "someone else's changes"
             ]],
+            "Text": "#G23# As an Archivist, I don't want to inadvertently overwrite someone else's changes to a record that I'm editing.",
             "Triggers": [[
                 "Archivist",
                 "don't want to inadvertently overwrite"
@@ -2353,6 +2392,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G23# As an Archivist, I want to create and edit Rights Management statements.",
             "Triggers": [
                 [
                     "Archivist",
@@ -2423,6 +2463,7 @@
                 "frontend application",
                 "EAD"
             ]],
+            "Text": "#G23# As an Archivist, I want to upload an EAD for import from within the frontend application.",
             "Triggers": [[
                 "Archivist",
                 "upload"
@@ -2467,6 +2508,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G23# As an Archivist, I want to import EAD data.",
             "Triggers": [[
                 "Archivist",
                 "import"
@@ -2531,6 +2573,7 @@
                 "repository",
                 "archival descriptions"
             ]],
+            "Text": "#G23# As a Repository Manager , I want to create, update and delete archival descriptions in my repository.",
             "Triggers": [
                 [
                     "Repository Manager",
@@ -2589,6 +2632,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G23# As a Developer , I want to develop a custom importer.",
             "Triggers": [[
                 "Developer",
                 "develop"
@@ -2637,6 +2681,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G23# As a Basic Data Entry user , I want to create and update basic archival description information.",
             "Triggers": [
                 [
                     "Basic Data Entry user",
@@ -2713,6 +2758,7 @@
                 "repository",
                 "any records"
             ]],
+            "Text": "#G23# As a Repository Manager , I want to create, update and delete any records in my repository.",
             "Triggers": [
                 [
                     "Repository Manager",
@@ -2781,6 +2827,7 @@
                 "repository",
                 "archival descriptions"
             ]],
+            "Text": "#G23# As a ReadOnly user , I want to view archival descriptions in my repository.",
             "Triggers": [[
                 "ReadOnly user",
                 "view"
@@ -2843,6 +2890,7 @@
                     "Repository Manager role"
                 ]
             ],
+            "Text": "#G23# As an System Administrator, I want to declare that a user is has the Repository Manager role for a given Repository.",
             "Triggers": [[
                 "System Administrator",
                 "declare"
@@ -2916,6 +2964,7 @@
                     "Name Form"
                 ]
             ],
+            "Text": "#G23# As an Archivist, I want to specify the Source for a Name Form of an Agent and add new Sources and edit existing Sources.",
             "Triggers": [
                 [
                     "Archivist",
@@ -2984,6 +3033,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G23# As an Archivist, I want to create and edit Agent records.",
             "Triggers": [
                 [
                     "Archivist",
@@ -3044,6 +3094,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G23# As an Archivist, I want to create and edit a Resource record.",
             "Triggers": [
                 [
                     "Archivist",
@@ -3104,6 +3155,7 @@
                 "Resource description",
                 "Subject record"
             ]],
+            "Text": "#G23# As an Archivist, I want to associate a Subject record with a Resource description.",
             "Triggers": [[
                 "Archivist",
                 "associate"
@@ -3138,6 +3190,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G23# As a User, I want to authenticate locally.",
             "Triggers": [[
                 "User",
                 "authenticate locally"
@@ -3169,6 +3222,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G23# As User, I want to be able to log in.",
             "Triggers": [[
                 "User",
                 "log in"
@@ -3214,6 +3268,7 @@
                 "Container",
                 "Instance"
             ]],
+            "Text": "#G23# As an Archivist, I want to associate an Instance with a Container.",
             "Triggers": [[
                 "Archivist",
                 "associate"
@@ -3262,6 +3317,7 @@
                 "Container",
                 "Location information"
             ]],
+            "Text": "#G23# As an Archivist, I want to assign Location information to a Container.",
             "Triggers": [[
                 "Archivist",
                 "assign"

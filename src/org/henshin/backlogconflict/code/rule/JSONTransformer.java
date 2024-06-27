@@ -46,6 +46,31 @@ public class JSONTransformer {
 		}
 
 	}
+	public void runTransformJson(String input) {
+
+
+		String inputFilePath = "00_annotated_datasets\\" + input + "\\admin.jsonl";
+		String outputFilePath = "00_annotated_datasets\\" + input + "\\" + input + ".json";
+		int i = 1;
+		try {
+			List<String> jsonLines = Files.readAllLines(Paths.get(inputFilePath));
+			JSONArray outputArray = new JSONArray();
+
+			for (String jsonString : jsonLines) {
+
+				JSONObject inputJson = new JSONObject(jsonString);
+				JSONObject transformed = transformJson(inputJson, i, input);
+				outputArray.put(transformed);
+				i++;
+			}
+
+			Files.write(Paths.get(outputFilePath), outputArray.toString(4).getBytes());
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	
+	}
 
 	private static JSONObject transformJson(JSONObject input, int identifier, String dataSets) {
 
@@ -94,7 +119,7 @@ public class JSONTransformer {
 		JSONArray benefitContainActionRulesArray = new JSONArray();
 
 		// Mix
-		 JSONObject mix = new JSONObject();
+		JSONObject mix = new JSONObject();
 
 		// Add text
 		String usText = input.getString("text");
@@ -114,7 +139,7 @@ public class JSONTransformer {
 				benefitStartOffset = entity.getInt("start_offset");
 				benefitEndOffset = entity.getInt("end_offset");
 				break;
-			} 
+			}
 
 		}
 
@@ -138,6 +163,7 @@ public class JSONTransformer {
 
 				String mainText = usText.substring(0, startOffset - 1);
 				mainText = mainText.replace("so that", "");
+				mainText = mainText.replace("So that", "");
 				main.put("Text", mainText);
 
 				break;
@@ -167,6 +193,10 @@ public class JSONTransformer {
 			default:
 				System.out.println("Unknown label: " + entity.getString("label"));
 				break;
+			}
+			// make sure that benefit part is not exist, if so, whole user story belongs consist of main part
+			if (!main.has("Text")&& !usText.contains("so that")) {
+				main.put("Text", usText);
 			}
 		}
 		// PROCEED RELATIONS
@@ -206,13 +236,13 @@ public class JSONTransformer {
 						&& (startOffsetToEntry >= benefitStartOffset && endOffsetToEntry <= benefitEndOffset)) {
 					benefitTargetsArray.put(targetPair);
 				} else if (((endOffsetFromEntry < benefitStartOffset) && ((endOffsetToEntry < benefitStartOffset)))
-					 || benefitStartOffset ==-1) {
+						|| benefitStartOffset == -1) {
 					mainTargetsArray.put(targetPair);
 
 				} else {
 					// Otherwise add all mixed relations into benefit
-					 mix.put("Targets", targetPair);
-					//benefitTargetsArray.put(targetPair);
+					mix.put("Targets", targetPair);
+					// benefitTargetsArray.put(targetPair);
 				}
 
 				break;
@@ -224,15 +254,14 @@ public class JSONTransformer {
 				if ((startOffsetFromEntry >= benefitStartOffset && endOffsetFromEntry <= benefitEndOffset)
 						&& (startOffsetToEntry >= benefitStartOffset && endOffsetToEntry <= benefitEndOffset)) {
 					benefitContainsArray.put(containPair);
-				} else if (((endOffsetFromEntry < benefitStartOffset) 
-						&& ((endOffsetToEntry < benefitStartOffset))
-						|| benefitStartOffset ==-1)) {
+				} else if (((endOffsetFromEntry < benefitStartOffset) && ((endOffsetToEntry < benefitStartOffset))
+						|| benefitStartOffset == -1)) {
 					mainContainsArray.put(containPair);
 
 				} else {
 					// Otherwise add all mixed relations into benefit
-					 mix.put("Contains", containPair);
-					//benefitContainsArray.put(containPair);
+					mix.put("Contains", containPair);
+					// benefitContainsArray.put(containPair);
 				}
 				break;
 			}

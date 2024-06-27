@@ -3,7 +3,7 @@ package org.henshin.backlogconflict.code.report;
 //Stores effective value of \textit{Primary/Secondary Action}
 //and \textit{Primary/Secondary Entity} in action and entity 
 //fields accordingly.
-public class TargetsPair extends RedundancyItems{
+public class TargetsPair extends ConflictItems{
 	private String action;
 	private String entity;
 

@@ -1,0 +1,29 @@
+
+
+********************* << Dataset: g11_nsf >> ***************
+* Table of potential conflict between user stories
+
+       us_33  us_53  
+us_33         x      
+us_53  x             
+
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_33_AND_user_story_53}
+  
+Affected Resource is: << recruiter >>
+
+ Action of user_story_33 is: << set up >>  which is annotated with: << create >>
+ Action of user_story_53 is: << working properly >>  which is annotated with: << forbid >>
+
+Conflict Reason is: << create-forbid-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_33: #g11# as a web #recruiter# manager, i want to confirm the #recruiter# is #set up# and working properly on science360.gov.
+
+   user_story_53: #g11# as a web #recruiter# manager, i want to confirm the #recruiter# is set up and #working properly#, 
+
+Original texts of user stories are: 
+   user_story_33: #G11# As a web recruiter manager, I want to confirm the recruiter is set up and working properly on Science360.gov.
+
+   user_story_53: #G11# As a web recruiter manager, I want to confirm the recruiter is set up and working properly, so that I can deploy it on more pages.

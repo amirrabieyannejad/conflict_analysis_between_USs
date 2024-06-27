@@ -1,7 +1,7 @@
 package org.henshin.backlogconflict.code.report;
 //Stores effective value of \textit{Persona}
 //as a persona and \textit{Primary Action} as an action.
-public class TriggersPair extends RedundancyItems{
+public class TriggersPair extends ConflictItems{
 	private String persona;
 	private String action;
 

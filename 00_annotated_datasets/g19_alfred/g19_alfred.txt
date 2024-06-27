@@ -1,0 +1,245 @@
+
+
+********************* << Dataset: g19_alfred >> ***************
+* Table of potential conflict between user stories
+
+        us_20  us_69  us_98  us_118  us_21  us_68  us_111  us_114  us_51  us_100  us_102  us_16  us_17  us_18  us_65  us_19  us_77  us_101  
+us_20          x                                                   x                      x      x                                          
+us_69   x                                                                                                                                   
+us_98                        x                                                                                                              
+us_118                x                                                                                                             x       
+us_21                                       x                                                                                               
+us_68                                x                                                                                                      
+us_111                                                     x                                                                                
+us_114                                             x                                                                                        
+us_51   x                                                                                                                                   
+us_100                                                                            x                                                         
+us_102                                                                    x                                                                 
+us_16   x                                                                                                                                   
+us_17   x                                                                                                                                   
+us_18                                                                                                          x                            
+us_65                                                                                                   x                                   
+us_19                                                                                                                        x              
+us_77                                                                                                                 x                     
+us_101                       x                                                                                                              
+
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_20_AND_user_story_69}
+  
+Affected Resource is: << alfred >>
+
+ Action of user_story_20 is: << keep >>  which is annotated with: << forbid >>
+ Action of user_story_69 is: << want >>  which is annotated with: << create >>
+
+Conflict Reason is: << forbid-create-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_20: #g19# as an olderperson, i want to have a very good battery for #alfred# so i can #keep# him on the whole day.
+
+   user_story_69: #g19# as a socialcaregiver, i #want# #alfred# to remind me of the things i need to bring to the person i care for.
+
+Original texts of user stories are: 
+   user_story_20: #G19# As an OlderPerson, I want to have a very good battery for ALFRED so I can keep him on the whole day.
+
+   user_story_69: #G19# As a SocialCaregiver, I want ALFRED to remind me of the things I need to bring to the person I care for.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_98_AND_user_story_118}
+  
+Affected Resource is: << exercises >>
+
+ Action of user_story_98 is: << do >>  which is annotated with: << delete >>
+ Action of user_story_118 is: << performed wrong >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_98: #g19# as an olderperson, i want to have alfred to give me goals and missions that encourage me to #do# new activities and #exercises# and to go out.
+
+   user_story_118: #g19# as a medicalcaregiver, i want to give corrective feedback if #exercises# are #performed wrong#, too much or in any other way harmful to the user.
+
+Original texts of user stories are: 
+   user_story_98: #G19# As an OlderPerson, I want to have ALFRED to give me goals and missions that encourage me to do new activities and exercises and to go out.
+
+   user_story_118: #G19# As a MedicalCaregiver, I want to give corrective feedback if exercises are performed wrong, too much or in any other way harmful to the user.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_21_AND_user_story_68}
+  
+Affected Resource is: << house >>
+
+ Action of user_story_21 is: << leaving >>  which is annotated with: << delete >>
+ Action of user_story_68 is: << leave >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_21: #g19# as an olderperson, i want to have an alfred device that informs me about a low battery when #leaving# the #house#.
+
+   user_story_68: #g19# as an olderperson, i want to receive a reminder from alfred on all the things i need to bring with me when i #leave# the #house#.
+
+Original texts of user stories are: 
+   user_story_21: #G19# As an OlderPerson, I want to have an ALFRED device that informs me about a low battery when leaving the house.
+
+   user_story_68: #G19# As an OlderPerson, I want to receive a reminder from ALFRED on all the things I need to bring with me when I leave the house.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_111_AND_user_story_114}
+  
+Affected Resource is: << exercise >>
+
+ Action of user_story_111 is: << do >>  which is annotated with: << preserve >>
+ Action of user_story_114 is: << does >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_111: #g19# as an olderperson, i want to have alfred to help to motivate me during the week to #do# #exercise# that should change daily, as the constant change motivates me.
+
+   user_story_114: #g19# as a medicalcaregiver, i want to control if the user #does# the #exercise# correct.
+
+Original texts of user stories are: 
+   user_story_111: #G19# As an OlderPerson, I want to have ALFRED to help to motivate me during the week to do exercise that should change daily, as the constant change motivates me.
+
+   user_story_114: #G19# As a MedicalCaregiver, I want to control if the user does the exercise correct.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_20_AND_user_story_51}
+  
+Affected Resource is: << alfred >>
+
+ Action of user_story_20 is: << keep >>  which is annotated with: << forbid >>
+ Action of user_story_51 is: << ask >>  which is annotated with: << create >>
+
+Conflict Reason is: << forbid-create-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_20: #g19# as an olderperson, i want to have a very good battery for #alfred# so i can #keep# him on the whole day.
+
+   user_story_51: #g19# as an olderperson, i want to have #alfred# contact the nearest caregiver when i #ask# #alfred# for urgent help.
+
+Original texts of user stories are: 
+   user_story_20: #G19# As an OlderPerson, I want to have a very good battery for ALFRED so I can keep him on the whole day.
+
+   user_story_51: #G19# As an OlderPerson, I want to have ALFRED contact the nearest caregiver when I ask ALFRED for urgent help.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_100_AND_user_story_102}
+  
+Affected Resource is: << games >>
+
+ Action of user_story_100 is: << play >>  which is annotated with: << delete >>
+ Action of user_story_102 is: << have >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_100: #g19# as an olderperson, i want to #play# #games# where i can use my imagination.
+
+   user_story_102: #g19# as an olderperson, i want to #have# #games# that include my favourite sports.
+
+Original texts of user stories are: 
+   user_story_100: #G19# As an OlderPerson, I want to play games where I can use my Imagination.
+
+   user_story_102: #G19# As an OlderPerson, I want to have games that include my favourite sports.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_16_AND_user_story_20}
+  
+Affected Resource is: << alfred >>
+
+ Action of user_story_16 is: << buy >>  which is annotated with: << create >>
+ Action of user_story_20 is: << keep >>  which is annotated with: << forbid >>
+
+Conflict Reason is: << create-forbid-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_16: #g19# as an olderperson, i want to #buy# #alfred# in a senior shop with special client support.
+
+   user_story_20: #g19# as an olderperson, i want to have a very good battery for #alfred# so i can #keep# him on the whole day.
+
+Original texts of user stories are: 
+   user_story_16: #G19# As an OlderPerson, I want to buy ALFRED in a senior shop with special client support.
+
+   user_story_20: #G19# As an OlderPerson, I want to have a very good battery for ALFRED so I can keep him on the whole day.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_17_AND_user_story_20}
+  
+Affected Resource is: << alfred >>
+
+ Action of user_story_17 is: << buy >>  which is annotated with: << create >>
+ Action of user_story_20 is: << keep >>  which is annotated with: << forbid >>
+
+Conflict Reason is: << create-forbid-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_17: #g19# as an olderperson, i want to #buy# #alfred# for a low price.
+
+   user_story_20: #g19# as an olderperson, i want to have a very good battery for #alfred# so i can #keep# him on the whole day.
+
+Original texts of user stories are: 
+   user_story_17: #G19# As an OlderPerson, I want to buy ALFRED for a low price.
+
+   user_story_20: #G19# As an OlderPerson, I want to have a very good battery for ALFRED so I can keep him on the whole day.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_18_AND_user_story_65}
+  
+Affected Resource is: << agenda >>
+
+ Action of user_story_18 is: << looking >>  which is annotated with: << preserve >>
+ Action of user_story_65 is: << manage >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_18: #g19# as an olderperson, i want to receive visual support, especially when #looking# at a list, map or #agenda#.
+
+   user_story_65: #g19# as an olderperson, i want to use alfred to #manage# my #agenda#.
+
+Original texts of user stories are: 
+   user_story_18: #G19# As an OlderPerson, I want to receive visual support, especially when looking at a list, map or agenda.
+
+   user_story_65: #G19# As an OlderPerson, I want to use ALFRED to manage my agenda.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_19_AND_user_story_77}
+  
+Affected Resource is: << small amounts >>
+
+ Action of user_story_19 is: << pay >>  which is annotated with: << delete >>
+ Action of user_story_77 is: << pay >>  which is annotated with: << delete >>
+
+Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_19: #g19# as an olderperson, i want to use alfred to #pay# for #small amounts#.
+
+   user_story_77: #g19# as an olderperson, i want to be able to #pay# for #small amounts#.
+
+Original texts of user stories are: 
+   user_story_19: #G19# As an OlderPerson, I want to use ALFRED to pay for small amounts.
+
+   user_story_77: #G19# As an OlderPerson, I want to be able to pay for small amounts.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_101_AND_user_story_118}
+  
+Affected Resource is: << exercises >>
+
+ Action of user_story_101 is: << doing >>  which is annotated with: << create >>
+ Action of user_story_118 is: << performed wrong >>  which is annotated with: << forbid >>
+
+Conflict Reason is: << create-forbid-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_101: #g19# as an olderperson, i want to do guided #exercises# with alfred and alfred should also use sensors to capture health data while i am #doing# #exercises#.
+
+   user_story_118: #g19# as a medicalcaregiver, i want to give corrective feedback if #exercises# are #performed wrong#, too much or in any other way harmful to the user.
+
+Original texts of user stories are: 
+   user_story_101: #G19# As an OlderPerson, I want to do guided exercises with ALFRED and ALFRED should also use sensors to capture health data while I am doing exercises.
+
+   user_story_118: #G19# As a MedicalCaregiver, I want to give corrective feedback if exercises are performed wrong, too much or in any other way harmful to the user.

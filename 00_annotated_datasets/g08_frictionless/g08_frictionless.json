@@ -2571,23 +2571,30 @@
             ],
             "Action": [
                 "store",
-                "don't have to retype"
+                "don t have to retype"
             ],
             "Action Rules": {
-                "Target Action Rules": [[
-                    "store",
-                    "dataset",
-                    "create"
-                ]],
-                "Contain Action Rules": [
+                "Target Action Rules": [
                     [
-                        "GitHub",
+                        "don t have to retype",
+                        "descriptive information",
+                        "preserve"
+                    ],
+                    [
+                        "store",
                         "dataset",
                         "create"
-                    ],
+                    ]
+                ],
+                "Contain Action Rules": [
                     [
                         "dataset",
                         "descriptive information",
+                        "preserve"
+                    ],
+                    [
+                        "GitHub",
+                        "dataset",
                         "create"
                     ]
                 ]
@@ -2602,10 +2609,10 @@
                     "descriptive information"
                 ]
             ],
-            "Text": "when I store my dataset in GitHub, I don't have to retype descriptive information about my dataset.",
+            "Text": "when I store my dataset in GitHub, I don t have to retype descriptive information about my dataset.",
             "Targets": [
                 [
-                    "don't have to retype",
+                    "don t have to retype",
                     "descriptive information"
                 ],
                 [
@@ -2614,7 +2621,7 @@
                 ]
             ]
         },
-        "Text": "#G08# As a ResearcherPublisher, I want an integration with Zenodo, so that when I store my dataset in GitHub, I don't have to retype descriptive information about my dataset.",
+        "Text": "#G08# As a ResearcherPublisher, I want an integration with Zenodo, so that when I store my dataset in GitHub, I don t have to retype descriptive information about my dataset.",
         "PID": "#G08#",
         "Main": {
             "Entity": [
@@ -3081,6 +3088,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G08# As a Publisher, I want to store my data quickly and easily online.",
             "Triggers": [[
                 "Publisher",
                 "store"
@@ -4047,6 +4055,7 @@
                     "useful metadata"
                 ]
             ],
+            "Text": "#G08# As a Publisher, I want to add useful metadata or add in new data columns to make the dataset more useful.",
             "Triggers": [
                 [
                     "Publisher",
@@ -4791,6 +4800,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G08# As a Publisher, I would like a tool to check data availability persistence after publication.",
             "Triggers": [[
                 "Publisher",
                 "would like"

@@ -1,0 +1,29 @@
+
+
+********************* << Dataset: g21_badcamp >> ***************
+* Table of potential conflict between user stories
+
+       us_57  us_59  
+us_57         x      
+us_59  x             
+
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_57_AND_user_story_59}
+  
+Affected Resource is: << sessions >>
+
+ Action of user_story_57 is: << bulk approve >>  which is annotated with: << create >>
+ Action of user_story_59 is: << evaluated >>  which is annotated with: << forbid >>
+
+Conflict Reason is: << create-forbid-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_57: #g21# as a administrator, i want to #bulk approve# #sessions# as accepted, 
+
+   user_story_59: #g21# as a anonymoususer, i want to receive a notification when #sessions# have been #evaluated#, 
+
+Original texts of user stories are: 
+   user_story_57: #G21# As a administrator, I want to bulk approve sessions as accepted, so that I can save time.
+
+   user_story_59: #G21# As a anonymoususer, I want to receive a notification when sessions have been evaluated, so that I know whether I've been accepted or rejected.

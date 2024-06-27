@@ -1,0 +1,157 @@
+
+
+********************* << Dataset: g12_camperplus >> ***************
+* Table of potential conflict between user stories
+
+       us_08  us_51  us_20  us_32  us_28  us_29  us_30  us_02  us_31  us_35  
+us_08         x                                                              
+us_51  x                                                                     
+us_20                       x                    x                           
+us_32                x                           x                           
+us_28                                     x                                  
+us_29                              x                                  x      
+us_30                x      x                                                
+us_02                                                          x             
+us_31                                                   x                    
+us_35                                     x                                  
+
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_08_AND_user_story_51}
+  
+Affected Resource is: << camper >>
+
+ Action of user_story_08 is: << suspend >>  which is annotated with: << delete >>
+ Action of user_story_51 is: << report >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_08: #g12# as a camp administrator, i want to be able to #suspend# a #camper# who had behavioral problems.
+
+   user_story_51: #g12# as a camp worker, i'm able to #report# a #camper# to the manager with an inappropriate behavior.
+
+Original texts of user stories are: 
+   user_story_08: #G12# As a camp administrator, I want to be able to suspend a camper who had behavioral problems.
+
+   user_story_51: #G12# As a camp worker, I'm able to report a camper to the manager with an inappropriate behavior.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_20_AND_user_story_32}
+  
+Affected Resource is: << information >>
+
+ Action of user_story_20 is: << keep >>  which is annotated with: << preserve >>
+ Action of user_story_32 is: << modify >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_20: #g12# as a camp administrator, i want to be able to #keep# my #information# in one place, 
+
+   user_story_32: #g12# as a camp administrator, i want to be able to #modify# the #information# of added parents, 
+
+Original texts of user stories are: 
+   user_story_20: #G12# As a camp administrator, I want to be able to keep my information in one place, so that the admins next year can improve on the previous years.
+
+   user_story_32: #G12# As a camp administrator, I want to be able to modify the information of added parents, so that I can keep parent's information up to date.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_28_AND_user_story_29}
+  
+Affected Resource is: << tasks >>
+
+ Action of user_story_28 is: << delete >>  which is annotated with: << delete >>
+ Action of user_story_29 is: << modify >>  which is annotated with: << delete >>
+
+Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_28: #g12# as a camp administrator, i want to be able to #delete# #tasks#/activities i scheduled, 
+
+   user_story_29: #g12# as a camp administrator, i want to be able to #modify# #tasks#/events i scheduled in case there is a change, 
+
+Original texts of user stories are: 
+   user_story_28: #G12# As a camp administrator, I want to be able to delete tasks/activities I scheduled, so that I can keep the schedule clean of unneeded activities.
+
+   user_story_29: #G12# As a camp administrator, I want to be able to modify tasks/events I scheduled in case there is a change, so that I can always keep the schedule up to date.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_30_AND_user_story_32}
+  
+Affected Resource is: << information >>
+
+ Action of user_story_30 is: << modify >>  which is annotated with: << delete >>
+ Action of user_story_32 is: << modify >>  which is annotated with: << delete >>
+
+Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_30: #g12# as a camp administrator, i want to be able to #modify# the #information# of enrolled campers, 
+
+   user_story_32: #g12# as a camp administrator, i want to be able to #modify# the #information# of added parents, 
+
+Original texts of user stories are: 
+   user_story_30: #G12# As a camp administrator, I want to be able to modify the information of enrolled campers, so that I can keep the campers information up to date.
+
+   user_story_32: #G12# As a camp administrator, I want to be able to modify the information of added parents, so that I can keep parent's information up to date.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_02_AND_user_story_31}
+  
+Affected Resource is: << campers >>
+
+ Action of user_story_02 is: << remove >>  which is annotated with: << delete >>
+ Action of user_story_31 is: << delete >>  which is annotated with: << delete >>
+
+Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_02: #g12# as a camp administrator, i want to be able to #remove# #campers# if they don't attend the camp anymore, 
+
+   user_story_31: #g12# as a camp administrator, i want to be able to #delete# #campers# from the database, 
+
+Original texts of user stories are: 
+   user_story_02: #G12# As a camp administrator, I want to be able to remove campers if they don't attend the camp anymore, so that I can keep the records organized.
+
+   user_story_31: #G12# As a camp administrator, I want to be able to delete campers from the database, so that I can keep my pages free of clutter.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_20_AND_user_story_30}
+  
+Affected Resource is: << information >>
+
+ Action of user_story_20 is: << keep >>  which is annotated with: << preserve >>
+ Action of user_story_30 is: << modify >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_20: #g12# as a camp administrator, i want to be able to #keep# my #information# in one place, 
+
+   user_story_30: #g12# as a camp administrator, i want to be able to #modify# the #information# of enrolled campers, 
+
+Original texts of user stories are: 
+   user_story_20: #G12# As a camp administrator, I want to be able to keep my information in one place, so that the admins next year can improve on the previous years.
+
+   user_story_30: #G12# As a camp administrator, I want to be able to modify the information of enrolled campers, so that I can keep the campers information up to date.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_29_AND_user_story_35}
+  
+Affected Resource is: << events >>
+
+ Action of user_story_29 is: << modify >>  which is annotated with: << delete >>
+ Action of user_story_35 is: << see only >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_29: #g12# as a camp administrator, i want to be able to #modify# tasks/#events# i scheduled in case there is a change, 
+
+   user_story_35: #g12# as a camp administrator, i want to be able to #see only# #events# for a specific group/groups on the event calendar, 
+
+Original texts of user stories are: 
+   user_story_29: #G12# As a camp administrator, I want to be able to modify tasks/events I scheduled in case there is a change, so that I can always keep the schedule up to date.
+
+   user_story_35: #G12# As a camp administrator, I want to be able to see only events for a specific group/groups on the event calendar, so that I can easily read the data on the calendar without too much clutter.

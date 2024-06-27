@@ -47,6 +47,7 @@
                 "virgin Ubuntu operating system",
                 "Neurohub node"
             ]],
+            "Text": "#G18# As a system administrator, I want to run a script that installs the Neurohub node onto a virgin Ubuntu operating system.",
             "Triggers": [[
                 "system administrator,",
                 "run"
@@ -105,6 +106,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G18# As a system administrator, I want to run a script that tests to see if a Neurohub installation is functioning correctly.",
             "Triggers": [[
                 "system administrator",
                 "run"
@@ -170,6 +172,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G18# As a release engineer, I want to call a script to execute acceptance tests against a Neurohub installation and report back the results.",
             "Triggers": [
                 [
                     "release engineer",
@@ -295,6 +298,7 @@
                 "subjects",
                 "responses"
             ]],
+            "Text": "#G18# As an MRI operator, I want to digitally record the responses that subjects make when completing paper-based forms.",
             "Triggers": [[
                 "MRI operator",
                 "digitally record"
@@ -350,6 +354,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G18# As a user, I want to navigate forwards and backwards between log books and log book pages without having to use my browser's back button.",
             "Triggers": [[
                 "user",
                 "navigate forwards and backwards"
@@ -404,6 +409,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G18# As a lab administrator, I want to theme the Web interface graphics/colours.",
             "Triggers": [[
                 "lab administrator",
                 "theme"
@@ -469,6 +475,7 @@
                 "Ubuntu 10.04 LTS machine",
                 "Neurohub dependencies"
             ]],
+            "Text": "#G18# As a systems administrator, I want  to install Neurohub dependencies into an Ubuntu 10.04 LTS machine using the normal Ubuntu package management tools.",
             "Triggers": [[
                 "systems administrator",
                 "install"
@@ -548,6 +555,7 @@
                     "file"
                 ]
             ],
+            "Text": "#G18# As a researcher, I want to create a log book page for an experiment and attach a file to this page.",
             "Triggers": [
                 [
                     "researcher",
@@ -642,6 +650,7 @@
                     "directory"
                 ]
             ],
+            "Text": "#G18# As a researcher, I want to create a log book page for an experiment and attach a directory that contains multiple files.",
             "Triggers": [
                 [
                     "researcher",
@@ -712,6 +721,7 @@
                 "log book page",
                 "files"
             ]],
+            "Text": "#G18# As a researcher, I want to upload files prior to having them attached to a log book page.",
             "Triggers": [[
                 "researcher",
                 "upload"
@@ -783,6 +793,7 @@
                 "log book page",
                 "files"
             ]],
+            "Text": "#G18# As a researcher, I want to upload files prior to having them attached to a log book page using the web interface.",
             "Triggers": [[
                 "researcher",
                 "upload"
@@ -858,6 +869,7 @@
                 "log book page",
                 "files"
             ]],
+            "Text": "#G18# As a researcher, I want to upload files prior to having them attached to a log book page using a mapped network drive.",
             "Triggers": [[
                 "researcher",
                 "upload"
@@ -916,6 +928,7 @@
                 "log book page",
                 "currently non-attached files"
             ]],
+            "Text": "#G18# As a researcher, I want to attach currently non-attached files to a log book page.",
             "Triggers": [[
                 "researcher",
                 "attach"
@@ -971,6 +984,7 @@
                     "any unattached files"
                 ]
             ],
+            "Text": "#G18# As a researcher, I want to receive an alert of any unattached files that are in my workspace.",
             "Triggers": [[
                 "researcher",
                 "receive"
@@ -1030,6 +1044,7 @@
                 "experiment",
                 "files"
             ]],
+            "Text": "#G18# As a researcher, I want to download files attached to an experiment using my Web browser.",
             "Triggers": [[
                 "researcher",
                 "download"
@@ -1109,6 +1124,7 @@
                     "network drive"
                 ]
             ],
+            "Text": "#G18# As a researcher, I want to access files stored in my Neurohub workspace, using a network drive attached to my workstation.",
             "Triggers": [[
                 "researcher",
                 "access"
@@ -1153,6 +1169,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G18# As a researcher, I want to create a log book page.",
             "Triggers": [[
                 "researcher",
                 "create"
@@ -1228,6 +1245,7 @@
                     "results"
                 ]
             ],
+            "Text": "#G18# As a release engineer, I want to configure nightly builds that automatically perform a Neurohub installation on a virgin operating system, execute tests and report back results, without requiring any manual input/interaction.",
             "Triggers": [[
                 "release engineer",
                 "configure"
@@ -1276,6 +1294,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G18# As a supervisor, I want to view what my researchers were doing on a given date or period of time.",
             "Triggers": [[
                 "supervisor",
                 "view"
@@ -1324,6 +1343,7 @@
                 "large files",
                 "over 1GB"
             ]],
+            "Text": "#G18# As a user, I want to upload large files of over 1GB in size.",
             "Triggers": [[
                 "user",
                 "upload"
@@ -1372,6 +1392,7 @@
                 "files",
                 "tags"
             ]],
+            "Text": "#G18# As a user, I want to assign tags to files that I have uploaded.",
             "Triggers": [[
                 "user",
                 "assign"
@@ -1434,6 +1455,7 @@
                     "type"
                 ]
             ],
+            "Text": "#G18# As a user, I want to assign bespoke information to a file dependent on its type.",
             "Triggers": [[
                 "user",
                 "assign"
@@ -1496,6 +1518,7 @@
                     "type"
                 ]
             ],
+            "Text": "#G18# As a user, I want to filter the files I get from search results based on their  type.",
             "Triggers": [[
                 "user",
                 "filter"
@@ -1537,6 +1560,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G18# As a user, I want to use the tags that I use are part of a controlled vocabulary.",
             "Triggers": [[
                 "user",
                 "use"
@@ -1575,6 +1599,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G18# As a user, I want to make uploaded data files to be non-modifiable.",
             "Triggers": [[
                 "user",
                 "make"
@@ -1623,6 +1648,7 @@
                 "files",
                 "predicated links"
             ]],
+            "Text": "#G18# As a user, I want to make predicated links between files.",
             "Triggers": [[
                 "user",
                 "make"
@@ -1664,6 +1690,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G18# As a user, I want to restrict what can be entered to a metadata field.",
             "Triggers": [[
                 "user",
                 "restrict"
@@ -1702,6 +1729,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G18# As a user, I want to have files I might accidentally delete to be restorable.",
             "Triggers": [[
                 "user",
                 "have"
@@ -1750,6 +1778,7 @@
                 "uploaded file",
                 "older version"
             ]],
+            "Text": "#G18# As a user, I want to revert to an older version of an uploaded file.",
             "Triggers": [[
                 "user",
                 "revert to"
@@ -1801,6 +1830,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G18# As a user, I want to have a visual way of viewing particular files uploaded over a time period.",
             "Triggers": [[
                 "user",
                 "have"
@@ -1855,6 +1885,7 @@
                 "experiment",
                 "files"
             ]],
+            "Text": "#G18# As a user, I want to associate together files involved in a experiment.",
             "Triggers": [[
                 "user",
                 "associate together"
@@ -1903,6 +1934,7 @@
                 "system",
                 "managed backup protocol"
             ]],
+            "Text": "#G18# As a system administrator, I want to have a managed backup protocol for the system.",
             "Triggers": [[
                 "system administrator",
                 "have"
@@ -1961,6 +1993,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G18# As a user, I want to enter metadata / describe an experiment protocol before a file is even created.",
             "Triggers": [
                 [
                     "user",
@@ -2036,6 +2069,7 @@
                 "system",
                 "increased access"
             ]],
+            "Text": "#G18# As lab administrator, I want to have increased access to the system to support regular users.",
             "Triggers": [[
                 "lab administrator",
                 "have"
@@ -2093,6 +2127,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G18# As a user, I want to link together experimental runs to build an experiment.",
             "Triggers": [[
                 "user",
                 "link together"
@@ -2147,6 +2182,7 @@
                 "page templates",
                 "bespoke metadata fields"
             ]],
+            "Text": "#G18# As a lab administrator, I want to create page templates with bespoke metadata fields.",
             "Triggers": [[
                 "lab administrator",
                 "create"
@@ -2195,6 +2231,7 @@
                 "each file created in an experimental run",
                 "same metadata"
             ]],
+            "Text": "#G18# As a user, I want to capture the same metadata for each file created in an experimental run.",
             "Triggers": [[
                 "user",
                 "capture"
@@ -2247,6 +2284,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G18# As a lab administrator, I want a way of managing worm strain stocks that is integrated with Wormbase.",
             "Triggers": [[
                 "lab administrator",
                 "want"
@@ -2301,6 +2339,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G18# As a user, I want to search for and download human-readable experimental protocols.",
             "Triggers": [
                 [
                     "user",
@@ -2370,6 +2409,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G18# As a user, I want to modify or branch an experimental protocol, whilst retaining the original.",
             "Triggers": [
                 [
                     "user",
@@ -2437,6 +2477,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G18# As a user, I want to view how an experimental protocol has evolved over time.",
             "Triggers": [[
                 "user",
                 "view"
@@ -2502,6 +2543,7 @@
                 "any stag",
                 "metadata"
             ]],
+            "Text": "#G18# As a user, I want to create a protocol and assign metadata to any stag.",
             "Triggers": [
                 [
                     "user",
@@ -2558,6 +2600,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G18# As a user, I want to prove definitively that I created a page on a certain date.",
             "Triggers": [[
                 "user",
                 "prove definitively"
@@ -2606,6 +2649,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G18# As a user, I want to manage the references / papers I have investigated.",
             "Triggers": [[
                 "user",
                 "manage"
@@ -2653,6 +2697,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G18# As a user, I want to search specifically for files rather than log book pages.",
             "Triggers": [[
                 "user",
                 "search specifically"
@@ -2708,6 +2753,7 @@
                     "particular set"
                 ]
             ],
+            "Text": "#G18# As a user, I want to limit my search to a particular set of log books.",
             "Triggers": [[
                 "user",
                 "limit"
@@ -2770,6 +2816,7 @@
                     "one or more log books"
                 ]
             ],
+            "Text": "#G18# As a user, I want to limit my search results to one or more log book sections from one or more log books.",
             "Triggers": [[
                 "user",
                 "limit"
@@ -2818,6 +2865,7 @@
                 "search results page",
                 "files"
             ]],
+            "Text": "#G18# As a user, I want to download files directly from the search results page.",
             "Triggers": [[
                 "user",
                 "download"
@@ -2880,6 +2928,7 @@
                     "provenance"
                 ]
             ],
+            "Text": "#G18# As a user, I want to see the provenance of the page as part of the search results.",
             "Triggers": [[
                 "user",
                 "see"
@@ -2928,6 +2977,7 @@
                 "log book page",
                 "multiple files"
             ]],
+            "Text": "#G18# As a user, I want to attach multiple files at once to a log book page.",
             "Triggers": [[
                 "user",
                 "attach"
@@ -2976,6 +3026,7 @@
                 "search results",
                 "multiple files"
             ]],
+            "Text": "#G18# As a user, I want to download multiple files from the search results in one go.",
             "Triggers": [[
                 "user",
                 "download"
@@ -3042,6 +3093,7 @@
                     "tables"
                 ]
             ],
+            "Text": "#G18# As a user, I want to draw tables using HTML tags as part of the content of a log book page.",
             "Triggers": [[
                 "user",
                 "draw"
@@ -3117,6 +3169,7 @@
                     "events"
                 ]
             ],
+            "Text": "#G18# As a lab member, I want to view events and equipment bookings within the group.",
             "Triggers": [[
                 "lab member",
                 "view"
@@ -3179,6 +3232,7 @@
                     "worm analysis software"
                 ]
             ],
+            "Text": "#G18# As a user, I want to store worm behaviour videos with an encoding that can be analysed by the worm analysis software written by Christopher James.",
             "Triggers": [[
                 "user",
                 "store"
@@ -3250,6 +3304,7 @@
                     "data"
                 ]
             ],
+            "Text": "#G18# As a system administrator, I want to migrate data from an older version of NeuroHub to the current version.",
             "Triggers": [[
                 "system administrator",
                 "migrate"
@@ -3302,6 +3357,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G18# As a user, I want to have the system to also forward important news items to an external mailing list.",
             "Triggers": [[
                 "user",
                 "have"
@@ -3391,6 +3447,7 @@
                     "consumables"
                 ]
             ],
+            "Text": "#G18# As a user, I want to view and update an inventory of of the equipment and consumables that are present in the centre.",
             "Triggers": [
                 [
                     "user",
@@ -3584,6 +3641,7 @@
                     "feedback"
                 ]
             ],
+            "Text": "#G18# As a supervisor, I want to create feedback forms within Neurohub, that my students can fill in and submit, in order to provide me with feedback about the course that they attended.",
             "Triggers": [[
                 "supervisor",
                 "create"
@@ -3664,6 +3722,7 @@
                 "Twitter feed",
                 "posted content"
             ]],
+            "Text": "#G18# As a user, I want to have the option to tell Neurohub to push posted content to my Twitter feed at the same time.",
             "Triggers": [[
                 "user",
                 "have"
@@ -3733,6 +3792,7 @@
                 "individuals",
                 "logbook entry"
             ]],
+            "Text": "#G18# As a user, I want to either keep a logbook entry private or share it with individuals rather than groups.",
             "Triggers": [[
                 "user",
                 "either keep"
@@ -3818,6 +3878,7 @@
                     "details"
                 ]
             ],
+            "Text": "#G18# As a user, I want to have the details of the workflow execution to be recorded in a neurohub log book while executing a workflow.",
             "Triggers": [[
                 "user",
                 "have"
@@ -3954,6 +4015,7 @@
                     "group's shared calendars"
                 ]
             ],
+            "Text": "#G18# As a user, I want to view the group's shared calendars via the Neurohub Nodes' Web page as well as on my mobile device.",
             "Triggers": [[
                 "user",
                 "view"
@@ -3999,6 +4061,7 @@
                 "web-based Calendar",
                 "Google Calendar"
             ]],
+            "Text": "#G18# As a user, I want to sync events created in NeuroHub with a web-based Calendar such as Google Calendar.",
             "Triggers": [[
                 "user",
                 "sync"
@@ -4058,6 +4121,7 @@
                 "logbook entries",
                 "Greek symbols"
             ]],
+            "Text": "#G18# As a researcher, I want to have the ability to insert Greek symbols into my logbook entries.",
             "Triggers": [[
                 "researcher",
                 "have"
@@ -4135,6 +4199,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G18# As a user, I want to have the ability to move multiple files around and rearrange them using the Neurohub file browser while processing data.",
             "Triggers": [[
                 "user",
                 "have"
@@ -4227,6 +4292,7 @@
                     "notifications"
                 ]
             ],
+            "Text": "#G18# As a researcher, I want to point my Mendeley client at a group-wide shared repository of research papers and get notifications via Mendeley when new content is added.",
             "Triggers": [
                 [
                     "researcher",
@@ -4302,6 +4368,7 @@
                 "particular experiment",
                 "data sets"
             ]],
+            "Text": "#G18# As a researcher, I want to have electronic support for keeping track of which data sets were used/output/modified as part of a particular experiment.",
             "Triggers": [[
                 "researcher",
                 "have"
@@ -4721,6 +4788,7 @@
                 "library",
                 "data"
             ]],
+            "Text": "#G18# As a researcher, I want to collect data as a library of data, which can then be used by one or multiple experiments that are defined at a later stage.",
             "Triggers": [[
                 "researcher",
                 "collect"
@@ -4800,6 +4868,7 @@
                     "experimental data"
                 ]
             ],
+            "Text": "#G18# As a researcher, I want to indicate within my electronic log book which experimental data is good/bad, hide the bad data, but still keep it in the system just in case it is useful in the future.",
             "Triggers": [[
                 "researcher",
                 "indicate"
@@ -5246,6 +5315,7 @@
                 "images",
                 "cells"
             ]],
+            "Text": "#G18# As a researcher, I want to have the ability to search for images of cells using standard meta data.",
             "Triggers": [[
                 "researcher",
                 "have"
@@ -5321,6 +5391,7 @@
                 "system",
                 "new data"
             ]],
+            "Text": "#G18# As a researcher, I want to have at least some meta data to be automatically inserted when new data is added to the system.",
             "Triggers": [[
                 "researcher",
                 "have"
@@ -5404,6 +5475,7 @@
                     "detailed meta data"
                 ]
             ],
+            "Text": "#G18# As a researcher,  I want to have the ability to attach detailed meta data to the data and entries that I create.",
             "Triggers": [[
                 "researcher",
                 "have"
@@ -5599,6 +5671,7 @@
                     "file"
                 ]
             ],
+            "Text": "#G18# As a user, I want to be sure that existing metadata corresponding to the file is not lost when moving a file to a new location.",
             "Triggers": [[
                 "user",
                 "be sure"
@@ -5765,6 +5838,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G18# As a researcher, I want to have the ability to locate experiment files using meta data, regardless of where those files are located.",
             "Triggers": [[
                 "researcher",
                 "have"
@@ -5926,6 +6000,7 @@
                 "system",
                 "data"
             ]],
+            "Text": "#G18# As a user,  I want to have the ability to keep my data private on the system, and only share data that I deem should be shared.",
             "Triggers": [[
                 "user",
                 "have"
@@ -6093,6 +6168,7 @@
                     "format"
                 ]
             ],
+            "Text": "#G18# As a researcher, I want to have the ability to search for files by file type and format.",
             "Triggers": [[
                 "researcher",
                 "have"
@@ -6156,6 +6232,7 @@
                 "Contain Action Rules": []
             },
             "Contains": [],
+            "Text": "#G18# As a researcher,  I want to have the ability to bulk upload directories and files with minimal effort.",
             "Triggers": [[
                 "researcher",
                 "have"
@@ -6338,6 +6415,7 @@
                     "sharing"
                 ]
             ],
+            "Text": "#G18# As a user,  I want to have the ability to change the sharing and ownership of multiple files.",
             "Triggers": [[
                 "user",
                 "have"
@@ -6405,6 +6483,7 @@
                 "groups",
                 "researchers"
             ]],
+            "Text": "#G18# As a researcher,  I want to have the ability to restrict the data I share to certain researchers or groups of researchers.",
             "Triggers": [[
                 "researcher",
                 "have"
@@ -6476,6 +6555,7 @@
                 "colleagues",
                 "data"
             ]],
+            "Text": "#G18# As a researcher,  I want to have the ability to locate and access data that colleagues want to share.",
             "Triggers": [[
                 "researcher",
                 "have"
@@ -6681,6 +6761,7 @@
                 "Neurohub node",
                 "remote access"
             ]],
+            "Text": "#G18# As a researcher, I want to secure remote access to the Neurohub node when working away from the laboratory",
             "Triggers": [[
                 "researcher",
                 "secure"
@@ -6801,6 +6882,7 @@
                     "comments"
                 ]
             ],
+            "Text": "#G18# As a researcher, I want to have a group-level repository for sharing papers/reviews/comments with other researchers.",
             "Triggers": [[
                 "researcher",
                 "have"
@@ -6900,6 +6982,7 @@
                     "results"
                 ]
             ],
+            "Text": "#G18# As a researcher, I want to have the details of the workflow plan as well as the execution history and results recorded in Neurohub while executing a workflow",
             "Triggers": [[
                 "researcher",
                 "have"

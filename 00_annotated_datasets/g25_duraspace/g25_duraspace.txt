@@ -1,0 +1,73 @@
+
+
+********************* << Dataset: g25_duraspace >> ***************
+* Table of potential conflict between user stories
+
+       us_08  us_10  us_80  us_81  us_89  us_93  
+us_08         x                                  
+us_10  x                                         
+us_80                       x                    
+us_81                x                           
+us_89                                     x      
+us_93                              x             
+
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_08_AND_user_story_10}
+  
+Affected Resource is: << collection >>
+
+ Action of user_story_08 is: << limiting >>  which is annotated with: << forbid >>
+ Action of user_story_10 is: << describe >>  which is annotated with: << create >>
+
+Conflict Reason is: << forbid-create-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_08: #g25# as a repository manager, i want to compose collections, #limiting# the #collection# to the items sharing the same provenance, #limiting# the #collection# to represent a part of a #collection# have a singular provenance, or assembly a #collection# from other collections and objects.
+
+   user_story_10: #g25# as a repository manager, i want to #describe# a #collection#, including its title, it's inclusive / bulk dates, its language(s), and many other aspects.
+
+Original texts of user stories are: 
+   user_story_08: #G25# As a repository manager, I want to compose collections, limiting the collection to the items sharing the same provenance, limiting the collection to represent a part of a collection have a singular provenance, or assembly a collection from other collections and objects.
+
+   user_story_10: #G25# As a repository manager, I want to describe a collection, including its title, it's inclusive / bulk dates, its language(s), and many other aspects.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_80_AND_user_story_81}
+  
+Affected Resource is: << checksum >>
+
+ Action of user_story_80 is: << changed >>  which is annotated with: << delete >>
+ Action of user_story_81 is: << changed >>  which is annotated with: << delete >>
+
+Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_80: #g25# as a repository manager, i want to know if the #checksum# for any of my repository's content files that have #changed#.
+
+   user_story_81: #g25# as a dams manager, i want to know, via the preservation manager, of all files for which the #checksum# has #changed# since last registered.
+
+Original texts of user stories are: 
+   user_story_80: #G25# As a repository manager, I want to know if the checksum for any of my repository's content files that have changed.
+
+   user_story_81: #G25# As a DAMS manager, I want to know, via the preservation manager, of all files for which the checksum has changed since last registered.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_89_AND_user_story_93}
+  
+Affected Resource is: << application >>
+
+ Action of user_story_89 is: << modified >>  which is annotated with: << delete >>
+ Action of user_story_93 is: << modified >>  which is annotated with: << delete >>
+
+Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_89: #g25# as a dams manager, i want to know when the #application# of a statute to an object or object component has been #modified#, either manually or automatically.
+
+   user_story_93: #g25# as a dams manager, i want to know if #application# of a library policy to an object or object component has been #modified#, either manually or automatically.
+
+Original texts of user stories are: 
+   user_story_89: #G25# As a DAMS manager, I want to know when the application of a statute to an object or object component has been modified, either manually or automatically.
+
+   user_story_93: #G25# As a DAMS manager, I want to know if application of a library policy to an object or object component has been modified, either manually or automatically.

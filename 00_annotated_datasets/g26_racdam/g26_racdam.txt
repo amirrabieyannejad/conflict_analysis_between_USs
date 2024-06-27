@@ -1,0 +1,242 @@
+
+
+********************* << Dataset: g26_racdam >> ***************
+* Table of potential conflict between user stories
+
+       us_28  us_83  us_15  us_91  us_93  us_85  us_84  us_09  us_51  us_04  us_39  us_10  us_11  us_86  us_55  
+us_28         x                    x      x      x                                                x      x      
+us_83  x                                                                                                        
+us_15                       x                                                                                   
+us_91                x                                                                                          
+us_93  x                                                                                                        
+us_85  x                                                                                   x                    
+us_84  x                                                                                                        
+us_09                                                          x                                                
+us_51                                                   x                           x                           
+us_04                                                                        x                                  
+us_39                                                                 x                                         
+us_10                                                          x                                                
+us_11                                     x                                                                     
+us_86  x                                                                                                        
+us_55  x                                                                                                        
+
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_28_AND_user_story_83}
+  
+Affected Resource is: << images >>
+
+ Action of user_story_28 is: << rotate >>  which is annotated with: << delete >>
+ Action of user_story_83 is: << search >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_28: #g26# as an archivist, i want to #rotate# #images#, 
+
+   user_story_83: #g26# as an archivist, i want to #search# #images# by photographer.
+
+Original texts of user stories are: 
+   user_story_28: #G26# As an archivist, I want to rotate images, so that I can orient them correctly.
+
+   user_story_83: #G26# As an archivist, I want to search images by photographer.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_15_AND_user_story_91}
+  
+Affected Resource is: << metadata >>
+
+ Action of user_story_15 is: << batch edit >>  which is annotated with: << delete >>
+ Action of user_story_91 is: << access >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_15: #g26# as an archivist, i want to #batch edit# #metadata# about files.
+
+   user_story_91: #g26# as an archivist, i want to #access# #metadata# and visual representations of index cards, 
+
+Original texts of user stories are: 
+   user_story_15: #G26# As an archivist, I want to batch edit metadata about files.
+
+   user_story_91: #G26# As an archivist, I want to access metadata and visual representations of index cards, so that I can use that information to assist researchers.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_28_AND_user_story_93}
+  
+Affected Resource is: << images >>
+
+ Action of user_story_28 is: << rotate >>  which is annotated with: << delete >>
+ Action of user_story_93 is: << search >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_28: #g26# as an archivist, i want to #rotate# #images#, 
+
+   user_story_93: #g26# as an archivist, i want to #search# #images# by uploading an image, 
+
+Original texts of user stories are: 
+   user_story_28: #G26# As an archivist, I want to rotate images, so that I can orient them correctly.
+
+   user_story_93: #G26# As an archivist, I want to search images by uploading an image, so that so I can find images when i don't have any metadata.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_28_AND_user_story_85}
+  
+Affected Resource is: << images >>
+
+ Action of user_story_28 is: << rotate >>  which is annotated with: << delete >>
+ Action of user_story_85 is: << search >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_28: #g26# as an archivist, i want to #rotate# #images#, 
+
+   user_story_85: #g26# as an archivist, i want to #search# #images# by place the photo was taken.
+
+Original texts of user stories are: 
+   user_story_28: #G26# As an archivist, I want to rotate images, so that I can orient them correctly.
+
+   user_story_85: #G26# As an archivist, I want to search images by place the photo was taken.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_28_AND_user_story_84}
+  
+Affected Resource is: << images >>
+
+ Action of user_story_28 is: << rotate >>  which is annotated with: << delete >>
+ Action of user_story_84 is: << search >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_28: #g26# as an archivist, i want to #rotate# #images#, 
+
+   user_story_84: #g26# as an archivist, i want to #search# #images# by people represented in them.
+
+Original texts of user stories are: 
+   user_story_28: #G26# As an archivist, I want to rotate images, so that I can orient them correctly.
+
+   user_story_84: #G26# As an archivist, I want to search images by people represented in them.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_09_AND_user_story_51}
+  
+Affected Resource is: << access >>
+
+ Action of user_story_09 is: << restrict >>  which is annotated with: << forbid >>
+ Action of user_story_51 is: << provide >>  which is annotated with: << create >>
+
+Conflict Reason is: << forbid-create-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_09: #g26# as an archivist, i want to #restrict# #access# to some files by ip address, 
+
+   user_story_51: #g26# as an archivist, i want to #provide# #access# to digital copies of unprocessed material, 
+
+Original texts of user stories are: 
+   user_story_09: #G26# As an archivist, I want to restrict access to some files by IP address, so that I can give reading room access only to certain digital files.
+
+   user_story_51: #G26# As an archivist, I want to provide access to digital copies of unprocessed material, so that donors can access things they have given us.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_04_AND_user_story_39}
+  
+Affected Resource is: << file >>
+
+ Action of user_story_04 is: << restrict >>  which is annotated with: << forbid >>
+ Action of user_story_39 is: << download >>  which is annotated with: << create >>
+
+Conflict Reason is: << forbid-create-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_04: #g26# as an archivist, i want to #restrict# a #file# from view.
+
+   user_story_39: #g26# as a researcher, i want to #download# a #file#, 
+
+Original texts of user stories are: 
+   user_story_04: #G26# As an archivist, I want to restrict a file from view.
+
+   user_story_39: #G26# As a researcher, I want to download a file, so that I can use it for research without having to come to the reading room.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_10_AND_user_story_51}
+  
+Affected Resource is: << access >>
+
+ Action of user_story_10 is: << restrict >>  which is annotated with: << forbid >>
+ Action of user_story_51 is: << provide >>  which is annotated with: << create >>
+
+Conflict Reason is: << forbid-create-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_10: #g26# as an archivist, i want to #restrict# #access# to certain files by user, 
+
+   user_story_51: #g26# as an archivist, i want to #provide# #access# to digital copies of unprocessed material, 
+
+Original texts of user stories are: 
+   user_story_10: #G26# As an archivist, I want to restrict access to certain files by user, so that I can allow donor representatives to see certain files.
+
+   user_story_51: #G26# As an archivist, I want to provide access to digital copies of unprocessed material, so that donors can access things they have given us.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_11_AND_user_story_85}
+  
+Affected Resource is: << photo >>
+
+ Action of user_story_11 is: << scanned >>  which is annotated with: << preserve >>
+ Action of user_story_85 is: << taken >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_11: #g26# as an archivist, i want to know if a #photo# has already been #scanned#, 
+
+   user_story_85: #g26# as an archivist, i want to search images by place the #photo# was #taken#.
+
+Original texts of user stories are: 
+   user_story_11: #G26# As an archivist, I want to know if a photo has already been scanned, so that I can license it to a researcher.
+
+   user_story_85: #G26# As an archivist, I want to search images by place the photo was taken.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_28_AND_user_story_86}
+  
+Affected Resource is: << images >>
+
+ Action of user_story_28 is: << rotate >>  which is annotated with: << delete >>
+ Action of user_story_86 is: << search >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_28: #g26# as an archivist, i want to #rotate# #images#, 
+
+   user_story_86: #g26# as an archivist, i want to #search# #images# by rights.
+
+Original texts of user stories are: 
+   user_story_28: #G26# As an archivist, I want to rotate images, so that I can orient them correctly.
+
+   user_story_86: #G26# As an archivist, I want to search images by rights.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_28_AND_user_story_55}
+  
+Affected Resource is: << images >>
+
+ Action of user_story_28 is: << rotate >>  which is annotated with: << delete >>
+ Action of user_story_55 is: << look >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_28: #g26# as an archivist, i want to #rotate# #images#, 
+
+   user_story_55: #g26# as a donor representative, i want to #look# at #images# that have been scanned from my collection,  
+
+Original texts of user stories are: 
+   user_story_28: #G26# As an archivist, I want to rotate images, so that I can orient them correctly.
+
+   user_story_55: #G26# As a donor representative, I want to look at images that have been scanned from my collection, so that so that I can use them in my institutions exhibits, reports etc.

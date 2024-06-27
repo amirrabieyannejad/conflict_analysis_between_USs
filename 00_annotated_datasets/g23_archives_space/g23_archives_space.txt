@@ -1,0 +1,73 @@
+
+
+********************* << Dataset: g23_archives_space >> ***************
+* Table of potential conflict between user stories
+
+       us_43  us_47  us_30  us_32  us_03  us_12  
+us_43         x                                  
+us_47  x                                         
+us_30                       x                    
+us_32                x                           
+us_03                                     x      
+us_12                              x             
+
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_43_AND_user_story_47}
+  
+Affected Resource is: << archival descriptions >>
+
+ Action of user_story_43 is: << update >>  which is annotated with: << delete >>
+ Action of user_story_47 is: << view >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_43: #g23# as a repository manager , i want to create, #update# and delete #archival descriptions# in my repository.
+
+   user_story_47: #g23# as a readonly user , i want to #view# #archival descriptions# in my repository.
+
+Original texts of user stories are: 
+   user_story_43: #G23# As a Repository Manager , I want to create, update and delete archival descriptions in my repository.
+
+   user_story_47: #G23# As a ReadOnly user , I want to view archival descriptions in my repository.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_30_AND_user_story_32}
+  
+Affected Resource is: << resource >>
+
+ Action of user_story_30 is: << search >>  which is annotated with: << preserve >>
+ Action of user_story_32 is: << rearrange >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_30: #g23# as an archivist, i want to #search# within a repository for #resource# and accession and digital object records.
+
+   user_story_32: #g23# as an archivist, i want to #rearrange# the #resource# and/or digital object hierarchy using keyboard-based navigation.
+
+Original texts of user stories are: 
+   user_story_30: #G23# As an archivist, I want to search within a repository for resource and accession and digital object records.
+
+   user_story_32: #G23# As an Archivist, I want to rearrange the Resource and/or Digital Object hierarchy using keyboard-based navigation.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_03_AND_user_story_12}
+  
+Affected Resource is: << enum lists >>
+
+ Action of user_story_03 is: << managing >>  which is annotated with: << preserve >>
+ Action of user_story_12 is: << managing >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_03: #g23# as a user, i want backend changes for #managing# #enum lists#.
+
+   user_story_12: #g23# as a user, i want frontend changes for #managing# #enum lists#.
+
+Original texts of user stories are: 
+   user_story_03: #G23# As a user, I want backend changes for managing enum lists.
+
+   user_story_12: #G23# As a user, I want frontend changes for managing enum lists.

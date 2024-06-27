@@ -4,7 +4,7 @@ import org.henshin.backlogconflict.code.evaluation.Evaluation;
 import org.henshin.backlogconflict.code.report.CdaReportDirIsEmpty;
 import org.henshin.backlogconflict.code.report.CdaReportDirIsNotADirectory;
 import org.henshin.backlogconflict.code.report.CdaReportDirNotFound;
-import org.henshin.backlogconflict.code.report.RedundantPair;
+import org.henshin.backlogconflict.code.report.ConflictPair;
 import org.henshin.backlogconflict.code.report.ReportExtractor;
 import org.henshin.backlogconflict.code.rule.EmptyOrNotExistJsonFile;
 import org.henshin.backlogconflict.code.rule.JsonFileNotFound;
@@ -279,7 +279,7 @@ public class ReportExtractorTest {
 		FileWriter jsonWriter = cdaConvertor.createOrOverwriteReportFile(jsonReport);
 
 		// This line should throw EmptyJsonFile exception
-		List<RedundantPair> listConflictPairs = cdaConvertor.extractReports(fileWrite, jsonWriter);
+		List<ConflictPair> listConflictPairs = cdaConvertor.extractReports(fileWrite, jsonWriter);
 		cdaConvertor.writeTable(cdaReport, listConflictPairs);
 		// System.out.println("path: "+ path);
 		// System.out.println("report: "+report);

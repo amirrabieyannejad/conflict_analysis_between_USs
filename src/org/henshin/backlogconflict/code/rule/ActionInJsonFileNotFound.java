@@ -8,5 +8,10 @@ public class ActionInJsonFileNotFound extends Exception{
 	public ActionInJsonFileNotFound(String message) {
 		super(message);
 	}
+	@FunctionalInterface
+	public
+	interface ExceptionSupplier<T extends Exception>{
+		T get() throws T;
+	}
 
 }

@@ -58,7 +58,7 @@ public class ReportExtractor {
 	}
 
 	public static void main(String[] args) throws IOException, NullPointerException, EmptyOrNotExistJsonFile,
-			CdaReportDirNotFound, JsonFileNotFound, CdaReportDirIsNotADirectory, CdaReportDirIsEmpty {
+			CdaReportDirNotFound, JsonFileNotFound, , CdaReportDirIsEmpty {
 
 //		 String[] datasets = { "03", "04", "05", "08", "10", "11", "12", "14", "16",
 //		 "21", "22", "23", "24",
@@ -86,7 +86,7 @@ public class ReportExtractor {
 			File jsonReport = new File(cdaConvertor.getFinalReportDir(path) + "\\Textual_Report_g" + datasets[i]
 					+ "\\JSON_Report_g" + datasets[i] + ".json");
 			FileWriter jsonWriter = cdaConvertor.createOrOverwriteReportFile(jsonReport);
-			List<RedundantPair> listConflictPairs = cdaConvertor.extractReports(fileWriter, jsonWriter);
+			List<ConflictPair> listConflictPairs = cdaConvertor.extractReports(fileWriter, jsonWriter);
 			cdaConvertor.writeTable(cdaReport, listConflictPairs);
 			long endTime = System.nanoTime();
 			double elapsedTimeInSeconds= (endTime-startTime)/ 1_000_000_000.0;
@@ -174,15 +174,15 @@ public class ReportExtractor {
 		}
 	}
 
-	public List<RedundantPair> extractReports(FileWriter fileWriter, FileWriter jsonWriter)
+	public List<ConflictPair> extractReports(FileWriter fileWriter, FileWriter jsonWriter)
 			throws IOException, NullPointerException, EmptyOrNotExistJsonFile, CdaReportDirNotFound, JsonFileNotFound,
 			CdaReportDirIsNotADirectory, CdaReportDirIsEmpty {
 
 		// create JSON array in order to contains all redundant pairs and their
 		JSONArray jsonArray = new JSONArray();
 
-		RedundancyItems redundancyItems;
-		List<RedundantPair> redundantPairs;
+		ConflictItems redundancyItems;
+		List<ConflictPair> redundantPairs;
 		ArrayList<String> arrayTotalElements;
 		ArrayList<String> arrayTotalElementsNames;
 		List<String> pairList = new ArrayList<>();
@@ -198,7 +198,7 @@ public class ReportExtractor {
 						JSONObject jsonRedundancyPair = new JSONObject();
 						arrayTotalElementsNames = new ArrayList<>();
 						arrayTotalElements = new ArrayList<>();
-						redundancyItems = new RedundancyItems();
+						redundancyItems = new ConflictItems();
 						String[] conflictReasonListing = conflictReasonDir.list();
 						// Iterate through conflict reasons if there is more than one conflict_reason.
 						if (conflictReasonListing.length > 1) {
@@ -289,7 +289,7 @@ public class ReportExtractor {
 
 	// Add Status Elements(Main/Benefit/Total Part Conflicted Elements) into JSON
 	// data
-	private JSONObject getRedundancyStatus(RedundancyItems redundancyItems) {
+	private JSONObject getRedundancyStatus(ConflictItems redundancyItems) {
 		JSONObject jsonRedundancyStatus = new JSONObject();
 
 		// add observed conflicted pairs in Main part sentence
@@ -647,7 +647,7 @@ public class ReportExtractor {
 	}
 
 	private void processMinimalModels(File minimalModelEcoreFile, ArrayList<String> arrayMaximalElements,
-			ArrayList<String> arrayMaximalElementsNames, RedundancyItems redundancyItems) throws IOException {
+			ArrayList<String> arrayMaximalElementsNames, ConflictItems redundancyItems) throws IOException {
 		if (minimalModelEcoreFile.exists() && minimalModelEcoreFile.length() > 0) {
 			Resource.Factory.Registry resourceFactoryRegistry = Resource.Factory.Registry.INSTANCE;
 			resourceFactoryRegistry.getExtensionToFactoryMap().put("ecore", new XMIResourceFactoryImpl());
@@ -677,7 +677,7 @@ public class ReportExtractor {
 	// Receive user stories texts with highlighted elements and
 	// return only the part/region of sentences which highlighted elements is
 	// appears
-	private void writeUsSentencePart(String string, RedundancyItems redundancyItems, FileWriter fileWriter,
+	private void writeUsSentencePart(String string, ConflictItems redundancyItems, FileWriter fileWriter,
 			JSONObject jsonObject) throws IOException {
 		String usNum1 = getUsName1(string);
 		String usNum2 = getUsName2(string);
@@ -750,7 +750,7 @@ public class ReportExtractor {
 	// in order to insert the table at the very first place of the file
 	// we need to first store the report at StringBuilder and then make
 	// file again but at this time writing the table first
-	public void writeTable(File totalCda, List<RedundantPair> redundantPairs) throws IOException {
+	public void writeTable(File totalCda, List<ConflictPair> redundantPairs) throws IOException {
 
 		List<String> pairListSeperate = new ArrayList<>();
 		StringBuilder report = new StringBuilder();
@@ -768,7 +768,7 @@ public class ReportExtractor {
 		table.append("* Table of potential redundancies between user stories"
 				+ " and the number of their overlapping elements\n\n");
 		// table.append("\t");
-		for (RedundantPair redundantPair : redundantPairs) {
+		for (ConflictPair redundantPair : redundantPairs) {
 			if (!pairListSeperate.contains(redundantPair.getRedundantPair1())) {
 				pairListSeperate.add(redundantPair.getRedundantPair1());
 			}
@@ -799,7 +799,7 @@ public class ReportExtractor {
 
 	}
 
-	private String[][] createTable(List<String> pairListSeperate2, List<RedundantPair> redundantPairs2) {
+	private String[][] createTable(List<String> pairListSeperate2, List<ConflictPair> redundantPairs2) {
 		int size = pairListSeperate2.size();
 		String[][] table = new String[size + 1][size + 1];
 
@@ -820,8 +820,8 @@ public class ReportExtractor {
 		return table;
 	}
 
-	private int getTotalRedundanciesFromPair(List<RedundantPair> redundantPairs, String pair1, String pair2) {
-		for (RedundantPair redundantPair : redundantPairs) {
+	private int getTotalRedundanciesFromPair(List<ConflictPair> redundantPairs, String pair1, String pair2) {
+		for (ConflictPair redundantPair : redundantPairs) {
 			if ((redundantPair.getRedundantPair1().equals(pair1) && redundantPair.getRedundantPair2().equals(pair2))
 					|| (redundantPair.getRedundantPair1().equals(pair2)
 							&& redundantPair.getRedundantPair2().equals(pair1))) {
@@ -851,7 +851,7 @@ public class ReportExtractor {
 		}
 	}
 
-	private boolean hasTargets(ArrayList<String> arrayMaximalElementsNames, RedundancyItems redundancyItems) {
+	private boolean hasTargets(ArrayList<String> arrayMaximalElementsNames, ConflictItems redundancyItems) {
 		for (String item : arrayMaximalElementsNames) {
 			for (Targets target : redundancyItems.getTargets()) {
 				if (item.equals(target.getName())) {
@@ -862,7 +862,7 @@ public class ReportExtractor {
 		return false;
 	}
 
-	private boolean hasActions(ArrayList<String> arrayMaximalElementsNames, RedundancyItems redundancyItems) {
+	private boolean hasActions(ArrayList<String> arrayMaximalElementsNames, ConflictItems redundancyItems) {
 		for (String item : arrayMaximalElementsNames) {
 			for (SecondaryAction secondaryAction : redundancyItems.getSecondaryAction()) {
 				if (item.equals(secondaryAction.getName())) {
@@ -878,14 +878,14 @@ public class ReportExtractor {
 		return false;
 	}
 
-	private boolean hasEntitys(ArrayList<String> arrayMaximalElementsNames, RedundancyItems redundancyItems) {
+	private boolean hasEntitys(ArrayList<String> arrayMaximalElementsNames, ConflictItems redundancyItems) {
 		for (String item : arrayMaximalElementsNames) {
 			for (SecondaryEntity secondaryEntity : redundancyItems.getSecondaryEntity()) {
 				if (item.equals(secondaryEntity.getName())) {
 					return true;
 				}
 			}
-			for (PrimaryEntity primaryEntity : redundancyItems.getPrimaryEntity()) {
+			for (Entity primaryEntity : redundancyItems.getPrimaryEntity()) {
 				if (item.equals(primaryEntity.getName())) {
 					return true;
 				}
@@ -896,7 +896,7 @@ public class ReportExtractor {
 	}
 
 	// get USs Text from JSON File and add them into redundancyItems
-	private void getUssTexts(String usPair, RedundancyItems redundancyItems)
+	private void getUssTexts(String usPair, ConflictItems redundancyItems)
 			throws JsonFileNotFound, IOException, EmptyOrNotExistJsonFile {
 		JSONArray json = null;
 		String us1 = getUsName1(usPair);
@@ -925,8 +925,8 @@ public class ReportExtractor {
 
 	}
 
-	private void writeUsText(String usPair, ArrayList<String> arrayMax, List<RedundantPair> redundantPairs,
-			RedundancyItems redundancyItems, FileWriter fileWriter, List<TargetsPair> targetsPairs,
+	private void writeUsText(String usPair, ArrayList<String> arrayMax, List<ConflictPair> redundantPairs,
+			ConflictItems redundancyItems, FileWriter fileWriter, List<TargetsPair> targetsPairs,
 			List<TriggersPair> triggersPairs, List<ContainsPair> containsPairs, JSONObject jsonRedundancyPair)
 			throws IOException, EmptyOrNotExistJsonFile, JsonFileNotFound {
 		String us1 = getUsName1(usPair);
@@ -934,7 +934,7 @@ public class ReportExtractor {
 
 		// add conflict pairs with maximal overlapping and save it
 		// in order to filling table
-		RedundantPair redundantPair = new RedundantPair();
+		ConflictPair redundantPair = new ConflictPair();
 
 		// here i try to add US_Nr from USs into the highlightConflicts
 		redundancyItems.setUsNr1(us1);
@@ -976,7 +976,7 @@ public class ReportExtractor {
 	// are exist then try to file the match is in thirdPartOfSentence of both USs
 	// then try
 	// to replace
-	private RedundancyItems highlightRedundancies(RedundancyItems redundancyItems, String usPair,
+	private ConflictItems highlightRedundancies(ConflictItems redundancyItems, String usPair,
 			List<TargetsPair> targetsPairs, List<TriggersPair> triggersPairs, List<ContainsPair> containsPairs,
 			JSONObject jsonRedundancyPair) throws IOException, EmptyOrNotExistJsonFile, JsonFileNotFound {
 
@@ -1204,7 +1204,7 @@ public class ReportExtractor {
 
 	}
 
-	private String[] applyHashSymbolContaiansMain(List<ContainsPair> containsPairs, RedundancyItems redundancyItems,
+	private String[] applyHashSymbolContaiansMain(List<ContainsPair> containsPairs, ConflictItems redundancyItems,
 			String subStringUs1, String subStringUs2, JSONObject jsonRedundancyPair) {
 		String[] usTexts = new String[4];
 		int redundancyCount = 0;
@@ -1242,7 +1242,7 @@ public class ReportExtractor {
 	}
 
 	private String[] applyHashSymbolTargetsMain(List<TargetsPair> targetsPairs, List<ContainsPair> containsPairs,
-			RedundancyItems redundancyItems, String subStringUs1, String subStringUs2, JSONObject jsonRedundancyPair) {
+			ConflictItems redundancyItems, String subStringUs1, String subStringUs2, JSONObject jsonRedundancyPair) {
 		String[] usTexts = new String[4];
 		int redundancyCount = 0;
 		JSONArray jsonTargets = new JSONArray();
@@ -1290,7 +1290,7 @@ public class ReportExtractor {
 	}
 
 	private String[] applyHashSymbolTargetsBenefit(List<TargetsPair> targetsPairs, List<ContainsPair> containsPairs,
-			RedundancyItems redundancyItems, String subStringUs1, String subStringUs2, JSONObject jsonRedundancyPair) {
+			ConflictItems redundancyItems, String subStringUs1, String subStringUs2, JSONObject jsonRedundancyPair) {
 		String[] usTexts = new String[4];
 		int redundancyCount = 0;
 		JSONArray jsonTargets = new JSONArray();
@@ -1343,7 +1343,7 @@ public class ReportExtractor {
 
 	}
 
-	private String[] applyHashSymbolPersona(List<TriggersPair> triggers, RedundancyItems redundancyItems,
+	private String[] applyHashSymbolPersona(List<TriggersPair> triggers, ConflictItems redundancyItems,
 			String subStringFirstUs1, String subStringFirstUs2) {
 		String[] usTexts = new String[4];
 		int redundancyCount = 0;
@@ -1396,7 +1396,7 @@ public class ReportExtractor {
 		return count >= 6;
 	}
 
-	private String[] applyHashSymbolContaiansBenefit(List<ContainsPair> containsPairs, RedundancyItems redundancyItems,
+	private String[] applyHashSymbolContaiansBenefit(List<ContainsPair> containsPairs, ConflictItems redundancyItems,
 			String subStringUs1, String subStringUs2, JSONObject jsonRedundancyPair) {
 		String[] usTexts = new String[4];
 		int redundancyCount = 0;
@@ -1445,7 +1445,7 @@ public class ReportExtractor {
 	}
 
 	private void iteratePackages(EPackage minimalPackage, ArrayList<String> arrayMaximalElements,
-			ArrayList<String> arrayMaximalElementsNames, RedundancyItems redundancyItems) throws IOException {
+			ArrayList<String> arrayMaximalElementsNames, ConflictItems redundancyItems) throws IOException {
 
 		String className = null;
 
@@ -1479,7 +1479,7 @@ public class ReportExtractor {
 							redundancyItems.addSecondaryEntity(new SecondaryEntity(attName));
 							break;
 						case "Primary Entity":
-							redundancyItems.addPrimaryEntity(new PrimaryEntity(attName));
+							redundancyItems.addPrimaryEntity(new Entity(attName));
 							break;
 						default:
 							break;

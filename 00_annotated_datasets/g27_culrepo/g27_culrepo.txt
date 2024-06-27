@@ -1,0 +1,346 @@
+
+
+********************* << Dataset: g27_culrepo >> ***************
+* Table of potential conflict between user stories
+
+        us_04  us_05  us_76  us_88  us_87  us_96  us_97  us_21  us_105  us_01  us_86  us_94  us_22  us_38  us_71  us_17  us_55  us_41  us_90  
+us_04          x                                                                                                                              
+us_05   x                                                                                                                                     
+us_76                        x                                                               x                                                
+us_88                 x             x                                                 x                                                       
+us_87                        x                                                        x                                                       
+us_96                                             x                     x                           x                                         
+us_97                                      x                            x                           x                                         
+us_21                                                           x                                                                             
+us_105                                                   x                                                 x                                  
+us_01                                      x      x                                                                                           
+us_86                                                                                 x                                                       
+us_94                        x      x                                          x                                                              
+us_22                 x                                                                                                                       
+us_38                                      x      x                                                                                           
+us_71                                                           x                                                                             
+us_17                                                                                                                    x                    
+us_55                                                                                                             x                           
+us_41                                                                                                                                  x      
+us_90                                                                                                                           x             
+
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_04_AND_user_story_05}
+  
+Affected Resource is: << reports >>
+
+ Action of user_story_04 is: << know >>  which is annotated with: << preserve >>
+ Action of user_story_05 is: << deselect >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_04: #g27# as a patron, i want to #know# which #reports#/datasets are coming out when, 
+
+   user_story_05: #g27# as a patron, i want to select/#deselect# #reports#/datasets to be emailed, possibly many at one time, when new versions are available.
+
+Original texts of user stories are: 
+   user_story_04: #G27# As a patron, I want to know which reports/datasets are coming out when, so that I can access latest report/dataset.
+
+   user_story_05: #G27# As a patron, I want to select/deselect reports/datasets to be emailed, possibly many at one time, when new versions are available.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_76_AND_user_story_88}
+  
+Affected Resource is: << list >>
+
+ Action of user_story_76 is: << automatically updated >>  which is annotated with: << delete >>
+ Action of user_story_88 is: << see >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_76: #g27# as an extension educator, i want to have a place to store a variety of documents, presentations and data sets i've created, that doesn't require an extra step in making available on my own county/region/project site (i.e. a #list# or directory of materials there is #automatically updated# when placed in a central archive/repository).
+
+   user_story_88: #g27# as a db/ir administrator, i want to #see# a #list# of all administrators for ease of administering accounts.
+
+Original texts of user stories are: 
+   user_story_76: #G27# As an Extension Educator, I want to have a place to store a variety of documents, presentations and data sets I've created, that doesn't require an extra step in making available on my own County/Region/Project site (i.e. a list or directory of materials there is automatically updated when placed in a central archive/repository).
+
+   user_story_88: #G27# As a DB/IR administrator, I want to see a list of all administrators for ease of administering accounts.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_87_AND_user_story_88}
+  
+Affected Resource is: << accounts >>
+
+ Action of user_story_87 is: << delete >>  which is annotated with: << delete >>
+ Action of user_story_88 is: << administering >>  which is annotated with: << delete >>
+
+Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_87: #g27# as a db/ir administrator, i want to set up or #delete# #accounts# for other administrators with various levels of permission.
+
+   user_story_88: #g27# as a db/ir administrator, i want to see a list of all administrators for ease of #administering# #accounts#.
+
+Original texts of user stories are: 
+   user_story_87: #G27# As a DB/IR administrator, I want to set up or delete accounts for other administrators with various levels of permission.
+
+   user_story_88: #G27# As a DB/IR administrator, I want to see a list of all administrators for ease of administering accounts.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_96_AND_user_story_97}
+  
+Affected Resource is: << collection >>
+
+ Action of user_story_96 is: << move >>  which is annotated with: << delete >>
+ Action of user_story_97 is: << rename >>  which is annotated with: << delete >>
+
+Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_96: #g27# as a repository support team member, i want to #move# a #collection#, 
+
+   user_story_97: #g27# as a repository support team member, i want to #rename# a #collection#, 
+
+Original texts of user stories are: 
+   user_story_96: #G27# As a repository support team member, I want to move a collection, so that I can fulfill the collection owner's request.
+
+   user_story_97: #G27# As a repository support team member, I want to rename a collection, so that I can fulfill the collection owner's request.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_21_AND_user_story_105}
+  
+Affected Resource is: << files >>
+
+ Action of user_story_21 is: << downloads >>  which is annotated with: << create >>
+ Action of user_story_105 is: << adequately described >>  which is annotated with: << forbid >>
+
+Conflict Reason is: << create-forbid-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_21: #g27# as a cornell faculty member, i want to be notified if someone #downloads# any of my items or #files#, 
+
+   user_story_105: #g27# as a stakeholder, i want to have #files# #adequately described#, 
+
+Original texts of user stories are: 
+   user_story_21: #G27# As a Cornell faculty member, I want to be notified if someone downloads any of my items or files, so that I can follow usage and see what others are most interested in reading.
+
+   user_story_105: #G27# As a stakeholder, I want to have files adequately described, so that I can successfully render them in my contemporary operating environment.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_01_AND_user_story_97}
+  
+Affected Resource is: << collection >>
+
+ Action of user_story_01 is: << access >>  which is annotated with: << preserve >>
+ Action of user_story_97 is: << rename >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_01: #g27# as a faculty member, i want to #access# a #collection# within the repository, 
+
+   user_story_97: #g27# as a repository support team member, i want to #rename# a #collection#, 
+
+Original texts of user stories are: 
+   user_story_01: #G27# As a faculty member, I want to access a collection within the repository, so that I can obtain research materials.
+
+   user_story_97: #G27# As a repository support team member, I want to rename a collection, so that I can fulfill the collection owner's request.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_86_AND_user_story_94}
+  
+Affected Resource is: << passwords >>
+
+ Action of user_story_86 is: << change >>  which is annotated with: << delete >>
+ Action of user_story_94 is: << resetting >>  which is annotated with: << delete >>
+
+Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_86: #g27# as a db/ir administrator, i want to have a personal account with the ability to #change# #passwords# to make them more secure or to retrieve forgotten ones.
+
+   user_story_94: #g27# as a db/ir administrator, i want to administrate patron accounts for purpose of closing accounts, viewing subscriptions, changing subscriptions, #resetting# #passwords#, changing email address, etc.
+
+Original texts of user stories are: 
+   user_story_86: #G27# As a DB/IR administrator, I want to have a personal account with the ability to change passwords to make them more secure or to retrieve forgotten ones.
+
+   user_story_94: #G27# As a DB/IR administrator, I want to administrate patron accounts for purpose of closing accounts, viewing subscriptions, changing subscriptions, resetting passwords, changing email address, etc.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_01_AND_user_story_96}
+  
+Affected Resource is: << collection >>
+
+ Action of user_story_01 is: << access >>  which is annotated with: << preserve >>
+ Action of user_story_96 is: << move >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_01: #g27# as a faculty member, i want to #access# a #collection# within the repository, 
+
+   user_story_96: #g27# as a repository support team member, i want to #move# a #collection#, 
+
+Original texts of user stories are: 
+   user_story_01: #G27# As a faculty member, I want to access a collection within the repository, so that I can obtain research materials.
+
+   user_story_96: #G27# As a repository support team member, I want to move a collection, so that I can fulfill the collection owner's request.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_87_AND_user_story_94}
+  
+Affected Resource is: << accounts >>
+
+ Action of user_story_87 is: << delete >>  which is annotated with: << delete >>
+ Action of user_story_94 is: << closing >>  which is annotated with: << delete >>
+
+Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_87: #g27# as a db/ir administrator, i want to set up or #delete# #accounts# for other administrators with various levels of permission.
+
+   user_story_94: #g27# as a db/ir administrator, i want to administrate patron #accounts# for purpose of #closing# #accounts#, viewing subscriptions, changing subscriptions, resetting passwords, changing email address, etc.
+
+Original texts of user stories are: 
+   user_story_87: #G27# As a DB/IR administrator, I want to set up or delete accounts for other administrators with various levels of permission.
+
+   user_story_94: #G27# As a DB/IR administrator, I want to administrate patron accounts for purpose of closing accounts, viewing subscriptions, changing subscriptions, resetting passwords, changing email address, etc.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_22_AND_user_story_76}
+  
+Affected Resource is: << list >>
+
+ Action of user_story_22 is: << see >>  which is annotated with: << preserve >>
+ Action of user_story_76 is: << automatically updated >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_22: #g27# as a db/ir administrator, i want to #see# #list# of subscribers for specified report in order research missing report complaints.
+
+   user_story_76: #g27# as an extension educator, i want to have a place to store a variety of documents, presentations and data sets i've created, that doesn't require an extra step in making available on my own county/region/project site (i.e. a #list# or directory of materials there is #automatically updated# when placed in a central archive/repository).
+
+Original texts of user stories are: 
+   user_story_22: #G27# As a DB/IR administrator, I want to see list of subscribers for specified report in order research missing report complaints.
+
+   user_story_76: #G27# As an Extension Educator, I want to have a place to store a variety of documents, presentations and data sets I've created, that doesn't require an extra step in making available on my own County/Region/Project site (i.e. a list or directory of materials there is automatically updated when placed in a central archive/repository).
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_38_AND_user_story_97}
+  
+Affected Resource is: << collection >>
+
+ Action of user_story_38 is: << search within >>  which is annotated with: << preserve >>
+ Action of user_story_97 is: << rename >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_38: #g27# as a researcher, i want to #search within# a repository or #collection# in an effective manner, including searching within subsets of a given #collection#, 
+
+   user_story_97: #g27# as a repository support team member, i want to #rename# a #collection#, 
+
+Original texts of user stories are: 
+   user_story_38: #G27# As a researcher, I want to search within a repository or collection in an effective manner, including searching within subsets of a given collection, so that I can facilitate my use of the collection.
+
+   user_story_97: #G27# As a repository support team member, I want to rename a collection, so that I can fulfill the collection owner's request.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_38_AND_user_story_96}
+  
+Affected Resource is: << collection >>
+
+ Action of user_story_38 is: << search within >>  which is annotated with: << preserve >>
+ Action of user_story_96 is: << move >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_38: #g27# as a researcher, i want to #search within# a repository or #collection# in an effective manner, including searching within subsets of a given #collection#, 
+
+   user_story_96: #g27# as a repository support team member, i want to #move# a #collection#, 
+
+Original texts of user stories are: 
+   user_story_38: #G27# As a researcher, I want to search within a repository or collection in an effective manner, including searching within subsets of a given collection, so that I can facilitate my use of the collection.
+
+   user_story_96: #G27# As a repository support team member, I want to move a collection, so that I can fulfill the collection owner's request.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_71_AND_user_story_105}
+  
+Affected Resource is: << files >>
+
+ Action of user_story_71 is: << associate >>  which is annotated with: << create >>
+ Action of user_story_105 is: << adequately described >>  which is annotated with: << forbid >>
+
+Conflict Reason is: << create-forbid-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_71: #g27# as a faculty member, i want to #associate# #files# with my scholarly works such that someone accessing the latter also receives access to the former, 
+
+   user_story_105: #g27# as a stakeholder, i want to have #files# #adequately described#, 
+
+Original texts of user stories are: 
+   user_story_71: #G27# As a faculty member, I want to associate files with my scholarly works such that someone accessing the latter also receives access to the former, so that I can deliver the fullest picture of my research.
+
+   user_story_105: #G27# As a stakeholder, I want to have files adequately described, so that I can successfully render them in my contemporary operating environment.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_88_AND_user_story_94}
+  
+Affected Resource is: << accounts >>
+
+ Action of user_story_88 is: << administering >>  which is annotated with: << delete >>
+ Action of user_story_94 is: << closing >>  which is annotated with: << delete >>
+
+Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_88: #g27# as a db/ir administrator, i want to see a list of all administrators for ease of #administering# #accounts#.
+
+   user_story_94: #g27# as a db/ir administrator, i want to administrate patron #accounts# for purpose of #closing# #accounts#, viewing subscriptions, changing subscriptions, resetting passwords, changing email address, etc.
+
+Original texts of user stories are: 
+   user_story_88: #G27# As a DB/IR administrator, I want to see a list of all administrators for ease of administering accounts.
+
+   user_story_94: #G27# As a DB/IR administrator, I want to administrate patron accounts for purpose of closing accounts, viewing subscriptions, changing subscriptions, resetting passwords, changing email address, etc.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_17_AND_user_story_55}
+  
+Affected Resource is: << items >>
+
+ Action of user_story_17 is: << sort >>  which is annotated with: << delete >>
+ Action of user_story_55 is: << searching >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_17: #g27# as a cornell faculty member, i want to have some control over how #items# within my collection #sort# in collection contents lists, 
+
+   user_story_55: #g27# as a library staff member, i want to create metadata for #items# within the repository that includes document title, description, author, document type, status, file locations, subscribable flag, subject area, release frequency, and keywords for #searching#.
+
+Original texts of user stories are: 
+   user_story_17: #G27# As a Cornell faculty member, I want to have some control over how items within my collection sort in collection contents lists, so that I can control how my work is presented.
+
+   user_story_55: #G27# As a library staff member, I want to create metadata for items within the repository that includes document title, description, author, document type, status, file locations, subscribable flag, subject area, release frequency, and keywords for searching.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_41_AND_user_story_90}
+  
+Affected Resource is: << report >>
+
+ Action of user_story_41 is: << search >>  which is annotated with: << preserve >>
+ Action of user_story_90 is: << unpublish >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_41: #g27# as a patron, i want to #search# for #report#/dataset with keywords or a partial or complete title to locate needed #report#/dataset.
+
+   user_story_90: #g27# as a db/ir administrator, i want to #unpublish# a #report#/dataset if requested to do so by usda agency.
+
+Original texts of user stories are: 
+   user_story_41: #G27# As a patron, I want to search for report/dataset with keywords or a partial or complete title to locate needed report/dataset.
+
+   user_story_90: #G27# As a DB/IR administrator, I want to unpublish a report/dataset if requested to do so by USDA agency.
