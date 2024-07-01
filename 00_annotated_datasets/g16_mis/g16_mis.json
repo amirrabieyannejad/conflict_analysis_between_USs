@@ -115,12 +115,14 @@
                     [
                         "item",
                         "scheduled records deletion date",
-                        "preserve"
+                        "preserve",
+                        "see"
                     ],
                     [
                         "component pages",
                         "scheduled records deletion date",
-                        "preserve"
+                        "preserve",
+                        "see"
                     ]
                 ]
             },
@@ -363,12 +365,14 @@
                     [
                         "collection",
                         "item",
-                        "create"
+                        "create",
+                        "map"
                     ],
                     [
                         "collection",
                         "items",
-                        "create"
+                        "create",
+                        "map"
                     ]
                 ]
             },
@@ -459,7 +463,8 @@
                 "Contain Action Rules": [[
                     "search string",
                     "date delimiter",
-                    "create"
+                    "create",
+                    "add"
                 ]]
             },
             "Contains": [[
@@ -667,7 +672,8 @@
                 "Contain Action Rules": [[
                     "each collection",
                     "remote replication policy",
-                    "create"
+                    "create",
+                    "specify"
                 ]]
             },
             "Contains": [[
@@ -788,12 +794,14 @@
                     [
                         "each item",
                         "remote replication status",
-                        "preserve;create"
+                        "preserve;create",
+                        "display"
                     ],
                     [
                         "component page",
                         "remote replication status",
-                        "preserve;create"
+                        "preserve;create",
+                        "display"
                     ]
                 ]
             },
@@ -870,12 +878,14 @@
                     [
                         "all remote replication status",
                         "summary",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ],
                     [
                         "dashboard",
                         "summary",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ]
                 ]
             },
@@ -981,17 +991,20 @@
                     [
                         "encrypted file",
                         "checksum",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ],
                     [
                         "remote storage site",
                         "encrypted file",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ],
                     [
                         "server",
                         "key",
-                        "create;delete"
+                        "create;delete",
+                        "maintained"
                     ]
                 ]
             },
@@ -1082,7 +1095,8 @@
                 "Contain Action Rules": [[
                     "object",
                     "embargo",
-                    "create;delete"
+                    "create;delete",
+                    "lift"
                 ]]
             },
             "Contains": [[
@@ -1282,6 +1296,7 @@
                 "Contain Action Rules": [[
                     "collection",
                     "deposit forms",
+                    "create",
                     "create"
                 ]]
             },
@@ -1343,7 +1358,8 @@
                 "Contain Action Rules": [[
                     "some collections",
                     "option",
-                    "create"
+                    "create",
+                    "allow"
                 ]]
             },
             "Contains": [[
@@ -1532,12 +1548,14 @@
                     [
                         "collection",
                         "license",
-                        "preserve"
+                        "preserve",
+                        "presented"
                     ],
                     [
                         "collection",
                         "selection of licenses",
-                        "preserve"
+                        "preserve",
+                        "presented"
                     ]
                 ]
             },
@@ -1629,7 +1647,8 @@
                 "Contain Action Rules": [[
                     "metadata",
                     "license",
-                    "preserve"
+                    "preserve",
+                    "have"
                 ]]
             },
             "Contains": [[
@@ -1709,7 +1728,8 @@
                 "Contain Action Rules": [[
                     "proquest",
                     " etds",
-                    "create"
+                    "create",
+                    "batch"
                 ]]
             },
             "Contains": [[
@@ -1824,7 +1844,8 @@
                 "Contain Action Rules": [[
                     "embargoed items",
                     "permissions",
-                    "preserve"
+                    "preserve",
+                    "have"
                 ]]
             },
             "Contains": [[
@@ -2123,17 +2144,20 @@
                     [
                         "deposit groups",
                         "multiple people",
-                        "create"
+                        "create",
+                        "add"
                     ],
                     [
                         "deposit window",
                         "date",
-                        "create"
+                        "create",
+                        "set"
                     ],
                     [
                         "depositors",
                         "permissions",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ]
                 ]
             },
@@ -2219,7 +2243,8 @@
                 "Contain Action Rules": [[
                     "embargoes",
                     "length",
-                    "create;delete"
+                    "create;delete",
+                    "edit"
                 ]]
             },
             "Contains": [[
@@ -2272,7 +2297,8 @@
                 "Contain Action Rules": [[
                     "each etd item",
                     "descriptive record",
-                    "create"
+                    "create",
+                    "expose"
                 ]]
             },
             "Contains": [[
@@ -2321,7 +2347,8 @@
                 "Contain Action Rules": [[
                     "other repository administrators",
                     "embargo privileges",
-                    "create"
+                    "create",
+                    "grant"
                 ]]
             },
             "Contains": [[
@@ -2387,7 +2414,8 @@
                 "Contain Action Rules": [[
                     "deposit groups",
                     "individual people",
-                    "create"
+                    "create",
+                    "add"
                 ]]
             },
             "Contains": [[
@@ -2504,7 +2532,8 @@
                 "Contain Action Rules": [[
                     "collection",
                     "items",
-                    "create;delete"
+                    "create;delete",
+                    "move"
                 ]]
             },
             "Contains": [[
@@ -2553,7 +2582,8 @@
                 "Contain Action Rules": [[
                     "oai-pmh",
                     "repository contents",
-                    "create"
+                    "create",
+                    "expose"
                 ]]
             },
             "Contains": [[
@@ -2613,7 +2643,8 @@
                 "Contain Action Rules": [[
                     "etds",
                     "summary embargo metadata",
-                    "create"
+                    "create",
+                    "download"
                 ]]
             },
             "Contains": [
@@ -2693,12 +2724,14 @@
                     [
                         "data",
                         "simple, documented format",
-                        "create"
+                        "create",
+                        "provide"
                     ],
                     [
                         "metadata",
                         "simple, documented format",
-                        "create"
+                        "create",
+                        "provide"
                     ]
                 ]
             },
@@ -2831,17 +2864,20 @@
                     [
                         "each page",
                         "message",
-                        "create"
+                        "create",
+                        "schedule"
                     ],
                     [
                         "message",
                         "notification",
-                        "create"
+                        "create",
+                        "schedule"
                     ],
                     [
                         "repository",
                         "each page",
-                        "preserve"
+                        "preserve",
+                        "displayed"
                     ]
                 ]
             },
@@ -2923,7 +2959,8 @@
                 "Contain Action Rules": [[
                     "display",
                     "recent errors deduplicated",
-                    "preserve"
+                    "preserve",
+                    "see"
                 ]]
             },
             "Contains": [[
@@ -2999,27 +3036,32 @@
                     [
                         "dashboard statistics",
                         "collections size",
-                        "preserve"
+                        "preserve",
+                        "view"
                     ],
                     [
                         "dashboard statistics",
                         "list",
-                        "preserve"
+                        "preserve",
+                        "view"
                     ],
                     [
                         "dashboard statistics",
                         "number of items",
-                        "preserve"
+                        "preserve",
+                        "view"
                     ],
                     [
                         "dashboard statistics",
                         "components",
-                        "preserve"
+                        "preserve",
+                        "view"
                     ],
                     [
                         "deposit activity",
                         "visualization",
-                        "preserve"
+                        "preserve",
+                        "view"
                     ]
                 ]
             },
@@ -3114,12 +3156,14 @@
                     [
                         "dashboard widget",
                         "summary",
-                        "preserve"
+                        "preserve",
+                        "see"
                     ],
                     [
                         "recent submissions",
                         "summary",
-                        "create"
+                        "create",
+                        "showing"
                     ]
                 ]
             },
@@ -3190,7 +3234,8 @@
                 "Contain Action Rules": [[
                     "repository",
                     "access",
-                    "create"
+                    "create",
+                    "continue to provide"
                 ]]
             },
             "Contains": [
@@ -3329,7 +3374,8 @@
                 "Contain Action Rules": [[
                     "repository",
                     "linked data interface",
-                    "create"
+                    "create",
+                    "provide"
                 ]]
             },
             "Contains": [[
@@ -3506,7 +3552,8 @@
                 "Contain Action Rules": [[
                     "ezid",
                     "repository-assigned dois",
-                    "create"
+                    "create",
+                    "propagated"
                 ]]
             },
             "Contains": [[
@@ -3593,22 +3640,26 @@
                     [
                         "creators",
                         "unique identifier",
-                        "preserve;create"
+                        "preserve;create",
+                        "canonically identify"
                     ],
                     [
                         "items",
                         "creators",
-                        "preserve;create"
+                        "preserve;create",
+                        "canonically identify"
                     ],
                     [
                         "authors",
                         "unique identifier",
-                        "preserve;create"
+                        "preserve;create",
+                        "canonically identify"
                     ],
                     [
                         "items",
                         "authors",
-                        "preserve;create"
+                        "preserve;create",
+                        "canonically identify"
                     ]
                 ]
             },
@@ -3750,12 +3801,14 @@
                     [
                         "grant proposals",
                         "disaster recovery plan",
-                        "create"
+                        "create",
+                        "refer"
                     ],
                     [
                         "data management plans",
                         "disaster recovery plan",
-                        "create"
+                        "create",
+                        "refer"
                     ]
                 ]
             },
@@ -3817,7 +3870,7 @@
                     [
                         "get",
                         "feedback post-ingest",
-                        "preserve;create"
+                        "preserve"
                     ]
                 ],
                 "Contain Action Rules": []
@@ -3871,7 +3924,8 @@
                 "Contain Action Rules": [[
                     "documentation",
                     "folder ingest process",
-                    "preserve;create"
+                    "preserve;create",
+                    "access"
                 ]]
             },
             "Contains": [[
@@ -3986,7 +4040,7 @@
                     [
                         "get",
                         "doi",
-                        "preserve;create"
+                        "preserve"
                     ],
                     [
                         "assigned",
@@ -3997,7 +4051,8 @@
                 "Contain Action Rules": [[
                     "data",
                     "doi",
-                    "preserve;create"
+                    "preserve",
+                    "get"
                 ]]
             },
             "Contains": [[
@@ -4070,12 +4125,14 @@
                     [
                         "groups",
                         "users",
+                        "create",
                         "create"
                     ],
                     [
                         "repository",
                         "permissions",
-                        "create;delete"
+                        "create;delete",
+                        "manage"
                     ]
                 ]
             },
@@ -4212,7 +4269,8 @@
                 "Contain Action Rules": [[
                     "restricted objects",
                     "access",
-                    "create"
+                    "create",
+                    "request"
                 ]]
             },
             "Contains": [[
@@ -4273,7 +4331,8 @@
                 "Contain Action Rules": [[
                     "collection",
                     "submitters",
-                    "preserve"
+                    "preserve",
+                    "have"
                 ]]
             },
             "Contains": [
@@ -4371,7 +4430,7 @@
             "Contains": [],
             "Targets": []
         },
-        "Text": "#G16# As a collection curator I want to change permissions on one or more items simultaneously.",
+        "Text": "#G16# As a collection curator, I want to change permissions on one or more items simultaneously.",
         "PID": "#G16#",
         "Main": {
             "Entity": [
@@ -4389,14 +4448,15 @@
                 "Contain Action Rules": [[
                     "one or more items",
                     "permissions",
-                    "create;delete"
+                    "create;delete",
+                    "change"
                 ]]
             },
             "Contains": [[
                 "one or more items",
                 "permissions"
             ]],
-            "Text": "#G16# As a collection curator I want to change permissions on one or more items simultaneously.",
+            "Text": "#G16# As a collection curator, I want to change permissions on one or more items simultaneously.",
             "Triggers": [[
                 "collection curator",
                 "change"
@@ -4526,12 +4586,14 @@
                     [
                         "object",
                         "available versions",
-                        "preserve"
+                        "preserve",
+                        "view"
                     ],
                     [
                         "staff interface",
                         "version",
-                        "create"
+                        "create",
+                        "restore"
                     ]
                 ]
             },
@@ -4593,7 +4655,8 @@
                 "Contain Action Rules": [[
                     "objects",
                     "permission",
-                    "preserve"
+                    "preserve",
+                    "view"
                 ]]
             },
             "Contains": [[
@@ -4672,7 +4735,8 @@
                 "Contain Action Rules": [[
                     "repository",
                     "objects",
-                    "create"
+                    "create",
+                    "describe"
                 ]]
             },
             "Contains": [[
@@ -4813,17 +4877,20 @@
                     [
                         "classes",
                         "members",
-                        "create;delete"
+                        "create;delete",
+                        "manage"
                     ],
                     [
                         "list",
                         "netids",
-                        "create"
+                        "create",
+                        "pasting"
                     ],
                     [
                         "submission window",
                         "begin and end dates",
-                        "create"
+                        "create",
+                        "set"
                     ]
                 ]
             },

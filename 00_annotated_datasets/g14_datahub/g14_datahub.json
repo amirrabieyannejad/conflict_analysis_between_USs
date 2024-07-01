@@ -282,7 +282,7 @@
                     [
                         "do next",
                         "what",
-                        "create;preserve;delete"
+                        "create;preserve"
                     ]
                 ],
                 "Contain Action Rules": []
@@ -455,7 +455,8 @@
                 "Contain Action Rules": [[
                     "registry",
                     "data package",
-                    "create"
+                    "create",
+                    "import"
                 ]]
             },
             "Contains": [[
@@ -563,7 +564,8 @@
                 "Contain Action Rules": [[
                     "registry",
                     "data package",
-                    "create;delete"
+                    "create;delete",
+                    "update"
                 ]]
             },
             "Contains": [[
@@ -704,12 +706,13 @@
                 "Target Action Rules": [[
                     "validate",
                     "data i am about to publish",
-                    "preserve;forbid"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "registry",
                     "data i am about to publish",
-                    "preserve;forbid"
+                    "preserve",
+                    "validate"
                 ]]
             },
             "Contains": [[
@@ -802,7 +805,7 @@
                     [
                         "validated",
                         "data",
-                        "preserve;forbid"
+                        "preserve"
                     ],
                     [
                         "publish",
@@ -973,22 +976,26 @@
                     [
                         "data package",
                         "resource data",
-                        "create"
+                        "create",
+                        "publish"
                     ],
                     [
                         "registry",
                         "copy",
-                        "create"
+                        "create",
+                        "caches"
                     ],
                     [
                         "copy",
                         "data",
-                        "create"
+                        "create",
+                        "caches"
                     ],
                     [
                         "servers",
                         "resource data",
-                        "create"
+                        "create",
+                        "stored"
                     ]
                 ]
             },
@@ -1070,7 +1077,7 @@
                     [
                         "get",
                         "data",
-                        "preserve;create"
+                        "preserve"
                     ],
                     [
                         "moved",
@@ -1086,7 +1093,8 @@
                 "Contain Action Rules": [[
                     "data package",
                     "data",
-                    "preserve;create"
+                    "preserve",
+                    "get"
                 ]]
             },
             "Contains": [[
@@ -1149,7 +1157,8 @@
                 "Contain Action Rules": [[
                     "ui",
                     "data package",
-                    "create"
+                    "create",
+                    "publish"
                 ]]
             },
             "Contains": [[
@@ -1199,6 +1208,7 @@
                 "Contain Action Rules": [[
                     "ui",
                     "data package",
+                    "create",
                     "create"
                 ]]
             },
@@ -1255,7 +1265,8 @@
                 "Contain Action Rules": [[
                     "cli",
                     "deleted data package",
-                    "create"
+                    "create",
+                    "restore"
                 ]]
             },
             "Contains": [[
@@ -1399,7 +1410,8 @@
                 "Contain Action Rules": [[
                     "current data package",
                     "views",
-                    "create"
+                    "create",
+                    "preview"
                 ]]
             },
             "Contains": [[
@@ -1440,7 +1452,7 @@
                 "Target Action Rules": [[
                     "get",
                     "sense",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": []
             },
@@ -1557,7 +1569,7 @@
                     [
                         "get",
                         "sense",
-                        "preserve;create"
+                        "preserve"
                     ],
                     [
                         "want",
@@ -1771,7 +1783,8 @@
                 "Contain Action Rules": [[
                     "published packages",
                     "real examples",
-                    "preserve"
+                    "preserve",
+                    "see"
                 ]]
             },
             "Contains": [[
@@ -1807,7 +1820,7 @@
                     [
                         "get",
                         "sense",
-                        "preserve;create"
+                        "preserve"
                     ],
                     [
                         "look further",
@@ -1959,7 +1972,8 @@
                 "Contain Action Rules": [[
                     "data package",
                     "description",
-                    "preserve;create"
+                    "preserve;create",
+                    "search"
                 ]]
             },
             "Contains": [[
@@ -2012,7 +2026,8 @@
                 "Contain Action Rules": [[
                     "one file",
                     "data package",
-                    "create"
+                    "create",
+                    "download"
                 ]]
             },
             "Contains": [[
@@ -2122,7 +2137,8 @@
                 "Contain Action Rules": [[
                     "r",
                     "data package",
-                    "create"
+                    "create",
+                    "load"
                 ]]
             },
             "Contains": [[
@@ -2293,7 +2309,8 @@
                 "Contain Action Rules": [[
                     "coherent sqlite database",
                     "datapackage's data",
-                    "create"
+                    "create",
+                    "download"
                 ]]
             },
             "Contains": [[
@@ -2379,7 +2396,8 @@
                 "Contain Action Rules": [[
                     "some datapackage",
                     "different versions",
-                    "preserve;create"
+                    "preserve;create",
+                    "compare"
                 ]]
             },
             "Contains": [[
@@ -2452,7 +2470,8 @@
                 "Contain Action Rules": [[
                     "same datapackage",
                     "multiple versions",
-                    "create"
+                    "create",
+                    "install"
                 ]]
             },
             "Contains": [[
@@ -2533,17 +2552,20 @@
                     [
                         "project",
                         "all datapackages requirements",
-                        "create"
+                        "create",
+                        "list"
                     ],
                     [
                         "file",
                         "all datapackages requirements",
-                        "create"
+                        "create",
+                        "list"
                     ],
                     [
                         "datapackage",
                         "exact versions",
-                        "create"
+                        "create",
+                        "pin"
                     ]
                 ]
             },
@@ -2632,6 +2654,7 @@
                 "Contain Action Rules": [[
                     "data",
                     "snapshot",
+                    "create",
                     "create"
                 ]]
             },
@@ -2805,13 +2828,14 @@
                     [
                         "keep",
                         "multiple versions",
-                        "preserve;forbid"
+                        "preserve"
                     ]
                 ],
                 "Contain Action Rules": [[
                     "multiple versions",
                     "older versions",
-                    "preserve;forbid"
+                    "preserve",
+                    "keep"
                 ]]
             },
             "Contains": [[
@@ -2865,12 +2889,13 @@
                 "Target Action Rules": [[
                     "get",
                     "access",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "previous version i tagged",
                     "access",
-                    "preserve;create"
+                    "preserve",
+                    "get"
                 ]]
             },
             "Contains": [[
@@ -2943,7 +2968,8 @@
                 "Contain Action Rules": [[
                     "data package schema",
                     "full details",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [[
@@ -3001,7 +3027,7 @@
                 "Target Action Rules": [[
                     "get",
                     "sense",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": []
             },
@@ -3081,7 +3107,8 @@
                 "Contain Action Rules": [[
                     "datapackage",
                     "particular version",
-                    "preserve"
+                    "preserve",
+                    "view"
                 ]]
             },
             "Contains": [[
@@ -3134,7 +3161,8 @@
                 "Contain Action Rules": [[
                     "data package",
                     "particular version",
-                    "create"
+                    "create",
+                    "download"
                 ]]
             },
             "Contains": [[
@@ -3197,7 +3225,8 @@
                 "Contain Action Rules": [[
                     "package i care about",
                     "changes",
-                    "create"
+                    "create",
+                    "be notified"
                 ]]
             },
             "Contains": [[
@@ -3376,7 +3405,7 @@
                     [
                         "get",
                         "sense",
-                        "preserve;create"
+                        "preserve"
                     ]
                 ],
                 "Contain Action Rules": []
@@ -3560,7 +3589,8 @@
                 "Contain Action Rules": [[
                     "publisher",
                     "all data packages",
-                    "preserve;create"
+                    "preserve;create",
+                    "search"
                 ]]
             },
             "Contains": [[
@@ -3729,7 +3759,8 @@
                 "Contain Action Rules": [[
                     "someone",
                     "email",
-                    "create"
+                    "create",
+                    "invite"
                 ]]
             },
             "Contains": [
@@ -3818,7 +3849,8 @@
                 "Contain Action Rules": [[
                     "someone",
                     "membership",
-                    "delete"
+                    "delete",
+                    "remove"
                 ]]
             },
             "Contains": [
@@ -3883,12 +3915,14 @@
                     [
                         "organization",
                         "all the people",
-                        "preserve"
+                        "preserve",
+                        "view"
                     ],
                     [
                         "all the people",
                         "roles",
-                        "preserve"
+                        "preserve",
+                        "view"
                     ]
                 ]
             },
@@ -4070,7 +4104,8 @@
                 "Contain Action Rules": [[
                     "site deployment",
                     "key configuration parameters",
-                    "create"
+                    "create",
+                    "set"
                 ]]
             },
             "Contains": [[
@@ -4123,7 +4158,8 @@
                 "Contain Action Rules": [[
                     "usage",
                     "key metrics",
-                    "preserve"
+                    "preserve",
+                    "see"
                 ]]
             },
             "Contains": [[

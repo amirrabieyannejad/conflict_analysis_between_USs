@@ -3,80 +3,23 @@
 ********************* << Dataset: g08_frictionless >> ***************
 * Table of potential conflict between user stories
 
-       us_43  us_48  us_47  us_35  us_45  us_46  us_06  
-us_43         x      x             x      x             
-us_48  x                    x             x             
-us_47  x                    x             x             
-us_35         x      x             x      x             
-us_45  x                    x             x             
-us_46  x      x      x      x      x             x      
-us_06                                     x             
+       us_45  us_46  us_47  us_48  us_06  
+us_45         x                           
+us_46  x             x      x      x      
+us_47         x                           
+us_48         x                           
+us_06         x                           
 
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_43_AND_user_story_48}
-  
-Affected Resource is: << data >>
-
- Action of user_story_43 is: << store >>  which is annotated with: << create >>
- Action of user_story_48 is: << validates >>  which is annotated with: << forbid >>
-
-Conflict Reason is: << create-forbid-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_43: #g08# as a publisher, i want to #store# my #data# quickly and easily online.
-
-   user_story_48: #g08# as a developer, i want an online service that is connected to my #data# repository that #validates# #data# on update, 
-
-Original texts of user stories are: 
-   user_story_43: #G08# As a Publisher, I want to store my data quickly and easily online.
-
-   user_story_48: #G08# As a developer, I want an online service that is connected to my data repository that validates data on update, so that I can delegate data validation to a third party.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_43_AND_user_story_47}
-  
-Affected Resource is: << data >>
-
- Action of user_story_43 is: << store >>  which is annotated with: << create >>
- Action of user_story_47 is: << validate >>  which is annotated with: << forbid >>
-
-Conflict Reason is: << create-forbid-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_43: #g08# as a publisher, i want to #store# my #data# quickly and easily online.
-
-   user_story_47: #g08# as a developerwrangler, i want to use a command line tool that allows met to #validate# #data#, 
-
-Original texts of user stories are: 
-   user_story_43: #G08# As a Publisher, I want to store my data quickly and easily online.
-
-   user_story_47: #G08# As a DeveloperWrangler, I want to use a command line tool that allows met to validate data, so that I can feel trust in the validity and usefulness of the data quickly and in the context of my command line workflow.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_35_AND_user_story_47}
-  
-Affected Resource is: << data >>
-
- Action of user_story_35 is: << working with >>  which is annotated with: << create >>
- Action of user_story_47 is: << validate >>  which is annotated with: << forbid >>
-
-Conflict Reason is: << create-forbid-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_35: #g08# as a researcher, #working with# #data#, i want an microsoft power bi integration, 
-
-   user_story_47: #g08# as a developerwrangler, i want to use a command line tool that allows met to #validate# #data#, 
-
-Original texts of user stories are: 
-   user_story_35: #G08# As a Researcher, working with data, I want an Microsoft Power BI integration, so that I can import datasets without downloading them locally.
-
-   user_story_47: #G08# As a DeveloperWrangler, I want to use a command line tool that allows met to validate data, so that I can feel trust in the validity and usefulness of the data quickly and in the context of my command line workflow.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_45_AND_user_story_46}
   
-Affected Resource is: << data >>
+Affected Resource of US1 is: << data >>
+Affected Resource of US2 is: << data >>
+Affected Contain Resource US1 is: << data >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_45: << [] >>
+Contain Resources for: user_story_46: << [] >>
 
  Action of user_story_45 is: << validate >>  which is annotated with: << preserve >>
  Action of user_story_46 is: << update >>  which is annotated with: << delete >>
@@ -84,9 +27,9 @@ Affected Resource is: << data >>
 Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_45: #g08# as a researcherpublisher, i want #validate# my #data# with a minimum of clicks, 
+   user_story_45: #G08# As a ResearcherPublisher, i want #validate# my #data# with a minimum of clicks, 
 
-   user_story_46: #g08# as a publisher, i want to be able to check that every time i #update# my #data# it is still good, 
+   user_story_46: #G08# As a publisher, i want to be able to check that every time i #update# my #data# it is still good, 
 
 Original texts of user stories are: 
    user_story_45: #G08# As a ResearcherPublisher, I want validate my data with a minimum of clicks, so that I can feel trust in the validity and usefulness of the data.
@@ -96,17 +39,22 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_46_AND_user_story_47}
   
-Affected Resource is: << data >>
+Affected Resource of US1 is: << data >>
+Affected Resource of US2 is: << data >>
+Affected Contain Resource US1 is: << data >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_46: << [] >>
+Contain Resources for: user_story_47: << [] >>
 
- Action of user_story_46 is: << update >>  which is annotated with: << create >>
- Action of user_story_47 is: << validate >>  which is annotated with: << forbid >>
+ Action of user_story_46 is: << update >>  which is annotated with: << delete >>
+ Action of user_story_47 is: << validate >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << create-forbid-Conflict >>
+Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_46: #g08# as a publisher, i want to be able to check that every time i #update# my #data# it is still good, 
+   user_story_46: #G08# As a publisher, i want to be able to check that every time i #update# my #data# it is still good, 
 
-   user_story_47: #g08# as a developerwrangler, i want to use a command line tool that allows met to #validate# #data#, 
+   user_story_47: #G08# As a DeveloperWrangler, i want to use a command line tool that allows met to #validate# #data#, 
 
 Original texts of user stories are: 
    user_story_46: #G08# As a publisher, I want to be able to check that every time I update my data it is still good, so that I can catch errors early and store reliable data.
@@ -114,99 +62,24 @@ Original texts of user stories are:
    user_story_47: #G08# As a DeveloperWrangler, I want to use a command line tool that allows met to validate data, so that I can feel trust in the validity and usefulness of the data quickly and in the context of my command line workflow.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_35_AND_user_story_46}
-  
-Affected Resource is: << data >>
-
- Action of user_story_35 is: << working with >>  which is annotated with: << create >>
- Action of user_story_46 is: << check >>  which is annotated with: << forbid >>
-
-Conflict Reason is: << create-forbid-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_35: #g08# as a researcher, #working with# #data#, i want an microsoft power bi integration, 
-
-   user_story_46: #g08# as a publisher, i want to be able to #check# that every time i update my #data# it is still good, 
-
-Original texts of user stories are: 
-   user_story_35: #G08# As a Researcher, working with data, I want an Microsoft Power BI integration, so that I can import datasets without downloading them locally.
-
-   user_story_46: #G08# As a publisher, I want to be able to check that every time I update my data it is still good, so that I can catch errors early and store reliable data.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_43_AND_user_story_46}
-  
-Affected Resource is: << data >>
-
- Action of user_story_43 is: << store >>  which is annotated with: << create >>
- Action of user_story_46 is: << check >>  which is annotated with: << forbid >>
-
-Conflict Reason is: << create-forbid-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_43: #g08# as a publisher, i want to #store# my #data# quickly and easily online.
-
-   user_story_46: #g08# as a publisher, i want to be able to #check# that every time i update my #data# it is still good, 
-
-Original texts of user stories are: 
-   user_story_43: #G08# As a Publisher, I want to store my data quickly and easily online.
-
-   user_story_46: #G08# As a publisher, I want to be able to check that every time I update my data it is still good, so that I can catch errors early and store reliable data.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_35_AND_user_story_48}
-  
-Affected Resource is: << data >>
-
- Action of user_story_35 is: << working with >>  which is annotated with: << create >>
- Action of user_story_48 is: << validates >>  which is annotated with: << forbid >>
-
-Conflict Reason is: << create-forbid-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_35: #g08# as a researcher, #working with# #data#, i want an microsoft power bi integration, 
-
-   user_story_48: #g08# as a developer, i want an online service that is connected to my #data# repository that #validates# #data# on update, 
-
-Original texts of user stories are: 
-   user_story_35: #G08# As a Researcher, working with data, I want an Microsoft Power BI integration, so that I can import datasets without downloading them locally.
-
-   user_story_48: #G08# As a developer, I want an online service that is connected to my data repository that validates data on update, so that I can delegate data validation to a third party.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_43_AND_user_story_45}
-  
-Affected Resource is: << data >>
-
- Action of user_story_43 is: << store >>  which is annotated with: << create >>
- Action of user_story_45 is: << validate >>  which is annotated with: << forbid >>
-
-Conflict Reason is: << create-forbid-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_43: #g08# as a publisher, i want to #store# my #data# quickly and easily online.
-
-   user_story_45: #g08# as a researcherpublisher, i want #validate# my #data# with a minimum of clicks, 
-
-Original texts of user stories are: 
-   user_story_43: #G08# As a Publisher, I want to store my data quickly and easily online.
-
-   user_story_45: #G08# As a ResearcherPublisher, I want validate my data with a minimum of clicks, so that I can feel trust in the validity and usefulness of the data.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_46_AND_user_story_48}
   
-Affected Resource is: << data >>
+Affected Resource of US1 is: << data >>
+Affected Resource of US2 is: << data >>
+Affected Contain Resource US1 is: << data >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_46: << [] >>
+Contain Resources for: user_story_48: << [] >>
 
- Action of user_story_46 is: << update >>  which is annotated with: << create >>
- Action of user_story_48 is: << validates >>  which is annotated with: << forbid >>
+ Action of user_story_46 is: << update >>  which is annotated with: << delete >>
+ Action of user_story_48 is: << validates >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << create-forbid-Conflict >>
+Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_46: #g08# as a publisher, i want to be able to check that every time i #update# my #data# it is still good, 
+   user_story_46: #G08# As a publisher, i want to be able to check that every time i #update# my #data# it is still good, 
 
-   user_story_48: #g08# as a developer, i want an online service that is connected to my #data# repository that #validates# #data# on update, 
+   user_story_48: #G08# As a developer, i want an online service that is connected to my #data# repository that #validates# #data# on update, 
 
 Original texts of user stories are: 
    user_story_46: #G08# As a publisher, I want to be able to check that every time I update my data it is still good, so that I can catch errors early and store reliable data.
@@ -216,7 +89,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_06_AND_user_story_46}
   
-Affected Resource is: << data >>
+Affected Resource of US1 is: << data >>
+Affected Resource of US2 is: << data >>
+Affected Contain Resource US1 is: << data >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_06: << [] >>
+Contain Resources for: user_story_46: << [] >>
 
  Action of user_story_06 is: << know >>  which is annotated with: << preserve >>
  Action of user_story_46 is: << update >>  which is annotated with: << delete >>
@@ -224,31 +102,11 @@ Affected Resource is: << data >>
 Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_06: #g08# as a researcherpublisher, i want to #know# that my #data# conforms to its #data# package profile, 
+   user_story_06: #G08# As a ResearcherPublisher, i want to #know# that my #data# conforms to its #data# package profile, 
 
-   user_story_46: #g08# as a publisher, i want to be able to check that every time i #update# my #data# it is still good, 
+   user_story_46: #G08# As a publisher, i want to be able to check that every time i #update# my #data# it is still good, 
 
 Original texts of user stories are: 
    user_story_06: #G08# As a ResearcherPublisher, I want to know that my data conforms to its Data Package profile, so that I can feel trust in the validity and usefulness of the data.
 
    user_story_46: #G08# As a publisher, I want to be able to check that every time I update my data it is still good, so that I can catch errors early and store reliable data.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_35_AND_user_story_45}
-  
-Affected Resource is: << data >>
-
- Action of user_story_35 is: << working with >>  which is annotated with: << create >>
- Action of user_story_45 is: << validate >>  which is annotated with: << forbid >>
-
-Conflict Reason is: << create-forbid-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_35: #g08# as a researcher, #working with# #data#, i want an microsoft power bi integration, 
-
-   user_story_45: #g08# as a researcherpublisher, i want #validate# my #data# with a minimum of clicks, 
-
-Original texts of user stories are: 
-   user_story_35: #G08# As a Researcher, working with data, I want an Microsoft Power BI integration, so that I can import datasets without downloading them locally.
-
-   user_story_45: #G08# As a ResearcherPublisher, I want validate my data with a minimum of clicks, so that I can feel trust in the validity and usefulness of the data.

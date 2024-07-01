@@ -11,7 +11,12 @@ us_14  x
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_13_AND_user_story_14}
   
-Affected Resource is: << hold >>
+Affected Resource of US1 is: << hold >>
+Affected Resource of US2 is: << hold >>
+Affected Contain Resource US1 is: << hold >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_13: << [] >>
+Contain Resources for: user_story_14: << [] >>
 
  Action of user_story_13 is: << apply >>  which is annotated with: << delete >>
  Action of user_story_14 is: << remove >>  which is annotated with: << delete >>
@@ -19,9 +24,9 @@ Affected Resource is: << hold >>
 Conflict Reason is: << delete-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_13: #g03# as a staff member, i want to #apply# a #hold#, 
+   user_story_13: #G03# As a Staff member, i want to #apply# a #hold#, 
 
-   user_story_14: #g03# as a staff member, i want to #remove# a #hold#, 
+   user_story_14: #G03# As a Staff member, i want to #remove# a #hold#, 
 
 Original texts of user stories are: 
    user_story_13: #G03# As a Staff member, I want to Apply a Hold, so that I can prevent progression through the workflow or other actions in the system until the issue is resolved.

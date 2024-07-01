@@ -61,12 +61,13 @@
                 "Target Action Rules": [[
                     "get",
                     "data package",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "node",
                     "data package",
-                    "preserve;create"
+                    "preserve",
+                    "get"
                 ]]
             },
             "Contains": [[
@@ -150,12 +151,13 @@
                 "Target Action Rules": [[
                     "get",
                     "data package",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "julia",
                     "data package",
-                    "preserve;create"
+                    "preserve",
+                    "get"
                 ]]
             },
             "Contains": [[
@@ -190,12 +192,12 @@
                 "Target Action Rules": [[
                     "used better",
                     "tools",
-                    "create;delete"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "tools",
                     "visualization programs",
-                    "create;delete"
+                    "preserve"
                 ]]
             },
             "Contains": [[
@@ -226,7 +228,8 @@
                 "Contain Action Rules": [[
                     "data",
                     "type information",
-                    "create"
+                    "create",
+                    "add"
                 ]]
             },
             "Contains": [[
@@ -304,7 +307,8 @@
                 "Contain Action Rules": [[
                     "visualization",
                     "data",
-                    "create"
+                    "create",
+                    "provide"
                 ]]
             },
             "Contains": [
@@ -590,12 +594,13 @@
                 "Target Action Rules": [[
                     "get",
                     "data package",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "r",
                     "data package",
-                    "preserve;create"
+                    "preserve",
+                    "get"
                 ]]
             },
             "Contains": [[
@@ -679,12 +684,13 @@
                 "Target Action Rules": [[
                     "get",
                     "data package",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "excel",
                     "data package",
-                    "preserve;create"
+                    "preserve",
+                    "get"
                 ]]
             },
             "Contains": [[
@@ -768,12 +774,13 @@
                 "Target Action Rules": [[
                     "get",
                     "data package",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "spss",
                     "data package",
-                    "preserve;create"
+                    "preserve",
+                    "get"
                 ]]
             },
             "Contains": [[
@@ -857,12 +864,13 @@
                 "Target Action Rules": [[
                     "get",
                     "data package",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "stata",
                     "data package",
-                    "preserve;create"
+                    "preserve",
+                    "get"
                 ]]
             },
             "Contains": [[
@@ -1007,18 +1015,20 @@
                 "Target Action Rules": [[
                     "get",
                     "data package",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [
                     [
                         "libreoffice",
                         "data package",
-                        "preserve;create"
+                        "preserve",
+                        "get"
                     ],
                     [
                         "openoffice",
                         "data package",
-                        "preserve;create"
+                        "preserve",
+                        "get"
                     ]
                 ]
             },
@@ -1109,12 +1119,13 @@
                 "Target Action Rules": [[
                     "get",
                     "data package",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "python",
                     "data package",
-                    "preserve;create"
+                    "preserve",
+                    "get"
                 ]]
             },
             "Contains": [[
@@ -1184,7 +1195,8 @@
                 "Contain Action Rules": [[
                     "core data packages",
                     "jquery plugin",
-                    "create"
+                    "create",
+                    "want"
                 ]]
             },
             "Contains": [[
@@ -1255,12 +1267,13 @@
                 "Target Action Rules": [[
                     "get",
                     "excel spreadsheet",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "data package",
                     "excel spreadsheet",
-                    "preserve;create"
+                    "preserve",
+                    "get"
                 ]]
             },
             "Contains": [[
@@ -1328,24 +1341,26 @@
                     [
                         "do",
                         "exploratory data analysis",
-                        "preserve;delete;create"
+                        "preserve;create"
                     ],
                     [
                         "operationalize",
                         "analysis",
-                        "create;delete"
+                        "create"
                     ]
                 ],
                 "Contain Action Rules": [
                     [
                         "r",
                         "exploratory data analysis",
-                        "preserve;delete;create"
+                        "preserve;create",
+                        "do"
                     ],
                     [
                         "python",
                         "analysis",
-                        "create;delete"
+                        "create",
+                        "operationalize"
                     ]
                 ]
             },
@@ -1445,12 +1460,13 @@
                 "Target Action Rules": [[
                     "get",
                     "data package",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "clojure",
                     "data package",
-                    "preserve;create"
+                    "preserve",
+                    "get"
                 ]]
             },
             "Contains": [[
@@ -1534,12 +1550,13 @@
                 "Target Action Rules": [[
                     "get",
                     "data package",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "julia",
                     "data package",
-                    "preserve;create"
+                    "preserve",
+                    "get"
                 ]]
             },
             "Contains": [[
@@ -1623,12 +1640,13 @@
                 "Target Action Rules": [[
                     "get",
                     "data package",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "c++",
                     "data package",
-                    "preserve;create"
+                    "preserve",
+                    "get"
                 ]]
             },
             "Contains": [[
@@ -1725,7 +1743,8 @@
                 "Contain Action Rules": [[
                     "data packages",
                     "ml datasets",
-                    "create"
+                    "create",
+                    "package"
                 ]]
             },
             "Contains": [
@@ -2045,7 +2064,8 @@
                 "Contain Action Rules": [[
                     "narrow dataset",
                     "general reference data",
-                    "create"
+                    "create",
+                    "add"
                 ]]
             },
             "Contains": [[
@@ -2097,12 +2117,14 @@
                     [
                         "general country names",
                         "country codes",
-                        "create"
+                        "create",
+                        "add"
                     ],
                     [
                         "dataset",
                         "general country names",
-                        "create"
+                        "create",
+                        "add"
                     ]
                 ]
             },
@@ -2165,7 +2187,8 @@
                 "Contain Action Rules": [[
                     "spending dataset",
                     "reference data on inflation",
-                    "create"
+                    "create",
+                    "add"
                 ]]
             },
             "Contains": [[
@@ -2231,12 +2254,14 @@
                     [
                         "dataset",
                         "lines",
-                        "create"
+                        "create",
+                        "map"
                     ],
                     [
                         "dataset",
                         "geographic data",
-                        "preserve"
+                        "preserve",
+                        "using"
                     ]
                 ]
             },
@@ -2306,7 +2331,8 @@
                 "Contain Action Rules": [[
                     "dataset",
                     "remote-controlled vocabulary",
-                    "create"
+                    "create",
+                    "reference"
                 ]]
             },
             "Contains": [[
@@ -2639,7 +2665,8 @@
                 "Contain Action Rules": [[
                     "zenodo",
                     "integration",
-                    "create"
+                    "create",
+                    "want"
                 ]]
             },
             "Contains": [[
@@ -2696,7 +2723,8 @@
                 "Contain Action Rules": [[
                     "open refine",
                     "integration",
-                    "preserve"
+                    "preserve",
+                    "would like"
                 ]]
             },
             "Contains": [[
@@ -2756,7 +2784,8 @@
                 "Contain Action Rules": [[
                     "ckan",
                     "data packages",
-                    "create"
+                    "create",
+                    "publish"
                 ]]
             },
             "Contains": [[
@@ -2949,7 +2978,7 @@
                     [
                         "validate",
                         " data",
-                        "preserve;forbid"
+                        "preserve"
                     ]
                 ],
                 "Contain Action Rules": []
@@ -2985,7 +3014,8 @@
                 "Contain Action Rules": [[
                     "https://data.mendeley.com/",
                     "integration ",
-                    "create"
+                    "create",
+                    "want"
                 ]]
             },
             "Contains": [[
@@ -3042,7 +3072,8 @@
                 "Contain Action Rules": [[
                     "excel",
                     "integration",
-                    "preserve"
+                    "preserve",
+                    "would like"
                 ]]
             },
             "Contains": [[
@@ -3144,7 +3175,8 @@
                 "Contain Action Rules": [[
                     "research data",
                     "basic metadata ",
-                    "create"
+                    "create",
+                    "add"
                 ]]
             },
             "Contains": [
@@ -3250,7 +3282,7 @@
                 "Target Action Rules": [[
                     "validate",
                     "data",
-                    "preserve;forbid"
+                    "preserve"
                 ]],
                 "Contain Action Rules": []
             },
@@ -3320,7 +3352,7 @@
                     [
                         "check",
                         "data",
-                        "preserve;forbid"
+                        "preserve"
                     ],
                     [
                         "update",
@@ -3437,7 +3469,7 @@
                     [
                         "validate",
                         "data",
-                        "preserve;forbid"
+                        "preserve"
                     ],
                     [
                         "use",
@@ -3520,7 +3552,7 @@
                     [
                         "validates",
                         "data",
-                        "preserve;forbid"
+                        "preserve"
                     ]
                 ],
                 "Contain Action Rules": []
@@ -3654,7 +3686,8 @@
                 "Contain Action Rules": [[
                     "government",
                     "quality of data",
-                    "preserve"
+                    "preserve",
+                    "make it easy to assess"
                 ]]
             },
             "Contains": [[
@@ -3716,12 +3749,14 @@
                     [
                         "interactive preview",
                         "data",
-                        "create"
+                        "create",
+                        "embed"
                     ],
                     [
                         "site",
                         "interactive preview",
-                        "create"
+                        "create",
+                        "embed"
                     ]
                 ]
             },
@@ -3815,7 +3850,8 @@
                 "Contain Action Rules": [[
                     "site",
                     "preview button",
-                    "create"
+                    "create",
+                    "embed"
                 ]]
             },
             "Contains": [[
@@ -3975,7 +4011,8 @@
                 "Contain Action Rules": [[
                     "specific type of data",
                     "existing wizard",
-                    "create;delete"
+                    "create;delete",
+                    "customize"
                 ]]
             },
             "Contains": [[
@@ -4036,12 +4073,14 @@
                     [
                         "dataset",
                         "useful metadata",
-                        "create"
+                        "create",
+                        "add"
                     ],
                     [
                         "dataset",
                         "new data columns",
-                        "create"
+                        "create",
+                        "add"
                     ]
                 ]
             },
@@ -4119,7 +4158,7 @@
                     [
                         "get",
                         "certain data state",
-                        "preserve;create"
+                        "preserve"
                     ],
                     [
                         "package",
@@ -4130,7 +4169,8 @@
                 "Contain Action Rules": [[
                     "reproducible steps",
                     "certain data state",
-                    "preserve;create"
+                    "preserve",
+                    "get"
                 ]]
             },
             "Contains": [[
@@ -4172,7 +4212,7 @@
                     [
                         "get",
                         "data api",
-                        "preserve;create"
+                        "preserve"
                     ],
                     [
                         "listed",
@@ -4232,12 +4272,14 @@
                     [
                         "ckan",
                         "data package",
-                        "create"
+                        "create",
+                        "automatically stored"
                     ],
                     [
                         "github",
                         "data package",
-                        "create"
+                        "create",
+                        "store"
                     ]
                 ]
             },
@@ -4281,12 +4323,12 @@
                 "Target Action Rules": [[
                     "get",
                     "quick preview",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "data",
                     "quick preview",
-                    "preserve;create"
+                    "preserve"
                 ]]
             },
             "Contains": [[
@@ -4392,6 +4434,7 @@
                 "Contain Action Rules": [[
                     "iframe",
                     "embeddable data summary",
+                    "create",
                     "create"
                 ]]
             },
@@ -4560,16 +4603,19 @@
                     [
                         "app",
                         "proxy data packages",
-                        "create"
+                        "create",
+                        "want"
                     ],
                     [
                         "sources",
                         "proxy data packages",
+                        "create",
                         "create"
                     ],
                     [
                         "well know and reliable data",
                         "proxy data packages",
+                        "create",
                         "create"
                     ]
                 ]
@@ -4671,7 +4717,8 @@
                 "Contain Action Rules": [[
                     "packaging data",
                     "match-making service",
-                    "create"
+                    "create",
+                    "acts as"
                 ]]
             },
             "Contains": [[
@@ -4708,7 +4755,7 @@
                 "Target Action Rules": [[
                     "easily use",
                     "data packages",
-                    "create;delete"
+                    "preserve"
                 ]],
                 "Contain Action Rules": []
             },
@@ -4737,6 +4784,7 @@
                 "Contain Action Rules": [[
                     "frictionless data tools",
                     "web socket protocol",
+                    "create",
                     "create"
                 ]]
             },
@@ -4794,7 +4842,7 @@
                     [
                         "check",
                         "data availability persistence",
-                        "preserve;forbid"
+                        "preserve"
                     ]
                 ],
                 "Contain Action Rules": []
@@ -4894,7 +4942,8 @@
                 "Contain Action Rules": [[
                     "creation of a given dataset",
                     "funding",
-                    "create"
+                    "create",
+                    "specify"
                 ]]
             },
             "Contains": [[
@@ -4950,7 +4999,8 @@
                 "Contain Action Rules": [[
                     "dataset",
                     "doi",
-                    "create"
+                    "create",
+                    "add"
                 ]]
             },
             "Contains": [[

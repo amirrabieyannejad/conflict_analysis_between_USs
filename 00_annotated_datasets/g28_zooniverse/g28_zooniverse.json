@@ -187,7 +187,8 @@
                 "Contain Action Rules": [[
                     "other users similar to myself",
                     "music",
-                    "create"
+                    "create",
+                    "discover"
                 ]]
             },
             "Contains": [[
@@ -465,12 +466,14 @@
                     [
                         "tagged videos",
                         "tags",
-                        "create"
+                        "create",
+                        "upload"
                     ],
                     [
                         "all further processing steps",
                         "tags",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ]
                 ]
             },
@@ -538,7 +541,8 @@
                 "Contain Action Rules": [[
                     "video segments",
                     "thumbnail sequences",
-                    "preserve"
+                    "preserve",
+                    "view"
                 ]]
             },
             "Contains": [[
@@ -583,18 +587,20 @@
                 "Target Action Rules": [[
                     "get",
                     "info",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [
                     [
                         "similar video items",
                         "info",
-                        "preserve;create"
+                        "preserve",
+                        "get"
                     ],
                     [
                         "segments",
                         "info",
-                        "preserve;create"
+                        "preserve",
+                        "get"
                     ]
                 ]
             },
@@ -646,18 +652,20 @@
                 "Target Action Rules": [[
                     "get",
                     "info",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [
                     [
                         "perceptually similar video items",
                         "info",
-                        "preserve;create"
+                        "preserve",
+                        "get"
                     ],
                     [
                         "segments",
                         "info",
-                        "preserve;create"
+                        "preserve",
+                        "get"
                     ]
                 ]
             },
@@ -713,7 +721,8 @@
                 "Contain Action Rules": [[
                     "similar profiles",
                     "content recommendations",
-                    "create"
+                    "create",
+                    "receive"
                 ]]
             },
             "Contains": [[
@@ -820,12 +829,14 @@
                     [
                         "videos",
                         "persons",
-                        "preserve"
+                        "preserve",
+                        "identify"
                     ],
                     [
                         "persons",
                         "related information",
-                        "preserve"
+                        "preserve",
+                        "identify"
                     ]
                 ]
             },
@@ -905,12 +916,14 @@
                     [
                         "videos",
                         "products",
-                        "preserve"
+                        "preserve",
+                        "identify"
                     ],
                     [
                         "products",
                         "related information",
-                        "preserve"
+                        "preserve",
+                        "identify"
                     ]
                 ]
             },
@@ -989,7 +1002,8 @@
                 "Contain Action Rules": [[
                     "videos",
                     "broadcaster logos",
-                    "preserve"
+                    "preserve",
+                    "identify"
                 ]]
             },
             "Contains": [[
@@ -1062,12 +1076,14 @@
                     [
                         "videos",
                         "brands",
-                        "preserve"
+                        "preserve",
+                        "identify"
                     ],
                     [
                         "brands",
                         "related information",
-                        "preserve"
+                        "preserve",
+                        "identify"
                     ]
                 ]
             },
@@ -1244,22 +1260,26 @@
                     [
                         "geographical map",
                         "content",
-                        "preserve;create"
+                        "preserve;create",
+                        "access"
                     ],
                     [
                         "videos",
                         "area",
-                        "create"
+                        "create",
+                        "covering"
                     ],
                     [
                         "videos",
                         "monuments",
-                        "create"
+                        "create",
+                        "covering"
                     ],
                     [
                         "videos",
                         "any other relevant point of interest",
-                        "create"
+                        "create",
+                        "covering"
                     ]
                 ]
             },
@@ -1414,7 +1434,7 @@
                     [
                         "validate",
                         "segmentation",
-                        "preserve;forbid"
+                        "preserve"
                     ],
                     [
                         "edit",
@@ -1425,7 +1445,8 @@
                 "Contain Action Rules": [[
                     "videos",
                     "segmentation",
-                    "preserve"
+                    "preserve",
+                    "see"
                 ]]
             },
             "Contains": [[
@@ -1505,7 +1526,8 @@
                 "Contain Action Rules": [[
                     "each segment",
                     "topic",
-                    "create;delete"
+                    "create;delete",
+                    "extract"
                 ]]
             },
             "Contains": [[
@@ -1576,7 +1598,8 @@
                 "Contain Action Rules": [[
                     "videos",
                     "a/v quality aspects",
-                    "create;delete"
+                    "create;delete",
+                    "filter"
                 ]]
             },
             "Contains": [[
@@ -1637,7 +1660,7 @@
                     [
                         "get",
                         "quick assessment",
-                        "preserve;create"
+                        "preserve"
                     ],
                     [
                         "edited before",
@@ -1649,12 +1672,14 @@
                     [
                         "audio material",
                         "quick assessment",
-                        "preserve;create"
+                        "preserve",
+                        "get"
                     ],
                     [
                         "upload",
                         "audio material",
-                        "create;delete"
+                        "create;delete",
+                        "edited before"
                     ]
                 ]
             },
@@ -1766,7 +1791,8 @@
                 "Contain Action Rules": [[
                     "content",
                     "low-level asset information",
-                    "create"
+                    "create",
+                    "prefilter"
                 ]]
             },
             "Contains": [[
@@ -1821,7 +1847,8 @@
                 "Contain Action Rules": [[
                     "ingested contents",
                     "copyright infringement",
-                    "preserve"
+                    "preserve",
+                    "automatically validated"
                 ]]
             },
             "Contains": [[
@@ -1885,7 +1912,8 @@
                 "Contain Action Rules": [[
                     "content",
                     "high-level asset information",
-                    "create"
+                    "create",
+                    "prefilter"
                 ]]
             },
             "Contains": [
@@ -2147,7 +2175,8 @@
                 "Contain Action Rules": [[
                     "galaxy zoo images",
                     "simple low-level image features",
-                    "create"
+                    "create",
+                    "preclassify"
                 ]]
             },
             "Contains": [[
@@ -2202,7 +2231,8 @@
                 "Contain Action Rules": [[
                     "snapshot serengeti images",
                     "no classifiable animals",
-                    "create"
+                    "create",
+                    "automatically detect"
                 ]]
             },
             "Contains": [[
@@ -2253,7 +2283,8 @@
                 "Contain Action Rules": [[
                     "snapshot serengeti images",
                     "automatic image series detection",
-                    "preserve;delete;create"
+                    "preserve;delete;create",
+                    "perform"
                 ]]
             },
             "Contains": [
@@ -2312,7 +2343,8 @@
                 "Contain Action Rules": [[
                     "snapshot serengeti",
                     "automatic animal species preclassification",
-                    "preserve;delete;create"
+                    "preserve;delete;create",
+                    "perform"
                 ]]
             },
             "Contains": [[
@@ -2361,7 +2393,8 @@
                 "Contain Action Rules": [[
                     "snapshot serengeti",
                     "automatic animal attribute preclassification",
-                    "preserve;delete;create"
+                    "preserve;delete;create",
+                    "perform"
                 ]]
             },
             "Contains": [[
@@ -2410,7 +2443,8 @@
                 "Contain Action Rules": [[
                     "snapshot serengeti",
                     "automatic animal number detection",
-                    "preserve;delete;create"
+                    "preserve;delete;create",
+                    "perform"
                 ]]
             },
             "Contains": [[
@@ -2469,22 +2503,26 @@
                     [
                         "plankton portal",
                         "automatic segmentation",
-                        "preserve;delete;create"
+                        "preserve;delete;create",
+                        "perform"
                     ],
                     [
                         "automatic segmentation",
                         "plankton",
-                        "preserve;delete;create"
+                        "preserve;delete;create",
+                        "perform"
                     ],
                     [
                         "plankton portal",
                         "localization",
-                        "preserve;delete;create"
+                        "preserve;delete;create",
+                        "perform"
                     ],
                     [
                         "localization",
                         "plankton",
-                        "preserve;delete;create"
+                        "preserve;delete;create",
+                        "perform"
                     ]
                 ]
             },
@@ -2554,7 +2592,8 @@
                 "Contain Action Rules": [[
                     "plankton portal images",
                     "no classifiable plankton",
-                    "create"
+                    "create",
+                    "automatically detect"
                 ]]
             },
             "Contains": [[
@@ -2606,17 +2645,20 @@
                     [
                         "plankton portal images",
                         "automatic detection",
-                        "preserve;delete;create"
+                        "preserve;delete;create",
+                        "perform"
                     ],
                     [
                         "automatic detection",
                         "plankton size",
-                        "preserve;delete;create"
+                        "preserve;delete;create",
+                        "perform"
                     ],
                     [
                         "automatic detection",
                         "orientation",
-                        "preserve;delete;create"
+                        "preserve;delete;create",
+                        "perform"
                     ]
                 ]
             },
@@ -2678,12 +2720,14 @@
                     [
                         "plankton portal images",
                         "automatic preclassification",
-                        "preserve;delete;create"
+                        "preserve;delete;create",
+                        "perform"
                     ],
                     [
                         "automatic preclassification",
                         "plankton species",
-                        "preserve;delete;create"
+                        "preserve;delete;create",
+                        "perform"
                     ]
                 ]
             },
@@ -2750,7 +2794,8 @@
                 "Contain Action Rules": [[
                     "worm watch lab",
                     "automatic worm motion analysis",
-                    "preserve;delete;create"
+                    "preserve;delete;create",
+                    "perform"
                 ]]
             },
             "Contains": [[
@@ -2818,12 +2863,14 @@
                     [
                         "worm watch lab video",
                         "time",
-                        "create"
+                        "create",
+                        "automatically detect"
                     ],
                     [
                         "worm",
                         "egg",
-                        "preserve;create"
+                        "preserve;create",
+                        "lays"
                     ]
                 ]
             },
@@ -2891,12 +2938,14 @@
                     [
                         "important features",
                         "areas",
-                        "create"
+                        "create",
+                        "detect"
                     ],
                     [
                         "satellite images",
                         "important features",
-                        "create"
+                        "create",
+                        "detect"
                     ]
                 ]
             },
@@ -2978,12 +3027,14 @@
                     [
                         "volunteer's classification",
                         "probability",
-                        "create"
+                        "create",
+                        "assess"
                     ],
                     [
                         "volunteer's classification",
                         "weight",
-                        "create"
+                        "create",
+                        "assess"
                     ]
                 ]
             },
@@ -3063,12 +3114,14 @@
                     [
                         "artefacts",
                         "bright stars",
-                        "delete"
+                        "delete",
+                        "remove"
                     ],
                     [
                         "artefacts",
                         "camera read errors",
-                        "delete"
+                        "delete",
+                        "remove"
                     ]
                 ]
             },
@@ -3130,7 +3183,8 @@
                 "Contain Action Rules": [[
                     "images",
                     "moving and transient objects",
-                    "create"
+                    "create",
+                    "detect"
                 ]]
             },
             "Contains": [[
@@ -3188,12 +3242,14 @@
                     [
                         "audio files",
                         "background noise",
-                        "delete"
+                        "delete",
+                        "remove"
                     ],
                     [
                         "audio files",
                         "distracting sounds",
-                        "delete"
+                        "delete",
+                        "remove"
                     ]
                 ]
             },
@@ -3294,7 +3350,8 @@
                 "Contain Action Rules": [[
                     "single audio file",
                     "number of whales heard",
-                    "preserve"
+                    "preserve",
+                    "identify"
                 ]]
             },
             "Contains": [[
@@ -3407,17 +3464,20 @@
                     [
                         "volunteer",
                         "text",
-                        "delete"
+                        "delete",
+                        "interrupt"
                     ],
                     [
                         "volunteer",
                         "image",
-                        "delete"
+                        "delete",
+                        "interrupt"
                     ],
                     [
                         "volunteer",
                         "video",
-                        "delete"
+                        "delete",
+                        "interrupt"
                     ]
                 ]
             },
@@ -3541,17 +3601,20 @@
                     [
                         "volunteer",
                         "text",
-                        "preserve"
+                        "preserve",
+                        "educate"
                     ],
                     [
                         "volunteer",
                         "image",
-                        "preserve"
+                        "preserve",
+                        "educate"
                     ],
                     [
                         "volunteer",
                         "video",
-                        "preserve"
+                        "preserve",
+                        "educate"
                     ]
                 ]
             },
@@ -3623,12 +3686,14 @@
                     [
                         "piece",
                         "education",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ],
                     [
                         "volunteer",
                         "piece",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ]
                 ]
             },
@@ -3703,12 +3768,14 @@
                     [
                         "volunteer",
                         "interesting comment",
-                        "preserve;create"
+                        "preserve;create",
+                        "made"
                     ],
                     [
                         "subject",
                         "interesting comment",
-                        "preserve;create"
+                        "preserve;create",
+                        "made"
                     ]
                 ]
             },
@@ -3840,7 +3907,8 @@
                 "Contain Action Rules": [[
                     "zoonibot",
                     "explanation",
-                    "create"
+                    "create",
+                    "give"
                 ]]
             },
             "Contains": [[
@@ -3954,7 +4022,8 @@
                 "Contain Action Rules": [[
                     "subjects",
                     "similarity",
-                    "create"
+                    "create",
+                    "group"
                 ]]
             },
             "Contains": [[
@@ -4004,7 +4073,8 @@
                 "Contain Action Rules": [[
                     "volunteers",
                     "different projects",
-                    "create"
+                    "create",
+                    "recommend"
                 ]]
             },
             "Contains": [
@@ -4060,7 +4130,8 @@
                 "Contain Action Rules": [[
                     "articles",
                     "summary",
-                    "preserve"
+                    "preserve",
+                    "see"
                 ]]
             },
             "Contains": [[

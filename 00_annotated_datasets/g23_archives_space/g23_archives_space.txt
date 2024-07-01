@@ -3,19 +3,25 @@
 ********************* << Dataset: g23_archives_space >> ***************
 * Table of potential conflict between user stories
 
-       us_43  us_47  us_30  us_32  us_03  us_12  
-us_43         x                                  
-us_47  x                                         
-us_30                       x                    
-us_32                x                           
-us_03                                     x      
-us_12                              x             
+       us_43  us_47  us_30  us_32  us_01  us_03  us_12  
+us_43         x                                         
+us_47  x                                                
+us_30                       x                           
+us_32                x             x                    
+us_01                       x                           
+us_03                                            x      
+us_12                                     x             
 
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_43_AND_user_story_47}
   
-Affected Resource is: << archival descriptions >>
+Affected Resource of US1 is: << archival descriptions >>
+Affected Resource of US2 is: << archival descriptions >>
+Affected Contain Resource US1 is: << archival descriptions >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_43: << [["repository","archival descriptions","create","create"]] >>
+Contain Resources for: user_story_47: << [["repository","archival descriptions","preserve","view"]] >>
 
  Action of user_story_43 is: << update >>  which is annotated with: << delete >>
  Action of user_story_47 is: << view >>  which is annotated with: << preserve >>
@@ -23,9 +29,9 @@ Affected Resource is: << archival descriptions >>
 Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_43: #g23# as a repository manager , i want to create, #update# and delete #archival descriptions# in my repository.
+   user_story_43: #G23# As a Repository Manager , i want to create, #update# and delete #archival descriptions# in my repository.
 
-   user_story_47: #g23# as a readonly user , i want to #view# #archival descriptions# in my repository.
+   user_story_47: #G23# As a ReadOnly user , i want to #view# #archival descriptions# in my repository.
 
 Original texts of user stories are: 
    user_story_43: #G23# As a Repository Manager , I want to create, update and delete archival descriptions in my repository.
@@ -35,7 +41,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_30_AND_user_story_32}
   
-Affected Resource is: << resource >>
+Affected Resource of US1 is: << resource >>
+Affected Resource of US2 is: << resource >>
+Affected Contain Resource US1 is: << resource >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_30: << [["repository","resource","preserve;create","search"],["repository","accession","preserve;create","search"],["repository","digital object records","preserve;create","search"]] >>
+Contain Resources for: user_story_32: << [] >>
 
  Action of user_story_30 is: << search >>  which is annotated with: << preserve >>
  Action of user_story_32 is: << rearrange >>  which is annotated with: << delete >>
@@ -43,9 +54,9 @@ Affected Resource is: << resource >>
 Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_30: #g23# as an archivist, i want to #search# within a repository for #resource# and accession and digital object records.
+   user_story_30: #G23# As an archivist, i want to #search# within a repository for #resource# and accession and digital object records.
 
-   user_story_32: #g23# as an archivist, i want to #rearrange# the #resource# and/or digital object hierarchy using keyboard-based navigation.
+   user_story_32: #G23# As an Archivist, i want to #rearrange# the #resource# and/or digital object hierarchy using keyboard-based navigation.
 
 Original texts of user stories are: 
    user_story_30: #G23# As an archivist, I want to search within a repository for resource and accession and digital object records.
@@ -53,9 +64,39 @@ Original texts of user stories are:
    user_story_32: #G23# As an Archivist, I want to rearrange the Resource and/or Digital Object hierarchy using keyboard-based navigation.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_01_AND_user_story_32}
+  
+Affected Resource of US1 is: << resource >>
+Affected Resource of US2 is: << resource >>
+Affected Contain Resource US1 is: << finding aid >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_01: << [["particular collection","finding aid","preserve","view"],["resource","finding aid","preserve","view"]] >>
+Contain Resources for: user_story_32: << [] >>
+
+ Action of user_story_01 is: << view >>  which is annotated with: << preserve >>
+ Action of user_story_32 is: << rearrange >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_01: #G23# As a researcher, i want to be able to #view# a finding aid for a particular collection/#resource#.
+
+   user_story_32: #G23# As an Archivist, i want to #rearrange# the #resource# and/or digital object hierarchy using keyboard-based navigation.
+
+Original texts of user stories are: 
+   user_story_01: #G23# As a researcher, I want to be able to view a finding aid for a particular collection/Resource.
+
+   user_story_32: #G23# As an Archivist, I want to rearrange the Resource and/or Digital Object hierarchy using keyboard-based navigation.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_03_AND_user_story_12}
   
-Affected Resource is: << enum lists >>
+Affected Resource of US1 is: << enum lists >>
+Affected Resource of US2 is: << enum lists >>
+Affected Contain Resource US1 is: << enum lists >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_03: << [] >>
+Contain Resources for: user_story_12: << [] >>
 
  Action of user_story_03 is: << managing >>  which is annotated with: << preserve >>
  Action of user_story_12 is: << managing >>  which is annotated with: << delete >>
@@ -63,9 +104,9 @@ Affected Resource is: << enum lists >>
 Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_03: #g23# as a user, i want backend changes for #managing# #enum lists#.
+   user_story_03: #G23# As a user, i want backend changes for #managing# #enum lists#.
 
-   user_story_12: #g23# as a user, i want frontend changes for #managing# #enum lists#.
+   user_story_12: #G23# As a user, i want frontend changes for #managing# #enum lists#.
 
 Original texts of user stories are: 
    user_story_03: #G23# As a user, I want backend changes for managing enum lists.

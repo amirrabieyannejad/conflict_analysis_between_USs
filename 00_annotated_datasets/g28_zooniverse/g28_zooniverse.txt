@@ -3,17 +3,260 @@
 ********************* << Dataset: g28_zooniverse >> ***************
 * Table of potential conflict between user stories
 
-       us_49  us_51  us_50  us_52  
-us_49         x      x      x      
-us_51  x             x             
-us_50  x      x             x      
-us_52  x             x             
+       us_50  us_54  us_33  us_34  us_35  us_38  us_39  us_51  us_53  us_52  us_19  us_21  us_49  us_13  us_14  us_12  us_15  
+us_50         x                                         x      x      x                    x                                  
+us_54  x                                                                                   x                                  
+us_33                       x      x                                                                                          
+us_34                x             x                                                                                          
+us_35                x      x                                                                                                 
+us_38                                            x                                                                            
+us_39                                     x                                                                                   
+us_51  x                                                                                   x                                  
+us_53  x                                                                                   x                                  
+us_52  x                                                                                   x                                  
+us_19                                                                               x                                         
+us_21                                                                        x                    x      x      x      x      
+us_49  x      x                                         x      x      x                                                       
+us_13                                                                               x                                         
+us_14                                                                               x                                         
+us_12                                                                               x                                         
+us_15                                                                               x                                         
 
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_50_AND_user_story_54}
+  
+Affected Resource of US1 is: << volunteer >>
+Affected Resource of US2 is: << interesting comment >>
+Affected Contain Resource US1 is: << volunteer >>
+Affected Resource US2 is: << volunteer >>
+Contain Resources for: user_story_50: << [["volunteer","text","delete","interrupt"],["volunteer","image","delete","interrupt"],["volunteer","video","delete","interrupt"]] >>
+Contain Resources for: user_story_54: << [["volunteer","interesting comment","preserve;create","made"],["subject","interesting comment","preserve;create","made"]] >>
+
+ Action of user_story_50 is: << interrupt >>  which is annotated with: << delete >>
+ Action of user_story_54 is: << made >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_50: #G28# As a Zooniverse admin, i want to know whether i should #interrupt# a #volunteer# with text, an image, or a video.
+
+   user_story_54: #G28# As a Zooniverse admin, i want to know when a #volunteer# has #made# an #interesting comment# on a subject.
+
+Original texts of user stories are: 
+   user_story_50: #G28# As a Zooniverse admin, I want to know whether I should interrupt a volunteer with text, an image, or a video.
+
+   user_story_54: #G28# As a Zooniverse admin, I want to know when a volunteer has made an interesting comment on a subject.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_33_AND_user_story_34}
+  
+Affected Resource of US1 is: << automatic animal species preclassification >>
+Affected Resource of US2 is: << automatic animal attribute preclassification >>
+Affected Contain Resource US1 is: << snapshot serengeti >>
+Affected Resource US2 is: << snapshot serengeti >>
+Contain Resources for: user_story_33: << [["snapshot serengeti","automatic animal species preclassification","preserve;delete;create","perform"]] >>
+Contain Resources for: user_story_34: << [["snapshot serengeti","automatic animal attribute preclassification","preserve;delete;create","perform"]] >>
+
+ Action of user_story_33 is: << perform >>  which is annotated with: << preserve >>
+ Action of user_story_34 is: << perform >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_33: #G28# As a Zooniverse admin, i want to #perform# #automatic animal species preclassification# in #snapshot serengeti#.
+
+   user_story_34: #G28# As a Zooniverse admin, i want to #perform# #automatic animal attribute preclassification# in #snapshot serengeti#.
+
+Original texts of user stories are: 
+   user_story_33: #G28# As a Zooniverse admin, I want to perform automatic animal species preclassification in Snapshot Serengeti.
+
+   user_story_34: #G28# As a Zooniverse admin, I want to perform automatic animal attribute preclassification in Snapshot Serengeti.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_34_AND_user_story_35}
+  
+Affected Resource of US1 is: << automatic animal attribute preclassification >>
+Affected Resource of US2 is: << automatic animal number detection >>
+Affected Contain Resource US1 is: << snapshot serengeti >>
+Affected Resource US2 is: << snapshot serengeti >>
+Contain Resources for: user_story_34: << [["snapshot serengeti","automatic animal attribute preclassification","preserve;delete;create","perform"]] >>
+Contain Resources for: user_story_35: << [["snapshot serengeti","automatic animal number detection","preserve;delete;create","perform"]] >>
+
+ Action of user_story_34 is: << perform >>  which is annotated with: << preserve >>
+ Action of user_story_35 is: << perform >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_34: #G28# As a Zooniverse admin, i want to #perform# #automatic animal attribute preclassification# in #snapshot serengeti#.
+
+   user_story_35: #G28# As a Zooniverse admin, i want to #perform# #automatic animal number detection# in #snapshot serengeti#.
+
+Original texts of user stories are: 
+   user_story_34: #G28# As a Zooniverse admin, I want to perform automatic animal attribute preclassification in Snapshot Serengeti.
+
+   user_story_35: #G28# As a Zooniverse admin, I want to perform automatic animal number detection in Snapshot Serengeti.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_38_AND_user_story_39}
+  
+Affected Resource of US1 is: << automatic detection >>
+Affected Resource of US2 is: << automatic preclassification >>
+Affected Contain Resource US1 is: << plankton portal images >>
+Affected Resource US2 is: << plankton portal images >>
+Contain Resources for: user_story_38: << [["plankton portal images","automatic detection","preserve;delete;create","perform"],["automatic detection","plankton size","preserve;delete;create","perform"],["automatic detection","orientation","preserve;delete;create","perform"]] >>
+Contain Resources for: user_story_39: << [["plankton portal images","automatic preclassification","preserve;delete;create","perform"],["automatic preclassification","plankton species","preserve;delete;create","perform"]] >>
+
+ Action of user_story_38 is: << perform >>  which is annotated with: << preserve >>
+ Action of user_story_39 is: << perform >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_38: #G28# As a Zooniverse admin, i want to #perform# #automatic detection# of plankton size or orientation in #plankton portal images#.
+
+   user_story_39: #G28# As a Zooniverse admin, i want to #perform# #automatic preclassification# of plankton species in #plankton portal images#.
+
+Original texts of user stories are: 
+   user_story_38: #G28# As a Zooniverse admin, I want to perform automatic detection of plankton size or orientation in Plankton Portal images.
+
+   user_story_39: #G28# As a Zooniverse admin, I want to perform automatic preclassification of plankton species in Plankton Portal images.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_50_AND_user_story_51}
+  
+Affected Resource of US1 is: << volunteer >>
+Affected Resource of US2 is: << volunteer >>
+Affected Contain Resource US1 is: << volunteer >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_50: << [["volunteer","text","delete","interrupt"],["volunteer","image","delete","interrupt"],["volunteer","video","delete","interrupt"]] >>
+Contain Resources for: user_story_51: << [] >>
+
+ Action of user_story_50 is: << interrupt >>  which is annotated with: << delete >>
+ Action of user_story_51 is: << educate >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_50: #G28# As a Zooniverse admin, i want to know whether i should #interrupt# a #volunteer# with text, an image, or a video.
+
+   user_story_51: #G28# As a Zooniverse admin, i want to know when i should #educate# a #volunteer#.
+
+Original texts of user stories are: 
+   user_story_50: #G28# As a Zooniverse admin, I want to know whether I should interrupt a volunteer with text, an image, or a video.
+
+   user_story_51: #G28# As a Zooniverse admin, I want to know when I should educate a volunteer.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_50_AND_user_story_53}
+  
+Affected Resource of US1 is: << volunteer >>
+Affected Resource of US2 is: << piece >>
+Affected Contain Resource US1 is: << volunteer >>
+Affected Resource US2 is: << volunteer >>
+Contain Resources for: user_story_50: << [["volunteer","text","delete","interrupt"],["volunteer","image","delete","interrupt"],["volunteer","video","delete","interrupt"]] >>
+Contain Resources for: user_story_53: << [["piece","education","preserve","know"],["volunteer","piece","preserve","know"]] >>
+
+ Action of user_story_50 is: << interrupt >>  which is annotated with: << delete >>
+ Action of user_story_53 is: << know >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_50: #G28# As a Zooniverse admin, i want to know whether i should #interrupt# a #volunteer# with text, an image, or a video.
+
+   user_story_53: #G28# As a Zooniverse admin, i want to #know# which #piece# of education i should give to a #volunteer#.
+
+Original texts of user stories are: 
+   user_story_50: #G28# As a Zooniverse admin, I want to know whether I should interrupt a volunteer with text, an image, or a video.
+
+   user_story_53: #G28# As a Zooniverse admin, I want to know which piece of education I should give to a volunteer.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_33_AND_user_story_35}
+  
+Affected Resource of US1 is: << automatic animal species preclassification >>
+Affected Resource of US2 is: << automatic animal number detection >>
+Affected Contain Resource US1 is: << snapshot serengeti >>
+Affected Resource US2 is: << snapshot serengeti >>
+Contain Resources for: user_story_33: << [["snapshot serengeti","automatic animal species preclassification","preserve;delete;create","perform"]] >>
+Contain Resources for: user_story_35: << [["snapshot serengeti","automatic animal number detection","preserve;delete;create","perform"]] >>
+
+ Action of user_story_33 is: << perform >>  which is annotated with: << preserve >>
+ Action of user_story_35 is: << perform >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_33: #G28# As a Zooniverse admin, i want to #perform# #automatic animal species preclassification# in #snapshot serengeti#.
+
+   user_story_35: #G28# As a Zooniverse admin, i want to #perform# #automatic animal number detection# in #snapshot serengeti#.
+
+Original texts of user stories are: 
+   user_story_33: #G28# As a Zooniverse admin, I want to perform automatic animal species preclassification in Snapshot Serengeti.
+
+   user_story_35: #G28# As a Zooniverse admin, I want to perform automatic animal number detection in Snapshot Serengeti.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_50_AND_user_story_52}
+  
+Affected Resource of US1 is: << volunteer >>
+Affected Resource of US2 is: << volunteer >>
+Affected Contain Resource US1 is: << volunteer >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_50: << [["volunteer","text","delete","interrupt"],["volunteer","image","delete","interrupt"],["volunteer","video","delete","interrupt"]] >>
+Contain Resources for: user_story_52: << [["volunteer","text","preserve","educate"],["volunteer","image","preserve","educate"],["volunteer","video","preserve","educate"]] >>
+
+ Action of user_story_50 is: << interrupt >>  which is annotated with: << delete >>
+ Action of user_story_52 is: << educate >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_50: #G28# As a Zooniverse admin, i want to know whether i should #interrupt# a #volunteer# with text, an image, or a video.
+
+   user_story_52: #G28# As a Zooniverse admin, i want to know whether i should #educate# a #volunteer# with text, an image, or a video.
+
+Original texts of user stories are: 
+   user_story_50: #G28# As a Zooniverse admin, I want to know whether I should interrupt a volunteer with text, an image, or a video.
+
+   user_story_52: #G28# As a Zooniverse admin, I want to know whether I should educate a volunteer with text, an image, or a video.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_19_AND_user_story_21}
+  
+Affected Resource of US1 is: << videos >>
+Affected Resource of US2 is: << videos >>
+Affected Contain Resource US1 is: << segmentation >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_19: << [["videos","segmentation","preserve","see"]] >>
+Contain Resources for: user_story_21: << [["videos","a/v quality aspects","create;delete","filter"]] >>
+
+ Action of user_story_19 is: << see >>  which is annotated with: << preserve >>
+ Action of user_story_21 is: << filter >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_19: #G28# As an admin, i want to #see#, validate and edit segmentation of #videos#.
+
+   user_story_21: #G28# As an admin, i want to #filter# and rank #videos# based on a/v quality aspects.
+
+Original texts of user stories are: 
+   user_story_19: #G28# As an admin, I want to see, validate and edit segmentation of videos.
+
+   user_story_21: #G28# As an admin, I want to filter and rank videos based on A/V quality aspects.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_49_AND_user_story_51}
   
-Affected Resource is: << volunteer >>
+Affected Resource of US1 is: << volunteer >>
+Affected Resource of US2 is: << volunteer >>
+Affected Contain Resource US1 is: << volunteer >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_49: << [] >>
+Contain Resources for: user_story_51: << [] >>
 
  Action of user_story_49 is: << interrupt >>  which is annotated with: << delete >>
  Action of user_story_51 is: << educate >>  which is annotated with: << preserve >>
@@ -21,9 +264,9 @@ Affected Resource is: << volunteer >>
 Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_49: #g28# as a zooniverse admin, i want to know when i should #interrupt# a #volunteer#.
+   user_story_49: #G28# As a Zooniverse admin, i want to know when i should #interrupt# a #volunteer#.
 
-   user_story_51: #g28# as a zooniverse admin, i want to know when i should #educate# a #volunteer#.
+   user_story_51: #G28# As a Zooniverse admin, i want to know when i should #educate# a #volunteer#.
 
 Original texts of user stories are: 
    user_story_49: #G28# As a Zooniverse admin, I want to know when I should interrupt a volunteer.
@@ -33,7 +276,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_49_AND_user_story_50}
   
-Affected Resource is: << volunteer >>
+Affected Resource of US1 is: << volunteer >>
+Affected Resource of US2 is: << volunteer >>
+Affected Contain Resource US1 is: << volunteer >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_49: << [] >>
+Contain Resources for: user_story_50: << [["volunteer","text","delete","interrupt"],["volunteer","image","delete","interrupt"],["volunteer","video","delete","interrupt"]] >>
 
  Action of user_story_49 is: << interrupt >>  which is annotated with: << delete >>
  Action of user_story_50 is: << interrupt >>  which is annotated with: << delete >>
@@ -41,9 +289,9 @@ Affected Resource is: << volunteer >>
 Conflict Reason is: << delete-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_49: #g28# as a zooniverse admin, i want to know when i should #interrupt# a #volunteer#.
+   user_story_49: #G28# As a Zooniverse admin, i want to know when i should #interrupt# a #volunteer#.
 
-   user_story_50: #g28# as a zooniverse admin, i want to know whether i should #interrupt# a #volunteer# with text, an image, or a video.
+   user_story_50: #G28# As a Zooniverse admin, i want to know whether i should #interrupt# a #volunteer# with text, an image, or a video.
 
 Original texts of user stories are: 
    user_story_49: #G28# As a Zooniverse admin, I want to know when I should interrupt a volunteer.
@@ -51,49 +299,114 @@ Original texts of user stories are:
    user_story_50: #G28# As a Zooniverse admin, I want to know whether I should interrupt a volunteer with text, an image, or a video.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_50_AND_user_story_51}
+{user_story_13_AND_user_story_21}
   
-Affected Resource is: << volunteer >>
+Affected Resource of US1 is: << videos >>
+Affected Resource of US2 is: << videos >>
+Affected Contain Resource US1 is: << products >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_13: << [["videos","products","preserve","identify"],["products","related information","preserve","identify"]] >>
+Contain Resources for: user_story_21: << [["videos","a/v quality aspects","create;delete","filter"]] >>
 
- Action of user_story_50 is: << interrupt >>  which is annotated with: << delete >>
- Action of user_story_51 is: << educate >>  which is annotated with: << preserve >>
+ Action of user_story_13 is: << identify >>  which is annotated with: << preserve >>
+ Action of user_story_21 is: << filter >>  which is annotated with: << delete >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_50: #g28# as a zooniverse admin, i want to know whether i should #interrupt# a #volunteer# with text, an image, or a video.
+   user_story_13: #G28# As a user, i want to #identify# products in #videos#, and receive related information about them.
 
-   user_story_51: #g28# as a zooniverse admin, i want to know when i should #educate# a #volunteer#.
+   user_story_21: #G28# As an admin, i want to #filter# and rank #videos# based on a/v quality aspects.
 
 Original texts of user stories are: 
-   user_story_50: #G28# As a Zooniverse admin, I want to know whether I should interrupt a volunteer with text, an image, or a video.
+   user_story_13: #G28# As a user, I want to identify products in videos, and receive related information about them.
 
-   user_story_51: #G28# As a Zooniverse admin, I want to know when I should educate a volunteer.
+   user_story_21: #G28# As an admin, I want to filter and rank videos based on A/V quality aspects.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_50_AND_user_story_52}
+{user_story_14_AND_user_story_21}
   
-Affected Resource is: << volunteer >>
+Affected Resource of US1 is: << videos >>
+Affected Resource of US2 is: << videos >>
+Affected Contain Resource US1 is: << broadcaster logos >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_14: << [["videos","broadcaster logos","preserve","identify"]] >>
+Contain Resources for: user_story_21: << [["videos","a/v quality aspects","create;delete","filter"]] >>
 
- Action of user_story_50 is: << interrupt >>  which is annotated with: << delete >>
- Action of user_story_52 is: << educate >>  which is annotated with: << preserve >>
+ Action of user_story_14 is: << identify >>  which is annotated with: << preserve >>
+ Action of user_story_21 is: << filter >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_14: #G28# As a user, i want to #identify# broadcaster logos in #videos#, and receive related information about them.
+
+   user_story_21: #G28# As an admin, i want to #filter# and rank #videos# based on a/v quality aspects.
+
+Original texts of user stories are: 
+   user_story_14: #G28# As a user, I want to identify broadcaster logos in videos, and receive related information about them.
+
+   user_story_21: #G28# As an admin, I want to filter and rank videos based on A/V quality aspects.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_12_AND_user_story_21}
+  
+Affected Resource of US1 is: << videos >>
+Affected Resource of US2 is: << videos >>
+Affected Contain Resource US1 is: << persons >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_12: << [["videos","persons","preserve","identify"],["persons","related information","preserve","identify"]] >>
+Contain Resources for: user_story_21: << [["videos","a/v quality aspects","create;delete","filter"]] >>
+
+ Action of user_story_12 is: << identify >>  which is annotated with: << preserve >>
+ Action of user_story_21 is: << filter >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_12: #G28# As a user, i want to #identify# persons in #videos#, and receive related information about them.
+
+   user_story_21: #G28# As an admin, i want to #filter# and rank #videos# based on a/v quality aspects.
+
+Original texts of user stories are: 
+   user_story_12: #G28# As a user, I want to identify persons in videos, and receive related information about them.
+
+   user_story_21: #G28# As an admin, I want to filter and rank videos based on A/V quality aspects.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_49_AND_user_story_53}
+  
+Affected Resource of US1 is: << volunteer >>
+Affected Resource of US2 is: << piece >>
+Affected Contain Resource US1 is: << volunteer >>
+Affected Resource US2 is: << volunteer >>
+Contain Resources for: user_story_49: << [] >>
+Contain Resources for: user_story_53: << [["piece","education","preserve","know"],["volunteer","piece","preserve","know"]] >>
+
+ Action of user_story_49 is: << interrupt >>  which is annotated with: << delete >>
+ Action of user_story_53 is: << know >>  which is annotated with: << preserve >>
 
 Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_50: #g28# as a zooniverse admin, i want to know whether i should #interrupt# a #volunteer# with text, an image, or a video.
+   user_story_49: #G28# As a Zooniverse admin, i want to know when i should #interrupt# a #volunteer#.
 
-   user_story_52: #g28# as a zooniverse admin, i want to know whether i should #educate# a #volunteer# with text, an image, or a video.
+   user_story_53: #G28# As a Zooniverse admin, i want to #know# which #piece# of education i should give to a #volunteer#.
 
 Original texts of user stories are: 
-   user_story_50: #G28# As a Zooniverse admin, I want to know whether I should interrupt a volunteer with text, an image, or a video.
+   user_story_49: #G28# As a Zooniverse admin, I want to know when I should interrupt a volunteer.
 
-   user_story_52: #G28# As a Zooniverse admin, I want to know whether I should educate a volunteer with text, an image, or a video.
+   user_story_53: #G28# As a Zooniverse admin, I want to know which piece of education I should give to a volunteer.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_49_AND_user_story_52}
   
-Affected Resource is: << volunteer >>
+Affected Resource of US1 is: << volunteer >>
+Affected Resource of US2 is: << volunteer >>
+Affected Contain Resource US1 is: << volunteer >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_49: << [] >>
+Contain Resources for: user_story_52: << [["volunteer","text","preserve","educate"],["volunteer","image","preserve","educate"],["volunteer","video","preserve","educate"]] >>
 
  Action of user_story_49 is: << interrupt >>  which is annotated with: << delete >>
  Action of user_story_52 is: << educate >>  which is annotated with: << preserve >>
@@ -101,11 +414,61 @@ Affected Resource is: << volunteer >>
 Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_49: #g28# as a zooniverse admin, i want to know when i should #interrupt# a #volunteer#.
+   user_story_49: #G28# As a Zooniverse admin, i want to know when i should #interrupt# a #volunteer#.
 
-   user_story_52: #g28# as a zooniverse admin, i want to know whether i should #educate# a #volunteer# with text, an image, or a video.
+   user_story_52: #G28# As a Zooniverse admin, i want to know whether i should #educate# a #volunteer# with text, an image, or a video.
 
 Original texts of user stories are: 
    user_story_49: #G28# As a Zooniverse admin, I want to know when I should interrupt a volunteer.
 
    user_story_52: #G28# As a Zooniverse admin, I want to know whether I should educate a volunteer with text, an image, or a video.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_15_AND_user_story_21}
+  
+Affected Resource of US1 is: << videos >>
+Affected Resource of US2 is: << videos >>
+Affected Contain Resource US1 is: << brands >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_15: << [["videos","brands","preserve","identify"],["brands","related information","preserve","identify"]] >>
+Contain Resources for: user_story_21: << [["videos","a/v quality aspects","create;delete","filter"]] >>
+
+ Action of user_story_15 is: << identify >>  which is annotated with: << preserve >>
+ Action of user_story_21 is: << filter >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_15: #G28# As a user, i want to #identify# brands in #videos#, and receive related information about them.
+
+   user_story_21: #G28# As an admin, i want to #filter# and rank #videos# based on a/v quality aspects.
+
+Original texts of user stories are: 
+   user_story_15: #G28# As a user, I want to identify brands in videos, and receive related information about them.
+
+   user_story_21: #G28# As an admin, I want to filter and rank videos based on A/V quality aspects.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_49_AND_user_story_54}
+  
+Affected Resource of US1 is: << volunteer >>
+Affected Resource of US2 is: << interesting comment >>
+Affected Contain Resource US1 is: << volunteer >>
+Affected Resource US2 is: << volunteer >>
+Contain Resources for: user_story_49: << [] >>
+Contain Resources for: user_story_54: << [["volunteer","interesting comment","preserve;create","made"],["subject","interesting comment","preserve;create","made"]] >>
+
+ Action of user_story_49 is: << interrupt >>  which is annotated with: << delete >>
+ Action of user_story_54 is: << made >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_49: #G28# As a Zooniverse admin, i want to know when i should #interrupt# a #volunteer#.
+
+   user_story_54: #G28# As a Zooniverse admin, i want to know when a #volunteer# has #made# an #interesting comment# on a subject.
+
+Original texts of user stories are: 
+   user_story_49: #G28# As a Zooniverse admin, I want to know when I should interrupt a volunteer.
+
+   user_story_54: #G28# As a Zooniverse admin, I want to know when a volunteer has made an interesting comment on a subject.

@@ -156,13 +156,14 @@
                     [
                         "get",
                         "list",
-                        "preserve;create"
+                        "preserve"
                     ]
                 ],
                 "Contain Action Rules": [[
                     "list",
                     "nearby recycling facilities",
-                    "preserve;create"
+                    "preserve",
+                    "get"
                 ]]
             },
             "Contains": [[
@@ -233,12 +234,13 @@
                 "Target Action Rules": [[
                     "get",
                     "hours",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "each recycling facility",
                     "hours",
-                    "preserve;create"
+                    "preserve",
+                    "get"
                 ]]
             },
             "Contains": [[
@@ -329,7 +331,7 @@
                     [
                         "get",
                         "list",
-                        "preserve;create"
+                        "preserve"
                     ],
                     [
                         "find",
@@ -444,7 +446,8 @@
                 "Contain Action Rules": [[
                     "favorites",
                     "donation centers",
-                    "create"
+                    "create",
+                    "add"
                 ]]
             },
             "Contains": [
@@ -577,12 +580,14 @@
                     [
                         "map display",
                         "public recycling bins",
-                        "preserve"
+                        "preserve",
+                        "view"
                     ],
                     [
                         "map display",
                         "area",
-                        "preserve"
+                        "preserve",
+                        "view"
                     ]
                 ]
             },
@@ -640,12 +645,14 @@
                     [
                         "map display",
                         "special waste drop off sites",
-                        "preserve"
+                        "preserve",
+                        "view"
                     ],
                     [
                         "map display",
                         "area",
-                        "preserve"
+                        "preserve",
+                        "view"
                     ]
                 ]
             },
@@ -711,7 +718,8 @@
                 "Contain Action Rules": [[
                     "area",
                     "safe disposal events",
-                    "preserve"
+                    "preserve",
+                    "view"
                 ]]
             },
             "Contains": [[
@@ -840,7 +848,8 @@
                 "Contain Action Rules": [[
                     "website",
                     "user documentation",
-                    "preserve"
+                    "preserve",
+                    "view"
                 ]]
             },
             "Contains": [[
@@ -888,7 +897,7 @@
                     [
                         "get",
                         "feedback",
-                        "preserve;create"
+                        "preserve"
                     ],
                     [
                         "enter",
@@ -976,7 +985,7 @@
                 "Target Action Rules": [[
                     "get",
                     "recent information",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": []
             },
@@ -1164,18 +1173,19 @@
                     [
                         "check",
                         "transaction history",
-                        "preserve;forbid"
+                        "preserve"
                     ],
                     [
                         "keep",
                         "record",
-                        "preserve;forbid"
+                        "preserve"
                     ]
                 ],
                 "Contain Action Rules": [[
                     "record",
                     "transaction history",
-                    "preserve;forbid"
+                    "preserve",
+                    "check"
                 ]]
             },
             "Contains": [[
@@ -1256,12 +1266,14 @@
                     [
                         "sites",
                         "great ui",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ],
                     [
                         "sites",
                         "ux",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ]
                 ]
             },
@@ -1331,13 +1343,14 @@
                     [
                         "do",
                         "other stuffs",
-                        "preserve;delete;create"
+                        "preserve;create"
                     ]
                 ],
                 "Contain Action Rules": [[
                     "electronic devices",
                     "other stuffs",
-                    "preserve;delete;create"
+                    "preserve;create",
+                    "do"
                 ]]
             },
             "Contains": [[
@@ -1406,7 +1419,8 @@
                 "Contain Action Rules": [[
                     "specific users",
                     "ip address",
-                    "delete"
+                    "delete",
+                    "block"
                 ]]
             },
             "Contains": [[
@@ -1494,7 +1508,8 @@
                 "Contain Action Rules": [[
                     "dashboard",
                     "sites' statuses",
-                    "preserve"
+                    "preserve",
+                    "view"
                 ]]
             },
             "Contains": [[
@@ -1607,7 +1622,8 @@
                 "Contain Action Rules": [[
                     "data related to my company",
                     "full access",
-                    "preserve"
+                    "preserve",
+                    "have"
                 ]]
             },
             "Contains": [[
@@ -1708,7 +1724,8 @@
                 "Contain Action Rules": [[
                     "full information",
                     "access",
-                    "preserve"
+                    "preserve",
+                    "have"
                 ]]
             },
             "Contains": [
@@ -1786,7 +1803,8 @@
                 "Contain Action Rules": [[
                     "website",
                     "api",
-                    "preserve;create"
+                    "preserve;create",
+                    "access"
                 ]]
             },
             "Contains": [[
@@ -1909,7 +1927,8 @@
                 "Contain Action Rules": [[
                     "database",
                     "personal information",
-                    "preserve"
+                    "preserve",
+                    "have"
                 ]]
             },
             "Contains": [
@@ -2070,7 +2089,7 @@
                 "Target Action Rules": [[
                     "get",
                     "quick notifications",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": []
             },
@@ -2246,7 +2265,7 @@
                 "Target Action Rules": [[
                     "check",
                     "routes",
-                    "preserve;forbid"
+                    "preserve"
                 ]],
                 "Contain Action Rules": []
             },
@@ -2275,7 +2294,8 @@
                 "Contain Action Rules": [[
                     "map",
                     "locations of recycling centers",
-                    "preserve"
+                    "preserve",
+                    "view"
                 ]]
             },
             "Contains": [[
@@ -2310,7 +2330,7 @@
                 "Target Action Rules": [[
                     "get",
                     "recommendations",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": []
             },
@@ -2367,7 +2387,7 @@
                     [
                         "get",
                         "temporary password",
-                        "preserve;create"
+                        "preserve"
                     ],
                     [
                         "forget",
@@ -2408,7 +2428,8 @@
                 "Contain Action Rules": [[
                     "profile",
                     "email account",
-                    "create"
+                    "create",
+                    "link"
                 ]]
             },
             "Contains": [[
@@ -2502,7 +2523,7 @@
                 "Target Action Rules": [[
                     "keep",
                     "database up-to-date",
-                    "preserve;forbid"
+                    "preserve"
                 ]],
                 "Contain Action Rules": []
             },
@@ -2661,7 +2682,8 @@
                 "Contain Action Rules": [[
                     "platform",
                     "recycling centers",
-                    "create"
+                    "create",
+                    "onboard"
                 ]]
             },
             "Contains": [[
@@ -2934,12 +2956,14 @@
                     [
                         "dashboard",
                         "usage stats",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ],
                     [
                         "dashboard",
                         "locations",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ]
                 ]
             },
@@ -3076,7 +3100,8 @@
                 "Contain Action Rules": [[
                     "list",
                     "facolities",
-                    "preserve"
+                    "preserve",
+                    "browse"
                 ]]
             },
             "Contains": [[
@@ -3264,7 +3289,8 @@
                 "Contain Action Rules": [[
                     "user stats",
                     "access",
-                    "preserve"
+                    "preserve",
+                    "have"
                 ]]
             },
             "Contains": [[

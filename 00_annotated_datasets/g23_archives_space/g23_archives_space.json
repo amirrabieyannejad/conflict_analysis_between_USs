@@ -31,12 +31,14 @@
                     [
                         "particular collection",
                         "finding aid",
-                        "preserve"
+                        "preserve",
+                        "view"
                     ],
                     [
                         "resource",
                         "finding aid",
-                        "preserve"
+                        "preserve",
+                        "view"
                     ]
                 ]
             },
@@ -231,7 +233,8 @@
                 "Contain Action Rules": [[
                     "resource component",
                     "component unique identifier",
-                    "create"
+                    "create",
+                    "assign"
                 ]]
             },
             "Contains": [[
@@ -331,12 +334,14 @@
                     [
                         "each aspace record",
                         "at",
-                        "create"
+                        "create",
+                        "store"
                     ],
                     [
                         "each aspace record",
                         "archon source record ids",
-                        "create"
+                        "create",
+                        "store"
                     ]
                 ]
             },
@@ -398,7 +403,8 @@
                 "Contain Action Rules": [[
                     "subject heading",
                     "standard identifier string",
-                    "create"
+                    "create",
+                    "associate"
                 ]]
             },
             "Contains": [[
@@ -507,7 +513,8 @@
                 "Contain Action Rules": [[
                     "csv",
                     "accessions data",
-                    "create"
+                    "create",
+                    "import"
                 ]]
             },
             "Contains": [[
@@ -556,7 +563,8 @@
                 "Contain Action Rules": [[
                     "marcxml records",
                     "resources",
-                    "create"
+                    "create",
+                    "import"
                 ]]
             },
             "Contains": [[
@@ -659,12 +667,13 @@
                 "Target Action Rules": [[
                     "get",
                     "access",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "links",
                     "access",
-                    "preserve;create"
+                    "preserve",
+                    "get"
                 ]]
             },
             "Contains": [
@@ -745,12 +754,14 @@
                     [
                         "read and edit views",
                         "dates",
-                        "preserve"
+                        "preserve",
+                        "see"
                     ],
                     [
                         "read and edit views",
                         "extents",
-                        "preserve"
+                        "preserve",
+                        "see"
                     ]
                 ]
             },
@@ -832,7 +843,8 @@
                 "Contain Action Rules": [[
                     "eac-cpf records",
                     "agent information",
-                    "create"
+                    "create",
+                    "import"
                 ]]
             },
             "Contains": [[
@@ -893,7 +905,8 @@
                 "Contain Action Rules": [[
                     "database",
                     "enum value lists",
-                    "preserve"
+                    "preserve",
+                    "loading"
                 ]]
             },
             "Contains": [[
@@ -1006,7 +1019,8 @@
                 "Contain Action Rules": [[
                     "eac-cpf",
                     "agent records",
-                    "create"
+                    "create",
+                    "export"
                 ]]
             },
             "Contains": [[
@@ -1064,12 +1078,14 @@
                     [
                         "marcxml records",
                         "agent",
-                        "create"
+                        "create",
+                        "import only"
                     ],
                     [
                         "marcxml records",
                         "subject information",
-                        "create"
+                        "create",
+                        "import only"
                     ]
                 ]
             },
@@ -1143,7 +1159,8 @@
                 "Contain Action Rules": [[
                     "advanced data entry",
                     "users",
-                    "create"
+                    "create",
+                    "assign"
                 ]]
             },
             "Contains": [[
@@ -1259,7 +1276,8 @@
                 "Contain Action Rules": [[
                     "repositories",
                     "additional properties",
-                    "create"
+                    "create",
+                    "add"
                 ]]
             },
             "Contains": [[
@@ -1308,7 +1326,8 @@
                 "Contain Action Rules": [[
                     "other record types",
                     "notes",
-                    "create"
+                    "create",
+                    "add"
                 ]]
             },
             "Contains": [[
@@ -1357,6 +1376,7 @@
                 "Contain Action Rules": [[
                     "someone else",
                     "new user account",
+                    "create",
                     "create"
                 ]]
             },
@@ -1416,17 +1436,20 @@
                     [
                         "administrative data",
                         "archival description",
-                        "create"
+                        "create",
+                        "add"
                     ],
                     [
                         "top-level resource",
                         "administrative data",
-                        "create"
+                        "create",
+                        "add"
                     ],
                     [
                         "top-level resource",
                         "finding aid-related data",
-                        "create"
+                        "create",
+                        "add"
                     ]
                 ]
             },
@@ -1508,17 +1531,20 @@
                     [
                         "description",
                         "level",
-                        "create"
+                        "create",
+                        "assign"
                     ],
                     [
                         "resource",
                         "level",
-                        "create"
+                        "create",
+                        "assign"
                     ],
                     [
                         "resource component",
                         "level",
-                        "create"
+                        "create",
+                        "assign"
                     ]
                 ]
             },
@@ -1688,7 +1714,8 @@
                 "Contain Action Rules": [[
                     "location",
                     "demo database",
-                    "create;delete"
+                    "create;delete",
+                    "control"
                 ]]
             },
             "Contains": [[
@@ -1758,17 +1785,20 @@
                     [
                         "repository",
                         "resource",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "repository",
                         "accession",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "repository",
                         "digital object records",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ]
                 ]
             },
@@ -1979,7 +2009,8 @@
                 "Contain Action Rules": [[
                     "different position",
                     "archival object",
-                    "create"
+                    "create",
+                    "dragging"
                 ]]
             },
             "Contains": [
@@ -2124,7 +2155,8 @@
                 "Contain Action Rules": [[
                     "ead",
                     "description",
-                    "create"
+                    "create",
+                    "export"
                 ]]
             },
             "Contains": [[
@@ -2275,12 +2307,14 @@
                     [
                         "resource",
                         "instance",
-                        "create"
+                        "create",
+                        "associate"
                     ],
                     [
                         "resource component",
                         "instance",
-                        "create"
+                        "create",
+                        "associate"
                     ]
                 ]
             },
@@ -2336,7 +2370,8 @@
                 "Contain Action Rules": [[
                     "record",
                     "someone else's changes",
-                    "preserve;forbid"
+                    "preserve;forbid",
+                    "don't want to inadvertently overwrite"
                 ]]
             },
             "Contains": [[
@@ -2456,7 +2491,8 @@
                 "Contain Action Rules": [[
                     "frontend application",
                     "ead",
-                    "create"
+                    "create",
+                    "upload"
                 ]]
             },
             "Contains": [[
@@ -2566,6 +2602,7 @@
                 "Contain Action Rules": [[
                     "repository",
                     "archival descriptions",
+                    "create",
                     "create"
                 ]]
             },
@@ -2751,6 +2788,7 @@
                 "Contain Action Rules": [[
                     "repository",
                     "any records",
+                    "create",
                     "create"
                 ]]
             },
@@ -2820,7 +2858,8 @@
                 "Contain Action Rules": [[
                     "repository",
                     "archival descriptions",
-                    "preserve"
+                    "preserve",
+                    "view"
                 ]]
             },
             "Contains": [[
@@ -2871,12 +2910,14 @@
                     [
                         "user",
                         "repository manager role",
-                        "create"
+                        "create",
+                        "declare"
                     ],
                     [
                         "given repository",
                         "repository manager role",
-                        "create"
+                        "create",
+                        "declare"
                     ]
                 ]
             },
@@ -2951,7 +2992,8 @@
                 "Contain Action Rules": [[
                     "name form",
                     "source",
-                    "create"
+                    "create",
+                    "specify"
                 ]]
             },
             "Contains": [
@@ -3148,7 +3190,8 @@
                 "Contain Action Rules": [[
                     "resource description",
                     "subject record",
-                    "create"
+                    "create",
+                    "associate"
                 ]]
             },
             "Contains": [[
@@ -3261,7 +3304,8 @@
                 "Contain Action Rules": [[
                     "container",
                     "instance",
-                    "create"
+                    "create",
+                    "associate"
                 ]]
             },
             "Contains": [[
@@ -3310,7 +3354,8 @@
                 "Contain Action Rules": [[
                     "container",
                     "location information",
-                    "create"
+                    "create",
+                    "assign"
                 ]]
             },
             "Contains": [[

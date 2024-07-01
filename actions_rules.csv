@@ -1,5 +1,5 @@
 verb;action rules
-check;"preserve;forbid"
+check;preserve
 maintaining;preserve
 made;"preserve;create"
 protected;"preserve;forbid"
@@ -20,7 +20,7 @@ display;"preserve;create"
 update;"create;delete"
 catch;create
 store;create
-validated;"preserve;forbid"
+validated;preserve
 publish;create
 know immediately;preserve
 accidentally broken;delete
@@ -34,7 +34,7 @@ scheduled;create
 expire;delete
 occurred;preserve
 run;create
-overlaps;"preserve;forbid"
+overlaps;preserve
 Review;preserve
 establish;create
 segment;create
@@ -55,7 +55,7 @@ published;create
 downloads;create
 follow;create
 reading;preserve
-get;"preserve;create"
+get;preserve
 rerun;"create;delete"
 attach;create
 be added;create
@@ -86,7 +86,7 @@ leaving;delete
 answer;"preserve;create"
 communicate directly;preserve
 convey;create
-validates;"preserve;forbid"
+validates;preserve
 delegate;create
 using;preserve
 make sure;"preserve;forbid"
@@ -249,7 +249,7 @@ prevent spamming;forbid
 make it easy;create
 track;"preserve;create"
 give;create
-do;"preserve;delete;create"
+do;"preserve;create"
 encourage;"preserve;create"
 pushing;create
 share;create
@@ -330,17 +330,17 @@ applied;create
 classified;create
 depends;"preserve;forbid"
 deterministically deployed locally;create
-keep;"preserve;forbid"
+keep;preserve
 only share;create
 record;create
 setting;create
-re-use external;create
+re-use external;preserve
 still allows;preserve
 scroll through;"preserve;create"
 granted;"preserve;create"
 prepare;create
 get going quickly;preserve
-do next;"create;preserve;delete"
+do next;"create;preserve"
 signing up;create
 helps track;"preserve;create"
 attendend;preserve
@@ -354,8 +354,8 @@ Be offered;create
 reviewing;"preserve;forbid"
 form;create
 distribute;create
-keeping track;"preserve;forbid"
-does;"preserve;delete;create"
+keeping track;preserve
+does;"preserve;create"
 adequately described;"preserve;forbid"
 successfully render;"preserve;create"
 begin identifying;create
@@ -380,7 +380,7 @@ draw;"create;delete"
 easily register for;create
 easily assign;create
 attached;create
-validate;"preserve;forbid"
+validate;preserve
 don t have to retype;preserve
 relates;preserve
 previewed;preserve
@@ -392,7 +392,7 @@ look further;"preserve;create"
 start using;create
 avoided;"preserve;forbid"
 lays;"preserve;create"
-reused;"preserve;create"
+reused;preserve
 propose;create
 work out;create
 still retaining;"preserve;create"
@@ -457,7 +457,7 @@ stored;create
 examine;"preserve;forbid"
 resolved;"create;delete"
 automatically create;create
-easily keep track;"preserve;delete;create"
+easily keep track;preserve
 posted;create
 enable;"preserve;create"
 log in;"preserve;create"
@@ -522,7 +522,7 @@ migrate;create
 asked;preserve
 distinguish;"preserve;create"
 turn on/off;"create;delete"
-used again;"create;delete"
+used again;preserve
 monitors;"create;delete"
 email;create
 subscribe;create
@@ -557,15 +557,15 @@ take action;"create;delete"
 prompted;preserve
 replicate beyond;create
 replicate remotely;create
-(re-)use;"create;delete"
+(re-)use;preserve
 verified;preserve
-always keep;"preserve;forbid"
+always keep;preserve
 shared more easily;preserve
 contribute;create
 discuss;preserve
 avoid placing;"preserve;forbid"
 manage more efficiently;"create;delete"
-operationalize;"create;delete"
+operationalize;create
 study;"preserve;create"
 wrangle;preserve
 infer;"preserve;delete;create"
@@ -594,7 +594,7 @@ preview;create
 login remotely;create
 visualise;create
 visualised;create
-used better;"create;delete"
+used better;preserve
 without visiting;delete
 notice;preserve
 register;create
@@ -722,7 +722,7 @@ arranged;"create;delete"
 designate;create
 easily understand;preserve
 administering;"create;delete"
-re-use;"create;delete"
+re-use;preserve
 retaining;create
 writing;create
 automatically perform;create
@@ -789,7 +789,7 @@ indent;create
 outdent;create
 available to view;create
 mark;create
-either keep;create
+either keep;preserve
 approved;preserve
 stored directly;preserve
 activated;create
@@ -810,7 +810,7 @@ improving;create
 press;create
 submitted;create
 house;preserve
-re-used;"create;delete"
+re-used;preserve
 managed;"create;delete"
 cease;delete
 provides;create
@@ -833,7 +833,7 @@ be warned;preserve
 cite;create
 alerting;create
 moved;"create;delete"
-still use;"create;delete"
+still use;preserve
 keeps working;preserve
 looking;preserve
 associate together;create
@@ -849,7 +849,7 @@ collaborating;create
 tell;create
 push;create
 undelete;create
-easily use;"create;delete"
+easily use;preserve
 look for;create
 kept secure;preserve
 know exactly;preserve

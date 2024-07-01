@@ -37,7 +37,8 @@
                 "Contain Action Rules": [[
                     "repository",
                     "collection",
-                    "preserve;create"
+                    "preserve;create",
+                    "access"
                 ]]
             },
             "Contains": [[
@@ -115,7 +116,8 @@
                 "Contain Action Rules": [[
                     "students",
                     "item",
-                    "create"
+                    "create",
+                    "direct"
                 ]]
             },
             "Contains": [
@@ -214,12 +216,14 @@
                     [
                         "repository",
                         "data",
-                        "create"
+                        "create",
+                        "upload"
                     ],
                     [
                         "publication",
                         "data",
-                        "create"
+                        "create",
+                        "upload"
                     ]
                 ]
             },
@@ -401,12 +405,14 @@
                     [
                         "reports",
                         "new versions",
-                        "preserve;create"
+                        "preserve;create",
+                        "select"
                     ],
                     [
                         "datasets to be emailed",
                         "new versions",
-                        "preserve;create"
+                        "preserve;create",
+                        "select"
                     ]
                 ]
             },
@@ -499,12 +505,14 @@
                     [
                         "report",
                         "error",
-                        "create"
+                        "create",
+                        "mark"
                     ],
                     [
                         "dataset",
                         "error",
-                        "create"
+                        "create",
+                        "mark"
                     ]
                 ]
             },
@@ -592,12 +600,14 @@
                     [
                         "dataset",
                         "name changes",
-                        "create;delete"
+                        "create;delete",
+                        "manage"
                     ],
                     [
                         "report",
                         "name changes",
-                        "create;delete"
+                        "create;delete",
+                        "manage"
                     ]
                 ]
             },
@@ -665,7 +675,8 @@
                 "Contain Action Rules": [[
                     "files discovered",
                     "reuse rights i have",
-                    "preserve;forbid"
+                    "preserve;forbid",
+                    "see clearly"
                 ]]
             },
             "Contains": [
@@ -735,7 +746,8 @@
                 "Contain Action Rules": [[
                     "item",
                     "access embargo",
-                    "delete"
+                    "delete",
+                    "remove"
                 ]]
             },
             "Contains": [
@@ -806,7 +818,8 @@
                 "Contain Action Rules": [[
                     "given topic",
                     "research",
-                    "preserve"
+                    "preserve",
+                    "stay up to date"
                 ]]
             },
             "Contains": [
@@ -889,12 +902,14 @@
                     [
                         "repository",
                         "publications",
-                        "create"
+                        "create",
+                        "easily collect"
                     ],
                     [
                         "single online access point",
                         "publications",
-                        "create"
+                        "create",
+                        "easily collect"
                     ]
                 ]
             },
@@ -975,22 +990,26 @@
                     [
                         "better place",
                         "project materials",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ],
                     [
                         "better place",
                         "access options",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ],
                     [
                         "better place",
                         "organization",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ],
                     [
                         "better place",
                         "tagging",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ]
                 ]
             },
@@ -1118,12 +1137,14 @@
                     [
                         "data",
                         "cut and paste formatted citation",
-                        "create"
+                        "create",
+                        "upload"
                     ],
                     [
                         "people who use it",
                         "cut and paste formatted citation",
-                        "create"
+                        "create",
+                        "provide"
                     ]
                 ]
             },
@@ -1203,7 +1224,8 @@
                 "Contain Action Rules": [[
                     "content",
                     "multiple formats",
-                    "preserve"
+                    "preserve",
+                    "view"
                 ]]
             },
             "Contains": [
@@ -1253,7 +1275,7 @@
                 "Target Action Rules": [[
                     "check",
                     "things",
-                    "preserve;forbid"
+                    "preserve"
                 ]],
                 "Contain Action Rules": []
             },
@@ -1294,12 +1316,14 @@
                     [
                         "repository",
                         "contents",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "phone",
                         "contents",
-                        "preserve"
+                        "preserve",
+                        "browse through"
                     ]
                 ]
             },
@@ -1349,12 +1373,12 @@
                 "Target Action Rules": [[
                     "get",
                     "remote access",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "Cornell campus-only content",
                     "remote access",
-                    "preserve;create"
+                    "preserve"
                 ]]
             },
             "Contains": [[
@@ -1483,12 +1507,14 @@
                     [
                         "collection",
                         "items",
-                        "create;delete"
+                        "create;delete",
+                        "sort"
                     ],
                     [
                         "collection contents lists",
                         "items",
-                        "create;delete"
+                        "create;delete",
+                        "sort"
                     ]
                 ]
             },
@@ -1572,17 +1598,20 @@
                     [
                         "systems",
                         "symplectic elements",
-                        "preserve"
+                        "preserve",
+                        "use"
                     ],
                     [
                         "systems",
                         "activity insight",
-                        "preserve"
+                        "preserve",
+                        "use"
                     ],
                     [
                         "repositories",
                         "faculty scholarly output",
-                        "create"
+                        "create",
+                        "properly track"
                     ]
                 ]
             },
@@ -1679,47 +1708,56 @@
                     [
                         "repository",
                         "useful and comprehensive usage statistics",
-                        "preserve;create"
+                        "preserve;create",
+                        "access"
                     ],
                     [
                         "collection",
                         "useful and comprehensive usage statistics",
-                        "preserve;create"
+                        "preserve;create",
+                        "access"
                     ],
                     [
                         "author",
                         "useful and comprehensive usage statistics",
-                        "preserve;create"
+                        "preserve;create",
+                        "access"
                     ],
                     [
                         "item level",
                         "useful and comprehensive usage statistics",
-                        "preserve;create"
+                        "preserve;create",
+                        "access"
                     ],
                     [
                         "analytics",
                         "altmetrics",
-                        "preserve;create"
+                        "preserve;create",
+                        "access"
                     ],
                     [
                         "repository",
                         "analytics",
-                        "preserve;create"
+                        "preserve;create",
+                        "access"
                     ],
                     [
                         "collection",
                         "analytics",
-                        "preserve;create"
+                        "preserve;create",
+                        "access"
                     ],
                     [
                         "author",
                         "analytics",
-                        "preserve;create"
+                        "preserve;create",
+                        "access"
                     ],
                     [
                         "item level",
                         "analytics",
-                        "preserve;create"
+                        "preserve;create",
+                        "access"
                     ]
                 ]
             },
@@ -1838,12 +1876,14 @@
                     [
                         "faculty",
                         "comprehensive tracking statistics",
-                        "preserve"
+                        "preserve",
+                        "see"
                     ],
                     [
                         "digestible way",
                         "comprehensive tracking statistics",
-                        "preserve"
+                        "preserve",
+                        "see"
                     ]
                 ]
             },
@@ -1952,12 +1992,14 @@
                     [
                         "someone",
                         "items",
-                        "create"
+                        "create",
+                        "downloads"
                     ],
                     [
                         "someone",
                         "files",
-                        "create"
+                        "create",
+                        "downloads"
                     ]
                 ]
             },
@@ -2031,7 +2073,8 @@
                 "Contain Action Rules": [[
                     "list",
                     "subscribers",
-                    "preserve"
+                    "preserve",
+                    "see"
                 ]]
             },
             "Contains": [
@@ -2113,7 +2156,8 @@
                 "Contain Action Rules": [[
                     "digital space",
                     "aforementioned works",
-                    "create"
+                    "create",
+                    "disseminate"
                 ]]
             },
             "Contains": [[
@@ -2194,7 +2238,8 @@
                 "Contain Action Rules": [[
                     "repository",
                     "scholarly work",
-                    "create"
+                    "create",
+                    "upload"
                 ]]
             },
             "Contains": [[
@@ -2287,6 +2332,7 @@
                 "Contain Action Rules": [[
                     "collections",
                     "rare, archival, or endangered material",
+                    "create",
                     "create"
                 ]]
             },
@@ -2356,12 +2402,14 @@
                     [
                         "others",
                         "easy, well documented and supported workflows",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ],
                     [
                         "she",
                         "easy, well documented and supported workflows",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ]
                 ]
             },
@@ -2433,12 +2481,14 @@
                     [
                         "extension brochures",
                         "versioning",
-                        "create;delete"
+                        "create;delete",
+                        "maintain"
                     ],
                     [
                         "faqs",
                         "versioning",
-                        "create;delete"
+                        "create;delete",
+                        "maintain"
                     ]
                 ]
             },
@@ -2528,12 +2578,14 @@
                     [
                         "data file",
                         "cc-by",
-                        "create"
+                        "create",
+                        "upload"
                     ],
                     [
                         "data file",
                         "cc0 license",
-                        "create"
+                        "create",
+                        "upload"
                     ]
                 ]
             },
@@ -2643,12 +2695,14 @@
                     [
                         "researchers i'm helping with dmps",
                         "research",
-                        "create"
+                        "create",
+                        "tell"
                     ],
                     [
                         "research",
                         "results",
-                        "create"
+                        "create",
+                        "archiving"
                     ]
                 ]
             },
@@ -2750,16 +2804,19 @@
                     [
                         "collection",
                         "documents",
+                        "create",
                         "create"
                     ],
                     [
                         "collection",
                         "organization's documents",
+                        "create",
                         "create"
                     ],
                     [
                         "collection",
                         "some distinctive branding",
+                        "create",
                         "create"
                     ]
                 ]
@@ -2895,17 +2952,20 @@
                     [
                         "repository",
                         "items",
-                        "create"
+                        "create",
+                        "easily find"
                     ],
                     [
                         "name",
                         "author name authority",
-                        "preserve"
+                        "preserve",
+                        "searching"
                     ],
                     [
                         "name",
                         "identification issue",
-                        "preserve"
+                        "preserve",
+                        "searching"
                     ]
                 ]
             },
@@ -2978,12 +3038,14 @@
                     [
                         "repository",
                         "items i have deposited",
-                        "preserve"
+                        "preserve",
+                        "see"
                     ],
                     [
                         "google search results",
                         "items i have deposited",
-                        "preserve"
+                        "preserve",
+                        "see"
                     ]
                 ]
             },
@@ -3061,7 +3123,8 @@
                 "Contain Action Rules": [[
                     "collection",
                     "item",
-                    "create"
+                    "create",
+                    "alias"
                 ]]
             },
             "Contains": [[
@@ -3142,7 +3205,8 @@
                 "Contain Action Rules": [[
                     "repository",
                     "items",
-                    "create"
+                    "create",
+                    "discover"
                 ]]
             },
             "Contains": [
@@ -3238,12 +3302,14 @@
                     [
                         "item",
                         "descriptive metadata",
-                        "preserve"
+                        "preserve",
+                        "see"
                     ],
                     [
                         "repository",
                         "item",
-                        "create"
+                        "create",
+                        "come"
                     ]
                 ]
             },
@@ -3317,7 +3383,8 @@
                 "Contain Action Rules": [[
                     "author",
                     "work",
-                    "create"
+                    "create",
+                    "contact"
                 ]]
             },
             "Contains": [[
@@ -3387,17 +3454,20 @@
                     [
                         "new works",
                         "updates",
-                        "create"
+                        "create",
+                        "receive"
                     ],
                     [
                         "given collection",
                         "new works",
-                        "create"
+                        "create",
+                        "published"
                     ],
                     [
                         "given author",
                         "new works",
-                        "create"
+                        "create",
+                        "published"
                     ]
                 ]
             },
@@ -3502,7 +3572,8 @@
                 "Contain Action Rules": [[
                     "given collection",
                     "subsets",
-                    "preserve;create"
+                    "preserve;create",
+                    "searching within"
                 ]]
             },
             "Contains": [[
@@ -3581,12 +3652,14 @@
                     [
                         "particular author",
                         "works",
-                        "create"
+                        "create",
+                        "find"
                     ],
                     [
                         "one easily sortable spot",
                         "works",
-                        "create"
+                        "create",
+                        "find"
                     ]
                 ]
             },
@@ -3662,22 +3735,26 @@
                     [
                         "influential judge",
                         "thesis paper",
-                        "create"
+                        "create",
+                        "want"
                     ],
                     [
                         "legal thinker",
                         "thesis paper",
-                        "create"
+                        "create",
+                        "want"
                     ],
                     [
                         "influential judge",
                         "initial scholarship",
-                        "preserve"
+                        "preserve",
+                        "started"
                     ],
                     [
                         "legal thinker",
                         "initial scholarship",
-                        "preserve"
+                        "preserve",
+                        "started"
                     ]
                 ]
             },
@@ -3776,22 +3853,26 @@
                     [
                         "report",
                         "keywords",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "report",
                         "partial or complete title",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "dataset",
                         "keywords",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "dataset",
                         "partial or complete title",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ]
                 ]
             },
@@ -3882,12 +3963,14 @@
                     [
                         "content",
                         "author",
-                        "preserve"
+                        "preserve",
+                        "browse"
                     ],
                     [
                         "content",
                         "subject area",
-                        "preserve"
+                        "preserve",
+                        "browse"
                     ]
                 ]
             },
@@ -4074,12 +4157,14 @@
                     [
                         "repository",
                         "dissertations",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "former student",
                         "work",
-                        "create"
+                        "create",
+                        "quickly find"
                     ]
                 ]
             },
@@ -4165,12 +4250,14 @@
                     [
                         "trusted external system",
                         "digital items",
-                        "create"
+                        "create",
+                        "make"
                     ],
                     [
                         "system",
                         "digital items",
-                        "create"
+                        "create",
+                        "make"
                     ]
                 ]
             },
@@ -4360,22 +4447,26 @@
                     [
                         "cornell faculty",
                         "research",
-                        "create"
+                        "create",
+                        "easily find"
                     ],
                     [
                         "research",
                         "particular topic",
-                        "create"
+                        "create",
+                        "easily find"
                     ],
                     [
                         "cornell faculty",
                         "educational materials",
-                        "create"
+                        "create",
+                        "easily find"
                     ],
                     [
                         "educational materials",
                         "particular topic",
-                        "create"
+                        "create",
+                        "easily find"
                     ]
                 ]
             },
@@ -4548,17 +4639,20 @@
                     [
                         "cornell",
                         "who",
-                        "create"
+                        "create",
+                        "learn"
                     ],
                     [
                         "who",
                         "research",
-                        "create"
+                        "create",
+                        "learn"
                     ],
                     [
                         "research",
                         "particular topic",
-                        "create"
+                        "create",
+                        "engaged"
                     ]
                 ]
             },
@@ -4685,17 +4779,20 @@
                     [
                         "cornell",
                         "who",
-                        "create"
+                        "create",
+                        "learn"
                     ],
                     [
                         "who",
                         "research",
-                        "create"
+                        "create",
+                        "learn"
                     ],
                     [
                         "research",
                         "particular topic",
-                        "create"
+                        "create",
+                        "engaged"
                     ]
                 ]
             },
@@ -4783,12 +4880,14 @@
                     [
                         "curriculum",
                         "timely and relevant research",
-                        "preserve"
+                        "preserve",
+                        "identify"
                     ],
                     [
                         "timely and relevant research",
                         "use",
-                        "preserve"
+                        "preserve",
+                        "identify"
                     ]
                 ]
             },
@@ -4866,19 +4965,21 @@
                     [
                         "get",
                         "timely and historical information",
-                        "preserve;create"
+                        "preserve"
                     ]
                 ],
                 "Contain Action Rules": [
                     [
                         "report",
                         "multiple versions",
-                        "preserve"
+                        "preserve",
+                        "view"
                     ],
                     [
                         "dataset",
                         "multiple versions",
-                        "preserve"
+                        "preserve",
+                        "view"
                     ]
                 ]
             },
@@ -4977,7 +5078,8 @@
                 "Contain Action Rules": [[
                     "repository",
                     "scholarly work",
-                    "create"
+                    "create",
+                    "upload"
                 ]]
             },
             "Contains": [[
@@ -5043,7 +5145,8 @@
                 "Contain Action Rules": [[
                     "repository",
                     "material",
-                    "create"
+                    "create",
+                    "upload"
                 ]]
             },
             "Contains": [[
@@ -5114,62 +5217,74 @@
                     [
                         "items",
                         "metadata",
+                        "create",
                         "create"
                     ],
                     [
                         "metadata",
                         "document title",
+                        "create",
                         "create"
                     ],
                     [
                         "metadata",
                         "description",
+                        "create",
                         "create"
                     ],
                     [
                         "metadata",
                         "author",
+                        "create",
                         "create"
                     ],
                     [
                         "metadata",
                         "document type",
+                        "create",
                         "create"
                     ],
                     [
                         "metadata",
                         "status",
+                        "create",
                         "create"
                     ],
                     [
                         "metadata",
                         "file locations",
+                        "create",
                         "create"
                     ],
                     [
                         "metadata",
                         "subscribable flag",
+                        "create",
                         "create"
                     ],
                     [
                         "metadata",
                         "subject area",
+                        "create",
                         "create"
                     ],
                     [
                         "metadata",
                         "release frequency",
+                        "create",
                         "create"
                     ],
                     [
                         "metadata",
                         "keywords",
+                        "create",
                         "create"
                     ],
                     [
                         "repository",
                         "items",
-                        "preserve"
+                        "preserve",
+                        "searching"
                     ]
                 ]
             },
@@ -5291,12 +5406,14 @@
                     [
                         "large batches",
                         "items",
-                        "create"
+                        "create",
+                        "upload"
                     ],
                     [
                         "large batches",
                         "descriptive metadata",
-                        "create"
+                        "create",
+                        "upload"
                     ]
                 ]
             },
@@ -5384,7 +5501,8 @@
                 "Contain Action Rules": [[
                     "repository",
                     "item",
-                    "create"
+                    "create",
+                    "upload"
                 ]]
             },
             "Contains": [
@@ -5476,17 +5594,20 @@
                     [
                         "supplementary files",
                         "datasets",
-                        "create"
+                        "create",
+                        "include"
                     ],
                     [
                         "supplementary files",
                         "slideshows",
-                        "create"
+                        "create",
+                        "include"
                     ],
                     [
                         "supplementary files",
                         "dois",
-                        "create"
+                        "create",
+                        "include"
                     ]
                 ]
             },
@@ -5592,7 +5713,8 @@
                 "Contain Action Rules": [[
                     "repository",
                     "streaming media",
-                    "create"
+                    "create",
+                    "deliver"
                 ]]
             },
             "Contains": [[
@@ -5747,7 +5869,8 @@
                 "Contain Action Rules": [[
                     "more than one collection",
                     "item",
-                    "create"
+                    "create",
+                    "assign"
                 ]]
             },
             "Contains": [[
@@ -5808,7 +5931,8 @@
                 "Contain Action Rules": [[
                     "deposits i make",
                     "custom metadata fields",
-                    "create"
+                    "create",
+                    "add"
                 ]]
             },
             "Contains": [[
@@ -5944,17 +6068,20 @@
                     [
                         "report",
                         "new version",
-                        "create"
+                        "create",
+                        "upload"
                     ],
                     [
                         "dataset",
                         "new version",
-                        "create"
+                        "create",
+                        "upload"
                     ],
                     [
                         "previous versions",
                         "patron use",
-                        "create"
+                        "create",
+                        "retaining"
                     ]
                 ]
             },
@@ -6089,32 +6216,38 @@
                     [
                         "document type",
                         "historical report still published",
-                        "preserve"
+                        "preserve",
+                        "recognize"
                     ],
                     [
                         "document type",
                         "expired historical report",
-                        "preserve"
+                        "preserve",
+                        "recognize"
                     ],
                     [
                         "document type",
                         "single topic dataset",
-                        "preserve"
+                        "preserve",
+                        "recognize"
                     ],
                     [
                         "document type",
                         "broad topic dataset",
-                        "preserve"
+                        "preserve",
+                        "recognize"
                     ],
                     [
                         "document type",
                         "report",
-                        "preserve"
+                        "preserve",
+                        "recognize"
                     ],
                     [
                         "document type",
                         "computer file",
-                        "preserve"
+                        "preserve",
+                        "recognize"
                     ]
                 ]
             },
@@ -6228,7 +6361,8 @@
                 "Contain Action Rules": [[
                     "files i are depositing",
                     "cc license",
-                    "create"
+                    "create",
+                    "easily assign"
                 ]]
             },
             "Contains": [[
@@ -6299,17 +6433,20 @@
                     [
                         "set",
                         "records",
-                        "create"
+                        "create",
+                        "export"
                     ],
                     [
                         "set",
                         "associated files",
-                        "create"
+                        "create",
+                        "export"
                     ],
                     [
                         "system",
                         "data set",
-                        "create;delete"
+                        "create;delete",
+                        "manipulate"
                     ]
                 ]
             },
@@ -6420,12 +6557,14 @@
                     [
                         "submission",
                         "researcherid",
-                        "create"
+                        "create",
+                        "associate"
                     ],
                     [
                         "submission",
                         "orcid",
-                        "create"
+                        "create",
+                        "associate"
                     ]
                 ]
             },
@@ -6502,17 +6641,20 @@
                     [
                         "repository",
                         "data",
-                        "create"
+                        "create",
+                        "upload"
                     ],
                     [
                         "embargoed dissertation",
                         "data",
-                        "create"
+                        "create",
+                        "upload"
                     ],
                     [
                         "dmp i submitted",
                         "requirements",
-                        "preserve"
+                        "preserve",
+                        "meet"
                     ]
                 ]
             },
@@ -6662,12 +6804,14 @@
                     [
                         "scholarly works",
                         "files",
-                        "create"
+                        "create",
+                        "associate"
                     ],
                     [
                         "files",
                         "access",
-                        "create"
+                        "create",
+                        "associate"
                     ]
                 ]
             },
@@ -6777,12 +6921,14 @@
                     [
                         "repository",
                         "content",
-                        "preserve"
+                        "preserve",
+                        "use"
                     ],
                     [
                         "repository",
                         "metadata ",
-                        "preserve"
+                        "preserve",
+                        "use"
                     ]
                 ]
             },
@@ -6857,22 +7003,26 @@
                     [
                         "specific projects",
                         "resources",
-                        "create"
+                        "create",
+                        "make"
                     ],
                     [
                         "geographic areas",
                         "resources",
-                        "create"
+                        "create",
+                        "make"
                     ],
                     [
                         "other faculty",
                         "resources",
-                        "create"
+                        "create",
+                        "make"
                     ],
                     [
                         "educators",
                         "resources",
-                        "create"
+                        "create",
+                        "make"
                     ]
                 ]
             },
@@ -6951,7 +7101,7 @@
                     [
                         "get",
                         "periodic ir reminders",
-                        "preserve;create"
+                        "preserve"
                     ],
                     [
                         "move",
@@ -6963,22 +7113,26 @@
                     [
                         "something",
                         "periodic ir reminders",
-                        "preserve;create"
+                        "preserve",
+                        "get"
                     ],
                     [
                         "current knowledge collection",
                         "something",
-                        "create;delete"
+                        "create;delete",
+                        "move"
                     ],
                     [
                         "historical",
                         "something",
-                        "create;delete"
+                        "create;delete",
+                        "move"
                     ],
                     [
                         "something",
                         "next ingestion/approval steps",
-                        "create;delete"
+                        "create;delete",
+                        "move"
                     ]
                 ]
             },
@@ -7113,7 +7267,8 @@
                 "Contain Action Rules": [[
                     "interactive maps",
                     "work",
-                    "create"
+                    "create",
+                    "promote"
                 ]]
             },
             "Contains": [[
@@ -7234,47 +7389,56 @@
                     [
                         "place",
                         "variety of documents",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ],
                     [
                         "place",
                         "presentations",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ],
                     [
                         "place",
                         "data sets i've created",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ],
                     [
                         "county",
                         "place",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ],
                     [
                         "region",
                         "place",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ],
                     [
                         "project site",
                         "place",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ],
                     [
                         "directory",
                         "materials",
-                        "create;delete"
+                        "create;delete",
+                        "automatically updated"
                     ],
                     [
                         "repository",
                         "directory",
-                        "create;delete"
+                        "create;delete",
+                        "automatically updated"
                     ],
                     [
                         "central archive",
                         "list",
-                        "create;delete"
+                        "create;delete",
+                        "automatically updated"
                     ]
                 ]
             },
@@ -7411,12 +7575,14 @@
                     [
                         "other reports",
                         "other related information",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ],
                     [
                         "datasets",
                         "other related information",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ]
                 ]
             },
@@ -7518,27 +7684,32 @@
                     [
                         "reports",
                         "previous name(s)",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ],
                     [
                         "datasets",
                         "previous name(s)",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ],
                     [
                         "reports",
                         "publication date range",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ],
                     [
                         "datasets",
                         "publication date range",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ],
                     [
                         "publication date range",
                         "first version-last version",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ]
                 ]
             },
@@ -7695,7 +7866,8 @@
                 "Contain Action Rules": [[
                     "own calendar",
                     "report/dataset release calendar",
-                    "create"
+                    "create",
+                    "download"
                 ]]
             },
             "Contains": [[
@@ -7770,12 +7942,14 @@
                     [
                         "repository",
                         "useful metadata",
-                        "delete"
+                        "delete",
+                        "harvest"
                     ],
                     [
                         "oai",
                         "useful metadata",
-                        "delete"
+                        "delete",
+                        "harvest"
                     ]
                 ]
             },
@@ -7899,22 +8073,26 @@
                     [
                         "uploaded metadata",
                         "errors",
-                        "create;delete"
+                        "create;delete",
+                        "quickly correct"
                     ],
                     [
                         "uploaded documents",
                         "errors",
-                        "create;delete"
+                        "create;delete",
+                        "quickly correct"
                     ],
                     [
                         "record",
                         "revisions",
-                        "delete"
+                        "delete",
+                        "leaving"
                     ],
                     [
                         "record",
                         "reasons",
-                        "delete"
+                        "delete",
+                        "leaving"
                     ]
                 ]
             },
@@ -8014,7 +8192,8 @@
                 "Contain Action Rules": [[
                     "tech support issues",
                     "reasonable resolution",
-                    "create"
+                    "create",
+                    "receive"
                 ]]
             },
             "Contains": [[
@@ -8102,12 +8281,14 @@
                     [
                         "repository files",
                         "larger than 1gb",
-                        "create"
+                        "create",
+                        "share"
                     ],
                     [
                         "users",
                         "repository files",
-                        "create"
+                        "create",
+                        "share"
                     ]
                 ]
             },
@@ -8179,12 +8360,14 @@
                     [
                         "personal account",
                         "access",
-                        "create"
+                        "create",
+                        "login"
                     ],
                     [
                         "personal account",
                         "authorized functions",
-                        "create"
+                        "create",
+                        "login"
                     ]
                 ]
             },
@@ -8257,7 +8440,8 @@
                 "Contain Action Rules": [[
                     "personal account",
                     "ability",
-                    "preserve"
+                    "preserve",
+                    "have"
                 ]]
             },
             "Contains": [[
@@ -8402,7 +8586,8 @@
                 "Contain Action Rules": [[
                     "list",
                     "all administrators",
-                    "preserve"
+                    "preserve",
+                    "see"
                 ]]
             },
             "Contains": [[
@@ -8562,17 +8747,20 @@
                     [
                         "reports",
                         "future release dates",
-                        "create"
+                        "create",
+                        "add"
                     ],
                     [
                         "datasets",
                         "future release dates",
-                        "create"
+                        "create",
+                        "add"
                     ],
                     [
                         "calendar",
                         "future release dates",
-                        "create"
+                        "create",
+                        "add"
                     ]
                 ]
             },
@@ -8654,7 +8842,8 @@
                 "Contain Action Rules": [[
                     "repository",
                     "digital collection",
-                    "create"
+                    "create",
+                    "recommend"
                 ]]
             },
             "Contains": [[
@@ -8816,17 +9005,20 @@
                     [
                         "patron accounts",
                         "passwords",
-                        "create;delete"
+                        "create;delete",
+                        "administrate"
                     ],
                     [
                         "patron accounts",
                         "email address",
-                        "create;delete"
+                        "create;delete",
+                        "administrate"
                     ],
                     [
                         "patron accounts",
                         "subscriptions",
-                        "create;delete"
+                        "create;delete",
+                        "administrate"
                     ]
                 ]
             },
@@ -8949,12 +9141,14 @@
                     [
                         "certain collections",
                         "custom metadata fields",
+                        "create",
                         "create"
                     ],
                     [
                         "certain collections",
                         "fields",
-                        "preserve"
+                        "preserve",
+                        "searching"
                     ]
                 ]
             },
@@ -9279,17 +9473,20 @@
                     [
                         "redundant copies",
                         "unwanted changes",
-                        "preserve;create"
+                        "preserve;create",
+                        "continuously monitored"
                     ],
                     [
                         "redundant copies",
                         "changes",
-                        "preserve;create"
+                        "preserve;create",
+                        "continuously monitored"
                     ],
                     [
                         "all copies",
                         "original object",
-                        "create"
+                        "create",
+                        "determine"
                     ]
                 ]
             },
@@ -9363,7 +9560,8 @@
                 "Contain Action Rules": [[
                     "repository",
                     "assets",
-                    "delete"
+                    "delete",
+                    "taken out"
                 ]]
             },
             "Contains": [[
@@ -9434,7 +9632,8 @@
                 "Contain Action Rules": [[
                     "asset",
                     "intellectual value",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [
@@ -9510,7 +9709,8 @@
                 "Contain Action Rules": [[
                     "listing",
                     "assets",
-                    "create"
+                    "create",
+                    "obtain"
                 ]]
             },
             "Contains": [
@@ -9738,11 +9938,13 @@
                     [
                         "repository",
                         "content",
+                        "preserve",
                         "preserve"
                     ],
                     [
                         "repository",
                         "metadata",
+                        "preserve",
                         "preserve"
                     ]
                 ]
@@ -9842,6 +10044,7 @@
                 "Contain Action Rules": [[
                     "law school",
                     "scholarship",
+                    "preserve",
                     "preserve"
                 ]]
             },
@@ -9915,6 +10118,7 @@
                 "Contain Action Rules": [[
                     "collection",
                     "custom metadata fields",
+                    "create",
                     "create"
                 ]]
             },
@@ -10008,17 +10212,20 @@
                     [
                         "list",
                         "revisors",
-                        "create"
+                        "create",
+                        "trace"
                     ],
                     [
                         "who",
                         "item",
-                        "create"
+                        "create",
+                        "determine"
                     ],
                     [
                         "repository",
                         "item",
-                        "create"
+                        "create",
+                        "uploaded"
                     ]
                 ]
             },
@@ -10156,22 +10363,26 @@
                     [
                         "assets",
                         "ownership",
-                        "delete"
+                        "delete",
+                        "pass"
                     ],
                     [
                         "successor",
                         "ownership",
-                        "delete"
+                        "delete",
+                        "pass"
                     ],
                     [
                         "assets",
                         "management",
-                        "delete"
+                        "delete",
+                        "pass"
                     ],
                     [
                         "successor",
                         "management",
-                        "delete"
+                        "delete",
+                        "pass"
                     ]
                 ]
             },
@@ -10325,7 +10536,8 @@
                 "Contain Action Rules": [[
                     "items",
                     "records scheduling",
-                    "create"
+                    "create",
+                    "allow"
                 ]]
             },
             "Contains": [[
@@ -10393,12 +10605,14 @@
                     [
                         "item",
                         "new version",
-                        "create"
+                        "create",
+                        "upload"
                     ],
                     [
                         "item",
                         "old versions",
-                        "preserve"
+                        "preserve",
+                        "accessed"
                     ]
                 ]
             },

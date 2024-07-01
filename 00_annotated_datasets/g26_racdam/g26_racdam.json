@@ -20,7 +20,7 @@
                     [
                         "do",
                         "file",
-                        "preserve;delete;create"
+                        "preserve;create"
                     ]
                 ],
                 "Contain Action Rules": []
@@ -152,7 +152,8 @@
                 "Contain Action Rules": [[
                     "groups",
                     "files",
-                    "create"
+                    "create",
+                    "mark"
                 ]]
             },
             "Contains": [[
@@ -244,7 +245,8 @@
                 "Contain Action Rules": [[
                     "group",
                     "files",
-                    "preserve;forbid"
+                    "preserve;forbid",
+                    "restrict"
                 ]]
             },
             "Contains": [[
@@ -305,7 +307,8 @@
                 "Contain Action Rules": [[
                     "file",
                     "restrictions",
-                    "delete"
+                    "delete",
+                    "removed"
                 ]]
             },
             "Contains": [[
@@ -368,7 +371,8 @@
                 "Contain Action Rules": [[
                     "files",
                     "restriction end date information",
-                    "create"
+                    "create",
+                    "add"
                 ]]
             },
             "Contains": [[
@@ -429,7 +433,8 @@
                 "Contain Action Rules": [[
                     "groups",
                     "detailed restrictions",
-                    "create"
+                    "create",
+                    "add"
                 ]]
             },
             "Contains": [
@@ -506,7 +511,8 @@
                 "Contain Action Rules": [[
                     "some files",
                     "access",
-                    "preserve;forbid"
+                    "preserve;forbid",
+                    "restrict"
                 ]]
             },
             "Contains": [[
@@ -590,7 +596,8 @@
                 "Contain Action Rules": [[
                     "certain files",
                     "access",
-                    "preserve;forbid"
+                    "preserve;forbid",
+                    "restrict"
                 ]]
             },
             "Contains": [[
@@ -779,7 +786,8 @@
                 "Contain Action Rules": [[
                     "digital files",
                     "information",
-                    "create;delete"
+                    "create;delete",
+                    "redact"
                 ]]
             },
             "Contains": [[
@@ -839,7 +847,8 @@
                 "Contain Action Rules": [[
                     "licensing archival material",
                     "online form",
-                    "preserve"
+                    "preserve",
+                    "have"
                 ]]
             },
             "Contains": [[
@@ -891,7 +900,8 @@
                 "Contain Action Rules": [[
                     "files",
                     "metadata",
-                    "create;delete"
+                    "create;delete",
+                    "batch edit"
                 ]]
             },
             "Contains": [[
@@ -980,7 +990,8 @@
                 "Contain Action Rules": [[
                     "groups",
                     "files",
-                    "create"
+                    "create",
+                    "upload"
                 ]]
             },
             "Contains": [[
@@ -1030,7 +1041,8 @@
                 "Contain Action Rules": [[
                     "files",
                     "access copies",
-                    "create"
+                    "create",
+                    "automatically create"
                 ]]
             },
             "Contains": [[
@@ -1206,7 +1218,8 @@
                 "Contain Action Rules": [[
                     "digital objects",
                     "preservation standards",
-                    "preserve;create"
+                    "preserve;create",
+                    "distinguish"
                 ]]
             },
             "Contains": [[
@@ -1258,12 +1271,14 @@
                     [
                         "researchers' publications",
                         "electronic versions",
-                        "create"
+                        "create",
+                        "link"
                     ],
                     [
                         "citations",
                         "electronic versions",
-                        "create"
+                        "create",
+                        "link"
                     ]
                 ]
             },
@@ -1329,7 +1344,8 @@
                 "Contain Action Rules": [[
                     "scans",
                     "images created while answering research requests",
-                    "create"
+                    "create",
+                    "upload"
                 ]]
             },
             "Contains": [[
@@ -1384,11 +1400,13 @@
                     [
                         "images",
                         "quality scans",
+                        "create",
                         "create"
                     ],
                     [
                         "documents",
                         "quality scans",
+                        "create",
                         "create"
                     ]
                 ]
@@ -1449,7 +1467,8 @@
                 "Contain Action Rules": [[
                     "digital objects",
                     "access derivatives",
-                    "create"
+                    "create",
+                    "automatically create"
                 ]]
             },
             "Contains": [[
@@ -1506,7 +1525,8 @@
                 "Contain Action Rules": [[
                     "material i scan",
                     "unique identifiers",
-                    "create"
+                    "create",
+                    "automatically assign"
                 ]]
             },
             "Contains": [[
@@ -1563,7 +1583,8 @@
                 "Contain Action Rules": [[
                     "file headers",
                     "metadata",
-                    "create"
+                    "create",
+                    "automatically embed"
                 ]]
             },
             "Contains": [[
@@ -1672,12 +1693,14 @@
                     [
                         "scanned file",
                         "automatic contrast",
-                        "create;delete"
+                        "create;delete",
+                        "apply"
                     ],
                     [
                         "scanned file",
                         "level operations",
-                        "create;delete"
+                        "create;delete",
+                        "apply"
                     ]
                 ]
             },
@@ -1833,7 +1856,8 @@
                 "Contain Action Rules": [[
                     "new and existing collections",
                     "incremental accruals",
-                    "create"
+                    "create",
+                    "supply"
                 ]]
             },
             "Contains": [[
@@ -1886,7 +1910,8 @@
                 "Contain Action Rules": [[
                     "archival material created for educational visits",
                     "scans",
-                    "create;delete"
+                    "create;delete",
+                    "manage"
                 ]]
             },
             "Contains": [[
@@ -1948,17 +1973,20 @@
                     [
                         "loan documentation",
                         "preservation photos",
-                        "create;delete"
+                        "create;delete",
+                        "manage"
                     ],
                     [
                         "loan documentation",
                         "forms",
-                        "create;delete"
+                        "create;delete",
+                        "manage"
                     ],
                     [
                         "loan documentation",
                         "correspondence",
-                        "create;delete"
+                        "create;delete",
+                        "manage"
                     ]
                 ]
             },
@@ -2098,12 +2126,14 @@
                     [
                         "file",
                         "link",
-                        "create"
+                        "create",
+                        "share"
                     ],
                     [
                         "social media",
                         "link",
-                        "create"
+                        "create",
+                        "share"
                     ]
                 ]
             },
@@ -2163,7 +2193,8 @@
                 "Contain Action Rules": [[
                     "image",
                     "copyright status",
-                    "preserve;create"
+                    "preserve;create",
+                    "understand"
                 ]]
             },
             "Contains": [[
@@ -2216,7 +2247,8 @@
                 "Contain Action Rules": [[
                     "each document",
                     "clear citation information",
-                    "create"
+                    "create",
+                    "want"
                 ]]
             },
             "Contains": [[
@@ -2433,12 +2465,14 @@
                     [
                         "social media",
                         "photographs",
-                        "create"
+                        "create",
+                        "locate"
                     ],
                     [
                         "social media",
                         "documents",
-                        "create"
+                        "create",
+                        "locate"
                     ]
                 ]
             },
@@ -2501,7 +2535,8 @@
                 "Contain Action Rules": [[
                     "digital objects",
                     "analog versions",
-                    "create"
+                    "create",
+                    "request"
                 ]]
             },
             "Contains": [[
@@ -2560,7 +2595,8 @@
                 "Contain Action Rules": [[
                     "photos",
                     "copies",
-                    "create"
+                    "create",
+                    "order"
                 ]]
             },
             "Contains": [[
@@ -2632,12 +2668,14 @@
                     [
                         "reading room",
                         "something i request",
-                        "create"
+                        "create",
+                        "digitized"
                     ],
                     [
                         "duplication",
                         "something i request",
-                        "create"
+                        "create",
+                        "digitized"
                     ]
                 ]
             },
@@ -2713,17 +2751,20 @@
                     [
                         "researchers",
                         "information",
-                        "create"
+                        "create",
+                        "make"
                     ],
                     [
                         "donors",
                         "information",
-                        "create"
+                        "create",
+                        "make"
                     ],
                     [
                         "rights",
                         "information",
-                        "create"
+                        "create",
+                        "make"
                     ]
                 ]
             },
@@ -2799,12 +2840,14 @@
                     [
                         "emails sent",
                         "specific objects",
-                        "preserve;forbid"
+                        "preserve;forbid",
+                        "ensure"
                     ],
                     [
                         "emails sent",
                         "accurate citation information",
-                        "preserve;forbid"
+                        "preserve;forbid",
+                        "ensure"
                     ]
                 ]
             },
@@ -2869,12 +2912,14 @@
                     [
                         "web browser",
                         "audio",
-                        "create;delete"
+                        "create;delete",
+                        "stream"
                     ],
                     [
                         "web browser",
                         "video files",
-                        "create;delete"
+                        "create;delete",
+                        "stream"
                     ]
                 ]
             },
@@ -2944,7 +2989,8 @@
                 "Contain Action Rules": [[
                     "descriptive data",
                     "common format",
-                    "create"
+                    "create",
+                    "export"
                 ]]
             },
             "Contains": [[
@@ -3000,7 +3046,8 @@
                 "Contain Action Rules": [[
                     "photo",
                     "use",
-                    "preserve;create"
+                    "preserve;create",
+                    "track"
                 ]]
             },
             "Contains": [[
@@ -3086,7 +3133,8 @@
                 "Contain Action Rules": [[
                     "particular user",
                     "what",
-                    "preserve"
+                    "preserve",
+                    "see"
                 ]]
             },
             "Contains": [[
@@ -3160,7 +3208,8 @@
                 "Contain Action Rules": [[
                     "digital copies",
                     "access",
-                    "create"
+                    "create",
+                    "provide"
                 ]]
             },
             "Contains": [
@@ -3223,7 +3272,8 @@
                 "Contain Action Rules": [[
                     "as much archival material as possible",
                     "use",
-                    "create"
+                    "create",
+                    "make"
                 ]]
             },
             "Contains": [[
@@ -3290,7 +3340,8 @@
                 "Contain Action Rules": [[
                     "rac website",
                     "archival content",
-                    "preserve"
+                    "preserve",
+                    "use"
                 ]]
             },
             "Contains": [[
@@ -3339,7 +3390,8 @@
                 "Contain Action Rules": [[
                     "images scanned for my institutions needs",
                     "descriptive information",
-                    "preserve;create"
+                    "preserve;create",
+                    "access"
                 ]]
             },
             "Contains": [[
@@ -3392,7 +3444,8 @@
                 "Contain Action Rules": [[
                     "collection",
                     "images",
-                    "preserve"
+                    "preserve",
+                    "look"
                 ]]
             },
             "Contains": [[
@@ -3450,7 +3503,8 @@
                 "Contain Action Rules": [[
                     "all files",
                     "keyword",
-                    "preserve;create"
+                    "preserve;create",
+                    "search"
                 ]]
             },
             "Contains": [[
@@ -3573,7 +3627,8 @@
                 "Contain Action Rules": [[
                     "collections",
                     "common material",
-                    "preserve"
+                    "preserve",
+                    "see"
                 ]]
             },
             "Contains": [[
@@ -3622,7 +3677,8 @@
                 "Contain Action Rules": [[
                     "collection",
                     "files",
-                    "preserve"
+                    "preserve",
+                    "browse through"
                 ]]
             },
             "Contains": [[
@@ -3671,7 +3727,8 @@
                 "Contain Action Rules": [[
                     "collection",
                     "files",
-                    "preserve"
+                    "preserve",
+                    "browse through"
                 ]]
             },
             "Contains": [[
@@ -3720,7 +3777,8 @@
                 "Contain Action Rules": [[
                     "all files",
                     "keyword",
-                    "preserve;create"
+                    "preserve;create",
+                    "search"
                 ]]
             },
             "Contains": [[
@@ -3874,7 +3932,8 @@
                 "Contain Action Rules": [[
                     "x-drive",
                     "digital files",
-                    "preserve;create"
+                    "preserve;create",
+                    "access"
                 ]]
             },
             "Contains": [[
@@ -3978,12 +4037,14 @@
                     [
                         "collection files",
                         "electronic versions",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ],
                     [
                         "electronic versions",
                         "staff use",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ]
                 ]
             },
@@ -4376,12 +4437,14 @@
                     [
                         "images scanned",
                         "color",
-                        "preserve;create"
+                        "preserve;create",
+                        "distinguish"
                     ],
                     [
                         "images scanned",
                         "black and white",
-                        "preserve;create"
+                        "preserve;create",
+                        "distinguish"
                     ]
                 ]
             },
@@ -4445,7 +4508,8 @@
                 "Contain Action Rules": [[
                     "specific file",
                     "question",
-                    "preserve;create"
+                    "preserve;create",
+                    "ask"
                 ]]
             },
             "Contains": [[
@@ -4512,7 +4576,8 @@
                 "Contain Action Rules": [[
                     "all available digitized textual documents",
                     "ocred text",
-                    "preserve;create"
+                    "preserve;create",
+                    "search"
                 ]]
             },
             "Contains": [[
@@ -4721,7 +4786,8 @@
                 "Contain Action Rules": [[
                     "inventories",
                     "unprocessed collections",
-                    "preserve;create"
+                    "preserve;create",
+                    "access"
                 ]]
             },
             "Contains": [[
@@ -4781,7 +4847,8 @@
                 "Contain Action Rules": [[
                     "photos",
                     "thumbnails",
-                    "preserve"
+                    "preserve",
+                    "view"
                 ]]
             },
             "Contains": [[
@@ -4877,7 +4944,8 @@
                 "Contain Action Rules": [[
                     "folder",
                     "part",
-                    "create"
+                    "create",
+                    "digitized"
                 ]]
             },
             "Contains": [[
@@ -4933,7 +5001,8 @@
                 "Contain Action Rules": [[
                     "images",
                     "thumbnails",
-                    "preserve"
+                    "preserve",
+                    "see"
                 ]]
             },
             "Contains": [[
@@ -5042,7 +5111,8 @@
                 "Contain Action Rules": [[
                     "images",
                     "photographer",
-                    "preserve;create"
+                    "preserve;create",
+                    "search"
                 ]]
             },
             "Contains": [[
@@ -5091,7 +5161,8 @@
                 "Contain Action Rules": [[
                     "images",
                     "people",
-                    "preserve;create"
+                    "preserve;create",
+                    "search"
                 ]]
             },
             "Contains": [[
@@ -5152,12 +5223,14 @@
                     [
                         "images",
                         "place",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "photo",
                         "place",
-                        "create;delete"
+                        "create;delete",
+                        "taken"
                     ]
                 ]
             },
@@ -5219,7 +5292,8 @@
                 "Contain Action Rules": [[
                     "images",
                     "rights",
-                    "preserve;create"
+                    "preserve;create",
+                    "search"
                 ]]
             },
             "Contains": [[
@@ -5418,7 +5492,8 @@
                 "Contain Action Rules": [[
                     "physical locations",
                     "non-archival material",
-                    "preserve"
+                    "preserve",
+                    "view"
                 ]]
             },
             "Contains": [[
@@ -5550,12 +5625,14 @@
                     [
                         "index cards",
                         "metadata",
-                        "preserve;create"
+                        "preserve;create",
+                        "access"
                     ],
                     [
                         "index cards",
                         "visual representations",
-                        "preserve;create"
+                        "preserve;create",
+                        "access"
                     ]
                 ]
             },
@@ -5843,7 +5920,8 @@
                 "Contain Action Rules": [[
                     "different user groups",
                     "rac staff",
-                    "create"
+                    "create",
+                    "assign"
                 ]]
             },
             "Contains": [[
@@ -5905,12 +5983,14 @@
                     [
                         "user groups",
                         "rights",
-                        "create"
+                        "create",
+                        "assign"
                     ],
                     [
                         "roles",
                         "rights",
-                        "create"
+                        "create",
+                        "assign"
                     ]
                 ]
             },
@@ -6056,7 +6136,8 @@
                 "Contain Action Rules": [[
                     "researchers",
                     "passwords",
-                    "preserve"
+                    "preserve",
+                    "have"
                 ]]
             },
             "Contains": [[

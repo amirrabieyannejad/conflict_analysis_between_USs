@@ -39,12 +39,14 @@
                     [
                         "dams",
                         "collections",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ],
                     [
                         "dams",
                         "objects",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ]
                 ]
             },
@@ -120,12 +122,14 @@
                     [
                         "one place",
                         "repository information",
-                        "create;delete"
+                        "create;delete",
+                        "update"
                     ],
                     [
                         "all relevant places",
                         "updates",
-                        "create"
+                        "create",
+                        "propagated"
                     ]
                 ]
             },
@@ -198,12 +202,14 @@
                     [
                         "units assets",
                         "curatorial access",
-                        "preserve;forbid"
+                        "preserve;forbid",
+                        "constrain"
                     ],
                     [
                         "staff members",
                         "curatorial access",
-                        "preserve;forbid"
+                        "preserve;forbid",
+                        "constrain"
                     ]
                 ]
             },
@@ -289,22 +295,26 @@
                     [
                         "dams",
                         "collections",
-                        "create"
+                        "create",
+                        "list"
                     ],
                     [
                         "library unit",
                         "collections",
-                        "create"
+                        "create",
+                        "list"
                     ],
                     [
                         "dams",
                         "objects",
-                        "create"
+                        "create",
+                        "list"
                     ],
                     [
                         "library unit",
                         "objects",
-                        "create"
+                        "create",
+                        "list"
                     ]
                 ]
             },
@@ -429,7 +439,8 @@
                 "Contain Action Rules": [[
                     "dams",
                     "all formal collections",
-                    "preserve"
+                    "preserve",
+                    "browsing"
                 ]]
             },
             "Contains": [[
@@ -562,22 +573,26 @@
                     [
                         "collection",
                         "items",
-                        "preserve;forbid"
+                        "preserve;forbid",
+                        "limiting"
                     ],
                     [
                         "collection",
                         "other collections",
-                        "preserve;forbid"
+                        "preserve;forbid",
+                        "limiting"
                     ],
                     [
                         "collection",
                         "objects",
-                        "preserve;forbid"
+                        "preserve;forbid",
+                        "limiting"
                     ],
                     [
                         "part of a collection",
                         "singular provenance",
-                        "create"
+                        "create",
+                        "represent"
                     ]
                 ]
             },
@@ -709,22 +724,26 @@
                     [
                         "collection",
                         "title",
-                        "create"
+                        "create",
+                        "describe"
                     ],
                     [
                         "collection",
                         "inclusive / bulk dates",
-                        "create"
+                        "create",
+                        "describe"
                     ],
                     [
                         "collection",
                         "language(s)",
-                        "create"
+                        "create",
+                        "describe"
                     ],
                     [
                         "collection",
                         "many other aspects",
-                        "create"
+                        "create",
+                        "describe"
                     ]
                 ]
             },
@@ -792,22 +811,26 @@
                     [
                         "collection",
                         "names",
-                        "create"
+                        "create",
+                        "indicate"
                     ],
                     [
                         "names",
                         "creator",
-                        "create"
+                        "create",
+                        "indicate"
                     ],
                     [
                         "names",
                         "source",
-                        "create"
+                        "create",
+                        "indicate"
                     ],
                     [
                         "names",
                         "subject",
-                        "create"
+                        "create",
+                        "indicate"
                     ]
                 ]
             },
@@ -871,7 +894,8 @@
                 "Contain Action Rules": [[
                     "collection",
                     "subjects",
-                    "create"
+                    "create",
+                    "indicate"
                 ]]
             },
             "Contains": [[
@@ -923,7 +947,8 @@
                 "Contain Action Rules": [[
                     "collection",
                     "other descriptions",
-                    "create"
+                    "create",
+                    "indicate"
                 ]]
             },
             "Contains": [
@@ -981,7 +1006,8 @@
                 "Contain Action Rules": [[
                     "collection",
                     "all events",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [[
@@ -1030,7 +1056,8 @@
                 "Contain Action Rules": [[
                     "dams",
                     "collections",
-                    "preserve"
+                    "preserve",
+                    "browse"
                 ]]
             },
             "Contains": [[
@@ -1079,7 +1106,8 @@
                 "Contain Action Rules": [[
                     "search",
                     "specified collection(s)",
-                    "preserve;forbid"
+                    "preserve;forbid",
+                    "limit"
                 ]]
             },
             "Contains": [[
@@ -1128,7 +1156,8 @@
                 "Contain Action Rules": [[
                     "object",
                     "components",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [[
@@ -1177,7 +1206,8 @@
                 "Contain Action Rules": [[
                     "object",
                     "files",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [[
@@ -1230,22 +1260,26 @@
                     [
                         "object",
                         "title",
-                        "create"
+                        "create",
+                        "describe"
                     ],
                     [
                         "object",
                         "date(s)",
-                        "create"
+                        "create",
+                        "describe"
                     ],
                     [
                         "object",
                         "language(s)",
-                        "create"
+                        "create",
+                        "describe"
                     ],
                     [
                         "object",
                         "other aspects",
-                        "create"
+                        "create",
+                        "describe"
                     ]
                 ]
             },
@@ -1309,7 +1343,8 @@
                 "Contain Action Rules": [[
                     "object",
                     "names",
-                    "create"
+                    "create",
+                    "indicate"
                 ]]
             },
             "Contains": [[
@@ -1358,7 +1393,8 @@
                 "Contain Action Rules": [[
                     "object",
                     "subjects",
-                    "create"
+                    "create",
+                    "indicate"
                 ]]
             },
             "Contains": [[
@@ -1407,7 +1443,8 @@
                 "Contain Action Rules": [[
                     "object",
                     "copyright status",
-                    "create"
+                    "create",
+                    "indicate"
                 ]]
             },
             "Contains": [[
@@ -1456,7 +1493,8 @@
                 "Contain Action Rules": [[
                     "object",
                     "any statutes",
-                    "create"
+                    "create",
+                    "indicate"
                 ]]
             },
             "Contains": [[
@@ -1505,7 +1543,8 @@
                 "Contain Action Rules": [[
                     "object",
                     "any license",
-                    "create"
+                    "create",
+                    "indicate"
                 ]]
             },
             "Contains": [[
@@ -1554,7 +1593,8 @@
                 "Contain Action Rules": [[
                     "object",
                     "any other rights",
-                    "create"
+                    "create",
+                    "indicate"
                 ]]
             },
             "Contains": [[
@@ -1614,12 +1654,14 @@
                     [
                         "object",
                         "any external versions",
-                        "create"
+                        "create",
+                        "indicate"
                     ],
                     [
                         "object",
                         "descriptions",
-                        "create"
+                        "create",
+                        "indicate"
                     ]
                 ]
             },
@@ -1686,7 +1728,8 @@
                 "Contain Action Rules": [[
                     "object",
                     "all events",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [[
@@ -1735,7 +1778,8 @@
                 "Contain Action Rules": [[
                     "repository",
                     "object",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [[
@@ -1766,7 +1810,7 @@
             "Contains": [],
             "Targets": []
         },
-        "Text": "#G25# As a DAMS manager I want to know what collection(s) an object belongs to.",
+        "Text": "#G25# As a DAMS manager, I want to know what collection(s) an object belongs to.",
         "PID": "#G25#",
         "Main": {
             "Entity": [
@@ -1784,14 +1828,15 @@
                 "Contain Action Rules": [[
                     "collection(s)",
                     "object",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [[
                 "collection(s)",
                 "object"
             ]],
-            "Text": "#G25# As a DAMS manager I want to know what collection(s) an object belongs to.",
+            "Text": "#G25# As a DAMS manager, I want to know what collection(s) an object belongs to.",
             "Triggers": [[
                 "DAMS manager",
                 "know"
@@ -1833,7 +1878,8 @@
                 "Contain Action Rules": [[
                     "repository",
                     "object",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [[
@@ -1882,7 +1928,8 @@
                 "Contain Action Rules": [[
                     "collection(s)",
                     "object",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [[
@@ -1931,7 +1978,8 @@
                 "Contain Action Rules": [[
                     "object.",
                     "component parts",
-                    "preserve"
+                    "preserve",
+                    "see"
                 ]]
             },
             "Contains": [[
@@ -1981,7 +2029,8 @@
                 "Contain Action Rules": [[
                     "content files",
                     "access",
-                    "preserve"
+                    "preserve",
+                    "have"
                 ]]
             },
             "Contains": [
@@ -2036,7 +2085,8 @@
                 "Contain Action Rules": [[
                     "object",
                     "rights status",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [[
@@ -2094,12 +2144,14 @@
                     [
                         "object",
                         "other versions",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ],
                     [
                         "object",
                         "metadata",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ]
                 ]
             },
@@ -2161,7 +2213,8 @@
                 "Contain Action Rules": [[
                     "object",
                     "physical and/or logical structure",
-                    "create"
+                    "create",
+                    "represent"
                 ]]
             },
             "Contains": [[
@@ -2212,12 +2265,14 @@
                     [
                         "components",
                         "appropriate order",
-                        "create"
+                        "create",
+                        "list"
                     ],
                     [
                         "object",
                         "components",
-                        "create"
+                        "create",
+                        "list"
                     ]
                 ]
             },
@@ -2275,12 +2330,14 @@
                     [
                         "another component",
                         "component",
-                        "create"
+                        "create",
+                        "link"
                     ],
                     [
                         "file",
                         "component",
-                        "create"
+                        "create",
+                        "link"
                     ]
                 ]
             },
@@ -2340,22 +2397,26 @@
                     [
                         "each component",
                         "title",
-                        "create"
+                        "create",
+                        "describe"
                     ],
                     [
                         "each component",
                         "date(s)",
-                        "create"
+                        "create",
+                        "describe"
                     ],
                     [
                         "each component",
                         "language(s)",
-                        "create"
+                        "create",
+                        "describe"
                     ],
                     [
                         "each component",
                         "other facets",
-                        "create"
+                        "create",
+                        "describe"
                     ]
                 ]
             },
@@ -2419,7 +2480,8 @@
                 "Contain Action Rules": [[
                     "component",
                     "any name",
-                    "create"
+                    "create",
+                    "indicate"
                 ]]
             },
             "Contains": [[
@@ -2468,7 +2530,8 @@
                 "Contain Action Rules": [[
                     "component",
                     "any subject",
-                    "create"
+                    "create",
+                    "indicate"
                 ]]
             },
             "Contains": [[
@@ -2705,7 +2768,8 @@
                 "Contain Action Rules": [[
                     "component",
                     "all events",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [
@@ -2762,12 +2826,14 @@
                     [
                         "all components",
                         "assigned order",
-                        "preserve"
+                        "preserve",
+                        "present"
                     ],
                     [
                         "all components",
                         "object",
-                        "preserve"
+                        "preserve",
+                        "present"
                     ]
                 ]
             },
@@ -2833,7 +2899,8 @@
                 "Contain Action Rules": [[
                     "object",
                     "component hierarchy",
-                    "preserve"
+                    "preserve",
+                    "see"
                 ]]
             },
             "Contains": [[
@@ -2895,7 +2962,8 @@
                 "Contain Action Rules": [[
                     "dams",
                     "content files",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [[
@@ -2946,12 +3014,14 @@
                     [
                         "object",
                         "content file",
-                        "create"
+                        "create",
+                        "associate"
                     ],
                     [
                         "object component",
                         "content file",
-                        "create"
+                        "create",
+                        "associate"
                     ]
                 ]
             },
@@ -3008,7 +3078,8 @@
                 "Contain Action Rules": [[
                     "content file",
                     "any event",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [
@@ -3086,32 +3157,38 @@
                     [
                         "master file",
                         "aspects",
-                        "create"
+                        "create",
+                        "indicate"
                     ],
                     [
                         "master file",
                         "integrity",
-                        "preserve;create"
+                        "preserve;create",
+                        "monitoring"
                     ],
                     [
                         "impending obsolescence",
                         "file size",
-                        "preserve;create"
+                        "preserve;create",
+                        "monitoring"
                     ],
                     [
                         "impending obsolescence",
                         "creation date",
-                        "preserve;create"
+                        "preserve;create",
+                        "monitoring"
                     ],
                     [
                         "impending obsolescence",
                         "file format",
-                        "preserve;create"
+                        "preserve;create",
+                        "monitoring"
                     ],
                     [
                         "impending obsolescence",
                         "format version",
-                        "preserve;create"
+                        "preserve;create",
+                        "monitoring"
                     ]
                 ]
             },
@@ -3204,12 +3281,14 @@
                     [
                         "each master file",
                         "checksum",
-                        "create"
+                        "create",
+                        "indicate"
                     ],
                     [
                         "each master file",
                         "checksum method",
-                        "create"
+                        "create",
+                        "indicate"
                     ]
                 ]
             },
@@ -3275,7 +3354,8 @@
                 "Contain Action Rules": [[
                     "file",
                     "source-capture information",
-                    "create"
+                    "create",
+                    "indicate"
                 ]]
             },
             "Contains": [[
@@ -3327,7 +3407,8 @@
                 "Contain Action Rules": [[
                     "any object",
                     "more current file format",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [[
@@ -3387,7 +3468,8 @@
                 "Contain Action Rules": [[
                     "content files",
                     "object",
-                    "preserve;create"
+                    "preserve;create",
+                    "access"
                 ]]
             },
             "Contains": [[
@@ -3439,17 +3521,20 @@
                     [
                         "repository's collections",
                         "title",
-                        "create"
+                        "create",
+                        "provide"
                     ],
                     [
                         "objects",
                         "title",
-                        "create"
+                        "create",
+                        "provide"
                     ],
                     [
                         "object components",
                         "title",
-                        "create"
+                        "create",
+                        "provide"
                     ]
                 ]
             },
@@ -3515,7 +3600,8 @@
                 "Contain Action Rules": [[
                     "titles",
                     "any changes",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [
@@ -3593,17 +3679,20 @@
                     [
                         "collections",
                         "title",
-                        "preserve"
+                        "preserve",
+                        "present"
                     ],
                     [
                         "objects",
                         "title",
-                        "preserve"
+                        "preserve",
+                        "present"
                     ],
                     [
                         "object components",
                         "title",
-                        "preserve"
+                        "preserve",
+                        "present"
                     ]
                 ]
             },
@@ -3688,17 +3777,20 @@
                     [
                         "collections",
                         "title",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "objects",
                         "title",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "object components",
                         "title",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ]
                 ]
             },
@@ -3784,32 +3876,38 @@
                     [
                         "object",
                         "publisher",
-                        "create"
+                        "create",
+                        "indicate"
                     ],
                     [
                         "object component",
                         "publisher",
-                        "create"
+                        "create",
+                        "indicate"
                     ],
                     [
                         "object",
                         "edition",
-                        "create"
+                        "create",
+                        "indicate"
                     ],
                     [
                         "object component",
                         "edition",
-                        "create"
+                        "create",
+                        "indicate"
                     ],
                     [
                         "object",
                         "place of publication",
-                        "create"
+                        "create",
+                        "indicate"
                     ],
                     [
                         "object component",
                         "place of publication",
-                        "create"
+                        "create",
+                        "indicate"
                     ]
                 ]
             },
@@ -3903,7 +4001,8 @@
                 "Contain Action Rules": [[
                     "origin info",
                     "any changes",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [
@@ -3982,22 +4081,26 @@
                     [
                         "object",
                         "place of publication",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ],
                     [
                         "component parts",
                         "place of publication",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ],
                     [
                         "object",
                         "publisher",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ],
                     [
                         "component parts",
                         "publisher",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ]
                 ]
             },
@@ -4078,17 +4181,20 @@
                     [
                         "collection",
                         "various facets",
-                        "create"
+                        "create",
+                        "describe"
                     ],
                     [
                         "object",
                         "various facets",
-                        "create"
+                        "create",
+                        "describe"
                     ],
                     [
                         "object component",
                         "various facets",
-                        "create"
+                        "create",
+                        "describe"
                     ]
                 ]
             },
@@ -4210,22 +4316,26 @@
                     [
                         "notes",
                         "all modifications",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ],
                     [
                         "repository's collections",
                         "notes",
-                        "preserve;create"
+                        "preserve;create",
+                        "made"
                     ],
                     [
                         "objects",
                         "notes",
-                        "preserve;create"
+                        "preserve;create",
+                        "made"
                     ],
                     [
                         "object components",
                         "notes",
-                        "preserve;create"
+                        "preserve;create",
+                        "made"
                     ]
                 ]
             },
@@ -4302,37 +4412,44 @@
                     [
                         "collection",
                         "various facets",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ],
                     [
                         "object",
                         "various facets",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ],
                     [
                         "object component",
                         "various facets",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ],
                     [
                         "various facets",
                         "scope",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ],
                     [
                         "various facets",
                         "content",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ],
                     [
                         "various facets",
                         "various identifiers",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ],
                     [
                         "various facets",
                         "conditions governing use/access",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ]
                 ]
             },
@@ -4411,17 +4528,20 @@
                     [
                         "collection",
                         "language(s)",
-                        "create"
+                        "create",
+                        "indicate"
                     ],
                     [
                         "object",
                         "language(s)",
-                        "create"
+                        "create",
+                        "indicate"
                     ],
                     [
                         "object component",
                         "language(s)",
-                        "create"
+                        "create",
+                        "indicate"
                     ]
                 ]
             },
@@ -4494,7 +4614,8 @@
                 "Contain Action Rules": [[
                     "language(s)",
                     "any changes",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [
@@ -4567,17 +4688,20 @@
                     [
                         "searches",
                         "collections",
-                        "create"
+                        "create",
+                        "scope"
                     ],
                     [
                         "searches",
                         "objects",
-                        "create"
+                        "create",
+                        "scope"
                     ],
                     [
                         "searches",
                         "object components",
-                        "create"
+                        "create",
+                        "scope"
                     ]
                 ]
             },
@@ -4651,7 +4775,8 @@
                 "Contain Action Rules": [[
                     "each unique identity",
                     "name record",
-                    "create"
+                    "create",
+                    "register"
                 ]]
             },
             "Contains": [
@@ -4719,12 +4844,14 @@
                     [
                         "collections",
                         "name",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "objects",
                         "name",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ]
                 ]
             },
@@ -4792,22 +4919,26 @@
                     [
                         "name",
                         "specific role",
-                        "create"
+                        "create",
+                        "indicate"
                     ],
                     [
                         "collection",
                         "name",
-                        "create"
+                        "create",
+                        "indicate"
                     ],
                     [
                         "object",
                         "name",
-                        "create"
+                        "create",
+                        "indicate"
                     ],
                     [
                         "object component",
                         "name",
-                        "create"
+                        "create",
+                        "indicate"
                     ]
                 ]
             },
@@ -4882,7 +5013,8 @@
                 "Contain Action Rules": [[
                     "searches",
                     "name",
-                    "create"
+                    "create",
+                    "scope"
                 ]]
             },
             "Contains": [
@@ -4948,17 +5080,20 @@
                     [
                         "collection",
                         "all subjects",
-                        "create"
+                        "create",
+                        "indicate"
                     ],
                     [
                         "object",
                         "all subjects",
-                        "create"
+                        "create",
+                        "indicate"
                     ],
                     [
                         "object component",
                         "all subjects",
-                        "create"
+                        "create",
+                        "indicate"
                     ]
                 ]
             },
@@ -5042,152 +5177,182 @@
                     [
                         "collections",
                         "headings",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "collections",
                         "title",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "collections",
                         "topic",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "collections",
                         "genre",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "collections",
                         "form",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "collections",
                         "geographical name",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "collections",
                         "function",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "collections",
                         "occupation",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "collections",
                         "name",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "collections",
                         "cartographics",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "objects",
                         "headings",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "objects",
                         "title",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "objects",
                         "topic",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "objects",
                         "genre",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "objects",
                         "form",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "objects",
                         "geographical name",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "objects",
                         "function",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "objects",
                         "occupation",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "objects",
                         "name",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "objects",
                         "cartographics",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "object components",
                         "headings",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "object components",
                         "title",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "object components",
                         "topic",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "object components",
                         "genre",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "object components",
                         "form",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "object components",
                         "geographical name",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "object components",
                         "function",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "object components",
                         "occupation",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "object components",
                         "name",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ],
                     [
                         "object components",
                         "cartographics",
-                        "preserve;create"
+                        "preserve;create",
+                        "search"
                     ]
                 ]
             },
@@ -5366,7 +5531,8 @@
                 "Contain Action Rules": [[
                     "any resource",
                     "geo-coordinates",
-                    "create"
+                    "create",
+                    "indicate"
                 ]]
             },
             "Contains": [[
@@ -5418,17 +5584,20 @@
                     [
                         "collection",
                         "geographical context",
-                        "preserve"
+                        "preserve",
+                        "see"
                     ],
                     [
                         "object",
                         "geographical context",
-                        "preserve"
+                        "preserve",
+                        "see"
                     ],
                     [
                         "object component",
                         "geographical context",
-                        "preserve"
+                        "preserve",
+                        "see"
                     ]
                 ]
             },
@@ -5498,12 +5667,14 @@
                     [
                         "resource",
                         "all other pertinent versions",
-                        "create"
+                        "create",
+                        "indicate"
                     ],
                     [
                         "resource",
                         "descriptions",
-                        "create"
+                        "create",
+                        "indicate"
                     ]
                 ]
             },
@@ -5574,12 +5745,14 @@
                     [
                         "resource",
                         "all other pertinent versions",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ],
                     [
                         "resource",
                         "descriptions",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ]
                 ]
             },
@@ -5644,7 +5817,8 @@
                 "Contain Action Rules": [[
                     "repository's content files",
                     "checksum",
-                    "create;delete"
+                    "create;delete",
+                    "changed"
                 ]]
             },
             "Contains": [[
@@ -5710,7 +5884,8 @@
                 "Contain Action Rules": [[
                     "all files",
                     "checksum",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [[
@@ -5867,12 +6042,14 @@
                     [
                         "objects",
                         "copyright",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ],
                     [
                         "object components",
                         "copyright",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ]
                 ]
             },
@@ -6004,12 +6181,14 @@
                     [
                         "object",
                         "copyright status",
-                        "create;delete"
+                        "create;delete",
+                        "modified"
                     ],
                     [
                         "object component",
                         "copyright status",
-                        "create;delete"
+                        "create;delete",
+                        "modified"
                     ]
                 ]
             },
@@ -6074,7 +6253,8 @@
                 "Contain Action Rules": [[
                     "who",
                     "copyright",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [
@@ -6139,12 +6319,14 @@
                     [
                         "object",
                         "statutes",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ],
                     [
                         "object component",
                         "statutes",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ]
                 ]
             },
@@ -6214,7 +6396,8 @@
                 "Contain Action Rules": [[
                     "statute",
                     "pertinence",
-                    "create"
+                    "create",
+                    "scheduled"
                 ]]
             },
             "Contains": [
@@ -6292,7 +6475,8 @@
                 "Contain Action Rules": [[
                     "statute",
                     "application",
-                    "create;delete"
+                    "create;delete",
+                    "modified"
                 ]]
             },
             "Contains": [
@@ -6465,7 +6649,8 @@
                 "Contain Action Rules": [[
                     "library policy",
                     "application",
-                    "create"
+                    "create",
+                    "scheduled"
                 ]]
             },
             "Contains": [
@@ -6535,7 +6720,8 @@
                 "Contain Action Rules": [[
                     "library policy",
                     "application",
-                    "create;delete"
+                    "create;delete",
+                    "modified"
                 ]]
             },
             "Contains": [
@@ -6599,12 +6785,14 @@
                     [
                         "object",
                         "uses",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ],
                     [
                         "object componen",
                         "uses",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ]
                 ]
             },
@@ -6670,12 +6858,14 @@
                     [
                         "permission",
                         "dates",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ],
                     [
                         "restriction",
                         "dates",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ]
                 ]
             },
@@ -6747,7 +6937,8 @@
                 "Contain Action Rules": [[
                     "permitted and restricted acts",
                     "active dates",
-                    "create;delete"
+                    "create;delete",
+                    "modified"
                 ]]
             },
             "Contains": [[
@@ -6806,7 +6997,8 @@
                 "Contain Action Rules": [[
                     "dams",
                     "all events scheduled for recording",
-                    "preserve;create"
+                    "preserve;create",
+                    "track"
                 ]]
             },
             "Contains": [[
@@ -6969,7 +7161,8 @@
                 "Contain Action Rules": [[
                     "event",
                     "outcome",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [[

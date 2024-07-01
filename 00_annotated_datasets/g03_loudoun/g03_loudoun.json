@@ -669,12 +669,13 @@
                 "Target Action Rules": [[
                     "check",
                     "status",
-                    "preserve;forbid"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "transaction",
                     "status",
-                    "preserve;forbid"
+                    "preserve",
+                    "Check"
                 ]]
             },
             "Contains": [[
@@ -763,12 +764,12 @@
                     [
                         "validate",
                         "eligible for further technical review",
-                        "preserve;forbid"
+                        "preserve"
                     ],
                     [
                         "validate",
                         "application",
-                        "preserve;forbid"
+                        "preserve"
                     ]
                 ],
                 "Contain Action Rules": []
@@ -928,7 +929,8 @@
                 "Contain Action Rules": [[
                     "application",
                     "detailed review",
-                    "create"
+                    "create",
+                    "Assign"
                 ]]
             },
             "Contains": [[
@@ -1491,7 +1493,8 @@
                 "Contain Action Rules": [[
                     "application",
                     "final action status",
-                    "create"
+                    "create",
+                    "denote"
                 ]]
             },
             "Contains": [[
@@ -1804,7 +1807,8 @@
                 "Contain Action Rules": [[
                     "comprehensive plan",
                     "consistency",
-                    "preserve;forbid"
+                    "preserve;forbid",
+                    "Evaluate"
                 ]]
             },
             "Contains": [[
@@ -1843,7 +1847,7 @@
                     [
                         "validate",
                         "compliance",
-                        "preserve;forbid"
+                        "preserve"
                     ],
                     [
                         "impact",
@@ -1860,7 +1864,7 @@
                     [
                         "application",
                         "compliance",
-                        "preserve;forbid"
+                        "preserve"
                     ],
                     [
                         "application",
@@ -1995,7 +1999,8 @@
                 "Contain Action Rules": [[
                     "zoning information",
                     "requests",
-                    "create;delete"
+                    "create;delete",
+                    "Process"
                 ]]
             },
             "Contains": [[
@@ -2605,7 +2610,8 @@
                 "Contain Action Rules": [[
                     "review",
                     "plans",
-                    "create"
+                    "create",
+                    "Assign"
                 ]]
             },
             "Contains": [[
@@ -2796,7 +2802,8 @@
                 "Contain Action Rules": [[
                     "plan review meeting",
                     "applicant",
-                    "create"
+                    "create",
+                    "successfully Conduct"
                 ]]
             },
             "Contains": [[
@@ -3102,7 +3109,8 @@
                 "Contain Action Rules": [[
                     "applicant",
                     "code modifications",
-                    "preserve"
+                    "preserve",
+                    "Review"
                 ]]
             },
             "Contains": [[
@@ -3718,7 +3726,7 @@
                     [
                         "validate",
                         "customer compliance",
-                        "preserve;forbid"
+                        "preserve"
                     ],
                     [
                         "provide",

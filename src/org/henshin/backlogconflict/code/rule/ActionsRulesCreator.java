@@ -93,6 +93,7 @@ public class ActionsRulesCreator {
 							containPair.put(entity1);
 							containPair.put(entity2);
 							containPair.put(actionRule);
+							containPair.put(verb);
 							mainContainActionRules.put(containPair);
 							setMainContains.add(keyContain);
 						}
@@ -104,6 +105,7 @@ public class ActionsRulesCreator {
 							containPair.put(entity1);
 							containPair.put(entity2);
 							containPair.put(actionRule);
+							containPair.put(verb);
 							mainContainActionRules.put(containPair);
 							setMainContains.add(keyContain);
 						}

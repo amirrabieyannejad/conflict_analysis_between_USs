@@ -3,15 +3,47 @@
 ********************* << Dataset: g11_nsf >> ***************
 * Table of potential conflict between user stories
 
-       us_33  us_53  
-us_33         x      
-us_53  x             
+       us_21  us_28  us_33  us_53  
+us_21         x                    
+us_28  x                           
+us_33                       x      
+us_53                x             
 
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_21_AND_user_story_28}
+  
+Affected Resource of US1 is: << plans >>
+Affected Resource of US2 is: << last round >>
+Affected Contain Resource US1 is: << user research >>
+Affected Resource US2 is: << user research >>
+Contain Resources for: user_story_21: << [["user research","plans","preserve;forbid","overlaps"]] >>
+Contain Resources for: user_story_28: << [["user research","last round","create","recruit"]] >>
+
+ Action of user_story_21 is: << overlaps >>  which is annotated with: << forbid >>
+ Action of user_story_28 is: << recruit >>  which is annotated with: << create >>
+
+Conflict Reason is: << forbid-create-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_21: #G11# As a team member, i want to understand how time off #overlaps# with #plans# around the #user research#.
+
+   user_story_28: #G11# As a researcher, i want to #recruit# for the #last round# of #user research#, 
+
+Original texts of user stories are: 
+   user_story_21: #G11# As a team member, I want to understand how time off overlaps with plans around the user research.
+
+   user_story_28: #G11# As a researcher, I want to recruit for the last round of user research, so that we can summarize our findings and synthesize results.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_33_AND_user_story_53}
   
-Affected Resource is: << recruiter >>
+Affected Resource of US1 is: << recruiter >>
+Affected Resource of US2 is: << recruiter >>
+Affected Contain Resource US1 is: << recruiter >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_33: << [] >>
+Contain Resources for: user_story_53: << [] >>
 
  Action of user_story_33 is: << set up >>  which is annotated with: << create >>
  Action of user_story_53 is: << working properly >>  which is annotated with: << forbid >>
@@ -19,9 +51,9 @@ Affected Resource is: << recruiter >>
 Conflict Reason is: << create-forbid-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_33: #g11# as a web #recruiter# manager, i want to confirm the #recruiter# is #set up# and working properly on science360.gov.
+   user_story_33: #G11# As a web recruiter manager, i want to confirm the #recruiter# is #set up# and working properly on science360.gov.
 
-   user_story_53: #g11# as a web #recruiter# manager, i want to confirm the #recruiter# is set up and #working properly#, 
+   user_story_53: #G11# As a web recruiter manager, i want to confirm the #recruiter# is set up and #working properly#, 
 
 Original texts of user stories are: 
    user_story_33: #G11# As a web recruiter manager, I want to confirm the recruiter is set up and working properly on Science360.gov.

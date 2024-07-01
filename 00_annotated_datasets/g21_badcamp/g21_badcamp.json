@@ -37,7 +37,8 @@
                 "Contain Action Rules": [[
                     "list",
                     "sponsors",
-                    "preserve"
+                    "preserve",
+                    "view"
                 ]]
             },
             "Contains": [[
@@ -113,7 +114,8 @@
                 "Contain Action Rules": [[
                     "list",
                     "user profiles",
-                    "preserve"
+                    "preserve",
+                    "view"
                 ]]
             },
             "Contains": [[
@@ -220,12 +222,14 @@
                     [
                         "very clear map",
                         "buildings",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ],
                     [
                         "very clear map",
                         "rooms",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ]
                 ]
             },
@@ -334,12 +338,14 @@
                     [
                         "day",
                         "one registration",
-                        "preserve;forbid"
+                        "preserve;forbid",
+                        "limit"
                     ],
                     [
                         "authenticated user",
                         "one registration",
-                        "preserve;forbid"
+                        "preserve;forbid",
+                        "limit"
                     ]
                 ]
             },
@@ -411,7 +417,8 @@
                 "Contain Action Rules": [[
                     "each attendee",
                     "registration status",
-                    "preserve;create"
+                    "preserve;create",
+                    "helps track"
                 ]]
             },
             "Contains": [[
@@ -558,12 +565,14 @@
                     [
                         "registration",
                         "cancellation deadline",
-                        "create"
+                        "create",
+                        "tie in"
                     ],
                     [
                         "cancellation workflow",
                         "cancellation deadline",
-                        "create"
+                        "create",
+                        "tie in"
                     ]
                 ]
             },
@@ -697,12 +706,12 @@
                 "Target Action Rules": [[
                     "get",
                     "login info",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "environment setup",
                     "login info",
-                    "preserve;create"
+                    "preserve"
                 ]]
             },
             "Contains": [[
@@ -753,7 +762,8 @@
                 "Contain Action Rules": [[
                     "training node",
                     "view",
-                    "preserve"
+                    "preserve",
+                    "have"
                 ]]
             },
             "Contains": [[
@@ -840,7 +850,8 @@
                 "Contain Action Rules": [[
                     "admin view",
                     "all trainee information",
-                    "preserve"
+                    "preserve",
+                    "have"
                 ]]
             },
             "Contains": [[
@@ -961,17 +972,20 @@
                     [
                         "each class",
                         "dedicated page",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ],
                     [
                         "dedicated page",
                         "information",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ],
                     [
                         "dedicated page",
                         "url path",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ]
                 ]
             },
@@ -1154,7 +1168,8 @@
                 "Contain Action Rules": [[
                     "training options",
                     "information",
-                    "preserve"
+                    "preserve",
+                    "have"
                 ]]
             },
             "Contains": [
@@ -1313,12 +1328,14 @@
                     [
                         "training landing page",
                         "intro section",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ],
                     [
                         "training landing page",
                         "list",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ]
                 ]
             },
@@ -1401,12 +1418,14 @@
                     [
                         "home page",
                         "link",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ],
                     [
                         "list",
                         "link",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ]
                 ]
             },
@@ -1505,12 +1524,12 @@
                 "Target Action Rules": [[
                     "get",
                     "monies",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "people",
                     "monies",
-                    "preserve;create"
+                    "preserve"
                 ]]
             },
             "Contains": [[
@@ -1541,7 +1560,8 @@
                 "Contain Action Rules": [[
                     "stripe",
                     "sponsorship money",
-                    "create"
+                    "create",
+                    "refund"
                 ]]
             },
             "Contains": [[
@@ -1599,7 +1619,8 @@
                 "Contain Action Rules": [[
                     "sponsorships page",
                     "link",
-                    "create"
+                    "create",
+                    "find"
                 ]]
             },
             "Contains": [[
@@ -1670,7 +1691,8 @@
                 "Contain Action Rules": [[
                     "list",
                     "attendees",
-                    "preserve"
+                    "preserve",
+                    "See"
                 ]]
             },
             "Contains": [
@@ -1708,7 +1730,7 @@
                 "Target Action Rules": [[
                     "get",
                     "sponsorship",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": []
             },
@@ -1895,7 +1917,7 @@
                     [
                         "get",
                         "sense",
-                        "preserve;create"
+                        "preserve"
                     ],
                     [
                         "see",
@@ -2010,12 +2032,14 @@
                     [
                         "list",
                         "sessions",
-                        "preserve"
+                        "preserve",
+                        "see"
                     ],
                     [
                         "list",
                         "sponsor attendees",
-                        "preserve"
+                        "preserve",
+                        "see"
                     ]
                 ]
             },
@@ -2146,17 +2170,20 @@
                     [
                         "events",
                         "sponsors",
-                        "create"
+                        "create",
+                        "assign"
                     ],
                     [
                         "trainings",
                         "sponsors",
-                        "create"
+                        "create",
+                        "assign"
                     ],
                     [
                         "summits",
                         "sponsors",
-                        "create"
+                        "create",
+                        "assign"
                     ]
                 ]
             },
@@ -2760,7 +2787,7 @@
                     [
                         "get",
                         "exposure",
-                        "preserve;create"
+                        "preserve"
                     ],
                     [
                         "tout",
@@ -2771,7 +2798,7 @@
                 "Contain Action Rules": [[
                     "exposure",
                     "potential customers",
-                    "preserve;create"
+                    "preserve"
                 ]]
             },
             "Contains": [[
@@ -2920,7 +2947,7 @@
                 "Target Action Rules": [[
                     "get",
                     "detailed directions",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": []
             },
@@ -3091,7 +3118,8 @@
                 "Contain Action Rules": [[
                     "list",
                     "attendees signed up",
-                    "preserve"
+                    "preserve",
+                    "see"
                 ]]
             },
             "Contains": [
@@ -3173,7 +3201,8 @@
                 "Contain Action Rules": [[
                     "summit",
                     "basic information",
-                    "create"
+                    "create",
+                    "list"
                 ]]
             },
             "Contains": [[
@@ -3236,7 +3265,8 @@
                 "Contain Action Rules": [[
                     "summit",
                     "sponsors",
-                    "create"
+                    "create",
+                    "list"
                 ]]
             },
             "Contains": [[
@@ -3331,7 +3361,8 @@
                 "Contain Action Rules": [[
                     "summit",
                     "agenda",
-                    "create"
+                    "create",
+                    "list"
                 ]]
             },
             "Contains": [[
@@ -3489,7 +3520,8 @@
                 "Contain Action Rules": [[
                     "summits",
                     "specific details",
-                    "preserve"
+                    "preserve",
+                    "see"
                 ]]
             },
             "Contains": [[
@@ -3562,7 +3594,8 @@
                 "Contain Action Rules": [[
                     "list",
                     "summits",
-                    "preserve"
+                    "preserve",
+                    "see"
                 ]]
             },
             "Contains": [[
@@ -3686,7 +3719,8 @@
                 "Contain Action Rules": [[
                     "wysiwyg editor",
                     "all long-form content",
-                    "preserve"
+                    "preserve",
+                    "use"
                 ]]
             },
             "Contains": [[
@@ -3746,7 +3780,8 @@
                 "Contain Action Rules": [[
                     "job listings",
                     "sponsorship profile",
-                    "create"
+                    "create",
+                    "Link"
                 ]]
             },
             "Contains": [[
@@ -4001,7 +4036,8 @@
                 "Contain Action Rules": [[
                     "location",
                     "room",
-                    "create"
+                    "create",
+                    "assign"
                 ]]
             },
             "Contains": [[
@@ -4144,7 +4180,8 @@
                 "Contain Action Rules": [[
                     "final list",
                     "sessions approved",
-                    "preserve"
+                    "preserve",
+                    "see"
                 ]]
             },
             "Contains": [[
@@ -4539,7 +4576,8 @@
                 "Contain Action Rules": [[
                     "badcamp",
                     "session",
-                    "create"
+                    "create",
+                    "submit"
                 ]]
             },
             "Contains": [[
@@ -4646,7 +4684,8 @@
                 "Contain Action Rules": [[
                     "list",
                     "summits",
-                    "preserve"
+                    "preserve",
+                    "see"
                 ]]
             },
             "Contains": [[
@@ -4706,12 +4745,14 @@
                     [
                         "idividual sponsorship",
                         "several choices",
-                        "create"
+                        "create",
+                        "Be offered"
                     ],
                     [
                         "second page",
                         "several choices",
-                        "create"
+                        "create",
+                        "Be offered"
                     ]
                 ]
             },
@@ -4790,7 +4831,8 @@
                 "Contain Action Rules": [[
                     "menu",
                     "link",
-                    "create"
+                    "create",
+                    "easily find"
                 ]]
             },
             "Contains": [[
@@ -4835,7 +4877,7 @@
                     [
                         "get",
                         "account",
-                        "preserve;create"
+                        "preserve"
                     ],
                     [
                         "register for",
@@ -4846,7 +4888,7 @@
                 "Contain Action Rules": [[
                     "website",
                     "account",
-                    "preserve;create"
+                    "preserve"
                 ]]
             },
             "Contains": [[

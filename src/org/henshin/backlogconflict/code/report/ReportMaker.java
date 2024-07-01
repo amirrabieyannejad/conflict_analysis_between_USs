@@ -60,8 +60,8 @@ public class ReportMaker {
 				"g10_scrum_alliance", "g11_nsf", "g12_camperplus", "g14_datahub", "g16_mis", "g18_neurohub",
 				"g19_alfred", "g21_badcamp", "g22_rdadmp", "g23_archives_space", "g24_unibath", "g25_duraspace",
 				"g26_racdam", "g27_culrepo", "g28_zooniverse" };
-		// String[] version = { "g03_loudoun" };
-		// make a report for the whole
+//		String[] version = { "g10_scrum_alliance" };
+//		 make a report for the whole
 		File consolidatedConflictReport = new File("00_annotated_datasets\\consolidated_conflict_report.txt");
 		FileWriter consolidatedFileWriter = new FileWriter(consolidatedConflictReport);
 
@@ -98,7 +98,8 @@ public class ReportMaker {
 				"00_annotated_datasets\\" + reportMaker.getJsonFile() + "\\" + reportMaker.getJsonFile() + ".txt");
 		FileWriter fileWriter = reportMaker.createOrOverwriteReportFile(conflictReport);
 
-		reportMaker.findConflict(jsonMainArray, fileWriter, consolidatedFileWriter, jsonFileWriter, jsonReport,fileName);
+		reportMaker.findConflict(jsonMainArray, fileWriter, consolidatedFileWriter, jsonFileWriter, jsonReport,
+				fileName);
 		fileWriter.close();
 
 	}
@@ -126,7 +127,7 @@ public class ReportMaker {
 			}
 
 		}
-		printReport(conflictPairs, fileWriter, consolidatedFileWriter, jsonFileWriter, jsonReport,fileName);
+		printReport(conflictPairs, fileWriter, consolidatedFileWriter, jsonFileWriter, jsonReport, fileName);
 
 	}
 
@@ -146,13 +147,14 @@ public class ReportMaker {
 	}
 
 	private void printReport(Set<ConflictPair> conflictPairs, FileWriter fileWriter, FileWriter consolidatedFileWriter,
-			FileWriter jsonFileWriter, JSONArray jsonReport, String fileName) throws EmptyOrNotExistJsonFile, IOException {
+			FileWriter jsonFileWriter, JSONArray jsonReport, String fileName)
+			throws EmptyOrNotExistJsonFile, IOException {
 //		File main = new File(getJsonFileAbsolutePath());
 
 		if (conflictPairs.size() > 0) {
-			fileWriter.write("\n\n********************* << Dataset: "+ fileName +" >> ***************\n");
-			consolidatedFileWriter.write("\n\n********************* << Dataset: "+ fileName +" >> ***************\n");
-			writeTable(fileWriter, conflictPairs,consolidatedFileWriter);
+			fileWriter.write("\n\n********************* << Dataset: " + fileName + " >> ***************\n");
+			consolidatedFileWriter.write("\n\n********************* << Dataset: " + fileName + " >> ***************\n");
+			writeTable(fileWriter, conflictPairs, consolidatedFileWriter);
 		}
 		for (ConflictPair conflictPair : conflictPairs) {
 			JSONObject jsonObject = new JSONObject();
@@ -168,12 +170,33 @@ public class ReportMaker {
 			String textUs2 = jsonUs2.getString("Text");
 			JSONObject jsonUs2Main = jsonUs2.getJSONObject("Main");
 			String textUs2Main = jsonUs2Main.getString("Text");
+			int firstCommaUs1Main = textUs1Main.indexOf(',');
+			int firstCommaUs2Main = textUs2Main.indexOf(',');
+			String subStringFirstUs1 = textUs1Main.substring(0, firstCommaUs1Main);
+			String subStringFirstUs2 = textUs2Main.substring(0, firstCommaUs2Main);
+			
+			String subStringSecondUs1 = textUs1Main.substring(firstCommaUs1Main + 1);
+			String subStringSecondUs2 = textUs2Main.substring(firstCommaUs2Main + 1);
+			
+			if (conflictPair.getNounContainUs1().equals("") || conflictPair.getNounContainUs2().equals("")) {
+				String[] matchesUs1 = { conflictPair.getActionUs1(), conflictPair.getNounMainUs1() };
+				String[] matchesUs2 = { conflictPair.getActionUs2(), conflictPair.getNounMainUs2() };
+				subStringSecondUs1 = applyHashSymbols(subStringSecondUs1.toLowerCase(), matchesUs1);
+				subStringSecondUs2 = applyHashSymbols(subStringSecondUs2.toLowerCase(), matchesUs2);
+				
+			} else {
 
-			String[] matchesUs1 = { conflictPair.getActionUs1(), conflictPair.getNoun() };
-			String[] matchesUs2 = { conflictPair.getActionUs2(), conflictPair.getNoun() };
-			textUs1Main = applyHashSymbols(textUs1Main.toLowerCase(), matchesUs1);
-			textUs2Main = applyHashSymbols(textUs2Main.toLowerCase(), matchesUs2);
+				String[] matchesUs1 = { conflictPair.getActionUs1(), conflictPair.getNounMainUs1(),
+						conflictPair.getNounContainUs1() };
+				String[] matchesUs2 = { conflictPair.getActionUs2(), conflictPair.getNounMainUs2(),
+						conflictPair.getNounContainUs2() };
+				subStringSecondUs1 = applyHashSymbols(subStringSecondUs1.toLowerCase(), matchesUs1);
+				subStringSecondUs2 = applyHashSymbols(subStringSecondUs2.toLowerCase(), matchesUs2);
 
+			}
+			textUs1Main = subStringFirstUs1 + "," + subStringSecondUs1;
+			textUs2Main = subStringFirstUs2 + "," + subStringSecondUs2;
+			
 			String usPair = us1 + "_AND_" + us2;
 
 			// First of all create a table
@@ -184,9 +207,41 @@ public class ReportMaker {
 					+ " Stories found]--------------------------\n{" + usPair + "}\n  ");
 			jsonObject.put("Conflict Pair", usPair);
 
-			fileWriter.write("\nAffected Resource is: " + "<< " + conflictPair.getNoun() + " >>");
-			consolidatedFileWriter.write("\nAffected Resource is: " + "<< " + conflictPair.getNoun() + " >>");
-			jsonObject.put("Common Entity", conflictPair.getNoun());
+			fileWriter.write("\nAffected Resource of US1 is: " + "<< " + conflictPair.getNounMainUs1() + " >>");
+			consolidatedFileWriter
+					.write("\nAffected Resource of US1 is: " + "<< " + conflictPair.getNounMainUs1() + " >>");
+			jsonObject.put("Entity of US1", conflictPair.getNounMainUs1());
+
+			fileWriter.write("\nAffected Resource of US2 is: " + "<< " + conflictPair.getNounMainUs2() + " >>");
+			consolidatedFileWriter
+					.write("\nAffected Resource of US2 is: " + "<< " + conflictPair.getNounMainUs2() + " >>");
+			jsonObject.put("Entity of US2", conflictPair.getNounMainUs2());
+
+			fileWriter.write("\nAffected Contain Resource US1 is: " + "<< " + conflictPair.getNounContainUs1() + " >>");
+			consolidatedFileWriter
+					.write("\nAffected Contain Entity US1 is: " + "<< " + conflictPair.getNounContainUs1() + " >>");
+			jsonObject.put("Contain US1 Entity", conflictPair.getNounContainUs1());
+
+			fileWriter.write("\nAffected Resource US2 is: " + "<< " + conflictPair.getNounContainUs2() + " >>");
+			consolidatedFileWriter
+					.write("\nAffected Contain Entity US2 is: " + "<< " + conflictPair.getNounContainUs2() + " >>");
+			jsonObject.put("Contain US2 Entity", conflictPair.getNounContainUs2());
+
+			JSONObject jsonUs1ActionAnnotation = jsonUs1Main.getJSONObject("Action Rules");
+			JSONObject jsonUs2ActionAnnotation = jsonUs2Main.getJSONObject("Action Rules");
+			// test
+			fileWriter.write("\nContain Resources for: " + us1 + ": << "
+					+ jsonUs1ActionAnnotation.getJSONArray("Contain Action Rules").toString() + " >>");
+			consolidatedFileWriter.write("\nAffected Resources for: " + us1 + ": << "
+					+ jsonUs1ActionAnnotation.getJSONArray("Contain Action Rules").toString() + " >>");
+			jsonObject.put("Contain Action Rules US1", jsonUs1ActionAnnotation.getJSONArray("Contain Action Rules"));
+
+			// test
+			fileWriter.write("\nContain Resources for: " + us2 + ": << "
+					+ jsonUs2ActionAnnotation.getJSONArray("Contain Action Rules").toString() + " >>");
+			consolidatedFileWriter.write("\nAffected Resources for: " + us2 + ": << "
+					+ jsonUs2ActionAnnotation.getJSONArray("Contain Action Rules").toString() + " >>");
+			jsonObject.put("Contain Action Rules US2", jsonUs2ActionAnnotation.getJSONArray("Contain Action Rules"));
 
 			// TODO:
 			fileWriter.write(
@@ -246,15 +301,15 @@ public class ReportMaker {
 		}
 
 	}
-	
+
 	// Create a table at the top of the reports
-	private void writeTable(FileWriter fileWriter, Set<ConflictPair> conflictPairs, FileWriter consolidatedFileWriter) throws IOException {
+	private void writeTable(FileWriter fileWriter, Set<ConflictPair> conflictPairs, FileWriter consolidatedFileWriter)
+			throws IOException {
 
 		List<String> pairListSeperate = new ArrayList<>();
 
 		StringBuilder table = new StringBuilder();
-		table.append("* Table of potential conflict between user stories"
-				+ "\n\n");
+		table.append("* Table of potential conflict between user stories" + "\n\n");
 		for (ConflictPair conflictPair : conflictPairs) {
 			String us1 = conflictPair.getConflictPair1();
 			String us2 = conflictPair.getConflictPair2();
@@ -386,27 +441,109 @@ public class ReportMaker {
 //			System.out.println("targetActionRule verb is: " + verb);
 //			System.out.println("targetActionRule noun is: " + noun);
 			String actionRule = current.getString(2).toLowerCase();
-			
+
 			// Check if there is ambiguity by action annotation
 			if (actionRule.contains(";")) {
 //				System.out.println("found ambiguity in ActionRule.. Try to handle");
 				String[] items = actionRule.split(";");
 				for (String actionRuleAmbiguity : items) {
 //					System.out.println("[processAcitonRule] ");
+
 					executeProcessActions(conflictPairs, jsonMainArray, jsonObjectCurrent, jsonObject, actionArray,
 							targetActionRules, containActionRules, entityArray, triggersArray, targetsArray,
-							containsArray, text, persona, usNrM, verb, noun, actionRuleAmbiguity, false, conflicts);
+							containsArray, text, persona, usNrM, verb, noun, actionRuleAmbiguity, false, conflicts,
+							noun);
 
+					// proceed entities in contain
+					for (int i = 0; i < containActionRules.length(); i++) {
+						JSONArray jsonContain = containActionRules.getJSONArray(i);
+
+						String noun1 = jsonContain.getString(0);
+						String noun2 = jsonContain.getString(1);
+						String containActionAnnotation = jsonContain.getString(2);
+						String containVerb = jsonContain.getString(3);
+
+						// find the contain entity and iterate through targets and contains of other USs
+						if ((noun1.equalsIgnoreCase(noun)
+								|| noun2.equalsIgnoreCase(noun) && containVerb.equalsIgnoreCase(verb))
+								&& actionRule.equalsIgnoreCase(containActionAnnotation)) {
+							if (noun1.equalsIgnoreCase(noun)) {
+								System.out.println("Contain in Proccess action Rule noun1 is " + noun1 + " noun2 is: "
+										+ noun2 + " of " + usNrM);
+								executeProcessActions(conflictPairs, jsonMainArray, jsonObjectCurrent, jsonObject,
+										actionArray, targetActionRules, containActionRules, entityArray, triggersArray,
+										targetsArray, containsArray, text, persona, usNrM, verb, noun2,
+										actionRuleAmbiguity, true, conflicts, noun);
+							}
+							if (noun2.equalsIgnoreCase(noun)) {
+								executeProcessActions(conflictPairs, jsonMainArray, jsonObjectCurrent, jsonObject,
+										actionArray, targetActionRules, containActionRules, entityArray, triggersArray,
+										targetsArray, containsArray, text, persona, usNrM, verb, noun1,
+										actionRuleAmbiguity, true, conflicts, noun);
+							}
+
+						}
+
+					}
+
+//					for(int i=0;i<containActionRules.length();i++) {
+//						JSONArray jsonContain = containActionRules.getJSONArray(i);
+//						String noun1= jsonContain.getString(0);
+//						String noun2= jsonContain.getString(1);
+//						if(noun.equalsIgnoreCase(noun1)) {
+//							executeProcessActions(conflictPairs, jsonMainArray, jsonObjectCurrent, jsonObject, actionArray,
+//									targetActionRules, containActionRules, entityArray, triggersArray, targetsArray,
+//									containsArray, text, persona, usNrM, verb, noun2, actionRuleAmbiguity, false, conflicts);
+//						}
+//						if(noun.equalsIgnoreCase(noun2)) {
+//							executeProcessActions(conflictPairs, jsonMainArray, jsonObjectCurrent, jsonObject, actionArray,
+//									targetActionRules, containActionRules, entityArray, triggersArray, targetsArray,
+//									containsArray, text, persona, usNrM, verb, noun1, actionRuleAmbiguity, false, conflicts);
+//						}
+//					}
 				}
 
 			} else {
 
 //				System.out.println("process atomic action Rule");
+
 				executeProcessActions(conflictPairs, jsonMainArray, jsonObjectCurrent, jsonObject, actionArray,
 						targetActionRules, containActionRules, entityArray, triggersArray, targetsArray, containsArray,
-						text, persona, usNrM, verb, noun, actionRule, true, conflicts);
+						text, persona, usNrM, verb, noun, actionRule, true, conflicts, noun);
+
+				for (int i = 0; i < containActionRules.length(); i++) {
+					JSONArray jsonContain = containActionRules.getJSONArray(i);
+
+					String noun1 = jsonContain.getString(0);
+					String noun2 = jsonContain.getString(1);
+					String containActionAnnotation = jsonContain.getString(2);
+					String containVerb = jsonContain.getString(3);
+
+					// find the contain entity and iterate through targets and contains of other USs
+					if ((noun1.equalsIgnoreCase(noun)
+							|| noun2.equalsIgnoreCase(noun) && containVerb.equalsIgnoreCase(verb))
+							&& actionRule.equalsIgnoreCase(containActionAnnotation)) {
+						if (noun1.equalsIgnoreCase(noun)) {
+							System.out.println("Contain in Proccess action Rule noun1 is" + noun1 + " noun2 is: "
+									+ noun2 + " of " + usNrM);
+							executeProcessActions(conflictPairs, jsonMainArray, jsonObjectCurrent, jsonObject,
+									actionArray, targetActionRules, containActionRules, entityArray, triggersArray,
+									targetsArray, containsArray, text, persona, usNrM, verb, noun2, actionRule, true,
+									conflicts, noun);
+						}
+						if (noun2.equalsIgnoreCase(noun)) {
+							executeProcessActions(conflictPairs, jsonMainArray, jsonObjectCurrent, jsonObject,
+									actionArray, targetActionRules, containActionRules, entityArray, triggersArray,
+									targetsArray, containsArray, text, persona, usNrM, verb, noun1, actionRule, true,
+									conflicts, noun);
+						}
+
+					}
+
+				}
 			}
 		}
+		// proceed contain entities
 
 	}
 
@@ -414,25 +551,25 @@ public class ReportMaker {
 			JSONObject jsonObjectCurrent, JSONObject jsonObject, JSONArray actionArray, JSONArray targetActionRules,
 			JSONArray containActionRules, JSONArray entityArray, JSONArray triggersArray, JSONArray targetsArray,
 			JSONArray containsArray, String text, JSONArray persona, String usNrM, String verb, String noun,
-			String actionRule, boolean b, Set<String> conflicts) {
+			String actionRule, boolean containEntity, Set<String> conflicts, String nounMainUs1) {
 //		System.out.println("Action Rule is: " + actionRule);
 		switch (actionRule) {
 		case "preserve":
-			findConflictForActionAnnotation(conflictPairs, jsonMainArray, jsonObjectCurrent, actionRule, "delete", noun, verb,
-					conflicts);
+			findConflictForActionAnnotation(conflictPairs, jsonMainArray, jsonObjectCurrent, actionRule, "delete", noun,
+					verb, conflicts, nounMainUs1,containEntity);
 			break;
 		case "delete":
-			findConflictForActionAnnotation(conflictPairs, jsonMainArray, jsonObjectCurrent, actionRule, "preserve", noun,
-					verb, conflicts);
-			findConflictForActionAnnotation(conflictPairs, jsonMainArray, jsonObjectCurrent, actionRule, "delete", noun, verb,
-					conflicts);
+			findConflictForActionAnnotation(conflictPairs, jsonMainArray, jsonObjectCurrent, actionRule, "preserve",
+					noun, verb, conflicts, nounMainUs1,containEntity);
+			findConflictForActionAnnotation(conflictPairs, jsonMainArray, jsonObjectCurrent, actionRule, "delete", noun,
+					verb, conflicts, nounMainUs1,containEntity);
 		case "create":
-			findConflictForActionAnnotation(conflictPairs, jsonMainArray, jsonObjectCurrent, actionRule, "forbid", noun, verb,
-					conflicts);
+			findConflictForActionAnnotation(conflictPairs, jsonMainArray, jsonObjectCurrent, actionRule, "forbid", noun,
+					verb, conflicts, nounMainUs1,containEntity);
 			break;
 		case "forbid":
-			findConflictForActionAnnotation(conflictPairs, jsonMainArray, jsonObjectCurrent, actionRule, "create", noun, verb,
-					conflicts);
+			findConflictForActionAnnotation(conflictPairs, jsonMainArray, jsonObjectCurrent, actionRule, "create", noun,
+					verb, conflicts, nounMainUs1,containEntity);
 			break;
 
 		default:
@@ -443,17 +580,25 @@ public class ReportMaker {
 	}
 
 	private void findConflictForActionAnnotation(Set<ConflictPair> conflictPairs, JSONArray jsonMainArray,
-			JSONObject jsonObjectCurrentMain, String actionRuleUs1, String criticalActionRule, String entityUs1,
-			String actionUs1, Set<String> conflicts) {
-		String usNr1 = jsonObjectCurrentMain.getString("US_Nr");
-		String pId = jsonObjectCurrentMain.getString("PID");
+			JSONObject jsonObjectCurrent, String actionRuleUs1, String criticalActionRule, String entityUs1,
+			String actionUs1, Set<String> conflicts, String nounMainUs1,boolean containEntity ) {
+		String usNr1 = jsonObjectCurrent.getString("US_Nr");
+		String pId = jsonObjectCurrent.getString("PID");
+
+		// iterate through WHOLE Dataset
 		for (int i = 0; i < jsonMainArray.length(); i++) {
-			JSONObject jsonObjectCurrent = jsonMainArray.getJSONObject(i);
-			String usNr2 = jsonObjectCurrent.getString("US_Nr");
-			if (!usNr1.equals(usNr2) && (!conflicts.contains(usNr1 + usNr2) || !conflicts.contains(usNr2 + usNr1))) {
-				JSONObject main = jsonObjectCurrent.getJSONObject("Main");
-				JSONObject actionRules = main.getJSONObject("Action Rules");
-				JSONArray targetActionRulesArray = actionRules.getJSONArray("Target Action Rules");
+			JSONObject current = jsonMainArray.getJSONObject(i);
+			String usNr2 = current.getString("US_Nr");
+
+			// Check if the US are different and are not yet proceeded
+//			if (!usNr1.equals(usNr2) && (!conflicts.contains(usNr1 + usNr2 + entityUs1)
+//					|| !conflicts.contains(usNr2 + usNr1 + entityUs1))) {
+			if (!usNr1.equals(usNr2) && (!conflicts.contains(usNr1 + usNr2) 
+					|| !conflicts.contains(usNr2 + usNr1))) {
+				JSONObject main = current.getJSONObject("Main");
+				JSONObject jsonObjectActionRules = main.getJSONObject("Action Rules");
+				JSONArray targetActionRulesArray = jsonObjectActionRules.getJSONArray("Target Action Rules");
+				JSONArray containActionRulesArray = jsonObjectActionRules.getJSONArray("Contain Action Rules");
 				for (int j = 0; j < targetActionRulesArray.length(); j++) {
 					JSONArray innerArray = targetActionRulesArray.getJSONArray(j);
 					String actionUs2 = innerArray.getString(0);
@@ -462,20 +607,94 @@ public class ReportMaker {
 
 					// check if actionRule of this US contains any critical action rule
 					if (entityUs2.equalsIgnoreCase(entityUs1) && actionRuleUs2.contains(criticalActionRule)) {
-						System.out.println("Conflict found  between: " + usNr1 + " and " + usNr2);
-						System.out.println("Noun is " + entityUs1 + " there is  " + actionRuleUs1 + "-"
+
+						System.out.println("----Target: Conflict found  between: " + usNr1 + " and " + usNr2);
+						System.out.println("Target: Noun is " + entityUs1 + " there is  " + actionRuleUs1 + "-"
 								+ criticalActionRule + " Conflict");
+						System.out.println("entity of US1: " + entityUs1 + " entity of US2: " + entityUs2);
+
+						
 						// due to the fact that actionRuleUs2 can be more than one actionRule, we
 						// passing
 						// "criticalActionRule" (which is founded in actionRuleUs2) for saving
 						// actionRules
-						ConflictPair conflictPair = setConflictPair(usNr1, usNr2, pId, jsonObjectCurrentMain,
-								jsonObjectCurrent, entityUs1, actionUs1, actionUs2, actionRuleUs1, criticalActionRule,
-								actionRuleUs1 + "-" + criticalActionRule + "-Conflict");
+						ConflictPair conflictPair = setConflictPair(usNr1, usNr2, pId, jsonObjectCurrent, current,
+								actionUs1, actionUs2, actionRuleUs1, criticalActionRule,
+								actionRuleUs1 + "-" + criticalActionRule + "-Conflict", nounMainUs1, "", entityUs1,
+								entityUs2);
 
 						conflictPairs.add(conflictPair);
+//						conflicts.add(usNr1 + usNr2 + entityUs1);
+//						conflicts.add(usNr2 + usNr1 + entityUs1);
 						conflicts.add(usNr1 + usNr2);
 						conflicts.add(usNr2 + usNr1);
+					}
+
+				}
+					
+				
+				// iterate through CONTAINS of main US
+				for (int k = 0; k < containActionRulesArray.length(); k++) {
+					JSONArray jsonArrayContains = containActionRulesArray.getJSONArray(k);
+					String containEntity1Us2 = jsonArrayContains.getString(0);
+					String containEntity2Us2 = jsonArrayContains.getString(1);
+					String containActionAnnotationUs2 = jsonArrayContains.getString(2);
+					String containActionUs2 = jsonArrayContains.getString(3);
+
+					// check in contains if the entity1Us1 has container, if so, then check the
+					// entity of US2
+					// is the entity2Us? If so, then there is a also conflict but with different
+					// entity
+
+					// check if entity belongs to one of their entities
+					if ((containEntity1Us2.equalsIgnoreCase(entityUs1) || containEntity2Us2.equalsIgnoreCase(entityUs1))
+							&& containActionAnnotationUs2.contains(criticalActionRule)) {
+
+						if (containEntity1Us2.equalsIgnoreCase(entityUs1)) {
+							System.out.println("\n\nContains: Conflict found  between: " + usNr1 + " and " + usNr2);
+//							System.out.println("Contains: Noun is " + containEntity2Us2 + " there is  " + actionRuleUs1
+//									+ "-" + criticalActionRule + " Conflict");
+							// due to the fact that actionRuleUs2 can be more than one actionRule, we
+							// passing
+							// "criticalActionRule" (which is founded in actionRuleUs2) for saving
+							// actionRules
+							ConflictPair conflictPair = setConflictPair(usNr1, usNr2, pId, jsonObjectCurrent, current,
+									actionUs1, containActionUs2, actionRuleUs1, criticalActionRule,
+									actionRuleUs1 + "-" + criticalActionRule + "-Conflict", entityUs1,
+									containEntity1Us2, nounMainUs1, containEntity2Us2);
+							System.out.println("entity US1 is : "+ nounMainUs1 +" Contains: Noun US1 is " + entityUs1 + 
+									" entity US2 is : "+ containEntity2Us2 +" Contains: Noun US2 is: " + containEntity1Us2 );
+
+							conflictPairs.add(conflictPair);
+//							conflicts.add(usNr1 + usNr2 + containEntity2Us2);
+//							conflicts.add(usNr2 + usNr1 + containEntity2Us2);
+							conflicts.add(usNr1 + usNr2);
+							conflicts.add(usNr2 + usNr1);
+
+						}
+						if (containEntity2Us2.equalsIgnoreCase(entityUs1)) {
+							System.out.println("\n\nContains: Conflict found  between: " + usNr1 + " and " + usNr2);
+							System.out.println("Contains: Noun is " + containEntity1Us2 + " there is  " + actionRuleUs1
+									+ "-" + criticalActionRule + " Conflict");
+							// due to the fact that actionRuleUs2 can be more than one actionRule, we
+							// passing
+							// "criticalActionRule" (which is founded in actionRuleUs2) for saving
+							// actionRules
+							ConflictPair conflictPair = setConflictPair(usNr1, usNr2, pId, jsonObjectCurrent, current,
+									actionUs1, containActionUs2, actionRuleUs1, criticalActionRule,
+									actionRuleUs1 + "-" + criticalActionRule + "-Conflict", entityUs1,
+									containEntity2Us2, nounMainUs1, containEntity1Us2);
+							System.out.println("entity US1 is : " + nounMainUs1 + " Contains: Noun US1 is " + entityUs1
+									+ " entity US2 is : " + containEntity1Us2 + " Contains: Noun US2 is: "
+									+ containEntity2Us2);
+							conflictPairs.add(conflictPair);
+//							conflicts.add(usNr1 + usNr2 + containEntity1Us2);
+//							conflicts.add(usNr2 + usNr1 + containEntity1Us2);
+							conflicts.add(usNr1 + usNr2);
+							conflicts.add(usNr2 + usNr1);
+
+						}
+
 					}
 
 				}
@@ -485,8 +704,8 @@ public class ReportMaker {
 
 	// Store founded conflicted pair into ConflictPair class
 	private ConflictPair setConflictPair(String us1, String us2, String pId, JSONObject jsonUs1, JSONObject jsonUs2,
-			String noun, String actionUs1, String actionUs2, String actionRuleUs1, String actionRuleUs2,
-			String conflictReason) {
+			String actionUs1, String actionUs2, String actionRuleUs1, String actionRuleUs2, String conflictReason,
+			String nounContainUs1, String nounContainUs2, String nounMainUs1, String nounMainUs2) {
 		ConflictPair cp = new ConflictPair();
 		cp.setConflictPair1(us1);
 		cp.setConflictPair2(us2);
@@ -494,11 +713,19 @@ public class ReportMaker {
 		cp.setJsonConflict2(jsonUs2);
 		cp.setpId(pId);
 		cp.setConflictReason(conflictReason);
-		cp.setNoun(noun);
+
+		cp.setNounMainUs1(nounMainUs1);
+		cp.setNounMainUs2(nounMainUs2);
+
+		cp.setNounContainUs1(nounContainUs1);
+		cp.setNounContainUs2(nounContainUs2);
+
 		cp.setActionRuleUs1(actionRuleUs1);
 		cp.setActionRuleUs2(actionRuleUs2);
+
 		cp.setActionUs1(actionUs1);
 		cp.setActionUs2(actionUs2);
+
 		return cp;
 	}
 
@@ -535,7 +762,9 @@ public class ReportMaker {
 	private String applyHashSymbols(String subString, String[] matches) {
 		Arrays.sort(matches, Comparator.comparing(String::length).reversed());
 		for (String match : matches) {
-			subString = subString.replaceAll("\\b" + match + "\\b", "#" + match + "#");
+			subString = subString.replaceAll("\\b" + match + "\\b", "#" + match + "#").replaceAll("#+", "#");
+			;
+
 		}
 		return subString;
 	}

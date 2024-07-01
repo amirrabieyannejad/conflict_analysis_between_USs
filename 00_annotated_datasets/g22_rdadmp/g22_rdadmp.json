@@ -117,12 +117,14 @@
                     [
                         "where",
                         "data",
-                        "create"
+                        "create",
+                        "indicate"
                     ],
                     [
                         "project",
                         "data",
-                        "create"
+                        "create",
+                        "stored"
                     ]
                 ]
             },
@@ -334,12 +336,13 @@
                 "Target Action Rules": [[
                     "check",
                     "planned provenance",
-                    "preserve;forbid"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "data",
                     "planned provenance",
-                    "preserve;forbid"
+                    "preserve",
+                    "check"
                 ]]
             },
             "Contains": [
@@ -405,7 +408,8 @@
                 "Contain Action Rules": [[
                     "project lifecycle",
                     "it resource requirements",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [[
@@ -524,7 +528,8 @@
                 "Contain Action Rules": [[
                     "data",
                     "security requirements",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [[
@@ -597,12 +602,14 @@
                     [
                         "collected data sets",
                         "description",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ],
                     [
                         "project lifecycle",
                         "description",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ]
                 ]
             },
@@ -659,7 +666,8 @@
                 "Contain Action Rules": [[
                     "all dmps",
                     "topics",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [[
@@ -756,7 +764,8 @@
                 "Contain Action Rules": [[
                     "data",
                     "content",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [[
@@ -810,7 +819,8 @@
                 "Contain Action Rules": [[
                     "dmp",
                     "information",
-                    "create"
+                    "create",
+                    "record"
                 ]]
             },
             "Contains": [[
@@ -936,12 +946,14 @@
                     [
                         "dmp",
                         "pointers",
-                        "create;delete"
+                        "create;delete",
+                        "extract"
                     ],
                     [
                         "metadata",
                         "pointers",
-                        "create;delete"
+                        "create;delete",
+                        "extract"
                     ]
                 ]
             },
@@ -1009,7 +1021,8 @@
                 "Contain Action Rules": [[
                     "produced data volume",
                     "estimate",
-                    "preserve"
+                    "preserve",
+                    "have"
                 ]]
             },
             "Contains": [[
@@ -1077,7 +1090,8 @@
                 "Contain Action Rules": [[
                     "who",
                     "requirements",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [[
@@ -1140,7 +1154,8 @@
                 "Contain Action Rules": [[
                     "data",
                     "legal status",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [[
@@ -1394,7 +1409,8 @@
                 "Contain Action Rules": [[
                     "data",
                     "conservation period",
-                    "preserve"
+                    "preserve",
+                    "know in advance"
                 ]]
             },
             "Contains": [[
@@ -1477,7 +1493,8 @@
                 "Contain Action Rules": [[
                     "data",
                     "all rights",
-                    "create"
+                    "create",
+                    "document"
                 ]]
             },
             "Contains": [[
@@ -1523,7 +1540,7 @@
                     [
                         "check",
                         "necessary expertise",
-                        "preserve;forbid"
+                        "preserve"
                     ]
                 ],
                 "Contain Action Rules": []
@@ -1559,7 +1576,8 @@
                 "Contain Action Rules": [[
                     "data",
                     "content",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [[
@@ -1591,7 +1609,7 @@
                     [
                         "check",
                         "dmp",
-                        "preserve;forbid"
+                        "preserve"
                     ],
                     [
                         "implemented",
@@ -1634,12 +1652,14 @@
                     [
                         "datasets",
                         "persistent identifiers",
-                        "preserve;create"
+                        "preserve;create",
+                        "access"
                     ],
                     [
                         "dmp",
                         "persistent identifiers",
-                        "preserve;create"
+                        "preserve;create",
+                        "access"
                     ]
                 ]
             },
@@ -1677,7 +1697,7 @@
                 "Target Action Rules": [[
                     "check",
                     "policies",
-                    "preserve;forbid"
+                    "preserve"
                 ]],
                 "Contain Action Rules": []
             },
@@ -1707,7 +1727,8 @@
                 "Contain Action Rules": [[
                     "data management",
                     "costs",
-                    "preserve"
+                    "preserve",
+                    "read"
                 ]]
             },
             "Contains": [
@@ -1781,7 +1802,8 @@
                 "Contain Action Rules": [[
                     "institutional systems",
                     "information",
-                    "create"
+                    "create",
+                    "prepopulate"
                 ]]
             },
             "Contains": [[
@@ -1979,7 +2001,8 @@
                 "Contain Action Rules": [[
                     "project proposal",
                     "references",
-                    "preserve"
+                    "preserve",
+                    "have"
                 ]]
             },
             "Contains": [[
@@ -2032,7 +2055,8 @@
                 "Contain Action Rules": [[
                     "project",
                     "short description",
-                    "preserve"
+                    "preserve",
+                    "have"
                 ]]
             },
             "Contains": [[
@@ -2165,7 +2189,8 @@
                 "Contain Action Rules": [[
                     "data",
                     "time plan",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [[
@@ -2230,12 +2255,14 @@
                     [
                         "dmp",
                         "administrative information",
-                        "create"
+                        "create",
+                        "import"
                     ],
                     [
                         "project",
                         "administrative information",
-                        "create"
+                        "create",
+                        "import"
                     ]
                 ]
             },
@@ -2383,7 +2410,8 @@
                 "Contain Action Rules": [[
                     "file format",
                     "information",
-                    "create;delete"
+                    "create;delete",
+                    "reuse"
                 ]]
             },
             "Contains": [[
@@ -2497,7 +2525,8 @@
                 "Contain Action Rules": [[
                     "data collected",
                     "description",
-                    "create;delete"
+                    "create;delete",
+                    "extract"
                 ]]
             },
             "Contains": [[
@@ -2577,12 +2606,14 @@
                     [
                         "institutional repository",
                         "research publications",
-                        "create"
+                        "create",
+                        "record"
                     ],
                     [
                         "cris",
                         "research publications",
-                        "create"
+                        "create",
+                        "record"
                     ]
                 ]
             },
@@ -2674,12 +2705,14 @@
                     [
                         "institutional repository",
                         "research publications",
-                        "create"
+                        "create",
+                        "link"
                     ],
                     [
                         "cris",
                         "research publications",
-                        "create"
+                        "create",
+                        "link"
                     ]
                 ]
             },
@@ -2805,12 +2838,12 @@
                 "Target Action Rules": [[
                     "check",
                     "sensitivity",
-                    "preserve;forbid"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "data",
                     "sensitivity",
-                    "preserve;forbid"
+                    "preserve"
                 ]]
             },
             "Contains": [[
@@ -2973,7 +3006,7 @@
                     [
                         "check",
                         "archiving",
-                        "preserve;forbid"
+                        "preserve"
                     ],
                     [
                         "arranged",
@@ -3014,7 +3047,8 @@
                 "Contain Action Rules": [[
                     "type of data",
                     "details",
-                    "preserve"
+                    "preserve",
+                    "need"
                 ]]
             },
             "Contains": [[
@@ -3183,7 +3217,8 @@
                 "Contain Action Rules": [[
                     "regular summary reports",
                     "research data",
-                    "create"
+                    "create",
+                    "receive"
                 ]]
             },
             "Contains": [[
@@ -3252,7 +3287,8 @@
                 "Contain Action Rules": [[
                     "research data",
                     "regular summary reports",
-                    "create"
+                    "create",
+                    "receive"
                 ]]
             },
             "Contains": [[
@@ -3383,12 +3419,13 @@
                 "Target Action Rules": [[
                     "check",
                     "repositories mentioned",
-                    "preserve;forbid"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "dmp",
                     "repositories mentioned",
-                    "preserve;forbid"
+                    "preserve",
+                    "check"
                 ]]
             },
             "Contains": [[
@@ -3579,7 +3616,8 @@
                 "Contain Action Rules": [[
                     "reports",
                     "details",
-                    "preserve;create"
+                    "preserve;create",
+                    "access"
                 ]]
             },
             "Contains": [
@@ -3645,12 +3683,13 @@
                 "Target Action Rules": [[
                     "get",
                     "information",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "volume",
                     "information",
-                    "preserve;create"
+                    "preserve",
+                    "get"
                 ]]
             },
             "Contains": [
@@ -3763,7 +3802,8 @@
                 "Contain Action Rules": [[
                     "who",
                     "data",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [[
@@ -3795,7 +3835,7 @@
                     [
                         "re-used",
                         "data",
-                        "create;delete"
+                        "preserve"
                     ],
                     [
                         "managed",
@@ -3846,12 +3886,14 @@
                     [
                         "documentation",
                         "references",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ],
                     [
                         "documentation",
                         "creation process",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ]
                 ]
             },
@@ -3921,7 +3963,8 @@
                 "Contain Action Rules": [[
                     "data",
                     "detailed metadata",
-                    "preserve"
+                    "preserve",
+                    "associated"
                 ]]
             },
             "Contains": [[
@@ -4366,12 +4409,14 @@
                     [
                         "software",
                         "data",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ],
                     [
                         "technology",
                         "data",
-                        "create"
+                        "create",
+                        "produced"
                     ]
                 ]
             },
@@ -4463,7 +4508,7 @@
                     [
                         "re-use",
                         "data",
-                        "create;delete"
+                        "preserve"
                     ]
                 ],
                 "Contain Action Rules": []
@@ -4678,7 +4723,7 @@
                     [
                         "(re-)use",
                         "data",
-                        "create;delete"
+                        "preserve"
                     ]
                 ],
                 "Contain Action Rules": []
@@ -4741,12 +4786,14 @@
                     [
                         "software",
                         "data",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ],
                     [
                         "technology",
                         "data",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ]
                 ]
             },
@@ -4820,7 +4867,8 @@
                 "Contain Action Rules": [[
                     "all data",
                     "affiliation",
-                    "preserve;forbid"
+                    "preserve;forbid",
+                    "quoted correctly"
                 ]]
             },
             "Contains": [[
@@ -4872,12 +4920,13 @@
                 "Target Action Rules": [[
                     "check",
                     "all data",
-                    "preserve;forbid"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "all data",
                     "appropriate security level",
-                    "preserve;forbid"
+                    "preserve",
+                    "check"
                 ]]
             },
             "Contains": [[
@@ -4937,7 +4986,8 @@
                 "Contain Action Rules": [[
                     "data",
                     "security requirements",
-                    "preserve"
+                    "preserve",
+                    "know"
                 ]]
             },
             "Contains": [[
@@ -4987,7 +5037,8 @@
                 "Contain Action Rules": [[
                     "external repositories",
                     "data sets",
-                    "create;delete"
+                    "create;delete",
+                    "extract"
                 ]]
             },
             "Contains": [[
@@ -5078,12 +5129,14 @@
                     [
                         "data",
                         "privacy",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ],
                     [
                         "data",
                         "security requirements",
-                        "preserve"
+                        "preserve",
+                        "know"
                     ]
                 ]
             },
@@ -5158,7 +5211,8 @@
                 "Contain Action Rules": [[
                     "sections",
                     "costing",
-                    "preserve"
+                    "preserve",
+                    "see"
                 ]]
             },
             "Contains": [
@@ -5241,12 +5295,14 @@
                     [
                         "sections",
                         "roles",
-                        "preserve"
+                        "preserve",
+                        "see"
                     ],
                     [
                         "other researchers",
                         "roles",
-                        "create"
+                        "create",
+                        "submitted"
                     ]
                 ]
             },
@@ -5336,12 +5392,14 @@
                     [
                         "sections",
                         "responsibilities",
-                        "preserve"
+                        "preserve",
+                        "see"
                     ],
                     [
                         "other researchers",
                         "responsibilities",
-                        "create"
+                        "create",
+                        "submitted"
                     ]
                 ]
             },
@@ -5455,7 +5513,8 @@
                 "Contain Action Rules": [[
                     "sections",
                     "costing",
-                    "preserve"
+                    "preserve",
+                    "see"
                 ]]
             },
             "Contains": [[
@@ -5552,7 +5611,8 @@
                 "Contain Action Rules": [[
                     "sections",
                     "roles",
-                    "preserve"
+                    "preserve",
+                    "see"
                 ]]
             },
             "Contains": [[
@@ -5649,7 +5709,8 @@
                 "Contain Action Rules": [[
                     "sections",
                     "responsibilities",
-                    "preserve"
+                    "preserve",
+                    "see"
                 ]]
             },
             "Contains": [[
@@ -5716,7 +5777,8 @@
                 "Contain Action Rules": [[
                     "data",
                     "necessary rights",
-                    "create;delete"
+                    "create;delete",
+                    "clarify"
                 ]]
             },
             "Contains": [[
@@ -5962,7 +6024,8 @@
                 "Contain Action Rules": [[
                     "metadata",
                     "additional languages",
-                    "preserve"
+                    "preserve",
+                    "have"
                 ]]
             },
             "Contains": [[

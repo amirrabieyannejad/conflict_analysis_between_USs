@@ -40,7 +40,8 @@
                 "Contain Action Rules": [[
                     "simple web interface",
                     "datasets",
-                    "create"
+                    "create",
+                    "deposit"
                 ]]
             },
             "Contains": [[
@@ -192,7 +193,8 @@
                 "Contain Action Rules": [[
                     "pure",
                     "datasets",
-                    "create"
+                    "create",
+                    "deposit"
                 ]]
             },
             "Contains": [[
@@ -273,12 +275,14 @@
                     [
                         "virtual research environments",
                         "datasets",
-                        "create;delete"
+                        "create;delete",
+                        "maintain"
                     ],
                     [
                         "other workflow tools",
                         "datasets",
-                        "create;delete"
+                        "create;delete",
+                        "maintain"
                     ]
                 ]
             },
@@ -439,7 +443,8 @@
                 "Contain Action Rules": [[
                     "data",
                     "embargo",
-                    "create"
+                    "create",
+                    "place"
                 ]]
             },
             "Contains": [[
@@ -499,7 +504,8 @@
                 "Contain Action Rules": [[
                     "datasets",
                     "licenses",
-                    "create;delete"
+                    "create;delete",
+                    "apply"
                 ]]
             },
             "Contains": [[
@@ -558,12 +564,14 @@
                     [
                         "datasets",
                         "privileged access",
-                        "create"
+                        "create",
+                        "allow"
                     ],
                     [
                         "collaborators",
                         "privileged access",
-                        "create"
+                        "create",
+                        "allow"
                     ]
                 ]
             },
@@ -691,7 +699,8 @@
                 "Contain Action Rules": [[
                     "publications",
                     "datasets",
-                    "create"
+                    "create",
+                    "link"
                 ]]
             },
             "Contains": [
@@ -761,7 +770,8 @@
                 "Contain Action Rules": [[
                     "data",
                     "dois",
-                    "create"
+                    "create",
+                    "mint"
                 ]]
             },
             "Contains": [[
@@ -833,12 +843,14 @@
                     [
                         "other university systems",
                         "metadata",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ],
                     [
                         "previous deposits",
                         "metadata",
-                        "preserve"
+                        "preserve",
+                        "have"
                     ]
                 ]
             },
@@ -960,7 +972,8 @@
                 "Contain Action Rules": [[
                     "external repositories",
                     "data",
-                    "create"
+                    "create",
+                    "link"
                 ]]
             },
             "Contains": [[
@@ -1019,7 +1032,8 @@
                 "Contain Action Rules": [[
                     "data",
                     "disposal policy",
-                    "create"
+                    "create",
+                    "specify"
                 ]]
             },
             "Contains": [[
@@ -1086,7 +1100,8 @@
                 "Contain Action Rules": [[
                     "data",
                     "downloads",
-                    "preserve;create"
+                    "preserve;create",
+                    "track"
                 ]]
             },
             "Contains": [[
@@ -1153,7 +1168,8 @@
                 "Contain Action Rules": [[
                     "data",
                     "citations",
-                    "preserve;create"
+                    "preserve;create",
+                    "track"
                 ]]
             },
             "Contains": [[
@@ -1237,7 +1253,8 @@
                 "Contain Action Rules": [[
                     "data integrity",
                     "guarantees",
-                    "preserve"
+                    "preserve",
+                    "have"
                 ]]
             },
             "Contains": [[
@@ -1301,7 +1318,8 @@
                 "Contain Action Rules": [[
                     "records",
                     "subject specific discoverability metadata",
-                    "create"
+                    "create",
+                    "attach"
                 ]]
             },
             "Contains": [[
@@ -1385,7 +1403,8 @@
                 "Contain Action Rules": [[
                     "project dmp",
                     "datasets",
-                    "create"
+                    "create",
+                    "link"
                 ]]
             },
             "Contains": [[
@@ -1511,7 +1530,8 @@
                 "Contain Action Rules": [[
                     "same dataset",
                     "multiple versions",
-                    "create;delete"
+                    "create;delete",
+                    "manage"
                 ]]
             },
             "Contains": [[
@@ -1621,7 +1641,8 @@
                 "Contain Action Rules": [[
                     "web",
                     "archive",
-                    "preserve;create"
+                    "preserve;create",
+                    "search"
                 ]]
             },
             "Contains": [[
@@ -1688,7 +1709,8 @@
                 "Contain Action Rules": [[
                     "system",
                     "native language",
-                    "preserve;create"
+                    "preserve;create",
+                    "access"
                 ]]
             },
             "Contains": [[
@@ -1810,7 +1832,8 @@
                 "Contain Action Rules": [[
                     "dataset",
                     "example citation",
-                    "preserve"
+                    "preserve",
+                    "view"
                 ]]
             },
             "Contains": [[
@@ -1897,7 +1920,8 @@
                 "Contain Action Rules": [[
                     "dataset",
                     "doi",
-                    "preserve"
+                    "preserve",
+                    "view"
                 ]]
             },
             "Contains": [[
@@ -1949,12 +1973,13 @@
                 "Target Action Rules": [[
                     "get",
                     "persistent url",
-                    "preserve;create"
+                    "preserve"
                 ]],
                 "Contain Action Rules": [[
                     "dataset",
                     "persistent url",
-                    "preserve;create"
+                    "preserve",
+                    "get"
                 ]]
             },
             "Contains": [[
@@ -2067,7 +2092,8 @@
                 "Contain Action Rules": [[
                     "primo",
                     "archive",
-                    "preserve;create"
+                    "preserve;create",
+                    "search"
                 ]]
             },
             "Contains": [[
@@ -2137,7 +2163,8 @@
                 "Contain Action Rules": [[
                     "dataset",
                     "different versions",
-                    "preserve"
+                    "preserve",
+                    "see"
                 ]]
             },
             "Contains": [[
@@ -2199,12 +2226,14 @@
                     [
                         "data",
                         "privileged access",
-                        "create"
+                        "create",
+                        "gain"
                     ],
                     [
                         "projects",
                         "data",
-                        "preserve;create"
+                        "preserve;create",
+                        "involved"
                     ]
                 ]
             },
@@ -2284,7 +2313,8 @@
                 "Contain Action Rules": [[
                     "guarantees",
                     "ip rights",
-                    "preserve"
+                    "preserve",
+                    "have"
                 ]]
             },
             "Contains": [[
@@ -2336,12 +2366,14 @@
                     [
                         "bath collaborators",
                         "data",
-                        "preserve;create"
+                        "preserve;create",
+                        "access"
                     ],
                     [
                         "off campus",
                         "data",
-                        "preserve;create"
+                        "preserve;create",
+                        "access"
                     ]
                 ]
             },
@@ -2416,12 +2448,14 @@
                     [
                         "facility",
                         "data",
-                        "create"
+                        "create",
+                        "deposit"
                     ],
                     [
                         "archive",
                         "data",
-                        "create"
+                        "create",
+                        "deposit"
                     ]
                 ]
             },
@@ -2547,7 +2581,8 @@
                 "Contain Action Rules": [[
                     "deposited datasets",
                     "some checks",
-                    "create"
+                    "create",
+                    "make"
                 ]]
             },
             "Contains": [[
@@ -2614,7 +2649,8 @@
                 "Contain Action Rules": [[
                     "minimum set",
                     "metadata",
-                    "preserve;forbid"
+                    "preserve;forbid",
+                    "require"
                 ]]
             },
             "Contains": [[
@@ -2664,7 +2700,8 @@
                 "Contain Action Rules": [[
                     "data",
                     "scheduled disposal",
-                    "preserve;create"
+                    "preserve;create",
+                    "approve"
                 ]]
             },
             "Contains": [[
@@ -2788,7 +2825,8 @@
                 "Contain Action Rules": [[
                     "external data centre wholesale",
                     "bath data",
-                    "create"
+                    "create",
+                    "import"
                 ]]
             },
             "Contains": [[
@@ -2848,7 +2886,8 @@
                 "Contain Action Rules": [[
                     "deposit",
                     "open standards",
-                    "create"
+                    "create",
+                    "promote"
                 ]]
             },
             "Contains": [[
@@ -2959,7 +2998,8 @@
                 "Contain Action Rules": [[
                     "cris",
                     "archive",
-                    "create"
+                    "create",
+                    "integrate"
                 ]]
             },
             "Contains": [[
@@ -3015,7 +3055,8 @@
                 "Contain Action Rules": [[
                     "records",
                     "externally held data",
-                    "create"
+                    "create",
+                    "include"
                 ]]
             },
             "Contains": [[
@@ -3089,7 +3130,8 @@
                 "Contain Action Rules": [[
                     "published datasets",
                     "citation counts",
-                    "preserve;create"
+                    "preserve;create",
+                    "track"
                 ]]
             },
             "Contains": [[
@@ -3176,12 +3218,14 @@
                     [
                         "country",
                         "statistics",
-                        "create"
+                        "create",
+                        "download"
                     ],
                     [
                         "sector",
                         "statistics",
-                        "create"
+                        "create",
+                        "download"
                     ]
                 ]
             },
@@ -3304,7 +3348,8 @@
                 "Contain Action Rules": [[
                     "metadata",
                     "datasets",
-                    "preserve"
+                    "preserve",
+                    "have"
                 ]]
             },
             "Contains": [
@@ -3369,7 +3414,8 @@
                 "Contain Action Rules": [[
                     "existing storage systems",
                     "archived data",
-                    "create"
+                    "create",
+                    "store"
                 ]]
             },
             "Contains": [[
@@ -3437,7 +3483,8 @@
                 "Contain Action Rules": [[
                     "existing university systems",
                     "archive",
-                    "create"
+                    "create",
+                    "integrate"
                 ]]
             },
             "Contains": [
@@ -3500,7 +3547,8 @@
                 "Contain Action Rules": [[
                     "hcp object store",
                     "archived data",
-                    "create"
+                    "create",
+                    "store"
                 ]]
             },
             "Contains": [[
@@ -3550,7 +3598,8 @@
                 "Contain Action Rules": [[
                     "different system",
                     "all data",
-                    "create"
+                    "create",
+                    "export"
                 ]]
             },
             "Contains": [[
@@ -3621,7 +3670,8 @@
                 "Contain Action Rules": [[
                     "api",
                     "datasets",
-                    "create"
+                    "create",
+                    "deposit"
                 ]]
             },
             "Contains": [
@@ -3708,12 +3758,14 @@
                     [
                         "articles ",
                         "persistent web links",
-                        "create"
+                        "create",
+                        "make"
                     ],
                     [
                         "underlying datasets",
                         "persistent web links",
-                        "create"
+                        "create",
+                        "make"
                     ]
                 ]
             },
@@ -3861,7 +3913,8 @@
                 "Contain Action Rules": [[
                     "outputs",
                     "metadata",
-                    "delete"
+                    "delete",
+                    "harvest"
                 ]]
             },
             "Contains": [

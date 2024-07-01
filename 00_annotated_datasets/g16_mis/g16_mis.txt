@@ -3,67 +3,145 @@
 ********************* << Dataset: g16_mis >> ***************
 * Table of potential conflict between user stories
 
-       us_61  us_66  us_50  us_57  us_24  us_25  us_62  us_65  us_11  us_33  us_27  us_05  us_16  us_56  
-us_61         x                    x                                         x                    x      
-us_66  x                           x                                         x                    x      
-us_50                       x                                                                            
-us_57                x                                         x      x             x      x             
-us_24  x      x                           x             x                                         x      
-us_25                              x                                                                     
-us_62                                                   x                                                
-us_65                              x             x                                                       
-us_11                       x                                                                            
-us_33                       x                                                              x             
-us_27  x      x                                                                                   x      
-us_05                       x                                                                            
-us_16                       x                                         x                                  
-us_56  x      x                    x                                         x                           
+       us_24  us_28  us_33  us_59  us_11  us_56  us_21  us_25  us_64  us_65  us_62  us_57  us_27  us_61  us_16  us_38  us_66  us_49  us_50  us_05  us_17  us_01  us_55  us_22  us_13  us_14  us_63  
+us_24         x                           x             x             x                           x                    x                                                                            
+us_28  x                                                x                                                                                                                                           
+us_33                       x                    x                                  x                    x                    x                                                x                    
+us_59                x                                                                                                                                                                              
+us_11                                     x                                         x                                                                                                               
+us_56  x                           x                    x                                  x      x             x      x                                                                            
+us_21                x                                                                                                                                                                              
+us_25  x      x                           x                                                                                                                                                         
+us_64                                                                 x                                                                                                                             
+us_65  x                                                       x             x                                                                                          x                           
+us_62                                                                 x                                                                                                                             
+us_57                x             x                                                                     x                    x      x      x      x                                                
+us_27                                     x                                                       x                    x                                                                            
+us_61  x                                  x                                                x                           x                                                                            
+us_16                x                                                              x                                                                                                               
+us_38                                     x                                                                                                                                                         
+us_66  x                                  x                                                x      x                                                                                                 
+us_49                x                                                              x                                                                                                               
+us_50                                                                               x                                                                                                               
+us_05                                                                               x                                                                                                               
+us_17                                                                               x                                                                                                               
+us_01                                                                                                                                                            x                                  
+us_55                                                                                                                                                     x                                         
+us_22                                                                 x                                                                                                                             
+us_13                x                                                                                                                                                                              
+us_14                                                                                                                                                                                        x      
+us_63                                                                                                                                                                                 x             
 
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_61_AND_user_story_66}
+{user_story_24_AND_user_story_28}
   
-Affected Resource is: << permissions >>
+Affected Resource of US1 is: << embargoes >>
+Affected Resource of US2 is: << length >>
+Affected Contain Resource US1 is: << embargoes >>
+Affected Resource US2 is: << embargoes >>
+Contain Resources for: user_story_24: << [["embargoed items","permissions","preserve","have"]] >>
+Contain Resources for: user_story_28: << [["embargoes","length","create;delete","edit"]] >>
 
- Action of user_story_61 is: << change >>  which is annotated with: << delete >>
- Action of user_story_66 is: << manually remove >>  which is annotated with: << delete >>
+ Action of user_story_24 is: << recognize >>  which is annotated with: << preserve >>
+ Action of user_story_28 is: << edit >>  which is annotated with: << delete >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_61: #g16# as a collection curator i want to #change# #permissions# on one or more items simultaneously.
+   user_story_24: #G16# As a DigitalRecords Archivist, i want to have the batch ingest tool to #recognize# and set #embargoes#, permissions for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.
 
-   user_story_66: #g16# as a faculty member, i want to go to my repository dashboard to manage members of my classes, grant submit #permissions# by pasting in a list of netids, see confirmation that ddr recognizes the netids, ability to #manually remove# #permissions#, ability to set begin and end dates for a submission window, and a have a status screen to clearly illustrate who has and hasn't submitted.
+   user_story_28: #G16# As a DigitalRecords Archivist, i want to #edit# the #length# of #embargoes#.
 
 Original texts of user stories are: 
-   user_story_61: #G16# As a collection curator I want to change permissions on one or more items simultaneously.
+   user_story_24: #G16# As a DigitalRecords Archivist, I want to have the batch ingest tool to recognize and set embargoes, permissions for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.
 
-   user_story_66: #G16# As a faculty member, I want to go to my repository dashboard to manage members of my classes, grant submit permissions by pasting in a list of NetIDs, see confirmation that DDR recognizes the NetIDs, ability to manually remove permissions, ability to set begin and end dates for a submission window, and a have a status screen to clearly illustrate who has and hasn't submitted.
+   user_story_28: #G16# As a DigitalRecords Archivist, I want to edit the length of embargoes.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_50_AND_user_story_57}
+{user_story_33_AND_user_story_59}
   
-Affected Resource is: << items >>
+Affected Resource of US1 is: << items >>
+Affected Resource of US2 is: << submitters >>
+Affected Contain Resource US1 is: << collection >>
+Affected Resource US2 is: << collection >>
+Contain Resources for: user_story_33: << [["collection","items","create;delete","move"]] >>
+Contain Resources for: user_story_59: << [["collection","submitters","preserve","have"]] >>
 
- Action of user_story_50 is: << reach >>  which is annotated with: << create >>
- Action of user_story_57 is: << restrict access >>  which is annotated with: << forbid >>
+ Action of user_story_33 is: << move >>  which is annotated with: << delete >>
+ Action of user_story_59 is: << have >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << create-forbid-Conflict >>
+Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_50: #g16# as a collection curator, i want to see the referers for visitors who use resolver-abstracted links to #reach# my #items#.
+   user_story_33: #G16# As a collection curator, i want to #move# #items# from one #collection# to another.
 
-   user_story_57: #g16# as a collection curator, i want to #restrict access# to my collection or #items# to duke ip addresses.
+   user_story_59: #G16# As a collection owner, i want to #have# #submitters# to my #collection# to be unable to modify existing items in that #collection#.
 
 Original texts of user stories are: 
-   user_story_50: #G16# As a collection curator, I want to see the referers for visitors who use resolver-abstracted links to reach my items.
+   user_story_33: #G16# As a collection curator, I want to move items from one collection to another.
 
-   user_story_57: #G16# As a collection curator, I want to restrict access to my collection or items to Duke IP addresses.
+   user_story_59: #G16# As a collection owner, I want to have submitters to my collection to be unable to modify existing items in that collection.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_11_AND_user_story_56}
+  
+Affected Resource of US1 is: << repository >>
+Affected Resource of US2 is: << permissions >>
+Affected Contain Resource US1 is: << repository >>
+Affected Resource US2 is: << repository >>
+Contain Resources for: user_story_11: << [["each item","remote replication status","preserve;create","display"],["component page","remote replication status","preserve;create","display"]] >>
+Contain Resources for: user_story_56: << [["groups","users","create","create"],["repository","permissions","create;delete","manage"]] >>
+
+ Action of user_story_11 is: << have >>  which is annotated with: << preserve >>
+ Action of user_story_56 is: << manage >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_11: #G16# As a collection curator, i want to #have# the #repository# queue my collection for replication upon ingest to our remote storage site and to display the remote replication status in each item and component page in the staff interface.
+
+   user_story_56: #G16# As a collection curator, i want to create groups of users to #manage# #permissions# in the #repository# in an easy way.
+
+Original texts of user stories are: 
+   user_story_11: #G16# As a collection curator, I want to have the repository queue my collection for replication upon ingest to our remote storage site and to display the remote replication status in each item and component page in the staff interface.
+
+   user_story_56: #G16# As a collection curator, I want to create groups of users to manage permissions in the repository in an easy way.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_21_AND_user_story_33}
+  
+Affected Resource of US1 is: << license >>
+Affected Resource of US2 is: << items >>
+Affected Contain Resource US1 is: << collection >>
+Affected Resource US2 is: << collection >>
+Contain Resources for: user_story_21: << [["collection","license","preserve","presented"],["collection","selection of licenses","preserve","presented"]] >>
+Contain Resources for: user_story_33: << [["collection","items","create;delete","move"]] >>
+
+ Action of user_story_21 is: << presented >>  which is annotated with: << preserve >>
+ Action of user_story_33 is: << move >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_21: #G16# As a repoadmin, i want to have users to be #presented# with a #license# or a selection of licenses, specific to the #collection#, and deposit to be denied if the submitter does not accept the #license#.
+
+   user_story_33: #G16# As a collection curator, i want to #move# #items# from one #collection# to another.
+
+Original texts of user stories are: 
+   user_story_21: #G16# As a repoadmin, I want to have users to be presented with a license or a selection of licenses, specific to the collection, and deposit to be denied if the submitter does not accept the license.
+
+   user_story_33: #G16# As a collection curator, I want to move items from one collection to another.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_24_AND_user_story_25}
   
-Affected Resource is: << embargoes >>
+Affected Resource of US1 is: << embargoes >>
+Affected Resource of US2 is: << embargoes >>
+Affected Contain Resource US1 is: << embargoes >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_24: << [["embargoed items","permissions","preserve","have"]] >>
+Contain Resources for: user_story_25: << [] >>
 
  Action of user_story_24 is: << recognize >>  which is annotated with: << preserve >>
  Action of user_story_25 is: << lift >>  which is annotated with: << delete >>
@@ -71,9 +149,9 @@ Affected Resource is: << embargoes >>
 Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_24: #g16# as a digitalrecords archivist, i want to have the batch ingest tool to #recognize# and set #embargoes#, permissions for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.
+   user_story_24: #G16# As a DigitalRecords Archivist, i want to have the batch ingest tool to #recognize# and set #embargoes#, permissions for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.
 
-   user_story_25: #g16# as a digitalrecords archivist, i want to have the repository to #lift# #embargoes# on the release date and set the access controls to the configuration set on item on that date.
+   user_story_25: #G16# As a DigitalRecords Archivist, i want to have the repository to #lift# #embargoes# on the release date and set the access controls to the configuration set on item on that date.
 
 Original texts of user stories are: 
    user_story_24: #G16# As a DigitalRecords Archivist, I want to have the batch ingest tool to recognize and set embargoes, permissions for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.
@@ -81,9 +159,39 @@ Original texts of user stories are:
    user_story_25: #G16# As a DigitalRecords Archivist, I want to have the repository to lift embargoes on the release date and set the access controls to the configuration set on item on that date.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_64_AND_user_story_65}
+  
+Affected Resource of US1 is: << objects >>
+Affected Resource of US2 is: << objects >>
+Affected Contain Resource US1 is: << permission >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_64: << [["objects","permission","preserve","view"]] >>
+Contain Resources for: user_story_65: << [["repository","objects","create","describe"]] >>
+
+ Action of user_story_64 is: << view >>  which is annotated with: << preserve >>
+ Action of user_story_65 is: << deposited >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_64: #G16# As a collection curator, i want to #view# the permission on my #objects# all together.
+
+   user_story_65: #G16# As a non-Duke researcher, i want to describe my team and mine's #objects# in the repository after they've been #deposited# if we've been assigned permission to edit metadata.
+
+Original texts of user stories are: 
+   user_story_64: #G16# As a collection curator, I want to view the permission on my objects all together.
+
+   user_story_65: #G16# As a non-Duke researcher, I want to describe my team and mine's objects in the repository after they've been deposited if we've been assigned permission to edit metadata.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_62_AND_user_story_65}
   
-Affected Resource is: << objects >>
+Affected Resource of US1 is: << objects >>
+Affected Resource of US2 is: << objects >>
+Affected Contain Resource US1 is: << objects >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_62: << [] >>
+Contain Resources for: user_story_65: << [["repository","objects","create","describe"]] >>
 
  Action of user_story_62 is: << access >>  which is annotated with: << preserve >>
  Action of user_story_65 is: << deposited >>  which is annotated with: << delete >>
@@ -91,9 +199,9 @@ Affected Resource is: << objects >>
 Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_62: #g16# as a collection curator, i want to be able require authentication to #access# #objects# unless the request is coming from a whitelisted ip address, list of addresses.
+   user_story_62: #G16# As a collection curator, i want to be able require authentication to #access# #objects# unless the request is coming from a whitelisted ip address, list of addresses.
 
-   user_story_65: #g16# as a non-duke researcher, i want to describe my team and mine's #objects# in the repository after they've been #deposited# if we've been assigned permission to edit metadata.
+   user_story_65: #G16# As a non-Duke researcher, i want to describe my team and mine's #objects# in the repository after they've been #deposited# if we've been assigned permission to edit metadata.
 
 Original texts of user stories are: 
    user_story_62: #G16# As a collection curator, I want to be able require authentication to access objects unless the request is coming from a whitelisted IP address, list of addresses.
@@ -103,7 +211,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_11_AND_user_story_57}
   
-Affected Resource is: << collection >>
+Affected Resource of US1 is: << collection >>
+Affected Resource of US2 is: << collection >>
+Affected Contain Resource US1 is: << collection >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_11: << [["each item","remote replication status","preserve;create","display"],["component page","remote replication status","preserve;create","display"]] >>
+Contain Resources for: user_story_57: << [] >>
 
  Action of user_story_11 is: << queue >>  which is annotated with: << create >>
  Action of user_story_57 is: << restrict access >>  which is annotated with: << forbid >>
@@ -111,9 +224,9 @@ Affected Resource is: << collection >>
 Conflict Reason is: << create-forbid-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_11: #g16# as a #collection# curator, i want to have the repository #queue# my #collection# for replication upon ingest to our remote storage site and to display the remote replication status in each item and component page in the staff interface.
+   user_story_11: #G16# As a collection curator, i want to have the repository #queue# my #collection# for replication upon ingest to our remote storage site and to display the remote replication status in each item and component page in the staff interface.
 
-   user_story_57: #g16# as a #collection# curator, i want to #restrict access# to my #collection# or items to duke ip addresses.
+   user_story_57: #G16# As a collection curator, i want to #restrict access# to my #collection# or items to duke ip addresses.
 
 Original texts of user stories are: 
    user_story_11: #G16# As a collection curator, I want to have the repository queue my collection for replication upon ingest to our remote storage site and to display the remote replication status in each item and component page in the staff interface.
@@ -123,7 +236,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_33_AND_user_story_57}
   
-Affected Resource is: << items >>
+Affected Resource of US1 is: << items >>
+Affected Resource of US2 is: << items >>
+Affected Contain Resource US1 is: << items >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_33: << [["collection","items","create;delete","move"]] >>
+Contain Resources for: user_story_57: << [] >>
 
  Action of user_story_33 is: << move >>  which is annotated with: << create >>
  Action of user_story_57 is: << restrict access >>  which is annotated with: << forbid >>
@@ -131,9 +249,9 @@ Affected Resource is: << items >>
 Conflict Reason is: << create-forbid-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_33: #g16# as a collection curator, i want to #move# #items# from one collection to another.
+   user_story_33: #G16# As a collection curator, i want to #move# #items# from one collection to another.
 
-   user_story_57: #g16# as a collection curator, i want to #restrict access# to my collection or #items# to duke ip addresses.
+   user_story_57: #G16# As a collection curator, i want to #restrict access# to my collection or #items# to duke ip addresses.
 
 Original texts of user stories are: 
    user_story_33: #G16# As a collection curator, I want to move items from one collection to another.
@@ -143,7 +261,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_27_AND_user_story_61}
   
-Affected Resource is: << permissions >>
+Affected Resource of US1 is: << permissions >>
+Affected Resource of US2 is: << permissions >>
+Affected Contain Resource US1 is: << permissions >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_27: << [["deposit groups","multiple people","create","add"],["deposit window","date","create","set"],["depositors","permissions","preserve","have"]] >>
+Contain Resources for: user_story_61: << [["one or more items","permissions","create;delete","change"]] >>
 
  Action of user_story_27 is: << have >>  which is annotated with: << preserve >>
  Action of user_story_61 is: << change >>  which is annotated with: << delete >>
@@ -151,39 +274,24 @@ Affected Resource is: << permissions >>
 Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_27: #g16# as a digitalrecords archivist, i want to #have# a method to add and remove multiple people to deposit groups in specific collections, to set a date that the deposit window closes, and to #have# these #permissions# conferred on these depositors should pick up on the collection's default permission.
+   user_story_27: #G16# As a DigitalRecords Archivist, i want to #have# a method to add and remove multiple people to deposit groups in specific collections, to set a date that the deposit window closes, and to #have# these #permissions# conferred on these depositors should pick up on the collection's default permission.
 
-   user_story_61: #g16# as a collection curator i want to #change# #permissions# on one or more items simultaneously.
+   user_story_61: #G16# As a collection curator, i want to #change# #permissions# on one or more items simultaneously.
 
 Original texts of user stories are: 
    user_story_27: #G16# As a DigitalRecords Archivist, I want to have a method to add and remove multiple people to deposit groups in specific collections, to set a date that the deposit window closes, and to have these permissions conferred on these depositors should pick up on the collection's default permission.
 
-   user_story_61: #G16# As a collection curator I want to change permissions on one or more items simultaneously.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_05_AND_user_story_57}
-  
-Affected Resource is: << items >>
-
- Action of user_story_05 is: << map >>  which is annotated with: << create >>
- Action of user_story_57 is: << restrict access >>  which is annotated with: << forbid >>
-
-Conflict Reason is: << create-forbid-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_05: #g16# as a collection curator, i want to #map# an item or #items# from one collection to another, 
-
-   user_story_57: #g16# as a collection curator, i want to #restrict access# to my collection or #items# to duke ip addresses.
-
-Original texts of user stories are: 
-   user_story_05: #G16# As a collection curator, I want to map an item or items from one collection to another, so that an item may administratively belong to one collection but could appear in other collections.
-
-   user_story_57: #G16# As a collection curator, I want to restrict access to my collection or items to Duke IP addresses.
+   user_story_61: #G16# As a collection curator, I want to change permissions on one or more items simultaneously.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_16_AND_user_story_57}
   
-Affected Resource is: << items >>
+Affected Resource of US1 is: << items >>
+Affected Resource of US2 is: << items >>
+Affected Contain Resource US1 is: << items >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_16: << [] >>
+Contain Resources for: user_story_57: << [] >>
 
  Action of user_story_16 is: << made available >>  which is annotated with: << create >>
  Action of user_story_57 is: << restrict access >>  which is annotated with: << forbid >>
@@ -191,9 +299,9 @@ Affected Resource is: << items >>
 Conflict Reason is: << create-forbid-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_16: #g16# as a collection curator, i want to have #items# be #made available# under the permissions they were configured once the embargo date has been reached.
+   user_story_16: #G16# As a collection curator, i want to have #items# be #made available# under the permissions they were configured once the embargo date has been reached.
 
-   user_story_57: #g16# as a collection curator, i want to #restrict access# to my collection or #items# to duke ip addresses.
+   user_story_57: #G16# As a collection curator, i want to #restrict access# to my collection or #items# to duke ip addresses.
 
 Original texts of user stories are: 
    user_story_16: #G16# As a collection curator, I want to have items be made available under the permissions they were configured once the embargo date has been reached.
@@ -201,49 +309,39 @@ Original texts of user stories are:
    user_story_57: #G16# As a collection curator, I want to restrict access to my collection or items to Duke IP addresses.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_24_AND_user_story_65}
+{user_story_38_AND_user_story_56}
   
-Affected Resource is: << metadata >>
+Affected Resource of US1 is: << each page >>
+Affected Resource of US2 is: << permissions >>
+Affected Contain Resource US1 is: << repository >>
+Affected Resource US2 is: << repository >>
+Contain Resources for: user_story_38: << [["each page","message","create","schedule"],["message","notification","create","schedule"],["repository","each page","preserve","displayed"]] >>
+Contain Resources for: user_story_56: << [["groups","users","create","create"],["repository","permissions","create;delete","manage"]] >>
 
- Action of user_story_24 is: << view >>  which is annotated with: << preserve >>
- Action of user_story_65 is: << edit >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_24: #g16# as a digitalrecords archivist, i want to have the batch ingest tool to recognize and set embargoes, permissions for embargoed items should be allow everyone to #view# #metadata#, and collection curator and repository administrators to download the files.
-
-   user_story_65: #g16# as a non-duke researcher, i want to describe my team and mine's objects in the repository after they've been deposited if we've been assigned permission to #edit# #metadata#.
-
-Original texts of user stories are: 
-   user_story_24: #G16# As a DigitalRecords Archivist, I want to have the batch ingest tool to recognize and set embargoes, permissions for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.
-
-   user_story_65: #G16# As a non-Duke researcher, I want to describe my team and mine's objects in the repository after they've been deposited if we've been assigned permission to edit metadata.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_27_AND_user_story_56}
-  
-Affected Resource is: << permissions >>
-
- Action of user_story_27 is: << have >>  which is annotated with: << preserve >>
+ Action of user_story_38 is: << displayed >>  which is annotated with: << preserve >>
  Action of user_story_56 is: << manage >>  which is annotated with: << delete >>
 
 Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_27: #g16# as a digitalrecords archivist, i want to #have# a method to add and remove multiple people to deposit groups in specific collections, to set a date that the deposit window closes, and to #have# these #permissions# conferred on these depositors should pick up on the collection's default permission.
+   user_story_38: #G16# As a repository manager, i want to schedule a message to users to be #displayed# on #each page# on the #repository# between select times for things like notification of upcoming downtime.
 
-   user_story_56: #g16# as a collection curator, i want to create groups of users to #manage# #permissions# in the repository in an easy way.
+   user_story_56: #G16# As a collection curator, i want to create groups of users to #manage# #permissions# in the #repository# in an easy way.
 
 Original texts of user stories are: 
-   user_story_27: #G16# As a DigitalRecords Archivist, I want to have a method to add and remove multiple people to deposit groups in specific collections, to set a date that the deposit window closes, and to have these permissions conferred on these depositors should pick up on the collection's default permission.
+   user_story_38: #G16# As a repository manager, I want to schedule a message to users to be displayed on each page on the repository between select times for things like notification of upcoming downtime.
 
    user_story_56: #G16# As a collection curator, I want to create groups of users to manage permissions in the repository in an easy way.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_24_AND_user_story_56}
   
-Affected Resource is: << permissions >>
+Affected Resource of US1 is: << permissions >>
+Affected Resource of US2 is: << permissions >>
+Affected Contain Resource US1 is: << permissions >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_24: << [["embargoed items","permissions","preserve","have"]] >>
+Contain Resources for: user_story_56: << [["groups","users","create","create"],["repository","permissions","create;delete","manage"]] >>
 
  Action of user_story_24 is: << have >>  which is annotated with: << preserve >>
  Action of user_story_56 is: << manage >>  which is annotated with: << delete >>
@@ -251,79 +349,24 @@ Affected Resource is: << permissions >>
 Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_24: #g16# as a digitalrecords archivist, i want to #have# the batch ingest tool to recognize and set embargoes, #permissions# for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.
+   user_story_24: #G16# As a DigitalRecords Archivist, i want to #have# the batch ingest tool to recognize and set embargoes, #permissions# for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.
 
-   user_story_56: #g16# as a collection curator, i want to create groups of users to #manage# #permissions# in the repository in an easy way.
+   user_story_56: #G16# As a collection curator, i want to create groups of users to #manage# #permissions# in the repository in an easy way.
 
 Original texts of user stories are: 
    user_story_24: #G16# As a DigitalRecords Archivist, I want to have the batch ingest tool to recognize and set embargoes, permissions for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.
 
    user_story_56: #G16# As a collection curator, I want to create groups of users to manage permissions in the repository in an easy way.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_56_AND_user_story_66}
-  
-Affected Resource is: << permissions >>
-
- Action of user_story_56 is: << manage >>  which is annotated with: << delete >>
- Action of user_story_66 is: << manually remove >>  which is annotated with: << delete >>
-
-Conflict Reason is: << delete-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_56: #g16# as a collection curator, i want to create groups of users to #manage# #permissions# in the repository in an easy way.
-
-   user_story_66: #g16# as a faculty member, i want to go to my repository dashboard to manage members of my classes, grant submit #permissions# by pasting in a list of netids, see confirmation that ddr recognizes the netids, ability to #manually remove# #permissions#, ability to set begin and end dates for a submission window, and a have a status screen to clearly illustrate who has and hasn't submitted.
-
-Original texts of user stories are: 
-   user_story_56: #G16# As a collection curator, I want to create groups of users to manage permissions in the repository in an easy way.
-
-   user_story_66: #G16# As a faculty member, I want to go to my repository dashboard to manage members of my classes, grant submit permissions by pasting in a list of NetIDs, see confirmation that DDR recognizes the NetIDs, ability to manually remove permissions, ability to set begin and end dates for a submission window, and a have a status screen to clearly illustrate who has and hasn't submitted.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_24_AND_user_story_66}
-  
-Affected Resource is: << permissions >>
-
- Action of user_story_24 is: << have >>  which is annotated with: << preserve >>
- Action of user_story_66 is: << manually remove >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_24: #g16# as a digitalrecords archivist, i want to #have# the batch ingest tool to recognize and set embargoes, #permissions# for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.
-
-   user_story_66: #g16# as a faculty member, i want to go to my repository dashboard to manage members of my classes, grant submit #permissions# by pasting in a list of netids, see confirmation that ddr recognizes the netids, ability to #manually remove# #permissions#, ability to set begin and end dates for a submission window, and a have a status screen to clearly illustrate who has and hasn't submitted.
-
-Original texts of user stories are: 
-   user_story_24: #G16# As a DigitalRecords Archivist, I want to have the batch ingest tool to recognize and set embargoes, permissions for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.
-
-   user_story_66: #G16# As a faculty member, I want to go to my repository dashboard to manage members of my classes, grant submit permissions by pasting in a list of NetIDs, see confirmation that DDR recognizes the NetIDs, ability to manually remove permissions, ability to set begin and end dates for a submission window, and a have a status screen to clearly illustrate who has and hasn't submitted.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_24_AND_user_story_61}
-  
-Affected Resource is: << permissions >>
-
- Action of user_story_24 is: << have >>  which is annotated with: << preserve >>
- Action of user_story_61 is: << change >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_24: #g16# as a digitalrecords archivist, i want to #have# the batch ingest tool to recognize and set embargoes, #permissions# for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.
-
-   user_story_61: #g16# as a collection curator i want to #change# #permissions# on one or more items simultaneously.
-
-Original texts of user stories are: 
-   user_story_24: #G16# As a DigitalRecords Archivist, I want to have the batch ingest tool to recognize and set embargoes, permissions for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.
-
-   user_story_61: #G16# As a collection curator I want to change permissions on one or more items simultaneously.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_16_AND_user_story_33}
   
-Affected Resource is: << items >>
+Affected Resource of US1 is: << items >>
+Affected Resource of US2 is: << items >>
+Affected Contain Resource US1 is: << items >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_16: << [] >>
+Contain Resources for: user_story_33: << [["collection","items","create;delete","move"]] >>
 
  Action of user_story_16 is: << have >>  which is annotated with: << preserve >>
  Action of user_story_33 is: << move >>  which is annotated with: << delete >>
@@ -331,9 +374,9 @@ Affected Resource is: << items >>
 Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_16: #g16# as a collection curator, i want to #have# #items# be made available under the permissions they were configured once the embargo date has been reached.
+   user_story_16: #G16# As a collection curator, i want to #have# #items# be made available under the permissions they were configured once the embargo date has been reached.
 
-   user_story_33: #g16# as a collection curator, i want to #move# #items# from one collection to another.
+   user_story_33: #G16# As a collection curator, i want to #move# #items# from one collection to another.
 
 Original texts of user stories are: 
    user_story_16: #G16# As a collection curator, I want to have items be made available under the permissions they were configured once the embargo date has been reached.
@@ -343,7 +386,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_27_AND_user_story_66}
   
-Affected Resource is: << permissions >>
+Affected Resource of US1 is: << permissions >>
+Affected Resource of US2 is: << permissions >>
+Affected Contain Resource US1 is: << permissions >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_27: << [["deposit groups","multiple people","create","add"],["deposit window","date","create","set"],["depositors","permissions","preserve","have"]] >>
+Contain Resources for: user_story_66: << [["classes","members","create;delete","manage"],["list","netids","create","pasting"],["submission window","begin and end dates","create","set"]] >>
 
  Action of user_story_27 is: << have >>  which is annotated with: << preserve >>
  Action of user_story_66 is: << manually remove >>  which is annotated with: << delete >>
@@ -351,9 +399,9 @@ Affected Resource is: << permissions >>
 Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_27: #g16# as a digitalrecords archivist, i want to #have# a method to add and remove multiple people to deposit groups in specific collections, to set a date that the deposit window closes, and to #have# these #permissions# conferred on these depositors should pick up on the collection's default permission.
+   user_story_27: #G16# As a DigitalRecords Archivist, i want to #have# a method to add and remove multiple people to deposit groups in specific collections, to set a date that the deposit window closes, and to #have# these #permissions# conferred on these depositors should pick up on the collection's default permission.
 
-   user_story_66: #g16# as a faculty member, i want to go to my repository dashboard to manage members of my classes, grant submit #permissions# by pasting in a list of netids, see confirmation that ddr recognizes the netids, ability to #manually remove# #permissions#, ability to set begin and end dates for a submission window, and a have a status screen to clearly illustrate who has and hasn't submitted.
+   user_story_66: #G16# As a faculty member, i want to go to my repository dashboard to manage members of my classes, grant submit #permissions# by pasting in a list of netids, see confirmation that ddr recognizes the netids, ability to #manually remove# #permissions#, ability to set begin and end dates for a submission window, and a have a status screen to clearly illustrate who has and hasn't submitted.
 
 Original texts of user stories are: 
    user_story_27: #G16# As a DigitalRecords Archivist, I want to have a method to add and remove multiple people to deposit groups in specific collections, to set a date that the deposit window closes, and to have these permissions conferred on these depositors should pick up on the collection's default permission.
@@ -361,9 +409,439 @@ Original texts of user stories are:
    user_story_66: #G16# As a faculty member, I want to go to my repository dashboard to manage members of my classes, grant submit permissions by pasting in a list of NetIDs, see confirmation that DDR recognizes the NetIDs, ability to manually remove permissions, ability to set begin and end dates for a submission window, and a have a status screen to clearly illustrate who has and hasn't submitted.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_33_AND_user_story_49}
+  
+Affected Resource of US1 is: << items >>
+Affected Resource of US2 is: << creators >>
+Affected Contain Resource US1 is: << items >>
+Affected Resource US2 is: << items >>
+Contain Resources for: user_story_33: << [["collection","items","create;delete","move"]] >>
+Contain Resources for: user_story_49: << [["creators","unique identifier","preserve;create","canonically identify"],["items","creators","preserve;create","canonically identify"],["authors","unique identifier","preserve;create","canonically identify"],["items","authors","preserve;create","canonically identify"]] >>
+
+ Action of user_story_33 is: << move >>  which is annotated with: << delete >>
+ Action of user_story_49 is: << canonically identify >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_33: #G16# As a collection curator, i want to #move# #items# from one collection to another.
+
+   user_story_49: #G16# As a collection curator, i want to #canonically identify# authors and #creators# of my #items# by unique identifier, 
+
+Original texts of user stories are: 
+   user_story_33: #G16# As a collection curator, I want to move items from one collection to another.
+
+   user_story_49: #G16# As a collection curator, I want to canonically identify authors and creators of my items by unique identifier, so that it's easier to view all of the works by that person together.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_61_AND_user_story_66}
+  
+Affected Resource of US1 is: << permissions >>
+Affected Resource of US2 is: << permissions >>
+Affected Contain Resource US1 is: << permissions >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_61: << [["one or more items","permissions","create;delete","change"]] >>
+Contain Resources for: user_story_66: << [["classes","members","create;delete","manage"],["list","netids","create","pasting"],["submission window","begin and end dates","create","set"]] >>
+
+ Action of user_story_61 is: << change >>  which is annotated with: << delete >>
+ Action of user_story_66 is: << manually remove >>  which is annotated with: << delete >>
+
+Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_61: #G16# As a collection curator, i want to #change# #permissions# on one or more items simultaneously.
+
+   user_story_66: #G16# As a faculty member, i want to go to my repository dashboard to manage members of my classes, grant submit #permissions# by pasting in a list of netids, see confirmation that ddr recognizes the netids, ability to #manually remove# #permissions#, ability to set begin and end dates for a submission window, and a have a status screen to clearly illustrate who has and hasn't submitted.
+
+Original texts of user stories are: 
+   user_story_61: #G16# As a collection curator, I want to change permissions on one or more items simultaneously.
+
+   user_story_66: #G16# As a faculty member, I want to go to my repository dashboard to manage members of my classes, grant submit permissions by pasting in a list of NetIDs, see confirmation that DDR recognizes the NetIDs, ability to manually remove permissions, ability to set begin and end dates for a submission window, and a have a status screen to clearly illustrate who has and hasn't submitted.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_50_AND_user_story_57}
+  
+Affected Resource of US1 is: << items >>
+Affected Resource of US2 is: << items >>
+Affected Contain Resource US1 is: << items >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_50: << [] >>
+Contain Resources for: user_story_57: << [] >>
+
+ Action of user_story_50 is: << reach >>  which is annotated with: << create >>
+ Action of user_story_57 is: << restrict access >>  which is annotated with: << forbid >>
+
+Conflict Reason is: << create-forbid-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_50: #G16# As a collection curator, i want to see the referers for visitors who use resolver-abstracted links to #reach# my #items#.
+
+   user_story_57: #G16# As a collection curator, i want to #restrict access# to my collection or #items# to duke ip addresses.
+
+Original texts of user stories are: 
+   user_story_50: #G16# As a collection curator, I want to see the referers for visitors who use resolver-abstracted links to reach my items.
+
+   user_story_57: #G16# As a collection curator, I want to restrict access to my collection or items to Duke IP addresses.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_25_AND_user_story_28}
+  
+Affected Resource of US1 is: << embargoes >>
+Affected Resource of US2 is: << length >>
+Affected Contain Resource US1 is: << embargoes >>
+Affected Resource US2 is: << embargoes >>
+Contain Resources for: user_story_25: << [] >>
+Contain Resources for: user_story_28: << [["embargoes","length","create;delete","edit"]] >>
+
+ Action of user_story_25 is: << lift >>  which is annotated with: << delete >>
+ Action of user_story_28 is: << edit >>  which is annotated with: << delete >>
+
+Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_25: #G16# As a DigitalRecords Archivist, i want to have the repository to #lift# #embargoes# on the release date and set the access controls to the configuration set on item on that date.
+
+   user_story_28: #G16# As a DigitalRecords Archivist, i want to #edit# the #length# of #embargoes#.
+
+Original texts of user stories are: 
+   user_story_25: #G16# As a DigitalRecords Archivist, I want to have the repository to lift embargoes on the release date and set the access controls to the configuration set on item on that date.
+
+   user_story_28: #G16# As a DigitalRecords Archivist, I want to edit the length of embargoes.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_05_AND_user_story_57}
+  
+Affected Resource of US1 is: << collection >>
+Affected Resource of US2 is: << collection >>
+Affected Contain Resource US1 is: << item >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_05: << [["collection","item","create","map"],["collection","items","create","map"]] >>
+Contain Resources for: user_story_57: << [] >>
+
+ Action of user_story_05 is: << map >>  which is annotated with: << create >>
+ Action of user_story_57 is: << restrict access >>  which is annotated with: << forbid >>
+
+Conflict Reason is: << create-forbid-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_05: #G16# As a collection curator, i want to #map# an item or items from one #collection# to another, 
+
+   user_story_57: #G16# As a collection curator, i want to #restrict access# to my #collection# or items to duke ip addresses.
+
+Original texts of user stories are: 
+   user_story_05: #G16# As a collection curator, I want to map an item or items from one collection to another, so that an item may administratively belong to one collection but could appear in other collections.
+
+   user_story_57: #G16# As a collection curator, I want to restrict access to my collection or items to Duke IP addresses.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_24_AND_user_story_65}
+  
+Affected Resource of US1 is: << metadata >>
+Affected Resource of US2 is: << metadata >>
+Affected Contain Resource US1 is: << metadata >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_24: << [["embargoed items","permissions","preserve","have"]] >>
+Contain Resources for: user_story_65: << [["repository","objects","create","describe"]] >>
+
+ Action of user_story_24 is: << view >>  which is annotated with: << preserve >>
+ Action of user_story_65 is: << edit >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_24: #G16# As a DigitalRecords Archivist, i want to have the batch ingest tool to recognize and set embargoes, permissions for embargoed items should be allow everyone to #view# #metadata#, and collection curator and repository administrators to download the files.
+
+   user_story_65: #G16# As a non-Duke researcher, i want to describe my team and mine's objects in the repository after they've been deposited if we've been assigned permission to #edit# #metadata#.
+
+Original texts of user stories are: 
+   user_story_24: #G16# As a DigitalRecords Archivist, I want to have the batch ingest tool to recognize and set embargoes, permissions for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.
+
+   user_story_65: #G16# As a non-Duke researcher, I want to describe my team and mine's objects in the repository after they've been deposited if we've been assigned permission to edit metadata.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_49_AND_user_story_57}
+  
+Affected Resource of US1 is: << items >>
+Affected Resource of US2 is: << items >>
+Affected Contain Resource US1 is: << creators >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_49: << [["creators","unique identifier","preserve;create","canonically identify"],["items","creators","preserve;create","canonically identify"],["authors","unique identifier","preserve;create","canonically identify"],["items","authors","preserve;create","canonically identify"]] >>
+Contain Resources for: user_story_57: << [] >>
+
+ Action of user_story_49 is: << canonically identify >>  which is annotated with: << create >>
+ Action of user_story_57 is: << restrict access >>  which is annotated with: << forbid >>
+
+Conflict Reason is: << create-forbid-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_49: #G16# As a collection curator, i want to #canonically identify# authors and creators of my #items# by unique identifier, 
+
+   user_story_57: #G16# As a collection curator, i want to #restrict access# to my collection or #items# to duke ip addresses.
+
+Original texts of user stories are: 
+   user_story_49: #G16# As a collection curator, I want to canonically identify authors and creators of my items by unique identifier, so that it's easier to view all of the works by that person together.
+
+   user_story_57: #G16# As a collection curator, I want to restrict access to my collection or items to Duke IP addresses.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_17_AND_user_story_57}
+  
+Affected Resource of US1 is: << collection >>
+Affected Resource of US2 is: << collection >>
+Affected Contain Resource US1 is: << deposit forms >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_17: << [["collection","deposit forms","create","create"]] >>
+Contain Resources for: user_story_57: << [] >>
+
+ Action of user_story_17 is: << create >>  which is annotated with: << create >>
+ Action of user_story_57 is: << restrict access >>  which is annotated with: << forbid >>
+
+Conflict Reason is: << create-forbid-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_17: #G16# As a collection curator, i want to #create# deposit forms specific to the #collection#.
+
+   user_story_57: #G16# As a collection curator, i want to #restrict access# to my #collection# or items to duke ip addresses.
+
+Original texts of user stories are: 
+   user_story_17: #G16# As a collection curator, I want to create deposit forms specific to the collection.
+
+   user_story_57: #G16# As a collection curator, I want to restrict access to my collection or items to Duke IP addresses.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_27_AND_user_story_56}
+  
+Affected Resource of US1 is: << permissions >>
+Affected Resource of US2 is: << permissions >>
+Affected Contain Resource US1 is: << permissions >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_27: << [["deposit groups","multiple people","create","add"],["deposit window","date","create","set"],["depositors","permissions","preserve","have"]] >>
+Contain Resources for: user_story_56: << [["groups","users","create","create"],["repository","permissions","create;delete","manage"]] >>
+
+ Action of user_story_27 is: << have >>  which is annotated with: << preserve >>
+ Action of user_story_56 is: << manage >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_27: #G16# As a DigitalRecords Archivist, i want to #have# a method to add and remove multiple people to deposit groups in specific collections, to set a date that the deposit window closes, and to #have# these #permissions# conferred on these depositors should pick up on the collection's default permission.
+
+   user_story_56: #G16# As a collection curator, i want to create groups of users to #manage# #permissions# in the repository in an easy way.
+
+Original texts of user stories are: 
+   user_story_27: #G16# As a DigitalRecords Archivist, I want to have a method to add and remove multiple people to deposit groups in specific collections, to set a date that the deposit window closes, and to have these permissions conferred on these depositors should pick up on the collection's default permission.
+
+   user_story_56: #G16# As a collection curator, I want to create groups of users to manage permissions in the repository in an easy way.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_01_AND_user_story_55}
+  
+Affected Resource of US1 is: << data >>
+Affected Resource of US2 is: << doi >>
+Affected Contain Resource US1 is: << data >>
+Affected Resource US2 is: << data >>
+Contain Resources for: user_story_01: << [] >>
+Contain Resources for: user_story_55: << [["data","doi","preserve","get"]] >>
+
+ Action of user_story_01 is: << deleted >>  which is annotated with: << delete >>
+ Action of user_story_55 is: << get >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_01: #G16# As a collection curator, i want to set a date after which #data# will expire and be #deleted# or hidden then #deleted#.
+
+   user_story_55: #G16# As a depositor, i want to easily find information about which #data# can be assigned a #doi#, how to #get# one, and what metadata are required.
+
+Original texts of user stories are: 
+   user_story_01: #G16# As a collection curator, I want to set a date after which data will expire and be deleted or hidden then deleted.
+
+   user_story_55: #G16# As a depositor, I want to easily find information about which data can be assigned a DOI, how to get one, and what metadata are required.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_22_AND_user_story_65}
+  
+Affected Resource of US1 is: << metadata >>
+Affected Resource of US2 is: << metadata >>
+Affected Contain Resource US1 is: << license >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_22: << [["metadata","license","preserve","have"]] >>
+Contain Resources for: user_story_65: << [["repository","objects","create","describe"]] >>
+
+ Action of user_story_22 is: << have >>  which is annotated with: << preserve >>
+ Action of user_story_65 is: << edit >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_22: #G16# As a repoadmin, i want to #have# the license be recorded in #metadata# and displayed alongside the item.
+
+   user_story_65: #G16# As a non-Duke researcher, i want to describe my team and mine's objects in the repository after they've been deposited if we've been assigned permission to #edit# #metadata#.
+
+Original texts of user stories are: 
+   user_story_22: #G16# As a repoadmin, I want to have the license be recorded in metadata and displayed alongside the item.
+
+   user_story_65: #G16# As a non-Duke researcher, I want to describe my team and mine's objects in the repository after they've been deposited if we've been assigned permission to edit metadata.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_56_AND_user_story_66}
+  
+Affected Resource of US1 is: << permissions >>
+Affected Resource of US2 is: << permissions >>
+Affected Contain Resource US1 is: << permissions >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_56: << [["groups","users","create","create"],["repository","permissions","create;delete","manage"]] >>
+Contain Resources for: user_story_66: << [["classes","members","create;delete","manage"],["list","netids","create","pasting"],["submission window","begin and end dates","create","set"]] >>
+
+ Action of user_story_56 is: << manage >>  which is annotated with: << delete >>
+ Action of user_story_66 is: << manually remove >>  which is annotated with: << delete >>
+
+Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_56: #G16# As a collection curator, i want to create groups of users to #manage# #permissions# in the repository in an easy way.
+
+   user_story_66: #G16# As a faculty member, i want to go to my repository dashboard to manage members of my classes, grant submit #permissions# by pasting in a list of netids, see confirmation that ddr recognizes the netids, ability to #manually remove# #permissions#, ability to set begin and end dates for a submission window, and a have a status screen to clearly illustrate who has and hasn't submitted.
+
+Original texts of user stories are: 
+   user_story_56: #G16# As a collection curator, I want to create groups of users to manage permissions in the repository in an easy way.
+
+   user_story_66: #G16# As a faculty member, I want to go to my repository dashboard to manage members of my classes, grant submit permissions by pasting in a list of NetIDs, see confirmation that DDR recognizes the NetIDs, ability to manually remove permissions, ability to set begin and end dates for a submission window, and a have a status screen to clearly illustrate who has and hasn't submitted.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_13_AND_user_story_33}
+  
+Affected Resource of US1 is: << collection >>
+Affected Resource of US2 is: << items >>
+Affected Contain Resource US1 is: << collection >>
+Affected Resource US2 is: << collection >>
+Contain Resources for: user_story_13: << [["encrypted file","checksum","preserve","have"],["remote storage site","encrypted file","preserve","have"],["server","key","create;delete","maintained"]] >>
+Contain Resources for: user_story_33: << [["collection","items","create;delete","move"]] >>
+
+ Action of user_story_13 is: << have >>  which is annotated with: << preserve >>
+ Action of user_story_33 is: << move >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_13: #G16# As a collection curator, i want to #have# my #collection# be encrypted with a key maintained on that server, a checksum made and stored of the encrypted file, and the encrypted file replicated to our remote storage site.
+
+   user_story_33: #G16# As a collection curator, i want to #move# #items# from one #collection# to another.
+
+Original texts of user stories are: 
+   user_story_13: #G16# As a collection curator, I want to have my collection be encrypted with a key maintained on that server, a checksum made and stored of the encrypted file, and the encrypted file replicated to our remote storage site.
+
+   user_story_33: #G16# As a collection curator, I want to move items from one collection to another.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_24_AND_user_story_66}
+  
+Affected Resource of US1 is: << permissions >>
+Affected Resource of US2 is: << permissions >>
+Affected Contain Resource US1 is: << permissions >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_24: << [["embargoed items","permissions","preserve","have"]] >>
+Contain Resources for: user_story_66: << [["classes","members","create;delete","manage"],["list","netids","create","pasting"],["submission window","begin and end dates","create","set"]] >>
+
+ Action of user_story_24 is: << have >>  which is annotated with: << preserve >>
+ Action of user_story_66 is: << manually remove >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_24: #G16# As a DigitalRecords Archivist, i want to #have# the batch ingest tool to recognize and set embargoes, #permissions# for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.
+
+   user_story_66: #G16# As a faculty member, i want to go to my repository dashboard to manage members of my classes, grant submit #permissions# by pasting in a list of netids, see confirmation that ddr recognizes the netids, ability to #manually remove# #permissions#, ability to set begin and end dates for a submission window, and a have a status screen to clearly illustrate who has and hasn't submitted.
+
+Original texts of user stories are: 
+   user_story_24: #G16# As a DigitalRecords Archivist, I want to have the batch ingest tool to recognize and set embargoes, permissions for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.
+
+   user_story_66: #G16# As a faculty member, I want to go to my repository dashboard to manage members of my classes, grant submit permissions by pasting in a list of NetIDs, see confirmation that DDR recognizes the NetIDs, ability to manually remove permissions, ability to set begin and end dates for a submission window, and a have a status screen to clearly illustrate who has and hasn't submitted.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_25_AND_user_story_56}
+  
+Affected Resource of US1 is: << repository >>
+Affected Resource of US2 is: << permissions >>
+Affected Contain Resource US1 is: << repository >>
+Affected Resource US2 is: << repository >>
+Contain Resources for: user_story_25: << [] >>
+Contain Resources for: user_story_56: << [["groups","users","create","create"],["repository","permissions","create;delete","manage"]] >>
+
+ Action of user_story_25 is: << have >>  which is annotated with: << preserve >>
+ Action of user_story_56 is: << manage >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_25: #G16# As a DigitalRecords Archivist, i want to #have# the #repository# to lift embargoes on the release date and set the access controls to the configuration set on item on that date.
+
+   user_story_56: #G16# As a collection curator, i want to create groups of users to #manage# #permissions# in the #repository# in an easy way.
+
+Original texts of user stories are: 
+   user_story_25: #G16# As a DigitalRecords Archivist, I want to have the repository to lift embargoes on the release date and set the access controls to the configuration set on item on that date.
+
+   user_story_56: #G16# As a collection curator, I want to create groups of users to manage permissions in the repository in an easy way.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_24_AND_user_story_61}
+  
+Affected Resource of US1 is: << permissions >>
+Affected Resource of US2 is: << permissions >>
+Affected Contain Resource US1 is: << permissions >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_24: << [["embargoed items","permissions","preserve","have"]] >>
+Contain Resources for: user_story_61: << [["one or more items","permissions","create;delete","change"]] >>
+
+ Action of user_story_24 is: << have >>  which is annotated with: << preserve >>
+ Action of user_story_61 is: << change >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_24: #G16# As a DigitalRecords Archivist, i want to #have# the batch ingest tool to recognize and set embargoes, #permissions# for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.
+
+   user_story_61: #G16# As a collection curator, i want to #change# #permissions# on one or more items simultaneously.
+
+Original texts of user stories are: 
+   user_story_24: #G16# As a DigitalRecords Archivist, I want to have the batch ingest tool to recognize and set embargoes, permissions for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.
+
+   user_story_61: #G16# As a collection curator, I want to change permissions on one or more items simultaneously.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_14_AND_user_story_63}
+  
+Affected Resource of US1 is: << embargo >>
+Affected Resource of US2 is: << available versions >>
+Affected Contain Resource US1 is: << object >>
+Affected Resource US2 is: << object >>
+Contain Resources for: user_story_14: << [["object","embargo","create;delete","lift"]] >>
+Contain Resources for: user_story_63: << [["object","available versions","preserve","view"],["staff interface","version","create","restore"]] >>
+
+ Action of user_story_14 is: << lift >>  which is annotated with: << delete >>
+ Action of user_story_63 is: << view >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_14: #G16# As a collection curator, i want to #lift# an #embargo# for an #object# in a simple way.
+
+   user_story_63: #G16# As a repository manager, i want to #view# #available versions# of an #object# and restore a version from the staff interface.
+
+Original texts of user stories are: 
+   user_story_14: #G16# As a collection curator, I want to lift an embargo for an object in a simple way.
+
+   user_story_63: #G16# As a repository manager, I want to view available versions of an object and restore a version from the staff interface.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_56_AND_user_story_61}
   
-Affected Resource is: << permissions >>
+Affected Resource of US1 is: << permissions >>
+Affected Resource of US2 is: << permissions >>
+Affected Contain Resource US1 is: << permissions >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_56: << [["groups","users","create","create"],["repository","permissions","create;delete","manage"]] >>
+Contain Resources for: user_story_61: << [["one or more items","permissions","create;delete","change"]] >>
 
  Action of user_story_56 is: << manage >>  which is annotated with: << delete >>
  Action of user_story_61 is: << change >>  which is annotated with: << delete >>
@@ -371,11 +849,11 @@ Affected Resource is: << permissions >>
 Conflict Reason is: << delete-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_56: #g16# as a collection curator, i want to create groups of users to #manage# #permissions# in the repository in an easy way.
+   user_story_56: #G16# As a collection curator, i want to create groups of users to #manage# #permissions# in the repository in an easy way.
 
-   user_story_61: #g16# as a collection curator i want to #change# #permissions# on one or more items simultaneously.
+   user_story_61: #G16# As a collection curator, i want to #change# #permissions# on one or more items simultaneously.
 
 Original texts of user stories are: 
    user_story_56: #G16# As a collection curator, I want to create groups of users to manage permissions in the repository in an easy way.
 
-   user_story_61: #G16# As a collection curator I want to change permissions on one or more items simultaneously.
+   user_story_61: #G16# As a collection curator, I want to change permissions on one or more items simultaneously.

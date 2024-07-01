@@ -3,82 +3,65 @@
 ********************* << Dataset: g18_neurohub >> ***************
 * Table of potential conflict between user stories
 
-        us_68  us_90  us_97  us_56  us_41  us_42  us_63  us_102  us_76  
-us_68          x      x                                          x      
-us_90   x             x      x                                   x      
-us_97   x      x                                                 x      
-us_56          x                                                        
-us_41                                      x                            
-us_42                               x                                   
-us_63                                                    x              
-us_102                                            x                     
-us_76   x      x      x                                                 
+        us_72  us_76  us_41  us_42  us_54  us_99  us_63  us_102  us_77  us_78  us_33  us_24  us_48  us_74  us_68  us_90  us_97  us_35  us_57  us_50  us_52  us_95  
+us_72          x                                                                                           x                                                       
+us_76   x                                                                                           x      x      x      x                                         
+us_41                        x                                                                                                                                     
+us_42                 x                                                                                                                                            
+us_54                                      x                                                                                                                       
+us_99                               x                                                                                                                              
+us_63                                                    x                                                                                                         
+us_102                                            x                                                                                                                
+us_77                                                                   x      x                                                x      x                           
+us_78                                                            x                                                                                                 
+us_33                                                            x                                                                                                 
+us_24                                                                                        x                                                x                    
+us_48                                                                                 x                                                              x             
+us_74          x                                                                                           x                                                       
+us_68   x      x                                                                                    x             x      x                                  x      
+us_90          x                                                                                           x                                                       
+us_97          x                                                                                           x                                                       
+us_35                                                            x                                                                                                 
+us_57                                                            x                                                                                                 
+us_50                                                                                 x                                                                            
+us_52                                                                                        x                                                                     
+us_95                                                                                                      x                                                       
 
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_68_AND_user_story_90}
+{user_story_72_AND_user_story_76}
   
-Affected Resource is: << data >>
+Affected Resource of US1 is: << data >>
+Affected Resource of US2 is: << data >>
+Affected Contain Resource US1 is: << long term curation >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_72: << [["data","long term curation","preserve","support"]] >>
+Contain Resources for: user_story_76: << [["library","data","create;delete","collect"]] >>
 
- Action of user_story_68 is: << processing >>  which is annotated with: << create >>
- Action of user_story_90 is: << keep >>  which is annotated with: << forbid >>
+ Action of user_story_72 is: << support >>  which is annotated with: << preserve >>
+ Action of user_story_76 is: << collect >>  which is annotated with: << delete >>
 
-Conflict Reason is: << create-forbid-Conflict >>
+Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_68: #g18# as a user, i want to have the ability to move multiple files around and rearrange them using the neurohub file browser while #processing# #data#.
+   user_story_72: #G18# As a researcher, i want to have services to #support# the long term curation of #data#, 
 
-   user_story_90: #g18# as a user,  i want to have the ability to #keep# my #data# private on the system, and only share #data# that i deem should be shared.
-
-Original texts of user stories are: 
-   user_story_68: #G18# As a user, I want to have the ability to move multiple files around and rearrange them using the Neurohub file browser while processing data.
-
-   user_story_90: #G18# As a user,  I want to have the ability to keep my data private on the system, and only share data that I deem should be shared.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_90_AND_user_story_97}
-  
-Affected Resource is: << data >>
-
- Action of user_story_90 is: << keep >>  which is annotated with: << forbid >>
- Action of user_story_97 is: << locate >>  which is annotated with: << create >>
-
-Conflict Reason is: << forbid-create-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_90: #g18# as a user,  i want to have the ability to #keep# my #data# private on the system, and only share #data# that i deem should be shared.
-
-   user_story_97: #g18# as a researcher,  i want to have the ability to #locate# and access #data# that colleagues want to share.
+   user_story_76: #G18# As a researcher, i want to #collect# #data# as a library of #data#, which can then be used by one or multiple experiments that are defined at a later stage.
 
 Original texts of user stories are: 
-   user_story_90: #G18# As a user,  I want to have the ability to keep my data private on the system, and only share data that I deem should be shared.
+   user_story_72: #G18# As a researcher, I want to have services to support the long term curation of data, so that I can be sure that data will not get 'lost' with the passage of time.
 
-   user_story_97: #G18# As a researcher,  I want to have the ability to locate and access data that colleagues want to share.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_56_AND_user_story_90}
-  
-Affected Resource is: << data >>
-
- Action of user_story_56 is: << migrate >>  which is annotated with: << create >>
- Action of user_story_90 is: << keep >>  which is annotated with: << forbid >>
-
-Conflict Reason is: << create-forbid-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_56: #g18# as a system administrator, i want to #migrate# #data# from an older version of neurohub to the current version.
-
-   user_story_90: #g18# as a user,  i want to have the ability to #keep# my #data# private on the system, and only share #data# that i deem should be shared.
-
-Original texts of user stories are: 
-   user_story_56: #G18# As a system administrator, I want to migrate data from an older version of NeuroHub to the current version.
-
-   user_story_90: #G18# As a user,  I want to have the ability to keep my data private on the system, and only share data that I deem should be shared.
+   user_story_76: #G18# As a researcher, I want to collect data as a library of data, which can then be used by one or multiple experiments that are defined at a later stage.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_41_AND_user_story_42}
   
-Affected Resource is: << experimental protocol >>
+Affected Resource of US1 is: << experimental protocol >>
+Affected Resource of US2 is: << experimental protocol >>
+Affected Contain Resource US1 is: << experimental protocol >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_41: << [] >>
+Contain Resources for: user_story_42: << [] >>
 
  Action of user_story_41 is: << branch >>  which is annotated with: << delete >>
  Action of user_story_42 is: << evolved >>  which is annotated with: << preserve >>
@@ -86,9 +69,9 @@ Affected Resource is: << experimental protocol >>
 Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_41: #g18# as a user, i want to modify or #branch# an #experimental protocol#, whilst retaining the original.
+   user_story_41: #G18# As a user, i want to modify or #branch# an #experimental protocol#, whilst retaining the original.
 
-   user_story_42: #g18# as a user, i want to view how an #experimental protocol# has #evolved# over time.
+   user_story_42: #G18# As a user, i want to view how an #experimental protocol# has #evolved# over time.
 
 Original texts of user stories are: 
    user_story_41: #G18# As a user, I want to modify or branch an experimental protocol, whilst retaining the original.
@@ -96,9 +79,39 @@ Original texts of user stories are:
    user_story_42: #G18# As a user, I want to view how an experimental protocol has evolved over time.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_54_AND_user_story_99}
+  
+Affected Resource of US1 is: << events >>
+Affected Resource of US2 is: << knowledge >>
+Affected Contain Resource US1 is: << group >>
+Affected Resource US2 is: << group >>
+Contain Resources for: user_story_54: << [["group","events","preserve","view"],["group","equipment bookings","preserve","view"]] >>
+Contain Resources for: user_story_99: << [["group","knowledge","delete","harvest"]] >>
+
+ Action of user_story_54 is: << view >>  which is annotated with: << preserve >>
+ Action of user_story_99 is: << harvest >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_54: #G18# As a lab member, i want to #view# #events# and equipment bookings within the #group#.
+
+   user_story_99: #G18# As a JuniorResearcher,  i want to have the ability to #harvest# #knowledge# from within the #group#, 
+
+Original texts of user stories are: 
+   user_story_54: #G18# As a lab member, I want to view events and equipment bookings within the group.
+
+   user_story_99: #G18# As a JuniorResearcher,  I want to have the ability to harvest knowledge from within the group, so that I can learn from more experienced researchers.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_63_AND_user_story_102}
   
-Affected Resource is: << workflow >>
+Affected Resource of US1 is: << workflow >>
+Affected Resource of US2 is: << workflow >>
+Affected Contain Resource US1 is: << workflow >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_63: << [["workflow execution","details","preserve","have"],["neurohub log book","details","preserve","have"]] >>
+Contain Resources for: user_story_102: << [["workflow plan","details","preserve","have"],["neurohub","results","preserve","have"]] >>
 
  Action of user_story_63 is: << executing >>  which is annotated with: << delete >>
  Action of user_story_102 is: << executing >>  which is annotated with: << delete >>
@@ -106,9 +119,9 @@ Affected Resource is: << workflow >>
 Conflict Reason is: << delete-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_63: #g18# as a user, i want to have the details of the #workflow# execution to be recorded in a neurohub log book while #executing# a #workflow#.
+   user_story_63: #G18# As a user, i want to have the details of the #workflow# execution to be recorded in a neurohub log book while #executing# a #workflow#.
 
-   user_story_102: #g18# as a researcher, i want to have the details of the #workflow# plan as well as the execution history and results recorded in neurohub while #executing# a #workflow#
+   user_story_102: #G18# As a researcher, i want to have the details of the #workflow# plan as well as the execution history and results recorded in neurohub while #executing# a #workflow#
 
 Original texts of user stories are: 
    user_story_63: #G18# As a user, I want to have the details of the workflow execution to be recorded in a neurohub log book while executing a workflow.
@@ -116,9 +129,139 @@ Original texts of user stories are:
    user_story_102: #G18# As a researcher, I want to have the details of the workflow plan as well as the execution history and results recorded in Neurohub while executing a workflow
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_77_AND_user_story_78}
+  
+Affected Resource of US1 is: << system >>
+Affected Resource of US2 is: << system >>
+Affected Contain Resource US1 is: << bad data >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_77: << [["electronic log book","experimental data","create","indicate"],["system","bad data","delete","hide"]] >>
+Contain Resources for: user_story_78: << [["system","standard metadata","preserve","have"]] >>
+
+ Action of user_story_77 is: << hide >>  which is annotated with: << delete >>
+ Action of user_story_78 is: << have >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_77: #G18# As a researcher, i want to indicate within my electronic log book which experimental data is good/bad, #hide# the bad data, but still keep it in the #system# just in case it is useful in the future.
+
+   user_story_78: #G18# As a researcher, i want to #have# the #system# to provide standard metadata, that all researchers in the centre (and beyond) can use, 
+
+Original texts of user stories are: 
+   user_story_77: #G18# As a researcher, I want to indicate within my electronic log book which experimental data is good/bad, hide the bad data, but still keep it in the system just in case it is useful in the future.
+
+   user_story_78: #G18# As a researcher, I want to have the system to provide standard metadata, that all researchers in the centre (and beyond) can use, so that we can better understand each others' data.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_33_AND_user_story_77}
+  
+Affected Resource of US1 is: << managed backup protocol >>
+Affected Resource of US2 is: << bad data >>
+Affected Contain Resource US1 is: << system >>
+Affected Resource US2 is: << system >>
+Contain Resources for: user_story_33: << [["system","managed backup protocol","preserve","have"]] >>
+Contain Resources for: user_story_77: << [["electronic log book","experimental data","create","indicate"],["system","bad data","delete","hide"]] >>
+
+ Action of user_story_33 is: << have >>  which is annotated with: << preserve >>
+ Action of user_story_77 is: << hide >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_33: #G18# As a system administrator, i want to #have# a #managed backup protocol# for the #system#.
+
+   user_story_77: #G18# As a researcher, i want to indicate within my electronic log book which experimental data is good/bad, #hide# the #bad data#, but still keep it in the #system# just in case it is useful in the future.
+
+Original texts of user stories are: 
+   user_story_33: #G18# As a system administrator, I want to have a managed backup protocol for the system.
+
+   user_story_77: #G18# As a researcher, I want to indicate within my electronic log book which experimental data is good/bad, hide the bad data, but still keep it in the system just in case it is useful in the future.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_24_AND_user_story_48}
+  
+Affected Resource of US1 is: << search results >>
+Affected Resource of US2 is: << search results >>
+Affected Contain Resource US1 is: << files i get >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_24: << [["search results","files i get","create;delete","filter"],["files i get","type","create;delete","filter"]] >>
+Contain Resources for: user_story_48: << [["search results","one or more log book sections","preserve;forbid","limit"],["search results","one or more log books","preserve;forbid","limit"]] >>
+
+ Action of user_story_24 is: << filter >>  which is annotated with: << create >>
+ Action of user_story_48 is: << limit >>  which is annotated with: << forbid >>
+
+Conflict Reason is: << create-forbid-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_24: #G18# As a user, i want to #filter# the files i get from #search results# based on their  type.
+
+   user_story_48: #G18# As a user, i want to #limit# my #search results# to one or more log book sections from one or more log books.
+
+Original texts of user stories are: 
+   user_story_24: #G18# As a user, I want to filter the files I get from search results based on their  type.
+
+   user_story_48: #G18# As a user, I want to limit my search results to one or more log book sections from one or more log books.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_74_AND_user_story_76}
+  
+Affected Resource of US1 is: << data >>
+Affected Resource of US2 is: << data >>
+Affected Contain Resource US1 is: << remote access >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_74: << [["data","remote access","preserve","have"]] >>
+Contain Resources for: user_story_76: << [["library","data","create;delete","collect"]] >>
+
+ Action of user_story_74 is: << have >>  which is annotated with: << preserve >>
+ Action of user_story_76 is: << collect >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_74: #G18# As a researcher, i want to #have# remote access to my #data# for off-site working , 
+
+   user_story_76: #G18# As a researcher, i want to #collect# #data# as a library of #data#, which can then be used by one or multiple experiments that are defined at a later stage.
+
+Original texts of user stories are: 
+   user_story_74: #G18# As a researcher, I want to have remote access to my data for off-site working , so that I can still work effectively while away from the lab.
+
+   user_story_76: #G18# As a researcher, I want to collect data as a library of data, which can then be used by one or multiple experiments that are defined at a later stage.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_68_AND_user_story_90}
+  
+Affected Resource of US1 is: << data >>
+Affected Resource of US2 is: << data >>
+Affected Contain Resource US1 is: << data >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_68: << [] >>
+Contain Resources for: user_story_90: << [["system","data","create","only share"]] >>
+
+ Action of user_story_68 is: << processing >>  which is annotated with: << delete >>
+ Action of user_story_90 is: << keep >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_68: #G18# As a user, i want to have the ability to move multiple files around and rearrange them using the neurohub file browser while #processing# #data#.
+
+   user_story_90: #G18# As a user,  i want to have the ability to #keep# my #data# private on the system, and only share #data# that i deem should be shared.
+
+Original texts of user stories are: 
+   user_story_68: #G18# As a user, I want to have the ability to move multiple files around and rearrange them using the Neurohub file browser while processing data.
+
+   user_story_90: #G18# As a user,  I want to have the ability to keep my data private on the system, and only share data that I deem should be shared.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_68_AND_user_story_76}
   
-Affected Resource is: << data >>
+Affected Resource of US1 is: << data >>
+Affected Resource of US2 is: << data >>
+Affected Contain Resource US1 is: << data >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_68: << [] >>
+Contain Resources for: user_story_76: << [["library","data","create;delete","collect"]] >>
 
  Action of user_story_68 is: << processing >>  which is annotated with: << delete >>
  Action of user_story_76 is: << collect >>  which is annotated with: << delete >>
@@ -126,9 +269,9 @@ Affected Resource is: << data >>
 Conflict Reason is: << delete-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_68: #g18# as a user, i want to have the ability to move multiple files around and rearrange them using the neurohub file browser while #processing# #data#.
+   user_story_68: #G18# As a user, i want to have the ability to move multiple files around and rearrange them using the neurohub file browser while #processing# #data#.
 
-   user_story_76: #g18# as a researcher, i want to #collect# #data# as a library of #data#, which can then be used by one or multiple experiments that are defined at a later stage.
+   user_story_76: #G18# As a researcher, i want to #collect# #data# as a library of #data#, which can then be used by one or multiple experiments that are defined at a later stage.
 
 Original texts of user stories are: 
    user_story_68: #G18# As a user, I want to have the ability to move multiple files around and rearrange them using the Neurohub file browser while processing data.
@@ -138,7 +281,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_68_AND_user_story_97}
   
-Affected Resource is: << data >>
+Affected Resource of US1 is: << data >>
+Affected Resource of US2 is: << data >>
+Affected Contain Resource US1 is: << data >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_68: << [] >>
+Contain Resources for: user_story_97: << [["colleagues","data","create","locate"]] >>
 
  Action of user_story_68 is: << processing >>  which is annotated with: << delete >>
  Action of user_story_97 is: << access >>  which is annotated with: << preserve >>
@@ -146,9 +294,9 @@ Affected Resource is: << data >>
 Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_68: #g18# as a user, i want to have the ability to move multiple files around and rearrange them using the neurohub file browser while #processing# #data#.
+   user_story_68: #G18# As a user, i want to have the ability to move multiple files around and rearrange them using the neurohub file browser while #processing# #data#.
 
-   user_story_97: #g18# as a researcher,  i want to have the ability to locate and #access# #data# that colleagues want to share.
+   user_story_97: #G18# As a researcher,  i want to have the ability to locate and #access# #data# that colleagues want to share.
 
 Original texts of user stories are: 
    user_story_68: #G18# As a user, I want to have the ability to move multiple files around and rearrange them using the Neurohub file browser while processing data.
@@ -158,7 +306,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_76_AND_user_story_97}
   
-Affected Resource is: << data >>
+Affected Resource of US1 is: << data >>
+Affected Resource of US2 is: << data >>
+Affected Contain Resource US1 is: << data >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_76: << [["library","data","create;delete","collect"]] >>
+Contain Resources for: user_story_97: << [["colleagues","data","create","locate"]] >>
 
  Action of user_story_76 is: << collect >>  which is annotated with: << delete >>
  Action of user_story_97 is: << access >>  which is annotated with: << preserve >>
@@ -166,9 +319,9 @@ Affected Resource is: << data >>
 Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_76: #g18# as a researcher, i want to #collect# #data# as a library of #data#, which can then be used by one or multiple experiments that are defined at a later stage.
+   user_story_76: #G18# As a researcher, i want to #collect# #data# as a library of #data#, which can then be used by one or multiple experiments that are defined at a later stage.
 
-   user_story_97: #g18# as a researcher,  i want to have the ability to locate and #access# #data# that colleagues want to share.
+   user_story_97: #G18# As a researcher,  i want to have the ability to locate and #access# #data# that colleagues want to share.
 
 Original texts of user stories are: 
    user_story_76: #G18# As a researcher, I want to collect data as a library of data, which can then be used by one or multiple experiments that are defined at a later stage.
@@ -176,21 +329,201 @@ Original texts of user stories are:
    user_story_97: #G18# As a researcher,  I want to have the ability to locate and access data that colleagues want to share.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_76_AND_user_story_90}
+{user_story_35_AND_user_story_77}
   
-Affected Resource is: << data >>
+Affected Resource of US1 is: << increased access >>
+Affected Resource of US2 is: << bad data >>
+Affected Contain Resource US1 is: << system >>
+Affected Resource US2 is: << system >>
+Contain Resources for: user_story_35: << [["system","increased access","preserve","have"]] >>
+Contain Resources for: user_story_77: << [["electronic log book","experimental data","create","indicate"],["system","bad data","delete","hide"]] >>
 
- Action of user_story_76 is: << collect >>  which is annotated with: << create >>
- Action of user_story_90 is: << keep >>  which is annotated with: << forbid >>
+ Action of user_story_35 is: << have >>  which is annotated with: << preserve >>
+ Action of user_story_77 is: << hide >>  which is annotated with: << delete >>
 
-Conflict Reason is: << create-forbid-Conflict >>
+Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_76: #g18# as a researcher, i want to #collect# #data# as a library of #data#, which can then be used by one or multiple experiments that are defined at a later stage.
+   user_story_35: #G18# As lab administrator, i want to #have# #increased access# to the #system# to support regular users.
 
-   user_story_90: #g18# as a user,  i want to have the ability to #keep# my #data# private on the system, and only share #data# that i deem should be shared.
+   user_story_77: #G18# As a researcher, i want to indicate within my electronic log book which experimental data is good/bad, #hide# the #bad data#, but still keep it in the #system# just in case it is useful in the future.
+
+Original texts of user stories are: 
+   user_story_35: #G18# As lab administrator, I want to have increased access to the system to support regular users.
+
+   user_story_77: #G18# As a researcher, I want to indicate within my electronic log book which experimental data is good/bad, hide the bad data, but still keep it in the system just in case it is useful in the future.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_57_AND_user_story_77}
+  
+Affected Resource of US1 is: << system >>
+Affected Resource of US2 is: << bad data >>
+Affected Contain Resource US1 is: << system >>
+Affected Resource US2 is: << system >>
+Contain Resources for: user_story_57: << [] >>
+Contain Resources for: user_story_77: << [["electronic log book","experimental data","create","indicate"],["system","bad data","delete","hide"]] >>
+
+ Action of user_story_57 is: << have >>  which is annotated with: << preserve >>
+ Action of user_story_77 is: << hide >>  which is annotated with: << delete >>
+
+Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_57: #G18# As a user, i want to #have# the #system# to also forward important news items to an external mailing list.
+
+   user_story_77: #G18# As a researcher, i want to indicate within my electronic log book which experimental data is good/bad, #hide# the #bad data#, but still keep it in the #system# just in case it is useful in the future.
+
+Original texts of user stories are: 
+   user_story_57: #G18# As a user, I want to have the system to also forward important news items to an external mailing list.
+
+   user_story_77: #G18# As a researcher, I want to indicate within my electronic log book which experimental data is good/bad, hide the bad data, but still keep it in the system just in case it is useful in the future.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_24_AND_user_story_50}
+  
+Affected Resource of US1 is: << files i get >>
+Affected Resource of US2 is: << provenance >>
+Affected Contain Resource US1 is: << search results >>
+Affected Resource US2 is: << search results >>
+Contain Resources for: user_story_24: << [["search results","files i get","create;delete","filter"],["files i get","type","create;delete","filter"]] >>
+Contain Resources for: user_story_50: << [["page","provenance","preserve","see"],["search results","provenance","preserve","see"]] >>
+
+ Action of user_story_24 is: << filter >>  which is annotated with: << delete >>
+ Action of user_story_50 is: << see >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_24: #G18# As a user, i want to #filter# the #files i get# from #search results# based on their  type.
+
+   user_story_50: #G18# As a user, i want to #see# the #provenance# of the page as part of the #search results#.
+
+Original texts of user stories are: 
+   user_story_24: #G18# As a user, I want to filter the files I get from search results based on their  type.
+
+   user_story_50: #G18# As a user, I want to see the provenance of the page as part of the search results.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_48_AND_user_story_52}
+  
+Affected Resource of US1 is: << search results >>
+Affected Resource of US2 is: << multiple files >>
+Affected Contain Resource US1 is: << search results >>
+Affected Resource US2 is: << search results >>
+Contain Resources for: user_story_48: << [["search results","one or more log book sections","preserve;forbid","limit"],["search results","one or more log books","preserve;forbid","limit"]] >>
+Contain Resources for: user_story_52: << [["search results","multiple files","create","download"]] >>
+
+ Action of user_story_48 is: << limit >>  which is annotated with: << forbid >>
+ Action of user_story_52 is: << download >>  which is annotated with: << create >>
+
+Conflict Reason is: << forbid-create-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_48: #G18# As a user, i want to #limit# my #search results# to one or more log book sections from one or more log books.
+
+   user_story_52: #G18# As a user, i want to #download# #multiple files# from the #search results# in one go.
+
+Original texts of user stories are: 
+   user_story_48: #G18# As a user, I want to limit my search results to one or more log book sections from one or more log books.
+
+   user_story_52: #G18# As a user, I want to download multiple files from the search results in one go.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_68_AND_user_story_72}
+  
+Affected Resource of US1 is: << data >>
+Affected Resource of US2 is: << long term curation >>
+Affected Contain Resource US1 is: << data >>
+Affected Resource US2 is: << data >>
+Contain Resources for: user_story_68: << [] >>
+Contain Resources for: user_story_72: << [["data","long term curation","preserve","support"]] >>
+
+ Action of user_story_68 is: << processing >>  which is annotated with: << delete >>
+ Action of user_story_72 is: << support >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_68: #G18# As a user, i want to have the ability to move multiple files around and rearrange them using the neurohub file browser while #processing# #data#.
+
+   user_story_72: #G18# As a researcher, i want to have services to #support# the #long term curation# of #data#, 
+
+Original texts of user stories are: 
+   user_story_68: #G18# As a user, I want to have the ability to move multiple files around and rearrange them using the Neurohub file browser while processing data.
+
+   user_story_72: #G18# As a researcher, I want to have services to support the long term curation of data, so that I can be sure that data will not get 'lost' with the passage of time.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_76_AND_user_story_90}
+  
+Affected Resource of US1 is: << data >>
+Affected Resource of US2 is: << data >>
+Affected Contain Resource US1 is: << data >>
+Affected Resource US2 is: <<  >>
+Contain Resources for: user_story_76: << [["library","data","create;delete","collect"]] >>
+Contain Resources for: user_story_90: << [["system","data","create","only share"]] >>
+
+ Action of user_story_76 is: << collect >>  which is annotated with: << delete >>
+ Action of user_story_90 is: << keep >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_76: #G18# As a researcher, i want to #collect# #data# as a library of #data#, which can then be used by one or multiple experiments that are defined at a later stage.
+
+   user_story_90: #G18# As a user,  i want to have the ability to #keep# my #data# private on the system, and only share #data# that i deem should be shared.
 
 Original texts of user stories are: 
    user_story_76: #G18# As a researcher, I want to collect data as a library of data, which can then be used by one or multiple experiments that are defined at a later stage.
 
    user_story_90: #G18# As a user,  I want to have the ability to keep my data private on the system, and only share data that I deem should be shared.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_68_AND_user_story_74}
+  
+Affected Resource of US1 is: << data >>
+Affected Resource of US2 is: << remote access >>
+Affected Contain Resource US1 is: << data >>
+Affected Resource US2 is: << data >>
+Contain Resources for: user_story_68: << [] >>
+Contain Resources for: user_story_74: << [["data","remote access","preserve","have"]] >>
+
+ Action of user_story_68 is: << processing >>  which is annotated with: << delete >>
+ Action of user_story_74 is: << have >>  which is annotated with: << preserve >>
+
+Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_68: #G18# As a user, i want to have the ability to move multiple files around and rearrange them using the neurohub file browser while #processing# #data#.
+
+   user_story_74: #G18# As a researcher, i want to #have# #remote access# to my #data# for off-site working , 
+
+Original texts of user stories are: 
+   user_story_68: #G18# As a user, I want to have the ability to move multiple files around and rearrange them using the Neurohub file browser while processing data.
+
+   user_story_74: #G18# As a researcher, I want to have remote access to my data for off-site working , so that I can still work effectively while away from the lab.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_68_AND_user_story_95}
+  
+Affected Resource of US1 is: << multiple files >>
+Affected Resource of US2 is: << sharing >>
+Affected Contain Resource US1 is: << multiple files >>
+Affected Resource US2 is: << multiple files >>
+Contain Resources for: user_story_68: << [] >>
+Contain Resources for: user_story_95: << [["multiple files","sharing","create;delete","change"],["multiple files","ownership","create;delete","change"]] >>
+
+ Action of user_story_68 is: << move >>  which is annotated with: << delete >>
+ Action of user_story_95 is: << change >>  which is annotated with: << delete >>
+
+Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_68: #G18# As a user, i want to have the ability to #move# #multiple files# around and rearrange them using the neurohub file browser while processing data.
+
+   user_story_95: #G18# As a user,  i want to have the ability to #change# the #sharing# and ownership of #multiple files#.
+
+Original texts of user stories are: 
+   user_story_68: #G18# As a user, I want to have the ability to move multiple files around and rearrange them using the Neurohub file browser while processing data.
+
+   user_story_95: #G18# As a user,  I want to have the ability to change the sharing and ownership of multiple files.
