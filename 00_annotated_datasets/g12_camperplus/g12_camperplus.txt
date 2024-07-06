@@ -3,37 +3,29 @@
 ********************* << Dataset: g12_camperplus >> ***************
 * Table of potential conflict between user stories
 
-       us_08  us_51  us_20  us_32  us_28  us_29  us_05  us_30  us_31  us_33  us_02  us_53  us_48  us_35  
-us_08         x                                  x                                                       
-us_51  x                                                                                                 
-us_20                       x                           x                                                
-us_32                x                                  x                                                
-us_28                                     x                                                x             
-us_29                              x                                                              x      
-us_05  x                                                                                                 
-us_30                x      x                                                                            
-us_31                                                                 x      x                           
-us_33                                                          x                                         
-us_02                                                          x                    x                    
-us_53                                                                        x                           
-us_48                              x                                                                     
-us_35                                     x                                                              
+       us_08  us_51  us_20  us_32  us_28  us_29  us_30  us_05  us_02  us_31  us_35  
+us_08         x                                         x                           
+us_51  x                                                                            
+us_20                       x                    x                                  
+us_32                x                           x                                  
+us_28                                     x                                         
+us_29                              x                                         x      
+us_30                x      x                                                       
+us_05  x                                                                            
+us_02                                                                 x             
+us_31                                                          x                    
+us_35                                     x                                         
 
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_08_AND_user_story_51}
   
-Affected Resource of US1 is: << camper >>
-Affected Resource of US2 is: << camper >>
-Affected Contain Resource US1 is: << camper >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_08: << [["camper","behavioral problems","delete","suspend"]] >>
-Contain Resources for: user_story_51: << [["camper","inappropriate behavior","preserve;create","report"]] >>
+ Affected Resource of US1 is: << camper >>
 
  Action of user_story_08 is: << suspend >>  which is annotated with: << delete >>
  Action of user_story_51 is: << report >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_08: #G12# As a camp administrator, i want to be able to #suspend# a #camper# who had behavioral problems.
@@ -48,17 +40,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_20_AND_user_story_32}
   
-Affected Resource of US1 is: << information >>
-Affected Resource of US2 is: << information >>
-Affected Contain Resource US1 is: << information >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_20: << [["one place","information","preserve","keep"]] >>
-Contain Resources for: user_story_32: << [["added parents","information","create;delete","modify"]] >>
+ Affected Resource of US1 is: << information >>
 
  Action of user_story_20 is: << keep >>  which is annotated with: << preserve >>
  Action of user_story_32 is: << modify >>  which is annotated with: << delete >>
 
-Conflict Reason is: << preserve-delete-Conflict >>
+ Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_20: #G12# As a camp administrator, i want to be able to #keep# my #information# in one place, 
@@ -73,17 +60,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_28_AND_user_story_29}
   
-Affected Resource of US1 is: << tasks >>
-Affected Resource of US2 is: << tasks >>
-Affected Contain Resource US1 is: << tasks >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_28: << [] >>
-Contain Resources for: user_story_29: << [] >>
+ Affected Resource of US1 is: << tasks >>
 
  Action of user_story_28 is: << delete >>  which is annotated with: << delete >>
  Action of user_story_29 is: << modify >>  which is annotated with: << delete >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_28: #G12# As a camp administrator, i want to be able to #delete# #tasks#/activities i scheduled, 
@@ -96,44 +78,14 @@ Original texts of user stories are:
    user_story_29: #G12# As a camp administrator, I want to be able to modify tasks/events I scheduled in case there is a change, so that I can always keep the schedule up to date.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_05_AND_user_story_08}
-  
-Affected Resource of US1 is: << camper >>
-Affected Resource of US2 is: << camper >>
-Affected Contain Resource US1 is: << forms >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_05: << [["camper","forms","preserve","keep track"]] >>
-Contain Resources for: user_story_08: << [["camper","behavioral problems","delete","suspend"]] >>
-
- Action of user_story_05 is: << keep track >>  which is annotated with: << preserve >>
- Action of user_story_08 is: << suspend >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_05: #G12# As a camp administrator, i want to be able to #keep track# of which #camper# submitted which forms, 
-
-   user_story_08: #G12# As a camp administrator, i want to be able to #suspend# a #camper# who had behavioral problems.
-
-Original texts of user stories are: 
-   user_story_05: #G12# As a camp administrator, I want to be able to keep track of which camper submitted which forms, so that legal issues are avoided.
-
-   user_story_08: #G12# As a camp administrator, I want to be able to suspend a camper who had behavioral problems.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_30_AND_user_story_32}
   
-Affected Resource of US1 is: << information >>
-Affected Resource of US2 is: << information >>
-Affected Contain Resource US1 is: << information >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_30: << [["enrolled campers","information","create;delete","modify"]] >>
-Contain Resources for: user_story_32: << [["added parents","information","create;delete","modify"]] >>
+ Affected Resource of US1 is: << information >>
 
  Action of user_story_30 is: << modify >>  which is annotated with: << delete >>
  Action of user_story_32 is: << modify >>  which is annotated with: << delete >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_30: #G12# As a camp administrator, i want to be able to #modify# the #information# of enrolled campers, 
@@ -146,44 +98,35 @@ Original texts of user stories are:
    user_story_32: #G12# As a camp administrator, I want to be able to modify the information of added parents, so that I can keep parent's information up to date.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_31_AND_user_story_33}
+{user_story_08_AND_user_story_05}
   
-Affected Resource of US1 is: << campers >>
-Affected Resource of US2 is: << parents >>
-Affected Contain Resource US1 is: << database >>
-Affected Resource US2 is: << database >>
-Contain Resources for: user_story_31: << [["database","campers","delete","delete"]] >>
-Contain Resources for: user_story_33: << [["database","parents","delete","delete"]] >>
+ Affected Resource of US1 is: << camper >>
+ Affected Contain Entity US2 is: << forms >>
 
- Action of user_story_31 is: << delete >>  which is annotated with: << delete >>
- Action of user_story_33 is: << delete >>  which is annotated with: << delete >>
+ Action of user_story_08 is: << suspend >>  which is annotated with: << delete >>
+ Action of user_story_05 is: << keep track >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_31: #G12# As a camp administrator, i want to be able to #delete# #campers# from the #database#, 
+   user_story_08: #G12# As a camp administrator, i want to be able to #suspend# a #camper# who had behavioral problems.
 
-   user_story_33: #G12# As a camp administrator, i want to be able to #delete# #parents# from the #database#, 
+   user_story_05: #G12# As a camp administrator, i want to be able to #keep track# of which #camper# submitted which #forms#, 
 
 Original texts of user stories are: 
-   user_story_31: #G12# As a camp administrator, I want to be able to delete campers from the database, so that I can keep my pages free of clutter.
+   user_story_08: #G12# As a camp administrator, I want to be able to suspend a camper who had behavioral problems.
 
-   user_story_33: #G12# As a camp administrator, I want to be able to delete parents from the database, so that I can keep my pages free of unneeded clutter.
+   user_story_05: #G12# As a camp administrator, I want to be able to keep track of which camper submitted which forms, so that legal issues are avoided.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_02_AND_user_story_31}
   
-Affected Resource of US1 is: << campers >>
-Affected Resource of US2 is: << campers >>
-Affected Contain Resource US1 is: << campers >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_02: << [["camp","campers","delete","remove"]] >>
-Contain Resources for: user_story_31: << [["database","campers","delete","delete"]] >>
+ Affected Resource of US1 is: << campers >>
 
  Action of user_story_02 is: << remove >>  which is annotated with: << delete >>
  Action of user_story_31 is: << delete >>  which is annotated with: << delete >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_02: #G12# As a camp administrator, i want to be able to #remove# #campers# if they don't attend the camp anymore, 
@@ -196,44 +139,14 @@ Original texts of user stories are:
    user_story_31: #G12# As a camp administrator, I want to be able to delete campers from the database, so that I can keep my pages free of clutter.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_02_AND_user_story_53}
-  
-Affected Resource of US1 is: << campers >>
-Affected Resource of US2 is: << necessary repairs >>
-Affected Contain Resource US1 is: << camp >>
-Affected Resource US2 is: << camp >>
-Contain Resources for: user_story_02: << [["camp","campers","delete","remove"]] >>
-Contain Resources for: user_story_53: << [["camp","necessary repairs","preserve;create","report"]] >>
-
- Action of user_story_02 is: << remove >>  which is annotated with: << delete >>
- Action of user_story_53 is: << report >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_02: #G12# As a camp administrator, i want to be able to #remove# #campers# if they don't attend the #camp# anymore, 
-
-   user_story_53: #G12# As a camp worker, i'm able to #report# #necessary repairs# to the manager that the #camp# is needed of.
-
-Original texts of user stories are: 
-   user_story_02: #G12# As a camp administrator, I want to be able to remove campers if they don't attend the camp anymore, so that I can keep the records organized.
-
-   user_story_53: #G12# As a camp worker, I'm able to report necessary repairs to the manager that the camp is needed of.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_20_AND_user_story_30}
   
-Affected Resource of US1 is: << information >>
-Affected Resource of US2 is: << information >>
-Affected Contain Resource US1 is: << information >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_20: << [["one place","information","preserve","keep"]] >>
-Contain Resources for: user_story_30: << [["enrolled campers","information","create;delete","modify"]] >>
+ Affected Resource of US1 is: << information >>
 
  Action of user_story_20 is: << keep >>  which is annotated with: << preserve >>
  Action of user_story_30 is: << modify >>  which is annotated with: << delete >>
 
-Conflict Reason is: << preserve-delete-Conflict >>
+ Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_20: #G12# As a camp administrator, i want to be able to #keep# my #information# in one place, 
@@ -246,44 +159,14 @@ Original texts of user stories are:
    user_story_30: #G12# As a camp administrator, I want to be able to modify the information of enrolled campers, so that I can keep the campers information up to date.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_28_AND_user_story_48}
-  
-Affected Resource of US1 is: << activities >>
-Affected Resource of US2 is: << schedule >>
-Affected Contain Resource US1 is: << activities >>
-Affected Resource US2 is: << activities >>
-Contain Resources for: user_story_28: << [] >>
-Contain Resources for: user_story_48: << [["schedule","activities","preserve","see"]] >>
-
- Action of user_story_28 is: << delete >>  which is annotated with: << delete >>
- Action of user_story_48 is: << see >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_28: #G12# As a camp administrator, i want to be able to #delete# tasks/#activities# i scheduled, 
-
-   user_story_48: #G12# As a parent, i want to be able to #see# a #schedule# of the #activities# my children are involved in at camp, 
-
-Original texts of user stories are: 
-   user_story_28: #G12# As a camp administrator, I want to be able to delete tasks/activities I scheduled, so that I can keep the schedule clean of unneeded activities.
-
-   user_story_48: #G12# As a parent, I want to be able to see a schedule of the activities my children are involved in at camp, so that I can be more informed as to what they are doing at camp.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_29_AND_user_story_35}
   
-Affected Resource of US1 is: << events >>
-Affected Resource of US2 is: << events >>
-Affected Contain Resource US1 is: << events >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_29: << [] >>
-Contain Resources for: user_story_35: << [["events","specific group","preserve","see only"],["events","groups","preserve","see only"],["event calendar","events","preserve","see only"]] >>
+ Affected Resource of US1 is: << events >>
 
  Action of user_story_29 is: << modify >>  which is annotated with: << delete >>
  Action of user_story_35 is: << see only >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_29: #G12# As a camp administrator, i want to be able to #modify# tasks/#events# i scheduled in case there is a change, 

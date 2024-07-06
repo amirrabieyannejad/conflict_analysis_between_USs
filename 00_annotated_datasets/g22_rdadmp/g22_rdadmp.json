@@ -11,21 +11,6 @@
                 "ensure",
                 "changes"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "ensure",
-                        "proper running",
-                        "preserve;forbid"
-                    ],
-                    [
-                        "changes",
-                        "staff",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can ensure proper running of the project in case of staff changes.",
             "Targets": [
@@ -45,14 +30,6 @@
             "Entity": ["all metadata"],
             "Action": ["properly record"],
             "Persona": ["PI"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "properly record",
-                    "all metadata",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As a PI, I want to properly record all metadata, ",
             "Triggers": [[
@@ -62,7 +39,15 @@
             "Targets": [[
                 "properly record",
                 "all metadata"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "properly record",
+                    "all metadata",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -74,10 +59,6 @@
                 "data lifecycle"
             ],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [[
                 "data lifecycle",
                 "all stages"
@@ -100,34 +81,6 @@
                 "stored"
             ],
             "Persona": ["researcher"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "indicate",
-                        "where",
-                        "create"
-                    ],
-                    [
-                        "stored",
-                        "data",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "where",
-                        "data",
-                        "create",
-                        "indicate"
-                    ],
-                    [
-                        "project",
-                        "data",
-                        "create",
-                        "stored"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "where",
@@ -160,7 +113,35 @@
                     "stored",
                     "data"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "indicate",
+                        "where",
+                        "preserve"
+                    ],
+                    [
+                        "stored",
+                        "data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "where",
+                        "data",
+                        "preserve",
+                        "indicate"
+                    ],
+                    [
+                        "project",
+                        "data",
+                        "create",
+                        "stored"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -169,10 +150,6 @@
         "Benefit": {
             "Entity": ["DMP"],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I do not have to capture it again in a DMP.",
             "Targets": []
@@ -186,14 +163,6 @@
             ],
             "Action": ["import"],
             "Persona": ["researcher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "import",
-                    "metadata",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As a researcher, I want to import metadata that I captured with a metadata tool, ",
             "Triggers": [[
@@ -203,7 +172,15 @@
             "Targets": [[
                 "import",
                 "metadata"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "import",
+                    "metadata",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Contains": [
             "DMP",
@@ -222,21 +199,6 @@
                 "develop",
                 "support"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "develop",
-                        "more detailed usage",
-                        "create"
-                    ],
-                    [
-                        "support",
-                        "scenarios",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can develop more detailed usage and support scenarios with researchers.",
             "Targets": [
@@ -262,21 +224,6 @@
                 "used"
             ],
             "Persona": ["data manager"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "know",
-                        "how",
-                        "preserve"
-                    ],
-                    [
-                        "used",
-                        "data",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As a data manager, I want to know how the data is used, ",
             "Triggers": [[
@@ -292,7 +239,22 @@
                     "used",
                     "data"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "know",
+                        "how",
+                        "preserve"
+                    ],
+                    [
+                        "used",
+                        "data",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -307,14 +269,6 @@
                 "calculate",
                 "check"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "calculate",
-                    "necessary submission fees",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can calculate necessary submission fees and check whether it belongs to our target group.",
             "Targets": [[
@@ -332,19 +286,6 @@
             ],
             "Action": ["check"],
             "Persona": ["repository owner"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "check",
-                    "planned provenance",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "data",
-                    "planned provenance",
-                    "preserve",
-                    "check"
-                ]]
-            },
             "Contains": [
                 [
                     "data",
@@ -363,7 +304,20 @@
             "Targets": [[
                 "check",
                 "planned provenance"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "check",
+                    "planned provenance",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "data",
+                    "planned provenance",
+                    "preserve",
+                    "check"
+                ]]
+            }
         },
         "Mix": {"Contains": [
             "target group",
@@ -375,14 +329,6 @@
         "Benefit": {
             "Entity": ["resource acquisition planning"],
             "Action": ["enable"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "enable",
-                    "resource acquisition planning",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can enable resource acquisition planning.",
             "Targets": [[
@@ -399,19 +345,6 @@
             ],
             "Action": ["know"],
             "Persona": ["IT manager"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "it resource requirements",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "project lifecycle",
-                    "it resource requirements",
-                    "preserve",
-                    "know"
-                ]]
-            },
             "Contains": [[
                 "project lifecycle",
                 "IT resource requirements"
@@ -424,7 +357,20 @@
             "Targets": [[
                 "know",
                 "IT resource requirements"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know",
+                    "it resource requirements",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "project lifecycle",
+                    "it resource requirements",
+                    "preserve",
+                    "know"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -436,10 +382,6 @@
                 "ensure",
                 "store"
             ],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can ensure it will possible to store it.",
             "Targets": []
@@ -450,14 +392,6 @@
             "Entity": ["kind of data I want to record/store"],
             "Action": ["plan"],
             "Persona": ["PI"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "plan",
-                    "kind of data i want to record/store",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As a PI, I want to plan what kind of data I want to record/store, ",
             "Triggers": [[
@@ -467,7 +401,15 @@
             "Targets": [[
                 "plan",
                 "kind of data I want to record/store"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "plan",
+                    "kind of data i want to record/store",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Targets": [
             "store",
@@ -482,21 +424,6 @@
                 "know",
                 "apply"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "know",
-                        " kind of security measures",
-                        "preserve"
-                    ],
-                    [
-                        "apply",
-                        " kind of security measures",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I know which kind of security measures to apply.",
             "Targets": [
@@ -519,19 +446,6 @@
             ],
             "Action": ["know"],
             "Persona": ["IT staff member"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "security requirements",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "data",
-                    "security requirements",
-                    "preserve",
-                    "know"
-                ]]
-            },
             "Contains": [[
                 "data",
                 "security requirements"
@@ -544,7 +458,20 @@
             "Targets": [[
                 "know",
                 "security requirements"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know",
+                    "security requirements",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "data",
+                    "security requirements",
+                    "preserve",
+                    "know"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -560,18 +487,6 @@
                 "ensure",
                 "add"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "add",
-                    "detail",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "descriptions",
-                    "detail",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "descriptions",
                 "detail"
@@ -592,27 +507,6 @@
             ],
             "Action": ["have"],
             "Persona": ["data manager"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "description",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [
-                    [
-                        "collected data sets",
-                        "description",
-                        "preserve",
-                        "have"
-                    ],
-                    [
-                        "project lifecycle",
-                        "description",
-                        "preserve",
-                        "have"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "collected data sets",
@@ -631,7 +525,28 @@
             "Targets": [[
                 "have",
                 "description"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "description",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [
+                    [
+                        "collected data sets",
+                        "description",
+                        "preserve",
+                        "have"
+                    ],
+                    [
+                        "project lifecycle",
+                        "description",
+                        "preserve",
+                        "have"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -640,10 +555,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["quickly writing"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can save time through quickly writing it.",
             "Targets": []
@@ -657,19 +568,6 @@
             ],
             "Action": ["know"],
             "Persona": ["researcher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "topics",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "all dmps",
-                    "topics",
-                    "preserve",
-                    "know"
-                ]]
-            },
             "Contains": [[
                 "all DMPs",
                 "topics"
@@ -682,7 +580,20 @@
             "Targets": [[
                 "know",
                 "topics"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know",
+                    "topics",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "all dmps",
+                    "topics",
+                    "preserve",
+                    "know"
+                ]]
+            }
         },
         "Mix": {"Targets": [
             "quickly writing",
@@ -698,32 +609,6 @@
                 "data"
             ],
             "Action": ["decide"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "decide",
-                        "collection",
-                        "preserve"
-                    ],
-                    [
-                        "decide",
-                        "repository",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "collection",
-                        "data",
-                        "preserve"
-                    ],
-                    [
-                        "repository",
-                        "data",
-                        "preserve"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "repository",
@@ -755,19 +640,6 @@
             ],
             "Action": ["know"],
             "Persona": ["data manager"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "content",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "data",
-                    "content",
-                    "preserve",
-                    "know"
-                ]]
-            },
             "Contains": [[
                 "data",
                 "content"
@@ -780,7 +652,20 @@
             "Targets": [[
                 "know",
                 "content"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know",
+                    "content",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "data",
+                    "content",
+                    "preserve",
+                    "know"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -793,10 +678,6 @@
                 "ethical standards"
             ],
             "Action": ["review"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "an Ethics Committee can review this for compliance with ethical standards.",
             "Targets": []
@@ -810,19 +691,6 @@
             ],
             "Action": ["record"],
             "Persona": ["PI"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "record",
-                    "information",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "dmp",
-                    "information",
-                    "create",
-                    "record"
-                ]]
-            },
             "Contains": [[
                 "DMP",
                 "information"
@@ -835,7 +703,20 @@
             "Targets": [[
                 "record",
                 "information"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "record",
+                    "information",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "dmp",
+                    "information",
+                    "create",
+                    "record"
+                ]]
+            }
         },
         "Mix": {
             "Contains": [
@@ -853,14 +734,6 @@
         "Benefit": {
             "Entity": ["sharing options"],
             "Action": ["establish"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "establish",
-                    "sharing options",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can establish sharing options.",
             "Targets": [[
@@ -874,14 +747,6 @@
             "Entity": ["data sensitivity"],
             "Action": ["know"],
             "Persona": ["legalofficer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "data sensitivity",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As a legalofficer, I want to know about data sensitivity, ",
             "Triggers": [[
@@ -891,7 +756,15 @@
             "Targets": [[
                 "know",
                 "data sensitivity"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know",
+                    "data sensitivity",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -903,18 +776,6 @@
                 "data catalogue"
             ],
             "Action": ["import"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "import",
-                    "metadata",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "data catalogue",
-                    "metadata",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "data catalogue",
                 "metadata"
@@ -936,27 +797,6 @@
             ],
             "Action": ["extract"],
             "Persona": ["data librarian"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "extract",
-                    "pointers",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": [
-                    [
-                        "dmp",
-                        "pointers",
-                        "create;delete",
-                        "extract"
-                    ],
-                    [
-                        "metadata",
-                        "pointers",
-                        "create;delete",
-                        "extract"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "DMP",
@@ -979,7 +819,28 @@
             "Targets": [[
                 "extract",
                 "pointers"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "extract",
+                    "pointers",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": [
+                    [
+                        "dmp",
+                        "pointers",
+                        "create;delete",
+                        "extract"
+                    ],
+                    [
+                        "metadata",
+                        "pointers",
+                        "create;delete",
+                        "extract"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -988,14 +849,6 @@
         "Benefit": {
             "Entity": ["overall storage consumption"],
             "Action": ["plan"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "plan",
-                    "overall storage consumption",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can plan the overall storage consumption.",
             "Targets": [[
@@ -1012,19 +865,6 @@
             ],
             "Action": ["have"],
             "Persona": ["IT staff member"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "estimate",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "produced data volume",
-                    "estimate",
-                    "preserve",
-                    "have"
-                ]]
-            },
             "Contains": [[
                 "produced data volume",
                 "estimate"
@@ -1037,7 +877,20 @@
             "Targets": [[
                 "have",
                 "estimate"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "estimate",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "produced data volume",
+                    "estimate",
+                    "preserve",
+                    "have"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1046,14 +899,6 @@
         "Benefit": {
             "Entity": ["funder specific obligations"],
             "Action": ["track"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "track",
-                    "funder specific obligations",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can track the funder specific obligations.",
             "Targets": [[
@@ -1074,26 +919,6 @@
                 "funded"
             ],
             "Persona": ["administrator"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "know",
-                        "who",
-                        "preserve"
-                    ],
-                    [
-                        "funded",
-                        "project",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "who",
-                    "requirements",
-                    "preserve",
-                    "know"
-                ]]
-            },
             "Contains": [[
                 "who",
                 "requirements"
@@ -1112,7 +937,27 @@
                     "funded",
                     "project"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "know",
+                        "who",
+                        "preserve"
+                    ],
+                    [
+                        "funded",
+                        "project",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "who",
+                    "requirements",
+                    "preserve",
+                    "know"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1121,14 +966,6 @@
         "Benefit": {
             "Entity": ["legal requirements"],
             "Action": ["apply"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "apply",
-                    "legal requirements",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can apply the legal requirements accordingly.",
             "Targets": [[
@@ -1145,19 +982,6 @@
             ],
             "Action": ["know"],
             "Persona": ["archivemanager"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "legal status",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "data",
-                    "legal status",
-                    "preserve",
-                    "know"
-                ]]
-            },
             "Contains": [[
                 "data",
                 "legal status"
@@ -1170,7 +994,20 @@
             "Targets": [[
                 "know",
                 "legal status"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know",
+                    "legal status",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "data",
+                    "legal status",
+                    "preserve",
+                    "know"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1182,21 +1019,6 @@
                 "functionalities"
             ],
             "Action": ["determine"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "determine",
-                        "basic support services",
-                        "create"
-                    ],
-                    [
-                        "determine",
-                        "functionalities",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can determine what basic support services and functionalities are required.",
             "Targets": [
@@ -1220,26 +1042,6 @@
                 "collected"
             ],
             "Persona": ["data manager"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "know",
-                        "kind of data types",
-                        "preserve"
-                    ],
-                    [
-                        "produced",
-                        "kind of data types",
-                        "create"
-                    ],
-                    [
-                        "collected",
-                        "kind of data types",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As a data manager, I want to know which kind of data types will be produced or collected, ",
             "Triggers": [[
@@ -1259,7 +1061,27 @@
                     "collected",
                     "kind of data types"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "know",
+                        "kind of data types",
+                        "preserve"
+                    ],
+                    [
+                        "produced",
+                        "kind of data types",
+                        "create"
+                    ],
+                    [
+                        "collected",
+                        "kind of data types",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1271,21 +1093,6 @@
                 "functionalities"
             ],
             "Action": ["determine"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "determine",
-                        "basic support services",
-                        "create"
-                    ],
-                    [
-                        "determine",
-                        "functionalities",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can determine what basic support services and functionalities are required.",
             "Targets": [
@@ -1309,26 +1116,6 @@
                 "collected"
             ],
             "Persona": ["IT staff member"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "know",
-                        "kind of data types",
-                        "preserve"
-                    ],
-                    [
-                        "produced",
-                        "kind of data types",
-                        "create"
-                    ],
-                    [
-                        "collected",
-                        "kind of data types",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As an IT staff member, I want to know which kind of data types will be produced or collected, ",
             "Triggers": [[
@@ -1348,7 +1135,27 @@
                     "collected",
                     "kind of data types"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "know",
+                        "kind of data types",
+                        "preserve"
+                    ],
+                    [
+                        "produced",
+                        "kind of data types",
+                        "create"
+                    ],
+                    [
+                        "collected",
+                        "kind of data types",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1363,21 +1170,6 @@
                 "better organize",
                 "adapting"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "better organize",
-                        "service",
-                        "create"
-                    ],
-                    [
-                        "adapting",
-                        "preservation actions",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can better organize the service by adapting the preservation actions.",
             "Targets": [
@@ -1400,19 +1192,6 @@
             ],
             "Action": ["know in advance"],
             "Persona": ["archivemanager"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know in advance",
-                    "conservation period",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "data",
-                    "conservation period",
-                    "preserve",
-                    "know in advance"
-                ]]
-            },
             "Contains": [[
                 "data",
                 "conservation period"
@@ -1425,7 +1204,20 @@
             "Targets": [[
                 "know in advance",
                 "conservation period"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know in advance",
+                    "conservation period",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "data",
+                    "conservation period",
+                    "preserve",
+                    "know in advance"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1437,21 +1229,6 @@
                 "curate",
                 "preserve"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "curate",
-                        "data",
-                        "create"
-                    ],
-                    [
-                        "preserve",
-                        "data",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can curate and preserve the data.",
             "Targets": [
@@ -1477,26 +1254,6 @@
                 "managing"
             ],
             "Persona": ["data manager"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "document",
-                        "all rights",
-                        "create"
-                    ],
-                    [
-                        "managing",
-                        "data",
-                        "preserve;delete;create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "data",
-                    "all rights",
-                    "create",
-                    "document"
-                ]]
-            },
             "Contains": [[
                 "data",
                 "all rights"
@@ -1515,7 +1272,27 @@
                     "managing",
                     "data"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "document",
+                        "all rights",
+                        "create"
+                    ],
+                    [
+                        "managing",
+                        "data",
+                        "preserve;delete;create"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "data",
+                    "all rights",
+                    "create",
+                    "document"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1530,21 +1307,6 @@
                 "check",
                 "maintaining"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "maintaining",
-                        "intellectual reusability",
-                        "preserve"
-                    ],
-                    [
-                        "check",
-                        "necessary expertise",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can check whether the necessary expertise for maintaining intellectual reusability is available.",
             "Targets": [
@@ -1567,19 +1329,6 @@
             ],
             "Action": ["know"],
             "Persona": ["data manager"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "content",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "data",
-                    "content",
-                    "preserve",
-                    "know"
-                ]]
-            },
             "Contains": [[
                 "data",
                 "content"
@@ -1592,7 +1341,20 @@
             "Targets": [[
                 "know",
                 "content"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know",
+                    "content",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "data",
+                    "content",
+                    "preserve",
+                    "know"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1604,21 +1366,6 @@
                 "check",
                 "implemented"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "check",
-                        "dmp",
-                        "preserve"
-                    ],
-                    [
-                        "implemented",
-                        "dmp",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can check that the DMP has been implemented.",
             "Targets": [
@@ -1642,27 +1389,6 @@
             ],
             "Action": ["access"],
             "Persona": ["research head"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "access",
-                    "persistent identifiers",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": [
-                    [
-                        "datasets",
-                        "persistent identifiers",
-                        "preserve;create",
-                        "access"
-                    ],
-                    [
-                        "dmp",
-                        "persistent identifiers",
-                        "preserve;create",
-                        "access"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "datasets",
@@ -1681,7 +1407,28 @@
             "Targets": [[
                 "access",
                 "persistent identifiers"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "access",
+                    "persistent identifiers",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": [
+                    [
+                        "datasets",
+                        "persistent identifiers",
+                        "preserve;create",
+                        "access"
+                    ],
+                    [
+                        "dmp",
+                        "persistent identifiers",
+                        "preserve;create",
+                        "access"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -1693,14 +1440,6 @@
                 "check",
                 "work"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "check",
-                    "policies",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can check whether our policies work as intended.",
             "Targets": [[
@@ -1718,19 +1457,6 @@
             ],
             "Action": ["read"],
             "Persona": ["funder"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "read",
-                    "costs",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "data management",
-                    "costs",
-                    "preserve",
-                    "read"
-                ]]
-            },
             "Contains": [
                 [
                     "data management",
@@ -1749,7 +1475,20 @@
             "Targets": [[
                 "read",
                 "costs"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "read",
+                    "costs",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "data management",
+                    "costs",
+                    "preserve",
+                    "read"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1762,10 +1501,6 @@
                 "accurate and standardized information"
             ],
             "Action": ["ensuring"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [[
                 "DMP",
                 "accurate and standardized information"
@@ -1786,26 +1521,6 @@
                 "prepopulate"
             ],
             "Persona": ["researcher"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "want",
-                        "dmp",
-                        "create"
-                    ],
-                    [
-                        "prepopulate",
-                        "information",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "institutional systems",
-                    "information",
-                    "create",
-                    "prepopulate"
-                ]]
-            },
             "Contains": [[
                 "institutional systems",
                 "information"
@@ -1824,7 +1539,27 @@
                     "prepopulate",
                     "information"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "want",
+                        "dmp",
+                        "create"
+                    ],
+                    [
+                        "prepopulate",
+                        "information",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "institutional systems",
+                    "information",
+                    "create",
+                    "prepopulate"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1839,14 +1574,6 @@
                 "know",
                 "updated"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "how up-to-date",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I know how up-to-date the plan is or whether it needs to be updated.",
             "Targets": [[
@@ -1867,26 +1594,6 @@
                 "updated"
             ],
             "Persona": ["stakeholder"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "know",
-                        "when",
-                        "preserve"
-                    ],
-                    [
-                        "created",
-                        "data management plan",
-                        "create"
-                    ],
-                    [
-                        "updated",
-                        "data management plan",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As a stakeholder, I want to know when the data management plan was created or updated, ",
             "Triggers": [[
@@ -1906,7 +1613,27 @@
                     "updated",
                     "data management plan"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "know",
+                        "when",
+                        "preserve"
+                    ],
+                    [
+                        "created",
+                        "data management plan",
+                        "create"
+                    ],
+                    [
+                        "updated",
+                        "data management plan",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Targets": [
             "updated",
@@ -1918,14 +1645,6 @@
         "Benefit": {
             "Entity": ["further details"],
             "Action": ["ask"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "ask",
-                    "further details",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can ask them about further details.",
             "Targets": [[
@@ -1942,14 +1661,6 @@
             ],
             "Action": ["know"],
             "Persona": ["stakeholder"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "who is responsible",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As a stakeholder, I want to know who is responsible for the DMP, ",
             "Triggers": [[
@@ -1959,7 +1670,15 @@
             "Targets": [[
                 "know",
                 "who is responsible"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know",
+                    "who is responsible",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1968,14 +1687,6 @@
         "Benefit": {
             "Entity": ["further general information"],
             "Action": ["look up"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "look up",
-                    "further general information",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can look up further general information.",
             "Targets": [[
@@ -1992,19 +1703,6 @@
             ],
             "Action": ["have"],
             "Persona": ["stakeholder"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "references",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "project proposal",
-                    "references",
-                    "preserve",
-                    "have"
-                ]]
-            },
             "Contains": [[
                 "project proposal",
                 "references"
@@ -2017,7 +1715,20 @@
             "Targets": [[
                 "have",
                 "references"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "references",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "project proposal",
+                    "references",
+                    "preserve",
+                    "have"
+                ]]
+            }
         },
         "Mix": {"Contains": [
             "references",
@@ -2029,10 +1740,6 @@
         "Benefit": {
             "Entity": ["metadata description"],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can be informed about the metadata description.",
             "Targets": []
@@ -2046,19 +1753,6 @@
             ],
             "Action": ["have"],
             "Persona": ["metadata manager"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "short description",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "project",
-                    "short description",
-                    "preserve",
-                    "have"
-                ]]
-            },
             "Contains": [[
                 "project",
                 "short description"
@@ -2071,7 +1765,20 @@
             "Targets": [[
                 "have",
                 "short description"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "short description",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "project",
+                    "short description",
+                    "preserve",
+                    "have"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2080,14 +1787,6 @@
         "Benefit": {
             "Entity": ["long term resources"],
             "Action": ["plan"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "plan",
-                    "long term resources",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can plan long term resources.",
             "Targets": [[
@@ -2107,21 +1806,6 @@
                 "stored"
             ],
             "Persona": ["rector"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "know",
-                        "how many",
-                        "preserve"
-                    ],
-                    [
-                        "stored",
-                        "data",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As a rector, I want to know how many data will be stored, ",
             "Triggers": [[
@@ -2137,7 +1821,22 @@
                     "stored",
                     "data"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "know",
+                        "how many",
+                        "preserve"
+                    ],
+                    [
+                        "stored",
+                        "data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2146,14 +1845,6 @@
         "Benefit": {
             "Entity": ["data management"],
             "Action": ["plan"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "plan",
-                    "data management",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can plan the data management.",
             "Targets": [[
@@ -2173,26 +1864,6 @@
                 "collecting"
             ],
             "Persona": ["data manager"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "know",
-                        "time plan",
-                        "preserve"
-                    ],
-                    [
-                        "collecting",
-                        "data",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "data",
-                    "time plan",
-                    "preserve",
-                    "know"
-                ]]
-            },
             "Contains": [[
                 "data",
                 "time plan"
@@ -2211,7 +1882,27 @@
                     "collecting",
                     "data"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "know",
+                        "time plan",
+                        "preserve"
+                    ],
+                    [
+                        "collecting",
+                        "data",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "data",
+                    "time plan",
+                    "preserve",
+                    "know"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2220,14 +1911,6 @@
         "Benefit": {
             "Entity": ["DMP"],
             "Action": ["prepopulate"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "prepopulate",
-                    "dmp",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can prepopulate the DMP.",
             "Targets": [[
@@ -2245,27 +1928,6 @@
             ],
             "Action": ["import"],
             "Persona": ["data librarian"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "import",
-                    "administrative information",
-                    "create"
-                ]],
-                "Contain Action Rules": [
-                    [
-                        "dmp",
-                        "administrative information",
-                        "create",
-                        "import"
-                    ],
-                    [
-                        "project",
-                        "administrative information",
-                        "create",
-                        "import"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "DMP",
@@ -2284,7 +1946,28 @@
             "Targets": [[
                 "import",
                 "administrative information"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "import",
+                    "administrative information",
+                    "create"
+                ]],
+                "Contain Action Annotations": [
+                    [
+                        "dmp",
+                        "administrative information",
+                        "create",
+                        "import"
+                    ],
+                    [
+                        "project",
+                        "administrative information",
+                        "create",
+                        "import"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -2296,18 +1979,6 @@
                 "project"
             ],
             "Action": ["estimate"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "estimate",
-                    "true cost",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "project",
-                    "true cost",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "project",
                 "true cost"
@@ -2328,21 +1999,6 @@
             ],
             "Action": ["know"],
             "Persona": ["manager"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "know",
-                        "all resources",
-                        "preserve"
-                    ],
-                    [
-                        "know",
-                        "services used",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As a manager, I want to know about all resources and services used for the data, ",
             "Triggers": [[
@@ -2358,7 +2014,22 @@
                     "know",
                     "services used"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "know",
+                        "all resources",
+                        "preserve"
+                    ],
+                    [
+                        "know",
+                        "services used",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2370,18 +2041,6 @@
                 "file validation"
             ],
             "Action": ["apply"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "apply",
-                    "automated checks",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": [[
-                    "file validation",
-                    "automated checks",
-                    "create;delete"
-                ]]
-            },
             "Contains": [[
                 "file validation",
                 "automated checks"
@@ -2401,19 +2060,6 @@
             ],
             "Action": ["reuse"],
             "Persona": ["archivemanager"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "reuse",
-                    "information",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": [[
-                    "file format",
-                    "information",
-                    "create;delete",
-                    "reuse"
-                ]]
-            },
             "Contains": [[
                 "file format",
                 "information"
@@ -2426,7 +2072,20 @@
             "Targets": [[
                 "reuse",
                 "information"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "reuse",
+                    "information",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "file format",
+                    "information",
+                    "preserve",
+                    "reuse"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2435,14 +2094,6 @@
         "Benefit": {
             "Entity": ["costs"],
             "Action": ["calculate"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "calculate",
-                    "costs",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can calculate costs.",
             "Targets": [[
@@ -2460,14 +2111,6 @@
             ],
             "Action": ["know"],
             "Persona": ["researcher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "how many",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [[
                 "project",
                 "resources"
@@ -2480,7 +2123,15 @@
             "Targets": [[
                 "know",
                 "how many"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know",
+                    "how many",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2492,14 +2143,6 @@
                 "reuse",
                 "writing"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "writing",
-                    "data paper",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can reuse it for the writing of a data paper.",
             "Targets": [[
@@ -2516,19 +2159,6 @@
             ],
             "Action": ["extract"],
             "Persona": ["researcher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "extract",
-                    "description",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": [[
-                    "data collected",
-                    "description",
-                    "create;delete",
-                    "extract"
-                ]]
-            },
             "Contains": [[
                 "data collected",
                 "description"
@@ -2541,7 +2171,20 @@
             "Targets": [[
                 "extract",
                 "description"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "extract",
+                    "description",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": [[
+                    "data collected",
+                    "description",
+                    "create;delete",
+                    "extract"
+                ]]
+            }
         },
         "Mix": {"Targets": [
             "reuse",
@@ -2557,18 +2200,6 @@
                 "project"
             ],
             "Action": ["generate"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "generate",
-                    "reports",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "reports",
-                    "research output",
-                    "create"
-                ]]
-            },
             "Contains": [
                 [
                     "project",
@@ -2596,27 +2227,6 @@
             ],
             "Action": ["record"],
             "Persona": ["researcher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "record",
-                    "research publications",
-                    "create"
-                ]],
-                "Contain Action Rules": [
-                    [
-                        "institutional repository",
-                        "research publications",
-                        "create",
-                        "record"
-                    ],
-                    [
-                        "cris",
-                        "research publications",
-                        "create",
-                        "record"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "institutional repository",
@@ -2643,7 +2253,28 @@
             "Targets": [[
                 "record",
                 "research publications"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "record",
+                    "research publications",
+                    "create"
+                ]],
+                "Contain Action Annotations": [
+                    [
+                        "institutional repository",
+                        "research publications",
+                        "create",
+                        "record"
+                    ],
+                    [
+                        "cris",
+                        "research publications",
+                        "create",
+                        "record"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -2656,18 +2287,6 @@
                 "project"
             ],
             "Action": ["generate"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "generate",
-                    "reports",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "reports",
-                    "research output",
-                    "create"
-                ]]
-            },
             "Contains": [
                 [
                     "project",
@@ -2695,27 +2314,6 @@
             ],
             "Action": ["link"],
             "Persona": ["researcher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "link",
-                    "research publications",
-                    "create"
-                ]],
-                "Contain Action Rules": [
-                    [
-                        "institutional repository",
-                        "research publications",
-                        "create",
-                        "link"
-                    ],
-                    [
-                        "cris",
-                        "research publications",
-                        "create",
-                        "link"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "institutional repository",
@@ -2742,7 +2340,28 @@
             "Targets": [[
                 "link",
                 "research publications"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "link",
+                    "research publications",
+                    "create"
+                ]],
+                "Contain Action Annotations": [
+                    [
+                        "institutional repository",
+                        "research publications",
+                        "create",
+                        "link"
+                    ],
+                    [
+                        "cris",
+                        "research publications",
+                        "create",
+                        "link"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -2755,26 +2374,6 @@
                 "attributed",
                 "used correctly"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "cited",
-                        "data",
-                        "create"
-                    ],
-                    [
-                        "attributed",
-                        "data",
-                        "preserve"
-                    ],
-                    [
-                        "used correctly",
-                        "data",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "the data can be cited, attributed and used correctly.",
             "Targets": [
@@ -2802,14 +2401,6 @@
             ],
             "Action": ["store"],
             "Persona": ["researcher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "store",
-                    "agreements",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [[
                 "project",
                 "third party data"
@@ -2822,7 +2413,15 @@
             "Targets": [[
                 "store",
                 "agreements"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "store",
+                    "agreements",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2834,18 +2433,6 @@
                 "data"
             ],
             "Action": ["check"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "check",
-                    "sensitivity",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "data",
-                    "sensitivity",
-                    "preserve"
-                ]]
-            },
             "Contains": [[
                 "data",
                 "sensitivity"
@@ -2862,14 +2449,6 @@
             "Entity": ["data"],
             "Action": ["be informed"],
             "Persona": ["ethics manager"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "be informed",
-                    "data",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As an ethics manager, I want to be informed about the data, ",
             "Triggers": [[
@@ -2879,7 +2458,15 @@
             "Targets": [[
                 "be informed",
                 "data"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "be informed",
+                    "data",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2891,21 +2478,6 @@
                 "system"
             ],
             "Action": ["evaluate"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "evaluate",
-                        "storage size",
-                        "preserve;forbid"
-                    ],
-                    [
-                        "evaluate",
-                        "system",
-                        "preserve;forbid"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can evaluate the storage size and system.",
             "Targets": [
@@ -2925,14 +2497,6 @@
             "Entity": ["kind of data"],
             "Action": ["know"],
             "Persona": ["repository operator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "kind of data",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As a repository operator, I want to know about the kind of data, ",
             "Triggers": [[
@@ -2942,7 +2506,15 @@
             "Targets": [[
                 "know",
                 "kind of data"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know",
+                    "kind of data",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2951,14 +2523,6 @@
         "Benefit": {
             "Entity": ["research"],
             "Action": ["plan"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "plan",
-                    "research",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can plan my research.",
             "Targets": [[
@@ -2972,14 +2536,6 @@
             "Entity": ["costs"],
             "Action": ["know"],
             "Persona": ["researcher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "costs",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As a researcher, I want to know about costs, ",
             "Triggers": [[
@@ -2989,7 +2545,15 @@
             "Targets": [[
                 "know",
                 "costs"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know",
+                    "costs",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3001,21 +2565,6 @@
                 "check",
                 "arranged"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "check",
-                        "archiving",
-                        "preserve"
-                    ],
-                    [
-                        "arranged",
-                        "archiving",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can check if the archiving can be arranged.",
             "Targets": [
@@ -3038,19 +2587,6 @@
             ],
             "Action": ["need"],
             "Persona": ["repository manager"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "need",
-                    "details",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "type of data",
-                    "details",
-                    "preserve",
-                    "need"
-                ]]
-            },
             "Contains": [[
                 "type of data",
                 "details"
@@ -3063,7 +2599,20 @@
             "Targets": [[
                 "need",
                 "details"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "need",
+                    "details",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "type of data",
+                    "details",
+                    "preserve",
+                    "need"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3072,14 +2621,6 @@
         "Benefit": {
             "Entity": ["legal compliance"],
             "Action": ["ensure"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "ensure",
-                    "legal compliance",
-                    "preserve;forbid"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can ensure legal compliance.",
             "Targets": [[
@@ -3096,14 +2637,6 @@
             ],
             "Action": ["know"],
             "Persona": ["IT officer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "how secure",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As an IT officer, I want to know how secure data is, ",
             "Triggers": [[
@@ -3113,7 +2646,15 @@
             "Targets": [[
                 "know",
                 "how secure"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know",
+                    "how secure",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3122,14 +2663,6 @@
         "Benefit": {
             "Entity": ["legal compliance"],
             "Action": ["ensure"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "ensure",
-                    "legal compliance",
-                    "preserve;forbid"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can ensure legal compliance.",
             "Targets": [[
@@ -3146,14 +2679,6 @@
             ],
             "Action": ["know"],
             "Persona": ["funder"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "how secure",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As a funder, I want to know how secure data is, ",
             "Triggers": [[
@@ -3163,7 +2688,15 @@
             "Targets": [[
                 "know",
                 "how secure"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know",
+                    "how secure",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3177,18 +2710,6 @@
                 "postgraduate students"
             ],
             "Action": ["understand"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "understand",
-                    "trends",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": [[
-                    "data use",
-                    "trends",
-                    "preserve;create"
-                ]]
-            },
             "Contains": [[
                 "data use",
                 "trends"
@@ -3208,19 +2729,6 @@
             ],
             "Action": ["receive"],
             "Persona": ["Research Centre Director"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "receive",
-                    "regular summary reports",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "regular summary reports",
-                    "research data",
-                    "create",
-                    "receive"
-                ]]
-            },
             "Contains": [[
                 "regular summary reports",
                 "research data"
@@ -3233,7 +2741,20 @@
             "Targets": [[
                 "receive",
                 "regular summary reports"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "receive",
+                    "regular summary reports",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "regular summary reports",
+                    "research data",
+                    "create",
+                    "receive"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3247,18 +2768,6 @@
                 "postgraduate students"
             ],
             "Action": ["understand"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "understand",
-                    "trends",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": [[
-                    "data use",
-                    "trends",
-                    "preserve;create"
-                ]]
-            },
             "Contains": [[
                 "data use",
                 "trends"
@@ -3278,19 +2787,6 @@
             ],
             "Action": ["receive"],
             "Persona": ["Postgraduate Convenor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "receive",
-                    "regular summary reports",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "research data",
-                    "regular summary reports",
-                    "create",
-                    "receive"
-                ]]
-            },
             "Contains": [[
                 "research data",
                 "regular summary reports"
@@ -3303,7 +2799,20 @@
             "Targets": [[
                 "receive",
                 "regular summary reports"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "receive",
+                    "regular summary reports",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "research data",
+                    "regular summary reports",
+                    "create",
+                    "receive"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3315,14 +2824,6 @@
                 "ensure",
                 "accepted"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "accepted",
-                    "all costs",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can ensure all costs will be accepted.",
             "Targets": [[
@@ -3339,14 +2840,6 @@
             ],
             "Action": ["ensure"],
             "Persona": ["research support officer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "ensure",
-                    "compliance ",
-                    "preserve;forbid"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As a research support officer, I want to ensure compliance to the funders\u2019 rules, ",
             "Triggers": [[
@@ -3356,7 +2849,15 @@
             "Targets": [[
                 "ensure",
                 "compliance "
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "ensure",
+                    "compliance ",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3371,25 +2872,6 @@
                 "verify",
                 "followed"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "followed",
-                        "funding rules",
-                        "preserve"
-                    ],
-                    [
-                        "verify",
-                        "project",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "project",
-                    "funding rules",
-                    "preserve"
-                ]]
-            },
             "Contains": [[
                 "project",
                 "funding rules"
@@ -3415,19 +2897,6 @@
             ],
             "Action": ["check"],
             "Persona": ["funder"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "check",
-                    "repositories mentioned",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "dmp",
-                    "repositories mentioned",
-                    "preserve",
-                    "check"
-                ]]
-            },
             "Contains": [[
                 "DMP",
                 "repositories mentioned"
@@ -3440,7 +2909,20 @@
             "Targets": [[
                 "check",
                 "repositories mentioned"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "check",
+                    "repositories mentioned",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "dmp",
+                    "repositories mentioned",
+                    "preserve",
+                    "check"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3452,10 +2934,6 @@
                 "ensure",
                 "store"
             ],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can ensure it will be possible to store it.",
             "Targets": []
@@ -3466,14 +2944,6 @@
             "Entity": ["kind of data I want to store"],
             "Action": ["plan"],
             "Persona": ["PI"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "plan",
-                    "kind of data i want to store",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As a PI, I want to plan what kind of data I want to store, ",
             "Triggers": [[
@@ -3483,7 +2953,15 @@
             "Targets": [[
                 "plan",
                 "kind of data I want to store"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "plan",
+                    "kind of data i want to store",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Targets": [
             "store",
@@ -3495,14 +2973,6 @@
         "Benefit": {
             "Entity": ["legal compliance"],
             "Action": ["ensure"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "ensure",
-                    "legal compliance",
-                    "preserve;forbid"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can ensure legal compliance.",
             "Targets": [[
@@ -3519,14 +2989,6 @@
             ],
             "Action": ["know"],
             "Persona": ["PI"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "how secure",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As a PI, I want to know how secure data is, ",
             "Triggers": [[
@@ -3536,7 +2998,15 @@
             "Targets": [[
                 "know",
                 "how secure"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know",
+                    "how secure",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3551,25 +3021,6 @@
                 "confirm",
                 "applied"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "confirm",
-                        "security protocols",
-                        "create"
-                    ],
-                    [
-                        "applied",
-                        "security protocols",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "data",
-                    "security protocols",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "data",
                 "security protocols"
@@ -3600,26 +3051,6 @@
                 "classified"
             ],
             "Persona": ["Director of Research Integrity"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "access",
-                        "reports",
-                        "preserve;create"
-                    ],
-                    [
-                        "classified",
-                        "data",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "reports",
-                    "details",
-                    "preserve;create",
-                    "access"
-                ]]
-            },
             "Contains": [
                 [
                     "reports",
@@ -3644,7 +3075,27 @@
                     "classified",
                     "data"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "access",
+                        "reports",
+                        "preserve;create"
+                    ],
+                    [
+                        "classified",
+                        "data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "reports",
+                    "details",
+                    "preserve;create",
+                    "access"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3653,14 +3104,6 @@
         "Benefit": {
             "Entity": ["adequate storage infrastructure"],
             "Action": ["provide"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "provide",
-                    "adequate storage infrastructure",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can provide the adequate storage infrastructure.",
             "Targets": [[
@@ -3679,19 +3122,6 @@
             ],
             "Action": ["get"],
             "Persona": ["archive"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "get",
-                    "information",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "volume",
-                    "information",
-                    "preserve",
-                    "get"
-                ]]
-            },
             "Contains": [
                 [
                     "volume",
@@ -3710,7 +3140,20 @@
             "Targets": [[
                 "get",
                 "information"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "get",
+                    "information",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "volume",
+                    "information",
+                    "preserve",
+                    "get"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3719,14 +3162,6 @@
         "Benefit": {
             "Entity": ["further steps"],
             "Action": ["plan"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "plan",
-                    "further steps",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can plan further steps.",
             "Targets": [[
@@ -3743,14 +3178,6 @@
                 "archive"
             ],
             "Persona": ["researcher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "how long",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As a researcher, I want to know how long it will take to archive, ",
             "Triggers": [[
@@ -3760,7 +3187,15 @@
             "Targets": [[
                 "know",
                 "how long"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know",
+                    "how long",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3769,14 +3204,6 @@
         "Benefit": {
             "Entity": ["what"],
             "Action": ["know"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "what",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I know what I am allowed to do with it.",
             "Targets": [[
@@ -3793,19 +3220,6 @@
             ],
             "Action": ["know"],
             "Persona": ["PI"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "who",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "who",
-                    "data",
-                    "preserve",
-                    "know"
-                ]]
-            },
             "Contains": [[
                 "who",
                 "data"
@@ -3818,7 +3232,20 @@
             "Targets": [[
                 "know",
                 "who"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know",
+                    "who",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "who",
+                    "data",
+                    "preserve",
+                    "know"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3830,21 +3257,6 @@
                 "re-used",
                 "managed"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "re-used",
-                        "data",
-                        "preserve"
-                    ],
-                    [
-                        "managed",
-                        "data",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "the data can be re-used and managed.",
             "Targets": [
@@ -3869,34 +3281,6 @@
             ],
             "Action": ["have"],
             "Persona": ["data manager"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "have",
-                        "references",
-                        "preserve"
-                    ],
-                    [
-                        "have",
-                        "creation process",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "documentation",
-                        "references",
-                        "preserve",
-                        "have"
-                    ],
-                    [
-                        "documentation",
-                        "creation process",
-                        "preserve",
-                        "have"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "documentation",
@@ -3925,7 +3309,35 @@
                     "have",
                     "creation process"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "have",
+                        "references",
+                        "preserve"
+                    ],
+                    [
+                        "have",
+                        "creation process",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "documentation",
+                        "references",
+                        "preserve",
+                        "have"
+                    ],
+                    [
+                        "documentation",
+                        "creation process",
+                        "preserve",
+                        "have"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -3934,10 +3346,6 @@
         "Benefit": {
             "Entity": ["future users"],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "it will be understandable by future users.",
             "Targets": []
@@ -3954,19 +3362,6 @@
                 "associated"
             ],
             "Persona": ["archivemanager"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "associated",
-                    "detailed metadata",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "data",
-                    "detailed metadata",
-                    "preserve",
-                    "associated"
-                ]]
-            },
             "Contains": [[
                 "data",
                 "detailed metadata"
@@ -3979,7 +3374,20 @@
             "Targets": [[
                 "associated",
                 "detailed metadata"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "associated",
+                    "detailed metadata",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "data",
+                    "detailed metadata",
+                    "preserve",
+                    "associated"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3991,10 +3399,6 @@
                 "technical know-how"
             ],
             "Action": ["ensure"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can ensure that the necessary technical resources and technical know-how is available.",
             "Targets": []
@@ -4009,26 +3413,6 @@
                 "collected"
             ],
             "Persona": ["data manager"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "know",
-                        "kind of data types",
-                        "preserve"
-                    ],
-                    [
-                        "produced",
-                        "kind of data types",
-                        "create"
-                    ],
-                    [
-                        "collected",
-                        "kind of data types",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As a data manager, I want to know which kind of data types will be produced or collected, ",
             "Triggers": [[
@@ -4048,38 +3432,9 @@
                     "collected",
                     "kind of data types"
                 ]
-            ]
-        },
-        "Mix": {}
-    },
-    {
-        "US_Nr": "user_story_59",
-        "Benefit": {
-            "Entity": [
-                "necessary technical resources",
-                "technical know-how"
             ],
-            "Action": ["ensure"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
-            "Contains": [],
-            "Text": "I can ensure that the necessary technical resources and technical know-how is available.",
-            "Targets": []
-        },
-        "Text": "#G22# As an IT staff member, I want to know which kind of data types will be produced or collected, so that I can ensure that the necessary technical resources and technical know-how is available.",
-        "PID": "#G22#",
-        "Main": {
-            "Entity": ["kind of data types"],
-            "Action": [
-                "know",
-                "produced",
-                "collected"
-            ],
-            "Persona": ["IT staff member"],
-            "Action Rules": {
-                "Target Action Rules": [
+            "Action Annotations": {
+                "Target Action Annotations": [
                     [
                         "know",
                         "kind of data types",
@@ -4096,8 +3451,33 @@
                         "create"
                     ]
                 ],
-                "Contain Action Rules": []
-            },
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_59",
+        "Benefit": {
+            "Entity": [
+                "necessary technical resources",
+                "technical know-how"
+            ],
+            "Action": ["ensure"],
+            "Contains": [],
+            "Text": "I can ensure that the necessary technical resources and technical know-how is available.",
+            "Targets": []
+        },
+        "Text": "#G22# As an IT staff member, I want to know which kind of data types will be produced or collected, so that I can ensure that the necessary technical resources and technical know-how is available.",
+        "PID": "#G22#",
+        "Main": {
+            "Entity": ["kind of data types"],
+            "Action": [
+                "know",
+                "produced",
+                "collected"
+            ],
+            "Persona": ["IT staff member"],
             "Contains": [],
             "Text": "#G22# As an IT staff member, I want to know which kind of data types will be produced or collected, ",
             "Triggers": [[
@@ -4117,7 +3497,27 @@
                     "collected",
                     "kind of data types"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "know",
+                        "kind of data types",
+                        "preserve"
+                    ],
+                    [
+                        "produced",
+                        "kind of data types",
+                        "create"
+                    ],
+                    [
+                        "collected",
+                        "kind of data types",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -4129,21 +3529,6 @@
                 "functionalities"
             ],
             "Action": ["determine"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "determine",
-                        "kind of basic services",
-                        "create"
-                    ],
-                    [
-                        "determine",
-                        "functionalities",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can determine what kind of basic services and functionalities are required.",
             "Targets": [
@@ -4169,21 +3554,6 @@
                 "used"
             ],
             "Persona": ["IT staff member"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "know",
-                        "how",
-                        "preserve"
-                    ],
-                    [
-                        "used",
-                        "data",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As an IT staff member, I want to know how the data is used, ",
             "Triggers": [[
@@ -4199,7 +3569,22 @@
                     "used",
                     "data"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "know",
+                        "how",
+                        "preserve"
+                    ],
+                    [
+                        "used",
+                        "data",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -4211,14 +3596,6 @@
                 "ensure",
                 "maintained"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "maintained",
-                    "dependencies",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can ensure that these dependencies are maintained.",
             "Targets": [[
@@ -4236,10 +3613,6 @@
             ],
             "Action": ["know"],
             "Persona": ["data manager"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [[
                 "own or other institutions",
                 "other data sets"
@@ -4249,7 +3622,11 @@
                 "data manager",
                 "know"
             ]],
-            "Targets": []
+            "Targets": [],
+            "Action Annotations": {
+                "Target Action Annotations": [],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -4261,21 +3638,6 @@
                 "functionalities"
             ],
             "Action": ["determine"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "determine",
-                        "kind of technical services",
-                        "create"
-                    ],
-                    [
-                        "determine",
-                        "functionalities",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can determine what kind of technical services and functionalities are required.",
             "Targets": [
@@ -4298,21 +3660,6 @@
                 "used"
             ],
             "Persona": ["IT staff member"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "know",
-                        "formats",
-                        "preserve"
-                    ],
-                    [
-                        "used",
-                        "formats",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As an IT staff member, I want to know which formats are used, ",
             "Triggers": [[
@@ -4328,7 +3675,22 @@
                     "used",
                     "formats"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "know",
+                        "formats",
+                        "preserve"
+                    ],
+                    [
+                        "used",
+                        "formats",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -4340,21 +3702,6 @@
                 "functionalities"
             ],
             "Action": ["determine"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "determine",
-                        "kind of technical services",
-                        "create"
-                    ],
-                    [
-                        "determine",
-                        "functionalities",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can determine what kind of technical services and functionalities are required.",
             "Targets": [
@@ -4382,44 +3729,6 @@
                 "used"
             ],
             "Persona": ["IT staff member"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "know",
-                        "software",
-                        "preserve"
-                    ],
-                    [
-                        "produced",
-                        "data",
-                        "create"
-                    ],
-                    [
-                        "used",
-                        "data",
-                        "preserve"
-                    ],
-                    [
-                        "know",
-                        "technology",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "software",
-                        "data",
-                        "preserve",
-                        "know"
-                    ],
-                    [
-                        "technology",
-                        "data",
-                        "create",
-                        "produced"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "software",
@@ -4452,7 +3761,45 @@
                     "know",
                     "technology"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "know",
+                        "software",
+                        "preserve"
+                    ],
+                    [
+                        "produced",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "used",
+                        "data",
+                        "preserve"
+                    ],
+                    [
+                        "know",
+                        "technology",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "software",
+                        "data",
+                        "preserve",
+                        "know"
+                    ],
+                    [
+                        "technology",
+                        "data",
+                        "create",
+                        "produced"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -4468,14 +3815,6 @@
                 "checked",
                 "re-using"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "re-using",
-                    "data",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [[
                 "researchers",
                 "all necessary information"
@@ -4498,21 +3837,6 @@
                 "re-use"
             ],
             "Persona": ["data manager"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "know",
-                        "information",
-                        "preserve"
-                    ],
-                    [
-                        "re-use",
-                        "data",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As a data manager, I want to know which information is necessary to re-use the data, ",
             "Triggers": [[
@@ -4528,7 +3852,22 @@
                     "re-use",
                     "data"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "know",
+                        "information",
+                        "preserve"
+                    ],
+                    [
+                        "re-use",
+                        "data",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Targets": [
             "checked",
@@ -4547,26 +3886,6 @@
                 "know",
                 "use"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "know",
-                        "technology",
-                        "preserve"
-                    ],
-                    [
-                        "know",
-                        "background information",
-                        "preserve"
-                    ],
-                    [
-                        "use",
-                        "data",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I know what technology or background information might be necessary to use the data.",
             "Targets": [
@@ -4593,21 +3912,6 @@
                 "used"
             ],
             "Persona": ["data manager"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "know",
-                        "formats",
-                        "preserve"
-                    ],
-                    [
-                        "used",
-                        "formats",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As a data manager, I want to know which formats are used, ",
             "Triggers": [[
@@ -4623,7 +3927,22 @@
                     "used",
                     "formats"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "know",
+                        "formats",
+                        "preserve"
+                    ],
+                    [
+                        "used",
+                        "formats",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -4638,21 +3957,6 @@
                 "determine",
                 "stored"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "determine",
-                        "how",
-                        "create"
-                    ],
-                    [
-                        "stored",
-                        "data",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can determine whether and how the data has to be stored.",
             "Targets": [
@@ -4675,14 +3979,6 @@
                 "reproduced efficiently"
             ],
             "Persona": ["data manager"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "reproduced efficiently",
-                    "data",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As a data manager, I want to know whether the data can be reproduced efficiently, ",
             "Triggers": [[
@@ -4692,7 +3988,15 @@
             "Targets": [[
                 "reproduced efficiently",
                 "data"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "reproduced efficiently",
+                    "data",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -4708,26 +4012,6 @@
                 "know",
                 "(re-)use"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "know",
-                        "technology",
-                        "preserve"
-                    ],
-                    [
-                        "know",
-                        "background information",
-                        "preserve"
-                    ],
-                    [
-                        "(re-)use",
-                        "data",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I know what technology or background information might be necessary to (re-)use the data.",
             "Targets": [
@@ -4759,44 +4043,6 @@
                 "used"
             ],
             "Persona": ["data manager"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "know",
-                        "software",
-                        "preserve"
-                    ],
-                    [
-                        "know",
-                        "technology",
-                        "preserve"
-                    ],
-                    [
-                        "produced",
-                        "data",
-                        "create"
-                    ],
-                    [
-                        "used",
-                        "data",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "software",
-                        "data",
-                        "preserve",
-                        "know"
-                    ],
-                    [
-                        "technology",
-                        "data",
-                        "preserve",
-                        "know"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "technology",
@@ -4829,7 +4075,45 @@
                     "used",
                     "data"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "know",
+                        "software",
+                        "preserve"
+                    ],
+                    [
+                        "know",
+                        "technology",
+                        "preserve"
+                    ],
+                    [
+                        "produced",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "used",
+                        "data",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "software",
+                        "data",
+                        "preserve",
+                        "know"
+                    ],
+                    [
+                        "technology",
+                        "data",
+                        "preserve",
+                        "know"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -4838,10 +4122,6 @@
         "Benefit": {
             "Entity": ["citation counts"],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "they are counted towards our citation counts.",
             "Targets": []
@@ -4858,19 +4138,6 @@
                 "quoted correctly"
             ],
             "Persona": ["research evaluation manager"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "quoted correctly",
-                    "all data",
-                    "preserve;forbid"
-                ]],
-                "Contain Action Rules": [[
-                    "all data",
-                    "affiliation",
-                    "preserve;forbid",
-                    "quoted correctly"
-                ]]
-            },
             "Contains": [[
                 "all data",
                 "affiliation"
@@ -4883,7 +4150,20 @@
             "Targets": [[
                 "quoted correctly",
                 "all data"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "quoted correctly",
+                    "all data",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Annotations": [[
+                    "all data",
+                    "affiliation",
+                    "preserve;forbid",
+                    "quoted correctly"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -4892,14 +4172,6 @@
         "Benefit": {
             "Entity": ["compliance"],
             "Action": ["demonstrate"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "demonstrate",
-                    "compliance",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can demonstrate compliance.",
             "Targets": [[
@@ -4916,19 +4188,6 @@
             ],
             "Action": ["check"],
             "Persona": ["administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "check",
-                    "all data",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "all data",
-                    "appropriate security level",
-                    "preserve",
-                    "check"
-                ]]
-            },
             "Contains": [[
                 "all data",
                 "appropriate security level"
@@ -4941,7 +4200,20 @@
             "Targets": [[
                 "check",
                 "all data"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "check",
+                    "all data",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "all data",
+                    "appropriate security level",
+                    "preserve",
+                    "check"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -4953,14 +4225,6 @@
                 "check",
                 "kept secure"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "kept secure",
-                    "data",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can check whether the data can be kept secure.",
             "Targets": [[
@@ -4977,19 +4241,6 @@
             ],
             "Action": ["know"],
             "Persona": ["data manager"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "security requirements",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "data",
-                    "security requirements",
-                    "preserve",
-                    "know"
-                ]]
-            },
             "Contains": [[
                 "data",
                 "security requirements"
@@ -5002,7 +4253,20 @@
             "Targets": [[
                 "know",
                 "security requirements"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know",
+                    "security requirements",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "data",
+                    "security requirements",
+                    "preserve",
+                    "know"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -5011,10 +4275,6 @@
         "Benefit": {
             "Entity": ["institutional data catalogue"],
             "Action": ["add"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can add them to an institutional data catalogue.",
             "Targets": []
@@ -5028,19 +4288,6 @@
             ],
             "Action": ["extract"],
             "Persona": ["institutional data steward"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "extract",
-                    "data sets",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": [[
-                    "external repositories",
-                    "data sets",
-                    "create;delete",
-                    "extract"
-                ]]
-            },
             "Contains": [[
                 "external repositories",
                 "data sets"
@@ -5053,7 +4300,20 @@
             "Targets": [[
                 "extract",
                 "data sets"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "extract",
+                    "data sets",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": [[
+                    "external repositories",
+                    "data sets",
+                    "create;delete",
+                    "extract"
+                ]]
+            }
         },
         "Mix": {
             "Contains": [
@@ -5074,21 +4334,6 @@
                 "sharing permissions"
             ],
             "Action": ["plan"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "plan",
-                        "right storage system",
-                        "create"
-                    ],
-                    [
-                        "plan",
-                        "sharing permissions",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can plan the right storage system and sharing permissions.",
             "Targets": [
@@ -5112,34 +4357,6 @@
             ],
             "Action": ["know"],
             "Persona": ["institutional data manager"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "know",
-                        "privacy",
-                        "preserve"
-                    ],
-                    [
-                        "know",
-                        "security requirements",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "data",
-                        "privacy",
-                        "preserve",
-                        "know"
-                    ],
-                    [
-                        "data",
-                        "security requirements",
-                        "preserve",
-                        "know"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "data",
@@ -5164,7 +4381,35 @@
                     "know",
                     "security requirements"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "know",
+                        "privacy",
+                        "preserve"
+                    ],
+                    [
+                        "know",
+                        "security requirements",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "data",
+                        "privacy",
+                        "preserve",
+                        "know"
+                    ],
+                    [
+                        "data",
+                        "security requirements",
+                        "preserve",
+                        "know"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -5176,14 +4421,6 @@
                 "see",
                 "share"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "share",
-                    "data manager posts",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can see if we could share data manager posts.",
             "Targets": [[
@@ -5202,19 +4439,6 @@
             ],
             "Action": ["see"],
             "Persona": ["researcher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "see",
-                    "sections",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "sections",
-                    "costing",
-                    "preserve",
-                    "see"
-                ]]
-            },
             "Contains": [
                 [
                     "sections",
@@ -5237,7 +4461,20 @@
             "Targets": [[
                 "see",
                 "sections"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "see",
+                    "sections",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "sections",
+                    "costing",
+                    "preserve",
+                    "see"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -5249,14 +4486,6 @@
                 "see",
                 "share"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "share",
-                    "data manager posts",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can see if we could share data manager posts.",
             "Targets": [[
@@ -5278,34 +4507,6 @@
                 "submitted"
             ],
             "Persona": ["researcher"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "see",
-                        "sections",
-                        "preserve"
-                    ],
-                    [
-                        "submitted",
-                        "roles",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "sections",
-                        "roles",
-                        "preserve",
-                        "see"
-                    ],
-                    [
-                        "other researchers",
-                        "roles",
-                        "create",
-                        "submitted"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "department",
@@ -5334,7 +4535,35 @@
                     "submitted",
                     "roles"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "see",
+                        "sections",
+                        "preserve"
+                    ],
+                    [
+                        "submitted",
+                        "roles",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "sections",
+                        "roles",
+                        "preserve",
+                        "see"
+                    ],
+                    [
+                        "other researchers",
+                        "roles",
+                        "create",
+                        "submitted"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -5346,14 +4575,6 @@
                 "see",
                 "share"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "share",
-                    "data manager posts",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can see if we could share data manager posts.",
             "Targets": [[
@@ -5375,34 +4596,6 @@
                 "submitted"
             ],
             "Persona": ["researcher"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "see",
-                        "sections",
-                        "preserve"
-                    ],
-                    [
-                        "submitted",
-                        "responsibilities",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "sections",
-                        "responsibilities",
-                        "preserve",
-                        "see"
-                    ],
-                    [
-                        "other researchers",
-                        "responsibilities",
-                        "create",
-                        "submitted"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "department",
@@ -5431,7 +4624,35 @@
                     "submitted",
                     "responsibilities"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "see",
+                        "sections",
+                        "preserve"
+                    ],
+                    [
+                        "submitted",
+                        "responsibilities",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "sections",
+                        "responsibilities",
+                        "preserve",
+                        "see"
+                    ],
+                    [
+                        "other researchers",
+                        "responsibilities",
+                        "create",
+                        "submitted"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -5447,32 +4668,6 @@
                 "ensure",
                 "support"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "ensure",
-                        "sufficient expertise",
-                        "preserve;forbid"
-                    ],
-                    [
-                        "support",
-                        "project",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "data management",
-                        "sufficient expertise",
-                        "preserve;forbid"
-                    ],
-                    [
-                        "project",
-                        "data management",
-                        "preserve"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "data management",
@@ -5504,19 +4699,6 @@
             ],
             "Action": ["see"],
             "Persona": ["faculty data steward"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "see",
-                    "sections",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "sections",
-                    "costing",
-                    "preserve",
-                    "see"
-                ]]
-            },
             "Contains": [[
                 "sections",
                 "costing"
@@ -5529,7 +4711,20 @@
             "Targets": [[
                 "see",
                 "sections"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "see",
+                    "sections",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "sections",
+                    "costing",
+                    "preserve",
+                    "see"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -5545,32 +4740,6 @@
                 "ensure",
                 "support"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "ensure",
-                        "sufficient expertise",
-                        "preserve;forbid"
-                    ],
-                    [
-                        "support",
-                        "project",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "data management",
-                        "sufficient expertise",
-                        "preserve;forbid"
-                    ],
-                    [
-                        "project",
-                        "data management",
-                        "preserve"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "data management",
@@ -5602,19 +4771,6 @@
             ],
             "Action": ["see"],
             "Persona": ["faculty data steward"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "see",
-                    "sections",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "sections",
-                    "roles",
-                    "preserve",
-                    "see"
-                ]]
-            },
             "Contains": [[
                 "sections",
                 "roles"
@@ -5627,7 +4783,20 @@
             "Targets": [[
                 "see",
                 "sections"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "see",
+                    "sections",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "sections",
+                    "roles",
+                    "preserve",
+                    "see"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -5643,32 +4812,6 @@
                 "ensure",
                 "support"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "support",
-                        "project",
-                        "preserve"
-                    ],
-                    [
-                        "ensure",
-                        "sufficient expertise",
-                        "preserve;forbid"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "project",
-                        "data management",
-                        "preserve"
-                    ],
-                    [
-                        "data management",
-                        "sufficient expertise",
-                        "preserve;forbid"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "data management",
@@ -5700,19 +4843,6 @@
             ],
             "Action": ["see"],
             "Persona": ["faculty data steward,"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "see",
-                    "sections",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "sections",
-                    "responsibilities",
-                    "preserve",
-                    "see"
-                ]]
-            },
             "Contains": [[
                 "sections",
                 "responsibilities"
@@ -5725,7 +4855,20 @@
             "Targets": [[
                 "see",
                 "sections"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "see",
+                    "sections",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "sections",
+                    "responsibilities",
+                    "preserve",
+                    "see"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -5734,14 +4877,6 @@
         "Benefit": {
             "Entity": ["data"],
             "Action": ["reuse"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "reuse",
-                    "data",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "it is legal to reuse the data.",
             "Targets": [[
@@ -5761,26 +4896,6 @@
                 "re-using"
             ],
             "Persona": ["data manager"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "clarify",
-                        "necessary rights",
-                        "create;delete"
-                    ],
-                    [
-                        "re-using",
-                        "data",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "data",
-                    "necessary rights",
-                    "create;delete",
-                    "clarify"
-                ]]
-            },
             "Contains": [[
                 "data",
                 "necessary rights"
@@ -5799,7 +4914,27 @@
                     "re-using",
                     "data"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "clarify",
+                        "necessary rights",
+                        "create;delete"
+                    ],
+                    [
+                        "re-using",
+                        "data",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "data",
+                    "necessary rights",
+                    "create;delete",
+                    "clarify"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -5815,25 +4950,6 @@
                 "use",
                 "understand"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "use",
-                        "data",
-                        "preserve"
-                    ],
-                    [
-                        "understand",
-                        "rights of use",
-                        "preserve;create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "data",
-                    "rights of use",
-                    "preserve"
-                ]]
-            },
             "Contains": [[
                 "data",
                 "rights of use"
@@ -5864,21 +4980,6 @@
                 "share"
             ],
             "Persona": ["researcher"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "record",
-                        "intention",
-                        "create"
-                    ],
-                    [
-                        "share",
-                        "data i have collected",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [[
                 "particular licence",
                 "terms"
@@ -5897,7 +4998,22 @@
                     "share",
                     "data I have collected"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "record",
+                        "intention",
+                        "create"
+                    ],
+                    [
+                        "share",
+                        "data i have collected",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -5915,30 +5031,6 @@
                 "participating",
                 "still ensure"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "participating",
-                        "research",
-                        "create"
-                    ],
-                    [
-                        "still ensure",
-                        "reusability of data",
-                        "preserve;forbid"
-                    ],
-                    [
-                        "protect",
-                        "privacy",
-                        "create;preserve;forbid"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "people",
-                    "privacy",
-                    "create;preserve;forbid"
-                ]]
-            },
             "Contains": [[
                 "people",
                 "privacy"
@@ -5965,14 +5057,6 @@
             "Entity": ["anonymization of data"],
             "Action": ["plan"],
             "Persona": ["data manager"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "plan",
-                    "anonymization of data",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As a data manager, I want to plan the anonymization of data, ",
             "Triggers": [[
@@ -5982,7 +5066,15 @@
             "Targets": [[
                 "plan",
                 "anonymization of data"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "plan",
+                    "anonymization of data",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -5991,14 +5083,6 @@
         "Benefit": {
             "Entity": ["multilingual data archive"],
             "Action": ["allow"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "allow",
-                    "multilingual data archive",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can allow for multilingual data archive.",
             "Targets": [[
@@ -6015,19 +5099,6 @@
             ],
             "Action": ["have"],
             "Persona": ["repository manager"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "metadata",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "metadata",
-                    "additional languages",
-                    "preserve",
-                    "have"
-                ]]
-            },
             "Contains": [[
                 "metadata",
                 "additional languages"
@@ -6040,7 +5111,20 @@
             "Targets": [[
                 "have",
                 "metadata"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "metadata",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "metadata",
+                    "additional languages",
+                    "preserve",
+                    "have"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -6049,14 +5133,6 @@
         "Benefit": {
             "Entity": ["required next steps"],
             "Action": ["proceed"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "proceed",
-                    "required next steps",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can proceed with the required next steps.",
             "Targets": [[
@@ -6073,14 +5149,6 @@
                 "approved"
             ],
             "Persona": ["data manager"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "approved",
-                    "dmp",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G22# As a data manager, I want to know whether the DMP was approved, ",
             "Triggers": [[
@@ -6090,7 +5158,15 @@
             "Targets": [[
                 "approved",
                 "DMP"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "approved",
+                    "dmp",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     }

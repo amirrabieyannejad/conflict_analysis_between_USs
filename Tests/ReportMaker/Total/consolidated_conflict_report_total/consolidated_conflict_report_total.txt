@@ -1,0 +1,221 @@
+
+
+********************* << Dataset: consolidated_conflict_report_total >> ***************
+* Table of potential conflict between user stories
+
+       us_07  us_91  us_13  us_14  us_45  us_46  us_47  us_28  us_29  us_31  us_32  us_33  us_48  us_06  
+us_07         x                                                                                          
+us_91  x                                                                                                 
+us_13                       x                                                                            
+us_14                x                                                                                   
+us_45                                     x                                                              
+us_46                              x             x                                         x      x      
+us_47                                     x                                                              
+us_28                                                          x                                         
+us_29                                                   x                                                
+us_31                                                                        x      x                    
+us_32                                                                 x             x                    
+us_33                                                                 x      x                           
+us_48                                     x                                                              
+us_06                                     x                                                              
+
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_07_AND_user_story_91}
+  
+ Affected Resource of US1 is: << fee >>
+
+ Action of user_story_07 is: << pay >>  which is annotated with: << delete >>
+ Action of user_story_91 is: << be charged >>  which is annotated with: << preserve >>
+
+ Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_07: #G03# As an Applicant, i want to #pay# #fee#, 
+
+   user_story_91: #G10# As a CSM, i want to #be charged# a #fee# once i am approved for practitioner status, 
+
+Original texts of user stories are: 
+   user_story_07: #G03# As an Applicant, I want to Pay Fee, so that I can satisfy outstanding charge associated with the service requested or received from the County.
+
+   user_story_91: #G10# As a CSM, I want to be charged a fee once I am approved for Practitioner status, so that my certification status can be activated.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_13_AND_user_story_14}
+  
+ Affected Resource of US1 is: << hold >>
+
+ Action of user_story_13 is: << apply >>  which is annotated with: << preserve >>
+ Action of user_story_14 is: << remove >>  which is annotated with: << delete >>
+
+ Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_13: #G03# As a Staff member, i want to #apply# a #hold#, 
+
+   user_story_14: #G03# As a Staff member, i want to #remove# a #hold#, 
+
+Original texts of user stories are: 
+   user_story_13: #G03# As a Staff member, I want to Apply a Hold, so that I can prevent progression through the workflow or other actions in the system until the issue is resolved.
+
+   user_story_14: #G03# As a Staff member, I want to Remove a Hold, so that I can allow progression through the workflow or other actions in the system now that the issue has been resolved.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_45_AND_user_story_46}
+  
+ Affected Resource of US1 is: << data >>
+
+ Action of user_story_45 is: << validate >>  which is annotated with: << preserve >>
+ Action of user_story_46 is: << update >>  which is annotated with: << delete >>
+
+ Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_45: #G08# As a ResearcherPublisher, i want #validate# my #data# with a minimum of clicks, 
+
+   user_story_46: #G08# As a publisher, i want to be able to check that every time i #update# my #data# it is still good, 
+
+Original texts of user stories are: 
+   user_story_45: #G08# As a ResearcherPublisher, I want validate my data with a minimum of clicks, so that I can feel trust in the validity and usefulness of the data.
+
+   user_story_46: #G08# As a publisher, I want to be able to check that every time I update my data it is still good, so that I can catch errors early and store reliable data.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_46_AND_user_story_47}
+  
+ Affected Resource of US1 is: << data >>
+
+ Action of user_story_46 is: << update >>  which is annotated with: << delete >>
+ Action of user_story_47 is: << validate >>  which is annotated with: << preserve >>
+
+ Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_46: #G08# As a publisher, i want to be able to check that every time i #update# my #data# it is still good, 
+
+   user_story_47: #G08# As a DeveloperWrangler, i want to use a command line tool that allows met to #validate# #data#, 
+
+Original texts of user stories are: 
+   user_story_46: #G08# As a publisher, I want to be able to check that every time I update my data it is still good, so that I can catch errors early and store reliable data.
+
+   user_story_47: #G08# As a DeveloperWrangler, I want to use a command line tool that allows met to validate data, so that I can feel trust in the validity and usefulness of the data quickly and in the context of my command line workflow.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_28_AND_user_story_29}
+  
+ Affected Resource of US1 is: << events >>
+
+ Action of user_story_28 is: << update >>  which is annotated with: << delete >>
+ Action of user_story_29 is: << delete >>  which is annotated with: << delete >>
+
+ Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_28: #G10# As a trainer, i want to #update# one of my existing courses or #events#, 
+
+   user_story_29: #G10# As a trainer, i want to #delete# one of my courses or #events#, 
+
+Original texts of user stories are: 
+   user_story_28: #G10# As a trainer, I want to update one of my existing courses or events, so that it reflects accurate information.
+
+   user_story_29: #G10# As a trainer, I want to delete one of my courses or events, so that it's no longer listed if I cancel for some reason.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_31_AND_user_story_32}
+  
+ Affected Resource of US1 is: << any course >>
+
+ Action of user_story_31 is: << delete >>  which is annotated with: << delete >>
+ Action of user_story_32 is: << update >>  which is annotated with: << delete >>
+
+ Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_31: #G10# As a site admin, i want to #delete# #any course# or event, 
+
+   user_story_32: #G10# As a site editor, i want to #update# #any course# or event, 
+
+Original texts of user stories are: 
+   user_story_31: #G10# As a site admin, I want to delete any course or event, so that I can remove things that will no longer occur.
+
+   user_story_32: #G10# As a site editor, I want to update any course or event, so that I can fix things the original author hasn't.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_32_AND_user_story_33}
+  
+ Affected Resource of US1 is: << event >>
+
+ Action of user_story_32 is: << update >>  which is annotated with: << delete >>
+ Action of user_story_33 is: << turn >>  which is annotated with: << preserve >>
+
+ Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_32: #G10# As a site editor, i want to #update# any course or #event#, 
+
+   user_story_33: #G10# As a trainer, i want to #turn# a course into an #event# or an #event# into a course, 
+
+Original texts of user stories are: 
+   user_story_32: #G10# As a site editor, I want to update any course or event, so that I can fix things the original author hasn't.
+
+   user_story_33: #G10# As a trainer, I want to turn a course into an event or an event into a course, so that I can correctly classify anything that was entered incorrectly.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_46_AND_user_story_48}
+  
+ Affected Resource of US1 is: << data >>
+
+ Action of user_story_46 is: << update >>  which is annotated with: << delete >>
+ Action of user_story_48 is: << validates >>  which is annotated with: << preserve >>
+
+ Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_46: #G08# As a publisher, i want to be able to check that every time i #update# my #data# it is still good, 
+
+   user_story_48: #G08# As a developer, i want an online service that is connected to my #data# repository that #validates# #data# on update, 
+
+Original texts of user stories are: 
+   user_story_46: #G08# As a publisher, I want to be able to check that every time I update my data it is still good, so that I can catch errors early and store reliable data.
+
+   user_story_48: #G08# As a developer, I want an online service that is connected to my data repository that validates data on update, so that I can delegate data validation to a third party.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_31_AND_user_story_33}
+  
+ Affected Resource of US1 is: << event >>
+
+ Action of user_story_31 is: << delete >>  which is annotated with: << delete >>
+ Action of user_story_33 is: << turn >>  which is annotated with: << preserve >>
+
+ Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_31: #G10# As a site admin, i want to #delete# any course or #event#, 
+
+   user_story_33: #G10# As a trainer, i want to #turn# a course into an #event# or an #event# into a course, 
+
+Original texts of user stories are: 
+   user_story_31: #G10# As a site admin, I want to delete any course or event, so that I can remove things that will no longer occur.
+
+   user_story_33: #G10# As a trainer, I want to turn a course into an event or an event into a course, so that I can correctly classify anything that was entered incorrectly.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_06_AND_user_story_46}
+  
+ Affected Resource of US1 is: << data >>
+
+ Action of user_story_06 is: << know >>  which is annotated with: << preserve >>
+ Action of user_story_46 is: << update >>  which is annotated with: << delete >>
+
+ Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_06: #G08# As a ResearcherPublisher, i want to #know# that my #data# conforms to its #data# package profile, 
+
+   user_story_46: #G08# As a publisher, i want to be able to check that every time i #update# my #data# it is still good, 
+
+Original texts of user stories are: 
+   user_story_06: #G08# As a ResearcherPublisher, I want to know that my data conforms to its Data Package profile, so that I can feel trust in the validity and usefulness of the data.
+
+   user_story_46: #G08# As a publisher, I want to be able to check that every time I update my data it is still good, so that I can catch errors early and store reliable data.

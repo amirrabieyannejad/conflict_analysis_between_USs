@@ -3,188 +3,50 @@
 ********************* << Dataset: g25_duraspace >> ***************
 * Table of potential conflict between user stories
 
-        us_04  us_08  us_80  us_81  us_30  us_85  us_98  us_100  us_74  us_10  us_17  us_75  us_29  us_72  us_71  us_77  us_31  us_12  us_11  us_27  us_35  us_13  us_57  us_47  us_63  us_87  us_65  us_28  us_64  us_18  us_60  us_66  us_34  us_56  us_94  us_67  us_48  us_89  us_93  us_69  
-us_04          x                                                                                                                                                                                                                                                                                 
-us_08   x                                                        x      x             x             x      x                    x      x                    x      x                           x             x             x                                  x                           x      
-us_80                        x                                                                                                                                                                                                                                                                   
-us_81                 x                                                                                                                                                                                                                                                                          
-us_30                                      x                                                                                                                                                                                                                                                     
-us_85                               x                                          x             x                    x      x                    x      x                    x      x      x             x             x             x      x      x      x             x                           
-us_98                                                    x                                                                                                                                                                                                                                       
-us_100                                            x                                                                                                                                                                                                                                              
-us_74          x                                                                                                                                                                                                                                                                                 
-us_10          x                                                                                                                                                                                                                                                                                 
-us_17                                      x                                                                                                                                                                                                                                                     
-us_75          x                                                                                                                                                                                                                                                                                 
-us_29                                      x                                                                                                                                                                                                                                                     
-us_72          x                                                                                                                                                                                                                                                                                 
-us_71          x                                                                                                                                                                                                                                                                                 
-us_77                                      x                                                                                                                                                                                                                                                     
-us_31                                      x                                                                                                                                                                                                                                                     
-us_12          x                                                                                                                                                                                                                                                                                 
-us_11          x                                                                                                                                                                                                                                                                                 
-us_27                                      x                                                                                                                                                                                                                                                     
-us_35                                      x                                                                                                                                                                                                                                                     
-us_13          x                                                                                                                                                                                                                                                                                 
-us_57          x                                                                                                                                                                                                                                                                                 
-us_47                                      x                                                                                                                                                                                                                                                     
-us_63                                      x                                                                                                                                                                                                                                                     
-us_87                                      x                                                                                                                                                                                                                                                     
-us_65          x                                                                                                                                                                                                                                                                                 
-us_28                                      x                                                                                                                                                                                                                                                     
-us_64          x                                                                                                                                                                                                                                                                                 
-us_18                                      x                                                                                                                                                                                                                                                     
-us_60          x                                                                                                                                                                                                                                                                                 
-us_66                                      x                                                                                                                                                                                                                                                     
-us_34                                      x                                                                                                                                                                                                                                                     
-us_56                                      x                                                                                                                                                                                                                                                     
-us_94                                      x                                                                                                                                                                                                                                                     
-us_67          x                                                                                                                                                                                                                                                                                 
-us_48                                      x                                                                                                                                                                                                                                                     
-us_89                                                                                                                                                                                                                                                                              x             
-us_93                                                                                                                                                                                                                                                                       x                    
-us_69          x                                                                                                                                                                                                                                                                                 
+       us_19  us_85  us_08  us_10  us_64  us_80  us_81  us_22  us_89  us_93  us_53  
+us_19         x                                                                     
+us_85  x                                                x                           
+us_08                       x      x                                                
+us_10                x                                                              
+us_64                x                                                              
+us_80                                            x                           x      
+us_81                                     x                                  x      
+us_22         x                                                                     
+us_89                                                                 x             
+us_93                                                          x                    
+us_53                                     x      x                                  
 
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_04_AND_user_story_08}
+{user_story_19_AND_user_story_85}
   
-Affected Resource of US1 is: << objects >>
-Affected Resource of US2 is: << collection >>
-Affected Contain Resource US1 is: << objects >>
-Affected Resource US2 is: << objects >>
-Contain Resources for: user_story_04: << [["dams","collections","create","list"],["library unit","collections","create","list"],["dams","objects","create","list"],["library unit","objects","create","list"]] >>
-Contain Resources for: user_story_08: << [["collection","items","preserve;forbid","limiting"],["collection","other collections","preserve;forbid","limiting"],["collection","objects","preserve;forbid","limiting"],["part of a collection","singular provenance","create","represent"]] >>
+ Affected Resource of US1 is: << object >>
+ Affected Contain Entity US2 is: << copyright status >>
 
- Action of user_story_04 is: << list >>  which is annotated with: << create >>
- Action of user_story_08 is: << limiting >>  which is annotated with: << forbid >>
-
-Conflict Reason is: << create-forbid-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_04: #G25# As a user, i want to #list# all the collections and #objects# in the dams that belong to a library unit.
-
-   user_story_08: #G25# As a repository manager, i want to compose collections, #limiting# the #collection# to the items sharing the same provenance, #limiting# the #collection# to represent a part of a #collection# have a singular provenance, or assembly a #collection# from other collections and #objects#.
-
-Original texts of user stories are: 
-   user_story_04: #G25# As a user, I want to list all the collections and objects in the DAMS that belong to a library unit.
-
-   user_story_08: #G25# As a repository manager, I want to compose collections, limiting the collection to the items sharing the same provenance, limiting the collection to represent a part of a collection have a singular provenance, or assembly a collection from other collections and objects.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_80_AND_user_story_81}
-  
-Affected Resource of US1 is: << checksum >>
-Affected Resource of US2 is: << all files >>
-Affected Contain Resource US1 is: << checksum >>
-Affected Resource US2 is: << checksum >>
-Contain Resources for: user_story_80: << [["repository's content files","checksum","create;delete","changed"]] >>
-Contain Resources for: user_story_81: << [["all files","checksum","preserve","know"]] >>
-
- Action of user_story_80 is: << changed >>  which is annotated with: << delete >>
- Action of user_story_81 is: << know >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_80: #G25# As a repository manager, i want to know if the #checksum# for any of my repository's content files that have #changed#.
-
-   user_story_81: #G25# As a DAMS manager, i want to #know#, via the preservation manager, of #all files# for which the #checksum# has changed since last registered.
-
-Original texts of user stories are: 
-   user_story_80: #G25# As a repository manager, I want to know if the checksum for any of my repository's content files that have changed.
-
-   user_story_81: #G25# As a DAMS manager, I want to know, via the preservation manager, of all files for which the checksum has changed since last registered.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_30_AND_user_story_85}
-  
-Affected Resource of US1 is: << repository >>
-Affected Resource of US2 is: << copyright status >>
-Affected Contain Resource US1 is: << object >>
-Affected Resource US2 is: << object >>
-Contain Resources for: user_story_30: << [["repository","object","preserve","know"]] >>
-Contain Resources for: user_story_85: << [["object","copyright status","create;delete","modified"],["object component","copyright status","create;delete","modified"]] >>
-
- Action of user_story_30 is: << know >>  which is annotated with: << preserve >>
+ Action of user_story_19 is: << describe >>  which is annotated with: << preserve >>
  Action of user_story_85 is: << modified >>  which is annotated with: << delete >>
 
-Conflict Reason is: << preserve-delete-Conflict >>
+ Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_30: #G25# As a user, i want to #know# what #repository# an #object# belongs to.
+   user_story_19: #G25# As a repository manager, i want to #describe# an #object#, including its title, date(s), language(s), and other aspects.
 
    user_story_85: #G25# As a DAMS manager, i want to know when the #copyright status# for an #object# or #object# component is #modified#, either manually or automatically.
 
 Original texts of user stories are: 
-   user_story_30: #G25# As a user, I want to know what repository an object belongs to.
+   user_story_19: #G25# As a repository manager, I want to describe an object, including its title, date(s), language(s), and other aspects.
 
    user_story_85: #G25# As a DAMS manager, I want to know when the copyright status for an object or object component is modified, either manually or automatically.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_98_AND_user_story_100}
-  
-Affected Resource of US1 is: << event >>
-Affected Resource of US2 is: << outcome >>
-Affected Contain Resource US1 is: << event >>
-Affected Resource US2 is: << event >>
-Contain Resources for: user_story_98: << [] >>
-Contain Resources for: user_story_100: << [["event","outcome","preserve","know"]] >>
-
- Action of user_story_98 is: << carrying out >>  which is annotated with: << delete >>
- Action of user_story_100 is: << know >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_98: #G25# As a DAMS manager, i want to know the agent(s) responsible for #carrying out# an #event#.
-
-   user_story_100: #G25# As a DAMS manager, i want to #know# the #outcome# of the #event#, e.g., object nn was deleted.
-
-Original texts of user stories are: 
-   user_story_98: #G25# As a DAMS manager, I want to know the agent(s) responsible for carrying out an event.
-
-   user_story_100: #G25# As a DAMS manager, I want to know the outcome of the event, e.g., object NN was deleted.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_08_AND_user_story_74}
-  
-Affected Resource of US1 is: << collection >>
-Affected Resource of US2 is: << all subjects >>
-Affected Contain Resource US1 is: << collection >>
-Affected Resource US2 is: << collection >>
-Contain Resources for: user_story_08: << [["collection","items","preserve;forbid","limiting"],["collection","other collections","preserve;forbid","limiting"],["collection","objects","preserve;forbid","limiting"],["part of a collection","singular provenance","create","represent"]] >>
-Contain Resources for: user_story_74: << [["collection","all subjects","create","indicate"],["object","all subjects","create","indicate"],["object component","all subjects","create","indicate"]] >>
-
- Action of user_story_08 is: << limiting >>  which is annotated with: << forbid >>
- Action of user_story_74 is: << indicate >>  which is annotated with: << create >>
-
-Conflict Reason is: << forbid-create-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_08: #G25# As a repository manager, i want to compose collections, #limiting# the #collection# to the items sharing the same provenance, #limiting# the #collection# to represent a part of a #collection# have a singular provenance, or assembly a #collection# from other collections and objects.
-
-   user_story_74: #G25# As a repository manager, i want to #indicate# #all subjects# that are pertinent to a #collection#, object, or object component.
-
-Original texts of user stories are: 
-   user_story_08: #G25# As a repository manager, I want to compose collections, limiting the collection to the items sharing the same provenance, limiting the collection to represent a part of a collection have a singular provenance, or assembly a collection from other collections and objects.
-
-   user_story_74: #G25# As a repository manager, I want to indicate all subjects that are pertinent to a collection, object, or object component.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_08_AND_user_story_10}
   
-Affected Resource of US1 is: << collection >>
-Affected Resource of US2 is: << collection >>
-Affected Contain Resource US1 is: << collection >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_08: << [["collection","items","preserve;forbid","limiting"],["collection","other collections","preserve;forbid","limiting"],["collection","objects","preserve;forbid","limiting"],["part of a collection","singular provenance","create","represent"]] >>
-Contain Resources for: user_story_10: << [["collection","title","create","describe"],["collection","inclusive / bulk dates","create","describe"],["collection","language(s)","create","describe"],["collection","many other aspects","create","describe"]] >>
+ Affected Resource of US1 is: << collection >>
 
  Action of user_story_08 is: << limiting >>  which is annotated with: << forbid >>
  Action of user_story_10 is: << describe >>  which is annotated with: << create >>
 
-Conflict Reason is: << forbid-create-Conflict >>
+ Conflict Reason is: << forbid-create-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_08: #G25# As a repository manager, i want to compose collections, #limiting# the #collection# to the items sharing the same provenance, #limiting# the #collection# to represent a part of a #collection# have a singular provenance, or assembly a #collection# from other collections and objects.
@@ -197,469 +59,15 @@ Original texts of user stories are:
    user_story_10: #G25# As a repository manager, I want to describe a collection, including its title, it's inclusive / bulk dates, its language(s), and many other aspects.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_17_AND_user_story_85}
-  
-Affected Resource of US1 is: << components >>
-Affected Resource of US2 is: << copyright status >>
-Affected Contain Resource US1 is: << object >>
-Affected Resource US2 is: << object >>
-Contain Resources for: user_story_17: << [["object","components","preserve","know"]] >>
-Contain Resources for: user_story_85: << [["object","copyright status","create;delete","modified"],["object component","copyright status","create;delete","modified"]] >>
-
- Action of user_story_17 is: << know >>  which is annotated with: << preserve >>
- Action of user_story_85 is: << modified >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_17: #G25# As a repository manager, i want #know# all the #components# belonging to an #object#.
-
-   user_story_85: #G25# As a DAMS manager, i want to know when the #copyright status# for an #object# or #object# component is #modified#, either manually or automatically.
-
-Original texts of user stories are: 
-   user_story_17: #G25# As a repository manager, I want know all the components belonging to an object.
-
-   user_story_85: #G25# As a DAMS manager, I want to know when the copyright status for an object or object component is modified, either manually or automatically.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_08_AND_user_story_75}
-  
-Affected Resource of US1 is: << objects >>
-Affected Resource of US2 is: << objects >>
-Affected Contain Resource US1 is: << collection >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_08: << [["collection","items","preserve;forbid","limiting"],["collection","other collections","preserve;forbid","limiting"],["collection","objects","preserve;forbid","limiting"],["part of a collection","singular provenance","create","represent"]] >>
-Contain Resources for: user_story_75: << [["collections","headings","preserve;create","search"],["collections","title","preserve;create","search"],["collections","topic","preserve;create","search"],["collections","genre","preserve;create","search"],["collections","form","preserve;create","search"],["collections","geographical name","preserve;create","search"],["collections","function","preserve;create","search"],["collections","occupation","preserve;create","search"],["collections","name","preserve;create","search"],["collections","cartographics","preserve;create","search"],["objects","headings","preserve;create","search"],["objects","title","preserve;create","search"],["objects","topic","preserve;create","search"],["objects","genre","preserve;create","search"],["objects","form","preserve;create","search"],["objects","geographical name","preserve;create","search"],["objects","function","preserve;create","search"],["objects","occupation","preserve;create","search"],["objects","name","preserve;create","search"],["objects","cartographics","preserve;create","search"],["object components","headings","preserve;create","search"],["object components","title","preserve;create","search"],["object components","topic","preserve;create","search"],["object components","genre","preserve;create","search"],["object components","form","preserve;create","search"],["object components","geographical name","preserve;create","search"],["object components","function","preserve;create","search"],["object components","occupation","preserve;create","search"],["object components","name","preserve;create","search"],["object components","cartographics","preserve;create","search"]] >>
-
- Action of user_story_08 is: << limiting >>  which is annotated with: << forbid >>
- Action of user_story_75 is: << search >>  which is annotated with: << create >>
-
-Conflict Reason is: << forbid-create-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_08: #G25# As a repository manager, i want to compose collections, #limiting# the collection to the items sharing the same provenance, #limiting# the collection to represent a part of a collection have a singular provenance, or assembly a collection from other collections and #objects#.
-
-   user_story_75: #G25# As a user, i want to #search# for collections, #objects#, and object components by pertinent such headings, including title, topic, genre/form, geographical name, function, occupation, name, cartographics, etc.
-
-Original texts of user stories are: 
-   user_story_08: #G25# As a repository manager, I want to compose collections, limiting the collection to the items sharing the same provenance, limiting the collection to represent a part of a collection have a singular provenance, or assembly a collection from other collections and objects.
-
-   user_story_75: #G25# As a user, I want to search for collections, objects, and object components by pertinent such headings, including title, topic, genre/form, geographical name, function, occupation, name, cartographics, etc.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_29_AND_user_story_85}
-  
-Affected Resource of US1 is: << collection(s) >>
-Affected Resource of US2 is: << copyright status >>
-Affected Contain Resource US1 is: << object >>
-Affected Resource US2 is: << object >>
-Contain Resources for: user_story_29: << [["collection(s)","object","preserve","know"]] >>
-Contain Resources for: user_story_85: << [["object","copyright status","create;delete","modified"],["object component","copyright status","create;delete","modified"]] >>
-
- Action of user_story_29 is: << know >>  which is annotated with: << preserve >>
- Action of user_story_85 is: << modified >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_29: #G25# As a DAMS manager, i want to #know# what collection(s) an #object# belongs to.
-
-   user_story_85: #G25# As a DAMS manager, i want to know when the #copyright status# for an #object# or #object# component is #modified#, either manually or automatically.
-
-Original texts of user stories are: 
-   user_story_29: #G25# As a DAMS manager, I want to know what collection(s) an object belongs to.
-
-   user_story_85: #G25# As a DAMS manager, I want to know when the copyright status for an object or object component is modified, either manually or automatically.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_08_AND_user_story_72}
-  
-Affected Resource of US1 is: << collection >>
-Affected Resource of US2 is: << name >>
-Affected Contain Resource US1 is: << collection >>
-Affected Resource US2 is: << collection >>
-Contain Resources for: user_story_08: << [["collection","items","preserve;forbid","limiting"],["collection","other collections","preserve;forbid","limiting"],["collection","objects","preserve;forbid","limiting"],["part of a collection","singular provenance","create","represent"]] >>
-Contain Resources for: user_story_72: << [["name","specific role","create","indicate"],["collection","name","create","indicate"],["object","name","create","indicate"],["object component","name","create","indicate"]] >>
-
- Action of user_story_08 is: << limiting >>  which is annotated with: << forbid >>
- Action of user_story_72 is: << indicate >>  which is annotated with: << create >>
-
-Conflict Reason is: << forbid-create-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_08: #G25# As a repository manager, i want to compose collections, #limiting# the #collection# to the items sharing the same provenance, #limiting# the #collection# to represent a part of a #collection# have a singular provenance, or assembly a #collection# from other collections and objects.
-
-   user_story_72: #G25# As a repository manager, i want to #indicate# that a #name# pertinent to a #collection#, object, or object component has a specific role, such as illustrator, photographer, etc.
-
-Original texts of user stories are: 
-   user_story_08: #G25# As a repository manager, I want to compose collections, limiting the collection to the items sharing the same provenance, limiting the collection to represent a part of a collection have a singular provenance, or assembly a collection from other collections and objects.
-
-   user_story_72: #G25# As a repository manager, I want to indicate that a name pertinent to a collection, object, or object component has a specific role, such as illustrator, photographer, etc.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_08_AND_user_story_71}
-  
-Affected Resource of US1 is: << objects >>
-Affected Resource of US2 is: << objects >>
-Affected Contain Resource US1 is: << collection >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_08: << [["collection","items","preserve;forbid","limiting"],["collection","other collections","preserve;forbid","limiting"],["collection","objects","preserve;forbid","limiting"],["part of a collection","singular provenance","create","represent"]] >>
-Contain Resources for: user_story_71: << [["collections","name","preserve;create","search"],["objects","name","preserve;create","search"]] >>
-
- Action of user_story_08 is: << limiting >>  which is annotated with: << forbid >>
- Action of user_story_71 is: << search >>  which is annotated with: << create >>
-
-Conflict Reason is: << forbid-create-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_08: #G25# As a repository manager, i want to compose collections, #limiting# the collection to the items sharing the same provenance, #limiting# the collection to represent a part of a collection have a singular provenance, or assembly a collection from other collections and #objects#.
-
-   user_story_71: #G25# As a user, i want to #search# by for collections and #objects# by name.
-
-Original texts of user stories are: 
-   user_story_08: #G25# As a repository manager, I want to compose collections, limiting the collection to the items sharing the same provenance, limiting the collection to represent a part of a collection have a singular provenance, or assembly a collection from other collections and objects.
-
-   user_story_71: #G25# As a user, I want to search by for collections and objects by name.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_77_AND_user_story_85}
-  
-Affected Resource of US1 is: << geographical context >>
-Affected Resource of US2 is: << copyright status >>
-Affected Contain Resource US1 is: << object >>
-Affected Resource US2 is: << object >>
-Contain Resources for: user_story_77: << [["collection","geographical context","preserve","see"],["object","geographical context","preserve","see"],["object component","geographical context","preserve","see"]] >>
-Contain Resources for: user_story_85: << [["object","copyright status","create;delete","modified"],["object component","copyright status","create;delete","modified"]] >>
-
- Action of user_story_77 is: << see >>  which is annotated with: << preserve >>
- Action of user_story_85 is: << modified >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_77: #G25# As a user, i want to #see# the #geographical context# of a collection, #object#, or #object# component, where pertinent.
-
-   user_story_85: #G25# As a DAMS manager, i want to know when the #copyright status# for an #object# or #object# component is #modified#, either manually or automatically.
-
-Original texts of user stories are: 
-   user_story_77: #G25# As a user, I want to see the geographical context of a collection, object, or object component, where pertinent.
-
-   user_story_85: #G25# As a DAMS manager, I want to know when the copyright status for an object or object component is modified, either manually or automatically.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_31_AND_user_story_85}
-  
-Affected Resource of US1 is: << collection(s) >>
-Affected Resource of US2 is: << copyright status >>
-Affected Contain Resource US1 is: << object >>
-Affected Resource US2 is: << object >>
-Contain Resources for: user_story_31: << [["collection(s)","object","preserve","know"]] >>
-Contain Resources for: user_story_85: << [["object","copyright status","create;delete","modified"],["object component","copyright status","create;delete","modified"]] >>
-
- Action of user_story_31 is: << know >>  which is annotated with: << preserve >>
- Action of user_story_85 is: << modified >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_31: #G25# As a user, i want to #know# what collection(s) an #object# belongs to.
-
-   user_story_85: #G25# As a DAMS manager, i want to know when the #copyright status# for an #object# or #object# component is #modified#, either manually or automatically.
-
-Original texts of user stories are: 
-   user_story_31: #G25# As a user, I want to know what collection(s) an object belongs to.
-
-   user_story_85: #G25# As a DAMS manager, I want to know when the copyright status for an object or object component is modified, either manually or automatically.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_08_AND_user_story_12}
-  
-Affected Resource of US1 is: << collection >>
-Affected Resource of US2 is: << subjects >>
-Affected Contain Resource US1 is: << collection >>
-Affected Resource US2 is: << collection >>
-Contain Resources for: user_story_08: << [["collection","items","preserve;forbid","limiting"],["collection","other collections","preserve;forbid","limiting"],["collection","objects","preserve;forbid","limiting"],["part of a collection","singular provenance","create","represent"]] >>
-Contain Resources for: user_story_12: << [["collection","subjects","create","indicate"]] >>
-
- Action of user_story_08 is: << limiting >>  which is annotated with: << forbid >>
- Action of user_story_12 is: << indicate >>  which is annotated with: << create >>
-
-Conflict Reason is: << forbid-create-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_08: #G25# As a repository manager, i want to compose collections, #limiting# the #collection# to the items sharing the same provenance, #limiting# the #collection# to represent a part of a #collection# have a singular provenance, or assembly a #collection# from other collections and objects.
-
-   user_story_12: #G25# As a repository manager, i want to #indicate# #subjects# related to the #collection#.
-
-Original texts of user stories are: 
-   user_story_08: #G25# As a repository manager, I want to compose collections, limiting the collection to the items sharing the same provenance, limiting the collection to represent a part of a collection have a singular provenance, or assembly a collection from other collections and objects.
-
-   user_story_12: #G25# As a repository manager, I want to indicate subjects related to the collection.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_08_AND_user_story_11}
-  
-Affected Resource of US1 is: << collection >>
-Affected Resource of US2 is: << names >>
-Affected Contain Resource US1 is: << collection >>
-Affected Resource US2 is: << collection >>
-Contain Resources for: user_story_08: << [["collection","items","preserve;forbid","limiting"],["collection","other collections","preserve;forbid","limiting"],["collection","objects","preserve;forbid","limiting"],["part of a collection","singular provenance","create","represent"]] >>
-Contain Resources for: user_story_11: << [["collection","names","create","indicate"],["names","creator","create","indicate"],["names","source","create","indicate"],["names","subject","create","indicate"]] >>
-
- Action of user_story_08 is: << limiting >>  which is annotated with: << forbid >>
- Action of user_story_11 is: << indicate >>  which is annotated with: << create >>
-
-Conflict Reason is: << forbid-create-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_08: #G25# As a repository manager, i want to compose collections, #limiting# the #collection# to the items sharing the same provenance, #limiting# the #collection# to represent a part of a #collection# have a singular provenance, or assembly a #collection# from other collections and objects.
-
-   user_story_11: #G25# As a repository manager, i want to #indicate# #names# related to the #collection# either as creator, source, or subject.
-
-Original texts of user stories are: 
-   user_story_08: #G25# As a repository manager, I want to compose collections, limiting the collection to the items sharing the same provenance, limiting the collection to represent a part of a collection have a singular provenance, or assembly a collection from other collections and objects.
-
-   user_story_11: #G25# As a repository manager, I want to indicate names related to the collection either as creator, source, or subject.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_27_AND_user_story_85}
-  
-Affected Resource of US1 is: << all events >>
-Affected Resource of US2 is: << copyright status >>
-Affected Contain Resource US1 is: << object >>
-Affected Resource US2 is: << object >>
-Contain Resources for: user_story_27: << [["object","all events","preserve","know"]] >>
-Contain Resources for: user_story_85: << [["object","copyright status","create;delete","modified"],["object component","copyright status","create;delete","modified"]] >>
-
- Action of user_story_27 is: << know >>  which is annotated with: << preserve >>
- Action of user_story_85 is: << modified >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_27: #G25# As a repository manager, i want to #know# #all events# done to an #object# over the #object#'s life cycle.
-
-   user_story_85: #G25# As a DAMS manager, i want to know when the #copyright status# for an #object# or #object# component is #modified#, either manually or automatically.
-
-Original texts of user stories are: 
-   user_story_27: #G25# As a repository manager, I want to know all events done to an object over the object's life cycle.
-
-   user_story_85: #G25# As a DAMS manager, I want to know when the copyright status for an object or object component is modified, either manually or automatically.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_35_AND_user_story_85}
-  
-Affected Resource of US1 is: << other versions >>
-Affected Resource of US2 is: << copyright status >>
-Affected Contain Resource US1 is: << object >>
-Affected Resource US2 is: << object >>
-Contain Resources for: user_story_35: << [["object","other versions","preserve","know"],["object","metadata","preserve","know"]] >>
-Contain Resources for: user_story_85: << [["object","copyright status","create;delete","modified"],["object component","copyright status","create;delete","modified"]] >>
-
- Action of user_story_35 is: << know >>  which is annotated with: << preserve >>
- Action of user_story_85 is: << modified >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_35: #G25# As a user, i want to #know# about #other versions# of the #object# or its metadata that might be of use to me.
-
-   user_story_85: #G25# As a DAMS manager, i want to know when the #copyright status# for an #object# or #object# component is #modified#, either manually or automatically.
-
-Original texts of user stories are: 
-   user_story_35: #G25# As a user, I want to know about other versions of the object or its metadata that might be of use to me.
-
-   user_story_85: #G25# As a DAMS manager, I want to know when the copyright status for an object or object component is modified, either manually or automatically.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_08_AND_user_story_13}
-  
-Affected Resource of US1 is: << collection >>
-Affected Resource of US2 is: << other descriptions >>
-Affected Contain Resource US1 is: << collection >>
-Affected Resource US2 is: << collection >>
-Contain Resources for: user_story_08: << [["collection","items","preserve;forbid","limiting"],["collection","other collections","preserve;forbid","limiting"],["collection","objects","preserve;forbid","limiting"],["part of a collection","singular provenance","create","represent"]] >>
-Contain Resources for: user_story_13: << [["collection","other descriptions","create","indicate"]] >>
-
- Action of user_story_08 is: << limiting >>  which is annotated with: << forbid >>
- Action of user_story_13 is: << indicate >>  which is annotated with: << create >>
-
-Conflict Reason is: << forbid-create-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_08: #G25# As a repository manager, i want to compose collections, #limiting# the #collection# to the items sharing the same provenance, #limiting# the #collection# to represent a part of a #collection# have a singular provenance, or assembly a #collection# from other collections and objects.
-
-   user_story_13: #G25# As a repository manager, i want to #indicate# #other descriptions# of the #collection# that are outside the dams and of probable importance to users.
-
-Original texts of user stories are: 
-   user_story_08: #G25# As a repository manager, I want to compose collections, limiting the collection to the items sharing the same provenance, limiting the collection to represent a part of a collection have a singular provenance, or assembly a collection from other collections and objects.
-
-   user_story_13: #G25# As a repository manager, I want to indicate other descriptions of the collection that are outside the DAMS and of probable importance to users.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_08_AND_user_story_57}
-  
-Affected Resource of US1 is: << collection >>
-Affected Resource of US2 is: << title >>
-Affected Contain Resource US1 is: << objects >>
-Affected Resource US2 is: << objects >>
-Contain Resources for: user_story_08: << [["collection","items","preserve;forbid","limiting"],["collection","other collections","preserve;forbid","limiting"],["collection","objects","preserve;forbid","limiting"],["part of a collection","singular provenance","create","represent"]] >>
-Contain Resources for: user_story_57: << [["repository's collections","title","create","provide"],["objects","title","create","provide"],["object components","title","create","provide"]] >>
-
- Action of user_story_08 is: << limiting >>  which is annotated with: << forbid >>
- Action of user_story_57 is: << provide >>  which is annotated with: << create >>
-
-Conflict Reason is: << forbid-create-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_08: #G25# As a repository manager, i want to compose collections, #limiting# the #collection# to the items sharing the same provenance, #limiting# the #collection# to represent a part of a #collection# have a singular provenance, or assembly a #collection# from other collections and #objects#.
-
-   user_story_57: #G25# As a repository manager, i want to #provide# a #title#, in all useful forms, for my repository's collections, #objects#, and object components.
-
-Original texts of user stories are: 
-   user_story_08: #G25# As a repository manager, I want to compose collections, limiting the collection to the items sharing the same provenance, limiting the collection to represent a part of a collection have a singular provenance, or assembly a collection from other collections and objects.
-
-   user_story_57: #G25# As a repository manager, I want to provide a title, in all useful forms, for my repository's collections, objects, and object components.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_47_AND_user_story_85}
-  
-Affected Resource of US1 is: << all components >>
-Affected Resource of US2 is: << copyright status >>
-Affected Contain Resource US1 is: << object >>
-Affected Resource US2 is: << object >>
-Contain Resources for: user_story_47: << [["all components","assigned order","preserve","present"],["all components","object","preserve","present"]] >>
-Contain Resources for: user_story_85: << [["object","copyright status","create;delete","modified"],["object component","copyright status","create;delete","modified"]] >>
-
- Action of user_story_47 is: << present >>  which is annotated with: << preserve >>
- Action of user_story_85 is: << modified >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_47: #G25# As a DAMS manager, i want to #present# in their assigned order #all components# comprising an #object#.
-
-   user_story_85: #G25# As a DAMS manager, i want to know when the #copyright status# for an #object# or #object# component is #modified#, either manually or automatically.
-
-Original texts of user stories are: 
-   user_story_47: #G25# As a DAMS manager, I want to present in their assigned order all components comprising an object.
-
-   user_story_85: #G25# As a DAMS manager, I want to know when the copyright status for an object or object component is modified, either manually or automatically.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_63_AND_user_story_85}
-  
-Affected Resource of US1 is: << place of publication >>
-Affected Resource of US2 is: << copyright status >>
-Affected Contain Resource US1 is: << object >>
-Affected Resource US2 is: << object >>
-Contain Resources for: user_story_63: << [["object","place of publication","preserve","know"],["component parts","place of publication","preserve","know"],["object","publisher","preserve","know"],["component parts","publisher","preserve","know"]] >>
-Contain Resources for: user_story_85: << [["object","copyright status","create;delete","modified"],["object component","copyright status","create;delete","modified"]] >>
-
- Action of user_story_63 is: << know >>  which is annotated with: << preserve >>
- Action of user_story_85 is: << modified >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_63: #G25# As a user, i want to #know# for an #object# or its component parts the #place of publication#, the publisher, etc.
-
-   user_story_85: #G25# As a DAMS manager, i want to know when the #copyright status# for an #object# or #object# component is #modified#, either manually or automatically.
-
-Original texts of user stories are: 
-   user_story_63: #G25# As a user, I want to know for an object or its component parts the place of publication, the publisher, etc.
-
-   user_story_85: #G25# As a DAMS manager, I want to know when the copyright status for an object or object component is modified, either manually or automatically.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_85_AND_user_story_87}
-  
-Affected Resource of US1 is: << copyright status >>
-Affected Resource of US2 is: << statutes >>
-Affected Contain Resource US1 is: << object >>
-Affected Resource US2 is: << object >>
-Contain Resources for: user_story_85: << [["object","copyright status","create;delete","modified"],["object component","copyright status","create;delete","modified"]] >>
-Contain Resources for: user_story_87: << [["object","statutes","preserve","know"],["object component","statutes","preserve","know"]] >>
-
- Action of user_story_85 is: << modified >>  which is annotated with: << delete >>
- Action of user_story_87 is: << know >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_85: #G25# As a DAMS manager, i want to know when the #copyright status# for an #object# or #object# component is #modified#, either manually or automatically.
-
-   user_story_87: #G25# As a DAMS manager, i want to #know# all the #statutes# pertinent to an #object# or #object# component.
-
-Original texts of user stories are: 
-   user_story_85: #G25# As a DAMS manager, I want to know when the copyright status for an object or object component is modified, either manually or automatically.
-
-   user_story_87: #G25# As a DAMS manager, I want to know all the statutes pertinent to an object or object component.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_08_AND_user_story_65}
-  
-Affected Resource of US1 is: << collection >>
-Affected Resource of US2 is: << notes >>
-Affected Contain Resource US1 is: << objects >>
-Affected Resource US2 is: << objects >>
-Contain Resources for: user_story_08: << [["collection","items","preserve;forbid","limiting"],["collection","other collections","preserve;forbid","limiting"],["collection","objects","preserve;forbid","limiting"],["part of a collection","singular provenance","create","represent"]] >>
-Contain Resources for: user_story_65: << [["notes","all modifications","preserve","know"],["repository's collections","notes","preserve;create","made"],["objects","notes","preserve;create","made"],["object components","notes","preserve;create","made"]] >>
-
- Action of user_story_08 is: << limiting >>  which is annotated with: << forbid >>
- Action of user_story_65 is: << made >>  which is annotated with: << create >>
-
-Conflict Reason is: << forbid-create-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_08: #G25# As a repository manager, i want to compose collections, #limiting# the #collection# to the items sharing the same provenance, #limiting# the #collection# to represent a part of a #collection# have a singular provenance, or assembly a #collection# from other collections and #objects#.
-
-   user_story_65: #G25# As a repository manager, i want to know of all modifications #made# to #notes# for my repository's collections, #objects#, or object components.
-
-Original texts of user stories are: 
-   user_story_08: #G25# As a repository manager, I want to compose collections, limiting the collection to the items sharing the same provenance, limiting the collection to represent a part of a collection have a singular provenance, or assembly a collection from other collections and objects.
-
-   user_story_65: #G25# As a repository manager, I want to know of all modifications made to notes for my repository's collections, objects, or object components.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_28_AND_user_story_85}
-  
-Affected Resource of US1 is: << repository >>
-Affected Resource of US2 is: << copyright status >>
-Affected Contain Resource US1 is: << object >>
-Affected Resource US2 is: << object >>
-Contain Resources for: user_story_28: << [["repository","object","preserve","know"]] >>
-Contain Resources for: user_story_85: << [["object","copyright status","create;delete","modified"],["object component","copyright status","create;delete","modified"]] >>
-
- Action of user_story_28 is: << know >>  which is annotated with: << preserve >>
- Action of user_story_85 is: << modified >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_28: #G25# As a DAMS manager, i want to #know# what #repository# an #object# belongs to.
-
-   user_story_85: #G25# As a DAMS manager, i want to know when the #copyright status# for an #object# or #object# component is #modified#, either manually or automatically.
-
-Original texts of user stories are: 
-   user_story_28: #G25# As a DAMS manager, I want to know what repository an object belongs to.
-
-   user_story_85: #G25# As a DAMS manager, I want to know when the copyright status for an object or object component is modified, either manually or automatically.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_08_AND_user_story_64}
   
-Affected Resource of US1 is: << collection >>
-Affected Resource of US2 is: << various facets >>
-Affected Contain Resource US1 is: << collection >>
-Affected Resource US2 is: << collection >>
-Contain Resources for: user_story_08: << [["collection","items","preserve;forbid","limiting"],["collection","other collections","preserve;forbid","limiting"],["collection","objects","preserve;forbid","limiting"],["part of a collection","singular provenance","create","represent"]] >>
-Contain Resources for: user_story_64: << [["collection","various facets","create","describe"],["object","various facets","create","describe"],["object component","various facets","create","describe"]] >>
+ Affected Resource of US1 is: << collection >>
+ Affected Contain Entity US2 is: << various facets >>
 
  Action of user_story_08 is: << limiting >>  which is annotated with: << forbid >>
  Action of user_story_64 is: << describe >>  which is annotated with: << create >>
 
-Conflict Reason is: << forbid-create-Conflict >>
+ Conflict Reason is: << forbid-create-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_08: #G25# As a repository manager, i want to compose collections, #limiting# the #collection# to the items sharing the same provenance, #limiting# the #collection# to represent a part of a #collection# have a singular provenance, or assembly a #collection# from other collections and objects.
@@ -672,219 +80,54 @@ Original texts of user stories are:
    user_story_64: #G25# As a repository manager, I want to describe various facets of a collection, object, or object component that are not addressable via title, date, name, and subject entities.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_18_AND_user_story_85}
+{user_story_80_AND_user_story_81}
   
-Affected Resource of US1 is: << files >>
-Affected Resource of US2 is: << copyright status >>
-Affected Contain Resource US1 is: << object >>
-Affected Resource US2 is: << object >>
-Contain Resources for: user_story_18: << [["object","files","preserve","know"]] >>
-Contain Resources for: user_story_85: << [["object","copyright status","create;delete","modified"],["object component","copyright status","create;delete","modified"]] >>
+ Affected Resource of US1 is: << checksum >>
 
- Action of user_story_18 is: << know >>  which is annotated with: << preserve >>
+ Action of user_story_80 is: << changed >>  which is annotated with: << delete >>
+ Action of user_story_81 is: << changed >>  which is annotated with: << delete >>
+
+ Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_80: #G25# As a repository manager, i want to know if the #checksum# for any of my repository's content files that have #changed#.
+
+   user_story_81: #G25# As a DAMS manager, i want to know, via the preservation manager, of all files for which the #checksum# has #changed# since last registered.
+
+Original texts of user stories are: 
+   user_story_80: #G25# As a repository manager, I want to know if the checksum for any of my repository's content files that have changed.
+
+   user_story_81: #G25# As a DAMS manager, I want to know, via the preservation manager, of all files for which the checksum has changed since last registered.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_22_AND_user_story_85}
+  
+ Affected Resource of US1 is: << copyright status >>
+
+ Action of user_story_22 is: << indicate >>  which is annotated with: << preserve >>
  Action of user_story_85 is: << modified >>  which is annotated with: << delete >>
 
-Conflict Reason is: << preserve-delete-Conflict >>
+ Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_18: #G25# As repository manager, i want to #know# all the #files# belonging to an #object#.
+   user_story_22: #G25# As a repository manager, i want to #indicate# the #copyright status# of an object.
 
-   user_story_85: #G25# As a DAMS manager, i want to know when the #copyright status# for an #object# or #object# component is #modified#, either manually or automatically.
-
-Original texts of user stories are: 
-   user_story_18: #G25# As repository manager, I want to know all the files belonging to an object.
-
-   user_story_85: #G25# As a DAMS manager, I want to know when the copyright status for an object or object component is modified, either manually or automatically.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_08_AND_user_story_60}
-  
-Affected Resource of US1 is: << objects >>
-Affected Resource of US2 is: << objects >>
-Affected Contain Resource US1 is: << collection >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_08: << [["collection","items","preserve;forbid","limiting"],["collection","other collections","preserve;forbid","limiting"],["collection","objects","preserve;forbid","limiting"],["part of a collection","singular provenance","create","represent"]] >>
-Contain Resources for: user_story_60: << [["collections","title","preserve;create","search"],["objects","title","preserve;create","search"],["object components","title","preserve;create","search"]] >>
-
- Action of user_story_08 is: << limiting >>  which is annotated with: << forbid >>
- Action of user_story_60 is: << search >>  which is annotated with: << create >>
-
-Conflict Reason is: << forbid-create-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_08: #G25# As a repository manager, i want to compose collections, #limiting# the collection to the items sharing the same provenance, #limiting# the collection to represent a part of a collection have a singular provenance, or assembly a collection from other collections and #objects#.
-
-   user_story_60: #G25# As a user, i want to #search# collections, #objects#, and object components by title.
+   user_story_85: #G25# As a DAMS manager, i want to know when the #copyright status# for an object or object component is #modified#, either manually or automatically.
 
 Original texts of user stories are: 
-   user_story_08: #G25# As a repository manager, I want to compose collections, limiting the collection to the items sharing the same provenance, limiting the collection to represent a part of a collection have a singular provenance, or assembly a collection from other collections and objects.
-
-   user_story_60: #G25# As a user, I want to search collections, objects, and object components by title.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_66_AND_user_story_85}
-  
-Affected Resource of US1 is: << various facets >>
-Affected Resource of US2 is: << copyright status >>
-Affected Contain Resource US1 is: << object >>
-Affected Resource US2 is: << object >>
-Contain Resources for: user_story_66: << [["collection","various facets","preserve","know"],["object","various facets","preserve","know"],["object component","various facets","preserve","know"],["various facets","scope","preserve","know"],["various facets","content","preserve","know"],["various facets","various identifiers","preserve","know"],["various facets","conditions governing use/access","preserve","know"]] >>
-Contain Resources for: user_story_85: << [["object","copyright status","create;delete","modified"],["object component","copyright status","create;delete","modified"]] >>
-
- Action of user_story_66 is: << know >>  which is annotated with: << preserve >>
- Action of user_story_85 is: << modified >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_66: #G25# As a user, i want to #know# about #various facets# of a collection, #object#, or #object# component, such as scope and content, various identifiers, conditions governing use/access, etc.
-
-   user_story_85: #G25# As a DAMS manager, i want to know when the #copyright status# for an #object# or #object# component is #modified#, either manually or automatically.
-
-Original texts of user stories are: 
-   user_story_66: #G25# As a user, I want to know about various facets of a collection, object, or object component, such as scope and content, various identifiers, conditions governing use/access, etc.
-
-   user_story_85: #G25# As a DAMS manager, I want to know when the copyright status for an object or object component is modified, either manually or automatically.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_34_AND_user_story_85}
-  
-Affected Resource of US1 is: << rights status >>
-Affected Resource of US2 is: << copyright status >>
-Affected Contain Resource US1 is: << object >>
-Affected Resource US2 is: << object >>
-Contain Resources for: user_story_34: << [["object","rights status","preserve","know"]] >>
-Contain Resources for: user_story_85: << [["object","copyright status","create;delete","modified"],["object component","copyright status","create;delete","modified"]] >>
-
- Action of user_story_34 is: << know >>  which is annotated with: << preserve >>
- Action of user_story_85 is: << modified >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_34: #G25# As a user, i want to #know# the #rights status# of an #object#.
-
-   user_story_85: #G25# As a DAMS manager, i want to know when the #copyright status# for an #object# or #object# component is #modified#, either manually or automatically.
-
-Original texts of user stories are: 
-   user_story_34: #G25# As a user, I want to know the rights status of an object.
-
-   user_story_85: #G25# As a DAMS manager, I want to know when the copyright status for an object or object component is modified, either manually or automatically.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_56_AND_user_story_85}
-  
-Affected Resource of US1 is: << content files >>
-Affected Resource of US2 is: << copyright status >>
-Affected Contain Resource US1 is: << object >>
-Affected Resource US2 is: << object >>
-Contain Resources for: user_story_56: << [["content files","object","preserve;create","access"]] >>
-Contain Resources for: user_story_85: << [["object","copyright status","create;delete","modified"],["object component","copyright status","create;delete","modified"]] >>
-
- Action of user_story_56 is: << access >>  which is annotated with: << preserve >>
- Action of user_story_85 is: << modified >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_56: #G25# As a user, i want #access# to #content files# that comprise an #object#, 
-
-   user_story_85: #G25# As a DAMS manager, i want to know when the #copyright status# for an #object# or #object# component is #modified#, either manually or automatically.
-
-Original texts of user stories are: 
-   user_story_56: #G25# As a user, I want access to content files that comprise an object, so that I can decide whether a file is too large to download.
-
-   user_story_85: #G25# As a DAMS manager, I want to know when the copyright status for an object or object component is modified, either manually or automatically.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_85_AND_user_story_94}
-  
-Affected Resource of US1 is: << copyright status >>
-Affected Resource of US2 is: << uses >>
-Affected Contain Resource US1 is: << object >>
-Affected Resource US2 is: << object >>
-Contain Resources for: user_story_85: << [["object","copyright status","create;delete","modified"],["object component","copyright status","create;delete","modified"]] >>
-Contain Resources for: user_story_94: << [["object","uses","preserve","know"],["object componen","uses","preserve","know"]] >>
-
- Action of user_story_85 is: << modified >>  which is annotated with: << delete >>
- Action of user_story_94 is: << know >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_85: #G25# As a DAMS manager, i want to know when the #copyright status# for an #object# or #object# component is #modified#, either manually or automatically.
-
-   user_story_94: #G25# As a DAMS manager, i want to #know# all the #uses# for an #object# or #object# component that are permitted or restricted per the rights status of the #object# or #object# component.
-
-Original texts of user stories are: 
-   user_story_85: #G25# As a DAMS manager, I want to know when the copyright status for an object or object component is modified, either manually or automatically.
-
-   user_story_94: #G25# As a DAMS manager, I want to know all the uses for an object or object component that are permitted or restricted per the rights status of the object or object component.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_08_AND_user_story_67}
-  
-Affected Resource of US1 is: << collection >>
-Affected Resource of US2 is: << language(s) >>
-Affected Contain Resource US1 is: << collection >>
-Affected Resource US2 is: << collection >>
-Contain Resources for: user_story_08: << [["collection","items","preserve;forbid","limiting"],["collection","other collections","preserve;forbid","limiting"],["collection","objects","preserve;forbid","limiting"],["part of a collection","singular provenance","create","represent"]] >>
-Contain Resources for: user_story_67: << [["collection","language(s)","create","indicate"],["object","language(s)","create","indicate"],["object component","language(s)","create","indicate"]] >>
-
- Action of user_story_08 is: << limiting >>  which is annotated with: << forbid >>
- Action of user_story_67 is: << indicate >>  which is annotated with: << create >>
-
-Conflict Reason is: << forbid-create-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_08: #G25# As a repository manager, i want to compose collections, #limiting# the #collection# to the items sharing the same provenance, #limiting# the #collection# to represent a part of a #collection# have a singular provenance, or assembly a #collection# from other collections and objects.
-
-   user_story_67: #G25# As a repository manager, i want to #indicate# the language(s) for present in a #collection#, object, or object component.
-
-Original texts of user stories are: 
-   user_story_08: #G25# As a repository manager, I want to compose collections, limiting the collection to the items sharing the same provenance, limiting the collection to represent a part of a collection have a singular provenance, or assembly a collection from other collections and objects.
-
-   user_story_67: #G25# As a repository manager, I want to indicate the language(s) for present in a collection, object, or object component.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_48_AND_user_story_85}
-  
-Affected Resource of US1 is: << component hierarchy >>
-Affected Resource of US2 is: << copyright status >>
-Affected Contain Resource US1 is: << object >>
-Affected Resource US2 is: << object >>
-Contain Resources for: user_story_48: << [["object","component hierarchy","preserve","see"]] >>
-Contain Resources for: user_story_85: << [["object","copyright status","create;delete","modified"],["object component","copyright status","create;delete","modified"]] >>
-
- Action of user_story_48 is: << see >>  which is annotated with: << preserve >>
- Action of user_story_85 is: << modified >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_48: #G25# As a user, i want to be able to #see# and navigate the #component hierarchy# of an #object#.
-
-   user_story_85: #G25# As a DAMS manager, i want to know when the #copyright status# for an #object# or #object# component is #modified#, either manually or automatically.
-
-Original texts of user stories are: 
-   user_story_48: #G25# As a user, I want to be able to see and navigate the component hierarchy of an object.
+   user_story_22: #G25# As a repository manager, I want to indicate the copyright status of an object.
 
    user_story_85: #G25# As a DAMS manager, I want to know when the copyright status for an object or object component is modified, either manually or automatically.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_89_AND_user_story_93}
   
-Affected Resource of US1 is: << application >>
-Affected Resource of US2 is: << application >>
-Affected Contain Resource US1 is: << application >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_89: << [["statute","application","create;delete","modified"]] >>
-Contain Resources for: user_story_93: << [["library policy","application","create;delete","modified"]] >>
+ Affected Resource of US1 is: << application >>
 
  Action of user_story_89 is: << modified >>  which is annotated with: << delete >>
  Action of user_story_93 is: << modified >>  which is annotated with: << delete >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_89: #G25# As a DAMS manager, i want to know when the #application# of a statute to an object or object component has been #modified#, either manually or automatically.
@@ -897,26 +140,41 @@ Original texts of user stories are:
    user_story_93: #G25# As a DAMS manager, I want to know if application of a library policy to an object or object component has been modified, either manually or automatically.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_08_AND_user_story_69}
+{user_story_53_AND_user_story_81}
   
-Affected Resource of US1 is: << collection >>
-Affected Resource of US2 is: << searches >>
-Affected Contain Resource US1 is: << objects >>
-Affected Resource US2 is: << objects >>
-Contain Resources for: user_story_08: << [["collection","items","preserve;forbid","limiting"],["collection","other collections","preserve;forbid","limiting"],["collection","objects","preserve;forbid","limiting"],["part of a collection","singular provenance","create","represent"]] >>
-Contain Resources for: user_story_69: << [["searches","collections","create","scope"],["searches","objects","create","scope"],["searches","object components","create","scope"]] >>
+ Affected Resource of US1 is: << checksum >>
 
- Action of user_story_08 is: << limiting >>  which is annotated with: << forbid >>
- Action of user_story_69 is: << scope >>  which is annotated with: << create >>
+ Action of user_story_53 is: << indicate >>  which is annotated with: << preserve >>
+ Action of user_story_81 is: << changed >>  which is annotated with: << delete >>
 
-Conflict Reason is: << forbid-create-Conflict >>
+ Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_08: #G25# As a repository manager, i want to compose collections, #limiting# the #collection# to the items sharing the same provenance, #limiting# the #collection# to represent a part of a #collection# have a singular provenance, or assembly a #collection# from other collections and #objects#.
+   user_story_53: #G25# As a DAMS manager, i want to #indicate# to preservation managers the #checksum# and #checksum# method for each master file for a given object.
 
-   user_story_69: #G25# As a user, i want to #scope# my #searches# for collections, #objects#, or object components to a specific language.
+   user_story_81: #G25# As a DAMS manager, i want to know, via the preservation manager, of all files for which the #checksum# has #changed# since last registered.
 
 Original texts of user stories are: 
-   user_story_08: #G25# As a repository manager, I want to compose collections, limiting the collection to the items sharing the same provenance, limiting the collection to represent a part of a collection have a singular provenance, or assembly a collection from other collections and objects.
+   user_story_53: #G25# As a DAMS manager, I want to indicate to preservation managers the checksum and checksum method for each master file for a given object.
 
-   user_story_69: #G25# As a user, I want to scope my searches for collections, objects, or object components to a specific language.
+   user_story_81: #G25# As a DAMS manager, I want to know, via the preservation manager, of all files for which the checksum has changed since last registered.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_53_AND_user_story_80}
+  
+ Affected Resource of US1 is: << checksum >>
+
+ Action of user_story_53 is: << indicate >>  which is annotated with: << preserve >>
+ Action of user_story_80 is: << changed >>  which is annotated with: << delete >>
+
+ Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_53: #G25# As a DAMS manager, i want to #indicate# to preservation managers the #checksum# and #checksum# method for each master file for a given object.
+
+   user_story_80: #G25# As a repository manager, i want to know if the #checksum# for any of my repository's content files that have #changed#.
+
+Original texts of user stories are: 
+   user_story_53: #G25# As a DAMS manager, I want to indicate to preservation managers the checksum and checksum method for each master file for a given object.
+
+   user_story_80: #G25# As a repository manager, I want to know if the checksum for any of my repository's content files that have changed.

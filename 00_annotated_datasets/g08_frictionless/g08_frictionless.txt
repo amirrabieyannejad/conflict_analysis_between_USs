@@ -14,17 +14,12 @@ us_06         x
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_45_AND_user_story_46}
   
-Affected Resource of US1 is: << data >>
-Affected Resource of US2 is: << data >>
-Affected Contain Resource US1 is: << data >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_45: << [] >>
-Contain Resources for: user_story_46: << [] >>
+ Affected Resource of US1 is: << data >>
 
  Action of user_story_45 is: << validate >>  which is annotated with: << preserve >>
  Action of user_story_46 is: << update >>  which is annotated with: << delete >>
 
-Conflict Reason is: << preserve-delete-Conflict >>
+ Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_45: #G08# As a ResearcherPublisher, i want #validate# my #data# with a minimum of clicks, 
@@ -39,17 +34,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_46_AND_user_story_47}
   
-Affected Resource of US1 is: << data >>
-Affected Resource of US2 is: << data >>
-Affected Contain Resource US1 is: << data >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_46: << [] >>
-Contain Resources for: user_story_47: << [] >>
+ Affected Resource of US1 is: << data >>
 
  Action of user_story_46 is: << update >>  which is annotated with: << delete >>
  Action of user_story_47 is: << validate >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_46: #G08# As a publisher, i want to be able to check that every time i #update# my #data# it is still good, 
@@ -64,17 +54,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_46_AND_user_story_48}
   
-Affected Resource of US1 is: << data >>
-Affected Resource of US2 is: << data >>
-Affected Contain Resource US1 is: << data >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_46: << [] >>
-Contain Resources for: user_story_48: << [] >>
+ Affected Resource of US1 is: << data >>
 
  Action of user_story_46 is: << update >>  which is annotated with: << delete >>
  Action of user_story_48 is: << validates >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_46: #G08# As a publisher, i want to be able to check that every time i #update# my #data# it is still good, 
@@ -89,17 +74,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_06_AND_user_story_46}
   
-Affected Resource of US1 is: << data >>
-Affected Resource of US2 is: << data >>
-Affected Contain Resource US1 is: << data >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_06: << [] >>
-Contain Resources for: user_story_46: << [] >>
+ Affected Resource of US1 is: << data >>
 
  Action of user_story_06 is: << know >>  which is annotated with: << preserve >>
  Action of user_story_46 is: << update >>  which is annotated with: << delete >>
 
-Conflict Reason is: << preserve-delete-Conflict >>
+ Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_06: #G08# As a ResearcherPublisher, i want to #know# that my #data# conforms to its #data# package profile, 

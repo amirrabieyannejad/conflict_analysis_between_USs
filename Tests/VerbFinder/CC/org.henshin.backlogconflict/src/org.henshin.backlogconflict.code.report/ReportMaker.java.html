@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="de"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>ReportMaker.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">VerbFinderTest (06.07.2024 13:31:08)</a> &gt; <a href="../../index.html" class="el_group">org.henshin.backlogconflict</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">org.henshin.backlogconflict.code.report</a> &gt; <span class="el_source">ReportMaker.java</span></div><h1>ReportMaker.java</h1><pre class="source lang-java linenums">package org.henshin.backlogconflict.code.report;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+
+import org.henshin.backlogconflict.code.preparation.ActionInJsonFileNotFound;
+import org.henshin.backlogconflict.code.preparation.ActionAnnotationInJsonFileNotFound;
+import org.henshin.backlogconflict.code.preparation.ContainsInJsonFileNotFound;
+import org.henshin.backlogconflict.code.preparation.EdgeWithSameSourceAndTarget;
+import org.henshin.backlogconflict.code.preparation.EmptyOrNotExistJsonFile;
+import org.henshin.backlogconflict.code.preparation.EntityInJsonFileNotFound;
+import org.henshin.backlogconflict.code.preparation.PersonaInJsonFileNotFound;
+import org.henshin.backlogconflict.code.preparation.ReadJsonFile;
+import org.henshin.backlogconflict.code.preparation.TargetsInJsonFileNotFound;
+import org.henshin.backlogconflict.code.preparation.TextInJsonFileNotFound;
+import org.henshin.backlogconflict.code.preparation.TriggersInJsonFileNotFound;
+import org.henshin.backlogconflict.code.preparation.UsNrInJsonFileNotFound;
+import org.henshin.backlogconflict.code.preparation.ActionInJsonFileNotFound.ExceptionSupplier;
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.openjdk.nashorn.internal.ir.debug.JSONWriter;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class ReportMaker {
+
+<span class="nc" id="L36">	public ReportMaker() {</span>
+
+<span class="nc" id="L38">	}</span>
+
+//	public static void main(String[] args) throws Exception {
+//		String[] dataSets = { &quot;g03_loudoun&quot;, &quot;g04_recycling&quot;, &quot;g05_open_spending&quot;, &quot;g08_frictionless&quot;,
+//				&quot;g10_scrum_alliance&quot;, &quot;g11_nsf&quot;, &quot;g12_camperplus&quot;, &quot;g14_datahub&quot;, &quot;g16_mis&quot;, &quot;g18_neurohub&quot;,
+//				&quot;g19_alfred&quot;, &quot;g21_badcamp&quot;, &quot;g22_rdadmp&quot;, &quot;g23_archives_space&quot;, &quot;g24_unibath&quot;, &quot;g25_duraspace&quot;,
+//				&quot;g26_racdam&quot;, &quot;g27_culrepo&quot;, &quot;g28_zooniverse&quot; };
+////		String[] version = { &quot;g10_scrum_alliance&quot; };
+////		 make a report for the whole
+//
+//	}
+
+	public static void runReportMaker(String[] dataSets, String filePath) throws Exception {
+<span class="nc" id="L51">		File consolidatedConflictReport = new File(&quot;00_annotated_datasets\\&quot; + &quot;consolidated_conflict_report.txt&quot;);</span>
+<span class="nc" id="L52">		FileWriter consolidatedFileWriter = new FileWriter(consolidatedConflictReport);</span>
+
+		// create jsonReport
+<span class="nc" id="L55">		File fileJsonReport = new File(&quot;00_annotated_datasets\\&quot; + &quot;consolidated_conflict_report.json&quot;);</span>
+<span class="nc" id="L56">		FileWriter jsonFileWriter = new FileWriter(fileJsonReport);</span>
+<span class="nc" id="L57">		JSONArray jsonReport = new JSONArray();</span>
+<span class="nc bnc" id="L58" title="All 2 branches missed.">		for (int i = 0; i &lt; dataSets.length; i++) { </span>
+
+<span class="nc" id="L60">			long startTime = System.nanoTime();</span>
+<span class="nc" id="L61">			System.out.println(&quot;------------------- Proceed Dataset &quot; + dataSets[i]);</span>
+//			consolidatedFileWriter.write(&quot;\n\n\n------------------- Proceed Dataset &quot; + version[i]+ &quot; -------------------&quot;);
+<span class="nc" id="L63">			makeReport(dataSets[i], consolidatedFileWriter, jsonFileWriter, jsonReport, filePath);</span>
+<span class="nc" id="L64">			long endTime = System.nanoTime();</span>
+<span class="nc" id="L65">			double elapsedTimeInSeconds = (endTime - startTime) / 1_000_000_000.0;</span>
+<span class="nc" id="L66">			System.out.println(&quot;Processing time: &quot; + elapsedTimeInSeconds + &quot; seconds&quot;);</span>
+		}
+<span class="nc" id="L68">		consolidatedFileWriter.close();</span>
+<span class="nc" id="L69">		jsonFileWriter.write(jsonReport.toString(4));</span>
+<span class="nc" id="L70">		jsonFileWriter.close();</span>
+
+<span class="nc" id="L72">	}</span>
+
+	public static void makeReport(String fileName, FileWriter consolidatedFileWriter, FileWriter jsonFileWriter,
+			JSONArray jsonReport, String filePath) throws Exception {
+//		System.out.println(&quot;Received fileName: &quot; + fileName);
+<span class="nc" id="L77">		String fullPath = filePath + fileName + &quot;\\&quot; + fileName;</span>
+<span class="nc" id="L78">		ReportMaker reportMaker = new ReportMaker();</span>
+<span class="nc" id="L79">		ReadJsonFile readJsonFile = new ReadJsonFile();</span>
+//		System.out.println(&quot;make sure path is correct: &quot; + reportMaker.getJsonFileAbsolutePath());
+<span class="nc" id="L81">		JSONArray jsonMainArray = readJsonFile.readJsonArrayFromFile(fullPath + &quot;.json&quot;);</span>
+
+		// Creeate Conflict Report for single dataset
+<span class="nc" id="L84">		File conflictReport = new File(fullPath + &quot;.txt&quot;);</span>
+<span class="nc" id="L85">		FileWriter fileWriter = reportMaker.createOrOverwriteReportFile(conflictReport);</span>
+
+<span class="nc" id="L87">		reportMaker.findConflict(jsonMainArray, fileWriter, consolidatedFileWriter, jsonFileWriter, jsonReport,</span>
+<span class="nc" id="L88">				fileName);</span>
+<span class="nc" id="L89">		fileWriter.close();</span>
+
+<span class="nc" id="L91">	}</span>
+
+	private void findConflict(JSONArray jsonMainArray, FileWriter fileWriter, FileWriter consolidatedFileWriter,
+			FileWriter jsonFileWriter, JSONArray jsonReport, String fileName) throws Exception {
+//		System.out.println(&quot;iterate through jsonArray the main Structure&quot;);
+//		List&lt;ConflictPair&gt; conflictPairs = new ArrayList&lt;&gt;();
+<span class="nc" id="L97">		Set&lt;ConflictPair&gt; conflictPairs = new HashSet&lt;&gt;();</span>
+<span class="nc" id="L98">		Set&lt;String&gt; conflicts = new HashSet&lt;&gt;();</span>
+<span class="nc bnc" id="L99" title="All 2 branches missed.">		for (int i = 0; i &lt; jsonMainArray.length(); i++) {</span>
+//			System.out.println(&quot;get the current JSONObject&quot;);
+<span class="nc" id="L101">			JSONObject jsonObject = jsonMainArray.getJSONObject(i);</span>
+//			System.out.println(&quot;get the US_Nr form jsonObject&quot;);
+<span class="nc" id="L103">			String usNrM = getUs(jsonObject, &quot;US_Nr&quot;);</span>
+//			System.out.println(&quot;proceed &quot; + usNrM);
+<span class="nc bnc" id="L105" title="All 2 branches missed.">			if (jsonObject.has(&quot;Main&quot;)) {</span>
+<span class="nc" id="L106">				JSONObject jsonMain = jsonObject.getJSONObject(&quot;Main&quot;);</span>
+//				System.out.println(&quot;current jsonObject has Main Part. &quot;);
+<span class="nc bnc" id="L108" title="All 2 branches missed.">				if (jsonMain.length() != 0) {</span>
+//					System.out.println(&quot;jsonMain is not empty. try to process main part..&quot;);
+<span class="nc" id="L110">					processMainPart(conflictPairs, jsonObject, jsonMain, usNrM, jsonMainArray, conflicts);</span>
+
+<span class="nc" id="L112">				}else {</span>
+<span class="nc" id="L113">					throw new MainPartInJsonFileNotFound(&quot;Main part is found empty!&quot;);</span>
+				}
+			}else {
+<span class="nc" id="L116">				throw new MainPartInJsonFileNotFound();</span>
+			}
+
+		}
+<span class="nc" id="L120">		printReport(conflictPairs, fileWriter, consolidatedFileWriter, jsonFileWriter, jsonReport, fileName);</span>
+
+<span class="nc" id="L122">	}</span>
+
+	// Create or overwrite report file which return/pass the FileWriter object
+	public FileWriter createOrOverwriteReportFile(File fileConflict) throws IOException {
+<span class="nc" id="L126">		FileWriter cdaWriter = null;</span>
+<span class="nc bnc" id="L127" title="All 2 branches missed.">		if (fileConflict.createNewFile()) {</span>
+			// System.out.println(&quot;File created successfully: &quot; + totalCda.getName());
+<span class="nc" id="L129">			cdaWriter = new FileWriter(fileConflict);</span>
+<span class="nc" id="L130">			return cdaWriter;</span>
+
+		} else {
+<span class="nc" id="L133">			cdaWriter = new FileWriter(fileConflict);</span>
+			// System.out.println(&quot;File already exists. Try to overwrite..!&quot;);
+<span class="nc" id="L135">			return cdaWriter;</span>
+		}
+	}
+
+	private void printReport(Set&lt;ConflictPair&gt; conflictPairs, FileWriter fileWriter, FileWriter consolidatedFileWriter,
+			FileWriter jsonFileWriter, JSONArray jsonReport, String fileName)
+			throws EmptyOrNotExistJsonFile, IOException {
+//		File main = new File(getJsonFileAbsolutePath());
+
+<span class="nc bnc" id="L144" title="All 2 branches missed.">		if (conflictPairs.size() &gt; 0) {</span>
+<span class="nc" id="L145">			fileWriter.write(&quot;\n\n********************* &lt;&lt; Dataset: &quot; + fileName + &quot; &gt;&gt; ***************\n&quot;);</span>
+<span class="nc" id="L146">			consolidatedFileWriter.write(&quot;\n\n********************* &lt;&lt; Dataset: &quot; + fileName + &quot; &gt;&gt; ***************\n&quot;);</span>
+<span class="nc" id="L147">			writeTable(fileWriter, conflictPairs, consolidatedFileWriter);</span>
+		}
+<span class="nc bnc" id="L149" title="All 2 branches missed.">		for (ConflictPair conflictPair : conflictPairs) {</span>
+<span class="nc" id="L150">			JSONObject jsonObject = new JSONObject();</span>
+<span class="nc" id="L151">			String us1 = conflictPair.getConflictPair1();</span>
+<span class="nc" id="L152">			String us2 = conflictPair.getConflictPair2();</span>
+<span class="nc" id="L153">			System.out.println(&quot;reporting US1: &quot; + us1 + &quot; and US2: &quot; + us2);</span>
+<span class="nc" id="L154">			JSONObject jsonUs1 = conflictPair.getJsonConflict1();</span>
+<span class="nc" id="L155">			String textUs1 = jsonUs1.getString(&quot;Text&quot;);</span>
+<span class="nc" id="L156">			JSONObject jsonUs1Main = jsonUs1.getJSONObject(&quot;Main&quot;);</span>
+<span class="nc" id="L157">			String textUs1Main = jsonUs1Main.getString(&quot;Text&quot;);</span>
+
+<span class="nc" id="L159">			JSONObject jsonUs2 = conflictPair.getJsonConflict2();</span>
+<span class="nc" id="L160">			String textUs2 = jsonUs2.getString(&quot;Text&quot;);</span>
+<span class="nc" id="L161">			JSONObject jsonUs2Main = jsonUs2.getJSONObject(&quot;Main&quot;);</span>
+<span class="nc" id="L162">			String textUs2Main = jsonUs2Main.getString(&quot;Text&quot;);</span>
+<span class="nc" id="L163">			int firstCommaUs1Main = textUs1Main.indexOf(',');</span>
+<span class="nc" id="L164">			int firstCommaUs2Main = textUs2Main.indexOf(',');</span>
+<span class="nc" id="L165">			String subStringFirstUs1 = textUs1Main.substring(0, firstCommaUs1Main);</span>
+<span class="nc" id="L166">			String subStringFirstUs2 = textUs2Main.substring(0, firstCommaUs2Main);</span>
+
+<span class="nc" id="L168">			String subStringSecondUs1 = textUs1Main.substring(firstCommaUs1Main + 1);</span>
+<span class="nc" id="L169">			String subStringSecondUs2 = textUs2Main.substring(firstCommaUs2Main + 1);</span>
+
+<span class="nc bnc" id="L171" title="All 2 branches missed.">			if (conflictPair.getNounContainUs2().equals(&quot;&quot;)) {</span>
+<span class="nc" id="L172">				String[] matchesUs1 = { conflictPair.getActionUs1(), conflictPair.getNounMainUs1() };</span>
+<span class="nc" id="L173">				String[] matchesUs2 = { conflictPair.getActionUs2() , conflictPair.getNounMainUs1()};</span>
+<span class="nc" id="L174">				subStringSecondUs1 = applyHashSymbols(subStringSecondUs1.toLowerCase(), matchesUs1);</span>
+<span class="nc" id="L175">				subStringSecondUs2 = applyHashSymbols(subStringSecondUs2.toLowerCase(), matchesUs2);</span>
+
+<span class="nc" id="L177">			} else {</span>
+
+<span class="nc" id="L179">				String[] matchesUs1 = { conflictPair.getActionUs1(), conflictPair.getNounMainUs1() };</span>
+<span class="nc" id="L180">				String[] matchesUs2 = { conflictPair.getActionUs2(), conflictPair.getNounContainUs2(),</span>
+<span class="nc" id="L181">						conflictPair.getNounMainUs1() };</span>
+<span class="nc" id="L182">				subStringSecondUs1 = applyHashSymbols(subStringSecondUs1.toLowerCase(), matchesUs1);</span>
+<span class="nc" id="L183">				subStringSecondUs2 = applyHashSymbols(subStringSecondUs2.toLowerCase(), matchesUs2);</span>
+
+			}
+<span class="nc" id="L186">			textUs1Main = subStringFirstUs1 + &quot;,&quot; + subStringSecondUs1;</span>
+<span class="nc" id="L187">			textUs2Main = subStringFirstUs2 + &quot;,&quot; + subStringSecondUs2;</span>
+
+<span class="nc" id="L189">			String usPair = us1 + &quot;_AND_&quot; + us2;</span>
+
+			// First of all create a table
+
+<span class="nc" id="L193">			fileWriter.write(&quot;\n\n------------------[Potential Conflict between following User&quot;</span>
+<span class="nc" id="L194">					+ &quot; Stories found]--------------------------\n{&quot; + usPair + &quot;}\n  &quot;);</span>
+<span class="nc" id="L195">			consolidatedFileWriter.write(&quot;\n------------------[Potential Conflict between following User&quot;</span>
+<span class="nc" id="L196">					+ &quot; Stories found]--------------------------\n{&quot; + usPair + &quot;}\n  &quot;);</span>
+<span class="nc" id="L197">			jsonObject.put(&quot;Conflict Pair&quot;, usPair);</span>
+
+<span class="nc" id="L199">			fileWriter.write(&quot;\n Affected Resource of US1 is: &quot; + &quot;&lt;&lt; &quot; + conflictPair.getNounMainUs1() + &quot; &gt;&gt;&quot;);</span>
+<span class="nc" id="L200">			consolidatedFileWriter</span>
+<span class="nc" id="L201">					.write(&quot;\n Affected Resource of US1 is: &quot; + &quot;&lt;&lt; &quot; + conflictPair.getNounMainUs1() + &quot; &gt;&gt;&quot;);</span>
+<span class="nc" id="L202">			jsonObject.put(&quot;Entity of US1&quot;, conflictPair.getNounMainUs1());</span>
+
+<span class="nc bnc" id="L204" title="All 2 branches missed.">			if (conflictPair.getNounContainUs2() != &quot;&quot;) {</span>
+<span class="nc" id="L205">				fileWriter.write(</span>
+<span class="nc" id="L206">						&quot;\n Affected Contain Entity US2 is: &quot; + &quot;&lt;&lt; &quot; + conflictPair.getNounContainUs2() + &quot; &gt;&gt;&quot;);</span>
+<span class="nc" id="L207">				consolidatedFileWriter.write(</span>
+<span class="nc" id="L208">						&quot;\n Affected Contain Entity US2 is: &quot; + &quot;&lt;&lt; &quot; + conflictPair.getNounContainUs2() + &quot; &gt;&gt;&quot;);</span>
+			}
+<span class="nc" id="L210">			jsonObject.put(&quot;Contain US2 Entity&quot;, conflictPair.getNounContainUs2());</span>
+
+			// TODO:
+<span class="nc" id="L213">			fileWriter.write(&quot;\n\n Action of &quot; + conflictPair.getConflictPair1() + &quot; is: &quot; + &quot;&lt;&lt; &quot;</span>
+<span class="nc" id="L214">					+ conflictPair.getActionUs1() + &quot; &gt;&gt; &quot; + &quot; which is annotated with: &quot; + &quot;&lt;&lt; &quot;</span>
+<span class="nc" id="L215">					+ conflictPair.getActionAnnotationUs1() + &quot; &gt;&gt;&quot;);</span>
+<span class="nc" id="L216">			consolidatedFileWriter.write(&quot;\n\n Action of &quot; + conflictPair.getConflictPair1() + &quot; is: &quot; + &quot;&lt;&lt; &quot;</span>
+<span class="nc" id="L217">					+ conflictPair.getActionUs1() + &quot; &gt;&gt; &quot; + &quot; which is annotated with: &quot; + &quot;&lt;&lt; &quot;</span>
+<span class="nc" id="L218">					+ conflictPair.getActionAnnotationUs1() + &quot; &gt;&gt;&quot;);</span>
+<span class="nc" id="L219">			JSONObject jsonActionAnnotation = new JSONObject();</span>
+<span class="nc" id="L220">			jsonActionAnnotation.put(&quot;US1&quot;, conflictPair.getActionAnnotationUs1());</span>
+<span class="nc" id="L221">			jsonActionAnnotation.put(&quot;US2&quot;, conflictPair.getActionAnnotationUs2());</span>
+<span class="nc" id="L222">			jsonObject.put(&quot;Action Annotations&quot;, jsonActionAnnotation);</span>
+
+<span class="nc" id="L224">			fileWriter.write(&quot;\n Action of &quot; + conflictPair.getConflictPair2() + &quot; is: &quot; + &quot;&lt;&lt; &quot;</span>
+<span class="nc" id="L225">					+ conflictPair.getActionUs2() + &quot; &gt;&gt; &quot; + &quot; which is annotated with: &quot; + &quot;&lt;&lt; &quot;</span>
+<span class="nc" id="L226">					+ conflictPair.getActionAnnotationUs2() + &quot; &gt;&gt;&quot;);</span>
+<span class="nc" id="L227">			consolidatedFileWriter.write(&quot;\n Action of &quot; + conflictPair.getConflictPair2() + &quot; is: &quot; + &quot;&lt;&lt; &quot;</span>
+<span class="nc" id="L228">					+ conflictPair.getActionUs2() + &quot; &gt;&gt; &quot; + &quot; which is annotated with: &quot; + &quot;&lt;&lt; &quot;</span>
+<span class="nc" id="L229">					+ conflictPair.getActionAnnotationUs2() + &quot; &gt;&gt;&quot;);</span>
+<span class="nc" id="L230">			JSONObject jsonAction = new JSONObject();</span>
+<span class="nc" id="L231">			jsonAction.put(&quot;Action US1&quot;, conflictPair.getActionUs1());</span>
+<span class="nc" id="L232">			jsonAction.put(&quot;Action US2&quot;, conflictPair.getActionUs2());</span>
+<span class="nc" id="L233">			jsonObject.put(&quot;Actions&quot;, jsonAction);</span>
+
+<span class="nc" id="L235">			fileWriter.write(&quot;\n\n Conflict Reason is: &quot; + &quot;&lt;&lt; &quot; + conflictPair.getConflictReason() + &quot; &gt;&gt;&quot;);</span>
+<span class="nc" id="L236">			consolidatedFileWriter</span>
+<span class="nc" id="L237">					.write(&quot;\n\n Conflict Reason is: &quot; + &quot;&lt;&lt; &quot; + conflictPair.getConflictReason() + &quot; &gt;&gt;&quot;);</span>
+<span class="nc" id="L238">			jsonObject.put(&quot;Conflict-Reason&quot;, conflictPair.getConflictReason());</span>
+
+<span class="nc" id="L240">			fileWriter.write(&quot;\n\nHighlighted elements in main parts of user stories: &quot;);</span>
+<span class="nc" id="L241">			consolidatedFileWriter.write(&quot;\n\nHighlighted elements in main parts of user stories: &quot;);</span>
+
+<span class="nc" id="L243">			fileWriter.write(&quot;\n   &quot; + us1 + &quot;: &quot; + textUs1Main + &quot;\n\n   &quot; + us2 + &quot;: &quot; + textUs2Main);</span>
+<span class="nc" id="L244">			consolidatedFileWriter.write(&quot;\n   &quot; + us1 + &quot;: &quot; + textUs1Main + &quot;\n\n   &quot; + us2 + &quot;: &quot; + textUs2Main);</span>
+<span class="nc" id="L245">			JSONObject jsonTextsMain = new JSONObject();</span>
+<span class="nc" id="L246">			jsonTextsMain.put(&quot;US1&quot;, textUs1Main);</span>
+<span class="nc" id="L247">			jsonTextsMain.put(&quot;US2&quot;, textUs2Main);</span>
+<span class="nc" id="L248">			jsonObject.put(&quot;Texts of Main Parts&quot;, jsonTextsMain);</span>
+
+<span class="nc" id="L250">			fileWriter.write(&quot;\n\nOriginal texts of user stories are: &quot;);</span>
+<span class="nc" id="L251">			consolidatedFileWriter.write(&quot;\n\nOriginal texts of user stories are: &quot;);</span>
+
+<span class="nc" id="L253">			fileWriter.write(&quot;\n   &quot; + us1 + &quot;: &quot; + textUs1);</span>
+<span class="nc" id="L254">			consolidatedFileWriter.write(&quot;\n   &quot; + us1 + &quot;: &quot; + textUs1);</span>
+
+<span class="nc" id="L256">			fileWriter.write(&quot;\n\n   &quot; + us2 + &quot;: &quot; + textUs2);</span>
+<span class="nc" id="L257">			consolidatedFileWriter.write(&quot;\n\n   &quot; + us2 + &quot;: &quot; + textUs2 + &quot;\n&quot;);</span>
+
+<span class="nc" id="L259">			JSONObject jsonTexts = new JSONObject();</span>
+<span class="nc" id="L260">			jsonTexts.put(&quot;US1&quot;, textUs1);</span>
+<span class="nc" id="L261">			jsonTexts.put(&quot;US2&quot;, textUs2);</span>
+<span class="nc" id="L262">			jsonObject.put(&quot;Texts of USs&quot;, jsonTexts);</span>
+
+<span class="nc" id="L264">			jsonObject.put(&quot;PID&quot;, conflictPair.getpId());</span>
+
+<span class="nc" id="L266">			jsonReport.put(jsonObject);</span>
+
+		}
+
+<span class="nc" id="L270">	}</span>
+
+	// Create a table at the top of the reports
+	private void writeTable(FileWriter fileWriter, Set&lt;ConflictPair&gt; conflictPairs, FileWriter consolidatedFileWriter)
+			throws IOException {
+
+<span class="nc" id="L276">		List&lt;String&gt; pairListSeperate = new ArrayList&lt;&gt;();</span>
+
+<span class="nc" id="L278">		StringBuilder table = new StringBuilder();</span>
+<span class="nc" id="L279">		table.append(&quot;* Table of potential conflict between user stories&quot; + &quot;\n\n&quot;);</span>
+<span class="nc bnc" id="L280" title="All 2 branches missed.">		for (ConflictPair conflictPair : conflictPairs) {</span>
+<span class="nc" id="L281">			String us1 = conflictPair.getConflictPair1();</span>
+<span class="nc" id="L282">			String us2 = conflictPair.getConflictPair2();</span>
+<span class="nc" id="L283">			System.out.println(&quot;reporting US1: &quot; + us1 + &quot; and US2: &quot; + us2);</span>
+<span class="nc bnc" id="L284" title="All 2 branches missed.">			if (!pairListSeperate.contains(conflictPair.getConflictPair1())) {</span>
+<span class="nc" id="L285">				pairListSeperate.add(conflictPair.getConflictPair1());</span>
+			}
+<span class="nc bnc" id="L287" title="All 2 branches missed.">			if (!pairListSeperate.contains(conflictPair.getConflictPair2())) {</span>
+<span class="nc" id="L288">				pairListSeperate.add(conflictPair.getConflictPair2());</span>
+			}
+		}
+<span class="nc" id="L291">		String[][] stringTable = createTable(pairListSeperate, conflictPairs);</span>
+<span class="nc" id="L292">		int numCols = stringTable[0].length;</span>
+
+		// find the maximum width for each column
+<span class="nc" id="L295">		int[] maxWidths = new int[numCols];</span>
+<span class="nc bnc" id="L296" title="All 2 branches missed.">		for (String[] row : stringTable) {</span>
+<span class="nc bnc" id="L297" title="All 2 branches missed.">			for (int j = 0; j &lt; numCols; j++) {</span>
+<span class="nc" id="L298">				maxWidths[j] = Math.max(maxWidths[j], row[j].length());</span>
+			}
+		}
+<span class="nc bnc" id="L301" title="All 2 branches missed.">		for (String[] row : stringTable) {</span>
+<span class="nc bnc" id="L302" title="All 2 branches missed.">			for (int j = 0; j &lt; numCols; j++) {</span>
+
+<span class="nc" id="L304">				table.append(String.format(&quot;%-&quot; + (maxWidths[j] + 2) + &quot;s&quot;, row[j]));</span>
+			}
+<span class="nc" id="L306">			table.append(&quot;\n&quot;);</span>
+		}
+<span class="nc" id="L308">		fileWriter.write(table.toString());</span>
+<span class="nc" id="L309">		consolidatedFileWriter.write(table.toString());</span>
+
+<span class="nc" id="L311">	}</span>
+
+	private String[][] createTable(List&lt;String&gt; pairListSeperate, Set&lt;ConflictPair&gt; conflictPairs) {
+<span class="nc" id="L314">		int size = pairListSeperate.size();</span>
+<span class="nc" id="L315">		String[][] table = new String[size + 1][size + 1];</span>
+
+<span class="nc" id="L317">		table[0][0] = &quot;&quot;;</span>
+<span class="nc bnc" id="L318" title="All 2 branches missed.">		for (int i = 0; i &lt; size; i++) {</span>
+<span class="nc" id="L319">			table[0][i + 1] = pairListSeperate.get(i).replaceAll(&quot;user_story&quot;, &quot;us&quot;); // header row</span>
+<span class="nc" id="L320">			table[i + 1][0] = pairListSeperate.get(i).replaceAll(&quot;user_story&quot;, &quot;us&quot;); // first column</span>
+		}
+<span class="nc bnc" id="L322" title="All 2 branches missed.">		for (int i = 0; i &lt; size; i++) {</span>
+<span class="nc bnc" id="L323" title="All 2 branches missed.">			for (int j = 0; j &lt; size; j++) {</span>
+<span class="nc" id="L324">				String pair1 = pairListSeperate.get(i);</span>
+<span class="nc" id="L325">				String pair2 = pairListSeperate.get(j);</span>
+<span class="nc" id="L326">				String conflict = getTotalRedundanciesFromPair(conflictPairs, pair1, pair2);</span>
+<span class="nc" id="L327">				table[i + 1][j + 1] = conflict;</span>
+			}
+
+		}
+<span class="nc" id="L331">		return table;</span>
+	}
+
+	private String getTotalRedundanciesFromPair(Set&lt;ConflictPair&gt; conflictPairs, String pair1, String pair2) {
+<span class="nc bnc" id="L335" title="All 2 branches missed.">		for (ConflictPair conflictPair : conflictPairs) {</span>
+<span class="nc bnc" id="L336" title="All 4 branches missed.">			if ((conflictPair.getConflictPair1().equals(pair1) &amp;&amp; conflictPair.getConflictPair2().equals(pair2))</span>
+<span class="nc bnc" id="L337" title="All 2 branches missed.">					|| (conflictPair.getConflictPair1().equals(pair2)</span>
+<span class="nc bnc" id="L338" title="All 2 branches missed.">							&amp;&amp; conflictPair.getConflictPair2().equals(pair1))) {</span>
+<span class="nc" id="L339">				return &quot;x&quot;;</span>
+			}
+		}
+
+<span class="nc" id="L343">		return &quot; &quot;;</span>
+	}
+
+	private void processMainPart(Set&lt;ConflictPair&gt; conflictPairs, JSONObject jsonObject, JSONObject jsonMain,
+			String usNrM, JSONArray jsonMainArray, Set&lt;String&gt; conflicts) throws Exception {
+<span class="nc" id="L348">		JSONArray actionMain = getArray(jsonMain, &quot;Action&quot;, ActionInJsonFileNotFound::new);</span>
+//		System.out.println(&quot;[processMainPart] Action from current jsonObejct readed.&quot;);
+
+<span class="nc" id="L351">		JSONArray entityArray = getArray(jsonMain, &quot;Entity&quot;, EntityInJsonFileNotFound::new);</span>
+//		System.out.println(&quot;Entity from current jsonObejct readed.&quot;);
+
+<span class="nc" id="L354">		JSONArray triggersArrayMain = getArray(jsonMain, &quot;Triggers&quot;, TriggersInJsonFileNotFound::new);</span>
+//		System.out.println(&quot;Triggers from current jsonObejct readed.&quot;);
+
+<span class="nc" id="L357">		JSONArray targetsArrayMain = getArray(jsonMain, &quot;Targets&quot;, TargetsInJsonFileNotFound::new);</span>
+//		System.out.println(&quot;Targets from current jsonObejct readed.&quot;);
+
+<span class="nc" id="L360">		JSONArray containsArrayMain = getArray(jsonMain, &quot;Contains&quot;, ContainsInJsonFileNotFound::new);</span>
+//		System.out.println(&quot;Contains from current jsonObejct readed.&quot;);
+
+<span class="nc" id="L363">		JSONArray persona = getArray(jsonMain, &quot;Persona&quot;, PersonaInJsonFileNotFound::new);</span>
+//		System.out.println(&quot;Persona from current jsonObejct readed.&quot;);
+
+<span class="nc" id="L366">		String textMain = getString(jsonMain, &quot;Text&quot;, TextInJsonFileNotFound::new);</span>
+//		System.out.println(&quot;Text from current jsonObejct readed.&quot;);
+
+		JSONArray targetActionAnnotations;
+		JSONArray containActionAnnotations;
+<span class="nc bnc" id="L371" title="All 2 branches missed.">		if (jsonMain.has(&quot;Action Annotations&quot;)) {</span>
+<span class="nc" id="L372">			JSONObject jsonActionAnnotations = jsonMain.getJSONObject(&quot;Action Annotations&quot;);</span>
+<span class="nc bnc" id="L373" title="All 2 branches missed.">			if (jsonActionAnnotations.has(&quot;Target Action Annotations&quot;)) {</span>
+<span class="nc" id="L374">				targetActionAnnotations = jsonActionAnnotations.getJSONArray(&quot;Target Action Annotations&quot;);</span>
+//				System.out.println(&quot;Target Action Rules from current jsonObejct readed.&quot;);
+<span class="nc" id="L376">			} else {</span>
+<span class="nc" id="L377">				throw new ActionAnnotationInJsonFileNotFound(</span>
+<span class="nc" id="L378">						&quot;Target Action Annotations in Aciton-Annotations not found&quot;);</span>
+			}
+<span class="nc bnc" id="L380" title="All 2 branches missed.">			if (jsonActionAnnotations.has(&quot;Contain Action Annotations&quot;)) {</span>
+<span class="nc" id="L381">				containActionAnnotations = jsonActionAnnotations.getJSONArray(&quot;Contain Action Annotations&quot;);</span>
+//				System.out.println(&quot;Contains Action Rules from current jsonObejct readed.&quot;);
+<span class="nc" id="L383">			} else {</span>
+<span class="nc" id="L384">				throw new ActionAnnotationInJsonFileNotFound(</span>
+<span class="nc" id="L385">						&quot;Contain Action Annotations in Aciton-Annotations not found&quot;);</span>
+			}
+		} else {
+<span class="nc" id="L388">			throw new ActionAnnotationInJsonFileNotFound();</span>
+		}
+//		System.out.println(&quot;[processMainPart]try to process Action Rules...&quot;);
+<span class="nc" id="L391">		processActionAnnotations(conflictPairs, jsonMainArray, jsonObject, targetActionAnnotations,</span>
+<span class="nc" id="L392">				containActionAnnotations, usNrM, jsonMain, actionMain, entityArray, triggersArrayMain, targetsArrayMain,</span>
+<span class="nc" id="L393">				containsArrayMain, textMain, persona, conflicts);</span>
+
+<span class="nc" id="L395">	}</span>
+
+	// handle ambiguity in action-rules and atomic rules
+	private void processActionAnnotations(Set&lt;ConflictPair&gt; conflictPairs, JSONArray jsonMainArray,
+			JSONObject jsonObjectCurrent, JSONArray targetActionAnnotations, JSONArray containActionAnnotations,
+			String usNrM, JSONObject jsonObject, JSONArray actionArray, JSONArray entityArray, JSONArray triggersArray,
+			JSONArray targetsArray, JSONArray containsArray, String text, JSONArray persona, Set&lt;String&gt; conflicts)
+			throws ActionInJsonFileNotFound, EdgeWithSameSourceAndTarget, EmptyOrNotExistJsonFile,
+			EntityInJsonFileNotFound {
+<span class="nc bnc" id="L404" title="All 2 branches missed.">		for (int j = 0; j &lt; targetActionAnnotations.length(); j++) {</span>
+<span class="nc" id="L405">			JSONArray current = targetActionAnnotations.getJSONArray(j);</span>
+
+//			System.out.println(&quot;[processAcitonRules] reading targetAction Rule.. &quot; + (j + 1) + &quot; of US: &quot; + usNrM);
+<span class="nc" id="L408">			String verb = current.getString(0).toLowerCase();</span>
+<span class="nc" id="L409">			String noun = current.getString(1).toLowerCase();</span>
+//			System.out.println(&quot;targetActionRule verb is: &quot; + verb);
+//			System.out.println(&quot;targetActionRule noun is: &quot; + noun);
+<span class="nc" id="L412">			String actionAnnotation = current.getString(2).toLowerCase();</span>
+
+			// Check if there is ambiguity by action annotation
+<span class="nc bnc" id="L415" title="All 2 branches missed.">			if (actionAnnotation.contains(&quot;;&quot;)) {</span>
+//				System.out.println(&quot;found ambiguity in ActionRule.. Try to handle&quot;);
+<span class="nc" id="L417">				String[] items = actionAnnotation.split(&quot;;&quot;);</span>
+<span class="nc bnc" id="L418" title="All 2 branches missed.">				for (String actionAnnotationAmbiguity : items) {</span>
+//					System.out.println(&quot;[processAcitonRule] &quot;);
+
+<span class="nc" id="L421">					executeProcessActions(conflictPairs, jsonMainArray, jsonObjectCurrent, jsonObject, actionArray,</span>
+<span class="nc" id="L422">							targetActionAnnotations, containActionAnnotations, entityArray, triggersArray, targetsArray,</span>
+<span class="nc" id="L423">							containsArray, text, persona, usNrM, verb, noun, actionAnnotationAmbiguity, false,</span>
+<span class="nc" id="L424">							conflicts, noun);</span>
+
+					// proceed entities in contain
+//					for (int i = 0; i &lt; containActionRules.length(); i++) {
+//						JSONArray jsonContain = containActionRules.getJSONArray(i);
+//
+//						String noun1 = jsonContain.getString(0);
+//						String noun2 = jsonContain.getString(1);
+//						String containActionAnnotation = jsonContain.getString(2);
+//						String containVerb = jsonContain.getString(3);
+//
+//						// find the contain entity and iterate through targets and contains of other USs
+//						if (noun1.equalsIgnoreCase(noun) &amp;&amp; containVerb.equalsIgnoreCase(verb)
+//								&amp;&amp; actionRule.equalsIgnoreCase(containActionAnnotation)) {
+//
+//							System.out.println(&quot;Contain in Proccess action Rule noun1 is &quot; + noun1 + &quot; noun2 is: &quot;
+//									+ noun2 + &quot; of &quot; + usNrM);
+//							executeProcessActions(conflictPairs, jsonMainArray, jsonObjectCurrent, jsonObject,
+//									actionArray, targetActionRules, containActionRules, entityArray, triggersArray,
+//									targetsArray, containsArray, text, persona, usNrM, verb, noun2, actionRuleAmbiguity,
+//									true, conflicts, noun);
+//
+//						}
+//
+//					}
+
+//					for(int i=0;i&lt;containActionRules.length();i++) {
+//						JSONArray jsonContain = containActionRules.getJSONArray(i);
+//						String noun1= jsonContain.getString(0);
+//						String noun2= jsonContain.getString(1);
+//						if(noun.equalsIgnoreCase(noun1)) {
+//							executeProcessActions(conflictPairs, jsonMainArray, jsonObjectCurrent, jsonObject, actionArray,
+//									targetActionRules, containActionRules, entityArray, triggersArray, targetsArray,
+//									containsArray, text, persona, usNrM, verb, noun2, actionRuleAmbiguity, false, conflicts);
+//						}
+//						if(noun.equalsIgnoreCase(noun2)) {
+//							executeProcessActions(conflictPairs, jsonMainArray, jsonObjectCurrent, jsonObject, actionArray,
+//									targetActionRules, containActionRules, entityArray, triggersArray, targetsArray,
+//									containsArray, text, persona, usNrM, verb, noun1, actionRuleAmbiguity, false, conflicts);
+//						}
+//					}
+				}
+
+<span class="nc" id="L467">			} else {</span>
+
+//				System.out.println(&quot;process atomic action Rule&quot;);
+
+<span class="nc" id="L471">				executeProcessActions(conflictPairs, jsonMainArray, jsonObjectCurrent, jsonObject, actionArray,</span>
+<span class="nc" id="L472">						targetActionAnnotations, containActionAnnotations, entityArray, triggersArray, targetsArray,</span>
+<span class="nc" id="L473">						containsArray, text, persona, usNrM, verb, noun, actionAnnotation, true, conflicts, noun);</span>
+
+//				for (int i = 0; i &lt; containActionRules.length(); i++) {
+//					JSONArray jsonContain = containActionRules.getJSONArray(i);
+//
+//					String noun1 = jsonContain.getString(0);
+//					String noun2 = jsonContain.getString(1);
+//					String containActionAnnotation = jsonContain.getString(2);
+//					String containVerb = jsonContain.getString(3);
+//
+//					// find the contain entity and iterate through targets and contains of other USs
+//					if (noun1.equalsIgnoreCase(noun) &amp;&amp; containVerb.equalsIgnoreCase(verb)
+//							&amp;&amp; actionRule.equalsIgnoreCase(containActionAnnotation)) {
+//
+//						System.out.println(&quot;Contain in Proccess action Rule noun1 is&quot; + noun1 + &quot; noun2 is: &quot; + noun2
+//								+ &quot; of &quot; + usNrM);
+//						executeProcessActions(conflictPairs, jsonMainArray, jsonObjectCurrent, jsonObject, actionArray,
+//								targetActionRules, containActionRules, entityArray, triggersArray, targetsArray,
+//								containsArray, text, persona, usNrM, verb, noun2, actionRule, true, conflicts, noun);
+//
+//					}
+//
+//				}
+			}
+		}
+		// proceed contain entities
+
+<span class="nc" id="L500">	}</span>
+
+	private void executeProcessActions(Set&lt;ConflictPair&gt; conflictPairs, JSONArray jsonMainArray,
+			JSONObject jsonObjectCurrent, JSONObject jsonObject, JSONArray actionArray,
+			JSONArray targetActionAnnotations, JSONArray containActionAnnotations, JSONArray entityArray,
+			JSONArray triggersArray, JSONArray targetsArray, JSONArray containsArray, String text, JSONArray persona,
+			String usNrM, String verb, String noun, String actionAnnotation, boolean containEntity,
+			Set&lt;String&gt; conflicts, String nounMainUs1) {
+//		System.out.println(&quot;Action Rule is: &quot; + actionRule);
+<span class="nc bnc" id="L509" title="All 5 branches missed.">		switch (actionAnnotation) {</span>
+		case &quot;preserve&quot;:
+<span class="nc" id="L511">			findConflictForActionAnnotation(conflictPairs, jsonMainArray, jsonObjectCurrent, actionAnnotation, &quot;delete&quot;,</span>
+<span class="nc" id="L512">					noun, verb, conflicts, nounMainUs1, containEntity);</span>
+<span class="nc" id="L513">			break;</span>
+		case &quot;delete&quot;:
+<span class="nc" id="L515">			findConflictForActionAnnotation(conflictPairs, jsonMainArray, jsonObjectCurrent, actionAnnotation,</span>
+<span class="nc" id="L516">					&quot;preserve&quot;, noun, verb, conflicts, nounMainUs1, containEntity);</span>
+<span class="nc" id="L517">			findConflictForActionAnnotation(conflictPairs, jsonMainArray, jsonObjectCurrent, actionAnnotation, &quot;delete&quot;,</span>
+<span class="nc" id="L518">					noun, verb, conflicts, nounMainUs1, containEntity);</span>
+		case &quot;create&quot;:
+<span class="nc" id="L520">			findConflictForActionAnnotation(conflictPairs, jsonMainArray, jsonObjectCurrent, actionAnnotation, &quot;forbid&quot;,</span>
+<span class="nc" id="L521">					noun, verb, conflicts, nounMainUs1, containEntity);</span>
+<span class="nc" id="L522">			break;</span>
+		case &quot;forbid&quot;:
+<span class="nc" id="L524">			findConflictForActionAnnotation(conflictPairs, jsonMainArray, jsonObjectCurrent, actionAnnotation, &quot;create&quot;,</span>
+<span class="nc" id="L525">					noun, verb, conflicts, nounMainUs1, containEntity);</span>
+<span class="nc" id="L526">			break;</span>
+
+		default:
+			break;
+
+		}
+
+<span class="nc" id="L533">	}</span>
+
+	private void findConflictForActionAnnotation(Set&lt;ConflictPair&gt; conflictPairs, JSONArray jsonMainArray,
+			JSONObject jsonObjectCurrent, String actionAnnotationUs1, String criticalActionAnnotation, String entityUs1,
+			String actionUs1, Set&lt;String&gt; conflicts, String nounMainUs1, boolean containEntity) {
+<span class="nc" id="L538">		String usNr1 = jsonObjectCurrent.getString(&quot;US_Nr&quot;);</span>
+<span class="nc" id="L539">		String pId = jsonObjectCurrent.getString(&quot;PID&quot;);</span>
+
+		// iterate through WHOLE Dataset
+<span class="nc bnc" id="L542" title="All 2 branches missed.">		for (int i = 0; i &lt; jsonMainArray.length(); i++) {</span>
+<span class="nc" id="L543">			JSONObject current = jsonMainArray.getJSONObject(i);</span>
+<span class="nc" id="L544">			String usNr2 = current.getString(&quot;US_Nr&quot;);</span>
+
+			// Check if the US are different and are not yet proceeded
+//			if (!usNr1.equals(usNr2) &amp;&amp; (!conflicts.contains(usNr1 + usNr2 + entityUs1)
+//					|| !conflicts.contains(usNr2 + usNr1 + entityUs1))) {
+<span class="nc bnc" id="L549" title="All 6 branches missed.">			if (!usNr1.equals(usNr2) &amp;&amp; (!conflicts.contains(usNr1 + usNr2) || !conflicts.contains(usNr2 + usNr1))) {</span>
+<span class="nc" id="L550">				JSONObject main = current.getJSONObject(&quot;Main&quot;);</span>
+<span class="nc" id="L551">				JSONObject jsonObjectActionAnnotations = main.getJSONObject(&quot;Action Annotations&quot;);</span>
+<span class="nc" id="L552">				JSONArray targetActionAnnotationsArray = jsonObjectActionAnnotations</span>
+<span class="nc" id="L553">						.getJSONArray(&quot;Target Action Annotations&quot;);</span>
+<span class="nc" id="L554">				JSONArray containActionAnnotationsArray = jsonObjectActionAnnotations</span>
+<span class="nc" id="L555">						.getJSONArray(&quot;Contain Action Annotations&quot;);</span>
+<span class="nc bnc" id="L556" title="All 2 branches missed.">				for (int j = 0; j &lt; targetActionAnnotationsArray.length(); j++) {</span>
+<span class="nc" id="L557">					JSONArray innerArray = targetActionAnnotationsArray.getJSONArray(j);</span>
+<span class="nc" id="L558">					String actionUs2 = innerArray.getString(0);</span>
+<span class="nc" id="L559">					String entityUs2 = innerArray.getString(1);</span>
+<span class="nc" id="L560">					String actionAnnotationUs2 = innerArray.getString(2);</span>
+
+					// check if actionRule of this US contains any critical action rule
+<span class="nc bnc" id="L563" title="All 2 branches missed.">					if (entityUs2.equalsIgnoreCase(entityUs1)</span>
+<span class="nc bnc" id="L564" title="All 2 branches missed.">							&amp;&amp; actionAnnotationUs2.contains(criticalActionAnnotation)) {</span>
+
+<span class="nc" id="L566">						System.out.println(&quot;----Target: Conflict found  between: &quot; + usNr1 + &quot; and &quot; + usNr2);</span>
+<span class="nc" id="L567">						System.out.println(&quot;Target: Noun is &quot; + entityUs1 + &quot; there is  &quot; + actionAnnotationUs1 + &quot;-&quot;</span>
+<span class="nc" id="L568">								+ criticalActionAnnotation + &quot; Conflict&quot;);</span>
+<span class="nc" id="L569">						System.out.println(&quot;entity of US1: &quot; + entityUs1 + &quot; entity of US2: &quot; + entityUs2);</span>
+
+						// due to the fact that actionRuleUs2 can be more than one actionRule, we
+						// passing
+						// &quot;criticalActionRule&quot; (which is founded in actionRuleUs2) for saving
+						// actionRules
+<span class="nc" id="L575">						ConflictPair conflictPair = setConflictPair(usNr1, usNr2, pId, jsonObjectCurrent, current,</span>
+<span class="nc" id="L576">								actionUs1, actionUs2, actionAnnotationUs1, criticalActionAnnotation,</span>
+<span class="nc" id="L577">								actionAnnotationUs1 + &quot;-&quot; + criticalActionAnnotation + &quot;-Conflict&quot;, &quot;&quot;, entityUs1);</span>
+
+<span class="nc" id="L579">						conflictPairs.add(conflictPair);</span>
+//						conflicts.add(usNr1 + usNr2 + entityUs1);
+//						conflicts.add(usNr2 + usNr1 + entityUs1);
+<span class="nc" id="L582">						conflicts.add(usNr1 + usNr2);</span>
+<span class="nc" id="L583">						conflicts.add(usNr2 + usNr1);</span>
+					}
+
+				}
+
+				// iterate through CONTAINS of main US
+<span class="nc bnc" id="L589" title="All 2 branches missed.">				for (int k = 0; k &lt; containActionAnnotationsArray.length(); k++) {</span>
+<span class="nc" id="L590">					JSONArray jsonArrayContains = containActionAnnotationsArray.getJSONArray(k);</span>
+<span class="nc" id="L591">					String containEntity1Us2 = jsonArrayContains.getString(0);</span>
+<span class="nc" id="L592">					String containEntity2Us2 = jsonArrayContains.getString(1);</span>
+<span class="nc" id="L593">					String containActionAnnotationUs2 = jsonArrayContains.getString(2);</span>
+<span class="nc" id="L594">					String containActionUs2 = jsonArrayContains.getString(3);</span>
+
+					// check in contains if the entity1Us1 has container, if so, then check the
+					// entity of US2
+					// is the entity2Us? If so, then there is a also conflict but with different
+					// entity
+
+					// check if entity belongs to one of their entities
+<span class="nc bnc" id="L602" title="All 2 branches missed.">					if (containEntity1Us2.equalsIgnoreCase(entityUs1)</span>
+<span class="nc bnc" id="L603" title="All 2 branches missed.">							&amp;&amp; containActionAnnotationUs2.contains(criticalActionAnnotation)) {</span>
+
+<span class="nc" id="L605">						System.out.println(&quot;\n\nContains: Conflict found  between: &quot; + usNr1 + &quot; and &quot; + usNr2);</span>
+//							System.out.println(&quot;Contains: Noun is &quot; + containEntity2Us2 + &quot; there is  &quot; + actionRuleUs1
+//									+ &quot;-&quot; + criticalActionRule + &quot; Conflict&quot;);
+						// due to the fact that actionRuleUs2 can be more than one actionRule, we
+						// passing
+						// &quot;criticalActionRule&quot; (which is founded in actionRuleUs2) for saving
+						// actionRules
+<span class="nc" id="L612">						ConflictPair conflictPair = setConflictPair(usNr1, usNr2, pId, jsonObjectCurrent, current,</span>
+<span class="nc" id="L613">								actionUs1, containActionUs2, actionAnnotationUs1, criticalActionAnnotation,</span>
+<span class="nc" id="L614">								actionAnnotationUs1 + &quot;-&quot; + criticalActionAnnotation + &quot;-Conflict&quot;, containEntity2Us2,</span>
+<span class="nc" id="L615">								entityUs1);</span>
+<span class="nc" id="L616">						System.out.println(&quot;entity US1 is : &quot; + nounMainUs1 + &quot; Contains: Noun US1 is &quot; + entityUs1</span>
+<span class="nc" id="L617">								+ &quot; entity US2 is : &quot; + containEntity1Us2 + &quot; Contains: Noun US2 is: &quot;</span>
+<span class="nc" id="L618">								+ containEntity2Us2);</span>
+
+<span class="nc" id="L620">						conflictPairs.add(conflictPair);</span>
+//							conflicts.add(usNr1 + usNr2 + containEntity2Us2);
+//							conflicts.add(usNr2 + usNr1 + containEntity2Us2);
+<span class="nc" id="L623">						conflicts.add(usNr1 + usNr2);</span>
+<span class="nc" id="L624">						conflicts.add(usNr2 + usNr1);</span>
+
+//						if (containEntity2Us2.equalsIgnoreCase(entityUs1)) {
+//							System.out.println(&quot;\n\nContains: Conflict found  between: &quot; + usNr1 + &quot; and &quot; + usNr2);
+//							System.out.println(&quot;Contains: Noun is &quot; + containEntity1Us2 + &quot; there is  &quot; + actionRuleUs1
+//									+ &quot;-&quot; + criticalActionRule + &quot; Conflict&quot;);
+//							// due to the fact that actionRuleUs2 can be more than one actionRule, we
+//							// passing
+//							// &quot;criticalActionRule&quot; (which is founded in actionRuleUs2) for saving
+//							// actionRules
+//							ConflictPair conflictPair = setConflictPair(usNr1, usNr2, pId, jsonObjectCurrent, current,
+//									actionUs1, containActionUs2, actionRuleUs1, criticalActionRule,
+//									actionRuleUs1 + &quot;-&quot; + criticalActionRule + &quot;-Conflict&quot;, entityUs1,
+//									containEntity2Us2, nounMainUs1, containEntity1Us2);
+//							System.out.println(&quot;entity US1 is : &quot; + nounMainUs1 + &quot; Contains: Noun US1 is &quot; + entityUs1
+//									+ &quot; entity US2 is : &quot; + containEntity1Us2 + &quot; Contains: Noun US2 is: &quot;
+//									+ containEntity2Us2);
+//							conflictPairs.add(conflictPair);
+////							conflicts.add(usNr1 + usNr2 + containEntity1Us2);
+////							conflicts.add(usNr2 + usNr1 + containEntity1Us2);
+//							conflicts.add(usNr1 + usNr2);
+//							conflicts.add(usNr2 + usNr1);
+//
+//						}
+
+					}
+
+				}
+			}
+		}
+<span class="nc" id="L654">	}</span>
+
+	// Store founded conflicted pair into ConflictPair class
+	private ConflictPair setConflictPair(String us1, String us2, String pId, JSONObject jsonUs1, JSONObject jsonUs2,
+			String actionUs1, String actionUs2, String actionAnnotationUs1, String actionAnnotationUs2,
+			String conflictReason, String nounContainUs2, String nounMainUs1) {
+<span class="nc" id="L660">		ConflictPair cp = new ConflictPair();</span>
+<span class="nc" id="L661">		cp.setConflictPair1(us1);</span>
+<span class="nc" id="L662">		cp.setConflictPair2(us2);</span>
+<span class="nc" id="L663">		cp.setJsonConflict1(jsonUs1);</span>
+<span class="nc" id="L664">		cp.setJsonConflict2(jsonUs2);</span>
+<span class="nc" id="L665">		cp.setpId(pId);</span>
+<span class="nc" id="L666">		cp.setConflictReason(conflictReason);</span>
+
+<span class="nc" id="L668">		cp.setNounMainUs1(nounMainUs1);</span>
+<span class="nc" id="L669">		cp.setNounContainUs2(nounContainUs2);</span>
+
+<span class="nc" id="L671">		cp.setActionAnnotationUs1(actionAnnotationUs1);</span>
+<span class="nc" id="L672">		cp.setActionAnnotationUs2(actionAnnotationUs2);</span>
+
+<span class="nc" id="L674">		cp.setActionUs1(actionUs1);</span>
+<span class="nc" id="L675">		cp.setActionUs2(actionUs2);</span>
+
+<span class="nc" id="L677">		return cp;</span>
+	}
+
+	// return jsonArray from specific jsonObject
+	private JSONArray getArray(JSONObject jsonObject, String key,
+			ExceptionSupplier&lt;? extends Exception&gt; exceptionSupplier) throws Exception {
+<span class="nc bnc" id="L683" title="All 2 branches missed.">		if (jsonObject.has(key)) {</span>
+<span class="nc" id="L684">			return jsonObject.getJSONArray(key);</span>
+		}
+<span class="nc" id="L686">		return null;</span>
+	}
+
+	// Get UsNr from jsonObject and return back
+	private String getUs(JSONObject jsonObject, String key) throws UsNrInJsonFileNotFound {
+<span class="nc bnc" id="L691" title="All 2 branches missed.">		if (jsonObject.has(key)) {</span>
+<span class="nc" id="L692">			return jsonObject.getString(key);</span>
+
+		} else {
+<span class="nc" id="L695">			throw new UsNrInJsonFileNotFound();</span>
+		}
+
+	}
+
+	// return String from specific jsonObject
+	private String getString(JSONObject jsonObject, String key,
+			ExceptionSupplier&lt;? extends Exception&gt; exceptionSupplier) throws Exception {
+<span class="nc bnc" id="L703" title="All 2 branches missed.">		if (jsonObject.has(key)) {</span>
+<span class="nc" id="L704">			return jsonObject.getString(key);</span>
+		}
+<span class="nc" id="L706">		return null;</span>
+	}
+
+	// replace hash symbol at beginning and ending of founded element
+	private String applyHashSymbols(String subString, String[] matches) {
+<span class="nc" id="L711">		Arrays.sort(matches, Comparator.comparing(String::length).reversed());</span>
+<span class="nc bnc" id="L712" title="All 2 branches missed.">		for (String match : matches) {</span>
+<span class="nc" id="L713">			subString = subString.replaceAll(&quot;\\b&quot; + match + &quot;\\b&quot;, &quot;#&quot; + match + &quot;#&quot;).replaceAll(&quot;#+&quot;, &quot;#&quot;);</span>
+			;
+
+		}
+<span class="nc" id="L717">		return subString;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span>VerbFinderTest (06.07.2024 13:31:08)</div></body></html>

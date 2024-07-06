@@ -4,14 +4,6 @@
         "Benefit": {
             "Entity": ["individual camper"],
             "Action": ["keep track"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "keep track",
-                    "individual camper",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can keep track of each individual camper.",
             "Targets": [[
@@ -25,14 +17,6 @@
             "Entity": ["campers"],
             "Action": ["add"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "add",
-                    "campers",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G12# As a camp administrator, I want to be able to add campers, ",
             "Triggers": [[
@@ -42,7 +26,15 @@
             "Targets": [[
                 "add",
                 "campers"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "add",
+                    "campers",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -51,14 +43,6 @@
         "Benefit": {
             "Entity": ["records organized"],
             "Action": ["keep"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "keep",
-                    "records organized",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can keep the records organized.",
             "Targets": [[
@@ -75,19 +59,6 @@
             ],
             "Action": ["remove"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "remove",
-                    "campers",
-                    "delete"
-                ]],
-                "Contain Action Rules": [[
-                    "camp",
-                    "campers",
-                    "delete",
-                    "remove"
-                ]]
-            },
             "Contains": [[
                 "camp",
                 "campers"
@@ -100,7 +71,20 @@
             "Targets": [[
                 "remove",
                 "campers"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "remove",
+                    "campers",
+                    "delete"
+                ]],
+                "Contain Action Annotations": [[
+                    "camp",
+                    "campers",
+                    "delete",
+                    "remove"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -109,14 +93,6 @@
         "Benefit": {
             "Entity": ["amount of work"],
             "Action": ["lowered"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "lowered",
-                    "amount of work",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "the amount of work I need to do is lowered.",
             "Targets": [[
@@ -133,19 +109,6 @@
             ],
             "Action": ["keep"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "keep",
-                    "camper records",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "previous years",
-                    "camper records",
-                    "preserve",
-                    "keep"
-                ]]
-            },
             "Contains": [[
                 "previous years",
                 "camper records"
@@ -158,7 +121,20 @@
             "Targets": [[
                 "keep",
                 "camper records"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "keep",
+                    "camper records",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "previous years",
+                    "camper records",
+                    "preserve",
+                    "keep"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -171,14 +147,6 @@
                 "forms"
             ],
             "Action": ["easily access"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "easily access",
-                    "forms",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "campers or their parents can easily access the forms.",
             "Targets": [[
@@ -192,14 +160,6 @@
             "Entity": ["consent forms"],
             "Action": ["upload"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "upload",
-                    "consent forms",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G12# As a camp administrator, I want to be able to upload consent forms, ",
             "Triggers": [[
@@ -209,7 +169,15 @@
             "Targets": [[
                 "upload",
                 "consent forms"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "upload",
+                    "consent forms",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -218,14 +186,6 @@
         "Benefit": {
             "Entity": ["egal issues"],
             "Action": ["avoided"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "avoided",
-                    "egal issues",
-                    "preserve;forbid"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "legal issues are avoided.",
             "Targets": [[
@@ -242,19 +202,6 @@
             ],
             "Action": ["keep track"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "keep track",
-                    "forms",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "camper",
-                    "forms",
-                    "preserve",
-                    "keep track"
-                ]]
-            },
             "Contains": [[
                 "camper",
                 "forms"
@@ -267,7 +214,20 @@
             "Targets": [[
                 "keep track",
                 "forms"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "keep track",
+                    "forms",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "camper",
+                    "forms",
+                    "preserve",
+                    "keep track"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -276,10 +236,6 @@
         "Benefit": {
             "Entity": ["camp workers"],
             "Action": ["easily keep track"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "camp workers can easily keep track of who is where at all times.",
             "Targets": []
@@ -293,14 +249,6 @@
             ],
             "Action": ["schedule"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "schedule",
-                    "activities",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G12# As a camp administrator, I want to be able to schedule activities for campers, ",
             "Triggers": [[
@@ -310,7 +258,15 @@
             "Targets": [[
                 "schedule",
                 "activities"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "schedule",
+                    "activities",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Targets": [
             "easily keep track",
@@ -322,14 +278,6 @@
         "Benefit": {
             "Entity": ["amount of work"],
             "Action": ["lower"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "lower",
-                    "amount of work",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can lower the amount of work I need to do.",
             "Targets": [[
@@ -346,19 +294,6 @@
             ],
             "Action": ["automatically create"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "automatically create",
-                    "nametags",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "campers",
-                    "nametags",
-                    "create",
-                    "automatically create"
-                ]]
-            },
             "Contains": [[
                 "campers",
                 "nametags"
@@ -371,7 +306,20 @@
             "Targets": [[
                 "automatically create",
                 "nametags"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "automatically create",
+                    "nametags",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "campers",
+                    "nametags",
+                    "create",
+                    "automatically create"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -380,10 +328,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -396,19 +340,6 @@
             ],
             "Action": ["suspend"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "suspend",
-                    "camper",
-                    "delete"
-                ]],
-                "Contain Action Rules": [[
-                    "camper",
-                    "behavioral problems",
-                    "delete",
-                    "suspend"
-                ]]
-            },
             "Contains": [[
                 "camper",
                 "behavioral problems"
@@ -421,7 +352,20 @@
             "Targets": [[
                 "suspend",
                 "camper"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "suspend",
+                    "camper",
+                    "delete"
+                ]],
+                "Contain Action Annotations": [[
+                    "camper",
+                    "behavioral problems",
+                    "delete",
+                    "suspend"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -430,10 +374,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -446,19 +386,6 @@
             ],
             "Action": ["set"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "set",
-                    "reminders",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "specific tasks",
-                    "reminders",
-                    "create",
-                    "set"
-                ]]
-            },
             "Contains": [[
                 "specific tasks",
                 "reminders"
@@ -471,7 +398,20 @@
             "Targets": [[
                 "set",
                 "reminders"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "set",
+                    "reminders",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "specific tasks",
+                    "reminders",
+                    "create",
+                    "set"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -483,18 +423,6 @@
                 "responsibilities"
             ],
             "Action": ["organize"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "organize",
-                    "activities",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": [[
-                    "activities",
-                    "responsibilities",
-                    "create;delete"
-                ]]
-            },
             "Contains": [[
                 "activities",
                 "responsibilities"
@@ -514,19 +442,6 @@
             ],
             "Action": ["assign"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "assign",
-                    "different positions",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "staff members",
-                    "different positions",
-                    "create",
-                    "assign"
-                ]]
-            },
             "Contains": [[
                 "staff members",
                 "different positions"
@@ -539,7 +454,20 @@
             "Targets": [[
                 "assign",
                 "different positions"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "assign",
+                    "different positions",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "staff members",
+                    "different positions",
+                    "create",
+                    "assign"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -548,10 +476,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -564,19 +488,6 @@
             ],
             "Action": ["warn"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "warn",
-                    "camp worker",
-                    "create;preserve;forbid"
-                ]],
-                "Contain Action Rules": [[
-                    "camp worker",
-                    "job inappropriate",
-                    "create;preserve;forbid",
-                    "warn"
-                ]]
-            },
             "Contains": [[
                 "camp worker",
                 "job inappropriate"
@@ -589,7 +500,20 @@
             "Targets": [[
                 "warn",
                 "camp worker"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "warn",
+                    "camp worker",
+                    "create;preserve;forbid"
+                ]],
+                "Contain Action Annotations": [[
+                    "camp worker",
+                    "job inappropriate",
+                    "create;preserve;forbid",
+                    "warn"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -598,10 +522,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -619,26 +539,6 @@
                 "follow"
             ],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "create",
-                        "rules",
-                        "create"
-                    ],
-                    [
-                        "modify",
-                        "rules",
-                        "create;delete"
-                    ],
-                    [
-                        "follow",
-                        "rules",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G12# As a camp administrator, I want to be able to create, modify rules that campers and camp workers has to follow.",
             "Triggers": [
@@ -664,7 +564,27 @@
                     "follow",
                     "rules"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "create",
+                        "rules",
+                        "create"
+                    ],
+                    [
+                        "modify",
+                        "rules",
+                        "create;delete"
+                    ],
+                    [
+                        "follow",
+                        "rules",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -676,10 +596,6 @@
                 "different camp groups"
             ],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": " don't create conflicting schedules for the different camp groups.",
             "Targets": []
@@ -690,14 +606,6 @@
             "Entity": ["usage of internal camp facilities"],
             "Action": ["keep track"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "keep track",
-                    "usage of internal camp facilities",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G12# As a camp administrator, I want to keep track of the usage of internal camp facilities,  ",
             "Triggers": [[
@@ -707,7 +615,15 @@
             "Targets": [[
                 "keep track",
                 "usage of internal camp facilities"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "keep track",
+                    "usage of internal camp facilities",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -719,21 +635,6 @@
                 "keep improving",
                 "provide"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "keep improving",
-                        "services",
-                        "create"
-                    ],
-                    [
-                        "provide",
-                        "services",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can keep improving the services I provide.",
             "Targets": [
@@ -761,39 +662,6 @@
                 "submit"
             ],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "create",
-                        "avenue",
-                        "create"
-                    ],
-                    [
-                        "submit",
-                        "feedback",
-                        "create"
-                    ],
-                    [
-                        "submit",
-                        "general concerns",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "avenue",
-                        "feedback",
-                        "create",
-                        "create"
-                    ],
-                    [
-                        "avenue",
-                        "general concerns",
-                        "create",
-                        "create"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "avenue",
@@ -822,7 +690,40 @@
                     "submit",
                     "general concerns"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "create",
+                        "avenue",
+                        "create"
+                    ],
+                    [
+                        "submit",
+                        "feedback",
+                        "create"
+                    ],
+                    [
+                        "submit",
+                        "general concerns",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "avenue",
+                        "feedback",
+                        "create",
+                        "create"
+                    ],
+                    [
+                        "avenue",
+                        "general concerns",
+                        "create",
+                        "create"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -834,14 +735,6 @@
                 "case of an emergency"
             ],
             "Action": ["easily notify"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "easily notify",
-                    "necessary parties",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can easily notify the necessary parties in case of an emergency.",
             "Targets": [[
@@ -858,19 +751,6 @@
             ],
             "Action": ["store"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "store",
-                    "campers' emergency information",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "database",
-                    "campers' emergency information",
-                    "create",
-                    "store"
-                ]]
-            },
             "Contains": [[
                 "database",
                 "campers' emergency information"
@@ -883,7 +763,20 @@
             "Targets": [[
                 "store",
                 "campers' emergency information"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "store",
+                    "campers' emergency information",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "database",
+                    "campers' emergency information",
+                    "create",
+                    "store"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -895,14 +788,6 @@
                 "easily call",
                 "notify"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "notify",
-                    "grossly unacceptable behavior",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can easily call to notify them in case a grossly unacceptable behavior.",
             "Targets": [[
@@ -916,14 +801,6 @@
             "Entity": ["camper's immediate parent/guardian's information"],
             "Action": ["store"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "store",
-                    "camper's immediate parent/guardian's information",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G12# As a camp administrator, I want to store camper's immediate parent/guardian's information, ",
             "Triggers": [[
@@ -933,7 +810,15 @@
             "Targets": [[
                 "store",
                 "camper's immediate parent/guardian's information"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "store",
+                    "camper's immediate parent/guardian's information",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -946,21 +831,6 @@
                 "camp"
             ],
             "Action": ["aware"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "aware",
-                        "child's behavior",
-                        "preserve;forbid"
-                    ],
-                    [
-                        "aware",
-                        "performance",
-                        "preserve;forbid"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "they can be aware of their child's behavior and performance at camp.",
             "Targets": [
@@ -983,19 +853,6 @@
             ],
             "Action": ["provide"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "provide",
-                    "bi-weekly feedback",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "camper's parents",
-                    "bi-weekly feedback",
-                    "create",
-                    "provide"
-                ]]
-            },
             "Contains": [[
                 "camper's parents",
                 "bi-weekly feedback"
@@ -1008,7 +865,20 @@
             "Targets": [[
                 "provide",
                 "bi-weekly feedback"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "provide",
+                    "bi-weekly feedback",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "camper's parents",
+                    "bi-weekly feedback",
+                    "create",
+                    "provide"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1020,14 +890,6 @@
                 "200+ nametags"
             ],
             "Action": ["making"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "making",
-                    "200+ nametags",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I don't have to spend two hours making 200+ nametags",
             "Targets": [[
@@ -1041,14 +903,6 @@
             "Entity": ["nametags"],
             "Action": ["make"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "make",
-                    "nametags",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G12# As a camp administrator, I want to be able to make nametags faster, ",
             "Triggers": [[
@@ -1058,7 +912,15 @@
             "Targets": [[
                 "make",
                 "nametags"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "make",
+                    "nametags",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1067,10 +929,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["keep organized"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": " I can keep organized.",
             "Targets": []
@@ -1085,27 +943,6 @@
             ],
             "Action": ["create"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "create",
-                    "registration form",
-                    "create"
-                ]],
-                "Contain Action Rules": [
-                    [
-                        "staff",
-                        "registration form",
-                        "create",
-                        "create"
-                    ],
-                    [
-                        "kids",
-                        "registration form",
-                        "create",
-                        "create"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "staff",
@@ -1124,7 +961,28 @@
             "Targets": [[
                 "create",
                 "registration form"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "create",
+                    "registration form",
+                    "create"
+                ]],
+                "Contain Action Annotations": [
+                    [
+                        "staff",
+                        "registration form",
+                        "create",
+                        "create"
+                    ],
+                    [
+                        "kids",
+                        "registration form",
+                        "create",
+                        "create"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -1136,14 +994,6 @@
                 "previous years"
             ],
             "Action": ["improve"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "improve",
-                    "previous years",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "the admins next year can improve on the previous years.",
             "Targets": [[
@@ -1160,19 +1010,6 @@
             ],
             "Action": ["keep"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "keep",
-                    "information",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "one place",
-                    "information",
-                    "preserve",
-                    "keep"
-                ]]
-            },
             "Contains": [[
                 "one place",
                 "information"
@@ -1185,7 +1022,20 @@
             "Targets": [[
                 "keep",
                 "information"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "keep",
+                    "information",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "one place",
+                    "information",
+                    "preserve",
+                    "keep"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1194,14 +1044,6 @@
         "Benefit": {
             "Entity": ["allergy attack"],
             "Action": ["be prepared"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "be prepared",
-                    "allergy attack",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "we can be prepared for an allergy attack",
             "Targets": [[
@@ -1215,14 +1057,6 @@
             "Entity": ["medical forms"],
             "Action": ["see"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "see",
-                    "medical forms",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G12# As a camp administrator, I want to be able to see medical forms, ",
             "Triggers": [[
@@ -1232,7 +1066,15 @@
             "Targets": [[
                 "see",
                 "medical forms"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "see",
+                    "medical forms",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1241,10 +1083,6 @@
         "Benefit": {
             "Entity": ["any upcoming events"],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "they can be notified of any upcoming events.",
             "Targets": []
@@ -1255,14 +1093,6 @@
             "Entity": ["parents"],
             "Action": ["notify"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "notify",
-                    "parents",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G12# As a camp administrator, I want to be able to notify parents all at once, ",
             "Triggers": [[
@@ -1272,7 +1102,15 @@
             "Targets": [[
                 "notify",
                 "parents"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "notify",
+                    "parents",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Targets": [
             "notify",
@@ -1284,14 +1122,6 @@
         "Benefit": {
             "Entity": ["kids"],
             "Action": ["track"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "track",
-                    "kids",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can track which kids are coming in.",
             "Targets": [[
@@ -1305,14 +1135,6 @@
             "Entity": ["attendance"],
             "Action": ["quickly log"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "quickly log",
-                    "attendance",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G12# As a camp administrator, I want to be quickly log attendance everyday, ",
             "Triggers": [[
@@ -1322,7 +1144,15 @@
             "Targets": [[
                 "quickly log",
                 "attendance"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "quickly log",
+                    "attendance",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1334,18 +1164,6 @@
                 "camp"
             ],
             "Action": ["enroll"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "enroll",
-                    "kids",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "camp",
-                    "kids",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "camp",
                 "kids"
@@ -1362,14 +1180,6 @@
             "Entity": ["parents"],
             "Action": ["add"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "add",
-                    "parents",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G12# As a camp administrator, I want to be able to add parents, ",
             "Triggers": [[
@@ -1379,7 +1189,15 @@
             "Targets": [[
                 "add",
                 "parents"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "add",
+                    "parents",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1388,14 +1206,6 @@
         "Benefit": {
             "Entity": ["campers"],
             "Action": ["easily organize"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "easily organize",
-                    "campers",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can easily organize the campers.",
             "Targets": [[
@@ -1416,26 +1226,6 @@
                 "add"
             ],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "create",
-                        "groups",
-                        "create"
-                    ],
-                    [
-                        "add",
-                        "campers",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "groups",
-                    "campers",
-                    "create",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "groups",
                 "campers"
@@ -1460,7 +1250,27 @@
                     "add",
                     "campers"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "create",
+                        "groups",
+                        "create"
+                    ],
+                    [
+                        "add",
+                        "campers",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "groups",
+                    "campers",
+                    "create",
+                    "create"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1474,18 +1284,6 @@
                 "what"
             ],
             "Action": ["notify"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "notify",
-                    "counselor",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "counselor",
-                    "group",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "counselor",
                 "group"
@@ -1506,26 +1304,6 @@
             ],
             "Action": ["see"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "see",
-                        "camp groups",
-                        "preserve"
-                    ],
-                    [
-                        "see",
-                        "events scheduled",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "each camp group",
-                    "events scheduled",
-                    "preserve",
-                    "see"
-                ]]
-            },
             "Contains": [[
                 "each camp group",
                 "events scheduled"
@@ -1544,7 +1322,27 @@
                     "see",
                     "events scheduled"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "see",
+                        "camp groups",
+                        "preserve"
+                    ],
+                    [
+                        "see",
+                        "events scheduled",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "each camp group",
+                    "events scheduled",
+                    "preserve",
+                    "see"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1553,14 +1351,6 @@
         "Benefit": {
             "Entity": ["each groups daily/weekly and monthly activities"],
             "Action": ["track"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "track",
-                    "each groups daily/weekly and monthly activities",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can track each groups daily/weekly and monthly activities.",
             "Targets": [[
@@ -1578,34 +1368,6 @@
             ],
             "Action": ["schedule"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "schedule",
-                        "tasks",
-                        "create"
-                    ],
-                    [
-                        "schedule",
-                        "activities",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "specific camp group",
-                        "tasks",
-                        "create",
-                        "schedule"
-                    ],
-                    [
-                        "specific camp group",
-                        "activities",
-                        "create",
-                        "schedule"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "specific camp group",
@@ -1630,7 +1392,35 @@
                     "schedule",
                     "activities"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "schedule",
+                        "tasks",
+                        "create"
+                    ],
+                    [
+                        "schedule",
+                        "activities",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "specific camp group",
+                        "tasks",
+                        "create",
+                        "schedule"
+                    ],
+                    [
+                        "specific camp group",
+                        "activities",
+                        "create",
+                        "schedule"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -1642,18 +1432,6 @@
                 "clean of unneeded activities"
             ],
             "Action": ["keep"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "keep",
-                    "schedule",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "schedule",
-                    "clean of unneeded activities",
-                    "preserve"
-                ]]
-            },
             "Contains": [[
                 "schedule",
                 "clean of unneeded activities"
@@ -1673,21 +1451,6 @@
             ],
             "Action": ["delete"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "delete",
-                        "tasks",
-                        "delete"
-                    ],
-                    [
-                        "delete",
-                        "activities",
-                        "delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G12# As a camp administrator, I want to be able to delete tasks/activities I scheduled, ",
             "Triggers": [[
@@ -1703,7 +1466,22 @@
                     "delete",
                     "activities"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "delete",
+                        "tasks",
+                        "delete"
+                    ],
+                    [
+                        "delete",
+                        "activities",
+                        "delete"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1712,14 +1490,6 @@
         "Benefit": {
             "Entity": ["schedule up to date"],
             "Action": ["always keep"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "always keep",
-                    "schedule up to date",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can always keep the schedule up to date.",
             "Targets": [[
@@ -1736,21 +1506,6 @@
             ],
             "Action": ["modify"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "modify",
-                        "tasks",
-                        "create;delete"
-                    ],
-                    [
-                        "modify",
-                        "events",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G12# As a camp administrator, I want to be able to modify tasks/events I scheduled in case there is a change, ",
             "Triggers": [[
@@ -1766,7 +1521,22 @@
                     "modify",
                     "events"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "modify",
+                        "tasks",
+                        "create;delete"
+                    ],
+                    [
+                        "modify",
+                        "events",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1775,14 +1545,6 @@
         "Benefit": {
             "Entity": ["campers information up to date"],
             "Action": ["keep"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "keep",
-                    "campers information up to date",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can keep the campers information up to date.",
             "Targets": [[
@@ -1799,19 +1561,6 @@
             ],
             "Action": ["modify"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "modify",
-                    "information",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": [[
-                    "enrolled campers",
-                    "information",
-                    "create;delete",
-                    "modify"
-                ]]
-            },
             "Contains": [[
                 "enrolled campers",
                 "information"
@@ -1824,7 +1573,20 @@
             "Targets": [[
                 "modify",
                 "information"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "modify",
+                    "information",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": [[
+                    "enrolled campers",
+                    "information",
+                    "create;delete",
+                    "modify"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1836,18 +1598,6 @@
                 "free of clutter"
             ],
             "Action": ["keep"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "keep",
-                    "pages",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "pages",
-                    "free of clutter",
-                    "preserve"
-                ]]
-            },
             "Contains": [[
                 "pages",
                 "free of clutter"
@@ -1867,19 +1617,6 @@
             ],
             "Action": ["delete"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "delete",
-                    "campers",
-                    "delete"
-                ]],
-                "Contain Action Rules": [[
-                    "database",
-                    "campers",
-                    "delete",
-                    "delete"
-                ]]
-            },
             "Contains": [[
                 "database",
                 "campers"
@@ -1892,7 +1629,20 @@
             "Targets": [[
                 "delete",
                 "campers"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "delete",
+                    "campers",
+                    "delete"
+                ]],
+                "Contain Action Annotations": [[
+                    "database",
+                    "campers",
+                    "delete",
+                    "delete"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1901,14 +1651,6 @@
         "Benefit": {
             "Entity": ["parent's information up to date"],
             "Action": ["keep"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "keep",
-                    "parent's information up to date",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can keep parent's information up to date.",
             "Targets": [[
@@ -1925,19 +1667,6 @@
             ],
             "Action": ["modify"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "modify",
-                    "information",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": [[
-                    "added parents",
-                    "information",
-                    "create;delete",
-                    "modify"
-                ]]
-            },
             "Contains": [[
                 "added parents",
                 "information"
@@ -1950,7 +1679,20 @@
             "Targets": [[
                 "modify",
                 "information"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "modify",
+                    "information",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": [[
+                    "added parents",
+                    "information",
+                    "create;delete",
+                    "modify"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1962,18 +1704,6 @@
                 "free of unneeded clutter"
             ],
             "Action": ["keep"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "keep",
-                    "pages",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "pages",
-                    "free of unneeded clutter",
-                    "preserve"
-                ]]
-            },
             "Contains": [[
                 "pages",
                 "free of unneeded clutter"
@@ -1993,19 +1723,6 @@
             ],
             "Action": ["delete"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "delete",
-                    "parents",
-                    "delete"
-                ]],
-                "Contain Action Rules": [[
-                    "database",
-                    "parents",
-                    "delete",
-                    "delete"
-                ]]
-            },
             "Contains": [[
                 "database",
                 "parents"
@@ -2018,7 +1735,20 @@
             "Targets": [[
                 "delete",
                 "parents"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "delete",
+                    "parents",
+                    "delete"
+                ]],
+                "Contain Action Annotations": [[
+                    "database",
+                    "parents",
+                    "delete",
+                    "delete"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2027,14 +1757,6 @@
         "Benefit": {
             "Entity": ["groups up to date"],
             "Action": ["keep"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "keep",
-                    "groups up to date",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can keep the groups up to date.",
             "Targets": [[
@@ -2048,14 +1770,6 @@
             "Entity": ["group's information"],
             "Action": ["modify"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "modify",
-                    "group's information",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G12# As a camp administrator, I want to be able to modify a group's information, ",
             "Triggers": [[
@@ -2065,7 +1779,15 @@
             "Targets": [[
                 "modify",
                 "group's information"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "modify",
+                    "group's information",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2077,18 +1799,6 @@
                 "calendar"
             ],
             "Action": ["easily read"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "easily read",
-                    "data",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "calendar",
-                    "data",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "calendar",
                 "data"
@@ -2110,33 +1820,6 @@
             ],
             "Action": ["see only"],
             "Persona": ["camp administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "see only",
-                    "events",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [
-                    [
-                        "events",
-                        "specific group",
-                        "preserve",
-                        "see only"
-                    ],
-                    [
-                        "events",
-                        "groups",
-                        "preserve",
-                        "see only"
-                    ],
-                    [
-                        "event calendar",
-                        "events",
-                        "preserve",
-                        "see only"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "events",
@@ -2159,7 +1842,34 @@
             "Targets": [[
                 "see only",
                 "events"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "see only",
+                    "events",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [
+                    [
+                        "events",
+                        "specific group",
+                        "preserve",
+                        "see only"
+                    ],
+                    [
+                        "events",
+                        "groups",
+                        "preserve",
+                        "see only"
+                    ],
+                    [
+                        "event calendar",
+                        "events",
+                        "preserve",
+                        "see only"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -2171,21 +1881,6 @@
                 "know",
                 "do"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "know",
-                        "what",
-                        "preserve"
-                    ],
-                    [
-                        "do",
-                        "what",
-                        "preserve;create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can know what I still need to do.",
             "Targets": [
@@ -2205,14 +1900,6 @@
             "Entity": ["consent forms I have submitted"],
             "Action": ["see"],
             "Persona": ["parent"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "see",
-                    "consent forms i have submitted",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G12# As a parent, I want to be able to see which consent forms I have submitted, ",
             "Triggers": [[
@@ -2222,7 +1909,15 @@
             "Targets": [[
                 "see",
                 "consent forms I have submitted"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "see",
+                    "consent forms i have submitted",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2231,14 +1926,6 @@
         "Benefit": {
             "Entity": ["peace of mind"],
             "Action": ["have"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "peace of mind",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can have peace of mind.",
             "Targets": [[
@@ -2256,21 +1943,6 @@
             ],
             "Action": ["track"],
             "Persona": ["parent"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "track",
-                        "child's activity",
-                        "preserve;create"
-                    ],
-                    [
-                        "track",
-                        "schedule",
-                        "preserve;create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G12# As a parent, I want to be able to track my child's activity and schedule at camp, ",
             "Triggers": [[
@@ -2286,7 +1958,22 @@
                     "track",
                     "schedule"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "track",
+                        "child's activity",
+                        "preserve;create"
+                    ],
+                    [
+                        "track",
+                        "schedule",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2295,10 +1982,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -2311,14 +1994,6 @@
             ],
             "Action": ["submit"],
             "Persona": ["parent"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "submit",
-                    "various type of forms",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G12# As a parent, I want to be able to submit various type of forms to the camp management.",
             "Triggers": [[
@@ -2328,7 +2003,15 @@
             "Targets": [[
                 "submit",
                 "various type of forms"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "submit",
+                    "various type of forms",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2340,18 +2023,6 @@
                 "camp"
             ],
             "Action": ["sign up"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "sign up",
-                    "kids",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "camp",
-                    "kids",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "camp",
                 "kids"
@@ -2368,14 +2039,6 @@
             "Entity": ["account"],
             "Action": ["create"],
             "Persona": ["parent"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "create",
-                    "account",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G12# As a parent, I want to be able to create an account, ",
             "Triggers": [[
@@ -2385,7 +2048,15 @@
             "Targets": [[
                 "create",
                 "account"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "create",
+                    "account",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2394,14 +2065,6 @@
         "Benefit": {
             "Entity": ["peace of mind"],
             "Action": ["have"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "peace of mind",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can have peace of mind.",
             "Targets": [[
@@ -2418,19 +2081,6 @@
             ],
             "Action": ["see"],
             "Persona": ["parent"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "see",
-                    "counselors",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "counselors",
-                    "kids",
-                    "preserve",
-                    "see"
-                ]]
-            },
             "Contains": [[
                 "counselors",
                 "kids"
@@ -2443,7 +2093,20 @@
             "Targets": [[
                 "see",
                 "counselors"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "see",
+                    "counselors",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "counselors",
+                    "kids",
+                    "preserve",
+                    "see"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2458,21 +2121,6 @@
                 "voice",
                 "check"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "voice",
-                        "concerns",
-                        "preserve"
-                    ],
-                    [
-                        "check",
-                        "child's progress",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can voice my concerns or check on my child's progress.",
             "Targets": [
@@ -2492,14 +2140,6 @@
             "Entity": ["child's counselors"],
             "Action": ["message"],
             "Persona": ["parent"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "message",
-                    "child's counselors",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G12# As a parent, I want to be able to message my child's counselors, ",
             "Triggers": [[
@@ -2509,7 +2149,15 @@
             "Targets": [[
                 "message",
                 "child's counselors"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "message",
+                    "child's counselors",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2521,18 +2169,6 @@
                 "consent form"
             ],
             "Action": ["losing"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "losing",
-                    "consent form",
-                    "delete"
-                ]],
-                "Contain Action Rules": [[
-                    "child",
-                    "consent form",
-                    "delete"
-                ]]
-            },
             "Contains": [[
                 "child",
                 "consent form"
@@ -2552,21 +2188,6 @@
                 "submit"
             ],
             "Persona": ["parent"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "submit",
-                        "consent forms online",
-                        "create"
-                    ],
-                    [
-                        "sign",
-                        "consent forms online",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G12# As a parent, I want to be able to sign and submit consent forms online, ",
             "Triggers": [
@@ -2588,7 +2209,22 @@
                     "sign",
                     "consent forms online"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "submit",
+                        "consent forms online",
+                        "create"
+                    ],
+                    [
+                        "sign",
+                        "consent forms online",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2597,10 +2233,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -2613,21 +2245,6 @@
                 "see"
             ],
             "Persona": ["parent"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "see",
-                        "necessary payments",
-                        "preserve"
-                    ],
-                    [
-                        "made",
-                        "necessary payments",
-                        "preserve;create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G12# As a parent, I want to be able to see if I made all the necessary payments.",
             "Triggers": [[
@@ -2643,7 +2260,22 @@
                     "made",
                     "necessary payments"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "see",
+                        "necessary payments",
+                        "preserve"
+                    ],
+                    [
+                        "made",
+                        "necessary payments",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2652,10 +2284,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -2669,27 +2297,6 @@
             ],
             "Action": ["share"],
             "Persona": ["parent"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "share",
-                    "any photos",
-                    "create"
-                ]],
-                "Contain Action Rules": [
-                    [
-                        "camp",
-                        "any photos",
-                        "create",
-                        "share"
-                    ],
-                    [
-                        "any photos",
-                        "child",
-                        "create",
-                        "share"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "camp",
@@ -2708,7 +2315,28 @@
             "Targets": [[
                 "share",
                 "any photos"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "share",
+                    "any photos",
+                    "create"
+                ]],
+                "Contain Action Annotations": [
+                    [
+                        "camp",
+                        "any photos",
+                        "create",
+                        "share"
+                    ],
+                    [
+                        "any photos",
+                        "child",
+                        "create",
+                        "share"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -2717,10 +2345,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -2733,14 +2357,6 @@
             ],
             "Action": ["connect"],
             "Persona": ["parent"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "connect",
-                    "staff",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G12# As a parent, I want to be able to connect with the staff in case of an emergency.",
             "Triggers": [[
@@ -2750,7 +2366,15 @@
             "Targets": [[
                 "connect",
                 "staff"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "connect",
+                    "staff",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2759,14 +2383,6 @@
         "Benefit": {
             "Entity": ["camp"],
             "Action": ["admitted"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "admitted",
-                    "camp",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "they can be admitted to camp.",
             "Targets": [[
@@ -2780,14 +2396,6 @@
             "Entity": ["children"],
             "Action": ["enroll"],
             "Persona": ["parent"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "enroll",
-                    "children",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G12# As a parent, I want to be able to enroll my children, ",
             "Triggers": [[
@@ -2797,7 +2405,15 @@
             "Targets": [[
                 "enroll",
                 "children"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "enroll",
+                    "children",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Contains": [
             "camp",
@@ -2818,26 +2434,6 @@
                 "already enrolled",
                 "still pending"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "already enrolled",
-                        "camp",
-                        "preserve"
-                    ],
-                    [
-                        "still pending",
-                        "admission",
-                        "preserve"
-                    ],
-                    [
-                        "know",
-                        "who",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can know who I already enrolled to camp, who is still pending admission etc.",
             "Targets": [
@@ -2871,21 +2467,6 @@
                 "edit"
             ],
             "Persona": ["parent"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "see",
-                        "enrolled children",
-                        "preserve"
-                    ],
-                    [
-                        "edit",
-                        "enrolled children",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G12# As a parent, I want to be able to see and edit my enrolled children to the camp year, ",
             "Triggers": [
@@ -2907,7 +2488,22 @@
                     "edit",
                     "enrolled children"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "see",
+                        "enrolled children",
+                        "preserve"
+                    ],
+                    [
+                        "edit",
+                        "enrolled children",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2916,10 +2512,6 @@
         "Benefit": {
             "Entity": ["camp"],
             "Action": ["be more informed"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can be more informed as to what they are doing at camp.",
             "Targets": []
@@ -2935,19 +2527,6 @@
             ],
             "Action": ["see"],
             "Persona": ["parent"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "see",
-                    "schedule",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "schedule",
-                    "activities",
-                    "preserve",
-                    "see"
-                ]]
-            },
             "Contains": [
                 [
                     "schedule",
@@ -2970,7 +2549,20 @@
             "Targets": [[
                 "see",
                 "schedule"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "see",
+                    "schedule",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "schedule",
+                    "activities",
+                    "preserve",
+                    "see"
+                ]]
+            }
         },
         "Mix": {"Targets": [
             "be more informed",
@@ -2985,14 +2577,6 @@
                 "make sure",
                 "doing"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "doing",
-                    "job",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can make sure I am doing my job properly.",
             "Targets": [[
@@ -3006,14 +2590,6 @@
             "Entity": ["campers I am in charge of"],
             "Action": ["see"],
             "Persona": ["camp worker"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "see",
-                    "campers i am in charge of",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G12# As a camp worker, I want to be able to see which campers I am in charge of and where, ",
             "Triggers": [[
@@ -3023,7 +2599,15 @@
             "Targets": [[
                 "see",
                 "campers I am in charge of"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "see",
+                    "campers i am in charge of",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3032,10 +2616,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -3048,19 +2628,6 @@
             ],
             "Action": ["submit"],
             "Persona": ["camp worker"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "submit",
-                    "completion report",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "tasks",
-                    "completion report",
-                    "create",
-                    "submit"
-                ]]
-            },
             "Contains": [[
                 "tasks",
                 "completion report"
@@ -3073,7 +2640,20 @@
             "Targets": [[
                 "submit",
                 "completion report"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "submit",
+                    "completion report",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "tasks",
+                    "completion report",
+                    "create",
+                    "submit"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3082,10 +2662,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -3099,19 +2675,6 @@
             ],
             "Action": ["report"],
             "Persona": ["camp worker"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "report",
-                    "camper",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": [[
-                    "camper",
-                    "inappropriate behavior",
-                    "preserve;create",
-                    "report"
-                ]]
-            },
             "Contains": [[
                 "camper",
                 "inappropriate behavior"
@@ -3124,7 +2687,20 @@
             "Targets": [[
                 "report",
                 "camper"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "report",
+                    "camper",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": [[
+                    "camper",
+                    "inappropriate behavior",
+                    "preserve;create",
+                    "report"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3133,10 +2709,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -3151,27 +2723,6 @@
             ],
             "Action": ["report"],
             "Persona": ["camp worker"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "report",
-                    "list",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": [
-                    [
-                        "list",
-                        "supplies",
-                        "preserve;create",
-                        "report"
-                    ],
-                    [
-                        "manager",
-                        "list",
-                        "preserve;create",
-                        "report"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "list",
@@ -3194,7 +2745,28 @@
             "Targets": [[
                 "report",
                 "list"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "report",
+                    "list",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": [
+                    [
+                        "list",
+                        "supplies",
+                        "preserve;create",
+                        "report"
+                    ],
+                    [
+                        "manager",
+                        "list",
+                        "preserve;create",
+                        "report"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -3203,10 +2775,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -3220,19 +2788,6 @@
             ],
             "Action": ["report"],
             "Persona": ["camp worker"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "report",
-                    "necessary repairs",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": [[
-                    "camp",
-                    "necessary repairs",
-                    "preserve;create",
-                    "report"
-                ]]
-            },
             "Contains": [[
                 "camp",
                 "necessary repairs"
@@ -3245,7 +2800,20 @@
             "Targets": [[
                 "report",
                 "necessary repairs"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "report",
+                    "necessary repairs",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": [[
+                    "camp",
+                    "necessary repairs",
+                    "preserve;create",
+                    "report"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3257,14 +2825,6 @@
                 "ensure",
                 "accounted"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "accounted",
-                    "everybody",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can make ensure everybody is accounted for.",
             "Targets": [[
@@ -3281,19 +2841,6 @@
             ],
             "Action": ["take"],
             "Persona": ["camp counselor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "take",
-                    "attendance",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": [[
-                    "attendance",
-                    "assigned kids",
-                    "create;delete",
-                    "take"
-                ]]
-            },
             "Contains": [[
                 "attendance",
                 "assigned kids"
@@ -3306,7 +2853,20 @@
             "Targets": [[
                 "take",
                 "attendance"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "take",
+                    "attendance",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": [[
+                    "attendance",
+                    "assigned kids",
+                    "create;delete",
+                    "take"
+                ]]
+            }
         },
         "Mix": {}
     }

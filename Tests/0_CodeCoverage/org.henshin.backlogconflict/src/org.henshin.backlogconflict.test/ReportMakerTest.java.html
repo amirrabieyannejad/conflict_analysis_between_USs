@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="de"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>ReportMakerTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">ReportMakerTest (05.07.2024 22:34:44)</a> &gt; <a href="../../index.html" class="el_group">org.henshin.backlogconflict</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">org.henshin.backlogconflict.test</a> &gt; <span class="el_source">ReportMakerTest.java</span></div><h1>ReportMakerTest.java</h1><pre class="source lang-java linenums">package org.henshin.backlogconflict.test;
+
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+import org.henshin.backlogconflict.code.report.*;
+import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import org.henshin.backlogconflict.code.preparation.ActionAnnotationInJsonFileNotFound;
+import org.henshin.backlogconflict.code.preparation.TextInJsonFileNotFound;
+import org.henshin.backlogconflict.code.preparation.UsNrInJsonFileNotFound;
+<span class="fc" id="L14">public class ReportMakerTest {</span>
+
+	@Test
+	public void runReportMaker_Main() throws Exception {
+<span class="fc" id="L18">		String[] dataSets = { &quot;g03_loudoun&quot; };</span>
+<span class="fc" id="L19">		String filePath = &quot;Tests\\ReportMaker\\&quot; + &quot;Main\\&quot;;</span>
+<span class="fc" id="L20">		String us1Main = &quot;user_story_13: #G03# As a Staff member, i want to #apply# a #hold#,&quot;;</span>
+<span class="fc" id="L21">		String us2Main = &quot;user_story_14: #G03# As a Staff member, i want to #remove# a #hold#,&quot;;</span>
+
+<span class="fc" id="L23">		ReportMaker.runReportMaker(dataSets, filePath);</span>
+<span class="fc" id="L24">		File fileTextReport = new File(filePath + dataSets[0] + &quot;\\&quot; + dataSets[0] + &quot;.txt&quot;);</span>
+//		File fileJsonReport = new File(filePath + dataSets[0] + &quot;.json&quot;);
+<span class="fc" id="L26">		BufferedReader reader = new BufferedReader(new FileReader(fileTextReport));</span>
+<span class="fc" id="L27">		StringBuilder result = new StringBuilder();</span>
+		String line;
+<span class="fc bfc" id="L29" title="All 2 branches covered.">		while ((line = reader.readLine()) != null) {</span>
+<span class="fc" id="L30">			result.append(line).append(&quot;\n&quot;);</span>
+		}
+<span class="fc" id="L32">		reader.close();</span>
+<span class="pc bpc" id="L33" title="2 of 4 branches missed.">		assertTrue(result.toString().contains(us1Main) &amp;&amp; result.toString().contains(us2Main));</span>
+<span class="fc" id="L34">	}</span>
+	@Test(expected = MainPartInJsonFileNotFound.class)
+	public void runReportMaker_MainNotExist() throws Exception {
+<span class="fc" id="L37">		String[] dataSets = { &quot;g03_loudoun&quot; };</span>
+<span class="fc" id="L38">		String filePath = &quot;Tests\\ReportMaker\\&quot; + &quot;MainNotExist\\&quot;;</span>
+<span class="nc" id="L39">		ReportMaker.runReportMaker(dataSets, filePath);</span>
+		
+		
+<span class="nc" id="L42">	}</span>
+	@Test(expected = MainPartInJsonFileNotFound.class)
+	public void runReportMaker_MainIsEmpty() throws Exception {
+<span class="fc" id="L45">		String[] dataSets = { &quot;g03_loudoun&quot; };</span>
+<span class="fc" id="L46">		String filePath = &quot;Tests\\ReportMaker\\&quot; + &quot;MainIsEmpty\\&quot;;</span>
+<span class="nc" id="L47">		ReportMaker.runReportMaker(dataSets, filePath);</span>
+			
+<span class="nc" id="L49">	}</span>
+	@Test
+	public void runReportMaker_MainNew() throws Exception {
+<span class="fc" id="L52">		String[] dataSets = { &quot;g03_loudoun&quot; };</span>
+<span class="fc" id="L53">		String filePath = &quot;Tests\\ReportMaker\\&quot; + &quot;Main\\&quot;;</span>
+<span class="fc" id="L54">		String us1Main = &quot;user_story_13: #G03# As a Staff member, i want to #apply# a #hold#,&quot;;</span>
+<span class="fc" id="L55">		String us2Main = &quot;user_story_14: #G03# As a Staff member, i want to #remove# a #hold#,&quot;;</span>
+<span class="fc" id="L56">		File fileTextReport = new File(filePath + dataSets[0] + &quot;\\&quot; + dataSets[0] + &quot;.txt&quot;);</span>
+<span class="fc" id="L57">		fileTextReport.delete();</span>
+<span class="fc" id="L58">		ReportMaker.runReportMaker(dataSets, filePath);</span>
+<span class="fc" id="L59">		fileTextReport = new File(filePath + dataSets[0] + &quot;\\&quot; + dataSets[0] + &quot;.txt&quot;);</span>
+//		File fileJsonReport = new File(filePath + dataSets[0] + &quot;.json&quot;);
+<span class="fc" id="L61">		BufferedReader reader = new BufferedReader(new FileReader(fileTextReport));</span>
+<span class="fc" id="L62">		StringBuilder result = new StringBuilder();</span>
+		String line;
+<span class="fc bfc" id="L64" title="All 2 branches covered.">		while ((line = reader.readLine()) != null) {</span>
+<span class="fc" id="L65">			result.append(line).append(&quot;\n&quot;);</span>
+		}
+<span class="fc" id="L67">		reader.close();</span>
+<span class="pc bpc" id="L68" title="2 of 4 branches missed.">		assertTrue(result.toString().contains(us1Main) &amp;&amp; result.toString().contains(us2Main));</span>
+<span class="fc" id="L69">	}</span>
+	@Test
+	public void runReportMaker_NoConflict() throws Exception {
+<span class="fc" id="L72">		String[] dataSets = { &quot;g04_recycling&quot; };</span>
+<span class="fc" id="L73">		String filePath = &quot;Tests\\ReportMaker\\&quot; + &quot;NoConflict\\&quot;;</span>
+		
+
+<span class="fc" id="L76">		ReportMaker.runReportMaker(dataSets, filePath);</span>
+<span class="fc" id="L77">		File fileTextReport = new File(filePath + dataSets[0] + &quot;\\&quot; + dataSets[0] + &quot;.txt&quot;);</span>
+//		File fileJsonReport = new File(filePath + dataSets[0] + &quot;.json&quot;);
+<span class="fc" id="L79">		BufferedReader reader = new BufferedReader(new FileReader(fileTextReport));</span>
+<span class="fc" id="L80">		StringBuilder result = new StringBuilder();</span>
+		String line;
+<span class="pc bpc" id="L82" title="1 of 2 branches missed.">		while ((line = reader.readLine()) != null) {</span>
+<span class="nc" id="L83">			result.append(line).append(&quot;\n&quot;);</span>
+		}
+<span class="fc" id="L85">		reader.close();</span>
+<span class="pc bpc" id="L86" title="1 of 2 branches missed.">		assertTrue(result.toString()==&quot;&quot;);</span>
+<span class="fc" id="L87">	}</span>
+	@Test
+	public void runReportMaker_EntityContainExist() throws Exception {
+<span class="fc" id="L90">		String[] dataSets = { &quot;g28_zooniverse&quot; };</span>
+<span class="fc" id="L91">		String filePath = &quot;Tests\\ReportMaker\\&quot; + &quot;EntityContainExist\\&quot;;</span>
+<span class="fc" id="L92">		String entityContainUs2 = &quot;Affected Contain Entity US2 is: &lt;&lt; segmentation &gt;&gt;&quot;;</span>
+<span class="fc" id="L93">		String us2Main = &quot;user_story_14: #G03# As a Staff member, i want to #remove# a #hold#,&quot;;</span>
+
+<span class="fc" id="L95">		ReportMaker.runReportMaker(dataSets, filePath);</span>
+<span class="fc" id="L96">		File fileTextReport = new File(filePath + dataSets[0] + &quot;\\&quot; + dataSets[0] + &quot;.txt&quot;);</span>
+//		File fileJsonReport = new File(filePath + dataSets[0] + &quot;.json&quot;);
+<span class="fc" id="L98">		BufferedReader reader = new BufferedReader(new FileReader(fileTextReport));</span>
+<span class="fc" id="L99">		StringBuilder result = new StringBuilder();</span>
+		String line;
+<span class="fc bfc" id="L101" title="All 2 branches covered.">		while ((line = reader.readLine()) != null) {</span>
+<span class="fc" id="L102">			result.append(line).append(&quot;\n&quot;);</span>
+		}
+<span class="fc" id="L104">		reader.close();</span>
+<span class="fc" id="L105">		assertTrue(result.toString().contains(entityContainUs2));</span>
+<span class="fc" id="L106">	}</span>
+	@Test
+	public void runReportMaker_writeTable() throws Exception {
+<span class="fc" id="L109">		String[] dataSets = { &quot;consolidated_conflict_report_total&quot; };</span>
+<span class="fc" id="L110">		String filePath = &quot;Tests\\ReportMaker\\&quot; + &quot;Total\\&quot;;</span>
+		
+<span class="fc" id="L112">		ReportMaker.runReportMaker(dataSets, filePath);</span>
+<span class="fc" id="L113">		File fileTextReport = new File(filePath + dataSets[0] + &quot;\\&quot; + dataSets[0] + &quot;.txt&quot;);</span>
+//		File fileJsonReport = new File(filePath + dataSets[0] + &quot;.json&quot;);
+<span class="fc" id="L115">		BufferedReader reader = new BufferedReader(new FileReader(fileTextReport));</span>
+<span class="fc" id="L116">		StringBuilder result = new StringBuilder();</span>
+		String line;
+<span class="fc bfc" id="L118" title="All 2 branches covered.">		while ((line = reader.readLine()) != null) {</span>
+<span class="fc" id="L119">			result.append(line).append(&quot;\n&quot;);</span>
+		}
+<span class="fc" id="L121">		reader.close();</span>
+<span class="fc" id="L122">		assertTrue(true);</span>
+<span class="fc" id="L123">	}</span>
+	
+	@Test(expected = ActionAnnotationInJsonFileNotFound.class)
+	public void runReportMaker_ActionAnnotationInJsonFileNotFound() throws Exception {
+<span class="fc" id="L127">		String[] dataSets = { &quot;g03_loudoun&quot; };</span>
+<span class="fc" id="L128">		String filePath = &quot;Tests\\ReportMaker\\&quot; + &quot;ActionAnnotationInJsonFileNotFound\\&quot;;</span>
+<span class="nc" id="L129">		ReportMaker.runReportMaker(dataSets, filePath);</span>
+			
+<span class="nc" id="L131">	}</span>
+	@Test(expected = ActionAnnotationInJsonFileNotFound.class)
+	public void runReportMaker_TargetActionAnnotationInJsonFileNotFound() throws Exception {
+<span class="fc" id="L134">		String[] dataSets = { &quot;g03_loudoun&quot; };</span>
+<span class="fc" id="L135">		String filePath = &quot;Tests\\ReportMaker\\&quot; + &quot;TargetActionAnnotationInJsonFileNotFound\\&quot;;</span>
+<span class="nc" id="L136">		ReportMaker.runReportMaker(dataSets, filePath);</span>
+			
+<span class="nc" id="L138">	}</span>
+	@Test(expected = ActionAnnotationInJsonFileNotFound.class)
+	public void runReportMaker_ContainActionAnnotationInJsonFileNotFound() throws Exception {
+<span class="fc" id="L141">		String[] dataSets = { &quot;g03_loudoun&quot; };</span>
+<span class="fc" id="L142">		String filePath = &quot;Tests\\ReportMaker\\&quot; + &quot;ContainActionAnnotationInJsonFileNotFound\\&quot;;</span>
+<span class="nc" id="L143">		ReportMaker.runReportMaker(dataSets, filePath);</span>
+			
+<span class="nc" id="L145">	}</span>
+	@Test
+	public void runReportMaker_JsonArrayNotFound() throws Exception {
+<span class="fc" id="L148">		String[] dataSets = { &quot;g03_loudoun&quot; };</span>
+<span class="fc" id="L149">		String filePath = &quot;Tests\\ReportMaker\\&quot; + &quot;JsonArrayNotFound\\&quot;;</span>
+		
+<span class="fc" id="L151">		ReportMaker.runReportMaker(dataSets, filePath);</span>
+<span class="fc" id="L152">		assertTrue(true);</span>
+<span class="fc" id="L153">	}</span>
+	@Test(expected = UsNrInJsonFileNotFound.class)
+	public void runReportMaker_UsNrInJsonFileNotFound() throws Exception {
+<span class="fc" id="L156">		String[] dataSets = { &quot;g03_loudoun&quot; };</span>
+<span class="fc" id="L157">		String filePath = &quot;Tests\\ReportMaker\\&quot; + &quot;UsNrInJsonFileNotFound\\&quot;;</span>
+<span class="nc" id="L158">		ReportMaker.runReportMaker(dataSets, filePath);</span>
+			
+<span class="nc" id="L160">	}</span>
+	@Test
+	public void runReportMaker_JsonObjectNotFound() throws Exception {
+<span class="fc" id="L163">		String[] dataSets = { &quot;g03_loudoun&quot; };</span>
+<span class="fc" id="L164">		String filePath = &quot;Tests\\ReportMaker\\&quot; + &quot;JsonObjectNotFound\\&quot;;</span>
+		
+<span class="fc" id="L166">		ReportMaker.runReportMaker(dataSets, filePath);</span>
+<span class="fc" id="L167">		assertTrue(true);</span>
+<span class="fc" id="L168">	}</span>
+	
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span>ReportMakerTest (05.07.2024 22:34:44)</div></body></html>

@@ -3,89 +3,23 @@
 ********************* << Dataset: g10_scrum_alliance >> ***************
 * Table of potential conflict between user stories
 
-       us_44  us_48  us_42  us_28  us_29  us_31  us_32  us_33  us_84  us_85  us_86  us_12  us_34  us_82  us_81  us_68  
-us_44         x                                                                                                        
-us_48  x             x                                                                            x      x      x      
-us_42         x                                                                                                        
-us_28                              x                                                                                   
-us_29                       x                                                                                          
-us_31                                            x      x                                                              
-us_32                                     x             x                                                              
-us_33                                     x      x                                                                     
-us_84                                                                 x                                                
-us_85                                                          x             x                    x                    
-us_86                                                                 x                                                
-us_12                                                                                      x                           
-us_34                                                                               x                                  
-us_82         x                                                       x                                                
-us_81         x                                                                                                        
-us_68         x                                                                                                        
+       us_28  us_29  us_31  us_32  us_33  
+us_28         x                           
+us_29  x                                  
+us_31                       x      x      
+us_32                x             x      
+us_33                x      x             
 
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_44_AND_user_story_48}
-  
-Affected Resource of US1 is: << help wanted ad >>
-Affected Resource of US2 is: << jobs >>
-Affected Contain Resource US1 is: << site >>
-Affected Resource US2 is: << site >>
-Contain Resources for: user_story_44: << [["site","help wanted ad","preserve;create","approve"]] >>
-Contain Resources for: user_story_48: << [["site","jobs","delete","stop publishing"]] >>
-
- Action of user_story_44 is: << approve >>  which is annotated with: << preserve >>
- Action of user_story_48 is: << stop publishing >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_44: #G10# As a site admin, i want to #approve# each #help wanted ad# before it gets to the #site#, 
-
-   user_story_48: #G10# As a site admin, i want to #stop publishing# #jobs# on the #site# 30 days after being posted, 
-
-Original texts of user stories are: 
-   user_story_44: #G10# As a site admin, I want to approve each help wanted ad before it gets to the site, so that we're sure of the quality of jobs being listed.
-
-   user_story_48: #G10# As a site admin, I want to stop publishing jobs on the site 30 days after being posted, so that jobs that may have been filled aren't still listed when the hiring party forgets to come back and delete the ad.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_42_AND_user_story_48}
-  
-Affected Resource of US1 is: << jobs >>
-Affected Resource of US2 is: << jobs >>
-Affected Contain Resource US1 is: << listing >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_42: << [["listing","jobs","preserve;create","scroll through"]] >>
-Contain Resources for: user_story_48: << [["site","jobs","delete","stop publishing"]] >>
-
- Action of user_story_42 is: << scroll through >>  which is annotated with: << preserve >>
- Action of user_story_48 is: << stop publishing >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_42: #G10# As a site member, i want to #scroll through# a listing of #jobs#, 
-
-   user_story_48: #G10# As a site admin, i want to #stop publishing# #jobs# on the site 30 days after being posted, 
-
-Original texts of user stories are: 
-   user_story_42: #G10# As a site member, I want to scroll through a listing of jobs, so that I can see if there any I am interested in.
-
-   user_story_48: #G10# As a site admin, I want to stop publishing jobs on the site 30 days after being posted, so that jobs that may have been filled aren't still listed when the hiring party forgets to come back and delete the ad.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_28_AND_user_story_29}
   
-Affected Resource of US1 is: << events >>
-Affected Resource of US2 is: << events >>
-Affected Contain Resource US1 is: << events >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_28: << [] >>
-Contain Resources for: user_story_29: << [] >>
+ Affected Resource of US1 is: << events >>
 
  Action of user_story_28 is: << update >>  which is annotated with: << delete >>
  Action of user_story_29 is: << delete >>  which is annotated with: << delete >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_28: #G10# As a trainer, i want to #update# one of my existing courses or #events#, 
@@ -100,17 +34,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_31_AND_user_story_32}
   
-Affected Resource of US1 is: << any course >>
-Affected Resource of US2 is: << any course >>
-Affected Contain Resource US1 is: << any course >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_31: << [] >>
-Contain Resources for: user_story_32: << [] >>
+ Affected Resource of US1 is: << any course >>
 
  Action of user_story_31 is: << delete >>  which is annotated with: << delete >>
  Action of user_story_32 is: << update >>  which is annotated with: << delete >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_31: #G10# As a site admin, i want to #delete# #any course# or event, 
@@ -125,17 +54,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_32_AND_user_story_33}
   
-Affected Resource of US1 is: << event >>
-Affected Resource of US2 is: << event >>
-Affected Contain Resource US1 is: << event >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_32: << [] >>
-Contain Resources for: user_story_33: << [] >>
+ Affected Resource of US1 is: << event >>
 
  Action of user_story_32 is: << update >>  which is annotated with: << delete >>
  Action of user_story_33 is: << turn >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_32: #G10# As a site editor, i want to #update# any course or #event#, 
@@ -148,119 +72,14 @@ Original texts of user stories are:
    user_story_33: #G10# As a trainer, I want to turn a course into an event or an event into a course, so that I can correctly classify anything that was entered incorrectly.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_84_AND_user_story_85}
-  
-Affected Resource of US1 is: << all classes >>
-Affected Resource of US2 is: << people >>
-Affected Contain Resource US1 is: << pending state >>
-Affected Resource US2 is: << pending state >>
-Contain Resources for: user_story_84: << [["all classes","pending state","preserve","view"]] >>
-Contain Resources for: user_story_85: << [["trainer's class","people","create;delete","move"],["people","pending state","create;delete","move"],["registry","people","create;delete","move"],["trainer","proof of payment","preserve","received"]] >>
-
- Action of user_story_84 is: << view >>  which is annotated with: << preserve >>
- Action of user_story_85 is: << move >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_84: #G10# As a site admin, i want to #view# #all classes# in a #pending state#, 
-
-   user_story_85: #G10# As a site admin, i want to #move# #people# in a trainer's class from a #pending state# to the registry once i have received proof of payment from the trainer.
-
-Original texts of user stories are: 
-   user_story_84: #G10# As a site admin, I want to view all classes in a pending state, so that I can approve any that need to be approved.
-
-   user_story_85: #G10# As a site admin, I want to move people in a trainer's class from a pending state to the registry once I have received proof of payment from the trainer.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_85_AND_user_story_86}
-  
-Affected Resource of US1 is: << people >>
-Affected Resource of US2 is: << name >>
-Affected Contain Resource US1 is: << registry >>
-Affected Resource US2 is: << registry >>
-Contain Resources for: user_story_85: << [["trainer's class","people","create;delete","move"],["people","pending state","create;delete","move"],["registry","people","create;delete","move"],["trainer","proof of payment","preserve","received"]] >>
-Contain Resources for: user_story_86: << [["email","instructions","create","be sent"],["scrum alliance","membership","create","activate"],["registry","name","preserve","loaded"]] >>
-
- Action of user_story_85 is: << move >>  which is annotated with: << delete >>
- Action of user_story_86 is: << loaded >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_85: #G10# As a site admin, i want to #move# #people# in a trainer's class from a pending state to the #registry# once i have received proof of payment from the trainer.
-
-   user_story_86: #G10# As a CSM, i want to be sent an email welcoming me to the scrum alliance and with instructions to register or activate my membership once my #name# has been #loaded# to the #registry#.
-
-Original texts of user stories are: 
-   user_story_85: #G10# As a site admin, I want to move people in a trainer's class from a pending state to the registry once I have received proof of payment from the trainer.
-
-   user_story_86: #G10# As a CSM, I want to be sent an email welcoming me to the Scrum Alliance and with instructions to register or activate my membership once my name has been loaded to the registry.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_12_AND_user_story_34}
-  
-Affected Resource of US1 is: << email >>
-Affected Resource of US2 is: << advanced search option >>
-Affected Contain Resource US1 is: << form >>
-Affected Resource US2 is: << form >>
-Contain Resources for: user_story_12: << [["any member","email","create;delete","send"],["form","email","create;delete","send"]] >>
-Contain Resources for: user_story_34: << [["advanced search option","form","preserve","have"],["form","search criteria","create","fill"]] >>
-
- Action of user_story_12 is: << send >>  which is annotated with: << delete >>
- Action of user_story_34 is: << have >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_12: #G10# As a site member, i want to #send# an #email# to any member via a #form#, 
-
-   user_story_34: #G10# As a site visitor, i want to #have# an #advanced search option# that lets me fill in a #form# of search criteria, 
-
-Original texts of user stories are: 
-   user_story_12: #G10# As a site member, I want to send an email to any member via a form, so that we can connect.
-
-   user_story_34: #G10# As a site visitor, I want to have an advanced search option that lets me fill in a form of search criteria, so that I can quickly find what I am looking for.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_82_AND_user_story_85}
-  
-Affected Resource of US1 is: << name >>
-Affected Resource of US2 is: << people >>
-Affected Contain Resource US1 is: << registry >>
-Affected Resource US2 is: << registry >>
-Contain Resources for: user_story_82: << [["registry","name","preserve","listed"],["site","member","preserve","without becoming"]] >>
-Contain Resources for: user_story_85: << [["trainer's class","people","create;delete","move"],["people","pending state","create;delete","move"],["registry","people","create;delete","move"],["trainer","proof of payment","preserve","received"]] >>
-
- Action of user_story_82 is: << listed >>  which is annotated with: << preserve >>
- Action of user_story_85 is: << move >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_82: #G10# As a CSM, i want to have my #name# #listed# in the #registry# without becoming a member of the site, 
-
-   user_story_85: #G10# As a site admin, i want to #move# #people# in a trainer's class from a pending state to the #registry# once i have received proof of payment from the trainer.
-
-Original texts of user stories are: 
-   user_story_82: #G10# As a CSM, I want to have my name listed in the registry without becoming a member of the site, so that employers or others can verify my certification.
-
-   user_story_85: #G10# As a site admin, I want to move people in a trainer's class from a pending state to the registry once I have received proof of payment from the trainer.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_31_AND_user_story_33}
   
-Affected Resource of US1 is: << event >>
-Affected Resource of US2 is: << event >>
-Affected Contain Resource US1 is: << event >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_31: << [] >>
-Contain Resources for: user_story_33: << [] >>
+ Affected Resource of US1 is: << event >>
 
  Action of user_story_31 is: << delete >>  which is annotated with: << delete >>
  Action of user_story_33 is: << turn >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_31: #G10# As a site admin, i want to #delete# any course or #event#, 
@@ -271,78 +90,3 @@ Original texts of user stories are:
    user_story_31: #G10# As a site admin, I want to delete any course or event, so that I can remove things that will no longer occur.
 
    user_story_33: #G10# As a trainer, I want to turn a course into an event or an event into a course, so that I can correctly classify anything that was entered incorrectly.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_48_AND_user_story_81}
-  
-Affected Resource of US1 is: << jobs >>
-Affected Resource of US2 is: << lists >>
-Affected Contain Resource US1 is: << site >>
-Affected Resource US2 is: << site >>
-Contain Resources for: user_story_48: << [["site","jobs","delete","stop publishing"]] >>
-Contain Resources for: user_story_81: << [["site","lists","preserve","view"],["lists","all certified scrum masters","preserve","view"],["lists","practitioners","preserve","view"],["lists","trainers","preserve","view"],["lists","certified scrum product owners","preserve","view"]] >>
-
- Action of user_story_48 is: << stop publishing >>  which is annotated with: << delete >>
- Action of user_story_81 is: << view >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_48: #G10# As a site admin, i want to #stop publishing# #jobs# on the #site# 30 days after being posted, 
-
-   user_story_81: #G10# As a site visitor, i want to #view# #lists# on the #site# of all certified scrum masters, practitioners, trainers, and certified scrum product owners.
-
-Original texts of user stories are: 
-   user_story_48: #G10# As a site admin, I want to stop publishing jobs on the site 30 days after being posted, so that jobs that may have been filled aren't still listed when the hiring party forgets to come back and delete the ad.
-
-   user_story_81: #G10# As a site visitor, I want to view lists on the site of all Certified Scrum Masters, Practitioners, Trainers, and Certified Scrum Product Owners.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_48_AND_user_story_82}
-  
-Affected Resource of US1 is: << jobs >>
-Affected Resource of US2 is: << member >>
-Affected Contain Resource US1 is: << site >>
-Affected Resource US2 is: << site >>
-Contain Resources for: user_story_48: << [["site","jobs","delete","stop publishing"]] >>
-Contain Resources for: user_story_82: << [["registry","name","preserve","listed"],["site","member","preserve","without becoming"]] >>
-
- Action of user_story_48 is: << stop publishing >>  which is annotated with: << delete >>
- Action of user_story_82 is: << without becoming >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_48: #G10# As a site admin, i want to #stop publishing# #jobs# on the #site# 30 days after being posted, 
-
-   user_story_82: #G10# As a CSM, i want to have my name listed in the registry #without becoming# a #member# of the #site#, 
-
-Original texts of user stories are: 
-   user_story_48: #G10# As a site admin, I want to stop publishing jobs on the site 30 days after being posted, so that jobs that may have been filled aren't still listed when the hiring party forgets to come back and delete the ad.
-
-   user_story_82: #G10# As a CSM, I want to have my name listed in the registry without becoming a member of the site, so that employers or others can verify my certification.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_48_AND_user_story_68}
-  
-Affected Resource of US1 is: << jobs >>
-Affected Resource of US2 is: << new content >>
-Affected Contain Resource US1 is: << site >>
-Affected Resource US2 is: << site >>
-Contain Resources for: user_story_48: << [["site","jobs","delete","stop publishing"]] >>
-Contain Resources for: user_story_68: << [["site","new content","preserve","see"]] >>
-
- Action of user_story_48 is: << stop publishing >>  which is annotated with: << delete >>
- Action of user_story_68 is: << see >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_48: #G10# As a site admin, i want to #stop publishing# #jobs# on the #site# 30 days after being posted, 
-
-   user_story_68: #G10# As a site visitor, i want to #see# #new content# when i come to the #site#, 
-
-Original texts of user stories are: 
-   user_story_48: #G10# As a site admin, I want to stop publishing jobs on the site 30 days after being posted, so that jobs that may have been filled aren't still listed when the hiring party forgets to come back and delete the ad.
-
-   user_story_68: #G10# As a site visitor, I want to see new content when I come to the site, so that I come back more often.

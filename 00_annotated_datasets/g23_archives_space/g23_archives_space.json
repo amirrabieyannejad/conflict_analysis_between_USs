@@ -4,10 +4,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -21,27 +17,6 @@
             ],
             "Action": ["view"],
             "Persona": ["researcher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "view",
-                    "finding aid",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [
-                    [
-                        "particular collection",
-                        "finding aid",
-                        "preserve",
-                        "view"
-                    ],
-                    [
-                        "resource",
-                        "finding aid",
-                        "preserve",
-                        "view"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "particular collection",
@@ -60,7 +35,28 @@
             "Targets": [[
                 "view",
                 "finding aid"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "view",
+                    "finding aid",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [
+                    [
+                        "particular collection",
+                        "finding aid",
+                        "preserve",
+                        "view"
+                    ],
+                    [
+                        "resource",
+                        "finding aid",
+                        "preserve",
+                        "view"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -69,10 +65,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -82,14 +74,6 @@
             "Entity": ["User's password"],
             "Action": ["reset"],
             "Persona": ["Application Administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "reset",
-                    "user's password",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G23# As an Application Administrator, I want to be able to reset a User's password for them.",
             "Triggers": [[
@@ -99,7 +83,15 @@
             "Targets": [[
                 "reset",
                 "User's password"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "reset",
+                    "user's password",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -108,10 +100,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -127,21 +115,6 @@
                 "managing"
             ],
             "Persona": ["user"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "want",
-                        "backend changes",
-                        "create"
-                    ],
-                    [
-                        "managing",
-                        "enum lists",
-                        "preserve;delete;create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G23# As a user, I want backend changes for managing enum lists.",
             "Triggers": [[
@@ -157,7 +130,22 @@
                     "managing",
                     "enum lists"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "want",
+                        "backend changes",
+                        "create"
+                    ],
+                    [
+                        "managing",
+                        "enum lists",
+                        "preserve;delete;create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -166,10 +154,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -182,14 +166,6 @@
             ],
             "Action": ["import"],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "import",
-                    "ead files",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G23# As an Archivist, I want to import EAD files that were exported by Archon.",
             "Triggers": [[
@@ -199,7 +175,15 @@
             "Targets": [[
                 "import",
                 "EAD files"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "import",
+                    "ead files",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -208,10 +192,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -224,19 +204,6 @@
             ],
             "Action": ["assign"],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "assign",
-                    "component unique identifier",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "resource component",
-                    "component unique identifier",
-                    "create",
-                    "assign"
-                ]]
-            },
             "Contains": [[
                 "Resource Component",
                 "component unique identifier"
@@ -249,7 +216,20 @@
             "Targets": [[
                 "assign",
                 "component unique identifier"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "assign",
+                    "component unique identifier",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "resource component",
+                    "component unique identifier",
+                    "create",
+                    "assign"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -258,10 +238,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -274,14 +250,6 @@
                 "using"
             ],
             "Persona": ["User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "using",
-                    "ldap",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G23# As a User , I want to authenticate using LDAP.",
             "Triggers": [[
@@ -291,7 +259,15 @@
             "Targets": [[
                 "using",
                 "LDAP"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "using",
+                    "ldap",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -300,10 +276,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -317,34 +289,6 @@
             ],
             "Action": ["store"],
             "Persona": ["migration specialist"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "store",
-                        "at",
-                        "create"
-                    ],
-                    [
-                        "store",
-                        "archon source record ids",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "each aspace record",
-                        "at",
-                        "create",
-                        "store"
-                    ],
-                    [
-                        "each aspace record",
-                        "archon source record ids",
-                        "create",
-                        "store"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "each ASpace record",
@@ -369,7 +313,35 @@
                     "store",
                     "Archon source record ids"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "store",
+                        "at",
+                        "create"
+                    ],
+                    [
+                        "store",
+                        "archon source record ids",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "each aspace record",
+                        "at",
+                        "create",
+                        "store"
+                    ],
+                    [
+                        "each aspace record",
+                        "archon source record ids",
+                        "create",
+                        "store"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -378,10 +350,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -394,19 +362,6 @@
             ],
             "Action": ["associate"],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "associate",
-                    "standard identifier string",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "subject heading",
-                    "standard identifier string",
-                    "create",
-                    "associate"
-                ]]
-            },
             "Contains": [[
                 "Subject heading",
                 "standard identifier string"
@@ -419,7 +374,20 @@
             "Targets": [[
                 "associate",
                 "standard identifier string"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "associate",
+                    "standard identifier string",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "subject heading",
+                    "standard identifier string",
+                    "create",
+                    "associate"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -428,10 +396,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -449,21 +413,6 @@
                 "occurred"
             ],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "understand",
-                        "error",
-                        "preserve;create"
-                    ],
-                    [
-                        "understand",
-                        "why",
-                        "preserve;create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G23# As an Archivist, I want to be able to understand that an error occurred during import and why it might have occurred.",
             "Triggers": [[
@@ -479,7 +428,22 @@
                     "understand",
                     "why"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "understand",
+                        "error",
+                        "preserve;create"
+                    ],
+                    [
+                        "understand",
+                        "why",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -488,10 +452,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -504,19 +464,6 @@
             ],
             "Action": ["import"],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "import",
-                    "accessions data",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "csv",
-                    "accessions data",
-                    "create",
-                    "import"
-                ]]
-            },
             "Contains": [[
                 "CSV",
                 "Accessions data"
@@ -529,7 +476,20 @@
             "Targets": [[
                 "import",
                 "Accessions data"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "import",
+                    "accessions data",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "csv",
+                    "accessions data",
+                    "create",
+                    "import"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -538,10 +498,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -554,19 +510,6 @@
             ],
             "Action": ["import"],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "import",
-                    "resources",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "marcxml records",
-                    "resources",
-                    "create",
-                    "import"
-                ]]
-            },
             "Contains": [[
                 "MARCXML records",
                 "Resources"
@@ -579,7 +522,20 @@
             "Targets": [[
                 "import",
                 "Resources"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "import",
+                    "resources",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "marcxml records",
+                    "resources",
+                    "create",
+                    "import"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -588,10 +544,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -607,21 +559,6 @@
                 "managing"
             ],
             "Persona": ["user"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "want",
-                        "frontend changes",
-                        "create"
-                    ],
-                    [
-                        "managing",
-                        "enum lists",
-                        "preserve;delete;create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G23# As a user, I want frontend changes for managing enum lists.",
             "Triggers": [[
@@ -637,7 +574,22 @@
                     "managing",
                     "enum lists"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "want",
+                        "frontend changes",
+                        "create"
+                    ],
+                    [
+                        "managing",
+                        "enum lists",
+                        "preserve;delete;create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -646,10 +598,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -663,19 +611,6 @@
             ],
             "Action": ["get"],
             "Persona": ["Authenticated User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "get",
-                    "access",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "links",
-                    "access",
-                    "preserve",
-                    "get"
-                ]]
-            },
             "Contains": [
                 [
                     "links",
@@ -694,7 +629,20 @@
             "Targets": [[
                 "get",
                 "access"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "get",
+                    "access",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "links",
+                    "access",
+                    "preserve",
+                    "get"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -703,10 +651,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -727,44 +671,6 @@
                 "displayed"
             ],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "see",
-                        "dates",
-                        "preserve"
-                    ],
-                    [
-                        "see",
-                        "extents",
-                        "preserve"
-                    ],
-                    [
-                        "displayed",
-                        "extents",
-                        "preserve"
-                    ],
-                    [
-                        "displayed",
-                        "dates",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "read and edit views",
-                        "dates",
-                        "preserve",
-                        "see"
-                    ],
-                    [
-                        "read and edit views",
-                        "extents",
-                        "preserve",
-                        "see"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "read and edit views",
@@ -809,7 +715,45 @@
                     "displayed",
                     "Dates"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "see",
+                        "dates",
+                        "preserve"
+                    ],
+                    [
+                        "see",
+                        "extents",
+                        "preserve"
+                    ],
+                    [
+                        "displayed",
+                        "extents",
+                        "preserve"
+                    ],
+                    [
+                        "displayed",
+                        "dates",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "read and edit views",
+                        "dates",
+                        "preserve",
+                        "see"
+                    ],
+                    [
+                        "read and edit views",
+                        "extents",
+                        "preserve",
+                        "see"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -818,10 +762,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -834,19 +774,6 @@
             ],
             "Action": ["import"],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "import",
-                    "agent information",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "eac-cpf records",
-                    "agent information",
-                    "create",
-                    "import"
-                ]]
-            },
             "Contains": [[
                 "EAC-CPF records",
                 "Agent information"
@@ -859,7 +786,20 @@
             "Targets": [[
                 "import",
                 "Agent information"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "import",
+                    "agent information",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "eac-cpf records",
+                    "agent information",
+                    "create",
+                    "import"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -868,10 +808,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -889,26 +825,6 @@
                 "loading"
             ],
             "Persona": ["user"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "want",
-                        "backend changes",
-                        "create"
-                    ],
-                    [
-                        "loading",
-                        "enum value lists",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "database",
-                    "enum value lists",
-                    "preserve",
-                    "loading"
-                ]]
-            },
             "Contains": [[
                 "database",
                 "enum value lists"
@@ -927,7 +843,27 @@
                     "loading",
                     "enum value lists"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "want",
+                        "backend changes",
+                        "create"
+                    ],
+                    [
+                        "loading",
+                        "enum value lists",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "database",
+                    "enum value lists",
+                    "preserve",
+                    "loading"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -936,10 +872,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -955,21 +887,6 @@
                 "bulk updating"
             ],
             "Persona": ["user"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "want",
-                        "backend changes",
-                        "create"
-                    ],
-                    [
-                        "bulk updating",
-                        "enum value",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G23# As a user, I want backend changes for bulk updating one enum value to another.",
             "Triggers": [[
@@ -985,7 +902,22 @@
                     "bulk updating",
                     "enum value"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "want",
+                        "backend changes",
+                        "create"
+                    ],
+                    [
+                        "bulk updating",
+                        "enum value",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -994,10 +926,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -1010,19 +938,6 @@
             ],
             "Action": ["export"],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "export",
-                    "agent records",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "eac-cpf",
-                    "agent records",
-                    "create",
-                    "export"
-                ]]
-            },
             "Contains": [[
                 "EAC-CPF",
                 "agent records"
@@ -1035,7 +950,20 @@
             "Targets": [[
                 "export",
                 "agent records"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "export",
+                    "agent records",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "eac-cpf",
+                    "agent records",
+                    "create",
+                    "export"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1044,10 +972,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -1061,34 +985,6 @@
             ],
             "Action": ["import only"],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "import only",
-                        "agent",
-                        "create"
-                    ],
-                    [
-                        "import only",
-                        "subject information",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "marcxml records",
-                        "agent",
-                        "create",
-                        "import only"
-                    ],
-                    [
-                        "marcxml records",
-                        "subject information",
-                        "create",
-                        "import only"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "MARCXML records",
@@ -1113,7 +1009,35 @@
                     "import only",
                     "Subject information"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "import only",
+                        "agent",
+                        "create"
+                    ],
+                    [
+                        "import only",
+                        "subject information",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "marcxml records",
+                        "agent",
+                        "create",
+                        "import only"
+                    ],
+                    [
+                        "marcxml records",
+                        "subject information",
+                        "create",
+                        "import only"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -1122,10 +1046,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -1143,26 +1063,6 @@
                 "enforced"
             ],
             "Persona": ["Application Administrator"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "assign",
-                        "users",
-                        "create"
-                    ],
-                    [
-                        "enforced",
-                        "appropriate permissions",
-                        "preserve;forbid;delete"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "advanced data entry",
-                    "users",
-                    "create",
-                    "assign"
-                ]]
-            },
             "Contains": [[
                 "Advanced Data Entry",
                 "Users"
@@ -1187,7 +1087,27 @@
                     "enforced",
                     "appropriate permissions"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "assign",
+                        "users",
+                        "create"
+                    ],
+                    [
+                        "enforced",
+                        "appropriate permissions",
+                        "preserve;forbid;delete"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "advanced data entry",
+                    "users",
+                    "create",
+                    "assign"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1196,10 +1116,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -1212,21 +1128,6 @@
             ],
             "Action": ["configure"],
             "Persona": ["Application Administrator"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "configure",
-                        "help center url",
-                        "create;delete"
-                    ],
-                    [
-                        "configure",
-                        "topic mappings",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G23# As an Application Administrator , I want to be able to configure the help center URL and topic mappings.",
             "Triggers": [[
@@ -1242,7 +1143,22 @@
                     "configure",
                     "topic mappings"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "configure",
+                        "help center url",
+                        "create;delete"
+                    ],
+                    [
+                        "configure",
+                        "topic mappings",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1251,10 +1167,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -1267,19 +1179,6 @@
             ],
             "Action": ["add"],
             "Persona": ["user"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "add",
-                    "additional properties",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "repositories",
-                    "additional properties",
-                    "create",
-                    "add"
-                ]]
-            },
             "Contains": [[
                 "repositories",
                 "additional properties"
@@ -1292,7 +1191,20 @@
             "Targets": [[
                 "add",
                 "additional properties"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "add",
+                    "additional properties",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "repositories",
+                    "additional properties",
+                    "create",
+                    "add"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1301,10 +1213,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -1317,19 +1225,6 @@
             ],
             "Action": ["add"],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "add",
-                    "notes",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "other record types",
-                    "notes",
-                    "create",
-                    "add"
-                ]]
-            },
             "Contains": [[
                 "other record types",
                 "Notes"
@@ -1342,7 +1237,20 @@
             "Targets": [[
                 "add",
                 "Notes"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "add",
+                    "notes",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "other record types",
+                    "notes",
+                    "create",
+                    "add"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1351,10 +1259,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -1367,19 +1271,6 @@
             ],
             "Action": ["create"],
             "Persona": ["Administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "create",
-                    "new user account",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "someone else",
-                    "new user account",
-                    "create",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "someone else",
                 "new User account"
@@ -1392,7 +1283,20 @@
             "Targets": [[
                 "create",
                 "new User account"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "create",
+                    "new user account",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "someone else",
+                    "new user account",
+                    "create",
+                    "create"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1401,10 +1305,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -1419,40 +1319,6 @@
             ],
             "Action": ["add"],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "add",
-                        "administrative data",
-                        "create"
-                    ],
-                    [
-                        "add",
-                        "finding aid-related data",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "administrative data",
-                        "archival description",
-                        "create",
-                        "add"
-                    ],
-                    [
-                        "top-level resource",
-                        "administrative data",
-                        "create",
-                        "add"
-                    ],
-                    [
-                        "top-level resource",
-                        "finding aid-related data",
-                        "create",
-                        "add"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "administrative data",
@@ -1481,7 +1347,41 @@
                     "add",
                     "finding aid-related data"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "add",
+                        "administrative data",
+                        "create"
+                    ],
+                    [
+                        "add",
+                        "finding aid-related data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "administrative data",
+                        "archival description",
+                        "create",
+                        "add"
+                    ],
+                    [
+                        "top-level resource",
+                        "administrative data",
+                        "create",
+                        "add"
+                    ],
+                    [
+                        "top-level resource",
+                        "finding aid-related data",
+                        "create",
+                        "add"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -1490,10 +1390,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -1514,40 +1410,6 @@
                 "optionally specify"
             ],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "assign",
-                        "level",
-                        "create"
-                    ],
-                    [
-                        "optionally specify",
-                        "another value",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "description",
-                        "level",
-                        "create",
-                        "assign"
-                    ],
-                    [
-                        "resource",
-                        "level",
-                        "create",
-                        "assign"
-                    ],
-                    [
-                        "resource component",
-                        "level",
-                        "create",
-                        "assign"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "description",
@@ -1582,7 +1444,41 @@
                     "optionally specify",
                     "another value"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "assign",
+                        "level",
+                        "create"
+                    ],
+                    [
+                        "optionally specify",
+                        "another value",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "description",
+                        "level",
+                        "create",
+                        "assign"
+                    ],
+                    [
+                        "resource",
+                        "level",
+                        "create",
+                        "assign"
+                    ],
+                    [
+                        "resource component",
+                        "level",
+                        "create",
+                        "assign"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -1591,10 +1487,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -1608,14 +1500,6 @@
             ],
             "Action": ["use"],
             "Persona": ["developer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "use",
-                    "configuration",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [[
                 "application",
                 "built version"
@@ -1628,7 +1512,15 @@
             "Targets": [[
                 "use",
                 "configuration"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "use",
+                    "configuration",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1637,10 +1529,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -1653,14 +1541,6 @@
             ],
             "Action": ["import"],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "import",
-                    "ead files",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G23# As an Archivist, I want to import EAD files that were exported by the Archivists' Toolkit.",
             "Triggers": [[
@@ -1670,7 +1550,15 @@
             "Targets": [[
                 "import",
                 "EAD files"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "import",
+                    "ead files",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1679,10 +1567,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -1698,26 +1582,6 @@
                 "backed up"
             ],
             "Persona": ["systems administrator"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "control",
-                        "location",
-                        "create;delete"
-                    ],
-                    [
-                        "backed up",
-                        "demo database",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "location",
-                    "demo database",
-                    "create;delete",
-                    "control"
-                ]]
-            },
             "Contains": [[
                 "location",
                 "demo database"
@@ -1736,7 +1600,27 @@
                     "backed up",
                     "demo database"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "control",
+                        "location",
+                        "create;delete"
+                    ],
+                    [
+                        "backed up",
+                        "demo database",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "location",
+                    "demo database",
+                    "create;delete",
+                    "control"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1745,10 +1629,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -1763,45 +1643,6 @@
             ],
             "Action": ["search"],
             "Persona": ["archivist"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "search",
-                        "resource",
-                        "preserve;create"
-                    ],
-                    [
-                        "search",
-                        "accession",
-                        "preserve;create"
-                    ],
-                    [
-                        "search",
-                        "digital object records",
-                        "preserve;create"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "repository",
-                        "resource",
-                        "preserve;create",
-                        "search"
-                    ],
-                    [
-                        "repository",
-                        "accession",
-                        "preserve;create",
-                        "search"
-                    ],
-                    [
-                        "repository",
-                        "digital object records",
-                        "preserve;create",
-                        "search"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "repository",
@@ -1834,7 +1675,46 @@
                     "search",
                     "digital object records"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "search",
+                        "resource",
+                        "preserve;create"
+                    ],
+                    [
+                        "search",
+                        "accession",
+                        "preserve;create"
+                    ],
+                    [
+                        "search",
+                        "digital object records",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "repository",
+                        "resource",
+                        "preserve;create",
+                        "search"
+                    ],
+                    [
+                        "repository",
+                        "accession",
+                        "preserve;create",
+                        "search"
+                    ],
+                    [
+                        "repository",
+                        "digital object records",
+                        "preserve;create",
+                        "search"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -1843,10 +1723,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -1859,21 +1735,6 @@
                 "edit"
             ],
             "Persona": ["archivist"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "create",
-                        "collection management subrecord",
-                        "create"
-                    ],
-                    [
-                        "edit",
-                        "collection management subrecord",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G23# As an archivist, I want to create and edit a Collection Management subrecord.",
             "Triggers": [
@@ -1895,7 +1756,22 @@
                     "edit",
                     "Collection Management subrecord"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "create",
+                        "collection management subrecord",
+                        "create"
+                    ],
+                    [
+                        "edit",
+                        "collection management subrecord",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1904,10 +1780,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -1924,26 +1796,6 @@
                 "using"
             ],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "rearrange",
-                        "resource",
-                        "create;delete"
-                    ],
-                    [
-                        "rearrange",
-                        "digital object hierarchy",
-                        "create;delete"
-                    ],
-                    [
-                        "using",
-                        "keyboard-based navigation",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G23# As an Archivist, I want to rearrange the Resource and/or Digital Object hierarchy using keyboard-based navigation.",
             "Triggers": [[
@@ -1963,7 +1815,27 @@
                     "using",
                     "keyboard-based navigation"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "rearrange",
+                        "resource",
+                        "create;delete"
+                    ],
+                    [
+                        "rearrange",
+                        "digital object hierarchy",
+                        "create;delete"
+                    ],
+                    [
+                        "using",
+                        "keyboard-based navigation",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1972,10 +1844,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -1993,26 +1861,6 @@
                 "dragging"
             ],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "rearrange",
-                        "resource description hierarchy",
-                        "create;delete"
-                    ],
-                    [
-                        "dragging",
-                        "archival object",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "different position",
-                    "archival object",
-                    "create",
-                    "dragging"
-                ]]
-            },
             "Contains": [
                 [
                     "hierarchy",
@@ -2037,7 +1885,27 @@
                     "dragging",
                     "archival object"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "rearrange",
+                        "resource description hierarchy",
+                        "create;delete"
+                    ],
+                    [
+                        "dragging",
+                        "archival object",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "different position",
+                    "archival object",
+                    "create",
+                    "dragging"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2046,10 +1914,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -2067,14 +1931,6 @@
             ],
             "Action": ["indicate"],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "indicate",
-                    "agent",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [
                 [
                     "Accession",
@@ -2121,7 +1977,15 @@
             "Targets": [[
                 "indicate",
                 "Agent"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "indicate",
+                    "agent",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2130,10 +1994,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -2146,19 +2006,6 @@
             ],
             "Action": ["export"],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "export",
-                    "description",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "ead",
-                    "description",
-                    "create",
-                    "export"
-                ]]
-            },
             "Contains": [[
                 "EAD",
                 "description"
@@ -2171,7 +2018,20 @@
             "Targets": [[
                 "export",
                 "description"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "export",
+                    "description",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "ead",
+                    "description",
+                    "create",
+                    "export"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2180,10 +2040,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -2196,21 +2052,6 @@
                 "edit"
             ],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "create",
-                        "event records",
-                        "create"
-                    ],
-                    [
-                        "edit",
-                        "event records",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G23# As an Archivist, I want to create and edit Event records.",
             "Triggers": [
@@ -2232,7 +2073,22 @@
                     "edit",
                     "Event records"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "create",
+                        "event records",
+                        "create"
+                    ],
+                    [
+                        "edit",
+                        "event records",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2241,10 +2097,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -2254,14 +2106,6 @@
             "Entity": ["Digital Objects"],
             "Action": ["manage"],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "manage",
-                    "digital objects",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G23# As an Archivist, I want to manage Digital Objects.",
             "Triggers": [[
@@ -2271,7 +2115,15 @@
             "Targets": [[
                 "manage",
                 "Digital Objects"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "manage",
+                    "digital objects",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2280,10 +2132,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -2297,27 +2145,6 @@
             ],
             "Action": ["associate"],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "associate",
-                    "instance",
-                    "create"
-                ]],
-                "Contain Action Rules": [
-                    [
-                        "resource",
-                        "instance",
-                        "create",
-                        "associate"
-                    ],
-                    [
-                        "resource component",
-                        "instance",
-                        "create",
-                        "associate"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "Resource",
@@ -2336,7 +2163,28 @@
             "Targets": [[
                 "associate",
                 "Instance"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "associate",
+                    "instance",
+                    "create"
+                ]],
+                "Contain Action Annotations": [
+                    [
+                        "resource",
+                        "instance",
+                        "create",
+                        "associate"
+                    ],
+                    [
+                        "resource component",
+                        "instance",
+                        "create",
+                        "associate"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -2345,10 +2193,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -2361,19 +2205,6 @@
             ],
             "Action": ["don't want to inadvertently overwrite"],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "don't want to inadvertently overwrite",
-                    "someone else's changes",
-                    "preserve;forbid"
-                ]],
-                "Contain Action Rules": [[
-                    "record",
-                    "someone else's changes",
-                    "preserve;forbid",
-                    "don't want to inadvertently overwrite"
-                ]]
-            },
             "Contains": [[
                 "record",
                 "someone else's changes"
@@ -2386,7 +2217,20 @@
             "Targets": [[
                 "don't want to inadvertently overwrite",
                 "someone else's changes"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "don't want to inadvertently overwrite",
+                    "someone else's changes",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Annotations": [[
+                    "record",
+                    "someone else's changes",
+                    "preserve;forbid",
+                    "don't want to inadvertently overwrite"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2395,10 +2239,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -2411,21 +2251,6 @@
                 "edit"
             ],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "create",
-                        "rights management statements",
-                        "create"
-                    ],
-                    [
-                        "edit",
-                        "rights management statements",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G23# As an Archivist, I want to create and edit Rights Management statements.",
             "Triggers": [
@@ -2447,7 +2272,22 @@
                     "edit",
                     "Rights Management statements"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "create",
+                        "rights management statements",
+                        "create"
+                    ],
+                    [
+                        "edit",
+                        "rights management statements",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2456,10 +2296,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -2475,26 +2311,6 @@
                 "import"
             ],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "upload",
-                        "ead",
-                        "create"
-                    ],
-                    [
-                        "import",
-                        "ead",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "frontend application",
-                    "ead",
-                    "create",
-                    "upload"
-                ]]
-            },
             "Contains": [[
                 "frontend application",
                 "EAD"
@@ -2513,7 +2329,27 @@
                     "import",
                     "EAD"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "upload",
+                        "ead",
+                        "create"
+                    ],
+                    [
+                        "import",
+                        "ead",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "frontend application",
+                    "ead",
+                    "create",
+                    "upload"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2522,10 +2358,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -2535,14 +2367,6 @@
             "Entity": ["EAD data"],
             "Action": ["import"],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "import",
-                    "ead data",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G23# As an Archivist, I want to import EAD data.",
             "Triggers": [[
@@ -2552,7 +2376,15 @@
             "Targets": [[
                 "import",
                 "EAD data"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "import",
+                    "ead data",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2561,10 +2393,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -2581,31 +2409,6 @@
                 "delete"
             ],
             "Persona": ["Repository Manager"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "create",
-                        "archival descriptions",
-                        "create"
-                    ],
-                    [
-                        "update",
-                        "archival descriptions",
-                        "create;delete"
-                    ],
-                    [
-                        "delete",
-                        "archival descriptions",
-                        "delete"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "repository",
-                    "archival descriptions",
-                    "create",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "repository",
                 "archival descriptions"
@@ -2638,7 +2441,32 @@
                     "delete",
                     "archival descriptions"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "create",
+                        "archival descriptions",
+                        "create"
+                    ],
+                    [
+                        "update",
+                        "archival descriptions",
+                        "create;delete"
+                    ],
+                    [
+                        "delete",
+                        "archival descriptions",
+                        "delete"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "repository",
+                    "archival descriptions",
+                    "create",
+                    "create"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2647,10 +2475,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -2660,14 +2484,6 @@
             "Entity": ["custom importer"],
             "Action": ["develop"],
             "Persona": ["Developer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "develop",
-                    "custom importer",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G23# As a Developer , I want to develop a custom importer.",
             "Triggers": [[
@@ -2677,7 +2493,15 @@
             "Targets": [[
                 "develop",
                 "custom importer"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "develop",
+                    "custom importer",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2686,10 +2510,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -2702,21 +2522,6 @@
                 "update"
             ],
             "Persona": ["Basic Data Entry user"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "create",
-                        "basic archival description information",
-                        "create"
-                    ],
-                    [
-                        "update",
-                        "basic archival description information",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G23# As a Basic Data Entry user , I want to create and update basic archival description information.",
             "Triggers": [
@@ -2738,7 +2543,22 @@
                     "update",
                     "basic archival description information"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "create",
+                        "basic archival description information",
+                        "create"
+                    ],
+                    [
+                        "update",
+                        "basic archival description information",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2747,10 +2567,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -2767,31 +2583,6 @@
                 "delete"
             ],
             "Persona": ["Repository Manager"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "create",
-                        "any records",
-                        "create"
-                    ],
-                    [
-                        "update",
-                        "any records",
-                        "create;delete"
-                    ],
-                    [
-                        "delete",
-                        "any records",
-                        "delete"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "repository",
-                    "any records",
-                    "create",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "repository",
                 "any records"
@@ -2824,7 +2615,32 @@
                     "delete",
                     "any records"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "create",
+                        "any records",
+                        "create"
+                    ],
+                    [
+                        "update",
+                        "any records",
+                        "create;delete"
+                    ],
+                    [
+                        "delete",
+                        "any records",
+                        "delete"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "repository",
+                    "any records",
+                    "create",
+                    "create"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2833,10 +2649,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -2849,19 +2661,6 @@
             ],
             "Action": ["view"],
             "Persona": ["ReadOnly user"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "view",
-                    "archival descriptions",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "repository",
-                    "archival descriptions",
-                    "preserve",
-                    "view"
-                ]]
-            },
             "Contains": [[
                 "repository",
                 "archival descriptions"
@@ -2874,7 +2673,20 @@
             "Targets": [[
                 "view",
                 "archival descriptions"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "view",
+                    "archival descriptions",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "repository",
+                    "archival descriptions",
+                    "preserve",
+                    "view"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2883,10 +2695,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -2900,27 +2708,6 @@
             ],
             "Action": ["declare"],
             "Persona": ["System Administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "declare",
-                    "repository manager role",
-                    "create"
-                ]],
-                "Contain Action Rules": [
-                    [
-                        "user",
-                        "repository manager role",
-                        "create",
-                        "declare"
-                    ],
-                    [
-                        "given repository",
-                        "repository manager role",
-                        "create",
-                        "declare"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "user",
@@ -2939,7 +2726,28 @@
             "Targets": [[
                 "declare",
                 "Repository Manager role"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "declare",
+                    "repository manager role",
+                    "create"
+                ]],
+                "Contain Action Annotations": [
+                    [
+                        "user",
+                        "repository manager role",
+                        "create",
+                        "declare"
+                    ],
+                    [
+                        "given repository",
+                        "repository manager role",
+                        "create",
+                        "declare"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -2948,10 +2756,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -2971,31 +2775,6 @@
                 "edit"
             ],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "specify",
-                        "source",
-                        "create"
-                    ],
-                    [
-                        "add",
-                        "new sources",
-                        "create"
-                    ],
-                    [
-                        "edit",
-                        "existing sources",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "name form",
-                    "source",
-                    "create",
-                    "specify"
-                ]]
-            },
             "Contains": [
                 [
                     "Name Form",
@@ -3034,7 +2813,32 @@
                     "edit",
                     "existing Sources"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "specify",
+                        "source",
+                        "create"
+                    ],
+                    [
+                        "add",
+                        "new sources",
+                        "create"
+                    ],
+                    [
+                        "edit",
+                        "existing sources",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "name form",
+                    "source",
+                    "create",
+                    "specify"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3043,10 +2847,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -3059,21 +2859,6 @@
                 "edit"
             ],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "create",
-                        "agent records",
-                        "create"
-                    ],
-                    [
-                        "edit",
-                        "agent records",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G23# As an Archivist, I want to create and edit Agent records.",
             "Triggers": [
@@ -3095,7 +2880,22 @@
                     "edit",
                     "Agent records"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "create",
+                        "agent records",
+                        "create"
+                    ],
+                    [
+                        "edit",
+                        "agent records",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3104,10 +2904,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -3120,21 +2916,6 @@
                 "edit"
             ],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "create",
-                        "resource record",
-                        "create"
-                    ],
-                    [
-                        "edit",
-                        "resource record",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G23# As an Archivist, I want to create and edit a Resource record.",
             "Triggers": [
@@ -3156,7 +2937,22 @@
                     "edit",
                     "Resource record"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "create",
+                        "resource record",
+                        "create"
+                    ],
+                    [
+                        "edit",
+                        "resource record",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3165,10 +2961,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -3181,19 +2973,6 @@
             ],
             "Action": ["associate"],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "associate",
-                    "subject record",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "resource description",
-                    "subject record",
-                    "create",
-                    "associate"
-                ]]
-            },
             "Contains": [[
                 "Resource description",
                 "Subject record"
@@ -3206,7 +2985,20 @@
             "Targets": [[
                 "associate",
                 "Subject record"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "associate",
+                    "subject record",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "resource description",
+                    "subject record",
+                    "create",
+                    "associate"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3215,10 +3007,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -3228,17 +3016,17 @@
             "Entity": [],
             "Action": ["authenticate locally"],
             "Persona": ["User"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G23# As a User, I want to authenticate locally.",
             "Triggers": [[
                 "User",
                 "authenticate locally"
             ]],
-            "Targets": []
+            "Targets": [],
+            "Action Annotations": {
+                "Target Action Annotations": [],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3247,10 +3035,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -3260,17 +3044,17 @@
             "Entity": [],
             "Action": ["log in"],
             "Persona": ["User"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G23# As User, I want to be able to log in.",
             "Triggers": [[
                 "User",
                 "log in"
             ]],
-            "Targets": []
+            "Targets": [],
+            "Action Annotations": {
+                "Target Action Annotations": [],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3279,10 +3063,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -3295,19 +3075,6 @@
             ],
             "Action": ["associate"],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "associate",
-                    "instance",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "container",
-                    "instance",
-                    "create",
-                    "associate"
-                ]]
-            },
             "Contains": [[
                 "Container",
                 "Instance"
@@ -3320,7 +3087,20 @@
             "Targets": [[
                 "associate",
                 "Instance"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "associate",
+                    "instance",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "container",
+                    "instance",
+                    "create",
+                    "associate"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3329,10 +3109,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -3345,19 +3121,6 @@
             ],
             "Action": ["assign"],
             "Persona": ["Archivist"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "assign",
-                    "location information",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "container",
-                    "location information",
-                    "create",
-                    "assign"
-                ]]
-            },
             "Contains": [[
                 "Container",
                 "Location information"
@@ -3370,7 +3133,20 @@
             "Targets": [[
                 "assign",
                 "Location information"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "assign",
+                    "location information",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "container",
+                    "location information",
+                    "create",
+                    "assign"
+                ]]
+            }
         },
         "Mix": {}
     }

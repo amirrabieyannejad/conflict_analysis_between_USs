@@ -3,127 +3,114 @@
 ********************* << Dataset: g26_racdam >> ***************
 * Table of potential conflict between user stories
 
-       us_05  us_17  us_15  us_59  us_03  us_04  us_06  us_39  us_07  us_18  us_28  us_83  us_91  us_93  us_85  us_60  us_84  us_09  us_51  us_81  us_90  us_10  us_11  us_13  us_64  us_35  us_86  us_49  us_55  
-us_05         x      x             x                           x      x                                                                            x                                                              
-us_17  x                                                                                                                                                                                                          
-us_15  x                    x                                                              x                    x                                                                                                 
-us_59                x                                                                                                                                                                                            
-us_03  x                                                                                                                                                                                                          
-us_04                                            x      x                                                                                                                             x                           
-us_06                                     x                                                                                                                                                                       
-us_39                                     x                                                                                                                                                                       
-us_07  x                                                                                                                                                                                                          
-us_18  x                                                                                                                                                                                                          
-us_28                                                                               x             x      x             x                    x                                                x             x      
-us_83                                                                        x                                                                                                                                    
-us_91                x                                                                                                                                                                                            
-us_93                                                                        x                                                                                                                                    
-us_85                                                                        x                                                                                   x                                  x             
-us_60                x                                                                                                                                                                                            
-us_84                                                                        x                                                                                                                                    
-us_09                                                                                                                                x                                                                            
-us_51                                                                                                                         x                           x                                                       
-us_81                                                                        x                                                                                                                                    
-us_90  x                                                                                                                                                                                                          
-us_10                                                                                                                                x                                                                            
-us_11                                                                                                    x                                                                                                        
-us_13                                                                                                                                                                          x                                  
-us_64                                                                                                                                                                   x                                         
-us_35                                     x                                                                                                                                                                       
-us_86                                                                        x                                                                                                                                    
-us_49                                                                                                    x                                                                                                        
-us_55                                                                        x                                                                                                                                    
+       us_15  us_91  us_64  us_13  us_59  us_09  us_51  us_04  us_06  us_39  us_10  us_35  us_60  
+us_15         x                    x                                                       x      
+us_91  x                                                                                          
+us_64                       x                                                                     
+us_13                x                                                                            
+us_59  x                                                                                          
+us_09                                            x                                                
+us_51                                     x                                  x                    
+us_04                                                          x      x             x             
+us_06                                                   x                                         
+us_39                                                   x                                         
+us_10                                            x                                                
+us_35                                                   x                                         
+us_60  x                                                                                          
 
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_05_AND_user_story_17}
+{user_story_15_AND_user_story_91}
   
-Affected Resource of US1 is: << group >>
-Affected Resource of US2 is: << groups >>
-Affected Contain Resource US1 is: << files >>
-Affected Resource US2 is: << files >>
-Contain Resources for: user_story_05: << [["group","files","preserve;forbid","restrict"]] >>
-Contain Resources for: user_story_17: << [["groups","files","create","upload"]] >>
-
- Action of user_story_05 is: << restrict >>  which is annotated with: << forbid >>
- Action of user_story_17 is: << upload >>  which is annotated with: << create >>
-
-Conflict Reason is: << forbid-create-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_05: #G26# As an archivist, i want to #restrict# a #group# of #files# from view.
-
-   user_story_17: #G26# As an archivist, i want to #upload# #groups# of #files#, 
-
-Original texts of user stories are: 
-   user_story_05: #G26# As an archivist, I want to restrict a group of files from view.
-
-   user_story_17: #G26# As an archivist, I want to upload groups of files, so that I can save time.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_15_AND_user_story_59}
-  
-Affected Resource of US1 is: << files >>
-Affected Resource of US2 is: << files >>
-Affected Contain Resource US1 is: << metadata >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_15: << [["files","metadata","create;delete","batch edit"]] >>
-Contain Resources for: user_story_59: << [["collection","files","preserve","browse through"]] >>
+ Affected Resource of US1 is: << metadata >>
 
  Action of user_story_15 is: << batch edit >>  which is annotated with: << delete >>
- Action of user_story_59 is: << browse through >>  which is annotated with: << preserve >>
+ Action of user_story_91 is: << access >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_15: #G26# As an archivist, i want to #batch edit# metadata about #files#.
+   user_story_15: #G26# As an archivist, i want to #batch edit# #metadata# about files.
 
-   user_story_59: #G26# As a researcher, i want to #browse through# #files# in a collection.
+   user_story_91: #G26# As an archivist, i want to #access# #metadata# and visual representations of index cards, 
 
 Original texts of user stories are: 
    user_story_15: #G26# As an archivist, I want to batch edit metadata about files.
 
-   user_story_59: #G26# As a researcher, I want to browse through files in a collection.
+   user_story_91: #G26# As an archivist, I want to access metadata and visual representations of index cards, so that I can use that information to assist researchers.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_03_AND_user_story_05}
+{user_story_64_AND_user_story_13}
   
-Affected Resource of US1 is: << groups >>
-Affected Resource of US2 is: << group >>
-Affected Contain Resource US1 is: << files >>
-Affected Resource US2 is: << files >>
-Contain Resources for: user_story_03: << [["groups","files","create","mark"]] >>
-Contain Resources for: user_story_05: << [["group","files","preserve;forbid","restrict"]] >>
+ Affected Resource of US1 is: << digital files >>
+ Affected Contain Entity US2 is: << information >>
 
- Action of user_story_03 is: << mark >>  which is annotated with: << create >>
- Action of user_story_05 is: << restrict >>  which is annotated with: << forbid >>
+ Action of user_story_64 is: << access >>  which is annotated with: << preserve >>
+ Action of user_story_13 is: << redact >>  which is annotated with: << delete >>
 
-Conflict Reason is: << create-forbid-Conflict >>
+ Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_03: #G26# As an archivist, i want to #mark# #groups# of #files# as restricted, 
+   user_story_64: #G26# As an archivist, i want to #access# the #digital files# on the x-drive, 
 
-   user_story_05: #G26# As an archivist, i want to #restrict# a #group# of #files# from view.
+   user_story_13: #G26# As an archivist, i want to #redact# #information# in #digital files# for a period of time, 
 
 Original texts of user stories are: 
-   user_story_03: #G26# As an archivist, I want to mark groups of files as restricted, so that they don't get shared by mistake.
+   user_story_64: #G26# As an archivist, I want to access the digital files on the X-drive, so that I can use them.
 
-   user_story_05: #G26# As an archivist, I want to restrict a group of files from view.
+   user_story_13: #G26# As an archivist, I want to redact information in digital files for a period of time, so that I can provide access to non-sensitive portions of a record.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_59_AND_user_story_15}
+  
+ Affected Resource of US1 is: << files >>
+ Affected Contain Entity US2 is: << metadata >>
+
+ Action of user_story_59 is: << browse through >>  which is annotated with: << preserve >>
+ Action of user_story_15 is: << batch edit >>  which is annotated with: << delete >>
+
+ Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_59: #G26# As a researcher, i want to #browse through# #files# in a collection.
+
+   user_story_15: #G26# As an archivist, i want to #batch edit# #metadata# about #files#.
+
+Original texts of user stories are: 
+   user_story_59: #G26# As a researcher, I want to browse through files in a collection.
+
+   user_story_15: #G26# As an archivist, I want to batch edit metadata about files.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_09_AND_user_story_51}
+  
+ Affected Resource of US1 is: << access >>
+
+ Action of user_story_09 is: << restrict >>  which is annotated with: << forbid >>
+ Action of user_story_51 is: << provide >>  which is annotated with: << create >>
+
+ Conflict Reason is: << forbid-create-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_09: #G26# As an archivist, i want to #restrict# #access# to some files by ip address, 
+
+   user_story_51: #G26# As an archivist, i want to #provide# #access# to digital copies of unprocessed material, 
+
+Original texts of user stories are: 
+   user_story_09: #G26# As an archivist, I want to restrict access to some files by IP address, so that I can give reading room access only to certain digital files.
+
+   user_story_51: #G26# As an archivist, I want to provide access to digital copies of unprocessed material, so that donors can access things they have given us.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_04_AND_user_story_06}
   
-Affected Resource of US1 is: << file >>
-Affected Resource of US2 is: << restrictions >>
-Affected Contain Resource US1 is: << file >>
-Affected Resource US2 is: << file >>
-Contain Resources for: user_story_04: << [] >>
-Contain Resources for: user_story_06: << [["file","restrictions","delete","removed"]] >>
+ Affected Resource of US1 is: << file >>
+ Affected Contain Entity US2 is: << restrictions >>
 
  Action of user_story_04 is: << restrict >>  which is annotated with: << preserve >>
  Action of user_story_06 is: << removed >>  which is annotated with: << delete >>
 
-Conflict Reason is: << preserve-delete-Conflict >>
+ Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_04: #G26# As an archivist, i want to #restrict# a #file# from view.
@@ -138,17 +125,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_04_AND_user_story_39}
   
-Affected Resource of US1 is: << file >>
-Affected Resource of US2 is: << file >>
-Affected Contain Resource US1 is: << file >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_04: << [] >>
-Contain Resources for: user_story_39: << [] >>
+ Affected Resource of US1 is: << file >>
 
  Action of user_story_04 is: << restrict >>  which is annotated with: << forbid >>
  Action of user_story_39 is: << download >>  which is annotated with: << create >>
 
-Conflict Reason is: << forbid-create-Conflict >>
+ Conflict Reason is: << forbid-create-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_04: #G26# As an archivist, i want to #restrict# a #file# from view.
@@ -161,294 +143,14 @@ Original texts of user stories are:
    user_story_39: #G26# As a researcher, I want to download a file, so that I can use it for research without having to come to the reading room.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_05_AND_user_story_07}
-  
-Affected Resource of US1 is: << group >>
-Affected Resource of US2 is: << restriction end date information >>
-Affected Contain Resource US1 is: << files >>
-Affected Resource US2 is: << files >>
-Contain Resources for: user_story_05: << [["group","files","preserve;forbid","restrict"]] >>
-Contain Resources for: user_story_07: << [["files","restriction end date information","create","add"]] >>
-
- Action of user_story_05 is: << restrict >>  which is annotated with: << forbid >>
- Action of user_story_07 is: << add >>  which is annotated with: << create >>
-
-Conflict Reason is: << forbid-create-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_05: #G26# As an archivist, i want to #restrict# a #group# of #files# from view.
-
-   user_story_07: #G26# As an archivist, i want to #add# #restriction end date information# to #files#, 
-
-Original texts of user stories are: 
-   user_story_05: #G26# As an archivist, I want to restrict a group of files from view.
-
-   user_story_07: #G26# As an archivist, I want to add restriction end date information to files, so that I can share files when they become open.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_05_AND_user_story_18}
-  
-Affected Resource of US1 is: << group >>
-Affected Resource of US2 is: << access copies >>
-Affected Contain Resource US1 is: << files >>
-Affected Resource US2 is: << files >>
-Contain Resources for: user_story_05: << [["group","files","preserve;forbid","restrict"]] >>
-Contain Resources for: user_story_18: << [["files","access copies","create","automatically create"]] >>
-
- Action of user_story_05 is: << restrict >>  which is annotated with: << forbid >>
- Action of user_story_18 is: << automatically create >>  which is annotated with: << create >>
-
-Conflict Reason is: << forbid-create-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_05: #G26# As an archivist, i want to #restrict# a #group# of #files# from view.
-
-   user_story_18: #G26# As an archivist, i want to #automatically create# #access copies# of #files#, 
-
-Original texts of user stories are: 
-   user_story_05: #G26# As an archivist, I want to restrict a group of files from view.
-
-   user_story_18: #G26# As an archivist, I want to automatically create access copies of files, so that I don't have to do this manually.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_28_AND_user_story_83}
-  
-Affected Resource of US1 is: << images >>
-Affected Resource of US2 is: << images >>
-Affected Contain Resource US1 is: << images >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_28: << [] >>
-Contain Resources for: user_story_83: << [["images","photographer","preserve;create","search"]] >>
-
- Action of user_story_28 is: << rotate >>  which is annotated with: << delete >>
- Action of user_story_83 is: << search >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_28: #G26# As an archivist, i want to #rotate# #images#, 
-
-   user_story_83: #G26# As an archivist, i want to #search# #images# by photographer.
-
-Original texts of user stories are: 
-   user_story_28: #G26# As an archivist, I want to rotate images, so that I can orient them correctly.
-
-   user_story_83: #G26# As an archivist, I want to search images by photographer.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_15_AND_user_story_91}
-  
-Affected Resource of US1 is: << metadata >>
-Affected Resource of US2 is: << metadata >>
-Affected Contain Resource US1 is: << metadata >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_15: << [["files","metadata","create;delete","batch edit"]] >>
-Contain Resources for: user_story_91: << [["index cards","metadata","preserve;create","access"],["index cards","visual representations","preserve;create","access"]] >>
-
- Action of user_story_15 is: << batch edit >>  which is annotated with: << delete >>
- Action of user_story_91 is: << access >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_15: #G26# As an archivist, i want to #batch edit# #metadata# about files.
-
-   user_story_91: #G26# As an archivist, i want to #access# #metadata# and visual representations of index cards, 
-
-Original texts of user stories are: 
-   user_story_15: #G26# As an archivist, I want to batch edit metadata about files.
-
-   user_story_91: #G26# As an archivist, I want to access metadata and visual representations of index cards, so that I can use that information to assist researchers.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_28_AND_user_story_93}
-  
-Affected Resource of US1 is: << images >>
-Affected Resource of US2 is: << images >>
-Affected Contain Resource US1 is: << images >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_28: << [] >>
-Contain Resources for: user_story_93: << [] >>
-
- Action of user_story_28 is: << rotate >>  which is annotated with: << delete >>
- Action of user_story_93 is: << search >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_28: #G26# As an archivist, i want to #rotate# #images#, 
-
-   user_story_93: #G26# As an archivist, i want to #search# #images# by uploading an image, 
-
-Original texts of user stories are: 
-   user_story_28: #G26# As an archivist, I want to rotate images, so that I can orient them correctly.
-
-   user_story_93: #G26# As an archivist, I want to search images by uploading an image, so that so I can find images when i don't have any metadata.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_28_AND_user_story_85}
-  
-Affected Resource of US1 is: << images >>
-Affected Resource of US2 is: << images >>
-Affected Contain Resource US1 is: << images >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_28: << [] >>
-Contain Resources for: user_story_85: << [["images","place","preserve;create","search"],["photo","place","create;delete","taken"]] >>
-
- Action of user_story_28 is: << rotate >>  which is annotated with: << delete >>
- Action of user_story_85 is: << search >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_28: #G26# As an archivist, i want to #rotate# #images#, 
-
-   user_story_85: #G26# As an archivist, i want to #search# #images# by place the photo was taken.
-
-Original texts of user stories are: 
-   user_story_28: #G26# As an archivist, I want to rotate images, so that I can orient them correctly.
-
-   user_story_85: #G26# As an archivist, I want to search images by place the photo was taken.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_15_AND_user_story_60}
-  
-Affected Resource of US1 is: << files >>
-Affected Resource of US2 is: << files >>
-Affected Contain Resource US1 is: << metadata >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_15: << [["files","metadata","create;delete","batch edit"]] >>
-Contain Resources for: user_story_60: << [["collection","files","preserve","browse through"]] >>
-
- Action of user_story_15 is: << batch edit >>  which is annotated with: << delete >>
- Action of user_story_60 is: << browse through >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_15: #G26# As an archivist, i want to #batch edit# metadata about #files#.
-
-   user_story_60: #G26# As an archivist, i want to #browse through# #files# in a collection.
-
-Original texts of user stories are: 
-   user_story_15: #G26# As an archivist, I want to batch edit metadata about files.
-
-   user_story_60: #G26# As an archivist, I want to browse through files in a collection.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_28_AND_user_story_84}
-  
-Affected Resource of US1 is: << images >>
-Affected Resource of US2 is: << images >>
-Affected Contain Resource US1 is: << images >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_28: << [] >>
-Contain Resources for: user_story_84: << [["images","people","preserve;create","search"]] >>
-
- Action of user_story_28 is: << rotate >>  which is annotated with: << delete >>
- Action of user_story_84 is: << search >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_28: #G26# As an archivist, i want to #rotate# #images#, 
-
-   user_story_84: #G26# As an archivist, i want to #search# #images# by people represented in them.
-
-Original texts of user stories are: 
-   user_story_28: #G26# As an archivist, I want to rotate images, so that I can orient them correctly.
-
-   user_story_84: #G26# As an archivist, I want to search images by people represented in them.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_09_AND_user_story_51}
-  
-Affected Resource of US1 is: << access >>
-Affected Resource of US2 is: << access >>
-Affected Contain Resource US1 is: << access >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_09: << [["some files","access","preserve;forbid","restrict"]] >>
-Contain Resources for: user_story_51: << [["digital copies","access","create","provide"]] >>
-
- Action of user_story_09 is: << restrict >>  which is annotated with: << forbid >>
- Action of user_story_51 is: << provide >>  which is annotated with: << create >>
-
-Conflict Reason is: << forbid-create-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_09: #G26# As an archivist, i want to #restrict# #access# to some files by ip address, 
-
-   user_story_51: #G26# As an archivist, i want to #provide# #access# to digital copies of unprocessed material, 
-
-Original texts of user stories are: 
-   user_story_09: #G26# As an archivist, I want to restrict access to some files by IP address, so that I can give reading room access only to certain digital files.
-
-   user_story_51: #G26# As an archivist, I want to provide access to digital copies of unprocessed material, so that donors can access things they have given us.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_28_AND_user_story_81}
-  
-Affected Resource of US1 is: << images >>
-Affected Resource of US2 is: << thumbnails >>
-Affected Contain Resource US1 is: << images >>
-Affected Resource US2 is: << images >>
-Contain Resources for: user_story_28: << [] >>
-Contain Resources for: user_story_81: << [["images","thumbnails","preserve","see"]] >>
-
- Action of user_story_28 is: << rotate >>  which is annotated with: << delete >>
- Action of user_story_81 is: << see >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_28: #G26# As an archivist, i want to #rotate# #images#, 
-
-   user_story_81: #G26# As a donor representative, i want to #see# #thumbnails# of #images#, 
-
-Original texts of user stories are: 
-   user_story_28: #G26# As an archivist, I want to rotate images, so that I can orient them correctly.
-
-   user_story_81: #G26# As a donor representative, I want to see thumbnails of images, so that I can select which one I want.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_05_AND_user_story_90}
-  
-Affected Resource of US1 is: << files >>
-Affected Resource of US2 is: << files >>
-Affected Contain Resource US1 is: << group >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_05: << [["group","files","preserve;forbid","restrict"]] >>
-Contain Resources for: user_story_90: << [] >>
-
- Action of user_story_05 is: << restrict >>  which is annotated with: << forbid >>
- Action of user_story_90 is: << find >>  which is annotated with: << create >>
-
-Conflict Reason is: << forbid-create-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_05: #G26# As an archivist, i want to #restrict# a group of #files# from view.
-
-   user_story_90: #G26# As an archivist, i want to #find# #files# that cannot be made publicly available,  
-
-Original texts of user stories are: 
-   user_story_05: #G26# As an archivist, I want to restrict a group of files from view.
-
-   user_story_90: #G26# As an archivist, I want to find files that cannot be made publicly available, so that I can easily access everything that's been digitized.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_10_AND_user_story_51}
   
-Affected Resource of US1 is: << access >>
-Affected Resource of US2 is: << access >>
-Affected Contain Resource US1 is: << access >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_10: << [["certain files","access","preserve;forbid","restrict"]] >>
-Contain Resources for: user_story_51: << [["digital copies","access","create","provide"]] >>
+ Affected Resource of US1 is: << access >>
 
  Action of user_story_10 is: << restrict >>  which is annotated with: << forbid >>
  Action of user_story_51 is: << provide >>  which is annotated with: << create >>
 
-Conflict Reason is: << forbid-create-Conflict >>
+ Conflict Reason is: << forbid-create-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_10: #G26# As an archivist, i want to #restrict# #access# to certain files by user, 
@@ -461,94 +163,15 @@ Original texts of user stories are:
    user_story_51: #G26# As an archivist, I want to provide access to digital copies of unprocessed material, so that donors can access things they have given us.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_11_AND_user_story_85}
-  
-Affected Resource of US1 is: << photo >>
-Affected Resource of US2 is: << photo >>
-Affected Contain Resource US1 is: << photo >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_11: << [] >>
-Contain Resources for: user_story_85: << [["images","place","preserve;create","search"],["photo","place","create;delete","taken"]] >>
-
- Action of user_story_11 is: << scanned >>  which is annotated with: << preserve >>
- Action of user_story_85 is: << taken >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_11: #G26# As an archivist, i want to know if a #photo# has already been #scanned#, 
-
-   user_story_85: #G26# As an archivist, i want to search images by place the #photo# was #taken#.
-
-Original texts of user stories are: 
-   user_story_11: #G26# As an archivist, I want to know if a photo has already been scanned, so that I can license it to a researcher.
-
-   user_story_85: #G26# As an archivist, I want to search images by place the photo was taken.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_13_AND_user_story_64}
-  
-Affected Resource of US1 is: << digital files >>
-Affected Resource of US2 is: << digital files >>
-Affected Contain Resource US1 is: << information >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_13: << [["digital files","information","create;delete","redact"]] >>
-Contain Resources for: user_story_64: << [["x-drive","digital files","preserve;create","access"]] >>
-
- Action of user_story_13 is: << redact >>  which is annotated with: << delete >>
- Action of user_story_64 is: << access >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_13: #G26# As an archivist, i want to #redact# information in #digital files# for a period of time, 
-
-   user_story_64: #G26# As an archivist, i want to #access# the #digital files# on the x-drive, 
-
-Original texts of user stories are: 
-   user_story_13: #G26# As an archivist, I want to redact information in digital files for a period of time, so that I can provide access to non-sensitive portions of a record.
-
-   user_story_64: #G26# As an archivist, I want to access the digital files on the X-drive, so that I can use them.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_05_AND_user_story_15}
-  
-Affected Resource of US1 is: << group >>
-Affected Resource of US2 is: << metadata >>
-Affected Contain Resource US1 is: << files >>
-Affected Resource US2 is: << files >>
-Contain Resources for: user_story_05: << [["group","files","preserve;forbid","restrict"]] >>
-Contain Resources for: user_story_15: << [["files","metadata","create;delete","batch edit"]] >>
-
- Action of user_story_05 is: << restrict >>  which is annotated with: << preserve >>
- Action of user_story_15 is: << batch edit >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_05: #G26# As an archivist, i want to #restrict# a #group# of #files# from view.
-
-   user_story_15: #G26# As an archivist, i want to #batch edit# #metadata# about #files#.
-
-Original texts of user stories are: 
-   user_story_05: #G26# As an archivist, I want to restrict a group of files from view.
-
-   user_story_15: #G26# As an archivist, I want to batch edit metadata about files.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_04_AND_user_story_35}
   
-Affected Resource of US1 is: << file >>
-Affected Resource of US2 is: << link >>
-Affected Contain Resource US1 is: << file >>
-Affected Resource US2 is: << file >>
-Contain Resources for: user_story_04: << [] >>
-Contain Resources for: user_story_35: << [["file","link","create","share"],["social media","link","create","share"]] >>
+ Affected Resource of US1 is: << file >>
+ Affected Contain Entity US2 is: << link >>
 
  Action of user_story_04 is: << restrict >>  which is annotated with: << forbid >>
  Action of user_story_35 is: << share >>  which is annotated with: << create >>
 
-Conflict Reason is: << forbid-create-Conflict >>
+ Conflict Reason is: << forbid-create-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_04: #G26# As an archivist, i want to #restrict# a #file# from view.
@@ -561,76 +184,22 @@ Original texts of user stories are:
    user_story_35: #G26# As a researcher, I want to share a link to a file on social media, so that so I can show other people an interesting thing I found.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_28_AND_user_story_86}
+{user_story_60_AND_user_story_15}
   
-Affected Resource of US1 is: << images >>
-Affected Resource of US2 is: << images >>
-Affected Contain Resource US1 is: << images >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_28: << [] >>
-Contain Resources for: user_story_86: << [["images","rights","preserve;create","search"]] >>
+ Affected Resource of US1 is: << files >>
+ Affected Contain Entity US2 is: << metadata >>
 
- Action of user_story_28 is: << rotate >>  which is annotated with: << delete >>
- Action of user_story_86 is: << search >>  which is annotated with: << preserve >>
+ Action of user_story_60 is: << browse through >>  which is annotated with: << preserve >>
+ Action of user_story_15 is: << batch edit >>  which is annotated with: << delete >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_28: #G26# As an archivist, i want to #rotate# #images#, 
+   user_story_60: #G26# As an archivist, i want to #browse through# #files# in a collection.
 
-   user_story_86: #G26# As an archivist, i want to #search# #images# by rights.
-
-Original texts of user stories are: 
-   user_story_28: #G26# As an archivist, I want to rotate images, so that I can orient them correctly.
-
-   user_story_86: #G26# As an archivist, I want to search images by rights.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_49_AND_user_story_85}
-  
-Affected Resource of US1 is: << photo >>
-Affected Resource of US2 is: << photo >>
-Affected Contain Resource US1 is: << use >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_49: << [["photo","use","preserve;create","track"]] >>
-Contain Resources for: user_story_85: << [["images","place","preserve;create","search"],["photo","place","create;delete","taken"]] >>
-
- Action of user_story_49 is: << track >>  which is annotated with: << preserve >>
- Action of user_story_85 is: << taken >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_49: #G26# As an archivist, i want to #track# use of a #photo#, 
-
-   user_story_85: #G26# As an archivist, i want to search images by place the #photo# was #taken#.
+   user_story_15: #G26# As an archivist, i want to #batch edit# #metadata# about #files#.
 
 Original texts of user stories are: 
-   user_story_49: #G26# As an archivist, I want to track use of a photo, so that I know if I've sent it to a researcher before.
+   user_story_60: #G26# As an archivist, I want to browse through files in a collection.
 
-   user_story_85: #G26# As an archivist, I want to search images by place the photo was taken.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_28_AND_user_story_55}
-  
-Affected Resource of US1 is: << images >>
-Affected Resource of US2 is: << images >>
-Affected Contain Resource US1 is: << images >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_28: << [] >>
-Contain Resources for: user_story_55: << [["collection","images","preserve","look"]] >>
-
- Action of user_story_28 is: << rotate >>  which is annotated with: << delete >>
- Action of user_story_55 is: << look >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_28: #G26# As an archivist, i want to #rotate# #images#, 
-
-   user_story_55: #G26# As a donor representative, i want to #look# at #images# that have been scanned from my collection,  
-
-Original texts of user stories are: 
-   user_story_28: #G26# As an archivist, I want to rotate images, so that I can orient them correctly.
-
-   user_story_55: #G26# As a donor representative, I want to look at images that have been scanned from my collection, so that so that I can use them in my institutions exhibits, reports etc.
+   user_story_15: #G26# As an archivist, I want to batch edit metadata about files.

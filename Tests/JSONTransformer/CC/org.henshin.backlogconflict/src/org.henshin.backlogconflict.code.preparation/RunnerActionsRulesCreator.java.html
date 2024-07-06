@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="de"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>RunnerActionsRulesCreator.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">JSONTransformerTest (06.07.2024 12:14:10)</a> &gt; <a href="../../index.html" class="el_group">org.henshin.backlogconflict</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">org.henshin.backlogconflict.code.preparation</a> &gt; <span class="el_source">RunnerActionsRulesCreator.java</span></div><h1>RunnerActionsRulesCreator.java</h1><pre class="source lang-java linenums">package org.henshin.backlogconflict.code.preparation;
+
+import org.henshin.backlogconflict.code.report.ReportMaker;
+
+public class RunnerActionsRulesCreator {
+
+<span class="nc" id="L7">	public RunnerActionsRulesCreator() {</span>
+		// TODO Auto-generated constructor stub
+<span class="nc" id="L9">	}</span>
+
+	public static void main(String[] args) throws Exception {
+
+<span class="nc" id="L13">		 String[] dataSets = { &quot;g03_loudoun&quot;, &quot;g04_recycling&quot;, &quot;g05_open_spending&quot;,</span>
+<span class="nc" id="L14">		 &quot;g08_frictionless&quot;,</span>
+<span class="nc" id="L15">				&quot;g10_scrum_alliance&quot;, &quot;g11_nsf&quot;, &quot;g12_camperplus&quot;, &quot;g14_datahub&quot;, &quot;g16_mis&quot;, &quot;g18_neurohub&quot;,</span>
+<span class="nc" id="L16">				&quot;g19_alfred&quot;, &quot;g21_badcamp&quot;, &quot;g22_rdadmp&quot;, &quot;g23_archives_space&quot;, &quot;g24_unibath&quot;, &quot;g25_duraspace&quot;,</span>
+<span class="nc" id="L17">				&quot;g26_racdam&quot;, &quot;g27_culrepo&quot;, &quot;g28_zooniverse&quot; };</span>
+//		String[] dataSets = { &quot;g03_loudoun&quot; }; 
+		
+		 
+<span class="nc" id="L21">			String filePath = &quot;00_annotated_datasets\\&quot; ;</span>
+<span class="nc" id="L22">			String actionsAnnotationsFile = &quot;actions_annotations.csv&quot;;</span>
+<span class="nc" id="L23">			JSONTransformer.runJsonTransformer(dataSets, filePath);</span>
+<span class="nc" id="L24">			ActionsAnnotationsCreator actionsAnnotationsCreator = new ActionsAnnotationsCreator();</span>
+<span class="nc" id="L25">			actionsAnnotationsCreator.addActionsAnnotations(dataSets, filePath,actionsAnnotationsFile);</span>
+			
+		
+//		String filePath = &quot;00_annotated_datasets\\&quot;;
+<span class="nc" id="L29">		ReportMaker.runReportMaker(dataSets, filePath);</span>
+<span class="nc" id="L30">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span>JSONTransformerTest (06.07.2024 12:14:10)</div></body></html>

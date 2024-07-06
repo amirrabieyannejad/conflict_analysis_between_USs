@@ -16,17 +16,12 @@ us_12                                     x
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_43_AND_user_story_47}
   
-Affected Resource of US1 is: << archival descriptions >>
-Affected Resource of US2 is: << archival descriptions >>
-Affected Contain Resource US1 is: << archival descriptions >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_43: << [["repository","archival descriptions","create","create"]] >>
-Contain Resources for: user_story_47: << [["repository","archival descriptions","preserve","view"]] >>
+ Affected Resource of US1 is: << archival descriptions >>
 
  Action of user_story_43 is: << update >>  which is annotated with: << delete >>
  Action of user_story_47 is: << view >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_43: #G23# As a Repository Manager , i want to create, #update# and delete #archival descriptions# in my repository.
@@ -41,17 +36,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_30_AND_user_story_32}
   
-Affected Resource of US1 is: << resource >>
-Affected Resource of US2 is: << resource >>
-Affected Contain Resource US1 is: << resource >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_30: << [["repository","resource","preserve;create","search"],["repository","accession","preserve;create","search"],["repository","digital object records","preserve;create","search"]] >>
-Contain Resources for: user_story_32: << [] >>
+ Affected Resource of US1 is: << resource >>
 
  Action of user_story_30 is: << search >>  which is annotated with: << preserve >>
  Action of user_story_32 is: << rearrange >>  which is annotated with: << delete >>
 
-Conflict Reason is: << preserve-delete-Conflict >>
+ Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_30: #G23# As an archivist, i want to #search# within a repository for #resource# and accession and digital object records.
@@ -64,44 +54,35 @@ Original texts of user stories are:
    user_story_32: #G23# As an Archivist, I want to rearrange the Resource and/or Digital Object hierarchy using keyboard-based navigation.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_01_AND_user_story_32}
+{user_story_32_AND_user_story_01}
   
-Affected Resource of US1 is: << resource >>
-Affected Resource of US2 is: << resource >>
-Affected Contain Resource US1 is: << finding aid >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_01: << [["particular collection","finding aid","preserve","view"],["resource","finding aid","preserve","view"]] >>
-Contain Resources for: user_story_32: << [] >>
+ Affected Resource of US1 is: << resource >>
+ Affected Contain Entity US2 is: << finding aid >>
 
- Action of user_story_01 is: << view >>  which is annotated with: << preserve >>
  Action of user_story_32 is: << rearrange >>  which is annotated with: << delete >>
+ Action of user_story_01 is: << view >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << preserve-delete-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_01: #G23# As a researcher, i want to be able to #view# a finding aid for a particular collection/#resource#.
-
    user_story_32: #G23# As an Archivist, i want to #rearrange# the #resource# and/or digital object hierarchy using keyboard-based navigation.
 
-Original texts of user stories are: 
-   user_story_01: #G23# As a researcher, I want to be able to view a finding aid for a particular collection/Resource.
+   user_story_01: #G23# As a researcher, i want to be able to #view# a #finding aid# for a particular collection/#resource#.
 
+Original texts of user stories are: 
    user_story_32: #G23# As an Archivist, I want to rearrange the Resource and/or Digital Object hierarchy using keyboard-based navigation.
+
+   user_story_01: #G23# As a researcher, I want to be able to view a finding aid for a particular collection/Resource.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_03_AND_user_story_12}
   
-Affected Resource of US1 is: << enum lists >>
-Affected Resource of US2 is: << enum lists >>
-Affected Contain Resource US1 is: << enum lists >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_03: << [] >>
-Contain Resources for: user_story_12: << [] >>
+ Affected Resource of US1 is: << enum lists >>
 
  Action of user_story_03 is: << managing >>  which is annotated with: << preserve >>
  Action of user_story_12 is: << managing >>  which is annotated with: << delete >>
 
-Conflict Reason is: << preserve-delete-Conflict >>
+ Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_03: #G23# As a user, i want backend changes for #managing# #enum lists#.

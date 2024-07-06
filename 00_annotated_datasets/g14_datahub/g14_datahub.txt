@@ -3,35 +3,30 @@
 ********************* << Dataset: g14_datahub >> ***************
 * Table of potential conflict between user stories
 
-       us_11  us_16  us_10  us_22  us_32  us_43  us_24  us_09  us_30  us_39  us_40  us_12  
-us_11         x      x      x      x      x      x      x      x                           
-us_16  x             x                                  x                                  
-us_10  x      x             x      x      x      x      x      x                           
-us_22  x             x                                  x                                  
-us_32  x             x                                  x                                  
-us_43  x             x                                  x                                  
-us_24  x             x                                  x                                  
-us_09  x      x      x      x      x      x      x             x                    x      
-us_30  x             x                                  x                                  
-us_39                                                                        x             
-us_40                                                                 x                    
-us_12                                                   x                                  
+       us_11  us_16  us_10  us_22  us_32  us_43  us_24  us_09  us_30  us_39  us_40  
+us_11         x      x      x      x      x      x      x      x                    
+us_16  x             x                                  x                           
+us_10  x      x             x      x      x      x      x      x                    
+us_22  x             x                                  x                           
+us_32  x             x                                  x                           
+us_43  x             x                                  x                           
+us_24  x             x                                  x                           
+us_09  x      x      x      x      x      x      x             x                    
+us_30  x             x                                  x                           
+us_39                                                                        x      
+us_40                                                                 x             
 
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_11_AND_user_story_16}
   
-Affected Resource of US1 is: << data package >>
-Affected Resource of US2 is: << data >>
-Affected Contain Resource US1 is: << data package >>
-Affected Resource US2 is: << data package >>
-Contain Resources for: user_story_11: << [] >>
-Contain Resources for: user_story_16: << [["data package","data","preserve","get"]] >>
+ Affected Resource of US1 is: << data package >>
+ Affected Contain Entity US2 is: << data >>
 
  Action of user_story_11 is: << permanently delete >>  which is annotated with: << delete >>
  Action of user_story_16 is: << get >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_11: #G14# As a Publisher, i want to #permanently delete# a #data package#,  that
@@ -46,17 +41,13 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_10_AND_user_story_16}
   
-Affected Resource of US1 is: << data package >>
-Affected Resource of US2 is: << data >>
-Affected Contain Resource US1 is: << data package >>
-Affected Resource US2 is: << data package >>
-Contain Resources for: user_story_10: << [] >>
-Contain Resources for: user_story_16: << [["data package","data","preserve","get"]] >>
+ Affected Resource of US1 is: << data package >>
+ Affected Contain Entity US2 is: << data >>
 
  Action of user_story_10 is: << unpublish >>  which is annotated with: << delete >>
  Action of user_story_16 is: << get >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_10: #G14# As a Publisher, i want to #unpublish# a #data package#, 
@@ -71,17 +62,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_10_AND_user_story_22}
   
-Affected Resource of US1 is: << data package >>
-Affected Resource of US2 is: << data package >>
-Affected Contain Resource US1 is: << data package >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_10: << [] >>
-Contain Resources for: user_story_22: << [] >>
+ Affected Resource of US1 is: << data package >>
 
  Action of user_story_10 is: << unpublish >>  which is annotated with: << delete >>
  Action of user_story_22 is: << view >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_10: #G14# As a Publisher, i want to #unpublish# a #data package#, 
@@ -96,17 +82,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_10_AND_user_story_11}
   
-Affected Resource of US1 is: << data package >>
-Affected Resource of US2 is: << data package >>
-Affected Contain Resource US1 is: << data package >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_10: << [] >>
-Contain Resources for: user_story_11: << [] >>
+ Affected Resource of US1 is: << data package >>
 
  Action of user_story_10 is: << unpublish >>  which is annotated with: << delete >>
  Action of user_story_11 is: << permanently delete >>  which is annotated with: << delete >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_10: #G14# As a Publisher, i want to #unpublish# a #data package#, 
@@ -121,17 +102,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_10_AND_user_story_32}
   
-Affected Resource of US1 is: << data package >>
-Affected Resource of US2 is: << data package >>
-Affected Contain Resource US1 is: << data package >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_10: << [] >>
-Contain Resources for: user_story_32: << [] >>
+ Affected Resource of US1 is: << data package >>
 
  Action of user_story_10 is: << unpublish >>  which is annotated with: << delete >>
  Action of user_story_32 is: << use >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_10: #G14# As a Publisher, i want to #unpublish# a #data package#, 
@@ -146,17 +122,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_10_AND_user_story_43}
   
-Affected Resource of US1 is: << data package >>
-Affected Resource of US2 is: << data package >>
-Affected Contain Resource US1 is: << data package >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_10: << [] >>
-Contain Resources for: user_story_43: << [["multiple versions","older versions","preserve","keep"]] >>
+ Affected Resource of US1 is: << data package >>
 
  Action of user_story_10 is: << unpublish >>  which is annotated with: << delete >>
  Action of user_story_43 is: << version >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_10: #G14# As a Publisher, i want to #unpublish# a #data package#, 
@@ -171,17 +142,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_11_AND_user_story_22}
   
-Affected Resource of US1 is: << data package >>
-Affected Resource of US2 is: << data package >>
-Affected Contain Resource US1 is: << data package >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_11: << [] >>
-Contain Resources for: user_story_22: << [] >>
+ Affected Resource of US1 is: << data package >>
 
  Action of user_story_11 is: << permanently delete >>  which is annotated with: << delete >>
  Action of user_story_22 is: << view >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_11: #G14# As a Publisher, i want to #permanently delete# a #data package#,  that
@@ -196,17 +162,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_10_AND_user_story_24}
   
-Affected Resource of US1 is: << data package >>
-Affected Resource of US2 is: << data package >>
-Affected Contain Resource US1 is: << data package >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_10: << [] >>
-Contain Resources for: user_story_24: << [] >>
+ Affected Resource of US1 is: << data package >>
 
  Action of user_story_10 is: << unpublish >>  which is annotated with: << delete >>
  Action of user_story_24 is: << view >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_10: #G14# As a Publisher, i want to #unpublish# a #data package#, 
@@ -221,17 +182,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_11_AND_user_story_24}
   
-Affected Resource of US1 is: << data package >>
-Affected Resource of US2 is: << data package >>
-Affected Contain Resource US1 is: << data package >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_11: << [] >>
-Contain Resources for: user_story_24: << [] >>
+ Affected Resource of US1 is: << data package >>
 
  Action of user_story_11 is: << permanently delete >>  which is annotated with: << delete >>
  Action of user_story_24 is: << view >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_11: #G14# As a Publisher, i want to #permanently delete# a #data package#,  that
@@ -246,17 +202,13 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_09_AND_user_story_30}
   
-Affected Resource of US1 is: << data package >>
-Affected Resource of US2 is: << description >>
-Affected Contain Resource US1 is: << data package >>
-Affected Resource US2 is: << data package >>
-Contain Resources for: user_story_09: << [["registry","data package","create;delete","update"]] >>
-Contain Resources for: user_story_30: << [["data package","description","preserve;create","search"]] >>
+ Affected Resource of US1 is: << data package >>
+ Affected Contain Entity US2 is: << description >>
 
  Action of user_story_09 is: << update >>  which is annotated with: << delete >>
  Action of user_story_30 is: << search >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_09: #G14# As a Publisher, i want to use a publish command to #update# a #data package# that is already in the registry, 
@@ -271,17 +223,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_09_AND_user_story_22}
   
-Affected Resource of US1 is: << data package >>
-Affected Resource of US2 is: << data package >>
-Affected Contain Resource US1 is: << data package >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_09: << [["registry","data package","create;delete","update"]] >>
-Contain Resources for: user_story_22: << [] >>
+ Affected Resource of US1 is: << data package >>
 
  Action of user_story_09 is: << update >>  which is annotated with: << delete >>
  Action of user_story_22 is: << view >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_09: #G14# As a Publisher, i want to use a publish command to #update# a #data package# that is already in the registry, 
@@ -296,17 +243,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_09_AND_user_story_11}
   
-Affected Resource of US1 is: << data package >>
-Affected Resource of US2 is: << data package >>
-Affected Contain Resource US1 is: << data package >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_09: << [["registry","data package","create;delete","update"]] >>
-Contain Resources for: user_story_11: << [] >>
+ Affected Resource of US1 is: << data package >>
 
  Action of user_story_09 is: << update >>  which is annotated with: << delete >>
  Action of user_story_11 is: << permanently delete >>  which is annotated with: << delete >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_09: #G14# As a Publisher, i want to use a publish command to #update# a #data package# that is already in the registry, 
@@ -321,17 +263,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_09_AND_user_story_32}
   
-Affected Resource of US1 is: << data package >>
-Affected Resource of US2 is: << data package >>
-Affected Contain Resource US1 is: << data package >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_09: << [["registry","data package","create;delete","update"]] >>
-Contain Resources for: user_story_32: << [] >>
+ Affected Resource of US1 is: << data package >>
 
  Action of user_story_09 is: << update >>  which is annotated with: << delete >>
  Action of user_story_32 is: << use >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_09: #G14# As a Publisher, i want to use a publish command to #update# a #data package# that is already in the registry, 
@@ -346,17 +283,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_09_AND_user_story_43}
   
-Affected Resource of US1 is: << data package >>
-Affected Resource of US2 is: << data package >>
-Affected Contain Resource US1 is: << data package >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_09: << [["registry","data package","create;delete","update"]] >>
-Contain Resources for: user_story_43: << [["multiple versions","older versions","preserve","keep"]] >>
+ Affected Resource of US1 is: << data package >>
 
  Action of user_story_09 is: << update >>  which is annotated with: << delete >>
  Action of user_story_43 is: << version >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_09: #G14# As a Publisher, i want to use a publish command to #update# a #data package# that is already in the registry, 
@@ -371,17 +303,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_09_AND_user_story_10}
   
-Affected Resource of US1 is: << data package >>
-Affected Resource of US2 is: << data package >>
-Affected Contain Resource US1 is: << data package >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_09: << [["registry","data package","create;delete","update"]] >>
-Contain Resources for: user_story_10: << [] >>
+ Affected Resource of US1 is: << data package >>
 
  Action of user_story_09 is: << update >>  which is annotated with: << delete >>
  Action of user_story_10 is: << unpublish >>  which is annotated with: << delete >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_09: #G14# As a Publisher, i want to use a publish command to #update# a #data package# that is already in the registry, 
@@ -396,17 +323,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_39_AND_user_story_40}
   
-Affected Resource of US1 is: << datapackage >>
-Affected Resource of US2 is: << datapackage >>
-Affected Contain Resource US1 is: << datapackage >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_39: << [["project","all datapackages requirements","create","list"],["file","all datapackages requirements","create","list"],["datapackage","exact versions","create","pin"]] >>
-Contain Resources for: user_story_40: << [["data","snapshot","create","create"]] >>
+ Affected Resource of US1 is: << datapackage >>
 
  Action of user_story_39 is: << depends >>  which is annotated with: << forbid >>
  Action of user_story_40 is: << tag >>  which is annotated with: << create >>
 
-Conflict Reason is: << forbid-create-Conflict >>
+ Conflict Reason is: << forbid-create-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_39: #G14# As a Developer, i want to list all datapackages requirements for my project in the file and pin the exact versions of any #datapackage# that my project #depends# on,  that
@@ -421,17 +343,13 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_11_AND_user_story_30}
   
-Affected Resource of US1 is: << data package >>
-Affected Resource of US2 is: << description >>
-Affected Contain Resource US1 is: << data package >>
-Affected Resource US2 is: << data package >>
-Contain Resources for: user_story_11: << [] >>
-Contain Resources for: user_story_30: << [["data package","description","preserve;create","search"]] >>
+ Affected Resource of US1 is: << data package >>
+ Affected Contain Entity US2 is: << description >>
 
  Action of user_story_11 is: << permanently delete >>  which is annotated with: << delete >>
  Action of user_story_30 is: << search >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_11: #G14# As a Publisher, i want to #permanently delete# a #data package#,  that
@@ -446,17 +364,13 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_09_AND_user_story_16}
   
-Affected Resource of US1 is: << data package >>
-Affected Resource of US2 is: << data >>
-Affected Contain Resource US1 is: << data package >>
-Affected Resource US2 is: << data package >>
-Contain Resources for: user_story_09: << [["registry","data package","create;delete","update"]] >>
-Contain Resources for: user_story_16: << [["data package","data","preserve","get"]] >>
+ Affected Resource of US1 is: << data package >>
+ Affected Contain Entity US2 is: << data >>
 
  Action of user_story_09 is: << update >>  which is annotated with: << delete >>
  Action of user_story_16 is: << get >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_09: #G14# As a Publisher, i want to use a publish command to #update# a #data package# that is already in the registry, 
@@ -471,17 +385,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_11_AND_user_story_32}
   
-Affected Resource of US1 is: << data package >>
-Affected Resource of US2 is: << data package >>
-Affected Contain Resource US1 is: << data package >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_11: << [] >>
-Contain Resources for: user_story_32: << [] >>
+ Affected Resource of US1 is: << data package >>
 
  Action of user_story_11 is: << permanently delete >>  which is annotated with: << delete >>
  Action of user_story_32 is: << use >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_11: #G14# As a Publisher, i want to #permanently delete# a #data package#,  that
@@ -496,17 +405,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_11_AND_user_story_43}
   
-Affected Resource of US1 is: << data package >>
-Affected Resource of US2 is: << data package >>
-Affected Contain Resource US1 is: << data package >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_11: << [] >>
-Contain Resources for: user_story_43: << [["multiple versions","older versions","preserve","keep"]] >>
+ Affected Resource of US1 is: << data package >>
 
  Action of user_story_11 is: << permanently delete >>  which is annotated with: << delete >>
  Action of user_story_43 is: << version >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_11: #G14# As a Publisher, i want to #permanently delete# a #data package#,  that
@@ -521,17 +425,13 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_10_AND_user_story_30}
   
-Affected Resource of US1 is: << data package >>
-Affected Resource of US2 is: << description >>
-Affected Contain Resource US1 is: << data package >>
-Affected Resource US2 is: << data package >>
-Contain Resources for: user_story_10: << [] >>
-Contain Resources for: user_story_30: << [["data package","description","preserve;create","search"]] >>
+ Affected Resource of US1 is: << data package >>
+ Affected Contain Entity US2 is: << description >>
 
  Action of user_story_10 is: << unpublish >>  which is annotated with: << delete >>
  Action of user_story_30 is: << search >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_10: #G14# As a Publisher, i want to #unpublish# a #data package#, 
@@ -546,17 +446,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_09_AND_user_story_24}
   
-Affected Resource of US1 is: << data package >>
-Affected Resource of US2 is: << data package >>
-Affected Contain Resource US1 is: << data package >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_09: << [["registry","data package","create;delete","update"]] >>
-Contain Resources for: user_story_24: << [] >>
+ Affected Resource of US1 is: << data package >>
 
  Action of user_story_09 is: << update >>  which is annotated with: << delete >>
  Action of user_story_24 is: << view >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_09: #G14# As a Publisher, i want to use a publish command to #update# a #data package# that is already in the registry, 
@@ -567,28 +462,3 @@ Original texts of user stories are:
    user_story_09: #G14# As a Publisher, I want to use a publish command to update a data package that is already in the registry, so that it appears there.
 
    user_story_24: #G14# As a consumer, I want to view the data package, so that that I can get a sense of whether I want this dataset or not.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_09_AND_user_story_12}
-  
-Affected Resource of US1 is: << data package >>
-Affected Resource of US2 is: << data i am about to publish >>
-Affected Contain Resource US1 is: << registry >>
-Affected Resource US2 is: << registry >>
-Contain Resources for: user_story_09: << [["registry","data package","create;delete","update"]] >>
-Contain Resources for: user_story_12: << [["registry","data i am about to publish","preserve","validate"]] >>
-
- Action of user_story_09 is: << update >>  which is annotated with: << delete >>
- Action of user_story_12 is: << validate >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_09: #G14# As a Publisher, i want to use a publish command to #update# a #data package# that is already in the #registry#, 
-
-   user_story_12: #G14# As a Publisher, i want to #validate# the #data i am about to publish# to the #registry#,  that
-
-Original texts of user stories are: 
-   user_story_09: #G14# As a Publisher, I want to use a publish command to update a data package that is already in the registry, so that it appears there.
-
-   user_story_12: #G14# As a Publisher, I want to validate the data I am about to publish to the registry, so that that I publish good data and know that I am doing.

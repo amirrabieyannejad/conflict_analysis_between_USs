@@ -1,0 +1,3340 @@
+[
+    {
+        "US_Nr": "user_story_01",
+        "Benefit": {
+            "Entity": [
+                "properties",
+                "processes",
+                "publicly available information",
+                "County services",
+                "other general information"
+            ],
+            "Action": ["obtain"],
+            "Contains": [
+                [
+                    "publicly available information",
+                    "properties"
+                ],
+                [
+                    "publicly available information",
+                    "County services"
+                ],
+                [
+                    "publicly available information",
+                    "processes"
+                ],
+                [
+                    "publicly available information",
+                    "other general information"
+                ]
+            ],
+            "Text": "I can obtain publicly available information concerning properties, County services, processes and other general information.",
+            "Targets": [[
+                "obtain",
+                "publicly available information"
+            ]]
+        },
+        "Text": "#G03# As a Public User, I want to Search for Information, so that I can obtain publicly available information concerning properties, County services, processes and other general information.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Information"],
+            "Action": ["Search"],
+            "Persona": ["Public User"],
+            "Contains": [],
+            "Text": "#G03# As a Public User, I want to Search for Information, ",
+            "Triggers": [[
+                "Public User",
+                "Search"
+            ]],
+            "Targets": [[
+                "Search",
+                "Information"
+            ]],
+            "Action Annotationss": {
+                "Target Action Annotations": [[
+                    "search",
+                    "information",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {"Contains": [
+            "Information",
+            "publicly available information"
+        ]}
+    },
+    {
+        "US_Nr": "user_story_02",
+        "Benefit": {
+            "Entity": [
+                "relevant service",
+                "application type",
+                "online portal"
+            ],
+            "Action": [
+                "initiate",
+                "find"
+            ],
+            "Contains": [
+                [
+                    "online portal",
+                    "relevant service"
+                ],
+                [
+                    "online portal",
+                    "application type"
+                ]
+            ],
+            "Text": "I can find the relevant service and/or application type to initiate via the online portal",
+            "Targets": [
+                [
+                    "find",
+                    "application type"
+                ],
+                [
+                    "find",
+                    "relevant service"
+                ],
+                [
+                    "initiate",
+                    "application type"
+                ],
+                [
+                    "initiate",
+                    "relevant service"
+                ]
+            ]
+        },
+        "Text": "#G03# As a ProspectiveApplicant, I want to research requirements and to select a service, so that I can find the relevant service and/or application type to initiate via the online portal.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": [
+                "requirements",
+                "service"
+            ],
+            "Action": [
+                "select",
+                "research"
+            ],
+            "Persona": ["ProspectiveApplicant"],
+            "Contains": [],
+            "Text": "#G03# As a ProspectiveApplicant, I want to research requirements and to select a service, ",
+            "Triggers": [
+                [
+                    "ProspectiveApplicant",
+                    "research"
+                ],
+                [
+                    "ProspectiveApplicant",
+                    "select"
+                ]
+            ],
+            "Targets": [
+                [
+                    "research",
+                    "requirements"
+                ],
+                [
+                    "select",
+                    "service"
+                ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "research",
+                        "requirements",
+                        "preserve;delete;create"
+                    ],
+                    [
+                        "select",
+                        "service",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_03",
+        "Benefit": {
+            "Entity": [
+                "request for a meeting",
+                "information",
+                "preapplication assistance",
+                "response",
+                "result"
+            ],
+            "Action": ["receive"],
+            "Contains": [
+                [
+                    "request for a meeting",
+                    "response"
+                ],
+                [
+                    "preapplication assistance",
+                    "result"
+                ]
+            ],
+            "Text": "I can receive a response to a request for a meeting or information that is a result of the preapplication assistance.",
+            "Targets": [
+                [
+                    "receive",
+                    "response"
+                ],
+                [
+                    "receive",
+                    "information"
+                ]
+            ]
+        },
+        "Text": "#G03# As an Applicant, I want to Request PreApplication Assistance, so that I can receive a response to a request for a meeting or information that is a result of the preapplication assistance.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["PreApplication Assistance"],
+            "Action": ["Request"],
+            "Persona": ["Applicant"],
+            "Contains": [],
+            "Text": "#G03# As an Applicant, I want to Request PreApplication Assistance, ",
+            "Triggers": [[
+                "Applicant",
+                "Request"
+            ]],
+            "Targets": [[
+                "Request",
+                "PreApplication Assistance"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "request",
+                    "preapplication assistance",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_04",
+        "Benefit": {
+            "Entity": [
+                "Customer Portal",
+                "transactions",
+                "user authentication"
+            ],
+            "Action": [
+                "log",
+                "perform"
+            ],
+            "Contains": [[
+                "transactions",
+                "user authentication"
+            ]],
+            "Text": "I can log on to the Customer Portal and perform transactions that first require user authentication.",
+            "Targets": [
+                [
+                    "log",
+                    "Customer Portal"
+                ],
+                [
+                    "perform",
+                    "transactions"
+                ]
+            ]
+        },
+        "Text": "#G03# As a Customer, I want to Create a Customer Portal User Account, so that I can log on to the Customer Portal and perform transactions that first require user authentication.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Customer Portal User Account"],
+            "Action": ["Create"],
+            "Persona": ["Customer"],
+            "Contains": [],
+            "Text": "#G03# As a Customer, I want to Create a Customer Portal User Account, ",
+            "Triggers": [[
+                "Customer",
+                "Create"
+            ]],
+            "Targets": [[
+                "Create",
+                "Customer Portal User Account"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "create",
+                    "customer portal user account",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {"Contains": [
+            "Customer Portal",
+            "Customer Portal User Account"
+        ]}
+    },
+    {
+        "US_Nr": "user_story_05",
+        "Benefit": {
+            "Entity": [
+                "information",
+                "plans",
+                "documents",
+                "transaction",
+                "County"
+            ],
+            "Action": [
+                "provide",
+                "initiate"
+            ],
+            "Contains": [],
+            "Text": "I can provide my information, plans and/or documents to initiate a transaction with the County.",
+            "Targets": [
+                [
+                    "provide",
+                    "information"
+                ],
+                [
+                    "provide",
+                    "plans"
+                ],
+                [
+                    "provide",
+                    "documents"
+                ],
+                [
+                    "initiate",
+                    "transaction"
+                ]
+            ]
+        },
+        "Text": "#G03# As an Applicant, I want to Submit Application, so that I can provide my information, plans and/or documents to initiate a transaction with the County.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Application"],
+            "Action": ["Submit"],
+            "Persona": ["Applicant"],
+            "Contains": [],
+            "Text": "#G03# As an Applicant, I want to Submit Application, ",
+            "Triggers": [[
+                "Applicant",
+                "Submit"
+            ]],
+            "Targets": [[
+                "Submit",
+                "Application"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "submit",
+                    "application",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {"Contains": [
+            "Application",
+            "documents"
+        ]}
+    },
+    {
+        "US_Nr": "user_story_06",
+        "Benefit": {
+            "Entity": [
+                "documentation requirements",
+                "application"
+            ],
+            "Action": ["satisfy"],
+            "Contains": [[
+                "application",
+                "documentation requirements"
+            ]],
+            "Text": "I can satisfy documentation requirements for my application.",
+            "Targets": [[
+                "satisfy",
+                "documentation requirements"
+            ]]
+        },
+        "Text": "#G03# As an Applicant, I want to Submit Supporting Documentation, so that I can satisfy documentation requirements for my application.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Supporting Documentation"],
+            "Action": ["Submit"],
+            "Persona": ["Applicant"],
+            "Contains": [],
+            "Text": "#G03# As an Applicant, I want to Submit Supporting Documentation, ",
+            "Triggers": [[
+                "Applicant",
+                "Submit"
+            ]],
+            "Targets": [[
+                "Submit",
+                "Supporting Documentation"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "submit",
+                    "supporting documentation",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {"Contains": [
+            "documentation requirements",
+            "Supporting Documentation"
+        ]}
+    },
+    {
+        "US_Nr": "user_story_07",
+        "Benefit": {
+            "Entity": [
+                "outstanding charge",
+                "service requested",
+                "County"
+            ],
+            "Action": [
+                "satisfy",
+                "received from"
+            ],
+            "Contains": [],
+            "Text": "I can satisfy outstanding charge associated with the service requested or received from the County.",
+            "Targets": [
+                [
+                    "satisfy",
+                    "outstanding charge"
+                ],
+                [
+                    "received from",
+                    "County"
+                ]
+            ]
+        },
+        "Text": "#G03# As an Applicant, I want to Pay Fee, so that I can satisfy outstanding charge associated with the service requested or received from the County.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Fee"],
+            "Action": ["Pay"],
+            "Persona": ["Applicant"],
+            "Contains": [],
+            "Text": "#G03# As an Applicant, I want to Pay Fee, ",
+            "Triggers": [[
+                "Applicant",
+                "Pay"
+            ]],
+            "Targets": [[
+                "Pay",
+                "Fee"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "pay",
+                    "fee",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {"Contains": [
+            "service requested",
+            "Fee"
+        ]}
+    },
+    {
+        "US_Nr": "user_story_08",
+        "Benefit": {
+            "Entity": [
+                "inspection results",
+                "service",
+                "information",
+                "service levels",
+                "fees",
+                "plan review",
+                "permit"
+            ],
+            "Action": ["understand"],
+            "Contains": [
+                [
+                    "information",
+                    "service levels"
+                ],
+                [
+                    "information",
+                    "fees"
+                ],
+                [
+                    "information",
+                    "plan review"
+                ],
+                [
+                    "information",
+                    "permit"
+                ],
+                [
+                    "information",
+                    "inspection results"
+                ],
+                [
+                    "service",
+                    "information"
+                ]
+            ],
+            "Text": "I can understand where the provisioning of my service is in the process, such as information related to service levels, fees, plan review, permit, or inspection results.",
+            "Targets": [[
+                "understand",
+                "service"
+            ]]
+        },
+        "Text": "#G03# As an Applicant, I want to Check the Status of a transaction, so that I can understand where the provisioning of my service is in the process, such as information related to service levels, fees, plan review, permit, or inspection results.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": [
+                "Status",
+                "transaction"
+            ],
+            "Action": ["Check"],
+            "Persona": ["Applicant"],
+            "Contains": [[
+                "transaction",
+                "Status"
+            ]],
+            "Text": "#G03# As an Applicant, I want to Check the Status of a transaction, ",
+            "Triggers": [[
+                "Applicant",
+                "Check"
+            ]],
+            "Targets": [[
+                "Check",
+                "Status"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "check",
+                    "status",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "transaction",
+                    "status",
+                    "preserve",
+                    "Check"
+                ]]
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_09",
+        "Benefit": {
+            "Entity": [
+                "information",
+                "application"
+            ],
+            "Action": ["successfully change"],
+            "Contains": [[
+                "application",
+                "information"
+            ]],
+            "Text": "I can successfully change information on an application.",
+            "Targets": [[
+                "successfully change",
+                "information"
+            ]]
+        },
+        "Text": "#G03# As an Applicant, I want to Modify my Application, so that I can successfully change information on an application.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Application"],
+            "Action": ["Modify"],
+            "Persona": ["Applicant"],
+            "Contains": [],
+            "Text": "#G03# As an Applicant, I want to Modify my Application, ",
+            "Triggers": [[
+                "Applicant",
+                "Modify"
+            ]],
+            "Targets": [[
+                "Modify",
+                "Application"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "modify",
+                    "application",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_10",
+        "Benefit": {
+            "Entity": [
+                "application",
+                "eligible for further technical review"
+            ],
+            "Action": ["validate"],
+            "Contains": [],
+            "Text": "I can validate when an application is complete and eligible for further technical review.",
+            "Targets": [
+                [
+                    "validate",
+                    "eligible for further technical review"
+                ],
+                [
+                    "validate",
+                    "application"
+                ]
+            ]
+        },
+        "Text": "#G03# As a Staff member, I want to Perform a Completeness Review, so that I can validate when an application is complete and eligible for further technical review.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Completeness Review"],
+            "Action": ["Perform"],
+            "Persona": ["Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Staff member, I want to Perform a Completeness Review, ",
+            "Triggers": [[
+                "Staff member",
+                "Perform"
+            ]],
+            "Targets": [[
+                "Perform",
+                "Completeness Review"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "perform",
+                    "completeness review",
+                    "preserve;delete;create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_11",
+        "Benefit": {
+            "Entity": [
+                "Staff",
+                "record",
+                "information"
+            ],
+            "Action": ["share"],
+            "Contains": [],
+            "Text": "I can share information with other Staff collaborating on the record.",
+            "Targets": [[
+                "share",
+                "information"
+            ]]
+        },
+        "Text": "#G03# As a Staff member, I want to Record an Internal Note, so that I can share information with other Staff collaborating on the record.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Internal Note"],
+            "Action": ["Record"],
+            "Persona": ["Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Staff member, I want to Record an Internal Note, ",
+            "Triggers": [[
+                "Staff member",
+                "Record"
+            ]],
+            "Targets": [[
+                "Record",
+                "Internal Note"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "record",
+                    "internal note",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_12",
+        "Benefit": {
+            "Entity": ["compliance"],
+            "Action": [
+                "subsequently approved",
+                "denied",
+                "review"
+            ],
+            "Contains": [],
+            "Text": "I can review the for compliance and subsequently approved or denied.",
+            "Targets": [
+                [
+                    "review",
+                    "compliance"
+                ],
+                [
+                    "subsequently approved",
+                    "compliance"
+                ],
+                [
+                    "denied",
+                    "compliance"
+                ]
+            ]
+        },
+        "Text": "#G03# As a Staff member, I want to Assign an Application for Detailed Review, so that I can review the for compliance and subsequently approved or denied.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": [
+                "Application",
+                "Detailed Review"
+            ],
+            "Action": ["Assign"],
+            "Persona": ["Staff member"],
+            "Contains": [[
+                "Application",
+                "Detailed Review"
+            ]],
+            "Text": "#G03# As a Staff member, I want to Assign an Application for Detailed Review, ",
+            "Triggers": [[
+                "Staff member",
+                "Assign"
+            ]],
+            "Targets": [[
+                "Assign",
+                "Application"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "assign",
+                    "application",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "application",
+                    "detailed review",
+                    "create",
+                    "Assign"
+                ]]
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_13",
+        "Benefit": {
+            "Entity": [
+                "progression",
+                "workflow",
+                "issue",
+                "other actions",
+                "system"
+            ],
+            "Action": ["prevent"],
+            "Contains": [
+                [
+                    "workflow",
+                    "progression"
+                ],
+                [
+                    "system",
+                    "other actions"
+                ]
+            ],
+            "Text": "I can prevent progression through the workflow or other actions in the system until the issue is resolved.",
+            "Targets": [
+                [
+                    "prevent",
+                    "progression"
+                ],
+                [
+                    "prevent",
+                    "other actions"
+                ]
+            ]
+        },
+        "Text": "#G03# As a Staff member, I want to Apply a Hold, so that I can prevent progression through the workflow or other actions in the system until the issue is resolved.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Hold"],
+            "Action": ["Apply"],
+            "Persona": ["Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Staff member, I want to Apply a Hold, ",
+            "Triggers": [[
+                "Staff member",
+                "Apply"
+            ]],
+            "Targets": [[
+                "Apply",
+                "Hold"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "apply",
+                    "hold",
+                    "create;preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_14",
+        "Benefit": {
+            "Entity": [
+                "workflow",
+                "other actions",
+                "system",
+                "issue",
+                "progression"
+            ],
+            "Action": [
+                "allow",
+                "resolved"
+            ],
+            "Contains": [
+                [
+                    "workflow",
+                    "progression"
+                ],
+                [
+                    "other actions",
+                    "progression"
+                ],
+                [
+                    "system",
+                    "other actions"
+                ]
+            ],
+            "Text": "I can allow progression through the workflow or other actions in the system now that the issue has been resolved.",
+            "Targets": [
+                [
+                    "allow",
+                    "progression"
+                ],
+                [
+                    "resolved",
+                    "issue"
+                ]
+            ]
+        },
+        "Text": "#G03# As a Staff member, I want to Remove a Hold, so that I can allow progression through the workflow or other actions in the system now that the issue has been resolved.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Hold"],
+            "Action": ["Remove"],
+            "Persona": ["Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Staff member, I want to Remove a Hold, ",
+            "Triggers": [[
+                "Staff member",
+                "Remove"
+            ]],
+            "Targets": [[
+                "Remove",
+                "Hold"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "remove",
+                    "hold",
+                    "delete"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_15",
+        "Benefit": {
+            "Entity": [
+                "communication",
+                "records responsibilities"
+            ],
+            "Action": ["satisfy"],
+            "Contains": [],
+            "Text": "I can satisfy communication and records responsibilities.",
+            "Targets": [
+                [
+                    "satisfy",
+                    "communication"
+                ],
+                [
+                    "satisfy",
+                    "records responsibilities"
+                ]
+            ]
+        },
+        "Text": "#G03# As a Staff member, I want to Send a Formal Response to Applicant, so that I can satisfy communication and records responsibilities.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": [
+                "Formal Response",
+                "Applicant"
+            ],
+            "Action": ["Send"],
+            "Persona": ["Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Staff member, I want to Send a Formal Response to Applicant, ",
+            "Triggers": [[
+                "Staff member",
+                "Send"
+            ]],
+            "Targets": [[
+                "Send",
+                "Formal Response"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "send",
+                    "formal response",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_16",
+        "Benefit": {
+            "Entity": [
+                "history of draft proffer statements",
+                "Applicant"
+            ],
+            "Action": ["preserve"],
+            "Contains": [[
+                "Applicant",
+                "history of draft proffer statements"
+            ]],
+            "Text": "I can preserve the history of draft proffer statements submitted by the Applicant.",
+            "Targets": [[
+                "preserve",
+                "history of draft proffer statements"
+            ]]
+        },
+        "Text": "#G03# As a Staff member, I want to Track  the Draft Proffers, so that I can preserve the history of draft proffer statements submitted by the Applicant.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Draft Proffers"],
+            "Action": ["Track"],
+            "Persona": ["Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Staff member, I want to Track  the Draft Proffers, ",
+            "Triggers": [[
+                "Staff member",
+                "Track"
+            ]],
+            "Targets": [[
+                "Track",
+                "Draft Proffers"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "track",
+                    "draft proffers",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_17",
+        "Benefit": {
+            "Entity": [
+                "compliance",
+                "proffer",
+                "satisfaction"
+            ],
+            "Action": ["ensure"],
+            "Contains": [
+                [
+                    "proffer",
+                    "satisfaction"
+                ],
+                [
+                    "proffer",
+                    "compliance"
+                ]
+            ],
+            "Text": "I can ensure compliance with and satisfaction of the proffer in the future.",
+            "Targets": [
+                [
+                    "ensure",
+                    "compliance"
+                ],
+                [
+                    "ensure",
+                    "satisfaction"
+                ]
+            ]
+        },
+        "Text": "#G03# As a Staff member, I want to Manage Approved Proffers, so that I can ensure compliance with and satisfaction of the proffer in the future.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Approved Proffers"],
+            "Action": ["Manage"],
+            "Persona": ["Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Staff member, I want to Manage Approved Proffers, ",
+            "Triggers": [[
+                "Staff member",
+                "Manage"
+            ]],
+            "Targets": [[
+                "Manage",
+                "Approved Proffers"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "manage",
+                    "approved proffers",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_18",
+        "Benefit": {
+            "Entity": [
+                "accurate ordinance information",
+                "System"
+            ],
+            "Action": ["maintain"],
+            "Contains": [[
+                "System",
+                "accurate ordinance information"
+            ]],
+            "Text": "I can maintain accurate ordinance information in the System.",
+            "Targets": [[
+                "maintain",
+                "accurate ordinance information"
+            ]]
+        },
+        "Text": "#G03# As a Staff member, I want to Manage Ordinances, so that I can maintain accurate ordinance information in the System.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Ordinances"],
+            "Action": ["Manage"],
+            "Persona": ["Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Staff member, I want to Manage Ordinances, ",
+            "Triggers": [[
+                "Staff member",
+                "Manage"
+            ]],
+            "Targets": [[
+                "Manage",
+                "Ordinances"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "manage",
+                    "ordinances",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_19",
+        "Benefit": {
+            "Entity": [
+                "specific date/time",
+                "issue",
+                "required parties"
+            ],
+            "Action": [
+                "address",
+                "bring"
+            ],
+            "Contains": [],
+            "Text": "I can bring the required parties together at a specific date/time to address an issue.",
+            "Targets": [
+                [
+                    "bring",
+                    "required parties"
+                ],
+                [
+                    "address",
+                    "issue"
+                ]
+            ]
+        },
+        "Text": "#G03# As a Staff member, I want to Schedule a Meeting, so that I can bring the required parties together at a specific date/time to address an issue.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Meeting"],
+            "Action": ["Schedule"],
+            "Persona": ["Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Staff member, I want to Schedule a Meeting, ",
+            "Triggers": [[
+                "Staff member",
+                "Schedule"
+            ]],
+            "Targets": [[
+                "Schedule",
+                "Meeting"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "schedule",
+                    "meeting",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {"Contains": [
+            "Meeting",
+            "specific date/time"
+        ]}
+    },
+    {
+        "US_Nr": "user_story_20",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["finish"],
+            "Contains": [],
+            "Text": "I can finish it.",
+            "Targets": []
+        },
+        "Text": "#G03# As a staff member, I want to denote an application with a Final Action status. So that I can finish it.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": [
+                "application",
+                "Final Action status"
+            ],
+            "Action": ["denote"],
+            "Persona": ["staff member"],
+            "Contains": [[
+                "application",
+                "Final Action status"
+            ]],
+            "Text": "#G03# As a staff member, I want to denote an application with a Final Action status. ",
+            "Triggers": [[
+                "staff member",
+                "denote"
+            ]],
+            "Targets": [[
+                "denote",
+                "application"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "denote",
+                    "application",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "application",
+                    "final action status",
+                    "create",
+                    "denote"
+                ]]
+            }
+        },
+        "Mix": {"Targets": [
+            "finish",
+            "application"
+        ]}
+    },
+    {
+        "US_Nr": "user_story_21",
+        "Benefit": {
+            "Entity": [
+                "work in process",
+                "outcome",
+                "Plan(s)",
+                "location-based information"
+            ],
+            "Action": ["record"],
+            "Contains": [
+                [
+                    "Plan(s)",
+                    "work in process"
+                ],
+                [
+                    "Plan(s)",
+                    "outcome"
+                ],
+                [
+                    "Plan(s)",
+                    "location-based information"
+                ]
+            ],
+            "Text": "I can record work in process, outcome, and location-based information related to the Plan(s).",
+            "Targets": [
+                [
+                    "record",
+                    "work in process"
+                ],
+                [
+                    "record",
+                    "outcome"
+                ],
+                [
+                    "record",
+                    "location-based information"
+                ]
+            ]
+        },
+        "Text": "#G03# As a Planning Staff member, I want to Conduct and Track Plan Amendments and Planning Studies, so that I can record work in process, outcome, and location-based information related to the Plan(s).",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": [
+                "Plan Amendments",
+                "Planning Studies"
+            ],
+            "Action": [
+                "Track",
+                "Conduct"
+            ],
+            "Persona": ["Planning Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Planning Staff member, I want to Conduct and Track Plan Amendments and Planning Studies, ",
+            "Triggers": [
+                [
+                    "Planning Staff member",
+                    "Conduct"
+                ],
+                [
+                    "Planning Staff member",
+                    "Track"
+                ]
+            ],
+            "Targets": [
+                [
+                    "Track",
+                    "Plan Amendments"
+                ],
+                [
+                    "Track",
+                    "Planning Studies"
+                ],
+                [
+                    "Conduct",
+                    "Plan Amendments"
+                ],
+                [
+                    "Conduct",
+                    "Planning Studies"
+                ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "track",
+                        "plan amendments",
+                        "preserve;create"
+                    ],
+                    [
+                        "track",
+                        "planning studies",
+                        "preserve;create"
+                    ],
+                    [
+                        "conduct",
+                        "plan amendments",
+                        "create"
+                    ],
+                    [
+                        "conduct",
+                        "planning studies",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_22",
+        "Benefit": {
+            "Entity": [
+                "needed information",
+                "format"
+            ],
+            "Action": [
+                "analyze",
+                "export",
+                "access"
+            ],
+            "Contains": [[
+                "needed information",
+                "format"
+            ]],
+            "Text": "I can access, analyze and/or export the needed information in the format I requested.",
+            "Targets": [
+                [
+                    "access",
+                    "needed information"
+                ],
+                [
+                    "analyze",
+                    "needed information"
+                ],
+                [
+                    "export",
+                    "needed information"
+                ]
+            ]
+        },
+        "Text": "#G03# As a Planning Staff member, I want to Generate Planning-related Reports, so that I can access, analyze and/or export the needed information in the format I requested.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Planning-related Reports"],
+            "Action": ["Generate"],
+            "Persona": ["Planning Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Planning Staff member, I want to Generate Planning-related Reports, ",
+            "Triggers": [[
+                "Planning Staff member",
+                "Generate"
+            ]],
+            "Targets": [[
+                "Generate",
+                "Planning-related Reports"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "generate",
+                    "planning-related reports",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_23",
+        "Benefit": {
+            "Entity": [
+                "required review",
+                "plan set",
+                "application"
+            ],
+            "Action": ["complete"],
+            "Contains": [
+                [
+                    "plan set",
+                    "required review"
+                ],
+                [
+                    "application",
+                    "required review"
+                ]
+            ],
+            "Text": "I can complete my required review of a plan set and/or application.",
+            "Targets": [[
+                "complete",
+                "required review"
+            ]]
+        },
+        "Text": "#G03# As a Planning Staff member, I want to Evaluate Consistency with the Comprehensive Plan, so that I can complete my required review of a plan set and/or application.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": [
+                "Consistency",
+                "Comprehensive Plan"
+            ],
+            "Action": ["Evaluate"],
+            "Persona": ["Planning Staff member"],
+            "Contains": [[
+                "Comprehensive Plan",
+                "Consistency"
+            ]],
+            "Text": "#G03# As a Planning Staff member, I want to Evaluate Consistency with the Comprehensive Plan, ",
+            "Triggers": [[
+                "Planning Staff member",
+                "Evaluate"
+            ]],
+            "Targets": [[
+                "Evaluate",
+                "Consistency"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "evaluate",
+                    "consistency",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "comprehensive plan",
+                    "consistency",
+                    "preserve",
+                    "Evaluate"
+                ]]
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_24",
+        "Benefit": {
+            "Entity": [
+                "compliance",
+                "Zoning Ordinance",
+                "approval",
+                "application",
+                "application",
+                "denial"
+            ],
+            "Action": [
+                "validate",
+                "impact"
+            ],
+            "Contains": [
+                [
+                    "application",
+                    "compliance"
+                ],
+                [
+                    "application",
+                    "denial"
+                ],
+                [
+                    "application",
+                    "approval"
+                ]
+            ],
+            "Text": "I can validate compliance of an application with the Zoning Ordinance and impact approval/denial of the application accordingly.",
+            "Targets": [
+                [
+                    "validate",
+                    "compliance"
+                ],
+                [
+                    "impact",
+                    "approval"
+                ],
+                [
+                    "impact",
+                    "denial"
+                ]
+            ]
+        },
+        "Text": "#G03# As a Staff member, I want to Perform a Staff Review, so that I can validate compliance of an application with the Zoning Ordinance and impact approval/denial of the application accordingly.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Staff Review"],
+            "Action": ["Perform"],
+            "Persona": ["Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Staff member, I want to Perform a Staff Review, ",
+            "Triggers": [[
+                "Staff member",
+                "Perform"
+            ]],
+            "Targets": [[
+                "Perform",
+                "Staff Review"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "perform",
+                    "staff review",
+                    "preserve;delete;create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_25",
+        "Benefit": {
+            "Entity": [
+                "system",
+                "communication",
+                "system",
+                "Applicant",
+                "response",
+                "request"
+            ],
+            "Action": [
+                "capture",
+                "send"
+            ],
+            "Contains": [[
+                "system",
+                "request"
+            ]],
+            "Text": "I can capture my response to the request in the system and also send a communication from the system to the Applicant.",
+            "Targets": [
+                [
+                    "capture",
+                    "response"
+                ],
+                [
+                    "send",
+                    "communication"
+                ]
+            ]
+        },
+        "Text": "#G03# As a Zoning Staff member, I want to Process the Requests for Zoning Information, so that I can capture my response to the request in the system and also send a communication from the system to the Applicant.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": [
+                "Zoning Information",
+                "Requests"
+            ],
+            "Action": ["Process"],
+            "Persona": ["Zoning Staff member"],
+            "Contains": [[
+                "Zoning Information",
+                "Requests"
+            ]],
+            "Text": "#G03# As a Zoning Staff member, I want to Process the Requests for Zoning Information, ",
+            "Triggers": [[
+                "Zoning Staff member",
+                "Process"
+            ]],
+            "Targets": [[
+                "Process",
+                "Requests"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "process",
+                    "requests",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": [[
+                    "zoning information",
+                    "requests",
+                    "create;delete",
+                    "Process"
+                ]]
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_26",
+        "Benefit": {
+            "Entity": [
+                "Applicant's request",
+                "service",
+                "compliance",
+                "Zoning Ordinance"
+            ],
+            "Action": ["satisfy"],
+            "Contains": [
+                [
+                    "service",
+                    "Applicant's request"
+                ],
+                [
+                    "Zoning Ordinance",
+                    "compliance"
+                ]
+            ],
+            "Text": "I can satisfy an Applicant's request for service that has proven to be eligible and in compliance with the Zoning Ordinance.",
+            "Targets": [[
+                "satisfy",
+                "Applicant's request"
+            ]]
+        },
+        "Text": "#G03# As a Zoning Staff member, I want to Issue the Zoning-Related Permits, so that I can satisfy an Applicant's request for service that has proven to be eligible and in compliance with the Zoning Ordinance.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Zoning-Related Permits"],
+            "Action": ["Issue"],
+            "Persona": ["Zoning Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Zoning Staff member, I want to Issue the Zoning-Related Permits, ",
+            "Triggers": [[
+                "Zoning Staff member",
+                "Issue"
+            ]],
+            "Targets": [[
+                "Issue",
+                "Zoning-Related Permits"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "issue",
+                    "zoning-related permits",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_27",
+        "Benefit": {
+            "Entity": [
+                "report",
+                "business rules"
+            ],
+            "Action": [
+                "distribute",
+                "publish"
+            ],
+            "Contains": [],
+            "Text": "I can publish and distribute the report according to business rules.",
+            "Targets": [
+                [
+                    "publish",
+                    "report"
+                ],
+                [
+                    "distribute",
+                    "report"
+                ]
+            ]
+        },
+        "Text": "#G03# As a Staff member, I want to Develop a Staff Report, so that I can publish and distribute the report according to business rules.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Staff Report"],
+            "Action": ["Develop"],
+            "Persona": ["Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Staff member, I want to Develop a Staff Report, ",
+            "Triggers": [[
+                "Staff member",
+                "Develop"
+            ]],
+            "Targets": [[
+                "Develop",
+                "Staff Report"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "develop",
+                    "staff report",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_28",
+        "Benefit": {
+            "Entity": [
+                "due dates",
+                "hearing-related activities"
+            ],
+            "Action": ["track"],
+            "Contains": [],
+            "Text": "I can track hearing-related activities and due dates.",
+            "Targets": [
+                [
+                    "track",
+                    "hearing-related activities"
+                ],
+                [
+                    "track",
+                    "due dates"
+                ]
+            ]
+        },
+        "Text": "#G03# As a Staff member, I want to Manage Hearing Calendars, so that I can track hearing-related activities and due dates.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Hearing Calendars"],
+            "Action": ["Manage"],
+            "Persona": ["Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Staff member, I want to Manage Hearing Calendars, ",
+            "Triggers": [[
+                "Staff member",
+                "Manage"
+            ]],
+            "Targets": [[
+                "Manage",
+                "Hearing Calendars"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "manage",
+                    "hearing calendars",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {"Contains": [
+            "Hearing Calendars",
+            "due dates"
+        ]}
+    },
+    {
+        "US_Nr": "user_story_29",
+        "Benefit": {
+            "Entity": [
+                "application",
+                "appropriate governing body",
+                "timelines",
+                "relevant County rules and procedures"
+            ],
+            "Action": ["present"],
+            "Contains": [[
+                "relevant County rules and procedures",
+                "timelines"
+            ]],
+            "Text": "I can present the application to the appropriate governing body within the timelines dictated by the relevant County rules and procedures.",
+            "Targets": [[
+                "present",
+                "application"
+            ]]
+        },
+        "Text": "#G03# As a Staff member, I want to Assign a Hearing Date, so that I can present the application to the appropriate governing body within the timelines dictated by the relevant County rules and procedures.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Hearing Date"],
+            "Action": ["Assign"],
+            "Persona": ["Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Staff member, I want to Assign a Hearing Date, ",
+            "Triggers": [[
+                "Staff member",
+                "Assign"
+            ]],
+            "Targets": [[
+                "Assign",
+                "Hearing Date"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "assign",
+                    "hearing date",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_30",
+        "Benefit": {
+            "Entity": [
+                "requirements",
+                "compliance",
+                "hearing"
+            ],
+            "Action": ["ensure"],
+            "Contains": [],
+            "Text": "I can ensure compliance with the requirements prior to the hearing.",
+            "Targets": [[
+                "ensure",
+                "compliance"
+            ]]
+        },
+        "Text": "#G03# As a Staff member, I want to Manage Affidavits, so that I can ensure compliance with the requirements prior to the hearing.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Affidavits"],
+            "Action": ["Manage"],
+            "Persona": ["Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Staff member, I want to Manage Affidavits, ",
+            "Triggers": [[
+                "Staff member",
+                "Manage"
+            ]],
+            "Targets": [[
+                "Manage",
+                "Affidavits"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "manage",
+                    "affidavits",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {"Contains": [
+            "Affidavits",
+            "compliance"
+        ]}
+    },
+    {
+        "US_Nr": "user_story_31",
+        "Benefit": {
+            "Entity": [
+                "hearing",
+                "all pre-hearing requirements"
+            ],
+            "Action": ["ensure"],
+            "Contains": [],
+            "Text": "I can ensure all pre-hearing requirements are satisfied in time for the hearing.",
+            "Targets": []
+        },
+        "Text": "#G03# As an Applicant, I want to Satisfy Hearing Requirements, so that I can ensure all pre-hearing requirements are satisfied in time for the hearing.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Hearing Requirements"],
+            "Action": ["Satisfy"],
+            "Persona": ["Applicant"],
+            "Contains": [],
+            "Text": "#G03# As an Applicant, I want to Satisfy Hearing Requirements, ",
+            "Triggers": [[
+                "Applicant",
+                "Satisfy"
+            ]],
+            "Targets": [[
+                "Satisfy",
+                "Hearing Requirements"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "satisfy",
+                    "hearing requirements",
+                    "preserve;forbid"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {"Contains": [
+            "hearing",
+            "Hearing Requirements"
+        ]}
+    },
+    {
+        "US_Nr": "user_story_32",
+        "Benefit": {
+            "Entity": [
+                "staff",
+                "Applicant",
+                "hearing",
+                "all pre-hearing requirements"
+            ],
+            "Action": ["ensure"],
+            "Contains": [],
+            "Text": "I can ensure all pre-hearing requirements are satisfied and staff and Applicant are ready for the hearing.",
+            "Targets": []
+        },
+        "Text": "#G03# As a Staff member, I want to Prepare for and Support Hearing Execution, so that I can ensure all pre-hearing requirements are satisfied and staff and Applicant are ready for the hearing.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Hearing Execution"],
+            "Action": [
+                "Support",
+                "Prepare"
+            ],
+            "Persona": ["Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Staff member, I want to Prepare for and Support Hearing Execution, ",
+            "Triggers": [
+                [
+                    "Staff member",
+                    "Prepare"
+                ],
+                [
+                    "Staff member",
+                    "Support"
+                ]
+            ],
+            "Targets": [
+                [
+                    "Support",
+                    "Hearing Execution"
+                ],
+                [
+                    "Prepare",
+                    "Hearing Execution"
+                ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "support",
+                        "hearing execution",
+                        "preserve"
+                    ],
+                    [
+                        "prepare",
+                        "hearing execution",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_33",
+        "Benefit": {
+            "Entity": ["system"],
+            "Action": ["enforce"],
+            "Contains": [],
+            "Text": "I can enforce the system.",
+            "Targets": [[
+                "enforce",
+                "system"
+            ]]
+        },
+        "Text": "#G03# As a Staff member, I want to Capture a Hearing Decision, so that I can enforce the system.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Hearing Decision"],
+            "Action": ["Capture"],
+            "Persona": ["Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Staff member, I want to Capture a Hearing Decision, ",
+            "Triggers": [[
+                "Staff member",
+                "Capture"
+            ]],
+            "Targets": [[
+                "Capture",
+                "Hearing Decision"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "capture",
+                    "hearing decision",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_34",
+        "Benefit": {
+            "Entity": [
+                "outcome",
+                "impact",
+                "relevant records"
+            ],
+            "Action": [
+                "track",
+                "record"
+            ],
+            "Contains": [[
+                "relevant records",
+                "impact"
+            ]],
+            "Text": "I can track the outcome and record the impact on the relevant records.",
+            "Targets": [
+                [
+                    "track",
+                    "outcome"
+                ],
+                [
+                    "record",
+                    "impact"
+                ]
+            ]
+        },
+        "Text": "#G03# As a Staff member, I want to Process the Appeals, so that I can track the outcome and record the impact on the relevant records.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Appeals"],
+            "Action": ["Process"],
+            "Persona": ["Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Staff member, I want to Process the Appeals, ",
+            "Triggers": [[
+                "Staff member",
+                "Process"
+            ]],
+            "Targets": [[
+                "Process",
+                "Appeals"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "process",
+                    "appeals",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_35",
+        "Benefit": {
+            "Entity": [
+                "appropriate Plan Reviewer",
+                "plans"
+            ],
+            "Action": [
+                "ensure",
+                "assigned"
+            ],
+            "Contains": [[
+                "appropriate Plan Reviewer",
+                "plans"
+            ]],
+            "Text": "I can ensure plans have been assigned to the appropriate Plan Reviewer.",
+            "Targets": [[
+                "assigned",
+                "plans"
+            ]]
+        },
+        "Text": "#G03# As a Plan Review Staff member, I want to Assign Plans for Review, so that I can ensure plans have been assigned to the appropriate Plan Reviewer.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": [
+                "Plans",
+                "Review"
+            ],
+            "Action": ["Assign"],
+            "Persona": ["Plan Review Staff member"],
+            "Contains": [[
+                "Review",
+                "Plans"
+            ]],
+            "Text": "#G03# As a Plan Review Staff member, I want to Assign Plans for Review, ",
+            "Triggers": [[
+                "Plan Review Staff member",
+                "Assign"
+            ]],
+            "Targets": [[
+                "Assign",
+                "Plans"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "assign",
+                    "plans",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "review",
+                    "plans",
+                    "create",
+                    "Assign"
+                ]]
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_36",
+        "Benefit": {
+            "Entity": [
+                "workload",
+                "service levels"
+            ],
+            "Action": [
+                "monitor",
+                "effectively adjust",
+                "ensure",
+                "met"
+            ],
+            "Contains": [],
+            "Text": "I can monitor and effectively adjust workload as necessary and ensure service levels are met",
+            "Targets": [
+                [
+                    "monitor",
+                    "workload"
+                ],
+                [
+                    "effectively adjust",
+                    "workload"
+                ],
+                [
+                    "met",
+                    "service levels"
+                ]
+            ]
+        },
+        "Text": "#G03# As a Plan Review Staff Supervisor, I want to Manage Plan Reviewer Workload, so that I can monitor and effectively adjust workload as necessary and ensure service levels are met",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Plan Reviewer Workload"],
+            "Action": ["Manage"],
+            "Persona": ["Plan Review Staff Supervisor"],
+            "Contains": [],
+            "Text": "#G03# As a Plan Review Staff Supervisor, I want to Manage Plan Reviewer Workload, ",
+            "Triggers": [[
+                "Plan Review Staff Supervisor",
+                "Manage"
+            ]],
+            "Targets": [[
+                "Manage",
+                "Plan Reviewer Workload"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "manage",
+                    "plan reviewer workload",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_37",
+        "Benefit": {
+            "Entity": [
+                "Plan Review Staff",
+                "plan review"
+            ],
+            "Action": ["meet"],
+            "Contains": [],
+            "Text": "I can meet with the Plan Review Staff regarding the plan review.",
+            "Targets": [[
+                "meet",
+                "Plan Review Staff"
+            ]]
+        },
+        "Text": "#G03# As an Applicant, I want to Request a Plan Review Meeting, so that I can meet with the Plan Review Staff regarding the plan review.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Plan Review Meeting"],
+            "Action": ["Request"],
+            "Persona": ["Applicant"],
+            "Contains": [],
+            "Text": "#G03# As an Applicant, I want to Request a Plan Review Meeting, ",
+            "Triggers": [[
+                "Applicant",
+                "Request"
+            ]],
+            "Targets": [[
+                "Request",
+                "Plan Review Meeting"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "request",
+                    "plan review meeting",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {"Contains": [
+            "Plan Review Meeting",
+            "Plan Review Staff"
+        ]}
+    },
+    {
+        "US_Nr": "user_story_38",
+        "Benefit": {
+            "Entity": [],
+            "Action": ["listen"],
+            "Contains": [],
+            "Text": "I can listen to it again.",
+            "Targets": []
+        },
+        "Text": "#G03# As a Plan Review Staff member, I want to successfully Conduct a Plan Review Meeting with the Applicant and record the outcome, so that I can listen to it again.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": [
+                "Plan Review Meeting",
+                "Applicant",
+                "outcome"
+            ],
+            "Action": [
+                "successfully Conduct",
+                "record"
+            ],
+            "Persona": ["Plan Review Staff member"],
+            "Contains": [[
+                "Plan Review Meeting",
+                "Applicant"
+            ]],
+            "Text": "#G03# As a Plan Review Staff member, I want to successfully Conduct a Plan Review Meeting with the Applicant and record the outcome, ",
+            "Triggers": [
+                [
+                    "Plan Review Staff member",
+                    "successfully Conduct"
+                ],
+                [
+                    "Plan Review Staff member",
+                    "record"
+                ]
+            ],
+            "Targets": [
+                [
+                    "successfully Conduct",
+                    "Plan Review Meeting"
+                ],
+                [
+                    "record",
+                    "outcome"
+                ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "successfully conduct",
+                        "plan review meeting",
+                        "create"
+                    ],
+                    [
+                        "record",
+                        "outcome",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "plan review meeting",
+                    "applicant",
+                    "create",
+                    "successfully Conduct"
+                ]]
+            }
+        },
+        "Mix": {"Targets": [
+            "listen",
+            "outcome"
+        ]}
+    },
+    {
+        "US_Nr": "user_story_39",
+        "Benefit": {
+            "Entity": [
+                "compliance",
+                "plans",
+                "clearances",
+                "Applicant",
+                "corrections",
+                "any conditions"
+            ],
+            "Action": [
+                "deny",
+                "review",
+                "approve",
+                "fail",
+                "record"
+            ],
+            "Contains": [
+                [
+                    "Applicant",
+                    "plans"
+                ],
+                [
+                    "plans",
+                    "clearances"
+                ],
+                [
+                    "plans",
+                    "corrections"
+                ],
+                [
+                    "plans",
+                    "any conditions"
+                ]
+            ],
+            "Text": "so that I can review them for compliance and either approve, or fail or deny the plans and record any conditions, clearances, or corrections needed from the Applicant.",
+            "Targets": [
+                [
+                    "review",
+                    "compliance"
+                ],
+                [
+                    "approve",
+                    "plans"
+                ],
+                [
+                    "fail",
+                    "plans"
+                ],
+                [
+                    "deny",
+                    "plans"
+                ],
+                [
+                    "record",
+                    "clearances"
+                ],
+                [
+                    "record",
+                    "corrections"
+                ],
+                [
+                    "record",
+                    "any conditions"
+                ]
+            ]
+        },
+        "Text": "#G03# As a Plan Review Staff member, I want to Review Plans, so that I can review them for compliance and either approve, or fail or deny the plans and record any conditions, clearances, or corrections needed from the Applicant.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Plans"],
+            "Action": ["Review"],
+            "Persona": ["Plan Review Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Plan Review Staff member, I want to Review Plans,",
+            "Triggers": [[
+                "Plan Review Staff member",
+                "Review"
+            ]],
+            "Targets": [[
+                "Review",
+                "Plans"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "review",
+                    "plans",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_40",
+        "Benefit": {
+            "Entity": ["revised plans"],
+            "Action": ["review"],
+            "Contains": [],
+            "Text": "I can review revised plans.",
+            "Targets": [[
+                "review",
+                "revised plans"
+            ]]
+        },
+        "Text": "#G03# As an Applicant, I want to Resubmit Plans, so that I can review revised plans.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Plans"],
+            "Action": ["Resubmit"],
+            "Persona": ["Applicant"],
+            "Contains": [],
+            "Text": "#G03# As an Applicant, I want to Resubmit Plans, ",
+            "Triggers": [[
+                "Applicant",
+                "Resubmit"
+            ]],
+            "Targets": [[
+                "Resubmit",
+                "Plans"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "resubmit",
+                    "plans",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {"Contains": [
+            "Plans",
+            "revised plans"
+        ]}
+    },
+    {
+        "US_Nr": "user_story_41",
+        "Benefit": {
+            "Entity": [
+                "request",
+                "appropriate project"
+            ],
+            "Action": [
+                "review",
+                "associate"
+            ],
+            "Contains": [],
+            "Text": "I can review the request and if approved, associate it with the appropriate project.",
+            "Targets": [
+                [
+                    "review",
+                    "request"
+                ],
+                [
+                    "associate",
+                    "request"
+                ],
+                [
+                    "associate",
+                    "appropriate project"
+                ]
+            ]
+        },
+        "Text": "#G03# As a Plan Review Staff Member, I want to Review the Code Modifications submitted by the Applicant, so that I can review the request and if approved, associate it with the appropriate project.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": [
+                "Code Modifications",
+                "Applicant"
+            ],
+            "Action": ["Review"],
+            "Persona": ["Plan Review Staff Member"],
+            "Contains": [[
+                "Applicant",
+                "Code Modifications"
+            ]],
+            "Text": "#G03# As a Plan Review Staff Member, I want to Review the Code Modifications submitted by the Applicant, ",
+            "Triggers": [[
+                "Plan Review Staff Member",
+                "Review"
+            ]],
+            "Targets": [[
+                "Review",
+                "Code Modifications"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "review",
+                    "code modifications",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "applicant",
+                    "code modifications",
+                    "preserve",
+                    "Review"
+                ]]
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_42",
+        "Benefit": {
+            "Entity": [
+                "results",
+                "plan review tasks",
+                "Applicant",
+                "any downstream steps",
+                "final review",
+                "payment",
+                "permit issuance"
+            ],
+            "Action": [
+                "sent",
+                "initiated",
+                "ensure",
+                "completed"
+            ],
+            "Contains": [
+                [
+                    "Applicant",
+                    "results"
+                ],
+                [
+                    "any downstream steps",
+                    "final review"
+                ],
+                [
+                    "any downstream steps",
+                    "payment"
+                ],
+                [
+                    "permit issuance",
+                    "payment"
+                ]
+            ],
+            "Text": "that I can ensure all plan review tasks are completed, results have been sent to the Applicant and any downstream steps are initiated such has a final review or payment for permit issuance.",
+            "Targets": [
+                [
+                    "completed",
+                    "plan review tasks"
+                ],
+                [
+                    "sent",
+                    "results"
+                ],
+                [
+                    "initiated",
+                    "any downstream steps"
+                ]
+            ]
+        },
+        "Text": "#G03# As a Plan Review Staff member, I want to Track the Completion of Required Plan Reviews, so that I can ensure all plan review tasks are completed, results have been sent to the Applicant and any downstream steps are initiated such has a final review or payment for permit issuance.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Completion of Required Plan Reviews"],
+            "Action": ["Track"],
+            "Persona": ["Plan Review Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Plan Review Staff member, I want to Track the Completion of Required Plan Reviews, so",
+            "Triggers": [[
+                "Plan Review Staff member",
+                "Track"
+            ]],
+            "Targets": [[
+                "Track",
+                "Completion of Required Plan Reviews"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "track",
+                    "completion of required plan reviews",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_43",
+        "Benefit": {
+            "Entity": [
+                "request",
+                "work",
+                "Applicant"
+            ],
+            "Action": [
+                "grant",
+                "begin"
+            ],
+            "Contains": [
+                [
+                    "Applicant",
+                    "work"
+                ],
+                [
+                    "Applicant",
+                    "request"
+                ]
+            ],
+            "Text": "I can grant the request to the Applicant to begin work",
+            "Targets": [
+                [
+                    "grant",
+                    "request"
+                ],
+                [
+                    "begin",
+                    "work"
+                ]
+            ]
+        },
+        "Text": "#G03# As a Development Staff member, I want to Issue a Development-related Permit, so that I can grant the request to the Applicant to begin work",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Development-related Permit"],
+            "Action": ["Issue"],
+            "Persona": ["Development Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Development Staff member, I want to Issue a Development-related Permit, ",
+            "Triggers": [[
+                "Development Staff member",
+                "Issue"
+            ]],
+            "Targets": [[
+                "Issue",
+                "Development-related Permit"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "issue",
+                    "development-related permit",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_44",
+        "Benefit": {
+            "Entity": [
+                "bonds",
+                "project",
+                "lifecycle"
+            ],
+            "Action": [
+                "track",
+                "manage"
+            ],
+            "Contains": [[
+                "project",
+                "lifecycle"
+            ]],
+            "Text": "I can track and manage bonds throughout the lifecycle of the project until release.",
+            "Targets": [
+                [
+                    "track",
+                    "bonds"
+                ],
+                [
+                    "manage",
+                    "bonds"
+                ]
+            ]
+        },
+        "Text": "#G03# As a Staff member, I want to Manage Bonds, so that I can track and manage bonds throughout the lifecycle of the project until release.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Bonds"],
+            "Action": ["Manage"],
+            "Persona": ["Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Staff member, I want to Manage Bonds, ",
+            "Triggers": [[
+                "Staff member",
+                "Manage"
+            ]],
+            "Targets": [[
+                "Manage",
+                "Bonds"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "manage",
+                    "bonds",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_45",
+        "Benefit": {
+            "Entity": [
+                "any posted bond",
+                "occupancy"
+            ],
+            "Action": [
+                "receive",
+                "obtain"
+            ],
+            "Contains": [],
+            "Text": "I can receive any posted bond and/or obtain occupancy.",
+            "Targets": [
+                [
+                    "receive",
+                    "any posted bond"
+                ],
+                [
+                    "obtain",
+                    "occupancy"
+                ]
+            ]
+        },
+        "Text": "#G03# As an Applicant, I want to Complete Building Development Project, so that I can receive any posted bond and/or obtain occupancy.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Building Development Project"],
+            "Action": ["Complete"],
+            "Persona": ["Applicant"],
+            "Contains": [],
+            "Text": "#G03# As an Applicant, I want to Complete Building Development Project, ",
+            "Triggers": [[
+                "Applicant",
+                "Complete"
+            ]],
+            "Targets": [[
+                "Complete",
+                "Building Development Project"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "complete",
+                    "building development project",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_46",
+        "Benefit": {
+            "Entity": [
+                "County inspector",
+                "inspection",
+                "project"
+            ],
+            "Action": [
+                "perform",
+                "assigned"
+            ],
+            "Contains": [],
+            "Text": "a County inspector is assigned to perform an inspection of my project.",
+            "Targets": [
+                [
+                    "perform",
+                    "inspection"
+                ],
+                [
+                    "assigned",
+                    "County inspector"
+                ]
+            ]
+        },
+        "Text": "#G03# As a Customer, I want to Request Inspection, so that a County inspector is assigned to perform an inspection of my project.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Inspection"],
+            "Action": ["Request"],
+            "Persona": ["Customer"],
+            "Contains": [],
+            "Text": "#G03# As a Customer, I want to Request Inspection, ",
+            "Triggers": [[
+                "Customer",
+                "Request"
+            ]],
+            "Targets": [[
+                "Request",
+                "Inspection"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "request",
+                    "inspection",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_47",
+        "Benefit": {
+            "Entity": ["inspection"],
+            "Action": [
+                "schedule",
+                "assign"
+            ],
+            "Contains": [],
+            "Text": "I can schedule and assign the inspection.",
+            "Targets": [
+                [
+                    "schedule",
+                    "inspection"
+                ],
+                [
+                    "assign",
+                    "inspection"
+                ]
+            ]
+        },
+        "Text": "#G03# As an Inspection Staff member, I want to Create an Inspection, so that I can schedule and assign the inspection.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Inspection"],
+            "Action": ["Create"],
+            "Persona": ["Inspection Staff member"],
+            "Contains": [],
+            "Text": "#G03# As an Inspection Staff member, I want to Create an Inspection, ",
+            "Triggers": [[
+                "Inspection Staff member",
+                "Create"
+            ]],
+            "Targets": [[
+                "Create",
+                "Inspection"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "create",
+                    "inspection",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_48",
+        "Benefit": {
+            "Entity": [
+                "work",
+                "appropriate Inspector"
+            ],
+            "Action": ["make sure"],
+            "Contains": [[
+                "work",
+                "appropriate Inspector"
+            ]],
+            "Text": "I can make sure the appropriate Inspector receives the work.",
+            "Targets": []
+        },
+        "Text": "#G03# As an Inspection Staff Supervisor, I want to Assign Inspections, so that I can make sure the appropriate Inspector receives the work.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Inspections"],
+            "Action": ["Assign"],
+            "Persona": ["Inspection Staff Supervisor"],
+            "Contains": [],
+            "Text": "#G03# As an Inspection Staff Supervisor, I want to Assign Inspections, ",
+            "Triggers": [[
+                "Inspection Staff Supervisor",
+                "Assign"
+            ]],
+            "Targets": [[
+                "Assign",
+                "Inspections"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "assign",
+                    "inspections",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_49",
+        "Benefit": {
+            "Entity": [
+                "service level ",
+                "quality requirements"
+            ],
+            "Action": ["meet"],
+            "Contains": [],
+            "Text": "I can meet service level and quality requirements.",
+            "Targets": [
+                [
+                    "meet",
+                    "quality requirements"
+                ],
+                [
+                    "meet",
+                    "service level "
+                ]
+            ]
+        },
+        "Text": "#G03# As an Inspection Supervisor, I want to Manage Inspector Workload, so that I can meet service level and quality requirements.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Inspector Workload"],
+            "Action": ["Manage"],
+            "Persona": ["Inspection Supervisor"],
+            "Contains": [],
+            "Text": "#G03# As an Inspection Supervisor, I want to Manage Inspector Workload, ",
+            "Triggers": [[
+                "Inspection Supervisor",
+                "Manage"
+            ]],
+            "Targets": [[
+                "Manage",
+                "Inspector Workload"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "manage",
+                    "inspector workload",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_50",
+        "Benefit": {
+            "Entity": [
+                "code",
+                "Customer",
+                "Customer compliance",
+                "regulations",
+                "results",
+                "inspection"
+            ],
+            "Action": [
+                "validate",
+                "provide"
+            ],
+            "Contains": [[
+                "inspection",
+                "results"
+            ]],
+            "Text": "I can validate Customer compliance with code and regulations and provide results of the inspection to the Customer.",
+            "Targets": [
+                [
+                    "validate",
+                    "Customer compliance"
+                ],
+                [
+                    "provide",
+                    "results"
+                ]
+            ]
+        },
+        "Text": "#G03# As an Inspector, I want to Conduct Inspections, so that I can validate Customer compliance with code and regulations and provide results of the inspection to the Customer.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Inspections"],
+            "Action": ["Conduct"],
+            "Persona": ["Inspector"],
+            "Contains": [],
+            "Text": "#G03# As an Inspector, I want to Conduct Inspections, ",
+            "Triggers": [[
+                "Inspector",
+                "Conduct"
+            ]],
+            "Targets": [[
+                "Conduct",
+                "Inspections"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "conduct",
+                    "inspections",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_51",
+        "Benefit": {
+            "Entity": [
+                "formal communication",
+                "responsible party"
+            ],
+            "Action": ["provide"],
+            "Contains": [],
+            "Text": "I can provide formal communication to the responsible party.",
+            "Targets": [[
+                "provide",
+                "formal communication"
+            ]]
+        },
+        "Text": "#G03# As an Enforcement Staff member, I want to Issue a Notice of Violation, so that I can provide formal communication to the responsible party.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Notice of Violation"],
+            "Action": ["Issue"],
+            "Persona": ["Enforcement Staff member"],
+            "Contains": [],
+            "Text": "#G03# As an Enforcement Staff member, I want to Issue a Notice of Violation, ",
+            "Triggers": [[
+                "Enforcement Staff member",
+                "Issue"
+            ]],
+            "Targets": [[
+                "Issue",
+                "Notice of Violation"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "issue",
+                    "notice of violation",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_52",
+        "Benefit": {
+            "Entity": [
+                "associated current and historic owners",
+                "permits",
+                "applications"
+            ],
+            "Action": ["obtain"],
+            "Contains": [],
+            "Text": "I can obtain all associated current and historic owners, permits, and applications.",
+            "Targets": [
+                [
+                    "obtain",
+                    "associated current and historic owners"
+                ],
+                [
+                    "obtain",
+                    "permits"
+                ],
+                [
+                    "obtain",
+                    "applications"
+                ]
+            ]
+        },
+        "Text": "#G03# As a l Staff member, I want to search for Property information, so that I can obtain all associated current and historic owners, permits, and applications.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["Property information"],
+            "Action": ["search"],
+            "Persona": ["Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a l Staff member, I want to search for Property information, ",
+            "Triggers": [[
+                "Staff member",
+                "search"
+            ]],
+            "Targets": [[
+                "search",
+                "Property information"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "search",
+                    "property information",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_53",
+        "Benefit": {
+            "Entity": [
+                "most current data",
+                "permit",
+                "application",
+                "appropriate standards"
+            ],
+            "Action": [
+                "reviewing",
+                "ensure"
+            ],
+            "Contains": [
+                [
+                    "application",
+                    "appropriate standards"
+                ],
+                [
+                    "permit",
+                    "appropriate standards"
+                ],
+                [
+                    "permit",
+                    "most current data"
+                ],
+                [
+                    "application",
+                    "most current data"
+                ]
+            ],
+            "Text": "I can ensure that I am reviewing the permit/application to the most current data and appropriate standards.",
+            "Targets": [
+                [
+                    "reviewing",
+                    "permit"
+                ],
+                [
+                    "reviewing",
+                    "application"
+                ]
+            ]
+        },
+        "Text": "#G03# As a Staff member, I need to be notified when Geospatial attributes change, so that I can ensure that I am reviewing the permit/application to the most current data and appropriate standards.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": [
+                "when",
+                "Geospatial attributes"
+            ],
+            "Action": [
+                "change",
+                "be notified"
+            ],
+            "Persona": ["Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Staff member, I need to be notified when Geospatial attributes change, ",
+            "Triggers": [[
+                "Staff member",
+                "be notified"
+            ]],
+            "Targets": [[
+                "be notified",
+                "when"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "be notified",
+                    "when",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_54",
+        "Benefit": {
+            "Entity": ["request"],
+            "Action": ["fulfill"],
+            "Contains": [],
+            "Text": "I can fulfill a request.",
+            "Targets": [[
+                "fulfill",
+                "request"
+            ]]
+        },
+        "Text": "#G03# As a County Staff Member, I want to create a custom query/report outside of the common querying/reporting functionality, so that I can fulfill a request.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": [
+                "custom query/report",
+                "common querying/reporting functionality"
+            ],
+            "Action": ["create"],
+            "Persona": ["County Staff Member"],
+            "Contains": [],
+            "Text": "#G03# As a County Staff Member, I want to create a custom query/report outside of the common querying/reporting functionality, ",
+            "Triggers": [[
+                "County Staff Member",
+                "create"
+            ]],
+            "Targets": [[
+                "create",
+                "custom query/report"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "create",
+                    "custom query/report",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    },
+    {
+        "US_Nr": "user_story_55",
+        "Benefit": {
+            "Entity": [
+                "child parcel",
+                "condominiums",
+                "system"
+            ],
+            "Action": [
+                "associate",
+                "address"
+            ],
+            "Contains": [[
+                "system",
+                "condominiums"
+            ]],
+            "Text": "I can associate it to the child parcel and address after the condominiums are recorded in the system.",
+            "Targets": [
+                [
+                    "associate",
+                    "child parcel"
+                ],
+                [
+                    "address",
+                    "condominiums"
+                ]
+            ]
+        },
+        "Text": "#G03# As a Staff member, I want to create each condo unit, so that I can associate it to the child parcel and address after the condominiums are recorded in the system.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["each condo unit"],
+            "Action": ["create"],
+            "Persona": ["Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Staff member, I want to create each condo unit, ",
+            "Triggers": [[
+                "Staff member",
+                "create"
+            ]],
+            "Targets": [[
+                "create",
+                "each condo unit"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "create",
+                    "each condo unit",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {"Targets": [
+            "associate",
+            "each condo unit"
+        ]}
+    },
+    {
+        "US_Nr": "user_story_56",
+        "Benefit": {
+            "Entity": [
+                "transactional Parcel Pin",
+                "Split or Merged Parcel Pin",
+                "GIS layer"
+            ],
+            "Action": [
+                "successfully update",
+                "reference"
+            ],
+            "Contains": [[
+                "transactional Parcel Pin",
+                "Split or Merged Parcel Pin"
+            ]],
+            "Text": "I can successfully update the transactional Parcel Pin to reference the GIS layer where the Split or Merged Parcel Pin exists.",
+            "Targets": [
+                [
+                    "successfully update",
+                    "transactional Parcel Pin"
+                ],
+                [
+                    "reference",
+                    "GIS layer"
+                ]
+            ]
+        },
+        "Text": "#G03# As a Technical Staff member, I want to update the GIS Property Management, so that I can successfully update the transactional Parcel Pin to reference the GIS layer where the Split or Merged Parcel Pin exists.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": ["GIS Property Management"],
+            "Action": ["update"],
+            "Persona": ["Technical Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Technical Staff member, I want to update the GIS Property Management, ",
+            "Triggers": [[
+                "Technical Staff member",
+                "update"
+            ]],
+            "Targets": [[
+                "update",
+                "GIS Property Management"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "update",
+                    "gis property management",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {"Contains": [
+            "GIS Property Management",
+            "GIS layer"
+        ]}
+    },
+    {
+        "US_Nr": "user_story_57",
+        "Benefit": {
+            "Entity": [
+                "Notice Of Violation document",
+                "information",
+                "property owner",
+                "action"
+            ],
+            "Action": [
+                "log",
+                "successfully send"
+            ],
+            "Contains": [[
+                "property owner",
+                "Notice Of Violation document"
+            ]],
+            "Text": "I can successfully send the Notice Of Violation document to the property owner and log information about the action.",
+            "Targets": [
+                [
+                    "successfully send",
+                    "Notice Of Violation document"
+                ],
+                [
+                    "log",
+                    "information"
+                ]
+            ]
+        },
+        "Text": "#G03# As a Staff member, I want to Send or Post Citations and Fines, so that I can successfully send the Notice Of Violation document to the property owner and log information about the action.",
+        "PID": "#G03#",
+        "Main": {
+            "Entity": [
+                "Fines",
+                "Citations"
+            ],
+            "Action": [
+                "Post",
+                "Send"
+            ],
+            "Persona": ["Staff member"],
+            "Contains": [],
+            "Text": "#G03# As a Staff member, I want to Send or Post Citations and Fines, ",
+            "Triggers": [
+                [
+                    "Staff member",
+                    "Send"
+                ],
+                [
+                    "Staff member",
+                    "Post"
+                ]
+            ],
+            "Targets": [
+                [
+                    "Send",
+                    "Citations"
+                ],
+                [
+                    "Post",
+                    "Citations"
+                ],
+                [
+                    "Post",
+                    "Fines"
+                ],
+                [
+                    "Send",
+                    "Fines"
+                ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "send",
+                        "citations",
+                        "create"
+                    ],
+                    [
+                        "post",
+                        "citations",
+                        "create"
+                    ],
+                    [
+                        "post",
+                        "fines",
+                        "create"
+                    ],
+                    [
+                        "send",
+                        "fines",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
+        },
+        "Mix": {}
+    }
+]

@@ -3,83 +3,24 @@
 ********************* << Dataset: g05_open_spending >> ***************
 * Table of potential conflict between user stories
 
-       us_02  us_07  us_18  us_51  us_40  us_44  us_01  us_03  us_15  us_33  
-us_02         x                                                              
-us_07  x                                                                     
-us_18                       x                                                
-us_51                x                                                       
-us_40                                     x                                  
-us_44                              x                                         
-us_01                                                   x                    
-us_03                                            x                           
-us_15                                                                 x      
-us_33                                                          x             
+       us_40  us_44  us_01  us_03  us_15  us_33  
+us_40         x                                  
+us_44  x                                         
+us_01                       x                    
+us_03                x                           
+us_15                                     x      
+us_33                              x             
 
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_02_AND_user_story_07}
-  
-Affected Resource of US1 is: << model >>
-Affected Resource of US2 is: << data source >>
-Affected Contain Resource US1 is: << data i have already imported >>
-Affected Resource US2 is: << data i have already imported >>
-Contain Resources for: user_story_02: << [["data i have already imported","model","create;delete","edit"]] >>
-Contain Resources for: user_story_07: << [["data i have already imported","data source","create;delete","edit"]] >>
-
- Action of user_story_02 is: << edit >>  which is annotated with: << delete >>
- Action of user_story_07 is: << edit >>  which is annotated with: << delete >>
-
-Conflict Reason is: << delete-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_02: #G05# As a Data Publishing User, i want to be able to #edit# the #model# of #data i have already imported#, 
-
-   user_story_07: #G05# As a Data Publishing User, i want to be able to #edit# the #data source# of #data i have already imported#, 
-
-Original texts of user stories are: 
-   user_story_02: #G05# As a Data Publishing User, I want to be able to edit the model of data I have already imported, So that I can fix bugs or make enhancements in the API built for my data.
-
-   user_story_07: #G05# As a Data Publishing User, I want to be able to edit the data source of data I have already imported, So that I can fix bugs or make enhancements in the API built for my data.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_18_AND_user_story_51}
-  
-Affected Resource of US1 is: << textual descriptions >>
-Affected Resource of US2 is: << colors >>
-Affected Contain Resource US1 is: << embedded visualisations >>
-Affected Resource US2 is: << embedded visualisations >>
-Contain Resources for: user_story_18: << [["embedded visualisations","textual descriptions","preserve","see"]] >>
-Contain Resources for: user_story_51: << [["embedded visualisations","colors","create;delete","change"]] >>
-
- Action of user_story_18 is: << see >>  which is annotated with: << preserve >>
- Action of user_story_51 is: << change >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_18: #G05# As a Data Consuming User, i want to #see# #textual descriptions# that accompany #embedded visualisations#, 
-
-   user_story_51: #G05# As an API user, i want to be able to #change# the #colors# of the #embedded visualisations# in my own platform, 
-
-Original texts of user stories are: 
-   user_story_18: #G05# As a Data Consuming User, I want to see textual descriptions that accompany embedded visualisations, So that I can more easily understand what I am viewing.
-
-   user_story_51: #G05# As an API user, I want to be able to change the colors of the embedded visualisations in my own platform, So that I can customize the visualisations.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_40_AND_user_story_44}
   
-Affected Resource of US1 is: << dataset >>
-Affected Resource of US2 is: << dataset >>
-Affected Contain Resource US1 is: << dataset >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_40: << [] >>
-Contain Resources for: user_story_44: << [] >>
+ Affected Resource of US1 is: << dataset >>
 
  Action of user_story_40 is: << update automatically >>  which is annotated with: << delete >>
  Action of user_story_44 is: << hide >>  which is annotated with: << delete >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_40: #G05# As a Data Publishing User, i want to have my #dataset# #update automatically# as the source file/files changes, 
@@ -94,17 +35,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_01_AND_user_story_03}
   
-Affected Resource of US1 is: << dataset i have published >>
-Affected Resource of US2 is: << dataset i have published >>
-Affected Contain Resource US1 is: << dataset i have published >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_01: << [] >>
-Contain Resources for: user_story_03: << [] >>
+ Affected Resource of US1 is: << dataset i have published >>
 
  Action of user_story_01 is: << edit >>  which is annotated with: << delete >>
  Action of user_story_03 is: << delete >>  which is annotated with: << delete >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_01: #G05# As a Data Publishing User, i want to be able to #edit# a #dataset i have published#, 
@@ -119,17 +55,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_15_AND_user_story_33}
   
-Affected Resource of US1 is: << data >>
-Affected Resource of US2 is: << data >>
-Affected Contain Resource US1 is: << data >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_15: << [["data","multiple dimensions","create;delete","filter"],["data","measures","create;delete","filter"]] >>
-Contain Resources for: user_story_33: << [["multiple datasets","results","preserve","get"]] >>
+ Affected Resource of US1 is: << data >>
 
  Action of user_story_15 is: << filter >>  which is annotated with: << delete >>
  Action of user_story_33 is: << use >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_15: #G05# As a Data Consuming User, i want to be able to #filter#, sort and aggregate #data# by multiple dimensions and measures, 

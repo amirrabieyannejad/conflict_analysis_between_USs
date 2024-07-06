@@ -9,10 +9,8 @@ public class ConflictPair {
 	private JSONObject jsonConflict2;
 	private String conflictReason;
 	private String pId;
-	private String nounMainUs1;
-	private String nounMainUs2;
-	private String nounContainUs1;
-	private String nounContainUs2;
+	private String entity;
+	private String entityContainUs2;
 	private String actionUs1;
 	private String actionUs2;
 	private String actionRuleUs1;
@@ -87,21 +85,21 @@ public class ConflictPair {
 		this.conflictPair2 = conflictPair2;
 	}
 	public String getNounMainUs1() {
-		return nounMainUs1;
+		return entity;
 	}
 	public void setNounMainUs1(String nounUs1) {
-		this.nounMainUs1 = nounUs1;
+		this.entity = nounUs1;
 	}
-	public String getActionRuleUs1() {
+	public String getActionAnnotationUs1() {
 		return actionRuleUs1;
 	}
-	public void setActionRuleUs1(String actionRuleUs1) {
+	public void setActionAnnotationUs1(String actionRuleUs1) {
 		this.actionRuleUs1 = actionRuleUs1;
 	}
-	public String getActionRuleUs2() {
+	public String getActionAnnotationUs2() {
 		return actionRuleUs2;
 	}
-	public void setActionRuleUs2(String actionRuleUs2) {
+	public void setActionAnnotationUs2(String actionRuleUs2) {
 		this.actionRuleUs2 = actionRuleUs2;
 	}
 	public String getActionUs1() {
@@ -116,23 +114,14 @@ public class ConflictPair {
 	public void setActionUs2(String actionUs2) {
 		this.actionUs2 = actionUs2;
 	}
-	public String getNounContainUs1() {
-		return nounContainUs1;
-	}
-	public void setNounContainUs1(String nounContainUs1) {
-		this.nounContainUs1 = nounContainUs1;
-	}
+
 	public String getNounContainUs2() {
-		return nounContainUs2;
+		return entityContainUs2;
 	}
 	public void setNounContainUs2(String nounContainUs2) {
-		this.nounContainUs2 = nounContainUs2;
+		this.entityContainUs2 = nounContainUs2;
 	}
-	public String getNounMainUs2() {
-		return nounMainUs2;
-	}
-	public void setNounMainUs2(String nounMainUs2) {
-		this.nounMainUs2 = nounMainUs2;
-	}
+
+
 
 }

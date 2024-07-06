@@ -7,21 +7,6 @@
                 "correct",
                 "enhance"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "correct",
-                        "existing data",
-                        "create;delete"
-                    ],
-                    [
-                        "enhance",
-                        "existing data",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can correct or enhance existing data.",
             "Targets": [
@@ -41,14 +26,6 @@
             "Entity": ["dataset I have published"],
             "Action": ["edit"],
             "Persona": ["Data Publishing User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "edit",
-                    "dataset i have published",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G05# As a Data Publishing User, I want to be able to edit a dataset I have published, ",
             "Triggers": [[
@@ -58,7 +35,15 @@
             "Targets": [[
                 "edit",
                 "dataset I have published"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "edit",
+                    "dataset i have published",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -75,25 +60,6 @@
                 "fix",
                 "make"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "fix",
-                        "bugs",
-                        "create"
-                    ],
-                    [
-                        "make",
-                        "enhancements",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "API",
-                    "enhancements",
-                    "create"
-                ]]
-            },
             "Contains": [
                 [
                     "API",
@@ -125,19 +91,6 @@
             ],
             "Action": ["edit"],
             "Persona": ["Data Publishing User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "edit",
-                    "model",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": [[
-                    "data i have already imported",
-                    "model",
-                    "create;delete",
-                    "edit"
-                ]]
-            },
             "Contains": [[
                 "data I have already imported",
                 "model"
@@ -150,7 +103,20 @@
             "Targets": [[
                 "edit",
                 "model"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "edit",
+                    "model",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": [[
+                    "data i have already imported",
+                    "model",
+                    "create;delete",
+                    "edit"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -162,18 +128,6 @@
                 "OpenSpending"
             ],
             "Action": ["remove"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "remove",
-                    "unwanted data",
-                    "delete"
-                ]],
-                "Contain Action Rules": [[
-                    "OpenSpending",
-                    "unwanted data",
-                    "delete"
-                ]]
-            },
             "Contains": [[
                 "OpenSpending",
                 "unwanted data"
@@ -190,14 +144,6 @@
             "Entity": ["dataset I have published"],
             "Action": ["delete"],
             "Persona": ["Data Publishing User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "delete",
-                    "dataset i have published",
-                    "delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G05# As a Data Publishing User, I want to be able to delete a dataset I have published, ",
             "Triggers": [[
@@ -207,7 +153,15 @@
             "Targets": [[
                 "delete",
                 "dataset I have published"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "delete",
+                    "dataset i have published",
+                    "delete"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -219,18 +173,6 @@
                 "other users"
             ],
             "Action": ["maintain"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "maintain",
-                    "public/hidden status",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": [[
-                    "other users",
-                    "Public/Hidden status",
-                    "create;delete"
-                ]]
-            },
             "Contains": [[
                 "other users",
                 "Public/Hidden status"
@@ -247,14 +189,6 @@
             "Entity": ["any dataset already added"],
             "Action": ["Hide"],
             "Persona": ["Platform Administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "hide",
-                    "any dataset already added",
-                    "delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G05# As a Platform Administrator, I want to be able to Hide any dataset already added as Public, ",
             "Triggers": [[
@@ -264,7 +198,15 @@
             "Targets": [[
                 "Hide",
                 "any dataset already added"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "hide",
+                    "any dataset already added",
+                    "delete"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -276,18 +218,6 @@
                 "management actions"
             ],
             "Action": ["perform"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "perform",
-                    "management actions",
-                    "preserve;delete;create"
-                ]],
-                "Contain Action Rules": [[
-                    "any dataset",
-                    "management actions",
-                    "preserve;delete;create"
-                ]]
-            },
             "Contains": [[
                 "any dataset",
                 "management actions"
@@ -308,19 +238,6 @@
             ],
             "Action": ["have"],
             "Persona": ["Platform Administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "view",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "view",
-                    "datasets published",
-                    "preserve",
-                    "have"
-                ]]
-            },
             "Contains": [[
                 "view",
                 "datasets published"
@@ -333,7 +250,20 @@
             "Targets": [[
                 "have",
                 "view"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "view",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "view",
+                    "datasets published",
+                    "preserve",
+                    "have"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -348,21 +278,6 @@
                 "deal",
                 "clean up"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "deal",
-                        "takedown requests",
-                        "create"
-                    ],
-                    [
-                        "clean up",
-                        "test datasets",
-                        "delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can deal with takedown requests, or clean up test datasets.",
             "Targets": [
@@ -382,14 +297,6 @@
             "Entity": ["any dataset published"],
             "Action": ["delete"],
             "Persona": ["Platform Administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "delete",
-                    "any dataset published",
-                    "delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G05# As a Platform Administrator, I want to be able to delete any dataset published, ",
             "Triggers": [[
@@ -399,7 +306,15 @@
             "Targets": [[
                 "delete",
                 "any dataset published"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "delete",
+                    "any dataset published",
+                    "delete"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -416,25 +331,6 @@
                 "fix",
                 "make"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "fix",
-                        "bugs",
-                        "create"
-                    ],
-                    [
-                        "make",
-                        "enhancements",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "API",
-                    "enhancements",
-                    "create"
-                ]]
-            },
             "Contains": [
                 [
                     "API",
@@ -466,19 +362,6 @@
             ],
             "Action": ["edit"],
             "Persona": ["Data Publishing User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "edit",
-                    "data source",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": [[
-                    "data i have already imported",
-                    "data source",
-                    "create;delete",
-                    "edit"
-                ]]
-            },
             "Contains": [[
                 "data I have already imported",
                 "data source"
@@ -491,7 +374,20 @@
             "Targets": [[
                 "edit",
                 "data source"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "edit",
+                    "data source",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": [[
+                    "data i have already imported",
+                    "data source",
+                    "create;delete",
+                    "edit"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -503,18 +399,6 @@
                 "source file"
             ],
             "Action": ["model"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "model",
-                    "dimensions",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": [[
-                    "source file",
-                    "dimensions",
-                    "create;delete"
-                ]]
-            },
             "Contains": [[
                 "source file",
                 "dimensions"
@@ -531,14 +415,6 @@
             "Entity": ["Packager support Constants"],
             "Action": ["have"],
             "Persona": ["Data Publishing User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "packager support constants",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G05# As a Data Publishing User, I want to have the Packager support Constants, ",
             "Triggers": [[
@@ -548,7 +424,15 @@
             "Targets": [[
                 "have",
                 "Packager support Constants"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "packager support constants",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -560,14 +444,6 @@
                 "data formats"
             ],
             "Action": ["use"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "use",
-                    "data packager",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I do not have to convert data formats in order to use the data packager.",
             "Targets": [[
@@ -584,19 +460,6 @@
             ],
             "Action": ["import"],
             "Persona": ["Data Publishing User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "import",
-                    "data",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "excel",
-                    "data",
-                    "create",
-                    "import"
-                ]]
-            },
             "Contains": [[
                 "Excel",
                 "data"
@@ -609,7 +472,20 @@
             "Targets": [[
                 "import",
                 "data"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "import",
+                    "data",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "excel",
+                    "data",
+                    "create",
+                    "import"
+                ]]
+            }
         },
         "Mix": {"Contains": [
             "data",
@@ -621,10 +497,6 @@
         "Benefit": {
             "Entity": ["map"],
             "Action": ["visualise"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can visualise it on a map.",
             "Targets": []
@@ -642,26 +514,6 @@
                 "visualised"
             ],
             "Persona": ["Data Publishing User"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "visualised",
-                        "data",
-                        "create"
-                    ],
-                    [
-                        "know",
-                        "what",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "map",
-                    "data",
-                    "create",
-                    "visualised"
-                ]]
-            },
             "Contains": [[
                 "map",
                 "data"
@@ -680,7 +532,27 @@
                     "know",
                     "what"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "visualised",
+                        "data",
+                        "create"
+                    ],
+                    [
+                        "know",
+                        "what",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "map",
+                    "data",
+                    "create",
+                    "visualised"
+                ]]
+            }
         },
         "Mix": {
             "Contains": [
@@ -701,14 +573,6 @@
                 "data packager"
             ],
             "Action": ["use"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "use",
-                    "data packager",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I do not have to convert data formats in order to use the data packager.",
             "Targets": [[
@@ -725,19 +589,6 @@
             ],
             "Action": ["import"],
             "Persona": ["Data Publishing User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "import",
-                    "data",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "json",
-                    "data",
-                    "create",
-                    "import"
-                ]]
-            },
             "Contains": [[
                 "JSON",
                 "data"
@@ -750,7 +601,20 @@
             "Targets": [[
                 "import",
                 "data"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "import",
+                    "data",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "json",
+                    "data",
+                    "create",
+                    "import"
+                ]]
+            }
         },
         "Mix": {"Contains": [
             "data",
@@ -765,14 +629,6 @@
                 "data packager"
             ],
             "Action": ["use"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "use",
-                    "data packager",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I do not have to convert data formats in order to use the data packager.",
             "Targets": [[
@@ -789,19 +645,6 @@
             ],
             "Action": ["import"],
             "Persona": ["Data Publishing User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "import",
-                    "data",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "google spreadsheet",
-                    "data",
-                    "create",
-                    "import"
-                ]]
-            },
             "Contains": [[
                 "Google Spreadsheet",
                 "data"
@@ -814,7 +657,20 @@
             "Targets": [[
                 "import",
                 "data"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "import",
+                    "data",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "google spreadsheet",
+                    "data",
+                    "create",
+                    "import"
+                ]]
+            }
         },
         "Mix": {"Contains": [
             "data",
@@ -829,14 +685,6 @@
                 "data packager"
             ],
             "Action": ["use"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "use",
-                    "data packager",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I do not have to convert data formats in order to use the data packager.",
             "Targets": [[
@@ -853,19 +701,6 @@
             ],
             "Action": ["import"],
             "Persona": ["Data Publishing User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "import",
-                    "data",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "fiscal data package descriptor file",
-                    "data",
-                    "create",
-                    "import"
-                ]]
-            },
             "Contains": [[
                 "Fiscal Data Package descriptor file",
                 "data"
@@ -878,7 +713,20 @@
             "Targets": [[
                 "import",
                 "data"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "import",
+                    "data",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "fiscal data package descriptor file",
+                    "data",
+                    "create",
+                    "import"
+                ]]
+            }
         },
         "Mix": {"Contains": [
             "data",
@@ -893,18 +741,6 @@
                 "data"
             ],
             "Action": ["improve"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "improve",
-                    "map-based visualisations",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": [[
-                    "map-based visualisations",
-                    "data",
-                    "create;delete"
-                ]]
-            },
             "Contains": [[
                 "map-based visualisations",
                 "data"
@@ -924,19 +760,6 @@
             ],
             "Action": ["provide"],
             "Persona": ["Data Publishing User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "provide",
-                    "platform administrator",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "platform administrator",
-                    "additional geojson sources",
-                    "create",
-                    "provide"
-                ]]
-            },
             "Contains": [[
                 "Platform Administrator",
                 "additional GeoJSON sources"
@@ -949,7 +772,20 @@
             "Targets": [[
                 "provide",
                 "Platform Administrator"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "provide",
+                    "platform administrator",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "platform administrator",
+                    "additional geojson sources",
+                    "create",
+                    "provide"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -961,18 +797,6 @@
                 "more granular views"
             ],
             "Action": ["get"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "get",
-                    "more granular views",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "data",
-                    "more granular views",
-                    "preserve"
-                ]]
-            },
             "Contains": [[
                 "data",
                 "more granular views"
@@ -997,39 +821,6 @@
                 "aggregate"
             ],
             "Persona": ["Data Consuming User"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "filter",
-                        "data",
-                        "create;delete"
-                    ],
-                    [
-                        "sort",
-                        "data",
-                        "create;delete"
-                    ],
-                    [
-                        "aggregate",
-                        "data",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "data",
-                        "multiple dimensions",
-                        "create;delete",
-                        "filter"
-                    ],
-                    [
-                        "data",
-                        "measures",
-                        "create;delete",
-                        "filter"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "data",
@@ -1068,7 +859,40 @@
                     "aggregate",
                     "data"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "filter",
+                        "data",
+                        "create;delete"
+                    ],
+                    [
+                        "sort",
+                        "data",
+                        "create;preserve"
+                    ],
+                    [
+                        "aggregate",
+                        "data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "data",
+                        "multiple dimensions",
+                        "create;delete",
+                        "filter"
+                    ],
+                    [
+                        "data",
+                        "measures",
+                        "create;delete",
+                        "filter"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -1080,18 +904,6 @@
                 "other tools"
             ],
             "Action": ["use"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "use",
-                    "data",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "other tools",
-                    "data",
-                    "preserve"
-                ]]
-            },
             "Contains": [[
                 "other tools",
                 "data"
@@ -1112,19 +924,6 @@
             ],
             "Action": ["download"],
             "Persona": ["Data Consuming User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "download",
-                    "csv",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "csv",
-                    "data",
-                    "create",
-                    "download"
-                ]]
-            },
             "Contains": [
                 [
                     "CSV",
@@ -1143,7 +942,20 @@
             "Targets": [[
                 "download",
                 "CSV"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "download",
+                    "csv",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "csv",
+                    "data",
+                    "create",
+                    "download"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1155,18 +967,6 @@
                 "non-localised figures"
             ],
             "Action": ["understand"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "understand",
-                    "localised amounts",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": [[
-                    "non-localised figures",
-                    "localised amounts",
-                    "preserve;create"
-                ]]
-            },
             "Contains": [[
                 "non-localised figures",
                 "localised amounts"
@@ -1187,19 +987,6 @@
             ],
             "Action": ["change"],
             "Persona": ["Data Consuming User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "change",
-                    "display",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": [[
-                    "monetary measures",
-                    "display",
-                    "create;delete",
-                    "change"
-                ]]
-            },
             "Contains": [
                 [
                     "monetary measures",
@@ -1218,7 +1005,20 @@
             "Targets": [[
                 "change",
                 "display"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "change",
+                    "display",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": [[
+                    "monetary measures",
+                    "display",
+                    "create;delete",
+                    "change"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1227,10 +1027,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["easily understand"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can more easily understand what I am viewing.",
             "Targets": []
@@ -1244,19 +1040,6 @@
             ],
             "Action": ["see"],
             "Persona": ["Data Consuming User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "see",
-                    "textual descriptions",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "embedded visualisations",
-                    "textual descriptions",
-                    "preserve",
-                    "see"
-                ]]
-            },
             "Contains": [[
                 "embedded visualisations",
                 "textual descriptions"
@@ -1269,7 +1052,20 @@
             "Targets": [[
                 "see",
                 "textual descriptions"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "see",
+                    "textual descriptions",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "embedded visualisations",
+                    "textual descriptions",
+                    "preserve",
+                    "see"
+                ]]
+            }
         },
         "Mix": {"Targets": [
             "easily understand",
@@ -1284,14 +1080,6 @@
                 "data"
             ],
             "Action": ["share"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "share",
-                    "data",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can share data that I have found with others.",
             "Targets": [[
@@ -1309,27 +1097,6 @@
             ],
             "Action": ["share"],
             "Persona": ["Data Consuming User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "share",
-                    "view state",
-                    "create"
-                ]],
-                "Contain Action Rules": [
-                    [
-                        "view state",
-                        "url",
-                        "create",
-                        "share"
-                    ],
-                    [
-                        "social networks",
-                        "view state",
-                        "create",
-                        "share"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "view state",
@@ -1348,7 +1115,28 @@
             "Targets": [[
                 "share",
                 "view state"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "share",
+                    "view state",
+                    "create"
+                ]],
+                "Contain Action Annotations": [
+                    [
+                        "view state",
+                        "url",
+                        "create",
+                        "share"
+                    ],
+                    [
+                        "social networks",
+                        "view state",
+                        "create",
+                        "share"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -1357,10 +1145,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["use"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can use it offline.",
             "Targets": []
@@ -1374,19 +1158,6 @@
             ],
             "Action": ["download"],
             "Persona": ["Data Consuming User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "download",
-                    "image",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "image",
-                    "particular view state",
-                    "create",
-                    "download"
-                ]]
-            },
             "Contains": [[
                 "image",
                 "particular view state"
@@ -1399,7 +1170,20 @@
             "Targets": [[
                 "download",
                 "image"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "download",
+                    "image",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "image",
+                    "particular view state",
+                    "create",
+                    "download"
+                ]]
+            }
         },
         "Mix": {"Targets": [
             "use",
@@ -1415,25 +1199,6 @@
                 "data I am sharing"
             ],
             "Action": ["provide"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "provide",
-                    "richer context",
-                    "create"
-                ]],
-                "Contain Action Rules": [
-                    [
-                        "communication channels",
-                        "richer context",
-                        "create"
-                    ],
-                    [
-                        "data I am sharing",
-                        "richer context",
-                        "create"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "communication channels",
@@ -1463,34 +1228,6 @@
                 "support"
             ],
             "Persona": ["Data Consuming User"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "share",
-                        "image",
-                        "create"
-                    ],
-                    [
-                        "support",
-                        "image",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "social networks",
-                        "image",
-                        "create",
-                        "share"
-                    ],
-                    [
-                        "image",
-                        "particular view state",
-                        "create",
-                        "share"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "social networks",
@@ -1515,7 +1252,35 @@
                     "support",
                     "image"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "share",
+                        "image",
+                        "create"
+                    ],
+                    [
+                        "support",
+                        "image",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "social networks",
+                        "image",
+                        "create",
+                        "share"
+                    ],
+                    [
+                        "image",
+                        "particular view state",
+                        "create",
+                        "share"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -1528,18 +1293,6 @@
                 "map view"
             ],
             "Action": ["have"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "better control",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "navigation experience",
-                    "better control",
-                    "preserve"
-                ]]
-            },
             "Contains": [
                 [
                     "map view",
@@ -1565,19 +1318,6 @@
             ],
             "Action": ["have"],
             "Persona": ["Data Consuming User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "stepped zoom",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "map visualisations",
-                    "stepped zoom",
-                    "preserve",
-                    "have"
-                ]]
-            },
             "Contains": [[
                 "map visualisations",
                 "stepped zoom"
@@ -1590,7 +1330,20 @@
             "Targets": [[
                 "have",
                 "stepped zoom"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "stepped zoom",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "map visualisations",
+                    "stepped zoom",
+                    "preserve",
+                    "have"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1602,18 +1355,6 @@
                 "map view"
             ],
             "Action": ["better understand"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "better understand",
-                    "visual logic",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "map view",
-                    "visual logic",
-                    "preserve"
-                ]]
-            },
             "Contains": [[
                 "map view",
                 "visual logic"
@@ -1634,14 +1375,6 @@
             ],
             "Action": ["have"],
             "Persona": ["Data Consuming User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "consistent use",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [[
                 "map visualisations",
                 "colour"
@@ -1654,7 +1387,15 @@
             "Targets": [[
                 "have",
                 "consistent use"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "consistent use",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1666,14 +1407,6 @@
                 "branding"
             ],
             "Action": ["customise"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "customise",
-                    "branding",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can customise the branding for my own needs.",
             "Targets": [[
@@ -1692,45 +1425,6 @@
             ],
             "Action": ["customise"],
             "Persona": ["Developer"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "customise",
-                        "brand name",
-                        "create"
-                    ],
-                    [
-                        "customise",
-                        "icon",
-                        "create"
-                    ],
-                    [
-                        "customise",
-                        "primary color",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "frontend javascript apps",
-                        "brand name",
-                        "create",
-                        "customise"
-                    ],
-                    [
-                        "frontend javascript apps",
-                        "icon",
-                        "create",
-                        "customise"
-                    ],
-                    [
-                        "frontend javascript apps",
-                        "primary color",
-                        "create",
-                        "customise"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "frontend Javascript apps",
@@ -1763,7 +1457,46 @@
                     "customise",
                     "Primary Color"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "customise",
+                        "brand name",
+                        "create"
+                    ],
+                    [
+                        "customise",
+                        "icon",
+                        "create"
+                    ],
+                    [
+                        "customise",
+                        "primary color",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "frontend javascript apps",
+                        "brand name",
+                        "create",
+                        "customise"
+                    ],
+                    [
+                        "frontend javascript apps",
+                        "icon",
+                        "create",
+                        "customise"
+                    ],
+                    [
+                        "frontend javascript apps",
+                        "primary color",
+                        "create",
+                        "customise"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -1775,14 +1508,6 @@
                 "Dataset Publisher privileges"
             ],
             "Action": ["offer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "offer",
-                    "functionality",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can offer functionality based on Dataset Publisher privileges.",
             "Targets": [[
@@ -1799,14 +1524,6 @@
             ],
             "Action": ["understand"],
             "Persona": ["API User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "understand",
-                    "user",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G05# As an API User, I want to be able to understand if a user is a Publisher, ",
             "Triggers": [[
@@ -1816,7 +1533,15 @@
             "Targets": [[
                 "understand",
                 "user"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "understand",
+                    "user",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1828,14 +1553,6 @@
                 "Platform Administration privileges"
             ],
             "Action": ["offer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "offer",
-                    "functionality",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can offer functionality based on Platform Administration privileges.",
             "Targets": [[
@@ -1852,14 +1569,6 @@
             ],
             "Action": ["understand"],
             "Persona": ["API User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "understand",
-                    "user",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G05# As an API User, I want to be able to understand if a user is an Administrator, ",
             "Triggers": [[
@@ -1869,7 +1578,15 @@
             "Targets": [[
                 "understand",
                 "user"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "understand",
+                    "user",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1881,18 +1598,6 @@
                 "mapping visualisations"
             ],
             "Action": ["provider"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "provider",
-                    "wider visual context",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": [[
-                    "mapping visualisations",
-                    "wider visual context",
-                    "preserve;create"
-                ]]
-            },
             "Contains": [[
                 "mapping visualisations",
                 "wider visual context"
@@ -1917,31 +1622,6 @@
                 "query"
             ],
             "Persona": ["API User"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "get",
-                        "cities",
-                        "preserve"
-                    ],
-                    [
-                        "query",
-                        "city,",
-                        "preserve;forbid"
-                    ],
-                    [
-                        "get",
-                        "bordering regions",
-                        "preserve"
-                    ],
-                    [
-                        "query",
-                        "region",
-                        "preserve;forbid"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G05# As an API User, I want to be able to get bordering regions|cities when I query a region|city, ",
             "Triggers": [[
@@ -1965,7 +1645,32 @@
                     "query",
                     "region"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "get",
+                        "cities",
+                        "preserve"
+                    ],
+                    [
+                        "query",
+                        "city,",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "get",
+                        "bordering regions",
+                        "preserve"
+                    ],
+                    [
+                        "query",
+                        "region",
+                        "preserve;forbid"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1977,14 +1682,6 @@
                 "query"
             ],
             "Action": ["provide"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "provide",
-                    "maps",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can provide maps that match the query.",
             "Targets": [[
@@ -2001,14 +1698,6 @@
             ],
             "Action": ["dynamically request"],
             "Persona": ["API User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "dynamically request",
-                    "polygons",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G05# As an API User, I want to be able to dynamically request polygons based on the query made, ",
             "Triggers": [[
@@ -2018,7 +1707,15 @@
             "Targets": [[
                 "dynamically request",
                 "polygons"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "dynamically request",
+                    "polygons",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2030,18 +1727,6 @@
                 "maps"
             ],
             "Action": ["visualise"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "visualise",
-                    "budget data",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "maps",
-                    "budget data",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "maps",
                 "budget data"
@@ -2067,46 +1752,6 @@
                 "using"
             ],
             "Persona": ["API User"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "have",
-                        "flexible api",
-                        "preserve"
-                    ],
-                    [
-                        "using",
-                        "hasc codes",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "flexible api",
-                        "hasc codes",
-                        "preserve",
-                        "have"
-                    ],
-                    [
-                        "cities",
-                        "hasc codes",
-                        "preserve",
-                        "using"
-                    ],
-                    [
-                        "regions",
-                        "hasc codes",
-                        "preserve",
-                        "using"
-                    ],
-                    [
-                        "countries",
-                        "hasc codes",
-                        "preserve",
-                        "using"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "cities",
@@ -2139,7 +1784,47 @@
                     "using",
                     "HASC codes"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "have",
+                        "flexible api",
+                        "preserve"
+                    ],
+                    [
+                        "using",
+                        "hasc codes",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "flexible api",
+                        "hasc codes",
+                        "preserve",
+                        "have"
+                    ],
+                    [
+                        "cities",
+                        "hasc codes",
+                        "preserve",
+                        "using"
+                    ],
+                    [
+                        "regions",
+                        "hasc codes",
+                        "preserve",
+                        "using"
+                    ],
+                    [
+                        "countries",
+                        "hasc codes",
+                        "preserve",
+                        "using"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -2155,25 +1840,6 @@
                 "use",
                 "read"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "use",
-                        "work",
-                        "preserve"
-                    ],
-                    [
-                        "read",
-                        "csv",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "work",
-                    "tools",
-                    "preserve"
-                ]]
-            },
             "Contains": [[
                 "work",
                 "tools"
@@ -2199,19 +1865,6 @@
             ],
             "Action": ["get"],
             "Persona": ["API User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "get",
-                    "csv output",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "any cube-based query",
-                    "csv output",
-                    "preserve",
-                    "get"
-                ]]
-            },
             "Contains": [[
                 "any cube-based query",
                 "CSV output"
@@ -2224,7 +1877,20 @@
             "Targets": [[
                 "get",
                 "CSV output"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "get",
+                    "csv output",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "any cube-based query",
+                    "csv output",
+                    "preserve",
+                    "get"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2239,14 +1905,6 @@
                 "use",
                 "enable"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "enable",
-                    "comparison by normalisation",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can use this in scenarios that might enable comparison by normalisation.",
             "Targets": [[
@@ -2266,21 +1924,6 @@
                 "transferred"
             ],
             "Persona": ["API User"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "get",
-                        "set of monetary measures",
-                        "preserve"
-                    ],
-                    [
-                        "transferred",
-                        "different currencies",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G05# As an API User, I want to be able to get a set of monetary measures transferred to different currencies, ",
             "Triggers": [[
@@ -2296,7 +1939,22 @@
                     "transferred",
                     "different currencies"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "get",
+                        "set of monetary measures",
+                        "preserve"
+                    ],
+                    [
+                        "transferred",
+                        "different currencies",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {
             "Contains": [
@@ -2317,14 +1975,6 @@
                 "more than one dataset"
             ],
             "Action": ["build"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "build",
-                    "user experiences",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can build user experiences based on more than one dataset more easily.",
             "Targets": [[
@@ -2345,26 +1995,6 @@
                 "get"
             ],
             "Persona": ["API User"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "use",
-                        "metadata",
-                        "preserve"
-                    ],
-                    [
-                        "get",
-                        "results",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "multiple datasets",
-                    "results",
-                    "preserve",
-                    "get"
-                ]]
-            },
             "Contains": [[
                 "multiple datasets",
                 "results"
@@ -2383,7 +2013,27 @@
                     "get",
                     "results"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "use",
+                        "metadata",
+                        "preserve"
+                    ],
+                    [
+                        "get",
+                        "results",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "multiple datasets",
+                    "results",
+                    "preserve",
+                    "get"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2395,14 +2045,6 @@
                 "more than one dataset"
             ],
             "Action": ["build"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "build",
-                    "user experiences",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can build user experiences based on more than one dataset more easily.",
             "Targets": [[
@@ -2423,26 +2065,6 @@
                 "get"
             ],
             "Persona": ["API User"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "get",
-                        "results",
-                        "preserve"
-                    ],
-                    [
-                        "use",
-                        "data",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "multiple datasets",
-                    "results",
-                    "preserve",
-                    "get"
-                ]]
-            },
             "Contains": [[
                 "multiple datasets",
                 "results"
@@ -2461,7 +2083,27 @@
                     "use",
                     "data"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "get",
+                        "results",
+                        "preserve"
+                    ],
+                    [
+                        "use",
+                        "data",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "multiple datasets",
+                    "results",
+                    "preserve",
+                    "get"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2473,18 +2115,6 @@
                 "contextual constraints"
             ],
             "Action": ["work"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "work",
-                    "datasets",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "datasets",
-                    "contextual constraints",
-                    "preserve"
-                ]]
-            },
             "Contains": [[
                 "datasets",
                 "contextual constraints"
@@ -2504,19 +2134,6 @@
             ],
             "Action": ["normalise"],
             "Persona": ["API User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "normalise",
-                    "measures",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "measures",
-                    "population",
-                    "create",
-                    "normalise"
-                ]]
-            },
             "Contains": [[
                 "measures",
                 "population"
@@ -2529,7 +2146,20 @@
             "Targets": [[
                 "normalise",
                 "measures"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "normalise",
+                    "measures",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "measures",
+                    "population",
+                    "create",
+                    "normalise"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2541,18 +2171,6 @@
                 "contextual constraints"
             ],
             "Action": ["work"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "work",
-                    "datasets",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "datasets",
-                    "contextual constraints",
-                    "preserve"
-                ]]
-            },
             "Contains": [[
                 "datasets",
                 "contextual constraints"
@@ -2572,19 +2190,6 @@
             ],
             "Action": ["normalise"],
             "Persona": ["API User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "normalise",
-                    "measures",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "measures",
-                    "geographical area",
-                    "create",
-                    "normalise"
-                ]]
-            },
             "Contains": [[
                 "measures",
                 "geographical area"
@@ -2597,7 +2202,20 @@
             "Targets": [[
                 "normalise",
                 "measures"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "normalise",
+                    "measures",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "measures",
+                    "geographical area",
+                    "create",
+                    "normalise"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2609,18 +2227,6 @@
                 "contextual constraints"
             ],
             "Action": ["work"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "work",
-                    "datasets",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "datasets",
-                    "contextual constraints",
-                    "preserve"
-                ]]
-            },
             "Contains": [[
                 "datasets",
                 "contextual constraints"
@@ -2640,19 +2246,6 @@
             ],
             "Action": ["normalise"],
             "Persona": ["API User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "normalise",
-                    "measures",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "measures",
-                    "gdp",
-                    "create",
-                    "normalise"
-                ]]
-            },
             "Contains": [[
                 "measures",
                 "GDP"
@@ -2665,7 +2258,20 @@
             "Targets": [[
                 "normalise",
                 "measures"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "normalise",
+                    "measures",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "measures",
+                    "gdp",
+                    "create",
+                    "normalise"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2677,18 +2283,6 @@
                 "contextual constraints"
             ],
             "Action": ["work"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "work",
-                    "datasets",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "datasets",
-                    "contextual constraints",
-                    "preserve"
-                ]]
-            },
             "Contains": [[
                 "datasets",
                 "contextual constraints"
@@ -2709,27 +2303,6 @@
             ],
             "Action": ["normalise"],
             "Persona": ["API User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "normalise",
-                    "measures",
-                    "create"
-                ]],
-                "Contain Action Rules": [
-                    [
-                        "gini",
-                        "measures",
-                        "create",
-                        "normalise"
-                    ],
-                    [
-                        "related socioeconomic indexes",
-                        "measures",
-                        "create",
-                        "normalise"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "GINI",
@@ -2748,7 +2321,28 @@
             "Targets": [[
                 "normalise",
                 "measures"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "normalise",
+                    "measures",
+                    "create"
+                ]],
+                "Contain Action Annotations": [
+                    [
+                        "gini",
+                        "measures",
+                        "create",
+                        "normalise"
+                    ],
+                    [
+                        "related socioeconomic indexes",
+                        "measures",
+                        "create",
+                        "normalise"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -2760,18 +2354,6 @@
                 "data"
             ],
             "Action": ["build"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "build",
-                    "alternative displays",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "data",
-                    "alternative displays",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "data",
                 "alternative displays"
@@ -2792,19 +2374,6 @@
             ],
             "Action": ["get"],
             "Persona": ["API User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "get",
-                    "relative percentage",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "measure",
-                    "relative percentage",
-                    "preserve",
-                    "get"
-                ]]
-            },
             "Contains": [
                 [
                     "measure",
@@ -2823,7 +2392,20 @@
             "Targets": [[
                 "get",
                 "relative percentage"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "get",
+                    "relative percentage",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "measure",
+                    "relative percentage",
+                    "preserve",
+                    "get"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2835,14 +2417,6 @@
                 "shared more easily",
                 "contribute"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "contribute",
-                    "visualisation gallery",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "such can be shared more easily and contribute to a visualisation gallery.",
             "Targets": [[
@@ -2859,19 +2433,6 @@
             ],
             "Action": ["persistently store"],
             "Persona": ["API User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "persistently store",
-                    "visualisation state",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "database",
-                    "visualisation state",
-                    "create",
-                    "persistently store"
-                ]]
-            },
             "Contains": [[
                 "database",
                 "visualisation state"
@@ -2884,7 +2445,20 @@
             "Targets": [[
                 "persistently store",
                 "visualisation state"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "persistently store",
+                    "visualisation state",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "database",
+                    "visualisation state",
+                    "create",
+                    "persistently store"
+                ]]
+            }
         },
         "Mix": {"Targets": [
             "shared more easily",
@@ -2899,14 +2473,6 @@
                 "current data"
             ],
             "Action": ["always shows"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "always shows",
-                    "current data",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "OpenSpending always shows current data.",
             "Targets": [[
@@ -2926,21 +2492,6 @@
                 "have"
             ],
             "Persona": ["Data Publishing User"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "update automatically",
-                        "dataset",
-                        "create;delete"
-                    ],
-                    [
-                        "have",
-                        "dataset",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G05# As a Data Publishing User, I want to have my dataset update automatically as the source file/files changes, ",
             "Triggers": [[
@@ -2956,7 +2507,22 @@
                     "have",
                     "dataset"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "update automatically",
+                        "dataset",
+                        "create;delete"
+                    ],
+                    [
+                        "have",
+                        "dataset",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Contains": [
             "dataset",
@@ -2972,14 +2538,6 @@
                 "fiscal openness"
             ],
             "Action": ["relate"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "relate",
-                    "openspending.org",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [[
                 "central hub",
                 "fiscal openness"
@@ -3003,34 +2561,6 @@
                 "highlights"
             ],
             "Persona": ["OpenSpending Community Member"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "have",
-                        "blog",
-                        "preserve"
-                    ],
-                    [
-                        "highlights",
-                        "any and all projects",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "blog",
-                        "any and all projects",
-                        "preserve",
-                        "have"
-                    ],
-                    [
-                        "open fiscal space",
-                        "any and all projects",
-                        "create",
-                        "highlights"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "blog",
@@ -3055,7 +2585,35 @@
                     "highlights",
                     "any and all projects"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "have",
+                        "blog",
+                        "preserve"
+                    ],
+                    [
+                        "highlights",
+                        "any and all projects",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "blog",
+                        "any and all projects",
+                        "preserve",
+                        "have"
+                    ],
+                    [
+                        "open fiscal space",
+                        "any and all projects",
+                        "create",
+                        "highlights"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -3064,10 +2622,6 @@
         "Benefit": {
             "Entity": ["data"],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "my data is more easily discoverable.",
             "Targets": []
@@ -3078,14 +2632,6 @@
             "Entity": ["own username"],
             "Action": ["set"],
             "Persona": ["User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "set",
-                    "own username",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G05# As a User, I want to be able to set my own username, ",
             "Triggers": [[
@@ -3095,7 +2641,15 @@
             "Targets": [[
                 "set",
                 "own username"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "set",
+                    "own username",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Contains": [
             "own username",
@@ -3110,18 +2664,6 @@
                 "OpenSpending user interfaces"
             ],
             "Action": ["work"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "work",
-                    "dataset",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "OpenSpending user interfaces",
-                    "dataset",
-                    "preserve"
-                ]]
-            },
             "Contains": [[
                 "OpenSpending user interfaces",
                 "dataset"
@@ -3141,19 +2683,6 @@
             ],
             "Action": ["add"],
             "Persona": ["Data Publishing User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "add",
-                    "dataset",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "dataset",
-                    "hidden state",
-                    "create",
-                    "add"
-                ]]
-            },
             "Contains": [[
                 "dataset",
                 "Hidden state"
@@ -3166,7 +2695,20 @@
             "Targets": [[
                 "add",
                 "dataset"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "add",
+                    "dataset",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "dataset",
+                    "hidden state",
+                    "create",
+                    "add"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3181,21 +2723,6 @@
                 "fix",
                 "have"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "fix",
-                        "mistakes",
-                        "create"
-                    ],
-                    [
-                        "have",
-                        "dataset",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can fix my mistakes or have a dataset primarily for my own use.",
             "Targets": [
@@ -3215,14 +2742,6 @@
             "Entity": ["dataset"],
             "Action": ["Hide"],
             "Persona": ["Data Publishing User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "hide",
-                    "dataset",
-                    "delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G05# As a Data Publishing User, I want to be able to Hide a dataset that I have already added as Public, ",
             "Triggers": [[
@@ -3232,7 +2751,15 @@
             "Targets": [[
                 "Hide",
                 "dataset"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "hide",
+                    "dataset",
+                    "delete"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3244,18 +2771,6 @@
                 "own datasets"
             ],
             "Action": ["perform"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "perform",
-                    "management actions",
-                    "preserve;delete;create"
-                ]],
-                "Contain Action Rules": [[
-                    "own datasets",
-                    "management actions",
-                    "preserve;delete;create"
-                ]]
-            },
             "Contains": [[
                 "own datasets",
                 "management actions"
@@ -3275,19 +2790,6 @@
             ],
             "Action": ["have"],
             "Persona": ["Data Publishing User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "view",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "datasets i have published",
-                    "view",
-                    "preserve",
-                    "have"
-                ]]
-            },
             "Contains": [[
                 "datasets I have published",
                 "view"
@@ -3300,7 +2802,20 @@
             "Targets": [[
                 "have",
                 "view"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "view",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "datasets i have published",
+                    "view",
+                    "preserve",
+                    "have"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3314,18 +2829,6 @@
                 "own programs"
             ],
             "Action": ["add"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "add",
-                    "data",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "datastore",
-                    "data",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "datastore",
                 "data"
@@ -3342,14 +2845,6 @@
             "Entity": ["functioning Python Client"],
             "Action": ["have"],
             "Persona": ["Data Publishing User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "functioning python client",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G05# As a Data Publishing User, I want to have a functioning Python Client, ",
             "Triggers": [[
@@ -3359,7 +2854,15 @@
             "Targets": [[
                 "have",
                 "functioning Python Client"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "functioning python client",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3374,14 +2877,6 @@
                 "find",
                 "creating"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "find",
-                    "guidance",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can find guidance in creating my own with Open Spending.",
             "Targets": [[
@@ -3403,26 +2898,6 @@
                 "find"
             ],
             "Persona": ["OpenSpending Community Member"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "have",
-                        "app",
-                        "preserve"
-                    ],
-                    [
-                        "find",
-                        "examples",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "examples",
-                    "use",
-                    "create",
-                    "find"
-                ]]
-            },
             "Contains": [
                 [
                     "use",
@@ -3447,7 +2922,27 @@
                     "find",
                     "examples"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "have",
+                        "app",
+                        "preserve"
+                    ],
+                    [
+                        "find",
+                        "examples",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "examples",
+                    "use",
+                    "create",
+                    "find"
+                ]]
+            }
         },
         "Mix": {
             "Contains": [
@@ -3471,14 +2966,6 @@
                 "fix",
                 "publishing"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "fix",
-                    "possible data issues",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can fix possible data issues before publishing it on Open Spending.",
             "Targets": [[
@@ -3492,14 +2979,6 @@
             "Entity": ["CSV file"],
             "Action": ["know"],
             "Persona": ["Data Publishing User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "csv file",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G05# As a Data Publishing User, I want to know if my CSV file is valid, ",
             "Triggers": [[
@@ -3509,7 +2988,15 @@
             "Targets": [[
                 "know",
                 "CSV file"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know",
+                    "csv file",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {
             "Contains": [
@@ -3527,14 +3014,6 @@
         "Benefit": {
             "Entity": ["datasets"],
             "Action": ["find"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "find",
-                    "datasets",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can find the datasets I'm interested in.",
             "Targets": [[
@@ -3552,27 +3031,6 @@
             ],
             "Action": ["search"],
             "Persona": ["Data Consuming User"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "search",
-                    "any dataset published and publicly accessible",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": [
-                    [
-                        "any dataset published and publicly accessible",
-                        "title",
-                        "preserve;create",
-                        "search"
-                    ],
-                    [
-                        "any dataset published and publicly accessible",
-                        "metadata",
-                        "preserve;create",
-                        "search"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "any dataset published and publicly accessible",
@@ -3591,7 +3049,28 @@
             "Targets": [[
                 "search",
                 "any dataset published and publicly accessible"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "search",
+                    "any dataset published and publicly accessible",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": [
+                    [
+                        "any dataset published and publicly accessible",
+                        "title",
+                        "preserve;create",
+                        "search"
+                    ],
+                    [
+                        "any dataset published and publicly accessible",
+                        "metadata",
+                        "preserve;create",
+                        "search"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -3600,10 +3079,6 @@
         "Benefit": {
             "Entity": ["amounts"],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I'm not confused with the amounts.",
             "Targets": []
@@ -3622,56 +3097,6 @@
             ],
             "Action": ["visualize by default"],
             "Persona": ["Data Consuming User"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "visualize by default",
-                        "bubble tree",
-                        "create"
-                    ],
-                    [
-                        "visualize by default",
-                        "treemap",
-                        "create"
-                    ],
-                    [
-                        "visualize by default",
-                        "map",
-                        "create"
-                    ],
-                    [
-                        "visualize by default",
-                        "pivot table",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "bubble tree",
-                        "dataset",
-                        "create",
-                        "visualize by default"
-                    ],
-                    [
-                        "treemap",
-                        "dataset",
-                        "create",
-                        "visualize by default"
-                    ],
-                    [
-                        "map",
-                        "dataset",
-                        "create",
-                        "visualize by default"
-                    ],
-                    [
-                        "pivot table",
-                        "dataset",
-                        "create",
-                        "visualize by default"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "dataset",
@@ -3720,7 +3145,57 @@
                     "visualize by default",
                     "pivot table"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "visualize by default",
+                        "bubble tree",
+                        "create"
+                    ],
+                    [
+                        "visualize by default",
+                        "treemap",
+                        "create"
+                    ],
+                    [
+                        "visualize by default",
+                        "map",
+                        "create"
+                    ],
+                    [
+                        "visualize by default",
+                        "pivot table",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "bubble tree",
+                        "dataset",
+                        "create",
+                        "visualize by default"
+                    ],
+                    [
+                        "treemap",
+                        "dataset",
+                        "create",
+                        "visualize by default"
+                    ],
+                    [
+                        "map",
+                        "dataset",
+                        "create",
+                        "visualize by default"
+                    ],
+                    [
+                        "pivot table",
+                        "dataset",
+                        "create",
+                        "visualize by default"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -3729,14 +3204,6 @@
         "Benefit": {
             "Entity": ["visualisations"],
             "Action": ["customize"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "customize",
-                    "visualisations",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can customize the visualisations",
             "Targets": [[
@@ -3754,19 +3221,6 @@
             ],
             "Action": ["change"],
             "Persona": ["API user"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "change",
-                    "colors",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": [[
-                    "embedded visualisations",
-                    "colors",
-                    "create;delete",
-                    "change"
-                ]]
-            },
             "Contains": [
                 [
                     "embedded visualisations",
@@ -3785,7 +3239,20 @@
             "Targets": [[
                 "change",
                 "colors"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "change",
+                    "colors",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": [[
+                    "embedded visualisations",
+                    "colors",
+                    "create;delete",
+                    "change"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3794,14 +3261,6 @@
         "Benefit": {
             "Entity": ["own organisation's color scheme"],
             "Action": ["brand"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "brand",
-                    "own organisation's color scheme",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can brand it to my own organisation's color scheme.",
             "Targets": [[
@@ -3819,19 +3278,6 @@
             ],
             "Action": ["change"],
             "Persona": ["API user"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "change",
-                    "styling",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": [[
-                    "embedded viewer",
-                    "styling",
-                    "create;delete",
-                    "change"
-                ]]
-            },
             "Contains": [
                 [
                     "own platform",
@@ -3850,7 +3296,20 @@
             "Targets": [[
                 "change",
                 "styling"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "change",
+                    "styling",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": [[
+                    "embedded viewer",
+                    "styling",
+                    "create;delete",
+                    "change"
+                ]]
+            }
         },
         "Mix": {"Contains": [
             "styling",
@@ -3866,18 +3325,6 @@
                 "users"
             ],
             "Action": ["understand"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "understand",
-                    "interface",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": [[
-                    "interface",
-                    "native language",
-                    "preserve;create"
-                ]]
-            },
             "Contains": [
                 [
                     "interface",
@@ -3904,19 +3351,6 @@
             ],
             "Action": ["translate"],
             "Persona": ["Platform administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "translate",
-                    "data types hierarchies",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": [[
-                    "viewer",
-                    "data types hierarchies",
-                    "create;delete",
-                    "translate"
-                ]]
-            },
             "Contains": [
                 [
                     "Viewer",
@@ -3935,7 +3369,20 @@
             "Targets": [[
                 "translate",
                 "data types hierarchies"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "translate",
+                    "data types hierarchies",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": [[
+                    "viewer",
+                    "data types hierarchies",
+                    "create;delete",
+                    "translate"
+                ]]
+            }
         },
         "Mix": {}
     }

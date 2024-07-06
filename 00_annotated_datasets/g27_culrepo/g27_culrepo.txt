@@ -3,59 +3,42 @@
 ********************* << Dataset: g27_culrepo >> ***************
 * Table of potential conflict between user stories
 
-        us_04  us_05  us_76  us_88  us_38  us_101  us_09  us_114  us_22  us_81  us_106  us_01  us_07  us_65  us_45  us_94  us_52  us_90  us_96  us_97  us_21  us_105  us_17  us_19  us_55  us_15  us_41  us_72  us_32  us_86  us_71  us_87  us_67  us_111  us_78  us_35  
-us_04          x                                                                                                                                                                                                                                                         
-us_05   x                                                                                                                                                                                                                                                  x             
-us_76                        x      x      x                      x      x      x       x                    x                                                               x      x      x             x      x                                                        
-us_88                 x                                                                                             x                                                                                                                x                                   
-us_38                 x                    x                             x                                                               x      x                     x                                                                                                  
-us_101                x             x                                    x      x       x                    x                                                               x      x      x             x      x                                  x                     
-us_09                                                     x                                                                                                                                                                                                       x      
-us_114                                             x                                                                                                                                                                                                                     
-us_22                 x                                                                                                                                                                                                                                                  
-us_81                 x             x      x                                    x       x                    x                                                               x      x      x             x      x                                                        
-us_106                x                    x                             x                                                                                                                                                                                               
-us_01                 x                    x                             x                                                               x      x                     x                                                                                                  
-us_07                                                                                                 x                    x      x                                                               x                                                                      
-us_65                                                                                          x                                  x                                                                                                         x                            
-us_45                 x                    x                             x                                                                                                                                                                                               
-us_94                        x                                                                                                                                                                                         x             x                                   
-us_52                                                                                          x                                  x                                                                                                                                      
-us_90                                                                                          x      x                    x                                                                      x                                                                      
-us_96                               x                                                   x                                                       x                     x      x                                                                                           
-us_97                               x                                                   x                                                x                            x      x                                                                                           
-us_21                                                                                                                                                         x                                                                                                          
-us_105                                                                                                                                                 x                                                                      x                                          
-us_17                               x                                                   x                                                x      x                            x      x                                                                                    
-us_19                 x                    x                             x                                                               x      x                     x                                                                                                  
-us_55                 x                    x                             x                                                                                            x                                                                                                  
-us_15                 x                    x                             x                                                                                                                                                                                               
-us_41                                                                                          x                                  x                                                                                                                                      
-us_72                 x                    x                             x                                                                                                                                                                                               
-us_32                 x                    x                             x                                                                                                                                                                                               
-us_86                                                                                                               x                                                                                                                                                    
-us_71                                                                                                                                                         x                                                                                                          
-us_87                        x                                                                                      x                                                                                                                                                    
-us_67                                                                                                 x                                                                                                                                                                  
-us_111                                     x                                                                                                                                                                                                                             
-us_78          x                                                                                                                                                                                                                                                         
-us_35                                              x                                                                                                                                                                                                                     
+        us_04  us_05  us_76  us_88  us_97  us_17  us_38  us_101  us_19  us_90  us_07  us_86  us_94  us_22  us_96  us_52  us_87  us_65  us_67  us_15  us_41  us_111  us_01  us_78  
+us_04          x                                                                                                                                                                  
+us_05   x                                                                                                                                                                  x      
+us_76                        x                    x                                                 x                                         x                                   
+us_88                 x                                                                      x                           x                                                        
+us_97                                      x      x              x                                         x                                                        x             
+us_17                               x                                                                      x                                                                      
+us_38                 x             x                    x                                                 x                                                                      
+us_101                                            x                                                                                           x             x                     
+us_19                               x                                                                      x                                                                      
+us_90                                                                          x                                  x                                  x                            
+us_07                                                                   x                                                                            x                            
+us_86                                                                                        x                                                                                    
+us_94                        x                                                        x                                  x                                                        
+us_22                 x                                                                                                                                                           
+us_96                               x      x      x              x                                                                                                  x             
+us_52                                                                   x                                                                                                         
+us_87                        x                                                               x                                                                                    
+us_65                                                                                                                                  x                                          
+us_67                                                                                                                           x                                                 
+us_15                 x                                  x                                                                                                                        
+us_41                                                                   x      x                                                                                                  
+us_111                                                   x                                                                                                                        
+us_01                               x                                                                      x                                                                      
+us_78          x                                                                                                                                                                  
 
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_04_AND_user_story_05}
   
-Affected Resource of US1 is: << reports >>
-Affected Resource of US2 is: << reports >>
-Affected Contain Resource US1 is: << reports >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_04: << [] >>
-Contain Resources for: user_story_05: << [["reports","new versions","preserve;create","select"],["datasets to be emailed","new versions","preserve;create","select"]] >>
+ Affected Resource of US1 is: << reports >>
 
  Action of user_story_04 is: << know >>  which is annotated with: << preserve >>
  Action of user_story_05 is: << deselect >>  which is annotated with: << delete >>
 
-Conflict Reason is: << preserve-delete-Conflict >>
+ Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_04: #G27# As a patron, i want to #know# which #reports#/datasets are coming out when, 
@@ -70,17 +53,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_76_AND_user_story_88}
   
-Affected Resource of US1 is: << list >>
-Affected Resource of US2 is: << list >>
-Affected Contain Resource US1 is: << list >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_76: << [["place","variety of documents","preserve","have"],["place","presentations","preserve","have"],["place","data sets i've created","preserve","have"],["county","place","preserve","have"],["region","place","preserve","have"],["project site","place","preserve","have"],["directory","materials","create;delete","automatically updated"],["repository","directory","create;delete","automatically updated"],["central archive","list","create;delete","automatically updated"]] >>
-Contain Resources for: user_story_88: << [["list","all administrators","preserve","see"]] >>
+ Affected Resource of US1 is: << list >>
 
  Action of user_story_76 is: << automatically updated >>  which is annotated with: << delete >>
  Action of user_story_88 is: << see >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_76: #G27# As an Extension Educator, i want to have a place to store a variety of documents, presentations and data sets i've created, that doesn't require an extra step in making available on my own county/region/project site (i.e. a #list# or directory of materials there is #automatically updated# when placed in a central archive/repository).
@@ -93,19 +71,36 @@ Original texts of user stories are:
    user_story_88: #G27# As a DB/IR administrator, I want to see a list of all administrators for ease of administering accounts.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_97_AND_user_story_17}
+  
+ Affected Resource of US1 is: << collection >>
+ Affected Contain Entity US2 is: << items >>
+
+ Action of user_story_97 is: << rename >>  which is annotated with: << delete >>
+ Action of user_story_17 is: << sort >>  which is annotated with: << preserve >>
+
+ Conflict Reason is: << delete-preserve-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_97: #G27# As a repository support team member, i want to #rename# a #collection#, 
+
+   user_story_17: #G27# As a Cornell faculty member, i want to have some control over how #items# within my #collection# #sort# in #collection# contents lists, 
+
+Original texts of user stories are: 
+   user_story_97: #G27# As a repository support team member, I want to rename a collection, so that I can fulfill the collection owner's request.
+
+   user_story_17: #G27# As a Cornell faculty member, I want to have some control over how items within my collection sort in collection contents lists, so that I can control how my work is presented.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_38_AND_user_story_101}
   
-Affected Resource of US1 is: << repository >>
-Affected Resource of US2 is: << assets >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_38: << [["given collection","subsets","preserve;create","searching within"]] >>
-Contain Resources for: user_story_101: << [["repository","assets","delete","taken out"]] >>
+ Affected Resource of US1 is: << repository >>
+ Affected Contain Entity US2 is: << assets >>
 
  Action of user_story_38 is: << search within >>  which is annotated with: << preserve >>
  Action of user_story_101 is: << taken out >>  which is annotated with: << delete >>
 
-Conflict Reason is: << preserve-delete-Conflict >>
+ Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_38: #G27# As a researcher, i want to #search within# a #repository# or collection in an effective manner, including searching within subsets of a given collection, 
@@ -118,44 +113,76 @@ Original texts of user stories are:
    user_story_101: #G27# As an asset manager, I want to be assured that the assets can be taken out of the repository, and that the assets taken out are the same as those that are put in.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_09_AND_user_story_114}
+{user_story_97_AND_user_story_19}
   
-Affected Resource of US1 is: << access embargo >>
-Affected Resource of US2 is: << old versions >>
-Affected Contain Resource US1 is: << item >>
-Affected Resource US2 is: << item >>
-Contain Resources for: user_story_09: << [["item","access embargo","delete","remove"]] >>
-Contain Resources for: user_story_114: << [["item","new version","create","upload"],["item","old versions","preserve","accessed"]] >>
+ Affected Resource of US1 is: << collection >>
+ Affected Contain Entity US2 is: << useful and comprehensive usage statistics >>
 
- Action of user_story_09 is: << remove >>  which is annotated with: << delete >>
- Action of user_story_114 is: << accessed >>  which is annotated with: << preserve >>
+ Action of user_story_97 is: << rename >>  which is annotated with: << delete >>
+ Action of user_story_19 is: << access >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_09: #G27# As a library staff member, i want to apply or #remove# an #access embargo# to an #item# when asked to do this by an #item# author.
+   user_story_97: #G27# As a repository support team member, i want to #rename# a #collection#, 
 
-   user_story_114: #G27# As a data curator, i want to upload a new version of an #item# that has changed, while still allowing #old versions# to be #accessed#.
+   user_story_19: #G27# As a library staff member, i want to #access# #useful and comprehensive usage statistics# and analytics, including altmetrics, at the repository, #collection#, author, and item level, 
 
 Original texts of user stories are: 
-   user_story_09: #G27# As a library staff member, I want to apply or remove an access embargo to an item when asked to do this by an item author.
+   user_story_97: #G27# As a repository support team member, I want to rename a collection, so that I can fulfill the collection owner's request.
 
-   user_story_114: #G27# As a data curator, I want to upload a new version of an item that has changed, while still allowing old versions to be accessed.
+   user_story_19: #G27# As a library staff member, I want to access useful and comprehensive usage statistics and analytics, including altmetrics, at the repository, collection, author, and item level, so that I can assess the results of this service.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_90_AND_user_story_07}
+  
+ Affected Resource of US1 is: << report >>
+ Affected Contain Entity US2 is: << name changes >>
+
+ Action of user_story_90 is: << unpublish >>  which is annotated with: << delete >>
+ Action of user_story_07 is: << manage >>  which is annotated with: << delete >>
+
+ Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_90: #G27# As a DB/IR administrator, i want to #unpublish# a #report#/dataset if requested to do so by usda agency.
+
+   user_story_07: #G27# As a DB/IR administrator, i want to #manage# #report#/dataset #name changes# so
+
+Original texts of user stories are: 
+   user_story_90: #G27# As a DB/IR administrator, I want to unpublish a report/dataset if requested to do so by USDA agency.
+
+   user_story_07: #G27# As a DB/IR administrator, I want to manage report/dataset name changes so patrons are able to find historic reports that have a different name from current report.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_86_AND_user_story_94}
+  
+ Affected Resource of US1 is: << passwords >>
+
+ Action of user_story_86 is: << change >>  which is annotated with: << delete >>
+ Action of user_story_94 is: << resetting >>  which is annotated with: << delete >>
+
+ Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_86: #G27# As a DB/IR administrator, i want to have a personal account with the ability to #change# #passwords# to make them more secure or to retrieve forgotten ones.
+
+   user_story_94: #G27# As a DB/IR administrator, i want to administrate patron accounts for purpose of closing accounts, viewing subscriptions, changing subscriptions, #resetting# #passwords#, changing email address, etc.
+
+Original texts of user stories are: 
+   user_story_86: #G27# As a DB/IR administrator, I want to have a personal account with the ability to change passwords to make them more secure or to retrieve forgotten ones.
+
+   user_story_94: #G27# As a DB/IR administrator, I want to administrate patron accounts for purpose of closing accounts, viewing subscriptions, changing subscriptions, resetting passwords, changing email address, etc.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_22_AND_user_story_76}
   
-Affected Resource of US1 is: << list >>
-Affected Resource of US2 is: << list >>
-Affected Contain Resource US1 is: << list >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_22: << [["list","subscribers","preserve","see"]] >>
-Contain Resources for: user_story_76: << [["place","variety of documents","preserve","have"],["place","presentations","preserve","have"],["place","data sets i've created","preserve","have"],["county","place","preserve","have"],["region","place","preserve","have"],["project site","place","preserve","have"],["directory","materials","create;delete","automatically updated"],["repository","directory","create;delete","automatically updated"],["central archive","list","create;delete","automatically updated"]] >>
+ Affected Resource of US1 is: << list >>
 
  Action of user_story_22 is: << see >>  which is annotated with: << preserve >>
  Action of user_story_76 is: << automatically updated >>  which is annotated with: << delete >>
 
-Conflict Reason is: << preserve-delete-Conflict >>
+ Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_22: #G27# As a DB/IR administrator, i want to #see# #list# of subscribers for specified report in order research missing report complaints.
@@ -168,119 +195,54 @@ Original texts of user stories are:
    user_story_76: #G27# As an Extension Educator, I want to have a place to store a variety of documents, presentations and data sets I've created, that doesn't require an extra step in making available on my own County/Region/Project site (i.e. a list or directory of materials there is automatically updated when placed in a central archive/repository).
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_81_AND_user_story_106}
+{user_story_38_AND_user_story_97}
   
-Affected Resource of US1 is: << useful metadata >>
-Affected Resource of US2 is: << content >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_81: << [["repository","useful metadata","delete","harvest"],["oai","useful metadata","delete","harvest"]] >>
-Contain Resources for: user_story_106: << [["repository","content","preserve","preserve"],["repository","metadata","preserve","preserve"]] >>
+ Affected Resource of US1 is: << collection >>
 
- Action of user_story_81 is: << harvest >>  which is annotated with: << delete >>
- Action of user_story_106 is: << preserve >>  which is annotated with: << preserve >>
+ Action of user_story_38 is: << search within >>  which is annotated with: << preserve >>
+ Action of user_story_97 is: << rename >>  which is annotated with: << delete >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_81: #G27# As a librarydiscoveryoperator, i want to #harvest# #useful metadata# from the #repository# via oai, and continue to do so incrementally, 
+   user_story_38: #G27# As a researcher, i want to #search within# a repository or #collection# in an effective manner, including searching within subsets of a given #collection#, 
 
-   user_story_106: #G27# As a library staff member, i want to #preserve# both the #content# and the metadata within the #repository# in a robust manner, 
+   user_story_97: #G27# As a repository support team member, i want to #rename# a #collection#, 
 
 Original texts of user stories are: 
-   user_story_81: #G27# As a librarydiscoveryoperator, I want to harvest useful metadata from the repository via OAI, and continue to do so incrementally, so that I can make Cornell publications discoverable in my repository.
+   user_story_38: #G27# As a researcher, I want to search within a repository or collection in an effective manner, including searching within subsets of a given collection, so that I can facilitate my use of the collection.
 
-   user_story_106: #G27# As a library staff member, I want to preserve both the content and the metadata within the repository in a robust manner, so that I can provide stable, long-term access to this material.
+   user_story_97: #G27# As a repository support team member, I want to rename a collection, so that I can fulfill the collection owner's request.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_01_AND_user_story_81}
+{user_story_38_AND_user_story_96}
   
-Affected Resource of US1 is: << collection >>
-Affected Resource of US2 is: << useful metadata >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_01: << [["repository","collection","preserve;create","access"]] >>
-Contain Resources for: user_story_81: << [["repository","useful metadata","delete","harvest"],["oai","useful metadata","delete","harvest"]] >>
+ Affected Resource of US1 is: << collection >>
 
- Action of user_story_01 is: << access >>  which is annotated with: << preserve >>
- Action of user_story_81 is: << harvest >>  which is annotated with: << delete >>
+ Action of user_story_38 is: << search within >>  which is annotated with: << preserve >>
+ Action of user_story_96 is: << move >>  which is annotated with: << delete >>
 
-Conflict Reason is: << preserve-delete-Conflict >>
+ Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_01: #G27# As a faculty member, i want to #access# a #collection# within the #repository#, 
+   user_story_38: #G27# As a researcher, i want to #search within# a repository or #collection# in an effective manner, including searching within subsets of a given #collection#, 
 
-   user_story_81: #G27# As a librarydiscoveryoperator, i want to #harvest# #useful metadata# from the #repository# via oai, and continue to do so incrementally, 
-
-Original texts of user stories are: 
-   user_story_01: #G27# As a faculty member, I want to access a collection within the repository, so that I can obtain research materials.
-
-   user_story_81: #G27# As a librarydiscoveryoperator, I want to harvest useful metadata from the repository via OAI, and continue to do so incrementally, so that I can make Cornell publications discoverable in my repository.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_07_AND_user_story_65}
-  
-Affected Resource of US1 is: << name changes >>
-Affected Resource of US2 is: << document type >>
-Affected Contain Resource US1 is: << report >>
-Affected Resource US2 is: << report >>
-Contain Resources for: user_story_07: << [["dataset","name changes","create;delete","manage"],["report","name changes","create;delete","manage"]] >>
-Contain Resources for: user_story_65: << [["document type","historical report still published","preserve","recognize"],["document type","expired historical report","preserve","recognize"],["document type","single topic dataset","preserve","recognize"],["document type","broad topic dataset","preserve","recognize"],["document type","report","preserve","recognize"],["document type","computer file","preserve","recognize"]] >>
-
- Action of user_story_07 is: << manage >>  which is annotated with: << delete >>
- Action of user_story_65 is: << recognize >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_07: #G27# As a DB/IR administrator, i want to #manage# #report#/dataset #name changes# so
-
-   user_story_65: #G27# As a DB/IR administrator, i want to have the system #recognize#/categorize #document type# (e.g. historical #report# still published, expired historical #report#, single topic dataset, broad topic dataset, #report# with subtopic, computer file), 
+   user_story_96: #G27# As a repository support team member, i want to #move# a #collection#, 
 
 Original texts of user stories are: 
-   user_story_07: #G27# As a DB/IR administrator, I want to manage report/dataset name changes so patrons are able to find historic reports that have a different name from current report.
+   user_story_38: #G27# As a researcher, I want to search within a repository or collection in an effective manner, including searching within subsets of a given collection, so that I can facilitate my use of the collection.
 
-   user_story_65: #G27# As a DB/IR administrator, I want to have the system recognize/categorize document type (e.g. historical report still published, expired historical report, single topic dataset, broad topic dataset, report with subtopic, computer file), so that report/dataset is processed and displayed properly.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_45_AND_user_story_81}
-  
-Affected Resource of US1 is: << dissertations >>
-Affected Resource of US2 is: << useful metadata >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_45: << [["repository","dissertations","preserve;create","search"],["former student","work","create","quickly find"]] >>
-Contain Resources for: user_story_81: << [["repository","useful metadata","delete","harvest"],["oai","useful metadata","delete","harvest"]] >>
-
- Action of user_story_45 is: << search >>  which is annotated with: << preserve >>
- Action of user_story_81 is: << harvest >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_45: #G27# As a Cornell faculty member, i want to #search# for the #dissertations# in the #repository# for which i have been a thesis committee member, to quickly find work by a former student.
-
-   user_story_81: #G27# As a librarydiscoveryoperator, i want to #harvest# #useful metadata# from the #repository# via oai, and continue to do so incrementally, 
-
-Original texts of user stories are: 
-   user_story_45: #G27# As a Cornell faculty member, I want to search for the dissertations in the repository for which I have been a thesis committee member, to quickly find work by a former student.
-
-   user_story_81: #G27# As a librarydiscoveryoperator, I want to harvest useful metadata from the repository via OAI, and continue to do so incrementally, so that I can make Cornell publications discoverable in my repository.
+   user_story_96: #G27# As a repository support team member, I want to move a collection, so that I can fulfill the collection owner's request.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_88_AND_user_story_94}
   
-Affected Resource of US1 is: << accounts >>
-Affected Resource of US2 is: << accounts >>
-Affected Contain Resource US1 is: << accounts >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_88: << [["list","all administrators","preserve","see"]] >>
-Contain Resources for: user_story_94: << [["patron accounts","passwords","create;delete","administrate"],["patron accounts","email address","create;delete","administrate"],["patron accounts","subscriptions","create;delete","administrate"]] >>
+ Affected Resource of US1 is: << accounts >>
 
  Action of user_story_88 is: << administering >>  which is annotated with: << delete >>
  Action of user_story_94 is: << closing >>  which is annotated with: << delete >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_88: #G27# As a DB/IR administrator, i want to see a list of all administrators for ease of #administering# #accounts#.
@@ -295,17 +257,13 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_38_AND_user_story_76}
   
-Affected Resource of US1 is: << repository >>
-Affected Resource of US2 is: << directory >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_38: << [["given collection","subsets","preserve;create","searching within"]] >>
-Contain Resources for: user_story_76: << [["place","variety of documents","preserve","have"],["place","presentations","preserve","have"],["place","data sets i've created","preserve","have"],["county","place","preserve","have"],["region","place","preserve","have"],["project site","place","preserve","have"],["directory","materials","create;delete","automatically updated"],["repository","directory","create;delete","automatically updated"],["central archive","list","create;delete","automatically updated"]] >>
+ Affected Resource of US1 is: << repository >>
+ Affected Contain Entity US2 is: << directory >>
 
  Action of user_story_38 is: << search within >>  which is annotated with: << preserve >>
  Action of user_story_76 is: << automatically updated >>  which is annotated with: << delete >>
 
-Conflict Reason is: << preserve-delete-Conflict >>
+ Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_38: #G27# As a researcher, i want to #search within# a #repository# or collection in an effective manner, including searching within subsets of a given collection, 
@@ -318,69 +276,55 @@ Original texts of user stories are:
    user_story_76: #G27# As an Extension Educator, I want to have a place to store a variety of documents, presentations and data sets I've created, that doesn't require an extra step in making available on my own County/Region/Project site (i.e. a list or directory of materials there is automatically updated when placed in a central archive/repository).
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_52_AND_user_story_90}
+{user_story_90_AND_user_story_52}
   
-Affected Resource of US1 is: << report >>
-Affected Resource of US2 is: << report >>
-Affected Contain Resource US1 is: << multiple versions >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_52: << [["report","multiple versions","preserve","view"],["dataset","multiple versions","preserve","view"]] >>
-Contain Resources for: user_story_90: << [] >>
+ Affected Resource of US1 is: << report >>
+ Affected Contain Entity US2 is: << multiple versions >>
 
- Action of user_story_52 is: << view >>  which is annotated with: << preserve >>
  Action of user_story_90 is: << unpublish >>  which is annotated with: << delete >>
+ Action of user_story_52 is: << view >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << preserve-delete-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_52: #G27# As a patron, i want to #view# multiple versions of a #report#/dataset to get both timely and historical information.
-
    user_story_90: #G27# As a DB/IR administrator, i want to #unpublish# a #report#/dataset if requested to do so by usda agency.
 
-Original texts of user stories are: 
-   user_story_52: #G27# As a patron, I want to view multiple versions of a report/dataset to get both timely and historical information.
+   user_story_52: #G27# As a patron, i want to #view# #multiple versions# of a #report#/dataset to get both timely and historical information.
 
+Original texts of user stories are: 
    user_story_90: #G27# As a DB/IR administrator, I want to unpublish a report/dataset if requested to do so by USDA agency.
 
+   user_story_52: #G27# As a patron, I want to view multiple versions of a report/dataset to get both timely and historical information.
+
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_81_AND_user_story_101}
+{user_story_87_AND_user_story_88}
   
-Affected Resource of US1 is: << useful metadata >>
-Affected Resource of US2 is: << assets >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_81: << [["repository","useful metadata","delete","harvest"],["oai","useful metadata","delete","harvest"]] >>
-Contain Resources for: user_story_101: << [["repository","assets","delete","taken out"]] >>
+ Affected Resource of US1 is: << accounts >>
 
- Action of user_story_81 is: << harvest >>  which is annotated with: << delete >>
- Action of user_story_101 is: << taken out >>  which is annotated with: << delete >>
+ Action of user_story_87 is: << delete >>  which is annotated with: << delete >>
+ Action of user_story_88 is: << administering >>  which is annotated with: << delete >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_81: #G27# As a librarydiscoveryoperator, i want to #harvest# #useful metadata# from the #repository# via oai, and continue to do so incrementally, 
+   user_story_87: #G27# As a DB/IR administrator, i want to set up or #delete# #accounts# for other administrators with various levels of permission.
 
-   user_story_101: #G27# As an asset manager, i want to be assured that the #assets# can be #taken out# of the #repository#, and that the #assets# #taken out# are the same as those that are put in.
+   user_story_88: #G27# As a DB/IR administrator, i want to see a list of all administrators for ease of #administering# #accounts#.
 
 Original texts of user stories are: 
-   user_story_81: #G27# As a librarydiscoveryoperator, I want to harvest useful metadata from the repository via OAI, and continue to do so incrementally, so that I can make Cornell publications discoverable in my repository.
+   user_story_87: #G27# As a DB/IR administrator, I want to set up or delete accounts for other administrators with various levels of permission.
 
-   user_story_101: #G27# As an asset manager, I want to be assured that the assets can be taken out of the repository, and that the assets taken out are the same as those that are put in.
+   user_story_88: #G27# As a DB/IR administrator, I want to see a list of all administrators for ease of administering accounts.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_96_AND_user_story_97}
   
-Affected Resource of US1 is: << collection >>
-Affected Resource of US2 is: << collection >>
-Affected Contain Resource US1 is: << collection >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_96: << [] >>
-Contain Resources for: user_story_97: << [] >>
+ Affected Resource of US1 is: << collection >>
 
  Action of user_story_96 is: << move >>  which is annotated with: << delete >>
  Action of user_story_97 is: << rename >>  which is annotated with: << delete >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_96: #G27# As a repository support team member, i want to #move# a #collection#, 
@@ -393,169 +337,140 @@ Original texts of user stories are:
    user_story_97: #G27# As a repository support team member, I want to rename a collection, so that I can fulfill the collection owner's request.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_21_AND_user_story_105}
+{user_story_65_AND_user_story_67}
   
-Affected Resource of US1 is: << files >>
-Affected Resource of US2 is: << files >>
-Affected Contain Resource US1 is: << files >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_21: << [["someone","items","create","downloads"],["someone","files","create","downloads"]] >>
-Contain Resources for: user_story_105: << [] >>
+ Affected Resource of US1 is: << system >>
+ Affected Contain Entity US2 is: << data set >>
 
- Action of user_story_21 is: << downloads >>  which is annotated with: << create >>
- Action of user_story_105 is: << adequately described >>  which is annotated with: << forbid >>
+ Action of user_story_65 is: << have >>  which is annotated with: << preserve >>
+ Action of user_story_67 is: << manipulate >>  which is annotated with: << delete >>
 
-Conflict Reason is: << create-forbid-Conflict >>
+ Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_21: #G27# As a Cornell faculty member, i want to be notified if someone #downloads# any of my items or #files#, 
+   user_story_65: #G27# As a DB/IR administrator, i want to #have# the #system# recognize/categorize document type (e.g. historical report still published, expired historical report, single topic dataset, broad topic dataset, report with subtopic, computer file), 
 
-   user_story_105: #G27# As a stakeholder, i want to have #files# #adequately described#, 
+   user_story_67: #G27# As a repository support team member, i want to export a set of records and associated files, #manipulate# this #data set#, and reload into the #system#, because i am aware of a uniform error in a collection.
 
 Original texts of user stories are: 
-   user_story_21: #G27# As a Cornell faculty member, I want to be notified if someone downloads any of my items or files, so that I can follow usage and see what others are most interested in reading.
+   user_story_65: #G27# As a DB/IR administrator, I want to have the system recognize/categorize document type (e.g. historical report still published, expired historical report, single topic dataset, broad topic dataset, report with subtopic, computer file), so that report/dataset is processed and displayed properly.
 
-   user_story_105: #G27# As a stakeholder, I want to have files adequately described, so that I can successfully render them in my contemporary operating environment.
+   user_story_67: #G27# As a repository support team member, I want to export a set of records and associated files, manipulate this data set, and reload into the system, because I am aware of a uniform error in a collection.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_01_AND_user_story_101}
+{user_story_15_AND_user_story_101}
   
-Affected Resource of US1 is: << collection >>
-Affected Resource of US2 is: << assets >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_01: << [["repository","collection","preserve;create","access"]] >>
-Contain Resources for: user_story_101: << [["repository","assets","delete","taken out"]] >>
+ Affected Resource of US1 is: << repository >>
+ Affected Contain Entity US2 is: << assets >>
 
- Action of user_story_01 is: << access >>  which is annotated with: << preserve >>
+ Action of user_story_15 is: << search >>  which is annotated with: << preserve >>
  Action of user_story_101 is: << taken out >>  which is annotated with: << delete >>
 
-Conflict Reason is: << preserve-delete-Conflict >>
+ Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_01: #G27# As a faculty member, i want to #access# a #collection# within the #repository#, 
+   user_story_15: #G27# As a Cornell faculty member, i want to #search# the #repository# and browse through its contents on my phone, 
 
    user_story_101: #G27# As an asset manager, i want to be assured that the #assets# can be #taken out# of the #repository#, and that the #assets# #taken out# are the same as those that are put in.
 
 Original texts of user stories are: 
-   user_story_01: #G27# As a faculty member, I want to access a collection within the repository, so that I can obtain research materials.
+   user_story_15: #G27# As a Cornell faculty member, I want to search the repository and browse through its contents on my phone, so that I can check things on the go.
 
    user_story_101: #G27# As an asset manager, I want to be assured that the assets can be taken out of the repository, and that the assets taken out are the same as those that are put in.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_45_AND_user_story_101}
+{user_story_96_AND_user_story_17}
   
-Affected Resource of US1 is: << dissertations >>
-Affected Resource of US2 is: << assets >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_45: << [["repository","dissertations","preserve;create","search"],["former student","work","create","quickly find"]] >>
-Contain Resources for: user_story_101: << [["repository","assets","delete","taken out"]] >>
+ Affected Resource of US1 is: << collection >>
+ Affected Contain Entity US2 is: << items >>
 
- Action of user_story_45 is: << search >>  which is annotated with: << preserve >>
- Action of user_story_101 is: << taken out >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_45: #G27# As a Cornell faculty member, i want to #search# for the #dissertations# in the #repository# for which i have been a thesis committee member, to quickly find work by a former student.
-
-   user_story_101: #G27# As an asset manager, i want to be assured that the #assets# can be #taken out# of the #repository#, and that the #assets# #taken out# are the same as those that are put in.
-
-Original texts of user stories are: 
-   user_story_45: #G27# As a Cornell faculty member, I want to search for the dissertations in the repository for which I have been a thesis committee member, to quickly find work by a former student.
-
-   user_story_101: #G27# As an asset manager, I want to be assured that the assets can be taken out of the repository, and that the assets taken out are the same as those that are put in.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_38_AND_user_story_81}
-  
-Affected Resource of US1 is: << repository >>
-Affected Resource of US2 is: << useful metadata >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_38: << [["given collection","subsets","preserve;create","searching within"]] >>
-Contain Resources for: user_story_81: << [["repository","useful metadata","delete","harvest"],["oai","useful metadata","delete","harvest"]] >>
-
- Action of user_story_38 is: << search within >>  which is annotated with: << preserve >>
- Action of user_story_81 is: << harvest >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_38: #G27# As a researcher, i want to #search within# a #repository# or collection in an effective manner, including searching within subsets of a given collection, 
-
-   user_story_81: #G27# As a librarydiscoveryoperator, i want to #harvest# #useful metadata# from the #repository# via oai, and continue to do so incrementally, 
-
-Original texts of user stories are: 
-   user_story_38: #G27# As a researcher, I want to search within a repository or collection in an effective manner, including searching within subsets of a given collection, so that I can facilitate my use of the collection.
-
-   user_story_81: #G27# As a librarydiscoveryoperator, I want to harvest useful metadata from the repository via OAI, and continue to do so incrementally, so that I can make Cornell publications discoverable in my repository.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_17_AND_user_story_96}
-  
-Affected Resource of US1 is: << collection >>
-Affected Resource of US2 is: << collection >>
-Affected Contain Resource US1 is: << items >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_17: << [["collection","items","create;delete","sort"],["collection contents lists","items","create;delete","sort"]] >>
-Contain Resources for: user_story_96: << [] >>
-
- Action of user_story_17 is: << sort >>  which is annotated with: << delete >>
  Action of user_story_96 is: << move >>  which is annotated with: << delete >>
+ Action of user_story_17 is: << sort >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_17: #G27# As a Cornell faculty member, i want to have some control over how items within my #collection# #sort# in #collection# contents lists, 
-
    user_story_96: #G27# As a repository support team member, i want to #move# a #collection#, 
 
-Original texts of user stories are: 
-   user_story_17: #G27# As a Cornell faculty member, I want to have some control over how items within my collection sort in collection contents lists, so that I can control how my work is presented.
+   user_story_17: #G27# As a Cornell faculty member, i want to have some control over how #items# within my #collection# #sort# in #collection# contents lists, 
 
+Original texts of user stories are: 
    user_story_96: #G27# As a repository support team member, I want to move a collection, so that I can fulfill the collection owner's request.
 
+   user_story_17: #G27# As a Cornell faculty member, I want to have some control over how items within my collection sort in collection contents lists, so that I can control how my work is presented.
+
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_19_AND_user_story_76}
+{user_story_96_AND_user_story_19}
   
-Affected Resource of US1 is: << useful and comprehensive usage statistics >>
-Affected Resource of US2 is: << directory >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_19: << [["repository","useful and comprehensive usage statistics","preserve;create","access"],["collection","useful and comprehensive usage statistics","preserve;create","access"],["author","useful and comprehensive usage statistics","preserve;create","access"],["item level","useful and comprehensive usage statistics","preserve;create","access"],["analytics","altmetrics","preserve;create","access"],["repository","analytics","preserve;create","access"],["collection","analytics","preserve;create","access"],["author","analytics","preserve;create","access"],["item level","analytics","preserve;create","access"]] >>
-Contain Resources for: user_story_76: << [["place","variety of documents","preserve","have"],["place","presentations","preserve","have"],["place","data sets i've created","preserve","have"],["county","place","preserve","have"],["region","place","preserve","have"],["project site","place","preserve","have"],["directory","materials","create;delete","automatically updated"],["repository","directory","create;delete","automatically updated"],["central archive","list","create;delete","automatically updated"]] >>
+ Affected Resource of US1 is: << collection >>
+ Affected Contain Entity US2 is: << useful and comprehensive usage statistics >>
 
+ Action of user_story_96 is: << move >>  which is annotated with: << delete >>
  Action of user_story_19 is: << access >>  which is annotated with: << preserve >>
- Action of user_story_76 is: << automatically updated >>  which is annotated with: << delete >>
 
-Conflict Reason is: << preserve-delete-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_19: #G27# As a library staff member, i want to #access# #useful and comprehensive usage statistics# and analytics, including altmetrics, at the #repository#, collection, author, and item level, 
+   user_story_96: #G27# As a repository support team member, i want to #move# a #collection#, 
 
-   user_story_76: #G27# As an Extension Educator, i want to have a place to store a variety of documents, presentations and data sets i've created, that doesn't require an extra step in making available on my own county/region/project site (i.e. a list or #directory# of materials there is #automatically updated# when placed in a central archive/#repository#).
+   user_story_19: #G27# As a library staff member, i want to #access# #useful and comprehensive usage statistics# and analytics, including altmetrics, at the repository, #collection#, author, and item level, 
 
 Original texts of user stories are: 
+   user_story_96: #G27# As a repository support team member, I want to move a collection, so that I can fulfill the collection owner's request.
+
    user_story_19: #G27# As a library staff member, I want to access useful and comprehensive usage statistics and analytics, including altmetrics, at the repository, collection, author, and item level, so that I can assess the results of this service.
 
-   user_story_76: #G27# As an Extension Educator, I want to have a place to store a variety of documents, presentations and data sets I've created, that doesn't require an extra step in making available on my own County/Region/Project site (i.e. a list or directory of materials there is automatically updated when placed in a central archive/repository).
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_41_AND_user_story_07}
+  
+ Affected Resource of US1 is: << report >>
+ Affected Contain Entity US2 is: << name changes >>
+
+ Action of user_story_41 is: << search >>  which is annotated with: << preserve >>
+ Action of user_story_07 is: << manage >>  which is annotated with: << delete >>
+
+ Conflict Reason is: << preserve-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_41: #G27# As a patron, i want to #search# for #report#/dataset with keywords or a partial or complete title to locate needed #report#/dataset.
+
+   user_story_07: #G27# As a DB/IR administrator, i want to #manage# #report#/dataset #name changes# so
+
+Original texts of user stories are: 
+   user_story_41: #G27# As a patron, I want to search for report/dataset with keywords or a partial or complete title to locate needed report/dataset.
+
+   user_story_07: #G27# As a DB/IR administrator, I want to manage report/dataset name changes so patrons are able to find historic reports that have a different name from current report.
+
+------------------[Potential Conflict between following User Stories found]--------------------------
+{user_story_101_AND_user_story_111}
+  
+ Affected Resource of US1 is: << assets >>
+ Affected Contain Entity US2 is: << ownership >>
+
+ Action of user_story_101 is: << taken out >>  which is annotated with: << delete >>
+ Action of user_story_111 is: << pass >>  which is annotated with: << delete >>
+
+ Conflict Reason is: << delete-delete-Conflict >>
+
+Highlighted elements in main parts of user stories: 
+   user_story_101: #G27# As an asset manager, i want to be assured that the #assets# can be #taken out# of the repository, and that the #assets# #taken out# are the same as those that are put in.
+
+   user_story_111: #G27# As an asset manager, i want to have mechanism to #pass# #ownership#/management of the #assets# to a successor.
+
+Original texts of user stories are: 
+   user_story_101: #G27# As an asset manager, I want to be assured that the assets can be taken out of the repository, and that the assets taken out are the same as those that are put in.
+
+   user_story_111: #G27# As an asset manager, I want to have mechanism to pass ownership/management of the assets to a successor.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_01_AND_user_story_97}
   
-Affected Resource of US1 is: << collection >>
-Affected Resource of US2 is: << collection >>
-Affected Contain Resource US1 is: << collection >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_01: << [["repository","collection","preserve;create","access"]] >>
-Contain Resources for: user_story_97: << [] >>
+ Affected Resource of US1 is: << collection >>
 
  Action of user_story_01 is: << access >>  which is annotated with: << preserve >>
  Action of user_story_97 is: << rename >>  which is annotated with: << delete >>
 
-Conflict Reason is: << preserve-delete-Conflict >>
+ Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_01: #G27# As a faculty member, i want to #access# a #collection# within the repository, 
@@ -570,17 +485,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_01_AND_user_story_96}
   
-Affected Resource of US1 is: << collection >>
-Affected Resource of US2 is: << collection >>
-Affected Contain Resource US1 is: << collection >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_01: << [["repository","collection","preserve;create","access"]] >>
-Contain Resources for: user_story_96: << [] >>
+ Affected Resource of US1 is: << collection >>
 
  Action of user_story_01 is: << access >>  which is annotated with: << preserve >>
  Action of user_story_96 is: << move >>  which is annotated with: << delete >>
 
-Conflict Reason is: << preserve-delete-Conflict >>
+ Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_01: #G27# As a faculty member, i want to #access# a #collection# within the repository, 
@@ -591,846 +501,17 @@ Original texts of user stories are:
    user_story_01: #G27# As a faculty member, I want to access a collection within the repository, so that I can obtain research materials.
 
    user_story_96: #G27# As a repository support team member, I want to move a collection, so that I can fulfill the collection owner's request.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_55_AND_user_story_76}
-  
-Affected Resource of US1 is: << items >>
-Affected Resource of US2 is: << directory >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_55: << [["items","metadata","create","create"],["metadata","document title","create","create"],["metadata","description","create","create"],["metadata","author","create","create"],["metadata","document type","create","create"],["metadata","status","create","create"],["metadata","file locations","create","create"],["metadata","subscribable flag","create","create"],["metadata","subject area","create","create"],["metadata","release frequency","create","create"],["metadata","keywords","create","create"],["repository","items","preserve","searching"]] >>
-Contain Resources for: user_story_76: << [["place","variety of documents","preserve","have"],["place","presentations","preserve","have"],["place","data sets i've created","preserve","have"],["county","place","preserve","have"],["region","place","preserve","have"],["project site","place","preserve","have"],["directory","materials","create;delete","automatically updated"],["repository","directory","create;delete","automatically updated"],["central archive","list","create;delete","automatically updated"]] >>
-
- Action of user_story_55 is: << searching >>  which is annotated with: << preserve >>
- Action of user_story_76 is: << automatically updated >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_55: #G27# As a library staff member, i want to create metadata for #items# within the #repository# that includes document title, description, author, document type, status, file locations, subscribable flag, subject area, release frequency, and keywords for #searching#.
-
-   user_story_76: #G27# As an Extension Educator, i want to have a place to store a variety of documents, presentations and data sets i've created, that doesn't require an extra step in making available on my own county/region/project site (i.e. a list or #directory# of materials there is #automatically updated# when placed in a central archive/#repository#).
-
-Original texts of user stories are: 
-   user_story_55: #G27# As a library staff member, I want to create metadata for items within the repository that includes document title, description, author, document type, status, file locations, subscribable flag, subject area, release frequency, and keywords for searching.
-
-   user_story_76: #G27# As an Extension Educator, I want to have a place to store a variety of documents, presentations and data sets I've created, that doesn't require an extra step in making available on my own County/Region/Project site (i.e. a list or directory of materials there is automatically updated when placed in a central archive/repository).
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_17_AND_user_story_97}
-  
-Affected Resource of US1 is: << collection >>
-Affected Resource of US2 is: << collection >>
-Affected Contain Resource US1 is: << items >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_17: << [["collection","items","create;delete","sort"],["collection contents lists","items","create;delete","sort"]] >>
-Contain Resources for: user_story_97: << [] >>
-
- Action of user_story_17 is: << sort >>  which is annotated with: << delete >>
- Action of user_story_97 is: << rename >>  which is annotated with: << delete >>
-
-Conflict Reason is: << delete-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_17: #G27# As a Cornell faculty member, i want to have some control over how items within my #collection# #sort# in #collection# contents lists, 
-
-   user_story_97: #G27# As a repository support team member, i want to #rename# a #collection#, 
-
-Original texts of user stories are: 
-   user_story_17: #G27# As a Cornell faculty member, I want to have some control over how items within my collection sort in collection contents lists, so that I can control how my work is presented.
-
-   user_story_97: #G27# As a repository support team member, I want to rename a collection, so that I can fulfill the collection owner's request.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_65_AND_user_story_90}
-  
-Affected Resource of US1 is: << report >>
-Affected Resource of US2 is: << report >>
-Affected Contain Resource US1 is: << document type >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_65: << [["document type","historical report still published","preserve","recognize"],["document type","expired historical report","preserve","recognize"],["document type","single topic dataset","preserve","recognize"],["document type","broad topic dataset","preserve","recognize"],["document type","report","preserve","recognize"],["document type","computer file","preserve","recognize"]] >>
-Contain Resources for: user_story_90: << [] >>
-
- Action of user_story_65 is: << recognize >>  which is annotated with: << preserve >>
- Action of user_story_90 is: << unpublish >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_65: #G27# As a DB/IR administrator, i want to have the system #recognize#/categorize document type (e.g. historical #report# still published, expired historical #report#, single topic dataset, broad topic dataset, #report# with subtopic, computer file), 
-
-   user_story_90: #G27# As a DB/IR administrator, i want to #unpublish# a #report#/dataset if requested to do so by usda agency.
-
-Original texts of user stories are: 
-   user_story_65: #G27# As a DB/IR administrator, I want to have the system recognize/categorize document type (e.g. historical report still published, expired historical report, single topic dataset, broad topic dataset, report with subtopic, computer file), so that report/dataset is processed and displayed properly.
-
-   user_story_90: #G27# As a DB/IR administrator, I want to unpublish a report/dataset if requested to do so by USDA agency.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_15_AND_user_story_76}
-  
-Affected Resource of US1 is: << repository >>
-Affected Resource of US2 is: << directory >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_15: << [["repository","contents","preserve;create","search"],["phone","contents","preserve","browse through"]] >>
-Contain Resources for: user_story_76: << [["place","variety of documents","preserve","have"],["place","presentations","preserve","have"],["place","data sets i've created","preserve","have"],["county","place","preserve","have"],["region","place","preserve","have"],["project site","place","preserve","have"],["directory","materials","create;delete","automatically updated"],["repository","directory","create;delete","automatically updated"],["central archive","list","create;delete","automatically updated"]] >>
-
- Action of user_story_15 is: << search >>  which is annotated with: << preserve >>
- Action of user_story_76 is: << automatically updated >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_15: #G27# As a Cornell faculty member, i want to #search# the #repository# and browse through its contents on my phone, 
-
-   user_story_76: #G27# As an Extension Educator, i want to have a place to store a variety of documents, presentations and data sets i've created, that doesn't require an extra step in making available on my own county/region/project site (i.e. a list or #directory# of materials there is #automatically updated# when placed in a central archive/#repository#).
-
-Original texts of user stories are: 
-   user_story_15: #G27# As a Cornell faculty member, I want to search the repository and browse through its contents on my phone, so that I can check things on the go.
-
-   user_story_76: #G27# As an Extension Educator, I want to have a place to store a variety of documents, presentations and data sets I've created, that doesn't require an extra step in making available on my own County/Region/Project site (i.e. a list or directory of materials there is automatically updated when placed in a central archive/repository).
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_17_AND_user_story_55}
-  
-Affected Resource of US1 is: << items >>
-Affected Resource of US2 is: << items >>
-Affected Contain Resource US1 is: << items >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_17: << [["collection","items","create;delete","sort"],["collection contents lists","items","create;delete","sort"]] >>
-Contain Resources for: user_story_55: << [["items","metadata","create","create"],["metadata","document title","create","create"],["metadata","description","create","create"],["metadata","author","create","create"],["metadata","document type","create","create"],["metadata","status","create","create"],["metadata","file locations","create","create"],["metadata","subscribable flag","create","create"],["metadata","subject area","create","create"],["metadata","release frequency","create","create"],["metadata","keywords","create","create"],["repository","items","preserve","searching"]] >>
-
- Action of user_story_17 is: << sort >>  which is annotated with: << delete >>
- Action of user_story_55 is: << searching >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_17: #G27# As a Cornell faculty member, i want to have some control over how #items# within my collection #sort# in collection contents lists, 
-
-   user_story_55: #G27# As a library staff member, i want to create metadata for #items# within the repository that includes document title, description, author, document type, status, file locations, subscribable flag, subject area, release frequency, and keywords for #searching#.
-
-Original texts of user stories are: 
-   user_story_17: #G27# As a Cornell faculty member, I want to have some control over how items within my collection sort in collection contents lists, so that I can control how my work is presented.
-
-   user_story_55: #G27# As a library staff member, I want to create metadata for items within the repository that includes document title, description, author, document type, status, file locations, subscribable flag, subject area, release frequency, and keywords for searching.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_41_AND_user_story_90}
-  
-Affected Resource of US1 is: << report >>
-Affected Resource of US2 is: << report >>
-Affected Contain Resource US1 is: << report >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_41: << [["report","keywords","preserve;create","search"],["report","partial or complete title","preserve;create","search"],["dataset","keywords","preserve;create","search"],["dataset","partial or complete title","preserve;create","search"]] >>
-Contain Resources for: user_story_90: << [] >>
-
- Action of user_story_41 is: << search >>  which is annotated with: << preserve >>
- Action of user_story_90 is: << unpublish >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_41: #G27# As a patron, i want to #search# for #report#/dataset with keywords or a partial or complete title to locate needed #report#/dataset.
-
-   user_story_90: #G27# As a DB/IR administrator, i want to #unpublish# a #report#/dataset if requested to do so by usda agency.
-
-Original texts of user stories are: 
-   user_story_41: #G27# As a patron, I want to search for report/dataset with keywords or a partial or complete title to locate needed report/dataset.
-
-   user_story_90: #G27# As a DB/IR administrator, I want to unpublish a report/dataset if requested to do so by USDA agency.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_01_AND_user_story_17}
-  
-Affected Resource of US1 is: << collection >>
-Affected Resource of US2 is: << items >>
-Affected Contain Resource US1 is: << collection >>
-Affected Resource US2 is: << collection >>
-Contain Resources for: user_story_01: << [["repository","collection","preserve;create","access"]] >>
-Contain Resources for: user_story_17: << [["collection","items","create;delete","sort"],["collection contents lists","items","create;delete","sort"]] >>
-
- Action of user_story_01 is: << access >>  which is annotated with: << preserve >>
- Action of user_story_17 is: << sort >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_01: #G27# As a faculty member, i want to #access# a #collection# within the repository, 
-
-   user_story_17: #G27# As a Cornell faculty member, i want to have some control over how #items# within my #collection# #sort# in #collection# contents lists, 
-
-Original texts of user stories are: 
-   user_story_01: #G27# As a faculty member, I want to access a collection within the repository, so that I can obtain research materials.
-
-   user_story_17: #G27# As a Cornell faculty member, I want to have some control over how items within my collection sort in collection contents lists, so that I can control how my work is presented.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_76_AND_user_story_106}
-  
-Affected Resource of US1 is: << directory >>
-Affected Resource of US2 is: << content >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_76: << [["place","variety of documents","preserve","have"],["place","presentations","preserve","have"],["place","data sets i've created","preserve","have"],["county","place","preserve","have"],["region","place","preserve","have"],["project site","place","preserve","have"],["directory","materials","create;delete","automatically updated"],["repository","directory","create;delete","automatically updated"],["central archive","list","create;delete","automatically updated"]] >>
-Contain Resources for: user_story_106: << [["repository","content","preserve","preserve"],["repository","metadata","preserve","preserve"]] >>
-
- Action of user_story_76 is: << automatically updated >>  which is annotated with: << delete >>
- Action of user_story_106 is: << preserve >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_76: #G27# As an Extension Educator, i want to have a place to store a variety of documents, presentations and data sets i've created, that doesn't require an extra step in making available on my own county/region/project site (i.e. a list or #directory# of materials there is #automatically updated# when placed in a central archive/#repository#).
-
-   user_story_106: #G27# As a library staff member, i want to #preserve# both the #content# and the metadata within the #repository# in a robust manner, 
-
-Original texts of user stories are: 
-   user_story_76: #G27# As an Extension Educator, I want to have a place to store a variety of documents, presentations and data sets I've created, that doesn't require an extra step in making available on my own County/Region/Project site (i.e. a list or directory of materials there is automatically updated when placed in a central archive/repository).
-
-   user_story_106: #G27# As a library staff member, I want to preserve both the content and the metadata within the repository in a robust manner, so that I can provide stable, long-term access to this material.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_72_AND_user_story_101}
-  
-Affected Resource of US1 is: << content >>
-Affected Resource of US2 is: << assets >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_72: << [["repository","content","preserve","use"],["repository","metadata ","preserve","use"]] >>
-Contain Resources for: user_story_101: << [["repository","assets","delete","taken out"]] >>
-
- Action of user_story_72 is: << use >>  which is annotated with: << preserve >>
- Action of user_story_101 is: << taken out >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_72: #G27# As a library staff member, i want to #use# #content# and metadata from the #repository# in other systems and/or web pages easily, 
-
-   user_story_101: #G27# As an asset manager, i want to be assured that the #assets# can be #taken out# of the #repository#, and that the #assets# #taken out# are the same as those that are put in.
-
-Original texts of user stories are: 
-   user_story_72: #G27# As a library staff member, I want to use content and metadata from the repository in other systems and/or web pages easily, so that I can deliver such content in the manner best fit to the audience or occasion.
-
-   user_story_101: #G27# As an asset manager, I want to be assured that the assets can be taken out of the repository, and that the assets taken out are the same as those that are put in.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_17_AND_user_story_19}
-  
-Affected Resource of US1 is: << items >>
-Affected Resource of US2 is: << useful and comprehensive usage statistics >>
-Affected Contain Resource US1 is: << collection >>
-Affected Resource US2 is: << collection >>
-Contain Resources for: user_story_17: << [["collection","items","create;delete","sort"],["collection contents lists","items","create;delete","sort"]] >>
-Contain Resources for: user_story_19: << [["repository","useful and comprehensive usage statistics","preserve;create","access"],["collection","useful and comprehensive usage statistics","preserve;create","access"],["author","useful and comprehensive usage statistics","preserve;create","access"],["item level","useful and comprehensive usage statistics","preserve;create","access"],["analytics","altmetrics","preserve;create","access"],["repository","analytics","preserve;create","access"],["collection","analytics","preserve;create","access"],["author","analytics","preserve;create","access"],["item level","analytics","preserve;create","access"]] >>
-
- Action of user_story_17 is: << sort >>  which is annotated with: << delete >>
- Action of user_story_19 is: << access >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_17: #G27# As a Cornell faculty member, i want to have some control over how #items# within my #collection# #sort# in #collection# contents lists, 
-
-   user_story_19: #G27# As a library staff member, i want to #access# #useful and comprehensive usage statistics# and analytics, including altmetrics, at the repository, #collection#, author, and item level, 
-
-Original texts of user stories are: 
-   user_story_17: #G27# As a Cornell faculty member, I want to have some control over how items within my collection sort in collection contents lists, so that I can control how my work is presented.
-
-   user_story_19: #G27# As a library staff member, I want to access useful and comprehensive usage statistics and analytics, including altmetrics, at the repository, collection, author, and item level, so that I can assess the results of this service.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_32_AND_user_story_101}
-  
-Affected Resource of US1 is: << items i have deposited >>
-Affected Resource of US2 is: << assets >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_32: << [["repository","items i have deposited","preserve","see"],["google search results","items i have deposited","preserve","see"]] >>
-Contain Resources for: user_story_101: << [["repository","assets","delete","taken out"]] >>
-
- Action of user_story_32 is: << see >>  which is annotated with: << preserve >>
- Action of user_story_101 is: << taken out >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_32: #G27# As a Cornell faculty member, i want to #see# #items i have deposited# in the #repository# appear high up in google search results, because that's my ticket to stardom.
-
-   user_story_101: #G27# As an asset manager, i want to be assured that the #assets# can be #taken out# of the #repository#, and that the #assets# #taken out# are the same as those that are put in.
-
-Original texts of user stories are: 
-   user_story_32: #G27# As a Cornell faculty member, I want to see items I have deposited in the repository appear high up in Google search results, because that's my ticket to stardom.
-
-   user_story_101: #G27# As an asset manager, I want to be assured that the assets can be taken out of the repository, and that the assets taken out are the same as those that are put in.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_76_AND_user_story_101}
-  
-Affected Resource of US1 is: << directory >>
-Affected Resource of US2 is: << assets >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_76: << [["place","variety of documents","preserve","have"],["place","presentations","preserve","have"],["place","data sets i've created","preserve","have"],["county","place","preserve","have"],["region","place","preserve","have"],["project site","place","preserve","have"],["directory","materials","create;delete","automatically updated"],["repository","directory","create;delete","automatically updated"],["central archive","list","create;delete","automatically updated"]] >>
-Contain Resources for: user_story_101: << [["repository","assets","delete","taken out"]] >>
-
- Action of user_story_76 is: << automatically updated >>  which is annotated with: << delete >>
- Action of user_story_101 is: << taken out >>  which is annotated with: << delete >>
-
-Conflict Reason is: << delete-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_76: #G27# As an Extension Educator, i want to have a place to store a variety of documents, presentations and data sets i've created, that doesn't require an extra step in making available on my own county/region/project site (i.e. a list or #directory# of materials there is #automatically updated# when placed in a central archive/#repository#).
-
-   user_story_101: #G27# As an asset manager, i want to be assured that the #assets# can be #taken out# of the #repository#, and that the #assets# #taken out# are the same as those that are put in.
-
-Original texts of user stories are: 
-   user_story_76: #G27# As an Extension Educator, I want to have a place to store a variety of documents, presentations and data sets I've created, that doesn't require an extra step in making available on my own County/Region/Project site (i.e. a list or directory of materials there is automatically updated when placed in a central archive/repository).
-
-   user_story_101: #G27# As an asset manager, I want to be assured that the assets can be taken out of the repository, and that the assets taken out are the same as those that are put in.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_15_AND_user_story_81}
-  
-Affected Resource of US1 is: << repository >>
-Affected Resource of US2 is: << useful metadata >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_15: << [["repository","contents","preserve;create","search"],["phone","contents","preserve","browse through"]] >>
-Contain Resources for: user_story_81: << [["repository","useful metadata","delete","harvest"],["oai","useful metadata","delete","harvest"]] >>
-
- Action of user_story_15 is: << search >>  which is annotated with: << preserve >>
- Action of user_story_81 is: << harvest >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_15: #G27# As a Cornell faculty member, i want to #search# the #repository# and browse through its contents on my phone, 
-
-   user_story_81: #G27# As a librarydiscoveryoperator, i want to #harvest# #useful metadata# from the #repository# via oai, and continue to do so incrementally, 
-
-Original texts of user stories are: 
-   user_story_15: #G27# As a Cornell faculty member, I want to search the repository and browse through its contents on my phone, so that I can check things on the go.
-
-   user_story_81: #G27# As a librarydiscoveryoperator, I want to harvest useful metadata from the repository via OAI, and continue to do so incrementally, so that I can make Cornell publications discoverable in my repository.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_07_AND_user_story_41}
-  
-Affected Resource of US1 is: << dataset >>
-Affected Resource of US2 is: << dataset >>
-Affected Contain Resource US1 is: << name changes >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_07: << [["dataset","name changes","create;delete","manage"],["report","name changes","create;delete","manage"]] >>
-Contain Resources for: user_story_41: << [["report","keywords","preserve;create","search"],["report","partial or complete title","preserve;create","search"],["dataset","keywords","preserve;create","search"],["dataset","partial or complete title","preserve;create","search"]] >>
-
- Action of user_story_07 is: << manage >>  which is annotated with: << delete >>
- Action of user_story_41 is: << search >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_07: #G27# As a DB/IR administrator, i want to #manage# report/#dataset# name changes so
-
-   user_story_41: #G27# As a patron, i want to #search# for report/#dataset# with keywords or a partial or complete title to locate needed report/#dataset#.
-
-Original texts of user stories are: 
-   user_story_07: #G27# As a DB/IR administrator, I want to manage report/dataset name changes so patrons are able to find historic reports that have a different name from current report.
-
-   user_story_41: #G27# As a patron, I want to search for report/dataset with keywords or a partial or complete title to locate needed report/dataset.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_19_AND_user_story_81}
-  
-Affected Resource of US1 is: << useful and comprehensive usage statistics >>
-Affected Resource of US2 is: << useful metadata >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_19: << [["repository","useful and comprehensive usage statistics","preserve;create","access"],["collection","useful and comprehensive usage statistics","preserve;create","access"],["author","useful and comprehensive usage statistics","preserve;create","access"],["item level","useful and comprehensive usage statistics","preserve;create","access"],["analytics","altmetrics","preserve;create","access"],["repository","analytics","preserve;create","access"],["collection","analytics","preserve;create","access"],["author","analytics","preserve;create","access"],["item level","analytics","preserve;create","access"]] >>
-Contain Resources for: user_story_81: << [["repository","useful metadata","delete","harvest"],["oai","useful metadata","delete","harvest"]] >>
-
- Action of user_story_19 is: << access >>  which is annotated with: << preserve >>
- Action of user_story_81 is: << harvest >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_19: #G27# As a library staff member, i want to #access# #useful and comprehensive usage statistics# and analytics, including altmetrics, at the #repository#, collection, author, and item level, 
-
-   user_story_81: #G27# As a librarydiscoveryoperator, i want to #harvest# #useful metadata# from the #repository# via oai, and continue to do so incrementally, 
-
-Original texts of user stories are: 
-   user_story_19: #G27# As a library staff member, I want to access useful and comprehensive usage statistics and analytics, including altmetrics, at the repository, collection, author, and item level, so that I can assess the results of this service.
-
-   user_story_81: #G27# As a librarydiscoveryoperator, I want to harvest useful metadata from the repository via OAI, and continue to do so incrementally, so that I can make Cornell publications discoverable in my repository.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_86_AND_user_story_94}
-  
-Affected Resource of US1 is: << passwords >>
-Affected Resource of US2 is: << passwords >>
-Affected Contain Resource US1 is: << passwords >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_86: << [["personal account","ability","preserve","have"]] >>
-Contain Resources for: user_story_94: << [["patron accounts","passwords","create;delete","administrate"],["patron accounts","email address","create;delete","administrate"],["patron accounts","subscriptions","create;delete","administrate"]] >>
-
- Action of user_story_86 is: << change >>  which is annotated with: << delete >>
- Action of user_story_94 is: << resetting >>  which is annotated with: << delete >>
-
-Conflict Reason is: << delete-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_86: #G27# As a DB/IR administrator, i want to have a personal account with the ability to #change# #passwords# to make them more secure or to retrieve forgotten ones.
-
-   user_story_94: #G27# As a DB/IR administrator, i want to administrate patron accounts for purpose of closing accounts, viewing subscriptions, changing subscriptions, #resetting# #passwords#, changing email address, etc.
-
-Original texts of user stories are: 
-   user_story_86: #G27# As a DB/IR administrator, I want to have a personal account with the ability to change passwords to make them more secure or to retrieve forgotten ones.
-
-   user_story_94: #G27# As a DB/IR administrator, I want to administrate patron accounts for purpose of closing accounts, viewing subscriptions, changing subscriptions, resetting passwords, changing email address, etc.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_38_AND_user_story_97}
-  
-Affected Resource of US1 is: << collection >>
-Affected Resource of US2 is: << collection >>
-Affected Contain Resource US1 is: << collection >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_38: << [["given collection","subsets","preserve;create","searching within"]] >>
-Contain Resources for: user_story_97: << [] >>
-
- Action of user_story_38 is: << search within >>  which is annotated with: << preserve >>
- Action of user_story_97 is: << rename >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_38: #G27# As a researcher, i want to #search within# a repository or #collection# in an effective manner, including searching within subsets of a given #collection#, 
-
-   user_story_97: #G27# As a repository support team member, i want to #rename# a #collection#, 
-
-Original texts of user stories are: 
-   user_story_38: #G27# As a researcher, I want to search within a repository or collection in an effective manner, including searching within subsets of a given collection, so that I can facilitate my use of the collection.
-
-   user_story_97: #G27# As a repository support team member, I want to rename a collection, so that I can fulfill the collection owner's request.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_55_AND_user_story_81}
-  
-Affected Resource of US1 is: << items >>
-Affected Resource of US2 is: << useful metadata >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_55: << [["items","metadata","create","create"],["metadata","document title","create","create"],["metadata","description","create","create"],["metadata","author","create","create"],["metadata","document type","create","create"],["metadata","status","create","create"],["metadata","file locations","create","create"],["metadata","subscribable flag","create","create"],["metadata","subject area","create","create"],["metadata","release frequency","create","create"],["metadata","keywords","create","create"],["repository","items","preserve","searching"]] >>
-Contain Resources for: user_story_81: << [["repository","useful metadata","delete","harvest"],["oai","useful metadata","delete","harvest"]] >>
-
- Action of user_story_55 is: << searching >>  which is annotated with: << preserve >>
- Action of user_story_81 is: << harvest >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_55: #G27# As a library staff member, i want to create metadata for #items# within the #repository# that includes document title, description, author, document type, status, file locations, subscribable flag, subject area, release frequency, and keywords for #searching#.
-
-   user_story_81: #G27# As a librarydiscoveryoperator, i want to #harvest# #useful metadata# from the #repository# via oai, and continue to do so incrementally, 
-
-Original texts of user stories are: 
-   user_story_55: #G27# As a library staff member, I want to create metadata for items within the repository that includes document title, description, author, document type, status, file locations, subscribable flag, subject area, release frequency, and keywords for searching.
-
-   user_story_81: #G27# As a librarydiscoveryoperator, I want to harvest useful metadata from the repository via OAI, and continue to do so incrementally, so that I can make Cornell publications discoverable in my repository.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_38_AND_user_story_96}
-  
-Affected Resource of US1 is: << collection >>
-Affected Resource of US2 is: << collection >>
-Affected Contain Resource US1 is: << collection >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_38: << [["given collection","subsets","preserve;create","searching within"]] >>
-Contain Resources for: user_story_96: << [] >>
-
- Action of user_story_38 is: << search within >>  which is annotated with: << preserve >>
- Action of user_story_96 is: << move >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_38: #G27# As a researcher, i want to #search within# a repository or #collection# in an effective manner, including searching within subsets of a given #collection#, 
-
-   user_story_96: #G27# As a repository support team member, i want to #move# a #collection#, 
-
-Original texts of user stories are: 
-   user_story_38: #G27# As a researcher, I want to search within a repository or collection in an effective manner, including searching within subsets of a given collection, so that I can facilitate my use of the collection.
-
-   user_story_96: #G27# As a repository support team member, I want to move a collection, so that I can fulfill the collection owner's request.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_71_AND_user_story_105}
-  
-Affected Resource of US1 is: << files >>
-Affected Resource of US2 is: << files >>
-Affected Contain Resource US1 is: << files >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_71: << [["scholarly works","files","create","associate"],["files","access","create","associate"]] >>
-Contain Resources for: user_story_105: << [] >>
-
- Action of user_story_71 is: << associate >>  which is annotated with: << create >>
- Action of user_story_105 is: << adequately described >>  which is annotated with: << forbid >>
-
-Conflict Reason is: << create-forbid-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_71: #G27# As a faculty member, i want to #associate# #files# with my scholarly works such that someone accessing the latter also receives access to the former, 
-
-   user_story_105: #G27# As a stakeholder, i want to have #files# #adequately described#, 
-
-Original texts of user stories are: 
-   user_story_71: #G27# As a faculty member, I want to associate files with my scholarly works such that someone accessing the latter also receives access to the former, so that I can deliver the fullest picture of my research.
-
-   user_story_105: #G27# As a stakeholder, I want to have files adequately described, so that I can successfully render them in my contemporary operating environment.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_72_AND_user_story_76}
-  
-Affected Resource of US1 is: << content >>
-Affected Resource of US2 is: << directory >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_72: << [["repository","content","preserve","use"],["repository","metadata ","preserve","use"]] >>
-Contain Resources for: user_story_76: << [["place","variety of documents","preserve","have"],["place","presentations","preserve","have"],["place","data sets i've created","preserve","have"],["county","place","preserve","have"],["region","place","preserve","have"],["project site","place","preserve","have"],["directory","materials","create;delete","automatically updated"],["repository","directory","create;delete","automatically updated"],["central archive","list","create;delete","automatically updated"]] >>
-
- Action of user_story_72 is: << use >>  which is annotated with: << preserve >>
- Action of user_story_76 is: << automatically updated >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_72: #G27# As a library staff member, i want to #use# #content# and metadata from the #repository# in other systems and/or web pages easily, 
-
-   user_story_76: #G27# As an Extension Educator, i want to have a place to store a variety of documents, presentations and data sets i've created, that doesn't require an extra step in making available on my own county/region/project site (i.e. a list or #directory# of materials there is #automatically updated# when placed in a central archive/#repository#).
-
-Original texts of user stories are: 
-   user_story_72: #G27# As a library staff member, I want to use content and metadata from the repository in other systems and/or web pages easily, so that I can deliver such content in the manner best fit to the audience or occasion.
-
-   user_story_76: #G27# As an Extension Educator, I want to have a place to store a variety of documents, presentations and data sets I've created, that doesn't require an extra step in making available on my own County/Region/Project site (i.e. a list or directory of materials there is automatically updated when placed in a central archive/repository).
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_87_AND_user_story_88}
-  
-Affected Resource of US1 is: << accounts >>
-Affected Resource of US2 is: << accounts >>
-Affected Contain Resource US1 is: << accounts >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_87: << [] >>
-Contain Resources for: user_story_88: << [["list","all administrators","preserve","see"]] >>
-
- Action of user_story_87 is: << delete >>  which is annotated with: << delete >>
- Action of user_story_88 is: << administering >>  which is annotated with: << delete >>
-
-Conflict Reason is: << delete-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_87: #G27# As a DB/IR administrator, i want to set up or #delete# #accounts# for other administrators with various levels of permission.
-
-   user_story_88: #G27# As a DB/IR administrator, i want to see a list of all administrators for ease of #administering# #accounts#.
-
-Original texts of user stories are: 
-   user_story_87: #G27# As a DB/IR administrator, I want to set up or delete accounts for other administrators with various levels of permission.
-
-   user_story_88: #G27# As a DB/IR administrator, I want to see a list of all administrators for ease of administering accounts.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_32_AND_user_story_76}
-  
-Affected Resource of US1 is: << items i have deposited >>
-Affected Resource of US2 is: << directory >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_32: << [["repository","items i have deposited","preserve","see"],["google search results","items i have deposited","preserve","see"]] >>
-Contain Resources for: user_story_76: << [["place","variety of documents","preserve","have"],["place","presentations","preserve","have"],["place","data sets i've created","preserve","have"],["county","place","preserve","have"],["region","place","preserve","have"],["project site","place","preserve","have"],["directory","materials","create;delete","automatically updated"],["repository","directory","create;delete","automatically updated"],["central archive","list","create;delete","automatically updated"]] >>
-
- Action of user_story_32 is: << see >>  which is annotated with: << preserve >>
- Action of user_story_76 is: << automatically updated >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_32: #G27# As a Cornell faculty member, i want to #see# #items i have deposited# in the #repository# appear high up in google search results, because that's my ticket to stardom.
-
-   user_story_76: #G27# As an Extension Educator, i want to have a place to store a variety of documents, presentations and data sets i've created, that doesn't require an extra step in making available on my own county/region/project site (i.e. a list or #directory# of materials there is #automatically updated# when placed in a central archive/#repository#).
-
-Original texts of user stories are: 
-   user_story_32: #G27# As a Cornell faculty member, I want to see items I have deposited in the repository appear high up in Google search results, because that's my ticket to stardom.
-
-   user_story_76: #G27# As an Extension Educator, I want to have a place to store a variety of documents, presentations and data sets I've created, that doesn't require an extra step in making available on my own County/Region/Project site (i.e. a list or directory of materials there is automatically updated when placed in a central archive/repository).
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_65_AND_user_story_67}
-  
-Affected Resource of US1 is: << system >>
-Affected Resource of US2 is: << data set >>
-Affected Contain Resource US1 is: << system >>
-Affected Resource US2 is: << system >>
-Contain Resources for: user_story_65: << [["document type","historical report still published","preserve","recognize"],["document type","expired historical report","preserve","recognize"],["document type","single topic dataset","preserve","recognize"],["document type","broad topic dataset","preserve","recognize"],["document type","report","preserve","recognize"],["document type","computer file","preserve","recognize"]] >>
-Contain Resources for: user_story_67: << [["set","records","create","export"],["set","associated files","create","export"],["system","data set","create;delete","manipulate"]] >>
-
- Action of user_story_65 is: << have >>  which is annotated with: << preserve >>
- Action of user_story_67 is: << manipulate >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_65: #G27# As a DB/IR administrator, i want to #have# the #system# recognize/categorize document type (e.g. historical report still published, expired historical report, single topic dataset, broad topic dataset, report with subtopic, computer file), 
-
-   user_story_67: #G27# As a repository support team member, i want to export a set of records and associated files, #manipulate# this #data set#, and reload into the #system#, because i am aware of a uniform error in a collection.
-
-Original texts of user stories are: 
-   user_story_65: #G27# As a DB/IR administrator, I want to have the system recognize/categorize document type (e.g. historical report still published, expired historical report, single topic dataset, broad topic dataset, report with subtopic, computer file), so that report/dataset is processed and displayed properly.
-
-   user_story_67: #G27# As a repository support team member, I want to export a set of records and associated files, manipulate this data set, and reload into the system, because I am aware of a uniform error in a collection.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_55_AND_user_story_101}
-  
-Affected Resource of US1 is: << items >>
-Affected Resource of US2 is: << assets >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_55: << [["items","metadata","create","create"],["metadata","document title","create","create"],["metadata","description","create","create"],["metadata","author","create","create"],["metadata","document type","create","create"],["metadata","status","create","create"],["metadata","file locations","create","create"],["metadata","subscribable flag","create","create"],["metadata","subject area","create","create"],["metadata","release frequency","create","create"],["metadata","keywords","create","create"],["repository","items","preserve","searching"]] >>
-Contain Resources for: user_story_101: << [["repository","assets","delete","taken out"]] >>
-
- Action of user_story_55 is: << searching >>  which is annotated with: << preserve >>
- Action of user_story_101 is: << taken out >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_55: #G27# As a library staff member, i want to create metadata for #items# within the #repository# that includes document title, description, author, document type, status, file locations, subscribable flag, subject area, release frequency, and keywords for #searching#.
-
-   user_story_101: #G27# As an asset manager, i want to be assured that the #assets# can be #taken out# of the #repository#, and that the #assets# #taken out# are the same as those that are put in.
-
-Original texts of user stories are: 
-   user_story_55: #G27# As a library staff member, I want to create metadata for items within the repository that includes document title, description, author, document type, status, file locations, subscribable flag, subject area, release frequency, and keywords for searching.
-
-   user_story_101: #G27# As an asset manager, I want to be assured that the assets can be taken out of the repository, and that the assets taken out are the same as those that are put in.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_15_AND_user_story_101}
-  
-Affected Resource of US1 is: << repository >>
-Affected Resource of US2 is: << assets >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_15: << [["repository","contents","preserve;create","search"],["phone","contents","preserve","browse through"]] >>
-Contain Resources for: user_story_101: << [["repository","assets","delete","taken out"]] >>
-
- Action of user_story_15 is: << search >>  which is annotated with: << preserve >>
- Action of user_story_101 is: << taken out >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_15: #G27# As a Cornell faculty member, i want to #search# the #repository# and browse through its contents on my phone, 
-
-   user_story_101: #G27# As an asset manager, i want to be assured that the #assets# can be #taken out# of the #repository#, and that the #assets# #taken out# are the same as those that are put in.
-
-Original texts of user stories are: 
-   user_story_15: #G27# As a Cornell faculty member, I want to search the repository and browse through its contents on my phone, so that I can check things on the go.
-
-   user_story_101: #G27# As an asset manager, I want to be assured that the assets can be taken out of the repository, and that the assets taken out are the same as those that are put in.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_101_AND_user_story_106}
-  
-Affected Resource of US1 is: << assets >>
-Affected Resource of US2 is: << content >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_101: << [["repository","assets","delete","taken out"]] >>
-Contain Resources for: user_story_106: << [["repository","content","preserve","preserve"],["repository","metadata","preserve","preserve"]] >>
-
- Action of user_story_101 is: << taken out >>  which is annotated with: << delete >>
- Action of user_story_106 is: << preserve >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_101: #G27# As an asset manager, i want to be assured that the #assets# can be #taken out# of the #repository#, and that the #assets# #taken out# are the same as those that are put in.
-
-   user_story_106: #G27# As a library staff member, i want to #preserve# both the #content# and the metadata within the #repository# in a robust manner, 
-
-Original texts of user stories are: 
-   user_story_101: #G27# As an asset manager, I want to be assured that the assets can be taken out of the repository, and that the assets taken out are the same as those that are put in.
-
-   user_story_106: #G27# As a library staff member, I want to preserve both the content and the metadata within the repository in a robust manner, so that I can provide stable, long-term access to this material.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_19_AND_user_story_101}
-  
-Affected Resource of US1 is: << useful and comprehensive usage statistics >>
-Affected Resource of US2 is: << assets >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_19: << [["repository","useful and comprehensive usage statistics","preserve;create","access"],["collection","useful and comprehensive usage statistics","preserve;create","access"],["author","useful and comprehensive usage statistics","preserve;create","access"],["item level","useful and comprehensive usage statistics","preserve;create","access"],["analytics","altmetrics","preserve;create","access"],["repository","analytics","preserve;create","access"],["collection","analytics","preserve;create","access"],["author","analytics","preserve;create","access"],["item level","analytics","preserve;create","access"]] >>
-Contain Resources for: user_story_101: << [["repository","assets","delete","taken out"]] >>
-
- Action of user_story_19 is: << access >>  which is annotated with: << preserve >>
- Action of user_story_101 is: << taken out >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_19: #G27# As a library staff member, i want to #access# #useful and comprehensive usage statistics# and analytics, including altmetrics, at the #repository#, collection, author, and item level, 
-
-   user_story_101: #G27# As an asset manager, i want to be assured that the #assets# can be #taken out# of the #repository#, and that the #assets# #taken out# are the same as those that are put in.
-
-Original texts of user stories are: 
-   user_story_19: #G27# As a library staff member, I want to access useful and comprehensive usage statistics and analytics, including altmetrics, at the repository, collection, author, and item level, so that I can assess the results of this service.
-
-   user_story_101: #G27# As an asset manager, I want to be assured that the assets can be taken out of the repository, and that the assets taken out are the same as those that are put in.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_19_AND_user_story_96}
-  
-Affected Resource of US1 is: << collection >>
-Affected Resource of US2 is: << collection >>
-Affected Contain Resource US1 is: << useful and comprehensive usage statistics >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_19: << [["repository","useful and comprehensive usage statistics","preserve;create","access"],["collection","useful and comprehensive usage statistics","preserve;create","access"],["author","useful and comprehensive usage statistics","preserve;create","access"],["item level","useful and comprehensive usage statistics","preserve;create","access"],["analytics","altmetrics","preserve;create","access"],["repository","analytics","preserve;create","access"],["collection","analytics","preserve;create","access"],["author","analytics","preserve;create","access"],["item level","analytics","preserve;create","access"]] >>
-Contain Resources for: user_story_96: << [] >>
-
- Action of user_story_19 is: << access >>  which is annotated with: << preserve >>
- Action of user_story_96 is: << move >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_19: #G27# As a library staff member, i want to #access# useful and comprehensive usage statistics and analytics, including altmetrics, at the repository, #collection#, author, and item level, 
-
-   user_story_96: #G27# As a repository support team member, i want to #move# a #collection#, 
-
-Original texts of user stories are: 
-   user_story_19: #G27# As a library staff member, I want to access useful and comprehensive usage statistics and analytics, including altmetrics, at the repository, collection, author, and item level, so that I can assess the results of this service.
-
-   user_story_96: #G27# As a repository support team member, I want to move a collection, so that I can fulfill the collection owner's request.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_07_AND_user_story_52}
-  
-Affected Resource of US1 is: << name changes >>
-Affected Resource of US2 is: << multiple versions >>
-Affected Contain Resource US1 is: << dataset >>
-Affected Resource US2 is: << dataset >>
-Contain Resources for: user_story_07: << [["dataset","name changes","create;delete","manage"],["report","name changes","create;delete","manage"]] >>
-Contain Resources for: user_story_52: << [["report","multiple versions","preserve","view"],["dataset","multiple versions","preserve","view"]] >>
-
- Action of user_story_07 is: << manage >>  which is annotated with: << delete >>
- Action of user_story_52 is: << view >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_07: #G27# As a DB/IR administrator, i want to #manage# report/#dataset# #name changes# so
-
-   user_story_52: #G27# As a patron, i want to #view# #multiple versions# of a report/#dataset# to get both timely and historical information.
-
-Original texts of user stories are: 
-   user_story_07: #G27# As a DB/IR administrator, I want to manage report/dataset name changes so patrons are able to find historic reports that have a different name from current report.
-
-   user_story_52: #G27# As a patron, I want to view multiple versions of a report/dataset to get both timely and historical information.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_19_AND_user_story_97}
-  
-Affected Resource of US1 is: << collection >>
-Affected Resource of US2 is: << collection >>
-Affected Contain Resource US1 is: << useful and comprehensive usage statistics >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_19: << [["repository","useful and comprehensive usage statistics","preserve;create","access"],["collection","useful and comprehensive usage statistics","preserve;create","access"],["author","useful and comprehensive usage statistics","preserve;create","access"],["item level","useful and comprehensive usage statistics","preserve;create","access"],["analytics","altmetrics","preserve;create","access"],["repository","analytics","preserve;create","access"],["collection","analytics","preserve;create","access"],["author","analytics","preserve;create","access"],["item level","analytics","preserve;create","access"]] >>
-Contain Resources for: user_story_97: << [] >>
-
- Action of user_story_19 is: << access >>  which is annotated with: << preserve >>
- Action of user_story_97 is: << rename >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_19: #G27# As a library staff member, i want to #access# useful and comprehensive usage statistics and analytics, including altmetrics, at the repository, #collection#, author, and item level, 
-
-   user_story_97: #G27# As a repository support team member, i want to #rename# a #collection#, 
-
-Original texts of user stories are: 
-   user_story_19: #G27# As a library staff member, I want to access useful and comprehensive usage statistics and analytics, including altmetrics, at the repository, collection, author, and item level, so that I can assess the results of this service.
-
-   user_story_97: #G27# As a repository support team member, I want to rename a collection, so that I can fulfill the collection owner's request.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_07_AND_user_story_90}
-  
-Affected Resource of US1 is: << dataset >>
-Affected Resource of US2 is: << dataset >>
-Affected Contain Resource US1 is: << name changes >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_07: << [["dataset","name changes","create;delete","manage"],["report","name changes","create;delete","manage"]] >>
-Contain Resources for: user_story_90: << [] >>
-
- Action of user_story_07 is: << manage >>  which is annotated with: << delete >>
- Action of user_story_90 is: << unpublish >>  which is annotated with: << delete >>
-
-Conflict Reason is: << delete-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_07: #G27# As a DB/IR administrator, i want to #manage# report/#dataset# name changes so
-
-   user_story_90: #G27# As a DB/IR administrator, i want to #unpublish# a report/#dataset# if requested to do so by usda agency.
-
-Original texts of user stories are: 
-   user_story_07: #G27# As a DB/IR administrator, I want to manage report/dataset name changes so patrons are able to find historic reports that have a different name from current report.
-
-   user_story_90: #G27# As a DB/IR administrator, I want to unpublish a report/dataset if requested to do so by USDA agency.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_101_AND_user_story_111}
-  
-Affected Resource of US1 is: << assets >>
-Affected Resource of US2 is: << ownership >>
-Affected Contain Resource US1 is: << assets >>
-Affected Resource US2 is: << assets >>
-Contain Resources for: user_story_101: << [["repository","assets","delete","taken out"]] >>
-Contain Resources for: user_story_111: << [["assets","ownership","delete","pass"],["successor","ownership","delete","pass"],["assets","management","delete","pass"],["successor","management","delete","pass"]] >>
-
- Action of user_story_101 is: << taken out >>  which is annotated with: << delete >>
- Action of user_story_111 is: << pass >>  which is annotated with: << delete >>
-
-Conflict Reason is: << delete-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_101: #G27# As an asset manager, i want to be assured that the #assets# can be #taken out# of the repository, and that the #assets# #taken out# are the same as those that are put in.
-
-   user_story_111: #G27# As an asset manager, i want to have mechanism to #pass# #ownership#/management of the #assets# to a successor.
-
-Original texts of user stories are: 
-   user_story_101: #G27# As an asset manager, I want to be assured that the assets can be taken out of the repository, and that the assets taken out are the same as those that are put in.
-
-   user_story_111: #G27# As an asset manager, I want to have mechanism to pass ownership/management of the assets to a successor.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_05_AND_user_story_78}
   
-Affected Resource of US1 is: << reports >>
-Affected Resource of US2 is: << previous name(s) >>
-Affected Contain Resource US1 is: << reports >>
-Affected Resource US2 is: << reports >>
-Contain Resources for: user_story_05: << [["reports","new versions","preserve;create","select"],["datasets to be emailed","new versions","preserve;create","select"]] >>
-Contain Resources for: user_story_78: << [["reports","previous name(s)","preserve","know"],["datasets","previous name(s)","preserve","know"],["reports","publication date range","preserve","know"],["datasets","publication date range","preserve","know"],["publication date range","first version-last version","preserve","know"]] >>
+ Affected Resource of US1 is: << reports >>
+ Affected Contain Entity US2 is: << previous name(s) >>
 
  Action of user_story_05 is: << deselect >>  which is annotated with: << delete >>
  Action of user_story_78 is: << know >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_05: #G27# As a patron, i want to select/#deselect# #reports#/datasets to be emailed, possibly many at one time, when new versions are available.
@@ -1445,17 +526,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_87_AND_user_story_94}
   
-Affected Resource of US1 is: << accounts >>
-Affected Resource of US2 is: << accounts >>
-Affected Contain Resource US1 is: << accounts >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_87: << [] >>
-Contain Resources for: user_story_94: << [["patron accounts","passwords","create;delete","administrate"],["patron accounts","email address","create;delete","administrate"],["patron accounts","subscriptions","create;delete","administrate"]] >>
+ Affected Resource of US1 is: << accounts >>
 
  Action of user_story_87 is: << delete >>  which is annotated with: << delete >>
  Action of user_story_94 is: << closing >>  which is annotated with: << delete >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_87: #G27# As a DB/IR administrator, i want to set up or #delete# #accounts# for other administrators with various levels of permission.
@@ -1468,176 +544,42 @@ Original texts of user stories are:
    user_story_94: #G27# As a DB/IR administrator, I want to administrate patron accounts for purpose of closing accounts, viewing subscriptions, changing subscriptions, resetting passwords, changing email address, etc.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_17_AND_user_story_38}
+{user_story_15_AND_user_story_76}
   
-Affected Resource of US1 is: << collection >>
-Affected Resource of US2 is: << collection >>
-Affected Contain Resource US1 is: << items >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_17: << [["collection","items","create;delete","sort"],["collection contents lists","items","create;delete","sort"]] >>
-Contain Resources for: user_story_38: << [["given collection","subsets","preserve;create","searching within"]] >>
+ Affected Resource of US1 is: << repository >>
+ Affected Contain Entity US2 is: << directory >>
 
- Action of user_story_17 is: << sort >>  which is annotated with: << delete >>
- Action of user_story_38 is: << search within >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_17: #G27# As a Cornell faculty member, i want to have some control over how items within my #collection# #sort# in #collection# contents lists, 
-
-   user_story_38: #G27# As a researcher, i want to #search within# a repository or #collection# in an effective manner, including searching within subsets of a given #collection#, 
-
-Original texts of user stories are: 
-   user_story_17: #G27# As a Cornell faculty member, I want to have some control over how items within my collection sort in collection contents lists, so that I can control how my work is presented.
-
-   user_story_38: #G27# As a researcher, I want to search within a repository or collection in an effective manner, including searching within subsets of a given collection, so that I can facilitate my use of the collection.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_01_AND_user_story_76}
-  
-Affected Resource of US1 is: << collection >>
-Affected Resource of US2 is: << directory >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_01: << [["repository","collection","preserve;create","access"]] >>
-Contain Resources for: user_story_76: << [["place","variety of documents","preserve","have"],["place","presentations","preserve","have"],["place","data sets i've created","preserve","have"],["county","place","preserve","have"],["region","place","preserve","have"],["project site","place","preserve","have"],["directory","materials","create;delete","automatically updated"],["repository","directory","create;delete","automatically updated"],["central archive","list","create;delete","automatically updated"]] >>
-
- Action of user_story_01 is: << access >>  which is annotated with: << preserve >>
+ Action of user_story_15 is: << search >>  which is annotated with: << preserve >>
  Action of user_story_76 is: << automatically updated >>  which is annotated with: << delete >>
 
-Conflict Reason is: << preserve-delete-Conflict >>
+ Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_01: #G27# As a faculty member, i want to #access# a #collection# within the #repository#, 
+   user_story_15: #G27# As a Cornell faculty member, i want to #search# the #repository# and browse through its contents on my phone, 
 
    user_story_76: #G27# As an Extension Educator, i want to have a place to store a variety of documents, presentations and data sets i've created, that doesn't require an extra step in making available on my own county/region/project site (i.e. a list or #directory# of materials there is #automatically updated# when placed in a central archive/#repository#).
 
 Original texts of user stories are: 
-   user_story_01: #G27# As a faculty member, I want to access a collection within the repository, so that I can obtain research materials.
+   user_story_15: #G27# As a Cornell faculty member, I want to search the repository and browse through its contents on my phone, so that I can check things on the go.
 
    user_story_76: #G27# As an Extension Educator, I want to have a place to store a variety of documents, presentations and data sets I've created, that doesn't require an extra step in making available on my own County/Region/Project site (i.e. a list or directory of materials there is automatically updated when placed in a central archive/repository).
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_45_AND_user_story_76}
+{user_story_41_AND_user_story_90}
   
-Affected Resource of US1 is: << dissertations >>
-Affected Resource of US2 is: << directory >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_45: << [["repository","dissertations","preserve;create","search"],["former student","work","create","quickly find"]] >>
-Contain Resources for: user_story_76: << [["place","variety of documents","preserve","have"],["place","presentations","preserve","have"],["place","data sets i've created","preserve","have"],["county","place","preserve","have"],["region","place","preserve","have"],["project site","place","preserve","have"],["directory","materials","create;delete","automatically updated"],["repository","directory","create;delete","automatically updated"],["central archive","list","create;delete","automatically updated"]] >>
+ Affected Resource of US1 is: << report >>
 
- Action of user_story_45 is: << search >>  which is annotated with: << preserve >>
- Action of user_story_76 is: << automatically updated >>  which is annotated with: << delete >>
+ Action of user_story_41 is: << search >>  which is annotated with: << preserve >>
+ Action of user_story_90 is: << unpublish >>  which is annotated with: << delete >>
 
-Conflict Reason is: << preserve-delete-Conflict >>
+ Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_45: #G27# As a Cornell faculty member, i want to #search# for the #dissertations# in the #repository# for which i have been a thesis committee member, to quickly find work by a former student.
+   user_story_41: #G27# As a patron, i want to #search# for #report#/dataset with keywords or a partial or complete title to locate needed #report#/dataset.
 
-   user_story_76: #G27# As an Extension Educator, i want to have a place to store a variety of documents, presentations and data sets i've created, that doesn't require an extra step in making available on my own county/region/project site (i.e. a list or #directory# of materials there is #automatically updated# when placed in a central archive/#repository#).
-
-Original texts of user stories are: 
-   user_story_45: #G27# As a Cornell faculty member, I want to search for the dissertations in the repository for which I have been a thesis committee member, to quickly find work by a former student.
-
-   user_story_76: #G27# As an Extension Educator, I want to have a place to store a variety of documents, presentations and data sets I've created, that doesn't require an extra step in making available on my own County/Region/Project site (i.e. a list or directory of materials there is automatically updated when placed in a central archive/repository).
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_72_AND_user_story_81}
-  
-Affected Resource of US1 is: << content >>
-Affected Resource of US2 is: << useful metadata >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_72: << [["repository","content","preserve","use"],["repository","metadata ","preserve","use"]] >>
-Contain Resources for: user_story_81: << [["repository","useful metadata","delete","harvest"],["oai","useful metadata","delete","harvest"]] >>
-
- Action of user_story_72 is: << use >>  which is annotated with: << preserve >>
- Action of user_story_81 is: << harvest >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_72: #G27# As a library staff member, i want to #use# #content# and metadata from the #repository# in other systems and/or web pages easily, 
-
-   user_story_81: #G27# As a librarydiscoveryoperator, i want to #harvest# #useful metadata# from the #repository# via oai, and continue to do so incrementally, 
+   user_story_90: #G27# As a DB/IR administrator, i want to #unpublish# a #report#/dataset if requested to do so by usda agency.
 
 Original texts of user stories are: 
-   user_story_72: #G27# As a library staff member, I want to use content and metadata from the repository in other systems and/or web pages easily, so that I can deliver such content in the manner best fit to the audience or occasion.
+   user_story_41: #G27# As a patron, I want to search for report/dataset with keywords or a partial or complete title to locate needed report/dataset.
 
-   user_story_81: #G27# As a librarydiscoveryoperator, I want to harvest useful metadata from the repository via OAI, and continue to do so incrementally, so that I can make Cornell publications discoverable in my repository.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_09_AND_user_story_35}
-  
-Affected Resource of US1 is: << access embargo >>
-Affected Resource of US2 is: << descriptive metadata >>
-Affected Contain Resource US1 is: << item >>
-Affected Resource US2 is: << item >>
-Contain Resources for: user_story_09: << [["item","access embargo","delete","remove"]] >>
-Contain Resources for: user_story_35: << [["item","descriptive metadata","preserve","see"],["repository","item","create","come"]] >>
-
- Action of user_story_09 is: << remove >>  which is annotated with: << delete >>
- Action of user_story_35 is: << see >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_09: #G27# As a library staff member, i want to apply or #remove# an #access embargo# to an #item# when asked to do this by an #item# author.
-
-   user_story_35: #G27# As a researcher, i want to #see# #descriptive metadata# for the #item# whether i come to the #item# through the repository or directly to the pdf, 
-
-Original texts of user stories are: 
-   user_story_09: #G27# As a library staff member, I want to apply or remove an access embargo to an item when asked to do this by an item author.
-
-   user_story_35: #G27# As a researcher, I want to see descriptive metadata for the item whether I come to the item through the repository or directly to the PDF, so that I can correctly identify the source of the content.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_32_AND_user_story_81}
-  
-Affected Resource of US1 is: << items i have deposited >>
-Affected Resource of US2 is: << useful metadata >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_32: << [["repository","items i have deposited","preserve","see"],["google search results","items i have deposited","preserve","see"]] >>
-Contain Resources for: user_story_81: << [["repository","useful metadata","delete","harvest"],["oai","useful metadata","delete","harvest"]] >>
-
- Action of user_story_32 is: << see >>  which is annotated with: << preserve >>
- Action of user_story_81 is: << harvest >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_32: #G27# As a Cornell faculty member, i want to #see# #items i have deposited# in the #repository# appear high up in google search results, because that's my ticket to stardom.
-
-   user_story_81: #G27# As a librarydiscoveryoperator, i want to #harvest# #useful metadata# from the #repository# via oai, and continue to do so incrementally, 
-
-Original texts of user stories are: 
-   user_story_32: #G27# As a Cornell faculty member, I want to see items I have deposited in the repository appear high up in Google search results, because that's my ticket to stardom.
-
-   user_story_81: #G27# As a librarydiscoveryoperator, I want to harvest useful metadata from the repository via OAI, and continue to do so incrementally, so that I can make Cornell publications discoverable in my repository.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_76_AND_user_story_81}
-  
-Affected Resource of US1 is: << directory >>
-Affected Resource of US2 is: << useful metadata >>
-Affected Contain Resource US1 is: << repository >>
-Affected Resource US2 is: << repository >>
-Contain Resources for: user_story_76: << [["place","variety of documents","preserve","have"],["place","presentations","preserve","have"],["place","data sets i've created","preserve","have"],["county","place","preserve","have"],["region","place","preserve","have"],["project site","place","preserve","have"],["directory","materials","create;delete","automatically updated"],["repository","directory","create;delete","automatically updated"],["central archive","list","create;delete","automatically updated"]] >>
-Contain Resources for: user_story_81: << [["repository","useful metadata","delete","harvest"],["oai","useful metadata","delete","harvest"]] >>
-
- Action of user_story_76 is: << automatically updated >>  which is annotated with: << delete >>
- Action of user_story_81 is: << harvest >>  which is annotated with: << delete >>
-
-Conflict Reason is: << delete-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_76: #G27# As an Extension Educator, i want to have a place to store a variety of documents, presentations and data sets i've created, that doesn't require an extra step in making available on my own county/region/project site (i.e. a list or #directory# of materials there is #automatically updated# when placed in a central archive/#repository#).
-
-   user_story_81: #G27# As a librarydiscoveryoperator, i want to #harvest# #useful metadata# from the #repository# via oai, and continue to do so incrementally, 
-
-Original texts of user stories are: 
-   user_story_76: #G27# As an Extension Educator, I want to have a place to store a variety of documents, presentations and data sets I've created, that doesn't require an extra step in making available on my own County/Region/Project site (i.e. a list or directory of materials there is automatically updated when placed in a central archive/repository).
-
-   user_story_81: #G27# As a librarydiscoveryoperator, I want to harvest useful metadata from the repository via OAI, and continue to do so incrementally, so that I can make Cornell publications discoverable in my repository.
+   user_story_90: #G27# As a DB/IR administrator, I want to unpublish a report/dataset if requested to do so by USDA agency.

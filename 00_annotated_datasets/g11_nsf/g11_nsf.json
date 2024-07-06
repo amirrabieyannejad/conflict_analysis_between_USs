@@ -4,10 +4,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -21,19 +17,6 @@
             ],
             "Action": ["see"],
             "Persona": ["team member"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "see",
-                    "first iteration",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "beta",
-                    "first iteration",
-                    "preserve",
-                    "see"
-                ]]
-            },
             "Contains": [
                 [
                     "cloud.gov",
@@ -52,7 +35,20 @@
             "Targets": [[
                 "see",
                 "first iteration"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "see",
+                    "first iteration",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "beta",
+                    "first iteration",
+                    "preserve",
+                    "see"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -61,14 +57,6 @@
         "Benefit": {
             "Entity": ["beta site"],
             "Action": ["deploy"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "deploy",
-                    "beta site",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can deploy a beta site to it.",
             "Targets": [[
@@ -85,21 +73,6 @@
                 "set up"
             ],
             "Persona": ["developer"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "have",
-                        "subdomain beta.nsf.gov",
-                        "preserve"
-                    ],
-                    [
-                        "set up",
-                        "subdomain beta.nsf.gov",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a developer, I want to have the subdomain beta.nsf.gov be set up, ",
             "Triggers": [[
@@ -115,7 +88,22 @@
                     "set up",
                     "subdomain beta.nsf.gov"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "have",
+                        "subdomain beta.nsf.gov",
+                        "preserve"
+                    ],
+                    [
+                        "set up",
+                        "subdomain beta.nsf.gov",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Contains": [
             "subdomain beta.nsf.gov",
@@ -127,10 +115,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -148,14 +132,6 @@
                 "work"
             ],
             "Persona": ["stakeholder"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "decision",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [[
                 "beta",
                 "blog aggregator"
@@ -168,7 +144,15 @@
             "Targets": [[
                 "have",
                 "decision"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "decision",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -177,10 +161,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -198,34 +178,6 @@
                 "switching"
             ],
             "Persona": ["NSF employee"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "understand",
-                        "process",
-                        "preserve;create"
-                    ],
-                    [
-                        "switching",
-                        "cloud.gov hosting plan",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "cloud.gov hosting plan",
-                        "prototype",
-                        "create;delete",
-                        "switching"
-                    ],
-                    [
-                        "cloud.gov hosting plan",
-                        "fisma low",
-                        "create;delete",
-                        "switching"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "cloud.gov hosting plan",
@@ -250,7 +202,35 @@
                     "switching",
                     "cloud.gov hosting plan"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "understand",
+                        "process",
+                        "preserve;create"
+                    ],
+                    [
+                        "switching",
+                        "cloud.gov hosting plan",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "cloud.gov hosting plan",
+                        "prototype",
+                        "create;delete",
+                        "switching"
+                    ],
+                    [
+                        "cloud.gov hosting plan",
+                        "fisma low",
+                        "create;delete",
+                        "switching"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -259,14 +239,6 @@
         "Benefit": {
             "Entity": ["CMS"],
             "Action": ["determine"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "determine",
-                    "cms",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can determine if the CMS is right for me.",
             "Targets": [[
@@ -283,19 +255,6 @@
             ],
             "Action": ["see"],
             "Persona": ["stakeholder"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "see",
-                    "results",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "user research",
-                    "results",
-                    "preserve",
-                    "see"
-                ]]
-            },
             "Contains": [[
                 "user research",
                 "results"
@@ -308,7 +267,20 @@
             "Targets": [[
                 "see",
                 "results"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "see",
+                    "results",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "user research",
+                    "results",
+                    "preserve",
+                    "see"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -317,14 +289,6 @@
         "Benefit": {
             "Entity": ["design"],
             "Action": ["begin implementing"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "begin implementing",
-                    "design",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can begin implementing design.",
             "Targets": [[
@@ -338,14 +302,6 @@
             "Entity": ["new social media wireframe"],
             "Action": ["have"],
             "Persona": ["designer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "new social media wireframe",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a designer, I want to have a new social media wireframe, ",
             "Triggers": [[
@@ -355,7 +311,15 @@
             "Targets": [[
                 "have",
                 "new social media wireframe"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "new social media wireframe",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Contains": [
             "new social media wireframe",
@@ -373,21 +337,6 @@
                 "work with",
                 "determine"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "work with",
-                        "engineers",
-                        "create;delete"
-                    ],
-                    [
-                        "determine",
-                        "feasibility",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can work with the engineers to determine feasibility.",
             "Targets": [
@@ -412,34 +361,6 @@
             ],
             "Action": ["have"],
             "Persona": ["team member"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "have",
-                        "prioritized list",
-                        "preserve"
-                    ],
-                    [
-                        "have",
-                        "elements",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "prioritized list",
-                        "features",
-                        "preserve",
-                        "have"
-                    ],
-                    [
-                        "future social element page",
-                        "elements",
-                        "preserve",
-                        "have"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "prioritized list",
@@ -464,7 +385,35 @@
                     "have",
                     "elements"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "have",
+                        "prioritized list",
+                        "preserve"
+                    ],
+                    [
+                        "have",
+                        "elements",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "prioritized list",
+                        "features",
+                        "preserve",
+                        "have"
+                    ],
+                    [
+                        "future social element page",
+                        "elements",
+                        "preserve",
+                        "have"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -476,14 +425,6 @@
                 "established brand guidelines"
             ],
             "Action": ["implement"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "implement",
-                    "beta site",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "we can implement a beta site quickly without established brand guidelines.",
             "Targets": [[
@@ -500,19 +441,6 @@
             ],
             "Action": ["determine"],
             "Persona": ["team member"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "determine",
-                    "design direction",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "beta social page",
-                    "design direction",
-                    "create",
-                    "determine"
-                ]]
-            },
             "Contains": [[
                 "beta social page",
                 "design direction"
@@ -525,7 +453,20 @@
             "Targets": [[
                 "determine",
                 "design direction"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "determine",
+                    "design direction",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "beta social page",
+                    "design direction",
+                    "create",
+                    "determine"
+                ]]
+            }
         },
         "Mix": {"Contains": [
             "beta social page",
@@ -543,14 +484,6 @@
                 "make sure",
                 "capturing"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "capturing",
-                    "right information",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I make sure the in-person interviews are effective and capturing the right information.",
             "Targets": [[
@@ -564,14 +497,6 @@
             "Entity": ["user research plan"],
             "Action": ["test"],
             "Persona": ["user researcher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "test",
-                    "user research plan",
-                    "preserve;delete;create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a user researcher, I want to test the user research plan, ",
             "Triggers": [[
@@ -581,7 +506,15 @@
             "Targets": [[
                 "test",
                 "user research plan"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "test",
+                    "user research plan",
+                    "preserve;delete;create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -590,14 +523,6 @@
         "Benefit": {
             "Entity": ["internal users"],
             "Action": ["begin testing"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "begin testing",
-                    "internal users",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can begin testing with internal users.",
             "Targets": [[
@@ -611,14 +536,6 @@
             "Entity": ["finalized OLPA task script"],
             "Action": ["have"],
             "Persona": ["user researcher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "finalized olpa task script",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a user researcher, I want to have the finalized OLPA task script, ",
             "Triggers": [[
@@ -628,7 +545,15 @@
             "Targets": [[
                 "have",
                 "finalized OLPA task script"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "finalized olpa task script",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -637,10 +562,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["edit"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can edit it.",
             "Targets": []
@@ -651,14 +572,6 @@
             "Entity": ["content"],
             "Action": ["easily find"],
             "Persona": ["content editor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "easily find",
-                    "content",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a content editor, I want to be able to easily find content, ",
             "Triggers": [[
@@ -668,7 +581,15 @@
             "Targets": [[
                 "easily find",
                 "content"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "easily find",
+                    "content",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Targets": [
             "edit",
@@ -680,14 +601,6 @@
         "Benefit": {
             "Entity": ["user interview"],
             "Action": ["complete"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "complete",
-                    "user interview",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can complete the user interview.",
             "Targets": [[
@@ -705,10 +618,6 @@
             ],
             "Action": ["make sure"],
             "Persona": ["research participant"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [[
                 "prototype",
                 "appearance"
@@ -718,7 +627,11 @@
                 "research participant",
                 "make sure"
             ]],
-            "Targets": []
+            "Targets": [],
+            "Action Annotations": {
+                "Target Action Annotations": [],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -727,14 +640,6 @@
         "Benefit": {
             "Entity": ["second task script"],
             "Action": ["finalize"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "finalize",
-                    "second task script",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can finalize the second task script.",
             "Targets": [[
@@ -748,14 +653,6 @@
             "Entity": ["WIG prototype"],
             "Action": ["have"],
             "Persona": ["user researcher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "wig prototype",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a user researcher, I want to have the WIG prototype, ",
             "Triggers": [[
@@ -765,7 +662,15 @@
             "Targets": [[
                 "have",
                 "WIG prototype"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "wig prototype",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -774,10 +679,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -790,19 +691,6 @@
             ],
             "Action": ["add"],
             "Persona": ["user"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "add",
-                    "video",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "article",
-                    "video",
-                    "create",
-                    "add"
-                ]]
-            },
             "Contains": [[
                 "article",
                 "video"
@@ -815,7 +703,20 @@
             "Targets": [[
                 "add",
                 "video"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "add",
+                    "video",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "article",
+                    "video",
+                    "create",
+                    "add"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -827,18 +728,6 @@
                 "beta.nsf.gov ATO"
             ],
             "Action": ["determine"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "determine",
-                    "requirements",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "beta.nsf.gov ATO",
-                    "requirements",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "beta.nsf.gov ATO",
                 "requirements"
@@ -855,14 +744,6 @@
             "Entity": ["DIS / cloud.gov"],
             "Action": ["meet"],
             "Persona": ["team member"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "meet",
-                    "dis / cloud.gov",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a team member, I want to meet with DIS / cloud.gov, ",
             "Triggers": [[
@@ -872,7 +753,15 @@
             "Targets": [[
                 "meet",
                 "DIS / cloud.gov"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "meet",
+                    "dis / cloud.gov",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -884,14 +773,6 @@
                 "make sure",
                 "capturing"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "capturing",
-                    "priority areas",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can make sure we're capturing the priority areas.",
             "Targets": [[
@@ -911,26 +792,6 @@
                 "test"
             ],
             "Persona": ["user researcher"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "have",
-                        "list",
-                        "preserve"
-                    ],
-                    [
-                        "test",
-                        "priority workflow candidates",
-                        "preserve;delete;create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "list",
-                    "priority workflow candidates",
-                    "preserve",
-                    "have"
-                ]]
-            },
             "Contains": [[
                 "list",
                 "priority workflow candidates"
@@ -949,7 +810,27 @@
                     "test",
                     "priority workflow candidates"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "have",
+                        "list",
+                        "preserve"
+                    ],
+                    [
+                        "test",
+                        "priority workflow candidates",
+                        "preserve;delete;create"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "list",
+                    "priority workflow candidates",
+                    "preserve",
+                    "have"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -961,14 +842,6 @@
                 "CMS decision"
             ],
             "Action": ["begin understanding"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "begin understanding",
-                    "workflow needs",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can begin understanding workflow needs as they pertain to any CMS decision.",
             "Targets": [[
@@ -982,14 +855,6 @@
             "Entity": ["MVP"],
             "Action": ["understand"],
             "Persona": ["team member"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "understand",
-                    "mvp",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a team member, I want to understand what the MVP should look like, ",
             "Triggers": [[
@@ -999,7 +864,15 @@
             "Targets": [[
                 "understand",
                 "MVP"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "understand",
+                    "mvp",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1011,14 +884,6 @@
                 "learn",
                 "developed further"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "developed further",
-                    "prototype",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can learn as the prototype is developed further.",
             "Targets": [[
@@ -1032,14 +897,6 @@
             "Entity": ["CMS implementation"],
             "Action": ["shadow"],
             "Persona": ["NSF administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "shadow",
-                    "cms implementation",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As an NSF administrator, I want to shadow the CMS implementation, ",
             "Triggers": [[
@@ -1049,7 +906,15 @@
             "Targets": [[
                 "shadow",
                 "CMS implementation"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "shadow",
+                    "cms implementation",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Targets": [
             "learn",
@@ -1061,10 +926,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["plan accordingly"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can plan accordingly.",
             "Targets": []
@@ -1075,14 +936,6 @@
             "Entity": ["updated acquisitions roadmap"],
             "Action": ["have"],
             "Persona": ["team member"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "updated acquisitions roadmap",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a team member, I want to have an updated acquisitions roadmap, ",
             "Triggers": [[
@@ -1092,7 +945,15 @@
             "Targets": [[
                 "have",
                 "updated acquisitions roadmap"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "updated acquisitions roadmap",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1107,21 +968,6 @@
                 "see",
                 "focus"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "see",
-                        "prioritized areas",
-                        "preserve"
-                    ],
-                    [
-                        "focus",
-                        "prioritized areas",
-                        "preserve;create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can see prioritized areas to focus on for the next few months and beyond.",
             "Targets": [
@@ -1141,14 +987,6 @@
             "Entity": ["updated roadmap document"],
             "Action": ["have"],
             "Persona": ["NSF employee"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "updated roadmap document",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As an NSF employee, I want to have an updated roadmap document, ",
             "Triggers": [[
@@ -1158,7 +996,15 @@
             "Targets": [[
                 "have",
                 "updated roadmap document"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "updated roadmap document",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Contains": [
             "updated roadmap document",
@@ -1170,10 +1016,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -1191,26 +1033,6 @@
                 "overlaps"
             ],
             "Persona": ["team member"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "overlaps",
-                        "plans",
-                        "preserve;forbid"
-                    ],
-                    [
-                        "understand",
-                        "how",
-                        "preserve;create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "user research",
-                    "plans",
-                    "preserve;forbid",
-                    "overlaps"
-                ]]
-            },
             "Contains": [[
                 "user research",
                 "plans"
@@ -1229,7 +1051,27 @@
                     "understand",
                     "how"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "overlaps",
+                        "plans",
+                        "preserve"
+                    ],
+                    [
+                        "understand",
+                        "how",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "user research",
+                    "plans",
+                    "preserve",
+                    "overlaps"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1238,14 +1080,6 @@
         "Benefit": {
             "Entity": ["CMS prototype"],
             "Action": ["begin testing"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "begin testing",
-                    "cms prototype",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "we can begin testing against a CMS prototype.",
             "Targets": [[
@@ -1262,19 +1096,6 @@
             ],
             "Action": ["develop"],
             "Persona": ["researcher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "develop",
-                    "user research protocol",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "internal workflows",
-                    "user research protocol",
-                    "create",
-                    "develop"
-                ]]
-            },
             "Contains": [[
                 "internal workflows",
                 "user research protocol"
@@ -1287,7 +1108,20 @@
             "Targets": [[
                 "develop",
                 "user research protocol"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "develop",
+                    "user research protocol",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "internal workflows",
+                    "user research protocol",
+                    "create",
+                    "develop"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1299,10 +1133,6 @@
                 "assign",
                 "users"
             ],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can assign them to my users.",
             "Targets": []
@@ -1313,14 +1143,6 @@
             "Entity": ["roles"],
             "Action": ["have"],
             "Persona": ["CMS administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "roles",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a CMS administrator, I want to have roles, ",
             "Triggers": [[
@@ -1330,7 +1152,15 @@
             "Targets": [[
                 "have",
                 "roles"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "roles",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {
             "Contains": [
@@ -1348,10 +1178,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -1370,31 +1196,6 @@
                 "getting to"
             ],
             "Persona": ["NSF employee"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "identify",
-                        "key considerations",
-                        "preserve"
-                    ],
-                    [
-                        "prioritize",
-                        "key considerations",
-                        "create"
-                    ],
-                    [
-                        "getting to",
-                        "next step",
-                        "create"
-                    ],
-                    [
-                        "narrow down",
-                        "universe of cms options",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As an NSF employee, I want to narrow down the universe of CMS options and identify/prioritize key considerations for getting to the next step.",
             "Triggers": [
@@ -1428,7 +1229,32 @@
                     "narrow down",
                     "universe of CMS options"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "identify",
+                        "key considerations",
+                        "preserve"
+                    ],
+                    [
+                        "prioritize",
+                        "key considerations",
+                        "create"
+                    ],
+                    [
+                        "getting to",
+                        "next step",
+                        "create"
+                    ],
+                    [
+                        "narrow down",
+                        "universe of cms options",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1437,10 +1263,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -1458,51 +1280,6 @@
                 "identify"
             ],
             "Persona": ["NSF employee"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "have",
-                        "final workshop",
-                        "preserve"
-                    ],
-                    [
-                        "identify",
-                        "key lessons",
-                        "preserve"
-                    ],
-                    [
-                        "identify",
-                        "features",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "final workshop",
-                        "key lessons",
-                        "preserve",
-                        "have"
-                    ],
-                    [
-                        "final workshop",
-                        "features",
-                        "preserve",
-                        "have"
-                    ],
-                    [
-                        "content management system decision",
-                        "key lessons",
-                        "preserve",
-                        "identify"
-                    ],
-                    [
-                        "content management system decision",
-                        "features",
-                        "preserve",
-                        "identify"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "content management system decision",
@@ -1539,7 +1316,52 @@
                     "identify",
                     "features"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "have",
+                        "final workshop",
+                        "preserve"
+                    ],
+                    [
+                        "identify",
+                        "key lessons",
+                        "preserve"
+                    ],
+                    [
+                        "identify",
+                        "features",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "final workshop",
+                        "key lessons",
+                        "preserve",
+                        "have"
+                    ],
+                    [
+                        "final workshop",
+                        "features",
+                        "preserve",
+                        "have"
+                    ],
+                    [
+                        "content management system decision",
+                        "key lessons",
+                        "preserve",
+                        "identify"
+                    ],
+                    [
+                        "content management system decision",
+                        "features",
+                        "preserve",
+                        "identify"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -1554,21 +1376,6 @@
                 "understand",
                 "impact"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "impact",
-                        "current direction",
-                        "create"
-                    ],
-                    [
-                        "understand",
-                        "how",
-                        "preserve;create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can understand how this might impact current direction.",
             "Targets": [
@@ -1588,14 +1395,6 @@
             "Entity": ["webmaster workflow report"],
             "Action": ["see"],
             "Persona": ["CMS SME"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "see",
-                    "webmaster workflow report",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a CMS SME, I want to see the webmaster workflow report, ",
             "Triggers": [[
@@ -1605,7 +1404,15 @@
             "Targets": [[
                 "see",
                 "webmaster workflow report"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "see",
+                    "webmaster workflow report",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1620,26 +1427,6 @@
                 "understand",
                 "use later"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "understand",
-                        "when",
-                        "preserve;create"
-                    ],
-                    [
-                        "understand",
-                        "what",
-                        "preserve;create"
-                    ],
-                    [
-                        "use later",
-                        "what",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can understand when and what I can use later.",
             "Targets": [
@@ -1663,14 +1450,6 @@
             "Entity": ["work performed"],
             "Action": ["understand"],
             "Persona": ["NSF employee"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "understand",
-                    "work performed",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As an NSF employee, I want to understand work performed, ",
             "Triggers": [[
@@ -1680,7 +1459,15 @@
             "Targets": [[
                 "understand",
                 "work performed"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "understand",
+                    "work performed",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1695,21 +1482,6 @@
                 "summarize",
                 "synthesize"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "summarize",
-                        "findings",
-                        "create"
-                    ],
-                    [
-                        "synthesize",
-                        "results",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "we can summarize our findings and synthesize results.",
             "Targets": [
@@ -1732,19 +1504,6 @@
             ],
             "Action": ["recruit"],
             "Persona": ["researcher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "recruit",
-                    "last round",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "user research",
-                    "last round",
-                    "create",
-                    "recruit"
-                ]]
-            },
             "Contains": [[
                 "user research",
                 "last round"
@@ -1757,7 +1516,20 @@
             "Targets": [[
                 "recruit",
                 "last round"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "recruit",
+                    "last round",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "user research",
+                    "last round",
+                    "create",
+                    "recruit"
+                ]]
+            }
         },
         "Mix": {"Contains": [
             "user research",
@@ -1769,14 +1541,6 @@
         "Benefit": {
             "Entity": ["first prototype"],
             "Action": ["prepared to test"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "prepared to test",
-                    "first prototype",
-                    "preserve;delete;create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can be prepared to test our first prototype.",
             "Targets": [[
@@ -1793,19 +1557,6 @@
             ],
             "Action": ["continue scheduling"],
             "Persona": ["user researcher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "continue scheduling",
-                    "interviews",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": [[
-                    "hypothesis #1",
-                    "interviews",
-                    "create;delete",
-                    "continue scheduling"
-                ]]
-            },
             "Contains": [[
                 "hypothesis #1",
                 "interviews"
@@ -1818,7 +1569,20 @@
             "Targets": [[
                 "continue scheduling",
                 "interviews"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "continue scheduling",
+                    "interviews",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": [[
+                    "hypothesis #1",
+                    "interviews",
+                    "create;delete",
+                    "continue scheduling"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1827,10 +1591,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -1846,21 +1606,6 @@
                 "implement in conjunction"
             ],
             "Persona": ["NSF employee"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "have",
-                        "high-level strategy recommendations",
-                        "preserve"
-                    ],
-                    [
-                        "implement in conjunction",
-                        "new cms",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As an NSF employee, I want to have high-level strategy recommendations to implement in conjunction with the new CMS.",
             "Triggers": [[
@@ -1876,7 +1621,22 @@
                     "implement in conjunction",
                     "new CMS"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "have",
+                        "high-level strategy recommendations",
+                        "preserve"
+                    ],
+                    [
+                        "implement in conjunction",
+                        "new cms",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1892,26 +1652,6 @@
                 "understand",
                 "impact"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "impact",
-                        "eventual cms",
-                        "create"
-                    ],
-                    [
-                        "impact",
-                        "future web presence",
-                        "create"
-                    ],
-                    [
-                        "understand",
-                        "how",
-                        "preserve;create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can understand how they might impact an eventual CMS / future web presence.",
             "Targets": [
@@ -1935,14 +1675,6 @@
             "Entity": ["editorial-planning recommendations"],
             "Action": ["have"],
             "Persona": ["NSF employee"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "editorial-planning recommendations",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As an NSF employee, I want to have editorial-planning recommendations, ",
             "Triggers": [[
@@ -1952,7 +1684,15 @@
             "Targets": [[
                 "have",
                 "editorial-planning recommendations"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "editorial-planning recommendations",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1961,10 +1701,6 @@
         "Benefit": {
             "Entity": ["project"],
             "Action": ["incorporate"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can incorporate them throughout the project.",
             "Targets": []
@@ -1982,26 +1718,6 @@
                 "developed"
             ],
             "Persona": ["NSF employee"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "maintained",
-                        "brand guidelines",
-                        "create;delete"
-                    ],
-                    [
-                        "know",
-                        "how",
-                        "preserve"
-                    ],
-                    [
-                        "developed",
-                        "brand guidelines",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As an NSF employee, I want to know how brand guidelines are developed and maintained, ",
             "Triggers": [[
@@ -2021,7 +1737,27 @@
                     "developed",
                     "brand guidelines"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "maintained",
+                        "brand guidelines",
+                        "create;delete"
+                    ],
+                    [
+                        "know",
+                        "how",
+                        "preserve"
+                    ],
+                    [
+                        "developed",
+                        "brand guidelines",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {
             "Contains": [
@@ -2039,10 +1775,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -2059,21 +1791,6 @@
                 "set up"
             ],
             "Persona": ["web recruiter manager"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "working properly",
-                        "science360.gov",
-                        "preserve;forbid"
-                    ],
-                    [
-                        "set up",
-                        "recruiter",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a web recruiter manager, I want to confirm the recruiter is set up and working properly on Science360.gov.",
             "Triggers": [[
@@ -2089,7 +1806,22 @@
                     "set up",
                     "recruiter"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "working properly",
+                        "science360.gov",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "set up",
+                        "recruiter",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2098,14 +1830,6 @@
         "Benefit": {
             "Entity": ["better design decisions"],
             "Action": ["make"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "make",
-                    "better design decisions",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can make better design decisions in the future.",
             "Targets": [[
@@ -2125,21 +1849,6 @@
                 "developed"
             ],
             "Persona": ["NSF employee"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "developed",
-                        "visual design directions",
-                        "create"
-                    ],
-                    [
-                        "know",
-                        "how",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As an NSF employee, I want to know how visual design directions were developed, ",
             "Triggers": [[
@@ -2155,7 +1864,22 @@
                     "know",
                     "how"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "developed",
+                        "visual design directions",
+                        "create"
+                    ],
+                    [
+                        "know",
+                        "how",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2167,21 +1891,6 @@
                 "start developing",
                 "test"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "start developing",
-                        "prototype",
-                        "create"
-                    ],
-                    [
-                        "test",
-                        "prototype",
-                        "preserve;delete;create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can start developing a prototype to test.",
             "Targets": [
@@ -2201,14 +1910,6 @@
             "Entity": ["first hypothesis"],
             "Action": ["know"],
             "Persona": ["team member"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "first hypothesis",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a team member, I want to know what the first hypothesis is, ",
             "Triggers": [[
@@ -2218,7 +1919,15 @@
             "Targets": [[
                 "know",
                 "first hypothesis"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know",
+                    "first hypothesis",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2227,14 +1936,6 @@
         "Benefit": {
             "Entity": ["more informed recommendations"],
             "Action": ["make"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "make",
-                    "more informed recommendations",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can make more informed recommendations going forward.",
             "Targets": [[
@@ -2252,14 +1953,6 @@
             ],
             "Action": ["develop"],
             "Persona": ["content designer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "develop",
-                    "better understanding",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a content designer, I want to develop a better understanding of NSF's content types and editorial plan, ",
             "Triggers": [[
@@ -2269,7 +1962,15 @@
             "Targets": [[
                 "develop",
                 "better understanding"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "develop",
+                    "better understanding",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2287,26 +1988,6 @@
                 "drive",
                 "understand"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "gain",
-                        "understandings",
-                        "create"
-                    ],
-                    [
-                        "drive",
-                        "recommendations",
-                        "create"
-                    ],
-                    [
-                        "understand",
-                        "how",
-                        "preserve;create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I understand how we will gain understandings from tests that will drive recommendations.",
             "Targets": [
@@ -2330,14 +2011,6 @@
             "Entity": ["prototype strategy"],
             "Action": ["have"],
             "Persona": ["team member"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "prototype strategy",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a team member, I want to have a prototype strategy, ",
             "Triggers": [[
@@ -2347,7 +2020,15 @@
             "Targets": [[
                 "have",
                 "prototype strategy"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "prototype strategy",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2359,10 +2040,6 @@
                 "recommendations"
             ],
             "Action": ["ensure"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [[
                 "recommendations",
                 "integral part"
@@ -2379,19 +2056,6 @@
             ],
             "Action": ["demonstrate"],
             "Persona": ["content designer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "demonstrate",
-                    "value",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "user-centered content design",
-                    "value",
-                    "preserve",
-                    "demonstrate"
-                ]]
-            },
             "Contains": [[
                 "user-centered content design",
                 "value"
@@ -2404,7 +2068,20 @@
             "Targets": [[
                 "demonstrate",
                 "value"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "demonstrate",
+                    "value",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "user-centered content design",
+                    "value",
+                    "preserve",
+                    "demonstrate"
+                ]]
+            }
         },
         "Mix": {"Contains": [
             "recommendations",
@@ -2420,18 +2097,6 @@
                 "priority list"
             ],
             "Action": ["plan"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "plan",
-                    "new release",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "next listserv",
-                    "new release",
-                    "create"
-                ]]
-            },
             "Contains": [
                 [
                     "priority list",
@@ -2454,14 +2119,6 @@
             "Entity": ["outreach to lists"],
             "Action": ["know"],
             "Persona": ["user researcher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "outreach to lists",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a user researcher, I want to know when outreach to lists is successful, ",
             "Triggers": [[
@@ -2471,7 +2128,15 @@
             "Targets": [[
                 "know",
                 "outreach to lists"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know",
+                    "outreach to lists",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2484,18 +2149,6 @@
                 "stakeholders"
             ],
             "Action": ["communicate"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "communicate",
-                    "goals",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "project",
-                    "goals",
-                    "create"
-                ]]
-            },
             "Contains": [
                 [
                     "project",
@@ -2518,14 +2171,6 @@
             "Entity": ["regular in-person check-ins"],
             "Action": ["schedule"],
             "Persona": ["NSF employee"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "schedule",
-                    "regular in-person check-ins",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As an NSF employee, I want to schedule regular in-person check-ins, ",
             "Triggers": [[
@@ -2535,7 +2180,15 @@
             "Targets": [[
                 "schedule",
                 "regular in-person check-ins"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "schedule",
+                    "regular in-person check-ins",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2547,18 +2200,6 @@
                 "prototypes"
             ],
             "Action": ["plan"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "plan",
-                    "work around development",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "prototypes",
-                    "work around development",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "prototypes",
                 "work around development"
@@ -2575,14 +2216,6 @@
             "Entity": ["three initial hypotheses"],
             "Action": ["know"],
             "Persona": ["developer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "three initial hypotheses",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a developer, I want to know what the three initial hypotheses are, ",
             "Triggers": [[
@@ -2592,7 +2225,15 @@
             "Targets": [[
                 "know",
                 "three initial hypotheses"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know",
+                    "three initial hypotheses",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2607,21 +2248,6 @@
                 "understand",
                 "apply"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "understand",
-                        "next steps",
-                        "preserve;create"
-                    ],
-                    [
-                        "understand",
-                        "how",
-                        "preserve;create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can understand our next steps and how they apply to me.",
             "Targets": [
@@ -2644,19 +2270,6 @@
             ],
             "Action": ["have"],
             "Persona": ["workshop attendee"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "summary",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "summary",
-                    "what we learned",
-                    "preserve",
-                    "have"
-                ]]
-            },
             "Contains": [[
                 "summary",
                 "what we learned"
@@ -2669,7 +2282,20 @@
             "Targets": [[
                 "have",
                 "summary"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "summary",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "summary",
+                    "what we learned",
+                    "preserve",
+                    "have"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2678,14 +2304,6 @@
         "Benefit": {
             "Entity": ["first prototype"],
             "Action": ["start planning"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "start planning",
-                    "first prototype",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can start planning for the first prototype.",
             "Targets": [[
@@ -2702,19 +2320,6 @@
             ],
             "Action": ["know"],
             "Persona": ["designer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "early indications",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "hypotheses",
-                    "early indications",
-                    "preserve",
-                    "know"
-                ]]
-            },
             "Contains": [[
                 "hypotheses",
                 "early indications"
@@ -2727,7 +2332,20 @@
             "Targets": [[
                 "know",
                 "early indications"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know",
+                    "early indications",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "hypotheses",
+                    "early indications",
+                    "preserve",
+                    "know"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2739,14 +2357,6 @@
                 "more regular basis"
             ],
             "Action": ["work in tandem"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "work in tandem",
-                    "rest of the team",
-                    "preserve;delete;create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can work in tandem with the rest of the team on a more regular basis.",
             "Targets": [[
@@ -2763,19 +2373,6 @@
             ],
             "Action": ["have"],
             "Persona": ["team member"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "schedule",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "schedule",
-                    "more coworking slots",
-                    "preserve",
-                    "have"
-                ]]
-            },
             "Contains": [[
                 "schedule",
                 "more coworking slots"
@@ -2788,7 +2385,20 @@
             "Targets": [[
                 "have",
                 "schedule"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "schedule",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "schedule",
+                    "more coworking slots",
+                    "preserve",
+                    "have"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2797,10 +2407,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -2816,26 +2422,6 @@
                 "know"
             ],
             "Persona": ["NSF person"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "interested in attending",
-                        "user interviews",
-                        "preserve"
-                    ],
-                    [
-                        "know",
-                        "user interviews",
-                        "preserve"
-                    ],
-                    [
-                        "know",
-                        "type of user",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As an NSF person interested in attending user interviews, I want to know when they are scheduled and the type of user that will be interviewed.",
             "Triggers": [[
@@ -2855,7 +2441,27 @@
                     "know",
                     "type of user"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "interested in attending",
+                        "user interviews",
+                        "preserve"
+                    ],
+                    [
+                        "know",
+                        "user interviews",
+                        "preserve"
+                    ],
+                    [
+                        "know",
+                        "type of user",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2864,10 +2470,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["refer"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can refer to it easily now and in the future.",
             "Targets": []
@@ -2885,39 +2487,6 @@
                 "access"
             ],
             "Persona": ["NSF member of the team"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "have",
-                        "place",
-                        "preserve"
-                    ],
-                    [
-                        "access",
-                        "all the related reports",
-                        "preserve;create"
-                    ],
-                    [
-                        "access",
-                        "documentation",
-                        "preserve;create"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "place",
-                        "all the related reports",
-                        "preserve",
-                        "have"
-                    ],
-                    [
-                        "place",
-                        "documentation",
-                        "preserve",
-                        "have"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "place",
@@ -2946,7 +2515,40 @@
                     "access",
                     "documentation"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "have",
+                        "place",
+                        "preserve"
+                    ],
+                    [
+                        "access",
+                        "all the related reports",
+                        "preserve;create"
+                    ],
+                    [
+                        "access",
+                        "documentation",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "place",
+                        "all the related reports",
+                        "preserve",
+                        "have"
+                    ],
+                    [
+                        "place",
+                        "documentation",
+                        "preserve",
+                        "have"
+                    ]
+                ]
+            }
         },
         "Mix": {"Targets": [
             "refer",
@@ -2958,10 +2560,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["plan accordingly"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can plan accordingly.",
             "Targets": []
@@ -2975,21 +2573,6 @@
             ],
             "Action": ["know"],
             "Persona": ["team member"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "know",
-                        "mid-point checkin",
-                        "preserve"
-                    ],
-                    [
-                        "know",
-                        "what will be covered",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a team member, I want to know when the mid-point checkin is and what will be covered, ",
             "Triggers": [[
@@ -3005,7 +2588,22 @@
                     "know",
                     "what will be covered"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "know",
+                        "mid-point checkin",
+                        "preserve"
+                    ],
+                    [
+                        "know",
+                        "what will be covered",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3014,14 +2612,6 @@
         "Benefit": {
             "Entity": ["issues"],
             "Action": ["participate"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "participate",
-                    "issues",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can participate in the issues as assigned.",
             "Targets": [[
@@ -3035,14 +2625,6 @@
             "Entity": ["Github"],
             "Action": ["join"],
             "Persona": ["NSF employee"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "join",
-                    "github",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As an NSF employee, I want to join Github, ",
             "Triggers": [[
@@ -3052,7 +2634,15 @@
             "Targets": [[
                 "join",
                 "Github"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "join",
+                    "github",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3061,14 +2651,6 @@
         "Benefit": {
             "Entity": ["issues"],
             "Action": ["participate"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "participate",
-                    "issues",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can participate in the issues as assigned.",
             "Targets": [[
@@ -3082,14 +2664,6 @@
             "Entity": ["Github"],
             "Action": ["learn"],
             "Persona": ["NSF employee"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "learn",
-                    "github",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As an NSF employee, I want to learn about how Github is used, ",
             "Triggers": [[
@@ -3099,7 +2673,15 @@
             "Targets": [[
                 "learn",
                 "Github"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "learn",
+                    "github",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3112,21 +2694,6 @@
                 "future nsf.gov website"
             ],
             "Action": ["understand"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "understand",
-                        "educators",
-                        "preserve;create"
-                    ],
-                    [
-                        "understand",
-                        "science influencers",
-                        "preserve;create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can understand what educators and science influencers need from a future nsf.gov website.",
             "Targets": [
@@ -3146,14 +2713,6 @@
             "Entity": ["interview participants"],
             "Action": ["begin identifying"],
             "Persona": ["user researcher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "begin identifying",
-                    "interview participants",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a user researcher, I want to begin identifying interview participants, ",
             "Triggers": [[
@@ -3163,7 +2722,15 @@
             "Targets": [[
                 "begin identifying",
                 "interview participants"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "begin identifying",
+                    "interview participants",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3175,14 +2742,6 @@
                 "stakeholders"
             ],
             "Action": ["discuss"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "discuss",
-                    "different design concepts",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "we can discuss different design concepts with stakeholders.",
             "Targets": [[
@@ -3199,19 +2758,6 @@
             ],
             "Action": ["concept"],
             "Persona": ["VisualDesigner"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "concept",
-                    "different styles",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "nsf.gov website",
-                    "different styles",
-                    "create",
-                    "concept"
-                ]]
-            },
             "Contains": [[
                 "nsf.gov website",
                 "different styles"
@@ -3224,7 +2770,20 @@
             "Targets": [[
                 "concept",
                 "different styles"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "concept",
+                    "different styles",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "nsf.gov website",
+                    "different styles",
+                    "create",
+                    "concept"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3240,18 +2799,6 @@
                 "see",
                 "recruit"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "recruit",
-                    "users",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "website",
-                    "users",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "website",
                 "users"
@@ -3268,14 +2815,6 @@
             "Entity": ["website recruitment test"],
             "Action": ["set up"],
             "Persona": ["user researcher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "set up",
-                    "website recruitment test",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a user researcher, I want to set up a website recruitment test, ",
             "Triggers": [[
@@ -3285,7 +2824,15 @@
             "Targets": [[
                 "set up",
                 "website recruitment test"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "set up",
+                    "website recruitment test",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3294,10 +2841,6 @@
         "Benefit": {
             "Entity": ["more pages"],
             "Action": ["deploy"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can deploy it on more pages.",
             "Targets": []
@@ -3312,26 +2855,6 @@
                 "working properly"
             ],
             "Persona": ["web recruiter manager"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "set up",
-                        "recruiter",
-                        "create"
-                    ],
-                    [
-                        "working properly",
-                        "recruiter",
-                        "preserve;forbid"
-                    ],
-                    [
-                        "confirm",
-                        "recruiter",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a web recruiter manager, I want to confirm the recruiter is set up and working properly, ",
             "Triggers": [[
@@ -3351,7 +2874,27 @@
                     "confirm",
                     "recruiter"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "set up",
+                        "recruiter",
+                        "create"
+                    ],
+                    [
+                        "working properly",
+                        "recruiter",
+                        "preserve;forbid"
+                    ],
+                    [
+                        "confirm",
+                        "recruiter",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {
             "Contains": [
@@ -3372,14 +2915,6 @@
                 "stakeholders"
             ],
             "Action": ["discuss"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "discuss",
-                    "different design concepts",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "we can discuss different design concepts with stakeholders.",
             "Targets": [[
@@ -3400,26 +2935,6 @@
                 "aid"
             ],
             "Persona": ["VisualDesigner"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "create",
-                        "moodboard",
-                        "create"
-                    ],
-                    [
-                        "aid",
-                        "visual design concepts",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "nsf.gov website",
-                    "visual design concepts",
-                    "create",
-                    "aid"
-                ]]
-            },
             "Contains": [[
                 "nsf.gov website",
                 "visual design concepts"
@@ -3438,7 +2953,27 @@
                     "aid",
                     "visual design concepts"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "create",
+                        "moodboard",
+                        "create"
+                    ],
+                    [
+                        "aid",
+                        "visual design concepts",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "nsf.gov website",
+                    "visual design concepts",
+                    "create",
+                    "aid"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3447,10 +2982,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -3464,19 +2995,6 @@
             ],
             "Action": ["see"],
             "Persona": ["workshop attendee"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "see",
-                    "summary",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "major findings",
-                    "summary",
-                    "preserve",
-                    "see"
-                ]]
-            },
             "Contains": [
                 [
                     "event",
@@ -3495,7 +3013,20 @@
             "Targets": [[
                 "see",
                 "summary"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "see",
+                    "summary",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "major findings",
+                    "summary",
+                    "preserve",
+                    "see"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3510,21 +3041,6 @@
                 "observe",
                 "make"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "observe",
-                        "interviews",
-                        "preserve"
-                    ],
-                    [
-                        "make",
-                        "recommendations accordingly",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "they can observe the interviews and make recommendations accordingly.",
             "Targets": [
@@ -3550,19 +3066,6 @@
                 "invited"
             ],
             "Persona": ["user researcher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "invited",
-                    "correct nsf people",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "user interviews",
-                    "correct nsf people",
-                    "create",
-                    "invited"
-                ]]
-            },
             "Contains": [[
                 "user interviews",
                 "correct NSF people"
@@ -3575,7 +3078,20 @@
             "Targets": [[
                 "invited",
                 "correct NSF people"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "invited",
+                    "correct nsf people",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "user interviews",
+                    "correct nsf people",
+                    "create",
+                    "invited"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3584,14 +3100,6 @@
         "Benefit": {
             "Entity": ["participants"],
             "Action": ["begin recruiting"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "begin recruiting",
-                    "participants",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can begin recruiting participants.",
             "Targets": [[
@@ -3605,14 +3113,6 @@
             "Entity": ["research plan"],
             "Action": ["begin drafting"],
             "Persona": ["user researcher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "begin drafting",
-                    "research plan",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a user researcher, I want to begin drafting a research plan, ",
             "Triggers": [[
@@ -3622,7 +3122,15 @@
             "Targets": [[
                 "begin drafting",
                 "research plan"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "begin drafting",
+                    "research plan",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3631,10 +3139,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -3647,19 +3151,6 @@
             ],
             "Action": ["add"],
             "Persona": ["content editor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "add",
-                    "videos",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "brightcove",
-                    "videos",
-                    "create",
-                    "add"
-                ]]
-            },
             "Contains": [[
                 "Brightcove",
                 "videos"
@@ -3672,7 +3163,20 @@
             "Targets": [[
                 "add",
                 "videos"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "add",
+                    "videos",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "brightcove",
+                    "videos",
+                    "create",
+                    "add"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3681,10 +3185,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -3697,21 +3197,6 @@
                 "outdent"
             ],
             "Persona": ["author"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "indent",
-                        "content",
-                        "create"
-                    ],
-                    [
-                        "outdent",
-                        "content",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As an author, I want to be able to indent / outdent content.",
             "Triggers": [
@@ -3733,7 +3218,22 @@
                     "outdent",
                     "content"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "indent",
+                        "content",
+                        "create"
+                    ],
+                    [
+                        "outdent",
+                        "content",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3746,10 +3246,6 @@
                 "redesign"
             ],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [
                 [
                     "redesign",
@@ -3773,19 +3269,6 @@
             ],
             "Action": ["demonstrate"],
             "Persona": ["VisualDesigner"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "demonstrate",
-                    "value",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "visual design",
-                    "value",
-                    "preserve",
-                    "demonstrate"
-                ]]
-            },
             "Contains": [[
                 "visual design",
                 "value"
@@ -3798,7 +3281,20 @@
             "Targets": [[
                 "demonstrate",
                 "value"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "demonstrate",
+                    "value",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "visual design",
+                    "value",
+                    "preserve",
+                    "demonstrate"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3807,14 +3303,6 @@
         "Benefit": {
             "Entity": ["tasks"],
             "Action": ["assign"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "assign",
-                    "tasks",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can assign tasks as necessary.",
             "Targets": [[
@@ -3835,26 +3323,6 @@
                 "need"
             ],
             "Persona": ["team member"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "plan",
-                        "sprint",
-                        "create"
-                    ],
-                    [
-                        "know",
-                        "visual design related tasks",
-                        "preserve"
-                    ],
-                    [
-                        "need",
-                        "visual design related tasks",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a team member, I want to know what visual design related tasks we might need to plan for this sprint, ",
             "Triggers": [[
@@ -3874,7 +3342,27 @@
                     "need",
                     "visual design related tasks"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "plan",
+                        "sprint",
+                        "create"
+                    ],
+                    [
+                        "know",
+                        "visual design related tasks",
+                        "preserve"
+                    ],
+                    [
+                        "need",
+                        "visual design related tasks",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3883,14 +3371,6 @@
         "Benefit": {
             "Entity": ["interviewees"],
             "Action": ["start recruiting"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "start recruiting",
-                    "interviewees",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can start recruiting interviewees ASAP!.",
             "Targets": [[
@@ -3904,14 +3384,6 @@
             "Entity": [" recruiting-email templates ready"],
             "Action": ["have"],
             "Persona": ["team member"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    " recruiting-email templates ready",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a team member, I want to have recruiting-email templates ready to go, ",
             "Triggers": [[
@@ -3921,7 +3393,15 @@
             "Targets": [[
                 "have",
                 " recruiting-email templates ready"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    " recruiting-email templates ready",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3934,18 +3414,6 @@
                 "NSF page"
             ],
             "Action": ["understand"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "understand",
-                    "impact",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": [[
-                    "NSF page",
-                    "impact",
-                    "preserve;create"
-                ]]
-            },
             "Contains": [[
                 "NSF page",
                 "impact"
@@ -3965,19 +3433,6 @@
             ],
             "Action": ["see"],
             "Persona": ["NSF employee"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "see",
-                    " user recruitment form",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "sample page",
-                    " user recruitment form",
-                    "preserve",
-                    "see"
-                ]]
-            },
             "Contains": [[
                 "sample page",
                 " user recruitment form"
@@ -3990,7 +3445,20 @@
             "Targets": [[
                 "see",
                 " user recruitment form"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "see",
+                    " user recruitment form",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "sample page",
+                    " user recruitment form",
+                    "preserve",
+                    "see"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3999,10 +3467,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -4018,21 +3482,6 @@
                 "leave"
             ],
             "Persona": ["potential research participant"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "learn",
-                        "research",
-                        "create"
-                    ],
-                    [
-                        "leave",
-                        "contact information",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a potential research participant, I want to learn about the research and leave my contact information.",
             "Triggers": [
@@ -4054,7 +3503,22 @@
                     "leave",
                     "contact information"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "learn",
+                        "research",
+                        "create"
+                    ],
+                    [
+                        "leave",
+                        "contact information",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -4063,14 +3527,6 @@
         "Benefit": {
             "Entity": ["work"],
             "Action": ["plan"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "plan",
-                    "work",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can plan my work.",
             "Targets": [[
@@ -4087,19 +3543,6 @@
             ],
             "Action": ["have"],
             "Persona": ["team member"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "high-level sense",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "project timeline",
-                    "high-level sense",
-                    "preserve",
-                    "have"
-                ]]
-            },
             "Contains": [[
                 "project timeline",
                 "high-level sense"
@@ -4112,7 +3555,20 @@
             "Targets": [[
                 "have",
                 "high-level sense"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "high-level sense",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "project timeline",
+                    "high-level sense",
+                    "preserve",
+                    "have"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -4121,14 +3577,6 @@
         "Benefit": {
             "Entity": ["informed decisions"],
             "Action": ["make"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "make",
-                    "informed decisions",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can make informed decisions about what appears to work well and what doesn't.",
             "Targets": [[
@@ -4149,21 +3597,6 @@
                 "handling"
             ],
             "Persona": ["site administrator"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "handling",
-                        "visual design",
-                        "create"
-                    ],
-                    [
-                        "understand",
-                        "how",
-                        "preserve;create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a site administrator, I want to understand how other similar organizations are handling visual design, ",
             "Triggers": [[
@@ -4179,7 +3612,22 @@
                     "understand",
                     "how"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "handling",
+                        "visual design",
+                        "create"
+                    ],
+                    [
+                        "understand",
+                        "how",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -4188,10 +3636,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -4207,26 +3651,6 @@
                 "rapidly prototype"
             ],
             "Persona": ["team member"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "have",
-                        "platform",
-                        "preserve"
-                    ],
-                    [
-                        "rapidly prototype",
-                        "html ideas",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "platform",
-                    "html ideas",
-                    "preserve",
-                    "have"
-                ]]
-            },
             "Contains": [[
                 "platform",
                 "HTML ideas"
@@ -4245,7 +3669,27 @@
                     "rapidly prototype",
                     "HTML ideas"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "have",
+                        "platform",
+                        "preserve"
+                    ],
+                    [
+                        "rapidly prototype",
+                        "html ideas",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "platform",
+                    "html ideas",
+                    "preserve",
+                    "have"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -4258,14 +3702,6 @@
                 "what"
             ],
             "Action": ["make"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "make",
-                    "informed decisions",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can make informed decisions about what appears to work well and what doesn't.",
             "Targets": [[
@@ -4286,26 +3722,6 @@
                 "handling"
             ],
             "Persona": ["site administrator"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "handling",
-                        "content",
-                        "create"
-                    ],
-                    [
-                        "understand",
-                        "how",
-                        "preserve;create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "other similar organizations",
-                    "content",
-                    "create",
-                    "handling"
-                ]]
-            },
             "Contains": [[
                 "other similar organizations",
                 "content"
@@ -4324,7 +3740,27 @@
                     "understand",
                     "how"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "handling",
+                        "content",
+                        "create"
+                    ],
+                    [
+                        "understand",
+                        "how",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "other similar organizations",
+                    "content",
+                    "create",
+                    "handling"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -4336,18 +3772,6 @@
                 "team"
             ],
             "Action": ["better prepare"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "better prepare",
-                    "team",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "team",
-                    "future research work",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "team",
                 "future research work"
@@ -4367,19 +3791,6 @@
             ],
             "Action": ["conduct"],
             "Persona": ["user researcher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "conduct",
-                    "user definition workshop",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "nsf",
-                    "user definition workshop",
-                    "create",
-                    "conduct"
-                ]]
-            },
             "Contains": [[
                 "NSF",
                 "user definition workshop"
@@ -4392,7 +3803,20 @@
             "Targets": [[
                 "conduct",
                 "user definition workshop"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "conduct",
+                    "user definition workshop",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "nsf",
+                    "user definition workshop",
+                    "create",
+                    "conduct"
+                ]]
+            }
         },
         "Mix": {"Targets": [
             "better prepare",
@@ -4404,10 +3828,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["plan on attending"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can plan on attending.",
             "Targets": []
@@ -4418,14 +3838,6 @@
             "Entity": ["initial in-person meeting"],
             "Action": ["know"],
             "Persona": ["NSF employee"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "initial in-person meeting",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As an NSF employee, I want to know where the initial in-person meeting will be, ",
             "Triggers": [[
@@ -4435,7 +3847,15 @@
             "Targets": [[
                 "know",
                 "initial in-person meeting"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know",
+                    "initial in-person meeting",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Targets": [
             "plan on attending",
@@ -4453,21 +3873,6 @@
                 "have",
                 "delivering"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "have",
-                        "uniform way",
-                        "preserve"
-                    ],
-                    [
-                        "delivering",
-                        "product",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "we have a uniform way of delivering product.",
             "Targets": [
@@ -4491,26 +3896,6 @@
             ],
             "Action": ["have"],
             "Persona": ["designer"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "have",
-                        "style guide",
-                        "preserve"
-                    ],
-                    [
-                        "have",
-                        "design guide",
-                        "preserve"
-                    ],
-                    [
-                        "have",
-                        "content guide",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a designer, I want to have a style guide / design guide / content guide, ",
             "Triggers": [[
@@ -4530,7 +3915,27 @@
                     "have",
                     "content guide"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "have",
+                        "style guide",
+                        "preserve"
+                    ],
+                    [
+                        "have",
+                        "design guide",
+                        "preserve"
+                    ],
+                    [
+                        "have",
+                        "content guide",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -4539,10 +3944,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["plan accordingly"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can plan accordingly.",
             "Targets": []
@@ -4553,14 +3954,6 @@
             "Entity": ["meetings"],
             "Action": ["know"],
             "Persona": ["team member"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "meetings",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G11# As a team member, I want to know when meetings are, ",
             "Triggers": [[
@@ -4570,7 +3963,15 @@
             "Targets": [[
                 "know",
                 "meetings"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know",
+                    "meetings",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -4579,10 +3980,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -4602,14 +3999,6 @@
                 "moves"
             ],
             "Persona": ["team member"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "understand",
-                    "how",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [
                 [
                     "UX/content",
@@ -4644,7 +4033,15 @@
             "Targets": [[
                 "understand",
                 "how"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "understand",
+                    "how",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     }

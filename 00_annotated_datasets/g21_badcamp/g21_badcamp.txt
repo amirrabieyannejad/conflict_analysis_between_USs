@@ -3,52 +3,21 @@
 ********************* << Dataset: g21_badcamp >> ***************
 * Table of potential conflict between user stories
 
-       us_57  us_59  us_05  us_13  
-us_57         x                    
-us_59  x                           
-us_05                       x      
-us_13                x             
+       us_05  us_13  
+us_05         x      
+us_13  x             
 
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_57_AND_user_story_59}
-  
-Affected Resource of US1 is: << sessions >>
-Affected Resource of US2 is: << sessions >>
-Affected Contain Resource US1 is: << sessions >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_57: << [] >>
-Contain Resources for: user_story_59: << [] >>
-
- Action of user_story_57 is: << bulk approve >>  which is annotated with: << create >>
- Action of user_story_59 is: << evaluated >>  which is annotated with: << forbid >>
-
-Conflict Reason is: << create-forbid-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_57: #G21# As a administrator, i want to #bulk approve# #sessions# as accepted, 
-
-   user_story_59: #G21# As a anonymoususer, i want to receive a notification when #sessions# have been #evaluated#, 
-
-Original texts of user stories are: 
-   user_story_57: #G21# As a administrator, I want to bulk approve sessions as accepted, so that I can save time.
-
-   user_story_59: #G21# As a anonymoususer, I want to receive a notification when sessions have been evaluated, so that I know whether I've been accepted or rejected.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_05_AND_user_story_13}
   
-Affected Resource of US1 is: << training node >>
-Affected Resource of US2 is: << view >>
-Affected Contain Resource US1 is: << training node >>
-Affected Resource US2 is: << training node >>
-Contain Resources for: user_story_05: << [] >>
-Contain Resources for: user_story_13: << [["training node","view","preserve","have"]] >>
+ Affected Resource of US1 is: << training node >>
+ Affected Contain Entity US2 is: << view >>
 
  Action of user_story_05 is: << edit >>  which is annotated with: << delete >>
  Action of user_story_13 is: << have >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_05: #G21# As a trainer, i want to #edit# my #training node# myself, 

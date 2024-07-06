@@ -4,10 +4,6 @@
         "Benefit": {
             "Entity": ["others"],
             "Action": ["learn"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "others can learn about me.",
             "Targets": []
@@ -22,14 +18,6 @@
             ],
             "Action": ["describe"],
             "Persona": ["site member"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "describe",
-                    "myself",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [[
                 "own page",
                 "semi-structured way"
@@ -42,7 +30,15 @@
             "Targets": [[
                 "describe",
                 "myself"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "describe",
+                    "myself",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Targets": [
             "learn",
@@ -54,14 +50,6 @@
         "Benefit": {
             "Entity": ["designation"],
             "Action": ["earn"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "earn",
-                    "designation",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can earn that designation.",
             "Targets": [[
@@ -78,19 +66,6 @@
             ],
             "Action": ["fill out"],
             "Persona": ["site member"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "fill out",
-                    "application",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "certified scrum practitioner",
-                    "application",
-                    "create",
-                    "fill out"
-                ]]
-            },
             "Contains": [[
                 "Certified Scrum Practitioner",
                 "application"
@@ -103,7 +78,20 @@
             "Targets": [[
                 "fill out",
                 "application"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "fill out",
+                    "application",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "certified scrum practitioner",
+                    "application",
+                    "create",
+                    "fill out"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -112,14 +100,6 @@
         "Benefit": {
             "Entity": ["experience"],
             "Action": ["showcase"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "showcase",
-                    "experience",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can showcase my experience.",
             "Targets": [[
@@ -136,19 +116,6 @@
             ],
             "Action": ["include"],
             "Persona": ["Practitioner"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "include",
-                    "additional details about me",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "profile page",
-                    "additional details about me",
-                    "create",
-                    "include"
-                ]]
-            },
             "Contains": [[
                 "profile page",
                 "additional details about me"
@@ -161,7 +128,20 @@
             "Targets": [[
                 "include",
                 "additional details about me"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "include",
+                    "additional details about me",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "profile page",
+                    "additional details about me",
+                    "create",
+                    "include"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -177,26 +157,6 @@
                 "teach",
                 "certify"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "teach",
-                        "csm",
-                        "create"
-                    ],
-                    [
-                        "teach",
-                        "cspo courses",
-                        "create"
-                    ],
-                    [
-                        "certify",
-                        "others",
-                        "preserve;forbid"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can teach CSM and CSPO courses and certify others.",
             "Targets": [
@@ -223,19 +183,6 @@
             ],
             "Action": ["fill out"],
             "Persona": ["site member"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "fill out",
-                    "application",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "certified scrum trainer",
-                    "application",
-                    "create",
-                    "fill out"
-                ]]
-            },
             "Contains": [[
                 "Certified Scrum Trainer",
                 "application"
@@ -248,7 +195,20 @@
             "Targets": [[
                 "fill out",
                 "application"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "fill out",
+                    "application",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "certified scrum trainer",
+                    "application",
+                    "create",
+                    "fill out"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -263,14 +223,6 @@
                 "learn",
                 "decide"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "decide",
-                    "right trainer",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "others can learn about me and decide if I am the right trainer for them.",
             "Targets": [[
@@ -287,19 +239,6 @@
             ],
             "Action": ["include"],
             "Persona": ["Trainer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "include",
-                    "additional details",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "profile page about me",
-                    "additional details",
-                    "create",
-                    "include"
-                ]]
-            },
             "Contains": [[
                 "profile page about me",
                 "additional details"
@@ -312,7 +251,20 @@
             "Targets": [[
                 "include",
                 "additional details"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "include",
+                    "additional details",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "profile page about me",
+                    "additional details",
+                    "create",
+                    "include"
+                ]]
+            }
         },
         "Mix": {"Targets": [
             "learn",
@@ -327,14 +279,6 @@
                 "certifications"
             ],
             "Action": ["know"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "certifications",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "others know my certifications when reading.",
             "Targets": [[
@@ -355,27 +299,6 @@
             ],
             "Action": ["write"],
             "Persona": ["Practitioner"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "write",
-                    "article",
-                    "create"
-                ]],
-                "Contain Action Rules": [
-                    [
-                        "site",
-                        "article",
-                        "create",
-                        "write"
-                    ],
-                    [
-                        "article",
-                        "small graphic",
-                        "create",
-                        "write"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "site",
@@ -402,7 +325,28 @@
             "Targets": [[
                 "write",
                 "article"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "write",
+                    "article",
+                    "create"
+                ]],
+                "Contain Action Annotations": [
+                    [
+                        "site",
+                        "article",
+                        "create",
+                        "write"
+                    ],
+                    [
+                        "article",
+                        "small graphic",
+                        "create",
+                        "write"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -414,14 +358,6 @@
                 "courses"
             ],
             "Action": ["find"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "find",
-                    "courses",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "prospective attendees can find my courses.",
             "Targets": [[
@@ -443,34 +379,6 @@
                 "include"
             ],
             "Persona": ["trainer"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "list",
-                        "upcoming classes",
-                        "create"
-                    ],
-                    [
-                        "include",
-                        "link",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "profile",
-                        "upcoming classes",
-                        "create",
-                        "list"
-                    ],
-                    [
-                        "detailed page",
-                        "link",
-                        "create",
-                        "include"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "profile",
@@ -501,7 +409,35 @@
                     "include",
                     "link"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "list",
+                        "upcoming classes",
+                        "create"
+                    ],
+                    [
+                        "include",
+                        "link",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "profile",
+                        "upcoming classes",
+                        "create",
+                        "list"
+                    ],
+                    [
+                        "detailed page",
+                        "link",
+                        "create",
+                        "include"
+                    ]
+                ]
+            }
         },
         "Mix": {"Contains": [
             "upcoming classes",
@@ -516,21 +452,6 @@
                 "find",
                 "connect"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "find",
-                        "others",
-                        "create"
-                    ],
-                    [
-                        "connect",
-                        "others",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can find others I might want to connect with.",
             "Targets": [
@@ -553,19 +474,6 @@
             ],
             "Action": ["view"],
             "Persona": ["site member"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "view",
-                    "profiles",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "other members",
-                    "profiles",
-                    "preserve",
-                    "view"
-                ]]
-            },
             "Contains": [[
                 "other members",
                 "profiles"
@@ -578,7 +486,20 @@
             "Targets": [[
                 "view",
                 "profiles"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "view",
+                    "profiles",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "other members",
+                    "profiles",
+                    "preserve",
+                    "view"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -590,21 +511,6 @@
                 "find",
                 "connect"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "find",
-                        "others",
-                        "create"
-                    ],
-                    [
-                        "connect",
-                        "others",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can find others I might want to connect with.",
             "Targets": [
@@ -627,19 +533,6 @@
             ],
             "Action": ["search"],
             "Persona": ["site member"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "search",
-                    "profiles",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": [[
-                    "profiles",
-                    "few fields",
-                    "preserve;create",
-                    "search"
-                ]]
-            },
             "Contains": [[
                 "profiles",
                 "few fields"
@@ -652,7 +545,20 @@
             "Targets": [[
                 "search",
                 "profiles"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "search",
+                    "profiles",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": [[
+                    "profiles",
+                    "few fields",
+                    "preserve;create",
+                    "search"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -661,10 +567,6 @@
         "Benefit": {
             "Entity": ["things about me I don't want shared"],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "no one can learn things about me I don't want shared.",
             "Targets": []
@@ -681,26 +583,6 @@
                 "appear"
             ],
             "Persona": ["site member"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "appear",
-                        "name",
-                        "create"
-                    ],
-                    [
-                        "mark",
-                        "profile",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "profile",
-                    "name",
-                    "create",
-                    "appear"
-                ]]
-            },
             "Contains": [[
                 "profile",
                 "name"
@@ -719,7 +601,27 @@
                     "mark",
                     "profile"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "appear",
+                        "name",
+                        "create"
+                    ],
+                    [
+                        "mark",
+                        "profile",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "profile",
+                    "name",
+                    "create",
+                    "appear"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -728,10 +630,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["no one can contact"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "no one can contact me.",
             "Targets": []
@@ -745,14 +643,6 @@
             ],
             "Action": ["mark"],
             "Persona": ["site member"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "mark",
-                    "email address as private",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a site member, I want to mark my email address as private even if the rest of my profile is not, ",
             "Triggers": [[
@@ -762,7 +652,15 @@
             "Targets": [[
                 "mark",
                 "email address as private"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "mark",
+                    "email address as private",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -771,10 +669,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["connect"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "we can connect",
             "Targets": []
@@ -789,27 +683,6 @@
             ],
             "Action": ["send"],
             "Persona": ["site member"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "send",
-                    "email",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": [
-                    [
-                        "any member",
-                        "email",
-                        "create;delete",
-                        "send"
-                    ],
-                    [
-                        "form",
-                        "email",
-                        "create;delete",
-                        "send"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "any member",
@@ -828,7 +701,28 @@
             "Targets": [[
                 "send",
                 "email"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "send",
+                    "email",
+                    "create"
+                ]],
+                "Contain Action Annotations": [
+                    [
+                        "any member",
+                        "email",
+                        "create",
+                        "send"
+                    ],
+                    [
+                        "form",
+                        "email",
+                        "create",
+                        "send"
+                    ]
+                ]
+            }
         },
         "Mix": {"Targets": [
             "connect",
@@ -844,10 +738,6 @@
                 "CSTs"
             ],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "only applicants who qualify can become CSPs or CSTs.",
             "Targets": []
@@ -862,26 +752,6 @@
                 "reject"
             ],
             "Persona": ["site administrator"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "read",
-                        "practicing and training applications",
-                        "preserve"
-                    ],
-                    [
-                        "reject",
-                        "practicing and training applications",
-                        "delete"
-                    ],
-                    [
-                        "approve",
-                        "practicing and training applications",
-                        "preserve;create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a site administrator, I want to read practicing and training applications and approve or reject them, ",
             "Triggers": [
@@ -911,7 +781,27 @@
                     "approve",
                     "practicing and training applications"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "read",
+                        "practicing and training applications",
+                        "preserve"
+                    ],
+                    [
+                        "reject",
+                        "practicing and training applications",
+                        "delete"
+                    ],
+                    [
+                        "approve",
+                        "practicing and training applications",
+                        "preserve;create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -923,18 +813,6 @@
                 "members"
             ],
             "Action": ["correct"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "correct",
-                    "problems",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": [[
-                    "members",
-                    "problems",
-                    "create;delete"
-                ]]
-            },
             "Contains": [[
                 "members",
                 "problems"
@@ -951,14 +829,6 @@
             "Entity": ["any site member profile"],
             "Action": ["edit"],
             "Persona": ["site administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "edit",
-                    "any site member profile",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a site administrator, I want to edit any site member profile, ",
             "Triggers": [[
@@ -968,7 +838,15 @@
             "Targets": [[
                 "edit",
                 "any site member profile"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "edit",
+                    "any site member profile",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -977,14 +855,6 @@
         "Benefit": {
             "Entity": ["agile news"],
             "Action": ["stay current"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "stay current",
-                    "agile news",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I stay current on agile news.",
             "Targets": [[
@@ -1001,19 +871,6 @@
             ],
             "Action": ["read"],
             "Persona": ["site visitor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "read",
-                    "current news",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "home page",
-                    "current news",
-                    "preserve",
-                    "read"
-                ]]
-            },
             "Contains": [[
                 "home page",
                 "current news"
@@ -1026,7 +883,20 @@
             "Targets": [[
                 "read",
                 "current news"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "read",
+                    "current news",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "home page",
+                    "current news",
+                    "preserve",
+                    "read"
+                ]]
+            }
         },
         "Mix": {"Contains": [
             "current news",
@@ -1044,14 +914,6 @@
                 "access",
                 "mention"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "access",
-                    "things i remember",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can access things I remember from the past or that others mention to me.",
             "Targets": [[
@@ -1068,14 +930,6 @@
             ],
             "Action": ["access"],
             "Persona": ["site visitor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "access",
-                    "old news",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a site visitor, I want to access old news that is no longer on the home page, ",
             "Triggers": [[
@@ -1085,7 +939,15 @@
             "Targets": [[
                 "access",
                 "old news"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "access",
+                    "old news",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1094,10 +956,6 @@
         "Benefit": {
             "Entity": ["publication"],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "they can be considered for publication.",
             "Targets": []
@@ -1111,19 +969,6 @@
             ],
             "Action": ["email"],
             "Persona": ["site visitor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "email",
-                    "news items",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "editor",
-                    "news items",
-                    "create",
-                    "email"
-                ]]
-            },
             "Contains": [[
                 "editor",
                 "news items"
@@ -1136,7 +981,20 @@
             "Targets": [[
                 "email",
                 "news items"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "email",
+                    "news items",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "editor",
+                    "news items",
+                    "create",
+                    "email"
+                ]]
+            }
         },
         "Mix": {"Contains": [
             "publication",
@@ -1151,18 +1009,6 @@
                 "appropriate dates"
             ],
             "Action": ["are published"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "are published",
-                    "articles",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "articles",
-                    "appropriate dates",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "articles",
                 "appropriate dates"
@@ -1185,39 +1031,6 @@
             ],
             "Action": ["set"],
             "Persona": ["site editor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "set",
-                    "following dates",
-                    "create"
-                ]],
-                "Contain Action Rules": [
-                    [
-                        "news item",
-                        "following dates",
-                        "create",
-                        "set"
-                    ],
-                    [
-                        "following dates",
-                        "old news date",
-                        "create",
-                        "set"
-                    ],
-                    [
-                        "following dates",
-                        "stop publishing date",
-                        "create",
-                        "set"
-                    ],
-                    [
-                        "following dates",
-                        "start publishing date",
-                        "create",
-                        "set"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "news item",
@@ -1244,7 +1057,40 @@
             "Targets": [[
                 "set",
                 "following dates"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "set",
+                    "following dates",
+                    "create"
+                ]],
+                "Contain Action Annotations": [
+                    [
+                        "news item",
+                        "following dates",
+                        "create",
+                        "set"
+                    ],
+                    [
+                        "following dates",
+                        "old news date",
+                        "create",
+                        "set"
+                    ],
+                    [
+                        "following dates",
+                        "stop publishing date",
+                        "create",
+                        "set"
+                    ],
+                    [
+                        "following dates",
+                        "start publishing date",
+                        "create",
+                        "set"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -1253,10 +1099,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["remain sufficiently and easily informed"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I remain sufficiently and easily informed.",
             "Targets": []
@@ -1267,14 +1109,6 @@
             "Entity": ["RSS feed of news"],
             "Action": ["subscribe"],
             "Persona": ["site member"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "subscribe",
-                    "rss feed of news",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a site member, I want to subscribe to an RSS feed of news, ",
             "Triggers": [[
@@ -1284,7 +1118,15 @@
             "Targets": [[
                 "subscribe",
                 "RSS feed of news"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "subscribe",
+                    "rss feed of news",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1299,25 +1141,6 @@
                 "indicate",
                 "featured most prominently"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "indicate",
-                        "articles",
-                        "create"
-                    ],
-                    [
-                        "featured most prominently",
-                        "articles",
-                        "preserve;create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "site",
-                    "articles",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "site",
                 "articles"
@@ -1343,19 +1166,6 @@
             ],
             "Action": ["assign"],
             "Persona": ["site editor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "assign",
-                    "priority numbers",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "news items",
-                    "priority numbers",
-                    "create",
-                    "assign"
-                ]]
-            },
             "Contains": [[
                 "news items",
                 "priority numbers"
@@ -1368,7 +1178,20 @@
             "Targets": [[
                 "assign",
                 "priority numbers"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "assign",
+                    "priority numbers",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "news items",
+                    "priority numbers",
+                    "create",
+                    "assign"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1377,14 +1200,6 @@
         "Benefit": {
             "Entity": ["best course"],
             "Action": ["choose"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "choose",
-                    "best course",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can choose the best course for me.",
             "Targets": [[
@@ -1404,26 +1219,6 @@
                 "page through"
             ],
             "Persona": ["site visitor"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "see",
-                        "list",
-                        "preserve"
-                    ],
-                    [
-                        "page through",
-                        "all upcoming certification courses",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "list",
-                    "all upcoming certification courses",
-                    "preserve",
-                    "see"
-                ]]
-            },
             "Contains": [[
                 "list",
                 "all upcoming Certification Courses"
@@ -1442,7 +1237,27 @@
                     "page through",
                     "all upcoming Certification Courses"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "see",
+                        "list",
+                        "preserve"
+                    ],
+                    [
+                        "page through",
+                        "all upcoming certification courses",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "list",
+                    "all upcoming certification courses",
+                    "preserve",
+                    "see"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1451,14 +1266,6 @@
         "Benefit": {
             "Entity": ["best course"],
             "Action": ["choose"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "choose",
-                    "best course",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can choose the best course for me.",
             "Targets": [[
@@ -1478,26 +1285,6 @@
                 "page through"
             ],
             "Persona": ["site visitor"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "see",
-                        "list",
-                        "preserve"
-                    ],
-                    [
-                        "page through",
-                        "all upcoming other courses",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "list",
-                    "all upcoming other courses",
-                    "preserve",
-                    "see"
-                ]]
-            },
             "Contains": [[
                 "list",
                 "all upcoming Other Courses"
@@ -1516,7 +1303,27 @@
                     "page through",
                     "all upcoming Other Courses"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "see",
+                        "list",
+                        "preserve"
+                    ],
+                    [
+                        "page through",
+                        "all upcoming other courses",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "list",
+                    "all upcoming other courses",
+                    "preserve",
+                    "see"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1528,10 +1335,6 @@
                 "decide",
                 "want to attend"
             ],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can decide if I want to attend any.",
             "Targets": []
@@ -1545,19 +1348,6 @@
             ],
             "Action": ["see"],
             "Persona": ["site visitor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "see",
-                    "list",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "list",
-                    "all upcoming events",
-                    "preserve",
-                    "see"
-                ]]
-            },
             "Contains": [[
                 "list",
                 "all upcoming Events"
@@ -1570,7 +1360,20 @@
             "Targets": [[
                 "see",
                 "list"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "see",
+                    "list",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "list",
+                    "all upcoming events",
+                    "preserve",
+                    "see"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1579,10 +1382,6 @@
         "Benefit": {
             "Entity": ["site visitors"],
             "Action": ["see"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "site visitors can see it.",
             "Targets": []
@@ -1596,21 +1395,6 @@
             ],
             "Action": ["create"],
             "Persona": ["trainer"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "create",
-                        "event",
-                        "create"
-                    ],
-                    [
-                        "create",
-                        "new course",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a trainer, I want to create a new course or event, ",
             "Triggers": [[
@@ -1626,7 +1410,22 @@
                     "create",
                     "new course"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "create",
+                        "event",
+                        "create"
+                    ],
+                    [
+                        "create",
+                        "new course",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Targets": [
             "see",
@@ -1638,10 +1437,6 @@
         "Benefit": {
             "Entity": ["events"],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I don't list events I don't really intend to hold.",
             "Targets": []
@@ -1660,31 +1455,6 @@
                 "charged"
             ],
             "Persona": ["trainer"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "create",
-                        "other course",
-                        "create"
-                    ],
-                    [
-                        "create",
-                        "event",
-                        "create"
-                    ],
-                    [
-                        "charged",
-                        "listing fee",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "activity",
-                    "listing fee",
-                    "create",
-                    "charged"
-                ]]
-            },
             "Contains": [[
                 "activity",
                 "listing fee"
@@ -1707,7 +1477,32 @@
                     "charged",
                     "listing fee"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "create",
+                        "other course",
+                        "create"
+                    ],
+                    [
+                        "create",
+                        "event",
+                        "create"
+                    ],
+                    [
+                        "charged",
+                        "listing fee",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "activity",
+                    "listing fee",
+                    "create",
+                    "charged"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1719,10 +1514,6 @@
                 "Scrum Gatherings"
             ],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [[
                 "Scrum Alliance",
                 "Scrum Gatherings"
@@ -1740,21 +1531,6 @@
             ],
             "Action": ["create"],
             "Persona": ["site administrator"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "create",
-                        "other course",
-                        "create"
-                    ],
-                    [
-                        "create",
-                        "event",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a site administrator, I want to create an Other Course or Event that is not charged a listing fee, ",
             "Triggers": [[
@@ -1770,7 +1546,22 @@
                     "create",
                     "Event"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "create",
+                        "other course",
+                        "create"
+                    ],
+                    [
+                        "create",
+                        "event",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1782,14 +1573,6 @@
                 "have",
                 "charge"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "flexibility",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "we have flexibility on what to charge in the future.",
             "Targets": [[
@@ -1807,27 +1590,6 @@
             ],
             "Action": ["set"],
             "Persona": ["site administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "set",
-                    "listing fee",
-                    "create"
-                ]],
-                "Contain Action Rules": [
-                    [
-                        "event",
-                        "listing fee",
-                        "create",
-                        "set"
-                    ],
-                    [
-                        "other course",
-                        "listing fee",
-                        "create",
-                        "set"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "Event",
@@ -1846,7 +1608,28 @@
             "Targets": [[
                 "set",
                 "listing fee"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "set",
+                    "listing fee",
+                    "create"
+                ]],
+                "Contain Action Annotations": [
+                    [
+                        "event",
+                        "listing fee",
+                        "create",
+                        "set"
+                    ],
+                    [
+                        "other course",
+                        "listing fee",
+                        "create",
+                        "set"
+                    ]
+                ]
+            }
         },
         "Mix": {"Targets": [
             "charge",
@@ -1858,14 +1641,6 @@
         "Benefit": {
             "Entity": ["accurate information"],
             "Action": ["reflects"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "reflects",
-                    "accurate information",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "it reflects accurate information.",
             "Targets": [[
@@ -1882,21 +1657,6 @@
             ],
             "Action": ["update"],
             "Persona": ["trainer"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "update",
-                        "one of my existing courses",
-                        "create;delete"
-                    ],
-                    [
-                        "update",
-                        "events",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a trainer, I want to update one of my existing courses or events, ",
             "Triggers": [[
@@ -1912,7 +1672,22 @@
                     "update",
                     "events"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "update",
+                        "one of my existing courses",
+                        "create;delete"
+                    ],
+                    [
+                        "update",
+                        "events",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1921,10 +1696,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["cancel"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "it's no longer listed if I cancel for some reason.",
             "Targets": []
@@ -1938,21 +1709,6 @@
             ],
             "Action": ["delete"],
             "Persona": ["trainer"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "delete",
-                        "one of my courses",
-                        "delete"
-                    ],
-                    [
-                        "delete",
-                        "events",
-                        "delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a trainer, I want to delete one of my courses or events, ",
             "Triggers": [[
@@ -1968,7 +1724,22 @@
                     "delete",
                     "events"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "delete",
+                        "one of my courses",
+                        "delete"
+                    ],
+                    [
+                        "delete",
+                        "events",
+                        "delete"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Targets": [
             "cancel",
@@ -1980,14 +1751,6 @@
         "Benefit": {
             "Entity": ["new one"],
             "Action": ["create"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "create",
-                    "new one",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can create a new one",
             "Targets": [[
@@ -2004,21 +1767,6 @@
             ],
             "Action": ["copy"],
             "Persona": ["trainer"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "copy",
-                        "one of my courses",
-                        "create"
-                    ],
-                    [
-                        "copy",
-                        "events",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a trainer, I want to copy one of my courses or events, ",
             "Triggers": [[
@@ -2034,7 +1782,22 @@
                     "copy",
                     "events"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "copy",
+                        "one of my courses",
+                        "create"
+                    ],
+                    [
+                        "copy",
+                        "events",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2043,14 +1806,6 @@
         "Benefit": {
             "Entity": ["things"],
             "Action": ["remove"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "remove",
-                    "things",
-                    "delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can remove things that will no longer occur.",
             "Targets": [[
@@ -2067,21 +1822,6 @@
             ],
             "Action": ["delete"],
             "Persona": ["site admin"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "delete",
-                        "any course",
-                        "delete"
-                    ],
-                    [
-                        "delete",
-                        "event",
-                        "delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a site admin, I want to delete any course or event, ",
             "Triggers": [[
@@ -2097,7 +1837,22 @@
                     "delete",
                     "event"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "delete",
+                        "any course",
+                        "delete"
+                    ],
+                    [
+                        "delete",
+                        "event",
+                        "delete"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2109,14 +1864,6 @@
                 "original author"
             ],
             "Action": ["fix"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "fix",
-                    "things",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can fix things the original author hasn't.",
             "Targets": [[
@@ -2133,21 +1880,6 @@
             ],
             "Action": ["update"],
             "Persona": ["site editor"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "update",
-                        "any course",
-                        "create;delete"
-                    ],
-                    [
-                        "update",
-                        "event",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a site editor, I want to update any course or event, ",
             "Triggers": [[
@@ -2163,7 +1895,22 @@
                     "update",
                     "event"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "update",
+                        "any course",
+                        "create;delete"
+                    ],
+                    [
+                        "update",
+                        "event",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Contains": [
             "event",
@@ -2175,14 +1922,6 @@
         "Benefit": {
             "Entity": ["anything that was entered incorrectly"],
             "Action": ["correctly classify"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "correctly classify",
-                    "anything that was entered incorrectly",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can correctly classify anything that was entered incorrectly.",
             "Targets": [[
@@ -2201,21 +1940,6 @@
             ],
             "Action": ["turn"],
             "Persona": ["trainer"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "turn",
-                        "event",
-                        "preserve"
-                    ],
-                    [
-                        "turn",
-                        "course",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a trainer, I want to turn a course into an event or an event into a course, ",
             "Triggers": [[
@@ -2231,7 +1955,22 @@
                     "turn",
                     "course"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "turn",
+                        "event",
+                        "preserve"
+                    ],
+                    [
+                        "turn",
+                        "course",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2240,14 +1979,6 @@
         "Benefit": {
             "Entity": ["what I am looking for"],
             "Action": ["quickly find"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "quickly find",
-                    "what i am looking for",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can quickly find what I am looking for.",
             "Targets": [[
@@ -2268,34 +1999,6 @@
                 "fill"
             ],
             "Persona": ["site visitor"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "have",
-                        "advanced search option",
-                        "preserve"
-                    ],
-                    [
-                        "fill",
-                        "form",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "advanced search option",
-                        "form",
-                        "preserve",
-                        "have"
-                    ],
-                    [
-                        "form",
-                        "search criteria",
-                        "create",
-                        "fill"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "form",
@@ -2320,7 +2023,35 @@
                     "fill",
                     "form"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "have",
+                        "advanced search option",
+                        "preserve"
+                    ],
+                    [
+                        "fill",
+                        "form",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "advanced search option",
+                        "form",
+                        "preserve",
+                        "have"
+                    ],
+                    [
+                        "form",
+                        "search criteria",
+                        "create",
+                        "fill"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -2335,25 +2066,6 @@
                 "read more",
                 "before registering"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "read more",
-                        "trainer",
-                        "create"
-                    ],
-                    [
-                        "before registering",
-                        "course",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "course",
-                    "trainer",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "course",
                 "trainer"
@@ -2384,31 +2096,6 @@
                 "be taken to"
             ],
             "Persona": ["site visitor"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "view",
-                        "course",
-                        "preserve"
-                    ],
-                    [
-                        "click",
-                        "trainer's name",
-                        "create"
-                    ],
-                    [
-                        "be taken to",
-                        "trainer's profile",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "trainer's profile",
-                    "trainer's name",
-                    "create",
-                    "click"
-                ]]
-            },
             "Contains": [[
                 "trainer's profile",
                 "trainer's name"
@@ -2431,7 +2118,32 @@
                     "be taken to",
                     "trainer's profile"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "view",
+                        "course",
+                        "preserve"
+                    ],
+                    [
+                        "click",
+                        "trainer's name",
+                        "create"
+                    ],
+                    [
+                        "be taken to",
+                        "trainer's profile",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "trainer's profile",
+                    "trainer's name",
+                    "create",
+                    "click"
+                ]]
+            }
         },
         "Mix": {"Contains": [
             "trainer",
@@ -2443,14 +2155,6 @@
         "Benefit": {
             "Entity": ["site"],
             "Action": ["without having to visit"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "without having to visit",
-                    "site",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I am up to day without having to visit the site.",
             "Targets": [[
@@ -2468,27 +2172,6 @@
             ],
             "Action": ["subscribe"],
             "Persona": ["site visitor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "subscribe",
-                    "rss feed",
-                    "create"
-                ]],
-                "Contain Action Rules": [
-                    [
-                        "rss feed",
-                        "upcoming courses",
-                        "create",
-                        "subscribe"
-                    ],
-                    [
-                        "rss feed",
-                        "events",
-                        "create",
-                        "subscribe"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "RSS feed",
@@ -2507,7 +2190,28 @@
             "Targets": [[
                 "subscribe",
                 "RSS feed"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "subscribe",
+                    "rss feed",
+                    "create"
+                ]],
+                "Contain Action Annotations": [
+                    [
+                        "rss feed",
+                        "upcoming courses",
+                        "create",
+                        "subscribe"
+                    ],
+                    [
+                        "rss feed",
+                        "events",
+                        "create",
+                        "subscribe"
+                    ]
+                ]
+            }
         },
         "Mix": {"Contains": [
             "site",
@@ -2519,14 +2223,6 @@
         "Benefit": {
             "Entity": ["quick answers"],
             "Action": ["get"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "get",
-                    "quick answers",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can get quick answers.",
             "Targets": [[
@@ -2540,14 +2236,6 @@
             "Entity": ["FAQs"],
             "Action": ["read"],
             "Persona": ["site visitor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "read",
-                    "faqs",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a site visitor, I want to read FAQs, ",
             "Triggers": [[
@@ -2557,7 +2245,15 @@
             "Targets": [[
                 "read",
                 "FAQs"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "read",
+                    "faqs",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Contains": [
             "FAQs",
@@ -2572,14 +2268,6 @@
                 "easily answered questions"
             ],
             "Action": ["gets fewer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "gets fewer",
-                    "easily answered questions",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "support gets fewer easily answered questions.",
             "Targets": [[
@@ -2593,14 +2281,6 @@
             "Entity": ["FAQ section"],
             "Action": ["maintain"],
             "Persona": ["site editor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "maintain",
-                    "faq section",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a site editor, I want to maintain a FAQ section, ",
             "Triggers": [[
@@ -2610,7 +2290,15 @@
             "Targets": [[
                 "maintain",
                 "FAQ section"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "maintain",
+                    "faq section",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Contains": [
             "FAQ section",
@@ -2622,14 +2310,6 @@
         "Benefit": {
             "Entity": ["answer"],
             "Action": ["find"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "find",
-                    "answer",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can find an answer quickly.",
             "Targets": [[
@@ -2646,19 +2326,6 @@
             ],
             "Action": ["do"],
             "Persona": ["site visitor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "do",
-                    "full-text search",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": [[
-                    "faqs",
-                    "full-text search",
-                    "preserve;create",
-                    "do"
-                ]]
-            },
             "Contains": [[
                 "FAQs",
                 "full-text search"
@@ -2671,7 +2338,20 @@
             "Targets": [[
                 "do",
                 "full-text search"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "do",
+                    "full-text search",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": [[
+                    "faqs",
+                    "full-text search",
+                    "preserve;create",
+                    "do"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2680,10 +2360,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["have"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I have them",
             "Targets": []
@@ -2697,21 +2373,6 @@
             ],
             "Action": ["download"],
             "Persona": ["site member"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "download",
-                        "latest training material",
-                        "create"
-                    ],
-                    [
-                        "download",
-                        "methodology pdfs",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a site member, I want to download the latest training material and methodology PDFs, ",
             "Triggers": [[
@@ -2727,7 +2388,22 @@
                     "download",
                     "methodology PDFs"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "download",
+                        "latest training material",
+                        "create"
+                    ],
+                    [
+                        "download",
+                        "methodology pdfs",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Targets": [
             "have",
@@ -2742,10 +2418,6 @@
                 "learn",
                 "use"
             ],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can learn from them or use them.",
             "Targets": []
@@ -2761,45 +2433,6 @@
             ],
             "Action": ["download"],
             "Persona": ["visitor"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "download",
-                        "presentations",
-                        "create"
-                    ],
-                    [
-                        "download",
-                        "pdfs",
-                        "create"
-                    ],
-                    [
-                        "download",
-                        "etc.",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "scrum",
-                        "presentations",
-                        "create",
-                        "download"
-                    ],
-                    [
-                        "scrum",
-                        "pdfs",
-                        "create",
-                        "download"
-                    ],
-                    [
-                        "scrum",
-                        "etc.",
-                        "create",
-                        "download"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "Scrum",
@@ -2832,7 +2465,46 @@
                     "download",
                     "etc."
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "download",
+                        "presentations",
+                        "create"
+                    ],
+                    [
+                        "download",
+                        "pdfs",
+                        "create"
+                    ],
+                    [
+                        "download",
+                        "etc.",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "scrum",
+                        "presentations",
+                        "create",
+                        "download"
+                    ],
+                    [
+                        "scrum",
+                        "pdfs",
+                        "create",
+                        "download"
+                    ],
+                    [
+                        "scrum",
+                        "etc.",
+                        "create",
+                        "download"
+                    ]
+                ]
+            }
         },
         "Mix": {"Targets": [
             "use",
@@ -2844,10 +2516,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["see"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can see if there any I am interested in.",
             "Targets": []
@@ -2861,19 +2529,6 @@
             ],
             "Action": ["scroll through"],
             "Persona": ["site member"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "scroll through",
-                    "listing",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": [[
-                    "listing",
-                    "jobs",
-                    "preserve;create",
-                    "scroll through"
-                ]]
-            },
             "Contains": [[
                 "listing",
                 "jobs"
@@ -2886,7 +2541,20 @@
             "Targets": [[
                 "scroll through",
                 "listing"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "scroll through",
+                    "listing",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": [[
+                    "listing",
+                    "jobs",
+                    "preserve;create",
+                    "scroll through"
+                ]]
+            }
         },
         "Mix": {"Targets": [
             "see",
@@ -2898,14 +2566,6 @@
         "Benefit": {
             "Entity": ["candidates"],
             "Action": ["attract"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "attract",
-                    "candidates",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can attract candidates.",
             "Targets": [[
@@ -2919,14 +2579,6 @@
             "Entity": ["help wanted ad"],
             "Action": ["post"],
             "Persona": ["recruiter"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "post",
-                    "help wanted ad",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a recruiter, I want to post a help wanted ad, ",
             "Triggers": [[
@@ -2936,7 +2588,15 @@
             "Targets": [[
                 "post",
                 "help wanted ad"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "post",
+                    "help wanted ad",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2948,10 +2608,6 @@
                 "jobs being listed"
             ],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [[
                 "jobs being listed",
                 "quality"
@@ -2968,19 +2624,6 @@
             ],
             "Action": ["approve"],
             "Persona": ["site admin"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "approve",
-                    "help wanted ad",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": [[
-                    "site",
-                    "help wanted ad",
-                    "preserve;create",
-                    "approve"
-                ]]
-            },
             "Contains": [[
                 "site",
                 "help wanted ad"
@@ -2993,7 +2636,20 @@
             "Targets": [[
                 "approve",
                 "help wanted ad"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "approve",
+                    "help wanted ad",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": [[
+                    "site",
+                    "help wanted ad",
+                    "preserve;create",
+                    "approve"
+                ]]
+            }
         },
         "Mix": {"Contains": [
             "jobs being listed",
@@ -3009,10 +2665,6 @@
                 "decide",
                 "post"
             ],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I am aware of it and can decide if I want to post it.",
             "Targets": []
@@ -3023,14 +2675,6 @@
             "Entity": ["job is submitted"],
             "Action": ["be emailed"],
             "Persona": ["site admin"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "be emailed",
-                    "job is submitted",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a site admin, I want to be emailed whenever a job is submitted, ",
             "Triggers": [[
@@ -3040,7 +2684,15 @@
             "Targets": [[
                 "be emailed",
                 "job is submitted"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "be emailed",
+                    "job is submitted",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Targets": [
             "post",
@@ -3055,14 +2707,6 @@
                 "read",
                 "without visiting"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "without visiting",
-                    "site",
-                    "delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can read them without visiting the site.",
             "Targets": [[
@@ -3076,14 +2720,6 @@
             "Entity": ["RSS feed of jobs available"],
             "Action": ["subscribe"],
             "Persona": ["site member"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "subscribe",
-                    "rss feed of jobs available",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a site member, I want to subscribe to an RSS feed of jobs available, ",
             "Triggers": [[
@@ -3093,7 +2729,15 @@
             "Targets": [[
                 "subscribe",
                 "RSS feed of jobs available"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "subscribe",
+                    "rss feed of jobs available",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {
             "Contains": [
@@ -3119,21 +2763,6 @@
                 "make sure",
                 "complies"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "correct",
-                        "small problems",
-                        "create;delete"
-                    ],
-                    [
-                        "complies",
-                        "site guidelines",
-                        "preserve;forbid"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can correct small problems or make sure each ad complies with site guidelines.",
             "Targets": [
@@ -3156,21 +2785,6 @@
                 "delete"
             ],
             "Persona": ["site admin"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "edit",
-                        "help wanted ads",
-                        "create;delete"
-                    ],
-                    [
-                        "delete",
-                        "help wanted ads",
-                        "delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a site admin, I want to edit and delete help wanted ads, ",
             "Triggers": [
@@ -3192,7 +2806,22 @@
                     "delete",
                     "help wanted ads"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "edit",
+                        "help wanted ads",
+                        "create;delete"
+                    ],
+                    [
+                        "delete",
+                        "help wanted ads",
+                        "delete"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3205,14 +2834,6 @@
                 "jobs"
             ],
             "Action": ["delete"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "delete",
-                    "ad",
-                    "delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "jobs that may have been filled aren't still listed when the hiring party forgets to come back and delete the ad.",
             "Targets": [[
@@ -3230,19 +2851,6 @@
             ],
             "Action": ["stop publishing"],
             "Persona": ["site admin"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "stop publishing",
-                    "jobs",
-                    "delete"
-                ]],
-                "Contain Action Rules": [[
-                    "site",
-                    "jobs",
-                    "delete",
-                    "stop publishing"
-                ]]
-            },
             "Contains": [[
                 "site",
                 "jobs"
@@ -3255,7 +2863,20 @@
             "Targets": [[
                 "stop publishing",
                 "jobs"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "stop publishing",
+                    "jobs",
+                    "delete"
+                ]],
+                "Contain Action Annotations": [[
+                    "site",
+                    "jobs",
+                    "delete",
+                    "stop publishing"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3264,14 +2885,6 @@
         "Benefit": {
             "Entity": ["ad"],
             "Action": ["remains active"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "remains active",
-                    "ad",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "my ad remains active.",
             "Targets": [[
@@ -3294,39 +2907,6 @@
                 "updating"
             ],
             "Persona": ["recruiter"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "extend",
-                        "ad",
-                        "create"
-                    ],
-                    [
-                        "visiting",
-                        "site",
-                        "create"
-                    ],
-                    [
-                        "updating",
-                        "posting",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "site",
-                        "ad",
-                        "create",
-                        "extend"
-                    ],
-                    [
-                        "site",
-                        "posting",
-                        "create",
-                        "visiting"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "site",
@@ -3355,7 +2935,40 @@
                     "updating",
                     "posting"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "extend",
+                        "ad",
+                        "create"
+                    ],
+                    [
+                        "visiting",
+                        "site",
+                        "create"
+                    ],
+                    [
+                        "updating",
+                        "posting",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "site",
+                        "ad",
+                        "create",
+                        "extend"
+                    ],
+                    [
+                        "site",
+                        "posting",
+                        "create",
+                        "visiting"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -3364,14 +2977,6 @@
         "Benefit": {
             "Entity": ["ad"],
             "Action": ["extend"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "extend",
-                    "ad",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can go extend the ad.",
             "Targets": [[
@@ -3392,19 +2997,6 @@
                 "expire"
             ],
             "Persona": ["advertiser"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "be emailed",
-                    "reminder",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "ad",
-                    "reminder",
-                    "create",
-                    "be emailed"
-                ]]
-            },
             "Contains": [[
                 "ad",
                 "reminder"
@@ -3417,7 +3009,20 @@
             "Targets": [[
                 "be emailed",
                 "reminder"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "be emailed",
+                    "reminder",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "ad",
+                    "reminder",
+                    "create",
+                    "be emailed"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3426,14 +3031,6 @@
         "Benefit": {
             "Entity": ["latest happenings"],
             "Action": ["up"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "up",
-                    "latest happenings",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I am up on all the latest happenings.",
             "Targets": [[
@@ -3451,19 +3048,6 @@
             ],
             "Action": ["read"],
             "Persona": ["site visitor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "read",
-                    "new article",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "front page",
-                    "new article",
-                    "preserve",
-                    "read"
-                ]]
-            },
             "Contains": [[
                 "front page",
                 "new article"
@@ -3476,7 +3060,20 @@
             "Targets": [[
                 "read",
                 "new article"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "read",
+                    "new article",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "front page",
+                    "new article",
+                    "preserve",
+                    "read"
+                ]]
+            }
         },
         "Mix": {"Contains": [
             "new article",
@@ -3494,14 +3091,6 @@
                 "decide",
                 "read"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "read",
-                    "rest",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "site visitors can decide if they want to read the rest.",
             "Targets": [[
@@ -3518,19 +3107,6 @@
             ],
             "Action": ["include"],
             "Persona": ["site editor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "include",
-                    "teaser",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "each article",
-                    "teaser",
-                    "create",
-                    "include"
-                ]]
-            },
             "Contains": [[
                 "each article",
                 "teaser"
@@ -3543,7 +3119,20 @@
             "Targets": [[
                 "include",
                 "teaser"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "include",
+                    "teaser",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "each article",
+                    "teaser",
+                    "create",
+                    "include"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3552,14 +3141,6 @@
         "Benefit": {
             "Entity": ["articles"],
             "Action": ["finish"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "finish",
-                    "articles",
-                    "preserve;delete;create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can finish articles that appeal to me.",
             "Targets": [[
@@ -3577,14 +3158,6 @@
             ],
             "Action": ["read"],
             "Persona": ["site member"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "read",
-                    "entire article",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [[
                 "front page",
                 "teaser"
@@ -3597,7 +3170,15 @@
             "Targets": [[
                 "read",
                 "entire article"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "read",
+                    "entire article",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3609,18 +3190,6 @@
                 "plenty of content"
             ],
             "Action": ["has"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "has",
-                    "plenty of content",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "site",
-                    "plenty of content",
-                    "preserve"
-                ]]
-            },
             "Contains": [[
                 "site",
                 "plenty of content"
@@ -3640,19 +3209,6 @@
             ],
             "Action": ["add"],
             "Persona": ["site editor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "add",
-                    "article",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "site",
-                    "article",
-                    "create",
-                    "add"
-                ]]
-            },
             "Contains": [[
                 "site",
                 "article"
@@ -3665,7 +3221,20 @@
             "Targets": [[
                 "add",
                 "article"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "add",
+                    "article",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "site",
+                    "article",
+                    "create",
+                    "add"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3677,14 +3246,6 @@
                 "appropriate periods"
             ],
             "Action": ["appear only"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "appear only",
-                    "appropriate periods",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "articles appear only during appropriate periods.",
             "Targets": [[
@@ -3703,45 +3264,6 @@
             ],
             "Action": ["set"],
             "Persona": ["site editor"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "set",
-                        "start publishing dates",
-                        "create"
-                    ],
-                    [
-                        "set",
-                        "old article date",
-                        "create"
-                    ],
-                    [
-                        "set",
-                        "stop publishing dates",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        " articles",
-                        "start publishing dates",
-                        "create",
-                        "set"
-                    ],
-                    [
-                        " articles",
-                        "old article date",
-                        "create",
-                        "set"
-                    ],
-                    [
-                        " articles",
-                        "stop publishing dates",
-                        "create",
-                        "set"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     " articles",
@@ -3774,7 +3296,46 @@
                     "set",
                     "stop publishing dates"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "set",
+                        "start publishing dates",
+                        "create"
+                    ],
+                    [
+                        "set",
+                        "old article date",
+                        "create"
+                    ],
+                    [
+                        "set",
+                        "stop publishing dates",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        " articles",
+                        "start publishing dates",
+                        "create",
+                        "set"
+                    ],
+                    [
+                        " articles",
+                        "old article date",
+                        "create",
+                        "set"
+                    ],
+                    [
+                        " articles",
+                        "stop publishing dates",
+                        "create",
+                        "set"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -3783,10 +3344,6 @@
         "Benefit": {
             "Entity": ["best content"],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "the best content is featured most prominently.",
             "Targets": []
@@ -3797,17 +3354,17 @@
             "Entity": ["home page"],
             "Action": ["designate"],
             "Persona": ["site editor"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a site editor, I want to be able to designate whether or not an ever makes the home page, ",
             "Triggers": [[
                 "site editor",
                 "designate"
             ]],
-            "Targets": []
+            "Targets": [],
+            "Action Annotations": {
+                "Target Action Annotations": [],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3816,10 +3373,6 @@
         "Benefit": {
             "Entity": ["articles"],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "articles are visually appealing.",
             "Targets": []
@@ -3833,14 +3386,6 @@
             ],
             "Action": ["have"],
             "Persona": ["site editor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "pretty good control",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As the site editor, I want to have pretty good control over how the article, ",
             "Triggers": [[
@@ -3850,7 +3395,15 @@
             "Targets": [[
                 "have",
                 "pretty good control"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "pretty good control",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3859,14 +3412,6 @@
         "Benefit": {
             "Entity": ["article"],
             "Action": ["easily finish"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "easily finish",
-                    "article",
-                    "delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can easily finish the article.",
             "Targets": [[
@@ -3888,26 +3433,6 @@
                 "take me directly"
             ],
             "Persona": ["site visitor"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "take me directly",
-                        "body of the article",
-                        "create"
-                    ],
-                    [
-                        "click",
-                        "link",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "article teaser",
-                    "link",
-                    "create",
-                    "click"
-                ]]
-            },
             "Contains": [[
                 "article teaser",
                 "link"
@@ -3926,7 +3451,27 @@
                     "click",
                     "link"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "take me directly",
+                        "body of the article",
+                        "create"
+                    ],
+                    [
+                        "click",
+                        "link",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "article teaser",
+                    "link",
+                    "create",
+                    "click"
+                ]]
+            }
         },
         "Mix": {"Contains": [
             "article",
@@ -3941,10 +3486,6 @@
                 "members"
             ],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "visitors are incentivized to become members.",
             "Targets": []
@@ -3958,19 +3499,6 @@
             ],
             "Action": ["indicate"],
             "Persona": ["site editor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "indicate",
-                    "members only",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "members only",
-                    "article",
-                    "create",
-                    "indicate"
-                ]]
-            },
             "Contains": [[
                 "members only",
                 "article"
@@ -3983,7 +3511,20 @@
             "Targets": [[
                 "indicate",
                 "members only"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "indicate",
+                    "members only",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "members only",
+                    "article",
+                    "preserve",
+                    "indicate"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3995,14 +3536,6 @@
                 "learn",
                 "without first joining"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "without first joining",
-                    "site",
-                    "preserve;forbid"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can learn without first joining the site.",
             "Targets": [[
@@ -4016,14 +3549,6 @@
             "Entity": ["your articles"],
             "Action": ["read"],
             "Persona": ["site visitor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "read",
-                    "your articles",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a site visitor, I want to be able to read some of your articles, ",
             "Triggers": [[
@@ -4033,7 +3558,15 @@
             "Targets": [[
                 "read",
                 "your articles"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "read",
+                    "your articles",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {
             "Contains": [
@@ -4054,10 +3587,6 @@
                 "member"
             ],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [[
                 "member",
                 "benefit"
@@ -4074,19 +3603,6 @@
             ],
             "Action": ["have"],
             "Persona": ["site member"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "full access",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "all articles",
-                    "full access",
-                    "preserve",
-                    "have"
-                ]]
-            },
             "Contains": [[
                 "all articles",
                 "full access"
@@ -4099,7 +3615,20 @@
             "Targets": [[
                 "have",
                 "full access"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "full access",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "all articles",
+                    "full access",
+                    "preserve",
+                    "have"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -4108,14 +3637,6 @@
         "Benefit": {
             "Entity": ["what I want"],
             "Action": ["find"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "find",
-                    "what i want",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can find what I want.",
             "Targets": [[
@@ -4134,33 +3655,6 @@
             ],
             "Action": ["do"],
             "Persona": ["site visitor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "do",
-                    "full-text search",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": [
-                    [
-                        "full-text search",
-                        "article body",
-                        "preserve;create",
-                        "do"
-                    ],
-                    [
-                        "full-text search",
-                        "title",
-                        "preserve;create",
-                        "do"
-                    ],
-                    [
-                        "full-text search",
-                        "author name",
-                        "preserve;create",
-                        "do"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "full-text search",
@@ -4183,7 +3677,34 @@
             "Targets": [[
                 "do",
                 "full-text search"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "do",
+                    "full-text search",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": [
+                    [
+                        "full-text search",
+                        "article body",
+                        "preserve;create",
+                        "do"
+                    ],
+                    [
+                        "full-text search",
+                        "title",
+                        "preserve;create",
+                        "do"
+                    ],
+                    [
+                        "full-text search",
+                        "author name",
+                        "preserve;create",
+                        "do"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -4192,10 +3713,6 @@
         "Benefit": {
             "Entity": ["site"],
             "Action": ["read"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can read them without visiting the site.",
             "Targets": []
@@ -4209,19 +3726,6 @@
             ],
             "Action": ["subscribe"],
             "Persona": ["site visitor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "subscribe",
-                    "rss feed",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "articles",
-                    "rss feed",
-                    "create",
-                    "subscribe"
-                ]]
-            },
             "Contains": [[
                 "articles",
                 "RSS feed"
@@ -4234,7 +3738,20 @@
             "Targets": [[
                 "subscribe",
                 "RSS feed"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "subscribe",
+                    "rss feed",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "articles",
+                    "rss feed",
+                    "create",
+                    "subscribe"
+                ]]
+            }
         },
         "Mix": {
             "Contains": [
@@ -4252,10 +3769,6 @@
         "Benefit": {
             "Entity": ["others"],
             "Action": ["read"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "others can read them.",
             "Targets": []
@@ -4269,19 +3782,6 @@
             ],
             "Action": ["post"],
             "Persona": ["site visitor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "post",
-                    "comments",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "articles",
-                    "comments",
-                    "create",
-                    "post"
-                ]]
-            },
             "Contains": [[
                 "articles",
                 "comments"
@@ -4294,7 +3794,20 @@
             "Targets": [[
                 "post",
                 "comments"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "post",
+                    "comments",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "articles",
+                    "comments",
+                    "create",
+                    "post"
+                ]]
+            }
         },
         "Mix": {"Targets": [
             "read",
@@ -4306,14 +3819,6 @@
         "Benefit": {
             "Entity": ["additional exposure"],
             "Action": ["give"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "give",
-                    "additional exposure",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can give them additional exposure.",
             "Targets": [[
@@ -4336,26 +3841,6 @@
                 "put"
             ],
             "Persona": ["site editor"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "have",
-                        "prominent area",
-                        "preserve"
-                    ],
-                    [
-                        "put",
-                        "special announcements",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "home page",
-                    "prominent area",
-                    "preserve",
-                    "have"
-                ]]
-            },
             "Contains": [[
                 "home page",
                 "prominent area"
@@ -4374,7 +3859,27 @@
                     "put",
                     "special announcements"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "have",
+                        "prominent area",
+                        "preserve"
+                    ],
+                    [
+                        "put",
+                        "special announcements",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "home page",
+                    "prominent area",
+                    "preserve",
+                    "have"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -4383,14 +3888,6 @@
         "Benefit": {
             "Entity": ["different types of content"],
             "Action": ["accommodate"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "accommodate",
-                    "different types of content",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can accommodate different types of content.",
             "Targets": [[
@@ -4407,19 +3904,6 @@
             ],
             "Action": ["have"],
             "Persona": ["site editor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "some flexibility",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "where things appear",
-                    "some flexibility",
-                    "preserve",
-                    "have"
-                ]]
-            },
             "Contains": [[
                 "where things appear",
                 "some flexibility"
@@ -4432,7 +3916,20 @@
             "Targets": [[
                 "have",
                 "some flexibility"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "some flexibility",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "where things appear",
+                    "some flexibility",
+                    "preserve",
+                    "have"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -4444,10 +3941,6 @@
                 "membership"
             ],
             "Action": ["register"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [[
                 "membership",
                 "benefit"
@@ -4467,21 +3960,6 @@
                 "notice"
             ],
             "Persona": ["trainer"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "notice",
-                        "upcoming courses",
-                        "preserve"
-                    ],
-                    [
-                        "see",
-                        "upcoming courses",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a trainer, I want to see the upcoming courses are what I want visitors to notice, ",
             "Triggers": [[
@@ -4497,7 +3975,22 @@
                     "see",
                     "upcoming courses"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "notice",
+                        "upcoming courses",
+                        "preserve"
+                    ],
+                    [
+                        "see",
+                        "upcoming courses",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Targets": [
             "register",
@@ -4509,10 +4002,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["come back more often"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I come back more often.",
             "Targets": []
@@ -4529,26 +4018,6 @@
                 "come"
             ],
             "Persona": ["site visitor"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "see",
-                        "new content",
-                        "preserve"
-                    ],
-                    [
-                        "come",
-                        "site",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "site",
-                    "new content",
-                    "preserve",
-                    "see"
-                ]]
-            },
             "Contains": [[
                 "site",
                 "new content"
@@ -4567,7 +4036,27 @@
                     "come",
                     "site"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "see",
+                        "new content",
+                        "preserve"
+                    ],
+                    [
+                        "come",
+                        "site",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "site",
+                    "new content",
+                    "preserve",
+                    "see"
+                ]]
+            }
         },
         "Mix": {"Targets": [
             "come back more often",
@@ -4583,25 +4072,6 @@
                 "learning"
             ],
             "Action": ["come"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "come",
-                    "site",
-                    "create"
-                ]],
-                "Contain Action Rules": [
-                    [
-                        "site",
-                        "agile news",
-                        "create"
-                    ],
-                    [
-                        "site",
-                        "learning",
-                        "create"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "site",
@@ -4624,14 +4094,6 @@
             "Entity": ["articles that interest me"],
             "Action": ["have"],
             "Persona": ["site visitor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "articles that interest me",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a site visitor, I want to have articles that interest me and are easy to get to, ",
             "Triggers": [[
@@ -4641,7 +4103,15 @@
             "Targets": [[
                 "have",
                 "articles that interest me"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "articles that interest me",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -4650,10 +4120,6 @@
         "Benefit": {
             "Entity": ["page"],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I don't bounce immediately o? the page.",
             "Targets": []
@@ -4671,26 +4137,6 @@
                 "visit"
             ],
             "Persona": ["site visitor"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "know",
-                        "scrum",
-                        "preserve"
-                    ],
-                    [
-                        "know",
-                        "why",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "scrum",
-                    "alliance",
-                    "preserve",
-                    "know"
-                ]]
-            },
             "Contains": [[
                 "Scrum",
                 "alliance"
@@ -4709,7 +4155,27 @@
                     "know",
                     "why"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "know",
+                        "scrum",
+                        "preserve"
+                    ],
+                    [
+                        "know",
+                        "why",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "scrum",
+                    "alliance",
+                    "preserve",
+                    "know"
+                ]]
+            }
         },
         "Mix": {"Targets": [
             "visit",
@@ -4721,10 +4187,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["read more"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I read more.",
             "Targets": []
@@ -4742,31 +4204,6 @@
                 "glance around"
             ],
             "Persona": ["site visitor"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "know",
-                        "csm",
-                        "preserve"
-                    ],
-                    [
-                        "glance around",
-                        "home page",
-                        "create"
-                    ],
-                    [
-                        "know",
-                        "why",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "home page",
-                    "csm",
-                    "preserve",
-                    "know"
-                ]]
-            },
             "Contains": [[
                 "home page",
                 "CSM"
@@ -4789,7 +4226,32 @@
                     "know",
                     "why"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "know",
+                        "csm",
+                        "preserve"
+                    ],
+                    [
+                        "glance around",
+                        "home page",
+                        "create"
+                    ],
+                    [
+                        "know",
+                        "why",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "home page",
+                    "csm",
+                    "preserve",
+                    "know"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -4798,10 +4260,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["navigating"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I don't get lost navigating.",
             "Targets": []
@@ -4812,14 +4270,6 @@
             "Entity": ["home page"],
             "Action": ["get back"],
             "Persona": ["site visitor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "get back",
-                    "home page",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a site visitor, I want to be able to get back to the home page quickly and easily, ",
             "Triggers": [[
@@ -4829,7 +4279,15 @@
             "Targets": [[
                 "get back",
                 "home page"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "get back",
+                    "home page",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -4838,14 +4296,6 @@
         "Benefit": {
             "Entity": ["most important or best content"],
             "Action": ["read"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "read",
-                    "most important or best content",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I am most likely to read the most important or best content.",
             "Targets": [[
@@ -4863,19 +4313,6 @@
             ],
             "Action": ["see"],
             "Persona": ["site visitor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "see",
-                    "list",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "list",
-                    "most popular items",
-                    "preserve",
-                    "see"
-                ]]
-            },
             "Contains": [
                 [
                     "site",
@@ -4894,7 +4331,20 @@
             "Targets": [[
                 "see",
                 "list"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "see",
+                    "list",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "list",
+                    "most popular items",
+                    "preserve",
+                    "see"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -4903,10 +4353,6 @@
         "Benefit": {
             "Entity": ["ratings"],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "my ratings are accurate.",
             "Targets": []
@@ -4925,21 +4371,6 @@
                 "submit"
             ],
             "Persona": ["trainer"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "skew",
-                        "results",
-                        "preserve"
-                    ],
-                    [
-                        "submit",
-                        "same answers",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a trainer, I want to be assured that no one can submit the same answers multiple time and skew my results, ",
             "Triggers": [[
@@ -4955,7 +4386,22 @@
                     "submit",
                     "same answers"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "skew",
+                        "results",
+                        "preserve"
+                    ],
+                    [
+                        "submit",
+                        "same answers",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -4964,10 +4410,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["read"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can read them.",
             "Targets": []
@@ -4981,19 +4423,6 @@
             ],
             "Action": ["be notified"],
             "Persona": ["trainer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "be notified",
-                    "results",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "surveys about my classes",
-                    "results",
-                    "create",
-                    "be notified"
-                ]]
-            },
             "Contains": [[
                 "surveys about my classes",
                 "results"
@@ -5006,7 +4435,20 @@
             "Targets": [[
                 "be notified",
                 "results"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "be notified",
+                    "results",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "surveys about my classes",
+                    "results",
+                    "create",
+                    "be notified"
+                ]]
+            }
         },
         "Mix": {"Targets": [
             "read",
@@ -5021,21 +4463,6 @@
                 "any outliers"
             ],
             "Action": ["identify"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "identify",
-                        "possible problems",
-                        "preserve"
-                    ],
-                    [
-                        "identify",
-                        "any outliers",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can identify any outliers or possible problems.",
             "Targets": [
@@ -5060,34 +4487,6 @@
             ],
             "Action": ["see"],
             "Persona": ["site admin"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "see",
-                        "results",
-                        "preserve"
-                    ],
-                    [
-                        "see",
-                        "averages",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "each trainer",
-                        "results",
-                        "preserve",
-                        "see"
-                    ],
-                    [
-                        "class",
-                        "averages",
-                        "preserve",
-                        "see"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "class",
@@ -5112,7 +4511,35 @@
                     "see",
                     "averages"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "see",
+                        "results",
+                        "preserve"
+                    ],
+                    [
+                        "see",
+                        "averages",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "each trainer",
+                        "results",
+                        "preserve",
+                        "see"
+                    ],
+                    [
+                        "class",
+                        "averages",
+                        "preserve",
+                        "see"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -5124,18 +4551,6 @@
                 "appropriate trainer"
             ],
             "Action": ["choose"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "choose",
-                    "course",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "appropriate trainer",
-                    "course",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "appropriate trainer",
                 "course"
@@ -5152,14 +4567,6 @@
             "Entity": ["trainer's rating"],
             "Action": ["see"],
             "Persona": ["site visitor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "see",
-                    "trainer's rating",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a site visitor, I want to see a trainer's rating, ",
             "Triggers": [[
@@ -5169,7 +4576,15 @@
             "Targets": [[
                 "see",
                 "trainer's rating"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "see",
+                    "trainer's rating",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -5178,10 +4593,6 @@
         "Benefit": {
             "Entity": ["site visitors"],
             "Action": ["choose wisely"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "site visitors can choose wisely.",
             "Targets": []
@@ -5195,19 +4606,6 @@
             ],
             "Action": ["show"],
             "Persona": ["trainer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "show",
-                    "rating",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "profile page",
-                    "rating",
-                    "create",
-                    "show"
-                ]]
-            },
             "Contains": [[
                 "profile page",
                 "rating"
@@ -5220,7 +4618,20 @@
             "Targets": [[
                 "show",
                 "rating"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "show",
+                    "rating",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "profile page",
+                    "rating",
+                    "create",
+                    "show"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -5229,10 +4640,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["learn"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can learn that quickly.",
             "Targets": []
@@ -5251,40 +4658,6 @@
                 "teaches"
             ],
             "Persona": ["site visitor"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "view",
-                        "section",
-                        "preserve"
-                    ],
-                    [
-                        "teaches",
-                        "basics",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "website",
-                        "section",
-                        "preserve",
-                        "view"
-                    ],
-                    [
-                        "section",
-                        "basics",
-                        "preserve",
-                        "view"
-                    ],
-                    [
-                        "scrum",
-                        "basics",
-                        "create",
-                        "teaches"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "website",
@@ -5313,7 +4686,41 @@
                     "teaches",
                     "basics"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "view",
+                        "section",
+                        "preserve"
+                    ],
+                    [
+                        "teaches",
+                        "basics",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "website",
+                        "section",
+                        "preserve",
+                        "view"
+                    ],
+                    [
+                        "section",
+                        "basics",
+                        "preserve",
+                        "view"
+                    ],
+                    [
+                        "scrum",
+                        "basics",
+                        "create",
+                        "teaches"
+                    ]
+                ]
+            }
         },
         "Mix": {"Targets": [
             "learn",
@@ -5325,10 +4732,6 @@
         "Benefit": {
             "Entity": ["visitors"],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "it's there for visitors.",
             "Targets": []
@@ -5342,19 +4745,6 @@
             ],
             "Action": ["create"],
             "Persona": ["site editor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "create",
-                    "content",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "what is scrum section",
-                    "content",
-                    "create",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "What Is Scrum section",
                 "content"
@@ -5367,7 +4757,20 @@
             "Targets": [[
                 "create",
                 "content"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "create",
+                    "content",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "what is scrum section",
+                    "content",
+                    "create",
+                    "create"
+                ]]
+            }
         },
         "Mix": {"Contains": [
             "What Is Scrum section",
@@ -5379,10 +4782,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -5399,13 +4798,44 @@
             ],
             "Action": ["view"],
             "Persona": ["site visitor"],
-            "Action Rules": {
-                "Target Action Rules": [[
+            "Contains": [
+                [
+                    "site",
+                    "lists"
+                ],
+                [
+                    "lists",
+                    "all Certified Scrum Masters"
+                ],
+                [
+                    "lists",
+                    "Practitioners"
+                ],
+                [
+                    "lists",
+                    "Trainers"
+                ],
+                [
+                    "lists",
+                    "Certified Scrum Product Owners"
+                ]
+            ],
+            "Text": "#G10# As a site visitor, I want to view lists on the site of all Certified Scrum Masters, Practitioners, Trainers, and Certified Scrum Product Owners.",
+            "Triggers": [[
+                "site visitor",
+                "view"
+            ]],
+            "Targets": [[
+                "view",
+                "lists"
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
                     "view",
                     "lists",
                     "preserve"
                 ]],
-                "Contain Action Rules": [
+                "Contain Action Annotations": [
                     [
                         "site",
                         "lists",
@@ -5437,38 +4867,7 @@
                         "view"
                     ]
                 ]
-            },
-            "Contains": [
-                [
-                    "site",
-                    "lists"
-                ],
-                [
-                    "lists",
-                    "all Certified Scrum Masters"
-                ],
-                [
-                    "lists",
-                    "Practitioners"
-                ],
-                [
-                    "lists",
-                    "Trainers"
-                ],
-                [
-                    "lists",
-                    "Certified Scrum Product Owners"
-                ]
-            ],
-            "Text": "#G10# As a site visitor, I want to view lists on the site of all Certified Scrum Masters, Practitioners, Trainers, and Certified Scrum Product Owners.",
-            "Triggers": [[
-                "site visitor",
-                "view"
-            ]],
-            "Targets": [[
-                "view",
-                "lists"
-            ]]
+            }
         },
         "Mix": {}
     },
@@ -5481,14 +4880,6 @@
                 "certification"
             ],
             "Action": ["verify"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "verify",
-                    "certification",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "employers or others can verify my certification",
             "Targets": [[
@@ -5511,39 +4902,6 @@
                 "have"
             ],
             "Persona": ["CSM"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "listed",
-                        "name",
-                        "preserve"
-                    ],
-                    [
-                        "without becoming",
-                        "member",
-                        "preserve"
-                    ],
-                    [
-                        "have",
-                        "name",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "registry",
-                        "name",
-                        "preserve",
-                        "listed"
-                    ],
-                    [
-                        "site",
-                        "member",
-                        "preserve",
-                        "without becoming"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "registry",
@@ -5572,7 +4930,40 @@
                     "have",
                     "name"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "listed",
+                        "name",
+                        "preserve"
+                    ],
+                    [
+                        "without becoming",
+                        "member",
+                        "preserve"
+                    ],
+                    [
+                        "have",
+                        "name",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "registry",
+                        "name",
+                        "preserve",
+                        "listed"
+                    ],
+                    [
+                        "site",
+                        "member",
+                        "preserve",
+                        "without becoming"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -5584,18 +4975,6 @@
                 "Scrum Alliance records"
             ],
             "Action": ["added"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "added",
-                    "course participants",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "Scrum Alliance records",
-                    "course participants",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "Scrum Alliance records",
                 "course participants"
@@ -5615,19 +4994,6 @@
             ],
             "Action": ["load"],
             "Persona": ["trainer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "load",
-                    "excel file",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "site",
-                    "excel file",
-                    "create",
-                    "load"
-                ]]
-            },
             "Contains": [[
                 "site",
                 "Excel file"
@@ -5640,7 +5006,20 @@
             "Targets": [[
                 "load",
                 "Excel file"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "load",
+                    "excel file",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "site",
+                    "excel file",
+                    "create",
+                    "load"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -5649,10 +5028,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["approve"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can approve any that need to be approved.",
             "Targets": []
@@ -5666,19 +5041,6 @@
             ],
             "Action": ["view"],
             "Persona": ["site admin"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "view",
-                    "all classes",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "all classes",
-                    "pending state",
-                    "preserve",
-                    "view"
-                ]]
-            },
             "Contains": [[
                 "all classes",
                 "pending state"
@@ -5691,7 +5053,20 @@
             "Targets": [[
                 "view",
                 "all classes"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "view",
+                    "all classes",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "all classes",
+                    "pending state",
+                    "preserve",
+                    "view"
+                ]]
+            }
         },
         "Mix": {"Targets": [
             "approve",
@@ -5703,10 +5078,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -5726,46 +5097,6 @@
                 "received"
             ],
             "Persona": ["site admin"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "move",
-                        "people",
-                        "create;delete"
-                    ],
-                    [
-                        "received",
-                        "proof of payment",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "trainer's class",
-                        "people",
-                        "create;delete",
-                        "move"
-                    ],
-                    [
-                        "people",
-                        "pending state",
-                        "create;delete",
-                        "move"
-                    ],
-                    [
-                        "registry",
-                        "people",
-                        "create;delete",
-                        "move"
-                    ],
-                    [
-                        "trainer",
-                        "proof of payment",
-                        "preserve",
-                        "received"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "trainer's class",
@@ -5798,7 +5129,47 @@
                     "received",
                     "proof of payment"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "move",
+                        "people",
+                        "create;delete"
+                    ],
+                    [
+                        "received",
+                        "proof of payment",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "trainer's class",
+                        "people",
+                        "create;delete",
+                        "move"
+                    ],
+                    [
+                        "people",
+                        "pending state",
+                        "create;delete",
+                        "move"
+                    ],
+                    [
+                        "registry",
+                        "people",
+                        "create;delete",
+                        "move"
+                    ],
+                    [
+                        "trainer",
+                        "proof of payment",
+                        "preserve",
+                        "received"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -5807,10 +5178,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Targets": []
         },
@@ -5832,50 +5199,6 @@
                 "register"
             ],
             "Persona": ["CSM"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "be sent",
-                        "email",
-                        "create"
-                    ],
-                    [
-                        "activate",
-                        "membership",
-                        "create"
-                    ],
-                    [
-                        "loaded",
-                        "name",
-                        "preserve"
-                    ],
-                    [
-                        "register",
-                        "membership",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "email",
-                        "instructions",
-                        "create",
-                        "be sent"
-                    ],
-                    [
-                        "scrum alliance",
-                        "membership",
-                        "create",
-                        "activate"
-                    ],
-                    [
-                        "registry",
-                        "name",
-                        "preserve",
-                        "loaded"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "registry",
@@ -5912,7 +5235,51 @@
                     "register",
                     "membership"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "be sent",
+                        "email",
+                        "create"
+                    ],
+                    [
+                        "activate",
+                        "membership",
+                        "create"
+                    ],
+                    [
+                        "loaded",
+                        "name",
+                        "preserve"
+                    ],
+                    [
+                        "register",
+                        "membership",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "email",
+                        "instructions",
+                        "create",
+                        "be sent"
+                    ],
+                    [
+                        "scrum alliance",
+                        "membership",
+                        "create",
+                        "activate"
+                    ],
+                    [
+                        "registry",
+                        "name",
+                        "preserve",
+                        "loaded"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -5924,10 +5291,6 @@
                 "simple email edits"
             ],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I don't need to involve a programmer on simple email edits.",
             "Targets": []
@@ -5943,19 +5306,6 @@
             ],
             "Action": ["edit"],
             "Persona": ["site editor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "edit",
-                    "content",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": [[
-                    "email automatically sent",
-                    "content",
-                    "create;delete",
-                    "edit"
-                ]]
-            },
             "Contains": [
                 [
                     "Product Owners",
@@ -5978,7 +5328,20 @@
             "Targets": [[
                 "edit",
                 "content"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "edit",
+                    "content",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": [[
+                    "email automatically sent",
+                    "content",
+                    "create;delete",
+                    "edit"
+                ]]
+            }
         },
         "Mix": {"Contains": [
             "content",
@@ -5993,18 +5356,6 @@
                 "Scrum"
             ],
             "Action": ["show"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "show",
-                    "company's support",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "Scrum",
-                    "company's support",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "Scrum",
                 "company's support"
@@ -6027,26 +5378,6 @@
                 "paying"
             ],
             "Persona": ["company"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "join",
-                        "scrum alliance",
-                        "create"
-                    ],
-                    [
-                        "paying",
-                        "corporate membership fee",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "scrum alliance",
-                    "corporate membership fee",
-                    "create",
-                    "join"
-                ]]
-            },
             "Contains": [[
                 "Scrum Alliance",
                 "corporate membership fee"
@@ -6065,7 +5396,27 @@
                     "paying",
                     "corporate membership fee"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "join",
+                        "scrum alliance",
+                        "create"
+                    ],
+                    [
+                        "paying",
+                        "corporate membership fee",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "scrum alliance",
+                    "corporate membership fee",
+                    "create",
+                    "join"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -6078,18 +5429,6 @@
                 "Scrum"
             ],
             "Action": ["see"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "see",
-                    "company's support",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "Scrum",
-                    "company's support",
-                    "preserve"
-                ]]
-            },
             "Contains": [[
                 "Scrum",
                 "company's support"
@@ -6109,19 +5448,6 @@
             ],
             "Action": ["display"],
             "Persona": ["corporatesponsor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "display",
-                    "logo",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": [[
-                    "corporate sponsors page",
-                    "logo",
-                    "preserve;create",
-                    "display"
-                ]]
-            },
             "Contains": [[
                 "corporate sponsors page",
                 "logo"
@@ -6134,7 +5460,20 @@
             "Targets": [[
                 "display",
                 "logo"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "display",
+                    "logo",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": [[
+                    "corporate sponsors page",
+                    "logo",
+                    "preserve;create",
+                    "display"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -6147,18 +5486,6 @@
                 "Scrum"
             ],
             "Action": ["see"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "see",
-                    "company's support",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "Scrum",
-                    "company's support",
-                    "preserve"
-                ]]
-            },
             "Contains": [[
                 "Scrum",
                 "company's support"
@@ -6181,19 +5508,6 @@
                 "make"
             ],
             "Persona": ["corporatesponsor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "make",
-                    "logo",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "home page",
-                    "logo",
-                    "create",
-                    "make"
-                ]]
-            },
             "Contains": [[
                 "home page",
                 "logo"
@@ -6206,7 +5520,20 @@
             "Targets": [[
                 "make",
                 "logo"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "make",
+                    "logo",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "home page",
+                    "logo",
+                    "create",
+                    "make"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -6215,14 +5542,6 @@
         "Benefit": {
             "Entity": ["certification status"],
             "Action": ["activated"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "activated",
-                    "certification status",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "my certification status can be activated.",
             "Targets": [[
@@ -6242,26 +5561,6 @@
                 "approved"
             ],
             "Persona": ["CSM"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "be charged",
-                        "fee",
-                        "preserve"
-                    ],
-                    [
-                        "approved",
-                        "practitioner status",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "practitioner status",
-                    "fee",
-                    "preserve",
-                    "be charged"
-                ]]
-            },
             "Contains": [[
                 "Practitioner status",
                 "fee"
@@ -6280,7 +5579,27 @@
                     "approved",
                     "Practitioner status"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "be charged",
+                        "fee",
+                        "preserve"
+                    ],
+                    [
+                        "approved",
+                        "practitioner status",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "practitioner status",
+                    "fee",
+                    "preserve",
+                    "be charged"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -6289,10 +5608,6 @@
         "Benefit": {
             "Entity": ["CST status"],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "my CST status is active.",
             "Targets": []
@@ -6303,14 +5618,6 @@
             "Entity": ["annual fee"],
             "Action": ["pay"],
             "Persona": ["CST"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "pay",
-                    "annual fee",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a CST, I want to pay an annual fee, ",
             "Triggers": [[
@@ -6320,7 +5627,15 @@
             "Targets": [[
                 "pay",
                 "annual fee"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "pay",
+                    "annual fee",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Contains": [
             "CST status",
@@ -6335,14 +5650,6 @@
                 "programmer"
             ],
             "Action": ["set"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "set",
-                    "fees",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "fees can be set without involving a programmer.",
             "Targets": [[
@@ -6361,33 +5668,6 @@
             ],
             "Action": ["set"],
             "Persona": ["site administrator"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "set",
-                    "annual fees",
-                    "create"
-                ]],
-                "Contain Action Rules": [
-                    [
-                        "members",
-                        "annual fees",
-                        "create",
-                        "set"
-                    ],
-                    [
-                        "practitioners",
-                        "annual fees",
-                        "create",
-                        "set"
-                    ],
-                    [
-                        "trainers",
-                        "annual fees",
-                        "create",
-                        "set"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "members",
@@ -6410,7 +5690,34 @@
             "Targets": [[
                 "set",
                 "annual fees"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "set",
+                    "annual fees",
+                    "create"
+                ]],
+                "Contain Action Annotations": [
+                    [
+                        "members",
+                        "annual fees",
+                        "create",
+                        "set"
+                    ],
+                    [
+                        "practitioners",
+                        "annual fees",
+                        "create",
+                        "set"
+                    ],
+                    [
+                        "trainers",
+                        "annual fees",
+                        "create",
+                        "set"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -6419,14 +5726,6 @@
         "Benefit": {
             "Entity": ["membership"],
             "Action": ["renew"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "renew",
-                    "membership",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can renew my membership.",
             "Targets": [[
@@ -6443,21 +5742,6 @@
             ],
             "Action": ["receive"],
             "Persona": ["member"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "receive",
-                        "reminder",
-                        "create"
-                    ],
-                    [
-                        "receive",
-                        "link",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a member, I want to receive a reminder and a link, ",
             "Triggers": [[
@@ -6473,7 +5757,22 @@
                     "receive",
                     "link"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "receive",
+                        "reminder",
+                        "create"
+                    ],
+                    [
+                        "receive",
+                        "link",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -6482,14 +5781,6 @@
         "Benefit": {
             "Entity": ["short-term memory problems"],
             "Action": ["have"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "short-term memory problems",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "i have short-term memory problems.",
             "Targets": [[
@@ -6510,39 +5801,6 @@
                 "email"
             ],
             "Persona": ["member"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "have",
-                        "system",
-                        "preserve"
-                    ],
-                    [
-                        "email",
-                        "new password",
-                        "create"
-                    ],
-                    [
-                        "email",
-                        "password reminder",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "system",
-                        "new password",
-                        "preserve",
-                        "have"
-                    ],
-                    [
-                        "system",
-                        "password reminder",
-                        "preserve",
-                        "have"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "system",
@@ -6571,7 +5829,40 @@
                     "email",
                     "password reminder"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "have",
+                        "system",
+                        "preserve"
+                    ],
+                    [
+                        "email",
+                        "new password",
+                        "create"
+                    ],
+                    [
+                        "email",
+                        "password reminder",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "system",
+                        "new password",
+                        "preserve",
+                        "have"
+                    ],
+                    [
+                        "system",
+                        "password reminder",
+                        "preserve",
+                        "have"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -6583,18 +5874,6 @@
                 "information"
             ],
             "Action": ["share"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "share",
-                    "information",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "Scrum Alliance",
-                    "information",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "Scrum Alliance",
                 "information"
@@ -6611,14 +5890,6 @@
             "Entity": ["information of relevance only to trainers"],
             "Action": ["read"],
             "Persona": ["trainer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "read",
-                    "information of relevance only to trainers",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G10# As a trainer, I want to read information of relevance only to trainers, ",
             "Triggers": [[
@@ -6628,7 +5899,15 @@
             "Targets": [[
                 "read",
                 "information of relevance only to trainers"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "read",
+                    "information of relevance only to trainers",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -6637,10 +5916,6 @@
         "Benefit": {
             "Entity": ["only trainers"],
             "Action": ["see"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "only trainers see it.",
             "Targets": []
@@ -6654,19 +5929,6 @@
             ],
             "Action": ["post"],
             "Persona": ["site editor"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "post",
-                    "information",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "trainers-only section",
-                    "information",
-                    "create",
-                    "post"
-                ]]
-            },
             "Contains": [[
                 "trainers-only section",
                 "information"
@@ -6679,7 +5941,20 @@
             "Targets": [[
                 "post",
                 "information"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "post",
+                    "information",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "trainers-only section",
+                    "information",
+                    "create",
+                    "post"
+                ]]
+            }
         },
         "Mix": {
             "Contains": [

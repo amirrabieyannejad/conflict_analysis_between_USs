@@ -7,14 +7,6 @@
                 "few people"
             ],
             "Action": ["view"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "view",
-                    "dataset",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can view just the dataset with a few people.",
             "Targets": [[
@@ -28,14 +20,6 @@
             "Entity": ["dataset"],
             "Action": ["publish"],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "publish",
-                    "dataset",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a Publisher, I want to publish a dataset, ",
             "Triggers": [[
@@ -45,7 +29,15 @@
             "Targets": [[
                 "publish",
                 "dataset"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "publish",
+                    "dataset",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -57,18 +49,6 @@
                 "everyone"
             ],
             "Action": ["share"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "share",
-                    "dataset",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "everyone",
-                    "dataset",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "everyone",
                 "dataset"
@@ -85,14 +65,6 @@
             "Entity": ["dataset"],
             "Action": ["publish"],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "publish",
-                    "dataset",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a Publisher, I want to publish a dataset, ",
             "Triggers": [[
@@ -102,7 +74,15 @@
             "Targets": [[
                 "publish",
                 "dataset"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "publish",
+                    "dataset",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -120,25 +100,6 @@
                 "have",
                 "publish"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "publish",
-                        "data package",
-                        "create"
-                    ],
-                    [
-                        "have",
-                        "publisher account",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "registry",
-                    "data package",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "registry",
                 "data package"
@@ -165,14 +126,6 @@
             "Entity": ["account"],
             "Action": ["sign up"],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "sign up",
-                    "account",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a Publisher, I want to sign up for an account,  that",
             "Triggers": [[
@@ -182,7 +135,15 @@
             "Targets": [[
                 "sign up",
                 "account"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "sign up",
+                    "account",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -195,10 +156,6 @@
                 "another website"
             ],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [[
                 "another website",
                 "password"
@@ -215,21 +172,6 @@
             ],
             "Action": ["sign up via"],
             "Persona": ["Visitor"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "sign up via",
-                        "github",
-                        "create"
-                    ],
-                    [
-                        "sign up via",
-                        "google",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a Visitor, I want to sign up via github or google,  that",
             "Triggers": [[
@@ -245,7 +187,22 @@
                     "sign up via",
                     "google"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "sign up via",
+                        "github",
+                        "create"
+                    ],
+                    [
+                        "sign up via",
+                        "google",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -254,10 +211,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["get going quickly"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can get going quickly.",
             "Targets": []
@@ -272,21 +225,6 @@
                 "signing up"
             ],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "know",
-                        "what",
-                        "preserve"
-                    ],
-                    [
-                        "do next",
-                        "what",
-                        "create;preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a Publisher, I want to know what do next after signing up,  that",
             "Triggers": [[
@@ -302,7 +240,22 @@
                     "do next",
                     "what"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "know",
+                        "what",
+                        "preserve"
+                    ],
+                    [
+                        "do next",
+                        "what",
+                        "create;preserve"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -314,21 +267,6 @@
                 "start contributing",
                 "using"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "using",
-                        "data",
-                        "preserve"
-                    ],
-                    [
-                        "start contributing",
-                        "data",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "they can start contributing or using data.",
             "Targets": [
@@ -354,21 +292,6 @@
                 "join"
             ],
             "Persona": ["Admin"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "invite",
-                        "someone",
-                        "create"
-                    ],
-                    [
-                        "join",
-                        "platform",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As an Admin, I want to invite someone to join the platform,  that",
             "Triggers": [[
@@ -384,7 +307,22 @@
                     "join",
                     "platform"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "invite",
+                        "someone",
+                        "create"
+                    ],
+                    [
+                        "join",
+                        "platform",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Contains": [
             "platform",
@@ -402,25 +340,6 @@
                 "has",
                 "access"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "has",
-                        "permanent online home",
-                        "preserve"
-                    ],
-                    [
-                        "access",
-                        "permanent online home",
-                        "preserve;create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "permanent online home",
-                    "data",
-                    "preserve"
-                ]]
-            },
             "Contains": [[
                 "permanent online home",
                 "data"
@@ -446,19 +365,6 @@
             ],
             "Action": ["import"],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "import",
-                    "data package",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "registry",
-                    "data package",
-                    "create",
-                    "import"
-                ]]
-            },
             "Contains": [[
                 "registry",
                 "data package"
@@ -471,7 +377,20 @@
             "Targets": [[
                 "import",
                 "data package"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "import",
+                    "data package",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "registry",
+                    "data package",
+                    "create",
+                    "import"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -480,14 +399,6 @@
         "Benefit": {
             "Entity": ["data packages"],
             "Action": ["start publishing"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "start publishing",
-                    "data packages",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can start publishing data packages.",
             "Targets": [[
@@ -501,14 +412,6 @@
             "Entity": ["client"],
             "Action": ["configure"],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "configure",
-                    "client",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a Publisher, I want to configure my client, ",
             "Triggers": [[
@@ -518,7 +421,15 @@
             "Targets": [[
                 "configure",
                 "client"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "configure",
+                    "client",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -527,10 +438,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "it appears there",
             "Targets": []
@@ -548,26 +455,6 @@
                 "update"
             ],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "use",
-                        "publish command",
-                        "preserve"
-                    ],
-                    [
-                        "update",
-                        "data package",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "registry",
-                    "data package",
-                    "create;delete",
-                    "update"
-                ]]
-            },
             "Contains": [[
                 "registry",
                 "data package"
@@ -586,7 +473,27 @@
                     "update",
                     "data package"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "use",
+                        "publish command",
+                        "preserve"
+                    ],
+                    [
+                        "update",
+                        "data package",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "registry",
+                    "data package",
+                    "create;delete",
+                    "update"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -595,10 +502,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "it is no longer visible to anyone.",
             "Targets": []
@@ -609,14 +512,6 @@
             "Entity": ["data package"],
             "Action": ["unpublish"],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "unpublish",
-                    "data package",
-                    "delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a Publisher, I want to unpublish a data package, ",
             "Triggers": [[
@@ -626,7 +521,15 @@
             "Targets": [[
                 "unpublish",
                 "data package"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "unpublish",
+                    "data package",
+                    "delete"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -635,10 +538,6 @@
         "Benefit": {
             "Entity": ["storage space"],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "it no longer takes up storage space.",
             "Targets": []
@@ -649,14 +548,6 @@
             "Entity": ["data package"],
             "Action": ["permanently delete"],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "permanently delete",
-                    "data package",
-                    "delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a Publisher, I want to permanently delete a data package,  that",
             "Triggers": [[
@@ -666,7 +557,15 @@
             "Targets": [[
                 "permanently delete",
                 "data package"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "permanently delete",
+                    "data package",
+                    "delete"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -678,14 +577,6 @@
                 "publish",
                 "know"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "publish",
-                    "good data",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I publish good data and know that I am doing.",
             "Targets": [[
@@ -702,19 +593,6 @@
             ],
             "Action": ["validate"],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "validate",
-                    "data i am about to publish",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "registry",
-                    "data i am about to publish",
-                    "preserve",
-                    "validate"
-                ]]
-            },
             "Contains": [[
                 "registry",
                 "data I am about to publish"
@@ -727,7 +605,20 @@
             "Targets": [[
                 "validate",
                 "data I am about to publish"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "validate",
+                    "data i am about to publish",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "registry",
+                    "data i am about to publish",
+                    "preserve",
+                    "validate"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -744,31 +635,6 @@
                 "have",
                 "correct"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "accidentally broken",
-                        "data",
-                        "delete"
-                    ],
-                    [
-                        "have",
-                        "bugs",
-                        "preserve"
-                    ],
-                    [
-                        "correct",
-                        "bugs",
-                        "create;delete"
-                    ],
-                    [
-                        "correct",
-                        "data",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I know immediately if I have accidentally broken my data or have bugs and can take action to correct.",
             "Targets": [
@@ -800,21 +666,6 @@
                 "publish"
             ],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "validated",
-                        "data",
-                        "preserve"
-                    ],
-                    [
-                        "publish",
-                        "data",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a Publisher, I want to data to be validated when I publish it,  that",
             "Triggers": [[
@@ -830,7 +681,22 @@
                     "publish",
                     "data"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "validated",
+                        "data",
+                        "preserve"
+                    ],
+                    [
+                        "publish",
+                        "data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Contains": [
             "data",
@@ -842,10 +708,6 @@
         "Benefit": {
             "Entity": ["annoying bugs"],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I don't have to check it myself or run into annoying bugs later on.",
             "Targets": []
@@ -856,14 +718,6 @@
             "Entity": ["data I am downloading"],
             "Action": ["know"],
             "Persona": ["Consumer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "data i am downloading",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a Consumer, I want to know that the data I am downloading is good and can be relied on,  that",
             "Triggers": [[
@@ -873,7 +727,15 @@
             "Targets": [[
                 "know",
                 "data I am downloading"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know",
+                    "data i am downloading",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -891,31 +753,6 @@
                 "still have",
                 "use"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "gets broken",
-                        "data",
-                        "delete"
-                    ],
-                    [
-                        "still have",
-                        "copy",
-                        "preserve"
-                    ],
-                    [
-                        "use",
-                        "copy",
-                        "preserve"
-                    ],
-                    [
-                        "lost",
-                        "data",
-                        "delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "if my data is lost or gets broken I still have a copy people can use.",
             "Targets": [
@@ -954,51 +791,6 @@
                 "caches"
             ],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "publish",
-                        "data package",
-                        "create"
-                    ],
-                    [
-                        "caches",
-                        "copy",
-                        "create"
-                    ],
-                    [
-                        "stored",
-                        "resource data",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "data package",
-                        "resource data",
-                        "create",
-                        "publish"
-                    ],
-                    [
-                        "registry",
-                        "copy",
-                        "create",
-                        "caches"
-                    ],
-                    [
-                        "copy",
-                        "data",
-                        "create",
-                        "caches"
-                    ],
-                    [
-                        "servers",
-                        "resource data",
-                        "create",
-                        "stored"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "servers",
@@ -1035,7 +827,52 @@
                     "stored",
                     "resource data"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "publish",
+                        "data package",
+                        "create"
+                    ],
+                    [
+                        "caches",
+                        "copy",
+                        "create"
+                    ],
+                    [
+                        "stored",
+                        "resource data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "data package",
+                        "resource data",
+                        "create",
+                        "publish"
+                    ],
+                    [
+                        "registry",
+                        "copy",
+                        "create",
+                        "caches"
+                    ],
+                    [
+                        "copy",
+                        "data",
+                        "create",
+                        "caches"
+                    ],
+                    [
+                        "servers",
+                        "resource data",
+                        "create",
+                        "stored"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -1050,10 +887,6 @@
                 "still use",
                 "keeps working"
             ],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can still use is and my app or analysis keeps working.",
             "Targets": []
@@ -1072,31 +905,6 @@
                 "removed"
             ],
             "Persona": ["Consumer"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "get",
-                        "data",
-                        "preserve"
-                    ],
-                    [
-                        "moved",
-                        "original data",
-                        "create;delete"
-                    ],
-                    [
-                        "removed",
-                        "original data",
-                        "delete"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "data package",
-                    "data",
-                    "preserve",
-                    "get"
-                ]]
-            },
             "Contains": [[
                 "data package",
                 "data"
@@ -1119,7 +927,32 @@
                     "removed",
                     "original data"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "get",
+                        "data",
+                        "preserve"
+                    ],
+                    [
+                        "moved",
+                        "original data",
+                        "create;delete"
+                    ],
+                    [
+                        "removed",
+                        "original data",
+                        "delete"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "data package",
+                    "data",
+                    "preserve",
+                    "get"
+                ]]
+            }
         },
         "Mix": {"Targets": [
             "still use",
@@ -1131,10 +964,6 @@
         "Benefit": {
             "Entity": [],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "it is available and published.",
             "Targets": []
@@ -1148,19 +977,6 @@
             ],
             "Action": ["publish"],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "publish",
-                    "data package",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "ui",
-                    "data package",
-                    "create",
-                    "publish"
-                ]]
-            },
             "Contains": [[
                 "UI",
                 "data package"
@@ -1173,7 +989,20 @@
             "Targets": [[
                 "publish",
                 "data package"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "publish",
+                    "data package",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "ui",
+                    "data package",
+                    "create",
+                    "publish"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1182,10 +1011,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["published"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "it is available and published.",
             "Targets": []
@@ -1199,19 +1024,6 @@
             ],
             "Action": ["create"],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "create",
-                    "data package",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "ui",
-                    "data package",
-                    "create",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "UI",
                 "data package"
@@ -1224,7 +1036,20 @@
             "Targets": [[
                 "create",
                 "data package"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "create",
+                    "data package",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "ui",
+                    "data package",
+                    "create",
+                    "create"
+                ]]
+            }
         },
         "Mix": {"Targets": [
             "published",
@@ -1239,10 +1064,6 @@
                 "available to view",
                 "download"
             ],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "it is back visible and available to view, download.",
             "Targets": []
@@ -1256,19 +1077,6 @@
             ],
             "Action": ["restore"],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "restore",
-                    "deleted data package",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "cli",
-                    "deleted data package",
-                    "create",
-                    "restore"
-                ]]
-            },
             "Contains": [[
                 "cli",
                 "deleted data package"
@@ -1281,7 +1089,20 @@
             "Targets": [[
                 "restore",
                 "deleted data package"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "restore",
+                    "deleted data package",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "cli",
+                    "deleted data package",
+                    "create",
+                    "restore"
+                ]]
+            }
         },
         "Mix": {"Targets": [
             "available to view",
@@ -1293,10 +1114,6 @@
         "Benefit": {
             "Entity": ["deleted data packages"],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "the deleted data packages is now visible again.",
             "Targets": []
@@ -1307,14 +1124,6 @@
             "Entity": ["deleted data packages"],
             "Action": ["undelete"],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "undelete",
-                    "deleted data packages",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a Publisher, I want to undelete the deleted data packages,  that",
             "Triggers": [[
@@ -1324,7 +1133,15 @@
             "Targets": [[
                 "undelete",
                 "deleted data packages"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "undelete",
+                    "deleted data packages",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1340,25 +1157,6 @@
                 "refine",
                 "achieve"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "refine",
-                        "json declarations",
-                        "create;delete"
-                    ],
-                    [
-                        "achieve",
-                        "great looking result",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "datapackage view section",
-                    "json declarations",
-                    "create;delete"
-                ]]
-            },
             "Contains": [[
                 "datapackage view section",
                 "json declarations"
@@ -1389,31 +1187,6 @@
                 "using"
             ],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "preview",
-                        "views",
-                        "create"
-                    ],
-                    [
-                        "publishing",
-                        "current data package",
-                        "create"
-                    ],
-                    [
-                        "using",
-                        "cli",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "current data package",
-                    "views",
-                    "create",
-                    "preview"
-                ]]
-            },
             "Contains": [[
                 "current data package",
                 "views"
@@ -1436,7 +1209,32 @@
                     "using",
                     "cli"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "preview",
+                        "views",
+                        "create"
+                    ],
+                    [
+                        "publishing",
+                        "current data package",
+                        "create"
+                    ],
+                    [
+                        "using",
+                        "cli",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "current data package",
+                    "views",
+                    "create",
+                    "preview"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1448,14 +1246,6 @@
                 "dataset I want"
             ],
             "Action": ["get"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "get",
-                    "sense",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can get a sense of whether this is the dataset I want.",
             "Targets": [[
@@ -1469,14 +1259,6 @@
             "Entity": ["data package"],
             "Action": ["view"],
             "Persona": ["Consumer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "view",
-                    "data package",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a Consumer, I want to view a data package online, ",
             "Triggers": [[
@@ -1486,7 +1268,15 @@
             "Targets": [[
                 "view",
                 "data package"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "view",
+                    "data package",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1495,14 +1285,6 @@
         "Benefit": {
             "Entity": ["consumer's attention"],
             "Action": ["immediately catches"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "immediately catches",
-                    "consumer's attention",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "it immediately catches consumer's attention.",
             "Targets": [[
@@ -1519,21 +1301,6 @@
             ],
             "Action": ["show"],
             "Persona": ["publisher"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "show",
-                        "world",
-                        "create"
-                    ],
-                    [
-                        "show",
-                        "published data",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a publisher, I want to show the world how my published data is,  that",
             "Triggers": [[
@@ -1549,7 +1316,22 @@
                     "show",
                     "published data"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "show",
+                        "world",
+                        "create"
+                    ],
+                    [
+                        "show",
+                        "published data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1564,21 +1346,6 @@
                 "get",
                 "want"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "get",
-                        "sense",
-                        "preserve"
-                    ],
-                    [
-                        "want",
-                        "dataset",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can get a sense of whether I want this dataset or not.",
             "Targets": [
@@ -1598,14 +1365,6 @@
             "Entity": ["data package"],
             "Action": ["view"],
             "Persona": ["consumer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "view",
-                    "data package",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a consumer, I want to view the data package,  that",
             "Triggers": [[
@@ -1615,7 +1374,15 @@
             "Targets": [[
                 "view",
                 "data package"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "view",
+                    "data package",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1628,14 +1395,6 @@
                 "works",
                 "share"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "share",
-                    "results",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can check it works and share the results.",
             "Targets": [[
@@ -1649,14 +1408,6 @@
             "Entity": ["datapackage I have prepared"],
             "Action": ["preview"],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "preview",
-                    "datapackage i have prepared",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a Publisher, I want to preview a datapackage I have prepared,  that",
             "Triggers": [[
@@ -1666,7 +1417,15 @@
             "Targets": [[
                 "preview",
                 "datapackage I have prepared"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "preview",
+                    "datapackage i have prepared",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Targets": [
             "check",
@@ -1681,10 +1440,6 @@
                 "use case"
             ],
             "Action": ["choose"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [[
                 "use case",
                 "several alternatives"
@@ -1704,21 +1459,6 @@
                 "downloaded"
             ],
             "Persona": ["Consumer"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "see",
-                        "how much",
-                        "preserve"
-                    ],
-                    [
-                        "downloaded",
-                        "data",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a Consumer, I want to see how much the data has been downloaded,  that",
             "Triggers": [[
@@ -1734,7 +1474,22 @@
                     "downloaded",
                     "data"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "see",
+                        "how much",
+                        "preserve"
+                    ],
+                    [
+                        "downloaded",
+                        "data",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Targets": [
             "choose",
@@ -1750,14 +1505,6 @@
                 "registry"
             ],
             "Action": ["understand"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "understand",
-                    "how useful and simple",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can understand how useful and simple the datapackage format and the registry is.",
             "Targets": [[
@@ -1774,19 +1521,6 @@
             ],
             "Action": ["see"],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "see",
-                    "real examples",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "published packages",
-                    "real examples",
-                    "preserve",
-                    "see"
-                ]]
-            },
             "Contains": [[
                 "published packages",
                 "real examples"
@@ -1799,7 +1533,20 @@
             "Targets": [[
                 "see",
                 "real examples"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "see",
+                    "real examples",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "published packages",
+                    "real examples",
+                    "preserve",
+                    "see"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -1815,25 +1562,6 @@
                 "get",
                 "look further"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "get",
-                        "sense",
-                        "preserve"
-                    ],
-                    [
-                        "look further",
-                        "site",
-                        "preserve;create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "site",
-                    "what",
-                    "preserve;create"
-                ]]
-            },
             "Contains": [[
                 "site",
                 "what"
@@ -1856,14 +1584,6 @@
             "Entity": ["some example data packages"],
             "Action": ["see"],
             "Persona": ["Consumer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "see",
-                    "some example data packages",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a Consumer, I want to see some example data packages quickly, ",
             "Triggers": [[
@@ -1873,7 +1593,15 @@
             "Targets": [[
                 "see",
                 "some example data packages"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "see",
+                    "some example data packages",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1882,14 +1610,6 @@
         "Benefit": {
             "Entity": ["ones I want"],
             "Action": ["find"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "find",
-                    "ones i want",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can find the ones I want.",
             "Targets": [[
@@ -1903,14 +1623,6 @@
             "Entity": ["data packages"],
             "Action": ["search"],
             "Persona": ["Consumer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "search",
-                    "data packages",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a Consumer, I want to search data packages,  that",
             "Triggers": [[
@@ -1920,7 +1632,15 @@
             "Targets": [[
                 "search",
                 "data packages"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "search",
+                    "data packages",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -1932,18 +1652,6 @@
                 "some key words"
             ],
             "Action": ["find"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "find",
-                    "package",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "package",
-                    "some key words",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "package",
                 "some key words"
@@ -1963,19 +1671,6 @@
             ],
             "Action": ["search"],
             "Persona": ["Consumer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "search",
-                    "description",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": [[
-                    "data package",
-                    "description",
-                    "preserve;create",
-                    "search"
-                ]]
-            },
             "Contains": [[
                 "data package",
                 "description"
@@ -1988,7 +1683,20 @@
             "Targets": [[
                 "search",
                 "description"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "search",
+                    "description",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": [[
+                    "data package",
+                    "description",
+                    "preserve;create",
+                    "search"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2000,10 +1708,6 @@
                 "each resource"
             ],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I don't have to download descriptor and each resource by hand.",
             "Targets": []
@@ -2017,19 +1721,6 @@
             ],
             "Action": ["download"],
             "Persona": ["Consumer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "download",
-                    "data package",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "one file",
-                    "data package",
-                    "create",
-                    "download"
-                ]]
-            },
             "Contains": [[
                 "one file",
                 "data package"
@@ -2042,7 +1733,20 @@
             "Targets": [[
                 "download",
                 "data package"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "download",
+                    "data package",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "one file",
+                    "data package",
+                    "create",
+                    "download"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2054,14 +1758,6 @@
                 "depend",
                 "using"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "using",
-                    "normal dependency framework",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can depend on it using my normal dependency framework.",
             "Targets": [[
@@ -2079,14 +1775,6 @@
             ],
             "Action": ["use"],
             "Persona": ["Developer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "use",
-                    "data package",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [[
                 "project",
                 "node lib"
@@ -2099,7 +1787,15 @@
             "Targets": [[
                 "use",
                 "data package"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "use",
+                    "data package",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Targets": [
             "depend",
@@ -2111,10 +1807,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["immediately start playing"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can immediately start playing with it.",
             "Targets": []
@@ -2128,19 +1820,6 @@
             ],
             "Action": ["load"],
             "Persona": ["Consumer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "load",
-                    "data package",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "r",
-                    "data package",
-                    "create",
-                    "load"
-                ]]
-            },
             "Contains": [[
                 "R",
                 "Data Package"
@@ -2153,7 +1832,20 @@
             "Targets": [[
                 "load",
                 "Data Package"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "load",
+                    "data package",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "r",
+                    "data package",
+                    "create",
+                    "load"
+                ]]
+            }
         },
         "Mix": {"Targets": [
             "immediately start playing",
@@ -2173,21 +1865,6 @@
                 "infer",
                 "generate"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "infer",
-                        "new data",
-                        "preserve;delete;create"
-                    ],
-                    [
-                        "generate",
-                        "new insights",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can study it and wrangle with it to infer new data or generate new insights.",
             "Targets": [
@@ -2207,14 +1884,6 @@
             "Entity": ["data package"],
             "Action": ["download"],
             "Persona": ["Data Analyst"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "download",
-                    "data package",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a Data Analyst I want to download a data package,  that",
             "Triggers": [[
@@ -2224,7 +1893,15 @@
             "Targets": [[
                 "download",
                 "data package"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "download",
+                    "data package",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Targets": [
             "wrangle",
@@ -2236,14 +1913,6 @@
         "Benefit": {
             "Entity": ["most recent data."],
             "Action": ["work with"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "work with",
-                    "most recent data.",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can work with the most recent data.",
             "Targets": [[
@@ -2257,14 +1926,6 @@
             "Entity": ["previously downloaded data package"],
             "Action": ["update"],
             "Persona": ["Data Analyst"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "update",
-                    "previously downloaded data package",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a Data Analyst, I want to update previously downloaded data package,  that",
             "Triggers": [[
@@ -2274,7 +1935,15 @@
             "Targets": [[
                 "update",
                 "previously downloaded data package"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "update",
+                    "previously downloaded data package",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2283,10 +1952,6 @@
         "Benefit": {
             "Entity": ["one form"],
             "Action": ["get"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can get it easily in one form.",
             "Targets": []
@@ -2300,19 +1965,6 @@
             ],
             "Action": ["download"],
             "Persona": ["Consumer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "download",
-                    "datapackage's data",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "coherent sqlite database",
-                    "datapackage's data",
-                    "create",
-                    "download"
-                ]]
-            },
             "Contains": [[
                 "coherent SQLite database",
                 "DataPackage's data"
@@ -2325,7 +1977,20 @@
             "Targets": [[
                 "download",
                 "DataPackage's data"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "download",
+                    "datapackage's data",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "coherent sqlite database",
+                    "datapackage's data",
+                    "create",
+                    "download"
+                ]]
+            }
         },
         "Mix": {
             "Contains": [
@@ -2350,21 +2015,6 @@
                 "see",
                 "adjust"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "see",
-                        "schema changes",
-                        "preserve"
-                    ],
-                    [
-                        "adjust",
-                        "analytics code",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can see schema changes clearly and adjust my analytics code to the desired schema version.",
             "Targets": [
@@ -2387,19 +2037,6 @@
             ],
             "Action": ["compare"],
             "Persona": ["Data Analyst"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "compare",
-                    "different versions",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": [[
-                    "some datapackage",
-                    "different versions",
-                    "preserve;create",
-                    "compare"
-                ]]
-            },
             "Contains": [[
                 "some datapackage",
                 "different versions"
@@ -2412,7 +2049,20 @@
             "Targets": [[
                 "compare",
                 "different versions"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "compare",
+                    "different versions",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": [[
+                    "some datapackage",
+                    "different versions",
+                    "preserve;create",
+                    "compare"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2424,21 +2074,6 @@
                 "developed independently",
                 "deployed locally"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "deployed locally",
-                        "projects",
-                        "create"
-                    ],
-                    [
-                        "developed independently",
-                        "projects",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "all my projects could be developed independently and deployed locally.",
             "Targets": [
@@ -2461,19 +2096,6 @@
             ],
             "Action": ["install"],
             "Persona": ["Web Developer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "install",
-                    "multiple versions",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "same datapackage",
-                    "multiple versions",
-                    "create",
-                    "install"
-                ]]
-            },
             "Contains": [[
                 "same datapackage",
                 "multiple versions"
@@ -2486,7 +2108,20 @@
             "Targets": [[
                 "install",
                 "multiple versions"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "install",
+                    "multiple versions",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "same datapackage",
+                    "multiple versions",
+                    "create",
+                    "install"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2498,14 +2133,6 @@
                 "DataPackage schema changes"
             ],
             "Action": ["deterministically deployed locally"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "deterministically deployed locally",
-                    "project",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "the project can be deterministically deployed locally and won't break because of the DataPackage schema changes.",
             "Targets": [[
@@ -2530,45 +2157,6 @@
                 "depends"
             ],
             "Persona": ["Developer"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "list",
-                        "all datapackages requirements",
-                        "create"
-                    ],
-                    [
-                        "pin",
-                        "exact versions",
-                        "create"
-                    ],
-                    [
-                        "depends",
-                        "datapackage",
-                        "preserve;forbid"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "project",
-                        "all datapackages requirements",
-                        "create",
-                        "list"
-                    ],
-                    [
-                        "file",
-                        "all datapackages requirements",
-                        "create",
-                        "list"
-                    ],
-                    [
-                        "datapackage",
-                        "exact versions",
-                        "create",
-                        "pin"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "project",
@@ -2607,7 +2195,46 @@
                     "depends",
                     "DataPackage"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "list",
+                        "all datapackages requirements",
+                        "create"
+                    ],
+                    [
+                        "pin",
+                        "exact versions",
+                        "create"
+                    ],
+                    [
+                        "depends",
+                        "datapackage",
+                        "preserve;forbid"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "project",
+                        "all datapackages requirements",
+                        "create",
+                        "list"
+                    ],
+                    [
+                        "file",
+                        "all datapackages requirements",
+                        "create",
+                        "list"
+                    ],
+                    [
+                        "datapackage",
+                        "exact versions",
+                        "create",
+                        "pin"
+                    ]
+                ]
+            }
         },
         "Mix": {}
     },
@@ -2616,10 +2243,6 @@
         "Benefit": {
             "Entity": ["consumers"],
             "Action": ["refer"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "consumers can refer to it.",
             "Targets": []
@@ -2638,26 +2261,6 @@
                 "create"
             ],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "tag",
-                        "datapackage",
-                        "create"
-                    ],
-                    [
-                        "create",
-                        "snapshot",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "data",
-                    "snapshot",
-                    "create",
-                    "create"
-                ]]
-            },
             "Contains": [
                 [
                     "data",
@@ -2682,7 +2285,27 @@
                     "create",
                     "snapshot"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "tag",
+                        "datapackage",
+                        "create"
+                    ],
+                    [
+                        "create",
+                        "snapshot",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "data",
+                    "snapshot",
+                    "create",
+                    "create"
+                ]]
+            }
         },
         "Mix": {"Targets": [
             "refer",
@@ -2697,10 +2320,6 @@
                 "consumers"
             ],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I don't accidentally overwrite stable tagged data which is relied on by consumers.",
             "Targets": []
@@ -2715,14 +2334,6 @@
                 "be warned"
             ],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "try to overwrite",
-                    "tag",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a Publisher, I want to be warned that a tag exists when I try to overwrite it,  that",
             "Triggers": [[
@@ -2732,7 +2343,15 @@
             "Targets": [[
                 "try to overwrite",
                 "tag"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "try to overwrite",
+                    "tag",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -2744,10 +2363,6 @@
                 "fix",
                 "mess up"
             ],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can fix it if I mess up.",
             "Targets": []
@@ -2758,14 +2373,6 @@
             "Entity": ["previously tagged datapackage"],
             "Action": ["overwrite"],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "overwrite",
-                    "previously tagged datapackage",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a Publisher, I want to be able to overwrite the previously tagged datapackage,  that",
             "Triggers": [[
@@ -2775,7 +2382,15 @@
             "Targets": [[
                 "overwrite",
                 "previously tagged datapackage"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "overwrite",
+                    "previously tagged datapackage",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Targets": [
             "mess up",
@@ -2790,14 +2405,6 @@
                 "datapackage"
             ],
             "Action": ["change"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "change",
-                    "datapackage",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I do not break consumer systems when I change my datapackage.",
             "Targets": [[
@@ -2818,26 +2425,6 @@
                 "keep"
             ],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "version",
-                        "data package",
-                        "preserve"
-                    ],
-                    [
-                        "keep",
-                        "multiple versions",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "multiple versions",
-                    "older versions",
-                    "preserve",
-                    "keep"
-                ]]
-            },
             "Contains": [[
                 "multiple versions",
                 "older versions"
@@ -2856,7 +2443,27 @@
                     "keep",
                     "multiple versions"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "version",
+                        "data package",
+                        "preserve"
+                    ],
+                    [
+                        "keep",
+                        "multiple versions",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "multiple versions",
+                    "older versions",
+                    "preserve",
+                    "keep"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -2868,10 +2475,6 @@
                 "review",
                 "return to"
             ],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can return to it and review it.",
             "Targets": []
@@ -2885,19 +2488,6 @@
             ],
             "Action": ["get"],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "get",
-                    "access",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "previous version i tagged",
-                    "access",
-                    "preserve",
-                    "get"
-                ]]
-            },
             "Contains": [[
                 "previous version I tagged",
                 "access"
@@ -2910,7 +2500,20 @@
             "Targets": [[
                 "get",
                 "access"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "get",
+                    "access",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "previous version i tagged",
+                    "access",
+                    "preserve",
+                    "get"
+                ]]
+            }
         },
         "Mix": {"Targets": [
             "return to",
@@ -2925,14 +2528,6 @@
                 "adjust",
                 "handle"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "adjust",
-                    "scripts",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can adjust my scripts to handle it.",
             "Targets": [[
@@ -2952,26 +2547,6 @@
                 "changed"
             ],
             "Persona": ["Consumer"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "know",
-                        "full details",
-                        "preserve"
-                    ],
-                    [
-                        "changed",
-                        "data package schema",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "data package schema",
-                    "full details",
-                    "preserve",
-                    "know"
-                ]]
-            },
             "Contains": [[
                 "data package schema",
                 "full details"
@@ -2990,7 +2565,27 @@
                     "changed",
                     "data package schema"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "know",
+                        "full details",
+                        "preserve"
+                    ],
+                    [
+                        "changed",
+                        "data package schema",
+                        "create;delete"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "data package schema",
+                    "full details",
+                    "preserve",
+                    "know"
+                ]]
+            }
         },
         "Mix": {"Targets": [
             "handle",
@@ -3005,10 +2600,6 @@
                 "decide",
                 "update"
             ],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can decide if I should update or not.",
             "Targets": []
@@ -3023,14 +2614,6 @@
             ],
             "Action": ["get"],
             "Persona": ["Consumer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "get",
-                    "sense",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [[
                 "datapackage",
                 "age"
@@ -3043,7 +2626,15 @@
             "Targets": [[
                 "get",
                 "sense"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "get",
+                    "sense",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Targets": [
             "update",
@@ -3061,21 +2652,6 @@
                 "present",
                 "discuss"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "present",
-                        "particular data timeslice of interest",
-                        "preserve"
-                    ],
-                    [
-                        "discuss",
-                        "particular data timeslice of interest",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can present/discuss the particular data timeslice of interest with other people.",
             "Targets": [
@@ -3098,19 +2674,6 @@
             ],
             "Action": ["view"],
             "Persona": ["Consumer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "view",
-                    "datapackage",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "datapackage",
-                    "particular version",
-                    "preserve",
-                    "view"
-                ]]
-            },
             "Contains": [[
                 "Datapackage",
                 "particular version"
@@ -3123,7 +2686,20 @@
             "Targets": [[
                 "view",
                 "Datapackage"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "view",
+                    "datapackage",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "datapackage",
+                    "particular version",
+                    "preserve",
+                    "view"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3135,10 +2711,6 @@
                 "system"
             ],
             "Action": ["know"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I know it is compatible with my scripts and system.",
             "Targets": []
@@ -3152,19 +2724,6 @@
             ],
             "Action": ["download"],
             "Persona": ["Consumer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "download",
-                    "data package",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "data package",
-                    "particular version",
-                    "create",
-                    "download"
-                ]]
-            },
             "Contains": [[
                 "Data package",
                 "particular version"
@@ -3177,7 +2736,20 @@
             "Targets": [[
                 "download",
                 "Data package"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "download",
+                    "data package",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "data package",
+                    "particular version",
+                    "create",
+                    "download"
+                ]]
+            }
         },
         "Mix": {"Targets": [
             "know",
@@ -3192,14 +2764,6 @@
                 "check out",
                 "take action"
             ],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "check out",
-                    "what has changed",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can check out what has changed and take action.",
             "Targets": [[
@@ -3216,19 +2780,6 @@
             ],
             "Action": ["be notified"],
             "Persona": ["Consumer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "be notified",
-                    "changes",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "package i care about",
-                    "changes",
-                    "create",
-                    "be notified"
-                ]]
-            },
             "Contains": [[
                 "package I care about",
                 "changes"
@@ -3241,7 +2792,20 @@
             "Targets": [[
                 "be notified",
                 "changes"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "be notified",
+                    "changes",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "package i care about",
+                    "changes",
+                    "create",
+                    "be notified"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3253,10 +2817,6 @@
                 "decide",
                 "get involved"
             ],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can decide if I should get involved.",
             "Targets": []
@@ -3270,14 +2830,6 @@
             ],
             "Action": ["see"],
             "Persona": ["Consumer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "see",
-                    "how active",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a Consumer, I want to see how active the site is, ",
             "Triggers": [[
@@ -3287,7 +2839,15 @@
             "Targets": [[
                 "see",
                 "how active"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "see",
+                    "how active",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3299,25 +2859,6 @@
                 "packages"
             ],
             "Action": ["find"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "find",
-                        "interesting publishers",
-                        "create"
-                    ],
-                    [
-                        "find",
-                        "packages",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "interesting publishers",
-                    "packages",
-                    "create"
-                ]]
-            },
             "Contains": [[
                 "interesting publishers",
                 "packages"
@@ -3343,21 +2884,6 @@
                 "find"
             ],
             "Persona": ["Consumer"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "browse",
-                        "publishers",
-                        "preserve"
-                    ],
-                    [
-                        "find",
-                        "publishers",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a Consumer, I want to browse and find publishers,  that",
             "Triggers": [
@@ -3379,7 +2905,22 @@
                     "find",
                     "publishers"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "browse",
+                        "publishers",
+                        "preserve"
+                    ],
+                    [
+                        "find",
+                        "publishers",
+                        "create"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3395,21 +2936,6 @@
                 "discover",
                 "get"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "discover",
-                        "packages",
-                        "create"
-                    ],
-                    [
-                        "get",
-                        "sense",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can discover their packages and get a sense of how active and good they are.",
             "Targets": [
@@ -3429,14 +2955,6 @@
             "Entity": ["publisher's profile"],
             "Action": ["see"],
             "Persona": ["Consumer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "see",
-                    "publisher's profile",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a Consumer, I want to see a publisher's profile,  that",
             "Triggers": [[
@@ -3446,7 +2964,15 @@
             "Targets": [[
                 "see",
                 "publisher's profile"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "see",
+                    "publisher's profile",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3463,30 +2989,6 @@
                 "see",
                 "produce"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "see",
-                        "who",
-                        "preserve"
-                    ],
-                    [
-                        "see",
-                        "other packages",
-                        "preserve"
-                    ],
-                    [
-                        "produce",
-                        "other packages",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "who",
-                    "particular package",
-                    "preserve"
-                ]]
-            },
             "Contains": [[
                 "who",
                 "particular package"
@@ -3513,14 +3015,6 @@
             "Entity": ["publisher's profile"],
             "Action": ["view"],
             "Persona": ["Consumer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "view",
-                    "publisher's profile",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a Consumer, I want to view a publisher's profile,  that",
             "Triggers": [[
@@ -3530,7 +3024,15 @@
             "Targets": [[
                 "view",
                 "publisher's profile"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "view",
+                    "publisher's profile",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3543,18 +3045,6 @@
                 "publisher"
             ],
             "Action": ["easily find"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "easily find",
-                    "one data package",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "all the data packages",
-                    "one data package",
-                    "create"
-                ]]
-            },
             "Contains": [
                 [
                     "publisher",
@@ -3580,19 +3070,6 @@
             ],
             "Action": ["search"],
             "Persona": ["Consumer"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "search",
-                    "all data packages",
-                    "preserve;create"
-                ]],
-                "Contain Action Rules": [[
-                    "publisher",
-                    "all data packages",
-                    "preserve;create",
-                    "search"
-                ]]
-            },
             "Contains": [[
                 "publisher",
                 "all data packages"
@@ -3605,7 +3082,20 @@
             "Targets": [[
                 "search",
                 "all data packages"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "search",
+                    "all data packages",
+                    "preserve;create"
+                ]],
+                "Contain Action Annotations": [[
+                    "publisher",
+                    "all data packages",
+                    "preserve;create",
+                    "search"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3614,10 +3104,6 @@
         "Benefit": {
             "Entity": ["new information"],
             "Action": ["updated"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "it is updated with new information.",
             "Targets": []
@@ -3628,14 +3114,6 @@
             "Entity": ["profile"],
             "Action": ["edit"],
             "Persona": ["Owner"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "edit",
-                    "profile",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As an Owner, I want to edit my profile,  that",
             "Triggers": [[
@@ -3645,7 +3123,15 @@
             "Targets": [[
                 "edit",
                 "profile"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "edit",
+                    "profile",
+                    "create;delete"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {
             "Contains": [
@@ -3667,10 +3153,6 @@
                 "publisher"
             ],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [[
                 "publisher",
                 "member"
@@ -3684,14 +3166,6 @@
             "Entity": ["existing user"],
             "Action": ["invite"],
             "Persona": ["Owner"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "invite",
-                    "existing user",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As an Owner, I want to invite an existing user, ",
             "Triggers": [[
@@ -3701,7 +3175,15 @@
             "Targets": [[
                 "invite",
                 "existing user"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "invite",
+                    "existing user",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -3713,14 +3195,6 @@
                 "Publisher"
             ],
             "Action": ["publish"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "publish",
-                    "data packages",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "they are authorized to publish data packages under my Publisher.",
             "Targets": [[
@@ -3743,26 +3217,6 @@
                 "sign up"
             ],
             "Persona": ["owner"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "invite",
-                        "someone",
-                        "create"
-                    ],
-                    [
-                        "using",
-                        "email",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [[
-                    "someone",
-                    "email",
-                    "create",
-                    "invite"
-                ]]
-            },
             "Contains": [
                 [
                     "someone",
@@ -3787,7 +3241,27 @@
                     "using",
                     "email"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "invite",
+                        "someone",
+                        "create"
+                    ],
+                    [
+                        "using",
+                        "email",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [[
+                    "someone",
+                    "email",
+                    "create",
+                    "invite"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3802,21 +3276,6 @@
                 "publish",
                 "modify"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "publish",
-                        "data packages",
-                        "create"
-                    ],
-                    [
-                        "modify",
-                        "data packages",
-                        "create;delete"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "they no longer have ability to publish or modify my data packages.",
             "Targets": [
@@ -3840,19 +3299,6 @@
             ],
             "Action": ["remove"],
             "Persona": ["owner"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "remove",
-                    "someone",
-                    "delete"
-                ]],
-                "Contain Action Rules": [[
-                    "someone",
-                    "membership",
-                    "delete",
-                    "remove"
-                ]]
-            },
             "Contains": [
                 [
                     "publisher",
@@ -3871,7 +3317,20 @@
             "Targets": [[
                 "remove",
                 "someone"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "remove",
+                    "someone",
+                    "delete"
+                ]],
+                "Contain Action Annotations": [[
+                    "someone",
+                    "membership",
+                    "delete",
+                    "remove"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -3880,10 +3339,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["change"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can change these if I want.",
             "Targets": []
@@ -3898,34 +3353,6 @@
             ],
             "Action": ["view"],
             "Persona": ["owner"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "view",
-                        "all the people",
-                        "preserve"
-                    ],
-                    [
-                        "view",
-                        "roles",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": [
-                    [
-                        "organization",
-                        "all the people",
-                        "preserve",
-                        "view"
-                    ],
-                    [
-                        "all the people",
-                        "roles",
-                        "preserve",
-                        "view"
-                    ]
-                ]
-            },
             "Contains": [
                 [
                     "organization",
@@ -3950,7 +3377,35 @@
                     "view",
                     "roles"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "view",
+                        "all the people",
+                        "preserve"
+                    ],
+                    [
+                        "view",
+                        "roles",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": [
+                    [
+                        "organization",
+                        "all the people",
+                        "preserve",
+                        "view"
+                    ],
+                    [
+                        "all the people",
+                        "roles",
+                        "preserve",
+                        "view"
+                    ]
+                ]
+            }
         },
         "Mix": {"Targets": [
             "change",
@@ -3962,14 +3417,6 @@
         "Benefit": {
             "Entity": ["full control"],
             "Action": ["have"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "full control",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "they have full control.",
             "Targets": [[
@@ -3986,14 +3433,6 @@
             ],
             "Action": ["make"],
             "Persona": ["owner"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "make",
-                    "user",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As an owner, I want to make a user an owner, ",
             "Triggers": [[
@@ -4003,7 +3442,15 @@
             "Targets": [[
                 "make",
                 "user"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "make",
+                    "user",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {"Contains": [
             "owner",
@@ -4018,10 +3465,6 @@
                 "full control"
             ],
             "Action": [],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "they are just a member and no longer have full control.",
             "Targets": []
@@ -4035,14 +3478,6 @@
             ],
             "Action": ["remove"],
             "Persona": ["owner"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "remove",
-                    "user",
-                    "delete"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As an owner, I want to remove a user as an owner, ",
             "Triggers": [[
@@ -4052,7 +3487,15 @@
             "Targets": [[
                 "remove",
                 "user"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "remove",
+                    "user",
+                    "delete"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -4064,18 +3507,6 @@
                 "site title"
             ],
             "Action": ["change"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "change",
-                    "key information",
-                    "create;delete"
-                ]],
-                "Contain Action Rules": [[
-                    "key information",
-                    "site title",
-                    "create;delete"
-                ]]
-            },
             "Contains": [[
                 "key information",
                 "site title"
@@ -4095,19 +3526,6 @@
             ],
             "Action": ["set"],
             "Persona": ["Admin"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "set",
-                    "key configuration parameters",
-                    "create"
-                ]],
-                "Contain Action Rules": [[
-                    "site deployment",
-                    "key configuration parameters",
-                    "create",
-                    "set"
-                ]]
-            },
             "Contains": [[
                 "site deployment",
                 "key configuration parameters"
@@ -4120,7 +3538,20 @@
             "Targets": [[
                 "set",
                 "key configuration parameters"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "set",
+                    "key configuration parameters",
+                    "create"
+                ]],
+                "Contain Action Annotations": [[
+                    "site deployment",
+                    "key configuration parameters",
+                    "create",
+                    "set"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -4129,10 +3560,6 @@
         "Benefit": {
             "Entity": [],
             "Action": ["know"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I know how things are going.",
             "Targets": []
@@ -4149,19 +3576,6 @@
             ],
             "Action": ["see"],
             "Persona": ["Admin"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "see",
-                    "key metrics",
-                    "preserve"
-                ]],
-                "Contain Action Rules": [[
-                    "usage",
-                    "key metrics",
-                    "preserve",
-                    "see"
-                ]]
-            },
             "Contains": [[
                 "usage",
                 "key metrics"
@@ -4174,7 +3588,20 @@
             "Targets": [[
                 "see",
                 "key metrics"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "see",
+                    "key metrics",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": [[
+                    "usage",
+                    "key metrics",
+                    "preserve",
+                    "see"
+                ]]
+            }
         },
         "Mix": {}
     },
@@ -4189,21 +3616,6 @@
                 "charge",
                 "make"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "charge",
-                        "users",
-                        "create"
-                    ],
-                    [
-                        "make",
-                        "platform sustainable",
-                        "create"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can charge users and make my platform sustainable.",
             "Targets": [
@@ -4226,21 +3638,6 @@
             ],
             "Action": ["have"],
             "Persona": ["Admin"],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "have",
-                        "pricing plan",
-                        "preserve"
-                    ],
-                    [
-                        "have",
-                        "billing system",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As an Admin, I want to have a pricing plan and billing system,  that",
             "Triggers": [[
@@ -4256,7 +3653,22 @@
                     "have",
                     "billing system"
                 ]
-            ]
+            ],
+            "Action Annotations": {
+                "Target Action Annotations": [
+                    [
+                        "have",
+                        "pricing plan",
+                        "preserve"
+                    ],
+                    [
+                        "have",
+                        "billing system",
+                        "preserve"
+                    ]
+                ],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -4272,21 +3684,6 @@
                 "work out",
                 "have"
             ],
-            "Action Rules": {
-                "Target Action Rules": [
-                    [
-                        "work out",
-                        "cost",
-                        "create"
-                    ],
-                    [
-                        "have",
-                        "sense",
-                        "preserve"
-                    ]
-                ],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can work out what this will cost me in the future and have a sense that these guys are sustainable.",
             "Targets": [
@@ -4310,14 +3707,6 @@
             ],
             "Action": ["know"],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "know",
-                    "prices",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [[
                 "site",
                 "pricing plan"
@@ -4330,7 +3719,15 @@
             "Targets": [[
                 "know",
                 "prices"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "know",
+                    "prices",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -4339,10 +3736,6 @@
         "Benefit": {
             "Entity": ["what"],
             "Action": ["allows"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I am entitled to what it allows.",
             "Targets": []
@@ -4353,14 +3746,6 @@
             "Entity": ["given pricing plan"],
             "Action": ["sign up"],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "sign up",
-                    "given pricing plan",
-                    "create"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a Publisher, I want to sign up for a given pricing plan,  that",
             "Triggers": [[
@@ -4370,7 +3755,15 @@
             "Targets": [[
                 "sign up",
                 "given pricing plan"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "sign up",
+                    "given pricing plan",
+                    "create"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {}
     },
@@ -4379,10 +3772,6 @@
         "Benefit": {
             "Entity": ["team"],
             "Action": ["share"],
-            "Action Rules": {
-                "Target Action Rules": [],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "I can share just with my team.",
             "Targets": []
@@ -4393,14 +3782,6 @@
             "Entity": ["private data packages"],
             "Action": ["have"],
             "Persona": ["Publisher"],
-            "Action Rules": {
-                "Target Action Rules": [[
-                    "have",
-                    "private data packages",
-                    "preserve"
-                ]],
-                "Contain Action Rules": []
-            },
             "Contains": [],
             "Text": "#G14# As a Publisher, I want to have private data packages, ",
             "Triggers": [[
@@ -4410,7 +3791,15 @@
             "Targets": [[
                 "have",
                 "private data packages"
-            ]]
+            ]],
+            "Action Annotations": {
+                "Target Action Annotations": [[
+                    "have",
+                    "private data packages",
+                    "preserve"
+                ]],
+                "Contain Action Annotations": []
+            }
         },
         "Mix": {
             "Contains": [

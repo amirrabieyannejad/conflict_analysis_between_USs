@@ -3,32 +3,25 @@
 ********************* << Dataset: g24_unibath >> ***************
 * Table of potential conflict between user stories
 
-       us_03  us_07  us_01  us_04  us_45  us_12  us_36  us_50  us_53  
-us_03         x      x      x      x                    x             
-us_07  x             x      x      x                    x             
-us_01  x      x             x      x                    x             
-us_04  x      x      x             x                    x             
-us_45  x      x      x      x                           x      x      
-us_12                                            x             x      
-us_36                                     x                    x      
-us_50  x      x      x      x      x                                  
-us_53                              x      x      x                    
+       us_03  us_07  us_01  us_04  us_45  us_50  
+us_03         x      x      x      x      x      
+us_07  x             x      x             x      
+us_01  x      x             x      x      x      
+us_04  x      x      x             x      x      
+us_45  x             x      x             x      
+us_50  x      x      x      x      x             
 
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_03_AND_user_story_07}
   
-Affected Resource of US1 is: << datasets >>
-Affected Resource of US2 is: << licenses >>
-Affected Contain Resource US1 is: << datasets >>
-Affected Resource US2 is: << datasets >>
-Contain Resources for: user_story_03: << [["pure","datasets","create","deposit"]] >>
-Contain Resources for: user_story_07: << [["datasets","licenses","create;delete","apply"]] >>
+ Affected Resource of US1 is: << datasets >>
+ Affected Contain Entity US2 is: << licenses >>
 
  Action of user_story_03 is: << maintain >>  which is annotated with: << delete >>
- Action of user_story_07 is: << apply >>  which is annotated with: << delete >>
+ Action of user_story_07 is: << apply >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_03: #G24# As a depositor, i want to deposit and #maintain# #datasets# through pure, 
@@ -43,17 +36,13 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_01_AND_user_story_07}
   
-Affected Resource of US1 is: << datasets >>
-Affected Resource of US2 is: << licenses >>
-Affected Contain Resource US1 is: << datasets >>
-Affected Resource US2 is: << datasets >>
-Contain Resources for: user_story_01: << [["simple web interface","datasets","create","deposit"]] >>
-Contain Resources for: user_story_07: << [["datasets","licenses","create;delete","apply"]] >>
+ Affected Resource of US1 is: << datasets >>
+ Affected Contain Entity US2 is: << licenses >>
 
  Action of user_story_01 is: << maintain >>  which is annotated with: << delete >>
- Action of user_story_07 is: << apply >>  which is annotated with: << delete >>
+ Action of user_story_07 is: << apply >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_01: #G24# As a depositor, i want to deposit and #maintain# #datasets# through a simple web interface, 
@@ -68,17 +57,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_03_AND_user_story_04}
   
-Affected Resource of US1 is: << datasets >>
-Affected Resource of US2 is: << datasets >>
-Affected Contain Resource US1 is: << datasets >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_03: << [["pure","datasets","create","deposit"]] >>
-Contain Resources for: user_story_04: << [["virtual research environments","datasets","create;delete","maintain"],["other workflow tools","datasets","create;delete","maintain"]] >>
+ Affected Resource of US1 is: << datasets >>
 
  Action of user_story_03 is: << maintain >>  which is annotated with: << delete >>
  Action of user_story_04 is: << maintain >>  which is annotated with: << delete >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_03: #G24# As a depositor, i want to deposit and #maintain# #datasets# through pure, 
@@ -93,17 +77,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_01_AND_user_story_45}
   
-Affected Resource of US1 is: << datasets >>
-Affected Resource of US2 is: << datasets >>
-Affected Contain Resource US1 is: << datasets >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_01: << [["simple web interface","datasets","create","deposit"]] >>
-Contain Resources for: user_story_45: << [["metadata","datasets","preserve","have"]] >>
+ Affected Resource of US1 is: << datasets >>
 
  Action of user_story_01 is: << maintain >>  which is annotated with: << delete >>
  Action of user_story_45 is: << have >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_01: #G24# As a depositor, i want to deposit and #maintain# #datasets# through a simple web interface, 
@@ -118,17 +97,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_01_AND_user_story_04}
   
-Affected Resource of US1 is: << datasets >>
-Affected Resource of US2 is: << datasets >>
-Affected Contain Resource US1 is: << datasets >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_01: << [["simple web interface","datasets","create","deposit"]] >>
-Contain Resources for: user_story_04: << [["virtual research environments","datasets","create;delete","maintain"],["other workflow tools","datasets","create;delete","maintain"]] >>
+ Affected Resource of US1 is: << datasets >>
 
  Action of user_story_01 is: << maintain >>  which is annotated with: << delete >>
  Action of user_story_04 is: << maintain >>  which is annotated with: << delete >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_01: #G24# As a depositor, i want to deposit and #maintain# #datasets# through a simple web interface, 
@@ -143,17 +117,13 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_04_AND_user_story_07}
   
-Affected Resource of US1 is: << datasets >>
-Affected Resource of US2 is: << licenses >>
-Affected Contain Resource US1 is: << datasets >>
-Affected Resource US2 is: << datasets >>
-Contain Resources for: user_story_04: << [["virtual research environments","datasets","create;delete","maintain"],["other workflow tools","datasets","create;delete","maintain"]] >>
-Contain Resources for: user_story_07: << [["datasets","licenses","create;delete","apply"]] >>
+ Affected Resource of US1 is: << datasets >>
+ Affected Contain Entity US2 is: << licenses >>
 
  Action of user_story_04 is: << maintain >>  which is annotated with: << delete >>
- Action of user_story_07 is: << apply >>  which is annotated with: << delete >>
+ Action of user_story_07 is: << apply >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_04: #G24# As a depositor, i want to deposit and #maintain# #datasets# through virtual research environments and other workflow tools, 
@@ -168,17 +138,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_01_AND_user_story_03}
   
-Affected Resource of US1 is: << datasets >>
-Affected Resource of US2 is: << datasets >>
-Affected Contain Resource US1 is: << datasets >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_01: << [["simple web interface","datasets","create","deposit"]] >>
-Contain Resources for: user_story_03: << [["pure","datasets","create","deposit"]] >>
+ Affected Resource of US1 is: << datasets >>
 
  Action of user_story_01 is: << maintain >>  which is annotated with: << delete >>
  Action of user_story_03 is: << maintain >>  which is annotated with: << delete >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_01: #G24# As a depositor, i want to deposit and #maintain# #datasets# through a simple web interface, 
@@ -191,69 +156,35 @@ Original texts of user stories are:
    user_story_03: #G24# As a depositor, I want to deposit and maintain datasets through Pure, so that I have a single onestop shop for managing my research outputs.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_12_AND_user_story_36}
+{user_story_50_AND_user_story_07}
   
-Affected Resource of US1 is: << metadata >>
-Affected Resource of US2 is: << minimum set >>
-Affected Contain Resource US1 is: << metadata >>
-Affected Resource US2 is: << metadata >>
-Contain Resources for: user_story_12: << [["other university systems","metadata","preserve","have"],["previous deposits","metadata","preserve","have"]] >>
-Contain Resources for: user_story_36: << [["minimum set","metadata","preserve;forbid","require"]] >>
+ Affected Resource of US1 is: << datasets >>
+ Affected Contain Entity US2 is: << licenses >>
 
- Action of user_story_12 is: << automatically filled >>  which is annotated with: << create >>
- Action of user_story_36 is: << require >>  which is annotated with: << forbid >>
-
-Conflict Reason is: << create-forbid-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_12: #G24# As a depositor, i want to have #metadata# #automatically filled# from other university systems and remembered from previous deposits, 
-
-   user_story_36: #G24# As a Bath Data Archive administrator, i want to #require# a #minimum set# of #metadata#, 
-
-Original texts of user stories are: 
-   user_story_12: #G24# As a depositor, I want to have metadata automatically filled from other University systems and remembered from previous deposits, so that I don't have to waste time reentering the same information.
-
-   user_story_36: #G24# As a Bath Data Archive administrator, I want to require a minimum set of metadata, so that consistent quality of metadata is maintained.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_07_AND_user_story_50}
-  
-Affected Resource of US1 is: << datasets >>
-Affected Resource of US2 is: << datasets >>
-Affected Contain Resource US1 is: << licenses >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_07: << [["datasets","licenses","create;delete","apply"]] >>
-Contain Resources for: user_story_50: << [["api","datasets","create","deposit"]] >>
-
- Action of user_story_07 is: << apply >>  which is annotated with: << delete >>
  Action of user_story_50 is: << maintain >>  which is annotated with: << delete >>
+ Action of user_story_07 is: << apply >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
-   user_story_07: #G24# As a depositor, i want to #apply# licenses to #datasets#, 
-
    user_story_50: #G24# As a developer, i want to deposit and #maintain# #datasets# via an api such as sword2, 
 
-Original texts of user stories are: 
-   user_story_07: #G24# As a depositor, I want to apply licenses to datasets, so that my IP rights are protected appropriately.
+   user_story_07: #G24# As a depositor, i want to #apply# #licenses# to #datasets#, 
 
+Original texts of user stories are: 
    user_story_50: #G24# As a developer, I want to deposit and maintain datasets via an API such as SWORD2, so that my service can interact with the archive.
+
+   user_story_07: #G24# As a depositor, I want to apply licenses to datasets, so that my IP rights are protected appropriately.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_04_AND_user_story_50}
   
-Affected Resource of US1 is: << datasets >>
-Affected Resource of US2 is: << datasets >>
-Affected Contain Resource US1 is: << datasets >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_04: << [["virtual research environments","datasets","create;delete","maintain"],["other workflow tools","datasets","create;delete","maintain"]] >>
-Contain Resources for: user_story_50: << [["api","datasets","create","deposit"]] >>
+ Affected Resource of US1 is: << datasets >>
 
  Action of user_story_04 is: << maintain >>  which is annotated with: << delete >>
  Action of user_story_50 is: << maintain >>  which is annotated with: << delete >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_04: #G24# As a depositor, i want to deposit and #maintain# #datasets# through virtual research environments and other workflow tools, 
@@ -268,17 +199,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_04_AND_user_story_45}
   
-Affected Resource of US1 is: << datasets >>
-Affected Resource of US2 is: << datasets >>
-Affected Contain Resource US1 is: << datasets >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_04: << [["virtual research environments","datasets","create;delete","maintain"],["other workflow tools","datasets","create;delete","maintain"]] >>
-Contain Resources for: user_story_45: << [["metadata","datasets","preserve","have"]] >>
+ Affected Resource of US1 is: << datasets >>
 
  Action of user_story_04 is: << maintain >>  which is annotated with: << delete >>
  Action of user_story_45 is: << have >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_04: #G24# As a depositor, i want to deposit and #maintain# #datasets# through virtual research environments and other workflow tools, 
@@ -291,69 +217,14 @@ Original texts of user stories are:
    user_story_45: #G24# As a Research Information manager, I want to have datasets linked to metadata about projects, so that I can report on projects depositing datasets in relation to funder requirements.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_12_AND_user_story_53}
-  
-Affected Resource of US1 is: << metadata >>
-Affected Resource of US2 is: << metadata >>
-Affected Contain Resource US1 is: << metadata >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_12: << [["other university systems","metadata","preserve","have"],["previous deposits","metadata","preserve","have"]] >>
-Contain Resources for: user_story_53: << [["outputs","metadata","delete","harvest"]] >>
-
- Action of user_story_12 is: << have >>  which is annotated with: << preserve >>
- Action of user_story_53 is: << harvest >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_12: #G24# As a depositor, i want to #have# #metadata# automatically filled from other university systems and remembered from previous deposits, 
-
-   user_story_53: #G24# As a fundingbody, i want to #harvest# #metadata# on outputs from research i fund, 
-
-Original texts of user stories are: 
-   user_story_12: #G24# As a depositor, I want to have metadata automatically filled from other University systems and remembered from previous deposits, so that I don't have to waste time reentering the same information.
-
-   user_story_53: #G24# As a fundingbody, I want to harvest metadata on outputs from research I fund, so that I can analyse effectiveness of funding strategy and I can encourage cross fertilisation of research outputs.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_45_AND_user_story_53}
-  
-Affected Resource of US1 is: << metadata >>
-Affected Resource of US2 is: << metadata >>
-Affected Contain Resource US1 is: << datasets >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_45: << [["metadata","datasets","preserve","have"]] >>
-Contain Resources for: user_story_53: << [["outputs","metadata","delete","harvest"]] >>
-
- Action of user_story_45 is: << have >>  which is annotated with: << preserve >>
- Action of user_story_53 is: << harvest >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_45: #G24# As a Research Information manager, i want to #have# datasets linked to #metadata# about projects, 
-
-   user_story_53: #G24# As a fundingbody, i want to #harvest# #metadata# on outputs from research i fund, 
-
-Original texts of user stories are: 
-   user_story_45: #G24# As a Research Information manager, I want to have datasets linked to metadata about projects, so that I can report on projects depositing datasets in relation to funder requirements.
-
-   user_story_53: #G24# As a fundingbody, I want to harvest metadata on outputs from research I fund, so that I can analyse effectiveness of funding strategy and I can encourage cross fertilisation of research outputs.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_03_AND_user_story_45}
   
-Affected Resource of US1 is: << datasets >>
-Affected Resource of US2 is: << datasets >>
-Affected Contain Resource US1 is: << datasets >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_03: << [["pure","datasets","create","deposit"]] >>
-Contain Resources for: user_story_45: << [["metadata","datasets","preserve","have"]] >>
+ Affected Resource of US1 is: << datasets >>
 
  Action of user_story_03 is: << maintain >>  which is annotated with: << delete >>
  Action of user_story_45 is: << have >>  which is annotated with: << preserve >>
 
-Conflict Reason is: << delete-preserve-Conflict >>
+ Conflict Reason is: << delete-preserve-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_03: #G24# As a depositor, i want to deposit and #maintain# #datasets# through pure, 
@@ -368,17 +239,12 @@ Original texts of user stories are:
 ------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_03_AND_user_story_50}
   
-Affected Resource of US1 is: << datasets >>
-Affected Resource of US2 is: << datasets >>
-Affected Contain Resource US1 is: << datasets >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_03: << [["pure","datasets","create","deposit"]] >>
-Contain Resources for: user_story_50: << [["api","datasets","create","deposit"]] >>
+ Affected Resource of US1 is: << datasets >>
 
  Action of user_story_03 is: << maintain >>  which is annotated with: << delete >>
  Action of user_story_50 is: << maintain >>  which is annotated with: << delete >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_03: #G24# As a depositor, i want to deposit and #maintain# #datasets# through pure, 
@@ -391,44 +257,14 @@ Original texts of user stories are:
    user_story_50: #G24# As a developer, I want to deposit and maintain datasets via an API such as SWORD2, so that my service can interact with the archive.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_36_AND_user_story_53}
-  
-Affected Resource of US1 is: << metadata >>
-Affected Resource of US2 is: << metadata >>
-Affected Contain Resource US1 is: << minimum set >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_36: << [["minimum set","metadata","preserve;forbid","require"]] >>
-Contain Resources for: user_story_53: << [["outputs","metadata","delete","harvest"]] >>
-
- Action of user_story_36 is: << require >>  which is annotated with: << preserve >>
- Action of user_story_53 is: << harvest >>  which is annotated with: << delete >>
-
-Conflict Reason is: << preserve-delete-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_36: #G24# As a Bath Data Archive administrator, i want to #require# a minimum set of #metadata#, 
-
-   user_story_53: #G24# As a fundingbody, i want to #harvest# #metadata# on outputs from research i fund, 
-
-Original texts of user stories are: 
-   user_story_36: #G24# As a Bath Data Archive administrator, I want to require a minimum set of metadata, so that consistent quality of metadata is maintained.
-
-   user_story_53: #G24# As a fundingbody, I want to harvest metadata on outputs from research I fund, so that I can analyse effectiveness of funding strategy and I can encourage cross fertilisation of research outputs.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_01_AND_user_story_50}
   
-Affected Resource of US1 is: << datasets >>
-Affected Resource of US2 is: << datasets >>
-Affected Contain Resource US1 is: << datasets >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_01: << [["simple web interface","datasets","create","deposit"]] >>
-Contain Resources for: user_story_50: << [["api","datasets","create","deposit"]] >>
+ Affected Resource of US1 is: << datasets >>
 
  Action of user_story_01 is: << maintain >>  which is annotated with: << delete >>
  Action of user_story_50 is: << maintain >>  which is annotated with: << delete >>
 
-Conflict Reason is: << delete-delete-Conflict >>
+ Conflict Reason is: << delete-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_01: #G24# As a depositor, i want to deposit and #maintain# #datasets# through a simple web interface, 
@@ -441,44 +277,14 @@ Original texts of user stories are:
    user_story_50: #G24# As a developer, I want to deposit and maintain datasets via an API such as SWORD2, so that my service can interact with the archive.
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
-{user_story_07_AND_user_story_45}
-  
-Affected Resource of US1 is: << datasets >>
-Affected Resource of US2 is: << datasets >>
-Affected Contain Resource US1 is: << licenses >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_07: << [["datasets","licenses","create;delete","apply"]] >>
-Contain Resources for: user_story_45: << [["metadata","datasets","preserve","have"]] >>
-
- Action of user_story_07 is: << apply >>  which is annotated with: << delete >>
- Action of user_story_45 is: << have >>  which is annotated with: << preserve >>
-
-Conflict Reason is: << delete-preserve-Conflict >>
-
-Highlighted elements in main parts of user stories: 
-   user_story_07: #G24# As a depositor, i want to #apply# licenses to #datasets#, 
-
-   user_story_45: #G24# As a Research Information manager, i want to #have# #datasets# linked to metadata about projects, 
-
-Original texts of user stories are: 
-   user_story_07: #G24# As a depositor, I want to apply licenses to datasets, so that my IP rights are protected appropriately.
-
-   user_story_45: #G24# As a Research Information manager, I want to have datasets linked to metadata about projects, so that I can report on projects depositing datasets in relation to funder requirements.
-
-------------------[Potential Conflict between following User Stories found]--------------------------
 {user_story_45_AND_user_story_50}
   
-Affected Resource of US1 is: << datasets >>
-Affected Resource of US2 is: << datasets >>
-Affected Contain Resource US1 is: << datasets >>
-Affected Resource US2 is: <<  >>
-Contain Resources for: user_story_45: << [["metadata","datasets","preserve","have"]] >>
-Contain Resources for: user_story_50: << [["api","datasets","create","deposit"]] >>
+ Affected Resource of US1 is: << datasets >>
 
  Action of user_story_45 is: << have >>  which is annotated with: << preserve >>
  Action of user_story_50 is: << maintain >>  which is annotated with: << delete >>
 
-Conflict Reason is: << preserve-delete-Conflict >>
+ Conflict Reason is: << preserve-delete-Conflict >>
 
 Highlighted elements in main parts of user stories: 
    user_story_45: #G24# As a Research Information manager, i want to #have# #datasets# linked to metadata about projects, 
