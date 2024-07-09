@@ -5,7 +5,10 @@ To conduct conflict analysis, a one-time preparatory phase is needed to categori
 
 Once the conflict analysis has been applied, a comprehensive report is created that contains information regarding conflict pairs in both a textual and a tabular form.
 Following Figure illustrates how each step in this sequence is interconnected, with the output of one step feeding directly into the next. This diagram effectively demonstrates the toolchain and process workflow, highlighting how each tool transforms artefacts and contributes to the overall objective of conflict detection.
-<img width="750" alt="passive" src="https://github.com/amirrabieyannejad/Masterarbeit/blob/main/images/conflict_operational_flow.png"> 
+ <br> 
+ <br> 
+<img width="400" height="250" align="left"  src="https://github.com/amirrabieyannejad/Masterarbeit/blob/main/images/conflict_operational_flow.png"> 
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
 ## Requirement
 *  [Eclipse](https://www.eclipse.org/downloads/packages/release/2023-03/r) version `2023-03`
 *  JDK 15.0.1, JUnit 4.10
