@@ -15,8 +15,8 @@ public class ConflictPair {
 	private String entityContainUs2;
 	private String actionUs1;
 	private String actionUs2;
-	private String actionRuleUs1;
-	private String actionRuleUs2;
+	private String actionAnnotationUs1;
+	private String actionAnnotationUs2;
 
 	@Override
 	public boolean equals(Object o) {
@@ -93,16 +93,16 @@ public class ConflictPair {
 		this.entity = nounUs1;
 	}
 	public String getActionAnnotationUs1() {
-		return actionRuleUs1;
+		return actionAnnotationUs1;
 	}
-	public void setActionAnnotationUs1(String actionRuleUs1) {
-		this.actionRuleUs1 = actionRuleUs1;
+	public void setActionAnnotationUs1(String actionAnnotationUs1) {
+		this.actionAnnotationUs1 = actionAnnotationUs1;
 	}
 	public String getActionAnnotationUs2() {
-		return actionRuleUs2;
+		return actionAnnotationUs2;
 	}
-	public void setActionAnnotationUs2(String actionRuleUs2) {
-		this.actionRuleUs2 = actionRuleUs2;
+	public void setActionAnnotationUs2(String actionAnnotationUs2) {
+		this.actionAnnotationUs2 = actionAnnotationUs2;
 	}
 	public String getActionUs1() {
 		return actionUs1;
@@ -135,6 +135,7 @@ public class ConflictPair {
 	public void setUsId1(String usId1) {
 		this.usId1 = usId1;
 	}
+
 
 
 
