@@ -36,16 +36,6 @@ public class ReportMaker {
 
 	}
 
-//	public static void main(String[] args) throws Exception {
-//		String[] dataSets = { "g03_loudoun", "g04_recycling", "g05_open_spending", "g08_frictionless",
-//				"g10_scrum_alliance", "g11_nsf", "g12_camperplus", "g14_datahub", "g16_mis", "g18_neurohub",
-//				"g19_alfred", "g21_badcamp", "g22_rdadmp", "g23_archives_space", "g24_unibath", "g25_duraspace",
-//				"g26_racdam", "g27_culrepo", "g28_zooniverse" };
-////		String[] version = { "g10_scrum_alliance" };
-////		 make a report for the whole
-//
-//	}
-
 	public static void runReportMaker(String[] dataSets, String filePath) throws Exception {
 		File consolidatedConflictReport = new File("00_annotated_datasets\\" + "consolidated_conflict_report.txt");
 		FileWriter consolidatedFileWriter = new FileWriter(consolidatedConflictReport);
@@ -55,9 +45,9 @@ public class ReportMaker {
 		FileWriter jsonFileWriter = new FileWriter(fileJsonReport);
 		JSONArray jsonReport = new JSONArray();
 		for (int i = 0; i < dataSets.length; i++) { 
-
+			
 			long startTime = System.nanoTime();
-			System.out.println("------------------- Proceed Dataset " + dataSets[i]);
+			System.out.println("[ReportMaker]------------------- Proceed Dataset " + dataSets[i]);
 //			consolidatedFileWriter.write("\n\n\n------------------- Proceed Dataset " + version[i]+ " -------------------");
 			makeReport(dataSets[i], consolidatedFileWriter, jsonFileWriter, jsonReport, filePath);
 			long endTime = System.nanoTime();
@@ -215,10 +205,10 @@ public class ReportMaker {
 			jsonObject.put("Contain US2 Entity", conflictPair.getNounContainUs2());
 
 			// TODO:
-			fileWriter.write("\n\n Action of " + conflictPair.getConflictPair1() + " is: " + "<< "
+			fileWriter.write("\n\n Action of " + usId1 + " is: " + "<< "
 					+ conflictPair.getActionUs1() + " >> " + " which is annotated with: " + "<< "
 					+ conflictPair.getActionAnnotationUs1() + " >>");
-			consolidatedFileWriter.write("\n\n Action of " + conflictPair.getConflictPair1() + " is: " + "<< "
+			consolidatedFileWriter.write("\n\n Action of " + usId1 + " is: " + "<< "
 					+ conflictPair.getActionUs1() + " >> " + " which is annotated with: " + "<< "
 					+ conflictPair.getActionAnnotationUs1() + " >>");
 			JSONObject jsonActionAnnotation = new JSONObject();
@@ -226,10 +216,10 @@ public class ReportMaker {
 			jsonActionAnnotation.put("US2", conflictPair.getActionAnnotationUs2());
 			jsonObject.put("Action Annotations", jsonActionAnnotation);
 
-			fileWriter.write("\n Action of " + conflictPair.getConflictPair2() + " is: " + "<< "
+			fileWriter.write("\n Action of " + usId2 + " is: " + "<< "
 					+ conflictPair.getActionUs2() + " >> " + " which is annotated with: " + "<< "
 					+ conflictPair.getActionAnnotationUs2() + " >>");
-			consolidatedFileWriter.write("\n Action of " + conflictPair.getConflictPair2() + " is: " + "<< "
+			consolidatedFileWriter.write("\n Action of " + usId2 + " is: " + "<< "
 					+ conflictPair.getActionUs2() + " >> " + " which is annotated with: " + "<< "
 					+ conflictPair.getActionAnnotationUs2() + " >>");
 			JSONObject jsonAction = new JSONObject();
@@ -283,14 +273,14 @@ public class ReportMaker {
 		StringBuilder table = new StringBuilder();
 		table.append("* Table of potential conflict between user stories" + "\n\n");
 		for (ConflictPair conflictPair : conflictPairs) {
-			String us1 = conflictPair.getConflictPair1();
-			String us2 = conflictPair.getConflictPair2();
+			String us1 = conflictPair.getUsId1();
+			String us2 = conflictPair.getUsId2();
 			System.out.println("reporting US1: " + us1 + " and US2: " + us2);
-			if (!pairListSeperate.contains(conflictPair.getConflictPair1())) {
-				pairListSeperate.add(conflictPair.getConflictPair1());
+			if (!pairListSeperate.contains(us1)) {
+				pairListSeperate.add(us1);
 			}
-			if (!pairListSeperate.contains(conflictPair.getConflictPair2())) {
-				pairListSeperate.add(conflictPair.getConflictPair2());
+			if (!pairListSeperate.contains(us2)) {
+				pairListSeperate.add(us2);
 			}
 		}
 		String[][] stringTable = createTable(pairListSeperate, conflictPairs);
@@ -338,9 +328,9 @@ public class ReportMaker {
 
 	private String getConflcitPair(Set<ConflictPair> conflictPairs, String pair1, String pair2) {
 		for (ConflictPair conflictPair : conflictPairs) {
-			if ((conflictPair.getConflictPair1().equals(pair1) && conflictPair.getConflictPair2().equals(pair2))
-					|| (conflictPair.getConflictPair1().equals(pair2)
-							&& conflictPair.getConflictPair2().equals(pair1))) {
+			if ((conflictPair.getUsId1().equals(pair1) && conflictPair.getUsId2().equals(pair2))
+					|| (conflictPair.getUsId1().equals(pair2)
+							&& conflictPair.getUsId2().equals(pair1))) {
 				return "x";
 			}
 		}

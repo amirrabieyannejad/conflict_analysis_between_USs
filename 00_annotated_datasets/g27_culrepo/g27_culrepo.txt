@@ -3,31 +3,31 @@
 ********************* << Dataset: g27_culrepo >> ***************
 * Table of potential conflict between user stories
 
-        us_04  us_05  us_76  us_88  us_97  us_17  us_38  us_101  us_19  us_90  us_07  us_86  us_94  us_22  us_96  us_52  us_87  us_65  us_67  us_15  us_41  us_111  us_01  us_78  
-us_04          x                                                                                                                                                                  
-us_05   x                                                                                                                                                                  x      
-us_76                        x                    x                                                 x                                         x                                   
-us_88                 x                                                                      x                           x                                                        
-us_97                                      x      x              x                                         x                                                        x             
-us_17                               x                                                                      x                                                                      
-us_38                 x             x                    x                                                 x                                                                      
-us_101                                            x                                                                                           x             x                     
-us_19                               x                                                                      x                                                                      
-us_90                                                                          x                                  x                                  x                            
-us_07                                                                   x                                                                            x                            
-us_86                                                                                        x                                                                                    
-us_94                        x                                                        x                                  x                                                        
-us_22                 x                                                                                                                                                           
-us_96                               x      x      x              x                                                                                                  x             
-us_52                                                                   x                                                                                                         
-us_87                        x                                                               x                                                                                    
-us_65                                                                                                                                  x                                          
-us_67                                                                                                                           x                                                 
-us_15                 x                                  x                                                                                                                        
-us_41                                                                   x      x                                                                                                  
-us_111                                                   x                                                                                                                        
-us_01                               x                                                                      x                                                                      
-us_78          x                                                                                                                                                                  
+         us_1621  us_1622  us_1693  us_1705  us_1714  us_1634  us_1655  us_1718  us_1636  us_1707  us_1624  us_1703  us_1711  us_1639  us_1713  us_1669  us_1704  us_1682  us_1684  us_1632  us_1658  us_1729  us_1618  us_1695  
+us_1621           x                                                                                                                                                                                                              
+us_1622  x                                                                                                                                                                                                              x        
+us_1693                             x                          x                                                              x                                                     x                                            
+us_1705                    x                                                                                         x                                   x                                                                       
+us_1714                                               x        x                 x                                                     x                                                                       x                 
+us_1634                                      x                                                                                         x                                                                                         
+us_1655                    x                 x                          x                                                              x                                                                                         
+us_1718                                                        x                                                                                                                    x                 x                          
+us_1636                                      x                                                                                         x                                                                                         
+us_1707                                                                                            x                                            x                                            x                                   
+us_1624                                                                                   x                                                                                                  x                                   
+us_1703                                                                                                              x                                                                                                           
+us_1711                             x                                                                       x                                            x                                                                       
+us_1639                    x                                                                                                                                                                                                     
+us_1713                                      x        x        x                 x                                                                                                                             x                 
+us_1669                                                                                   x                                                                                                                                      
+us_1704                             x                                                                                x                                                                                                           
+us_1682                                                                                                                                                                    x                                                     
+us_1684                                                                                                                                                           x                                                              
+us_1632                    x                                            x                                                                                                                                                        
+us_1658                                                                                   x        x                                                                                                                             
+us_1729                                                                 x                                                                                                                                                        
+us_1618                                      x                                                                                         x                                                                                         
+us_1695           x                                                                                                                                                                                                              
 
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
@@ -35,8 +35,8 @@ us_78          x
   
  Affected Resource of US1 is: << reports >>
 
- Action of user_story_04 is: << know >>  which is annotated with: << preserve >>
- Action of user_story_05 is: << deselect >>  which is annotated with: << delete >>
+ Action of user_story_1621 is: << know >>  which is annotated with: << preserve >>
+ Action of user_story_1622 is: << deselect >>  which is annotated with: << delete >>
 
  Conflict Reason is: << preserve-delete-Conflict >>
 
@@ -55,8 +55,8 @@ Original texts of user stories are:
   
  Affected Resource of US1 is: << list >>
 
- Action of user_story_76 is: << automatically updated >>  which is annotated with: << delete >>
- Action of user_story_88 is: << see >>  which is annotated with: << preserve >>
+ Action of user_story_1693 is: << automatically updated >>  which is annotated with: << delete >>
+ Action of user_story_1705 is: << see >>  which is annotated with: << preserve >>
 
  Conflict Reason is: << delete-preserve-Conflict >>
 
@@ -76,8 +76,8 @@ Original texts of user stories are:
  Affected Resource of US1 is: << collection >>
  Affected Contain Entity US2 is: << items >>
 
- Action of user_story_97 is: << rename >>  which is annotated with: << delete >>
- Action of user_story_17 is: << sort >>  which is annotated with: << preserve >>
+ Action of user_story_1714 is: << rename >>  which is annotated with: << delete >>
+ Action of user_story_1634 is: << sort >>  which is annotated with: << preserve >>
 
  Conflict Reason is: << delete-preserve-Conflict >>
 
@@ -97,8 +97,8 @@ Original texts of user stories are:
  Affected Resource of US1 is: << repository >>
  Affected Contain Entity US2 is: << assets >>
 
- Action of user_story_38 is: << search within >>  which is annotated with: << preserve >>
- Action of user_story_101 is: << taken out >>  which is annotated with: << delete >>
+ Action of user_story_1655 is: << search within >>  which is annotated with: << preserve >>
+ Action of user_story_1718 is: << taken out >>  which is annotated with: << delete >>
 
  Conflict Reason is: << preserve-delete-Conflict >>
 
@@ -118,8 +118,8 @@ Original texts of user stories are:
  Affected Resource of US1 is: << collection >>
  Affected Contain Entity US2 is: << useful and comprehensive usage statistics >>
 
- Action of user_story_97 is: << rename >>  which is annotated with: << delete >>
- Action of user_story_19 is: << access >>  which is annotated with: << preserve >>
+ Action of user_story_1714 is: << rename >>  which is annotated with: << delete >>
+ Action of user_story_1636 is: << access >>  which is annotated with: << preserve >>
 
  Conflict Reason is: << delete-preserve-Conflict >>
 
@@ -139,8 +139,8 @@ Original texts of user stories are:
  Affected Resource of US1 is: << report >>
  Affected Contain Entity US2 is: << name changes >>
 
- Action of user_story_90 is: << unpublish >>  which is annotated with: << delete >>
- Action of user_story_07 is: << manage >>  which is annotated with: << delete >>
+ Action of user_story_1707 is: << unpublish >>  which is annotated with: << delete >>
+ Action of user_story_1624 is: << manage >>  which is annotated with: << delete >>
 
  Conflict Reason is: << delete-delete-Conflict >>
 
@@ -159,8 +159,8 @@ Original texts of user stories are:
   
  Affected Resource of US1 is: << passwords >>
 
- Action of user_story_86 is: << change >>  which is annotated with: << delete >>
- Action of user_story_94 is: << resetting >>  which is annotated with: << delete >>
+ Action of user_story_1703 is: << change >>  which is annotated with: << delete >>
+ Action of user_story_1711 is: << resetting >>  which is annotated with: << delete >>
 
  Conflict Reason is: << delete-delete-Conflict >>
 
@@ -179,8 +179,8 @@ Original texts of user stories are:
   
  Affected Resource of US1 is: << list >>
 
- Action of user_story_22 is: << see >>  which is annotated with: << preserve >>
- Action of user_story_76 is: << automatically updated >>  which is annotated with: << delete >>
+ Action of user_story_1639 is: << see >>  which is annotated with: << preserve >>
+ Action of user_story_1693 is: << automatically updated >>  which is annotated with: << delete >>
 
  Conflict Reason is: << preserve-delete-Conflict >>
 
@@ -199,8 +199,8 @@ Original texts of user stories are:
   
  Affected Resource of US1 is: << collection >>
 
- Action of user_story_38 is: << search within >>  which is annotated with: << preserve >>
- Action of user_story_97 is: << rename >>  which is annotated with: << delete >>
+ Action of user_story_1655 is: << search within >>  which is annotated with: << preserve >>
+ Action of user_story_1714 is: << rename >>  which is annotated with: << delete >>
 
  Conflict Reason is: << preserve-delete-Conflict >>
 
@@ -219,8 +219,8 @@ Original texts of user stories are:
   
  Affected Resource of US1 is: << collection >>
 
- Action of user_story_38 is: << search within >>  which is annotated with: << preserve >>
- Action of user_story_96 is: << move >>  which is annotated with: << delete >>
+ Action of user_story_1655 is: << search within >>  which is annotated with: << preserve >>
+ Action of user_story_1713 is: << move >>  which is annotated with: << delete >>
 
  Conflict Reason is: << preserve-delete-Conflict >>
 
@@ -239,8 +239,8 @@ Original texts of user stories are:
   
  Affected Resource of US1 is: << accounts >>
 
- Action of user_story_88 is: << administering >>  which is annotated with: << delete >>
- Action of user_story_94 is: << closing >>  which is annotated with: << delete >>
+ Action of user_story_1705 is: << administering >>  which is annotated with: << delete >>
+ Action of user_story_1711 is: << closing >>  which is annotated with: << delete >>
 
  Conflict Reason is: << delete-delete-Conflict >>
 
@@ -260,8 +260,8 @@ Original texts of user stories are:
  Affected Resource of US1 is: << repository >>
  Affected Contain Entity US2 is: << directory >>
 
- Action of user_story_38 is: << search within >>  which is annotated with: << preserve >>
- Action of user_story_76 is: << automatically updated >>  which is annotated with: << delete >>
+ Action of user_story_1655 is: << search within >>  which is annotated with: << preserve >>
+ Action of user_story_1693 is: << automatically updated >>  which is annotated with: << delete >>
 
  Conflict Reason is: << preserve-delete-Conflict >>
 
@@ -281,8 +281,8 @@ Original texts of user stories are:
  Affected Resource of US1 is: << report >>
  Affected Contain Entity US2 is: << multiple versions >>
 
- Action of user_story_90 is: << unpublish >>  which is annotated with: << delete >>
- Action of user_story_52 is: << view >>  which is annotated with: << preserve >>
+ Action of user_story_1707 is: << unpublish >>  which is annotated with: << delete >>
+ Action of user_story_1669 is: << view >>  which is annotated with: << preserve >>
 
  Conflict Reason is: << delete-preserve-Conflict >>
 
@@ -301,8 +301,8 @@ Original texts of user stories are:
   
  Affected Resource of US1 is: << accounts >>
 
- Action of user_story_87 is: << delete >>  which is annotated with: << delete >>
- Action of user_story_88 is: << administering >>  which is annotated with: << delete >>
+ Action of user_story_1704 is: << delete >>  which is annotated with: << delete >>
+ Action of user_story_1705 is: << administering >>  which is annotated with: << delete >>
 
  Conflict Reason is: << delete-delete-Conflict >>
 
@@ -321,8 +321,8 @@ Original texts of user stories are:
   
  Affected Resource of US1 is: << collection >>
 
- Action of user_story_96 is: << move >>  which is annotated with: << delete >>
- Action of user_story_97 is: << rename >>  which is annotated with: << delete >>
+ Action of user_story_1713 is: << move >>  which is annotated with: << delete >>
+ Action of user_story_1714 is: << rename >>  which is annotated with: << delete >>
 
  Conflict Reason is: << delete-delete-Conflict >>
 
@@ -342,8 +342,8 @@ Original texts of user stories are:
  Affected Resource of US1 is: << system >>
  Affected Contain Entity US2 is: << data set >>
 
- Action of user_story_65 is: << have >>  which is annotated with: << preserve >>
- Action of user_story_67 is: << manipulate >>  which is annotated with: << delete >>
+ Action of user_story_1682 is: << have >>  which is annotated with: << preserve >>
+ Action of user_story_1684 is: << manipulate >>  which is annotated with: << delete >>
 
  Conflict Reason is: << preserve-delete-Conflict >>
 
@@ -363,8 +363,8 @@ Original texts of user stories are:
  Affected Resource of US1 is: << repository >>
  Affected Contain Entity US2 is: << assets >>
 
- Action of user_story_15 is: << search >>  which is annotated with: << preserve >>
- Action of user_story_101 is: << taken out >>  which is annotated with: << delete >>
+ Action of user_story_1632 is: << search >>  which is annotated with: << preserve >>
+ Action of user_story_1718 is: << taken out >>  which is annotated with: << delete >>
 
  Conflict Reason is: << preserve-delete-Conflict >>
 
@@ -384,8 +384,8 @@ Original texts of user stories are:
  Affected Resource of US1 is: << collection >>
  Affected Contain Entity US2 is: << items >>
 
- Action of user_story_96 is: << move >>  which is annotated with: << delete >>
- Action of user_story_17 is: << sort >>  which is annotated with: << preserve >>
+ Action of user_story_1713 is: << move >>  which is annotated with: << delete >>
+ Action of user_story_1634 is: << sort >>  which is annotated with: << preserve >>
 
  Conflict Reason is: << delete-preserve-Conflict >>
 
@@ -405,8 +405,8 @@ Original texts of user stories are:
  Affected Resource of US1 is: << collection >>
  Affected Contain Entity US2 is: << useful and comprehensive usage statistics >>
 
- Action of user_story_96 is: << move >>  which is annotated with: << delete >>
- Action of user_story_19 is: << access >>  which is annotated with: << preserve >>
+ Action of user_story_1713 is: << move >>  which is annotated with: << delete >>
+ Action of user_story_1636 is: << access >>  which is annotated with: << preserve >>
 
  Conflict Reason is: << delete-preserve-Conflict >>
 
@@ -426,8 +426,8 @@ Original texts of user stories are:
  Affected Resource of US1 is: << report >>
  Affected Contain Entity US2 is: << name changes >>
 
- Action of user_story_41 is: << search >>  which is annotated with: << preserve >>
- Action of user_story_07 is: << manage >>  which is annotated with: << delete >>
+ Action of user_story_1658 is: << search >>  which is annotated with: << preserve >>
+ Action of user_story_1624 is: << manage >>  which is annotated with: << delete >>
 
  Conflict Reason is: << preserve-delete-Conflict >>
 
@@ -447,8 +447,8 @@ Original texts of user stories are:
  Affected Resource of US1 is: << assets >>
  Affected Contain Entity US2 is: << ownership >>
 
- Action of user_story_101 is: << taken out >>  which is annotated with: << delete >>
- Action of user_story_111 is: << pass >>  which is annotated with: << delete >>
+ Action of user_story_1718 is: << taken out >>  which is annotated with: << delete >>
+ Action of user_story_1729 is: << pass >>  which is annotated with: << delete >>
 
  Conflict Reason is: << delete-delete-Conflict >>
 
@@ -467,8 +467,8 @@ Original texts of user stories are:
   
  Affected Resource of US1 is: << collection >>
 
- Action of user_story_01 is: << access >>  which is annotated with: << preserve >>
- Action of user_story_97 is: << rename >>  which is annotated with: << delete >>
+ Action of user_story_1618 is: << access >>  which is annotated with: << preserve >>
+ Action of user_story_1714 is: << rename >>  which is annotated with: << delete >>
 
  Conflict Reason is: << preserve-delete-Conflict >>
 
@@ -487,8 +487,8 @@ Original texts of user stories are:
   
  Affected Resource of US1 is: << collection >>
 
- Action of user_story_01 is: << access >>  which is annotated with: << preserve >>
- Action of user_story_96 is: << move >>  which is annotated with: << delete >>
+ Action of user_story_1618 is: << access >>  which is annotated with: << preserve >>
+ Action of user_story_1713 is: << move >>  which is annotated with: << delete >>
 
  Conflict Reason is: << preserve-delete-Conflict >>
 
@@ -508,8 +508,8 @@ Original texts of user stories are:
  Affected Resource of US1 is: << reports >>
  Affected Contain Entity US2 is: << previous name(s) >>
 
- Action of user_story_05 is: << deselect >>  which is annotated with: << delete >>
- Action of user_story_78 is: << know >>  which is annotated with: << preserve >>
+ Action of user_story_1622 is: << deselect >>  which is annotated with: << delete >>
+ Action of user_story_1695 is: << know >>  which is annotated with: << preserve >>
 
  Conflict Reason is: << delete-preserve-Conflict >>
 
@@ -528,8 +528,8 @@ Original texts of user stories are:
   
  Affected Resource of US1 is: << accounts >>
 
- Action of user_story_87 is: << delete >>  which is annotated with: << delete >>
- Action of user_story_94 is: << closing >>  which is annotated with: << delete >>
+ Action of user_story_1704 is: << delete >>  which is annotated with: << delete >>
+ Action of user_story_1711 is: << closing >>  which is annotated with: << delete >>
 
  Conflict Reason is: << delete-delete-Conflict >>
 
@@ -549,8 +549,8 @@ Original texts of user stories are:
  Affected Resource of US1 is: << repository >>
  Affected Contain Entity US2 is: << directory >>
 
- Action of user_story_15 is: << search >>  which is annotated with: << preserve >>
- Action of user_story_76 is: << automatically updated >>  which is annotated with: << delete >>
+ Action of user_story_1632 is: << search >>  which is annotated with: << preserve >>
+ Action of user_story_1693 is: << automatically updated >>  which is annotated with: << delete >>
 
  Conflict Reason is: << preserve-delete-Conflict >>
 
@@ -569,8 +569,8 @@ Original texts of user stories are:
   
  Affected Resource of US1 is: << report >>
 
- Action of user_story_41 is: << search >>  which is annotated with: << preserve >>
- Action of user_story_90 is: << unpublish >>  which is annotated with: << delete >>
+ Action of user_story_1658 is: << search >>  which is annotated with: << preserve >>
+ Action of user_story_1707 is: << unpublish >>  which is annotated with: << delete >>
 
  Conflict Reason is: << preserve-delete-Conflict >>
 

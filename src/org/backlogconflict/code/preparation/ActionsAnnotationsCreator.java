@@ -21,7 +21,8 @@ public class ActionsAnnotationsCreator {
 	public void addActionsAnnotations(String[] dataSets, String filePath,String actionAnnotation) throws EmptyOrNotExistJsonFile, CsvValidationException, IOException, ActionAnnotationNotFound {
 		
 		for (int j = 0; j < dataSets.length; j++) {
-		
+			long startTime = System.nanoTime();
+			System.out.println("[ActionAnnotationCreator]------------------- Proceed Dataset " + dataSets[j]);
 			// TODO: Uncomment this for Test
 //		String path = filePath + "\\" + dataSets[j] + ".json";
 		
@@ -37,6 +38,10 @@ public class ActionsAnnotationsCreator {
 		try (FileWriter fileWriter = new FileWriter(path)) {
 			fileWriter.write(jsonArray.toString(4)); // Indent with 4 spaces for readability
 		}
+		long endTime = System.nanoTime();
+		double elapsedTimeInSeconds = (endTime - startTime) / 1_000_000_000.0;
+		System.out.println("Processing time: " + elapsedTimeInSeconds + " seconds");
+
 		}
 	} 
 

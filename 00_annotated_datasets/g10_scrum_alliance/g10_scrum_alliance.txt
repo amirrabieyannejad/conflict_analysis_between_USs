@@ -3,12 +3,12 @@
 ********************* << Dataset: g10_scrum_alliance >> ***************
 * Table of potential conflict between user stories
 
-       us_28  us_29  us_31  us_32  us_33  
-us_28         x                           
-us_29  x                                  
-us_31                       x      x      
-us_32                x             x      
-us_33                x      x             
+        us_520  us_521  us_523  us_524  us_525  
+us_520          x                               
+us_521  x                                       
+us_523                          x       x       
+us_524                  x               x       
+us_525                  x       x               
 
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
@@ -16,8 +16,8 @@ us_33                x      x
   
  Affected Resource of US1 is: << events >>
 
- Action of user_story_28 is: << update >>  which is annotated with: << delete >>
- Action of user_story_29 is: << delete >>  which is annotated with: << delete >>
+ Action of user_story_520 is: << update >>  which is annotated with: << delete >>
+ Action of user_story_521 is: << delete >>  which is annotated with: << delete >>
 
  Conflict Reason is: << delete-delete-Conflict >>
 
@@ -36,8 +36,8 @@ Original texts of user stories are:
   
  Affected Resource of US1 is: << any course >>
 
- Action of user_story_31 is: << delete >>  which is annotated with: << delete >>
- Action of user_story_32 is: << update >>  which is annotated with: << delete >>
+ Action of user_story_523 is: << delete >>  which is annotated with: << delete >>
+ Action of user_story_524 is: << update >>  which is annotated with: << delete >>
 
  Conflict Reason is: << delete-delete-Conflict >>
 
@@ -56,8 +56,8 @@ Original texts of user stories are:
   
  Affected Resource of US1 is: << event >>
 
- Action of user_story_32 is: << update >>  which is annotated with: << delete >>
- Action of user_story_33 is: << turn >>  which is annotated with: << preserve >>
+ Action of user_story_524 is: << update >>  which is annotated with: << delete >>
+ Action of user_story_525 is: << turn >>  which is annotated with: << preserve >>
 
  Conflict Reason is: << delete-preserve-Conflict >>
 
@@ -76,8 +76,8 @@ Original texts of user stories are:
   
  Affected Resource of US1 is: << event >>
 
- Action of user_story_31 is: << delete >>  which is annotated with: << delete >>
- Action of user_story_33 is: << turn >>  which is annotated with: << preserve >>
+ Action of user_story_523 is: << delete >>  which is annotated with: << delete >>
+ Action of user_story_525 is: << turn >>  which is annotated with: << preserve >>
 
  Conflict Reason is: << delete-preserve-Conflict >>
 

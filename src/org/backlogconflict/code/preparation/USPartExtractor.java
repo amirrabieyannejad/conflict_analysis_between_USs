@@ -26,7 +26,8 @@ public class USPartExtractor {
 	public static void runUSPartExtractor(String[] dataSets, String filePath)
 			throws JSONException, IOException, EntityInRelationsNotFound {
 		for (int j = 0; j < dataSets.length; j++) {
-			System.out.println("running dataset: " + dataSets[j]);
+			long startTime = System.nanoTime();
+			System.out.println("[USPartExtractor]running dataset: " + dataSets[j]);
 			// TODO: Uncomment this for test
 //			String inputFilePath = filePath + "\\admin.jsonl";
 //			String outputFilePath = filePath + "\\" + dataSets[j] + ".json";
@@ -49,7 +50,9 @@ public class USPartExtractor {
 			}
 
 			Files.write(Paths.get(outputFilePath), outputArray.toString(4).getBytes());
-
+			long endTime = System.nanoTime();
+			double elapsedTimeInSeconds = (endTime - startTime) / 1_000_000_000.0;
+			System.out.println("Processing time: " + elapsedTimeInSeconds + " seconds");
 		}
 	}
 

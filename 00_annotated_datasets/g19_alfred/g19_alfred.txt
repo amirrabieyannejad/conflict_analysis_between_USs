@@ -3,16 +3,16 @@
 ********************* << Dataset: g19_alfred >> ***************
 * Table of potential conflict between user stories
 
-        us_98  us_118  us_121  us_123  us_18  us_65  us_19  us_77  us_101  
-us_98          x                                                           
-us_118  x                                                          x       
-us_121                         x                                           
-us_123                 x                                                   
-us_18                                         x                            
-us_65                                  x                                   
-us_19                                                       x              
-us_77                                                x                     
-us_101         x                                                           
+         us_1115  us_1135  us_1138  us_1140  us_1035  us_1082  us_1036  us_1094  us_1118  
+us_1115           x                                                                       
+us_1135  x                                                                       x        
+us_1138                             x                                                     
+us_1140                    x                                                              
+us_1035                                               x                                   
+us_1082                                      x                                            
+us_1036                                                                 x                 
+us_1094                                                        x                          
+us_1118           x                                                                       
 
 
 ------------------[Potential Conflict between following User Stories found]--------------------------
@@ -20,8 +20,8 @@ us_101         x
   
  Affected Resource of US1 is: << exercises >>
 
- Action of user_story_98 is: << do >>  which is annotated with: << create >>
- Action of user_story_118 is: << performed wrong >>  which is annotated with: << forbid >>
+ Action of user_story_1115 is: << do >>  which is annotated with: << create >>
+ Action of user_story_1135 is: << performed wrong >>  which is annotated with: << forbid >>
 
  Conflict Reason is: << create-forbid-Conflict >>
 
@@ -41,8 +41,8 @@ Original texts of user stories are:
  Affected Resource of US1 is: << apps >>
  Affected Contain Entity US2 is: << pricing modality >>
 
- Action of user_story_121 is: << maintain >>  which is annotated with: << delete >>
- Action of user_story_123 is: << manage >>  which is annotated with: << delete >>
+ Action of user_story_1138 is: << maintain >>  which is annotated with: << delete >>
+ Action of user_story_1140 is: << manage >>  which is annotated with: << delete >>
 
  Conflict Reason is: << delete-delete-Conflict >>
 
@@ -61,8 +61,8 @@ Original texts of user stories are:
   
  Affected Resource of US1 is: << agenda >>
 
- Action of user_story_18 is: << looking >>  which is annotated with: << preserve >>
- Action of user_story_65 is: << manage >>  which is annotated with: << delete >>
+ Action of user_story_1035 is: << looking >>  which is annotated with: << preserve >>
+ Action of user_story_1082 is: << manage >>  which is annotated with: << delete >>
 
  Conflict Reason is: << preserve-delete-Conflict >>
 
@@ -81,8 +81,8 @@ Original texts of user stories are:
   
  Affected Resource of US1 is: << small amounts >>
 
- Action of user_story_19 is: << pay >>  which is annotated with: << delete >>
- Action of user_story_77 is: << pay >>  which is annotated with: << delete >>
+ Action of user_story_1036 is: << pay >>  which is annotated with: << delete >>
+ Action of user_story_1094 is: << pay >>  which is annotated with: << delete >>
 
  Conflict Reason is: << delete-delete-Conflict >>
 
@@ -101,8 +101,8 @@ Original texts of user stories are:
   
  Affected Resource of US1 is: << exercises >>
 
- Action of user_story_101 is: << doing >>  which is annotated with: << create >>
- Action of user_story_118 is: << performed wrong >>  which is annotated with: << forbid >>
+ Action of user_story_1118 is: << doing >>  which is annotated with: << create >>
+ Action of user_story_1135 is: << performed wrong >>  which is annotated with: << forbid >>
 
  Conflict Reason is: << create-forbid-Conflict >>
 
