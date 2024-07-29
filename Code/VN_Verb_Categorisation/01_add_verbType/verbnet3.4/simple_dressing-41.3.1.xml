@@ -1,0 +1,111 @@
+<VNCLASS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="simple_dressing-41.3.1" verb_type="Verbs of Grooming and Bodily Care" xsi:noNamespaceSchemaLocation="vn_schema-3.xsd">
+ <MEMBERS>
+ </MEMBERS>
+ <THEMROLES>
+  <THEMROLE type="Theme">
+   <SELRESTRS>
+    <SELRESTR Value="+" type="garment" />
+   </SELRESTRS>
+  </THEMROLE>
+ </THEMROLES>
+ <FRAMES>
+ </FRAMES>
+ <SUBCLASSES>
+  <VNSUBCLASS ID="simple_dressing-41.3.1-1">
+   <MEMBERS>
+    <MEMBER features="" fn_mapping="Wearing" grouping="wear.01" name="wear" verbnet_key="wear#1" wn="wear%2:29:00 wear%2:29:04 wear%2:29:01" />
+   </MEMBERS>
+   <THEMROLES>
+    <THEMROLE type="Pivot">
+     <SELRESTRS>
+      <SELRESTR Value="+" type="animate" />
+     </SELRESTRS>
+    </THEMROLE>
+   </THEMROLES>
+   <FRAMES>
+    <FRAME>
+     <DESCRIPTION descriptionNumber="0.2" primary="NP V NP" secondary="Basic Transitive" xtag="" />
+     <EXAMPLES>
+      <EXAMPLE>
+       She wore the purple dress.
+      </EXAMPLE>
+     </EXAMPLES>
+     <SYNTAX>
+      <NP value="Pivot">
+       <SYNRESTRS />
+      </NP>
+      <VERB />
+      <NP value="Theme">
+       <SYNRESTRS />
+      </NP>
+     </SYNTAX>
+     <SEMANTICS>
+      <PRED value="wear">
+       <ARGS>
+        <ARG type="Event" value="&#235;" />
+        <ARG type="ThemRole" value="Pivot" />
+        <ARG type="ThemRole" value="Theme" />
+       </ARGS>
+      </PRED>
+     </SEMANTICS>
+    </FRAME>
+   </FRAMES>
+   <SUBCLASSES />
+  </VNSUBCLASS>
+  <VNSUBCLASS ID="simple_dressing-41.3.1-2">
+   <MEMBERS>
+    <MEMBER features="" fn_mapping="None" grouping="" name="don" verbnet_key="don#1" wn="don%2:29:00" />
+    <MEMBER features="" fn_mapping="None" grouping="" name="doff" verbnet_key="doff#1" wn="doff%2:35:00" />
+   </MEMBERS>
+   <THEMROLES>
+    <THEMROLE type="Agent">
+     <SELRESTRS>
+      <SELRESTR Value="+" type="animate" />
+     </SELRESTRS>
+    </THEMROLE>
+   </THEMROLES>
+   <FRAMES>
+    <FRAME>
+     <DESCRIPTION descriptionNumber="0.2" primary="NP V NP" secondary="Basic Transitive" xtag="" />
+     <EXAMPLES>
+      <EXAMPLE>
+       She donned the red hat.
+      </EXAMPLE>
+     </EXAMPLES>
+     <SYNTAX>
+      <NP value="Agent">
+       <SYNRESTRS />
+      </NP>
+      <VERB />
+      <NP value="Theme">
+       <SYNRESTRS />
+      </NP>
+     </SYNTAX>
+     <SEMANTICS>
+      <PRED bool="!" value="wear">
+       <ARGS>
+        <ARG type="Event" value="e1" />
+        <ARG type="ThemRole" value="Agent" />
+        <ARG type="ThemRole" value="Theme" />
+       </ARGS>
+      </PRED>
+      <PRED value="do">
+       <ARGS>
+        <ARG type="Event" value="e2" />
+        <ARG type="ThemRole" value="Agent" />
+       </ARGS>
+      </PRED>
+      <PRED value="wear">
+       <ARGS>
+        <ARG type="Event" value="&#235;3" />
+        <ARG type="ThemRole" value="Agent" />
+        <ARG type="ThemRole" value="Theme" />
+       </ARGS>
+      </PRED>
+     </SEMANTICS>
+    </FRAME>
+   </FRAMES>
+   <SUBCLASSES />
+  </VNSUBCLASS>
+ </SUBCLASSES>
+</VNCLASS>
